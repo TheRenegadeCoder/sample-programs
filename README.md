@@ -11,7 +11,7 @@ Make sure to see CONTRIBUTING.md for instructions on contributing to the project
 * [C#](C/CSharp.cs)
 * [JavaScript](J/JavaScript.js)
 * [Node.js](N/Node.js)
-* [Ruby](R/Ruby.js)
+* [Ruby](R/Ruby.rb)
 * [TypeScript](T/TypeScript.ts)
 
 ## Thanks
