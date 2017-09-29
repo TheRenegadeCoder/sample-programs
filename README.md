@@ -12,6 +12,7 @@ Make sure to see CONTRIBUTING.md for instructions on contributing to the project
 * [Fortran 95](F/Fortran.f95)
 * [JavaScript](J/JavaScript.js)
 * [Node.js](N/Node.js)
+* [Ruby](R/Ruby.rb)
 * [Python](P/Python.py)
 * [TypeScript](T/TypeScript.ts)
 
