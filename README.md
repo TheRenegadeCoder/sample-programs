@@ -15,6 +15,7 @@ Make sure to see CONTRIBUTING.md for instructions on contributing to the project
 * [Node.js](N/Node.js)
 * [Ruby](R/Ruby.rb)
 * [Python](P/Python.py)
+* [Php](P/Php.php)
 * [TypeScript](T/TypeScript.ts)
 
 ## Thanks
