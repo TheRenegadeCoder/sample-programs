@@ -8,14 +8,16 @@ Baklava is a Turkish dessert and its shape is like equilateral quadrangle. It is
 Make sure to see CONTRIBUTING.md for instructions on contributing to the project!
 
 ## Index
-* [Crystal](C/Crystal.cr)
+* [C](C/C.c)
 * [C#](C/CSharp.cs)
+* [Crystal](C/Crystal.cr)
 * [Fortran 95](F/Fortran.f95)
+* [Go](G/Go.go)
 * [JavaScript](J/JavaScript.js)
 * [Node.js](N/Node.js)
-* [Ruby](R/Ruby.rb)
-* [Python](P/Python.py)
 * [Php](P/Php.php)
+* [Python](P/Python.py)
+* [Ruby](R/Ruby.rb)
 * [TypeScript](T/TypeScript.ts)
 
 ## Thanks
