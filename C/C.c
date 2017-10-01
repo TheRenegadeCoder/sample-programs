@@ -1,25 +1,22 @@
-#include<stdio.h>
-int main()
+#include "stdio.h"
+
+int main (void)
 {
- int i, j, spaceNumber, starNumber, size;
-    size = 11;
-    spaceNumber = size / 2 ;
-    starNumber = 1;
-    for(i=0; i<size; i++){
-        for(j=0; j<spaceNumber; j++)
-            printf(" ");
-        for(j=0; j<starNumber; j++)
-            printf("*");
-        if(i < size / 2){
-            spaceNumber--;
-            starNumber+=2;
-        }
-        else{
-            spaceNumber++;
-            starNumber-=2;
-            }
-        printf("\n");
-    }
-    
-    return 0;
+
+  for (int i = 0; i < 10; i++)
+  {
+    printf ("%.*s", (10 - i), "                                 ");
+    printf ("%.*s", (i * 2 + 1), "******************************");
+    printf ("\n");
+  }
+
+  for (int i = 10; -1 < i; i--)
+  {
+    printf ("%.*s", (10 - i), "                                 ");
+    printf ("%.*s", (i * 2 + 1), "******************************");
+    printf ("\n");
+  }
+
+  return 0;
+
 }
