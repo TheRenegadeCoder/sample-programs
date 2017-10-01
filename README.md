@@ -15,7 +15,7 @@ Make sure to see CONTRIBUTING.md for instructions on contributing to the project
 * [Go](G/Go.go)
 * [JavaScript](J/JavaScript.js)
 * [Node.js](N/Node.js)
-* [Php](P/Php.php)
+* [PHP](P/PHP.php)
 * [Python](P/Python.py)
 * [Ruby](R/Ruby.rb)
 * [TypeScript](T/TypeScript.ts)
