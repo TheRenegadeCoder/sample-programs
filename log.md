@@ -13,3 +13,10 @@
 
 **Link(s) to work**
 1. [How to Implement Hello World in Java](https://therenegadecoder.com/code/python/how-to-implement-hello-world-in-java/)
+
+## Day 3: March 18, 2018
+
+**Today's Progress**: Implemented Hello World in C
+
+**Link(s) to work**
+1. [How to Implement Hello World in C](https://therenegadecoder.com/code/python/how-to-implement-hello-world-in-c/)
