@@ -20,3 +20,10 @@
 
 **Link(s) to work**
 1. [How to Implement Hello World in C](https://therenegadecoder.com/code/python/how-to-implement-hello-world-in-c/)
+
+## Day 4: March 19, 2018
+
+**Today's Progress**: Implemented Hello World in C
+
+**Link(s) to work**
+1. [How to Implement Hello World in C++](https://therenegadecoder.com/code/python/how-to-implement-hello-world-in-c-plus-plus/)
