@@ -34,3 +34,17 @@
 
 **Link(s) to work**
 1. [Hello World in C#](https://therenegadecoder.com/code/hello-world-in-c-sharp/)
+
+## Day 6: March 22, 2018
+
+**Today's Progress**: Implemented Hello World in Ruby
+
+**Link(s) to work**
+1. [Hello World in Ruby](https://therenegadecoder.com/code/hello-world-in-ruby/)
+
+## Day 7: March 24, 2018
+
+**Today's Progress**: Implemented Hello World in Objective-C
+
+**Link(s) to work**
+1. [Hello World in Objective-C](https://therenegadecoder.com/code/hello-world-in-objective-c/)
