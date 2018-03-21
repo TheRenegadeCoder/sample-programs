@@ -1,5 +1,10 @@
 # 100 Days Of Code - Log
 
+Welcome to my 100 Days of Code log. If you haven't heard, I've challenged myself
+to explore 100 different languages over the next 100 days. In fact, not only
+do I plan to implement Hello World in 100 languages, but I also plan to learn
+about each language's background and history. See you at the end!
+
 ## Day 1: March 15, 2018
 
 **Today's Progress**: Implemented Hello World in Python
