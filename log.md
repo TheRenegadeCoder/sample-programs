@@ -23,7 +23,14 @@
 
 ## Day 4: March 19, 2018
 
-**Today's Progress**: Implemented Hello World in C
+**Today's Progress**: Implemented Hello World in C++
 
 **Link(s) to work**
 1. [Hello World in C++](https://therenegadecoder.com/code/hello-world-in-c-plus-plus/)
+
+## Day 5: March 21, 2018
+
+**Today's Progress**: Implemented Hello World in C#
+
+**Link(s) to work**
+1. [Hello World in C#](https://therenegadecoder.com/code/hello-world-in-c-sharp/)
