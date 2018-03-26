@@ -67,3 +67,8 @@ about each language's background and history. See you at the end!
 
 **Link(s) to work**
 1. [Hello World in Go](https://therenegadecoder.com/code/hello-world-in-go/)
+
+**Today's Progress**: Implemented Hello World in Rust
+
+**Link(s) to work**
+1. [Hello World in Rust](https://therenegadecoder.com/code/hello-world-in-rust/)
