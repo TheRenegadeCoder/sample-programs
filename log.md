@@ -53,3 +53,17 @@ about each language's background and history. See you at the end!
 
 **Link(s) to work**
 1. [Hello World in Objective-C](https://therenegadecoder.com/code/hello-world-in-objective-c/)
+
+## Day 8: March 24, 2018
+
+**Today's Progress**: Implemented Hello World in Swift
+
+**Link(s) to work**
+1. [Hello World in Swift](https://therenegadecoder.com/code/hello-world-in-swift/)
+
+## Day 9: March 24, 2018
+
+**Today's Progress**: Implemented Hello World in Go
+
+**Link(s) to work**
+1. [Hello World in Go](https://therenegadecoder.com/code/hello-world-in-go/)
