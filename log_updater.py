@@ -1,3 +1,4 @@
+LOG_FILE = 'log.md'
 TEMPLATE = """
 ## Day {0}: March {1}, 2018
 
@@ -8,10 +9,8 @@ TEMPLATE = """
 """
 
 
-def main():
-    date = input('Day of Month: ')
-    language = input('Language: ')
-    log = open('log.md', 'r')
+def get_day():
+    log = open(LOG_FILE, 'r')
     lines = log.readlines()
     day = 0
     for line in reversed(lines):
@@ -19,9 +18,21 @@ def main():
             day = int(line.split()[2][:-1]) + 1
             break
     log.close()
-    log = open('log.md', 'a')
+    return day
+
+
+def add_record(day, date, language):
+    log = open(LOG_FILE, 'a')
     log.write(TEMPLATE.format(day, date, language, language.lower()))
     log.close()
+
+
+def main():
+    date = input('Day of Month: ')
+    language = input('Language: ')
+    day = get_day()
+    add_record(day, date, language)
+
 
 
 if __name__ == '__main__':
