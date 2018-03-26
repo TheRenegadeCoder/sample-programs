@@ -9,11 +9,19 @@ TEMPLATE = """
 
 
 def main():
-    day = input('Day out of 100: ')
     date = input('Day of Month: ')
     language = input('Language: ')
+    log = open('log.md', 'r')
+    lines = log.readlines()
+    day = 0
+    for line in reversed(lines):
+        if 'Day' in line:
+            day = int(line.split()[2][:-1]) + 1
+            break
+    log.close()
     log = open('log.md', 'a')
     log.write(TEMPLATE.format(day, date, language, language.lower()))
+    log.close()
 
 
 if __name__ == '__main__':
