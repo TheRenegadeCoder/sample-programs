@@ -68,6 +68,8 @@ about each language's background and history. See you at the end!
 **Link(s) to work**
 1. [Hello World in Go](https://therenegadecoder.com/code/hello-world-in-go/)
 
+## Day 10: March 28, 2018
+
 **Today's Progress**: Implemented Hello World in Rust
 
 **Link(s) to work**
