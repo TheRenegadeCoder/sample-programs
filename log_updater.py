@@ -10,6 +10,11 @@ TEMPLATE = """
 
 
 def get_day():
+    """
+    Retrieves the last day from the log and increments it.
+
+    :return: the current day
+    """
     log = open(LOG_FILE, 'r')
     lines = log.readlines()
     day = 0
@@ -22,6 +27,14 @@ def get_day():
 
 
 def add_record(day, date, language):
+    """
+    Updates the log with a new record.
+
+    :param day: the day of code
+    :param date: the day of the month
+    :param language: the programming language
+    :return: nothing
+    """
     log = open(LOG_FILE, 'a')
     log.write(TEMPLATE.format(day, date, language, language.lower()))
     log.close()
@@ -32,7 +45,6 @@ def main():
     language = input('Language: ')
     day = get_day()
     add_record(day, date, language)
-
 
 
 if __name__ == '__main__':
