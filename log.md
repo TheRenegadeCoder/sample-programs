@@ -74,3 +74,10 @@ about each language's background and history. See you at the end!
 
 **Link(s) to work**
 1. [Hello World in Rust](https://therenegadecoder.com/code/hello-world-in-rust/)
+
+## Day 11: March 29, 2018
+
+**Today's Progress**: Implemented Hello World in JavaScript
+
+**Link(s) to work**
+1. [Hello World in JavaScript](https://therenegadecoder.com/code/python/hello-world-in-javascript/)
