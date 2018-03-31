@@ -81,3 +81,10 @@ about each language's background and history. See you at the end!
 
 **Link(s) to work**
 1. [Hello World in JavaScript](https://therenegadecoder.com/code/python/hello-world-in-javascript/)
+
+## Day 12: March 31, 2018
+
+**Today's Progress**: Implemented Hello World in PHP
+
+**Link(s) to work**
+1. [Hello World in PHP](https://therenegadecoder.com/code/python/hello-world-in-php/)
