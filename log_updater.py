@@ -1,6 +1,6 @@
 LOG_FILE = 'log.md'
 TEMPLATE = """
-## Day {0}: March {1}, 2018
+## Day {0}: April {1}, 2018
 
 **Today's Progress**: Implemented Hello World in {2}
 

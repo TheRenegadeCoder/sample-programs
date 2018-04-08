@@ -88,3 +88,38 @@ about each language's background and history. See you at the end!
 
 **Link(s) to work**
 1. [Hello World in PHP](https://therenegadecoder.com/code/python/hello-world-in-php/)
+
+## Day 13: April 1, 2018
+
+**Today's Progress**: Implemented Hello World in Lisp
+
+**Link(s) to work**
+1. [Hello World in Lisp](https://therenegadecoder.com/code/python/hello-world-in-lisp/)
+
+## Day 14: April 2, 2018
+
+**Today's Progress**: Implemented Hello World in Scheme
+
+**Link(s) to work**
+1. [Hello World in Scheme](https://therenegadecoder.com/code/python/hello-world-in-scheme/)
+
+## Day 15: April 5, 2018
+
+**Today's Progress**: Implemented Hello World in Racket
+
+**Link(s) to work**
+1. [Hello World in Racket](https://therenegadecoder.com/code/python/hello-world-in-racket/)
+
+## Day 16: April 7, 2018
+
+**Today's Progress**: Implemented Hello World in Haskell
+
+**Link(s) to work**
+1. [Hello World in Haskell](https://therenegadecoder.com/code/python/hello-world-in-haskell/)
+
+## Day 17: April 8, 2018
+
+**Today's Progress**: Implemented Hello World in Perl
+
+**Link(s) to work**
+1. [Hello World in Perl](https://therenegadecoder.com/code/python/hello-world-in-perl/)
