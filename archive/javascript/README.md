@@ -1,6 +1,6 @@
-# Sample Programs in C
+# Sample Programs in JavaScript
 
-Welcome to the list of sample programs in C. For every program in this
+Welcome to the list of sample programs in JavaScript. For every program in this
 directory, there's a corresponding article explaining the snippet:
 
-- [Hello World in C](https://therenegadecoder.com/code/hello-world-in-c/)
+- [Hello World in JavaScript](https://therenegadecoder.com/code/hello-world-in-javascript/)
