@@ -23,7 +23,7 @@ with your changes. Your contribution should ideally be in one of two forms:
 1. An additional language(s) for an existing sample program (i.e. Hell World)
 2. An additional sample program for an existing language(s) (i.e. Perl)
 
-The following contains a list of existing sample programs:
+The following list contains all existing sample programs:
 
 1. Hello World
 
