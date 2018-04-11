@@ -20,12 +20,12 @@ for as many languages as possible.
 If you wish to contribute, simply fork the repo and make a pull request
 with your changes. Your contribution should ideally be in one of two forms:
 
-1. An additional language(s) for an existing sample program (i.e. Hell World)
+1. An additional language(s) for an existing sample program (i.e. Hello World)
 2. An additional sample program for an existing language(s) (i.e. Perl)
 
 The following list contains all existing sample programs:
 
-1. Hello World
+1. [Hello World](https://therenegadecoder.com/code/hello-world-in-every-language/)
 
 If you create a sample program that is not in this list, please provide the
 solution for at least *five* languages to kickstart development.
