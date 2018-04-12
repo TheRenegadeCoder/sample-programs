@@ -11,6 +11,9 @@ For every program in this repository, I've written a corresponding article
 breaking it down. If that sounds interesting, feel free to leverage the links
 in the README files spread throughout the repository.
 
+In addition, you can find links to the sample program collections below
+in the contribute section.
+
 ## Contribute
 
 The goal of this project is to provide a variety of code snippets
@@ -27,7 +30,7 @@ with your changes. Your contribution should ideally be in one of two forms:
 The following list contains all existing sample programs:
 
 1. [Hello World](https://therenegadecoder.com/code/hello-world-in-every-language/)
-2. Reverse a String
+2. [Reverse a String](https://therenegadecoder.com/code/reverse-a-string-in-every-language/)
 
 If you create a sample program that is not in this list, please provide the
 solution for at least *five* languages to kickstart development.
