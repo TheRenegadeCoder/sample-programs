@@ -13,8 +13,7 @@ in the README files spread throughout the repository.
 
 ## Contribute to Every Language
 
-Currently, the only programs in this repository are Hello World programs.
-Of course, the goal of this project is to provide a variety of code snippets
+The goal of this project is to provide a variety of code snippets
 for as many languages as possible.
 
 If you wish to contribute, simply fork the repo and make a pull request
@@ -26,6 +25,7 @@ with your changes. Your contribution should ideally be in one of two forms:
 The following list contains all existing sample programs:
 
 1. [Hello World](https://therenegadecoder.com/code/hello-world-in-every-language/)
+2. Reverse a String
 
 If you create a sample program that is not in this list, please provide the
 solution for at least *five* languages to kickstart development.
