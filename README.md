@@ -41,13 +41,13 @@ As a result, the rules are pretty simple. For each language, create a program
 that writes the string "Hello, World!" to standard output. Ideally, the solution
 should be as simple as possible.
 
-### Reverse a String rules
+### Reverse a String Rules
 
 While Hello World is simple, it often does not show off many interesting
 features of a language. Fortunately, this repository shares more samples than
 Hello World. One of these more complex programs is known as Reverse a String.
 
-Despite the explicit name, there need to be some rules in place for consistency.
+Despite the explicit name, there are some rules in place for consistency.
 When writing a Reverse a String program, the following rules should apply:
 
 1. The string to be reversed must come from the command line
