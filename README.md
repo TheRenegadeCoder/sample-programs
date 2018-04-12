@@ -57,7 +57,9 @@ When writing a Reverse a String program, the following rules should apply:
 In other words, the program should get a string from the command line and
 reverse it using language utilities only. For example, in Java, StringBuilder
 would not be an appropriate library for the Reverse a String task. Meanwhile,
-in Python, slices are reasonable as they're features of the language.
+in Python, slices would be appropriate as they're features of the language.
 
 The goal here is to demonstrate language features through IO and string
-manipulation, not library support.
+manipulation, not library support. That said, it is possible that not all
+languages will be able to conform to these rules. In those cases, exceptions
+can be made.
