@@ -5,13 +5,13 @@ as a simple 100 Days of Code challenge has expanded into a fun project.
 Within this repository, you'll find a growing collection of simple programs
 in just about every programming language to date.
 
-## Learn More About Every Language
+## Learn More
 
 For every program in this repository, I've written a corresponding article
 breaking it down. If that sounds interesting, feel free to leverage the links
 in the README files spread throughout the repository.
 
-## Contribute to Every Language
+## Contribute
 
 The goal of this project is to provide a variety of code snippets
 for as many languages as possible.
@@ -63,3 +63,20 @@ The goal here is to demonstrate language features through IO and string
 manipulation, not library support. That said, it is possible that not all
 languages will be able to conform to these rules. In those cases, exceptions
 can be made.
+
+## Support
+
+Sample Programs in Every Language is a project run by myself, Jeremy Grifski, as
+a part of my website, The Renegade Coder. If you're looking to support The
+Renegade Coder, check out my
+[5 Ways You Can Support The Renegade Coder](https://therenegadecoder.com/blog/5-ways-you-can-support-the-renegade-coder/)
+article.
+
+As a bit of a summary, here are a few links you can use to support this project:
+
+- [Support via PayPal](https://www.paypal.me/therenegadecoder)
+- [Turn off AdBlock When Using The Renegade Coder](https://help.getadblock.com/support/solutions/articles/6000163989-how-do-i-pause-or-disable-adblock-)
+- [Use The Renegade Coder Shop](https://therenegadecoder.com/shop/)
+- [Comment & Share Articles](https://therenegadecoder.com/code/hello-world-in-every-language/)
+
+Thanks for your support! :relaxed:
