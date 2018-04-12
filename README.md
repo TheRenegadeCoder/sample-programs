@@ -68,7 +68,7 @@ can be made.
 
 Sample Programs in Every Language is a project run by myself, Jeremy Grifski, as
 a part of my website,
-[The Renegade Coder](https://therenegadecoder.com/). 
+[The Renegade Coder](https://therenegadecoder.com/).
 If you're looking to support The Renegade Coder, check out my
 [5 Ways You Can Support The Renegade Coder](https://therenegadecoder.com/blog/5-ways-you-can-support-the-renegade-coder/)
 article.
@@ -79,5 +79,6 @@ As a bit of a summary, here are a few links you can use to support this project:
 - [Turn off AdBlock When Using The Renegade Coder](https://help.getadblock.com/support/solutions/articles/6000163989-how-do-i-pause-or-disable-adblock-)
 - [Use The Renegade Coder Shop](https://therenegadecoder.com/shop/)
 - [Comment & Share Articles](https://therenegadecoder.com/code/hello-world-in-every-language/)
+- [Follow Me on Twitter](https://twitter.com/RenegadeCoder94)
 
 Thanks for your support! :relaxed:
