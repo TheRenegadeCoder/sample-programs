@@ -67,8 +67,9 @@ can be made.
 ## Support
 
 Sample Programs in Every Language is a project run by myself, Jeremy Grifski, as
-a part of my website, The Renegade Coder. If you're looking to support The
-Renegade Coder, check out my
+a part of my website,
+[The Renegade Coder](https://therenegadecoder.com/). 
+If you're looking to support The Renegade Coder, check out my
 [5 Ways You Can Support The Renegade Coder](https://therenegadecoder.com/blog/5-ways-you-can-support-the-renegade-coder/)
 article.
 
