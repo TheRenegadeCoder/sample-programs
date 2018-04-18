@@ -3,4 +3,4 @@
 Welcome to the list of sample programs in Java. For every program in this
 directory, there's a corresponding article explaining the snippet:
 
-- [Hello World in Java](https://therenegadecoder.com/code/java/hello-world-in-java/)
+- [Hello World in Java](https://therenegadecoder.com/code/hello-world-in-java/)
