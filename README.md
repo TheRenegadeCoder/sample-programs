@@ -21,8 +21,21 @@ article.
 
 ## Contribute
 
-To properly follow GitHub community rules, I've moved the contribution
-instructions to [it's own document](https://github.com/jrg94/sample-programs/blob/master/CONTRIBUTING.md).
+To properly follow the recommended GitHub community standards, I've created [contribution
+instructions](https://github.com/jrg94/sample-programs/blob/master/CONTRIBUTING.md).
+Please refer to this document before contributing to this repository.
+
+## Code of Conduct
+
+In accordance with recommended GitHub community standards, I've included the
+general [Code of Conduct](https://github.com/jrg94/sample-programs/blob/master/CODE_OF_CONDUCT.md).
+Please refer to this document before contributing to this repository.
+
+## License
+
+The Sample Programs repository uses the
+[MIT license](https://github.com/jrg94/sample-programs/blob/master/LICENSE).
+Feel free to browse the document to learn more about your rights as a user of this repository.
 
 ## Support
 
