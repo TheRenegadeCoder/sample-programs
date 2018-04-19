@@ -6,8 +6,8 @@ repository! Please fill out each of the sections below.
 
 *Please create a separate pull request for each project.*
 
-- [ ] Hello World in Every Language
-- [ ] Reverse a String in Every Language
+- [ ] [Hello World in Every Language](https://therenegadecoder.com/code/hello-world-in-every-language/)
+- [ ] [Reverse a String in Every Language](https://therenegadecoder.com/code/reverse-a-string-in-every-language/)
 - [ ] Something New! :smiley:
 
 ## What Language Are You Contributing to?
