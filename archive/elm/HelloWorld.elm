@@ -1,4 +1,4 @@
-import Html exposing (text)
+import HelloWorld exposing (text)
 
 main =
   text "Hello, World!"
