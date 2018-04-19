@@ -13,8 +13,8 @@ with your changes. Your contribution should ideally be in one of two forms:
 
 The following list contains all existing sample programs:
 
-1. [Hello World](https://therenegadecoder.com/code/hello-world-in-every-language/)
-2. [Reverse a String](https://therenegadecoder.com/code/reverse-a-string-in-every-language/)
+1. [Hello World in Every Language](https://therenegadecoder.com/code/hello-world-in-every-language/)
+2. [Reverse a String in Every Language](https://therenegadecoder.com/code/reverse-a-string-in-every-language/)
 
 If you create a sample program that is not in this list, please provide the
 solution for at least *five* languages to kickstart development.
