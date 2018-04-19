@@ -15,13 +15,14 @@ For every program in this repository, I've written a corresponding article
 breaking it down. If that sounds interesting, feel free to leverage the links
 in the README files spread throughout the repository.
 
-In addition, you can find links to the sample program collections below
-in the contribute section.
+Alternatively, you can browse all current projects from the [Sample Programs
+in Every Language](https://therenegadecoder.com/code/sample-programs-in-every-language/)
+article.
 
 ## Contribute
 
 To properly follow GitHub community rules, I've moved the contribution
-instructions to [it's own document](https://github.com/jrg94/sample-programs/blob/master/CONTRIBUTING.md). 
+instructions to [it's own document](https://github.com/jrg94/sample-programs/blob/master/CONTRIBUTING.md).
 
 ## Support
 
