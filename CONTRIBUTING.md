@@ -8,18 +8,18 @@ for as many languages as possible.
 If you wish to contribute, simply fork the repo and make a pull request
 with your changes. Your contribution should ideally be in one of two forms:
 
-1. An additional language(s) for an existing sample program (i.e. Hello World)
-2. An additional sample program for an existing language(s) (i.e. Perl)
+1. **One** additional language for an existing sample program (i.e. Hello World)
+2. **One** additional sample program for an existing language (i.e. Perl)
 
 The following list contains all existing sample programs:
 
 1. [Hello World in Every Language](https://therenegadecoder.com/code/hello-world-in-every-language/)
 2. [Reverse a String in Every Language](https://therenegadecoder.com/code/reverse-a-string-in-every-language/)
 
-If you create a sample program that is not in this list, please provide the
-solution for at least *five* languages to kickstart development.
+**Please submit pull requests for one and only one language at a time.** Each pull requests maps exactly to one article, 
+so it's important that I can publish articles and merge pull requests at the same time.
 
-Otherwise, let's have some fun!
+At any rate, let's have some fun!
 
 ## Hello World Rules
 
