@@ -10,6 +10,6 @@ Congrats on taking the first step to contributing to the [Sample Programs in Eve
 
 ## What Language Are You Contributing to?
 
-*Please create a separate pull request for each language. Also, please provide a link to proof of the languages existence.*
+*Please create a separate pull request for each language. Also, please provide a link to proof of the language's existence.*
 
 
