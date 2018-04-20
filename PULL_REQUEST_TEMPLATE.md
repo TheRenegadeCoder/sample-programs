@@ -11,4 +11,4 @@ to an article that may refer to code in this pull request.
 
 ## Check All That Apply
 
-- [ ] I would **NOT** like credit for my contribution in the article (credit is assumed otherwise)
+- [ ] I would **NOT** like credit for my contribution in the article (credit will be included otherwise)
