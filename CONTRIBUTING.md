@@ -19,6 +19,16 @@ The following list contains all existing sample programs:
 **Please submit pull requests for one and only one language at a time.** Each pull requests maps exactly to one article, 
 so it's important that I can publish articles and merge pull requests at the same time.
 
+Because each code snippet maps to an article, you should also add a link to the 
+README for the sample program you're contributing. For example, if I wrote a Reverse 
+a String implementation for Perl, I would also update the README to include a link to 
+the Reverse a String in Perl article. 
+
+Now, obviously the article doesn't exist yet, 
+but you should have no problem predicting the link. After all, they follow a very strict pattern: 
+`https://therenegadecoder.com/code/reverse-a-string-in-perl/`. The entire link is static except 
+for the last token. In that case, use the `sample-program-in-language` format. 
+
 At any rate, let's have some fun!
 
 ## Hello World Rules
