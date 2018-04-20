@@ -1,15 +1,14 @@
 Congrats on taking the first step to contributing to the [Sample Programs in Every Language](https://therenegadecoder.com/code/sample-programs-in-every-language/) repository!
 
-## What Project Are You Contributing to?
+Please make sure that your pull request includes one and only one sample program and language. Each pull request corresponds
+to an article that may refer to code in this pull request. 
 
-*Please create a separate pull request for each project.*
+## Please Complete the Following
 
-- [ ] [Hello World in Every Language](https://therenegadecoder.com/code/hello-world-in-every-language/)
-- [ ] [Reverse a String in Every Language](https://therenegadecoder.com/code/reverse-a-string-in-every-language/)
-- [ ] Something New! :smiley:
+- [ ] Name the pull request using "Sample Program in Language" format
+- [ ] Tag the pull request with the sample program name
+- [ ] Update the language's README to include new article (i.e. `https://therenegadecoder.com/code/pull-request-title`)
 
-## What Language Are You Contributing to?
+## Check All That Apply
 
-*Please create a separate pull request for each language. Also, please provide a link to proof of the language's existence.*
-
-
+- [ ] I would **NOT** like credit for my contribution in the article (credit is assumed otherwise)
