@@ -28,8 +28,8 @@ but you should have no problem predicting the link. After all, they follow a ver
 `https://therenegadecoder.com/code/reverse-a-string-in-perl/`. The entire link is static except 
 for the last token. In that case, use the `sample-program-in-language` format. 
 
-In addition, make sure to **add languages references to the language's README**. This helps me determine if the 
-language actually exists, and it helps users who are browsing the repository.
+In addition, make sure to **add languages references to the language's README** for new languages only. 
+This helps me determine if the language actually exists, and it helps users who are browsing the repository.
 
 Don't worry if you forget any of this; I have a check list of reminders in the pull request template.
 
