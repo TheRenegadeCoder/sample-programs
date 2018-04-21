@@ -9,4 +9,4 @@ directory, there's a corresponding article explaining the snippet:
 
 - [Perl Wiki](https://en.wikipedia.org/wiki/Perl)
 - [Pascal Docs](https://www.perl.org/)
-- [Online Perl Compiler](https://www.onlinegdb.com/online_perl_compiler)
+- [Online Perl Interpreter](https://www.jdoodle.com/execute-perl-online)
