@@ -7,6 +7,6 @@ directory, there's a corresponding article explaining the snippet:
 
 ## References
 
-- [C# Guide](https://docs.microsoft.com/en-us/dotnet/csharp/)
 - [C# Wiki](https://en.wikipedia.org/wiki/C_Sharp_(programming_language))
+- [C# Guide](https://docs.microsoft.com/en-us/dotnet/csharp/)
 - [Online C# Compiler](https://www.jdoodle.com/compile-c-sharp-online)
