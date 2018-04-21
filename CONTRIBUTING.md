@@ -31,6 +31,8 @@ for the last token. In that case, use the `sample-program-in-language` format.
 In addition, make sure to **add languages references to the language's README**. This helps me determine if the 
 language actually exists, and it helps users who are browsing the repository.
 
+Don't worry if you forget any of this; I have a check list of reminders in the pull request template.
+
 At any rate, let's have some fun!
 
 ## Hello World Rules
