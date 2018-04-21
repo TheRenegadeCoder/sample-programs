@@ -12,3 +12,7 @@ Please make sure that your pull request includes one and only one sample program
 ## Check All That Apply
 
 - [ ] I would **NOT** like credit for my contribution in the article (credit will be included otherwise)
+
+## Notes
+
+Feel free to put whatever you want here.
