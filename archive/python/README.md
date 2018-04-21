@@ -10,3 +10,4 @@ directory, there's a corresponding article explaining the snippet:
 
 - [Python Wiki](https://en.wikipedia.org/wiki/Python_(programming_language))
 - [Python Docs](https://www.python.org/)
+- [Python REPL](https://repl.it/languages/python3)
