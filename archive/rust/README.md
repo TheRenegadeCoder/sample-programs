@@ -10,3 +10,4 @@ directory, there's a corresponding article explaining the snippet:
 - [Rust Wiki](https://en.wikipedia.org/wiki/Rust_(programming_language))
 - [Rust Docs](https://www.rust-lang.org/en-US/)
 - [Rust GitHub](https://github.com/rust-lang/rust)
+- [Online Rust Editor](https://play.rust-lang.org/)
