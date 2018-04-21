@@ -9,3 +9,4 @@ directory, there's a corresponding article explaining the snippet:
 
 - [C Wiki](https://en.wikipedia.org/wiki/C_(programming_language))
 - [GNU C Reference Manual](https://www.gnu.org/software/gnu-c-manual/)
+- [Online C Compiler](https://www.onlinegdb.com/online_c_compiler)
