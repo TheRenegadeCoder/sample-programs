@@ -4,10 +4,10 @@ Please make sure that your pull request includes one and only one sample program
 
 ## Please Complete the Following
 
-- [ ] Name the pull request using "Sample Program in Language" format
+- [ ] Name the pull request using `Sample Program in Language` format
 - [ ] Tag the pull request with the sample program name
-- [ ] Update the language's README to include the new article (i.e. `https://therenegadecoder.com/code/pull-request-title`)
-- [ ] Provide a link to the language:
+- [ ] Add article link to README (i.e. `https://therenegadecoder.com/code/pull-request-title`)
+- [ ] Add reference link(s) to README
 
 ## Check All That Apply
 
