@@ -9,4 +9,5 @@ directory, there's a corresponding article explaining the snippet:
 
 - [Ruby Wiki](https://en.wikipedia.org/wiki/Ruby_(programming_language))
 - [Ruby Docs](https://www.ruby-lang.org/en/)
+- [Ruby GitHub](https://github.com/ruby/ruby)
 - [Ruby REPL](https://repl.it/languages/ruby)
