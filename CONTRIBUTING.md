@@ -41,8 +41,8 @@ The following list contains all existing sample programs:
 and merge pull requests at the same time.
 
 Because each code snippet maps to an article, you should also **add a link to the article to the 
-language's README**. For example, if I wrote a Reverse a String implementation for Perl, 
-I would also update the README to include a link to the Reverse a String in Perl article. 
+language's README**. For example, if I write a Reverse a String implementation for Perl, 
+I should also update the README to include a link to the Reverse a String in Perl article. 
 
 Now, obviously the article doesn't exist yet, 
 but you should have no problem predicting the link. After all, they follow a very strict pattern: 
