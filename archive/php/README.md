@@ -4,3 +4,9 @@ Welcome to the list of sample programs in PHP. For every program in this
 directory, there's a corresponding article explaining the snippet:
 
 - [Hello World in PHP](https://therenegadecoder.com/code/hello-world-in-php/)
+
+## References
+
+- [PHP Wiki](https://en.wikipedia.org/wiki/PHP)
+- [PHP Docs](http://www.php.net/)
+- [Online PHP Interpreter](http://www.runphponline.com/)
