@@ -52,9 +52,12 @@ directory, there's a corresponding article explaining the snippet:
 - [Insert Language References Here]
 ```
 
-Make sure to **add language references to the language's README**. Acceptable references 
-include Wikipedia pages, official websites, online editors, and GitHub pages. 
-This helps me determine if the language actually exists, and it helps users who are browsing the repository.
+In the section labeled [Insert List of Sample Program Additions Here], please add the name of the
+sample program you've added. Don't worry about linking to any articles. I will add those as needed.
+
+In addition, make sure to add language references to the language's README. Acceptable references 
+include Wikipedia pages, official websites, online editors, and GitHub pages. This helps me determine 
+if the language actually exists, and it helps users who are browsing the repository.
 
 Don't worry if you forget any of this; I have a check list of reminders in the pull request template.
 
