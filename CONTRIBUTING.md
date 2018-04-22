@@ -30,6 +30,8 @@ If you wish to contribute, simply fork the repo and make a pull request
 with your changes. Ideally, your contribution should be to existing projects, 
 but you're welcome to add new snippets.
 
+However, for simplicity, I ask that you **only make pull requests for one language and one project at a time.**
+
 The following list contains all existing sample programs:
 
 1. [Hello World in Every Language](https://therenegadecoder.com/code/hello-world-in-every-language/)
