@@ -50,7 +50,8 @@ directory, there's a corresponding article explaining the snippet:
 - [Insert Language References Here]
 ```
 
-Make sure to **add language references to the language's README**. 
+Make sure to **add language references to the language's README**. Acceptable references 
+include Wikipedia pages, official websites, online editors, and GitHub pages. 
 This helps me determine if the language actually exists, and it helps users who are browsing the repository.
 
 Don't worry if you forget any of this; I have a check list of reminders in the pull request template.
