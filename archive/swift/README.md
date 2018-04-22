@@ -9,4 +9,5 @@ directory, there's a corresponding article explaining the snippet:
 
 - [Swift Wiki](https://en.wikipedia.org/wiki/Swift_(programming_language))
 - [Swift Docs](https://swift.org/)
+- [Swift GitHub](https://github.com/apple/swift)
 - [Online Swift Editor](https://iswift.org/playground)
