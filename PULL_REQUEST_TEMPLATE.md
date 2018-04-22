@@ -4,13 +4,12 @@ For simplicity, please make sure that your pull request includes one and only on
 
 ## Please Complete the Following
 
-- [ ] Name the pull request using `Sample Program in Language` format
-- [ ] Tag the pull request with the sample program name
-- [ ] Add reference link(s) to README (new languages only)
-
-## Check All That Apply
-
 - [ ] I would **NOT** like credit for my contribution in the article (credit will be included otherwise)
+- [ ] I named the pull request using `Sample Program in Language` format
+- [ ] I tagged the pull request with the sample program name
+- [ ] I created/updated the language README
+  - [ ] I added the sample program name to the README
+  - [ ] I added reference link(s) to the README
 
 ## Notes
 
