@@ -9,4 +9,5 @@ directory, there's a corresponding article explaining the snippet:
 
 - [PHP Wiki](https://en.wikipedia.org/wiki/PHP)
 - [PHP Docs](http://www.php.net/)
+- [PHP GitHub](https://github.com/php/php-src)
 - [Online PHP Interpreter](http://www.runphponline.com/)
