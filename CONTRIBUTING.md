@@ -27,29 +27,30 @@ need to follow this repository structure. Now, let's get to the rules!
 ## General Rules
 
 If you wish to contribute, simply fork the repo and make a pull request
-with your changes. Your contribution should ideally be in one of two forms:
-
-1. **One** additional language for an existing sample program (i.e. Hello World)
-2. **One** additional sample program for an existing language (i.e. Perl)
+with your changes. Ideally, your contribution should be to existing projects, 
+but you're welcome to add new snippets.
 
 The following list contains all existing sample programs:
 
 1. [Hello World in Every Language](https://therenegadecoder.com/code/hello-world-in-every-language/)
 2. [Reverse a String in Every Language](https://therenegadecoder.com/code/reverse-a-string-in-every-language/)
 
-**Please submit pull requests for one and only one language at a time.** This allows me to publish articles 
-and merge pull requests at the same time.
+When adding new languages, make sure you include a README using the following template:
 
-Because each code snippet maps to an article, you should also **add a link to the article to the 
-language's README**. For example, if I write a Reverse a String implementation for Perl, 
-I should also update the README to include a link to the Reverse a String in Perl article. 
+```
+# Sample Programs in [Insert Language Here]
 
-Now, obviously the article doesn't exist yet, 
-but you should have no problem predicting the link. After all, they follow a very strict pattern: 
-`https://therenegadecoder.com/code/reverse-a-string-in-perl/`. The entire link is static except 
-for the last token. In that case, use the `sample-program-in-language` format. 
+Welcome to the list of sample programs in [Insert Language Here]. For every program in this
+directory, there's a corresponding article explaining the snippet:
 
-In addition, make sure to **add languages references to the language's README** for new languages only. 
+- [Insert List of Sample Program Additions Here]
+
+## References
+
+- [Insert Language References Here]
+```
+
+Make sure to **add language references to the language's README**. 
 This helps me determine if the language actually exists, and it helps users who are browsing the repository.
 
 Don't worry if you forget any of this; I have a check list of reminders in the pull request template.
