@@ -1,9 +1,15 @@
 # Sample Programs in Lisp
 
-Welcome to the list of sample programs in Lisp. For every program in this
-directory, there's a corresponding article explaining the snippet:
+Welcome to Sample Programs in Lisp!
+
+## Sample Programs
 
 - [Hello World in Lisp](https://therenegadecoder.com/code/hello-world-in-lisp/)
+
+## Fun Facts
+
+- Debut: 1958
+- Typing: Dynamic
 
 ## References
 
