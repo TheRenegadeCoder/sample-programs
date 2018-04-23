@@ -1,9 +1,17 @@
 # Sample Programs in PHP
 
-Welcome to the list of sample programs in PHP. For every program in this
-directory, there's a corresponding article explaining the snippet:
+Welcome to Sample Programs in PHP!
+
+## Sample Programs
 
 - [Hello World in PHP](https://therenegadecoder.com/code/hello-world-in-php/)
+
+## Fun Facts
+
+- Debut: 1995
+- Developer: Zend Technologies
+- Typing: Dynamic
+- License: PHP License
 
 ## References
 
