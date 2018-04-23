@@ -6,20 +6,23 @@ for as many languages as possible.
 ## Repository Structure
 
 Before we get into the contribution rules, we should probably get an understanding for
-how this repository is structured. 
+how this repository is structured.
 
 At the root of the repository, there are several housekeeping files that shouldn't matter
-much to the average user. The only item that matters is the archives folder. Within the 
-archives folder, you'll find a list of language folders. Each language folder 
-contains the following:
+much to the average user. The only item that matters is the archives folder.
+
+Within the archives folder, you'll find a set of one-character folders. Each of these folders contains
+a list of language folders that share the same first character as the parent folder.
+
+Within each language folder, you'll find the following:
 
 - A README
 - A list of program files.
 
 Now, the program files are self-explanatory. Each one just maps to an ongoing project
-that you can find in the General Rules section. As for the README, it contains a list 
-of the program files that link to existing articles on The Renegade Coder. 
-In addition, the README contains links to language references.
+that you can find in the General Rules section. As for the README, it contains a list
+of the program files that link to existing articles on The Renegade Coder.
+In addition, the README contains links to language references and a list of fun facts.
 
 Naturally, if you wish to add a completely new language to the repository, you'll
 need to follow this repository structure. Now, let's get to the rules!
@@ -27,7 +30,7 @@ need to follow this repository structure. Now, let's get to the rules!
 ## General Rules
 
 If you wish to contribute, simply fork the repo and make a pull request
-with your changes. Ideally, your contribution should be to existing projects, 
+with your changes. Ideally, your contribution should be to existing projects,
 but you're welcome to add new snippets.
 
 However, for simplicity, I ask that you **only make pull requests for one language and one project at a time.**
@@ -42,10 +45,15 @@ When adding new languages, make sure you include a README using the following te
 ```
 # Sample Programs in [Insert Language Here]
 
-Welcome to the list of sample programs in [Insert Language Here]. For every program in this
-directory, there's a corresponding article explaining the snippet:
+Welcome to Sample Programs in [Insert Language Here]!
+
+## Sample Programs
 
 - [Insert List of Sample Program Additions Here]
+
+## Fun Facts
+
+- [Insert List of Fun Facts Here]
 
 ## References
 
@@ -55,8 +63,11 @@ directory, there's a corresponding article explaining the snippet:
 In the section labeled [Insert List of Sample Program Additions Here], please add the name of the
 sample program you've added. Don't worry about linking to any articles. I will add those as needed.
 
-In addition, in the section labeled [Insert Language References Here], please add language references 
-to the language's README. Acceptable references include Wikipedia pages, official websites, online editors, 
+In addition, in the section labeled [Insert List of Fun Facts Here], please add fun information
+like when the language debuted, who develops the language, and what type system the language uses.
+
+Finally, in the section labeled [Insert Language References Here], please add language references
+to the language's README. Acceptable references include Wikipedia pages, official websites, online editors,
 and GitHub pages. This helps me determine if the language actually exists, and it helps users who are browsing the repository.
 
 Don't worry if you forget any of this; I have a check list of reminders in the pull request template.
