@@ -1,9 +1,16 @@
 # Sample Programs in Rust
 
-Welcome to the list of sample programs in Rust. For every program in this
-directory, there's a corresponding article explaining the snippet:
+Welcome to Sample Programs in Rust!
+
+## Sample Programs
 
 - [Hello World in Rust](https://therenegadecoder.com/code/hello-world-in-rust/)
+
+## Fun Facts
+
+- Debut: 2010
+- Developer: Rust Project Developers
+- Typing: Static
 
 ## References
 
