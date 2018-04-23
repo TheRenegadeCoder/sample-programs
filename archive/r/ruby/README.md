@@ -1,9 +1,16 @@
 # Sample Programs in Ruby
 
-Welcome to the list of sample programs in Ruby. For every program in this
-directory, there's a corresponding article explaining the snippet:
+Welcome to Sample Programs in Ruby!
+
+## Sample Programs
 
 - [Hello World in Ruby](https://therenegadecoder.com/code/hello-world-in-ruby/)
+
+## Fun Facts
+
+- Debut: 1995
+- Developer: Yukihiro Matsumoto
+- Typing: Dynamic
 
 ## References
 
