@@ -1,9 +1,17 @@
 # Sample Programs in Kotlin
 
-Welcome to the list of sample programs in Kotlin. For every program in this
-directory, there's a corresponding article explaining the snippet:
+Welcome to Sample Programs in Kotlin!
+
+## Sample Programs
 
 - Hello World in Kotlin
+
+## Fun Facts
+
+- Debut: 2011
+- Developer: JetBrains
+- Typing: Static
+- License: Apache 2
 
 ## References
 
