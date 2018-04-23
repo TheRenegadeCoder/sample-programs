@@ -1,9 +1,16 @@
 # Sample Programs in Rexx
 
-Welcome to the list of sample programs in Rexx. For every program in this
-directory, there's a corresponding article explaining the snippet:
+Welcome to Sample Programs in Rexx!
+
+## Sample Programs
 
 - Hello World in Rexx
+
+## Fun Facts
+
+- Debut: 1979
+- Developer: IBM
+- Typing: Dynamic
 
 ## References
 
