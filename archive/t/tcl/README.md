@@ -1,9 +1,17 @@
 # Sample Programs in Tcl
 
-Welcome to the list of sample programs in Tcl. For every program in this
-directory, there's a corresponding article explaining the snippet:
+Welcome to Sample Programs in Tcl!
+
+## Sample Programs
 
 - Hello World in Tcl
+
+## Fun Facts
+
+- Debut: 1988
+- Developer: Tcl Core Team
+- Typing: Dynamic
+- License: BSD
 
 ## References
 
