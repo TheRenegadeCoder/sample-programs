@@ -1,9 +1,16 @@
 # Sample Programs in C
 
-Welcome to the list of sample programs in C. For every program in this
-directory, there's a corresponding article explaining the snippet:
+Welcome to Sample Programs in C!
+
+## Sample Programs
 
 - [Hello World in C](https://therenegadecoder.com/code/hello-world-in-c/)
+
+## Fun Facts
+
+- Debut: 1972
+- Developer: Bell Labs
+- Typing: Static
 
 ## References
 
