@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Haskell!
 
-## Program Samples
+## Samples Programs
 
 - [Hello World in Haskell](https://therenegadecoder.com/code/hello-world-in-haskell/)
 
