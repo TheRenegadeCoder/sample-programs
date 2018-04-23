@@ -1,9 +1,16 @@
 # Sample Programs in Crystal
 
-Welcome to the list of sample programs in Crystal. For every program in this
-directory, there's a corresponding article explaining the snippet:
+Welcome to Sample Programs in Crystal!
+
+## Sample Programs
 
 - Hello World in Crystal
+
+## Fun Facts
+
+- Debut: 2014
+- Developer: Manas Technology Solutions
+- Typing: Static
 
 ## References
 
