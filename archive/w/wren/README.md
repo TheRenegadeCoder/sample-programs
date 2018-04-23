@@ -1,9 +1,15 @@
 # Sample Programs in Wren
 
-Welcome to the list of sample programs in Wren. For every program in this
-directory, there's a corresponding article explaining the snippet:
+Welcome to Sample Programs in Wren!
+
+## Sample Programs
 
 - [Hello World in Wren](https://therenegadecoder.com/code/hello-world-in-wren/)
+
+## Fun Facts
+
+- Debut: 2013
+- License: MIT
 
 ## References
 
