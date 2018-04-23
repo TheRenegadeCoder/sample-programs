@@ -1,6 +1,7 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![GitHub language count](https://img.shields.io/github/languages/count/jrg94/sample-programs.svg)
 ![GitHub commit activity the past week, 4 weeks, year](https://img.shields.io/github/commit-activity/y/jrg94/sample-programs.svg)
+![GitHub repo size in bytes](https://img.shields.io/github/repo-size/jrg94/sample-programs.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # Sample Programs in Every Language
 
