@@ -1,7 +1,11 @@
 # Sample Programs in C#
 
-- Developer: Microsoft
+Welcome to Sample Programs in C#!
+
+## Facts
+
 - Debut: 2000
+- Developer: Microsoft
 
 ## Sample Programs
 
