@@ -9,6 +9,7 @@ For simplicity, please make sure that your pull request includes one and only on
 - [ ] I tagged the pull request with the sample program name
 - [ ] I created/updated the language README
   - [ ] I added the sample program name to the README
+  - [ ] I added fun facts (i.e. debut, developer, typing, etc.)
   - [ ] I added reference link(s) to the README
 
 ## Notes
