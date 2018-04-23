@@ -1,9 +1,16 @@
 # Sample Programs in Lua
 
-Welcome to the list of sample programs in Lua. For every program in this
-directory, there's a corresponding article explaining the snippet:
+Welcome to Sample Programs in Lua!
+
+## Sample Programs
 
 - Hello World in Lua
+
+## Fun Facts
+
+- Debut: 1993
+- Typing: Dynamic
+- License: MIT
 
 ## References
 
