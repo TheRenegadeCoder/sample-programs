@@ -1,9 +1,17 @@
 # Sample Programs in MATLAB
 
-Welcome to the list of sample programs in MATLAB. For every program in this
-directory, there's a corresponding article explaining the snippet:
+Welcome to Sample Programs in MATLAB!
+
+## Sample Programs
 
 - Hello World in MATLAB
+
+## Fun Facts
+
+- Debut: 1984
+- Developer: MathWorks
+- Typing: Dynamic
+- License: Proprietary
 
 ## References
 
