@@ -1,9 +1,15 @@
 # Sample Programs in Julia
 
-Welcome to the list of sample programs in Julia. For every program in this
-directory, there's a corresponding article explaining the snippet:
+Welcome to Sample Programs in Julia!
+
+## Sample Programs
 
 - Hello World in Julia
+
+## Fun Facts
+
+- Debut: 2012
+- Typing: Dynamic
 
 ## References
 
