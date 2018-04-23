@@ -15,4 +15,4 @@ Welcome to the Sample Programs in C++!
 
 - [C++ Wiki](https://en.wikipedia.org/wiki/C%2B%2B)
 - [C++ Docs](http://www.cplusplus.com/)
-- [Online C++ Compiler](http://cpp.sh/)
+- [C++ Online Compiler](http://cpp.sh/)
