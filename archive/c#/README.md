@@ -2,14 +2,14 @@
 
 Welcome to Sample Programs in C#!
 
+## Sample Programs
+
+- [Hello World in C#](https://therenegadecoder.com/code/hello-world-in-c-sharp/)
+
 ## Facts
 
 - Debut: 2000
 - Developer: Microsoft
-
-## Sample Programs
-
-- [Hello World in C#](https://therenegadecoder.com/code/hello-world-in-c-sharp/)
 
 ## References
 
