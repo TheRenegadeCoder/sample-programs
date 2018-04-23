@@ -1,9 +1,15 @@
 # Sample Programs in Scheme
 
-Welcome to the list of sample programs in Scheme. For every program in this
-directory, there's a corresponding article explaining the snippet:
+Welcome to Sample Programs in Scheme!
+
+## Sample Programs
 
 - [Hello World in Scheme](https://therenegadecoder.com/code/hello-world-in-scheme/)
+
+## Fun Facts
+
+- Debut: 1970
+- Typing: Dynamic
 
 ## References
 
