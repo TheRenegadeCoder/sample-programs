@@ -1,9 +1,15 @@
 # Sample Programs in Lily
 
-Welcome to the list of sample programs in Lily. For every program in this
-directory, there's a corresponding article explaining the snippet:
+Welcome to Sample Programs in Lily!
+
+## Sample Programs
 
 - Hello World in Lily
+
+## Fun Facts
+
+- Debut: 2014
+- License: MIT
 
 ## References
 
