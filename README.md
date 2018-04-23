@@ -11,8 +11,14 @@ in just about every programming language to date.
 
 ## Learn More
 
-For every program in this repository, I've written a corresponding article
-breaking it down. If that sounds interesting, feel free to leverage the links
+Originally, I had planned to have an article written for every code snippet in this repository. 
+However, in the interest of growing this collection, I removed the pull request merge article requirement.
+As a result, not every code snippet in the repository has an associated article, yet.
+
+Of course, I'm adding articles every day, and I'm trying my article progress under the issues tab.
+Feel free to request your favorites from there, and I'll try to move them up the queue.
+
+At any rate, if articles sound interesting, feel free to leverage the links
 in the README files spread throughout the repository.
 
 Alternatively, you can browse all current projects from the [Sample Programs
