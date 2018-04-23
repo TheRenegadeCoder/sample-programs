@@ -1,9 +1,15 @@
 # Sample Programs in Groovy
 
-Welcome to the list of sample programs in Groovy. For every program in this
-directory, there's a corresponding article explaining the snippet:
+Welcome to Sample Programs in Groovy!
+
+## Sample Programs
 
 - Hello World in Groovy
+
+## Fun Facts
+
+- Debut: 2003
+- Developer: Apache
 
 ## References
 
