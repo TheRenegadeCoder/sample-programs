@@ -1,6 +1,6 @@
-![GitHub language count](https://img.shields.io/github/languages/count/jrg94/sample-programs.svg)
-![GitHub commit activity the past week, 4 weeks, year](https://img.shields.io/github/commit-activity/y/jrg94/sample-programs.svg)
-![GitHub repo size in bytes](https://img.shields.io/github/repo-size/jrg94/sample-programs.svg)
+[![GitHub language count](https://img.shields.io/github/languages/count/jrg94/sample-programs.svg)](https://therenegadecoder.com/code/sample-programs-in-every-language/)
+[![GitHub commit activity the past week, 4 weeks, year](https://img.shields.io/github/commit-activity/y/jrg94/sample-programs.svg)](https://github.com/jrg94/sample-programs/commits/master)
+[![GitHub repo size in bytes](https://img.shields.io/github/repo-size/jrg94/sample-programs.svg)](https://help.github.com/articles/what-is-my-disk-quota/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # Sample Programs in Every Language
