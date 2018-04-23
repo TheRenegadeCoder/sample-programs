@@ -1,6 +1,6 @@
 # Sample Programs in C++
 
-Welcome to the Sample Programs in C++! 
+Welcome to Sample Programs in C++! 
 
 ## Sample Programs
 
