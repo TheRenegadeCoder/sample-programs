@@ -1,9 +1,15 @@
 # Sample Programs in Elixir
 
-Welcome to the list of sample programs in Elixir. For every program in this
-directory, there's a corresponding article explaining the snippet:
+Welcome to Sample Programs in Elixir!
+
+## Sample Programs
 
 - [Hello World in Elixir](https://therenegadecoder.com/code/hello-world-in-elixir/)
+
+## Fun Facts
+
+- Debut: 2011
+- Typing: Dynamic
 
 ## References
 
