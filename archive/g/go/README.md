@@ -1,11 +1,18 @@
 # Sample Programs in Go
 
-Welcome to the list of sample programs in Go. For every program in this
-directory, there's a corresponding article explaining the snippet:
+Welcome to Sample Programs in Go!
+
+## Sample Programs
 
 - [Hello World in Go](https://therenegadecoder.com/code/hello-world-in-go/)
 
-# References
+## Fun Facts
+
+- Debut: 2009
+- Developer: Google
+- Typing: Static
+
+## References
 
 - [Go Wiki](https://en.wikipedia.org/wiki/Go_(programming_language))
 - [Go Docs](https://golang.org/)
