@@ -1,13 +1,20 @@
 # Sample Programs in Swift
 
-Welcome to the list of sample programs in Swift. For every program in this
-directory, there's a corresponding article explaining the snippet:
+Welcome to Sample Programs in Swift!
+
+## Sample Programs
 
 - [Hello World in Swift](https://therenegadecoder.com/code/hello-world-in-swift/)
+
+## Fun Facts
+
+- Debut: 2014
+- Developer: Apple
+- Typing: Static
 
 ## References
 
 - [Swift Wiki](https://en.wikipedia.org/wiki/Swift_(programming_language))
 - [Swift Docs](https://swift.org/)
 - [Swift GitHub](https://github.com/apple/swift)
-- [Online Swift Editor](https://iswift.org/playground)
+- [Swift Online Editor](https://iswift.org/playground)
