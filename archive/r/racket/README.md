@@ -1,9 +1,16 @@
 # Sample Programs in Racket
 
-Welcome to the list of sample programs in Racket. For every program in this
-directory, there's a corresponding article explaining the snippet:
+Welcome to Sample Programs in Racket!
+
+## Sample Programs
 
 - [Hello World in Racket](https://therenegadecoder.com/code/hello-world-in-racket/)
+
+## Fun Facts
+
+- Debut: 1994
+- Developer: PLT Inc.
+- License: LGPL
 
 ## References
 
