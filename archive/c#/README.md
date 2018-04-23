@@ -10,6 +10,7 @@ Welcome to Sample Programs in C#!
 
 - Debut: 2000
 - Developer: Microsoft
+- Typing: Static
 
 ## References
 
