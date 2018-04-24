@@ -1,0 +1,16 @@
+# Sample Programs in Pyret
+
+Welcome to Sample Programs in Pyret!
+
+## Sample Programs
+
+- Hello World in Pyret
+
+## Fun Facts
+
+- Debut: 2012
+
+## References
+
+- [Pyret Docs](http://pyret.org/)
+- [Pyret GitHub](https://github.com/brownplt/pyret-lang)
