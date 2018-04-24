@@ -9,6 +9,7 @@ Welcome to Sample Programs in Pyret!
 ## Fun Facts
 
 - Debut: 2012
+- License: Apache 2
 
 ## References
 
