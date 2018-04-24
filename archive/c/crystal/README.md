@@ -4,7 +4,7 @@ Welcome to Sample Programs in Crystal!
 
 ## Sample Programs
 
-- Hello World in Crystal
+- [Hello World in Crystal](https://therenegadecoder.com/code/hello-world-in-crystal/)
 
 ## Fun Facts
 
