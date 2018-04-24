@@ -4,7 +4,7 @@ Welcome to Sample Programs in Julia!
 
 ## Sample Programs
 
-- Hello World in Julia
+- [Hello World in Julia](https://therenegadecoder.com/code/hello-world-in-julia/)
 
 ## Fun Facts
 
