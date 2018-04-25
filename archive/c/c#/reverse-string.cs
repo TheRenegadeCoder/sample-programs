@@ -7,8 +7,11 @@ class ReverseString
       return new string(characters);
   }
 
-  static void Main()
+  static void Main(string[] args)
   {
-
+    if (args.Length > 0)
+    {
+      System.Console.WriteLine(Reverse(args[0]))
+    }
   }
 }
