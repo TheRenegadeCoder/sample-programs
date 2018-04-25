@@ -110,7 +110,7 @@ features and utilities.
 ### Test Cases
 
 | Input | Output |
-|-------|---------|
+|:-------:|:---------:|
 | "" |             |
 | "Hello, World" | "dlroW ,olleH" |
 | "Les Misérables" | "selbarésiM seL" |
