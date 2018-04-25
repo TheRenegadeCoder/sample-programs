@@ -87,6 +87,11 @@ While Hello World is simple, it often does not show off many interesting
 features of a language. Fortunately, this repository shares more samples than
 Hello World. One of these more complex programs is known as Reverse a String.
 
+The goal is to reverse a string in the general case. For instance, if a string
+contains surrogate pairs, the solution must not corrupt the string during reversal.
+
+### Requirements
+
 Despite the explicit name, there are some rules in place for consistency.
 When writing a Reverse a String program, the following rules should apply:
 
@@ -96,18 +101,16 @@ When writing a Reverse a String program, the following rules should apply:
 4. The user must not import libraries to obfuscate the string manipulation
 
 In other words, the program should get a string from the command line and
-reverse it using language utilities only. For example, in Java, StringBuilder
-would not be an appropriate library for the Reverse a String task. Meanwhile,
-in Python, slices would be appropriate as they're features of the language.
+reverse it using language utilities only. Acceptable language utilities include
+language features and built-in libraries.
 
-Do **NOT** worry about writing the perfect algorithm to cover all edge cases.
-For instance, some languages use multiple characters to represent one physical
-character. This often occurs in languages that use surrogate pairs to represent
-characters. In other words, a simple array reversal will swap the order of the
-surrogate pairs. This is okay. The goal is to reverse the string, not
-the visual output.
+External dependencies are unacceptable. Remember, the goal is to show off language
+features and utilities.
 
-The goal here is to demonstrate language features through IO and string
-manipulation, not library support. That said, it is possible that not all
-languages will be able to conform to these rules. In those cases, exceptions
-can be made. 
+### Test Cases
+
+| Input | Output |
+|-------|---------|
+| "" |             |
+| "Hello, World" | "dlroW ,olleH" |
+| "Les Misérables" | "selbarésiM seL" |
