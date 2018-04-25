@@ -1,5 +1,8 @@
-class ReverseString {
-  static void Main() {
-    
+class ReverseString
+{
+  
+  static void Main()
+  {
+
   }
 }
