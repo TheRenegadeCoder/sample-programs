@@ -5,6 +5,7 @@ Welcome to Sample Programs in C#!
 ## Sample Programs
 
 - [Hello World in C#](https://therenegadecoder.com/code/hello-world-in-c-sharp/)
+- Reverse a String in C#
 
 ## Fun Facts
 
