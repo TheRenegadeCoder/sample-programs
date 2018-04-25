@@ -1,4 +1,6 @@
-class ReverseString
+using System;
+
+public class ReverseString
 {
   public static string Reverse(string input)
   {
@@ -7,11 +9,11 @@ class ReverseString
       return new string(characters);
   }
 
-  static void Main(string[] args)
+  public static void Main(string[] args)
   {
     if (args.Length > 0)
     {
-      System.Console.WriteLine(Reverse(args[0]))
+      System.Console.WriteLine(Reverse(args[0]));
     }
   }
 }
