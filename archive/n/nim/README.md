@@ -12,5 +12,6 @@ Welcome to Sample Programs in Nim!
 
 ## References
 
+- [Nim Wiki](https://en.wikipedia.org/wiki/Nim_(programming_language))
 - [Nim Official Website](https://nim-lang.org/)
 - [Nim GitHub](https://github.com/nim-lang/Nim)
