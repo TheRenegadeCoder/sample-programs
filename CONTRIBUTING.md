@@ -109,10 +109,11 @@ features and utilities.
 
 ### Test Cases
 
-| Input | Output |
-|:-------:|:---------:|
-| "" |             |
-| "Hello, World" | "dlroW ,olleH" |
-| "Les Misérables" | "selbarésiM seL" |
-| "字樣樣品" | "品樣樣字" |
-| "If this works: 🤑; If not: 😰" | "😰 :ton fI ;🤑 :skrow siht fI" |
+| Description| Input | Output |
+|------------|:-------:|:---------:|
+| No Input | | |
+| Empty String | "" |             |
+| Ascii String | "Hello, World" | "dlroW ,olleH" |
+| Accented String | "Les Misérables" | "selbarésiM seL" |
+| Chinese String | "字樣樣品" | "品樣樣字" |
+| Emoji String | "If this works: 🤑; If not: 😰" | "😰 :ton fI ;🤑 :skrow siht fI" |
