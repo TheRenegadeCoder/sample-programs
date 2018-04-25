@@ -100,7 +100,14 @@ reverse it using language utilities only. For example, in Java, StringBuilder
 would not be an appropriate library for the Reverse a String task. Meanwhile,
 in Python, slices would be appropriate as they're features of the language.
 
+Do **NOT** worry about writing the perfect algorithm to cover all edge cases.
+For instance, some languages use multiple characters to represent one physical
+character. This often occurs in languages that use surrogate pairs to represent
+characters. In other words, a simple array reversal will swap the order of the
+surrogate pairs. This is okay. The goal is to reverse the string, not
+the visual output.
+
 The goal here is to demonstrate language features through IO and string
 manipulation, not library support. That said, it is possible that not all
 languages will be able to conform to these rules. In those cases, exceptions
-can be made.
+can be made. 
