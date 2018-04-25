@@ -9,6 +9,7 @@ Welcome to Sample Programs in Fortran!
 ## Fun Facts
 
 - Debut: 1957
+- Typing: Static
 
 ## References
 
