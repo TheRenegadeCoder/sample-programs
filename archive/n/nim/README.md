@@ -8,7 +8,9 @@ Welcome to Sample Programs in Nim!
 
 ## Fun Facts
 
-- Debut:
+- Debut: 2008
+- Typing: Static
+- License: MIT
 
 ## References
 
