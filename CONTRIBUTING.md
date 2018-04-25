@@ -115,3 +115,4 @@ features and utilities.
 | "Hello, World" | "dlroW ,olleH" |
 | "Les Misérables" | "selbarésiM seL" |
 | "字樣樣品" | "品樣樣字" |
+| "If this works: 🤑; If not: 😰" | "😰 :ton fI ;🤑 :skrow siht fI" |
