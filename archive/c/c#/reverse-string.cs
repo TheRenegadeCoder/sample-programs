@@ -9,7 +9,9 @@ public class ReverseString
     TextElementEnumerator enumerator = StringInfo.GetTextElementEnumerator(input);
     List<string> elements = new List<string>();
     while (enumerator.MoveNext())
+    {
       elements.Add(enumerator.GetTextElement());
+    }
     elements.Reverse();
     string reversed = string.Concat(elements);
     return reversed;
