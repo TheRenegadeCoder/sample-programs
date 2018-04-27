@@ -87,10 +87,10 @@ While Hello World is simple, it often does not show off many interesting
 features of a language. Fortunately, this repository shares more samples than
 Hello World. One of these more complex programs is known as Reverse a String.
 
-At the bare minimum, the algorithm should reverse ASCII strings. However,
+At the bare minimum, the algorithm must reverse ASCII strings. However,
 the goal should be to reverse a string in the general case. For instance, if a string
-contains surrogate pairs, the solution must not corrupt the string during reversal.
-Of course, this may be totally unreasonable in lower level languages like C, so
+contains surrogate pairs, the solution should not corrupt the string during reversal.
+Of course, this may not be practical in lower level languages like C, so
 just be reasonable.
 
 ### Requirements
