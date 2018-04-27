@@ -113,8 +113,8 @@ features and utilities.
 ### Test Cases
 
 If the solution passes at least the first three test cases, then it's a good fit for the repo.
-The remaining strings are bonus. Please place an asterisk (\*) in the README if the solution
-only covers ASCII.
+The remaining strings are bonus. Please place an note in the README if the solution
+only covers ASCII (i.e. [JavaScript](https://github.com/jrg94/sample-programs/blob/master/archive/j/javascript/README.md)).
 
 | Description| Input | Output |
 |------------|:-------:|:---------:|
