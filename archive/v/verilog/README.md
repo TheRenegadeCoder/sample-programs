@@ -8,8 +8,10 @@ Welcome to Sample Programs in Verilog!
 
 ## Fun Facts
 
-- Debut: 
+- Debut: 1984
+- Typing: Static
 
 ## References
 
--
+- [Verilog Official Website](http://www.verilog.com/)
+- [Verilog Wikipedia](https://en.wikipedia.org/wiki/Verilog)
