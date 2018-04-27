@@ -112,6 +112,10 @@ features and utilities.
 
 ### Test Cases
 
+If the solution passes at least the first three test cases, then it's a good fit for the repo.
+The remaining strings are bonus. Please place an asterisk (\*) in the README if the solution
+only covers ASCII.
+
 | Description| Input | Output |
 |------------|:-------:|:---------:|
 | No Input | | |
