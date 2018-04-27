@@ -1,2 +1,2 @@
 bind @browser
-  [tag: "div", text: "Hello, world"]
+  [tag: "div", text: "Hello, World!"]
