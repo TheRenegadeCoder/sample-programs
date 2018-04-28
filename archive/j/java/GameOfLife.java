@@ -13,6 +13,10 @@ public class GameOfLife {
       neighbors = new ArrayList<Cell>();
     }
 
+    public void addNeighbor(Cell neighbor) {
+      this.neighbors.add(neighbor);
+    }
+
     public boolean wasAlive() {
       return this.wasAlive;
     }
@@ -51,7 +55,7 @@ public class GameOfLife {
 
   private class Grid {
     int width;
-    Cell[] grid;
+    Cell[][] grid;
 
     public Grid(int width) {
       this.width = width;
@@ -63,6 +67,21 @@ public class GameOfLife {
         for (int col = 0; col < this.grid[row].length; col++) {
           boolean rand = Math.random() < .15;
           this.grid[row][col] = new Cell(rand);
+        }
+      }
+    }
+
+    private void link() {
+      for (int row = 0; row < this.grid.length; row++) {
+        for (int col = 0; col < this.grid[row].length; col++) {
+          previousRow = (row - 1) % this.width;
+          nextRow = (row + 1) % this.width;
+          previousCol = (col - 1) % this.width;
+          nextCol = (col + 1) % this.width;
+          this.grid[row][col].addNeighbor(this.grid[previousRow][previousCol]);
+          this.grid[row][col].addNeighbor(this.grid[previousRow][nextCol]);
+          this.grid[row][col].addNeighbor(this.grid[nextRow][previousCol]);
+          this.grid[row][col].addNeighbor(this.grid[nextRow][nextCol]);
         }
       }
     }
