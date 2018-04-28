@@ -29,7 +29,7 @@ public class GameOfLife {
       this.wasAlive = this.isAlive;
     }
 
-    private int numOfLivingNeighbors() {
+    public int numOfLivingNeighbors() {
       int numOfLivingNeighbors = 0;
       for(Cell neighbor : this.neighbors) {
         if (neighbor.wasAlive()) {
@@ -78,10 +78,10 @@ public class GameOfLife {
           int nextRow = Math.floorMod((row + 1), this.width);
           int previousCol = Math.floorMod((col - 1), this.width);
           int nextCol = Math.floorMod((col + 1), this.width);
-          this.grid[row][col].addNeighbor(this.grid[previousRow][previousCol]);
-          this.grid[row][col].addNeighbor(this.grid[previousRow][nextCol]);
-          this.grid[row][col].addNeighbor(this.grid[nextRow][previousCol]);
-          this.grid[row][col].addNeighbor(this.grid[nextRow][nextCol]);
+          this.grid[row][col].addNeighbor(this.grid[row][previousCol]);
+          this.grid[row][col].addNeighbor(this.grid[row][nextCol]);
+          this.grid[row][col].addNeighbor(this.grid[nextRow][col]);
+          this.grid[row][col].addNeighbor(this.grid[previousRow][col]);
         }
       }
     }
@@ -109,9 +109,9 @@ public class GameOfLife {
       for (int row = 0; row < this.grid.length; row++) {
         for (int col = 0; col < this.grid[row].length; col++) {
           if (this.grid[row][col].isAlive()) {
-            builder.append("X");
+            builder.append(this.grid[row][col].numOfLivingNeighbors());
           } else {
-            builder.append("O");
+            builder.append("X");
           }
         }
         builder.append("\n");
