@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class GameOfLife {
 
-  private class Cell {
+  private static class Cell {
     private ArrayList<Cell> neighbors;
     private boolean wasAlive;
     private boolean isAlive;
@@ -40,20 +40,20 @@ public class GameOfLife {
     }
 
     public void transition() {
-      numOfLivingNeighbors = this.numOfLivingNeighbors();
+      int numOfLivingNeighbors = this.numOfLivingNeighbors();
       if (this.wasAlive() && numOfLivingNeighbors < 2) {
         this.isAlive = false;
       } else if (this.wasAlive() && (numOfLivingNeighbors == 2 || numOfLivingNeighbors == 3)) {
-        this.isAlive = 1;
+        this.isAlive = true;
       } else if (this.wasAlive() && numOfLivingNeighbors == 4) {
-        this.isAlive = 0;
+        this.isAlive = false;
       } else if (!this.wasAlive() && numOfLivingNeighbors == 3) {
-        this.isAlive = 1;
+        this.isAlive = true;
       }
     }
   }
 
-  private class Grid {
+  private static class Grid {
     int width;
     Cell[][] grid;
 
@@ -74,10 +74,10 @@ public class GameOfLife {
     private void link() {
       for (int row = 0; row < this.grid.length; row++) {
         for (int col = 0; col < this.grid[row].length; col++) {
-          previousRow = (row - 1) % this.width;
-          nextRow = (row + 1) % this.width;
-          previousCol = (col - 1) % this.width;
-          nextCol = (col + 1) % this.width;
+          int previousRow = Math.floorMod((row - 1), this.width);
+          int nextRow = Math.floorMod((row + 1), this.width);
+          int previousCol = Math.floorMod((col - 1), this.width);
+          int nextCol = Math.floorMod((col + 1), this.width);
           this.grid[row][col].addNeighbor(this.grid[previousRow][previousCol]);
           this.grid[row][col].addNeighbor(this.grid[previousRow][nextCol]);
           this.grid[row][col].addNeighbor(this.grid[nextRow][previousCol]);
