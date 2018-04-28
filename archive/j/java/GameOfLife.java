@@ -32,7 +32,7 @@ public class GameOfLife {
     private int numOfLivingNeighbors() {
       int numOfLivingNeighbors = 0;
       for(Cell neighbor : this.neighbors) {
-        if (neighbor.isAlive()) {
+        if (neighbor.wasAlive()) {
           numOfLivingNeighbors++;
         }
       }
@@ -95,6 +95,10 @@ public class GameOfLife {
       for (int row = 0; row < this.grid.length; row++) {
         for (int col = 0; col < this.grid[row].length; col++) {
           this.grid[row][col].transition();
+        }
+      }
+      for (int row = 0; row < this.grid.length; row++) {
+        for (int col = 0; col < this.grid[row].length; col++) {
           this.grid[row][col].clearState();
         }
       }
