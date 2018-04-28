@@ -55,7 +55,7 @@ public class GameOfLife {
         this.isAlive = false;
       } else if (this.wasAlive() && (numOfLivingNeighbors == 2 || numOfLivingNeighbors == 3)) {
         this.isAlive = true;
-      } else if (this.wasAlive() && numOfLivingNeighbors == 4) {
+      } else if (this.wasAlive() && numOfLivingNeighbors > 3) {
         this.isAlive = false;
       } else if (!this.wasAlive() && numOfLivingNeighbors == 3) {
         this.isAlive = true;
@@ -76,7 +76,7 @@ public class GameOfLife {
     private void populate() {
       for (int row = 0; row < this.grid.length; row++) {
         for (int col = 0; col < this.grid[row].length; col++) {
-          boolean rand = Math.random() < .25;
+          boolean rand = Math.random() < .15;
           this.grid[row][col] = new Cell(rand);
           this.add(this.grid[row][col]);
         }
@@ -144,11 +144,11 @@ public class GameOfLife {
     frame.getContentPane().add(grid);
     frame.pack();
     frame.setVisible(true);
-    for (int i = 0; i < 30; i++) {
+    for (int i = 0; i < 200; i++) {
       System.out.println(grid.toString());
       try        
       {
-        Thread.sleep(1000);
+        Thread.sleep(300);
       } 
       catch(InterruptedException ex) 
       {
