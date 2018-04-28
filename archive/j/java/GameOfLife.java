@@ -1,16 +1,26 @@
 import java.util.ArrayList;
+import javax.swing.*;
+import java.awt.GridLayout;
+import java.awt.Color;
 
 public class GameOfLife {
 
-  private static class Cell {
+  private static class Cell extends JPanel {
     private ArrayList<Cell> neighbors;
     private boolean wasAlive;
     private boolean isAlive;
+    private JPanel panel;
 
     public Cell(boolean isAlive) {
       this.wasAlive = isAlive;
       this.isAlive = isAlive;
+      this.updateBackground();
       neighbors = new ArrayList<Cell>();
+    }
+    
+    public void updateBackground() {
+      Color color = isAlive ? Color.BLACK : Color.WHITE;
+      this.setBackground(color);
     }
 
     public void addNeighbor(Cell neighbor) {
@@ -53,20 +63,22 @@ public class GameOfLife {
     }
   }
 
-  private static class Grid {
+  private static class Grid extends JPanel {
     int width;
     Cell[][] grid;
 
     public Grid(int width) {
       this.width = width;
       this.grid = new Cell[width][width];
+      this.setLayout(new GridLayout(width, width));
     }
-
+    
     private void populate() {
       for (int row = 0; row < this.grid.length; row++) {
         for (int col = 0; col < this.grid[row].length; col++) {
-          boolean rand = Math.random() < .15;
+          boolean rand = Math.random() < .25;
           this.grid[row][col] = new Cell(rand);
+          this.add(this.grid[row][col]);
         }
       }
     }
@@ -82,6 +94,10 @@ public class GameOfLife {
           this.grid[row][col].addNeighbor(this.grid[row][nextCol]);
           this.grid[row][col].addNeighbor(this.grid[nextRow][col]);
           this.grid[row][col].addNeighbor(this.grid[previousRow][col]);
+          this.grid[row][col].addNeighbor(this.grid[previousRow][previousCol]); 
+          this.grid[row][col].addNeighbor(this.grid[previousRow][nextCol]); 
+          this.grid[row][col].addNeighbor(this.grid[nextRow][previousCol]);
+          this.grid[row][col].addNeighbor(this.grid[nextRow][nextCol]);
         }
       }
     }
@@ -95,6 +111,7 @@ public class GameOfLife {
       for (int row = 0; row < this.grid.length; row++) {
         for (int col = 0; col < this.grid[row].length; col++) {
           this.grid[row][col].transition();
+          this.grid[row][col].updateBackground();
         }
       }
       for (int row = 0; row < this.grid.length; row++) {
@@ -121,10 +138,22 @@ public class GameOfLife {
   }
 
   public static void main(String[] args) {
-    Grid grid = new Grid(10);
+    JFrame frame = new JFrame("SudokuMCVE");
+    Grid grid = new Grid(100);
     grid.generate();
-    for (int i = 0; i < 10; i++) {
+    frame.getContentPane().add(grid);
+    frame.pack();
+    frame.setVisible(true);
+    for (int i = 0; i < 30; i++) {
       System.out.println(grid.toString());
+      try        
+      {
+        Thread.sleep(1000);
+      } 
+      catch(InterruptedException ex) 
+      {
+        Thread.currentThread().interrupt();
+      }
       grid.step();
     }
   }
