@@ -86,9 +86,30 @@ public class GameOfLife {
       }
     }
 
+    public void generate() {
+      this.populate();
+      this.link();
+    }
+
+    public String toString() {
+      StringBuilder builder = new StringBuilder();
+      for (int row = 0; row < this.grid.length; row++) {
+        for (int col = 0; col < this.grid[row].length; col++) {
+          if (this.grid[row][col].isAlive()) {
+            builder.append("X");
+          } else {
+            builder.append("O");
+          }
+        }
+        builder.append("\n");
+      }
+      return builder.toString();
+    }
   }
 
   public static void main(String[] args) {
-    // TODO: Play game
+    Grid grid = new Grid(10);
+    grid.generate();
+    System.out.println(grid.toString());
   }
 }
