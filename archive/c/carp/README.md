@@ -9,6 +9,8 @@ Welcome to Sample Programs in Carp!
 ## Fun Facts
 
 - Debut: 2016
+- Typing: Static
+- License: Apache 2.0
 
 ## References
 
