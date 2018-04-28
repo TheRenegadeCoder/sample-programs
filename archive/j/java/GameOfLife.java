@@ -91,6 +91,15 @@ public class GameOfLife {
       this.link();
     }
 
+    public void step() {
+      for (int row = 0; row < this.grid.length; row++) {
+        for (int col = 0; col < this.grid[row].length; col++) {
+          this.grid[row][col].transition();
+          this.grid[row][col].clearState();
+        }
+      }
+    }
+
     public String toString() {
       StringBuilder builder = new StringBuilder();
       for (int row = 0; row < this.grid.length; row++) {
@@ -110,6 +119,9 @@ public class GameOfLife {
   public static void main(String[] args) {
     Grid grid = new Grid(10);
     grid.generate();
-    System.out.println(grid.toString());
+    for (int i = 0; i < 10; i++) {
+      System.out.println(grid.toString());
+      grid.step();
+    }
   }
 }
