@@ -151,5 +151,5 @@ Of course, for the purposes of the repo, here are the requirements for a contrib
 4. Simulation must be a GUI
 
 Beyond that, there's really no hard-and-fast requirements. All I ask is that
-solution are minimal. In other words, don't worry about command line options or
+solutions are minimal. In other words, don't worry about command line options or
 GUI elements. Keep it simple. Remember, the goal is to show off language features.
