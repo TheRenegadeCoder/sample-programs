@@ -4,7 +4,48 @@ import java.awt.GridLayout;
 import java.awt.Color;
 
 public class GameOfLife {
-
+  
+  private int width;
+  private int rate;
+  private int totalFrames;
+  
+  public GameOfLife(int width, int rate, int totalFrames) {
+    this.width = width;
+    this.rate = rate;
+    this.totalFrames = totalFrames;
+  }
+  
+  public void run() {
+    JFrame frame = new JFrame("The Renegade Coder's Game of Life");
+    Grid grid = new Grid(this.width);
+    grid.generate();
+    frame.getContentPane().add(grid);
+    frame.pack();
+    frame.setVisible(true);
+    for (int i = 0; i < this.totalFrames; i++) {
+      try        
+      {
+        Thread.sleep(this.rate);
+      } 
+      catch(InterruptedException ex) 
+      {
+        Thread.currentThread().interrupt();
+      }
+      grid.step();
+    }
+  } 
+  
+  public static void main(String[] args) {
+    GameOfLife game;
+    if (args.length > 3) {
+      // TODO
+      game = new GameOfLife(100, 300, 200);
+    } else {
+      game = new GameOfLife(100, 300, 200);
+    }
+    game.run();
+  }
+    
   private static class Cell extends JPanel {
     private ArrayList<Cell> neighbors;
     private boolean wasAlive;
@@ -119,42 +160,6 @@ public class GameOfLife {
           this.grid[row][col].clearState();
         }
       }
-    }
-
-    public String toString() {
-      StringBuilder builder = new StringBuilder();
-      for (int row = 0; row < this.grid.length; row++) {
-        for (int col = 0; col < this.grid[row].length; col++) {
-          if (this.grid[row][col].isAlive()) {
-            builder.append(this.grid[row][col].numOfLivingNeighbors());
-          } else {
-            builder.append("X");
-          }
-        }
-        builder.append("\n");
-      }
-      return builder.toString();
-    }
-  }
-
-  public static void main(String[] args) {
-    JFrame frame = new JFrame("SudokuMCVE");
-    Grid grid = new Grid(100);
-    grid.generate();
-    frame.getContentPane().add(grid);
-    frame.pack();
-    frame.setVisible(true);
-    for (int i = 0; i < 200; i++) {
-      System.out.println(grid.toString());
-      try        
-      {
-        Thread.sleep(300);
-      } 
-      catch(InterruptedException ex) 
-      {
-        Thread.currentThread().interrupt();
-      }
-      grid.step();
     }
   }
 }
