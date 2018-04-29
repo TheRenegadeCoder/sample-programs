@@ -1,3 +1,5 @@
+import random
+
 class Cell:
     def __init__(is_alive: bool):
         self.wasAlive = is_alive
@@ -22,7 +24,17 @@ class Cell:
         elif not self.was_alive and total_living_neighbors == 3:
             self.is_alive = True
 
+    def clear_state():
+        self.was_alive = self.is_alive
+
 class Grid:
     def __init__(width: int, spawn_rate: float):
         self.width = width
         self.spawn_rate = spawn_rate
+        self.grid = None
+
+    def create_cell() -> Cell:
+        return Cell(random.uniform(0, 1) < self.spawn_rate)
+
+    def _populate():
+        self.grid = [[create_cell() for _ in range(self.width)] for _ in range(self.width)]
