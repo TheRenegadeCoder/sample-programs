@@ -141,7 +141,7 @@ At each turn, all cells are evaluated using the following rules:
 
 Of course, for the purposes of the repo, here are the requirements for a contribution:
 
-1. Source code must fit in a single files
+1. Source code must fit in a single file
 2. Grid must wrap-around on the edges (think [asteroids](https://en.wikipedia.org/wiki/Asteroids_(video_game)))
 3. The program must support the following command line arguments
     - Grid width (assume square grid)
