@@ -38,3 +38,19 @@ class Grid:
 
     def _populate():
         self.grid = [[create_cell() for _ in range(self.width)] for _ in range(self.width)]
+
+    def _link():
+        for curr_row, _ in enumerate(self.grid):
+            previous_row = (row_index - 1) % self.width
+            next_row = (row_index + 1) % self.width
+            for curr_col, cell in enumerate(row):
+                previous_col = (col_index - 1) % self.width
+                next_col = (col_index + 1) % self.width
+                cell.neighbors.append(self.grid[curr_row][previous_col])
+                cell.neighbors.append(self.grid[curr_row][next_col])
+                cell.neighbors.append(self.grid[previous_row][curr_col])
+                cell.neighbors.append(self.grid[next_row][curr_col])
+                cell.neighbors.append(self.grid[previous_row][previous_col])
+                cell.neighbors.append(self.grid[next_row][next_col])
+                cell.neighbors.append(self.grid[previous_row][next_col])
+                cell.neighbors.append(self.grid[next_row][previous_col])
