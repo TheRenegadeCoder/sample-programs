@@ -1,9 +1,9 @@
 import random
 
 class Cell:
-    def __init__(is_alive: bool):
-        self.wasAlive = is_alive
-        self.isAlive = is_alive
+    def __init__(self, is_alive: bool):
+        self.was_alive = is_alive
+        self.is_alive = is_alive
         self.neighbors = list()
 
     def num_of_living_neighbors() -> int:
@@ -28,24 +28,24 @@ class Cell:
         self.was_alive = self.is_alive
 
 class Grid:
-    def __init__(width: int, spawn_rate: float):
+    def __init__(self, width: int, spawn_rate: float):
         self.width = width
         self.spawn_rate = spawn_rate
         self.grid = None
 
-    def create_cell() -> Cell:
+    def _create_cell(self) -> Cell:
         return Cell(random.uniform(0, 1) < self.spawn_rate)
 
-    def _populate():
-        self.grid = [[create_cell() for _ in range(self.width)] for _ in range(self.width)]
+    def _populate(self):
+        self.grid = [[self._create_cell() for _ in range(self.width)] for _ in range(self.width)]
 
-    def _link():
+    def _link(self):
         for curr_row, row_list in enumerate(self.grid):
-            previous_row = (row_index - 1) % self.width
-            next_row = (row_index + 1) % self.width
+            previous_row = (curr_row - 1) % self.width
+            next_row = (curr_row + 1) % self.width
             for curr_col, cell in enumerate(row_list):
-                previous_col = (col_index - 1) % self.width
-                next_col = (col_index + 1) % self.width
+                previous_col = (curr_col - 1) % self.width
+                next_col = (curr_col + 1) % self.width
                 cell.neighbors.append(self.grid[curr_row][previous_col])
                 cell.neighbors.append(self.grid[curr_row][next_col])
                 cell.neighbors.append(self.grid[previous_row][curr_col])
@@ -55,7 +55,7 @@ class Grid:
                 cell.neighbors.append(self.grid[previous_row][next_col])
                 cell.neighbors.append(self.grid[next_row][previous_col])
 
-    def generate():
+    def generate(self):
         self._populate()
         self._link()
 
@@ -66,9 +66,10 @@ def main():
     for row in myGrid.grid:
         for cell in row:
             if cell.is_alive:
-                print("X")
+                print("X", end="")
             else:
-                print("O")
+                print("O", end="")
+        print()
 
 if __name__ == '__main__':
     main()
