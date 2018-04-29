@@ -144,10 +144,10 @@ Of course, for the purposes of the repo, here are the requirements for a contrib
 1. Source code must fit in a single files
 2. Grid must wrap-around on the edges (think [asteroids](https://en.wikipedia.org/wiki/Asteroids_(video_game)))
 3. The program must support the following command line arguments
-  - Grid width (assume square grid)
-  - Frame rate (frames/second)
-  - Total number of frames
-  - Spawn rate (% of living vs. dead as decimal between 0 and 1)
+    - Grid width (assume square grid)
+    - Frame rate (frames/second)
+    - Total number of frames
+    - Spawn rate (% of living vs. dead as decimal between 0 and 1)
 4. Simulation must be a GUI
 
 Beyond that, there's really no hard-and-fast requirements. All I ask is that
