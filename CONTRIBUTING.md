@@ -139,6 +139,8 @@ At each turn, all cells are evaluated using the following rules:
 - Any live cell with more than three live neighbors dies, as if by overpopulation.
 - Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.
 
+For more information, check out the [Wikipedia page for Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life).
+
 Of course, for the purposes of the repo, here are the requirements for a contribution:
 
 1. Source code must fit in a single file
