@@ -40,10 +40,10 @@ class Grid:
         self.grid = [[create_cell() for _ in range(self.width)] for _ in range(self.width)]
 
     def _link():
-        for curr_row, _ in enumerate(self.grid):
+        for curr_row, row_list in enumerate(self.grid):
             previous_row = (row_index - 1) % self.width
             next_row = (row_index + 1) % self.width
-            for curr_col, cell in enumerate(row):
+            for curr_col, cell in enumerate(row_list):
                 previous_col = (col_index - 1) % self.width
                 next_col = (col_index + 1) % self.width
                 cell.neighbors.append(self.grid[curr_row][previous_col])
@@ -54,3 +54,21 @@ class Grid:
                 cell.neighbors.append(self.grid[next_row][next_col])
                 cell.neighbors.append(self.grid[previous_row][next_col])
                 cell.neighbors.append(self.grid[next_row][previous_col])
+
+    def generate():
+        self._populate()
+        self._link()
+
+
+def main():
+    myGrid = Grid(10, .5)
+    myGrid.generate()
+    for row in myGrid.grid:
+        for cell in row:
+            if cell.is_alive:
+                print("X")
+            else:
+                print("O")
+
+if __name__ == '__main__':
+    main()
