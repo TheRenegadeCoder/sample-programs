@@ -137,3 +137,18 @@ At each turn, all cells are evaluated using the following rules:
 - Any live cell with two or three live neighbors lives on to the next generation.
 - Any live cell with more than three live neighbors dies, as if by overpopulation.
 - Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.
+
+Of course, for the purposes of the repo, here are the requirements for a contribution:
+
+1. Source code must fit in a single files
+2. Grid must wrap-around on the edges (think [asteroids](https://en.wikipedia.org/wiki/Asteroids_(video_game)))
+3. The program must support the following command line arguments
+  - Grid width (assume square grid)
+  - Frame rate (frames/second)
+  - Total number of frames
+  - Spawn rate (% of living vs. dead as decimal between 0 and 1)
+4. Simulation must be a GUI
+
+Beyond that, there's really no hard-and-fast requirements. All I ask is that
+solution are minimal. In other words, don't worry about command line options or
+GUI elements. Keep it simple. Remember, the goal is to show off language features.
