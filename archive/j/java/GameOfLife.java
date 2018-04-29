@@ -56,7 +56,6 @@ public class GameOfLife {
     private ArrayList<Cell> neighbors;
     private boolean wasAlive;
     private boolean isAlive;
-    private JPanel panel;
 
     public Cell(boolean isAlive) {
       this.wasAlive = isAlive;
