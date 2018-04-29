@@ -6,6 +6,7 @@ Welcome to Sample Programs in Java!
 
 - [Hello World in Java](https://therenegadecoder.com/code/hello-world-in-java/)
 - [Reverse a String in Java](https://therenegadecoder.com/code/java/reverse-a-string-in-java/)
+- Game of Life in Java
 
 ## Fun Facts
 
@@ -17,4 +18,4 @@ Welcome to Sample Programs in Java!
 
 - [Java Wiki](https://en.wikipedia.org/wiki/Java_(programming_language))
 - [Java Docs](https://docs.oracle.com/en/java/)
-- [Online Java Compiler](https://www.jdoodle.com/online-java-compiler)
+- [Java Online Compiler](https://www.jdoodle.com/online-java-compiler)
