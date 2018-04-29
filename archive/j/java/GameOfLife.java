@@ -6,18 +6,20 @@ import java.awt.Color;
 public class GameOfLife {
   
   private int width;
-  private int rate;
+  private double frameRate;
   private int totalFrames;
+  private double spawnRate;
   
-  public GameOfLife(int width, int rate, int totalFrames) {
+  public GameOfLife(int width, double frameRate, int totalFrames, double spawnRate) {
     this.width = width;
-    this.rate = rate;
+    this.frameRate = frameRate;
     this.totalFrames = totalFrames;
+    this.spawnRate = spawnRate;
   }
   
   public void run() {
     JFrame frame = new JFrame("The Renegade Coder's Game of Life");
-    Grid grid = new Grid(this.width);
+    Grid grid = new Grid(this.width, this.spawnRate);
     grid.generate();
     frame.getContentPane().add(grid);
     frame.pack();
@@ -25,7 +27,8 @@ public class GameOfLife {
     for (int i = 0; i < this.totalFrames; i++) {
       try        
       {
-        Thread.sleep(this.rate);
+        int delay = (int)(1000 / this.frameRate);
+        Thread.sleep(delay);
       } 
       catch(InterruptedException ex) 
       {
@@ -38,15 +41,18 @@ public class GameOfLife {
   public static void main(String[] args) {
     GameOfLife game;
     if (args.length > 3) {
-      // TODO
-      game = new GameOfLife(100, 300, 200);
+      int width = Integer.parseInt(args[0]);
+      double frameRate = Double.parseDouble(args[1]);
+      int totalFrames = Integer.parseInt(args[2]);
+      double spawnRate = Double.parseDouble(args[3]);
+      game = new GameOfLife(width, frameRate, totalFrames, spawnRate);
     } else {
-      game = new GameOfLife(100, 300, 200);
+      game = new GameOfLife(100, 3, 200, .15);
     }
     game.run();
   }
     
-  private static class Cell extends JPanel {
+  private class Cell extends JPanel {
     private ArrayList<Cell> neighbors;
     private boolean wasAlive;
     private boolean isAlive;
@@ -104,12 +110,14 @@ public class GameOfLife {
     }
   }
 
-  private static class Grid extends JPanel {
-    int width;
-    Cell[][] grid;
+  private class Grid extends JPanel {
+    private int width;
+    private double spawnRate;
+    private Cell[][] grid;
 
-    public Grid(int width) {
+    public Grid(int width, double spawnRate) {
       this.width = width;
+      this.spawnRate = spawnRate;
       this.grid = new Cell[width][width];
       this.setLayout(new GridLayout(width, width));
     }
@@ -117,7 +125,7 @@ public class GameOfLife {
     private void populate() {
       for (int row = 0; row < this.grid.length; row++) {
         for (int col = 0; col < this.grid[row].length; col++) {
-          boolean rand = Math.random() < .15;
+          boolean rand = Math.random() < spawnRate;
           this.grid[row][col] = new Cell(rand);
           this.add(this.grid[row][col]);
         }
