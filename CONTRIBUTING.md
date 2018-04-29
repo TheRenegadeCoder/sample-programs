@@ -153,3 +153,6 @@ Of course, for the purposes of the repo, here are the requirements for a contrib
 Beyond that, there's really no hard-and-fast requirements. All I ask is that
 solutions are minimal. In other words, don't worry about command line options or
 GUI elements. Keep it simple. Remember, the goal is to show off language features.
+
+Also, I ask that you don't use external libraries. I like for these files to
+be as easy as possible to test, so limiting dependencies is helpful.
