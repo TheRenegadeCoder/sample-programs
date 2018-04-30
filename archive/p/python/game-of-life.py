@@ -1,4 +1,5 @@
 import random
+import sys
 from tkinter import *
 
 class Cell(Frame):
@@ -7,7 +8,7 @@ class Cell(Frame):
         self.was_alive = is_alive
         self.is_alive = is_alive
         self.neighbors = list()
-        self.configure(bg=self.get_background_color())
+        self['bg'] = self.get_background_color()
 
     def get_background_color(self) -> str:
         if self.is_alive:
@@ -18,7 +19,7 @@ class Cell(Frame):
     def num_of_living_neighbors(self) -> int:
         total_living_neighbors = 0
         for neighbor in self.neighbors:
-            if neighbor.is_alive:
+            if neighbor.was_alive:
                 total_living_neighbors += 1
         return total_living_neighbors
 
@@ -37,10 +38,15 @@ class Cell(Frame):
         self.was_alive = self.is_alive
 
 class Grid(Tk):
-    def __init__(self, width: int, spawn_rate: float):
+    def __init__(self, width: int = 50, spawn_rate: float = .15, frame_rate: float = 3, total_frames: int = 200):
         Tk.__init__(self)
+        self.title("The Renegade Coder's Game of Life")
         self.width = width
         self.spawn_rate = spawn_rate
+        self.frame_rate = frame_rate
+        self.delay = int(1000 / self.frame_rate)
+        self.total_frames = total_frames
+        self.frame_index = 0
         self.grid = None
 
     def _create_cell(self) -> Cell:
@@ -69,22 +75,31 @@ class Grid(Tk):
     def generate(self):
         self._populate()
         self._link()
+        self.after(self.delay, self.step)
 
     def step(self):
         for row in self.grid:
             for cell in row:
                 cell.transition()
-                cell.configure(bg=cell.get_background_color())
+                cell['bg'] = cell.get_background_color()
         for row in self.grid:
             for cell in row:
                 cell.clear_state()
-        self.after(1000, self.step)
+        self.frame_index += 1
+        if self.frame_index < self.total_frames:
+            self.after(self.delay, self.step)
 
 
 def main():
-    myGrid = Grid(50, .15)
+    if len(sys.argv) > 4:
+        width = int(sys.argv[1])
+        frame_rate = float(sys.argv[2])
+        total_frames = int(sys.argv[3])
+        spawn_rate = float(sys.argv[4])
+        myGrid = Grid(width, spawn_rate, frame_rate, total_frames)
+    else:
+        myGrid = Grid()
     myGrid.generate()
-    myGrid.after(1000, myGrid.step)
     myGrid.mainloop()
 
 if __name__ == '__main__':
