@@ -13,3 +13,4 @@ Welcome to Sample Programs in Felix!
 ## References
 
 - [Felix GitHub](https://github.com/felix-lang/felix)
+- [Felix Docs](http://felix-documentation-master.readthedocs.io/en/latest/)
