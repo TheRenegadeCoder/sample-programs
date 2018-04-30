@@ -1,6 +1,6 @@
 import random
-import sys
 from tkinter import *
+
 
 class Cell(Frame):
     def __init__(self, is_alive: bool, parent):
@@ -36,6 +36,7 @@ class Cell(Frame):
 
     def clear_state(self):
         self.was_alive = self.is_alive
+
 
 class Grid(Tk):
     def __init__(self, width: int = 50, spawn_rate: float = .15, frame_rate: float = 3, total_frames: int = 200):
@@ -96,11 +97,12 @@ def main():
         frame_rate = float(sys.argv[2])
         total_frames = int(sys.argv[3])
         spawn_rate = float(sys.argv[4])
-        myGrid = Grid(width, spawn_rate, frame_rate, total_frames)
+        my_grid = Grid(width, spawn_rate, frame_rate, total_frames)
     else:
-        myGrid = Grid()
-    myGrid.generate()
-    myGrid.mainloop()
+        my_grid = Grid()
+    my_grid.generate()
+    my_grid.mainloop()
+
 
 if __name__ == '__main__':
     main()
