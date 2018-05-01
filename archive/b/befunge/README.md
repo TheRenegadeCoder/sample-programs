@@ -12,4 +12,5 @@ Welcome to Sample Programs in Befunge!
 
 ## References
 
+- [Befunge Wiki](https://en.wikipedia.org/wiki/Befunge)
 - [Befunge Online Interpreter](https://www.bedroomlan.org/tools/befunge-playground#prog=hello,mode=run)
