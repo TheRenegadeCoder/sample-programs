@@ -24,12 +24,14 @@ As a result, not every code snippet in the repository has an associated article,
 Of course, I'm adding articles every day, and I'm tracking my article progress under the issues tab.
 Feel free to request your favorites from there, and I'll try to move them up the queue.
 
-At any rate, if articles sound interesting, feel free to leverage the links
-in the README files spread throughout the repository.
+At any rate, if articles sound interesting, here are a few to get you started:
 
-Alternatively, you can browse all current projects from the [Sample Programs
-in Every Language](https://therenegadecoder.com/code/sample-programs-in-every-language/)
-article.
+- [Sample Programs in Every Language](https://therenegadecoder.com/code/sample-programs-in-every-language/)
+- [Hello World in Every Language](https://therenegadecoder.com/code/hello-world-in-every-language/)
+- [Reverse a String in Every Language](https://therenegadecoder.com/code/reverse-a-string-in-every-language/)
+- [The Coolest Programming Language Features](https://therenegadecoder.com/blog/the-coolest-programming-language-features/)
+
+Alternatively, feel free to leverage the links in the README files spread throughout the repository.
 
 ## Contribute
 
