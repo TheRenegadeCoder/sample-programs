@@ -10,6 +10,7 @@ Welcome to Sample Programs in Factor!
 
 - Debut: 2003
 - License: BSD 2-Clause
+- Typing: Dynamic
 
 ## References
 
