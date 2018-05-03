@@ -1,4 +1,4 @@
 program =
 [
-    console writeLine:"Hello world!".
+    console writeLine:"Hello, World!".
 ].
