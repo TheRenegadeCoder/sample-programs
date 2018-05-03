@@ -10,6 +10,7 @@ Welcome to Sample Programs in Kitten!
 
 - Debut: 2011
 - License: MIT
+- Typing: Static
 
 ## References
 
