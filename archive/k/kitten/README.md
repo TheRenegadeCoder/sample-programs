@@ -9,7 +9,10 @@ Welcome to Sample Programs in Kitten!
 ## Fun Facts
 
 - Debut: 2011
+- License: MIT
 
 ## References
 
+- [Kitten Official Website](http://kittenlang.org/)
 - [Kitten GitHub](https://github.com/evincarofautumn/kitten)
+- [Kitten Docs](http://kittenlang.org/documentation/)
