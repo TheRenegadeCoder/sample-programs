@@ -5,6 +5,7 @@ Welcome to Sample Programs in Visual Basic .NET
 ## Sample Programs
 
 - Hello World in Visual Basic .NET
+- Reverse String in Visual Basic .NET
 
 ## Fun Facts
 
