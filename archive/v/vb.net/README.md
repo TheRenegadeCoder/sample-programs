@@ -5,6 +5,7 @@ Welcome to Sample Programs in Visual Basic .NET
 ## Sample Programs
 
 - [Hello World in Visual Basic .NET](https://therenegadecoder.com/code/hello-world-in-visual-basic-net)
+- Reverse String in Visual Basic .NET (No Emoji Support)
 
 ## Fun Facts
 
