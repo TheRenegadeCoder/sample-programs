@@ -1,20 +1,25 @@
 Public Module ReverseString
   Public Sub Main(args() As String)
-    Dim input = String.Join(" ", args)
-
-    If String.IsNullOrEmpty(input) Then
-      Console.Write("Please provide some text to reverse: ")
-      input = Console.ReadLine()
+    Dim input = String.Empty
+    If args IsNot Nothing Then
+      input = String.Join(" ", args)
     End If
 
-    Console.WriteLine($"Input: {input}")
+    If String.IsNullOrEmpty(input) Then
+      System.Console.Write("Please provide some text to reverse: ")
+      input = System.Console.ReadLine()
+    End If
+
+    System.Console.WriteLine($"Input: {input}")
 
     Dim reversedString = ReverseString(input)
-    Console.WriteLine($"Reversed: {reversedString}")
+    System.Console.WriteLine($"Reversed: {reversedString}")
   End Sub
 
   Public Function ReverseString(input As String) As String
     Dim chars = input.ToCharArray()
+
+    System.Console.WriteLine(chars.Length)
 
     Dim reversedChars(input.Length) As Char
 
