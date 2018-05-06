@@ -5,7 +5,6 @@ Welcome to Sample Programs in D!
 ## Sample Programs
 
 - [Hello World in D](hello-world.d)
-- [Argument Printing](printing-args.d)
 
 ## Fun Facts
 
