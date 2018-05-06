@@ -1,12 +1,15 @@
-function reverse(s) {
-  return s.split('').reverse().join('');
-}
+const readline = require('readline');
 
-function main() {
-  var toReverse = prompt("Enter a String", "Hello, World!");
-  if (toReverse != null) {
-      console.log(reverse(toReverse))
-  }
-}
+const reverse = s => s.split('').reverse().join('');
 
-main()
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+const question = 'Enter a String: ';
+
+rl.question(question, (answer) => {
+  console.log(reverse(answer));
+  rl.close();
+});
