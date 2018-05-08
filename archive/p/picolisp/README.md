@@ -4,6 +4,8 @@ Welcome to Sample Programs in picoLisp!
 
 ## Sample Programs
 
+- Hello World in picoLisp (CLI)
+- Reverse a String in picoLisp (CLI)
 
 ## Fun Facts
 
