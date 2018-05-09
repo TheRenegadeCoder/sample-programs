@@ -4,7 +4,7 @@ Welcome to Sample Programs in D!
 
 ## Sample Programs
 
-- [Hello World in D](hello-world.d)
+- [Hello World in D](https://therenegadecoder.com/code/hello-world-in-d/)
 
 ## Fun Facts
 
