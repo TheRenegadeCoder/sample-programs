@@ -4,7 +4,7 @@ Welcome to Sample Programs in C*
 
 ## Sample Programs
 
-- [Hello World in C*](https://therenegadecoder.com/code/hello-world-in-c/)
+- [Hello World in C*](https://github.com/mraza007/sample-programs/blob/master/archive/c/c*/hello-world.cs)
 
 ## Fun Facts
 
