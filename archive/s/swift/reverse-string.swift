@@ -5,7 +5,7 @@ guard CommandLine.arguments.count > 0 else {
 }
 
 let usersString = CommandLine.arguments[0]
-let reversedCollection = string.reversed()
+let reversedCollection = usersString.reversed()
 let reversedString = String(reversedCollection)
 
 print(reversedString)
