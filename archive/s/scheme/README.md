@@ -17,3 +17,4 @@ Welcome to Sample Programs in Scheme!
 - [Scheme Wiki](https://en.wikipedia.org/wiki/Scheme_(programming_language))
 - [Scheme Docs](http://www.schemers.org/)
 - [Scheme REPL](https://repl.it/languages/scheme)
+- [CHICKEN Scheme Compiler](http://www.call-cc.org/)
