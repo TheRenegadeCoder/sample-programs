@@ -5,6 +5,7 @@ Welcome to Sample Programs in Swift!
 ## Sample Programs
 
 - [Hello World in Swift](https://therenegadecoder.com/code/hello-world-in-swift/)
+- Reverse String in Swift
 
 ## Fun Facts
 
