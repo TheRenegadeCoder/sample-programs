@@ -8,7 +8,7 @@ Welcome to Sample Programs in LOLCODE!
 
 ## Fun Facts
 
-- LOLCODE is an esoteric programming language inspired by lolspeak, the language expressed in examples of the lolcat Internet meme.
+- Debut: 2007
 - Typing: Dynamic
 - License: MIT
 
