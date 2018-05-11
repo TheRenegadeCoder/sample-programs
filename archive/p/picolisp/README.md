@@ -4,7 +4,7 @@ Welcome to Sample Programs in PicoLisp!
 
 ## Sample Programs
 
-- Hello World in PicoLisp (CLI)
+- [Hello World in PicoLisp (CLI)](https://therenegadecoder.com/code/hello-world-in-picolisp/)
 - Reverse a String in PicoLisp (CLI)
 
 ## Fun Facts
