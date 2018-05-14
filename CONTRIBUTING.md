@@ -27,6 +27,25 @@ In addition, the README contains links to language references and a list of fun 
 Naturally, if you wish to add a completely new language to the repository, you'll
 need to follow this repository structure. Now, let's get to the rules!
 
+## Naming Conventions
+
+As a general rule, if you're adding a new language, please use lowercase alphanumeric
+character sequences separated by dashes only. If we do not adhere to this rule,
+we risk limiting contributors by platform.
+
+For example, let's say someone adds C* to our repository. If we name the directory
+c*, then Windows users will be unable to clone the repository. Instead, consider
+using c-star. The following table shares a few examples:
+
+| Language | Proper Directory Name |
+|----------|------------------|
+| C* | c-star |
+| C++ | c-plus-plus |
+| C# | c-sharp |
+| F# | f-sharp |
+
+Thanks for keeping this repository inclusive!
+
 ## General Rules
 
 If you wish to contribute, simply fork the repo and make a pull request
