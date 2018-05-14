@@ -19,7 +19,7 @@ Within each language folder, you'll find the following:
 - A README
 - A list of program files.
 
-Now, the program files are self-explanatory. Each one just maps to an ongoing project
+Now, each program file maps to an ongoing project
 that you can find in the General Rules section. As for the README, it contains a list
 of the program files that link to existing articles on The Renegade Coder.
 In addition, the README contains links to language references and a list of fun facts.
@@ -48,7 +48,7 @@ Thanks for keeping this repository inclusive!
 
 ## General Rules
 
-If you wish to contribute, simply fork the repo and make a pull request
+If you wish to contribute, [fork](https://help.github.com/articles/fork-a-repo) the repo and make a pull request
 with your changes. Ideally, your contribution should be to existing projects,
 but you're welcome to add new snippets.
 
