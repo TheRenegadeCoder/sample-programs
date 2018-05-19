@@ -4,7 +4,7 @@ Welcome to Sample Programs in ALGOL 68
 
 ## Sample Programs
 
-- [Hello World in ALGOL 68](hello-world.alg)
+- [Hello World in ALGOL 68](https://therenegadecoder.com/code/hello-world-in-algol-68/)
 
 ## Fun Facts
 
