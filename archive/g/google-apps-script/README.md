@@ -4,7 +4,7 @@ Welcome to Sample Programs in Google Apps Script!
 
 ## Sample Programs
 
-- Hello World in Google Apps Script
+- [Hello World in Google Apps Script](https://therenegadecoder.com/code/hello-world-in-google-apps-script/)
 
 ## Fun Facts
 
