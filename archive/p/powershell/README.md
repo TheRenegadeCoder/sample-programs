@@ -17,5 +17,5 @@ Welcome to Sample Programs in PowerShell!
 - [PowerShell Documentation](https://docs.microsoft.com/en-us/powershell/)
 - [Try It Online: PowerShell](https://tio.run/#powershell)
 
-[1]: ..\blob\master\archive\p\powershell\Hello-World.ps1
-[2]: ..\blob\master\archive\p\powershell\Reverse-String.ps1
+[1]: ./Hello-World.ps1
+[2]: ./Reverse-String.ps1
