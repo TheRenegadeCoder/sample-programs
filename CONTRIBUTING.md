@@ -48,9 +48,8 @@ Thanks for keeping this repository inclusive!
 
 ## Articles
 
-As a bonus to this repository, there are associated articles. For every script in this repository,
-there should be an article. However, the articles do take awhile to write, so you can help by
-writing them as well. 
+As a bonus to this repository, there are associated articles for every script. However, the articles
+do take awhile to write, so you can help by writing them as well. 
 
 If you wish to help write articles, please let me know in the associated issue. That way, I can add
 you to the site, so you can draft your article.
