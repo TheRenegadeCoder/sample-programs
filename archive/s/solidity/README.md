@@ -4,7 +4,7 @@ Welcome to Sample Programs in Solidity!
 
 ## Sample Programs
 
-- [Hello World in Scheme]
+- [Hello World in Solidity]
 
 ## Fun Facts
 
