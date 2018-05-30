@@ -4,7 +4,7 @@ Welcome to Sample Programs in PowerShell!
 
 ## Sample Programs
 
-- [Hello World in PowerShell][1]
+- [Hello World in PowerShell][https://therenegadecoder.com/code/hello-world-in-powershell/]
 - [Reverse String in PowerShell][2]
 
 ## Fun Facts
@@ -17,5 +17,4 @@ Welcome to Sample Programs in PowerShell!
 - [PowerShell Documentation](https://docs.microsoft.com/en-us/powershell/)
 - [Try It Online: PowerShell](https://tio.run/#powershell)
 
-[1]: ./Hello-World.ps1
 [2]: ./Reverse-String.ps1
