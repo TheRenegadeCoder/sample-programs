@@ -39,6 +39,9 @@ To properly follow the recommended GitHub community standards, I've created [con
 instructions](https://github.com/jrg94/sample-programs/blob/master/CONTRIBUTING.md).
 Please refer to this document before contributing to this repository.
 
+As an added note, I try to write articles for all the contributions. If you're interesting in helping out with
+that, let me know. I'm always excited to have support from guest authors.
+
 ## Code of Conduct
 
 In accordance with recommended GitHub community standards, I've included the

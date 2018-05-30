@@ -46,6 +46,23 @@ using c-star. The following table shares a few examples:
 
 Thanks for keeping this repository inclusive!
 
+## Articles
+
+As a bonus to this repository, there are associated articles. For every script in this repository,
+there should be an article. However, the articles do take awhile to write, so you can help by
+writing them as well. 
+
+If you wish to help write articles, please let me know in the associated issue. That way, I can add
+you to the site, so you can draft your article.
+
+When writing articles, try to follow the conventions of other articles in the series (i.e. keep the
+same structure). 
+
+When you're done, let me know in the associated issue, and I'll schedule the article for publishing. 
+Don't worry about the featured image; I'll add one before publishing.
+
+Also, anyone who writes an article will be granted collaborator status, so there's an incentive.
+
 ## General Rules
 
 If you wish to contribute, [fork](https://help.github.com/articles/fork-a-repo) the repo and make a pull request
