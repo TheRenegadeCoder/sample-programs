@@ -5,6 +5,7 @@ For simplicity, please make sure that your pull request includes one and only on
 ## Please Complete the Following
 
 - [ ] I would **NOT** like credit for my contribution in the article (credit will be included otherwise)
+- [ ] I plan to write the article for this code snippet
 - [ ] I named the pull request using `<Sample Program> in <Language>` format
 - [ ] I created/updated the language README
   - [ ] I added the sample program name to the README
