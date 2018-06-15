@@ -1,0 +1,5 @@
+from console
+
+effect main
+    do console.write('Hello, World!')
+end
