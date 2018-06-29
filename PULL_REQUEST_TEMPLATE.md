@@ -11,7 +11,7 @@ For simplicity, please make sure that your pull request includes one and only on
   - [ ] I added the sample program name to the README
   - [ ] I added fun facts (i.e. debut, developer, typing, etc.)
   - [ ] I added reference link(s) to the README
-- [ ] Fixes #your-issue-number-here
+- [ ] I fixed #your-issue-number-here
 
 ## Notes
 
