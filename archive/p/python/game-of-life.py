@@ -44,3 +44,25 @@ def create_grid():
         print grid[ix][iy].pos_matrix, grid[ix][iy].pos_screen
     except IndexError:
         return
+
+  def paint_grid:
+  	for i in grid:
+        for j in i:
+            if j.nextStatus != j.isAlive:
+                x, y = j.pos_matrix
+                print x, y
+                if j.nextStatus:
+                    canvas.itemconfig(rectangles[x][y], fill="white")
+                    print "changed", j.pos_matrix, "from dead to alive"
+                else:
+                    canvas.itemconfig(rectangles[x][y], fill="black")
+                    print "changed", j.pos_matrix, "from alive to dead"
+                j.switchStatus()
+                print "Current status of", j.pos_matrix, j.isAlive
+
+
+
+
+
+
+
