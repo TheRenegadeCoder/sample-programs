@@ -24,3 +24,6 @@ def grid():
             x += 10
         x = 10
         y += 10
+
+  def oordinates(x, y):
+  	return (x- x%10, y - y%10)
