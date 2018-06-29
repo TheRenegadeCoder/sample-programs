@@ -79,6 +79,21 @@ def create_grid():
     else:
         return num_alive == 3
 
+  def start_game():
+    for i in grid:
+        for j in i:
+            if status_update(j):
+                j.nextStatus = not j.isAlive
+                print "change in", j.pos_matrix, "from", j.isAlive, "to", j.nextStatus
+            else:
+                j.nextStatus = j.isAlive
+    paint_grid()
+    global game_id
+    game_id = root.after(200, start_game)
+
+  def end_game():
+    root.after_cancel(begin_id)
+
 
 
 
