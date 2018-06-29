@@ -25,5 +25,5 @@ def create_grid():
         x = 10
         y += 10
 
-  def oordinates(x, y):
+  def rectangle_coordinates(x, y):
   	return (x- x%10, y - y%10)
