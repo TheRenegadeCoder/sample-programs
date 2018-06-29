@@ -60,6 +60,25 @@ def create_grid():
                 j.switchStatus()
                 print "Current status of", j.pos_matrix, j.isAlive
 
+  def status_update(cell):
+    num_alive = 0
+    x, y = cell.pos_matrix
+    for i in (x-1, x, x+1):
+        for j in (y-1, y, y+1):
+            if i == x and j == y:
+                continue
+            if i == -1 or j == -1:
+                continue
+            try:
+                if grid[i][j].isAlive:
+                    num_alive += 1
+            except IndexError:
+                pass
+    if cell.isAlive:
+        return not( num_alive == 2 or num_alive == 3 )
+    else:
+        return num_alive == 3
+
 
 
 
