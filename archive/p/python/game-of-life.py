@@ -27,3 +27,20 @@ def create_grid():
 
   def rectangle_coordinates(x, y):
   	return (x- x%10, y - y%10)
+
+  def click_colour_change(event):
+    print event.x, event.y
+    x, y = rectangle_coordinates(event.x, event.y)
+    try:
+        iy = x / 10 - 1
+        ix = y / 10 - 1
+        if ix == -1 or iy == -1:
+            raise IndexError
+        if grid[ix][iy].isAlive:
+            canvas.itemconfig(rectangles[ix][iy], fill="black")
+        else:
+            canvas.itemconfig(rectangles[ix][iy], fill="white")
+        grid[ix][iy].switchStatus()
+        print grid[ix][iy].pos_matrix, grid[ix][iy].pos_screen
+    except IndexError:
+        return
