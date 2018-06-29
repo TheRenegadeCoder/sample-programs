@@ -119,6 +119,14 @@ def start_game():
 def end_game():
 	root.after_cancel(begin_id)
 
+create_grid()
+start = Button(root, text="Start!", command=start_game)
+start.pack(side = LEFT)
+stop = Button(root, text="Stop!", command = end_game)
+stop.pack(side = RIGHT)
+canvas.bind("<Button-1>", change_colour_on_click)
+root.mainloop()
+
 
 
 
