@@ -7,7 +7,7 @@ frame.pack()
 canvas = Canvas(frame, width=720, height=720)
 canvas.pack()
 
-def grid():
+def create_grid():
     x = 10
     y = 10
     global grid # Variable to store the Cell objects
