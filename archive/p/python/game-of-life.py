@@ -45,7 +45,7 @@ def click_colour_change(event):
 	except IndexError:
 		return
 
-def paint_grid:
+def paint_grid():
 	for i in grid:
 		for j in i:
 			if j.nextStatus != j.isAlive:
