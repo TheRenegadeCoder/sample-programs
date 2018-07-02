@@ -92,7 +92,7 @@ def start_game():
 				game_id = root.after(200, start_game)
 
 def end_game():
-	root.after_cancel(begin_id)
+	root.after_cancel(game_id)
 
 
 class Cell:
