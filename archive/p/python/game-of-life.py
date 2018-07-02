@@ -1,4 +1,4 @@
-from Tkinter import *
+from tkinter import *
 
 root = Tk()
 root.title("The Renegade Coder's Game of Life")
