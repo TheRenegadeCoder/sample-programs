@@ -42,8 +42,8 @@ def click_colour_change(event):
 				canvas.itemconfig(rectangles[ix][iy], fill="white")
 				grid[ix][iy].switchStatus()
 				print (grid[ix][iy].pos_matrix, grid[ix][iy].pos_screen)
-			except IndexError:
-				return
+	except IndexError:
+		return
 
 def paint_grid:
 	for i in grid:
