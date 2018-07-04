@@ -5,6 +5,7 @@ Welcome to Sample Programs in Python!
 ## Sample Programs
 
 - [Hello World in Python](https://therenegadecoder.com/code/hello-world-in-python/)
+- Fizz Buzz in Python
 - [Reverse a String in Python](https://therenegadecoder.com/code/reverse-a-string-in-python/)
 - Game of Life in Python
 
