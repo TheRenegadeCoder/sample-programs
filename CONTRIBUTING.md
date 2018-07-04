@@ -5,16 +5,21 @@ for as many languages as possible.
 
 ## Table of Contents
 
-- [Repository Structure](#repository-structure)
-- [Naming Conventions](#naming-conventions)
-- [Articles](#articles)
-- [General Rules](#general-rules)
+- [Please Read](#please-read)
+  - [Repository Structure](#repository-structure)
+  - [Naming Conventions](#naming-conventions)
+  - [Articles](#articles)
+  - [Pull Requests](#pull-requests)
 - [Projects](#projects)
   - [Hello World Rules](#hello-world-rules)
   - [Reverse a String Rules](#reverse-a-string-rules)
   - [Game of Life Rules](#game-of-life-rules)
 
-## Repository Structure
+## Please Read
+
+In this section, we'll cover some of the essential topics for the repository.
+
+### Repository Structure
 
 Before we get into the contribution rules, we should probably get an understanding for
 how this repository is structured.
@@ -38,7 +43,7 @@ In addition, the README contains links to language references and a list of fun 
 Naturally, if you wish to add a completely new language to the repository, you'll
 need to follow this repository structure. Now, let's get to the rules!
 
-## Naming Conventions
+### Naming Conventions
 
 As a general rule, if you're adding a new language, please use lowercase alphanumeric
 character sequences separated by dashes only. If we do not adhere to this rule,
@@ -57,7 +62,7 @@ using c-star. The following table shares a few examples:
 
 Thanks for keeping this repository inclusive!
 
-## Articles
+### Articles
 
 As a bonus to this repository, there are associated articles for every script. However, the articles
 do take awhile to write, so you can help by writing them as well. 
@@ -73,7 +78,7 @@ Don't worry about the featured image; I'll add one before publishing.
 
 Also, anyone who writes an article will be granted collaborator status, so there's an incentive.
 
-## General Rules
+### Pull Requests
 
 If you wish to contribute, [fork](https://help.github.com/articles/fork-a-repo) the repo and make a pull request
 with your changes. Ideally, your contribution should be to existing projects,
@@ -123,7 +128,7 @@ At any rate, let's have some fun!
 
 ## Projects
 
-Below you'll find a list of all the current projects in this repository and their general rules.
+Below you'll find a list of all the current projects in this repository and their rules.
 
 ### Hello World Rules
 
