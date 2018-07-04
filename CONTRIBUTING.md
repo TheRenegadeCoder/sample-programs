@@ -3,6 +3,17 @@
 The goal of this project is to provide a variety of code snippets
 for as many languages as possible.
 
+## Table of Contents
+
+- [Repository Structure](#repository-structure)
+- [Naming Conventions](#naming-conventions)
+- [Articles](#articles)
+- [General Rules](#general-rules)
+- [Projects](#projects)
+  - [Hello World Rules](#hello-world-rules)
+  - [Reverse a String Rules](#reverse-a-string-rules)
+  - [Game of Life Rules](#game-of-life-rules)
+
 ## Repository Structure
 
 Before we get into the contribution rules, we should probably get an understanding for
@@ -110,14 +121,18 @@ Don't worry if you forget any of this; I have a check list of reminders in the p
 
 At any rate, let's have some fun!
 
-## Hello World Rules
+## Projects
+
+Below you'll find a list of all the current projects in this repository and their general rules.
+
+### Hello World Rules
 
 Hello World is a standard program used to introduce a programming language.
 As a result, the rules are pretty simple. For each language, create a program
 that writes the string "Hello, World!" to standard output. Ideally, the solution
 should be as simple as possible.
 
-## Reverse a String Rules
+### Reverse a String Rules
 
 While Hello World is simple, it often does not show off many interesting
 features of a language. Fortunately, this repository shares more samples than
@@ -129,7 +144,7 @@ contains surrogate pairs, the solution should not corrupt the string during reve
 Of course, this may not be practical in lower level languages like C, so
 just be reasonable.
 
-### Requirements
+#### Requirements
 
 Despite the explicit name, there are some rules in place for consistency.
 When writing a Reverse a String program, the following rules should apply:
@@ -146,7 +161,7 @@ language features and built-in libraries.
 External dependencies are unacceptable. Remember, the goal is to show off language
 features and utilities.
 
-### Test Cases
+#### Test Cases
 
 If the solution passes at least the first three test cases, then it's a good fit for the repo.
 The remaining strings are bonus. Please place an note in the README if the solution
@@ -161,7 +176,7 @@ only covers ASCII (i.e. [JavaScript](https://github.com/jrg94/sample-programs/bl
 | Chinese String | "字樣樣品" | "品樣樣字" |
 | Emoji String | "If this works: 🤑; If not: 😰" | "😰 :ton fI ;🤑 :skrow siht fI" |
 
-## Game of Life Rules
+### Game of Life Rules
 
 For those of you that don't know, the Game of Life is basically a cell
 simulation where cells are arranged in an infinite grid. Each cell has one
