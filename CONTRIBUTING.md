@@ -12,6 +12,7 @@ for as many languages as possible.
   - [Pull Requests](#pull-requests)
 - [Projects](#projects)
   - [Hello World Rules](#hello-world-rules)
+  - [Fizz Buzz Rules](#fizz-buzz-rules)
   - [Reverse a String Rules](#reverse-a-string-rules)
   - [Game of Life Rules](#game-of-life-rules)
 
@@ -136,6 +137,20 @@ Hello World is a standard program used to introduce a programming language.
 As a result, the rules are pretty simple. For each language, create a program
 that writes the string "Hello, World!" to standard output. Ideally, the solution
 should be as simple as possible.
+
+### Fizz Buzz Rules
+
+Fizz Buzz is a typical interview question which tests the developers knowledge of
+flow control and operators. For the purposes of this repository, the following
+rules apply:
+
+> Write a program that prints the numbers 1 to 100. However, for multiples of three,
+> print "Fizz" instead of the number. Meanwhile, for multiples of five, print "Buzz"
+> instead of the number. For numbers which are multiples of both three and five,
+> print "FizzBuzz"
+
+I was tempted to open this up such that the user could supply any number, but I think
+we get plenty of IO with some of the other projects in this repo. 
 
 ### Reverse a String Rules
 
