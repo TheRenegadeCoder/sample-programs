@@ -1,4 +1,4 @@
-# Sample Programs in Carp
+# Sample Programs in Clipper
 
 Welcome to Sample Programs in Clipper!
 
