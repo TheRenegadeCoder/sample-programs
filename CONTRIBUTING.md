@@ -68,16 +68,23 @@ Thanks for keeping this repository inclusive!
 As a bonus to this repository, there are associated articles for every script. However, the articles
 do take awhile to write, so you can help by writing them as well. 
 
-If you wish to help write articles, please let me know in the associated issue. That way, I can add
-you to the site, so you can draft your article.
+If you wish to help write articles, please let me know in the associated GitHub issue. 
+That way, I can add you to the site, so you can draft your article.
+
+In addition, **anyone who writes an article will be granted collaborator status**, so there's an incentive.
+
+#### Writing Guidelines
 
 When writing articles, try to follow the conventions of other articles in the series (i.e. keep the
-same structure). 
+same structure). When you're done, let me know in the associated GitHub issue, and 
+I'll schedule the article for publishing. 
+Don't worry about the featured image; I'll add one before publishing. 
 
-When you're done, let me know in the associated issue, and I'll schedule the article for publishing. 
-Don't worry about the featured image; I'll add one before publishing.
+#### Profile
 
-Also, anyone who writes an article will be granted collaborator status, so there's an incentive.
+Don't forget to update your profile as it will be displayed at the bottom of the article. If you want
+a proper profile image, make sure to setup a [Gravatar](https://en.gravatar.com/) 
+using the same email as your account.
 
 ### Pull Requests
 
