@@ -5,7 +5,7 @@ Welcome to Sample Programs in Scheme!
 ## Sample Programs
 
 - [Hello World in Scheme](https://therenegadecoder.com/code/hello-world-in-scheme/)
-- Reverse a String in Scheme
+- [Reverse a String in Scheme](https://therenegadecoder.com/code/reverse-a-string-in-scheme/)
 
 ## Fun Facts
 
