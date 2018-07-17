@@ -4,7 +4,7 @@ Welcome to Sample Programs in Wyvern!
 
 ## Sample Programs
 
-- Hello World in Wyvern
+- [Hello World in Wyvern](https://github.com/jrg94/sample-programs/issues/240)
 
 ## Fun Facts
 
