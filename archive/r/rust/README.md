@@ -5,7 +5,7 @@ Welcome to Sample Programs in Rust!
 ## Sample Programs
 
 - [Hello World in Rust](https://therenegadecoder.com/code/hello-world-in-rust/)
-- Reverse a String in Rust
+- [Reverse a String in Rust](https://github.com/jrg94/sample-programs/issues/261)
 
 ## Fun Facts
 
