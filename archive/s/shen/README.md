@@ -4,7 +4,7 @@ Welcome to Sample Programs in Shen!
 
 ## Sample Programs
 
-- Hello World in Shen
+- [Hello World in Shen](https://github.com/jrg94/sample-programs/issues/248)
 
 ## Fun Facts
 
