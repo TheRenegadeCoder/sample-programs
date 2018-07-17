@@ -121,7 +121,9 @@ Welcome to Sample Programs in [Insert Language Here]!
 ```
 
 In the section labeled [Insert List of Sample Program Additions Here], please add the name of the
-sample program you've added. Don't worry about linking to any articles. I will add those as needed.
+sample program you've added. Ideally, you would link to the article here. At this point, however, 
+the article doesn't exists. Instead, you should create an issue for the article and link the issue
+here.
 
 In addition, in the section labeled [Insert List of Fun Facts Here], please add fun information
 like when the language debuted, who develops the language, and what type system the language uses.
