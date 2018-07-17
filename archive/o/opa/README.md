@@ -4,7 +4,7 @@ Welcome to Sample Programs in Opa!
 
 ## Sample Programs
 
-- Hello World in Opa
+- [Hello World in Opa](https://github.com/jrg94/sample-programs/issues/281)
 
 ## Fun Facts
 
