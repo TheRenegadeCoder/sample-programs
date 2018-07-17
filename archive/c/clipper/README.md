@@ -4,7 +4,7 @@ Welcome to Sample Programs in Clipper!
 
 ## Sample Programs
 
-- Hello World in Clipper
+- [Hello World in Clipper](https://github.com/jrg94/sample-programs/issues/268)
 
 ## Fun Facts
 
