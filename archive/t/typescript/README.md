@@ -4,7 +4,7 @@ Welcome to Sample Programs in TypeScript!
 
 ## Sample Programs
 
-- Hello World in TypeScript
+- [Hello World in TypeScript](https://github.com/jrg94/sample-programs/issues/245)
 
 ## Fun Facts
 
