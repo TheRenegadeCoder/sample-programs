@@ -4,7 +4,7 @@ Welcome to Sample Programs in Golo!
 
 ## Sample Programs
 
-- Hello World in Golo
+- [Hello World in Golo](https://github.com/jrg94/sample-programs/issues/219)
 
 ## Fun Facts
 
