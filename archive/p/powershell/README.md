@@ -5,7 +5,7 @@ Welcome to Sample Programs in PowerShell!
 ## Sample Programs
 
 - [Hello World in PowerShell](https://therenegadecoder.com/code/hello-world-in-powershell/)
-- [Reverse String in PowerShell][2]
+- [Reverse String in PowerShell](https://github.com/jrg94/sample-programs/issues/226)
 
 ## Fun Facts
 
@@ -16,5 +16,3 @@ Welcome to Sample Programs in PowerShell!
 
 - [PowerShell Documentation](https://docs.microsoft.com/en-us/powershell/)
 - [Try It Online: PowerShell](https://tio.run/#powershell)
-
-[2]: ./Reverse-String.ps1
