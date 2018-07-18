@@ -5,7 +5,7 @@ Welcome to Sample Programs in Bash!
 ## Sample Programs
 
 - [Hello World in Bash](https://therenegadecoder.com/code/hello-world-in-bash/)
-- Reverse String in Bash
+- [Reverse String in Bash](https://github.com/jrg94/sample-programs/issues/159)
 
 ## Fun Facts
 
