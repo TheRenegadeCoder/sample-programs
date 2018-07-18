@@ -4,7 +4,7 @@ Welcome to Sample Programs in Ballerina!
 
 ## Sample Programs
 
-- Hello World in Ballerina
+- [Hello World in Ballerina](https://github.com/jrg94/sample-programs/issues/233)
 
 ## Fun Facts
 
