@@ -67,7 +67,6 @@ As a bit of a summary, here are a few links you can use to support this project:
 
 - [Support via PayPal](https://www.paypal.me/therenegadecoder)
 - [Turn off AdBlock When Using The Renegade Coder](https://help.getadblock.com/support/solutions/articles/6000163989-how-do-i-pause-or-disable-adblock-)
-- [Use The Renegade Coder Shop](https://therenegadecoder.com/shop/)
 - [Comment & Share Articles](https://therenegadecoder.com/code/hello-world-in-every-language/)
 - [Follow Me on Twitter](https://twitter.com/RenegadeCoder94)
 
