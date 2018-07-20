@@ -4,7 +4,7 @@ Welcome to Sample Programs in Ada!
 
 ## Sample Programs
 
-- Hello World in Ada
+- [Hello World in Ada](https://github.com/jrg94/sample-programs/issues/70)
 
 ## Fun Facts
 
