@@ -4,7 +4,7 @@ Welcome to Sample Programs in Brainfuck!
 
 ## Sample Programs
 
-- Hello World in Brainfuck
+- [Hello World in Brainfuck](https://github.com/jrg94/sample-programs/issues/75)
 
 ## Fun Facts
 
