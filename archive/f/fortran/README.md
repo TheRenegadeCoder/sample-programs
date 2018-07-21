@@ -4,7 +4,7 @@ Welcome to Sample Programs in Fortran!
 
 ## Sample Programs
 
-- Hello World in Fortran
+- [Hello World in Fortran](https://github.com/jrg94/sample-programs/issues/73)
 
 ## Fun Facts
 
