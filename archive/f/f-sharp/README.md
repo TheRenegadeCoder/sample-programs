@@ -4,7 +4,7 @@ Welcome to Sample Programs in F#!
 
 ## Sample Programs
 
-- Hello World in F#
+- [Hello World in F#](https://github.com/jrg94/sample-programs/issues/104)
 
 ## Fun Facts
 
