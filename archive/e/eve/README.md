@@ -4,7 +4,7 @@ Welcome to Sample Programs in Eve!
 
 ## Sample Programs
 
-- Hello World in Eve
+- [Hello World in Eve](https://github.com/jrg94/sample-programs/issues/99)
 
 ## Fun Facts
 
