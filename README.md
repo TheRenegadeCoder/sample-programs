@@ -31,7 +31,10 @@ At any rate, if articles sound interesting, here are a few to get you started:
 - [Reverse a String in Every Language](https://therenegadecoder.com/code/reverse-a-string-in-every-language/)
 - [The Coolest Programming Language Features](https://therenegadecoder.com/blog/the-coolest-programming-language-features/)
 
-Alternatively, feel free to leverage the links in the README files spread throughout the repository.
+Alternatively, feel free to leverage the links in the README files spread throughout the repository. 
+In addition, we have a rather extensive [wiki](https://github.com/jrg94/sample-programs/wiki) 
+which includes a table row for every language in the repository.
+For each language, you'll find information like open issues and contributors.
 
 ## Contribute
 
