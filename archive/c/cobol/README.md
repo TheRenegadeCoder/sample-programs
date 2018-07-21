@@ -4,7 +4,7 @@ Welcome to Sample Programs in COBOL!
 
 ## Sample Programs
 
-- Hello World in COBOL
+- [Hello World in COBOL](https://github.com/jrg94/sample-programs/issues/91)
 
 ## Fun Facts
 
