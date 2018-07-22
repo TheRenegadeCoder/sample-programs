@@ -4,7 +4,7 @@ Welcome to Sample Programs in Groovy!
 
 ## Sample Programs
 
-- Hello World in Groovy
+- [Hello World in Groovy](https://github.com/jrg94/sample-programs/issues/33)
 
 ## Fun Facts
 
