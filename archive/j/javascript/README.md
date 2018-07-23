@@ -5,7 +5,7 @@ Welcome to Sample Programs in JavaScript!
 ## Sample Programs
 
 - [Hello World in JavaScript](https://therenegadecoder.com/code/hello-world-in-javascript/)
-- Reverse a String in JavaScript (No Emoji Support)
+- [Reverse a String in JavaScript (No Emoji Support)](https://github.com/jrg94/sample-programs/issues/93)
 
 ## Fun Facts
 
