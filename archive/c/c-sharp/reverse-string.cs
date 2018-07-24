@@ -1,27 +1,22 @@
 using System;
-using System.Collections.Generic;
-using System.Globalization;
 
-public class ReverseString
+namespace SamplePrograms
 {
-  public static string Reverse(string input)
-  {
-    TextElementEnumerator enumerator = StringInfo.GetTextElementEnumerator(input);
-    List<string> elements = new List<string>();
-    while (enumerator.MoveNext())
+    public class ReverseString
     {
-      elements.Add(enumerator.GetTextElement());
-    }
-    elements.Reverse();
-    string reversed = string.Concat(elements);
-    return reversed;
-  }
+        public static string Reverse(string input)
+        {
+            var charArray = input.ToCharArray();
+            Array.Reverse(charArray);
+            return new string(charArray);
+        }
 
-  public static void Main(string[] args)
-  {
-    if (args.Length > 0)
-    {
-      System.Console.WriteLine(Reverse(args[0]));
+        public static void Main(string[] args)
+        {
+            if (args.Length > 0)
+            {
+                System.Console.WriteLine(Reverse(args[0]));
+            }
+        }
     }
-  }
 }
