@@ -1,27 +1,28 @@
-#define _POSIX_C_SOURCE 200809L
-
 #include <stdio.h>
+#include <string.h>
 
 int main(int argc, char **argv)
 {
-    char *line = NULL;
-    size_t bufsize;
-    ssize_t linelen;
-    size_t linepos;
+    char *text;
+    size_t textlen;
 
-    /* continuously read a line from stdin */
-    while ((linelen = getline(&line, &bufsize, stdin)) != EOF) {
-        /* start 1 earlier to discard the newline */
-        linepos = linelen - 1;
-
-        /* print characters in reverse */
-        while (linepos-- > 0) {
-            putchar(line[linepos]);
-        }
-
-        /* put an extra newline */
-        putchar('\n');
+    /* check argument count (trailing arguments are ignored) */
+    if (argc < 2) {
+        fputs("Not enough arguments", stderr);
+        return 1;
     }
+
+    /* get text from command line and calculate length */
+    text = argv[1];
+    textlen = strlen(text);
+
+    /* print characters in reverse */
+    while (textlen-- > 0) {
+        putchar(text[textlen]);
+    }
+
+    /* put a newline at the end */
+    putchar('\n');
 
     return 0;
 }
