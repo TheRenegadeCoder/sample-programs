@@ -70,7 +70,7 @@ do take awhile to write, so you can help by writing them as well.
 
 If you wish to help write articles, please [create an account](https://therenegadecoder.com/membership-join/membership-registration/) 
 over on The Renegade Coder. When you're done, let me know in the associated GitHub issue. 
-That way, I can add you to the site, so you can draft your article.
+That way, I can elevate your privileges, so you can draft your article.
 
 In addition, **anyone who writes an article will be granted collaborator status**, so there's an incentive.
 
