@@ -43,7 +43,9 @@ instructions](https://github.com/jrg94/sample-programs/blob/master/CONTRIBUTING.
 Please refer to this document before contributing to this repository.
 
 As an added note, I try to write articles for all the contributions. If you're interesting in helping out with
-that, let me know. I'm always excited to have support from guest authors.
+that, [register for an account](https://therenegadecoder.com/membership-join/membership-registration/) on The Renegade Coder. 
+When you're done, let me know, so I can elevate your priveleges. 
+I'm always excited to have support from guest authors.
 
 ## Code of Conduct
 
