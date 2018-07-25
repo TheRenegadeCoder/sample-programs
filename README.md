@@ -44,7 +44,7 @@ Please refer to this document before contributing to this repository.
 
 As an added note, I try to write articles for all the contributions. If you're interesting in helping out with
 that, [register for an account](https://therenegadecoder.com/membership-join/membership-registration/) on The Renegade Coder. 
-When you're done, let me know, so I can elevate your priveleges. 
+When you're done, let me know, so I can elevate your privileges. 
 I'm always excited to have support from guest authors.
 
 ## Code of Conduct
