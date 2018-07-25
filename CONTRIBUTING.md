@@ -72,6 +72,9 @@ If you wish to help write articles, please [create an account](https://therenega
 over on The Renegade Coder. When you're done, let me know in the associated GitHub issue. 
 That way, I can elevate your privileges, so you can draft your article.
 
+Once everything is setup, make sure you [bookmark the backend](https://therenegadecoder.com/wp-admin/). 
+That way, you can quickly get to the area where you can draft articles.
+
 In addition, **anyone who writes an article will be granted collaborator status**, so there's an incentive.
 
 #### Writing Guidelines
