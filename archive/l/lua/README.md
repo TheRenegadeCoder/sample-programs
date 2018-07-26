@@ -4,7 +4,7 @@ Welcome to Sample Programs in Lua!
 
 ## Sample Programs
 
-- Hello World in Lua
+- [Hello World in Lua](https://github.com/jrg94/sample-programs/issues/35)
 
 ## Fun Facts
 
