@@ -4,7 +4,7 @@ Welcome to Sample Programs in Lily!
 
 ## Sample Programs
 
-- Hello World in Lily
+- [Hello World in Lily](https://github.com/jrg94/sample-programs/issues/55)
 
 ## Fun Facts
 
