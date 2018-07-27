@@ -1,6 +1,10 @@
 # Sample Programs in Wu
 
-Welcome to Sample Programs in wu!
+Welcome to Sample Programs in Wu!
+
+## Sample Programs
+
+- [Hello World in Wu](https://github.com/jrg94/sample-programs/issues/294)
 
 ## Fun Facts
 
