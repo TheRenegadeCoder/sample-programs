@@ -4,7 +4,7 @@ Welcome to Sample Programs in Ring!
 
 ## Sample Programs
 
-- Hello World in Ring
+- [Hello World in Ring](https://github.com/jrg94/sample-programs/issues/64)
 
 ## Fun Facts
 
