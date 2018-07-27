@@ -4,7 +4,7 @@ Welcome to Sample Programs in Verilog!
 
 ## Sample Programs
 
-- Hello World in Verilog
+- [Hello World in Verilog](https://github.com/jrg94/sample-programs/issues/97)
 
 ## Fun Facts
 
