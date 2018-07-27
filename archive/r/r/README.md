@@ -4,7 +4,7 @@ Welcome to Sample Programs in R!
 
 ## Sample Programs
 
-- Hello World in R
+- [Hello World in R](https://github.com/jrg94/sample-programs/issues/102)
 
 ## Fun Facts
 
