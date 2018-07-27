@@ -1,0 +1,3 @@
+print: extern def<T>(..T)
+
+print("Hello World")
