@@ -15,8 +15,6 @@ class Repo:
                 language.analyze_language()
                 self.languages.append(language)
         self.compute_total_snippets()
-        for language in self.languages:
-            print(language)
 
     def compute_total_snippets(self):
         count = 0
