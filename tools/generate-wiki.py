@@ -88,7 +88,7 @@ class Wiki:
             num_of_snippets = sum([language.total_snippets for language in languages_by_letter])
             row = column_separator.join([letter_link, str(num_of_languages), str(num_of_snippets)])
             rows.append(row)
-        totals = column_separator.join(["**Totals**", str(len(self.repo.languages)), ""])
+        totals = column_separator.join(["**Totals**", str(len(self.repo.languages)), str(self.repo.total_snippets)])
         rows.append(totals)
         row_separator = "\n"
         page = row_separator.join(rows)
