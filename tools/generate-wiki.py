@@ -9,13 +9,11 @@ class Repo:
     def generate_repo(self):
         for root, directories, files in os.walk(self.source_dir):
             if not directories:
-                language = Language()
-                language.name = os.path.basename(root)
-                language.file_list = files
-                language.num_of_snippets = language.compute_total_snippets()
+                language = Language(os.path.basename(root), files)
+                language.analyze_language()
                 repo.languages.append(language)
         for language in repo.languages:
-            print(language.name + ": " + str(language.num_of_snippets))
+            print(language)
 
     def compute_total_snippets(self):
         count = 0
@@ -25,10 +23,16 @@ class Repo:
 
 
 class Language:
-    def __init__(self):
-        self.name = None
-        self.file_list = list()
+    def __init__(self, name, file_list):
+        self.name = name
+        self.file_list = file_list
         self.total_snippets = 0
+
+    def __str__(self):
+        return self.name + ": " + str(self.total_snippets)
+
+    def analyze_language(self):
+        self.compute_total_snippets()
 
     def compute_total_snippets(self):
         count = 0
@@ -36,7 +40,7 @@ class Language:
             file_name, file_ext = os.path.splitext(file)
             if file_ext not in (".md", ""):
                 count += 1
-        return count
+        self.total_snippets = count
 
 
 repo = Repo()
