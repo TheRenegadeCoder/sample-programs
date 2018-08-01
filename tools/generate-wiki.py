@@ -116,5 +116,6 @@ class Page:
         output_file.close()
 
 
-wiki = Wiki()
-wiki.build_wiki()
+if __name__ == '__main__':
+    wiki = Wiki()
+    wiki.build_wiki()
