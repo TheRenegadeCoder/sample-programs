@@ -4,9 +4,9 @@ from typing import List
 
 class Repo:
     def __init__(self):
-        self.source_dir = os.path.join("..", "archive")
-        self.languages = list()
-        self.total_snippets = 0
+        self.source_dir: str = os.path.join("..", "archive")
+        self.languages: List[Language] = list()
+        self.total_snippets: int = 0
 
     def analyze_repo(self):
         for root, directories, files in os.walk(self.source_dir):
