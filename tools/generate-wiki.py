@@ -1,10 +1,12 @@
 import os
 from typing import List
 
+
 class Repo:
     def __init__(self):
         self.source_dir = os.path.join("..", "archive")
         self.languages = list()
+        self.total_snippets = 0
 
     def analyze_repo(self):
         for root, directories, files in os.walk(self.source_dir):
@@ -12,14 +14,15 @@ class Repo:
                 language = Language(os.path.basename(root), root, files)
                 language.analyze_language()
                 self.languages.append(language)
+        self.compute_total_snippets()
         for language in self.languages:
             print(language)
 
     def compute_total_snippets(self):
         count = 0
         for language in self.languages:
-            count += language.compute_total_snippets()
-        return count
+            count += language.total_snippets
+        self.total_snippets = count
 
 
 class Language:
