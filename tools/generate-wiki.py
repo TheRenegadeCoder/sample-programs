@@ -57,10 +57,31 @@ class Language:
 class Wiki:
     def __init__(self):
         self.repo = None
+        self.pages = list()
+
+    @staticmethod
+    def build_link(text, url_base, page_name):
+        separator = ""
+        return separator.join(["[", text, "]", "(", url_base, page_name, ")"])
 
     def build_wiki(self):
         self.repo = Repo()
         self.repo.analyze_repo()
+        alphabetical_list = os.listdir(self.repo.source_dir)
+        column_separator = "|"
+        header = column_separator.join(["Collection", "# of Languages", "# of Snippets"])
+        divider = column_separator.join(["-----", "-----", "-----"])
+        rows = list()
+        rows.append(header)
+        rows.append(divider)
+        for letter in alphabetical_list:
+            letter_link = self.build_link(letter.capitalize(), "/jrg94/sample-programs/wiki/", letter.capitalize())
+            row = column_separator.join([letter_link, "", ""])
+            rows.append(row)
+        row_separator = "\n"
+        page = row_separator.join(rows)
+        self.pages.append(page)
+        print(page)
 
 
 wiki = Wiki()
