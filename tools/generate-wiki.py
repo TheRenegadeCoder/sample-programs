@@ -22,6 +22,10 @@ class Repo:
             count += language.total_snippets
         self.total_snippets = count
 
+    def compute_language_total_by_letter(self, letter):
+        language_list = [language for language in self.languages if language.name.startswith(letter)]
+        return len(language_list)
+
 
 class Language:
     def __init__(self, name: str, path: str, file_list: List[str]):
@@ -71,7 +75,7 @@ class Wiki:
 
     def build_alphabet_page(self):
         alphabetical_list = os.listdir(self.repo.source_dir)
-        column_separator = "|"
+        column_separator = " | "
         header = column_separator.join(["Collection", "# of Languages", "# of Snippets"])
         divider = column_separator.join(["-----", "-----", "-----"])
         rows = list()
@@ -79,8 +83,11 @@ class Wiki:
         rows.append(divider)
         for letter in alphabetical_list:
             letter_link = self.build_link(letter.capitalize(), letter.capitalize())
-            row = column_separator.join([letter_link, "", ""])
+            num_of_languages = self.repo.compute_language_total_by_letter(letter)
+            row = column_separator.join([letter_link, str(num_of_languages), ""])
             rows.append(row)
+        totals = column_separator.join(["**Totals**", str(len(self.repo.languages)), ""])
+        rows.append(totals)
         row_separator = "\n"
         page = row_separator.join(rows)
         self.pages.append(page)
