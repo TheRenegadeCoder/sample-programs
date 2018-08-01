@@ -22,9 +22,9 @@ class Repo:
             count += language.total_snippets
         self.total_snippets = count
 
-    def compute_language_total_by_letter(self, letter):
+    def get_languages_by_letter(self, letter):
         language_list = [language for language in self.languages if language.name.startswith(letter)]
-        return len(language_list)
+        return language_list
 
 
 class Language:
@@ -83,8 +83,10 @@ class Wiki:
         rows.append(divider)
         for letter in alphabetical_list:
             letter_link = self.build_link(letter.capitalize(), letter.capitalize())
-            num_of_languages = self.repo.compute_language_total_by_letter(letter)
-            row = column_separator.join([letter_link, str(num_of_languages), ""])
+            languages_by_letter = self.repo.get_languages_by_letter(letter)
+            num_of_languages = len(languages_by_letter)
+            num_of_snippets = sum([language.total_snippets for language in languages_by_letter])
+            row = column_separator.join([letter_link, str(num_of_languages), str(num_of_snippets)])
             rows.append(row)
         totals = column_separator.join(["**Totals**", str(len(self.repo.languages)), ""])
         rows.append(totals)
