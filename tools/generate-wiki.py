@@ -72,6 +72,7 @@ class Wiki:
         self.repo = Repo()
         self.repo.analyze_repo()
         self.build_alphabet_catalog()
+        self.build_alphabet_pages()
         self.output_pages()
 
     def output_pages(self):
@@ -101,16 +102,16 @@ class Wiki:
 
     def build_alphabet_pages(self):
         alphabetical_list = os.listdir(self.repo.source_dir)
-        column_separator = " | "
-        header = column_separator.join(["Language", "Article(s)", "Issue(s)", "# of Snippets", "Contributors"])
-        divider = column_separator.join(["-----", "-----", "-----", "-----", "-----"])
-        rows = list()
-        rows.append(header)
-        rows.append(divider)
         for letter in alphabetical_list:
+            rows = list()
             introduction = """The following table contains all the existing languages 
             in the repository that start with the letter %s:""" % letter.capitalize()
+            column_separator = " | "
+            header = column_separator.join(["Language", "Article(s)", "Issue(s)", "# of Snippets", "Contributors"])
+            divider = column_separator.join(["-----", "-----", "-----", "-----", "-----"])
             rows.append(introduction)
+            rows.append(header)
+            rows.append(divider)
             languages_by_letter = self.repo.get_languages_by_letter(letter)
             for language in languages_by_letter:
                 row = column_separator.join([language.name, "", "", str(language.total_snippets), ""])
