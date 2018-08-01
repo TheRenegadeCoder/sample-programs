@@ -22,6 +22,10 @@ class Repo:
             count += language.total_snippets
         self.total_snippets = count
 
+    def get_languages_by_letter(self, letter):
+        language_list = [language for language in self.languages if language.name.startswith(letter)]
+        return language_list
+
 
 class Language:
     def __init__(self, name: str, path: str, file_list: List[str]):
@@ -56,12 +60,83 @@ class Language:
 
 class Wiki:
     def __init__(self):
-        self.repo = None
+        self.repo: Repo = None
+        self.url_base: str = "/jrg94/sample-programs/wiki/"
+        self.pages: List[Page] = list()
+
+    def build_link(self, text, page_name):
+        separator = ""
+        return separator.join(["[", text, "]", "(", self.url_base, page_name, ")"])
 
     def build_wiki(self):
         self.repo = Repo()
         self.repo.analyze_repo()
+        self.build_alphabet_catalog()
+        self.build_alphabet_pages()
+        self.output_pages()
+
+    def output_pages(self):
+        for page in self.pages:
+            page.output_page()
+
+    def build_alphabet_catalog(self):
+        alphabetical_list = os.listdir(self.repo.source_dir)
+        column_separator = " | "
+        header = column_separator.join(["Collection", "# of Languages", "# of Snippets"])
+        divider = column_separator.join(["-----", "-----", "-----"])
+        rows = list()
+        rows.append(header)
+        rows.append(divider)
+        for letter in alphabetical_list:
+            letter_link = self.build_link(letter.capitalize(), letter.capitalize())
+            languages_by_letter = self.repo.get_languages_by_letter(letter)
+            num_of_languages = len(languages_by_letter)
+            num_of_snippets = sum([language.total_snippets for language in languages_by_letter])
+            row = column_separator.join([letter_link, str(num_of_languages), str(num_of_snippets)])
+            rows.append(row)
+        totals = column_separator.join(["**Totals**", str(len(self.repo.languages)), str(self.repo.total_snippets)])
+        rows.append(totals)
+        row_separator = "\n"
+        page_content = row_separator.join(rows)
+        self.pages.append(Page("Alphabetical Language Catalog", page_content))
+
+    def build_alphabet_pages(self):
+        alphabetical_list = os.listdir(self.repo.source_dir)
+        for letter in alphabetical_list:
+            rows = list()
+            introduction = """The following table contains all the existing languages 
+            in the repository that start with the letter %s:""" % letter.capitalize()
+            column_separator = " | "
+            header = column_separator.join(["Language", "Article(s)", "Issue(s)", "# of Snippets", "Contributors"])
+            divider = column_separator.join(["-----", "-----", "-----", "-----", "-----"])
+            rows.append(introduction)
+            rows.append(header)
+            rows.append(divider)
+            languages_by_letter = self.repo.get_languages_by_letter(letter)
+            for language in languages_by_letter:
+                row = column_separator.join([language.name, "", "", str(language.total_snippets), ""])
+                rows.append(row)
+            row_separator = "\n"
+            page_content = row_separator.join(rows)
+            self.pages.append(Page(letter.capitalize(), page_content))
 
 
-wiki = Wiki()
-wiki.build_wiki()
+class Page:
+    def __init__(self, name, content):
+        self.name: str = name
+        self.content: str = content
+
+    def __str__(self):
+        return self.name + "\n" + self.content
+
+    def output_page(self):
+        separator = "-"
+        file_name = separator.join(self.name.split()) + ".md"
+        output_file = open(file_name, "w+")
+        output_file.write(self.content)
+        output_file.close()
+
+
+if __name__ == '__main__':
+    wiki = Wiki()
+    wiki.build_wiki()
