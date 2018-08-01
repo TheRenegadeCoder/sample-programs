@@ -71,14 +71,14 @@ class Wiki:
     def build_wiki(self):
         self.repo = Repo()
         self.repo.analyze_repo()
-        self.build_alphabet_page()
+        self.build_alphabet_catalog()
         self.output_pages()
 
     def output_pages(self):
         for page in self.pages:
             page.output_page()
 
-    def build_alphabet_page(self):
+    def build_alphabet_catalog(self):
         alphabetical_list = os.listdir(self.repo.source_dir)
         column_separator = " | "
         header = column_separator.join(["Collection", "# of Languages", "# of Snippets"])
@@ -98,6 +98,26 @@ class Wiki:
         row_separator = "\n"
         page_content = row_separator.join(rows)
         self.pages.append(Page("Alphabetical Language Catalog", page_content))
+
+    def build_alphabet_pages(self):
+        alphabetical_list = os.listdir(self.repo.source_dir)
+        column_separator = " | "
+        header = column_separator.join(["Language", "Article(s)", "Issue(s)", "# of Snippets", "Contributors"])
+        divider = column_separator.join(["-----", "-----", "-----", "-----", "-----"])
+        rows = list()
+        rows.append(header)
+        rows.append(divider)
+        for letter in alphabetical_list:
+            introduction = """The following table contains all the existing languages 
+            in the repository that start with the letter %s:""" % letter.capitalize()
+            rows.append(introduction)
+            languages_by_letter = self.repo.get_languages_by_letter(letter)
+            for language in languages_by_letter:
+                row = column_separator.join([language.name, "", "", str(language.total_snippets), ""])
+                rows.append(row)
+            row_separator = "\n"
+            page_content = row_separator.join(rows)
+            self.pages.append(Page(letter.capitalize(), page_content))
 
 
 class Page:
