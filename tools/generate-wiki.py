@@ -60,9 +60,9 @@ class Language:
 
 class Wiki:
     def __init__(self):
-        self.repo = None
-        self.url_base = "/jrg94/sample-programs/wiki/"
-        self.pages = list()
+        self.repo: Repo = None
+        self.url_base: str = "/jrg94/sample-programs/wiki/"
+        self.pages: List[Page] = list()
 
     def build_link(self, text, page_name):
         separator = ""
@@ -72,6 +72,11 @@ class Wiki:
         self.repo = Repo()
         self.repo.analyze_repo()
         self.build_alphabet_page()
+        self.output_pages()
+
+    def output_pages(self):
+        for page in self.pages:
+            page.output_page()
 
     def build_alphabet_page(self):
         alphabetical_list = os.listdir(self.repo.source_dir)
@@ -91,9 +96,24 @@ class Wiki:
         totals = column_separator.join(["**Totals**", str(len(self.repo.languages)), str(self.repo.total_snippets)])
         rows.append(totals)
         row_separator = "\n"
-        page = row_separator.join(rows)
-        self.pages.append(page)
-        print(page)
+        page_content = row_separator.join(rows)
+        self.pages.append(Page("Alphabetical Language Catalog", page_content))
+
+
+class Page:
+    def __init__(self, name, content):
+        self.name: str = name
+        self.content: str = content
+
+    def __str__(self):
+        return self.name + "\n" + self.content
+
+    def output_page(self):
+        separator = "-"
+        file_name = separator.join(self.name.split()) + ".md"
+        output_file = open(file_name, "w+")
+        output_file.write(self.content)
+        output_file.close()
 
 
 wiki = Wiki()
