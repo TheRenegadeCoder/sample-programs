@@ -143,18 +143,18 @@ class Wiki:
             self.pages.append(page)
 
     def build_alphabet_page(self, letter):
-        page = Page(letter)
+        page = Page(letter.capitalize())
         introduction = """The following table contains all the existing languages 
                     in the repository that start with the letter %s:""" % letter.capitalize()
         page.add_row(introduction)
         page.add_section_break()
-        page.add_table_header("Language", "Article(s)", "Issue(s)", "# of Snippets", "Contributors")
+        page.add_table_header("Language", "Article(s)", "Issue(s)", "# of Snippets")
         languages_by_letter = self.repo.get_languages_by_letter(letter)
         for language in languages_by_letter:
             language_link = self.build_repo_link(language.name.capitalize(), letter, language.name)
             tag_link = self.build_tag_link(language.name)
             issues_link = self.build_issue_link(language.name)
-            page.add_table_row(language_link, tag_link, issues_link, str(language.total_snippets), "")
+            page.add_table_row(language_link, tag_link, issues_link, str(language.total_snippets))
         page.add_section_break()
         return page
 
