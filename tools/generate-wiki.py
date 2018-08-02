@@ -129,8 +129,17 @@ class Wiki:
 
     def build_alphabet_pages(self):
         alphabetical_list = os.listdir(self.repo.source_dir)
-        for letter in alphabetical_list:
+        for index, letter in enumerate(alphabetical_list):
             page = self.build_alphabet_page(letter)
+            previous_index = index - 1
+            next_index = (index + 1) % len(alphabetical_list)
+            previous_letter = alphabetical_list[previous_index].capitalize()
+            next_letter = alphabetical_list[next_index].capitalize()
+            previous_text = "Previous (%s)" % previous_letter
+            next_text = "Next (%s)" % next_letter
+            previous_link = self.build_wiki_link(previous_text, previous_letter)
+            next_link = self.build_wiki_link(next_text, next_letter)
+            page.add_table_header(previous_link, next_link)
             self.pages.append(page)
 
     def build_alphabet_page(self, letter):
@@ -138,6 +147,7 @@ class Wiki:
         introduction = """The following table contains all the existing languages 
                     in the repository that start with the letter %s:""" % letter.capitalize()
         page.add_row(introduction)
+        page.add_section_break()
         page.add_table_header("Language", "Article(s)", "Issue(s)", "# of Snippets", "Contributors")
         languages_by_letter = self.repo.get_languages_by_letter(letter)
         for language in languages_by_letter:
@@ -145,13 +155,14 @@ class Wiki:
             tag_link = self.build_tag_link(language.name)
             issues_link = self.build_issue_link(language.name)
             page.add_table_row(language_link, tag_link, issues_link, str(language.total_snippets), "")
-        # TODO: Add navigation links
+        page.add_section_break()
         return page
 
 
 class Page:
     def __init__(self, name: str):
         self.name: str = name
+        self.wiki_url_base: str = "/jrg94/sample-programs/wiki/"
         self.content: List(str) = list()
 
     def __str__(self):
@@ -174,6 +185,9 @@ class Page:
         column_separator = " | "
         row = column_separator.join(args)
         self.content.append(row)
+
+    def add_section_break(self):
+        self.content.append("")
 
     def output_page(self):
         separator = "-"
