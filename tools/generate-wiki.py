@@ -1,4 +1,5 @@
 import os
+import pathlib
 from typing import List
 
 
@@ -132,7 +133,9 @@ class Page:
     def output_page(self):
         separator = "-"
         file_name = separator.join(self.name.split()) + ".md"
-        output_file = open(file_name, "w+")
+        dump_dir = 'wiki'
+        pathlib.Path(dump_dir).mkdir(parents=True, exist_ok=True)
+        output_file = open(os.path.join(dump_dir, file_name), "w+")
         output_file.write(self.content)
         output_file.close()
 
