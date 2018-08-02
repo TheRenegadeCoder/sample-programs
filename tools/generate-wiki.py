@@ -145,6 +145,7 @@ class Wiki:
             tag_link = self.build_tag_link(language.name)
             issues_link = self.build_issue_link(language.name)
             page.add_table_row(language_link, tag_link, issues_link, str(language.total_snippets), "")
+        # TODO: Add navigation links
         return page
 
 
