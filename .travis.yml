@@ -4,5 +4,5 @@ python:
 script:
   - cd tools
   - python generate-wiki.py
-  - git clone git@github.com:jrg94/sample-programs.wiki.git
+  - git clone https://github.com/jrg94/sample-programs.wiki.git
   - ls
