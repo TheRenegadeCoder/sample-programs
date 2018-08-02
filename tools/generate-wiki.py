@@ -1,5 +1,6 @@
 import os
 import pathlib
+import urllib.request
 from typing import List
 
 
@@ -64,18 +65,38 @@ class Wiki:
         self.repo: Repo = None
         self.wiki_url_base: str = "/jrg94/sample-programs/wiki/"
         self.repo_url_base: str = "/jrg94/sample-programs/tree/master/archive/"
+        self.tag_url_base: str = "https://therenegadecoder.com/tag/"
         self.pages: List[Page] = list()
 
     @staticmethod
-    def build_link(text, url):
+    def build_link(text: str, url: str) -> str:
         separator = ""
         return separator.join(["[", text, "]", "(", url, ")"])
 
-    def build_wiki_link(self, text: str, page_name: str):
+    @staticmethod
+    def verify_link(url):
+        request = urllib.request.Request(url)
+        request.get_method = lambda: 'HEAD'
+        print("Trying: ", url)
+        try:
+            urllib.request.urlopen(request)
+            return True
+        except urllib.request.HTTPError:
+            return False
+
+    def build_wiki_link(self, text: str, page_name: str) -> str:
         return self.build_link(text, self.wiki_url_base + page_name)
 
-    def build_repo_link(self, text: str, letter: str, language: str):
+    def build_repo_link(self, text: str, letter: str, language: str) -> str:
         return self.build_link(text, self.repo_url_base + letter + "/" + language)
+
+    def build_tag_link(self, language):
+        test_url = self.tag_url_base + language
+        if not self.verify_link(test_url):
+            markdown_url = ""
+        else:
+            markdown_url = self.build_link("Here", test_url)
+        return markdown_url
 
     def build_wiki(self):
         self.repo = Repo()
@@ -128,7 +149,8 @@ class Wiki:
         languages_by_letter = self.repo.get_languages_by_letter(letter)
         for language in languages_by_letter:
             language_link = self.build_repo_link(language.name.capitalize(), letter, language.name)
-            row = column_separator.join([language_link, "", "", str(language.total_snippets), ""])
+            tag_link = self.build_tag_link(language.name)
+            row = column_separator.join([language_link, tag_link, "", str(language.total_snippets), ""])
             rows.append(row)
         row_separator = "\n"
         page_content = row_separator.join(rows)
