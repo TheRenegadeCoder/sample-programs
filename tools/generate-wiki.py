@@ -66,13 +66,16 @@ class Wiki:
         self.repo_url_base: str = "/jrg94/sample-programs/tree/master/archive/"
         self.pages: List[Page] = list()
 
-    def build_wiki_link(self, text: str, page_name: str):
+    @staticmethod
+    def build_link(text, url):
         separator = ""
-        return separator.join(["[", text, "]", "(", self.wiki_url_base, page_name, ")"])
+        return separator.join(["[", text, "]", "(", url, ")"])
+
+    def build_wiki_link(self, text: str, page_name: str):
+        return self.build_link(text, self.wiki_url_base + page_name)
 
     def build_repo_link(self, text: str, letter: str, language: str):
-        separator = ""
-        return separator.join(["[", text, "]", "(", self.repo_url_base, letter, "/", language, ")"])
+        return self.build_link(text, self.repo_url_base + letter + "/" + language)
 
     def build_wiki(self):
         self.repo = Repo()
