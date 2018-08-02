@@ -5,7 +5,7 @@ script:
   - cd tools
   - python generate-wiki.py
   - git clone https://github.com/jrg94/sample-programs.wiki.git
-  - mv wiki/* sample.wiki/*
+  - mv wiki/* sample-programs.wiki/*
   - cd sample-programs.wiki
   - git add .
   - git commit -m "Generated Wiki via Travis-CI"
