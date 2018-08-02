@@ -115,25 +115,17 @@ class Wiki:
             page.output_page()
 
     def build_alphabet_catalog(self):
+        page = Page("Alphabetical Language Catalog")
         alphabetical_list = os.listdir(self.repo.source_dir)
-        column_separator = " | "
-        header = column_separator.join(["Collection", "# of Languages", "# of Snippets"])
-        divider = column_separator.join(["-----", "-----", "-----"])
-        rows = list()
-        rows.append(header)
-        rows.append(divider)
+        page.add_table_header("Collection", "# of Languages", "# of Snippets")
         for letter in alphabetical_list:
             letter_link = self.build_wiki_link(letter.capitalize(), letter.capitalize())
             languages_by_letter = self.repo.get_languages_by_letter(letter)
             num_of_languages = len(languages_by_letter)
             num_of_snippets = sum([language.total_snippets for language in languages_by_letter])
-            row = column_separator.join([letter_link, str(num_of_languages), str(num_of_snippets)])
-            rows.append(row)
-        totals = column_separator.join(["**Totals**", str(len(self.repo.languages)), str(self.repo.total_snippets)])
-        rows.append(totals)
-        row_separator = "\n"
-        page_content = row_separator.join(rows)
-        self.pages.append(Page("Alphabetical Language Catalog", page_content))
+            page.add_table_row(letter_link, str(num_of_languages), str(num_of_snippets))
+        page.add_table_row("**Totals**", str(len(self.repo.languages)), str(self.repo.total_snippets))
+        self.pages.append(page)
 
     def build_alphabet_pages(self):
         alphabetical_list = os.listdir(self.repo.source_dir)
@@ -142,34 +134,45 @@ class Wiki:
             self.pages.append(page)
 
     def build_alphabet_page(self, letter):
-        rows = list()
+        page = Page(letter)
         introduction = """The following table contains all the existing languages 
                     in the repository that start with the letter %s:""" % letter.capitalize()
-        column_separator = " | "
-        header = column_separator.join(["Language", "Article(s)", "Issue(s)", "# of Snippets", "Contributors"])
-        divider = column_separator.join(["-----", "-----", "-----", "-----", "-----"])
-        rows.append(introduction)
-        rows.append(header)
-        rows.append(divider)
+        page.add_row(introduction)
+        page.add_table_header("Language", "Article(s)", "Issue(s)", "# of Snippets", "Contributors")
         languages_by_letter = self.repo.get_languages_by_letter(letter)
         for language in languages_by_letter:
             language_link = self.build_repo_link(language.name.capitalize(), letter, language.name)
             tag_link = self.build_tag_link(language.name)
             issues_link = self.build_issue_link(language.name)
-            row = column_separator.join([language_link, tag_link, issues_link, str(language.total_snippets), ""])
-            rows.append(row)
-        row_separator = "\n"
-        page_content = row_separator.join(rows)
-        return Page(letter.capitalize(), page_content)
+            page.add_table_row(language_link, tag_link, issues_link, str(language.total_snippets), "")
+        return page
 
 
 class Page:
-    def __init__(self, name, content):
+    def __init__(self, name: str):
         self.name: str = name
-        self.content: str = content
+        self.content: List(str) = list()
 
     def __str__(self):
-        return self.name + "\n" + self.content
+        return self.name + self._build_page()
+
+    def _build_page(self):
+        return "\n".join(self.content)
+
+    def add_row(self, row: str):
+        self.content.append(row)
+
+    def add_table_header(self, *args):
+        column_separator = " | "
+        header = column_separator.join(args)
+        divider = column_separator.join(["-----"] * len(args))
+        self.content.append(header)
+        self.content.append(divider)
+
+    def add_table_row(self, *args):
+        column_separator = " | "
+        row = column_separator.join(args)
+        self.content.append(row)
 
     def output_page(self):
         separator = "-"
@@ -177,7 +180,7 @@ class Page:
         dump_dir = 'wiki'
         pathlib.Path(dump_dir).mkdir(parents=True, exist_ok=True)
         output_file = open(os.path.join(dump_dir, file_name), "w+")
-        output_file.write(self.content)
+        output_file.write(self._build_page())
         output_file.close()
 
 
