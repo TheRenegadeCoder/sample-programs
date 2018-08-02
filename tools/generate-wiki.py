@@ -1,4 +1,6 @@
 import os
+import pathlib
+import urllib.request
 from typing import List
 
 
@@ -61,12 +63,45 @@ class Language:
 class Wiki:
     def __init__(self):
         self.repo: Repo = None
-        self.url_base: str = "/jrg94/sample-programs/wiki/"
+        self.wiki_url_base: str = "/jrg94/sample-programs/wiki/"
+        self.repo_url_base: str = "/jrg94/sample-programs/tree/master/archive/"
+        self.tag_url_base: str = "https://therenegadecoder.com/tag/"
+        self.issue_url_base: str = "/jrg94/sample-programs/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+"
         self.pages: List[Page] = list()
 
-    def build_link(self, text, page_name):
+    @staticmethod
+    def _build_link(text: str, url: str) -> str:
         separator = ""
-        return separator.join(["[", text, "]", "(", self.url_base, page_name, ")"])
+        return separator.join(["[", text, "]", "(", url, ")"])
+
+    @staticmethod
+    def verify_link(url):
+        request = urllib.request.Request(url)
+        request.get_method = lambda: 'HEAD'
+        print("Trying: ", url)
+        try:
+            urllib.request.urlopen(request)
+            return True
+        except urllib.request.HTTPError:
+            return False
+
+    def build_wiki_link(self, text: str, page_name: str) -> str:
+        return self._build_link(text, self.wiki_url_base + page_name)
+
+    def build_repo_link(self, text: str, letter: str, language: str) -> str:
+        return self._build_link(text, self.repo_url_base + letter + "/" + language)
+
+    def build_tag_link(self, language):
+        test_url = self.tag_url_base + language
+        if not self.verify_link(test_url):
+            markdown_url = ""
+        else:
+            markdown_url = self._build_link("Here", test_url)
+        return markdown_url
+
+    def build_issue_link(self, language: str):
+        lang_query = language.replace("-", "+")
+        return self._build_link("Here", self.issue_url_base + lang_query)
 
     def build_wiki(self):
         self.repo = Repo()
@@ -88,7 +123,7 @@ class Wiki:
         rows.append(header)
         rows.append(divider)
         for letter in alphabetical_list:
-            letter_link = self.build_link(letter.capitalize(), letter.capitalize())
+            letter_link = self.build_wiki_link(letter.capitalize(), letter.capitalize())
             languages_by_letter = self.repo.get_languages_by_letter(letter)
             num_of_languages = len(languages_by_letter)
             num_of_snippets = sum([language.total_snippets for language in languages_by_letter])
@@ -103,22 +138,29 @@ class Wiki:
     def build_alphabet_pages(self):
         alphabetical_list = os.listdir(self.repo.source_dir)
         for letter in alphabetical_list:
-            rows = list()
-            introduction = """The following table contains all the existing languages 
-            in the repository that start with the letter %s:""" % letter.capitalize()
-            column_separator = " | "
-            header = column_separator.join(["Language", "Article(s)", "Issue(s)", "# of Snippets", "Contributors"])
-            divider = column_separator.join(["-----", "-----", "-----", "-----", "-----"])
-            rows.append(introduction)
-            rows.append(header)
-            rows.append(divider)
-            languages_by_letter = self.repo.get_languages_by_letter(letter)
-            for language in languages_by_letter:
-                row = column_separator.join([language.name, "", "", str(language.total_snippets), ""])
-                rows.append(row)
-            row_separator = "\n"
-            page_content = row_separator.join(rows)
-            self.pages.append(Page(letter.capitalize(), page_content))
+            page = self.build_alphabet_page(letter)
+            self.pages.append(page)
+
+    def build_alphabet_page(self, letter):
+        rows = list()
+        introduction = """The following table contains all the existing languages 
+                    in the repository that start with the letter %s:""" % letter.capitalize()
+        column_separator = " | "
+        header = column_separator.join(["Language", "Article(s)", "Issue(s)", "# of Snippets", "Contributors"])
+        divider = column_separator.join(["-----", "-----", "-----", "-----", "-----"])
+        rows.append(introduction)
+        rows.append(header)
+        rows.append(divider)
+        languages_by_letter = self.repo.get_languages_by_letter(letter)
+        for language in languages_by_letter:
+            language_link = self.build_repo_link(language.name.capitalize(), letter, language.name)
+            tag_link = self.build_tag_link(language.name)
+            issues_link = self.build_issue_link(language.name)
+            row = column_separator.join([language_link, tag_link, issues_link, str(language.total_snippets), ""])
+            rows.append(row)
+        row_separator = "\n"
+        page_content = row_separator.join(rows)
+        return Page(letter.capitalize(), page_content)
 
 
 class Page:
@@ -132,7 +174,9 @@ class Page:
     def output_page(self):
         separator = "-"
         file_name = separator.join(self.name.split()) + ".md"
-        output_file = open(file_name, "w+")
+        dump_dir = 'wiki'
+        pathlib.Path(dump_dir).mkdir(parents=True, exist_ok=True)
+        output_file = open(os.path.join(dump_dir, file_name), "w+")
         output_file.write(self.content)
         output_file.close()
 
