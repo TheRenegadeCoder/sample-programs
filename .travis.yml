@@ -1,8 +1,5 @@
-before_install:
-  - chmod +x tools/generate-wiki.py
 language: python
 python:
   - "3.6"
 script:
-  - ls
-  - tools/generate-wiki.py
+  - python tools/generate-wiki.py
