@@ -1,9 +1,11 @@
-branches:
-  only:
-    - master
 language: python
 python:
   - "3.6"
+
+branches:
+  only:
+    - master
+
 script:
   - cd tools
   - python generate-wiki.py
@@ -13,3 +15,6 @@ script:
   - git add .
   - git commit -m "Generated Wiki via Travis-CI"
   - git push
+
+notifications:
+  email: false
