@@ -8,14 +8,14 @@ python:
 
 script:
   - cd tools
-  - python generate-wiki.py
+#  - python generate-wiki.py
   - cd ..
 
 after_success:
   - cd ..
   - git config --global user.email "${GITHUB_EMAIL}"
   - git config --global user.name "${GITHUB_USERNAME}"
-  - git clone "https://${GITHUB_USERNAME}:${GITHUB_TOKEN}@github.com/${GITHUB_EMAIL}/sample-programs.wiki.git"
+  - git clone "https://github.com/${GITHUB_EMAIL}/sample-programs.wiki.git"
   - mv -v sample-programs/tools/wiki/* sample-programs.wiki/
   - cd sample-programs.wiki
   - git add .
