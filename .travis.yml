@@ -8,7 +8,7 @@ script:
   - cd ..
   - cd ..
   - git clone https://github.com/jrg94/sample-programs.wiki.git
-  - mv sample-programs/tools/wiki/* sample-programs.wiki/*
+  - mv sample-programs/tools/wiki/* sample-programs.wiki/
   - cd sample-programs.wiki
   - git add .
   - git commit -m "Generated Wiki via Travis-CI"
