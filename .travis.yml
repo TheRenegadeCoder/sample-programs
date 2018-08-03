@@ -8,7 +8,7 @@ branches:
 
 script:
   - cd tools
-#  - python generate-wiki.py
+  - python generate-wiki.py
   - cd ..
 
 after_success:
