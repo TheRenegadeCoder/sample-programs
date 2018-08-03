@@ -2,11 +2,20 @@ language: python
 python:
   - "3.6"
 
+# branches:
+  # only:
+    # - master
+
 script:
   - cd tools
   - python generate-wiki.py
+
+after_success:
+  - ls
   - cd ..
+  - ls
   - cd ..
+  - ls
   - git clone https://github.com/jrg94/sample-programs.wiki.git
   - mv sample-programs/tools/wiki/* sample-programs.wiki/
   - cd sample-programs.wiki
