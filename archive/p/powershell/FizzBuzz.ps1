@@ -50,9 +50,9 @@ param (
   $Max = 100
 )
 
-for ($x = $Min; $x -le $Max; $x++) {
-  $Threes = $x % 3
-  $Fives = $x % 5
+for ($X = $Min; $X -le $Max; $X++) {
+  $Threes = $X % 3
+  $Fives = $X % 5
 
   if (($Fives -eq 0) -and ($Threes -eq 0)) {
     Write-Output "FizzBuzz"
@@ -61,6 +61,6 @@ for ($x = $Min; $x -le $Max; $x++) {
   } elseif ($Fives -eq 0) {
     Write-Output "Buzz"
   } else {
-    Write-Output $x
+    Write-Output $X
   }
 }
