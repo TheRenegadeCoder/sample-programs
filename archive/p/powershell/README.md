@@ -6,6 +6,7 @@ Welcome to Sample Programs in PowerShell!
 
 - [Hello World in PowerShell](https://therenegadecoder.com/code/hello-world-in-powershell/)
 - [Reverse String in PowerShell](https://github.com/jrg94/sample-programs/issues/226)
+- [FizzBuzz in PowerShell](https://github.com/jrg94/sample-programs/issues/312)
 
 ## Fun Facts
 
