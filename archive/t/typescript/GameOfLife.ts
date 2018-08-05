@@ -26,12 +26,13 @@ module Conway {
         constructor(){
             this.gridSize = 50;
             this.canvasSize = 600;
-            this.lineColor = '#cdcdcd';
-            this.liveColor = '#666';
-            this.deadColor = '#eee';
+            this.lineColor = "#cdcdcd";
+            this.liveColor = "#10f";
+            this.deadColor = "#b01";
             this.initialLifeProbability = 0.5;
             this.animationRate = 60;
             this.cellSize = 0;
+            this.context = null;
             this.world = this.createWorld();
             this.circleOfLife();
         }
@@ -60,7 +61,7 @@ module Conway {
             let newCell = new Cell(cell.row, cell.col, cell.live);
             if(count < 2 || count > 3){
                 newCell.live = false;
-            } else if(count == 3){
+            } else if(count === 3){
                 newCell.live = true;
             }
             return newCell;
@@ -70,7 +71,7 @@ module Conway {
             var neighbors = 0;
             for (let row = -1; row <= 1; row++) {
                 for (let col = -1; col <= 1; col++) {
-                    if(row == 0 && col == 0) continue;
+                    if(row === 0 && col === 0) continue;
                     if(this.isAlive(cell.row + row, cell.col + col)){
                         neighbors++;
                     }
@@ -106,23 +107,18 @@ module Conway {
                 this.cellSize = this.canvasSize/this.gridSize;
             }
             this.context.strokeStyle = this.lineColor;
-            this.context.strokeRect(cell.row * this.cellSize,
-            cell.col * this.cellSize, this.cellSize, this.cellSize);
+            this.context.strokeRect(cell.row * this.cellSize, cell.col * this.cellSize, this.cellSize, this.cellSize);
             this.context.fillStyle = cell.live ? this.liveColor : this.deadColor;
-            this.context.fillRect(cell.row * this.cellSize, 
-            cell.col * this.cellSize, this.cellSize, this.cellSize);
+            this.context.fillRect(cell.row * this.cellSize, cell.col * this.cellSize, this.cellSize, this.cellSize);
         }
 
         public createDrawingContext(){
-            let canvas = <HTMLCanvasElement> document.getElementById('conway-canvas');
-            if(canvas === null){
-                canvas = document.createElement('canvas');
-                canvas.id = 'conway-canvas';
-                canvas.width = this.canvasSize;
-                canvas.height = this.canvasSize;
-                document.body.appendChild(canvas);
-            }
-            return canvas.getContext('2d');
+            let canvas = <HTMLCanvasElement> document.createElement("canvas");
+            canvas.id = "conway-canvas";
+            canvas.width = this.canvasSize;
+            canvas.height = this.canvasSize;
+            document.body.appendChild(canvas);
+            return canvas.getContext("2d");
         }
     }
 }
