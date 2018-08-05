@@ -38,8 +38,8 @@ will let you determine the minimum and maximum values if you desire:
 
 "Write a program that prints the numbers 1 to 100. However, for multiples of
 three, print "Fizz" instead of the number. Meanwhile, for multiples of five,
-print "Buzz" instead of the number. For numbers which are multiples of both
-three and five, print "FizzBuzz"
+print "Buzz" instead of the number. For numbers which are multiples of both,
+print "FizzBuzz"
 #>
 [CmdletBinding()]
 param (
@@ -51,16 +51,11 @@ param (
 )
 
 for ($X = $Min; $X -le $Max; $X++) {
-  $Threes = $X % 3
-  $Fives = $X % 5
+  $Output = ""
 
-  if (($Fives -eq 0) -and ($Threes -eq 0)) {
-    Write-Output "FizzBuzz"
-  } elseif ($Threes -eq 0) {
-    Write-Output "Fizz"
-  } elseif ($Fives -eq 0) {
-    Write-Output "Buzz"
-  } else {
-    Write-Output $X
-  }
+  if ($X % 3 -eq 0) { $Output += "Fizz" }
+  if ($X % 5 -eq 0) { $Output += "Buzz" }
+  if ($Output -eq "") { $Output = $X }
+
+  Write-Output $Output
 }
