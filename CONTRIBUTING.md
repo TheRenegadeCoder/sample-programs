@@ -171,11 +171,9 @@ While Hello World is simple, it often does not show off many interesting
 features of a language. Fortunately, this repository shares more samples than
 Hello World. One of these more complex programs is known as Reverse a String.
 
-At the bare minimum, the algorithm must reverse ASCII strings. However,
-the goal should be to reverse a string in the general case. For instance, if a string
-contains surrogate pairs, the solution should not corrupt the string during reversal.
-Of course, this may not be practical in lower level languages like C, so
-just be reasonable.
+In this repository, the algorithm must reverse ASCII strings. Do **NOT**
+worry about reversing a string in the general case. For instance, if a string
+contains surrogate pairs, it's okay if the solution corrupts the string during reversal.
 
 #### Requirements
 
@@ -196,18 +194,16 @@ features and utilities.
 
 #### Test Cases
 
-If the solution passes at least the first three test cases, then it's a good fit for the repo.
-The remaining strings are bonus. Please place an note in the README if the solution
-only covers ASCII (i.e. [JavaScript](https://github.com/jrg94/sample-programs/blob/master/archive/j/javascript/README.md)).
+If the solution passes these test cases, then it's a good fit for the repo.
+Feel free to test other strings for fun. For instance, you may find that
+your language can handle unicode characters, but it fails for emojis. 
 
-| Description| Input | Output |
-|------------|:-------:|:---------:|
-| No Input | | |
-| Empty String | "" |             |
-| Ascii String | "Hello, World" | "dlroW ,olleH" |
-| Accented String | "Les Misérables" | "selbarésiM seL" |
-| Chinese String | "字樣樣品" | "品樣樣字" |
-| Emoji String | "If this works: 🤑; If not: 😰" | "😰 :ton fI ;🤑 :skrow siht fI" |
+Description  | Input          | Output 
+-------------|:--------------:|:---------:
+No Input     |                | 
+Empty String | ""             |             
+Ascii String | "Hello, World" | "dlroW ,olleH" 
+
 
 ### Game of Life Rules
 
