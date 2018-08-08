@@ -14,6 +14,7 @@ for as many languages as possible.
   - [Hello World Rules](#hello-world-rules)
   - [Fizz Buzz Rules](#fizz-buzz-rules)
   - [Reverse a String Rules](#reverse-a-string-rules)
+  - [Quine Rules](#quine-rules)
   - [Game of Life Rules](#game-of-life-rules)
 
 ## Please Read
