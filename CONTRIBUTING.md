@@ -66,13 +66,13 @@ Thanks for keeping this repository inclusive!
 ### Articles
 
 As a bonus to this repository, there are associated articles for every script. However, the articles
-do take awhile to write, so you can help by writing them as well. 
+do take awhile to write, so you can help by writing them as well.
 
-If you wish to help write articles, please [create an account](https://therenegadecoder.com/membership-join/membership-registration/) 
-over on The Renegade Coder. When you're done, let me know in the associated GitHub issue. 
+If you wish to help write articles, please [create an account](https://therenegadecoder.com/membership-join/membership-registration/)
+over on The Renegade Coder. When you're done, let me know in the associated GitHub issue.
 That way, I can elevate your privileges, so you can draft your article.
 
-Once everything is setup, make sure you [bookmark the backend](https://therenegadecoder.com/wp-admin/). 
+Once everything is setup, make sure you [bookmark the backend](https://therenegadecoder.com/wp-admin/).
 That way, you can quickly get to the area where you can draft articles.
 
 In addition, **anyone who writes an article will be granted collaborator status**, so there's an incentive.
@@ -80,14 +80,14 @@ In addition, **anyone who writes an article will be granted collaborator status*
 #### Writing Guidelines
 
 When writing articles, try to follow the conventions of other articles in the series (i.e. keep the
-same structure). When you're done, let me know in the associated GitHub issue, and 
-I'll schedule the article for publishing. 
-Don't worry about the featured image; I'll add one before publishing. 
+same structure). When you're done, let me know in the associated GitHub issue, and
+I'll schedule the article for publishing.
+Don't worry about the featured image; I'll add one before publishing.
 
 #### Profile
 
 Don't forget to update your profile as it will be displayed at the bottom of the article. If you want
-a proper profile image, make sure to setup a [Gravatar](https://en.gravatar.com/) 
+a proper profile image, make sure to setup a [Gravatar](https://en.gravatar.com/)
 using the same email as your account.
 
 ### Pull Requests
@@ -125,7 +125,7 @@ Welcome to Sample Programs in [Insert Language Here]!
 ```
 
 In the section labeled [Insert List of Sample Program Additions Here], please add the name of the
-sample program you've added. Ideally, you would link to the article here. At this point, however, 
+sample program you've added. Ideally, you would link to the article here. At this point, however,
 the article doesn't exist. Instead, you should create an issue for the article and link the issue
 here.
 
@@ -163,7 +163,7 @@ rules apply:
 > print "FizzBuzz"
 
 I was tempted to open this up such that the user could supply any number, but I think
-we get plenty of IO with some of the other projects in this repo. 
+we get plenty of IO with some of the other projects in this repo.
 
 ### Reverse a String Rules
 
@@ -196,14 +196,27 @@ features and utilities.
 
 If the solution passes these test cases, then it's a good fit for the repo.
 Feel free to test other strings for fun. For instance, you may find that
-your language can handle unicode characters, but it fails for emojis. 
+your language can handle unicode characters, but it fails for emojis.
 
-Description  | Input          | Output 
+Description  | Input          | Output
 -------------|:--------------:|:---------:
-No Input     |                | 
+No Input     |                |
 Empty String | ""             |             
-Ascii String | "Hello, World" | "dlroW ,olleH" 
+Ascii String | "Hello, World" | "dlroW ,olleH"
 
+### Quine Rules
+
+For those of you that don't know, a quine is a program which can replicate
+itself--or more specifically:
+
+> A quine is a non-empty computer program which takes no input and produces a
+> copy of its own source code as its only output.
+
+Thanks, [Wikipedia](https://en.wikipedia.org/wiki/Quine_(computing))!
+
+For the purposes of this repo, the solution should be simple. We're not here
+to play code golf, but we're also not here to practice obfuscation. Just be
+reasonable with your solution.
 
 ### Game of Life Rules
 
