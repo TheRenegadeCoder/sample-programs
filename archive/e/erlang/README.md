@@ -9,6 +9,8 @@ Welcome to Sample Programs in Erlang!
 ## Fun Facts
 
 - Debut: 1986
+- Typing: Dynamic
+- Developer: Ericsson
 
 ## References
 
