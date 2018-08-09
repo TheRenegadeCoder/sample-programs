@@ -4,7 +4,7 @@ Welcome to Sample Programs in Erlang!
 
 ## Sample Programs
 
-- Hello World in Erlang
+- [Hello World in Erlang](https://github.com/jrg94/sample-programs/issues/321)
 
 ## Fun Facts
 
