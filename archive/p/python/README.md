@@ -19,8 +19,18 @@ Welcome to Sample Programs in Python!
 
 ## Syntax
 
+- Expressions
+  - [ ] The Power Operator
+  - [ ] Unary Arithmetic and Bitwise Operation
+    - [ ] `+`
+    - [ ] `-`
+    - [ ] `~`
+  - [ ] Binary Arithmetic Operation
+  - [ ] Shifting Operation
+  - [ ] Binary Bitwise Operation
+  - [ ] Comparison Operation
 - Simple Statements
-  - [x] [Assignment Statements][5]
+  - [x] [Assignment Statement][5]
   - [ ] The `assert` Statement
   - [ ] The `pass` Statement
   - [ ] The `del` Statement
@@ -38,6 +48,9 @@ Welcome to Sample Programs in Python!
   - [x] [The `for` Statement][12]
   - [ ] The `try` Statement
   - [ ] The `with` Statement
+  - [ ] Function Definition
+  - [ ] Class Definition
+  - [ ] Coroutines
 
 ## References
 
