@@ -22,10 +22,17 @@ Welcome to Sample Programs in Python!
 - Expressions
   - [ ] The Power Operator
   - [ ] Unary Arithmetic and Bitwise Operation
-    - [ ] `+`
-    - [ ] `-`
-    - [ ] `~`
+    - [ ] The Unary Plus (`+`) Operator
+    - [ ] The Unary Minus (`-`) Operator
+    - [ ] The Unary Invert (`~`) Operator
   - [ ] Binary Arithmetic Operation
+    - [ ] The Binary Addition (`+`) Operator
+    - [ ] The Binary Subtraction (`-`) Operator
+    - [ ] The Binary Multiplication (`*`) Operator
+    - [ ] The Binary Division (`/`) Operator
+    - [ ] The Binary Floor Division (`//`) Operator
+    - [ ] The Binary Matrix Multiplication (`@`) Operator
+    - [ ] The Binary Modulus (`%`) Operator
   - [ ] Shifting Operation
   - [ ] Binary Bitwise Operation
   - [ ] Comparison Operation
