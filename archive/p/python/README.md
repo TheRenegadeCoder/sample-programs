@@ -24,18 +24,18 @@ Welcome to Sample Programs in Python!
   - [ ] The `assert` Statement
   - [ ] The `pass` Statement
   - [ ] The `del` Statement
-  - [ ] The `return` Statement
+  - [x] [The `return` Statement][10]
   - [ ] The `yield` Statement
   - [ ] The `raise` Statement
   - [ ] The `break` Statement
   - [ ] The `continue` Statement
-  - [ ] The `import` Statement
+  - [x] [The `import` Statement][11]
   - [ ] The `global` Statement
   - [ ] The `nonlocal` Statement
 - Compound Statements
   - [x] [The `if` Statement][9]
   - [ ] The `while` Statement
-  - [ ] The `for` Statement
+  - [x] [The `for` Statement][12]
   - [ ] The `try` Statement
   - [ ] The `with` Statement
 
@@ -55,3 +55,6 @@ Welcome to Sample Programs in Python!
 [7]: https://www.python.org/
 [8]: https://repl.it/languages/python3
 [9]: https://github.com/jrg94/sample-programs/blob/ed000670bc5ecd2778a65571752ec983be7a14e7/archive/p/python/fizz-buzz.py#L3
+[10]: https://github.com/jrg94/sample-programs/blob/d91bd1c507723448314d18a377c1ac729172ddf6/archive/p/python/game-of-life.py#L24
+[11]: https://github.com/jrg94/sample-programs/blob/d91bd1c507723448314d18a377c1ac729172ddf6/archive/p/python/game-of-life.py#L1
+[12]: https://github.com/jrg94/sample-programs/blob/d91bd1c507723448314d18a377c1ac729172ddf6/archive/p/python/game-of-life.py#L21
