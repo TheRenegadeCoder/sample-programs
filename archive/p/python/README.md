@@ -26,8 +26,8 @@ Welcome to Sample Programs in Python!
     - [ ] The Minus (`-`) Operator
     - [ ] The Invert (`~`) Operator
   - [ ] Binary Arithmetic Operations
-    - [ ] The Addition (`+`) Operator
-    - [ ] The Subtraction (`-`) Operator
+    - [x] [The Addition (`+`) Operator][20]
+    - [x] [The Subtraction (`-`) Operator][19]
     - [ ] The Multiplication (`*`) Operator
     - [x] [The Division (`/`) Operator][18]
     - [ ] The Floor Division (`//`) Operator
@@ -102,3 +102,5 @@ Welcome to Sample Programs in Python!
 [16]: https://github.com/jrg94/sample-programs/blob/d91bd1c507723448314d18a377c1ac729172ddf6/archive/p/python/game-of-life.py#L5
 [17]: https://github.com/jrg94/sample-programs/blob/d91bd1c507723448314d18a377c1ac729172ddf6/archive/p/python/game-of-life.py#L19
 [18]: https://github.com/jrg94/sample-programs/blob/d91bd1c507723448314d18a377c1ac729172ddf6/archive/p/python/game-of-life.py#L48
+[19]: https://github.com/jrg94/sample-programs/blob/d91bd1c507723448314d18a377c1ac729172ddf6/archive/p/python/game-of-life.py#L64
+[20]: https://github.com/jrg94/sample-programs/blob/d91bd1c507723448314d18a377c1ac729172ddf6/archive/p/python/game-of-life.py#L65
