@@ -32,7 +32,7 @@ Welcome to Sample Programs in Python!
     - [ ] The Division (`/`) Operator
     - [ ] The Floor Division (`//`) Operator
     - [ ] The Matrix Multiplication (`@`) Operator
-    - [ ] The Modulus (`%`) Operator
+    - [x] [The Modulus (`%`) Operator][9]
   - [ ] Shifting Operations
     - [ ] The Right Shift (`>>`) Operation
     - [ ] The Left Shift (`<<`) Operation
@@ -43,9 +43,9 @@ Welcome to Sample Programs in Python!
   - [ ] Comparison Operations
     - [ ] The Less Than (`<`) Operator
     - [ ] The Less Than Equals (`<=`) Operator
-    - [ ] The Equals (`==`) Operator
+    - [x] [The Equals (`==`) Operator][9]
     - [ ] The Greater Than Equals (`>=`) Operator
-    - [ ] The Greater Than (`>`) Operator
+    - [x] [The Greater Than (`>`) Operator][13]
     - [ ] The Not Equals (`!=`) Operator
     - [ ] The `is` Operator
     - [ ] The `in` Operator
@@ -96,3 +96,4 @@ Welcome to Sample Programs in Python!
 [10]: https://github.com/jrg94/sample-programs/blob/d91bd1c507723448314d18a377c1ac729172ddf6/archive/p/python/game-of-life.py#L24
 [11]: https://github.com/jrg94/sample-programs/blob/d91bd1c507723448314d18a377c1ac729172ddf6/archive/p/python/game-of-life.py#L1
 [12]: https://github.com/jrg94/sample-programs/blob/d91bd1c507723448314d18a377c1ac729172ddf6/archive/p/python/game-of-life.py#L21
+[13]: https://github.com/jrg94/sample-programs/blob/d91bd1c507723448314d18a377c1ac729172ddf6/archive/p/python/reverse-string.py#L3
