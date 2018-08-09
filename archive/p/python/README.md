@@ -23,9 +23,21 @@ Welcome to Sample Programs in Python!
   - [x] [Assignment Statements][5]
   - [ ] The `assert` Statement
   - [ ] The `pass` Statement
+  - [ ] The `del` Statement
+  - [ ] The `return` Statement
+  - [ ] The `yield` Statement
+  - [ ] The `raise` Statement
+  - [ ] The `break` Statement
+  - [ ] The `continue` Statement
+  - [ ] The `import` Statement
+  - [ ] The `global` Statement
+  - [ ] The `nonlocal` Statement
 - Compound Statements
   - [x] [The `if` Statement][9]
   - [ ] The `while` Statement
+  - [ ] The `for` Statement
+  - [ ] The `try` Statement
+  - [ ] The `with` Statement
 
 ## References
 
