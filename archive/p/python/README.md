@@ -19,24 +19,29 @@ Welcome to Sample Programs in Python!
 
 ## Syntax
 
-- Expressions
+- [ ] Expressions
   - [ ] The Power Operator
   - [ ] Unary Arithmetic and Bitwise Operation
-    - [ ] The Unary Plus (`+`) Operator
-    - [ ] The Unary Minus (`-`) Operator
-    - [ ] The Unary Invert (`~`) Operator
+    - [ ] The Plus (`+`) Operator
+    - [ ] The Minus (`-`) Operator
+    - [ ] The Invert (`~`) Operator
   - [ ] Binary Arithmetic Operation
-    - [ ] The Binary Addition (`+`) Operator
-    - [ ] The Binary Subtraction (`-`) Operator
-    - [ ] The Binary Multiplication (`*`) Operator
-    - [ ] The Binary Division (`/`) Operator
-    - [ ] The Binary Floor Division (`//`) Operator
-    - [ ] The Binary Matrix Multiplication (`@`) Operator
-    - [ ] The Binary Modulus (`%`) Operator
+    - [ ] The Addition (`+`) Operator
+    - [ ] The Subtraction (`-`) Operator
+    - [ ] The Multiplication (`*`) Operator
+    - [ ] The Division (`/`) Operator
+    - [ ] The Floor Division (`//`) Operator
+    - [ ] The Matrix Multiplication (`@`) Operator
+    - [ ] The Modulus (`%`) Operator
   - [ ] Shifting Operation
+    - [ ] The Right Shift (`>>`) Operation
+    - [ ] The Left Shift (`<<`) Operation
   - [ ] Binary Bitwise Operation
+    - [ ] The Bitwise AND (`&`) Operation
+    - [ ] The Bitwise OR (`|`) Operation
+    - [ ] The Bitwise XIR (`^`) Operation
   - [ ] Comparison Operation
-- Simple Statements
+- [ ] Simple Statements
   - [x] [Assignment Statement][5]
   - [ ] The `assert` Statement
   - [ ] The `pass` Statement
@@ -49,7 +54,7 @@ Welcome to Sample Programs in Python!
   - [x] [The `import` Statement][11]
   - [ ] The `global` Statement
   - [ ] The `nonlocal` Statement
-- Compound Statements
+- [ ] Compound Statements
   - [x] [The `if` Statement][9]
   - [ ] The `while` Statement
   - [x] [The `for` Statement][12]
