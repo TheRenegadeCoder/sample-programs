@@ -5,17 +5,17 @@ for as many languages as possible.
 
 ## Table of Contents
 
-- [Please Read](#please-read)
-  - [Repository Structure](#repository-structure)
-  - [Naming Conventions](#naming-conventions)
-  - [Articles](#articles)
-  - [Pull Requests](#pull-requests)
-- [Projects](#projects)
-  - [Hello World Rules](#hello-world-rules)
-  - [Fizz Buzz Rules](#fizz-buzz-rules)
-  - [Reverse a String Rules](#reverse-a-string-rules)
-  - [Quine Rules](#quine-rules)
-  - [Game of Life Rules](#game-of-life-rules)
+- [Please Read][0]
+  - [Repository Structure][1]
+  - [Naming Conventions][2]
+  - [Articles][3]
+  - [Pull Requests][4]
+- [Projects][5]
+  - [Hello World Rules][6]
+  - [Fizz Buzz Rules][7]
+  - [Reverse a String Rules][8]
+  - [Quine Rules][9]
+  - [Game of Life Rules][10]
 
 ## Please Read
 
@@ -69,11 +69,11 @@ Thanks for keeping this repository inclusive!
 As a bonus to this repository, there are associated articles for every script. However, the articles
 do take awhile to write, so you can help by writing them as well.
 
-If you wish to help write articles, please [create an account](https://therenegadecoder.com/membership-join/membership-registration/)
+If you wish to help write articles, please [create an account][11]
 over on The Renegade Coder. When you're done, let me know in the associated GitHub issue.
 That way, I can elevate your privileges, so you can draft your article.
 
-Once everything is setup, make sure you [bookmark the backend](https://therenegadecoder.com/wp-admin/).
+Once everything is setup, make sure you [bookmark the backend][12].
 That way, you can quickly get to the area where you can draft articles.
 
 In addition, **anyone who writes an article will be granted collaborator status**, so there's an incentive.
@@ -82,8 +82,8 @@ In addition, **anyone who writes an article will be granted collaborator status*
 
 When writing articles, try to follow the conventions of other articles in the series (i.e. keep the
 same structure). When you're done, let me know in the associated GitHub issue, and
-I'll schedule the article for publishing.
-Don't worry about the featured image; I'll add one before publishing.
+I'll schedule the article for publishing. Don't worry about the featured image; 
+I'll add one before publishing.
 
 #### Profile
 
@@ -138,6 +138,10 @@ like when the language debuted, who develops the language, and what type system 
 Finally, in the section labeled [Insert Language References Here], please add language references
 to the language's README. Acceptable references include Wikipedia pages, official websites, online editors,
 and GitHub pages. This helps me determine if the language actually exists, and it helps users who are browsing the repository.
+
+If you're feeling adventurous, I'm interested in adding a syntax section to each README. Every time a unique
+language syntax appears in the repo for a particular language, we track it in its README with links. Check
+out the [Python README][13] for an example.
 
 Don't worry if you forget any of this; I have a check list of reminders in the pull request template.
 
@@ -215,7 +219,7 @@ itself--or more specifically:
 > A quine is a non-empty computer program which takes no input and produces a
 > copy of its own source code as its only output.
 
-Thanks, [Wikipedia](https://en.wikipedia.org/wiki/Quine_(computing))!
+Thanks, [Wikipedia][14]!
 
 For the purposes of this repo, the solution should be simple. We're not here
 to play code golf, but we're also not here to practice obfuscation. Just be
@@ -234,12 +238,12 @@ At each turn, all cells are evaluated using the following rules:
 - Any live cell with more than three live neighbors dies, as if by overpopulation.
 - Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.
 
-For more information, check out the [Wikipedia page for Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life).
+For more information, check out the [Wikipedia page for Conway's Game of Life][15].
 
 Of course, for the purposes of the repo, here are the requirements for a contribution:
 
 1. Source code must fit in a single file
-2. Grid must wrap-around on the edges (think [asteroids](https://en.wikipedia.org/wiki/Asteroids_(video_game)))
+2. Grid must wrap-around on the edges (think [asteroids][16])
 3. The program must support the following command line arguments
     - Grid width (assume square grid)
     - Frame rate (frames/second)
@@ -253,3 +257,21 @@ GUI elements. Keep it simple. Remember, the goal is to show off language feature
 
 Also, I ask that you don't use external libraries. I like for these files to
 be as easy as possible to test, so limiting dependencies is helpful.
+
+[0]: #please-read
+[1]: #repository-structure
+[2]: #naming-conventions
+[3]: #articles
+[4]: #pull-requests
+[5]: #projects
+[6]: #hello-world-rules
+[7]: #fizz-buzz-rules
+[8]: #reverse-a-string-rules
+[9]: #quine-rules
+[10]: #game-of-life-rules
+[11]: https://therenegadecoder.com/membership-join/membership-registration/
+[12]: https://therenegadecoder.com/wp-admin/
+[13]: https://github.com/jrg94/sample-programs/blob/master/archive/p/python/README.md
+[14]: https://en.wikipedia.org/wiki/Quine_(computing)
+[15]: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
+[16]: https://en.wikipedia.org/wiki/Asteroids_(video_game)
