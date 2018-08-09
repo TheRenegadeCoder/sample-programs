@@ -21,11 +21,11 @@ Welcome to Sample Programs in Python!
 
 - [ ] Expressions
   - [ ] The Power Operator
-  - [ ] Unary Arithmetic and Bitwise Operation
+  - [ ] Unary Arithmetic and Bitwise Operations
     - [ ] The Plus (`+`) Operator
     - [ ] The Minus (`-`) Operator
     - [ ] The Invert (`~`) Operator
-  - [ ] Binary Arithmetic Operation
+  - [ ] Binary Arithmetic Operations
     - [ ] The Addition (`+`) Operator
     - [ ] The Subtraction (`-`) Operator
     - [ ] The Multiplication (`*`) Operator
@@ -33,14 +33,27 @@ Welcome to Sample Programs in Python!
     - [ ] The Floor Division (`//`) Operator
     - [ ] The Matrix Multiplication (`@`) Operator
     - [ ] The Modulus (`%`) Operator
-  - [ ] Shifting Operation
+  - [ ] Shifting Operations
     - [ ] The Right Shift (`>>`) Operation
     - [ ] The Left Shift (`<<`) Operation
-  - [ ] Binary Bitwise Operation
+  - [ ] Binary Bitwise Operations
     - [ ] The Bitwise AND (`&`) Operation
     - [ ] The Bitwise OR (`|`) Operation
     - [ ] The Bitwise XIR (`^`) Operation
-  - [ ] Comparison Operation
+  - [ ] Comparison Operations
+    - [ ] The Less Than (`<`) Operator
+    - [ ] The Less Than Equals (`<=`) Operator
+    - [ ] The Equals (`==`) Operator
+    - [ ] The Greater Than Equals (`>=`) Operator
+    - [ ] The Greater Than (`>`) Operator
+    - [ ] The Not Equals (`!=`) Operator
+    - [ ] The `is` Operator
+    - [ ] The `in` Operator
+  - [ ] Boolean Operations
+    - [ ] The `or` Operator
+    - [ ] The `and` Operator
+    - [ ] The `not` Operator
+  - [ ] Lambda
 - [ ] Simple Statements
   - [x] [Assignment Statement][5]
   - [ ] The `assert` Statement
