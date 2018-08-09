@@ -29,7 +29,7 @@ Welcome to Sample Programs in Python!
     - [ ] The Addition (`+`) Operator
     - [ ] The Subtraction (`-`) Operator
     - [ ] The Multiplication (`*`) Operator
-    - [ ] The Division (`/`) Operator
+    - [x] [The Division (`/`) Operator][18]
     - [ ] The Floor Division (`//`) Operator
     - [ ] The Matrix Multiplication (`@`) Operator
     - [x] [The Modulus (`%`) Operator][9]
@@ -41,7 +41,7 @@ Welcome to Sample Programs in Python!
     - [ ] The Bitwise OR (`|`) Operation
     - [ ] The Bitwise XIR (`^`) Operation
   - [ ] Comparison Operations
-    - [ ] The Less Than (`<`) Operator
+    - [x] [The Less Than (`<`) Operator][14]
     - [ ] The Less Than Equals (`<=`) Operator
     - [x] [The Equals (`==`) Operator][9]
     - [ ] The Greater Than Equals (`>=`) Operator
@@ -51,8 +51,8 @@ Welcome to Sample Programs in Python!
     - [ ] The `in` Operator
   - [ ] Boolean Operations
     - [ ] The `or` Operator
-    - [ ] The `and` Operator
-    - [ ] The `not` Operator
+    - [x] [The `and` Operator][14]
+    - [x] [The `not` Operator][15]
   - [ ] Lambda
 - [ ] Simple Statements
   - [x] [Assignment Statement][5]
@@ -73,8 +73,8 @@ Welcome to Sample Programs in Python!
   - [x] [The `for` Statement][12]
   - [ ] The `try` Statement
   - [ ] The `with` Statement
-  - [ ] Function Definition
-  - [ ] Class Definition
+  - [x] [Function Definition][17]
+  - [x] [Class Definition][16]
   - [ ] Coroutines
 
 ## References
@@ -97,3 +97,8 @@ Welcome to Sample Programs in Python!
 [11]: https://github.com/jrg94/sample-programs/blob/d91bd1c507723448314d18a377c1ac729172ddf6/archive/p/python/game-of-life.py#L1
 [12]: https://github.com/jrg94/sample-programs/blob/d91bd1c507723448314d18a377c1ac729172ddf6/archive/p/python/game-of-life.py#L21
 [13]: https://github.com/jrg94/sample-programs/blob/d91bd1c507723448314d18a377c1ac729172ddf6/archive/p/python/reverse-string.py#L3
+[14]: https://github.com/jrg94/sample-programs/blob/d91bd1c507723448314d18a377c1ac729172ddf6/archive/p/python/game-of-life.py#L28
+[15]: https://github.com/jrg94/sample-programs/blob/d91bd1c507723448314d18a377c1ac729172ddf6/archive/p/python/game-of-life.py#L34
+[16]: https://github.com/jrg94/sample-programs/blob/d91bd1c507723448314d18a377c1ac729172ddf6/archive/p/python/game-of-life.py#L5
+[17]: https://github.com/jrg94/sample-programs/blob/d91bd1c507723448314d18a377c1ac729172ddf6/archive/p/python/game-of-life.py#L19
+[18]: https://github.com/jrg94/sample-programs/blob/d91bd1c507723448314d18a377c1ac729172ddf6/archive/p/python/game-of-life.py#L48
