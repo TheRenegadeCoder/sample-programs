@@ -13,7 +13,7 @@ As a result, not every code snippet in the repository has an associated article,
 
 Of course, we're adding articles every day, and we're tracking our article progress under the issues tab.
 Feel free to request your favorites from there, and we'll try to move them up the queue. If you can't wait,
-consider writing the article yourself. Potential authors can find directions in the [contributing doc][6].
+consider writing the article yourself. Prospective authors can find directions in the [contributing doc][6].
 
 At any rate, if articles sound interesting, here are a few to get you started:
 
