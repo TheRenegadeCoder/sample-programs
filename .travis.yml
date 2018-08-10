@@ -10,7 +10,7 @@ script:
   - cd ..
   - git clone https://github.com/TheRenegadeCoder/sample-programs-wiki-generator.git
   - cd sample-programs-wiki-generator
-  - python generate-wiki.py
+  - python generate-wiki.py ../sample-programs/archive
   - cd ..
 
 after_success:
