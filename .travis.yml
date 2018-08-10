@@ -7,14 +7,15 @@ branches:
     - master
 
 script:
-  - cd tools
+  - cd ..
+  - git clone https://github.com/TheRenegadeCoder/sample-programs-wiki-generator.git
+  - cd sample-programs-wiki-generator
   - python generate-wiki.py
   - cd ..
 
 after_success:
-  - cd ..
   - git clone "https://${GITHUB_TOKEN}@github.com/${GITHUB_USERNAME}/sample-programs.wiki.git"
-  - mv -v sample-programs/tools/wiki/* sample-programs.wiki/
+  - mv -v sample-programs-wiki-generator/wiki/* sample-programs.wiki/
   - cd sample-programs.wiki
   - git add .
   - git commit -m "Generated Wiki via Travis-CI"
