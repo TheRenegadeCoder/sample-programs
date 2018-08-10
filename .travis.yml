@@ -6,6 +6,7 @@ python:
 #  only:
 #    - master
 
+
 script:
   - cd ..
   - git clone https://github.com/TheRenegadeCoder/sample-programs-wiki-generator.git
