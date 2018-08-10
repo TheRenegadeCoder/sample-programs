@@ -11,8 +11,9 @@ Originally, I had planned to have an article written for every code snippet in t
 However, in the interest of growing this collection, I removed the pull request merge article requirement.
 As a result, not every code snippet in the repository has an associated article, yet.
 
-Of course, I'm adding articles every day, and I'm tracking my article progress under the issues tab.
-Feel free to request your favorites from there, and I'll try to move them up the queue.
+Of course, we're adding articles every day, and we're tracking our article progress under the issues tab.
+Feel free to request your favorites from there, and we'll try to move them up the queue. If you can't wait,
+consider writing the article yourself. Potential authors can find directions in the [contributing doc][6].
 
 At any rate, if articles sound interesting, here are a few to get you started:
 
@@ -23,7 +24,7 @@ At any rate, if articles sound interesting, here are a few to get you started:
 
 Alternatively, feel free to leverage the links in the README files spread throughout the repository. 
 In addition, we have a rather extensive [wiki][5] which includes a table row for every language 
-in the repository. For each language, you'll find information like open issues and contributors.
+in the repository. For each language, you'll find information like open issues.
 
 ## Contribute
 
