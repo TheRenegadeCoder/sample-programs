@@ -8,9 +8,9 @@ branches:
 
 script:
   - cd ..
-  - python -m pip install generate_wiki
-  - python -m pip show generate_wiki
-  - python -m generate_wiki sample-programs/archive
+  - pip install --index-url https://test.pypi.org/simple generate_wiki
+  - pip show generate_wiki
+  - wikig sample-programs/archive
 
 after_success:
   - git clone "https://${GITHUB_TOKEN}@github.com/${GITHUB_USERNAME}/sample-programs.wiki.git"
