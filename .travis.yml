@@ -9,8 +9,8 @@ branches:
 script:
   - pip install --upgrade pip
   - cd ..
-  - pip install generate-wiki
-  - python -m generate_wiki sample-programs/archive
+  - sudo pip install generate-wiki
+  - generate_wiki sample-programs/archive
 
 after_success:
   - git clone "https://${GITHUB_TOKEN}@github.com/${GITHUB_USERNAME}/sample-programs.wiki.git"
