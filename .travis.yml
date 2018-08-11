@@ -8,7 +8,7 @@ branches:
 
 script:
   - cd ..
-  - pip install generate_wiki
+  - pip install --no-cache-dir generate_wiki
   - pip show generate_wiki
   - wikig sample-programs/archive
 
