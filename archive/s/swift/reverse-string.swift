@@ -1,6 +1,6 @@
 import Foundation
 
-guard CommandLine.arguments.count > 0 else {
+guard CommandLine.argc > 0 else {
     exit(0)
 }
 
