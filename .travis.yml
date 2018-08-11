@@ -7,9 +7,9 @@ branches:
     - master
 
 script:
-  - pip install --upgrade pip
   - cd ..
-  - sudo pip install generate-wiki
+  - pip install generate_wiki
+  - pip show generate_wiki
   - generate_wiki sample-programs/archive
 
 after_success:
