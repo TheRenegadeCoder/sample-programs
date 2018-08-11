@@ -8,8 +8,8 @@ branches:
 
 script:
   - cd ..
-  - pip install generate_wiki
-  - pip show generate_wiki
+  - python -m pip install generate_wiki
+  - python -m pip show generate_wiki
   - generate_wiki sample-programs/archive
 
 after_success:
