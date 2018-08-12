@@ -7,7 +7,7 @@ script:
   
 deploy:
   provider: script
-  script: bash deploy.sh
+  script: bash -x deploy.sh
   on:
       branch: wiki-deployment
 
