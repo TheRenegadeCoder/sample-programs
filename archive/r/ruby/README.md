@@ -6,6 +6,7 @@ Welcome to Sample Programs in Ruby!
 
 - [Hello World in Ruby](https://therenegadecoder.com/code/hello-world-in-ruby/)
 - [Fizz Buzz in Ruby](https://github.com/TheRenegadeCoder/sample-programs/issues/336)
+- [Quine in Ruby](https://github.com/TheRenegadeCoder/sample-programs/issues/338)
 
 ## Fun Facts
 
