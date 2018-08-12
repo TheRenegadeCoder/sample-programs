@@ -8,8 +8,6 @@ script:
 deploy:
   provider: script
   script: bash -x deploy.sh
-  on:
-      branch: wiki-deployment
 
 notifications:
   email: false
