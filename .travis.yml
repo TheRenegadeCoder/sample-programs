@@ -2,23 +2,14 @@ language: python
 python:
   - "3.6"
 
-branches:
-  only:
-    - master
-
 script:
-  - cd ..
-  - pip install --no-cache-dir generate_wiki
-  - pip show generate_wiki
-  - wikig sample-programs/archive
-
-after_success:
-  - git clone "https://${GITHUB_TOKEN}@github.com/${GITHUB_USERNAME}/sample-programs.wiki.git"
-  - mv -v wiki/* sample-programs.wiki/
-  - cd sample-programs.wiki
-  - git add .
-  - git commit -m "Generated Wiki via Travis-CI"
-  - git push
+  - echo "insert tests here"
+  
+deploy:
+  provider: script
+  script: bash -x deploy.sh
+  on:
+      branch: wiki-deployment
 
 notifications:
   email: false
