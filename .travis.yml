@@ -19,7 +19,7 @@ deploy:
     - git commit -m "Generated Wiki via Travis-CI"
     - git push
   on:
-      branch: master
+      branch: wiki-deployment
 
 notifications:
   email: false
