@@ -26,6 +26,9 @@ Alternatively, feel free to leverage the links in the README files spread throug
 In addition, we have a rather extensive [wiki][5] which includes a table row for every language 
 in the repository. For each language, you'll find information like open issues.
 
+Finally, you can keep up with the latest happening in this repository as well as all the others in this
+organization through our Gitter community. [Come chat!][15]
+
 ## Contribute
 
 To properly follow the recommended GitHub community standards, I've created [contribution
@@ -77,3 +80,4 @@ Thanks for your support! :relaxed:
 [12]: https://www.paypal.me/therenegadecoder
 [13]: https://help.getadblock.com/support/solutions/articles/6000163989-how-do-i-pause-or-disable-adblock-
 [14]: https://twitter.com/RenegadeCoder94
+[15]: https://gitter.im/TheRenegadeCoder/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link
