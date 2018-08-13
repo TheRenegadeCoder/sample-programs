@@ -24,7 +24,7 @@ At any rate, if articles sound interesting, here are a few to get you started:
 
 Alternatively, feel free to leverage the links in the README files spread throughout the repository. 
 In addition, we have a rather extensive [wiki][5] which includes a table row for every language 
-in the repository. For each language, you'll find information like open issues.
+in the repository. For each language, you'll find information like open issues and the number of snippets.
 
 Finally, you can keep up with the latest happening in this repository as well as all the others in this
 organization through our Gitter community. [Come chat!][15]
