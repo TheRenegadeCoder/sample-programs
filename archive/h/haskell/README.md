@@ -5,6 +5,7 @@ Welcome to Sample Programs in Haskell!
 ## Samples Programs
 
 - [Hello World in Haskell](https://therenegadecoder.com/code/hello-world-in-haskell/)
+- [Fizz Buzz in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/349)
 
 ## Fun Facts
 
