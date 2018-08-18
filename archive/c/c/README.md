@@ -6,6 +6,7 @@ Welcome to Sample Programs in C!
 
 - [Hello World in C](https://therenegadecoder.com/code/hello-world-in-c/)
 - [Reverse String in C](https://github.com/jrg94/sample-programs/issues/288)
+- [Fizz Buzz in C](https://github.com/TheRenegadeCoder/sample-programs/issues/354)
 
 ## Fun Facts
 
