@@ -16,6 +16,7 @@ for as many languages as possible.
   - [Reverse a String Rules][8]
   - [Quine Rules][9]
   - [Game of Life Rules][10]
+- [Plagiarism][17]
 
 ## Please Read
 
@@ -258,6 +259,18 @@ GUI elements. Keep it simple. Remember, the goal is to show off language feature
 Also, I ask that you don't use external libraries. I like for these files to
 be as easy as possible to test, so limiting dependencies is helpful.
 
+## Plagiarism
+
+**Please** do not submit work that is copied from another source. If work is found to be 
+plagiarized, the issue must be remedied ASAP. The quickest solution is to cite the source--a citation
+in the README would suffice. After that, the solution should be adapted as needed. If necessary, the 
+solution will be removed at the authors request. 
+
+Whenever possible, **please** request the original author to share their solution with this repo. This
+keeps the repo tidy by eliminating the need for citations.
+
+These rules help grow and cultivate the community in a positive manner.
+
 [0]: #please-read
 [1]: #repository-structure
 [2]: #naming-conventions
@@ -275,3 +288,4 @@ be as easy as possible to test, so limiting dependencies is helpful.
 [14]: https://en.wikipedia.org/wiki/Quine_(computing)
 [15]: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
 [16]: https://en.wikipedia.org/wiki/Asteroids_(video_game)
+[17]: #plagiarism
