@@ -5,6 +5,7 @@ Welcome to Sample Programs in Go!
 ## Sample Programs
 
 - [Hello World in Go](https://therenegadecoder.com/code/hello-world-in-go/)
+- [Fizz Buzz in Go](https://github.com/TheRenegadeCoder/sample-programs/issues/347)
 
 ## Fun Facts
 
