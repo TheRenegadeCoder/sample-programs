@@ -117,10 +117,7 @@ static void apply_logic(uint64_t width, uint64_t height)
     uint32_t tmp_field[FIELD_ARR_LEN];
     uint32_t neighbors;
 
-    for (int i = 0; i < FIELD_ARR_LEN; i++) {
-        tmp_field[i] = field[i];
-        printf("%x %x\n", tmp_field[i], field[i]);
-    }
+    memcpy(tmp_field, field, FIELD_ARR_LEN);
 
     for (uint64_t y = 1; y <= height - 1; ++y) {
         for (uint64_t x = 1; x <= width - 1; ++x) {
@@ -192,9 +189,6 @@ int main(int argc, char **argv)
     uint64_t width = field_size;
     uint64_t height = field_size / 2;
 
-    for(int i = 0; i < FIELD_ARR_LEN; i++) {
-        field[i] = 0;
-    }
     set_alive(width / 2 - 1, height / 2, width, field);
     set_alive(width / 2, height / 2, width, field);
     set_alive(width / 2 + 1, height / 2, width, field);
