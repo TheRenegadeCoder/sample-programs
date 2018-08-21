@@ -53,39 +53,20 @@ static uint32_t num_neighbors(uint64_t x, uint64_t y, uint64_t field_width,
 {
     uint32_t count = 0;
 
-    if (x > 0 && is_alive(x - 1, y, field_width, f)) {
-        count++;
+    if (x > 0) {
+        count += is_alive(x - 1, y, field_width, f);
+        count += y > 0 && is_alive(x - 1, y - 1, field_width, f);
+        count += y < field_height && is_alive(x - 1, y + 1, field_width, f);
     }
 
-    if (y > 0 && is_alive(x, y - 1, field_width, f)) {
-        count++;
+    if (x < field_width) {
+        count += is_alive(x + 1, y, field_width, f);
+        count += y > 0 && is_alive(x + 1, y - 1, field_width, f);
+        count += y < field_height && is_alive(x + 1, y + 1, field_width, f);
     }
 
-    if (x < field_width && is_alive(x + 1, y, field_width, f)) {
-        count++;
-    }
-
-    if (y < field_height && is_alive(x, y + 1, field_width, f)) {
-        count++;
-    }
-
-    if (x > 0 && y > 0 && is_alive(x - 1, y - 1, field_width, f)) {
-        count++;
-    }
-
-    if (x > 0 && y < field_height && is_alive(x - 1, y + 1, field_width, f)) {
-        count++;
-    }
-
-    if (x < field_width && y > 0 && is_alive(x + 1, y - 1, field_width, f)) {
-        count++;
-    }
-
-    if (x < field_width && y < field_height && is_alive(x + 1, y + 1, field_width, f)) {
-        count++;
-    }
-
-    printf("\n");
+    count += y > 0 && is_alive(x, y - 1, field_width, f);
+    count += y < field_height && is_alive(x, y + 1, field_width, f);
 
     return count;
 }
