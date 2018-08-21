@@ -4,59 +4,88 @@
 #include <limits.h>
 #include <stdint.h>
 #include <stdbool.h>
+#include <memory.h>
 
 #define clear() printf("\033[H\033[J")
 #define gotoxy(x,y) printf("\033[%lu;%luH", (y)+1, (x)+1)
 
-#define MAX_FIELD_SIZE 128
+#define MAX_FIELD_SIZE 128*128
+#define FIELD_ARR_LEN ((MAX_FIELD_SIZE / 32) + 1)
+static uint32_t field[FIELD_ARR_LEN];
 
-static uint32_t field[MAX_FIELD_SIZE / 32 + 1];
-
-static bool is_alive(uint64_t x, uint64_t y, uint64_t field_width)
+static bool is_alive(uint64_t x, uint64_t y, uint64_t field_width, uint32_t *f)
 {
     uint32_t index, entry, bit;
 
     index = y * field_width + x;
-    entry = field[index / 32];
+    entry = f[index / 32];
     bit = index % 32;
+
+    //printf("alive? f[%d] = %d; bit %d = %d\n", index / 32, f[index/32], bit, (entry & (1 << bit)));
 
     return (entry & (1 << bit));
 }
 
-static void set_alive(uint64_t x, uint64_t y, uint64_t field_width)
+static void set_alive(uint64_t x, uint64_t y, uint64_t field_width, uint32_t *f)
 {
     uint32_t index, bit;
 
     index = y * field_width + x;
     bit = index % 32;
 
-    field[index / 32] |= (1 << bit);
+    //printf("x: %d, y: %d, index: %d (%d), bit: %d\n", x, y, index, index / 32, bit);
+
+    f[index / 32] |= (1 << bit);
 }
 
-static void set_dead(uint64_t x, uint64_t y, uint64_t field_width)
+static void set_dead(uint64_t x, uint64_t y, uint64_t field_width, uint32_t *f)
 {
     uint32_t index, bit;
 
     index = y * field_width + x;
     bit = index % 32;
 
-    field[index / 32] &= ~(1 << bit);
+    f[index / 32] &= ~(1 << bit);
 }
 
 static uint32_t num_neighbors(uint64_t x, uint64_t y, uint64_t field_width,
-        uint64_t field_height)
+        uint64_t field_height, uint32_t *f)
 {
     uint32_t count = 0;
 
-    count += x > 0 && is_alive(x - 1, y, field_width);
-    count += y > 0 && is_alive(x, y - 1, field_width);
-    count += x < field_width && is_alive(x + 1, y, field_width);
-    count += y < field_height && is_alive(x, y + 1, field_width);
+    if (x > 0 && is_alive(x - 1, y, field_width, f)) {
+        count++;
+    }
 
-    count += x > 0 && y > 0 && is_alive(x - 1, y - 1, field_width);
-    count += x > 0 && y < field_height && is_alive(x - 1, y + 1, field_width);
-    count += x < field_width && y > 0 && is_alive(x + 1, y - 1, field_width);
-    count += x < field_width && y < field_height && is_alive(x + 1, y + 1, field_width);
+    if (y > 0 && is_alive(x, y - 1, field_width, f)) {
+        count++;
+    }
+
+    if (x < field_width && is_alive(x + 1, y, field_width, f)) {
+        count++;
+    }
+
+    if (y < field_height && is_alive(x, y + 1, field_width, f)) {
+        count++;
+    }
+
+    if (x > 0 && y > 0 && is_alive(x - 1, y - 1, field_width, f)) {
+        count++;
+    }
+
+    if (x > 0 && y < field_height && is_alive(x - 1, y + 1, field_width, f)) {
+        count++;
+    }
+
+    if (x < field_width && y > 0 && is_alive(x + 1, y - 1, field_width, f)) {
+        count++;
+    }
+
+    if (x < field_width && y < field_height && is_alive(x + 1, y + 1, field_width, f)) {
+        count++;
+    }
+
+    printf("\n");
 
     return count;
 }
@@ -85,17 +114,24 @@ static int parse_field_size(char *parse_str, uint64_t *field_size)
 
 static void apply_logic(uint64_t width, uint64_t height)
 {
+    uint32_t tmp_field[FIELD_ARR_LEN];
     uint32_t neighbors;
+
+    for (int i = 0; i < FIELD_ARR_LEN; i++) {
+        tmp_field[i] = field[i];
+        printf("%x %x\n", tmp_field[i], field[i]);
+    }
+
     for (uint64_t y = 1; y <= height - 1; ++y) {
         for (uint64_t x = 1; x <= width - 1; ++x) {
-            neighbors = num_neighbors(x, y, width, height);
-            if (is_alive(x, y, width)) {
+            neighbors = num_neighbors(x, y, width, height, tmp_field);
+            if (is_alive(x, y, width, tmp_field)) {
                 if (neighbors < 2 || neighbors > 3) {
-                    set_dead(x, y, width);
+                    set_dead(x, y, width, field);
                 }
             } else {
                 if (neighbors == 3) {
-                    set_alive(x, y, width);
+                    set_alive(x, y, width, field);
                 }
             }
         }
@@ -120,9 +156,11 @@ static void draw_field(uint64_t width, uint64_t height)
         putchar('#');
     }
 
+    int alive = 0;
     for (uint64_t y = 1; y <= height - 1; ++y) {
         for (uint64_t x = 1; x <= width - 1; ++x) {
-            if (is_alive(x, y, width)) {
+            if (is_alive(x, y, width, field)) {
+                alive++;
                 gotoxy(x, y);
                 putchar('X');
             }
@@ -131,6 +169,7 @@ static void draw_field(uint64_t width, uint64_t height)
 
     gotoxy(width, height);
     puts("");
+    printf("alive: %d\n", alive);
 }
 
 int main(int argc, char **argv)
@@ -153,11 +192,13 @@ int main(int argc, char **argv)
     uint64_t width = field_size;
     uint64_t height = field_size / 2;
 
-    set_alive(width / 2, height / 2, width);
-    set_alive(width / 2 + 1, height / 2, width);
-    set_alive(width / 2 + 2, height / 2 + 1, width);
-    set_alive(width / 2 - 1, height / 2 + 1, width);
-    draw_field(width, height);draw_field(width, height);
+    for(int i = 0; i < FIELD_ARR_LEN; i++) {
+        field[i] = 0;
+    }
+    set_alive(width / 2 - 1, height / 2, width, field);
+    set_alive(width / 2, height / 2, width, field);
+    set_alive(width / 2 + 1, height / 2, width, field);
+    draw_field(width, height);
     getchar();
 
     while(true) {
