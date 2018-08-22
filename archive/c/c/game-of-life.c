@@ -5,6 +5,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include <memory.h>
+#include <time.h>
 
 #define clear() printf("\033[H\033[J")
 #define gotoxy(x,y) printf("\033[%lu;%luH", (y)+1, (x)+1)
@@ -118,8 +119,6 @@ static void apply_logic(uint64_t width, uint64_t height)
 
 static void draw_field(uint64_t width, uint64_t height)
 {
-    clear();
-
     for (uint64_t i = 0; i <= width; ++i) {
         gotoxy(i, (uint64_t) 0);
         putchar('#');
@@ -137,23 +136,50 @@ static void draw_field(uint64_t width, uint64_t height)
     int alive = 0;
     for (uint64_t y = 1; y <= height - 1; ++y) {
         for (uint64_t x = 1; x <= width - 1; ++x) {
+            gotoxy(x, y);
             if (is_alive(x, y, width, field)) {
                 alive++;
-                gotoxy(x, y);
                 putchar('X');
+            } else {
+                putchar(' ');
             }
         }
     }
 
     gotoxy(width, height);
     puts("");
-    printf("alive: %d\n", alive);
+    printf("alive: %d     \n", alive);
+}
+
+static void populate_field(uint64_t width, uint64_t height, double spawn_prob)
+{
+    uint32_t threshold = spawn_prob * RAND_MAX;
+    uint32_t rand_spawn;
+
+    srand(time(NULL));
+    for (uint64_t y = 1; y <= height - 1; ++y) {
+        for (uint64_t x = 1; x <= width - 1; ++x) {
+            rand_spawn = rand();
+            if (rand_spawn < threshold) {
+                set_alive(x, y, width, field);
+            }
+        }
+    }
 }
 
 int main(int argc, char **argv)
 {
     uint64_t field_size;
     int rc;
+    double spawn_rate = 0.5;
+    int fps = 30;
+
+    double secs = 1./fps;
+
+    struct timespec sleep_time = {
+        .tv_sec = 0,
+        .tv_nsec = secs * 1000000000
+    };
 
     if (argc < 2) {
         fprintf(stderr, "Usage: %s <size>\n", argv[0]);
@@ -170,16 +196,15 @@ int main(int argc, char **argv)
     uint64_t width = field_size;
     uint64_t height = field_size / 2;
 
-    set_alive(width / 2 - 1, height / 2, width, field);
-    set_alive(width / 2, height / 2, width, field);
-    set_alive(width / 2 + 1, height / 2, width, field);
+    clear();
+    populate_field(width, height, spawn_rate);
     draw_field(width, height);
     getchar();
 
     while(true) {
         apply_logic(width, height);
         draw_field(width, height);
-        getchar();
+        nanosleep(&sleep_time, NULL);
     }
 
     return EXIT_SUCCESS;
