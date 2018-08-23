@@ -5,6 +5,7 @@ Welcome to Sample Programs in Brainfuck!
 ## Sample Programs
 
 - [Hello World in Brainfuck](https://github.com/jrg94/sample-programs/issues/75)
+- [Reverse a String in Brainfuck](https://github.com/TheRenegadeCoder/sample-programs/issues/362)
 
 ## Fun Facts
 
