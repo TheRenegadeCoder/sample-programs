@@ -4,7 +4,7 @@ Welcome to Sample Programs in Little!
 
 ## Sample Programs
 
-- Hello World in Little
+- [Hello World in Little](https://github.com/TheRenegadeCoder/sample-programs/issues/361)
 
 ## Fun Facts
 
