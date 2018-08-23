@@ -14,3 +14,4 @@ Welcome to Sample Programs in Little!
 ## References
 
 - [Little GitHub](https://github.com/bitkeeper-scm/little-lang)
+- [Little Documentation](http://www.little-lang.org/documentation.html)
