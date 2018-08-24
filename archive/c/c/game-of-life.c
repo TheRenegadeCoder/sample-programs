@@ -22,8 +22,6 @@ static bool is_alive(uint64_t x, uint64_t y, uint64_t field_width, uint32_t *f)
     entry = f[index / 32];
     bit = index % 32;
 
-    //printf("alive? f[%d] = %d; bit %d = %d\n", index / 32, f[index/32], bit, (entry & (1 << bit)));
-
     return (entry & (1 << bit));
 }
 
@@ -33,8 +31,6 @@ static void set_alive(uint64_t x, uint64_t y, uint64_t field_width, uint32_t *f)
 
     index = y * field_width + x;
     bit = index % 32;
-
-    //printf("x: %d, y: %d, index: %d (%d), bit: %d\n", x, y, index, index / 32, bit);
 
     f[index / 32] |= (1 << bit);
 }
@@ -72,22 +68,41 @@ static uint32_t num_neighbors(uint64_t x, uint64_t y, uint64_t field_width,
     return count;
 }
 
-static int parse_field_size(char *parse_str, uint64_t *field_size)
+static int parse_args(char **argv, uint64_t *field_size, uint64_t *fps, double *spawn_rate)
 {
+    int rc;
     char *end;
 
     errno = 0;
 
-    *field_size = strtoul(parse_str, &end, 10);
+    *field_size = strtoul(argv[1], &end, 10);
 
-    if ((errno == ERANGE && *field_size == ULONG_MAX)
-            || (errno != 0 && *field_size == 0)) {
+    if ((errno == ERANGE && *field_size == ULONG_MAX) || (errno != 0 && *field_size == 0)) {
         perror("strtol");
         return -1;
     }
 
-    if (end == parse_str) {
-        fprintf(stderr, "Invalid size\n");
+    if (end == argv[1]) {
+        fprintf(stderr, "Invalid field size\n");
+        return -1;
+    }
+
+    errno = 0;
+
+    *fps = strtoul(argv[2], &end, 10);
+    if ((errno == ERANGE && *fps == ULONG_MAX) || (errno != 0 && *fps == 0)) {
+        perror("strtol");
+        return -1;
+    }
+
+    if (end == argv[2]) {
+        fprintf(stderr, "Invalid FPS\n");
+        return -1;
+    }
+
+    rc = sscanf(argv[3], "%lf", spawn_rate);
+    if (rc == EOF) {
+        fprintf(stderr, "Invalid spawn rate\n");
         return -1;
     }
 
@@ -170,31 +185,34 @@ static void populate_field(uint64_t width, uint64_t height, double spawn_prob)
 int main(int argc, char **argv)
 {
     uint64_t field_size;
+    uint64_t width, height;
     int rc;
-    double spawn_rate = 0.5;
-    int fps = 30;
+    double spawn_rate;
+    uint64_t fps;
+    struct timespec sleep_time;
 
-    double secs = 1./fps;
-
-    struct timespec sleep_time = {
-        .tv_sec = 0,
-        .tv_nsec = secs * 1000000000
-    };
-
-    if (argc < 2) {
-        fprintf(stderr, "Usage: %s <size>\n", argv[0]);
+    if (argc < 4) {
+        fprintf(stderr, "Usage: %s <size> <fps> <spawn_rate>\n", argv[0]);
         fprintf(stderr, "\tsize: width/height of square game field\n");
+        fprintf(stderr, "\tfps: target refresh rate\n");
+        fprintf(stderr, "\tspawn_rate: floating point value between 0 and 1, " \
+                "describing initial spawn probability\n");
         return EXIT_FAILURE;
     }
 
     /* parse command line arguments */
-    rc = parse_field_size(argv[1], &field_size);
+    rc = parse_args(argv, &field_size, &fps, &spawn_rate);
     if (rc != 0) {
         return EXIT_FAILURE;
     }
 
-    uint64_t width = field_size;
-    uint64_t height = field_size / 2;
+    sleep_time = (struct timespec) {
+        .tv_sec = 0,
+        .tv_nsec = (1./fps) * 1000000000
+    };
+
+    width = field_size;
+    height = field_size / 2;
 
     clear();
     populate_field(width, height, spawn_rate);
