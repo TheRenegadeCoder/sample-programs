@@ -31,7 +31,9 @@
  * more involved; see the `is_alive`, `set_alive`, and `set_dead` functions
  * below.
  */
-#define MAX_FIELD_SIZE 128*128
+#define MAX_FIELD_WIDTH 128
+#define MAX_FIELD_HEIGHT (MAX_FIELD_WIDTH / 2)
+#define MAX_FIELD_SIZE (MAX_FIELD_WIDTH * MAX_FIELD_HEIGHT)
 #define FIELD_ARR_LEN ((MAX_FIELD_SIZE / 32) + 1)
 static uint32_t field[FIELD_ARR_LEN];
 
@@ -104,26 +106,50 @@ static uint32_t num_neighbors(uint64_t x, uint64_t y, uint64_t field_width,
 
 static int parse_args(char **argv, uint8_t *field_size, uint16_t *fps, double *spawn_rate)
 {
-    int rc;
+    char *end;
+    uint64_t tmp;
+    double tmp_d;
 
-    rc = sscanf(argv[1], "%hhu", field_size);
-    if (rc == 0 || rc == EOF) {
-        fprintf(stderr, "Invalid field size\n");
+    errno = 0;
+    tmp = strtoul(argv[1], &end, 10);
+    if (errno != 0) {
+        perror("strtoul");
         return -1;
     }
 
-    rc = sscanf(argv[2], "%hu", fps);
-    if (rc == 0 || rc == EOF) {
+    if (end == argv[1] || tmp > UCHAR_MAX) {
+        fprintf(stderr, "Invalid size\n");
+        return -1;
+    }
+
+    /* downcast is safe here because we checked the size above */
+    *field_size = (uint8_t) tmp;
+
+    tmp = strtoul(argv[2], &end, 10);
+    if (errno != 0) {
+        perror("strtoul");
+        return -1;
+    }
+
+    if (end == argv[2] || tmp > USHRT_MAX) {
         fprintf(stderr, "Invalid FPS\n");
         return -1;
     }
 
-    rc = sscanf(argv[3], "%lf", spawn_rate);
-    if (rc == 0 || rc == EOF) {
+    *fps = (uint16_t) tmp;
+
+    tmp_d = strtod(argv[3], &end);
+    if (errno != 0) {
+        perror("strtol");
+        return -1;
+    }
+
+    if (end == argv[3] || tmp_d < 0. || tmp_d > 1.) {
         fprintf(stderr, "Invalid spawn rate\n");
         return -1;
     }
 
+    *spawn_rate = tmp_d;
     return 0;
 }
 
@@ -184,14 +210,14 @@ static void draw_field(uint64_t width, uint64_t height)
     printf("alive: %d     \n", alive);
 }
 
-static void populate_field(uint64_t width, uint64_t height, double spawn_prob)
+static void populate_field(uint8_t width, uint8_t height, double spawn_prob)
 {
     uint32_t threshold = spawn_prob * RAND_MAX;
     uint32_t rand_spawn;
 
     srand(time(NULL));
-    for (uint64_t y = 0; y < height - 1; ++y) {
-        for (uint64_t x = 0; x < width - 1; ++x) {
+    for (uint8_t y = 0; y < height - 1; ++y) {
+        for (uint8_t x = 0; x < width - 1; ++x) {
             rand_spawn = rand();
             if (rand_spawn < threshold) {
                 set_alive(x, y, width, field);
@@ -232,13 +258,34 @@ int main(int argc, char **argv)
         .tv_nsec = ((long)msec_per_frame % 1000) * 1000000
     };
 
+    /*
+     * Although the contribution guide specifies that the field should be
+     * square, we deviate a little here and make the height half of the width.
+     * The reason for this is that characters in a terminal are typically about
+     * twice as high as they are wide, so a "true" square field looks really
+     * ugly. This way, the field at least *looks* square, even if it technically
+     * isn't.
+     */
     width = field_size;
     height = field_size / 2;
 
+    if (width > MAX_FIELD_WIDTH) {
+        fprintf(stderr, "Field width is too large! (maximum: %d)\n", MAX_FIELD_WIDTH);
+        return EXIT_FAILURE;
+    }
+
+    if (height > MAX_FIELD_HEIGHT) {
+        fprintf(stderr, "Field width is too large! (maximum: %d)\n", MAX_FIELD_HEIGHT);
+        return EXIT_FAILURE;
+    }
     clear();
+
     populate_field(width, height, spawn_rate);
     draw_field(width, height);
+    printf("[Press ENTER to start simulation]");
     getchar();
+
+    clear();
 
     while(true) {
         apply_logic(width, height);
