@@ -5,6 +5,7 @@ Welcome to Sample Programs in Vimscript!
 ## Sample Programs
 
 - [Hello World in Vimscript](https://github.com/jrg94/sample-programs/issues/369)
+- [Reverse a String in Vimscript](https://github.com/TheRenegadeCoder/sample-programs/issues/373)
 
 ## Fun Facts
 
