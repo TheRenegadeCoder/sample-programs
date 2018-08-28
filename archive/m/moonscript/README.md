@@ -1,10 +1,10 @@
-# Sample Programs in MOONSCRIPT
+# Sample Programs in MoonScript
 
-Welcome to Sample Programs in MOONSCRIPT!
+Welcome to Sample Programs in MoonScript!
 
 ## Sample Programs
 
-- [Hello World in MOONSCRIPT](https://github.com/TheRenegadeCoder/sample-programs/issues/178)
+- [Hello World in MoonScript](https://github.com/TheRenegadeCoder/sample-programs/issues/178)
 
 ## Fun Facts
 
@@ -15,6 +15,6 @@ Welcome to Sample Programs in MOONSCRIPT!
 
 ## References
 
-- [MOONSCRIPT Wiki](https://moonscript.org/)
-- [MOONSCRIPT Getting Started](http://leafo.net/posts/getting_started_with_moonscript.html)
-- [MOONSCRIPT Online Compiler](http://moonscript.org/compiler/)
+- [MoonScript Wiki](https://moonscript.org/)
+- [MoonScript Getting Started](http://leafo.net/posts/getting_started_with_moonscript.html)
+- [MoonScript Online Compiler](http://moonscript.org/compiler/)
