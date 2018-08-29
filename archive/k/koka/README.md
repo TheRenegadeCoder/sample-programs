@@ -4,7 +4,7 @@ Welcome to Sample Programs in Koka!
 
 ## Sample Programs
 
-- [Hello World in Koka](https://github.com/jrg94/sample-programs/issues/123)
+- [Hello World in Koka](https://github.com/TheRenegadeCoder/sample-programs/issues/382)
 
 ## Fun Facts
 
