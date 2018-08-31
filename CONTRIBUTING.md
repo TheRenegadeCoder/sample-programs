@@ -251,6 +251,9 @@ Of course, for the purposes of the repo, here are the requirements for a contrib
     - Total number of frames
     - Spawn rate (% of living vs. dead as decimal between 0 and 1)
 4. Simulation must be a GUI
+    - An exception to this rule can be made for languages where it's impossible
+      or impractical to have an actual GUI. In that case, a terminal application
+      is sufficient.
 
 Beyond that, there's really no hard-and-fast requirements. All I ask is that
 solutions are minimal. In other words, don't worry about command line options or
