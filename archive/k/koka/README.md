@@ -16,4 +16,3 @@ Welcome to Sample Programs in Koka!
 - [Koka GitHub](https://github.com/koka-lang/koka)
 - [Koka Docs](https://koka-lang.github.io/koka/doc/toc.html)
 - [Koka Online Editor](https://www.rise4fun.com/koka/tutorial)
-g
