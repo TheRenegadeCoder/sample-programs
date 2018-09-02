@@ -4,7 +4,7 @@ Welcome to Sample Programs in Orc!
 
 ## Sample Programs
 
-- [Hello World in Orc](https://github.com/TheRenegadeCoder/sample-programs/issues/278)
+- [Hello World in Orc](https://github.com/TheRenegadeCoder/sample-programs/issues/391)
 
 ## Fun Facts
 
