@@ -4,7 +4,7 @@ Welcome to Sample Programs in MoonScript!
 
 ## Sample Programs
 
-- [Hello World in MoonScript](https://github.com/TheRenegadeCoder/sample-programs/issues/178)
+- [Hello World in MoonScript](https://github.com/TheRenegadeCoder/sample-programs/issues/389)
 
 ## Fun Facts
 
