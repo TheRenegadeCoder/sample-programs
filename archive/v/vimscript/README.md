@@ -10,7 +10,7 @@ Welcome to Sample Programs in Vimscript!
 
 ## Fun Facts
 
-- Debut: unknown (Vim: 1991)
+- Debut: 1998
 - Typing: Dynamic
 
 ## References
