@@ -2,16 +2,16 @@
 
 for ($i = 1; $i < 101; $i++)
 {
-  $output = '';
+  $output = "";
 
   if ($i % 3 == 0)
   {
-    $output .= 'Fizz';
+    $output .= "Fizz";
   }
 
   if ($i % 5 == 0)
   {
-    $output .= 'Buzz';
+    $output .= "Buzz";
   }
 
   if (!$output)
