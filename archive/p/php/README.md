@@ -5,6 +5,7 @@ Welcome to Sample Programs in PHP!
 ## Sample Programs
 
 - [Hello World in PHP](https://therenegadecoder.com/code/hello-world-in-php/)
+- [Fizz Buzz in PHP](https://github.com/TheRenegadeCoder/sample-programs/issues/402)
 
 ## Fun Facts
 
