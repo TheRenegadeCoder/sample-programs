@@ -15,5 +15,6 @@ Welcome to Sample Programs in C++!
 ## References
 
 - [C++ Wiki](https://en.wikipedia.org/wiki/C%2B%2B)
-- [C++ Docs](http://www.cplusplus.com/)
+- [CPlusPlus Docs for the C++ language and standard library](http://www.cplusplus.com/)
+- [Cppreference C++ Docs](https://en.cppreference.com/w/cpp)
 - [C++ Online Compiler](http://cpp.sh/)
