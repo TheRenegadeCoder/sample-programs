@@ -20,7 +20,7 @@ void write_file()
         std::ios::trunc	    discard the contents of the stream when opening
         std::ios::ate	    seek to the end of stream immediately after open
 
-        Use the bitwise operator OR to add addition flags
+        Use the bitwise operator OR to add additional flags
 
         Example:
 
