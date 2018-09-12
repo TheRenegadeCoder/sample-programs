@@ -6,6 +6,7 @@ Welcome to Sample Programs in Rust!
 
 - [Hello World in Rust](https://therenegadecoder.com/code/hello-world-in-rust/)
 - [Reverse a String in Rust](https://github.com/jrg94/sample-programs/issues/261)
+- [File IO in Rust]()
 
 ## Fun Facts
 
