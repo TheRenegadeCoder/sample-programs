@@ -5,7 +5,7 @@ Welcome to Sample Programs in C++!
 ## Sample Programs
 
 - [Hello World in C++](https://therenegadecoder.com/code/hello-world-in-c-plus-plus/)
-- [File Input/Output in C++]
+- [File Input/Output in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/406)
 
 ## Fun Facts
 
