@@ -104,8 +104,8 @@ However, for simplicity, I ask that you **only make pull requests for one langua
 The following list contains all existing sample programs:
 
 1. [Hello World in Every Language][21]
-2. [Reverse a String in Every Language](https://therenegadecoder.com/code/reverse-a-string-in-every-language/)
-3. [Fizz Buzz in Every Language](https://therenegadecoder.com/series/fizz-buzz-in-every-language/)
+2. [Reverse a String in Every Language][22]
+3. [Fizz Buzz in Every Language][23]
 4. File IO in Every Language
 5. Quine in Every Language
 6. Game of Life in Every Language
@@ -321,3 +321,5 @@ These rules help grow and cultivate the community in a positive manner.
 [19]: https://en.gravatar.com/
 [20]: https://help.github.com/articles/fork-a-repo
 [21]: https://therenegadecoder.com/code/hello-world-in-every-language/
+[22]: https://therenegadecoder.com/code/reverse-a-string-in-every-language/
+[23]: https://therenegadecoder.com/series/fizz-buzz-in-every-language/
