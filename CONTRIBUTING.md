@@ -310,7 +310,7 @@ These rules help grow and cultivate the community in a positive manner.
 [8]: #reverse-a-string-rules
 [9]: #quine-rules
 [10]: #game-of-life-rules
-[11]: https://therenegadecoder.com/membership-join/membership-registration/
+[11]: https://therenegadecoder.com/members/registration/
 [12]: https://therenegadecoder.com/wp-admin/
 [13]: https://github.com/jrg94/sample-programs/blob/master/archive/p/python/README.md
 [14]: https://en.wikipedia.org/wiki/Quine_(computing)
