@@ -237,6 +237,8 @@ offer a way to read line by line or even transfer the whole contents into a stri
 to read the file is to loop line by line and do some processing. Printing each line to the 
 screen is enough. Like in the write function, make sure there is some basic error checking.
 
+Note: name of the file for outputting and reading show be "output.txt".
+
 ### Quine Rules
 
 For those of you that don't know, a quine is a program which can replicate
