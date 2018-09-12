@@ -1,7 +1,7 @@
 def write_file():
 
     try:
-        out = open("file.txt", "w")
+        out = open("output.txt", "w")
     except OSError as e:
         print("Cannot open file: {}", e)
 
@@ -26,5 +26,6 @@ def read_file():
     
     in_file.close()
 
-write_file()
-read_file()
+if __name__ == '__main__':
+    write_file()
+    read_file()
