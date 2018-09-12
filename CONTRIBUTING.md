@@ -224,7 +224,7 @@ Will the file be appending new content? Truncated?
 
 In general, a File IO solution should perform the following:
 
-1. Write some arbitrary content to a file
+1. Write some arbitrary content to a file (use `output.txt`)
 2. Read back that content and print it to the user
 
 More specifically, begin with writing a file to disk. In the write function, you should show how 
@@ -236,8 +236,6 @@ With the read file function, open the file with read abilities. Most higher leve
 offer a way to read line by line or even transfer the whole contents into a string. One way 
 to read the file is to loop line by line and do some processing. Printing each line to the 
 screen is enough. Like in the write function, make sure there is some basic error checking.
-
-Note: name of the file for outputting and reading show be "output.txt".
 
 ### Quine Rules
 
@@ -312,7 +310,7 @@ These rules help grow and cultivate the community in a positive manner.
 [8]: #reverse-a-string-rules
 [9]: #quine-rules
 [10]: #game-of-life-rules
-[11]: https://therenegadecoder.com/membership-join/membership-registration/
+[11]: https://therenegadecoder.com/members/registration/
 [12]: https://therenegadecoder.com/wp-admin/
 [13]: https://github.com/jrg94/sample-programs/blob/master/archive/p/python/README.md
 [14]: https://en.wikipedia.org/wiki/Quine_(computing)
