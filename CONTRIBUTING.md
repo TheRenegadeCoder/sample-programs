@@ -262,6 +262,15 @@ GUI elements. Keep it simple. Remember, the goal is to show off language feature
 Also, I ask that you don't use external libraries. I like for these files to
 be as easy as possible to test, so limiting dependencies is helpful.
 
+### File Input/Output
+Most languages have either built in utilities or functions in a standard library used to both read and write files. Most file input/output functions follow a similar pattern througout many programming languages. A string to the path of the file and a "mode". A mode is how the files in opened. Will the file be opened for reading or writing or even both? With the file be appending with new content? Truncated?
+
+On success the function returns a file handle. A file handle is an indirect way of access to actual the file on the disk. Functions or methods are called on this file handle to read and write the file itself.
+
+Another term used in file I/O is "cursor". A cursor is the starting pointing for reading and writing. The language or the standard library will provide functions to move the cursor and tell it's current position in the file.
+
+A neat trick to find the size of a file is to first "seek" to the end of file and then get the position of the cursor.
+
 ## Plagiarism
 
 **Please** do not submit work that is copied from another source. If work is found to be 
