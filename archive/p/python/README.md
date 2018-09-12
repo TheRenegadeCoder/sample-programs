@@ -9,6 +9,7 @@ Welcome to Sample Programs in Python!
 - [Reverse a String in Python][2]
 - [Quine in Python][3]
 - [Game of Life in Python][4]
+- [File IO in Python][5]
 
 ## Fun Facts
 

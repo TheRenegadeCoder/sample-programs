@@ -224,7 +224,7 @@ Will the file be appending new content? Truncated?
 
 In general, a File IO solution should perform the following:
 
-1. Write some arbitrary content to a file
+1. Write some arbitrary content to a file (use `output.txt`)
 2. Read back that content and print it to the user
 
 More specifically, begin with writing a file to disk. In the write function, you should show how 
