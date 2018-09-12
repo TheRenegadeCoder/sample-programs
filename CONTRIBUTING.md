@@ -14,6 +14,7 @@ for as many languages as possible.
   - [Hello World Rules][6]
   - [Fizz Buzz Rules][7]
   - [Reverse a String Rules][8]
+  - [File IO Rules][18]
   - [Quine Rules][9]
   - [Game of Life Rules][10]
 - [Plagiarism][17]
@@ -212,6 +213,28 @@ No Input     |                |
 Empty String | ""             |             
 Ascii String | "Hello, World" | "dlroW ,olleH"
 
+### File IO Rules
+
+Most languages have either built in utilities or functions in a standard library used 
+to both read and write files. Most file input/output functions follow a similar pattern 
+througout many programming languages. A string to the path of the file and a "mode". A mode 
+is how the files is opened. Will the file be opened for reading or writing or even both? 
+Will the file be appending new content? Truncated?
+
+First, begin with writing a file to disk. It's better to put it in a separate function to 
+keep the script/main function clean and modular. This should also be done to the read file 
+function. In the write function it should show how to open a file with write abilities and 
+write some contents to the file. Before closing the file, you should first call the appropriate 
+function to "flush" to make sure everything is written to disk. Then close the file. There 
+should be basic error checking to show how to know if opening a file didn't work or if an I/O 
+related error occurred.
+
+With the read file function open the file with read abilities. Most higher level languages 
+offer a way to read line by line or even transfer the whole contents into a string. Best way 
+to read the file is to loop line by line and do some processing. It doesn't have to be much. 
+Simply printing it onto the screen is enough. Like in the write function, make sure there 
+is some basic error checking.
+
 ### Quine Rules
 
 For those of you that don't know, a quine is a program which can replicate
@@ -262,12 +285,6 @@ GUI elements. Keep it simple. Remember, the goal is to show off language feature
 Also, I ask that you don't use external libraries. I like for these files to
 be as easy as possible to test, so limiting dependencies is helpful.
 
-### File Input/Output
-Most languages have either built in utilities or functions in a standard library used to both read and write files. Most file input/output functions follow a similar pattern througout many programming languages. A string to the path of the file and a "mode". A mode is how the files is opened. Will the file be opened for reading or writing or even both? Will the file be appending new content? Truncated?
-
-First, begin with writing a file to disk. It's better to put it in a separate function to keep the script/main function clean and modular. This should also be done to the read file function. In the write function it should show how to open a file with write abilities and write some contents to the file. Before closing the file, you should first call the appropriate function to "flush" to make sure everything is written to disk. Then close the file. There should be basic error checking to show how to know if opening a file didn't work or if an I/O related error occurred.
-
-With the read file function open the file with read abilities. Most higher level languages offer a way to read line by line or even transfer the whole contents into a string. Best way to read the file is to loop line by line and do some processing. It doesn't have to be much. Simply printing it onto the screen is enough. Like in the write function, make sure there is some basic error checking.
 ## Plagiarism
 
 **Please** do not submit work that is copied from another source. If work is found to be 
@@ -298,3 +315,4 @@ These rules help grow and cultivate the community in a positive manner.
 [15]: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
 [16]: https://en.wikipedia.org/wiki/Asteroids_(video_game)
 [17]: #plagiarism
+[18]: #file-io-rules
