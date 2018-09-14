@@ -6,7 +6,7 @@ Welcome to Sample Programs in C++!
 
 - [Hello World in C++](https://therenegadecoder.com/code/hello-world-in-c-plus-plus/)
 - [File Input/Output in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/406)
-- [Reverse String in C++]()
+- [Reverse String in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/419)
 
 ## Fun Facts
 
