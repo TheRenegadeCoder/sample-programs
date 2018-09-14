@@ -4,6 +4,7 @@ def write_file():
         out = open("output.txt", "w")
     except OSError as e:
         print("Cannot open file: {}", e)
+        return
 
 
     out.write("Hi! I'm a line of text in this file!\n")
@@ -15,9 +16,10 @@ def write_file():
 def read_file():
     
     try:
-        in_file = open("file.txt", "r")
+        in_file = open("output.txt", "r")
     except OSError as e:
         print("Cannot open file to read: {}", e)
+        return
     
     line = in_file.readline()
     while line:
