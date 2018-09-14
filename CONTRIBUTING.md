@@ -14,6 +14,7 @@ for as many languages as possible.
   - [Hello World Rules][6]
   - [Fizz Buzz Rules][7]
   - [Reverse a String Rules][8]
+  - [File IO Rules][18]
   - [Quine Rules][9]
   - [Game of Life Rules][10]
 - [Plagiarism][17]
@@ -89,12 +90,12 @@ I'll add one before publishing.
 #### Profile
 
 Don't forget to update your profile as it will be displayed at the bottom of the article. If you want
-a proper profile image, make sure to setup a [Gravatar](https://en.gravatar.com/)
+a proper profile image, make sure to setup a [Gravatar][19]
 using the same email as your account.
 
 ### Pull Requests
 
-If you wish to contribute, [fork](https://help.github.com/articles/fork-a-repo) the repo and make a pull request
+If you wish to contribute, [fork][20] the repo and make a pull request
 with your changes. Ideally, your contribution should be to existing projects,
 but you're welcome to add new snippets.
 
@@ -102,11 +103,12 @@ However, for simplicity, I ask that you **only make pull requests for one langua
 
 The following list contains all existing sample programs:
 
-1. [Hello World in Every Language](https://therenegadecoder.com/code/hello-world-in-every-language/)
-2. [Reverse a String in Every Language](https://therenegadecoder.com/code/reverse-a-string-in-every-language/)
-3. Fizz Buzz in Every Language
-4. Quine in Every Language
-5. Game of Life in Every Language
+1. [Hello World in Every Language][21]
+2. [Reverse a String in Every Language][22]
+3. [Fizz Buzz in Every Language][23]
+4. File IO in Every Language
+5. Quine in Every Language
+6. Game of Life in Every Language
 
 When adding new languages, make sure you include a README using the following template:
 
@@ -212,6 +214,29 @@ No Input     |                |
 Empty String | ""             |             
 Ascii String | "Hello, World" | "dlroW ,olleH"
 
+### File IO Rules
+
+Most languages have built-in utilities or functions for reading and writing files. 
+Many of these input/output functions follow a similar pattern across programming languages: 
+a string to the path of the file and a "mode". A mode is how the files is opened. 
+Will the file be opened for reading, writing, or even both? 
+Will the file be appending new content? Truncated?
+
+In general, a File IO solution should perform the following:
+
+1. Write some arbitrary content to a file (use `output.txt`)
+2. Read back that content and print it to the user
+
+More specifically, begin with writing a file to disk. In the write function, you should show how 
+to open a file with write abilities and write some contents to the file. Before closing the file, 
+you should ensure everything is written to disk. Then, close the file. There should be basic error 
+checking to confirm file opening was successful.
+
+With the read file function, open the file with read abilities. Most higher level languages 
+offer a way to read line by line or even transfer the whole contents into a string. One way 
+to read the file is to loop line by line and do some processing. Printing each line to the 
+screen is enough. Like in the write function, make sure there is some basic error checking.
+
 ### Quine Rules
 
 For those of you that don't know, a quine is a program which can replicate
@@ -285,10 +310,16 @@ These rules help grow and cultivate the community in a positive manner.
 [8]: #reverse-a-string-rules
 [9]: #quine-rules
 [10]: #game-of-life-rules
-[11]: https://therenegadecoder.com/membership-join/membership-registration/
+[11]: https://therenegadecoder.com/members/registration/
 [12]: https://therenegadecoder.com/wp-admin/
 [13]: https://github.com/jrg94/sample-programs/blob/master/archive/p/python/README.md
 [14]: https://en.wikipedia.org/wiki/Quine_(computing)
 [15]: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
 [16]: https://en.wikipedia.org/wiki/Asteroids_(video_game)
 [17]: #plagiarism
+[18]: #file-io-rules
+[19]: https://en.gravatar.com/
+[20]: https://help.github.com/articles/fork-a-repo
+[21]: https://therenegadecoder.com/code/hello-world-in-every-language/
+[22]: https://therenegadecoder.com/code/reverse-a-string-in-every-language/
+[23]: https://therenegadecoder.com/series/fizz-buzz-in-every-language/
