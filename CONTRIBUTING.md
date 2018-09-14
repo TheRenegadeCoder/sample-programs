@@ -255,7 +255,49 @@ reasonable with your solution.
 ### Baklava Rules
 
 Baklava is a Turkish dessert, and its shape is like an equilateral quadrangle. 
-It is used as an example for programming education in Turkish schools. 
+It is used as an example for programming education in Turkish schools. The following
+is the expected output:
+
+```
+           *
+
+          ***
+
+         *****
+
+        *******
+
+       *********
+
+      ***********
+
+     *************
+
+    ***************
+
+   *****************
+  *******************
+ *********************
+
+  *******************
+
+   *****************
+
+    ***************
+
+     *************
+
+      ***********
+       *********
+
+        *******
+
+         *****
+
+          ***
+
+           *
+```
 
 ### Game of Life Rules
 
