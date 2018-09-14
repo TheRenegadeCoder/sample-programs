@@ -16,6 +16,7 @@ for as many languages as possible.
   - [Reverse a String Rules][8]
   - [File IO Rules][18]
   - [Quine Rules][9]
+  - [Baklava Rules][24]
   - [Game of Life Rules][10]
 - [Plagiarism][17]
 
@@ -251,6 +252,11 @@ For the purposes of this repo, the solution should be simple. We're not here
 to play code golf, but we're also not here to practice obfuscation. Just be
 reasonable with your solution.
 
+### Baklava Rules
+
+Baklava is a Turkish dessert, and its shape is like an equilateral quadrangle. 
+It is used as an example for programming education in Turkish schools. 
+
 ### Game of Life Rules
 
 For those of you that don't know, the Game of Life is basically a cell
@@ -323,3 +329,4 @@ These rules help grow and cultivate the community in a positive manner.
 [21]: https://therenegadecoder.com/code/hello-world-in-every-language/
 [22]: https://therenegadecoder.com/code/reverse-a-string-in-every-language/
 [23]: https://therenegadecoder.com/series/fizz-buzz-in-every-language/
+[24]: #baklava-rules
