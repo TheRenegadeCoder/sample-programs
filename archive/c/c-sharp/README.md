@@ -7,7 +7,7 @@ Welcome to Sample Programs in C#!
 - [Hello World in C#][2]
 - [Reverse a String in C#][3]
 - [Fizz Buzz in C#][4]
-- [Baklava in C#]
+- [Baklava in C#][8]
   - Solution borrowed from @toturkmen via the [baklava repo][1]
 
 ## Fun Facts
@@ -29,3 +29,4 @@ Welcome to Sample Programs in C#!
 [5]: https://en.wikipedia.org/wiki/C_Sharp_(programming_language)
 [6]: https://docs.microsoft.com/en-us/dotnet/csharp/
 [7]: https://www.jdoodle.com/compile-c-sharp-online
+[8]: https://github.com/TheRenegadeCoder/sample-programs/issues/423

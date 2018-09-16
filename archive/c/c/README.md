@@ -8,7 +8,7 @@ Welcome to Sample Programs in C!
 - [Reverse String in C][3]
 - [Fizz Buzz in C][4]
 - [File Input/Ouput in C][5]
-- [Baklava in C]
+- [Baklava in C][10]
   - Solution borrowed from @toturkmen and @ahmeturganci via the [baklava repo][1]
 - [Game of Life in C][6]
 
@@ -33,3 +33,4 @@ Welcome to Sample Programs in C!
 [7]: https://en.wikipedia.org/wiki/C_(programming_language)
 [8]: https://www.gnu.org/software/gnu-c-manual/
 [9]: https://www.onlinegdb.com/online_c_compiler
+[10]: https://github.com/TheRenegadeCoder/sample-programs/issues/424

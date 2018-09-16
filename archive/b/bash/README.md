@@ -7,7 +7,7 @@ Welcome to Sample Programs in Bash!
 - [Hello World in Bash][2]
 - [Reverse String in Bash][3]
 - [Fizz Buzz in Bash][4]
-- [Baklava in Bash]
+- [Baklava in Bash][6]
   - Solution borrowed from @toturkman via the [baklava repo][1]
 
 ## Fun Facts
@@ -23,3 +23,4 @@ Welcome to Sample Programs in Bash!
 [3]: https://github.com/jrg94/sample-programs/issues/159
 [4]: https://github.com/jrg94/sample-programs/issues/384
 [5]: https://en.wikipedia.org/wiki/Bash_(Unix_shell)
+[6]: https://github.com/TheRenegadeCoder/sample-programs/issues/422
