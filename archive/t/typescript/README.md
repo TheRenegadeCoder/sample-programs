@@ -4,8 +4,10 @@ Welcome to Sample Programs in TypeScript!
 
 ## Sample Programs
 
-- [Hello World in TypeScript](https://github.com/jrg94/sample-programs/issues/245)
-- [Game of Life in TypeScript](https://github.com/jrg94/sample-programs/issues/309)
+- [Hello World in TypeScript][2]
+- [Game of Life in TypeScript][3]
+- [Baklava in TypeScript]
+  - Solution borrowed from @toturkmen via the [baklava repo][1]
 
 ## Fun Facts
 
@@ -14,5 +16,11 @@ Welcome to Sample Programs in TypeScript!
 
 ## References
 
-- [TypeScript Wiki](https://en.wikipedia.org/wiki/TypeScript)
-- [TypeScript GitHub](https://github.com/Microsoft/TypeScript)
+- [TypeScript Wiki][4]
+- [TypeScript GitHub][5]
+
+[1]: https://github.com/toturkmen/baklava
+[2]: https://github.com/jrg94/sample-programs/issues/245
+[3]: https://github.com/jrg94/sample-programs/issues/309
+[4]: https://en.wikipedia.org/wiki/TypeScript
+[5]: https://github.com/Microsoft/TypeScript
