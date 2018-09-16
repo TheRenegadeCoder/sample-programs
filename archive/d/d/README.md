@@ -5,7 +5,7 @@ Welcome to Sample Programs in D!
 ## Sample Programs
 
 - [Hello World in D][2]
-- [Baklava in D]
+- [Baklava in D][6]
   - Solution borrowed from @toturkmen via the [baklava repo][1]
 
 ## Fun Facts
@@ -25,3 +25,4 @@ Welcome to Sample Programs in D!
 [3]: https://en.wikipedia.org/wiki/D_(programming_language)
 [4]: https://dlang.org/spec/spec.html
 [5]: https://github.com/dlang/dmd
+[6]: https://github.com/TheRenegadeCoder/sample-programs/issues/426

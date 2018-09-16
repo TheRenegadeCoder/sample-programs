@@ -6,7 +6,7 @@ Welcome to Sample Programs in Go!
 
 - [Hello World in Go][2]
 - [Fizz Buzz in Go][3]
-- [Baklava in Go]
+- [Baklava in Go][7]
   - Solution borrowed from @toturkmen via the [baklava repo][1]
 
 ## Fun Facts
@@ -27,3 +27,4 @@ Welcome to Sample Programs in Go!
 [4]: https://en.wikipedia.org/wiki/Go_(programming_language)
 [5]: https://golang.org/
 [6]: https://github.com/golang/go
+[7]: https://github.com/TheRenegadeCoder/sample-programs/issues/428
