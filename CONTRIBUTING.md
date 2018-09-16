@@ -282,6 +282,9 @@ is the expected output:
            *
 ```
 
+In general, this solution can be accomplished using a pair of loops. Of course, all
+possible programs are welcome.
+
 ### Game of Life Rules
 
 For those of you that don't know, the Game of Life is basically a cell
