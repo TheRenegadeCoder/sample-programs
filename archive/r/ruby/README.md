@@ -8,7 +8,7 @@ Welcome to Sample Programs in Ruby!
 - [Fizz Buzz in Ruby][3]
 - [Quine in Ruby][4]
 - [File IO in Ruby][5]
-- [Baklava in Ruby]
+- [Baklava in Ruby][10]
   - Solution borrowed from @erayak via the [baklava repo][1]
 
 ## Fun Facts
@@ -33,3 +33,4 @@ Welcome to Sample Programs in Ruby!
 [7]: https://www.ruby-lang.org/en/
 [8]: https://github.com/ruby/ruby
 [9]: https://repl.it/languages/ruby
+[10]: https://github.com/TheRenegadeCoder/sample-programs/issues/433
