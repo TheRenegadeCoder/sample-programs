@@ -8,8 +8,10 @@ Welcome to Sample Programs in Python!
 - [Fizz Buzz in Python][1]
 - [Reverse a String in Python][2]
 - [Quine in Python][3]
-- [Game of Life in Python][4]
 - [File IO in Python][5]
+- [Baklava in Python][21]
+  - Solution borrowed from @erayak via the [baklava repo][21]
+- [Game of Life in Python][4]
 
 ## Fun Facts
 
@@ -105,3 +107,4 @@ Welcome to Sample Programs in Python!
 [18]: https://github.com/jrg94/sample-programs/blob/d91bd1c507723448314d18a377c1ac729172ddf6/archive/p/python/game-of-life.py#L48
 [19]: https://github.com/jrg94/sample-programs/blob/d91bd1c507723448314d18a377c1ac729172ddf6/archive/p/python/game-of-life.py#L64
 [20]: https://github.com/jrg94/sample-programs/blob/d91bd1c507723448314d18a377c1ac729172ddf6/archive/p/python/game-of-life.py#L65
+[21]: https://github.com/toturkmen/baklava
