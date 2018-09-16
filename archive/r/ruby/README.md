@@ -9,7 +9,7 @@ Welcome to Sample Programs in Ruby!
 - [Quine in Ruby][4]
 - [File IO in Ruby][5]
 - [Baklava in Ruby]
-  - Solution borrowed from @toturkmen and @erayak via the [baklava repo][1]
+  - Solution borrowed from @erayak via the [baklava repo][1]
 
 ## Fun Facts
 
