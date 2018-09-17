@@ -16,6 +16,7 @@ for as many languages as possible.
   - [Reverse a String Rules][8]
   - [File IO Rules][18]
   - [Quine Rules][9]
+  - [Baklava Rules][24]
   - [Game of Life Rules][10]
 - [Plagiarism][17]
 
@@ -84,7 +85,7 @@ In addition, **anyone who writes an article will be granted collaborator status*
 
 When writing articles, try to follow the conventions of other articles in the series (i.e. keep the
 same structure). When you're done, let me know in the associated GitHub issue, and
-I'll schedule the article for publishing. Don't worry about the featured image; 
+I'll schedule the article for publishing. Don't worry about the featured image;
 I'll add one before publishing.
 
 #### Profile
@@ -216,10 +217,10 @@ Ascii String | "Hello, World" | "dlroW ,olleH"
 
 ### File IO Rules
 
-Most languages have built-in utilities or functions for reading and writing files. 
-Many of these input/output functions follow a similar pattern across programming languages: 
-a string to the path of the file and a "mode". A mode is how the files is opened. 
-Will the file be opened for reading, writing, or even both? 
+Most languages have built-in utilities or functions for reading and writing files.
+Many of these input/output functions follow a similar pattern across programming languages:
+a string to the path of the file and a "mode". A mode is how the files is opened.
+Will the file be opened for reading, writing, or even both?
 Will the file be appending new content? Truncated?
 
 In general, a File IO solution should perform the following:
@@ -227,14 +228,14 @@ In general, a File IO solution should perform the following:
 1. Write some arbitrary content to a file (use `output.txt`)
 2. Read back that content and print it to the user
 
-More specifically, begin with writing a file to disk. In the write function, you should show how 
-to open a file with write abilities and write some contents to the file. Before closing the file, 
-you should ensure everything is written to disk. Then, close the file. There should be basic error 
+More specifically, begin with writing a file to disk. In the write function, you should show how
+to open a file with write abilities and write some contents to the file. Before closing the file,
+you should ensure everything is written to disk. Then, close the file. There should be basic error
 checking to confirm file opening was successful.
 
-With the read file function, open the file with read abilities. Most higher level languages 
-offer a way to read line by line or even transfer the whole contents into a string. One way 
-to read the file is to loop line by line and do some processing. Printing each line to the 
+With the read file function, open the file with read abilities. Most higher level languages
+offer a way to read line by line or even transfer the whole contents into a string. One way
+to read the file is to loop line by line and do some processing. Printing each line to the
 screen is enough. Like in the write function, make sure there is some basic error checking.
 
 ### Quine Rules
@@ -250,6 +251,39 @@ Thanks, [Wikipedia][14]!
 For the purposes of this repo, the solution should be simple. We're not here
 to play code golf, but we're also not here to practice obfuscation. Just be
 reasonable with your solution.
+
+### Baklava Rules
+
+Baklava is a Turkish dessert, and its shape is like an equilateral quadrangle.
+It is used as an example for programming education in Turkish schools. The following
+is the expected output:
+
+```
+           *
+          ***
+         *****
+        *******
+       *********
+      ***********
+     *************
+    ***************
+   *****************
+  *******************
+ *********************
+  *******************
+   *****************
+    ***************
+     *************
+      ***********
+       *********
+        *******
+         *****
+          ***
+           *
+```
+
+In general, this solution can be accomplished using a pair of loops. Of course, all
+possible programs are welcome.
 
 ### Game of Life Rules
 
@@ -289,10 +323,10 @@ be as easy as possible to test, so limiting dependencies is helpful.
 
 ## Plagiarism
 
-**Please** do not submit work that is copied from another source. If work is found to be 
+**Please** do not submit work that is copied from another source. If work is found to be
 plagiarized, the issue must be remedied ASAP. The quickest solution is to cite the source--a citation
-in the README would suffice. After that, the solution should be adapted as needed. If necessary, the 
-solution will be removed at the authors request. 
+in the README would suffice. After that, the solution should be adapted as needed. If necessary, the
+solution will be removed at the authors request.
 
 Whenever possible, **please** request the original author to share their solution with this repo. This
 keeps the repo tidy by eliminating the need for citations.
@@ -323,3 +357,4 @@ These rules help grow and cultivate the community in a positive manner.
 [21]: https://therenegadecoder.com/code/hello-world-in-every-language/
 [22]: https://therenegadecoder.com/code/reverse-a-string-in-every-language/
 [23]: https://therenegadecoder.com/series/fizz-buzz-in-every-language/
+[24]: #baklava-rules

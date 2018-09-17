@@ -4,9 +4,11 @@ Welcome to Sample Programs in Bash!
 
 ## Sample Programs
 
-- [Hello World in Bash](https://therenegadecoder.com/code/hello-world-in-bash/)
-- [Reverse String in Bash](https://github.com/jrg94/sample-programs/issues/159)
-- [Fizz Buzz in Bash](https://github.com/jrg94/sample-programs/issues/384)
+- [Hello World in Bash][2]
+- [Reverse String in Bash][3]
+- [Fizz Buzz in Bash][4]
+- [Baklava in Bash][6]
+  - Solution borrowed from @toturkman via the [baklava repo][1]
 
 ## Fun Facts
 
@@ -14,4 +16,11 @@ Welcome to Sample Programs in Bash!
 
 ## References
 
-- [Bash Wiki](https://en.wikipedia.org/wiki/Bash_(Unix_shell))
+- [Bash Wiki][5]
+
+[1]: https://github.com/toturkmen/baklava
+[2]: https://therenegadecoder.com/code/hello-world-in-bash/
+[3]: https://github.com/jrg94/sample-programs/issues/159
+[4]: https://github.com/jrg94/sample-programs/issues/384
+[5]: https://en.wikipedia.org/wiki/Bash_(Unix_shell)
+[6]: https://github.com/TheRenegadeCoder/sample-programs/issues/422

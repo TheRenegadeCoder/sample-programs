@@ -4,7 +4,9 @@ Welcome to Sample Programs in Kotlin!
 
 ## Sample Programs
 
-- [Hello World in Kotlin](https://therenegadecoder.com/code/hello-world-in-kotlin/)
+- [Hello World in Kotlin][2]
+- [Baklava in Kotlin][6]
+  - Solution borrowed from @toturkmen via the [baklava repo][1]
 
 ## Fun Facts
 
@@ -15,6 +17,13 @@ Welcome to Sample Programs in Kotlin!
 
 ## References
 
-- [Kotlin Wiki](https://en.wikipedia.org/wiki/Kotlin_(programming_language))
-- [Kotlin Docs](https://kotlinlang.org/)
-- [Kotlin GitHub](https://github.com/JetBrains/kotlin)
+- [Kotlin Wiki][3]
+- [Kotlin Docs][4]
+- [Kotlin GitHub][5]
+
+[1]: https://github.com/toturkmen/baklava
+[2]: https://therenegadecoder.com/code/hello-world-in-kotlin/
+[3]: https://en.wikipedia.org/wiki/Kotlin_(programming_language)
+[4]: https://kotlinlang.org/
+[5]: https://github.com/JetBrains/kotlin
+[6]: https://github.com/TheRenegadeCoder/sample-programs/issues/430

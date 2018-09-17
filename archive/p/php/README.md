@@ -4,8 +4,10 @@ Welcome to Sample Programs in PHP!
 
 ## Sample Programs
 
-- [Hello World in PHP](https://therenegadecoder.com/code/hello-world-in-php/)
-- [Fizz Buzz in PHP](https://github.com/TheRenegadeCoder/sample-programs/issues/402)
+- [Hello World in PHP][2]
+- [Fizz Buzz in PHP][3]
+- [Baklava in PHP][8]
+  - Solution borrowed from @toturkmen and @erayak via the [baklava repo][1]
 
 ## Fun Facts
 
@@ -16,7 +18,16 @@ Welcome to Sample Programs in PHP!
 
 ## References
 
-- [PHP Wiki](https://en.wikipedia.org/wiki/PHP)
-- [PHP Docs](http://www.php.net/)
-- [PHP GitHub](https://github.com/php/php-src)
-- [Online PHP Interpreter](http://www.runphponline.com/)
+- [PHP Wiki][4]
+- [PHP Docs][5]
+- [PHP GitHub][6]
+- [Online PHP Interpreter][7]
+
+[1]: https://github.com/toturkmen/baklava
+[2]: https://therenegadecoder.com/code/hello-world-in-php/
+[3]: https://github.com/TheRenegadeCoder/sample-programs/issues/402
+[4]: https://en.wikipedia.org/wiki/PHP
+[5]: http://www.php.net/
+[6]: https://github.com/php/php-src
+[7]: http://www.runphponline.com/
+[8]: https://github.com/TheRenegadeCoder/sample-programs/issues/431

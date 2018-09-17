@@ -4,7 +4,9 @@ Welcome to Sample Programs in Crystal!
 
 ## Sample Programs
 
-- [Hello World in Crystal](https://therenegadecoder.com/code/hello-world-in-crystal/)
+- [Hello World in Crystal][2]
+- [Baklava in Crystal][8]
+  - Solution borrowed from @turkerdotpy via [baklava repo][1]
 
 ## Fun Facts
 
@@ -14,8 +16,17 @@ Welcome to Sample Programs in Crystal!
 
 ## References
 
-- [Crystal Wiki](https://en.wikipedia.org/wiki/Crystal_(programming_language))
-- [Crystal Official Website](https://crystal-lang.org/)
-- [Crystal Docs](https://crystal-lang.org/docs/)
-- [Crystal GitHub](https://github.com/crystal-lang/crystal)
-- [Crystal Online Editor](https://play.crystal-lang.org/)
+- [Crystal Wiki][3]
+- [Crystal Official Website][4]
+- [Crystal Docs][5]
+- [Crystal GitHub][6]
+- [Crystal Online Editor][7]
+
+[1]: https://github.com/toturkmen/baklava
+[2]: https://therenegadecoder.com/code/hello-world-in-crystal/
+[3]: https://en.wikipedia.org/wiki/Crystal_(programming_language)
+[4]: https://crystal-lang.org/
+[5]: https://crystal-lang.org/docs/
+[6]: https://github.com/crystal-lang/crystal
+[7]: https://play.crystal-lang.org/
+[8]: https://github.com/TheRenegadeCoder/sample-programs/issues/425

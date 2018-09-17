@@ -4,8 +4,10 @@ Welcome to Sample Programs in Go!
 
 ## Sample Programs
 
-- [Hello World in Go](https://therenegadecoder.com/code/hello-world-in-go/)
-- [Fizz Buzz in Go](https://github.com/TheRenegadeCoder/sample-programs/issues/347)
+- [Hello World in Go][2]
+- [Fizz Buzz in Go][3]
+- [Baklava in Go][7]
+  - Solution borrowed from @toturkmen via the [baklava repo][1]
 
 ## Fun Facts
 
@@ -15,6 +17,14 @@ Welcome to Sample Programs in Go!
 
 ## References
 
-- [Go Wiki](https://en.wikipedia.org/wiki/Go_(programming_language))
-- [Go Docs](https://golang.org/)
-- [Go Github](https://github.com/golang/go)
+- [Go Wiki][4]
+- [Go Docs][5]
+- [Go Github][6]
+
+[1]: https://github.com/toturkmen/baklava
+[2]: https://therenegadecoder.com/code/hello-world-in-go/
+[3]: https://github.com/TheRenegadeCoder/sample-programs/issues/347
+[4]: https://en.wikipedia.org/wiki/Go_(programming_language)
+[5]: https://golang.org/
+[6]: https://github.com/golang/go
+[7]: https://github.com/TheRenegadeCoder/sample-programs/issues/428
