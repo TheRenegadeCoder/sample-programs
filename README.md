@@ -1,5 +1,7 @@
 # Sample Programs in Every Language
 
+[![Join the chat at https://gitter.im/TheRenegadeCoder/sample-programs](https://badges.gitter.im/TheRenegadeCoder/sample-programs.svg)](https://gitter.im/TheRenegadeCoder/sample-programs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Welcome to the [Sample Programs in Every Language][0] repository! What began
 as a simple [100 Days of Code][1] challenge has expanded into a fun project.
 Within this repository, you'll find a growing collection of simple programs
