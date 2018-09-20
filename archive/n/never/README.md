@@ -16,4 +16,5 @@ Welcome to Sample Programs in Never!
 ## References
 
 - [Never Official Website](https://never-lang.github.io/never/)
-- [Never GitHub](https://never-lang.github.io/never/)
+- [Never GitHub](https://github.com/never-lang/never/)
+
