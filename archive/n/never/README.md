@@ -5,7 +5,7 @@ Welcome to Sample Programs in Never!
 ## Sample Programs
 
 - [Hello World in Never](https://github.com/TheRenegadeCoder/sample-programs/issues/450)
-- Reverse Array in Never
+- [Reverse an Array in Never](https://github.com/TheRenegadeCoder/sample-programs/issues/451)
 
 ## Fun Facts
 
