@@ -74,7 +74,7 @@ Thanks for your support! :relaxed:
 [4]: https://therenegadecoder.com/blog/the-coolest-programming-language-features/
 [5]: https://github.com/jrg94/sample-programs/wiki
 [6]: https://github.com/jrg94/sample-programs/blob/master/CONTRIBUTING.md
-[7]: https://therenegadecoder.com/membership-join/membership-registration/
+[7]: https://therenegadecoder.com/members/registration/
 [8]: https://github.com/jrg94/sample-programs/blob/master/CODE_OF_CONDUCT.md
 [9]: https://github.com/jrg94/sample-programs/blob/master/LICENSE
 [10]: https://therenegadecoder.com/
