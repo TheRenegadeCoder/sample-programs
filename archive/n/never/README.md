@@ -6,6 +6,7 @@ Welcome to Sample Programs in Never!
 
 - [Hello World in Never](https://github.com/TheRenegadeCoder/sample-programs/issues/450)
 - [Reverse an Array in Never](https://github.com/TheRenegadeCoder/sample-programs/issues/451)
+  - Note: Never currently does not support strings
 
 ## Fun Facts
 
