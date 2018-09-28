@@ -4,7 +4,9 @@ Welcome to Sample Programs in Lua!
 
 ## Sample Programs
 
-- [Hello World in Lua](https://therenegadecoder.com/code/hello-world-in-lua/)
+- [Hello World in Lua][2]
+- [Fizz Buzz in Lua][1]
+- [Reverse a String in Lua][5]
 
 ## Fun Facts
 
@@ -14,5 +16,11 @@ Welcome to Sample Programs in Lua!
 
 ## References
 
-- [Lua Wiki](https://en.wikipedia.org/wiki/Lua_(programming_language))
-- [Lua Docs](https://www.lua.org/)
+- [Lua Wiki][3]
+- [Lua Docs][4]
+
+[1]: https://github.com/TheRenegadeCoder/sample-programs/issues/444
+[2]: https://therenegadecoder.com/code/hello-world-in-lua/
+[3]: https://en.wikipedia.org/wiki/Lua_(programming_language)
+[4]: https://www.lua.org/
+[5]: https://github.com/TheRenegadeCoder/sample-programs/issues/446

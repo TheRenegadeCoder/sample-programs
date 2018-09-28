@@ -14,7 +14,9 @@ for as many languages as possible.
   - [Hello World Rules][6]
   - [Fizz Buzz Rules][7]
   - [Reverse a String Rules][8]
+  - [File IO Rules][18]
   - [Quine Rules][9]
+  - [Baklava Rules][24]
   - [Game of Life Rules][10]
 - [Plagiarism][17]
 
@@ -83,18 +85,18 @@ In addition, **anyone who writes an article will be granted collaborator status*
 
 When writing articles, try to follow the conventions of other articles in the series (i.e. keep the
 same structure). When you're done, let me know in the associated GitHub issue, and
-I'll schedule the article for publishing. Don't worry about the featured image; 
+I'll schedule the article for publishing. Don't worry about the featured image;
 I'll add one before publishing.
 
 #### Profile
 
 Don't forget to update your profile as it will be displayed at the bottom of the article. If you want
-a proper profile image, make sure to setup a [Gravatar](https://en.gravatar.com/)
+a proper profile image, make sure to setup a [Gravatar][19]
 using the same email as your account.
 
 ### Pull Requests
 
-If you wish to contribute, [fork](https://help.github.com/articles/fork-a-repo) the repo and make a pull request
+If you wish to contribute, [fork][20] the repo and make a pull request
 with your changes. Ideally, your contribution should be to existing projects,
 but you're welcome to add new snippets.
 
@@ -102,11 +104,12 @@ However, for simplicity, I ask that you **only make pull requests for one langua
 
 The following list contains all existing sample programs:
 
-1. [Hello World in Every Language](https://therenegadecoder.com/code/hello-world-in-every-language/)
-2. [Reverse a String in Every Language](https://therenegadecoder.com/code/reverse-a-string-in-every-language/)
-3. Fizz Buzz in Every Language
-4. Quine in Every Language
-5. Game of Life in Every Language
+1. [Hello World in Every Language][21]
+2. [Reverse a String in Every Language][22]
+3. [Fizz Buzz in Every Language][23]
+4. File IO in Every Language
+5. Quine in Every Language
+6. Game of Life in Every Language
 
 When adding new languages, make sure you include a README using the following template:
 
@@ -212,6 +215,29 @@ No Input     |                |
 Empty String | ""             |             
 Ascii String | "Hello, World" | "dlroW ,olleH"
 
+### File IO Rules
+
+Most languages have built-in utilities or functions for reading and writing files.
+Many of these input/output functions follow a similar pattern across programming languages:
+a string to the path of the file and a "mode". A mode is how the files is opened.
+Will the file be opened for reading, writing, or even both?
+Will the file be appending new content? Truncated?
+
+In general, a File IO solution should perform the following:
+
+1. Write some arbitrary content to a file (use `output.txt`)
+2. Read back that content and print it to the user
+
+More specifically, begin with writing a file to disk. In the write function, you should show how
+to open a file with write abilities and write some contents to the file. Before closing the file,
+you should ensure everything is written to disk. Then, close the file. There should be basic error
+checking to confirm file opening was successful.
+
+With the read file function, open the file with read abilities. Most higher level languages
+offer a way to read line by line or even transfer the whole contents into a string. One way
+to read the file is to loop line by line and do some processing. Printing each line to the
+screen is enough. Like in the write function, make sure there is some basic error checking.
+
 ### Quine Rules
 
 For those of you that don't know, a quine is a program which can replicate
@@ -225,6 +251,39 @@ Thanks, [Wikipedia][14]!
 For the purposes of this repo, the solution should be simple. We're not here
 to play code golf, but we're also not here to practice obfuscation. Just be
 reasonable with your solution.
+
+### Baklava Rules
+
+Baklava is a Turkish dessert, and its shape is like an equilateral quadrangle.
+It is used as an example for programming education in Turkish schools. The following
+is the expected output:
+
+```
+           *
+          ***
+         *****
+        *******
+       *********
+      ***********
+     *************
+    ***************
+   *****************
+  *******************
+ *********************
+  *******************
+   *****************
+    ***************
+     *************
+      ***********
+       *********
+        *******
+         *****
+          ***
+           *
+```
+
+In general, this solution can be accomplished using a pair of loops. Of course, all
+possible programs are welcome.
 
 ### Game of Life Rules
 
@@ -251,6 +310,9 @@ Of course, for the purposes of the repo, here are the requirements for a contrib
     - Total number of frames
     - Spawn rate (% of living vs. dead as decimal between 0 and 1)
 4. Simulation must be a GUI
+    - An exception to this rule can be made for languages where it's impossible
+      or impractical to have an actual GUI. In that case, a terminal application
+      is sufficient.
 
 Beyond that, there's really no hard-and-fast requirements. All I ask is that
 solutions are minimal. In other words, don't worry about command line options or
@@ -261,10 +323,10 @@ be as easy as possible to test, so limiting dependencies is helpful.
 
 ## Plagiarism
 
-**Please** do not submit work that is copied from another source. If work is found to be 
+**Please** do not submit work that is copied from another source. If work is found to be
 plagiarized, the issue must be remedied ASAP. The quickest solution is to cite the source--a citation
-in the README would suffice. After that, the solution should be adapted as needed. If necessary, the 
-solution will be removed at the authors request. 
+in the README would suffice. After that, the solution should be adapted as needed. If necessary, the
+solution will be removed at the authors request.
 
 Whenever possible, **please** request the original author to share their solution with this repo. This
 keeps the repo tidy by eliminating the need for citations.
@@ -282,10 +344,17 @@ These rules help grow and cultivate the community in a positive manner.
 [8]: #reverse-a-string-rules
 [9]: #quine-rules
 [10]: #game-of-life-rules
-[11]: https://therenegadecoder.com/membership-join/membership-registration/
+[11]: https://therenegadecoder.com/members/registration/
 [12]: https://therenegadecoder.com/wp-admin/
 [13]: https://github.com/jrg94/sample-programs/blob/master/archive/p/python/README.md
 [14]: https://en.wikipedia.org/wiki/Quine_(computing)
 [15]: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
 [16]: https://en.wikipedia.org/wiki/Asteroids_(video_game)
 [17]: #plagiarism
+[18]: #file-io-rules
+[19]: https://en.gravatar.com/
+[20]: https://help.github.com/articles/fork-a-repo
+[21]: https://therenegadecoder.com/code/hello-world-in-every-language/
+[22]: https://therenegadecoder.com/code/reverse-a-string-in-every-language/
+[23]: https://therenegadecoder.com/series/fizz-buzz-in-every-language/
+[24]: #baklava-rules

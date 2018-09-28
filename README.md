@@ -1,5 +1,7 @@
 # Sample Programs in Every Language
 
+[![Join the chat at https://gitter.im/TheRenegadeCoder/sample-programs](https://badges.gitter.im/TheRenegadeCoder/sample-programs.svg)](https://gitter.im/TheRenegadeCoder/sample-programs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Welcome to the [Sample Programs in Every Language][0] repository! What began
 as a simple [100 Days of Code][1] challenge has expanded into a fun project.
 Within this repository, you'll find a growing collection of simple programs
@@ -72,7 +74,7 @@ Thanks for your support! :relaxed:
 [4]: https://therenegadecoder.com/blog/the-coolest-programming-language-features/
 [5]: https://github.com/jrg94/sample-programs/wiki
 [6]: https://github.com/jrg94/sample-programs/blob/master/CONTRIBUTING.md
-[7]: https://therenegadecoder.com/membership-join/membership-registration/
+[7]: https://therenegadecoder.com/members/registration/
 [8]: https://github.com/jrg94/sample-programs/blob/master/CODE_OF_CONDUCT.md
 [9]: https://github.com/jrg94/sample-programs/blob/master/LICENSE
 [10]: https://therenegadecoder.com/

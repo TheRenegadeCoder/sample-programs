@@ -5,6 +5,7 @@ Welcome to Sample Programs in TeX!
 ## Sample Programs
 
 - [Hello World in TeX](https://github.com/jrg94/sample-programs/issues/379)
+- [Fizz Buzz in TeX](https://github.com/TheRenegadeCoder/sample-programs/issues/393)
 
 ## Fun Facts
 
@@ -16,3 +17,4 @@ Welcome to Sample Programs in TeX!
 
 - [TeX Wiki](https://en.wikipedia.org/wiki/TeX)
 - [TeX Offial Site (TeX Users Group)](https://tug.org)
+- [Online TeX editor](https://www.tutorialspoint.com/online_latex_editor.php)
