@@ -5,7 +5,7 @@ Welcome to Sample Programs in Dart!
 ## Sample Programs
 
 - [Hello World in Dart](https://therenegadecoder.com/blog/hello-world-in-dart/)
-- [Reverse String in Dart](https://github.com/TheRenegadeCoder/sample-programs/issues/458)
+- [Reverse String in Dart](https://github.com/TheRenegadeCoder/sample-programs/issues/460)
 
 ## Fun Facts
 
