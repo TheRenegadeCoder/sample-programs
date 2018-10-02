@@ -8,6 +8,7 @@ Welcome to Sample Programs in C#!
 - [Reverse a String in C#][3]
 - [Fizz Buzz in C#][4]
 - [Baklava in C#][8]
+- [Fibonacci in C#]
   - Solution borrowed from @toturkmen via the [baklava repo][1]
 
 ## Fun Facts
