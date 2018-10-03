@@ -4,19 +4,6 @@ namespace SamplePrograms
 {
     public class Fibonacci
     {
-        public static long CalculateFibonacci(int n)
-        {
-            if (n == 0) return 0;
-            if (n <= 2)
-            {
-                return 1;
-            }
-            else
-            {
-                return CalculateFibonacci(n - 1) + CalculateFibonacci(n - 2);
-            }
-        }
-
         public static void Main(string[] args)
         {
             if(args.Length < 1)
@@ -26,9 +13,15 @@ namespace SamplePrograms
             }
 
             int n = int.Parse(args[0]);
+            int first = 0;
+            int second = 1;
+            int result = 0;
             for(int i = 0; i <= n; i++)
             {
-                Console.WriteLine(i + ": " + CalculateFibonacci(i));
+                result = first + second;
+                first = second;
+                second = result;
+                Console.WriteLine(i + ": " + result);
             }
         }
     }
