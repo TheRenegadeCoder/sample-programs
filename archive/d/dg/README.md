@@ -21,7 +21,7 @@ Welcome to Sample Programs in dg!
 - [dg Tutorial][7]
 
 [0]: https://github.com/TheRenegadeCoder/sample-programs/issues/468
-[1]: https://github.com/TheRenegadeCoder/sample-programs/issues/470
-[2]: https://github.com/TheRenegadeCoder/sample-programs/issues/471
+[1]: https://github.com/TheRenegadeCoder/sample-programs/issues/472
+[2]: https://github.com/TheRenegadeCoder/sample-programs/issues/473
 [6]: https://github.com/pyos/dg
 [7]: https://pyos.github.io/dg/tutorial/
