@@ -18,6 +18,6 @@ Welcome to Sample Programs in dg!
 - [dg Github Repository][6]
 - [dg Tutorial][7]
 
-[0]: https://therenegadecoder.com/code/hello-world-in-dg/
+[0]: https://github.com/TheRenegadeCoder/sample-programs/issues/468
 [6]: https://github.com/pyos/dg
 [7]: https://pyos.github.io/dg/tutorial/
