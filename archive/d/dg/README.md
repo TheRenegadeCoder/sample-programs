@@ -6,6 +6,7 @@ Welcome to Sample Programs in dg!
 
 - [Hello World in dg][0]
 - [Fizz Buzz in dg][1]
+- [Reverse a String in dg][2]
 
 ## Fun Facts
 
