@@ -18,6 +18,7 @@ for as many languages as possible.
   - [Quine Rules][9]
   - [Baklava Rules][24]
   - [Game of Life Rules][10]
+  - [Fibonacci Sequence Rules][25]
 - [Plagiarism][17]
 
 ## Please Read
@@ -110,6 +111,7 @@ The following list contains all existing sample programs:
 4. File IO in Every Language
 5. Quine in Every Language
 6. Game of Life in Every Language
+7. Fibonacci Sequence
 
 When adding new languages, make sure you include a README using the following template:
 
@@ -321,6 +323,26 @@ GUI elements. Keep it simple. Remember, the goal is to show off language feature
 Also, I ask that you don't use external libraries. I like for these files to
 be as easy as possible to test, so limiting dependencies is helpful.
 
+### Fibonacci Sequence Rules
+
+In mathematics, the Fibonacci numbers are the numbers in the following integer
+sequence, called the Fibonacci sequence, and characterized by the fact that
+every number after the first two is the sum of the two preceding ones:
+
+    1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...
+
+For this sample program, each solution should leverage dynamic programming to produce this
+list up to the nth term. For instance, `./fib 5` on the command line should output
+```
+1: 1
+2: 1
+3: 2
+4: 3
+5: 5
+```
+In addition, there should be some error handling for situations where the user doesn't supply
+any input or the user supplies input that is not a number (i.e. `./fib` or `./fib hello`, respectively).
+
 ## Plagiarism
 
 **Please** do not submit work that is copied from another source. If work is found to be
@@ -358,3 +380,4 @@ These rules help grow and cultivate the community in a positive manner.
 [22]: https://therenegadecoder.com/code/reverse-a-string-in-every-language/
 [23]: https://therenegadecoder.com/series/fizz-buzz-in-every-language/
 [24]: #baklava-rules
+[25]: #fibonacci-sequence-rules
