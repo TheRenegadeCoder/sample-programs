@@ -20,3 +20,5 @@ func fizzBuzz(start: Int = 1, end: Int = 100) -> Void {
         print(fizzAndOrBuzz)
     }
 }
+
+fizzBuzz();
