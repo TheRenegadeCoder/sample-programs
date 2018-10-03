@@ -7,6 +7,8 @@ Welcome to Sample Programs in dg!
 - [Hello World in dg][0]
 - [Fizz Buzz in dg][1]
 - [Reverse a String in dg][2]
+- [Quine in dg][3]
+  - Solution adapted from Wikipedia's page on Quines (Python) [8]
 
 ## Fun Facts
 
@@ -24,3 +26,4 @@ Welcome to Sample Programs in dg!
 [1]: https://github.com/TheRenegadeCoder/sample-programs/issues/472
 [6]: https://github.com/pyos/dg
 [7]: https://pyos.github.io/dg/tutorial/
+[8]: https://en.wikipedia.org/wiki/Quine_(computing)#Examples
