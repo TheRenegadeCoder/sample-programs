@@ -6,6 +6,7 @@ Welcome to Sample Programs in dg!
 
 - [Hello World in dg][0]
 - [Fizz Buzz in dg][1]
+- [Reverse a String in dg][2]
 
 ## Fun Facts
 
@@ -21,5 +22,6 @@ Welcome to Sample Programs in dg!
 
 [0]: https://github.com/TheRenegadeCoder/sample-programs/issues/468
 [1]: https://github.com/TheRenegadeCoder/sample-programs/issues/470
+[2]: https://github.com/TheRenegadeCoder/sample-programs/issues/471
 [6]: https://github.com/pyos/dg
 [7]: https://pyos.github.io/dg/tutorial/
