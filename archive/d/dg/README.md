@@ -5,6 +5,7 @@ Welcome to Sample Programs in dg!
 ## Sample Programs
 
 - [Hello World in dg][0]
+- [Fizz Buzz in dg][1]
 
 ## Fun Facts
 
@@ -19,5 +20,6 @@ Welcome to Sample Programs in dg!
 - [dg Tutorial][7]
 
 [0]: https://github.com/TheRenegadeCoder/sample-programs/issues/468
+[1]: https://therenegadecoder.com/code/fizz-buzz-in-dg/
 [6]: https://github.com/pyos/dg
 [7]: https://pyos.github.io/dg/tutorial/
