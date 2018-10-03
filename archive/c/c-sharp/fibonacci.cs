@@ -16,12 +16,12 @@ namespace SamplePrograms
             int first = 0;
             int second = 1;
             int result = 0;
-            for(int i = 0; i <= n; i++)
+            for(int i = 1; i <= n; i++)
             {
                 result = first + second;
                 first = second;
                 second = result;
-                Console.WriteLine(i + ": " + result);
+                Console.WriteLine(i + ": " + first);
             }
         }
     }
