@@ -8,7 +8,7 @@ Welcome to Sample Programs in dg!
 - [Fizz Buzz in dg][1]
 - [Reverse a String in dg][2]
 - [Quine in dg][3]
-  - Solution adapted from Wikipedia's page on Quines (Python) [8]
+  - Solution adapted from [Wikipedia's page on Quines (Python)][8]
 
 ## Fun Facts
 
