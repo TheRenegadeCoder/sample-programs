@@ -5,6 +5,7 @@ Welcome to Sample Programs in Julia!
 ## Sample Programs
 
 - [Hello World in Julia](https://therenegadecoder.com/code/hello-world-in-julia/)
+- [Baklava in Julia](https://github.com/TheRenegadeCoder/sample-programs/pull/485)
 
 ## Fun Facts
 
