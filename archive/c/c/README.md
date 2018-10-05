@@ -11,6 +11,7 @@ Welcome to Sample Programs in C!
 - [Baklava in C][10]
   - Solution borrowed from @toturkmen and @ahmeturganci via the [baklava repo][1]
 - [Game of Life in C][6]
+- [Fibonacci in C][11]
 
 ## Fun Facts
 
@@ -34,3 +35,4 @@ Welcome to Sample Programs in C!
 [8]: https://www.gnu.org/software/gnu-c-manual/
 [9]: https://www.onlinegdb.com/online_c_compiler
 [10]: https://github.com/TheRenegadeCoder/sample-programs/issues/424
+[11]: https://github.com/TheRenegadeCoder/sample-programs/issues/486
