@@ -19,6 +19,7 @@ for as many languages as possible.
   - [Baklava Rules][24]
   - [Game of Life Rules][10]
   - [Fibonacci Sequence Rules][25]
+  - [Roman Numeral Conversion][26]
 - [Plagiarism][17]
 
 ## Please Read
@@ -343,6 +344,25 @@ list up to the nth term. For instance, `./fib 5` on the command line should outp
 In addition, there should be some error handling for situations where the user doesn't supply
 any input or the user supplies input that is not a number (i.e. `./fib` or `./fib hello`, respectively).
 
+### Roman Numeral Conversion
+
+Roman numerals are the numbers that were used in ancient Rome, which employed combinations of letters from
+the Latin alphabet (I, V, X, L, C, D and M).
+
+These following table shows the letter to decimal mapping:
+
+Letter | Decimal
+-------|--------
+I      | 1
+V      | 5
+X      | 10
+L      | 50
+C      | 100
+D      | 500
+M      | 1000
+
+Using this table, write a sample program which accepts a Roman numeral and outputs it as a decimal.
+
 ## Plagiarism
 
 **Please** do not submit work that is copied from another source. If work is found to be
@@ -381,3 +401,4 @@ These rules help grow and cultivate the community in a positive manner.
 [23]: https://therenegadecoder.com/series/fizz-buzz-in-every-language/
 [24]: #baklava-rules
 [25]: #fibonacci-sequence-rules
+[26]: #Roman-Numeral-Conversion 
