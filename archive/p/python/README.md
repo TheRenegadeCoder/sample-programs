@@ -12,6 +12,7 @@ Welcome to Sample Programs in Python!
 - [Baklava in Python][22]
   - Solution borrowed from @erayak via the [baklava repo][21]
 - [Game of Life in Python][4]
+- [Fibonacci Sequence](https://github.com/TheRenegadeCoder/sample-programs/issues/492)
 
 ## Fun Facts
 
