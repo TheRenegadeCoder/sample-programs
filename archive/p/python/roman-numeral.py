@@ -1,6 +1,8 @@
 # Python program to convert Roman Numerals 
-# to Numbers 
-  
+# to Numbers
+
+import sys
+
 # This function returns value of each Roman symbol 
 def value(r): 
     if (r == 'I'): 
@@ -52,7 +54,10 @@ def romanToDecimal(str):
   
     return res 
   
-# Driver code
-a=input("Enter Roman Number:")
-print("Integer form of Roman Numeral is"), 
-print(romanToDecimal(a))
+def main():
+    a=sys.argv[1]
+    print("Integer form of Roman Numeral is  "), 
+    print(romanToDecimal(a))
+    
+if __name__=="__main__":
+    main()
