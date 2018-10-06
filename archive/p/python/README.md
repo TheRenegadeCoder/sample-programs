@@ -12,7 +12,8 @@ Welcome to Sample Programs in Python!
 - [Baklava in Python][22]
   - Solution borrowed from @erayak via the [baklava repo][21]
 - [Game of Life in Python][4]
-- [Fibonacci Sequence](https://github.com/TheRenegadeCoder/sample-programs/issues/492)
+- [Fibonacci Sequence in Python][24]
+- [Roman Numberal Conversion in Python][25]
 
 ## Fun Facts
 
@@ -111,3 +112,5 @@ Welcome to Sample Programs in Python!
 [21]: https://github.com/toturkmen/baklava
 [22]: https://github.com/TheRenegadeCoder/sample-programs/issues/432
 [23]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/file-io.py#L25
+[24]: https://github.com/TheRenegadeCoder/sample-programs/issues/492
+[25]: https://github.com/TheRenegadeCoder/sample-programs/issues/499
