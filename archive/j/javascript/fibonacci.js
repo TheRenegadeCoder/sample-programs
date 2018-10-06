@@ -11,4 +11,4 @@ function fibonacci(num) {
     }
 }
 
-fibonacci(process.argv[0])
+fibonacci(process.argv[2])
