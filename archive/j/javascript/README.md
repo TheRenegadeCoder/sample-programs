@@ -9,6 +9,7 @@ Welcome to Sample Programs in JavaScript!
 - [Fizz Buzz in JavaScript][4]
 - [Baklava in JavaScript][8]
   - Solution borrowed from @toturkmen via the [baklava repo][1]
+- [Fibonacci in JavaScript][9]
 
 ## Fun Facts
 
@@ -29,3 +30,4 @@ Welcome to Sample Programs in JavaScript!
 [6]: https://www.javascript.com/
 [7]: https://js.do/
 [8]: https://github.com/TheRenegadeCoder/sample-programs/issues/429
+[9]: https://github.com/TheRenegadeCoder/sample-programs/issues/488
