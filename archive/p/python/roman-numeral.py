@@ -55,9 +55,11 @@ def romanToDecimal(str):
     return res 
   
 def main():
-    a=sys.argv[1]
-    print("Integer form of Roman Numeral is  "), 
-    print(romanToDecimal(a))
-    
+    if len(sys.argv)>1:
+        roman_numeral=sys.argv[1]
+        print("Integer form of Roman Numeral is  "), 
+        print(romanToDecimal(roman_numeral))
+    else:
+        print("Argument Required")
 if __name__=="__main__":
     main()
