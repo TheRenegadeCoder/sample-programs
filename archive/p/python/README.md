@@ -73,7 +73,7 @@ Welcome to Sample Programs in Python!
   - [ ] The `nonlocal` Statement
 - [ ] Compound Statements
   - [x] [The `if` Statement][9]
-  - [ ] The `while` Statement
+  - [x] [The `while` Statement][23]
   - [x] [The `for` Statement][12]
   - [ ] The `try` Statement
   - [ ] The `with` Statement
@@ -110,3 +110,4 @@ Welcome to Sample Programs in Python!
 [20]: https://github.com/jrg94/sample-programs/blob/d91bd1c507723448314d18a377c1ac729172ddf6/archive/p/python/game-of-life.py#L65
 [21]: https://github.com/toturkmen/baklava
 [22]: https://github.com/TheRenegadeCoder/sample-programs/issues/432
+[23]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/file-io.py#L25
