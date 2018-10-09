@@ -167,6 +167,8 @@ should be as simple as possible.
 
 ### Fizz Buzz Rules
 
+![Fizz_Buzz][27]
+
 Fizz Buzz is a typical interview question which tests the developers knowledge of
 flow control and operators. For the purposes of this repository, the following
 rules apply:
@@ -402,3 +404,4 @@ These rules help grow and cultivate the community in a positive manner.
 [24]: #baklava-rules
 [25]: #fibonacci-sequence-rules
 [26]: #roman-numeral-conversion 
+[27]: ./assets/Fizz_Buzz.png
