@@ -11,14 +11,14 @@ for as many languages as possible.
   - [Articles][3]
   - [Pull Requests][4]
 - [Projects][5]
-  - [Hello World Rules][6]
-  - [Fizz Buzz Rules][7]
-  - [Reverse a String Rules][8]
-  - [File IO Rules][18]
-  - [Quine Rules][9]
   - [Baklava Rules][24]
-  - [Game of Life Rules][10]
   - [Fibonacci Sequence Rules][25]
+  - [File IO Rules][18]
+  - [Fizz Buzz Rules][7]
+  - [Game of Life Rules][10]
+  - [Hello World Rules][6]
+  - [Quine Rules][9]
+  - [Reverse a String Rules][8]
   - [Roman Numeral Conversion][26]
 - [Plagiarism][17]
 
@@ -158,12 +158,81 @@ At any rate, let's have some fun!
 
 Below you'll find a list of all the current projects in this repository and their rules.
 
-### Hello World Rules
+### Baklava Rules
 
-Hello World is a standard program used to introduce a programming language.
-As a result, the rules are pretty simple. For each language, create a program
-that writes the string "Hello, World!" to standard output. Ideally, the solution
-should be as simple as possible.
+Baklava is a Turkish dessert, and its shape is like an equilateral quadrangle.
+It is used as an example for programming education in Turkish schools. The following
+is the expected output:
+
+```
+           *
+          ***
+         *****
+        *******
+       *********
+      ***********
+     *************
+    ***************
+   *****************
+  *******************
+ *********************
+  *******************
+   *****************
+    ***************
+     *************
+      ***********
+       *********
+        *******
+         *****
+          ***
+           *
+```
+
+In general, this solution can be accomplished using a pair of loops. Of course, all
+possible programs are welcome.
+
+### Fibonacci Sequence Rules
+
+In mathematics, the Fibonacci numbers are the numbers in the following integer
+sequence, called the Fibonacci sequence, and characterized by the fact that
+every number after the first two is the sum of the two preceding ones:
+
+    1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...
+
+For this sample program, each solution should leverage dynamic programming to produce this
+list up to the nth term. For instance, `./fib 5` on the command line should output
+```
+1: 1
+2: 1
+3: 2
+4: 3
+5: 5
+```
+In addition, there should be some error handling for situations where the user doesn't supply
+any input or the user supplies input that is not a number (i.e. `./fib` or `./fib hello`, respectively).
+
+### File IO Rules
+
+Most languages have built-in utilities or functions for reading and writing files.
+Many of these input/output functions follow a similar pattern across programming languages:
+a string to the path of the file and a "mode". A mode is how the files is opened.
+Will the file be opened for reading, writing, or even both?
+Will the file be appending new content? Truncated?
+
+In general, a File IO solution should perform the following:
+
+1. Write some arbitrary content to a file (use `output.txt`)
+2. Read back that content and print it to the user
+
+More specifically, begin with writing a file to disk. In the write function, you should show how
+to open a file with write abilities and write some contents to the file. Before closing the file,
+you should ensure everything is written to disk. Then, close the file. There should be basic error
+checking to confirm file opening was successful.
+
+With the read file function, open the file with read abilities. Most higher level languages
+offer a way to read line by line or even transfer the whole contents into a string. One way
+to read the file is to loop line by line and do some processing. Printing each line to the
+screen is enough. Like in the write function, make sure there is some basic error checking.
 
 ### Fizz Buzz Rules
 
@@ -180,6 +249,63 @@ rules apply:
 
 I was tempted to open this up such that the user could supply any number, but I think
 we get plenty of IO with some of the other projects in this repo.
+
+### Game of Life Rules
+
+For those of you that don't know, the Game of Life is basically a cell
+simulation where cells are arranged in an infinite grid. Each cell has one
+of two states: alive or dead.
+
+At each turn, all cells are evaluated using the following rules:
+
+- Any live cell with fewer than two live neighbors dies, as if caused by underpopulation.
+- Any live cell with two or three live neighbors lives on to the next generation.
+- Any live cell with more than three live neighbors dies, as if by overpopulation.
+- Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.
+
+For more information, check out the [Wikipedia page for Conway's Game of Life][15].
+
+Of course, for the purposes of the repo, here are the requirements for a contribution:
+
+1. Source code must fit in a single file
+2. Grid must wrap-around on the edges (think [asteroids][16])
+3. The program must support the following command line arguments
+    - Grid width (assume square grid)
+    - Frame rate (frames/second)
+    - Total number of frames
+    - Spawn rate (% of living vs. dead as decimal between 0 and 1)
+4. Simulation must be a GUI
+    - An exception to this rule can be made for languages where it's impossible
+      or impractical to have an actual GUI. In that case, a terminal application
+      is sufficient.
+
+Beyond that, there's really no hard-and-fast requirements. All I ask is that
+solutions are minimal. In other words, don't worry about command line options or
+GUI elements. Keep it simple. Remember, the goal is to show off language features.
+
+Also, I ask that you don't use external libraries. I like for these files to
+be as easy as possible to test, so limiting dependencies is helpful.
+
+### Hello World Rules
+
+Hello World is a standard program used to introduce a programming language.
+As a result, the rules are pretty simple. For each language, create a program
+that writes the string "Hello, World!" to standard output. Ideally, the solution
+should be as simple as possible.
+
+### Quine Rules
+
+For those of you that don't know, a quine is a program which can replicate
+itself--or more specifically:
+
+> A quine is a non-empty computer program which takes no input and produces a
+> copy of its own source code as its only output.
+
+Thanks, [Wikipedia][14]!
+
+For the purposes of this repo, the solution should be simple. We're not here
+to play code golf, but we're also not here to practice obfuscation. Just be
+reasonable with your solution.
 
 ### Reverse a String Rules
 
@@ -219,132 +345,6 @@ Description  | Input          | Output
 No Input     |                |
 Empty String | ""             |             
 Ascii String | "Hello, World" | "dlroW ,olleH"
-
-### File IO Rules
-
-Most languages have built-in utilities or functions for reading and writing files.
-Many of these input/output functions follow a similar pattern across programming languages:
-a string to the path of the file and a "mode". A mode is how the files is opened.
-Will the file be opened for reading, writing, or even both?
-Will the file be appending new content? Truncated?
-
-In general, a File IO solution should perform the following:
-
-1. Write some arbitrary content to a file (use `output.txt`)
-2. Read back that content and print it to the user
-
-More specifically, begin with writing a file to disk. In the write function, you should show how
-to open a file with write abilities and write some contents to the file. Before closing the file,
-you should ensure everything is written to disk. Then, close the file. There should be basic error
-checking to confirm file opening was successful.
-
-With the read file function, open the file with read abilities. Most higher level languages
-offer a way to read line by line or even transfer the whole contents into a string. One way
-to read the file is to loop line by line and do some processing. Printing each line to the
-screen is enough. Like in the write function, make sure there is some basic error checking.
-
-### Quine Rules
-
-For those of you that don't know, a quine is a program which can replicate
-itself--or more specifically:
-
-> A quine is a non-empty computer program which takes no input and produces a
-> copy of its own source code as its only output.
-
-Thanks, [Wikipedia][14]!
-
-For the purposes of this repo, the solution should be simple. We're not here
-to play code golf, but we're also not here to practice obfuscation. Just be
-reasonable with your solution.
-
-### Baklava Rules
-
-Baklava is a Turkish dessert, and its shape is like an equilateral quadrangle.
-It is used as an example for programming education in Turkish schools. The following
-is the expected output:
-
-```
-           *
-          ***
-         *****
-        *******
-       *********
-      ***********
-     *************
-    ***************
-   *****************
-  *******************
- *********************
-  *******************
-   *****************
-    ***************
-     *************
-      ***********
-       *********
-        *******
-         *****
-          ***
-           *
-```
-
-In general, this solution can be accomplished using a pair of loops. Of course, all
-possible programs are welcome.
-
-### Game of Life Rules
-
-For those of you that don't know, the Game of Life is basically a cell
-simulation where cells are arranged in an infinite grid. Each cell has one
-of two states: alive or dead.
-
-At each turn, all cells are evaluated using the following rules:
-
-- Any live cell with fewer than two live neighbors dies, as if caused by underpopulation.
-- Any live cell with two or three live neighbors lives on to the next generation.
-- Any live cell with more than three live neighbors dies, as if by overpopulation.
-- Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.
-
-For more information, check out the [Wikipedia page for Conway's Game of Life][15].
-
-Of course, for the purposes of the repo, here are the requirements for a contribution:
-
-1. Source code must fit in a single file
-2. Grid must wrap-around on the edges (think [asteroids][16])
-3. The program must support the following command line arguments
-    - Grid width (assume square grid)
-    - Frame rate (frames/second)
-    - Total number of frames
-    - Spawn rate (% of living vs. dead as decimal between 0 and 1)
-4. Simulation must be a GUI
-    - An exception to this rule can be made for languages where it's impossible
-      or impractical to have an actual GUI. In that case, a terminal application
-      is sufficient.
-
-Beyond that, there's really no hard-and-fast requirements. All I ask is that
-solutions are minimal. In other words, don't worry about command line options or
-GUI elements. Keep it simple. Remember, the goal is to show off language features.
-
-Also, I ask that you don't use external libraries. I like for these files to
-be as easy as possible to test, so limiting dependencies is helpful.
-
-### Fibonacci Sequence Rules
-
-In mathematics, the Fibonacci numbers are the numbers in the following integer
-sequence, called the Fibonacci sequence, and characterized by the fact that
-every number after the first two is the sum of the two preceding ones:
-
-    1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...
-
-For this sample program, each solution should leverage dynamic programming to produce this
-list up to the nth term. For instance, `./fib 5` on the command line should output
-```
-1: 1
-2: 1
-3: 2
-4: 3
-5: 5
-```
-In addition, there should be some error handling for situations where the user doesn't supply
-any input or the user supplies input that is not a number (i.e. `./fib` or `./fib hello`, respectively).
 
 ### Roman Numeral Conversion
 
