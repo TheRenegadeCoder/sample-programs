@@ -20,6 +20,7 @@ for as many languages as possible.
   - [Quine Rules][9]
   - [Reverse a String Rules][8]
   - [Roman Numeral Conversion][26]
+  - [Convex Hull][28]
 - [Plagiarism][17]
 
 ## Please Read
@@ -365,6 +366,25 @@ M      | 1000
 
 Using this table, write a sample program which accepts a Roman numeral and outputs it as a decimal.
 
+### Convex Hull
+
+Suppose you have a set of points in the plane. The **convex hull** of this set is the smallest
+convex polygon that contains all the points.
+
+A good way to visualize the problem is this: Imagine each point is a nail sticking out of the plane,
+and you stretch a rubber band around them and let it go. The band will contract and assume a shape
+that encloses the nails. This shape is the convex hull.
+
+![Rubber band visualization](https://upload.wikimedia.org/wikipedia/commons/d/de/ConvexHull.svg)
+
+Note that all vertices of the convex hull are points in the original set. So the convex hull is really
+a subset of points from the original set, and there may be points that lie inside the polygon but are
+not vertices of the convex hull.
+
+There are many algorithms to solve this problem. You may implement any of them. Check this
+[great document by Jeff Erickson](http://jeffe.cs.illinois.edu/teaching/compgeom/notes/01-convexhull.pdf)
+for more details about the problem and the different algorithms to solve it.
+
 ## Plagiarism
 
 **Please** do not submit work that is copied from another source. If work is found to be
@@ -405,3 +425,4 @@ These rules help grow and cultivate the community in a positive manner.
 [25]: #fibonacci-sequence-rules
 [26]: #roman-numeral-conversion 
 [27]: ./assets/Fizz_Buzz.png
+[28]: #convex-hull
