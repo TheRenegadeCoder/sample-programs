@@ -16,7 +16,6 @@ read_file = filename ->
             print "Cannot open file" filename
 
 
-filename = "tmp_file"
+filename = "output.txt"
 write_file filename "Example text"
 read_file filename
-os.remove filename
