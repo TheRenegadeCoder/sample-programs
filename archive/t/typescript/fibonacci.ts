@@ -1,15 +1,17 @@
 function fibonacci(num: number) {
 
   let n = Number(num);
-  let first = 0;
-  let second = 1;
-  let result = 0;
+  let elementOne: number = 0;
+  let elementTwo: number = 1;
+  let result: number = 0;
 
-  for (var i = 1; i <= n; i++) {
-    result = first + second;
-    first = second;
-    second = result;
-      console.log(i + ": " + first + "\n");
+  for (let i: number = 1; i <= n; i++) {
+    result = elementOne + elementTwo;
+    elementOne = elementTwo;
+    elementTwo = result;
+    console.log(`Index: ${i}: ${elementOne}`);
   }
 
 }
+
+fibonacci(process.argv[2]);
