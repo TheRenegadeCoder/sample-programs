@@ -9,6 +9,7 @@ Welcome to Sample Programs in TypeScript!
 - [Baklava in TypeScript][6]
 - [FizzBuzz in TypeScript][7]
   - Solution borrowed from @toturkmen via the [baklava repo][1]
+- [Fibonacci in Typescript][8]
 
 ## Fun Facts
 
@@ -27,3 +28,4 @@ Welcome to Sample Programs in TypeScript!
 [5]: https://github.com/Microsoft/TypeScript
 [6]: https://github.com/TheRenegadeCoder/sample-programs/issues/434
 [7]: https://github.com/TheRenegadeCoder/sample-programs/issues/523
+[8]: https://github.com/TheRenegadeCoder/sample-programs/issues/531
