@@ -6,6 +6,7 @@ Welcome to Sample Programs in Perl!
 
 - [Hello World in Perl](https://therenegadecoder.com/code/hello-world-in-perl/)
 - [Reverse a String in Perl](https://github.com/TheRenegadeCoder/sample-programs/issues/358)
+- [Fizz Buzz in Perl](https://github.com/TheRenegadeCoder/sample-programs/issues/516)
 
 ## Fun Facts
 
