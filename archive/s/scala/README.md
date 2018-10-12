@@ -5,6 +5,7 @@ Welcome to Sample Programs in Scala!
 ## Sample Programs
 
 - [Hello World in Scala](https://therenegadecoder.com/code/hello-world-in-scala/)
+- [Fizz Buzz in Scala][2]
 
 ## Fun Facts
 
@@ -18,3 +19,5 @@ Welcome to Sample Programs in Scala!
 - [Scala Docs](https://www.scala-lang.org/)
 - [Scala GitHub](https://github.com/scala/scala)
 - [Online Scala Editor](https://scastie.scala-lang.org/)
+
+[2]: https://github.com/TheRenegadeCoder/sample-programs/issues/521
