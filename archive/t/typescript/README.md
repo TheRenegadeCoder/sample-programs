@@ -26,4 +26,4 @@ Welcome to Sample Programs in TypeScript!
 [4]: https://en.wikipedia.org/wiki/TypeScript
 [5]: https://github.com/Microsoft/TypeScript
 [6]: https://github.com/TheRenegadeCoder/sample-programs/issues/434
-[7]: https://github.com/TheRenegadeCoder/sample-programs/issues/522
+[7]: https://github.com/TheRenegadeCoder/sample-programs/issues/523
