@@ -28,4 +28,4 @@ Welcome to Sample Programs in TypeScript!
 [5]: https://github.com/Microsoft/TypeScript
 [6]: https://github.com/TheRenegadeCoder/sample-programs/issues/434
 [7]: https://github.com/TheRenegadeCoder/sample-programs/issues/523
-[8]: https://github.com/TheRenegadeCoder/sample-programs/issues/525
+[8]: https://github.com/TheRenegadeCoder/sample-programs/issues/531
