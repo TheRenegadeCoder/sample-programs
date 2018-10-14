@@ -37,4 +37,4 @@ Welcome to Sample Programs in Ruby!
 [9]: https://repl.it/languages/ruby
 [10]: https://github.com/TheRenegadeCoder/sample-programs/issues/433
 [11]: https://github.com/TheRenegadeCoder/sample-programs/issues/455
-[12]: 
+[12]: https://github.com/TheRenegadeCoder/sample-programs/issues/542
