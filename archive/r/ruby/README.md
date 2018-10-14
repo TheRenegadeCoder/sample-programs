@@ -6,12 +6,12 @@ Welcome to Sample Programs in Ruby!
 
 - [Hello World in Ruby][2]
 - [Baklava in Ruby][10]
+    - Solution borrowed from @erayak via the [baklava repo][1]
 - [Fibonacci in Ruby][12]
 - [File IO in Ruby][5]
 - [Fizz Buzz in Ruby][3]
 - [Quine in Ruby][4]
 - [Reverse String in Ruby][11]
-  - Solution borrowed from @erayak via the [baklava repo][1]
 
 ## Fun Facts
 
