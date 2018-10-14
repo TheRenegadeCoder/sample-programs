@@ -4,12 +4,12 @@ def fibonacci(number)
     c = 0
 
     i = 0
-    while i < number
+    while i <= number
         c = a + b
         b = a
         a = c
 
-        print("#{c}\n")
+        print("#{i}: #{c}\n")
         i += 1
     end
 end
