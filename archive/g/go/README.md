@@ -7,6 +7,7 @@ Welcome to Sample Programs in Go!
 - [Hello World in Go][2]
 - [Fizz Buzz in Go][3]
 - [Baklava in Go][7]
+- [String Reverse in Go][2]
   - Solution borrowed from @toturkmen via the [baklava repo][1]
 
 ## Fun Facts
