@@ -29,4 +29,4 @@ Welcome to Sample Programs in Go!
 [5]: https://golang.org/
 [6]: https://github.com/golang/go
 [7]: https://github.com/TheRenegadeCoder/sample-programs/issues/428
-[8]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/g/go/string-reverse.go
+[8]: https://github.com/TheRenegadeCoder/sample-programs/issues/545
