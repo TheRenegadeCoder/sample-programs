@@ -4,6 +4,8 @@ Welcome to Sample Programs in Octave!
 
 ## Sample Programs
 
+- [Hello World in Octave](https://github.com/TheRenegadeCoder/sample-programs/issues/549)
+
 ## Fun Facts
 
 - Debut: 1988
