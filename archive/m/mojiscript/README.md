@@ -12,4 +12,5 @@
 
 ## References
 - [MojiScript Docs](https://github.com/joelnet/MojiScript/)
+- [HelloWorld by joelnet](https://github.com/joelnet/MojiScript/tree/master/examples/hello-world)
 - [MojiScript fizzbuzz by joelnet](https://dev.to/joelnet/getting-started-with-mojiscript-fizzbuzz-part-1-2fji)
