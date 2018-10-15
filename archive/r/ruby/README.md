@@ -4,13 +4,14 @@ Welcome to Sample Programs in Ruby!
 
 ## Sample Programs
 
-- [Hello World in Ruby][2]
-- [Fizz Buzz in Ruby][3]
-- [Reverse String in Ruby][11]
-- [Quine in Ruby][4]
-- [File IO in Ruby][5]
 - [Baklava in Ruby][10]
-  - Solution borrowed from @erayak via the [baklava repo][1]
+    - Solution borrowed from @erayak via the [baklava repo][1]
+- [Fibonacci in Ruby][12]
+- [File IO in Ruby][5]
+- [Fizz Buzz in Ruby][3]
+- [Hello World in Ruby][2]
+- [Quine in Ruby][4]
+- [Reverse String in Ruby][11]
 
 ## Fun Facts
 
@@ -36,3 +37,4 @@ Welcome to Sample Programs in Ruby!
 [9]: https://repl.it/languages/ruby
 [10]: https://github.com/TheRenegadeCoder/sample-programs/issues/433
 [11]: https://github.com/TheRenegadeCoder/sample-programs/issues/455
+[12]: https://github.com/TheRenegadeCoder/sample-programs/issues/542

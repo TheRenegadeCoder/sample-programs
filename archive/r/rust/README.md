@@ -5,10 +5,11 @@ Welcome to Sample Programs in Rust!
 ## Sample Programs
 
 - [Hello World in Rust](https://therenegadecoder.com/code/hello-world-in-rust/)
-- [Fizz Buzz in Rust](https://github.com/TheRenegadeCoder/sample-programs/issues/453)
-- [Reverse a String in Rust](https://github.com/jrg94/sample-programs/issues/261)
 - [Fibonacci in Rust](https://github.com/TheRenegadeCoder/sample-programs/issues/490)
 - [File IO in Rust](https://github.com/TheRenegadeCoder/sample-programs/issues/413)
+- [Fizz Buzz in Rust](https://github.com/TheRenegadeCoder/sample-programs/issues/453)
+- [Reverse a String in Rust](https://github.com/jrg94/sample-programs/issues/261)
+- [Roman Numeral Conversion in Rust](https://github.com/TheRenegadeCoder/sample-programs/issues/536)
 
 ## Fun Facts
 

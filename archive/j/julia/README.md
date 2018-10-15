@@ -6,6 +6,8 @@ Welcome to Sample Programs in Julia!
 
 - [Hello World in Julia](https://therenegadecoder.com/code/hello-world-in-julia/)
 - [Baklava in Julia](https://github.com/TheRenegadeCoder/sample-programs/pull/485)
+- [Fibonacci in Julia](https://github.com/TheRenegadeCoder/sample-programs/issues/529)
+- [FizzBuzz in Julia](https://github.com/TheRenegadeCoder/sample-programs/issues/532)
 
 ## Fun Facts
 

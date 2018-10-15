@@ -12,12 +12,13 @@ for as many languages as possible.
   - [Pull Requests][4]
 - [Projects][5]
   - [Baklava Rules][24]
-  - [Convex Hull][28]
+  - [Convex Hull][2]
   - [Fibonacci Sequence Rules][25]
   - [File IO Rules][18]
   - [Fizz Buzz Rules][7]
   - [Game of Life Rules][10]
   - [Hello World Rules][6]
+  - [Longest Common Subsequence Rules][28]
   - [Quine Rules][9]
   - [Reverse a String Rules][8]
   - [Roman Numeral Conversion][26]
@@ -105,15 +106,7 @@ but you're welcome to add new snippets.
 
 However, for simplicity, I ask that you **only make pull requests for one language and one project at a time.**
 
-The following list contains all existing sample programs:
-
-1. [Hello World in Every Language][21]
-2. [Reverse a String in Every Language][22]
-3. [Fizz Buzz in Every Language][23]
-4. File IO in Every Language
-5. Quine in Every Language
-6. Game of Life in Every Language
-7. Fibonacci Sequence
+Refer to the table of contents for all available sample programs.
 
 When adding new languages, make sure you include a README using the following template:
 
@@ -326,6 +319,42 @@ As a result, the rules are pretty simple. For each language, create a program
 that writes the string "Hello, World!" to standard output. Ideally, the solution
 should be as simple as possible.
 
+### Longest Common Subsequence Rules
+
+Given two arrays of numbers, find the longest common subsequence. For example, let's say we have the
+following pair of arrays:
+
+```
+A = [1, 4, 5, 3, 15, 6]
+B = [1, 7, 4, 5, 11, 6]
+```
+
+The longest common subsequence is `1, 4, 5, 6`. 
+
+Write a program which accepts two command line arguments--each list--and outputs the longest 
+common subsequence between the two lists. Input arguments should be in comma separated list notation:
+`1, 2, 14, 11, 31, 7, 9`. 
+
+Your program should be able to parse these lists into some internal representation in your
+choice language (ideally an array). From there, the program should compare the two arrays
+to find the longest common subsequence and output it in comma separated list notation to the user.
+
+The following is recursive pseudocode that you can use for reference:
+
+```
+LCS(arrayA, arrayB, indexA, indexB):
+  if indexA == 0 || indexB == 0:
+    return 0
+  else if arrayA[indexA - 1] == arrayB[indexB - 1]:
+    return 1 + LCS(arrayA, arrayB, indexA - 1, indexB - 1)
+  else:
+    return max(LCS(arrayA, arrayB, indexA - 1, indexB), LCS(arrayA, arrayB, indexA, indexB - 1))
+```
+
+Unfortunately, this pseudocode only gives us the length of the longest common subsequence. Since we
+want to actually *print* the result, we'll probably need to augment this algorithm a bit. Also,
+it may be useful to implement the memoized solution for the sake of efficiency.
+
 ### Quine Rules
 
 For those of you that don't know, a quine is a program which can replicate
@@ -438,4 +467,5 @@ These rules help grow and cultivate the community in a positive manner.
 [25]: #fibonacci-sequence-rules
 [26]: #roman-numeral-conversion 
 [27]: ./assets/Fizz_Buzz.png
-[28]: #convex-hull
+[28]: #longest-common-subsequence-rules
+[29]: #convex-hull

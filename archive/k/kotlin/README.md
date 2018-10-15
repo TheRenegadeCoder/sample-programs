@@ -7,6 +7,7 @@ Welcome to Sample Programs in Kotlin!
 - [Hello World in Kotlin][2]
 - [Baklava in Kotlin][6]
   - Solution borrowed from @toturkmen via the [baklava repo][1]
+- [Fizz Buzz in Kotlin][7]
 
 ## Fun Facts
 
@@ -27,3 +28,4 @@ Welcome to Sample Programs in Kotlin!
 [4]: https://kotlinlang.org/
 [5]: https://github.com/JetBrains/kotlin
 [6]: https://github.com/TheRenegadeCoder/sample-programs/issues/430
+[7]: https://github.com/TheRenegadeCoder/sample-programs/issues/511
