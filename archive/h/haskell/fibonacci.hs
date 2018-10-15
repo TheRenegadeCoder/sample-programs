@@ -8,5 +8,8 @@ fibonacciSequence elementCount = go 0 [0,1]
           | otherwise                = sequence
 
 
--- Gets the first N elements of the fibonacciSequence
-main n = fibonacciSequence n
+-- Prints out the first 10 numbers from the fibonacci sequence.
+main :: IO ()
+main = do
+  putStrLn "The first 10 fibonacci numbers are:"
+  putStrLn $ show $ fibonacciSequence 10
