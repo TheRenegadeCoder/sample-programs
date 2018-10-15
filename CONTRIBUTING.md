@@ -12,7 +12,7 @@ for as many languages as possible.
   - [Pull Requests][4]
 - [Projects][5]
   - [Baklava Rules][24]
-  - [Convex Hull][29]
+  - [Convex Hull Rules][29]
   - [Fibonacci Sequence Rules][25]
   - [File IO Rules][18]
   - [Fizz Buzz Rules][7]
@@ -185,7 +185,7 @@ is the expected output:
 In general, this solution can be accomplished using a pair of loops. Of course, all
 possible programs are welcome.
 
-### Convex Hull
+### Convex Hull Rules
 
 Suppose you have a set of points in the plane. The **convex hull** of this set is the smallest
 convex polygon that contains all the points.
@@ -468,4 +468,4 @@ These rules help grow and cultivate the community in a positive manner.
 [26]: #roman-numeral-conversion 
 [27]: ./assets/Fizz_Buzz.png
 [28]: #longest-common-subsequence-rules
-[29]: #convex-hull
+[29]: #convex-hull-rules
