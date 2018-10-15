@@ -6,6 +6,7 @@ Welcome to Sample Programs in Haskell!
 
 - [Hello World in Haskell](https://therenegadecoder.com/code/hello-world-in-haskell/)
 - [Fizz Buzz in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/349)
+- [Fibonacci in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/543)
 
 ## Fun Facts
 
