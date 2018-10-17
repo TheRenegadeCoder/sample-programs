@@ -5,7 +5,7 @@ Welcome to Sample Programs in MojiScript!
 ## Sample Programs
 
 - Hello World in MojiScript
-  - Borrowed from [Hello World in MojiScript by joelnet][1]
+  - Adapted from [Hello World in MojiScript by joelnet][1]
 
 ## Fun Facts
 
