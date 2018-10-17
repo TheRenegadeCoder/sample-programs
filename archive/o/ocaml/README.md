@@ -4,7 +4,7 @@ Welcome to Sample Programs in Ocaml!
 
 ## Sample Programs
 
-- [Hello World in Ocaml](hello-world.ml)
+- [Hello World in Ocaml](https://github.com/TheRenegadeCoder/sample-programs/issues/565)
 
 ## Fun Facts
 
