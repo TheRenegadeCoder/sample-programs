@@ -5,6 +5,7 @@ Welcome to Sample Programs in Pascal!
 ## Sample Programs
 
 - [Hello World in Pascal](https://therenegadecoder.com/code/hello-world-in-pascal/)
+- [Fizz Buzz in Pascal](https://github.com/TheRenegadeCoder/sample-programs/issues/548)
 
 ## Fun Facts
 
