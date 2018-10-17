@@ -7,8 +7,8 @@ Welcome to Sample Programs in TypeScript!
 - [Hello World in TypeScript][2]
 - [Game of Life in TypeScript][3]
 - [Baklava in TypeScript][6]
-- [FizzBuzz in TypeScript][7]
   - Solution borrowed from @toturkmen via the [baklava repo][1]
+- [FizzBuzz in TypeScript][7]
 - [Fibonacci in Typescript][8]
 
 ## Fun Facts
