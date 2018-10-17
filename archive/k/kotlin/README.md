@@ -8,6 +8,7 @@ Welcome to Sample Programs in Kotlin!
 - [Baklava in Kotlin][6]
   - Solution borrowed from @toturkmen via the [baklava repo][1]
 - [Fizz Buzz in Kotlin][7]
+- [Reverse String]
 
 ## Fun Facts
 
