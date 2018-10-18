@@ -3,13 +3,13 @@
 Welcome to Sample Programs in TypeScript!
 
 ## Sample Programs
-
-- [Hello World in TypeScript][2]
-- [Game of Life in TypeScript][3]
 - [Baklava in TypeScript][6]
   - Solution borrowed from @toturkmen via the [baklava repo][1]
+ - [Fibonacci in Typescript][8]
 - [FizzBuzz in TypeScript][7]
-- [Fibonacci in Typescript][8]
+- [Game of Life in TypeScript][3]
+- [Hello World in TypeScript][2]
+
 
 ## Fun Facts
 
