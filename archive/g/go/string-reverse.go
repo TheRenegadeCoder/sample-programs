@@ -1,7 +1,9 @@
 package main
 
 import "fmt"
+import "os"
 
+//Function to reverse a string 
 func reverse_string(str string) string {
 	chars := []rune(str)
 	for i, j := 0, len(chars)-1; i < j; i, j = i+1, j-1 {
@@ -11,5 +13,16 @@ func reverse_string(str string) string {
 }
 
 func main() {
-	fmt.Printf("%v\n", reverse_string("hacktoberfest"))
+	// Check the command line args length
+	var argslen = len(os.Args)
+	//fmt.Println(argslen)
+	
+	// If the length is 2, one command line arg exist
+	if argslen == 2 {
+		input := os.Args[1]
+		fmt.Println("Input: " , input)
+		fmt.Printf("Reverse: %v\n", reverse_string(input))
+	} else { //No or more than two command line args exist
+		fmt.Println("Input one string as command line arg")
+	}
 }
