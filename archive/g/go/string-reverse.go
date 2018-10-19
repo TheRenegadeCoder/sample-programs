@@ -15,13 +15,11 @@ func reverse_string(str string) string {
 func main() {
 	// Check the command line args length
 	var argslen = len(os.Args)
-	//fmt.Println(argslen)
 	
 	// If the length is 2, one command line arg exist
 	if argslen == 2 {
 		input := os.Args[1]
-		fmt.Println("Input: " , input)
-		fmt.Printf("Reverse: %v\n", reverse_string(input))
+		fmt.Printf("%v\n", reverse_string(input))
 	} else { //No or more than two command line args exist
 		fmt.Println("Input one string as command line arg")
 	}
