@@ -14,6 +14,7 @@ Welcome to Sample Programs in Python!
 - [Game of Life in Python][4]
 - [Fibonacci Sequence in Python][24]
 - [Roman Numberal Conversion in Python][25]
+- [Longest Common Subsequence][]
 
 ## Fun Facts
 
@@ -51,7 +52,7 @@ Welcome to Sample Programs in Python!
     - [x] [The Equals (`==`) Operator][9]
     - [ ] The Greater Than Equals (`>=`) Operator
     - [x] [The Greater Than (`>`) Operator][13]
-    - [ ] The Not Equals (`!=`) Operator
+    - [x] The Not Equals (`!=`) Operator
     - [ ] The `is` Operator
     - [ ] The `in` Operator
   - [ ] Boolean Operations
@@ -114,3 +115,4 @@ Welcome to Sample Programs in Python!
 [23]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/file-io.py#L25
 [24]: https://github.com/TheRenegadeCoder/sample-programs/issues/492
 [25]: https://github.com/TheRenegadeCoder/sample-programs/issues/499
+[26]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/CONTRIBUTING.md#longest-common-subsequence-rules
