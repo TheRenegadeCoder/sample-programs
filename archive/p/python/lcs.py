@@ -18,9 +18,6 @@ def lcs(s1, s2):
 
 if __name__ == "__main__":
     
-    A = [1, 4, 5, 3, 15, 6]
-    B = [1, 7, 4, 5, 11, 6]
-
     parser = argparse.ArgumentParser()
 
     parser.add_argument('A', type=input_list)
