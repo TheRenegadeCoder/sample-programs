@@ -4,10 +4,11 @@ Welcome to Sample Programs in Go!
 
 ## Sample Programs
 
-- [Hello World in Go][2]
-- [Fizz Buzz in Go][3]
 - [Baklava in Go][7]
   - Solution borrowed from @toturkmen via the [baklava repo][1]
+- [Fizz Buzz in Go][3]
+- [Hello World in Go][2]
+- [String Reverse in Go][8]
 
 ## Fun Facts
 
@@ -28,3 +29,4 @@ Welcome to Sample Programs in Go!
 [5]: https://golang.org/
 [6]: https://github.com/golang/go
 [7]: https://github.com/TheRenegadeCoder/sample-programs/issues/428
+[8]: https://github.com/TheRenegadeCoder/sample-programs/issues/545
