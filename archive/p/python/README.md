@@ -52,7 +52,7 @@ Welcome to Sample Programs in Python!
     - [x] [The Equals (`==`) Operator][9]
     - [ ] The Greater Than Equals (`>=`) Operator
     - [x] [The Greater Than (`>`) Operator][13]
-    - [x] The Not Equals (`!=`) Operator
+    - [x] [The Not Equals (`!=`) Operator][27]
     - [ ] The `is` Operator
     - [ ] The `in` Operator
   - [ ] Boolean Operations
@@ -63,7 +63,7 @@ Welcome to Sample Programs in Python!
 - [ ] Simple Statements
   - [x] [Assignment Statement][5]
   - [ ] The `assert` Statement
-  - [ ] The `pass` Statement
+  - [ ] [The `pass` Statement][28]
   - [ ] The `del` Statement
   - [x] [The `return` Statement][10]
   - [ ] The `yield` Statement
@@ -116,3 +116,5 @@ Welcome to Sample Programs in Python!
 [24]: https://github.com/TheRenegadeCoder/sample-programs/issues/492
 [25]: https://github.com/TheRenegadeCoder/sample-programs/issues/499
 [26]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/CONTRIBUTING.md#longest-common-subsequence-rules
+[27]: https://github.com/Boot-Error/sample-programs/blob/ced2e54804d8f801aee2b37fee6f443a6432cb9b/archive/p/python/lcs.py#L16
+[28]: https://github.com/Boot-Error/sample-programs/blob/ced2e54804d8f801aee2b37fee6f443a6432cb9b/archive/p/python/lcs.py#L17
