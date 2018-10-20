@@ -9,6 +9,7 @@ Welcome to Sample Programs in Kotlin!
   - Solution borrowed from @toturkmen via the [baklava repo][1]
 - [Fizz Buzz in Kotlin][7]
 - [Fibonacci Sequence in Kotlin][8]
+- [Reverse String in Kotlin][]
 
 ## Fun Facts
 
