@@ -10,6 +10,7 @@ Welcome to Sample Programs in Haskell!
 - [Reverse a String in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/559)
 - [Baklava in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/575)
 - [Roman Numeral Conversion in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/581)
+- [Longest Common Subsequence in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/577)
 
 ## Fun Facts
 
