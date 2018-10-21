@@ -8,7 +8,7 @@ Welcome to Sample Programs in Haskell!
 - [Fizz Buzz in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/349)
 - [Fibonacci in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/543)
 - [Reverse a String in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/559)
-- [Baklava in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/573)
+- [Baklava in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/575)
 
 ## Fun Facts
 
