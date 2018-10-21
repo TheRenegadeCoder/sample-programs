@@ -14,4 +14,4 @@ rules apply:
 I was tempted to open this up such that the user could supply any number, but I think
 we get plenty of IO with some of the other projects in this repo.
 
-[1]: ./assets/Fizz_Buzz.png
+[1]: ../assets/Fizz_Buzz.png
