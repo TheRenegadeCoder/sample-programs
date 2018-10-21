@@ -44,9 +44,9 @@ of roman numerals (i.e. `./roman-numeral-conversion XXVI`).
 The following table contains appropriate examples for testing a Roman Numeral
 Conversion program:
 
-| Input | Output                                             |
-| ----- | -------------------------------------------------- |
-| ""    | "Usage: please provide a string of roman numerals" |
-| "XT"  | "Error: invalid string of roman numerals"          |
-| "I"   | "1"                                                |
-| "V"   | "5"                                                |
+| Description   | Input | Output                                             |
+| ------------- | ----- | -------------------------------------------------- |
+| No Input      | ""    | "Usage: please provide a string of roman numerals" |
+| Invalid Input | "XT"  | "Error: invalid string of roman numerals"          |
+| Single I      | "I"   | "1"                                                |
+| Single V      | "V"   | "5"                                                |
