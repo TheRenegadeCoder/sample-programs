@@ -29,6 +29,4 @@ main = do
   if null args then
     error "You need to pass a roman numeral to through the command line." 
   else
-    let message = roman ++ " in decimal is "
-        dec = romanToDecimal roman
-    in putStrLn $ message ++ show dec
+    putStrLn $ show $ romanToDecimal roman
