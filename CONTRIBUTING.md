@@ -5,24 +5,13 @@ for as many languages as possible.
 
 ## Table of Contents
 
-- [Please Read][0]
-  - [Repository Structure][1]
-  - [Naming Conventions][2]
-  - [Articles][3]
-  - [Pull Requests][4]
-- [Projects][5]
-  - [Baklava Rules][24]
-  - [Convex Hull Rules][29]
-  - [Fibonacci Sequence Rules][25]
-  - [File IO Rules][18]
-  - [Fizz Buzz Rules][7]
-  - [Game of Life Rules][10]
-  - [Hello World Rules][6]
-  - [Longest Common Subsequence Rules][28]
-  - [Quine Rules][9]
-  - [Reverse a String Rules][8]
-  - [Roman Numeral Conversion][26]
-- [Plagiarism][17]
+-   [Please Read][0]
+    -   [Repository Structure][1]
+    -   [Naming Conventions][2]
+    -   [Articles][3]
+    -   [Pull Requests][4]
+-   [Projects][5]
+-   [Plagiarism][17]
 
 ## Please Read
 
@@ -41,8 +30,8 @@ a list of language folders that share the same first character as the parent fol
 
 Within each language folder, you'll find the following:
 
-- A README
-- A list of program files.
+-   A README
+-   A list of program files.
 
 Now, each program file maps to an ongoing project
 that you can find in the General Rules section. As for the README, it contains a list
@@ -58,16 +47,16 @@ As a general rule, if you're adding a new language, please use lowercase alphanu
 character sequences separated by dashes only. If we do not adhere to this rule,
 we risk limiting contributors by platform.
 
-For example, let's say someone adds C* to our repository. If we name the directory
-c*, then Windows users will be unable to clone the repository. Instead, consider
+For example, let's say someone adds C_ to our repository. If we name the directory
+c_, then Windows users will be unable to clone the repository. Instead, consider
 using c-star. The following table shares a few examples:
 
 | Language | Proper Directory Name |
-|----------|------------------|
-| C* | c-star |
-| C++ | c-plus-plus |
-| C# | c-sharp |
-| F# | f-sharp |
+| -------- | --------------------- |
+| C\*      | c-star                |
+| C++      | c-plus-plus           |
+| C#       | c-sharp               |
+| F#       | f-sharp               |
 
 Thanks for keeping this repository inclusive!
 
@@ -110,23 +99,21 @@ Refer to the table of contents for all available sample programs.
 
 When adding new languages, make sure you include a README using the following template:
 
-```
-# Sample Programs in [Insert Language Here]
+    # Sample Programs in [Insert Language Here]
 
-Welcome to Sample Programs in [Insert Language Here]!
+    Welcome to Sample Programs in [Insert Language Here]!
 
-## Sample Programs
+    ## Sample Programs
 
-- [Insert List of Sample Program Additions Here]
+    - [Insert List of Sample Program Additions Here]
 
-## Fun Facts
+    ## Fun Facts
 
-- [Insert List of Fun Facts Here]
+    - [Insert List of Fun Facts Here]
 
-## References
+    ## References
 
-- [Insert Language References Here]
-```
+    - [Insert Language References Here]
 
 In the section labeled `[Insert List of Sample Program Additions Here]`, please add the name of the
 sample program you've added. Ideally, you would link to the article here. At this point, however,
@@ -150,7 +137,23 @@ At any rate, let's have some fun!
 
 ## Projects
 
-Below you'll find a list of all the current projects in this repository and their rules.
+Below you'll find a list of all the current projects in this repository. Follow
+each link to read more about their rules.
+
+- [Baklava Rules][24]
+- [Convex Hull Rules][29]
+- [Fibonacci Sequence Rules][25]
+- [File IO Rules][18]
+- [Fizz Buzz Rules][7]
+- [Game of Life Rules][10]
+- [Hello World Rules][6]
+- [Longest Common Subsequence Rules][28]
+- [Quine Rules][9]
+- [Reverse a String Rules][8]
+- [Roman Numeral Conversion][26]
+
+If you'd like to add a project, feel free to create a pull request with a new
+file containing a project description in the docs folder.
 
 ## Plagiarism
 
@@ -165,28 +168,53 @@ keeps the repo tidy by eliminating the need for citations.
 These rules help grow and cultivate the community in a positive manner.
 
 [0]: #please-read
+
 [1]: #repository-structure
+
 [2]: #naming-conventions
+
 [3]: #articles
+
 [4]: #pull-requests
+
 [5]: #projects
+
 [6]: #hello-world-rules
+
 [7]: #fizz-buzz-rules
+
 [8]: #reverse-a-string-rules
+
 [9]: #quine-rules
+
 [10]: #game-of-life-rules
+
 [11]: https://therenegadecoder.com/members/registration/
+
 [12]: https://therenegadecoder.com/wp-admin/
+
 [13]: https://github.com/jrg94/sample-programs/blob/master/archive/p/python/README.md
+
 [17]: #plagiarism
+
 [18]: #file-io-rules
+
 [19]: https://en.gravatar.com/
+
 [20]: https://help.github.com/articles/fork-a-repo
+
 [21]: https://therenegadecoder.com/code/hello-world-in-every-language/
+
 [22]: https://therenegadecoder.com/code/reverse-a-string-in-every-language/
+
 [23]: https://therenegadecoder.com/series/fizz-buzz-in-every-language/
+
 [24]: #baklava-rules
+
 [25]: #fibonacci-sequence-rules
+
 [26]: #roman-numeral-conversion
+
 [28]: #longest-common-subsequence-rules
+
 [29]: #convex-hull-rules
