@@ -47,5 +47,6 @@ Conversion program:
 | Input | Output                                             |
 | ----- | -------------------------------------------------- |
 | ""    | "Usage: please provide a string of roman numerals" |
+| "XT"  | "Error: invalid string of roman numerals"          |
 | "I"   | "1"                                                |
 | "V"   | "5"                                                |
