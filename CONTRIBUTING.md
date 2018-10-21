@@ -152,22 +152,6 @@ At any rate, let's have some fun!
 
 Below you'll find a list of all the current projects in this repository and their rules.
 
-### Fizz Buzz Rules
-
-![Fizz_Buzz][27]
-
-Fizz Buzz is a typical interview question which tests the developers knowledge of
-flow control and operators. For the purposes of this repository, the following
-rules apply:
-
-> Write a program that prints the numbers 1 to 100. However, for multiples of three,
-> print "Fizz" instead of the number. Meanwhile, for multiples of five, print "Buzz"
-> instead of the number. For numbers which are multiples of both three and five,
-> print "FizzBuzz"
-
-I was tempted to open this up such that the user could supply any number, but I think
-we get plenty of IO with some of the other projects in this repo.
-
 ### Longest Common Subsequence Rules
 
 Given two arrays of numbers, find the longest common subsequence. For example, let's say we have the
@@ -313,6 +297,5 @@ These rules help grow and cultivate the community in a positive manner.
 [24]: #baklava-rules
 [25]: #fibonacci-sequence-rules
 [26]: #roman-numeral-conversion
-[27]: ./assets/Fizz_Buzz.png
 [28]: #longest-common-subsequence-rules
 [29]: #convex-hull-rules
