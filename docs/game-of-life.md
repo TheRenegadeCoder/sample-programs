@@ -35,4 +35,4 @@ Also, I ask that you don't use external libraries. I like for these files to
 be as easy as possible to test, so limiting dependencies is helpful.
 
 [1]: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
-[16\\2]: https://en.wikipedia.org/wiki/Asteroids_(video_game)
+[2]: https://en.wikipedia.org/wiki/Asteroids_(video_game)
