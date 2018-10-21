@@ -53,3 +53,8 @@ Conversion program:
 | Single V      | "V"   | 5                                                  |
 | Single X      | "X"   | 10                                                 |
 | Single L      | "L"   | 50                                                 |
+| Single C      | "C"   | 100                                                |
+| Single D      | "D"   | 500                                                |
+| Single M      | "M"   | 1000                                               |
+| Addition      | "XXV" | 25                                                 |
+| Subtraction   | "XIV" | 14                                                 |
