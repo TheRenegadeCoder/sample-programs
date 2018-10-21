@@ -27,11 +27,25 @@ Of course, there are other limitations, but we'll ignore those for simplicity.
 
 ## Requirements
 
-Using the table above, write a sample program which accepts a Roman numeral on
-the command line and outputs its decimal value on standard output. Store the
-solution in a file called Roman Numeral Conversion using whatever naming
+Create a file called Roman Numeral Conversion using whatever naming
 convention is appropriate for the choice language.
 
-*Please* make sure your program is executable. In other words, the solution
+Using the table above, write a sample program which accepts a Roman numeral on
+the command line and outputs its decimal value on standard output. Be careful
+to appropriately handle invalid input such as `XT`. More on that in the testing
+section.
+
+_Please_ make sure your program is executable. In other words, the solution
 should be able to be called in the appropriate environment with a string
 of roman numerals (i.e. `./roman-numeral-conversion XXVI`).
+
+## Testing
+
+The following table contains appropriate examples for testing a Roman Numeral
+Conversion program:
+
+| Input | Output                                             |
+| ----- | -------------------------------------------------- |
+| ""    | "Usage: please provide a string of roman numerals" |
+| "I"   | "1"                                                |
+| "V"   | "5"                                                |
