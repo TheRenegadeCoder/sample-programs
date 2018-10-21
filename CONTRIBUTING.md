@@ -99,21 +99,23 @@ Refer to the table of contents for all available sample programs.
 
 When adding new languages, make sure you include a README using the following template:
 
-    # Sample Programs in [Insert Language Here]
+```markdown
+# Sample Programs in [Insert Language Here]
 
-    Welcome to Sample Programs in [Insert Language Here]!
+Welcome to Sample Programs in [Insert Language Here]!
 
-    ## Sample Programs
+## Sample Programs
 
-    - [Insert List of Sample Program Additions Here]
+- [Insert List of Sample Program Additions Here]
 
-    ## Fun Facts
+## Fun Facts
 
-    - [Insert List of Fun Facts Here]
+- [Insert List of Fun Facts Here]
 
-    ## References
+## References
 
-    - [Insert Language References Here]
+- [Insert Language References Here]
+```
 
 In the section labeled `[Insert List of Sample Program Additions Here]`, please add the name of the
 sample program you've added. Ideally, you would link to the article here. At this point, however,
