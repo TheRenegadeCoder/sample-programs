@@ -62,30 +62,26 @@ Thanks for keeping this repository inclusive!
 
 ### Articles
 
-As a bonus to this repository, there are associated articles for every script. However, the articles
-do take awhile to write, so you can help by writing them as well.
+As a bonus to this repository, there are associated articles for every script.
+However, the articles do take awhile to write, so you can help by writing them
+as well.
 
 If you wish to help write articles, please [create an account][11]
-over on The Renegade Coder. When you're done, let me know in the associated GitHub issue.
-That way, I can elevate your privileges, so you can draft your article.
+over on The Renegade Coder. When you're done, let me know in the associated
+GitHub issue. That way, I can elevate your privileges, so you can draft your
+article.
 
 Once everything is setup, make sure you [bookmark the backend][12].
 That way, you can quickly get to the area where you can draft articles.
 
-In addition, **anyone who writes an article will be granted collaborator status**, so there's an incentive.
+When writing articles, try to follow the conventions of other articles in the
+series (i.e. keep the same structure). When you're done, let me know in the
+associated GitHub issue, and I'll schedule the article for publishing.
 
-#### Writing Guidelines
-
-When writing articles, try to follow the conventions of other articles in the series (i.e. keep the
-same structure). When you're done, let me know in the associated GitHub issue, and
-I'll schedule the article for publishing. Don't worry about the featured image;
-I'll add one before publishing.
-
-#### Profile
-
-Don't forget to update your profile as it will be displayed at the bottom of the article. If you want
-a proper profile image, make sure to setup a [Gravatar][19]
-using the same email as your account.
+Don't worry about the featured image; I'll add one before publishing. However,
+if you'd like to save me some time, you can generate your own featured image
+by downloading an image of your choice from Pixabay and running the
+[Image Titler][30] program. Then, upload the image to the associated issue.
 
 ### Pull Requests
 
@@ -244,3 +240,5 @@ These rules help grow and cultivate the community in a positive manner.
 [28]: docs/longest-common-subsequence.md
 
 [29]: docs/convex-hull.md
+
+[30]: https://github.com/TheRenegadeCoder/image-titler
