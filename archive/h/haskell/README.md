@@ -9,6 +9,7 @@ Welcome to Sample Programs in Haskell!
 - [Fibonacci in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/543)
 - [Reverse a String in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/559)
 - [Baklava in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/575)
+- [Roman Numeral Conversion in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/581)
 
 ## Fun Facts
 
