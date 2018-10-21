@@ -45,6 +45,6 @@ Verify that the actual output matches the expected output (see [requirements][1]
 
 ## Futher Reading
 
-[comment]: <> (To be added later when article is made)
+To be added later when article is made
 
 [1]: #requirements
