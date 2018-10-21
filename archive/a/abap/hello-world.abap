@@ -1,2 +1,2 @@
 REPORT ZHELLO.
-WRITE 'Hello World'.
+WRITE 'Hello, World!'.
