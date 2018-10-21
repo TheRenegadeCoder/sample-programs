@@ -9,6 +9,7 @@ Welcome to Sample Programs in C#!
 - [Fizz Buzz in C#][4]
 - [Baklava in C#][8]
   - Solution borrowed from @toturkmen via the [baklava repo][1]
+- [Roman Numeral Conversion in C#][9]
 
 ## Fun Facts
 
@@ -30,3 +31,4 @@ Welcome to Sample Programs in C#!
 [6]: https://docs.microsoft.com/en-us/dotnet/csharp/
 [7]: https://www.jdoodle.com/compile-c-sharp-online
 [8]: https://github.com/TheRenegadeCoder/sample-programs/issues/423
+[9]: https://github.com/TheRenegadeCoder/sample-programs/issues/593
