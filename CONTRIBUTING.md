@@ -5,19 +5,14 @@ for as many languages as possible.
 
 ## Table of Contents
 
--   [Please Read][0]
-    -   [Repository Structure][1]
-    -   [Naming Conventions][2]
-    -   [Articles][3]
-    -   [Pull Requests][4]
+-   [Repository Structure][1]
+-   [Naming Conventions][2]
+-   [Articles][3]
+-   [Pull Requests][4]
 -   [Projects][5]
 -   [Plagiarism][17]
 
-## Please Read
-
-In this section, we'll cover some of the essential topics for the repository.
-
-### Repository Structure
+## Repository Structure
 
 Before we get into the contribution rules, we should probably get an understanding for
 how this repository is structured.
@@ -41,7 +36,7 @@ In addition, the README contains links to language references and a list of fun 
 Naturally, if you wish to add a completely new language to the repository, you'll
 need to follow this repository structure. Now, let's get to the rules!
 
-### Naming Conventions
+## Naming Conventions
 
 As a general rule, if you're adding a new language, please use lowercase alphanumeric
 character sequences separated by dashes only. If we do not adhere to this rule,
@@ -60,7 +55,7 @@ using c-star. The following table shares a few examples:
 
 Thanks for keeping this repository inclusive!
 
-### Articles
+## Articles
 
 As a bonus to this repository, there are associated articles for every script.
 However, the articles do take awhile to write, so you can help by writing them
@@ -83,7 +78,7 @@ if you'd like to save me some time, you can generate your own featured image
 by downloading an image of your choice from Pixabay and running the
 [Image Titler][30] program. Then, upload the image to the associated issue.
 
-### Pull Requests
+## Pull Requests
 
 If you wish to contribute, [fork][20] the repo and make a pull request
 with your changes. Ideally, your contribution should be to existing projects,
@@ -175,7 +170,7 @@ should follow the following template:
 Feel free to browse other projects to get an idea of how to fill out each
 section.
 
-Once you've created the file, *please* link it in this section.
+Once you've created the file, _please_ link it in this section.
 
 ## Plagiarism
 
