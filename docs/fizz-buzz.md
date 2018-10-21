@@ -34,7 +34,8 @@ naming conventions of your choice language.
 
 ## Testing
 
-Because this program is so simple, there is nothing to test beyond execution.
+Verify that the actual output matches the expected output. See the
+[requirements][3] section for an example of the expected output.
 
 ## Further Reading
 
@@ -43,3 +44,5 @@ Because this program is so simple, there is nothing to test beyond execution.
 [1]: ../assets/Fizz_Buzz.png
 
 [2]: https://therenegadecoder.com/series/fizz-buzz-in-every-language/
+
+[3]: #requirements

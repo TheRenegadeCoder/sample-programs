@@ -12,10 +12,13 @@ file should print "Hello, World!" to standard output. That's it!
 
 ## Testing
 
-Because this program is so simple, there is nothing to test beyond execution.
+Verify that the actual output matches the expected output. See the
+[requirements][2] section for an example of the expected output.
 
 ## Further Reading
 
 -   [Hello World in Every Language by The Renegade Coder][1]
 
 [1]: https://therenegadecoder.com/series/hello-world-in-every-language/
+
+[2]: #requirements
