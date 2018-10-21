@@ -25,7 +25,7 @@ language features and built-in libraries.
 External dependencies are unacceptable. Remember, the goal is to show off language
 features and utilities.
 
-## Test Cases
+## Testing
 
 If the solution passes these test cases, then it's a good fit for the repo.
 Feel free to test other strings for fun. For instance, you may find that
@@ -36,3 +36,9 @@ Description  | Input          | Output
 No Input     |                |
 Empty String | ""             |             
 Ascii String | "Hello, World" | "dlroW ,olleH"
+
+## Further Reading
+
+- [Reverse a String in Every Language by The Renegade Coder][1]
+
+[1]: https://therenegadecoder.com/series/reverse-a-string-in-every-language/
