@@ -179,6 +179,8 @@ should follow the following template:
 Feel free to browse other projects to get an idea of how to fill out each
 section.
 
+Once you've created the file, *please* link it in this section.
+
 ## Plagiarism
 
 **Please** do not submit work that is copied from another source. If work is found to be
