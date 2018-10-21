@@ -46,7 +46,10 @@ Conversion program:
 
 | Description   | Input | Output                                             |
 | ------------- | ----- | -------------------------------------------------- |
-| No Input      | ""    | "Usage: please provide a string of roman numerals" |
+| No Input      |       | "Usage: please provide a string of roman numerals" |
 | Invalid Input | "XT"  | "Error: invalid string of roman numerals"          |
-| Single I      | "I"   | "1"                                                |
-| Single V      | "V"   | "5"                                                |
+| Empty Input   | ""    | 0                                                  |
+| Single I      | "I"   | 1                                                  |
+| Single V      | "V"   | 5                                                  |
+| Single X      | "X"   | 10                                                 |
+| Single L      | "L"   | 50                                                 |
