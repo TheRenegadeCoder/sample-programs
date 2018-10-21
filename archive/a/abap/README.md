@@ -4,7 +4,7 @@ Welcome to Sample Programs in ABAP!
 
 ## Sample Programs
 
-- [Hello World in ABAP](https://en.wikipedia.org/wiki/ABAP#Hello_world)
+- [Hello World in ABAP](https://github.com/TheRenegadeCoder/sample-programs/issues/585)
 
 ## Fun Facts
 
