@@ -179,15 +179,15 @@ These rules help grow and cultivate the community in a positive manner.
 
 [5]: #projects
 
-[6]: #hello-world-rules
+[6]: docs/hello-world.md
 
-[7]: #fizz-buzz-rules
+[7]: docs/fizz-buzz.md
 
-[8]: #reverse-a-string-rules
+[8]: docs/reverse-a-string.md
 
-[9]: #quine-rules
+[9]: docs/quine.md
 
-[10]: #game-of-life-rules
+[10]: docs/game-of-life.md
 
 [11]: https://therenegadecoder.com/members/registration/
 
@@ -197,7 +197,7 @@ These rules help grow and cultivate the community in a positive manner.
 
 [17]: #plagiarism
 
-[18]: #file-io-rules
+[18]: docs/file-io.md
 
 [19]: https://en.gravatar.com/
 
@@ -209,12 +209,12 @@ These rules help grow and cultivate the community in a positive manner.
 
 [23]: https://therenegadecoder.com/series/fizz-buzz-in-every-language/
 
-[24]: #baklava-rules
+[24]: docs/baklava.md
 
-[25]: #fibonacci-sequence-rules
+[25]: docs/fibonacci.md
 
-[26]: #roman-numeral-conversion
+[26]: docs/roman-numeral-conversion.md
 
-[28]: #longest-common-subsequence-rules
+[28]: docs/longest-common-subsequence.md
 
-[29]: #convex-hull-rules
+[29]: docs/convex-hull.md
