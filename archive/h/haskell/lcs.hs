@@ -31,6 +31,4 @@ main = do
   if length args /= 2 then
     error "You need to pass two lists of which to produce the lcs. For example ./lcs \"1, 4, 5, 3, 15, 6\" \"1, 7, 4, 5, 11, 6\"\n"
   else
-    let message    = "\nThe longest common subsequence of " ++ (show l1) ++ " and " ++ (show l2) ++ " is "
-        subsequence = reverse $ lcs l1 l2
-    in putStrLn $ message ++ show subsequence
+    putStrLn $ show $ reverse $ lcs l1 l2
