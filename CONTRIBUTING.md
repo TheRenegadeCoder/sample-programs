@@ -140,17 +140,17 @@ At any rate, let's have some fun!
 Below you'll find a list of all the current projects in this repository. Follow
 each link to read more about their rules.
 
-- [Baklava Rules][24]
-- [Convex Hull Rules][29]
-- [Fibonacci Sequence Rules][25]
-- [File IO Rules][18]
-- [Fizz Buzz Rules][7]
-- [Game of Life Rules][10]
-- [Hello World Rules][6]
-- [Longest Common Subsequence Rules][28]
-- [Quine Rules][9]
-- [Reverse a String Rules][8]
-- [Roman Numeral Conversion][26]
+-   [Baklava Rules][24]
+-   [Convex Hull Rules][29]
+-   [Fibonacci Sequence Rules][25]
+-   [File IO Rules][18]
+-   [Fizz Buzz Rules][7]
+-   [Game of Life Rules][10]
+-   [Hello World Rules][6]
+-   [Longest Common Subsequence Rules][28]
+-   [Quine Rules][9]
+-   [Reverse a String Rules][8]
+-   [Roman Numeral Conversion][26]
 
 If you'd like to add a project, feel free to create a pull request with a new
 file containing a project description in the docs folder.
