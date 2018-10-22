@@ -22,6 +22,8 @@ for as many languages as possible.
   - [Quine Rules][9]
   - [Reverse a String Rules][8]
   - [Roman Numeral Conversion][26]
+  - [Even Odd Rules][30]
+  - [Prime Number Rules][31]
 - [Plagiarism][17]
 
 ## Please Read
@@ -203,12 +205,12 @@ not vertices of the convex hull.
 Write a program that receives two command line arguments: strings in the form `x1, x2, x3 ...` and
 `y1, y2, y3 ...` respectively, where `(xi, yi)` are the coordinates of the i-th point of the set.
 
-Your program should be able to parse these lists into some internal representation in your choice 
+Your program should be able to parse these lists into some internal representation in your choice
 language (ideally an array). From there, the program should compute the convex hull of the set of points,
-and output a list in the form 
+and output a list in the form
 ```
     (x1, y1)
-    (x2, y2) 
+    (x2, y2)
     ...
 ```
 where `(xj, yj)` are the coordinates of the j-th vertex of the convex hull.
@@ -329,11 +331,11 @@ A = [1, 4, 5, 3, 15, 6]
 B = [1, 7, 4, 5, 11, 6]
 ```
 
-The longest common subsequence is `1, 4, 5, 6`. 
+The longest common subsequence is `1, 4, 5, 6`.
 
-Write a program which accepts two command line arguments--each list--and outputs the longest 
+Write a program which accepts two command line arguments--each list--and outputs the longest
 common subsequence between the two lists. Input arguments should be in comma separated list notation:
-`1, 2, 14, 11, 31, 7, 9`. 
+`1, 2, 14, 11, 31, 7, 9`.
 
 Your program should be able to parse these lists into some internal representation in your
 choice language (ideally an array). From there, the program should compare the two arrays
@@ -427,6 +429,23 @@ M      | 1000
 
 Using this table, write a sample program which accepts a Roman numeral and outputs it as a decimal.
 
+### Even Odd Rules
+
+An even number is an integer which is "evenly divisible" by two. This means that if the integer is divided by 2,
+it yields no remainder.
+An odd number is an integer which is not evenly divisible by two. This means that if the integer is divided by 2,
+it yields a remainder of 1.
+
+Write a sample program which accepts an integer and outputs if the integer is Even or Odd.
+
+### Prime Number rules
+
+A prime number is a positive integer which is divisible only by 1 and itself.
+For example: 2, 3, 5, 7, 11, 13
+
+Since every number is divisible by One so, Two is the only even and the smallest prime number.
+Write a sample program which accepts an integer and outputs if the integer is a Prime number or not.
+
 ## Plagiarism
 
 **Please** do not submit work that is copied from another source. If work is found to be
@@ -465,7 +484,9 @@ These rules help grow and cultivate the community in a positive manner.
 [23]: https://therenegadecoder.com/series/fizz-buzz-in-every-language/
 [24]: #baklava-rules
 [25]: #fibonacci-sequence-rules
-[26]: #roman-numeral-conversion 
+[26]: #roman-numeral-conversion
 [27]: ./assets/Fizz_Buzz.png
 [28]: #longest-common-subsequence-rules
 [29]: #convex-hull-rules
+[30]: #even-odd=rules
+[31]: #prime-number-rules
