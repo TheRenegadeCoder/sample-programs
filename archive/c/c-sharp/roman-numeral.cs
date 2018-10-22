@@ -34,10 +34,18 @@ namespace SamplePrograms
         {
             if (args.Length < 1)
             {
-                Console.WriteLine("You must enter a roman numeral to convert.");
+                Console.WriteLine("Usage: please provide a string of roman numerals");
                 Environment.Exit(1);
             }
-            Console.WriteLine(RomanToDecimal(args[0]));
+            try
+            {
+                Console.WriteLine(RomanToDecimal(args[0].ToUpper()));
+            }
+            catch (KeyNotFoundException)
+            {
+                Console.WriteLine("Error: invalid string of roman numerals");
+                Environment.Exit(1);
+            }
         }
     }
 }
