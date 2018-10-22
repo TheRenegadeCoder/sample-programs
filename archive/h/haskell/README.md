@@ -11,6 +11,7 @@ Welcome to Sample Programs in Haskell!
 - [Baklava in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/575)
 - [Roman Numeral Conversion in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/581)
 - [Longest Common Subsequence in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/577)
+- [File IO in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/597)
 
 ## Fun Facts
 
