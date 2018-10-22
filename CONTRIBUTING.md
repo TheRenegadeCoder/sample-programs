@@ -144,6 +144,7 @@ each link to read more about their rules.
 
 -   [Baklava Rules][24]
 -   [Convex Hull Rules][29]
+-   [Factorial Rules][30]
 -   [Fibonacci Sequence Rules][25]
 -   [File IO Rules][18]
 -   [Fizz Buzz Rules][7]
@@ -244,3 +245,5 @@ These rules help grow and cultivate the community in a positive manner.
 [28]: docs/longest-common-subsequence.md
 
 [29]: docs/convex-hull.md
+
+[30]: docs/factorial.md
