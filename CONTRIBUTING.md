@@ -5,6 +5,7 @@ for as many languages as possible.
 
 ## Table of Contents
 
+<<<<<<< HEAD
 - [Please Read][0]
   - [Repository Structure][1]
   - [Naming Conventions][2]
@@ -25,6 +26,15 @@ for as many languages as possible.
   - [Even Odd Rules][30]
   - [Prime Number Rules][31]
 - [Plagiarism][17]
+=======
+-   [Please Read][0]
+    -   [Repository Structure][1]
+    -   [Naming Conventions][2]
+    -   [Articles][3]
+    -   [Pull Requests][4]
+-   [Projects][5]
+-   [Plagiarism][17]
+>>>>>>> 86cedb9aa0c4a780d516f4d0ba52fe56db03094e
 
 ## Please Read
 
@@ -43,8 +53,8 @@ a list of language folders that share the same first character as the parent fol
 
 Within each language folder, you'll find the following:
 
-- A README
-- A list of program files.
+-   A README
+-   A list of program files.
 
 Now, each program file maps to an ongoing project
 that you can find in the General Rules section. As for the README, it contains a list
@@ -60,16 +70,16 @@ As a general rule, if you're adding a new language, please use lowercase alphanu
 character sequences separated by dashes only. If we do not adhere to this rule,
 we risk limiting contributors by platform.
 
-For example, let's say someone adds C* to our repository. If we name the directory
-c*, then Windows users will be unable to clone the repository. Instead, consider
+For example, let's say someone adds C_ to our repository. If we name the directory
+c_, then Windows users will be unable to clone the repository. Instead, consider
 using c-star. The following table shares a few examples:
 
 | Language | Proper Directory Name |
-|----------|------------------|
-| C* | c-star |
-| C++ | c-plus-plus |
-| C# | c-sharp |
-| F# | f-sharp |
+| -------- | --------------------- |
+| C\*      | c-star                |
+| C++      | c-plus-plus           |
+| C#       | c-sharp               |
+| F#       | f-sharp               |
 
 Thanks for keeping this repository inclusive!
 
@@ -112,7 +122,7 @@ Refer to the table of contents for all available sample programs.
 
 When adding new languages, make sure you include a README using the following template:
 
-```
+```markdown
 # Sample Programs in [Insert Language Here]
 
 Welcome to Sample Programs in [Insert Language Here]!
@@ -152,6 +162,7 @@ At any rate, let's have some fun!
 
 ## Projects
 
+<<<<<<< HEAD
 Below you'll find a list of all the current projects in this repository and their rules.
 
 ### Baklava Rules
@@ -274,161 +285,113 @@ rules apply:
 > print "Fizz" instead of the number. Meanwhile, for multiples of five, print "Buzz"
 > instead of the number. For numbers which are multiples of both three and five,
 > print "FizzBuzz"
+=======
+Below you'll find a list of all the current projects in this repository. Follow
+each link to read more about their rules.
+>>>>>>> 86cedb9aa0c4a780d516f4d0ba52fe56db03094e
 
-I was tempted to open this up such that the user could supply any number, but I think
-we get plenty of IO with some of the other projects in this repo.
+-   [Baklava Rules][24]
+-   [Convex Hull Rules][29]
+-   [Fibonacci Sequence Rules][25]
+-   [File IO Rules][18]
+-   [Fizz Buzz Rules][7]
+-   [Game of Life Rules][10]
+-   [Hello World Rules][6]
+-   [Longest Common Subsequence Rules][28]
+-   [Quine Rules][9]
+-   [Reverse a String Rules][8]
+-   [Roman Numeral Conversion][26]
 
-### Game of Life Rules
+If you'd like to add a project, feel free to create a pull request with a new
+file containing a project description in the docs folder. The project file
+should follow the following template:
 
-For those of you that don't know, the Game of Life is basically a cell
-simulation where cells are arranged in an infinite grid. Each cell has one
-of two states: alive or dead.
+```markdown
+# [Project Name]
 
-At each turn, all cells are evaluated using the following rules:
+[Insert description of project here]
 
-- Any live cell with fewer than two live neighbors dies, as if caused by underpopulation.
-- Any live cell with two or three live neighbors lives on to the next generation.
-- Any live cell with more than three live neighbors dies, as if by overpopulation.
-- Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.
+## Requirements
 
-For more information, check out the [Wikipedia page for Conway's Game of Life][15].
+[Outline program requirements here]
 
-Of course, for the purposes of the repo, here are the requirements for a contribution:
+## Testing
 
-1. Source code must fit in a single file
-2. Grid must wrap-around on the edges (think [asteroids][16])
-3. The program must support the following command line arguments
-    - Grid width (assume square grid)
-    - Frame rate (frames/second)
-    - Total number of frames
-    - Spawn rate (% of living vs. dead as decimal between 0 and 1)
-4. Simulation must be a GUI
-    - An exception to this rule can be made for languages where it's impossible
-      or impractical to have an actual GUI. In that case, a terminal application
-      is sufficient.
+[Outline a comprehensive set of tests here]
 
-Beyond that, there's really no hard-and-fast requirements. All I ask is that
-solutions are minimal. In other words, don't worry about command line options or
-GUI elements. Keep it simple. Remember, the goal is to show off language features.
+## Further Reading
 
-Also, I ask that you don't use external libraries. I like for these files to
-be as easy as possible to test, so limiting dependencies is helpful.
-
-### Hello World Rules
-
-Hello World is a standard program used to introduce a programming language.
-As a result, the rules are pretty simple. For each language, create a program
-that writes the string "Hello, World!" to standard output. Ideally, the solution
-should be as simple as possible.
-
-### Longest Common Subsequence Rules
-
-Given two arrays of numbers, find the longest common subsequence. For example, let's say we have the
-following pair of arrays:
-
-```
-A = [1, 4, 5, 3, 15, 6]
-B = [1, 7, 4, 5, 11, 6]
+- [List useful links here]
 ```
 
+<<<<<<< HEAD
 The longest common subsequence is `1, 4, 5, 6`.
 
 Write a program which accepts two command line arguments--each list--and outputs the longest
 common subsequence between the two lists. Input arguments should be in comma separated list notation:
 `1, 2, 14, 11, 31, 7, 9`.
+=======
+Feel free to browse other projects to get an idea of how to fill out each
+section.
 
-Your program should be able to parse these lists into some internal representation in your
-choice language (ideally an array). From there, the program should compare the two arrays
-to find the longest common subsequence and output it in comma separated list notation to the user.
+Once you've created the file, *please* link it in this section.
+>>>>>>> 86cedb9aa0c4a780d516f4d0ba52fe56db03094e
 
-The following is recursive pseudocode that you can use for reference:
+## Plagiarism
 
-```
-LCS(arrayA, arrayB, indexA, indexB):
-  if indexA == 0 || indexB == 0:
-    return 0
-  else if arrayA[indexA - 1] == arrayB[indexB - 1]:
-    return 1 + LCS(arrayA, arrayB, indexA - 1, indexB - 1)
-  else:
-    return max(LCS(arrayA, arrayB, indexA - 1, indexB), LCS(arrayA, arrayB, indexA, indexB - 1))
-```
+**Please** do not submit work that is copied from another source. If work is found to be
+plagiarized, the issue must be remedied ASAP. The quickest solution is to cite the source--a citation
+in the README would suffice. After that, the solution should be adapted as needed. If necessary, the
+solution will be removed at the authors request.
 
-Unfortunately, this pseudocode only gives us the length of the longest common subsequence. Since we
-want to actually *print* the result, we'll probably need to augment this algorithm a bit. Also,
-it may be useful to implement the memoized solution for the sake of efficiency.
+Whenever possible, **please** request the original author to share their solution with this repo. This
+keeps the repo tidy by eliminating the need for citations.
 
-### Quine Rules
+These rules help grow and cultivate the community in a positive manner.
 
-For those of you that don't know, a quine is a program which can replicate
-itself--or more specifically:
+[0]: #please-read
 
-> A quine is a non-empty computer program which takes no input and produces a
-> copy of its own source code as its only output.
+[1]: #repository-structure
 
-Thanks, [Wikipedia][14]!
+[2]: #naming-conventions
 
-For the purposes of this repo, the solution should be simple. We're not here
-to play code golf, but we're also not here to practice obfuscation. Just be
-reasonable with your solution.
+[3]: #articles
 
-### Reverse a String Rules
+[4]: #pull-requests
 
-While Hello World is simple, it often does not show off many interesting
-features of a language. Fortunately, this repository shares more samples than
-Hello World. One of these more complex programs is known as Reverse a String.
+[5]: #projects
 
-In this repository, the algorithm must reverse ASCII strings. Do **NOT**
-worry about reversing a string in the general case. For instance, if a string
-contains surrogate pairs, it's okay if the solution corrupts the string during reversal.
+[6]: docs/hello-world.md
 
-#### Requirements
+[7]: docs/fizz-buzz.md
 
-Despite the explicit name, there are some rules in place for consistency.
-When writing a Reverse a String program, the following rules should apply:
+[8]: docs/reverse-a-string.md
 
-1. The implementation must be executable
-2. The string to be reversed must come from the command line
-3. The program must verify the strings existence on the command line
-4. The user must not import libraries to obfuscate the string manipulation
+[9]: docs/quine.md
 
-In other words, the program should get a string from the command line and
-reverse it using language utilities only. Acceptable language utilities include
-language features and built-in libraries.
+[10]: docs/game-of-life.md
 
-External dependencies are unacceptable. Remember, the goal is to show off language
-features and utilities.
+[11]: https://therenegadecoder.com/members/registration/
 
-#### Test Cases
+[12]: https://therenegadecoder.com/wp-admin/
 
-If the solution passes these test cases, then it's a good fit for the repo.
-Feel free to test other strings for fun. For instance, you may find that
-your language can handle unicode characters, but it fails for emojis.
+[13]: https://github.com/jrg94/sample-programs/blob/master/archive/p/python/README.md
 
-Description  | Input          | Output
--------------|:--------------:|:---------:
-No Input     |                |
-Empty String | ""             |             
-Ascii String | "Hello, World" | "dlroW ,olleH"
+[17]: #plagiarism
 
-### Roman Numeral Conversion
+[18]: docs/file-io.md
 
-Roman numerals are the numbers that were used in ancient Rome, which employed combinations of letters from
-the Latin alphabet (I, V, X, L, C, D and M).
+[19]: https://en.gravatar.com/
 
-These following table shows the letter to decimal mapping:
+[20]: https://help.github.com/articles/fork-a-repo
 
-Letter | Decimal
--------|--------
-I      | 1
-V      | 5
-X      | 10
-L      | 50
-C      | 100
-D      | 500
-M      | 1000
+[21]: https://therenegadecoder.com/code/hello-world-in-every-language/
 
-Using this table, write a sample program which accepts a Roman numeral and outputs it as a decimal.
+[22]: https://therenegadecoder.com/code/reverse-a-string-in-every-language/
 
+[23]: https://therenegadecoder.com/series/fizz-buzz-in-every-language/
+
+<<<<<<< HEAD
 ### Even Odd Rules
 
 An even number is an integer which is "evenly divisible" by two. This means that if the integer is divided by 2,
@@ -447,17 +410,17 @@ Since every number is divisible by One so, Two is the only even and the smallest
 Write a sample program which accepts an integer and outputs if the integer is a Prime number or not.
 
 ## Plagiarism
+=======
+[24]: docs/baklava.md
+>>>>>>> 86cedb9aa0c4a780d516f4d0ba52fe56db03094e
 
-**Please** do not submit work that is copied from another source. If work is found to be
-plagiarized, the issue must be remedied ASAP. The quickest solution is to cite the source--a citation
-in the README would suffice. After that, the solution should be adapted as needed. If necessary, the
-solution will be removed at the authors request.
+[25]: docs/fibonacci.md
 
-Whenever possible, **please** request the original author to share their solution with this repo. This
-keeps the repo tidy by eliminating the need for citations.
+[26]: docs/roman-numeral-conversion.md
 
-These rules help grow and cultivate the community in a positive manner.
+[28]: docs/longest-common-subsequence.md
 
+<<<<<<< HEAD
 [0]: #please-read
 [1]: #repository-structure
 [2]: #naming-conventions
@@ -490,3 +453,6 @@ These rules help grow and cultivate the community in a positive manner.
 [29]: #convex-hull-rules
 [30]: #even-odd=rules
 [31]: #prime-number-rules
+=======
+[29]: docs/convex-hull.md
+>>>>>>> 86cedb9aa0c4a780d516f4d0ba52fe56db03094e
