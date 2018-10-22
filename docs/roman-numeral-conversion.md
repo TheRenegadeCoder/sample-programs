@@ -15,7 +15,7 @@ The following table shows the letter to decimal mapping:
 | D      | 500     |
 | M      | 1000    |
 
-Stringing together these digits yield a value that is the sum of their
+Stringing together these digits yields a value that is the sum of their
 respective mappings. However, there is a catch. Roman numerals must appears in
 order of greatest to least. If a smaller value appears before a larger one,
 the smaller value is subtracted from the total.
