@@ -1,27 +1,9 @@
-func baklava(maxWidth: Int = 10) -> Void {
-    let width = 0...maxWidth
-    for number in width {
-        let repeatedSpaces = repeatElement(" ", count:maxWidth-number)
-        for space in repeatedSpaces {
-            print(space,terminator:"")
-        }
-        
-        let repeatedAsterisks = repeatElement("*", count:number*2+1)
-        for asterisk in repeatedAsterisks {
-            print(asterisk,terminator:"")
-        }
-        print("")
+func baklava(maxWidth: Int) -> Void {
+    for number in 0...maxWidth {
+        print(String(repeatElement(" ", count:maxWidth-number)) + String(repeatElement("*", count:number*2+1)))
     }
-    for number in width.reversed() {
-        let repeatedSpaces = repeatElement(" ", count:maxWidth-number)
-        for space in repeatedSpaces {
-            print(space,terminator:"")
-        }
-        let repeatedAsterisks = repeatElement("*", count:number*2+1)
-        for asterisk in repeatedAsterisks {
-            print(asterisk,terminator:"")
-        }
-        print("")
+    for number in (0...maxWidth-1).reversed() {
+        print(String(repeatElement(" ", count:maxWidth-number)) + String(repeatElement("*", count:number*2+1)))
     }
 }
-baklava()
+baklava(maxWidth: 10)
