@@ -5,28 +5,6 @@ for as many languages as possible.
 
 ## Table of Contents
 
-<<<<<<< HEAD
-- [Please Read][0]
-  - [Repository Structure][1]
-  - [Naming Conventions][2]
-  - [Articles][3]
-  - [Pull Requests][4]
-- [Projects][5]
-  - [Baklava Rules][24]
-  - [Convex Hull Rules][29]
-  - [Fibonacci Sequence Rules][25]
-  - [File IO Rules][18]
-  - [Fizz Buzz Rules][7]
-  - [Game of Life Rules][10]
-  - [Hello World Rules][6]
-  - [Longest Common Subsequence Rules][28]
-  - [Quine Rules][9]
-  - [Reverse a String Rules][8]
-  - [Roman Numeral Conversion][26]
-  - [Even Odd Rules][30]
-  - [Prime Number Rules][31]
-- [Plagiarism][17]
-=======
 -   [Please Read][0]
     -   [Repository Structure][1]
     -   [Naming Conventions][2]
@@ -34,7 +12,6 @@ for as many languages as possible.
     -   [Pull Requests][4]
 -   [Projects][5]
 -   [Plagiarism][17]
->>>>>>> 86cedb9aa0c4a780d516f4d0ba52fe56db03094e
 
 ## Please Read
 
@@ -162,133 +139,8 @@ At any rate, let's have some fun!
 
 ## Projects
 
-<<<<<<< HEAD
-Below you'll find a list of all the current projects in this repository and their rules.
-
-### Baklava Rules
-
-Baklava is a Turkish dessert, and its shape is like an equilateral quadrangle.
-It is used as an example for programming education in Turkish schools. The following
-is the expected output:
-
-```
-           *
-          ***
-         *****
-        *******
-       *********
-      ***********
-     *************
-    ***************
-   *****************
-  *******************
- *********************
-  *******************
-   *****************
-    ***************
-     *************
-      ***********
-       *********
-        *******
-         *****
-          ***
-           *
-```
-
-In general, this solution can be accomplished using a pair of loops. Of course, all
-possible programs are welcome.
-
-### Convex Hull Rules
-
-Suppose you have a set of points in the plane. The **convex hull** of this set is the smallest
-convex polygon that contains all the points.
-
-A good way to visualize the problem is this: Imagine each point is a nail sticking out of the plane,
-and you stretch a rubber band around them and let it go. The band will contract and assume a shape
-that encloses the nails. This shape is the convex hull.
-
-![Rubber band visualization](https://upload.wikimedia.org/wikipedia/commons/d/de/ConvexHull.svg)
-
-Note that all vertices of the convex hull are points in the original set. So the convex hull is really
-a subset of points from the original set, and there may be points that lie inside the polygon but are
-not vertices of the convex hull.
-
-Write a program that receives two command line arguments: strings in the form `x1, x2, x3 ...` and
-`y1, y2, y3 ...` respectively, where `(xi, yi)` are the coordinates of the i-th point of the set.
-
-Your program should be able to parse these lists into some internal representation in your choice
-language (ideally an array). From there, the program should compute the convex hull of the set of points,
-and output a list in the form
-```
-    (x1, y1)
-    (x2, y2)
-    ...
-```
-where `(xj, yj)` are the coordinates of the j-th vertex of the convex hull.
-
-There are many algorithms to solve this problem. You may implement any of them. Check this
-[great document by Jeff Erickson](http://jeffe.cs.illinois.edu/teaching/compgeom/notes/01-convexhull.pdf)
-for more details about the problem and the different algorithms to solve it.
-
-### Fibonacci Sequence Rules
-
-In mathematics, the Fibonacci numbers are the numbers in the following integer
-sequence, called the Fibonacci sequence, and characterized by the fact that
-every number after the first two is the sum of the two preceding ones:
-
-    1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...
-
-For this sample program, each solution should leverage dynamic programming to produce this
-list up to the nth term. For instance, `./fib 5` on the command line should output
-```
-1: 1
-2: 1
-3: 2
-4: 3
-5: 5
-```
-In addition, there should be some error handling for situations where the user doesn't supply
-any input or the user supplies input that is not a number (i.e. `./fib` or `./fib hello`, respectively).
-
-### File IO Rules
-
-Most languages have built-in utilities or functions for reading and writing files.
-Many of these input/output functions follow a similar pattern across programming languages:
-a string to the path of the file and a "mode". A mode is how the files is opened.
-Will the file be opened for reading, writing, or even both?
-Will the file be appending new content? Truncated?
-
-In general, a File IO solution should perform the following:
-
-1. Write some arbitrary content to a file (use `output.txt`)
-2. Read back that content and print it to the user
-
-More specifically, begin with writing a file to disk. In the write function, you should show how
-to open a file with write abilities and write some contents to the file. Before closing the file,
-you should ensure everything is written to disk. Then, close the file. There should be basic error
-checking to confirm file opening was successful.
-
-With the read file function, open the file with read abilities. Most higher level languages
-offer a way to read line by line or even transfer the whole contents into a string. One way
-to read the file is to loop line by line and do some processing. Printing each line to the
-screen is enough. Like in the write function, make sure there is some basic error checking.
-
-### Fizz Buzz Rules
-
-![Fizz_Buzz][27]
-
-Fizz Buzz is a typical interview question which tests the developers knowledge of
-flow control and operators. For the purposes of this repository, the following
-rules apply:
-
-> Write a program that prints the numbers 1 to 100. However, for multiples of three,
-> print "Fizz" instead of the number. Meanwhile, for multiples of five, print "Buzz"
-> instead of the number. For numbers which are multiples of both three and five,
-> print "FizzBuzz"
-=======
 Below you'll find a list of all the current projects in this repository. Follow
 each link to read more about their rules.
->>>>>>> 86cedb9aa0c4a780d516f4d0ba52fe56db03094e
 
 -   [Baklava Rules][24]
 -   [Convex Hull Rules][29]
@@ -301,6 +153,8 @@ each link to read more about their rules.
 -   [Quine Rules][9]
 -   [Reverse a String Rules][8]
 -   [Roman Numeral Conversion][26]
+-   [Even Odd][30]
+-   [Prime Number][31]
 
 If you'd like to add a project, feel free to create a pull request with a new
 file containing a project description in the docs folder. The project file
@@ -324,18 +178,10 @@ should follow the following template:
 - [List useful links here]
 ```
 
-<<<<<<< HEAD
-The longest common subsequence is `1, 4, 5, 6`.
-
-Write a program which accepts two command line arguments--each list--and outputs the longest
-common subsequence between the two lists. Input arguments should be in comma separated list notation:
-`1, 2, 14, 11, 31, 7, 9`.
-=======
 Feel free to browse other projects to get an idea of how to fill out each
 section.
 
 Once you've created the file, *please* link it in this section.
->>>>>>> 86cedb9aa0c4a780d516f4d0ba52fe56db03094e
 
 ## Plagiarism
 
@@ -391,28 +237,7 @@ These rules help grow and cultivate the community in a positive manner.
 
 [23]: https://therenegadecoder.com/series/fizz-buzz-in-every-language/
 
-<<<<<<< HEAD
-### Even Odd Rules
-
-An even number is an integer which is "evenly divisible" by two. This means that if the integer is divided by 2,
-it yields no remainder.
-An odd number is an integer which is not evenly divisible by two. This means that if the integer is divided by 2,
-it yields a remainder of 1.
-
-Write a sample program which accepts an integer and outputs if the integer is Even or Odd.
-
-### Prime Number rules
-
-A prime number is a positive integer which is divisible only by 1 and itself.
-For example: 2, 3, 5, 7, 11, 13
-
-Since every number is divisible by One so, Two is the only even and the smallest prime number.
-Write a sample program which accepts an integer and outputs if the integer is a Prime number or not.
-
-## Plagiarism
-=======
 [24]: docs/baklava.md
->>>>>>> 86cedb9aa0c4a780d516f4d0ba52fe56db03094e
 
 [25]: docs/fibonacci.md
 
@@ -420,39 +245,8 @@ Write a sample program which accepts an integer and outputs if the integer is a 
 
 [28]: docs/longest-common-subsequence.md
 
-<<<<<<< HEAD
-[0]: #please-read
-[1]: #repository-structure
-[2]: #naming-conventions
-[3]: #articles
-[4]: #pull-requests
-[5]: #projects
-[6]: #hello-world-rules
-[7]: #fizz-buzz-rules
-[8]: #reverse-a-string-rules
-[9]: #quine-rules
-[10]: #game-of-life-rules
-[11]: https://therenegadecoder.com/members/registration/
-[12]: https://therenegadecoder.com/wp-admin/
-[13]: https://github.com/jrg94/sample-programs/blob/master/archive/p/python/README.md
-[14]: https://en.wikipedia.org/wiki/Quine_(computing)
-[15]: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
-[16]: https://en.wikipedia.org/wiki/Asteroids_(video_game)
-[17]: #plagiarism
-[18]: #file-io-rules
-[19]: https://en.gravatar.com/
-[20]: https://help.github.com/articles/fork-a-repo
-[21]: https://therenegadecoder.com/code/hello-world-in-every-language/
-[22]: https://therenegadecoder.com/code/reverse-a-string-in-every-language/
-[23]: https://therenegadecoder.com/series/fizz-buzz-in-every-language/
-[24]: #baklava-rules
-[25]: #fibonacci-sequence-rules
-[26]: #roman-numeral-conversion
-[27]: ./assets/Fizz_Buzz.png
-[28]: #longest-common-subsequence-rules
-[29]: #convex-hull-rules
-[30]: #even-odd=rules
-[31]: #prime-number-rules
-=======
 [29]: docs/convex-hull.md
->>>>>>> 86cedb9aa0c4a780d516f4d0ba52fe56db03094e
+
+[30]: docs/even-odd.md
+
+[31]: docs/prime-number.md
