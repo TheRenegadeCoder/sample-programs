@@ -5,19 +5,14 @@ for as many languages as possible.
 
 ## Table of Contents
 
--   [Please Read][0]
-    -   [Repository Structure][1]
-    -   [Naming Conventions][2]
-    -   [Articles][3]
-    -   [Pull Requests][4]
+-   [Repository Structure][1]
+-   [Naming Conventions][2]
+-   [Articles][3]
+-   [Pull Requests][4]
 -   [Projects][5]
 -   [Plagiarism][17]
 
-## Please Read
-
-In this section, we'll cover some of the essential topics for the repository.
-
-### Repository Structure
+## Repository Structure
 
 Before we get into the contribution rules, we should probably get an understanding for
 how this repository is structured.
@@ -41,7 +36,7 @@ In addition, the README contains links to language references and a list of fun 
 Naturally, if you wish to add a completely new language to the repository, you'll
 need to follow this repository structure. Now, let's get to the rules!
 
-### Naming Conventions
+## Naming Conventions
 
 As a general rule, if you're adding a new language, please use lowercase alphanumeric
 character sequences separated by dashes only. If we do not adhere to this rule,
@@ -60,34 +55,30 @@ using c-star. The following table shares a few examples:
 
 Thanks for keeping this repository inclusive!
 
-### Articles
+## Articles
 
-As a bonus to this repository, there are associated articles for every script. However, the articles
-do take awhile to write, so you can help by writing them as well.
+As a bonus to this repository, there are associated articles for every script.
+However, the articles do take awhile to write, so you can help by writing them
+as well.
 
 If you wish to help write articles, please [create an account][11]
-over on The Renegade Coder. When you're done, let me know in the associated GitHub issue.
-That way, I can elevate your privileges, so you can draft your article.
+over on The Renegade Coder. When you're done, let me know in the associated
+GitHub issue. That way, I can elevate your privileges, so you can draft your
+article.
 
 Once everything is setup, make sure you [bookmark the backend][12].
 That way, you can quickly get to the area where you can draft articles.
 
-In addition, **anyone who writes an article will be granted collaborator status**, so there's an incentive.
+When writing articles, try to follow the conventions of other articles in the
+series (i.e. keep the same structure). When you're done, let me know in the
+associated GitHub issue, and I'll schedule the article for publishing.
 
-#### Writing Guidelines
+Don't worry about the featured image; I'll add one before publishing. However,
+if you'd like to save me some time, you can generate your own featured image
+by downloading an image of your choice from Pixabay and running the
+[Image Titler][30] program. Then, upload the image to the associated issue.
 
-When writing articles, try to follow the conventions of other articles in the series (i.e. keep the
-same structure). When you're done, let me know in the associated GitHub issue, and
-I'll schedule the article for publishing. Don't worry about the featured image;
-I'll add one before publishing.
-
-#### Profile
-
-Don't forget to update your profile as it will be displayed at the bottom of the article. If you want
-a proper profile image, make sure to setup a [Gravatar][19]
-using the same email as your account.
-
-### Pull Requests
+## Pull Requests
 
 If you wish to contribute, [fork][20] the repo and make a pull request
 with your changes. Ideally, your contribution should be to existing projects,
@@ -179,7 +170,7 @@ should follow the following template:
 Feel free to browse other projects to get an idea of how to fill out each
 section.
 
-Once you've created the file, *please* link it in this section.
+Once you've created the file, _please_ link it in this section.
 
 ## Plagiarism
 
@@ -244,3 +235,5 @@ These rules help grow and cultivate the community in a positive manner.
 [28]: docs/longest-common-subsequence.md
 
 [29]: docs/convex-hull.md
+
+[30]: https://github.com/TheRenegadeCoder/image-titler
