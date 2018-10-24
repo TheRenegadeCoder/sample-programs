@@ -1,1 +1,4 @@
-0"!dlroW ,olleH">:#,_@
+0"!dlroW ,olleH"v
+                > : v
+                | , <
+                @

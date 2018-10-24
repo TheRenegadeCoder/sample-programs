@@ -152,9 +152,9 @@ each link to read more about their rules.
 -   [Longest Common Subsequence Rules][28]
 -   [Quine Rules][9]
 -   [Reverse a String Rules][8]
--   [Roman Numeral Conversion][26]
--   [Even Odd][30]
--   [Prime Number][31]
+-   [Roman Numeral Conversion Rules][26]
+-   [Even Odd Rules][30]
+-   [Prime Number Rules][31]
 
 If you'd like to add a project, feel free to create a pull request with a new
 file containing a project description in the docs folder. The project file
