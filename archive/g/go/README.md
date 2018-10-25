@@ -10,6 +10,7 @@ Welcome to Sample Programs in Go!
 - [Hello World in Go][2]
 - [String Reverse in Go][8]
 - [Prime Number in Go][9]
+- [Roman Numeral in Go][10]
 
 ## Fun Facts
 
@@ -32,3 +33,4 @@ Welcome to Sample Programs in Go!
 [7]: https://github.com/TheRenegadeCoder/sample-programs/issues/428
 [8]: https://github.com/TheRenegadeCoder/sample-programs/issues/545
 [9]: https://github.com/TheRenegadeCoder/sample-programs/issues/610
+[10]: https://github.com/TheRenegadeCoder/sample-programs/issues/539
