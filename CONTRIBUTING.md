@@ -143,7 +143,9 @@ each link to read more about their rules.
 -   [Longest Common Subsequence Rules][28]
 -   [Quine Rules][9]
 -   [Reverse a String Rules][8]
--   [Roman Numeral Conversion][26]
+-   [Roman Numeral Conversion Rules][26]
+-   [Even Odd Rules][31]
+-   [Prime Number Rules][32]
 
 If you'd like to add a project, feel free to create a pull request with a new
 file containing a project description in the docs folder. The project file
@@ -237,3 +239,7 @@ These rules help grow and cultivate the community in a positive manner.
 [29]: docs/convex-hull.md
 
 [30]: https://github.com/TheRenegadeCoder/image-titler
+
+[31]: docs/even-odd.md
+
+[32]: docs/prime-number.md
