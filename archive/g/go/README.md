@@ -11,6 +11,7 @@ Welcome to Sample Programs in Go!
 - [String Reverse in Go][8]
 - [Prime Number in Go][9]
 - [Roman Numeral in Go][10]
+- [Even Odd in Go][11]
 
 ## Fun Facts
 
@@ -34,3 +35,4 @@ Welcome to Sample Programs in Go!
 [8]: https://github.com/TheRenegadeCoder/sample-programs/issues/545
 [9]: https://github.com/TheRenegadeCoder/sample-programs/issues/610
 [10]: https://github.com/TheRenegadeCoder/sample-programs/issues/539
+[11]: https://github.com/TheRenegadeCoder/sample-programs/issues/612
