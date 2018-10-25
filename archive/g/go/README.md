@@ -9,7 +9,7 @@ Welcome to Sample Programs in Go!
 - [Fizz Buzz in Go][3]
 - [Hello World in Go][2]
 - [String Reverse in Go][8]
-- Prime Number in Go
+- [Prime Number in Go][10]
 - [Roman Numeral in Go][9]
 
 ## Fun Facts
@@ -33,3 +33,4 @@ Welcome to Sample Programs in Go!
 [7]: https://github.com/TheRenegadeCoder/sample-programs/issues/428
 [8]: https://github.com/TheRenegadeCoder/sample-programs/issues/545
 [9]: https://github.com/TheRenegadeCoder/sample-programs/issues/539
+[10]: https://github.com/TheRenegadeCoder/sample-programs/issues/610
