@@ -9,6 +9,7 @@ Welcome to Sample Programs in Go!
 - [Fizz Buzz in Go][3]
 - [Hello World in Go][2]
 - [String Reverse in Go][8]
+- Prime Number in Go
 
 ## Fun Facts
 
