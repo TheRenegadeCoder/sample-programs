@@ -7,7 +7,7 @@ Welcome to Sample Programs in Swift!
 - [Hello World in Swift](https://therenegadecoder.com/code/hello-world-in-swift/)
 - [Reverse String in Swift](https://therenegadecoder.com/code/reverse-a-string-in-swift/)
 - [Fizzbuzz in Swift](https://github.com/TheRenegadeCoder/sample-programs/issues/482)
-- Baklava in Swift
+- [Baklava in Swift](https://github.com/TheRenegadeCoder/sample-programs/issues/620)
 
 ## Fun Facts
 
