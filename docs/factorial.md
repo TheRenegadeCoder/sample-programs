@@ -21,10 +21,13 @@ Also note that the factorial is not defined for negative integers.
 
 Some tests for your program are:
 
-|   n   |   n!    |
-| :---: | :-----: |
-|   0   | 1       |
-|   1   | 1       |
-|   4   | 24      |
-|   8   | 40320   |
-|  10   | 3628800 |
+| Description      | Input     | Output                                       |
+| :--------------: | :-------: | :------------------------------------------: |
+| Empty input      |           | "Usage: please input a non-negative integer" |
+| Not a number     | "asdf"    | "Usage: please input a non-negative integer" |
+| Negative integer | -1        | "Usage: please input a non-negative integer" |
+| Zero             | 0         | 1                                            |
+| Positive integer | 1         | 1                                            |
+| Positive integer | 4         | 24                                           |
+| Positive integer | 8         | 40320                                        |
+| Positive integer | 10        | 3628800                                      |
