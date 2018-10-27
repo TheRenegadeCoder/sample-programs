@@ -12,6 +12,7 @@ Welcome to Sample Programs in C!
   - Solution borrowed from @toturkmen and @ahmeturganci via the [baklava repo][1]
 - [Game of Life in C][6]
 - [Fibonacci in C][11]
+- [Factorial in C][13]
 - [Convex Hull in C][12]
 
 ## Fun Facts
@@ -37,4 +38,5 @@ Welcome to Sample Programs in C!
 [9]: https://www.onlinegdb.com/online_c_compiler
 [10]: https://github.com/TheRenegadeCoder/sample-programs/issues/424
 [11]: https://github.com/TheRenegadeCoder/sample-programs/issues/486
+[13]: https://github.com/TheRenegadeCoder/sample-programs/issues/631
 [12]: https://github.com/TheRenegadeCoder/sample-programs/issues/628

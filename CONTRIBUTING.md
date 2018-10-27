@@ -135,6 +135,7 @@ each link to read more about their rules.
 
 -   [Baklava Rules][24]
 -   [Convex Hull Rules][29]
+-   [Factorial Rules][33]
 -   [Fibonacci Sequence Rules][25]
 -   [File IO Rules][18]
 -   [Fizz Buzz Rules][7]
@@ -243,3 +244,5 @@ These rules help grow and cultivate the community in a positive manner.
 [31]: docs/even-odd.md
 
 [32]: docs/prime-number.md
+
+[33]: docs/factorial.md
