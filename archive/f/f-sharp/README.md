@@ -5,6 +5,7 @@ Welcome to Sample Programs in F#!
 ## Sample Programs
 
 - [Hello World in F#](https://github.com/jrg94/sample-programs/issues/104)
+- [List searchin F#](https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/f/f-sharp/search.fs)
 
 ## Fun Facts
 
