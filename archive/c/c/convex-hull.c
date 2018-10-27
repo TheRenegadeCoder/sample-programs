@@ -58,7 +58,7 @@ int main (int argc, char *argv[])
 		printf("(%ld, %ld)\n", nexthullpoint->x, nexthullpoint->y);
 
 		/*
-		 * Start looking for the next hull point and the next point in
+		 * Start looking for the next hull point at the next point in
 		 * the array (circularly).
 		 */
 		temp = (points + numpoints - 1 == nexthullpoint) ? points : nexthullpoint + 1;
