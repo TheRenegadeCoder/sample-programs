@@ -9,6 +9,8 @@ Welcome to Sample Programs in Bash!
 - [Fizz Buzz in Bash][4]
 - [Baklava in Bash][6]
   - Solution borrowed from @toturkman via the [baklava repo][1]
+- [Fibonacci in Bash][7]
+- [File IO in Bash][8]
 
 ## Fun Facts
 
@@ -24,3 +26,5 @@ Welcome to Sample Programs in Bash!
 [4]: https://github.com/jrg94/sample-programs/issues/384
 [5]: https://en.wikipedia.org/wiki/Bash_(Unix_shell)
 [6]: https://github.com/TheRenegadeCoder/sample-programs/issues/422
+[7]: https://github.com/TheRenegadeCoder/sample-programs/issues/623
+[8]: https://github.com/TheRenegadeCoder/sample-programs/issues/638
