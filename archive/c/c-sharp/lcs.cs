@@ -29,8 +29,8 @@ namespace SamplePrograms
             }
             try
             {
-                var list1 = args[0].Split(", ");
-                var list2 = args[1].Split(", ");
+                var list1 = args[0].Split(',').Select(i => i.Trim());
+                var list2 = args[1].Split(',').Select(i => i.Trim());
                 var lcs = LCS(list1, list2).Reverse();
                 Console.WriteLine(string.Join(", ", lcs));
             }
