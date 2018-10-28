@@ -10,7 +10,7 @@ Welcome to Sample Programs in Rust!
 - [Fizz Buzz in Rust](https://github.com/TheRenegadeCoder/sample-programs/issues/453)
 - [Reverse a String in Rust](https://github.com/jrg94/sample-programs/issues/261)
 - [Roman Numeral Conversion in Rust](https://github.com/TheRenegadeCoder/sample-programs/issues/536)
-- [Fibonacci with cache in Rust](https://gist.github.com/vfrico/b790e472b5d19112b2b66fd22104ca90)
+- [Fibonacci with cache in Rust](https://github.com/TheRenegadeCoder/sample-programs/issues/646)
 
 ## Fun Facts
 
