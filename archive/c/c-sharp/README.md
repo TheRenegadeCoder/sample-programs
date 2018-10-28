@@ -10,6 +10,7 @@ Welcome to Sample Programs in C#!
 - [Baklava in C#][8]
   - Solution borrowed from @toturkmen via the [baklava repo][1]
 - [Roman Numeral Conversion in C#][9]
+- [Longest Common Subsequence in C#][10]
 
 ## Fun Facts
 
@@ -32,3 +33,4 @@ Welcome to Sample Programs in C#!
 [7]: https://www.jdoodle.com/compile-c-sharp-online
 [8]: https://github.com/TheRenegadeCoder/sample-programs/issues/423
 [9]: https://github.com/TheRenegadeCoder/sample-programs/issues/593
+[10]: https://github.com/TheRenegadeCoder/sample-programs/issues/642
