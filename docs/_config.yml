@@ -2,4 +2,5 @@ theme: jekyll-theme-cayman
 
 collections:
   hello_world:
+    output: true
     permalink: /hello-world/:name
