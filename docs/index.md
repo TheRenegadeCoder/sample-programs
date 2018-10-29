@@ -8,4 +8,8 @@ In the meantime, you can read up on the rules:
   - [{{ collection.label }}]({{ collection.url }})
 {% endfor %}
 
+{% for article in site.hello_world %}
+  - [{{ article.label }}]({{ article.url }})
+{% endfor %}
+
 [1]: hello-world/RULES.md
