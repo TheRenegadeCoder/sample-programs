@@ -3,4 +3,4 @@ theme: jekyll-theme-cayman
 collections:
   hello_world:
     output: true
-    permalink: /:collection/:name
+    permalink: /hello-world/:name
