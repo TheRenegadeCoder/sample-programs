@@ -1,3 +1,8 @@
+---
+title: Hello World in MoonScript
+layout: default
+---
+
 Welcome to another article in the Hello World series! This time we are looking to implement Hello World in MoonScript, a language that compiles to Lua.
 
 ## MoonScript Background
