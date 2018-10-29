@@ -1,3 +1,8 @@
+---
+title: Hello World in Every Language
+layout: default
+---
+
 # Hello World
 
 Hello World is a standard program used to introduce a programming language.
