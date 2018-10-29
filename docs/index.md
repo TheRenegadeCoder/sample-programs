@@ -5,7 +5,7 @@ We are currently migrating sample programs to GitHub pages.
 In the meantime, you can read up on the rules:
 
 {% for collection in site.collections %}
-  - [{{ collection.label | camelize }}]({{ collection.url | relative_url }})
+  - [{{ collection.label | replace: '_', ' ' | capitalize} }}]({{ collection.url | relative_url }})
 {% endfor %}
 
 {% for article in site.hello_world %}
