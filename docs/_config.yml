@@ -1,1 +1,5 @@
 theme: jekyll-theme-cayman
+
+collections:
+  hello-world:
+    output: true
