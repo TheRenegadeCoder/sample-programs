@@ -5,11 +5,9 @@ We are currently migrating sample programs to GitHub pages.
 In the meantime, you can read up on the rules:
 
 {% for collection in site.collections %}
-  - [{{ collection.label | replace: '_', ' ' | capitalize }}]({{ collection.relative_directory | relative_url }})
-{% endfor %}
-
-{% for article in site.hello_world %}
-  - [{{ article.title }}]({{ article.url | relative_url }})
+  {% for article in collection | where 'title', "Hello World in Evert Language" %}
+  - [{{ collection.label | replace: '_', ' ' | capitalize }}]({{ article.url | relative_url }})
+  {% endfor %}
 {% endfor %}
 
 [1]: hello-world/RULES.md
