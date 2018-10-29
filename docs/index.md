@@ -1,3 +1,8 @@
+---
+title: Sample Programs in Every Language
+layout: default
+---
+
 ## Welcome to Sample Programs in Every Language
 
 We are currently migrating sample programs to GitHub pages.
