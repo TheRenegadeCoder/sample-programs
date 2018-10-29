@@ -7,7 +7,7 @@ In the meantime, you can read up on the rules:
 
 {% for collection in site.collections %}
   {% for article in collection %}
-    {% if article.title == "Hello World in Every Language" %}
+    {% if article.title contains "in Every Language" %}
       - [{{ article.title }}]({{ article.url | relative_url }})
     {% endif %}
   {% endfor %}
