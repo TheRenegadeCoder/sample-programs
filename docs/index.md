@@ -7,7 +7,7 @@ In the meantime, you can read up on the rules:
 
 {% for collection in site.collections %}
   {% for article in collection.docs %}
-    - Collection: {{collection}}; Article: {{article}} - [{{ article.title }}]({{ article.url | relative_url }})
+  - [{{ article.title }}]({{ article.url | relative_url }})
   {% endfor %}
 {% endfor %}
 
