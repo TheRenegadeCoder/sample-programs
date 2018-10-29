@@ -1,11 +1,10 @@
 ## Welcome to Sample Programs in Every Language
 
-Hello {{name}}
-
 We are currently migrating sample programs to GitHub pages.
 
 In the meantime, you can read up on the rules:
 
-- [Hello World][1]
+{% for issue in site.collections %}
+  {{ issue[1].label }}
 
 [1]: hello-world/RULES.md
