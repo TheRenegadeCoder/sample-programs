@@ -1,6 +1,6 @@
 ---
 title: Hello World in Matlab
-layout: page
+layout: default
 ---
 
 Once again, we have another installment of Hello World in Every Language.
