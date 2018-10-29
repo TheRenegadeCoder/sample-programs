@@ -18,7 +18,7 @@ Verify that the actual output matches the expected output. See the
 ## Articles
 
 {% for article in site.hello_world %}
-  - [{{ article.label }}]({{ article.url }})
+  - [{{ article.title }}]({{ article.url | relative_url }})
 {% endfor %}
 
 ## Further Reading
