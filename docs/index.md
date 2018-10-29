@@ -1,5 +1,7 @@
 ## Welcome to Sample Programs in Every Language
 
+Hello {{name}}
+
 We are currently migrating sample programs to GitHub pages.
 
 In the meantime, you can read up on the rules:
