@@ -9,7 +9,7 @@ In the meantime, you can read up on the rules:
 {% endfor %}
 
 {% for article in site.hello_world %}
-  - [{{ article.label }}]({{ article.url }})
+  - [{{ article.title }}]({{ article.url }})
 {% endfor %}
 
 [1]: hello-world/RULES.md
