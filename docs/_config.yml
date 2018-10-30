@@ -13,6 +13,9 @@ collections:
   factorial:
     output: true
     permalink: /factorial/:name
+  fibonacci:
+    output: true
+    permalink: /fibonacci/:name
   file_io:
     output: true
     permalink: /file-io/:name
