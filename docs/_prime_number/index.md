@@ -25,4 +25,12 @@ and outputs if the integer is a Prime number or not.
 Verify that the actual output matches the expected output. See the
 [requirements][1] section for an example of the expected output.
 
+## Articles
+
+{% for article in site.prime_number %}    
+  {% unless article.title contains 'Every Language' %}
+  - [{{ article.title }}]({{ article.url | relative_url }})
+  {% endunless %}
+{% endfor %}
+
 [1]: #requirements

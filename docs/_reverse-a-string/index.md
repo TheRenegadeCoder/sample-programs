@@ -42,6 +42,14 @@ your language can handle unicode characters, but it fails for emojis.
 | Empty String |       ""       |                |
 | Ascii String | "Hello, World" | "dlroW ,olleH" |
 
+## Articles
+
+{% for article in site.reverse_a_string %}    
+  {% unless article.title contains 'Every Language' %}
+  - [{{ article.title }}]({{ article.url | relative_url }})
+  {% endunless %}
+{% endfor %}
+
 ## Further Reading
 
 -   [Reverse a String in Every Language by The Renegade Coder][1]
