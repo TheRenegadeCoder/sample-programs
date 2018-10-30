@@ -24,4 +24,16 @@ outputs if the integer is Even or Odd.
 Verify that the actual output matches the expected output. See the
 [requirements][1] section for an example of the expected output.
 
+## Articles
+
+{% for article in site.hello_world %}    
+  {% unless article.title contains 'Every Language' %}
+  - [{{ article.title }}]({{ article.url | relative_url }})
+  {% endunless %}
+{% endfor %}
+
+## Further Reading
+
+- Fill out as needed
+
 [1]: #requirements

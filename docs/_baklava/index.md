@@ -56,6 +56,6 @@ Verify that the actual output matches the expected output (see [requirements][1]
 
 ## Further Reading
 
-To be added later when article is made
+- Fill out as needed
 
 [1]: #requirements
