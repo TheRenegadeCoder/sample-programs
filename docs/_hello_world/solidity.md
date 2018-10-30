@@ -49,7 +49,11 @@ Another wonderful description provided by William Mougayar goes as follows:
     coordination, synchronization, messaging and checking to ensure that each
     transaction happens exactly as it should.
 
-Typically, the money being transferred is held by the originator until it can be confirmed that it was received by the recipient. With the blockchain, a single ledger of transaction entries that both parties have access to can simplify the coordination and validation efforts because there is always a single version of records, not two disparate databases.
+Typically, the money being transferred is held by the originator until it can be
+confirmed that it was received by the recipient. With the blockchain, a single
+ledger of transaction entries that both parties have access to can simplify the
+coordination and validation efforts because there is always a single version of
+records, not two disparate databases.
 
 ## Hello World in Solidity
 
@@ -64,18 +68,25 @@ contract helloWorld {
 }
 ```
 
-While the format of Solidity looks a bit different from the more popular programming languages today, what’s happening behind is fairly straightforward.
+While the format of Solidity looks a bit different from the more popular
+programming languages today, what’s happening behind is fairly straightforward.
 
-First we import the version of Solidity we’d like to use. Then we create a function and specify we’d only like to return a string. And, voila!
+First we import the version of Solidity we’d like to use. Then we create a
+function and specify we’d only like to return a string. And, voila!
 
 ## How to Run the Solution
 
-If you want to run the solution, remix provides an IDE you can visit to write and execute the smart contract. Every piece of code written in Solidity—or any blockchain programming language—is considered a smart contract.
+If you want to run the solution, remix provides an IDE you can visit to write
+and execute the smart contract. Every piece of code written in Solidity—or any
+blockchain programming language—is considered a smart contract.
 
 ## Sample Programs of Every Language
 
-Thanks again for stopping by! If you hadn’t noticed, this article was contributed by a community member, Maximillian Naza. If you’d like to help contribute to this series, consider reaching out. We’re always looking for new authors.
+Thanks again for stopping by! If you hadn’t noticed, this article was contributed
+by a community member, Maximillian Naza. If you’d like to help contribute to this
+series, consider reaching out. We’re always looking for new authors.
 
-Oh, and if you really enjoyed this article, don’t forget to give it a share. By spreading the word, you’ll help grow a fun collection of code snippets.
+Oh, and if you really enjoyed this article, don’t forget to give it a share.
+By spreading the word, you’ll help grow a fun collection of code snippets.
 
 Until next time!
