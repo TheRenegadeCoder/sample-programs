@@ -1,3 +1,8 @@
+---
+title: Reverse a String in Every Language
+layout: default
+---
+
 # Reverse a String
 
 While Hello World is simple, it often does not show off many interesting

@@ -1,3 +1,8 @@
+---
+title: Game of Life in Every Language
+layout: default
+---
+
 # Game of Life
 
 For those of you that don't know, the Game of Life is basically a cell

@@ -1,3 +1,8 @@
+---
+title: Fibonacci in Every Language
+layout: default
+---
+
 # Fibonacci
 
 In mathematics, the Fibonacci numbers are the numbers in the following integer

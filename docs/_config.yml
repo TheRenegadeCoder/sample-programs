@@ -16,6 +16,27 @@ collections:
   file_io:
     output: true
     permalink: /file-io/:name
+  fizz_buzz:
+    output: true
+    permalink: /fizz-buzz/:name
+  game_of_life:
+    output: true
+    permalink: /game-of-life/:name
   hello_world:
     output: true
     permalink: /hello-world/:name
+  longest_common_subsequence:
+    output: true
+    permalink: /longest-common-subsequence/:name
+  prime_number:
+    output: true
+    permalink: /prime-number/:name
+  quine:
+    output: true
+    permalink: /quine/:name
+  reverse_a_string:
+    output: true
+    permalink: /reverse-a-string/:name
+  roman_numeral_conversion:
+    output: true
+    permalink: /roman-numeral-conversion/:name

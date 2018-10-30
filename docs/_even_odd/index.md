@@ -1,3 +1,8 @@
+---
+title: Even Odd in Every Language
+layout: default
+---
+
 # Even Odd
 
 An even number is an integer which is "evenly divisible" by two. This
