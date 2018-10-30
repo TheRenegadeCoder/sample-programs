@@ -7,7 +7,7 @@ Welcome back to yet another issue of the Hello World in Every Language. It’s b
 
 ## Lua Background
 
-As usual, I’m not super familiar with the language we’re working with today, so let’s consult Wikipedia.
+As usual, I’m not super familiar with the language we’re working with today, so let’s consult [Wikipedia][1].
 
 Like many of the languages we’ve touched on already, Lua is a scripting language. Unlike many of the scripting languages we’ve covered, Lua is extremely lightweight, so it shines in embedded applications.
 
@@ -33,14 +33,19 @@ As usual, we pass a string to the print function, and the function handles the r
 
 ## How to Run the Solution
 
-Well, perhaps running the script will be more interesting. Fortunately for us, there’s an online REPL for Lua, so we don’t have to worry about downloading anything. Once inside, drop the code snippet from above into the editor and hit run. That’s it!
+Well, perhaps running the script will be more interesting. Fortunately for us, there’s [an online REPL for Lua][2], so we don’t have to worry about downloading anything. Once inside, drop the code snippet from above into the editor and hit run. That’s it!
 
-Alternatively, we could download a copy of Lua, and run the solution locally. Even better, we could build a Docker image, so we don’t clutter our machine with dependencies. If you want to help with the Docker initiative, head on over to the Sample Programs repository and fork it. We appreciate the help!
+Alternatively, we could [download a copy of Lua][3], and run the solution locally. Even better, we could build a Docker image, so we don’t clutter our machine with dependencies. If you want to help with the Docker initiative, head on over to the Sample Programs repository and fork it. We appreciate the help!
 
 ## Sample Programs in Every Language
 
 As usual, thanks for sticking around to support the series. I appreciate it!
 
-If there’s anyone you know who might like this series, make sure you share it with them. And if you want to help the series grow, why not head over to the Sample Programs repository and make an addition.
+If there’s anyone you know who might like this series, make sure you share it with them. And if you want to help the series grow, why not head over to the [Sample Programs repository][4] and make an addition.
 
 At any rate, until next time!
+
+[1]: https://en.wikipedia.org/wiki/Lua_(programming_language)
+[2]: https://repl.it/languages/lua
+[3]: https://www.lua.org/download.html
+[4]: https://github.com/jrg94/sample-programs
