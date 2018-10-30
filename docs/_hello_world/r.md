@@ -11,7 +11,7 @@ thanks to Alexandra Wörner.
 
 R is a language as well as an environment especially suited for statistical
 computing, data analysis and data visualization. The first version of this
-GNU project was released in 1995.[1] The last major version 3.0 was released in
+GNU project was [released in 1995][5]. The last major version 3.0 was released in
 2013.
 
 R enjoys a high popularity in academia and has a large community which both
@@ -77,3 +77,4 @@ We appreciate your feedback!
 [2]: http://r-project.org/about.html
 [3]: https://www.r-project.org/
 [4]: http://rextester.com/l/r_online_compiler
+[5]: https://cran.r-project.org/doc/html/interface98-paper/paper.html
