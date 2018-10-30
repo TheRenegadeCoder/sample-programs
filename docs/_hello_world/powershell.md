@@ -30,7 +30,7 @@ Originally, PowerShell was to be called Monad and it’s ideas were published in
 
 PowerShell is now up to version 5.1 for stable builds and the new 6.0 version which was announced in 2016 is in public beta. The largest change in this version is it’s now open-source and will now be called PowerShell Core as it runs on .NET Core as opposed to the .NET Framework which previous versions use.
 
-## Hello World in PowerShell
+## Hello World in PowerShell<sup>[1]</sup>
 
 Enough background, let’s actually get something working 😊
 
@@ -61,3 +61,9 @@ TODO: insert image Hello World Script
 ## Sample Programs in Every Language
 
 Well, there you have it, Hello World in PowerShell. If you liked this article, don’t forget to give it a share, and if you’re interested in contributing, check out the Sample Programs repository. Until next time!
+
+---
+
+#### References
+
+[1]: https://therenegadecoder.com/code/hello-world-in-powershell/
