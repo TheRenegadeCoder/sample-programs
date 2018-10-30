@@ -37,7 +37,7 @@ AdSense with Dart. That demonstrate’s Google’s commitment to Dart by dependi
 on the language for it’s main method of generating revenue.
 
 The language also has many great features like garbage collection and a strong
-typing system (as of Dart 2.0). All of it sits on top of a VM like Java, which
+typing system ([as of Dart 2.0][5]). All of it sits on top of a VM like Java, which
 allows there to be less configuration between the test side and the source code.
 A programmer can just get started from the get-go!
 
@@ -91,3 +91,4 @@ feeling adventurous, why not contribute to the project?
 [2]: https://pub.dartlang.org/
 [3]: https://www.dartlang.org/guides/libraries/library-tour#future
 [4]: https://www.dartlang.org/guides/libraries/library-tour#stream
+[5]: https://www.dartlang.org/dart-2
