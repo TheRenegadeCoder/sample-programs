@@ -25,3 +25,18 @@ collections:
   hello_world:
     output: true
     permalink: /hello-world/:name
+  longest_common_subsequence:
+    output: true
+    permalink: /longest-common-subsequence/:name
+  prime_number:
+    output: true
+    permalink: /prime-number/:name
+  quine:
+    output: true
+    permalink: /quine/:name
+  reverse_a_string:
+    output: true
+    permalink: /reverse-a-string/:name
+  roman_numeral_conversion:
+    output: true
+    permalink: /roman-numeral-conversion/:name
