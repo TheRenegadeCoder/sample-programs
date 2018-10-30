@@ -1,6 +1,9 @@
 theme: jekyll-theme-cayman
 
 collections:
+  baklava:
+    output: true
+    permalink: /baklava/:name
   hello_world:
     output: true
     permalink: /hello-world/:name
