@@ -1,3 +1,8 @@
+---
+title: Convex Hull in Every Language
+layout: default
+---
+
 # Convex Hull
 
 Suppose you have a set of points in the plane. The **convex hull** of this set is the smallest
@@ -19,11 +24,13 @@ Write a program that receives two command line arguments: strings in the form `x
 Your program should be able to parse these lists into some internal representation in your choice
 language (ideally an array). From there, the program should compute the convex hull of the set of points,
 and output a list in the form
+
 ```
     (x1, y1)
     (x2, y2)
     ...
 ```
+
 where `(xj, yj)` are the coordinates of the j-th vertex of the convex hull.
 
 There are many algorithms to solve this problem. You may implement any of them. Check this
