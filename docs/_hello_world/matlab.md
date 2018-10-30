@@ -38,18 +38,18 @@ this case, the data is the string “Hello, World!” (denoted by the quotations
 ## How to Run the Solution
 
 Running our program is a relatively simple affair. First, the script must be
-saved using the MATLAB editor. File > Save or CNTL+S will do the trick, and it
- will generate a file with the extension \*.m (yep, only one character). After
- that, hit run and watch as our polite greeting to our surroundings populates
- the screen.
+saved [using the MATLAB editor][1]. File > Save or CNTL+S will do the trick, and it
+will generate a file with the extension \*.m (yep, only one character). After
+that, hit run and watch as our polite greeting to our surroundings populates
+the screen.
 
 If you want to try this out yourself, you can get a 30 day free trial of MATLAB
 R2018a (the most recent release at the time of this writing), download the .m
 file and run the script! Note, if you are a university student, your school may
 have licenses of MATLAB available to you.
 
-Alternatively, you can try to use Octave Online, an open-source alternative to
-MATLAB. According to its wiki page, Octave is mostly compatible with MATLAB.
+Alternatively, you can try to use [Octave Online][2], an open-source alternative to
+MATLAB. [According to its wiki page][3], Octave is mostly compatible with MATLAB.
 In fact, our solution to Hello World in MATLAB works great.
 
 ## Sample Programs in Every Language
@@ -57,5 +57,10 @@ In fact, our solution to Hello World in MATLAB works great.
 If you enjoyed this and would like to see “Hello, World!” in other languages,
 check out the collections of articles on just that. Share this article and others
 on here to continue our education, and if there is a language that needs to be
-added that you specialize in, go check out the Sample Programs repository and
+added that you specialize in, go check out the [Sample Programs][4] repository and
 make an entry! Thank you for following along!
+
+[1]: https://www.mathworks.com/products/matlab.html
+[2]: https://octave-online.net/
+[3]: https://en.wikipedia.org/wiki/GNU_Octave
+[4]: https://github.com/TheRenegadeCoder/sample-programs
