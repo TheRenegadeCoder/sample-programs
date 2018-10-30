@@ -18,7 +18,9 @@ Before we get into the contribution rules, we should probably get an understandi
 how this repository is structured.
 
 At the root of the repository, there are several housekeeping files that shouldn't matter
-much to the average user. The only item that matters is the archives folder.
+much to the average user. The only item that matters is the archives and the docs folder.
+
+### Archives
 
 Within the archives folder, you'll find a set of one-character folders. Each of these folders contains
 a list of language folders that share the same first character as the parent folder.
@@ -35,6 +37,26 @@ In addition, the README contains links to language references and a list of fun 
 
 Naturally, if you wish to add a completely new language to the repository, you'll
 need to follow this repository structure. Now, let's get to the rules!
+
+### Docs
+
+Meanwhile, the docs folder contains all of the documentation relevant to
+the code in the repo. More specifically, we try to write articles for every
+code snippet in the repo, so you'll find all of those here.
+
+While the archives folder is organized by language, the docs folder is organized
+by project. Each project folder contains a rule set (`index.md`) and a collection
+of articles organized by language name.
+
+For example, the `_hello_world` directory contains an `index.md` which houses
+the rules for the project and several articles such as:
+
+- `python.md`
+- `lisp.md`
+- `bash.md`
+- etc.
+
+If you plan to add a new project, please make note of the directory structure.
 
 ## Naming Conventions
 
