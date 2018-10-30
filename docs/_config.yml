@@ -4,6 +4,18 @@ collections:
   baklava:
     output: true
     permalink: /baklava/:name
+  convex_hull:
+    output: true
+    permalink: /convex-hull/:name
+  even_odd:
+    output: true
+    permalink: /even-odd/:name
+  factorial:
+    output: true
+    permalink: /factorial/:name
+  file_io:
+    output: true
+    permalink: /file-io/:name
   hello_world:
     output: true
     permalink: /hello-world/:name

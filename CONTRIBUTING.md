@@ -61,22 +61,21 @@ As a bonus to this repository, there are associated articles for every script.
 However, the articles do take awhile to write, so you can help by writing them
 as well.
 
-If you wish to help write articles, please [create an account][11]
-over on The Renegade Coder. When you're done, let me know in the associated
-GitHub issue. That way, I can elevate your privileges, so you can draft your
-article.
+Previously, we had hosted all of the articles on [The Renegade Coder][34], but
+we've since moved away from that to support open-source editing. Now, you
+can add and update any article you want. More on that soon!
 
-Once everything is setup, make sure you [bookmark the backend][12].
-That way, you can quickly get to the area where you can draft articles.
+If you'd like to add a featured image to any article, you can generate your
+own featured image by downloading an image of your choice from Pixabay and
+running the [Image Titler][30] program. Then, add the image to the assets
+folder, and link it in your article like:
 
-When writing articles, try to follow the conventions of other articles in the
-series (i.e. keep the same structure). When you're done, let me know in the
-associated GitHub issue, and I'll schedule the article for publishing.
+```
+![Image Description](Link to Image)
+```
 
-Don't worry about the featured image; I'll add one before publishing. However,
-if you'd like to save me some time, you can generate your own featured image
-by downloading an image of your choice from Pixabay and running the
-[Image Titler][30] program. Then, upload the image to the associated issue.
+And, that's it! We'll review your article once you've made the appropriate
+pull request.
 
 ## Pull Requests
 
@@ -188,61 +187,33 @@ keeps the repo tidy by eliminating the need for citations.
 These rules help grow and cultivate the community in a positive manner.
 
 [0]: #please-read
-
 [1]: #repository-structure
-
 [2]: #naming-conventions
-
 [3]: #articles
-
 [4]: #pull-requests
-
 [5]: #projects
-
-[6]: docs/hello-world.md
-
-[7]: docs/fizz-buzz.md
-
-[8]: docs/reverse-a-string.md
-
+[6]: docs/hello-world/index.md
+[7]: docs/fizz-buzz.index.md
+[8]: docs/reverse-a-string/index.md
 [9]: docs/quine.md
-
-[10]: docs/game-of-life.md
-
+[10]: docs/game-of-life/index.md
 [11]: https://therenegadecoder.com/members/registration/
-
 [12]: https://therenegadecoder.com/wp-admin/
-
 [13]: https://github.com/jrg94/sample-programs/blob/master/archive/p/python/README.md
-
 [17]: #plagiarism
-
 [18]: docs/file-io.md
-
 [19]: https://en.gravatar.com/
-
 [20]: https://help.github.com/articles/fork-a-repo
-
 [21]: https://therenegadecoder.com/code/hello-world-in-every-language/
-
 [22]: https://therenegadecoder.com/code/reverse-a-string-in-every-language/
-
 [23]: https://therenegadecoder.com/series/fizz-buzz-in-every-language/
-
-[24]: docs/baklava.md
-
-[25]: docs/fibonacci.md
-
-[26]: docs/roman-numeral-conversion.md
-
-[28]: docs/longest-common-subsequence.md
-
-[29]: docs/convex-hull.md
-
+[24]: docs/baklava/index.md
+[25]: docs/fibonacci/index.md
+[26]: docs/roman-numeral-conversion/index.md
+[28]: docs/longest-common-subsequence/index.md
+[29]: docs/convex-hull/index.md
 [30]: https://github.com/TheRenegadeCoder/image-titler
-
-[31]: docs/even-odd.md
-
-[32]: docs/prime-number.md
-
-[33]: docs/factorial.md
+[31]: docs/even-odd/index.md
+[32]: docs/prime-number/index.md
+[33]: docs/factorial/index.md
+[34]: https://therenegadecoder.com/code/sample-programs-in-every-language/
