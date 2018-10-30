@@ -3,7 +3,7 @@ title: Hello World in R
 layout: default
 ---
 
-![Hello World in R Featured Image][5]
+![Hello World in R Featured Image][6]
 
 Welcome to another issue of the Hello World in Every Language series.
 This time, we will have a look at an implementation of Hello World in R
