@@ -10,6 +10,9 @@ collections:
   even_odd:
     output: true
     permalink: /even-odd/:name
+  factorial:
+    output: true
+    permalink: /factorial/:name
   hello_world:
     output: true
     permalink: /hello-world/:name
