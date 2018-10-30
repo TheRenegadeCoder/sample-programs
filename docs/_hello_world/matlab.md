@@ -66,4 +66,4 @@ make an entry! Thank you for following along!
 [2]: https://octave-online.net/
 [3]: https://en.wikipedia.org/wiki/GNU_Octave
 [4]: https://github.com/TheRenegadeCoder/sample-programs
-[5]: /assets/hello-world-in-matlab-featured-image.JPEG
+[5]: {{site.url}}/assets/hello-world-in-matlab-featured-image.JPEG
