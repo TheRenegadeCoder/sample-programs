@@ -22,7 +22,7 @@ Verify that the actual output matches the expected output. See the
 
 ## Articles
 
-{% for article in site.hello_world %}    
+{% for article in page.collection %}    
   {% unless article.title contains 'Every Language' %}
   - [{{ article.title }}]({{ article.url | relative_url }})
   {% endunless %}
