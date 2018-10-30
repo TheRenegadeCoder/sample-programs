@@ -1,3 +1,8 @@
+---
+title: Quine in Every Language
+layout: default
+---
+
 # Quine
 
 For those of you that don't know, a quine is a program which can replicate

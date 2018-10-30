@@ -1,3 +1,8 @@
+---
+title: Longest Common Subsequence in Every Language
+layout: default
+---
+
 # Longest Common Subsequence
 
 Given two arrays of numbers, find the longest common subsequence. For example, let's say we have the

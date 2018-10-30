@@ -1,3 +1,8 @@
+---
+title: Prime Numbers in Every Language
+layout: default
+---
+
 # Prime Numbers
 
 A prime number is a positive integer which is divisible only by 1 and itself.

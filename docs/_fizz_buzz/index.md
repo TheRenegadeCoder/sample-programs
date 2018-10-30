@@ -1,3 +1,8 @@
+---
+title: Fizz Buzz in Every Language
+layout: default
+---
+
 # Fizz Buzz
 
 ![Fizz_Buzz][1]
