@@ -145,8 +145,9 @@ So, finally, we can run hello-world.opa
 
 #### How to Run it for Real This Time
 
-Having the .opa file in the current directory, run: docker run -it --rm --volume $PWD:/data/ nicovillanueva/opalang:1.1.1 opa /data/hello-world.opa
+Having the .opa file in the current directory, run: `docker run -it --rm --volume $PWD:/data/ nicovillanueva/opalang:1.1.1 opa /data/hello-world.opa`
 
+```console
 ~/devel/SPEPL/archive/o/opa master 31s
 ❯ ls
 Dockerfile  hello-world.opa  README.md
@@ -155,12 +156,19 @@ Dockerfile  hello-world.opa  README.md
 ~/devel/SPEPL/archive/o/opa master*
 ❯ ls
 Dockerfile  hello-world.js  hello-world.opa  package.json  README.md
-What we just did was run my image (if you want to use your own, replace “nicovillanueva/opalang:1.1.1” for what your provided as --tag in your docker build), mapping the current directory ($PWD) to /data inside the container.
+```
 
-This allows the Opa container to pick up the .opa file and compile it, inside the container. It gave no output, but notice that there’s a new hello-world.js
+What we just did was run my image (if you want to use your own, replace
+“nicovillanueva/opalang:1.1.1” for what your provided as --tag in your docker build),
+mapping the current directory ($PWD) to /data inside the container.
 
-As this .js has some npm dependencies, we can also run it inside a container, using the same image:
+This allows the Opa container to pick up the .opa file and compile it, inside
+the container. It gave no output, but notice that there’s a new hello-world.js
 
+As this .js has some npm dependencies, we can also run it inside a container,
+using the same image:
+
+```console
 ~/devel/SPEPL/archive/o/opa master* 15m 22s
 ❯ docker run -it --rm -v $PWD:/data/ --publish 8080:8080 nicovillanueva/opalang:1.1.1 sh -c '/data/hello-world.js'
 ┌───────────────────────────────────────────────────────────┐
@@ -170,8 +178,14 @@ As this .js has some npm dependencies, we can also run it inside a container, us
 │ sudo chown -R $USER:$(id -gn $USER) /home/opauser/.config │
 └───────────────────────────────────────────────────────────┘
 Http serving on http://e9aa732ccc83:8080
-Now we also --published the 8080 port. This maps your own 8080 port, to the container’s 8080. Having this up, if you fire up your browser and navigate to http://localhost:8080, you’ll see “Hello, World!”, printed using Opa.
+```
+
+Now we also --published the 8080 port. This maps your own 8080 port, to the
+container’s 8080. Having this up, if you fire up your browser and navigate
+to http://localhost:8080, you’ll see “Hello, World!”, printed using Opa.
 
 ## Sample Programs in Every Language
 
-As always, thanks for stopping by. If you enjoyed this article, don’t forget to give it a share. If you’re interested in contributing to the series, stop by the Sample Programs repository. Until next time!
+As always, thanks for stopping by. If you enjoyed this article, don’t forget to
+give it a share. If you’re interested in contributing to the series, stop by the
+Sample Programs repository. Until next time!
