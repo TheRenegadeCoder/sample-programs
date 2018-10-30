@@ -12,7 +12,7 @@ for as many languages as possible.
 -   [Pull Requests][4]
   -   [Code][37]
   -   [Articles][38]
--   [Projects][5]
+  -   [Projects][5]
 -   [Plagiarism][17]
 
 ## Repository Structure
@@ -83,10 +83,11 @@ Thanks for keeping this repository inclusive!
 ## Pull Requests
 
 If you wish to contribute, [fork][20] the repo and make a pull request
-with your changes. Ideally, your contribution should be in one of two categories:
+with your changes. Ideally, your contribution should be in one of three categories:
 
 1. Code
-2. Documentation
+2. Articles
+3. Projects
 
 We'll break these down in the following sections.
 
@@ -202,25 +203,9 @@ folder, and link it in your article like:
 And, that's it! We'll review your article once you've made the appropriate
 pull request.
 
-## Projects
+### Projects
 
-Below you'll find a list of all the current projects in this repository. Follow
-each link to read more about their rules.
-
--   [Baklava Rules][24]
--   [Convex Hull Rules][29]
--   [Factorial Rules][33]
--   [Fibonacci Sequence Rules][25]
--   [File IO Rules][18]
--   [Fizz Buzz Rules][7]
--   [Game of Life Rules][10]
--   [Hello World Rules][6]
--   [Longest Common Subsequence Rules][28]
--   [Quine Rules][9]
--   [Reverse a String Rules][8]
--   [Roman Numeral Conversion Rules][26]
--   [Even Odd Rules][31]
--   [Prime Number Rules][32]
+Currently, you can find a list of projects on our [project homepage][39].
 
 If you'd like to add a project, feel free to create a pull request with a new
 file containing a project description in the docs folder. The project file
@@ -239,6 +224,14 @@ should follow the following template:
 
 [Outline a comprehensive set of tests here]
 
+## Articles
+
+{% for article in site.<name of project> %}    
+  {% unless article.title contains 'Every Language' %}
+  - [{{ article.title }}]({{ article.url | relative_url }})
+  {% endunless %}
+{% endfor %}
+
 ## Further Reading
 
 - [List useful links here]
@@ -247,7 +240,16 @@ should follow the following template:
 Feel free to browse other projects to get an idea of how to fill out each
 section.
 
-Once you've created the file, _please_ link it in this section.
+Once you've created the file, _please_ update the `_config.yml` with the
+following template information:
+
+```yml
+<project name with underscores>:
+  output: true
+  permalink: /<project name with hyphens>/:name
+```
+
+This will allow the project to be tracked as a Jekyll collection.
 
 ## Plagiarism
 
@@ -295,3 +297,4 @@ These rules help grow and cultivate the community in a positive manner.
 [36]: #docs
 [37]: #code
 [38]: #articles
+[39]: https://therenegadecoder.github.io/sample-programs
