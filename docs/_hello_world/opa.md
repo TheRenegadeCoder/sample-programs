@@ -4,7 +4,11 @@ layout: default
 tags: [opa]
 ---
 
-Welcome to yet another community installment in the Hello World in Every Language series. Today, we’ve been lucky to have the help of Nicovillanueva who shared the solution to Hello World in Opa. Of course, we’re are especially thankful because they introduced Docker to this repository. At any rate, let’s dive in!
+Welcome to yet another community installment in the Hello World in Every
+Language series. Today, we’ve been lucky to have the help of Nicovillanueva
+who shared the solution to Hello World in Opa. Of course, we’re are especially
+thankful because they introduced Docker to this repository. At any rate,
+let’s dive in!
 
 ## Opa Background
 
@@ -53,21 +57,38 @@ standard library.
 
 ## How to Run the Solution
 
-Typically at this point, we would cover a couple methods for running the solution. For instance, we might share a link to an online editor. If that isn’t available, sometimes we’ll even offer a way to run the solution locally on your PC. And, you can do that with Opa, but we’ve opted instead to run Opa using Docker.
+Typically at this point, we would cover a couple methods for running the solution.
+For instance, we might share a link to an online editor. If that isn’t available,
+sometimes we’ll even offer a way to run the solution locally on your PC. And,
+you can do that with Opa, but we’ve opted instead to run Opa using Docker.
 
 ### But First, Lemme Explain Docker
 
-To give a small overview of Docker and containers, imagine a virtual machine that can boot up in less than a second, and the cost of provisioning, screwing up and starting from scratch, is negligible. (Disclaimer: it’s totally not like that, but let’s go with it.)
+To give a small overview of Docker and containers, imagine a virtual machine that
+can boot up in less than a second, and the cost of provisioning, screwing up and
+starting from scratch, is negligible. (Disclaimer: it’s totally not like that,
+but let’s go with it.)
 
-I absolutely despise installing stuff, using it once or twice, and then forgetting about it. I rarely remember to uninstall such things, and you can never be too sure that it hasn’t spread it’s 1kB-sized temp/config files all over. That’s why I use containers.
+I absolutely despise installing stuff, using it once or twice, and then forgetting
+about it. I rarely remember to uninstall such things, and you can never be too
+sure that it hasn’t spread it’s 1kB-sized temp/config files all over. That’s why
+I use containers.
 
-Would you like to see what happens when you create a thousand random files in / ? Or how the system screws up when deleting /var ? Or even try out a fork-bomb (Disclaimer 2: It’s sorta dangerous in a container too)?
+Would you like to see what happens when you create a thousand random files
+in / ? Or how the system screws up when deleting /var ? Or even try out a
+fork-bomb (Disclaimer 2: It’s sorta dangerous in a container too)?
 
-Well now you can! You can spin up a container with a fresh Ubuntu in it, toy around with it, and have it deleted upon exit.
+Well now you can! You can spin up a container with a fresh Ubuntu in it, toy
+around with it, and have it deleted upon exit.
 
-Containers are like VMs, except they share the kernel, network stack, and more, with your own OS. They also can be constraint via cgroups (hard/soft CPU/memory limits, and more). The root filesystem they use is mapped to folders in your own machine, and whatever harm you do to them, does nothing on your system.
+Containers are like VMs, except they share the kernel, network stack, and more,
+with your own OS. They also can be constraint via cgroups (hard/soft CPU/memory
+limits, and more). The root filesystem they use is mapped to folders in your
+own machine, and whatever harm you do to them, does nothing on your system.
 
-So, you can “easily” install Opa (or any other language/thing) in a container, play around, stop it, and when you delete the container, your OS is still as clean as before.
+So, you can “easily” install Opa (or any other language/thing) in a container,
+play around, stop it, and when you delete the container, your OS is still as
+clean as before.
 
 ### How to Run Opa in Docker
 
@@ -75,14 +96,19 @@ Finally, we can actually dig into the execution of Hello World in Opa.
 
 #### Image Setup
 
-For my next trick, I built a Dockerfile. It contains the definition of all which needs to be installed and set up in order to run Opa, on Ubuntu.
+For my next trick, I built a Dockerfile. It contains the definition of all
+which needs to be installed and set up in order to run Opa, on Ubuntu.
 
-A Dockerfile is the definition/blueprint for an image, and an image is the blueprint for a container. Applications run in containers.
+A Dockerfile is the definition/blueprint for an image, and an image is the
+blueprint for a container. Applications run in containers.
 
-This is mostly not reversible: While you can commit a container into an image, you cannot extract the Dockerfile from an image.
+This is mostly not reversible: While you can commit a container into an image,
+you cannot extract the Dockerfile from an image.
 
-So, if you want to build your own, local image, you can build it off the Dockerfile, like so:
+So, if you want to build your own, local image, you can build it off the
+Dockerfile, like so:
 
+```console
 ~/devel/SPEPL/archive/o/opa master
 ❯ ls
 Dockerfile hello-world.opa README.md
@@ -97,10 +123,15 @@ Step 6/6 : RUN sudo npm install -g opabsl.opp intl-messageformat intl
 ---> 626e6038445b
 Successfully built 626e6038445b
 Successfully tagged opalang:1.1.1
+```
+
 Now you have a working image. Congrats.
 
-Docker has a “hub”, conveniently called Docker Hub, where users can upload their public images for others to use. So, instead of building your own image, you could have just used mine:
+Docker has a “hub”, conveniently called Docker Hub, where users can upload
+their public images for others to use. So, instead of building your own image,
+you could have just used mine:
 
+```console
 ~/devel/SPEPL/archive/o/opa master
 ❯ docker pull nicovillanueva/opalang:1.1.1
 Using tag: 1.1.1
@@ -108,6 +139,8 @@ Using tag: 1.1.1
 [...]
 Digest: sha256:7043076348bf5040220df6ad703798fd8593a0918d06d3ce30c6c93be117e430
 Status: Downloaded newer image for nicovillanueva/opalang:1.1.1
+```
+
 So, finally, we can run hello-world.opa
 
 #### How to Run it for Real This Time
