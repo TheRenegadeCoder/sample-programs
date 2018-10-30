@@ -36,3 +36,15 @@ Some tests for your program are:
 | Positive integer | 4         | 24                                           |
 | Positive integer | 8         | 40320                                        |
 | Positive integer | 10        | 3628800                                      |
+
+## Articles
+
+{% for article in site.hello_world %}    
+  {% unless article.title contains 'Every Language' %}
+  - [{{ article.title }}]({{ article.url | relative_url }})
+  {% endunless %}
+{% endfor %}
+
+## Further Reading
+
+- Fill out as needed
