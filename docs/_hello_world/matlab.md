@@ -3,6 +3,8 @@ title: Hello World in Matlab
 layout: default
 ---
 
+![Hello World in MATLAB Featured Image][5]
+
 Once again, we have another installment of Hello World in Every Language.
 This time, it’s brought to us by one of my closest friends, Robert (a.k.a. VirtualFlat),
 who specializes in 3D CAD using SOLIDWORKS. Today, they’ve brought us Hello World in
@@ -64,3 +66,4 @@ make an entry! Thank you for following along!
 [2]: https://octave-online.net/
 [3]: https://en.wikipedia.org/wiki/GNU_Octave
 [4]: https://github.com/TheRenegadeCoder/sample-programs
+[5]: /assets/hello-world-in-matlab-featured-image.JPEG
