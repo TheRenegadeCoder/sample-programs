@@ -3,6 +3,8 @@ title: Hello World in R
 layout: default
 ---
 
+![Hello World in R Featured Image][5]
+
 Welcome to another issue of the Hello World in Every Language series.
 This time, we will have a look at an implementation of Hello World in R
 thanks to Alexandra Wörner.
@@ -78,3 +80,4 @@ We appreciate your feedback!
 [3]: https://www.r-project.org/
 [4]: http://rextester.com/l/r_online_compiler
 [5]: https://cran.r-project.org/doc/html/interface98-paper/paper.html
+[6]: {{site.baseurl}}/assets/hello-world-in-r-featured-image.JPEG

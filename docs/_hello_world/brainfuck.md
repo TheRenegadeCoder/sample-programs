@@ -3,6 +3,8 @@ title: Hello World in Brainfuck
 layout: default
 ---
 
+![Hello World in Brainfuck Featured Image][8]
+
 Welcome to yet another installment of Hello World in Every Language. Today, we’re
 taking a look at Hello World in Brainfuck brought to us by Christoph Böhmwalder,
 one of our biggest contributors to the Sample Programs collection.
@@ -122,3 +124,4 @@ released on the site.
 [5]: https://www.dcode.fr/brainfuck-language
 [6]: https://fatiherikli.github.io/brainfuck-visualizer/#PisrKysrKysrWzwrKysrKysrKys+LV08Lgo+KysrK1s8KysrKysrKz4tXTwrLgorKysrKysrLi4KKysrLgo+PisrKysrK1s8KysrKysrKz4tXTwrKy4KLS0tLS0tLS0tLS0tLgo+KysrKysrWzwrKysrKysrKys+LV08Ky4KPC4KKysrLgotLS0tLS0uCi0tLS0tLS0tLgo+Pj4rKysrWzwrKysrKysrKz4tXTwrLg==
 [7]: https://therenegadecoder.com/members/
+[8]: {{site.baseurl}}/assets/hello-world-in-brainfuck-featured-image.JPEG
