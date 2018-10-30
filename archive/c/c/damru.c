@@ -1,5 +1,8 @@
 /*
- 	DAMARU - A shape of small two-headed drum
+  DAMARU - A small two-headed, traditional drum
+          used to produce spiritual sounds in Hinduism and Tibetan Buddhism.
+
+  The programme (Damru.c) is a way of printing the same shape on the console using star(*).
   Read more - https://en.wikipedia.org/wiki/Damaru
 */
 
