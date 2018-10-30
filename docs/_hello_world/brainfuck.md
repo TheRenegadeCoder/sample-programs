@@ -9,7 +9,7 @@ one of our biggest contributors to the Sample Programs collection.
 
 ## Brainfuck Background
 
-According to Wikipedia, Brainfuck is an esoteric programming language created in
+[According to Wikipedia][1], Brainfuck is an esoteric programming language created in
 1992, and notable for its extreme minimalism. As people have implemented more and
 more ridiculous programs with the language, it has become relatively well-known
 over the years. Nowadays some see it as the ultimate coding challenge to create
@@ -77,7 +77,7 @@ Then we start a loop, in which we move left (back to cell 0), add nine to that
 cell, move right again, and subtract one from the value of cell 1. Remember that
 the loop runs until the cell value is zero, so this would run 8 times, adding 9
 to cell 0 every time. So we can already see that the value of cell 0 at this
-point is 72, which corresponds to the uppercase letter ‘H’ in the ASCII table.
+point is 72, which corresponds to the uppercase letter ‘H’ in the [ASCII table][2].
 
 So, we got our first character printed. Let’s look at the second line:
 
@@ -100,17 +100,25 @@ addition, subtraction, and loops.
 There are plenty of Brainfuck interpreters (and even compilers!) available,
 online or offline:
 
-- Copy.sh
-- Sange.fi
-- Dcode.fr
+- [Copy.sh][3]
+- [Sange.fi][4]
+- [Dcode.fr][5]
 
-As a starting point, here’s this example on “Brainfuck Visualizer”, an online
+As a starting point, [here’s this example on “Brainfuck Visualizer”][6], an online
 tool that displays each step of a Brainfuck program’s execution.
 
 ## Sample Programs in Every Language
 
 Well, that’s it for now. If you enjoyed this article, why not let us know in
 the comments below. Alternatively, you can always share this article with your
-friends on social media. If you’re feeling adventurous, consider joining The
-Renegade Coder community. That way, you’ll always know when something new is
+friends on social media. If you’re feeling adventurous, consider [joining The
+Renegade Coder community][7]. That way, you’ll always know when something new is
 released on the site.
+
+[1]: https://en.wikipedia.org/wiki/Brainfuck
+[2]: http://www.asciitable.com/index/asciifull.gif
+[3]: https://copy.sh/brainfuck/
+[4]: https://sange.fi/esoteric/brainfuck/impl/interp/i.html
+[5]: https://www.dcode.fr/brainfuck-language
+[6]: https://fatiherikli.github.io/brainfuck-visualizer/#PisrKysrKysrWzwrKysrKysrKys+LV08Lgo+KysrK1s8KysrKysrKz4tXTwrLgorKysrKysrLi4KKysrLgo+PisrKysrK1s8KysrKysrKz4tXTwrKy4KLS0tLS0tLS0tLS0tLgo+KysrKysrWzwrKysrKysrKys+LV08Ky4KPC4KKysrLgotLS0tLS0uCi0tLS0tLS0tLgo+Pj4rKysrWzwrKysrKysrKz4tXTwrLg==
+[7]: https://therenegadecoder.com/members/
