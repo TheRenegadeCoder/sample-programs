@@ -6,13 +6,13 @@ for as many languages as possible.
 ## Table of Contents
 
 -   [Repository Structure][1]
-  -   [Archives][35]
-  -   [Docs][36]
+    -   [Archives][35]
+    -   [Docs][36]
 -   [Naming Conventions][2]
 -   [Pull Requests][4]
-  -   [Code][37]
-  -   [Articles][38]
-  -   [Projects][5]
+    -   [Code][37]
+    -   [Articles][38]
+    -   [Projects][5]
 -   [Plagiarism][17]
 
 ## Repository Structure
