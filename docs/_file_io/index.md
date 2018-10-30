@@ -1,3 +1,8 @@
+---
+title: File IO in Every Language
+layout: default
+---
+
 # File IO
 
 Most languages have built-in utilities or functions for reading and writing files.
