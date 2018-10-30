@@ -42,6 +42,14 @@ naming conventions of your choice language.
 Verify that the actual output matches the expected output. See the
 [requirements][3] section for an example of the expected output.
 
+## Articles
+
+{% for article in site.fizz_buzz %}    
+  {% unless article.title contains 'Every Language' %}
+  - [{{ article.title }}]({{ article.url | relative_url }})
+  {% endunless %}
+{% endfor %}
+
 ## Further Reading
 
 -   [Fizz Buzz in Every Language by The Renegade Coder][2]

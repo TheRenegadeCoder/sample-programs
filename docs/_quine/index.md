@@ -13,8 +13,28 @@ itself--or more specifically:
 
 Thanks, [Wikipedia][1]!
 
+## Requirements
+
 For the purposes of this repo, the solution should be simple. We're not here
 to play code golf, but we're also not here to practice obfuscation. Just be
 reasonable with your solution.
 
+## Testing
+
+Verify that the actual output matches the expected output. See the
+[requirements][2] section for an example of the expected output.
+
+## Articles
+
+{% for article in site.quine %}    
+  {% unless article.title contains 'Every Language' %}
+  - [{{ article.title }}]({{ article.url | relative_url }})
+  {% endunless %}
+{% endfor %}
+
+## Further Reading
+
+- Fill as needed
+
 [1]: https://en.wikipedia.org/wiki/Quine_(computing)
+[2]: #requirements

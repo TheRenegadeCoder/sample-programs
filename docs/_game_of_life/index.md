@@ -18,6 +18,8 @@ At each turn, all cells are evaluated using the following rules:
 
 For more information, check out the [Wikipedia page for Conway's Game of Life][1].
 
+## Requirements
+
 Of course, for the purposes of the repo, here are the requirements for a contribution:
 
 1. Source code must fit in a single file
@@ -39,5 +41,24 @@ GUI elements. Keep it simple. Remember, the goal is to show off language feature
 Also, I ask that you don't use external libraries. I like for these files to
 be as easy as possible to test, so limiting dependencies is helpful.
 
+## Testing
+
+Verify that the actual output matches the expected output. See the
+[requirements][3] section for an example of the expected output.
+
+## Articles
+
+{% for article in site.game_of_life %}    
+  {% unless article.title contains 'Every Language' %}
+  - [{{ article.title }}]({{ article.url | relative_url }})
+  {% endunless %}
+{% endfor %}
+
+## Further Reading
+
+- [Wikipedia: Conway's Game of Life][1]
+- [Wikipedia: Asteroids][2]
+
 [1]: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
 [2]: https://en.wikipedia.org/wiki/Asteroids_(video_game)
+[3]: #requirements

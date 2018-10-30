@@ -63,3 +63,15 @@ Conversion program:
 | Single M      | "M"   | 1000                                               |
 | Addition      | "XXV" | 25                                                 |
 | Subtraction   | "XIV" | 14                                                 |
+
+## Articles
+
+{% for article in site.roman_numeral_conversion %}    
+  {% unless article.title contains 'Every Language' %}
+  - [{{ article.title }}]({{ article.url | relative_url }})
+  {% endunless %}
+{% endfor %}
+
+## Further Reading
+
+- Fill as needed

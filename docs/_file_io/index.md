@@ -11,6 +11,8 @@ a string to the path of the file and a "mode". A mode is how the files is opened
 Will the file be opened for reading, writing, or even both?
 Will the file be appending new content? Truncated?
 
+## Requirements
+
 In general, a File IO solution should perform the following:
 
 1. Write some arbitrary content to a file (use `output.txt`)
@@ -25,3 +27,22 @@ With the read file function, open the file with read abilities. Most higher leve
 offer a way to read line by line or even transfer the whole contents into a string. One way
 to read the file is to loop line by line and do some processing. Printing each line to the
 screen is enough. Like in the write function, make sure there is some basic error checking.
+
+## Testing
+
+Verify that the actual output matches the expected output. See the
+[requirements][1] section for an example of the expected output.
+
+## Articles
+
+{% for article in site.file_io %}    
+  {% unless article.title contains 'Every Language' %}
+  - [{{ article.title }}]({{ article.url | relative_url }})
+  {% endunless %}
+{% endfor %}
+
+## Further Reading
+
+- Fill as needed
+
+[1]: #requirements
