@@ -10,6 +10,8 @@ for as many languages as possible.
   -   [Docs][36]
 -   [Naming Conventions][2]
 -   [Pull Requests][4]
+  -   [Code][37]
+  -   [Articles][38]
 -   [Projects][5]
 -   [Plagiarism][17]
 
@@ -164,14 +166,36 @@ as well.
 
 Previously, we had hosted all of the articles on [The Renegade Coder][34], but
 we've since moved away from that to support open-source editing. Now, you
-can add and update any article you want. More on that soon!
+can add and update any article you want.
+
+To get started, you'll want to create a new markdown file (i.e. `python.md`) using
+the following template:
+
+```markdown
+## <Sample Program> in <Language>
+
+## How to Run Solution
+
+## Sample Programs in Every Language
+```
+
+In the `## <Sample Program> in <Language>`, you'll want to break down and
+explain your code snippet.
+
+In the `## How to Run Solution`, you'll want to explicitly detail how to run
+your solution. In general, we like to include one local solution and one online
+solution. More is always appreciated.
+
+Finally, in the `## Sample Programs in Every Language`, you'll want to thank
+the readers for sticking around. In addition, you may want to call out
+other related works.
 
 If you'd like to add a featured image to any article, you can generate your
 own featured image by downloading an image of your choice from Pixabay and
 running the [Image Titler][30] program. Then, add the image to the assets
 folder, and link it in your article like:
 
-```
+```markdown
 ![Image Description](Link to Image)
 ```
 
@@ -240,7 +264,6 @@ These rules help grow and cultivate the community in a positive manner.
 [0]: #please-read
 [1]: #repository-structure
 [2]: #naming-conventions
-[3]: #articles
 [4]: #pull-requests
 [5]: #projects
 [6]: docs/hello-world/index.md
@@ -270,3 +293,5 @@ These rules help grow and cultivate the community in a positive manner.
 [34]: https://therenegadecoder.com/code/sample-programs-in-every-language/
 [35]: #archives
 [36]: #docs
+[37]: #code
+[38]: #articles
