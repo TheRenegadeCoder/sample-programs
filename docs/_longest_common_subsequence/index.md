@@ -15,6 +15,8 @@ B = [1, 7, 4, 5, 11, 6]
 
 The longest common subsequence is `1, 4, 5, 6`.
 
+## Requirements
+
 Write a program which accepts two command line arguments--each list--and outputs the longest
 common subsequence between the two lists. Input arguments should be in comma separated list notation:
 `1, 2, 14, 11, 31, 7, 9`.
@@ -38,3 +40,22 @@ LCS(arrayA, arrayB, indexA, indexB):
 Unfortunately, this pseudocode only gives us the length of the longest common subsequence. Since we
 want to actually *print* the result, we'll probably need to augment this algorithm a bit. Also,
 it may be useful to implement the memoized solution for the sake of efficiency.
+
+## Testing
+
+Verify that the actual output matches the expected output. See the
+[requirements][1] section for an example of the expected output.
+
+## Articles
+
+{% for article in site.longest_common_subsequence %}    
+  {% unless article.title contains 'Every Language' %}
+  - [{{ article.title }}]({{ article.url | relative_url }})
+  {% endunless %}
+{% endfor %}
+
+## Further Reading
+
+- Fill as needed
+
+[1]: #requirements
