@@ -5,10 +5,7 @@ layout: default
 
 ## Welcome to Sample Programs in Every Language
 
-We are currently migrating sample programs to GitHub pages.
-
-In the meantime, you can read up on the rules:
-
+Below you'll find a list of all the available projects:
 
 {% for collection in site.collections %}
   {% for article in collection.docs %}
@@ -17,5 +14,3 @@ In the meantime, you can read up on the rules:
     {% endif %}
   {% endfor %}
 {% endfor %}
-
-[1]: hello-world/RULES.md
