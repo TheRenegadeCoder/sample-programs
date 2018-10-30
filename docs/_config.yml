@@ -4,6 +4,12 @@ collections:
   baklava:
     output: true
     permalink: /baklava/:name
+  convex_hull:
+    output: true
+    permalink: /convex-hull/:name
+  even_odd:
+    output: true
+    permalink: /even-odd/:name
   hello_world:
     output: true
     permalink: /hello-world/:name
