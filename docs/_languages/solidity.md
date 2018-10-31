@@ -3,12 +3,12 @@ title: Solidity
 layout: default
 ---
 
-## The Solidity Programming Language
+## The Solidity Programming Language<sup>1</sup>
 
 To understand Solidity, it is imperative to comprehend the context in which it
 is used. So, the first question to ask is: what is a smart contract?
 
-### Smart Contract<sup>1</sup>
+### Smart Contract
 
 [According to Wikipedia][1], a smart contract is a computer protocol intended to
 digitally facilitate, verify, or enforce the negotiation or performance of a
