@@ -48,7 +48,7 @@ Verify that the actual output matches the expected output. See the
 
 ## Articles
 
-{% include article_list collection=site.game_of_life %}
+{% include article_list.md collection=site.game_of_life %}
 
 ## Further Reading
 

@@ -66,7 +66,7 @@ Conversion program:
 
 ## Articles
 
-{% include article_list collection=site.roman_numeral_conversion %}
+{% include article_list.md collection=site.roman_numeral_conversion %}
 
 ## Further Reading
 

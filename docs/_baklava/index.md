@@ -48,7 +48,7 @@ Verify that the actual output matches the expected output (see [requirements][1]
 
 ## Articles
 
-{% include article_list collection=site.baklava %}
+{% include article_list.md collection=site.baklava %}
 
 ## Further Reading
 
