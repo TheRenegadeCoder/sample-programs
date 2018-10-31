@@ -1,7 +1,10 @@
 ---
 title: Hello World in Dart
 layout: default
+featured-image: hello-world-in-dart-featured-image.JPEG
 ---
+
+![Hello World in Dart Featured Image][7]
 
 ## Hello World in Dart<sup>1</sup>
 
@@ -54,3 +57,4 @@ TODO
 [3]: https://www.dartlang.org/guides/libraries/library-tour#future
 [4]: https://www.dartlang.org/guides/libraries/library-tour#stream
 [5]: https://www.dartlang.org/dart-2
+[6]: {{site.baseurl}}/assets/hello-world-in-dart-featured-image.JPEG
