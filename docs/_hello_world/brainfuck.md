@@ -5,10 +5,6 @@ layout: default
 
 ![Hello World in Brainfuck Featured Image][8]
 
-Welcome to yet another installment of Hello World in Every Language. Today, we’re
-taking a look at Hello World in Brainfuck brought to us by Christoph Böhmwalder,
-one of our biggest contributors to the Sample Programs collection.
-
 ## Hello World in Brainfuck<sup>1</sup>
 
 With that out of the way, let’s take a look at the Hello World sample:

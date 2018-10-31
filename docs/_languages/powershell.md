@@ -4,6 +4,8 @@ layout: default
 tags: [powershell]
 ---
 
+![Hello World in PowerShell Featured Image][6]
+
 ## The PowerShell Programming Language<sup>1</sup>
 
 PowerShell is the de facto scripting language for managing Windows machines/servers.
@@ -54,3 +56,4 @@ is it’s now open-source and will now be called PowerShell Core as it runs on
 [3]: https://blogs.msdn.microsoft.com/powershell/2007/03/18/monad-manifesto-the-origin-of-windows-powershell/
 [4]: https://www.microsoft.com/net/download
 [5]: https://www.microsoft.com/net/learn/architecture
+[6]: {{site.baseurl}}/assets/hello-world-in-powershell-featured-image.JPEG
