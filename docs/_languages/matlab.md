@@ -16,6 +16,8 @@ EISPACK respectively) without having to learn Fortran. Moler’s creation was
 immediately popular for its ease-of-use, interactivity and expandability and
 sports over 3 million users world-wide.
 
+---
+
 #### References
 
 1. R. Maldonado, “Hello World in MATLAB,” The Renegade Coder, 04-Sep-2018.
