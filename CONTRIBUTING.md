@@ -177,7 +177,11 @@ the following template:
 
 ## How to Run Solution
 
-## Sample Programs in Every Language
+---
+
+#### References
+
+1. <some IEEE reference>
 ```
 
 In the `## <Sample Program> in <Language>`, you'll want to break down and
@@ -187,9 +191,9 @@ In the `## How to Run Solution`, you'll want to explicitly detail how to run
 your solution. In general, we like to include one local solution and one online
 solution. More is always appreciated.
 
-Finally, in the `## Sample Programs in Every Language`, you'll want to thank
-the readers for sticking around. In addition, you may want to call out
-other related works.
+Finally, in the `## References`, you'll want to place you IEEE citations.
+We'd like to keep things relatively formal, so if you borrow content, please
+properly cite it here.
 
 If you'd like to add a featured image to any article, you can generate your
 own featured image by downloading an image of your choice from Pixabay and
