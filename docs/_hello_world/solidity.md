@@ -40,8 +40,4 @@ blockchain programming language—is considered a smart contract.
   [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-solidity/>.
   [Accessed: 31-Oct-2018].
 
-[1]: https://en.wikipedia.org/wiki/Smart_contract
-[2]: https://en.wikipedia.org/wiki/Blockchain
-[3]: https://blockgeeks.com/guides/what-is-blockchain-technology/
-[4]: https://www.coindesk.com/understand-google-docs-can-understand-blockchain/
 [5]: http://remix.ethereum.org/

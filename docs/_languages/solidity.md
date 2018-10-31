@@ -56,3 +56,8 @@ Another wonderful description provided by [William Mougayar][4] goes as follows:
 1. M. Naza, “Hello World in Solidity,” The Renegade Coder, 22-Jun-2018.
   [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-solidity/>.
   [Accessed: 31-Oct-2018].
+
+[1]: https://en.wikipedia.org/wiki/Smart_contract
+[2]: https://en.wikipedia.org/wiki/Blockchain
+[3]: https://blockgeeks.com/guides/what-is-blockchain-technology/
+[4]: https://www.coindesk.com/understand-google-docs-can-understand-blockchain/
