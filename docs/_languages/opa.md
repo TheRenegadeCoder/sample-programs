@@ -3,6 +3,8 @@ title: Opa
 layout: default
 ---
 
+## The Opa Programming Language<sup>1</sup>
+
 Opa is sadly a short-lived language, created in 2011 by the company MLState.
 It’s strongly focused on webapps, as it lets you write server-side and client-side
 code, side by side. The client-code is compiled into JavaScript, and the server-code,
@@ -29,6 +31,6 @@ Luckily, there’s this cute technology called containers.
 
 #### References
 
-1. N. Villanueva, “Hello World in Opa,” The Renegade Coder, 20-Jul-2018. 
+1. N. Villanueva, “Hello World in Opa,” The Renegade Coder, 20-Jul-2018.
   [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-opa/>.
   [Accessed: 31-Oct-2018].

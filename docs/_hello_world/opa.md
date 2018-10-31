@@ -4,7 +4,7 @@ layout: default
 tags: [opa]
 ---
 
-## Hello World in Opa
+## Hello World in Opa<sup>1</sup>
 
 As we mentioned, Opa code contains both front-end and server-side code. As
 such, our Hello World looks like this:
@@ -25,7 +25,7 @@ main() function. In this case, it’s parameters take the server’s settings
 Also, we do not define imports of any kind. Everything is picked up off the
 standard library.
 
-## How to Run the Solution
+## How to Run the Solution<sup>1</sup>
 
 Typically at this point, we would cover a couple methods for running the solution.
 For instance, we might share a link to an online editor. If that isn’t available,
@@ -156,7 +156,7 @@ to http://localhost:8080, you’ll see “Hello, World!”, printed using Opa.
 
 ---
 
-### References
+#### References
 
 1. N. Villanueva, “Hello World in Opa,” The Renegade Coder, 20-Jul-2018.
   [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-opa/>.
