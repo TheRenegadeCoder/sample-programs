@@ -22,7 +22,7 @@ Verify that the actual output matches the expected output. See the
 
 ## Articles
 
-{% include article_list collection=site.hello_world % }
+{% include article_list collection=site.hello_world %}
 
 ## Further Reading
 

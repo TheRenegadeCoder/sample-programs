@@ -44,11 +44,7 @@ your language can handle unicode characters, but it fails for emojis.
 
 ## Articles
 
-{% for article in site.reverse_a_string %}    
-  {% unless article.title contains 'Every Language' %}
-  - [{{ article.title }}]({{ article.url | relative_url }})
-  {% endunless %}
-{% endfor %}
+{% include article_list collection=site.reverse_a_string % }
 
 ## Further Reading
 

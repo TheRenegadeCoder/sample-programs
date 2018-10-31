@@ -66,11 +66,7 @@ Conversion program:
 
 ## Articles
 
-{% for article in site.roman_numeral_conversion %}    
-  {% unless article.title contains 'Every Language' %}
-  - [{{ article.title }}]({{ article.url | relative_url }})
-  {% endunless %}
-{% endfor %}
+{% include article_list collection=site.roman_numeral_conversion %}
 
 ## Further Reading
 
