@@ -14,16 +14,16 @@ the preferred way to manage Windows servers in the future.
 Bruce Payette and James Truher were also on the project, and in an interview in
 2017, Snover explained the motivation behind creating PowerShell<sup>2</sup>:
 
-I’d been driving a bunch of managing changes, and then I originally took the UNIX
-tools and made them available on Windows, and then it just didn’t work. Right?
-Because there’s a core architectural difference between Windows and Linux. On
-Linux, everything’s an ASCII text file, so anything that can manipulate that is
-a managing tool. AWK, grep, sed? Happy days!
+    I’d been driving a bunch of managing changes, and then I originally took the UNIX
+    tools and made them available on Windows, and then it just didn’t work. Right?
+    Because there’s a core architectural difference between Windows and Linux. On
+    Linux, everything’s an ASCII text file, so anything that can manipulate that is
+    a managing tool. AWK, grep, sed? Happy days!
 
-I brought those tools available on Windows, and then they didn’t help manage Windows
-because in Windows, everything’s an API that returns structured data. So, that
-didn’t help. […] I came up with this idea of PowerShell, and I said, “Hey,
-we can do this better.”
+    I brought those tools available on Windows, and then they didn’t help manage Windows
+    because in Windows, everything’s an API that returns structured data. So, that
+    didn’t help. […] I came up with this idea of PowerShell, and I said, “Hey,
+    we can do this better.”
 
 Originally, PowerShell was to be called Monad and it’s ideas were published in a
 white paper titled Monad Manifesto. Shortly after releasing the Beta 3 version
