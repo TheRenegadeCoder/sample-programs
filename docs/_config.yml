@@ -1,4 +1,5 @@
 theme: jekyll-theme-cayman
+google_analytics: UA-97956707-2
 
 exclude: ["CNAME", "Gemfile"]
 
