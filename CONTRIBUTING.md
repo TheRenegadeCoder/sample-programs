@@ -240,11 +240,7 @@ layout: default
 
 ## Articles
 
-{% for article in site.<name of project> %}    
-  {% unless article.title contains 'Every Language' %}
-  - [{{ article.title }}]({{ article.url | relative_url }})
-  {% endunless %}
-{% endfor %}
+{% include article_list collection=site.<name of project> % }
 
 ## Further Reading
 
