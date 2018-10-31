@@ -19,7 +19,11 @@ Write-Host 'Hello, World!'
 To execute this code, open a PowerShell console on any Windows machine as it
 comes installed by default. You’ll see the reply output in the window like so:
 
-TODO: insert image <Hello World Console>
+```console
+[20:35:40]:Alcha$ Write-Host 'Hello, World!'
+Hello, World!
+[20:35:56]:Alcha$
+```
 
 As is the case with most modern scripting languages, getting a Hello World
 sample running is really easy.
@@ -39,7 +43,11 @@ it like so:
 
 This calls the script and returns the output to the console:
 
-TODO: insert image Hello World Script
+```console
+[20:35:40]:powershell$ .\Hello-Wordl.ps1
+Hello, World!
+[20:35:56]:powershell$
+```
 
 ---
 
