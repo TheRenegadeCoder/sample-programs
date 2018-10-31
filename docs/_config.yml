@@ -1,6 +1,9 @@
 theme: jekyll-theme-cayman
 
 collections:
+  languages:
+    output: true
+    permalink: /languages/:name
   baklava:
     output: true
     permalink: /baklava/:name
