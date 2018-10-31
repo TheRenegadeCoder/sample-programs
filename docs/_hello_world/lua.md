@@ -3,10 +3,6 @@ title: Hello World in Lua
 layout: default
 ---
 
-Welcome back to yet another issue of the Hello World in Every Language. It’s
-been awhile since I’ve written one of these articles myself, so bear with me!
-Today, we’re covering Hello World in Lua, a scripting language from 1993.
-
 ## Lua Background
 
 As usual, I’m not super familiar with the language we’re working with today,
@@ -29,7 +25,7 @@ can’t really complain.
 Due to its lightweight and embedded nature, Lua has also found a home in the
 gaming community. How have I never used it?
 
-## Hello World in Lua
+## Hello World in Lua<sup>1</sup>
 
 At any rate, let’s get down to business:
 
@@ -49,7 +45,7 @@ other fun print function names, let me know in the comments.
 
 As usual, we pass a string to the print function, and the function handles the rest.
 
-## How to Run the Solution
+## How to Run the Solution<sup>1</sup>
 
 Well, perhaps running the script will be more interesting. Fortunately for us,
 there’s [an online REPL for Lua][2], so we don’t have to worry about downloading
@@ -61,17 +57,14 @@ Even better, we could build a Docker image, so we don’t clutter our machine wi
 dependencies. If you want to help with the Docker initiative, head on over to
 the Sample Programs repository and fork it. We appreciate the help!
 
-## Sample Programs in Every Language
+---
 
-As usual, thanks for sticking around to support the series. I appreciate it!
+#### References
 
-If there’s anyone you know who might like this series, make sure you share it
-with them. And if you want to help the series grow, why not head over to the
-[Sample Programs repository][4] and make an addition.
-
-At any rate, until next time!
+1. J. Grifski, “Hello World in Lua,” The Renegade Coder, 28-Jul-2018. 
+  [Online]. Available: https://therenegadecoder.com/code/hello-world-in-lua/. 
+  [Accessed: 31-Oct-2018].
 
 [1]: https://en.wikipedia.org/wiki/Lua_(programming_language)
 [2]: https://repl.it/languages/lua
 [3]: https://www.lua.org/download.html
-[4]: https://github.com/jrg94/sample-programs
