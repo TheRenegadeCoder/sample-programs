@@ -18,7 +18,7 @@ I’d been driving a bunch of managing changes, and then I originally took the U
 tools and made them available on Windows, and then it just didn’t work. Right?
 Because there’s a core architectural difference between Windows and Linux. On
 Linux, everything’s an ASCII text file, so anything that can manipulate that is
-a managing tool. AWK,  grep, sed? Happy days!
+a managing tool. AWK, grep, sed? Happy days!
 
 I brought those tools available on Windows, and then they didn’t help manage Windows
 because in Windows, everything’s an API that returns structured data. So, that
