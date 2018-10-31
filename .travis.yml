@@ -1,13 +1,14 @@
-language: python
-python:
-  - "3.6"
+matrix:
+  include:
+    - language: python
+      python:
+        - "3.6"
+      script:
+        - echo "insert tests here"
+      deploy:
+        provider: script
+        script: bash -x deploy.sh
 
-script:
-  - echo "insert tests here"
-  
-deploy:
-  provider: script
-  script: bash -x deploy.sh
 
 notifications:
   email: false
