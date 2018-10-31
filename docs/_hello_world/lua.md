@@ -62,7 +62,7 @@ the Sample Programs repository and fork it. We appreciate the help!
 #### References
 
 1. J. Grifski, “Hello World in Lua,” The Renegade Coder, 28-Jul-2018. 
-  [Online]. Available: https://therenegadecoder.com/code/hello-world-in-lua/. 
+  [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-lua/>. 
   [Accessed: 31-Oct-2018].
 
 [1]: https://en.wikipedia.org/wiki/Lua_(programming_language)
