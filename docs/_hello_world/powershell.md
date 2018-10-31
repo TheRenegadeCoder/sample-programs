@@ -1,10 +1,11 @@
 ---
 title: Hello World in PowerShell
 layout: default
+featured-image: hello-world-in-powershell-featured-image.JPEG
 tags: [powershell]
 ---
 
-![Hello World in PowerShell Featured Image][1]
+{% include featured_image.md name=page.title image=page.featured-image %}
 
 ## Hello World in PowerShell<sup>1</sup>
 
@@ -54,5 +55,3 @@ Hello, World!
 1. D. Leaman, “Hello World in PowerShell,” The Renegade Coder, 28-Jul-2018.
   [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-powershell/>.
   [Accessed: 31-Oct-2018].
-
-[1]: {{site.baseurl}}/assets/hello-world-in-powershell-featured-image.JPEG

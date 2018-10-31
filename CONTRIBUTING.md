@@ -176,7 +176,11 @@ the following template:
 ---
 title: <Sample Program> in <Language>
 layout: default
+featured-image: <name of featured image file in assets folder>
+tags: [<a list of tags>]
 ---
+
+{% include featured_image.md name=page.title image=page.featured-image %}
 
 ## <Sample Program> in <Language>
 

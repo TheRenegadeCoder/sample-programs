@@ -1,9 +1,11 @@
 ---
 title: Hello World in MATLAB
 layout: default
+featured-image: hello-world-in-matlab-featured-image.JPEG
+tags: [matlab]
 ---
 
-![Hello World in MATLAB Featured Image][5]
+{% include featured_image.md name=page.title image=page.featured-image %}
 
 ## Hello World in MATLAB<sup>1</sup>
 
@@ -48,4 +50,3 @@ In fact, our solution to Hello World in MATLAB works great.
 [2]: https://octave-online.net/
 [3]: https://en.wikipedia.org/wiki/GNU_Octave
 [4]: https://github.com/TheRenegadeCoder/sample-programs
-[5]: {{site.baseurl}}/assets/hello-world-in-matlab-featured-image.JPEG
