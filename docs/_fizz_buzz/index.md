@@ -44,7 +44,7 @@ Verify that the actual output matches the expected output. See the
 
 ## Articles
 
-{% include article_list collection=site.fizz_buzz %}
+{% include article_list.md collection=site.fizz_buzz %}
 
 ## Further Reading
 
