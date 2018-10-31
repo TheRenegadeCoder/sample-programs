@@ -1,5 +1,7 @@
 theme: jekyll-theme-cayman
 
+exclude: ["CNAME", "Gemfile"]
+
 collections:
   languages:
     output: true
