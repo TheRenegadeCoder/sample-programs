@@ -26,7 +26,7 @@ Verify that the actual output matches the expected output. See the
 
 ## Articles
 
-{% include article_list.md collection=site.quine % }
+{% include article_list.md collection=site.quine %}
 
 ## Further Reading
 
