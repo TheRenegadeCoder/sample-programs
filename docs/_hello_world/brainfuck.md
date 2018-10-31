@@ -87,7 +87,6 @@ online or offline:
 As a starting point, [here’s this example on “Brainfuck Visualizer”][6], an online
 tool that displays each step of a Brainfuck program’s execution.
 
-[1]: https://en.wikipedia.org/wiki/Brainfuck
 [2]: http://www.asciitable.com/index/asciifull.gif
 [3]: https://copy.sh/brainfuck/
 [4]: https://sange.fi/esoteric/brainfuck/impl/interp/i.html
