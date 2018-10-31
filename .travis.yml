@@ -1,13 +1,24 @@
-language: python
-python:
-  - "3.6"
+matrix:
+  include:
+    - language: python
+      python:
+        - "3.6"
+      script:
+        - echo "insert tests here"
+      deploy:
+        provider: script
+        script: bash -x deploy.sh
+    - language: ruby
+      before_install:
+        - cd docs/
+      rvm:
+        - 2.4
+      script:
+        - bundle exec jekyll build --future
+      env:
+        global:
+          - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 
-script:
-  - echo "insert tests here"
-  
-deploy:
-  provider: script
-  script: bash -x deploy.sh
 
 notifications:
   email: false

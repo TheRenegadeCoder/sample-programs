@@ -1,6 +1,11 @@
 theme: jekyll-theme-cayman
 
+exclude: ["CNAME", "Gemfile"]
+
 collections:
+  languages:
+    output: true
+    permalink: /languages/:name
   baklava:
     output: true
     permalink: /baklava/:name
@@ -13,6 +18,9 @@ collections:
   factorial:
     output: true
     permalink: /factorial/:name
+  fibonacci:
+    output: true
+    permalink: /fibonacci/:name
   file_io:
     output: true
     permalink: /file-io/:name
