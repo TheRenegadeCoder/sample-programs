@@ -8,6 +8,16 @@ matrix:
       deploy:
         provider: script
         script: bash -x deploy.sh
+    - language: ruby
+      rvm:
+        - 2.4
+      script:
+        - cd docs/
+        - bundle exec jekyll build --future
+        - bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html
+      env:
+        global:
+          - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 
 
 notifications:
