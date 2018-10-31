@@ -9,28 +9,6 @@ Welcome to yet another installment of Hello World in Every Language. Today, we�
 taking a look at Hello World in Brainfuck brought to us by Christoph Böhmwalder,
 one of our biggest contributors to the Sample Programs collection.
 
-## Brainfuck Background
-
-[According to Wikipedia][1], Brainfuck is an esoteric programming language created in
-1992, and notable for its extreme minimalism. As people have implemented more and
-more ridiculous programs with the language, it has become relatively well-known
-over the years. Nowadays some see it as the ultimate coding challenge to create
-something useful in Brainfuck.
-
-At the core of the language is a more-than-compact instruction set, comprising
-of a whopping eight instructions. Brainfuck uses a machine model consisting of
-an infinite list of one-byte cells, an instruction pointer, and a cell pointer.
- The instructions can be used to interact with this environment: `<` and `>`
- move the cell pointer, `+` and `-` increment or decrement the value of the cell
- at the current pointer, and `[` and `]` denote a loop.
-
-A loop only starts when the value of the current cell is non-zero, otherwise
-execution jumps to the end of the loop. Likewise, a loop ends when the value is
-zero, otherwise the program jumps to the beginning of the loop. The remaining
-two instructions, `,` and `.` read one character from the input into the current
-cell and write one character from the current cell to the output, respectively.
-That’s it!
-
 ## Hello World in Brainfuck
 
 With that out of the way, let’s take a look at the Hello World sample:
@@ -109,19 +87,10 @@ online or offline:
 As a starting point, [here’s this example on “Brainfuck Visualizer”][6], an online
 tool that displays each step of a Brainfuck program’s execution.
 
-## Sample Programs in Every Language
-
-Well, that’s it for now. If you enjoyed this article, why not let us know in
-the comments below. Alternatively, you can always share this article with your
-friends on social media. If you’re feeling adventurous, consider [joining The
-Renegade Coder community][7]. That way, you’ll always know when something new is
-released on the site.
-
 [1]: https://en.wikipedia.org/wiki/Brainfuck
 [2]: http://www.asciitable.com/index/asciifull.gif
 [3]: https://copy.sh/brainfuck/
 [4]: https://sange.fi/esoteric/brainfuck/impl/interp/i.html
 [5]: https://www.dcode.fr/brainfuck-language
 [6]: https://fatiherikli.github.io/brainfuck-visualizer/#PisrKysrKysrWzwrKysrKysrKys+LV08Lgo+KysrK1s8KysrKysrKz4tXTwrLgorKysrKysrLi4KKysrLgo+PisrKysrK1s8KysrKysrKz4tXTwrKy4KLS0tLS0tLS0tLS0tLgo+KysrKysrWzwrKysrKysrKys+LV08Ky4KPC4KKysrLgotLS0tLS0uCi0tLS0tLS0tLgo+Pj4rKysrWzwrKysrKysrKz4tXTwrLg==
-[7]: https://therenegadecoder.com/members/
 [8]: {{site.baseurl}}/assets/hello-world-in-brainfuck-featured-image.JPEG
