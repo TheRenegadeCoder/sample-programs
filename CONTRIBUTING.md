@@ -173,6 +173,11 @@ To get started, you'll want to create a new markdown file (i.e. `python.md`) usi
 the following template:
 
 ```markdown
+---
+title: <Sample Program> in <Language>
+layout: default
+---
+
 ## <Sample Program> in <Language>
 
 ## How to Run Solution
@@ -216,6 +221,11 @@ file containing a project description in the docs folder. The project file
 should follow the following template:
 
 ```markdown
+---
+title: <Sample Program> in Every Language
+layout: default
+---
+
 # [Project Name]
 
 [Insert description of project here]
