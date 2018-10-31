@@ -1,7 +1,11 @@
 ---
 title: Hello World in Lua
 layout: default
+featured-image:
+tags: [lua]
 ---
+
+{% include featured_image.md name=page.title image=page.featured-image %}
 
 ## Hello World in Lua<sup>1</sup>
 

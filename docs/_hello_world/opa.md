@@ -1,10 +1,11 @@
 ---
 title: Hello World in Opa
 layout: default
+featured-image: hello-world-in-opa-featured-image.JPEG
 tags: [opa]
 ---
 
-![Hello World in Opa Featured Image][1]
+{% include featured_image.md name=page.title image=page.featured-image %}
 
 ## Hello World in Opa<sup>1</sup>
 
@@ -165,5 +166,3 @@ to http://localhost:8080, you’ll see “Hello, World!”, printed using Opa.
 1. N. Villanueva, “Hello World in Opa,” The Renegade Coder, 20-Jul-2018.
   [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-opa/>.
   [Accessed: 31-Oct-2018].
-
-[1]: {{site.baseurl}}/assets/hello-world-in-opa-featured-image.JPEG

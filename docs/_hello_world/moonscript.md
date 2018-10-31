@@ -1,9 +1,11 @@
 ---
 title: Hello World in MoonScript
 layout: default
+featured-image: hello-world-in-moonscript-featured-image.JPEG
+tags: [moonscript]
 ---
 
-![Hello World in MoonScript Featured Image][7]
+{% include featured_image.md name=page.title image=page.featured-image %}
 
 ## Hello World In MoonScript<sup>1</sup>
 
@@ -82,4 +84,3 @@ Alternatively, you can always [run MoonScript using an online compiler][6].
 [4]: https://github.com/leafo/moonscript/releases/download/win32-v0.5.0/moonscript-187bac54ee5a7450013e9c38e005a0e671b76f45.zip
 [5]: https://luarocks.org/
 [6]: https://moonscript.org/compiler/
-[7]: {{site.baseurl}}/assets/hello-world-in-moonscript-featured-image.JPEG
