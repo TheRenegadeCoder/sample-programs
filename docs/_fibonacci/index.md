@@ -35,11 +35,7 @@ Verify that the actual output matches the expected output. See the
 
 ## Articles
 
-{% for article in site.fibonacci %}    
-  {% unless article.title contains 'Every Language' %}
-  - [{{ article.title }}]({{ article.url | relative_url }})
-  {% endunless %}
-{% endfor %}
+{% include article_list.md collection=site.fibonacci %}
 
 ## Further Readings
 
