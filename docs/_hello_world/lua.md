@@ -43,6 +43,5 @@ the Sample Programs repository and fork it. We appreciate the help!
   [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-lua/>.
   [Accessed: 31-Oct-2018].
 
-[1]: https://en.wikipedia.org/wiki/Lua_(programming_language)
 [2]: https://repl.it/languages/lua
 [3]: https://www.lua.org/download.html
