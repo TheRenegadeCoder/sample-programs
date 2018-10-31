@@ -1,7 +1,14 @@
+---
+title: Solidity
+layout: default
+---
+
+## The Solidity Programming Language
+
 To understand Solidity, it is imperative to comprehend the context in which it
 is used. So, the first question to ask is: what is a smart contract?
 
-### Smart Contract
+### Smart Contract<sup>1</sup>
 
 [According to Wikipedia][1], a smart contract is a computer protocol intended to
 digitally facilitate, verify, or enforce the negotiation or performance of a
@@ -41,3 +48,11 @@ Another wonderful description provided by [William Mougayar][4] goes as follows:
     ledger of transaction entries that both parties have access to can simplify the
     coordination and validation efforts because there is always a single version of
     records, not two disparate databases.
+
+---
+
+#### References
+
+1. M. Naza, “Hello World in Solidity,” The Renegade Coder, 22-Jun-2018.
+  [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-solidity/>.
+  [Accessed: 31-Oct-2018].

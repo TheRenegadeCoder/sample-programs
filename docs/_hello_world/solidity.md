@@ -7,7 +7,7 @@ tags: [solidity]
 
 {% include featured_image.md name=page.title image=page.featured-image %}
 
-## Hello World in Solidity
+## Hello World in Solidity<sup>1</sup>
 
 Without further ado, here’s an implementation of Hello World in Solidity:
 
@@ -26,11 +26,19 @@ programming languages today, what’s happening behind is fairly straightforward
 First we import the version of Solidity we’d like to use. Then we create a
 function and specify we’d only like to return a string. And, voila!
 
-## How to Run the Solution
+## How to Run the Solution<sup>1</sup>
 
 If you want to run the solution, remix provides an [IDE][5] you can visit to write
 and execute the smart contract. Every piece of code written in Solidity—or any
 blockchain programming language—is considered a smart contract.
+
+---
+
+#### References
+
+1. M. Naza, “Hello World in Solidity,” The Renegade Coder, 22-Jun-2018.
+  [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-solidity/>.
+  [Accessed: 31-Oct-2018].
 
 [1]: https://en.wikipedia.org/wiki/Smart_contract
 [2]: https://en.wikipedia.org/wiki/Blockchain
