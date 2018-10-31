@@ -35,11 +35,7 @@ Verify that the actual output matches the expected output. See the
 
 ## Articles
 
-{% for article in site.file_io %}    
-  {% unless article.title contains 'Every Language' %}
-  - [{{ article.title }}]({{ article.url | relative_url }})
-  {% endunless %}
-{% endfor %}
+{% include article_list collection=site.file_io %}
 
 ## Further Reading
 
