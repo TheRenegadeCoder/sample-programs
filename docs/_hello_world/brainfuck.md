@@ -1,9 +1,10 @@
 ---
 title: Hello World in Brainfuck
 layout: default
+featured-image: hello-world-in-brainfuck-featured-image.JPEG
 ---
 
-![Hello World in Brainfuck Featured Image][8]
+{% include featured_image.md name=page.title image=page.featured-image %}
 
 ## Hello World in Brainfuck<sup>1</sup>
 
@@ -88,7 +89,6 @@ tool that displays each step of a Brainfuck program’s execution.
 [4]: https://sange.fi/esoteric/brainfuck/impl/interp/i.html
 [5]: https://www.dcode.fr/brainfuck-language
 [6]: https://fatiherikli.github.io/brainfuck-visualizer/#PisrKysrKysrWzwrKysrKysrKys+LV08Lgo+KysrK1s8KysrKysrKz4tXTwrLgorKysrKysrLi4KKysrLgo+PisrKysrK1s8KysrKysrKz4tXTwrKy4KLS0tLS0tLS0tLS0tLgo+KysrKysrWzwrKysrKysrKys+LV08Ky4KPC4KKysrLgotLS0tLS0uCi0tLS0tLS0tLgo+Pj4rKysrWzwrKysrKysrKz4tXTwrLg==
-[8]: {{site.baseurl}}/assets/hello-world-in-brainfuck-featured-image.JPEG
 
 ---
 
