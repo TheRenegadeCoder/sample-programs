@@ -44,11 +44,11 @@ is it’s now open-source and will now be called PowerShell Core as it runs on
   [Accessed: 31-Oct-2018].
 2. “To Be Continuous | Ep. #37, The Man Behind Windows PowerShell,” Heavybit,
   14-Sep-2017. [Online]. Available:
-  https://www.heavybit.com/library/podcasts/to-be-continuous/ep-37-the-man-behind-windows-powershell/.
+  <https://www.heavybit.com/library/podcasts/to-be-continuous/ep-37-the-man-behind-windows-powershell/>.
   [Accessed: 31-Oct-2018].
 3. “PowerShell is Microsofts latest open source release, coming to Linux, OS X,”
 Ars Technica, 18-Aug-2016. [Online]. Available:
-https://arstechnica.com/information-technology/2016/08/powershell-is-microsofts-latest-open-source-release-coming-to-linux-os-x/.
+<https://arstechnica.com/information-technology/2016/08/powershell-is-microsofts-latest-open-source-release-coming-to-linux-os-x/>.
 [Accessed: 31-Oct-2018].
 
 [1]: https://en.wikipedia.org/wiki/Jeffrey_Snover
