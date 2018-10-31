@@ -11,9 +11,6 @@ matrix:
     - language: ruby
       rvm:
         - 2.4
-      install:
-        - gem install github-pages
-        - gem install html-proofer
       script:
         - cd docs/
         - bundle exec jekyll build --future
