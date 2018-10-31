@@ -9,7 +9,7 @@ Welcome to yet another installment of Hello World in Every Language. Today, we�
 taking a look at Hello World in Brainfuck brought to us by Christoph Böhmwalder,
 one of our biggest contributors to the Sample Programs collection.
 
-## Hello World in Brainfuck
+## Hello World in Brainfuck<sup>1</sup>
 
 With that out of the way, let’s take a look at the Hello World sample:
 
@@ -75,7 +75,7 @@ This is basically how the entire program works. It’s just a matter of choosing
 the right path in order to get from one value to the next by only using simple
 addition, subtraction, and loops.
 
-## How to Run the Solution
+## How to Run the Solution<sup>1</sup>
 
 There are plenty of Brainfuck interpreters (and even compilers!) available,
 online or offline:
@@ -94,3 +94,11 @@ tool that displays each step of a Brainfuck program’s execution.
 [5]: https://www.dcode.fr/brainfuck-language
 [6]: https://fatiherikli.github.io/brainfuck-visualizer/#PisrKysrKysrWzwrKysrKysrKys+LV08Lgo+KysrK1s8KysrKysrKz4tXTwrLgorKysrKysrLi4KKysrLgo+PisrKysrK1s8KysrKysrKz4tXTwrKy4KLS0tLS0tLS0tLS0tLgo+KysrKysrWzwrKysrKysrKys+LV08Ky4KPC4KKysrLgotLS0tLS0uCi0tLS0tLS0tLgo+Pj4rKysrWzwrKysrKysrKz4tXTwrLg==
 [8]: {{site.baseurl}}/assets/hello-world-in-brainfuck-featured-image.JPEG
+
+---
+
+#### References
+
+1. C. Böhmwalder, “Hello World in Brainfuck,” The Renegade Coder, 31-Aug-2018.
+  [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-brainfuck/>.
+  [Accessed: 31-Oct-2018].
