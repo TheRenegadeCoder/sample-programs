@@ -10,9 +10,9 @@ PowerShell is the de facto scripting language for managing Windows machines/serv
 Microsoft has made it quite clear that PowerShell is here to stay and will become
 the preferred way to manage Windows servers in the future.
 
-Jeffrey Snover is largely credited as the designer behind the language, while
+[Jeffrey Snover][1] is largely credited as the designer behind the language, while
 Bruce Payette and James Truher were also on the project, and in an interview in
-2017, Snover explained the motivation behind creating PowerShell:
+2017, Snover explained the motivation behind creating PowerShell<sup>2</sup>:
 
 I’d been driving a bunch of managing changes, and then I originally took the UNIX
 tools and made them available on Windows, and then it just didn’t work. Right?
@@ -39,6 +39,12 @@ is it’s now open-source and will now be called PowerShell Core as it runs on
 
 #### References
 
-[1] D. Leaman, “Hello World in PowerShell,” The Renegade Coder, 28-Jul-2018.
+1. D. Leaman, “Hello World in PowerShell,” The Renegade Coder, 28-Jul-2018.
   [Online]. Available: https://therenegadecoder.com/code/hello-world-in-powershell/.
   [Accessed: 31-Oct-2018].
+2. “To Be Continuous | Ep. #37, The Man Behind Windows PowerShell,” Heavybit,
+  14-Sep-2017. [Online]. Available:
+  https://www.heavybit.com/library/podcasts/to-be-continuous/ep-37-the-man-behind-windows-powershell/.
+  [Accessed: 31-Oct-2018].
+
+[1]: https://en.wikipedia.org/wiki/Jeffrey_Snover
