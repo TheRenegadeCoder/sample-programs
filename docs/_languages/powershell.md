@@ -40,7 +40,7 @@ is it’s now open-source and will now be called PowerShell Core as it runs on
 #### References
 
 1. D. Leaman, “Hello World in PowerShell,” The Renegade Coder, 28-Jul-2018.
-  [Online]. Available: https://therenegadecoder.com/code/hello-world-in-powershell/.
+  [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-powershell/>.
   [Accessed: 31-Oct-2018].
 2. “To Be Continuous | Ep. #37, The Man Behind Windows PowerShell,” Heavybit,
   14-Sep-2017. [Online]. Available:
