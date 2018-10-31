@@ -27,4 +27,8 @@ Below you'll find a list of all the available projects:
 
 In addition, you can also browse the collection by language:
 
-- {{ site.languages.url | relative_url }}
+{% for article in site.languages %}
+  {% if article.title == 'Programming Languages' %}
+  - [{{ article.title }}]({{ article.url | relative_url }})
+  {% endif %}
+{% endfor %}
