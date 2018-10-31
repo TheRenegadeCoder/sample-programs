@@ -45,7 +45,7 @@ TODO: insert image Hello World Script
 
 #### References
 
-[1] D. Leaman, “Hello World in PowerShell,” The Renegade Coder, 28-Jul-2018.
+1. D. Leaman, “Hello World in PowerShell,” The Renegade Coder, 28-Jul-2018.
   [Online]. Available: https://therenegadecoder.com/code/hello-world-in-powershell/.
   [Accessed: 31-Oct-2018].
 
