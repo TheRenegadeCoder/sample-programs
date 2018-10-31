@@ -9,10 +9,11 @@ matrix:
         provider: script
         script: bash -x deploy.sh
     - language: ruby
+      before_install:
+        - cd docs/
       rvm:
         - 2.4
       script:
-        - cd docs/
         - bundle exec jekyll build --future
         - bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html
       env:
