@@ -28,3 +28,7 @@ Luckily, there’s this cute technology called containers.
 ---
 
 #### References
+
+1. N. Villanueva, “Hello World in Opa,” The Renegade Coder, 20-Jul-2018. 
+  [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-opa/>.
+  [Accessed: 31-Oct-2018].

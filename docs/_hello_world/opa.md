@@ -153,3 +153,11 @@ Http serving on http://e9aa732ccc83:8080
 Now we also --published the 8080 port. This maps your own 8080 port, to the
 container’s 8080. Having this up, if you fire up your browser and navigate
 to http://localhost:8080, you’ll see “Hello, World!”, printed using Opa.
+
+---
+
+### References
+
+1. N. Villanueva, “Hello World in Opa,” The Renegade Coder, 20-Jul-2018.
+  [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-opa/>.
+  [Accessed: 31-Oct-2018].
