@@ -48,11 +48,7 @@ Verify that the actual output matches the expected output. See the
 
 ## Articles
 
-{% for article in site.game_of_life %}    
-  {% unless article.title contains 'Every Language' %}
-  - [{{ article.title }}]({{ article.url | relative_url }})
-  {% endunless %}
-{% endfor %}
+{% include article_list.md collection=site.game_of_life %}
 
 ## Further Reading
 

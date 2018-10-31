@@ -173,11 +173,24 @@ To get started, you'll want to create a new markdown file (i.e. `python.md`) usi
 the following template:
 
 ```markdown
+---
+title: <Sample Program> in <Language>
+layout: default
+featured-image: <name of featured image file in assets folder>
+tags: [<a list of tags>]
+---
+
+{% include featured_image.md name=page.title image=page.featured-image %}
+
 ## <Sample Program> in <Language>
 
 ## How to Run Solution
 
-## Sample Programs in Every Language
+---
+
+#### References
+
+1. <some IEEE reference>
 ```
 
 In the `## <Sample Program> in <Language>`, you'll want to break down and
@@ -187,9 +200,9 @@ In the `## How to Run Solution`, you'll want to explicitly detail how to run
 your solution. In general, we like to include one local solution and one online
 solution. More is always appreciated.
 
-Finally, in the `## Sample Programs in Every Language`, you'll want to thank
-the readers for sticking around. In addition, you may want to call out
-other related works.
+Finally, in the `## References`, you'll want to place you IEEE citations.
+We'd like to keep things relatively formal, so if you borrow content, please
+properly cite it here.
 
 If you'd like to add a featured image to any article, you can generate your
 own featured image by downloading an image of your choice from Pixabay and
@@ -212,6 +225,11 @@ file containing a project description in the docs folder. The project file
 should follow the following template:
 
 ```markdown
+---
+title: <Sample Program> in Every Language
+layout: default
+---
+
 # [Project Name]
 
 [Insert description of project here]
@@ -226,11 +244,7 @@ should follow the following template:
 
 ## Articles
 
-{% for article in site.<name of project> %}    
-  {% unless article.title contains 'Every Language' %}
-  - [{{ article.title }}]({{ article.url | relative_url }})
-  {% endunless %}
-{% endfor %}
+{% include article_list.md collection=site.<name of project> % }
 
 ## Further Reading
 

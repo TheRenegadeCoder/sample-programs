@@ -39,11 +39,7 @@ Some tests for your program are:
 
 ## Articles
 
-{% for article in site.factorial %}    
-  {% unless article.title contains 'Every Language' %}
-  - [{{ article.title }}]({{ article.url | relative_url }})
-  {% endunless %}
-{% endfor %}
+{% include article_list.md collection=site.factorial %}
 
 ## Further Reading
 
