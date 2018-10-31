@@ -4,7 +4,7 @@ Welcome to Sample Programs in Egison!
 
 ## Sample Programs
 
-- [Hello World in Egison]
+- [Hello World in Egison](https://github.com/TheRenegadeCoder/sample-programs/issues/682)
 
 ## Fun Facts
 
