@@ -4,6 +4,8 @@ layout: default
 tags: [powershell]
 ---
 
+![Hello World in PowerShell Featured Image][1]
+
 ## Hello World in PowerShell<sup>1</sup>
 
 Let’s get something working! 😊
@@ -52,3 +54,5 @@ Hello, World!
 1. D. Leaman, “Hello World in PowerShell,” The Renegade Coder, 28-Jul-2018.
   [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-powershell/>.
   [Accessed: 31-Oct-2018].
+
+[1]: {{site.baseurl}}/assets/hello-world-in-powershell-featured-image.JPEG
