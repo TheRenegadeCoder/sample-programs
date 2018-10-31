@@ -4,13 +4,11 @@ layout: default
 tags: [powershell]
 ---
 
-Welcome to a guest installment of the Hello World in Every Language series.
-I’m [Devin Leaman][1], otherwise known as [Alcha][2], and I’ll be covering Hello World
-in PowerShell, a language that appeared in 2006.
+![Hello World in PowerShell Featured Image][1]
 
 ## Hello World in PowerShell<sup>1</sup>
 
-Enough background, let’s actually get something working 😊
+Let’s get something working! 😊
 
 ```powershell
 Write-Host 'Hello, World!'
@@ -57,5 +55,4 @@ Hello, World!
   [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-powershell/>.
   [Accessed: 31-Oct-2018].
 
-[1]: https://github.com/alcha
-[2]: https://dev.to/alcha
+[1]: {{site.baseurl}}/assets/hello-world-in-powershell-featured-image.JPEG
