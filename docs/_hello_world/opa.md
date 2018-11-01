@@ -3,6 +3,8 @@ title: Hello World in Opa
 layout: default
 featured-image: hello-world-in-opa-featured-image.JPEG
 tags: [opa]
+author:
+  - nicovillanueva
 ---
 
 {% include featured_image.md name=page.title image=page.featured-image %}
