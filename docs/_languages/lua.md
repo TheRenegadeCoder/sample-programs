@@ -1,5 +1,5 @@
 ---
-title: Hello World in Lua
+title: Lua
 layout: default
 ---
 
