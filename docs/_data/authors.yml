@@ -2,3 +2,20 @@ jeremy_grifski:
   name: Jeremy Grifski
   email: jeremy.grifski@therenegadecoder.com
   web: https://therenegadecoder.com
+  bio: |
+    Jeremy grew up in a small town where he enjoyed playing soccer and video
+    games, practicing taekwondo, and trading Pokémon cards. Once out of the nest,
+    he pursued a Bachelors in Computer Engineering with a minor in Game Design.
+    After college, he spent about two years writing software for a major
+    engineering company. Today, he pursues a PhD in Computer Science in order
+    to ultimately land a teaching gig. In his spare time, Jeremy enjoys spending
+    time with his wife, playing Overwatch, practicing trombone, watching Penguins
+    hockey, and traveling the world.
+stargator:
+  name:
+  email: wildbug@linuxmail.org
+  web:
+  bio: |
+    Software Engineer in the Northern Virginia area. Worked with everything
+    from Java to Dart to JavaScript. Most of my interest lies in DevOps and
+    creating usable tooling.

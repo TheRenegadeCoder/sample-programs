@@ -3,6 +3,8 @@ title: Hello World in Lua
 layout: default
 featured-image:
 tags: [lua]
+authors:
+  - jeremy_grifski
 ---
 
 {% include featured_image.md name=page.title image=page.featured-image %}
