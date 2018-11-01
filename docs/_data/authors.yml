@@ -26,3 +26,9 @@ chrboe:
   email: christoph@boehmwalder.at
   web:
   bio:
+
+virtual_flat:
+  name: Robert Maldonado
+  email:
+  web: virtual-flat.com
+  bio:

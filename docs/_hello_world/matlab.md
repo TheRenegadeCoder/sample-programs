@@ -3,6 +3,8 @@ title: Hello World in MATLAB
 layout: default
 featured-image: hello-world-in-matlab-featured-image.JPEG
 tags: [matlab]
+author:
+  - virtual_flat
 ---
 
 {% include featured_image.md name=page.title image=page.featured-image %}
