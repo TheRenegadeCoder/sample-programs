@@ -1,4 +1,4 @@
-jeremy_grifski:
+the_renegade_coder:
   name: Jeremy Grifski
   email: jeremy.grifski@therenegadecoder.com
   web: https://therenegadecoder.com
@@ -11,6 +11,7 @@ jeremy_grifski:
     to ultimately land a teaching gig. In his spare time, Jeremy enjoys spending
     time with his wife, playing Overwatch, practicing trombone, watching Penguins
     hockey, and traveling the world.
+
 stargator:
   name:
   email: wildbug@linuxmail.org
@@ -19,3 +20,9 @@ stargator:
     Software Engineer in the Northern Virginia area. Worked with everything
     from Java to Dart to JavaScript. Most of my interest lies in DevOps and
     creating usable tooling.
+
+chrboe:
+  name: Christoph Böhmwalder
+  email: christoph@boehmwalder.at
+  web:
+  bio:

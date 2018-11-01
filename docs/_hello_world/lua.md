@@ -4,7 +4,7 @@ layout: default
 featured-image:
 tags: [lua]
 authors:
-  - jeremy_grifski
+  - the_renegade_coder
 ---
 
 {% include featured_image.md name=page.title image=page.featured-image %}
