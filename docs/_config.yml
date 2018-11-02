@@ -3,6 +3,7 @@ google_analytics: UA-97956707-2
 
 exclude: ["CNAME", "Gemfile", "templates"]
 
+collection_dir: collections
 collections:
   languages:
     output: true
