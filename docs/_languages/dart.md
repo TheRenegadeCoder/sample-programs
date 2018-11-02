@@ -1,7 +1,7 @@
 ---
 title: Dart
 layout: default
-date: 2018-11-1
+date: 2018-11-01
 tags: [dart]
 authors:
   - stargator

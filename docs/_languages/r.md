@@ -1,7 +1,7 @@
 ---
 title: R
 layout: default
-date: 2018-11-1 
+date: 2018-11-01
 tags: [r]
 authors:
   - alexandra_woerner

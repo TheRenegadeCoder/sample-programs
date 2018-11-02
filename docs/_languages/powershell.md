@@ -1,7 +1,7 @@
 ---
 title: PowerShell
 layout: default
-date: 2018-11-1 
+date: 2018-11-01
 tags: [powershell]
 authors:
   - alcha
