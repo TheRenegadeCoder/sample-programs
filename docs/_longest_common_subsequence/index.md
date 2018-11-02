@@ -1,6 +1,7 @@
 ---
 title: Longest Common Subsequence in Every Language
 layout: default
+date: 2018-11-01
 ---
 
 # Longest Common Subsequence

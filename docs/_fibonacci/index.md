@@ -1,6 +1,7 @@
 ---
 title: Fibonacci in Every Language
 layout: default
+date: 2018-11-01
 ---
 
 # Fibonacci

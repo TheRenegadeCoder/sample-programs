@@ -1,6 +1,7 @@
 ---
 title: Sample Programs in Every Language
 layout: default
+date: 2018-11-01
 ---
 
 ## Sample Programs in Every Language

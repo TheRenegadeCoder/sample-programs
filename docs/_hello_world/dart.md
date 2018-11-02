@@ -1,7 +1,7 @@
 ---
 title: Hello World in Dart
 layout: default
-date: 2018-11-1 
+date: 2018-11-01
 featured-image: hello-world-in-dart-featured-image.JPEG
 tags: [dart]
 authors:
