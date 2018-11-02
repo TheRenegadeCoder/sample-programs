@@ -10,8 +10,6 @@ authors:
   - alexandra_woerner
 ---
 
-{% include featured_image.md name=page.title image=page.featured-image %}
-
 ## Hello World in R<sup>1</sup>
 
 Fortunately, this task can be solved in a concise one-liner:

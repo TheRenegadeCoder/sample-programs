@@ -10,8 +10,6 @@ authors:
   - stargator
 ---
 
-{% include featured_image.md name=page.title image=page.featured-image %}
-
 ## Hello World in Dart<sup>1</sup>
 
 Coming from a Java background, the following snippet of code is downright

@@ -10,8 +10,6 @@ authors:
   - alcha
 ---
 
-{% include featured_image.md name=page.title image=page.featured-image %}
-
 ## Hello World in PowerShell<sup>1</sup>
 
 Let’s get something working! 😊

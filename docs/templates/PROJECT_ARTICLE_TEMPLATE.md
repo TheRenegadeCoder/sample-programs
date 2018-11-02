@@ -10,8 +10,6 @@ authors:
   - <author username from _data/authors.yml>
 ---
 
-{% include featured_image.md name=page.title image=page.featured-image %}
-
 # [Project Name]
 
 [Insert description of project here]

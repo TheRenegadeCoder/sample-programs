@@ -10,8 +10,6 @@ author:
   - virtual_flat
 ---
 
-{% include featured_image.md name=page.title image=page.featured-image %}
-
 ## Hello World in MATLAB<sup>1</sup>
 
 Syntax in MATLAB is based on its MATLAB scripting language. At any rate, here

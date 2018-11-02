@@ -10,8 +10,6 @@ authors:
   - bassem_mohamed
 ---
 
-{% include featured_image.md name=page.title image=page.featured-image %}
-
 ## Hello World In MoonScript<sup>1</sup>
 
 As you can see here, Hello World in MoonScript has a relatively simple

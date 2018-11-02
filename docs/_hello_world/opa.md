@@ -10,8 +10,6 @@ author:
   - nicovillanueva
 ---
 
-{% include featured_image.md name=page.title image=page.featured-image %}
-
 ## Hello World in Opa<sup>1</sup>
 
 As we mentioned, Opa code contains both front-end and server-side code. As

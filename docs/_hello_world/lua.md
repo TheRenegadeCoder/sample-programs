@@ -10,8 +10,6 @@ authors:
   - the_renegade_coder
 ---
 
-{% include featured_image.md name=page.title image=page.featured-image %}
-
 ## Hello World in Lua<sup>1</sup>
 
 At any rate, let’s get down to business:

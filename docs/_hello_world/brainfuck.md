@@ -10,8 +10,6 @@ authors:
   - chrboe
 ---
 
-{% include featured_image.md name=page.title image=page.featured-image %}
-
 ## Hello World in Brainfuck<sup>1</sup>
 
 With that out of the way, let’s take a look at the Hello World sample:
