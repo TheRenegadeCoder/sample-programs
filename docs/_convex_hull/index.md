@@ -9,8 +9,6 @@ tags: [convex-hull]
 authors:
 ---
 
-# Convex Hull
-
 Suppose you have a set of points in the plane. The **convex hull** of this set is the smallest
 convex polygon that contains all the points.
 
