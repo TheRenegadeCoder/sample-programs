@@ -2,6 +2,7 @@
 title: Hello World in Lua
 layout: default
 date: 2018-11-01
+last-modified: 2018-11-01
 featured-image:
 tags: [lua]
 authors:
