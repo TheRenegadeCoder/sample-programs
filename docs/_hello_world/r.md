@@ -57,8 +57,6 @@ required for installing the R environment locally.
   [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-r/>.
   [Accessed: 02-Nov-2018].
 
-[1]: http://cran.r-project.org/
-[2]: http://r-project.org/about.html
+
 [3]: https://www.r-project.org/
 [4]: http://rextester.com/l/r_online_compiler
-[5]: https://cran.r-project.org/doc/html/interface98-paper/paper.html

@@ -24,3 +24,7 @@ take a look at the [R project website][2] from which this short summary originat
 1. A. Wörner, “Hello World in R,” The Renegade Coder, 17-Sep-2018.
   [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-r/>.
   [Accessed: 02-Nov-2018].
+
+[1]: http://cran.r-project.org/
+[2]: http://r-project.org/about.html
+[5]: https://cran.r-project.org/doc/html/interface98-paper/paper.html
