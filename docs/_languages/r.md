@@ -1,6 +1,8 @@
 ---
 title: R
 layout: default
+authors:
+  - alexandra_woerner
 ---
 
 ## The R Programming Language<sup>1</sup>
