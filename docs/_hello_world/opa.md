@@ -1,6 +1,7 @@
 ---
 title: Hello World in Opa
 layout: default
+date: 2018-11-01
 featured-image: hello-world-in-opa-featured-image.JPEG
 tags: [opa]
 author:

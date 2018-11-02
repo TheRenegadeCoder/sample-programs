@@ -1,6 +1,7 @@
 ---
 title: Hello World in Solidity
 layout: default
+date: 2018-11-01
 featured-image:
 tags: [solidity]
 authors:

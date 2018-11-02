@@ -1,6 +1,7 @@
 ---
 title: Hello World in Brainfuck
 layout: default
+date: 2018-11-1 
 featured-image: hello-world-in-brainfuck-featured-image.JPEG
 tags: [brainfuck]
 authors:
