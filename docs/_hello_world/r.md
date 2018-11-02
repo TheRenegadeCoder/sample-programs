@@ -3,6 +3,8 @@ title: Hello World in R
 layout: default
 featured-image: hello-world-in-r-featured-image.JPEG
 tags: [r]
+authors:
+  - alexandra_woerner
 ---
 
 {% include featured_image.md name=page.title image=page.featured-image %}
