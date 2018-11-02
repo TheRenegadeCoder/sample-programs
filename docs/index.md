@@ -15,13 +15,7 @@ Feel free to browse the appropriate section for you below.
 
 Below you'll find a list of all the available projects:
 
-{% for collection in site.collections %}
-  {% for article in collection.docs %}
-    {% if article.title contains 'Every Language' %}
-  - [{{ article.title }}]({{ article.url | relative_url }})
-    {% endif %}
-  {% endfor %}
-{% endfor %}
+{% include projects_list.html %}
 
 ## Languages
 
