@@ -169,29 +169,8 @@ Previously, we had hosted all of the articles on [The Renegade Coder][34], but
 we've since moved away from that to support open-source editing. Now, you
 can add and update any article you want.
 
-To get started, you'll want to create a new markdown file (i.e. `python.md`) using
-the following template:
-
-```markdown
----
-title: <Sample Program> in <Language>
-layout: default
-featured-image: <name of featured image file in assets folder>
-tags: [<a list of tags>]
----
-
-{% include featured_image.md name=page.title image=page.featured-image %}
-
-## <Sample Program> in <Language>
-
-## How to Run Solution
-
----
-
-#### References
-
-1. <some IEEE reference>
-```
+To get started, you'll want to create a new markdown file (i.e. `python.md`)
+using the [CODE_ARTICLE_TEMPLATE][40].
 
 In the `## <Sample Program> in <Language>`, you'll want to break down and
 explain your code snippet.
@@ -200,18 +179,15 @@ In the `## How to Run Solution`, you'll want to explicitly detail how to run
 your solution. In general, we like to include one local solution and one online
 solution. More is always appreciated.
 
-Finally, in the `## References`, you'll want to place you IEEE citations.
+Finally, in the `#### References`, you'll want to place you IEEE citations.
 We'd like to keep things relatively formal, so if you borrow content, please
 properly cite it here.
 
 If you'd like to add a featured image to any article, you can generate your
 own featured image by downloading an image of your choice from Pixabay and
 running the [Image Titler][30] program. Then, add the image to the assets
-folder, and link it in your article like:
-
-```markdown
-![Image Description](Link to Image)
-```
+folder, and link it in your article via the `featured-image` tag in the
+front matter.
 
 And, that's it! We'll review your article once you've made the appropriate
 pull request.
@@ -312,3 +288,4 @@ These rules help grow and cultivate the community in a positive manner.
 [37]: #code
 [38]: #articles
 [39]: https://therenegadecoder.github.io/sample-programs
+[40]: docs/templates/CODE_ARTICLE_TEMPLATE.md
