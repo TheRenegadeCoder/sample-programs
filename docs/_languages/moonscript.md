@@ -1,6 +1,11 @@
 ---
 title: MoonScript
 layout: default
+date: 2018-11-01
+last-modified: 2018-11-01
+tags: [moonscript]
+authors:
+  - bassem_mohamed
 ---
 
 ## The MoonScript Programming Language<sup>1</sup>

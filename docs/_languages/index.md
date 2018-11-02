@@ -1,6 +1,10 @@
 ---
 title: Programming Languages
 layout: default
+date: 2018-11-01
+last-modified: 2018-11-01
+authors:
+  - the_renegade_coder
 ---
 
 ## A Collection of Programming Languages

@@ -1,6 +1,8 @@
 ---
 title: Baklava in Every Language
 layout: default
+date: 2018-11-01
+last-modified: 2018-11-01
 ---
 
 # Baklava

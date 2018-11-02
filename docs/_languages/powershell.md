@@ -1,7 +1,11 @@
 ---
 title: PowerShell
 layout: default
+date: 2018-11-01
+last-modified: 2018-11-01
 tags: [powershell]
+authors:
+  - alcha
 ---
 
 ## The PowerShell Programming Language<sup>1</sup>

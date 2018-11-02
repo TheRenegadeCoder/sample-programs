@@ -1,7 +1,12 @@
 ---
 title: Hello World in Brainfuck
 layout: default
+date: 2018-11-01
+last-modified: 2018-11-01
 featured-image: hello-world-in-brainfuck-featured-image.JPEG
+tags: [brainfuck]
+authors:
+  - chrboe
 ---
 
 {% include featured_image.md name=page.title image=page.featured-image %}

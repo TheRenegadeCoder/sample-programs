@@ -1,6 +1,10 @@
 ---
 title: Hello World in Every Language
 layout: default
+date: 2018-11-01
+last-modified: 2018-11-01
+authors:
+  - the_renegade_coder
 ---
 
 # Hello World

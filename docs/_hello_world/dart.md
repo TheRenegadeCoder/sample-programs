@@ -1,7 +1,12 @@
 ---
 title: Hello World in Dart
 layout: default
+date: 2018-11-01
+last-modified: 2018-11-01
 featured-image: hello-world-in-dart-featured-image.JPEG
+tags: [dart]
+authors:
+  - stargator
 ---
 
 {% include featured_image.md name=page.title image=page.featured-image %}
