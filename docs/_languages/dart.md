@@ -1,6 +1,8 @@
 ---
 title: Dart
 layout: default
+authors:
+  - stargator
 ---
 
 ## The Dart Programming Language<sup>1</sup>

@@ -1,6 +1,8 @@
 ---
 title: Programming Languages
 layout: default
+authors:
+  - the_renegade_coder
 ---
 
 ## A Collection of Programming Languages

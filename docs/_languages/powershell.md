@@ -2,6 +2,8 @@
 title: PowerShell
 layout: default
 tags: [powershell]
+authors:
+  - alcha
 ---
 
 ## The PowerShell Programming Language<sup>1</sup>

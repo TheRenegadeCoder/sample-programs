@@ -1,6 +1,9 @@
 ---
 title: MATLAB
 layout: default
+tags: [matlab]
+authors:
+  - virtual_flat
 ---
 
 ## The MATLAB Programming Language<sup>1</sup>

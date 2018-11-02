@@ -1,6 +1,9 @@
 ---
 title: MoonScript
 layout: default
+tags: [moonscript]
+authors:
+  - bassem_mohamed
 ---
 
 ## The MoonScript Programming Language<sup>1</sup>

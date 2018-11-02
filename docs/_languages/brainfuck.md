@@ -1,6 +1,8 @@
 ---
 title: Brainfuck
 layout: default
+authors:
+  - chrboe
 ---
 
 ## The Brainfuck Programming Language<sup>1</sup>

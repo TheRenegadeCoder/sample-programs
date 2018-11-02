@@ -1,6 +1,9 @@
 ---
 title: Lua
 layout: default
+tags: [lua]
+authors:
+  - the_renegade_coder
 ---
 
 ## The Lua Programming Language<sup>1</sup>

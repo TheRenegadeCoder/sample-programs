@@ -1,6 +1,8 @@
 ---
 title: Hello World in Every Language
 layout: default
+authors:
+  - the_renegade_coder
 ---
 
 # Hello World

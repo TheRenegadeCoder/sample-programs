@@ -1,6 +1,9 @@
 ---
 title: Opa
 layout: default
+tags: [opa]
+authors:
+  - nicovillanueva
 ---
 
 ## The Opa Programming Language<sup>1</sup>
