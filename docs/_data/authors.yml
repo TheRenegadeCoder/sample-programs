@@ -1,8 +1,10 @@
 alcha:
   name: Devin Leaman
-  email:
-  web:
-  bio:
+  email: info@hasslefree.solutions
+  web: https://hasslefree.solutions
+  bio: |
+    Another geek 🤓 on the net who's addicted to coffee ☕, and I mostly work
+    with Node.js, Java/Kotlin, and PowerShell.
 
 alexandra_woerner:
   name: Alexandra Wörner
@@ -11,10 +13,15 @@ alexandra_woerner:
   bio:
 
 bassem_mohamed:
-  name:
-  email:
-  web:
-  bio:
+  name: Bassem Mohamed
+  email: bassemmohamed1994@gmail.com
+  web: https://www.facebook.com/Bassem.mohamed1994
+  bio: |
+    Bassem is a developer, tech enthusiast. Started his career as a web developer
+    in a digital marketing agency. After one year of hard work, it got him enough
+    experience to land a job as a core system engineer in one of the biggest
+    banks in Egypt. Being a junior developer and 24 years old, he still has a
+    long way to go.
 
 chrboe:
   name: Christoph Böhmwalder
@@ -24,7 +31,7 @@ chrboe:
 
 nicovillanueva:
   name: Nico Villanueva
-  email:
+  email: villanueva.arg@gmail.com
   web:
   bio:
 
