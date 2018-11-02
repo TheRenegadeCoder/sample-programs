@@ -1,14 +1,12 @@
 ---
-title: MATLAB
+title: The MATLAB Programming Language
 layout: default
 date: 2018-11-01
-last-modified: 2018-11-01
+last-modified: 2018-11-02
 tags: [matlab]
 authors:
   - virtual_flat
 ---
-
-## The MATLAB Programming Language<sup>1</sup>
 
 MATLAB (short for MATrix LABoratory) is a high-level programming language initially
 released in 1984. It markets itself as an easy-to-pick-up tool for scientists,
@@ -19,7 +17,7 @@ Cleve Moler, developed the language, so his students could use snippets of code
 for solving linear systems and obtaining eigenvalues/eigenvectors (LINPACK and
 EISPACK respectively) without having to learn Fortran. Moler’s creation was
 immediately popular for its ease-of-use, interactivity and expandability and
-sports over 3 million users world-wide.
+sports over 3 million users world-wide.<sup>1</sup>
 
 ---
 
