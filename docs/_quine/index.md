@@ -9,8 +9,6 @@ tags: [quine]
 authors:
 ---
 
-# Quine
-
 For those of you that don't know, a quine is a program which can replicate
 itself--or more specifically:
 

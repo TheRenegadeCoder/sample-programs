@@ -9,8 +9,6 @@ tags: [reverse-a-string]
 authors:
 ---
 
-# Reverse a String
-
 While Hello World is simple, it often does not show off many interesting
 features of a language. Fortunately, this repository shares more samples than
 Hello World. One of these more complex programs is known as Reverse a String.

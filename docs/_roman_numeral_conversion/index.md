@@ -9,10 +9,6 @@ tags: [roman-numeral-conversion]
 authors:
 ---
 
-{% include featured_image.md name=page.title image=page.featured-image %}
-
-# {{ page.title }}
-
 Roman numerals are the numbers that were used in ancient Rome, which employed
 combinations of letters from the Latin alphabet (I, V, X, L, C, D and M).
 
