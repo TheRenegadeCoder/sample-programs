@@ -169,87 +169,43 @@ Previously, we had hosted all of the articles on [The Renegade Coder][34], but
 we've since moved away from that to support open-source editing. Now, you
 can add and update any article you want.
 
-To get started, you'll want to create a new markdown file (i.e. `python.md`) using
-the following template:
+Currently, there are three types of articles you can write: code, project, and
+language. You can find out more about this type of articles below.
 
-```markdown
----
-title: <Sample Program> in <Language>
-layout: default
-featured-image: <name of featured image file in assets folder>
-tags: [<a list of tags>]
----
+#### Code
 
-{% include featured_image.md name=page.title image=page.featured-image %}
+To get started, you'll want to create a new markdown file (i.e. `python.md`)
+using the [CODE_ARTICLE_TEMPLATE][40].
 
-## <Sample Program> in <Language>
+Make sure you populate the top section (aka the Front Matter) before you're done.
 
-## How to Run Solution
-
----
-
-#### References
-
-1. <some IEEE reference>
-```
-
-In the `## <Sample Program> in <Language>`, you'll want to break down and
+In the `## {{ page.title }}`, you'll want to break down and
 explain your code snippet.
 
 In the `## How to Run Solution`, you'll want to explicitly detail how to run
 your solution. In general, we like to include one local solution and one online
 solution. More is always appreciated.
 
-Finally, in the `## References`, you'll want to place you IEEE citations.
+Finally, in the `#### References`, you'll want to place you IEEE citations.
 We'd like to keep things relatively formal, so if you borrow content, please
 properly cite it here.
 
 If you'd like to add a featured image to any article, you can generate your
 own featured image by downloading an image of your choice from Pixabay and
 running the [Image Titler][30] program. Then, add the image to the assets
-folder, and link it in your article like:
-
-```markdown
-![Image Description](Link to Image)
-```
+folder, and link it in your article via the `featured-image` tag in the
+Front Matter.
 
 And, that's it! We'll review your article once you've made the appropriate
 pull request.
 
-### Projects
+#### Projects
 
 Currently, you can find a list of projects on our [project homepage][39].
 
 If you'd like to add a project, feel free to create a pull request with a new
 file containing a project description in the docs folder. The project file
-should follow the following template:
-
-```markdown
----
-title: <Sample Program> in Every Language
-layout: default
----
-
-# [Project Name]
-
-[Insert description of project here]
-
-## Requirements
-
-[Outline program requirements here]
-
-## Testing
-
-[Outline a comprehensive set of tests here]
-
-## Articles
-
-{% include article_list.md collection=site.<name of project> % }
-
-## Further Reading
-
-- [List useful links here]
-```
+should follow the [PROJECT_ARTICLE_TEMPLATE.md][41].
 
 Feel free to browse other projects to get an idea of how to fill out each
 section.
@@ -264,6 +220,15 @@ following template information:
 ```
 
 This will allow the project to be tracked as a Jekyll collection.
+
+#### Languages
+
+Finally, you can also introduce a new language article. To do so, add a new
+`<languag>.md` file to the `_languages` collection using the
+[LANGUAGE_ARTICLE_TEMPLATE.md][42].
+
+Feel free to look at other articles in the collection for inspiration on how
+to fill out that template.
 
 ## Plagiarism
 
@@ -312,3 +277,6 @@ These rules help grow and cultivate the community in a positive manner.
 [37]: #code
 [38]: #articles
 [39]: https://therenegadecoder.github.io/sample-programs
+[40]: docs/templates/CODE_ARTICLE_TEMPLATE.md
+[41]: docs/templates/PROJECT_ARTICLE_TEMPLATE.md
+[42]: docs/templates/LANGUAGE_ARTICLE_TEMPLATE.md
