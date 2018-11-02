@@ -4,7 +4,6 @@ layout: default
 date: 2018-11-01
 last-modified: 2018-11-02
 featured-image: hello-world-in-r-featured-image.JPEG
-categories: [code]
 tags: [r, hello-world]
 authors:
   - alexandra_woerner
