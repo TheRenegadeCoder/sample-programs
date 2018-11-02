@@ -1,5 +1,5 @@
 ---
-title: Brainfuck
+title: <Language>
 layout: default
 date: YYYY-MM-DD
 last-modified: YYYY-MM-DD
