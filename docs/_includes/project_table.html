@@ -1,0 +1,29 @@
+<table>
+  <colgroup>
+    <col width="70%" />
+    <col width="30%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th>Project</th>
+      <th>Tags</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    {% for collection in site.collections %}
+      {% for article in collection.docs %}
+        {% if article.title contains include.filter %}
+        <tr>
+          <td>
+            <a href="{{ article.url | relative_url }}">{{ article.title }}</a>
+          </td>
+          <td>
+            {{ article.tags }}
+          </td>
+        </tr>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </tbody>
+</table>
