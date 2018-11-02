@@ -1,5 +1,5 @@
 ---
-title: <Language>
+title: The <Language> Programming Language
 layout: default
 date: YYYY-MM-DD
 last-modified: YYYY-MM-DD
@@ -11,7 +11,7 @@ authors:
 
 {% include featured_image.md name=page.title image=page.featured-image %}
 
-## The <language> Programming Language
+## {{ page.title }}
 
 ---
 
