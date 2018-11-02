@@ -9,7 +9,7 @@ show_downloads: true
 exclude: ["CNAME", "Gemfile", "templates"]
 
 # Collection data
-collection_dir: collections
+collections_dir: collections
 collections:
   languages:
     output: true
