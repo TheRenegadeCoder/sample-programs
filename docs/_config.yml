@@ -1,8 +1,14 @@
+# Theme data
 theme: jekyll-theme-cayman
+title: Sample Programs in Every Language
+description: A Collection of Code Snippets in as Many Programming Languages as Possible
 google_analytics: UA-97956707-2
+show_downloads: true
 
+# File exclusion settings
 exclude: ["CNAME", "Gemfile", "templates"]
 
+# Collection data
 collection_dir: collections
 collections:
   languages:
