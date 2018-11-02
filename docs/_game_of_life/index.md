@@ -2,10 +2,14 @@
 title: Game of Life in Every Language
 layout: default
 date: 2018-11-01
-last-modified: 2018-11-01
+last-modified: 2018-11-02
+featured-image:
+categories: [project]
+tags: [game-of-life]
+authors:
 ---
 
-# Game of Life
+## {{ page.title }}
 
 For those of you that don't know, the Game of Life is basically a cell
 simulation where cells are arranged in an infinite grid. Each cell has one
