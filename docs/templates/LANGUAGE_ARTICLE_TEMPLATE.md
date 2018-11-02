@@ -10,10 +10,10 @@ authors:
   - <author username from _data/authors.yml>
 ---
 
-## {{ page.title }}
+[Insert description of language here]
 
 ---
 
 #### References
 
-1. <some IEEE reference>
+1. [some IEEE reference]
