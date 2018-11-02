@@ -172,6 +172,8 @@ can add and update any article you want.
 To get started, you'll want to create a new markdown file (i.e. `python.md`)
 using the [CODE_ARTICLE_TEMPLATE][40].
 
+Make sure you populate the top section (aka the Front Matter) before you're done.
+
 In the `## <Sample Program> in <Language>`, you'll want to break down and
 explain your code snippet.
 
@@ -187,7 +189,7 @@ If you'd like to add a featured image to any article, you can generate your
 own featured image by downloading an image of your choice from Pixabay and
 running the [Image Titler][30] program. Then, add the image to the assets
 folder, and link it in your article via the `featured-image` tag in the
-front matter.
+Front Matter.
 
 And, that's it! We'll review your article once you've made the appropriate
 pull request.
