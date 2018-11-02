@@ -1,5 +1,5 @@
 ---
-title: Opa
+title: The Opa Programming Language
 layout: default
 date: 2018-11-01
 last-modified: 2018-11-01
@@ -7,8 +7,6 @@ tags: [opa]
 authors:
   - nicovillanueva
 ---
-
-## The Opa Programming Language<sup>1</sup>
 
 Opa is sadly a short-lived language, created in 2011 by the company MLState.
 It’s strongly focused on webapps, as it lets you write server-side and client-side
@@ -30,7 +28,7 @@ In a time where installing a language (or anything really) should not take more
 than 2 or 3 commands (apt update && apt install -y Stuff-0.1.1-dev), this was a
 paaaain.
 
-Luckily, there’s this cute technology called containers.
+Luckily, there’s this cute technology called containers.<sup>1</sup>
 
 ---
 

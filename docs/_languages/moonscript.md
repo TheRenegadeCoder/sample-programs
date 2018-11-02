@@ -1,5 +1,5 @@
 ---
-title: MoonScript
+title: The MoonScript Programming Language
 layout: default
 date: 2018-11-01
 last-modified: 2018-11-01
@@ -7,8 +7,6 @@ tags: [moonscript]
 authors:
   - bassem_mohamed
 ---
-
-## The MoonScript Programming Language<sup>1</sup>
 
 According to [MoonScript.org][1], MoonScript is a dynamic scripting language that
 compiles into Lua. What is Lua? Lua is a powerful, efficient, lightweight,
@@ -24,7 +22,7 @@ How did MoonScript start you may ask? Well, its author [Leaf Corcoran][2] built
 MoonScript, started building games with MoonScript, added them to [itch.io][3]—an
 online platform for indie games which is also built with MoonScript—then
 generalized the code base to a general purpose web framework with both
-MoonScript and Lua APIs called Lapis.
+MoonScript and Lua APIs called Lapis.<sup>1</sup>
 
 ---
 
