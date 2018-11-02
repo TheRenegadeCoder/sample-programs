@@ -1,5 +1,5 @@
 ---
-title: Dart
+title: The Dart Programming Language
 layout: default
 date: 2018-11-01
 last-modified: 2018-11-01
@@ -7,8 +7,6 @@ tags: [dart]
 authors:
   - stargator
 ---
-
-## The Dart Programming Language<sup>1</sup>
 
 Dart is a general-purpose language that was designed with five goals:
 
@@ -40,7 +38,7 @@ on the language for it’s main method of generating revenue.
 The language also has many great features like garbage collection and a strong
 typing system ([as of Dart 2.0][5]). All of it sits on top of a VM like Java, which
 allows there to be less configuration between the test side and the source code.
-A programmer can just get started from the get-go!
+A programmer can just get started from the get-go!<sup>1</sup>
 
 ---
 
