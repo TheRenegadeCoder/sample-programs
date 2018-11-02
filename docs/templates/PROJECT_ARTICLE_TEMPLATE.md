@@ -1,5 +1,5 @@
 ---
-title: <Sample Program> in <Language>
+title: <Sample Program> in Every Language
 layout: default
 date: YYYY-MM-DD
 last-modified: YYYY-MM-DD
@@ -11,9 +11,25 @@ authors:
 
 {% include featured_image.md name=page.title image=page.featured-image %}
 
-## <Sample Program> in <Language>
+# [Project Name]
 
-## How to Run Solution
+[Insert description of project here]
+
+## Requirements
+
+[Outline program requirements here]
+
+## Testing
+
+[Outline a comprehensive set of tests here]
+
+## Articles
+
+{% include article_list.md collection=site.<name of project> % }
+
+## Further Reading
+
+- [List useful links here]
 
 ---
 

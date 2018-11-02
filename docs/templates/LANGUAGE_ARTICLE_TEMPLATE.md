@@ -1,5 +1,5 @@
 ---
-title: <Sample Program> in <Language>
+title: Brainfuck
 layout: default
 date: YYYY-MM-DD
 last-modified: YYYY-MM-DD
@@ -11,9 +11,7 @@ authors:
 
 {% include featured_image.md name=page.title image=page.featured-image %}
 
-## <Sample Program> in <Language>
-
-## How to Run Solution
+## The <language> Programming Language
 
 ---
 
