@@ -2,7 +2,11 @@
 title: Reverse a String in Every Language
 layout: default
 date: 2018-11-01
-last-modified: 2018-11-01
+last-modified: 2018-11-02
+featured-image:
+categories: [project]
+tags: [reverse-a-string]
+authors:
 ---
 
 # Reverse a String

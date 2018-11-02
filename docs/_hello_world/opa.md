@@ -2,9 +2,10 @@
 title: Hello World in Opa
 layout: default
 date: 2018-11-01
-last-modified: 2018-11-01
-featured-image: hello-world-in-opa-featured-image.JPEG
-tags: [opa]
+last-modified: 2018-11-02
+featured-image: hello-world-in-opa-featured-image.JPEG\
+categories: [code]
+tags: [opa, hello-world]
 author:
   - nicovillanueva
 ---

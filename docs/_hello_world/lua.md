@@ -2,9 +2,10 @@
 title: Hello World in Lua
 layout: default
 date: 2018-11-01
-last-modified: 2018-11-01
+last-modified: 2018-11-02
 featured-image:
-tags: [lua]
+categories: [code]
+tags: [lua, hello-world]
 authors:
   - the_renegade_coder
 ---

@@ -2,7 +2,11 @@
 title: Roman Numeral Conversion in Every Language
 layout: default
 date: 2018-11-01
-last-modified: 2018-11-01
+last-modified: 2018-11-02
+featured-image:
+categories: [project]
+tags: [roman-numeral-conversion]
+authors:
 ---
 
 {% include featured_image.md name=page.title image=page.featured-image %}

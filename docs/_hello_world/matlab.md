@@ -2,9 +2,10 @@
 title: Hello World in MATLAB
 layout: default
 date: 2018-11-01
-last-modified: 2018-11-01
+last-modified: 2018-11-02
 featured-image: hello-world-in-matlab-featured-image.JPEG
-tags: [matlab]
+categories: [code]
+tags: [matlab, hello-world]
 author:
   - virtual_flat
 ---
