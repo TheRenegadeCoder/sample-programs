@@ -8,27 +8,9 @@ last-modified: 2018-11-02
 Welcome to Sample Programs in Every Language, a collection of code snippets
 in as many languages as possible. Thanks for taking an interest in our project!
 
-Currently, our documentation is organized in two ways: by project or by language.
-Feel free to browse the appropriate section for you below.
+Currently, our documentation is organized in two ways:
+by [project][1] or by [language][2]. Feel free to browse these pages to learn
+more about our project.
 
-## Projects
-
-Below you'll find a list of all the available projects:
-
-{% for collection in site.collections %}
-  {% for article in collection.docs %}
-    {% if article.title contains 'Every Language' %}
-  - [{{ article.title }}]({{ article.url | relative_url }})
-    {% endif %}
-  {% endfor %}
-{% endfor %}
-
-## Languages
-
-In addition, you can also browse the collection by language:
-
-{% for article in site.languages %}
-  {% if article.title == 'Programming Languages' %}
-  - [{{ article.title }}]({{ article.url | relative_url }})
-  {% endif %}
-{% endfor %}
+[1]: {{ site.baseurl }}/projects
+[2]: {{ site.baseurl }}/languages
