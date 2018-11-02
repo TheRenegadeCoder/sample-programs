@@ -1,6 +1,7 @@
 ---
 title: Programming Languages
 layout: default
+date: 2018-11-1 
 authors:
   - the_renegade_coder
 ---

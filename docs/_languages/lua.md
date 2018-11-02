@@ -1,6 +1,7 @@
 ---
 title: Lua
 layout: default
+date: 2018-11-1 
 tags: [lua]
 authors:
   - the_renegade_coder

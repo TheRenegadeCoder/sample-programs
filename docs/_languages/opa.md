@@ -1,6 +1,7 @@
 ---
 title: Opa
 layout: default
+date: 2018-11-1 
 tags: [opa]
 authors:
   - nicovillanueva

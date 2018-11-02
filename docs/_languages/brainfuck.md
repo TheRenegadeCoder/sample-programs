@@ -1,6 +1,8 @@
 ---
 title: Brainfuck
 layout: default
+date: 2018-11-1
+tags: [brainfuck]
 authors:
   - chrboe
 ---

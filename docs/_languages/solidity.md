@@ -1,6 +1,8 @@
 ---
 title: Solidity
 layout: default
+date: 2018-11-1
+tags: [solidity]
 authors:
   - two_clutch
 ---

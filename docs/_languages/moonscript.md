@@ -1,6 +1,7 @@
 ---
 title: MoonScript
 layout: default
+date: 2018-11-1 
 tags: [moonscript]
 authors:
   - bassem_mohamed
