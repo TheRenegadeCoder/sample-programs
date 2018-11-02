@@ -174,7 +174,7 @@ using the [CODE_ARTICLE_TEMPLATE][40].
 
 Make sure you populate the top section (aka the Front Matter) before you're done.
 
-In the `## <Sample Program> in <Language>`, you'll want to break down and
+In the `## {{ page.title }}`, you'll want to break down and
 explain your code snippet.
 
 In the `## How to Run Solution`, you'll want to explicitly detail how to run
@@ -200,34 +200,7 @@ Currently, you can find a list of projects on our [project homepage][39].
 
 If you'd like to add a project, feel free to create a pull request with a new
 file containing a project description in the docs folder. The project file
-should follow the following template:
-
-```markdown
----
-title: <Sample Program> in Every Language
-layout: default
----
-
-# [Project Name]
-
-[Insert description of project here]
-
-## Requirements
-
-[Outline program requirements here]
-
-## Testing
-
-[Outline a comprehensive set of tests here]
-
-## Articles
-
-{% include article_list.md collection=site.<name of project> % }
-
-## Further Reading
-
-- [List useful links here]
-```
+should follow the [PROJECT_ARTICLE_TEMPLATE.md][41].
 
 Feel free to browse other projects to get an idea of how to fill out each
 section.
@@ -291,3 +264,4 @@ These rules help grow and cultivate the community in a positive manner.
 [38]: #articles
 [39]: https://therenegadecoder.github.io/sample-programs
 [40]: docs/templates/CODE_ARTICLE_TEMPLATE.md
+[41]: docs/templates/PROJECT_ARTICLE_TEMPLATE.md

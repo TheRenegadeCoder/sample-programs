@@ -11,7 +11,7 @@ authors:
 
 {% include featured_image.md name=page.title image=page.featured-image %}
 
-## <Sample Program> in <Language>
+## {{ page.title }}
 
 ## How to Run Solution
 
