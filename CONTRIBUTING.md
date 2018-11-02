@@ -169,6 +169,11 @@ Previously, we had hosted all of the articles on [The Renegade Coder][34], but
 we've since moved away from that to support open-source editing. Now, you
 can add and update any article you want.
 
+Currently, there are three types of articles you can write: code, project, and
+language. You can find out more about this type of articles below.
+
+#### Code
+
 To get started, you'll want to create a new markdown file (i.e. `python.md`)
 using the [CODE_ARTICLE_TEMPLATE][40].
 
@@ -194,7 +199,7 @@ Front Matter.
 And, that's it! We'll review your article once you've made the appropriate
 pull request.
 
-### Projects
+#### Projects
 
 Currently, you can find a list of projects on our [project homepage][39].
 
@@ -215,6 +220,15 @@ following template information:
 ```
 
 This will allow the project to be tracked as a Jekyll collection.
+
+#### Languages
+
+Finally, you can also introduce a new language article. To do so, add a new
+`<languag>.md` file to the `_languages` collection using the
+[LANGUAGE_ARTICLE_TEMPLATE.md][42].
+
+Feel free to look at other articles in the collection for inspiration on how
+to fill out that template.
 
 ## Plagiarism
 
@@ -265,3 +279,4 @@ These rules help grow and cultivate the community in a positive manner.
 [39]: https://therenegadecoder.github.io/sample-programs
 [40]: docs/templates/CODE_ARTICLE_TEMPLATE.md
 [41]: docs/templates/PROJECT_ARTICLE_TEMPLATE.md
+[42]: docs/templates/LANGUAGE_ARTICLE_TEMPLATE.md
