@@ -1,19 +1,17 @@
 ---
-title: Solidity
+title: The Solidity Programming Language
 layout: default
 date: 2018-11-01
-last-modified: 2018-11-01
+last-modified: 2018-11-02
 tags: [solidity]
 authors:
   - two_clutch
 ---
 
-## The Solidity Programming Language<sup>1</sup>
-
 To understand Solidity, it is imperative to comprehend the context in which it
 is used. So, the first question to ask is: what is a smart contract?
 
-### Smart Contract
+### Smart Contract<sup>1</sup>
 
 [According to Wikipedia][1], a smart contract is a computer protocol intended to
 digitally facilitate, verify, or enforce the negotiation or performance of a
@@ -24,7 +22,7 @@ you’re familiar with. By removing the human factor and voiding the need for a
 third-party, people and business are able to save money and reduce the chance of
 fraud. Smart contracts are the main driving force of blockchains.
 
-### Blockchain
+### Blockchain<sup>1</sup>
 
 [According to Wikipedia][2], a blockchain is a continuously growing list of records,
 called blocks, which are linked and secured using cryptography. Each block

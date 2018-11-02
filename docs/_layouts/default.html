@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/assets/favicon.ico">
 
     {% if site.google_analytics %}
       <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
@@ -36,7 +37,7 @@
 
     <main id="content" class="main-content" role="main">
       <h1>{{ page.title }}</h1>
-      <small>Published on {{ page.date }} (Updated: {{ page.last-modified }})</small>
+      <small>Published on {{ page.date | date_to_long_string }} (Updated: {{ page.last-modified | date_to_long_string }})</small>
       {% include featured_image.html name=page.title image=page.featured-image %}
       {{ content }}
       <footer class="site-footer">

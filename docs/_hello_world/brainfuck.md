@@ -10,8 +10,6 @@ authors:
   - chrboe
 ---
 
-## Hello World in Brainfuck<sup>1</sup>
-
 With that out of the way, let’s take a look at the Hello World sample:
 
 ```brainfuck
@@ -74,7 +72,7 @@ a lowercase ‘e’.
 
 This is basically how the entire program works. It’s just a matter of choosing
 the right path in order to get from one value to the next by only using simple
-addition, subtraction, and loops.
+addition, subtraction, and loops.<sup>1</sup>
 
 ## How to Run the Solution<sup>1</sup>
 

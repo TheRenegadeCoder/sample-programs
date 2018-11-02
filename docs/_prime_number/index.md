@@ -9,8 +9,6 @@ tag: [prime-numbers]
 authors:
 ---
 
-# Prime Numbers
-
 A prime number is a positive integer which is divisible only by 1 and itself.
 For example: 2, 3, 5, 7, 11, 13
 

@@ -10,9 +10,11 @@ authors:
   - <author username from _data/authors.yml>
 ---
 
-## {{ page.title }}
+[Insert code description here]
 
 ## How to Run Solution
+
+[Insert directions here]
 
 ---
 

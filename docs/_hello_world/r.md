@@ -10,8 +10,6 @@ authors:
   - alexandra_woerner
 ---
 
-## Hello World in R<sup>1</sup>
-
 Fortunately, this task can be solved in a concise one-liner:
 
 ```r
@@ -36,7 +34,7 @@ separator “, ” between the two strings, resulting in the desired output
 Hello, World!.
 
 Now, we know what we need to produce the output. The next section explains how
-we can also see the output of our program.
+we can also see the output of our program.<sup>1</sup>
 
 ## How to Run the Solution<sup>1</sup>
 

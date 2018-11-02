@@ -10,8 +10,6 @@ authors:
   - alcha
 ---
 
-## Hello World in PowerShell<sup>1</sup>
-
 Let’s get something working! 😊
 
 ```powershell

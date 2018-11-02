@@ -1,14 +1,12 @@
 ---
-title: R
+title: The R Programming Language
 layout: default
 date: 2018-11-01
-last-modified: 2018-11-01
+last-modified: 2018-11-02
 tags: [r]
 authors:
   - alexandra_woerner
 ---
-
-## The R Programming Language<sup>1</sup>
 
 R is a language as well as an environment especially suited for statistical
 computing, data analysis and data visualization. The first version of this
@@ -20,7 +18,8 @@ develops the language and releases new extensions. As a result, [CRAN][1]
 emerged as a rich archive of packages extending the base functionality of R.
 
 In case you are interested in more information on the history and features of R,
-take a look at the [R project website][2] from which this short summary originates.
+take a look at the [R project website][2] from which this short summary
+originates.<sup>1</sup>
 
 ---
 

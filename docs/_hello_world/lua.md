@@ -10,8 +10,6 @@ authors:
   - the_renegade_coder
 ---
 
-## Hello World in Lua<sup>1</sup>
-
 At any rate, let’s get down to business:
 
 ```lua
@@ -28,7 +26,8 @@ string to stdout. In this case, it’s called print, but the developers could
 have just as easily called it put, write, println, or puts. If you know of any
 other fun print function names, let me know in the comments.
 
-As usual, we pass a string to the print function, and the function handles the rest.
+As usual, we pass a string to the print function, and the function handles the
+rest.<sup>1</sup>
 
 ## How to Run the Solution<sup>1</sup>
 

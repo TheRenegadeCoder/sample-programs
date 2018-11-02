@@ -2,10 +2,8 @@
 title: Sample Programs in Every Language
 layout: default
 date: 2018-11-01
-last-modified: 2018-11-01
+last-modified: 2018-11-02
 ---
-
-## Sample Programs in Every Language
 
 Welcome to Sample Programs in Every Language, a collection of code snippets
 in as many languages as possible. Thanks for taking an interest in our project!

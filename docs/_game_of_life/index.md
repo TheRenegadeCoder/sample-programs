@@ -9,8 +9,6 @@ tags: [game-of-life]
 authors:
 ---
 
-## {{ page.title }}
-
 For those of you that don't know, the Game of Life is basically a cell
 simulation where cells are arranged in an infinite grid. Each cell has one
 of two states: alive or dead.

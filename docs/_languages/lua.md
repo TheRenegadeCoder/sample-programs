@@ -1,14 +1,12 @@
 ---
-title: Lua
+title: The Lua Programming Language
 layout: default
 date: 2018-11-01
-last-modified: 2018-11-01
+last-modified: 2018-11-02
 tags: [lua]
 authors:
   - the_renegade_coder
 ---
-
-## The Lua Programming Language<sup>1</sup>
 
 As usual, I’m not super familiar with the language we’re working with today,
 so let’s consult [Wikipedia][1].
@@ -28,7 +26,7 @@ user-friendly, but it does eliminate the need for reference management, so I
 can’t really complain.
 
 Due to its lightweight and embedded nature, Lua has also found a home in the
-gaming community. How have I never used it?
+gaming community. How have I never used it?<sup>1</sup>
 
 ---
 

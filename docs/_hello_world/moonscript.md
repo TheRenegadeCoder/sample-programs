@@ -10,8 +10,6 @@ authors:
   - bassem_mohamed
 ---
 
-## Hello World In MoonScript<sup>1</sup>
-
 As you can see here, Hello World in MoonScript has a relatively simple
 implementation:
 
@@ -42,7 +40,7 @@ local z = x + y
 return print(y)
 ```
 
-How cool is that?
+How cool is that?<sup>1</sup>
 
 ## How to Run the Solution<sup>1</sup>
 

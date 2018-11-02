@@ -10,8 +10,6 @@ authors:
   - <author username from _data/authors.yml>
 ---
 
-# [Project Name]
-
 [Insert description of project here]
 
 ## Requirements

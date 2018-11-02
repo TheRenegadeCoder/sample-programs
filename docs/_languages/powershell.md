@@ -1,5 +1,5 @@
 ---
-title: PowerShell
+title: The PowerShell Programming Language
 layout: default
 date: 2018-11-01
 last-modified: 2018-11-01
@@ -7,8 +7,6 @@ tags: [powershell]
 authors:
   - alcha
 ---
-
-## The PowerShell Programming Language<sup>1</sup>
 
 PowerShell is the de facto scripting language for managing Windows machines/servers.
 [Microsoft][2] has made it quite clear that PowerShell is here to stay and will become
