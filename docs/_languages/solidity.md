@@ -1,6 +1,8 @@
 ---
 title: Solidity
 layout: default
+authors:
+  - two_clutch
 ---
 
 ## The Solidity Programming Language<sup>1</sup>

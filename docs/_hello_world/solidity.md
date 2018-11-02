@@ -3,6 +3,8 @@ title: Hello World in Solidity
 layout: default
 featured-image:
 tags: [solidity]
+authors:
+  - two_clutch
 ---
 
 {% include featured_image.md name=page.title image=page.featured-image %}
