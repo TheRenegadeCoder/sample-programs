@@ -2,14 +2,13 @@
 title: Hello World in Solidity
 layout: default
 date: 2018-11-01
-last-modified: 2018-11-01
+last-modified: 2018-11-02
 featured-image:
-tags: [solidity]
+categories: [code]
+tags: [solidity, hello-world]
 authors:
   - two_clutch
 ---
-
-{% include featured_image.md name=page.title image=page.featured-image %}
 
 ## Hello World in Solidity<sup>1</sup>
 

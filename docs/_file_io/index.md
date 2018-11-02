@@ -2,7 +2,11 @@
 title: File IO in Every Language
 layout: default
 date: 2018-11-01
-last-modified: 2018-11-01
+last-modified: 2018-11-02
+feature-image:
+categories: [project]
+tags: [file-io]
+authors:
 ---
 
 # File IO

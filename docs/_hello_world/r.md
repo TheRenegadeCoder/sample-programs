@@ -2,14 +2,13 @@
 title: Hello World in R
 layout: default
 date: 2018-11-01
-last-modified: 2018-11-01
+last-modified: 2018-11-02
 featured-image: hello-world-in-r-featured-image.JPEG
-tags: [r]
+categories: [code]
+tags: [r, hello-world]
 authors:
   - alexandra_woerner
 ---
-
-{% include featured_image.md name=page.title image=page.featured-image %}
 
 ## Hello World in R<sup>1</sup>
 

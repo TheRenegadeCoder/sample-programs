@@ -2,14 +2,13 @@
 title: Hello World in PowerShell
 layout: default
 date: 2018-11-01
-last-modified: 2018-11-01
+last-modified: 2018-11-02
 featured-image: hello-world-in-powershell-featured-image.JPEG
-tags: [powershell]
+categories: [code]
+tags: [powershell, hello-world]
 authors:
   - alcha
 ---
-
-{% include featured_image.md name=page.title image=page.featured-image %}
 
 ## Hello World in PowerShell<sup>1</sup>
 
