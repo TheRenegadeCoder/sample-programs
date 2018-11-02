@@ -10,8 +10,6 @@ author:
   - nicovillanueva
 ---
 
-## Hello World in Opa<sup>1</sup>
-
 As we mentioned, Opa code contains both front-end and server-side code. As
 such, our Hello World looks like this:
 
@@ -31,7 +29,7 @@ main() function. In this case, it’s parameters take the server’s settings
 (default http server in this case) and a component to render.
 
 Also, we do not define imports of any kind. Everything is picked up off the
-standard library.
+standard library.<sup>1</sup>
 
 ## How to Run the Solution<sup>1</sup>
 

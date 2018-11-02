@@ -10,8 +10,6 @@ authors:
   - stargator
 ---
 
-## Hello World in Dart<sup>1</sup>
-
 Coming from a Java background, the following snippet of code is downright
 stripped to the barebones.
 
@@ -42,7 +40,7 @@ The last concept are arrow functions (“=>”). These are methods like print or
 in this case, main that only do one thing. Because they only do one thing, we
 can use “=>” from the method’s definition (“main()”) directly to the logic.
 Other more complex methods may require the use of “return”. But that’s not
-required in this case.
+required in this case.<sup>1</sup>
 
 ## How to Run the Solution
 
