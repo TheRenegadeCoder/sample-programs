@@ -70,7 +70,7 @@ Conversion program:
 
 ## Articles
 
-{% include article_list.md %}
+{% include article_list.md collection=site.categories.roman-numeral-conversion %}
 
 ## Further Reading
 
