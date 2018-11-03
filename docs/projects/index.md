@@ -9,4 +9,4 @@ datatable: true
 
 Below you'll find a list of all the available projects:
 
-{% include project_table.html filter='Every Language %}
+{% include project_table.html filter='Every Language' %}
