@@ -14,4 +14,4 @@ authors:
 The following list contains all of the articles we have on the various
 programming languages:
 
-{% include languages_list.md %}
+{% include language_list.md %}
