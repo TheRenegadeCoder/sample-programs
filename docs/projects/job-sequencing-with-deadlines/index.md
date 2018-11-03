@@ -66,3 +66,17 @@ verify the correctness of your solution:
 
 | Description | Input | Output |
 |-------------|-------|--------|
+| No Input | | "Usage: please provide a list of profits and a list of deadlines" |
+| Empty Input | | "Usage: please provide a list of profits and a list of deadlines" |
+| Missing Input | "25, 15, 10, 5" | "Usage: please provide a list of profits and a list of deadlines" |
+| Sample Input | "25, 15, 10, 5" "2, 1, 2, 2" | "Usage: please provide a list of profits and a list of deadlines" |
+
+## Articles
+
+{% include article_list.md collection=site.categories.job-sequencing-with-deadlines %}
+
+## Further Reading
+
+- [Job Sequencing with Deadlines by Abdul Bari][1]
+
+[1]: https://www.youtube.com/watch?v=zPtI8q9gvX8
