@@ -12,15 +12,15 @@
 
   <tbody>
     {% for index in site.pages %}
-      {% if index.url contains page.url %}
-        <tr>
-          <td>
-            <a href="{{ index.url | relative_url }}">{{ index.title }}</a>
-          </td>
-          <td>
-            {{ index.tags }}
-          </td>
-        </tr>
+      {% if index.url contains page.url and index.url != page.url %}
+      <tr>
+        <td>
+          <a href="{{ index.url | relative_url }}">{{ index.title }}</a>
+        </td>
+        <td>
+          {{ index.tags }}
+        </td>
+      </tr>
       {% endif %}
     {% endfor %}
   </tbody>
