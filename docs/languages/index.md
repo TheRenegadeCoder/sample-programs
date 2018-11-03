@@ -14,6 +14,7 @@ authors:
 The following list contains all of the articles we have on the various
 programming languages:
 
-{% for article in site.categories.languages %}    
+{% assign sorted_posts = (site.categories.languages | sort: 'title') %}
+{% for article in sorted_posts %}    
   - [{{ article.title }}]({{ article.url | relative_url }})
 {% endfor %}

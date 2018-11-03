@@ -11,7 +11,8 @@
   </thead>
 
   <tbody>
-    {% for index in site.pages %}
+    {% assign sorted_pages = (site.pages | sort: 'title') %}
+    {% for index in sorted_pages %}
       {% if index.url contains page.url and index.url != page.url %}
       <tr>
         <td>
