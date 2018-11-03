@@ -4,7 +4,7 @@ layout: default
 date: 2018-11-01
 last-modified: 2018-11-02
 featured-image:
-tag: [prime-numbers]
+tags: [prime-numbers]
 authors:
 ---
 
