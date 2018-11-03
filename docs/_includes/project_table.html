@@ -16,10 +16,14 @@
           <a href="{{ index.url | relative_url }}">{{ index.title }}</a>
         </td>
         <td>
-          {{ index.tags | sort | join: ", " }}
+          {% if index.tags %}
+            {{ index.tags | sort | join: ", " }}
+          {% endif %}
         </td>
         <td>
-          {{ index.categories | sort | join: ", " }}
+          {% if index.categories %}
+            {{ index.categories | sort | join: ", " }}
+          {% endif %}
         </td>
       </tr>
       {% endif %}
