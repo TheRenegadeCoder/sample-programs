@@ -4,7 +4,6 @@ layout: default
 date: 2018-11-01
 last-modified: 2018-11-02
 featured-image:
-categories: [project]
 tags: [fizz-buzz]
 authors:
 ---
