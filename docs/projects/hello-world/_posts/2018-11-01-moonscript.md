@@ -1,7 +1,6 @@
 ---
 title: Hello World in MoonScript
 layout: default
-date: 2018-11-01
 last-modified: 2018-11-02
 featured-image: hello-world-in-moonscript-featured-image.JPEG
 tags: [moonscript, hello-world]
