@@ -3,7 +3,7 @@
     <tr class="header">
       <th>Project</th>
       <th>Tags</th>
-      <th>Categories</th>
+      <th>Article Count</th>
     </tr>
   </thead>
 
@@ -13,17 +13,23 @@
       {% if index.url contains page.url and index.url != page.url %}
       <tr>
         <td>
+          <!-- Project Link -->
           <a href="{{ index.url | relative_url }}">{{ index.title }}</a>
         </td>
         <td>
+          <!-- Project Tags -->
           {% if index.tags %}
             {{ index.tags | sort | join: ", " }}
           {% endif %}
         </td>
         <td>
-          {% if index.categories %}
-            {{ index.categories | sort | join: ", " }}
-          {% endif %}
+          <!-- Project Article Counts -->
+          {% assign i = 1 %}
+          {% for post in site.posts %}
+            {% if post.url contains index.url %}
+              {% assign i = i | plus:1 %}
+            {% endif %}
+          {% endfor %}
         </td>
       </tr>
       {% endif %}
