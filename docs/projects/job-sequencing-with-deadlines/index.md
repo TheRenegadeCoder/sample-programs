@@ -30,3 +30,16 @@ following sequence:
 Because the last possible job we can choose has a deadline of 3, we can
 only select 3 jobs at most for our sequence. As a result, we cannot
 complete J4. In total, we can make a profit of 40.
+
+## Requirements
+
+In order to implement this program in your choice language, you should
+define the input interface as follows:
+
+```console
+./job-sequencing.lang "25, 15, 10, 5" "2, 1, 2, 2"
+```
+
+In other words, the input routine should accept a list of profits and
+a list of deadlines. It will be up to the program to verify that these
+lists are valid. 
