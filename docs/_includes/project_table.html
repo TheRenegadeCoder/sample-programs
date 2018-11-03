@@ -11,7 +11,7 @@
   </thead>
 
   <tbody>
-    {% for project in site.categories[projects] %}
+    {% for project in site.categories.projects %}
       {% if project.title contains include.filter %}
       <tr>
         <td>
