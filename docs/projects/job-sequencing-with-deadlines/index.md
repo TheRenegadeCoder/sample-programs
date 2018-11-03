@@ -18,3 +18,15 @@ same amount of time:
 | -------- | --- | --- | --- | --- |
 | Profit   | 25  | 15  | 10  | 5   |
 | Deadline | 3   | 1   | 2   | 2   |
+
+In this example, we have four jobs sorted by largest profit first.
+Using the greedy method, we can come up with the best sequence by
+choosing the job with the current highest profit and scheduling it
+at the last possible moment. In this case, we would end up with the
+following sequence:
+
+> J2, J3, J1
+
+Because the last possible job we can choose has a deadline of 3, we can
+only select 3 jobs at most for our sequence. As a result, we cannot
+complete J4. In total, we can make a profit of 40.
