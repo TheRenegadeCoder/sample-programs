@@ -1,12 +1,9 @@
-<table>
-  <colgroup>
-    <col width="70%" />
-    <col width="30%" />
-  </colgroup>
+<table class="display">
   <thead>
     <tr class="header">
       <th>Project</th>
       <th>Tags</th>
+      <th>Categories</th>
     </tr>
   </thead>
 
@@ -19,7 +16,10 @@
           <a href="{{ index.url | relative_url }}">{{ index.title }}</a>
         </td>
         <td>
-          {{ index.tags }}
+          {{ index.tags | sort | join: ", " }}
+        </td>
+        <td>
+          {{ index.categories | sort | join: ", " }}
         </td>
       </tr>
       {% endif %}
