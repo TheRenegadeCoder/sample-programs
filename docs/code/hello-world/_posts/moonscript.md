@@ -4,7 +4,6 @@ layout: default
 date: 2018-11-01
 last-modified: 2018-11-02
 featured-image: hello-world-in-moonscript-featured-image.JPEG
-categories: [code]
 tags: [moonscript, hello-world]
 authors:
   - bassem_mohamed
