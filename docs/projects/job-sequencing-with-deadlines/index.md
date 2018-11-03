@@ -40,7 +40,7 @@ In order to implement this program in your choice language, you should
 define the input interface as follows:
 
 ```console
-$ ./job-sequencing.lang "25, 15, 10, 5" "2, 1, 2, 2"
+$ ./job-sequencing.lang "25, 15, 10, 5" "3, 1, 2, 2"
 ```
 
 In other words, the input routine should accept a list of profits and
@@ -51,7 +51,7 @@ Once the program has determined a correct sequence, it should
 output the maximum profit only. For example:
 
 ```console
-$ ./job-sequencing.lang "25, 15, 10, 5" "2, 1, 2, 2"
+$ ./job-sequencing.lang "25, 15, 10, 5" "3, 1, 2, 2"
 $ 40
 ```
 
@@ -69,7 +69,7 @@ verify the correctness of your solution:
 | No Input | | "Usage: please provide a list of profits and a list of deadlines" |
 | Empty Input | | "Usage: please provide a list of profits and a list of deadlines" |
 | Missing Input | "25, 15, 10, 5" | "Usage: please provide a list of profits and a list of deadlines" |
-| Sample Input | "25, 15, 10, 5" "2, 1, 2, 2" | "Usage: please provide a list of profits and a list of deadlines" |
+| Sample Input | "25, 15, 10, 5" "3, 1, 2, 2" | "Usage: please provide a list of profits and a list of deadlines" |
 
 ## Articles
 
