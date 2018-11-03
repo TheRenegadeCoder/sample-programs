@@ -11,15 +11,17 @@
   </thead>
 
   <tbody>
-    {% for project in site.categories.projects %}
-      <tr>
-        <td>
-          <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
-        </td>
-        <td>
-          {{ project.tags }}
-        </td>
-      </tr>
+    {% for index in site.pages %}
+      {% if index.url contains page.url %}
+        <tr>
+          <td>
+            <a href="{{ index.url | relative_url }}">{{ index.title }}</a>
+          </td>
+          <td>
+            {{ project.tags }}
+          </td>
+        </tr>
+      {% endif %}
     {% endfor %}
   </tbody>
 </table>
