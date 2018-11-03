@@ -1,3 +1,5 @@
+{% assign article_totals = 0 %}
+
 <table class="display">
   <thead>
     <tr class="header">
@@ -24,15 +26,24 @@
         </td>
         <td>
           <!-- Project Article Counts -->
-          {% assign i = 1 %}
+          {% assign i = 0 %}
           {% for post in site.posts %}
             {% if post.url contains index.url %}
               {% assign i = i | plus:1 %}
             {% endif %}
           {% endfor %}
+          {% assign article_totals = article_totals | plus:i %}
         </td>
       </tr>
       {% endif %}
     {% endfor %}
   </tbody>
+
+  <tfoot>
+    <tr>
+      <td>Totals</td>
+      <td></td>
+      <td>{{ article_totals }}</td>
+    </tr>
+  </tfoot>
 </table>
