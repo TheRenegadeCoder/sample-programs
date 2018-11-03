@@ -175,11 +175,12 @@ language. You can find out more about this type of articles below.
 #### Code
 
 To get started, you'll want to create a new markdown file (i.e. `python.md`)
-using the [CODE_ARTICLE_TEMPLATE][40].
+using the [CODE_ARTICLE_TEMPLATE][40] in the docs/projects folder of your
+choice.
 
 Make sure you populate the top section (aka the Front Matter) before you're done.
 
-In the `## {{ page.title }}`, you'll want to break down and
+In the top section, you'll want to break down and
 explain your code snippet.
 
 In the `## How to Run Solution`, you'll want to explicitly detail how to run
@@ -204,27 +205,16 @@ pull request.
 Currently, you can find a list of projects on our [project homepage][39].
 
 If you'd like to add a project, feel free to create a pull request with a new
-file containing a project description in the docs folder. The project file
+file containing a project description in the docs/projects folder. The project file
 should follow the [PROJECT_ARTICLE_TEMPLATE.md][41].
 
 Feel free to browse other projects to get an idea of how to fill out each
 section.
 
-Once you've created the file, _please_ update the `_config.yml` with the
-following template information:
-
-```yml
-<project name with underscores>:
-  output: true
-  permalink: /<project name with hyphens>/:name
-```
-
-This will allow the project to be tracked as a Jekyll collection.
-
 #### Languages
 
 Finally, you can also introduce a new language article. To do so, add a new
-`<languag>.md` file to the `_languages` collection using the
+`<languag>.md` file to the docs/languages folder using the
 [LANGUAGE_ARTICLE_TEMPLATE.md][42].
 
 Feel free to look at other articles in the collection for inspiration on how
