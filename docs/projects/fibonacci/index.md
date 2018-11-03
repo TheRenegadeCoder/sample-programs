@@ -39,7 +39,7 @@ Verify that the actual output matches the expected output. See the
 
 ## Articles
 
-{% include article_list.md collection=site.fibonacci %}
+{% include article_list.md %}
 
 ## Further Readings
 
