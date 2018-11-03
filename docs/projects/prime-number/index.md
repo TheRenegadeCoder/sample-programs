@@ -31,7 +31,7 @@ Verify that the actual output matches the expected output. See the
 
 ## Articles
 
-{% include article_list.md collection=site.prime_number %}
+{% include article_list.md collection=site.categories.prime-number %}
 
 ## Further Reading
 

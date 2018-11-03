@@ -48,7 +48,7 @@ your language can handle unicode characters, but it fails for emojis.
 
 ## Articles
 
-{% include article_list.md collection=site.reverse_a_string %}
+{% include article_list.md collection=site.categories.reverse-a-string %}
 
 ## Further Reading
 

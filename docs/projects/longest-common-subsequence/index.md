@@ -52,7 +52,7 @@ Verify that the actual output matches the expected output. See the
 
 ## Articles
 
-{% include article_list.md collection=site.longest_common_subsequence %}
+{% include article_list.md collection=site.categories.longest-common-subsequence %}
 
 ## Further Reading
 
