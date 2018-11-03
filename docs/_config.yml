@@ -8,6 +8,9 @@ show_downloads: true
 # File exclusion settings
 exclude: ["CNAME", "Gemfile", "templates"]
 
+# Posts permalink
+permalink: /:categories/:title/
+
 # Collection data
 collections_dir: collections
 collections:
