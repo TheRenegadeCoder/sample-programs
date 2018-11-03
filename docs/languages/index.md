@@ -14,8 +14,6 @@ authors:
 The following list contains all of the articles we have on the various
 programming languages:
 
-{% for article in site.languages %}    
-  {% unless article.title == "Programming Languages" %}
+{% for article in site.categories.languages %}    
   - [{{ article.title }}]({{ article.url | relative_url }})
-  {% endunless %}
 {% endfor %}
