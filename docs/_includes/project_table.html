@@ -1,24 +1,29 @@
-<table>
-  <colgroup>
-    <col width="70%" />
-    <col width="30%" />
-  </colgroup>
+<table class="display">
   <thead>
     <tr class="header">
       <th>Project</th>
       <th>Tags</th>
+      <th>Categories</th>
     </tr>
   </thead>
 
   <tbody>
-    {% for index in site.pages %}
+    {% assign sorted_pages = (site.pages | sort: 'title') %}
+    {% for index in sorted_pages %}
       {% if index.url contains page.url and index.url != page.url %}
       <tr>
         <td>
           <a href="{{ index.url | relative_url }}">{{ index.title }}</a>
         </td>
         <td>
-          {{ index.tags }}
+          {% if index.tags %}
+            {{ index.tags | sort | join: ", " }}
+          {% endif %}
+        </td>
+        <td>
+          {% if index.categories %}
+            {{ index.categories | sort | join: ", " }}
+          {% endif %}
         </td>
       </tr>
       {% endif %}
