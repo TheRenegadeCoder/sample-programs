@@ -29,12 +29,16 @@ this solution.
 
 ## Requirements
 
-To implement this algorithm, your program should accept a matrix of strings
-in the following format:
+To implement this algorithm, your program should accept a square matrix of
+strings in the following format:
 
 ```console
-./minimum-spanning-tree "0, 2, 0, 6, 0" "2, 0, 3, 8, 5" "0, 3, 0, 0, 7" "6, 8, 0, 0, 9" "0, 5, 7, 9, 0"
+./minimum-spanning-tree "0, 2, 0, 6, 0, 2, 0, 3, 8, 5, 0, 3, 0, 0, 7, 6, 8, 0, 0, 9, 0, 5, 7, 9, 0"
 ```
+
+Since the input string represents a square matrix, we should be able to take the
+square root of the length to determine where the rows are in the string. In this
+case, we have 25 values, so we must have 5 nodes. 
 
 ## Testing
 
