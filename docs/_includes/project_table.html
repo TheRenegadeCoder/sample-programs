@@ -12,13 +12,13 @@
 
   <tbody>
     {% for project in site.categories.projects %}
-      {% if article.title contains include.filter %}
+      {% if project.title contains include.filter %}
       <tr>
         <td>
-          <a href="{{ article.url | relative_url }}">{{ article.title }}</a>
+          <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
         </td>
         <td>
-          {{ article.tags }}
+          {{ project.tags }}
         </td>
       </tr>
       {% endif %}
