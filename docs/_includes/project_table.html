@@ -11,19 +11,17 @@
   </thead>
 
   <tbody>
-    {% for collection in site.collections %}
-      {% for article in collection.docs %}
-        {% if article.title contains include.filter %}
-        <tr>
-          <td>
-            <a href="{{ article.url | relative_url }}">{{ article.title }}</a>
-          </td>
-          <td>
-            {{ article.tags }}
-          </td>
-        </tr>
-        {% endif %}
-      {% endfor %}
+    {% for project in site.categories.projects %}
+      {% if article.title contains include.filter %}
+      <tr>
+        <td>
+          <a href="{{ article.url | relative_url }}">{{ article.title }}</a>
+        </td>
+        <td>
+          {{ article.tags }}
+        </td>
+      </tr>
+      {% endif %}
     {% endfor %}
   </tbody>
 </table>
