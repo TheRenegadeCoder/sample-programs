@@ -12,7 +12,7 @@
 
   <tbody>
     {% for index in site.pages %}
-      {% unless index.url is page.url %}
+      {% unless index.url == page.url %}
         {% if index.url contains page.url %}
           <tr>
             <td>
