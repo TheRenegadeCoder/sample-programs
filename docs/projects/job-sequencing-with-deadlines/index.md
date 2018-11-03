@@ -58,3 +58,11 @@ $ 40
 Naturally, this is for testing
 purposes as verifying all of the possible sequences would be
 challenging.
+
+## Testing
+
+The following table contains various test cases that you can use to
+verify the correctness of your solution:
+
+| Description | Input | Output |
+|-------------|-------|--------|
