@@ -47,6 +47,11 @@ could reformat our example to look something like the following:
 
 | Mapping | 0   | 1   | 2   | 3   | 4   |
 | ------- | --- | --- | --- | --- | --- |
+| 0       | 0   | 2   | 0   | 6   | 0   |
+| 1       | 2   | 0   | 3   | 8   | 5   |
+| 2       | 0   | 3   | 0   | 0   | 7   |
+| 3       | 6   | 8   | 0   | 0   | 9   |
+| 4       | 0   | 5   | 7   | 9   | 0   |
 
 ## Testing
 
