@@ -12,6 +12,10 @@ authors:
 
 [Insert description of language here]
 
+## [Language] Articles
+
+{% include language_article_list.html language=python %}
+
 ---
 
 #### References
