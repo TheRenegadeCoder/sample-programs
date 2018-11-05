@@ -1,13 +1,8 @@
 {% assign article_totals = 0 %}
+{% assign headings = "Project,Tags,Article Count" | split: "," %}
 
 <table class="display">
-  <thead>
-    <tr class="header">
-      <th>Project</th>
-      <th>Tags</th>
-      <th>Article Count</th>
-    </tr>
-  </thead>
+  {% include table_header.html headings=headings %}
 
   <tbody>
     {% assign sorted_pages = (site.pages | sort: 'title') %}
