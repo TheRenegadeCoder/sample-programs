@@ -12,5 +12,9 @@ Currently, our documentation is organized in two ways:
 by [project][1] or by [language][2]. Feel free to browse these pages to learn
 more about our project.
 
+Alternatively, you can dive right into the latest articles below:
+
+{% include recent_posts.html limit=5 %}
+
 [1]: {{ site.baseurl }}/projects
 [2]: {{ site.baseurl }}/languages

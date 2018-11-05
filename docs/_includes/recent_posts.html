@@ -1,7 +1,7 @@
 <ul>
 {% for post in site.posts limit:include.limit %}
   <li>
-    <a href="{{ post.url | relative_url }}">{{ post.title }}
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
   </li>
 {% endfor %}
 </ul>
