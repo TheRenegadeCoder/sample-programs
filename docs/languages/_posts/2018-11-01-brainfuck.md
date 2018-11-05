@@ -1,7 +1,7 @@
 ---
 title: The Brainfuck Programming Language
 layout: default
-last-modified: 2018-11-02
+last-modified: 2018-11-05
 featured-image:
 tags: [brainfuck]
 authors:
