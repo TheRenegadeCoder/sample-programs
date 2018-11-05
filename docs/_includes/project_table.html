@@ -1,9 +1,6 @@
-{% assign article_totals = 0 %}
-
-<!-- TODO: fill with calculations -->
-
+{% assign article_totals = site.categories.projects | size %}
 {% assign headings = "Project,Tags,Article Count" | split: "," %}
-{% assign footings = "Totals,,{{article_totals}}" | split: "," %}
+{% assign footings = "Totals,," | append: article_totals | split: "," %}
 
 <table class="display">
   {% include table_header.html headings=headings %}
@@ -32,12 +29,11 @@
             {% endif %}
           {% endfor %}
           {{ i }}
-          {% assign article_totals = article_totals | plus:i %}
         </td>
       </tr>
       {% endif %}
     {% endfor %}
   </tbody>
 
-
+  {% include table_footer.html footings=footings %}
 </table>
