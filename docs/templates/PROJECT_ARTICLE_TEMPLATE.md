@@ -22,7 +22,7 @@ authors:
 
 ## Articles
 
-{% include article_list.md collection=site.<name of project> % }
+{% include article_list.md collection=site.categories.[name of project] % }
 
 ## Further Reading
 
