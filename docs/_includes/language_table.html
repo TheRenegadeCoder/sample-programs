@@ -18,7 +18,15 @@
           {{ language.last-modified | date_to_long_string }}
         </td>
         <td>
-          
+          <!-- Article Total -->
+          {% assign count = 0 %}
+          {% assign language_tag = language.tags | first %}
+          {% for post in site.posts %}
+            {% if posts.tags contains tag %}
+              {% assign count = count | plus:1 %}
+            {% endif %}
+          {% endfor %}
+          {{ count }}
         </td>
       </tr>
     {% endfor %}
