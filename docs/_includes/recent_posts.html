@@ -1,5 +1,5 @@
 <ul>
-{% for post in site.posts limit:5 %}
+{% for post in site.posts limit:include.limit %}
   <li>
     <a href="{{ post.url | relative_url }}">{{ post.title }}
   </li>
