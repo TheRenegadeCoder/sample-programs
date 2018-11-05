@@ -11,7 +11,7 @@ in as many languages as possible. Thanks for taking an interest in our project!
 The Sample Programs in Every Language collection currently contains
 {{ site.posts | size }} articles written by {{ site.data.authors | size }}
 authors. If you'd like to contribute to this growing project, check out
-our [contributing doc] for information.
+our [contributing doc] for more information.
 
 Otherwise, dive into our documentation which is organized in two ways:
 by [project][1] or by [language][2]. Feel free to browse these pages to learn
