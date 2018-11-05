@@ -1,7 +1,7 @@
 ---
 title: The PowerShell Programming Language
 layout: default
-last-modified: 2018-11-01
+last-modified: 2018-11-05
 tags: [powershell]
 authors:
   - alcha
@@ -35,6 +35,10 @@ PowerShell is now up to version 5.1 for stable builds and the new 6.0 version
 which was announced in 2016 is in public beta. The largest change in this version
 is it’s now open-source and will now be called PowerShell Core as it runs on
 [.NET Core][4] as opposed to the [.NET Framework][5] which previous versions use.<sup>3</sup>
+
+## Articles
+
+{% include article_list.md collection=site.tags.powershell %}
 
 ---
 
