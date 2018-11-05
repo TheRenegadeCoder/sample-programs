@@ -4,7 +4,7 @@
 {% assign author = site.data.authors[author].name %}
 {% assign date = post.date | date_to_long_string %}
   <li>
-    <a href="{{ post.url | relative_url }}">{{ post.title }}</a> on {{ date }} by {{ post.authors | first }}
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a> on {{ date }} by {{ author }}
   </li>
 {% endfor %}
 </ul>
