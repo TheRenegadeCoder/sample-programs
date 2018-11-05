@@ -13,8 +13,8 @@ The Sample Programs in Every Language collection currently contains
 authors. If you'd like to contribute to this growing project, check out
 our [contributing doc][4] for more information.
 
-Otherwise, dive into our documentation which is organized in two ways:
-by [project][1] or by [language][2]. Feel free to browse these pages to learn
+Otherwise, explore our documentation which is organized in two ways:
+by [project][1] and by [language][2]. Feel free to browse these pages to learn
 more about our project.
 
 Alternatively, you can dive right into the latest articles below:
