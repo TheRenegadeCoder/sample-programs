@@ -1,8 +1,8 @@
 {% assign article_totals = site.categories.projects | size %}
-{% assign headings = "Project,Tags,Article Count" | split: "," %}
+{% assign headings = "Project,Last Modified,Article #" | split: "," %}
 {% assign footings = "Totals,," | append: article_totals | split: "," %}
 
-<table class="display">
+<table>
   {% include table_header.html headings=headings %}
 
   <tbody>
@@ -15,10 +15,8 @@
           <a href="{{ index.url | relative_url }}">{{ index.title }}</a>
         </td>
         <td>
-          <!-- Project Tags -->
-          {% if index.tags %}
-            {{ index.tags | sort | join: ", " }}
-          {% endif %}
+          <!-- Last Modified Date -->
+          {{ index.last-modified | date_to_long_string }}
         </td>
         <td>
           <!-- Project Article Counts -->
