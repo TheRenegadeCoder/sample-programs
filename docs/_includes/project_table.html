@@ -1,13 +1,9 @@
-{% assign article_totals = 0 %}
+{% assign article_totals = site.categories.projects | size %}
+{% assign headings = "Project,Last Modified,Article #" | split: "," %}
+{% assign footings = "Totals,," | append: article_totals | split: "," %}
 
-<table class="display">
-  <thead>
-    <tr class="header">
-      <th>Project</th>
-      <th>Tags</th>
-      <th>Article Count</th>
-    </tr>
-  </thead>
+<table>
+  {% include table_header.html headings=headings %}
 
   <tbody>
     {% assign sorted_pages = (site.pages | sort: 'title') %}
@@ -19,10 +15,8 @@
           <a href="{{ index.url | relative_url }}">{{ index.title }}</a>
         </td>
         <td>
-          <!-- Project Tags -->
-          {% if index.tags %}
-            {{ index.tags | sort | join: ", " }}
-          {% endif %}
+          <!-- Last Modified Date -->
+          {{ index.last-modified | date_to_long_string }}
         </td>
         <td>
           <!-- Project Article Counts -->
@@ -33,18 +27,11 @@
             {% endif %}
           {% endfor %}
           {{ i }}
-          {% assign article_totals = article_totals | plus:i %}
         </td>
       </tr>
       {% endif %}
     {% endfor %}
   </tbody>
 
-  <tfoot>
-    <tr>
-      <td>Totals</td>
-      <td></td>
-      <td>{{ article_totals }}</td>
-    </tr>
-  </tfoot>
+  {% include table_footer.html footings=footings %}
 </table>
