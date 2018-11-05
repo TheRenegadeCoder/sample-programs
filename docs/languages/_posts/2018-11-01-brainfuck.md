@@ -30,7 +30,7 @@ That’s it!<sup>1</sup>
 
 ## Articles
 
-{% include article_list.md collection=site.tags.brainfuck % }
+{% include article_list.md collection=site.tags.brainfuck %}
 
 ---
 
