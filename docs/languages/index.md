@@ -9,8 +9,6 @@ authors:
   - the_renegade_coder
 ---
 
-## A Collection of Programming Languages
-
 The following list contains all of the articles we have on the various
 programming languages:
 
