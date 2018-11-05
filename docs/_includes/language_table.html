@@ -22,7 +22,7 @@
           {% assign count = 0 %}
           {% assign language_tag = language.tags | first %}
           {% for post in site.posts %}
-            {% if post.tags contains tag %}
+            {% if post.tags contains language_tag %}
               {% assign count = count | plus:1 %}
             {% endif %}
           {% endfor %}
