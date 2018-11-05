@@ -28,6 +28,10 @@ two instructions, `,` and `.` read one character from the input into the current
 cell and write one character from the current cell to the output, respectively.
 That’s it!<sup>1</sup>
 
+## Articles
+
+{% include article_list.md collection=site.tags.brainfuck % }
+
 ---
 
 #### References
