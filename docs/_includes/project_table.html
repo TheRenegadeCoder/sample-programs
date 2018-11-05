@@ -1,5 +1,9 @@
 {% assign article_totals = 0 %}
+
+<!-- TODO: fill with calculations -->
+
 {% assign headings = "Project,Tags,Article Count" | split: "," %}
+{% assign footings = "Totals,,{{article_totals}}" | split: "," %}
 
 <table class="display">
   {% include table_header.html headings=headings %}
@@ -35,11 +39,5 @@
     {% endfor %}
   </tbody>
 
-  <tfoot>
-    <tr>
-      <td>Totals</td>
-      <td></td>
-      <td>{{ article_totals }}</td>
-    </tr>
-  </tfoot>
+
 </table>
