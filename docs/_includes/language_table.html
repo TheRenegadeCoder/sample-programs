@@ -1,4 +1,4 @@
-{% assign article_totals = site.categories.languages | size %}
+{% assign article_totals = site.posts | size %}
 {% assign headings = "Language,Last Modified,Article #" | split: "," %}
 {% assign footings = "Totals,," | append: article_totals | split: "," %}
 
