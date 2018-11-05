@@ -12,9 +12,9 @@ authors:
 
 [Insert description of language here]
 
-## [Language] Articles
+## Articles
 
-{% include language_article_list.html language=python %}
+{% include article_list.md collection=site.tags.[name of language] % }
 
 ---
 
