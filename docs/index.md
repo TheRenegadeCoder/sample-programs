@@ -6,16 +6,15 @@ last-modified: 2018-11-05
 ---
 
 Welcome to Sample Programs in Every Language, a collection of code snippets
-in as many languages as possible. Thanks for taking an interest in our project!
+in as many languages as possible. Thanks for taking an interest in our collection!
 
 The Sample Programs in Every Language collection currently contains
 {{ site.posts | size }} articles written by {{ site.data.authors | size }}
-authors. If you'd like to contribute to this growing project, check out
+authors. If you'd like to contribute to this growing collection, check out
 our [contributing doc][4] for more information.
 
-Otherwise, explore our documentation which is organized in two ways:
-by [project][1] and by [language][2]. Feel free to browse these pages to learn
-more about our project.
+In addition, you can explore our documentation which is organized 
+by [project][1] and by [language][2].
 
 Alternatively, you can dive right into the latest articles below:
 
