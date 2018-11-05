@@ -88,7 +88,7 @@ tool that displays each step of a Brainfuck program’s execution.
 [3]: https://copy.sh/brainfuck/
 [4]: https://sange.fi/esoteric/brainfuck/impl/interp/i.html
 [5]: https://www.dcode.fr/brainfuck-language
-[6]: https://fatiherikli.github.io/brainfuck-visualizer/#PisrKysrKysrWzwrKysrKysrKys+LV08Lgo+KysrK1s8KysrKysrKz4tXTwrLgorKysrKysrLi4KKysrLgo+PisrKysrK1s8KysrKysrKz4tXTwrKy4KLS0tLS0tLS0tLS0tLgo+KysrKysrWzwrKysrKysrKys+LV08Ky4KPC4KKysrLgotLS0tLS0uCi0tLS0tLS0tLgo+Pj4rKysrWzwrKysrKysrKz4tXTwrLg==
+[6]: http://bf.jamesliu.info/
 
 ---
 
