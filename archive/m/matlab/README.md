@@ -4,7 +4,7 @@ Welcome to Sample Programs in MATLAB!
 
 ## Sample Programs
 
-- [Hello World in MATLAB](https://github.com/jrg94/sample-programs/issues/37)
+- [Hello World in MATLAB](https://therenegadecoder.com/code/hello-world-in-matlab/)
 
 ## Fun Facts
 
