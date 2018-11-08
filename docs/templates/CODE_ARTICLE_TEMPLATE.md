@@ -20,4 +20,4 @@ authors:
 
 #### References
 
-1. <some IEEE reference>
+[^1]: [some IEEE reference]

@@ -70,9 +70,9 @@ a lowercase ‘e’.
 
 This is basically how the entire program works. It’s just a matter of choosing
 the right path in order to get from one value to the next by only using simple
-addition, subtraction, and loops.<sup>1</sup>
+addition, subtraction, and loops.[^1]
 
-## How to Run the Solution<sup>1</sup>
+## How to Run the Solution
 
 There are plenty of Brainfuck interpreters (and even compilers!) available,
 online or offline:
@@ -82,7 +82,7 @@ online or offline:
 - [Dcode.fr][5]
 
 As a starting point, [here’s this example on “Brainfuck Visualizer”][6], an online
-tool that displays each step of a Brainfuck program’s execution.
+tool that displays each step of a Brainfuck program’s execution.[^1]
 
 [2]: http://www.asciitable.com/index/asciifull.gif
 [3]: https://copy.sh/brainfuck/
@@ -94,6 +94,4 @@ tool that displays each step of a Brainfuck program’s execution.
 
 #### References
 
-1. C. Böhmwalder, “Hello World in Brainfuck,” The Renegade Coder, 31-Aug-2018.
-  [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-brainfuck/>.
-  [Accessed: 31-Oct-2018].
+[^1]: C. Böhmwalder, “Hello World in Brainfuck,” The Renegade Coder, 31-Aug-2018. [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-brainfuck/>. [Accessed: 31-Oct-2018].
