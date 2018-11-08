@@ -9,16 +9,11 @@ $brand-color: #c90229;
 @import "{{ site.theme }}";
 
 .breadcrumb {
-  float:left;
-  padding-top:16px;
   list-style: none;
   border-radius: 4px;
 }
 .breadcrumb > li {
   display: inline-block;
-}
-.breadcrumb > li + li:before {
-  padding: 0 5px;
 }
 
 .breadcrumb { border: 0px;  display: block;}
@@ -28,13 +23,40 @@ $brand-color: #c90229;
 .breadcrumb>.active a {color: #555555; }
 .breadcrumb>li+li:before {color:$brand-color; content: "\003E\00a0";}
 
+.site-footer {
+  @include large {
+    max-width: 64rem;
+    padding: 2rem 6rem;
+    margin: 0 auto;
+    font-size: 1.1rem;
+  }
+
+  @include medium {
+    padding: 2rem 4rem;
+    font-size: 1.1rem;
+  }
+
+  @include small {
+    padding: 2rem 1rem;
+    font-size: 1rem;
+  }
+}
+
 .site-navigation {
-  width: 100%;
-  float: left;
+
+  @include large {
+    max-width: 64rem;
+    margin: 0 auto;
+    font-size: 1.1rem;
+  }
+
+  @include medium {
+    font-size: 1.1rem;
+  }
+
+  @include small {
+    font-size: 1rem;
+  }
+
   border-bottom: 1px solid #eff0f1;
-  max-width: 64rem;
-  padding: 2rem 6rem;
-  position: relative;
-  margin: 0 auto;
-  box-sizing: border-box;
 }
