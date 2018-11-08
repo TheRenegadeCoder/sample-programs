@@ -84,14 +84,14 @@ online or offline:
 As a starting point, [here’s this example on “Brainfuck Visualizer”][6], an online
 tool that displays each step of a Brainfuck program’s execution.[^1]
 
-[2]: http://www.asciitable.com/index/asciifull.gif
-[3]: https://copy.sh/brainfuck/
-[4]: https://sange.fi/esoteric/brainfuck/impl/interp/i.html
-[5]: https://www.dcode.fr/brainfuck-language
-[6]: http://bf.jamesliu.info/
-
 ---
 
 #### References
 
 [^1]: C. Böhmwalder, “Hello World in Brainfuck,” The Renegade Coder, 31-Aug-2018. [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-brainfuck/>. [Accessed: 31-Oct-2018].
+
+[2]: http://www.asciitable.com/index/asciifull.gif
+[3]: https://copy.sh/brainfuck/
+[4]: https://sange.fi/esoteric/brainfuck/impl/interp/i.html
+[5]: https://www.dcode.fr/brainfuck-language
+[6]: http://bf.jamesliu.info/
