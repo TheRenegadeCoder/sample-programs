@@ -27,3 +27,14 @@ $brand-color: #c90229;
 .breadcrumb a:hover {color: darken($brand-color, 20%);}
 .breadcrumb>.active a {color: #555555; }
 .breadcrumb>li+li:before {color:$brand-color; content: "\003E\00a0";}
+
+.site-navigation {
+  width: 100%;
+  float: left;
+  border-bottom: 1px solid #eff0f1;
+  max-width: 64rem;
+  padding: 2rem 6rem;
+  position: relative;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
