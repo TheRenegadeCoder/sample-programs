@@ -24,9 +24,9 @@ Hello, World!
 ```
 
 As is the case with most modern scripting languages, getting a Hello World
-sample running is really easy.
+sample running is really easy.[^1]
 
-## How to Run the Solution<sup>1</sup>
+## How to Run the Solution
 
 Instead of running the commands directly within the console though, write your
 scripts in a file and call the file when necessary. Download a copy of the
@@ -47,10 +47,10 @@ Hello, World!
 [20:35:56]:powershell$
 ```
 
+And, that's it![^1]
+
 ---
 
 #### References
 
-1. D. Leaman, “Hello World in PowerShell,” The Renegade Coder, 28-Jul-2018.
-  [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-powershell/>.
-  [Accessed: 31-Oct-2018].
+[^1]: D. Leaman, “Hello World in PowerShell,” The Renegade Coder, 28-Jul-2018. [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-powershell/>. [Accessed: 31-Oct-2018].
