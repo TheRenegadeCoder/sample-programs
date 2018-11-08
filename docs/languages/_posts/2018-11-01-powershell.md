@@ -13,7 +13,7 @@ the preferred way to manage Windows servers in the future.
 
 [Jeffrey Snover][1] is largely credited as the designer behind the language, while
 Bruce Payette and James Truher were also on the project, and in an interview in
-2017, Snover explained the motivation behind creating PowerShell:<sup>2</sup>
+2017, Snover explained the motivation behind creating PowerShell:[^2]
 
     I’d been driving a bunch of managing changes, and then I originally took the UNIX
     tools and made them available on Windows, and then it just didn’t work. Right?
@@ -34,7 +34,7 @@ candidate 1 version.
 PowerShell is now up to version 5.1 for stable builds and the new 6.0 version
 which was announced in 2016 is in public beta. The largest change in this version
 is it’s now open-source and will now be called PowerShell Core as it runs on
-[.NET Core][4] as opposed to the [.NET Framework][5] which previous versions use.<sup>3</sup>
+[.NET Core][4] as opposed to the [.NET Framework][5] which previous versions use.[^1][^3]
 
 ## Articles
 
@@ -44,13 +44,11 @@ is it’s now open-source and will now be called PowerShell Core as it runs on
 
 #### References
 
-1. D. Leaman, “Hello World in PowerShell,” The Renegade Coder, 28-Jul-2018.
-  [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-powershell/>.
-  [Accessed: 31-Oct-2018].
-2. “To Be Continuous | Ep. #37, The Man Behind Windows PowerShell,” Heavybit,
+[^1]: D. Leaman, “Hello World in PowerShell,” The Renegade Coder, 28-Jul-2018. [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-powershell/>. [Accessed: 31-Oct-2018].
+[^2]: “To Be Continuous | Ep. #37, The Man Behind Windows PowerShell,” Heavybit,
   14-Sep-2017. [Online]. Available: <https://www.heavybit.com/library/podcasts/to-be-continuous/ep-37-the-man-behind-windows-powershell/>.
   [Accessed: 31-Oct-2018].
-3. “PowerShell is Microsofts latest open source release, coming to Linux, OS X,”
+[^3]: “PowerShell is Microsofts latest open source release, coming to Linux, OS X,”
   Ars Technica, 18-Aug-2016. [Online]. Available: <https://arstechnica.com/information-technology/2016/08/powershell-is-microsofts-latest-open-source-release-coming-to-linux-os-x/>.
   [Accessed: 31-Oct-2018].
 
