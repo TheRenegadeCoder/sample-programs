@@ -5,7 +5,7 @@ last-modified: 2018-11-10
 featured-image: hello-world-in-google-apps-script-featured-image.JPEG
 tags: [google-apps-script, hello-world]
 authors:
-  - jeremy-grifski
+  - the_renegade_coder
 ---
 
 At any rate, here’s the implementation of Hello World in Google Apps Script:
