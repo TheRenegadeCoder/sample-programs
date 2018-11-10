@@ -22,7 +22,7 @@ Inside the code block, we have our typical print call. In this case, we leverage
 
 ## How to Run the Solution
 
-If we want to run Hello World in Google Apps Script, we actually have to write our scripts using the Apps Script tool. From there, Google has some nice documentation for running them.
+If we want to run Hello World in Google Apps Script, we actually have to write our scripts using the [Apps Script tool][2]. From there, [Google has some nice documentation][3] for running them.
 
 Alternatively, we can write scripts locally and upload them to Google Drive. At that point, we can connect the Google Apps Script tool to run our scripts. The link above has directions for that option as well.
 

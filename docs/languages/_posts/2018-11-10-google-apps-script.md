@@ -5,7 +5,7 @@ last-modified: 2018-11-10
 featured-image:
 tags: [google-apps-script]
 authors:
-  - jeremy-grifski
+  - the_renegade_coder
 ---
 According to [Wikipedia][1], Google Apps Script is a scripting language for the G
 Suite which includes applications like Gmail, Google Drive, Google Calendar, etc.
