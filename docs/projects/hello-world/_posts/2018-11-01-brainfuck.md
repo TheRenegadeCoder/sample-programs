@@ -10,7 +10,7 @@ authors:
 
 Welcome to Hello World in Brainfuck, a classic program in an esoteric programming language.
 
-## {{ page.title }}
+## How to Implement the Solution
 
 Let’s take a look at the Hello World sample:
 
