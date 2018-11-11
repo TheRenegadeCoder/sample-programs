@@ -8,7 +8,11 @@ authors:
   - chrboe
 ---
 
-With that out of the way, let’s take a look at the Hello World sample:
+Welcome to Hello World in Brainfuck, a classic program in an esoteric programming language.
+
+## {{ page.title }}
+
+Let’s take a look at the Hello World sample:
 
 ```brainfuck
 >++++++++[<+++++++++>-]<.>++++[<+++++++>-]<+.+++++++..+++.>>++++++[<+++++++>-]<+
