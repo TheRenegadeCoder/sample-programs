@@ -12,7 +12,7 @@ authors:
   
 [Insert article introduction here]
 
-## {{ page.title }}
+## How to Implement the Solution
 
 [Insert code description here]
 
