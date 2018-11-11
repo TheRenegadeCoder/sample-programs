@@ -9,7 +9,9 @@ authors:
 ---
 
 At any rate, here’s the implementation of Hello World in Google Apps Script:
-```function helloWorld() {
+
+```
+function helloWorld() {
   Logger.log("Hello, World!");
 }
 ```
