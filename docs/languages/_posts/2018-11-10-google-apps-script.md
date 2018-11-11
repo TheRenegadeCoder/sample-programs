@@ -22,7 +22,7 @@ time zones during execution. As a result, developers have to be very deliberate
 in their scripts.
 
 Overall, Google Apps Script appears to be a great tool for anyone looking to
-write add-ons for G Suite applications. Otherwise, you’ll probably never use it.
+write add-ons for G Suite applications. Otherwise, you’ll probably never use it.[^1]
 
 ---
 
