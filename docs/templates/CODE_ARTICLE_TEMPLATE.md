@@ -9,6 +9,10 @@ tags: [<a list of tags>]
 authors:
   - <author username from _data/authors.yml>
 ---
+  
+[Insert article introduction here]
+
+## {{ page.title }}
 
 [Insert code description here]
 
