@@ -15,5 +15,5 @@ Welcome to Sample Programs in Frege!
 
 - [Frege Wiki][2]
 
-[1]: https://github.com/TheRenegadeCoder/sample-programs/issues/734
+[1]: https://github.com/TheRenegadeCoder/sample-programs/issues/739
 [2]: https://github.com/Frege/frege/wiki
