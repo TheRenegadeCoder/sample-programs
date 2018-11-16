@@ -1,6 +1,7 @@
 module Main where
 
 import System.Environment
+import Text.Read
 
 data EvenOdd = Even | Odd deriving (Show)
 
@@ -9,11 +10,14 @@ isEvenOdd x
   | x `mod` 2 == 0 = Even
   | otherwise  = Odd
 
+headMaybe :: [a] -> Maybe a
+headMaybe []     = Nothing
+headMaybe (x:xs) = Just x
+
 main :: IO ()
 main = do
   args <- getArgs
-  let x = head args
-  if null args then
-    error "You need to pass a number through the command line." 
-  else
-    putStrLn $ show $ isEvenOdd $ (read x :: Int)
+  let x = headMaybe args
+  case x >>= readMaybe of
+    Nothing -> putStrLn "Usage: please input a number"
+    Just x  -> putStrLn $ show $ isEvenOdd x
