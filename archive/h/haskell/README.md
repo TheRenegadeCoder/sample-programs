@@ -4,15 +4,16 @@ Welcome to Sample Programs in Haskell!
 
 ## Samples Programs
 
-- [Hello World in Haskell](https://therenegadecoder.com/code/hello-world-in-haskell/)
-- [Fizz Buzz in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/349)
-- [Fibonacci in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/543)
-- [Reverse a String in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/559)
 - [Baklava in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/575)
-- [Roman Numeral Conversion in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/581)
-- [Longest Common Subsequence in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/577)
-- [File IO in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/597)
 - [Even Odd in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/743)
+- [Factorial in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/746)
+- [Fibonacci in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/543)
+- [File IO in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/597)
+- [Fizz Buzz in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/349)
+- [Hello World in Haskell](https://therenegadecoder.com/code/hello-world-in-haskell/)
+- [Longest Common Subsequence in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/577)
+- [Reverse a String in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/559)
+- [Roman Numeral Conversion in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/581)
 
 ## Fun Facts
 
