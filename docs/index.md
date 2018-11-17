@@ -18,8 +18,8 @@ Alternatively, you can dive right into the latest articles below:
 
 {% include recent_posts.html limit=5 %}
 
-If you don't find what you're looking for, check our list of related [open-source
-projects][5].
+If you don't find what you're looking for, check out our list of related 
+[open-source projects][5].
 
 If code isn't your thing but you'd still like to help, there are
 plenty of other ways to [support the project][3].
