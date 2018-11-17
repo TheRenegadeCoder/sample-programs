@@ -11,10 +11,10 @@ hit every niche. As a compromise, we've provided you with a list of
 related open source projects below:
 
 - [toturkmen/baklava][1]
-- [zenware/fizzbuzz][3]
-- hello-world: Hello World
-- Hello World programs in different languages
-- hof: Higher-order Functions
+- [zenware/FizzBuzz][3]
+- [leachim6/hello-world][4]
+- [knightking100/hello-worlds][5]
+- [mtso/hof][6]
 - [josephwegner/ineverylang][2]
 - mal: Make a Lisp
 - Sample Programs in Every Language
@@ -27,3 +27,6 @@ edit this page.
 [1]: https://github.com/toturkmen/baklava
 [2]: https://github.com/josephwegner/ineverylang
 [3]: https://github.com/zenware/FizzBuzz
+[4]: https://github.com/leachim6/hello-world
+[5]: https://github.com/knightking100/hello-worlds
+[6]: https://github.com/mtso/hof
