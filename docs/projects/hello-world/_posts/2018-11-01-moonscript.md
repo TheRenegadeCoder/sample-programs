@@ -8,6 +8,11 @@ authors:
   - bassem_mohamed
 ---
 
+In this article, we'll cover Hello World in MoonScript, a niche scripting
+language that compiles to Lua.
+
+## How to Implement the Solution
+
 As you can see here, Hello World in MoonScript has a relatively simple
 implementation:
 
