@@ -12,6 +12,7 @@ Welcome to Sample Programs in Haskell!
 - [Fizz Buzz in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/349)
 - [Hello World in Haskell](https://therenegadecoder.com/code/hello-world-in-haskell/)
 - [Longest Common Subsequence in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/577)
+- [Prime Number in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/757)
 - [Reverse a String in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/559)
 - [Roman Numeral Conversion in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/581)
 
