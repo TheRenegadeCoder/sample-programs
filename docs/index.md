@@ -2,7 +2,7 @@
 title: Sample Programs in Every Language
 layout: default
 date: 2018-11-01
-last-modified: 2018-11-05
+last-modified: 2018-11-17
 ---
 
 Welcome to Sample Programs in Every Language, a collection of code snippets
@@ -18,7 +18,7 @@ Alternatively, you can dive right into the latest articles below:
 
 {% include recent_posts.html limit=5 %}
 
-If you don't find what you're looking for, check out our list of related 
+If you don't find what you're looking for, check out our list of related
 [open-source projects][5].
 
 If code isn't your thing but you'd still like to help, there are
