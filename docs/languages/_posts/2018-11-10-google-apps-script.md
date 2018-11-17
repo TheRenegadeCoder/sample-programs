@@ -24,6 +24,10 @@ in their scripts.
 Overall, Google Apps Script appears to be a great tool for anyone looking to
 write add-ons for G Suite applications. Otherwise, you’ll probably never use it.[^1]
 
+## Articles
+
+{% include article_list.md collection=site.tags.google-apps-script %}
+
 ---
 
 #### References
