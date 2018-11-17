@@ -16,13 +16,13 @@ related open source projects below:
 - [knightking100/hello-worlds][5]
 - [mtso/hof][6]
 - [josephwegner/ineverylang][2]
-- mal: Make a Lisp
-- Sample Programs in Every Language
-- Universal Fibonacci: Fibonacci's algorithm in every language
-- wordcount: Counting Words
+- [kanaka/mal][8]
+- [TheRenegadeCoder/sample-programs][9]
+- [MariusGarbea/UniversalFibonacci][10]
+- [juditacs/wordcount][11]
 
 If you think something is missing, feel free to make a pull request to
-edit this page.
+[edit this page][7].
 
 [1]: https://github.com/toturkmen/baklava
 [2]: https://github.com/josephwegner/ineverylang
@@ -30,3 +30,8 @@ edit this page.
 [4]: https://github.com/leachim6/hello-world
 [5]: https://github.com/knightking100/hello-worlds
 [6]: https://github.com/mtso/hof
+[7]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/docs/related.md
+[8]: https://github.com/kanaka/mal
+[9]: https://github.com/TheRenegadeCoder/sample-programs
+[10]: https://github.com/MariusGarbea/UniversalFibonacci
+[11]: https://github.com/juditacs/wordcount
