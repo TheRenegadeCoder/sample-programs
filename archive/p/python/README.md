@@ -4,17 +4,17 @@ Welcome to Sample Programs in Python!
 
 ## Sample Programs
 
-- [Hello World in Python][0]
-- [Fizz Buzz in Python][1]
-- [Reverse a String in Python][2]
-- [Quine in Python][3]
-- [File IO in Python][29]
 - [Baklava in Python][22]
   - Solution borrowed from @erayak via the [baklava repo][21]
-- [Game of Life in Python][4]
 - [Fibonacci Sequence in Python][24]
-- [Roman Numberal Conversion in Python][25]
+- [File IO in Python][29]
+- [Fizz Buzz in Python][1]
+- [Game of Life in Python][4]
+- [Hello World in Python][0]
 - [Longest Common Subsequence][26]
+- [Quine in Python][3]
+- [Reverse a String in Python][2]
+- [Roman Numberal Conversion in Python][25]
 
 ## Fun Facts
 
