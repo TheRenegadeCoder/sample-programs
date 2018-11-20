@@ -12,6 +12,7 @@ Welcome to Sample Programs in Haskell!
 - [File IO in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/597)
 - [Fizz Buzz in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/349)
 - [Hello World in Haskell](https://therenegadecoder.com/code/hello-world-in-haskell/)
+- [Job Sequencing with Deadlines in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/770)
 - [Longest Common Subsequence in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/577)
 - [Prime Number in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/757)
 - [Reverse a String in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/559)
