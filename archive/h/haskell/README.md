@@ -15,6 +15,8 @@ Welcome to Sample Programs in Haskell!
 - [Job Sequencing with Deadlines in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/770)
 - [Longest Common Subsequence in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/577)
 - [Prime Number in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/757)
+- [Quine in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/773)
+  - Solution borrowed from [Rosetta Code](https://rosettacode.org/wiki/Quine#Haskell)
 - [Reverse a String in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/559)
 - [Roman Numeral Conversion in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/581)
 
