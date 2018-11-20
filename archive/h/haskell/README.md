@@ -17,6 +17,7 @@ Welcome to Sample Programs in Haskell!
 - [Prime Number in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/757)
 - [Reverse a String in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/559)
 - [Roman Numeral Conversion in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/581)
+- [ROT-13 in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/777)
 
 ## Fun Facts
 
