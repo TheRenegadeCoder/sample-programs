@@ -8,11 +8,11 @@ tags: [rot-13]
 authors:
 ---
 
-ROT13 is a letter substitution cipher where every letter is replaced by the
+ROT-13 is a letter substitution cipher where every letter is replaced by the
 letter 13 letters after it alphabetically and wrapping from `Z` to `A` if necessary:
 
     ABCDEFGHIJKLMNOPQRSTUVWXYZ -> NOPQRSTUVWXYZABCDEFGHIJKLM
-    
+
 As a result, encrypted strings can be decrypted using the same algorithm:
 
     NOPQRSTUVWXYZABCDEFGHIJKLM -> ABCDEFGHIJKLMNOPQRSTUVWXYZ
@@ -20,7 +20,7 @@ As a result, encrypted strings can be decrypted using the same algorithm:
 ## Requirements
 
 Write a sample program that takes a string of text as input.
-It should then encrypt the inputted text using ROT13 and output the result to the console.
+It should then encrypt the inputted text using ROT-13 and output the result to the console.
 
 ```console
 $ ./rot-13.lang "the quick brown fox jumped over the lazy dog"
@@ -63,6 +63,6 @@ verify the correctness of your solution:
 
 ## Further Readings
 
-- [ROT13 on Wikipedia][1]
+- [ROT-13 on Wikipedia][1]
 
 [1]: https://en.wikipedia.org/wiki/ROT13
