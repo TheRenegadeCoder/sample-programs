@@ -6,6 +6,7 @@ last-modified: 2018-11-20
 featured-image:
 tags: [rot-13]
 authors:
+  - auroq
 ---
 
 ROT-13 is a letter substitution cipher where every letter is replaced by the
