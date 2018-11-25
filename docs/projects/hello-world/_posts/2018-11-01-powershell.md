@@ -8,6 +8,11 @@ authors:
   - alcha
 ---
 
+Today, we'll be taking on Hello World in PowerShell, a task automation language
+built by Microsoft.
+
+## How to Implement the Solution
+
 Let’s get something working! 😊
 
 ```powershell
