@@ -1,14 +1,16 @@
 ---
 title: <Sample Program> in <Language>
 layout: default
-date: YYYY-MM-DD
 last-modified: YYYY-MM-DD
 featured-image: <name of featured image file in assets folder>
-categories: [code]
 tags: [<a list of tags>]
 authors:
   - <author username from _data/authors.yml>
 ---
+  
+[Insert article introduction here]
+
+## How to Implement the Solution
 
 [Insert code description here]
 
@@ -20,4 +22,4 @@ authors:
 
 #### References
 
-1. <some IEEE reference>
+[^1]: [some IEEE reference]

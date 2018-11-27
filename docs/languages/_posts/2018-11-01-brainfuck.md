@@ -26,7 +26,7 @@ execution jumps to the end of the loop. Likewise, a loop ends when the value is
 zero, otherwise the program jumps to the beginning of the loop. The remaining
 two instructions, `,` and `.` read one character from the input into the current
 cell and write one character from the current cell to the output, respectively.
-That’s it!<sup>1</sup>
+That’s it![^1]
 
 ## Articles
 
@@ -36,8 +36,6 @@ That’s it!<sup>1</sup>
 
 #### References
 
-1. C. Böhmwalder, “Hello World in Brainfuck,” The Renegade Coder, 31-Aug-2018.
-  [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-brainfuck/>.
-  [Accessed: 31-Oct-2018].
+[^1]: C. Böhmwalder, “Hello World in Brainfuck,” The Renegade Coder, 31-Aug-2018. [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-brainfuck/>. [Accessed: 31-Oct-2018].
 
 [1]: https://en.wikipedia.org/wiki/Brainfuck

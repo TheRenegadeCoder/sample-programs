@@ -3,3 +3,5 @@
 *.class
 *.java~
 wiki/
+_site/
+*.lock

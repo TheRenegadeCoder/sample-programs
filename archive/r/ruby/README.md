@@ -30,7 +30,7 @@ Welcome to Sample Programs in Ruby!
 [2]: https://therenegadecoder.com/code/hello-world-in-ruby/
 [3]: https://github.com/TheRenegadeCoder/sample-programs/issues/336
 [4]: https://github.com/TheRenegadeCoder/sample-programs/issues/338
-[5]: https://github.com/TheRenegadeCoder/sample-programs/issues/415
+[5]: https://therenegadecoder.com/code/file-io-in-ruby/
 [6]: https://en.wikipedia.org/wiki/Ruby_(programming_language)
 [7]: https://www.ruby-lang.org/en/
 [8]: https://github.com/ruby/ruby

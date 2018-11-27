@@ -5,7 +5,7 @@ Welcome to Sample Programs in C++!
 ## Sample Programs
 
 - [Hello World in C++](https://therenegadecoder.com/code/hello-world-in-c-plus-plus/)
-- [File Input/Output in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/406)
+- [File Input/Output in C++](https://therenegadecoder.com/code/file-io-in-c-plus-plus/)
 - [Reverse String in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/419)
 - [Fibonacci Sequence in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/496)
 

@@ -8,6 +8,11 @@ authors:
   - bassem_mohamed
 ---
 
+In this article, we'll cover Hello World in MoonScript, a niche scripting
+language that compiles to Lua.
+
+## How to Implement the Solution
+
 As you can see here, Hello World in MoonScript has a relatively simple
 implementation:
 
@@ -38,9 +43,9 @@ local z = x + y
 return print(y)
 ```
 
-How cool is that?<sup>1</sup>
+How cool is that?[^1]
 
-## How to Run the Solution<sup>1</sup>
+## How to Run the Solution
 
 If your feeling adventurous today, You can quickly install MoonScript using one
 of the following methods:
@@ -67,19 +72,14 @@ Also, you can compile your .moon file into Lua by using this command:
 moonc ./YOURFILE.moon
 ```
 
-Alternatively, you can always [run MoonScript using an online compiler][6].
+Alternatively, you can always [run MoonScript using an online compiler][6].[^1]
 
 ---
 
 #### References
 
-1. B. Mohamed, “Hello World in MoonScript,” The Renegade Coder, 02-Sep-2018.
-  [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-moonscript/>.
-  [Accessed: 31-Oct-2018].
+[^1]: B. Mohamed, “Hello World in MoonScript,” The Renegade Coder, 02-Sep-2018. [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-moonscript/>. [Accessed: 31-Oct-2018].
 
-[1]: https://moonscript.org/
-[2]: https://github.com/leafo
-[3]: http://itch.io/
 [4]: https://github.com/leafo/moonscript/releases/download/win32-v0.5.0/moonscript-187bac54ee5a7450013e9c38e005a0e671b76f45.zip
 [5]: https://luarocks.org/
 [6]: https://moonscript.org/compiler/
