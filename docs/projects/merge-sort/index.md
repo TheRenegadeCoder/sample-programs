@@ -22,9 +22,9 @@ Step by step the process is:
 
 1. Divide the sorted list into lists of 1 element.
 2. Continually merge the lists together until they become a single list. Do the merge as follows:
-  * Compare the smallest items in each of the two lists to be merged.
-  * Move the smaller of the two to the new merged list
-  * Repeat until there are no unmerged items
+    * Compare the smallest items in each of the two lists to be merged.
+    * Move the smaller of the two to the new merged list
+    * Repeat until there are no unmerged items
 
 
 ### Performance
