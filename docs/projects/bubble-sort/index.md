@@ -9,6 +9,8 @@ authors:
   - auroq
 ---
 
+In this article, we'll introduce Bubble Sort, a type of sorting algorithm. 
+
 ## Description
 
 Bubble sort is a sorting algorithm that repeatedly cycles through a list of elements
