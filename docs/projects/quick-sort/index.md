@@ -8,7 +8,7 @@ authors:
   - auroq
 ---
 
-In this article, we'll cover Quick Sort, a rather efficient sorting algorith.
+In this article, we'll cover Quick Sort, a rather efficient sorting algorithm.
 
 ## Description
 
