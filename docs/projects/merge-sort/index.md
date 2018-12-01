@@ -8,6 +8,8 @@ authors:
   - auroq
 ---
 
+In this article, we'll tackle Merge Sort, an efficient sorting algorithm.
+
 ## Description
 
 Merge sort is an algorithm that works by dividing a list into smaller lists.
