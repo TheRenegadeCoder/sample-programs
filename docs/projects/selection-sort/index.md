@@ -8,6 +8,8 @@ authors:
   - auroq
 ---
 
+In this article, we'll tackle Selection Sort, an inefficient sorting algorithm.
+
 ## Description
 
 Selection sort is an algorithm that operates on two lists, one of sorted elements and one of unsorted.
@@ -31,7 +33,7 @@ article by Rob Bell or the wikipedia entry listed in further readings below.
 | Average case | O(n<sup>2</sup>) |
 | Worst case | O(n<sup>2</sup>) |
 
-Selection sort allways performs at O(n<sup>2</sup>). This is because the algorithm's
+Selection sort always performs at O(n<sup>2</sup>). This is because the algorithm's
 loops do not depend on the values of the items in the list. That means that even if
 the list is already sorted, the full sorting process will still be performed.
 
