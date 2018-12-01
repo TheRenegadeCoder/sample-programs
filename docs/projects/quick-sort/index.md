@@ -8,6 +8,8 @@ authors:
   - auroq
 ---
 
+In this article, we'll cover Quick Sort, a rather efficient sorting algorith.
+
 ## Description
 
 Quick sort is an algorithm that works by dividing a list into smaller lists.
