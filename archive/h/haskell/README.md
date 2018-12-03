@@ -15,6 +15,7 @@ Welcome to Sample Programs in Haskell!
 - [Hello World in Haskell](https://therenegadecoder.com/code/hello-world-in-haskell/)
 - [Job Sequencing with Deadlines in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/770)
 - [Longest Common Subsequence in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/577)
+- [Merge Sort in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/807)
 - [Prime Number in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/757)
 - [Quine in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/773)
   - Solution borrowed from [Rosetta Code](https://rosettacode.org/wiki/Quine#Haskell)
