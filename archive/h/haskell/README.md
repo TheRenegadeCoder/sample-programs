@@ -5,6 +5,7 @@ Welcome to Sample Programs in Haskell!
 ## Samples Programs
 
 - [Baklava in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/575)
+- [Bubble Sort in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/800)
 - [Even Odd in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/743)
 - [Factorial in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/746)
 - [Fibonacci in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/543)
