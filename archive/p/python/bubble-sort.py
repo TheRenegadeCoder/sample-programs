@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 import sys
-import argparse
 from functools import reduce
 
 
@@ -21,13 +20,21 @@ def input_list(list_str):
     return [int(x.strip(" "), 10) for x in list_str.split(',')]
 
 
-if __name__ == "__main__":
-    usage = 'Usage: please provide a list of at least two integers to sort in the format “1, 2, 3, 4, 5”'
-    parser = argparse.ArgumentParser(usage=usage)
-    parser.add_argument('list', type=input_list)
-    args = parser.parse_args()
-    if len(args.list) <= 1:
-        print(usage)
-        sys.exit(1)
+def exit_with_error():
+    print('Usage: please provide a list of at least two integers to sort in the format “1, 2, 3, 4, 5”')
+    sys.exit(1)
 
-    print(bubble_sort(args.list))
+
+def main(args):
+    try:
+        xs = input_list(args[0])
+        if len(xs) <= 1:
+            exit_with_error()
+        print(bubble_sort(xs))
+    except (IndexError,ValueError):
+        exit_with_error()
+
+
+if __name__ == "__main__":
+    main(sys.argv[1:])
+
