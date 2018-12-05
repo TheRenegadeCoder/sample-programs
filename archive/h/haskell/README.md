@@ -17,6 +17,9 @@ Welcome to Sample Programs in Haskell!
 - [Longest Common Subsequence in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/577)
 - [Merge Sort in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/807)
 - [Prime Number in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/757)
+- [Quick Sort Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/814)
+  - Quick sort is so fundamental in haskell that it can be found on the [Introduction page of the Haskell Wiki](https://wiki.haskell.org/Introduction#Quicksort_in_Haskell)
+  - Solution also influenced by [Learn You a Haskell for Great Good](http://learnyouahaskell.com/recursion)
 - [Quine in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/773)
   - Solution borrowed from [Rosetta Code](https://rosettacode.org/wiki/Quine#Haskell)
 - [Reverse a String in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/559)
@@ -32,5 +35,6 @@ Welcome to Sample Programs in Haskell!
 ## References
 
 - [Haskell Docs](https://www.haskell.org/)
-- [Haskell Wiki](https://en.wikipedia.org/wiki/Haskell_(programming_language))
+- [Haskell Wiki](https://wiki.haskell.org/Haskell)
+- [Haskell on Wikipedia](https://en.wikipedia.org/wiki/Haskell_(programming_language))
 - [Haskell REPL](https://repl.it/languages/haskell)
