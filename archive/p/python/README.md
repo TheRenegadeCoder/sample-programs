@@ -6,6 +6,7 @@ Welcome to Sample Programs in Python!
 
 - [Baklava in Python][22]
   - Solution borrowed from @erayak via the [baklava repo][21]
+  [Bubble Sort in Python][31]
 - [Fibonacci Sequence in Python][24]
 - [File IO in Python][29]
 - [Fizz Buzz in Python][1]
@@ -121,3 +122,4 @@ Welcome to Sample Programs in Python!
 [28]: https://github.com/Boot-Error/sample-programs/blob/ced2e54804d8f801aee2b37fee6f443a6432cb9b/archive/p/python/lcs.py#L17
 [29]: https://therenegadecoder.com/code/file-io-in-python/
 [30]: https://github.com/TheRenegadeCoder/sample-programs/issues/765
+[31]: https://github.com/TheRenegadeCoder/sample-programs/issues/811
