@@ -29,7 +29,7 @@ following sequence:
 
 Because the last possible job we can choose has a deadline of 3, we can
 only select 3 jobs at most for our sequence. As a result, we cannot
-complete J4. In total, we can make a profit of 40.
+complete J4. In total, we can make a profit of 50.
 
 Be aware that the output sequence is not unique. There may be multiple
 configurations that yield the same profit.
@@ -52,7 +52,7 @@ output the maximum profit only. For example:
 
 ```console
 $ ./job-sequencing.lang "25, 15, 10, 5" "3, 1, 2, 2"
-$ 40
+$ 50
 ```
 
 Naturally, this is for testing
@@ -69,7 +69,8 @@ verify the correctness of your solution:
 | No Input | | "Usage: please provide a list of profits and a list of deadlines" |
 | Empty Input | | "Usage: please provide a list of profits and a list of deadlines" |
 | Missing Input | "25, 15, 10, 5" | "Usage: please provide a list of profits and a list of deadlines" |
-| Sample Input | "25, 15, 10, 5" "3, 1, 2, 2" | "Usage: please provide a list of profits and a list of deadlines" |
+| Sample Input | "25, 15, 10, 5" "3, 1, 2, 2" | 50 |
+| Sample Input | "20, 15, 10, 5, 1" "2, 2, 1, 3, 3" | 40 |
 
 ## Articles
 

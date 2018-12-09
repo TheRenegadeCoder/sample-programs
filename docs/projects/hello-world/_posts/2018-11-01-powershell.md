@@ -8,13 +8,18 @@ authors:
   - alcha
 ---
 
+Today, we'll be taking on Hello World in [PowerShell][1], a task automation language
+built by Microsoft.
+
+## How to Implement the Solution
+
 Let’s get something working! 😊
 
 ```powershell
 Write-Host 'Hello, World!'
 ```
 
-To execute this code, open a PowerShell console on any Windows machine as it
+To execute this code, open a [PowerShell][1] console on any Windows machine as it
 comes installed by default. You’ll see the reply output in the window like so:
 
 ```console
@@ -54,3 +59,5 @@ And, that's it![^1]
 #### References
 
 [^1]: D. Leaman, “Hello World in PowerShell,” The Renegade Coder, 28-Jul-2018. [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-powershell/>. [Accessed: 31-Oct-2018].
+
+[1]: {{ site.baseurl }}{% post_url /languages/2018-11-01-powershell %}

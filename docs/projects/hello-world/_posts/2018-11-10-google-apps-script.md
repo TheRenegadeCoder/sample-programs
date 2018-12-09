@@ -8,6 +8,11 @@ authors:
   - the_renegade_coder
 ---
 
+In this article, we'll tackle Hello World in Google Apps Script, an application language
+developed by Google.
+
+## How to Implement the Solution
+
 At any rate, here’s the implementation of Hello World in Google Apps Script:
 
 ```

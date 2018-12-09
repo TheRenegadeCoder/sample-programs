@@ -1,7 +1,7 @@
 ---
 title: The Google Apps Script Programming Language
 layout: default
-last-modified: 2018-11-10
+last-modified: 2018-11-17
 featured-image:
 tags: [google-apps-script]
 authors:
@@ -23,6 +23,10 @@ in their scripts.
 
 Overall, Google Apps Script appears to be a great tool for anyone looking to
 write add-ons for G Suite applications. Otherwise, you’ll probably never use it.[^1]
+
+## Articles
+
+{% include article_list.md collection=site.tags.google-apps-script %}
 
 ---
 
