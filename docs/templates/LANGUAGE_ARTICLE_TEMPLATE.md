@@ -14,7 +14,7 @@ authors:
 
 ## Articles
 
-{% include article_list.md collection=site.tags.[name of language] % }
+{% include article_list.md collection=site.tags.[name of language] %}
 
 ---
 
