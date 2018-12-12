@@ -5,7 +5,7 @@ last-modified: 2018-12-11
 featured-image:
 tags: [powershell, fizz-buzz]
 authors:
-  - martyav
+  - alcha
 ---
 
 ## How to Implement the Solution
