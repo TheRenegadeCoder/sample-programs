@@ -51,7 +51,8 @@ program before you even write some code? If you’d like more information on the
 things interviewers can glean from a Fizz Buzz solution, feel free to check out
 this article from Lionell Pack on Forbes.
 
-What’s The Problem?
+### What’s The Problem?
+
 The actual problem was (from what I can tell, please correct me if I’m wrong)
 initially put forth by Imron Ghory over on his blog and it was based on a “group
 word game for children to teach them about division.” While there’s a number of
@@ -145,7 +146,7 @@ PowerShell FizzBuzz Script Output
 
 The default output of the FizzBuzz script written in PowerShell.
 
-Finally, A Script!
+### Finally, A Script!
 
 Now, since this is PowerShell, it’s no fun just having a for loop that we need
 to copy paste. No, we need a script! 😈
