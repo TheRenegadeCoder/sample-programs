@@ -27,10 +27,10 @@ playing Overwatch, and other nerdy things, when he mentions to me that he enjoye
 reading my past articles. While he may not be a currently active developer and
 that some of the stuff goes over his head, I’ve “got a knack for it” as he said.
 
-Tron that are heavily requested by the user base. It was enough to remind me the
-whole reason I started writing these is for the off-chance that someone like that
-would enjoy my writing and possibly get them more interested in programming, learn
-something new, or simply enjoy the read for the sake of reading something interesting.
+> Tron that are heavily requested by the user base. It was enough to remind me the
+> whole reason I started writing these is for the off-chance that someone like that
+> would enjoy my writing and possibly get them more interested in programming, learn
+> something new, or simply enjoy the read for the sake of reading something interesting.
 
 In the end, I’d like to say thank you again to that friend of mine for the
 encouraging words, as I probably wouldn’t have had the motivation to start on
@@ -59,10 +59,10 @@ word game for children to teach them about division.” While there’s a number
 different ways to word this problem, here’s the wording we’re going to be working
 with:
 
-Write a program that prints the numbers 1 to 100. However, for multiples of
-three, print “Fizz” instead of the number. Meanwhile, for multiples of five,
-print “buzz” instead of the number. For numbers which are multiples of both,
-print “FizzBuzz.”
+> Write a program that prints the numbers 1 to 100. However, for multiples of
+> three, print “Fizz” instead of the number. Meanwhile, for multiples of five,
+> print “buzz” instead of the number. For numbers which are multiples of both,
+> print “FizzBuzz.”
 
 This means there are a few things we need to keep in mind or consider:
 
@@ -76,9 +76,12 @@ as a developer, your entry point will vary. Personally, I’ll be starting by
 creating the for loop that will iterate through all the numbers we need to analyze.
 This starts us off with something like the following for PowerShell:
 
+```powershell
 for ($x = 1; $x -le 100; $x++) {
   Write-Output $x
 }
+```
+
 This will get us a starting point of outputting every number from 1 to 100. Now
 we should start putting in some if statements to determine if $x is a multiple
 of 3, 5, or both. As is the case with most modern programming languages, PowerShell
@@ -90,6 +93,7 @@ has no remainder. This also happens to mean the first value is a multiple of
 the second, which we can use to determine the multiples of $x. When I first
 wrote this script, my solution looked like so:
 
+```powershell
 for($x = 1; $x -le 100; $x++) {
   $Threes = $x%3
   $Fives = $x%5
@@ -103,6 +107,7 @@ for($x = 1; $x -le 100; $x++) {
     Write-Output$x
   }
 }
+```
 
 ### Cleaning Up Our First Draft
 
@@ -116,6 +121,7 @@ each number.
 While he used JavaScript, the solution should be easily understandable and looks
 like so:
 
+```powershell
 for (var i = 1; i <= 100; i++) {
   var output = ""
   if (i % 3 === 0) output += "Fizz"
@@ -123,6 +129,7 @@ for (var i = 1; i <= 100; i++) {
   if (output === "") output = i
   console.log(output)
 }
+```
 
 As you can see, he creates the output variable for each iteration of $x and
 depending on the multiples, adds or replaces values to that variable. Then, in
@@ -130,6 +137,7 @@ the end, he outputs it to the console using console.log.
 
 Translating this to PowerShell, we get something like so:
 
+```powershell
 for ($x = 1; $x -le 100; $x++) {
   $Output = ""
   if ($x%3 -eq 0) { $Output += "Fizz" }
@@ -137,6 +145,7 @@ for ($x = 1; $x -le 100; $x++) {
   if ($Output -eq "") { $Output = $x }
   Write-Output $Output
 }
+```
 
 At this point, we have a working solution to the Fizz Buzz problem written in
 PowerShell. If you were to copy and paste it into a terminal you’d get something
