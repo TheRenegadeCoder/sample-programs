@@ -163,8 +163,10 @@ to copy paste. No, we need a script! 😈
 I created a file simply titled FizzBuzz.ps1 and got to work by adding the standard
 goodies at the top of a PowerShell script:
 
+```powershell
 [CmdletBinding()]
 param ()
+```
 
 Since I was initially writing this script for the sample programs repository I
 contribute to, I knew I wanted to support more than going from 1 to 100. Instead,
@@ -172,12 +174,14 @@ I wanted users to be able to provide a minimum and maximum parameter that would
 let them modify the output. This simply means adding two parameters to the param
 () field like so:
 
+```powershell
 param (
   [Parameter(Mandatory = $false, Position = 0)]
   $Min = 1,
   [Parameter(Mandatory = $false, Position = 1)]
   $Max = 100
 )
+```
 
 The Mandatory and Position attributes tell PowerShell that the parameters have
 default values and that they aren’t mandatory, and the position attribute makes
@@ -185,6 +189,7 @@ it possible to do something like .\FizzBuzz.ps1 0 75 to adjust the min and max
 without having to specify the parameter names. Then, with some minor changes to
 the for loop, we have our finished result!
 
+```powershell
 <#
 .SYNOPSIS
   A simple script that solves the standard FizzBuzz interview problem.
@@ -237,6 +242,7 @@ for ($X = $Min; $X -le $Max; $X++) {
   if ($Output -eq "") { $Output = $X }
   Write-Output $Output
 }
+```
 
 ## How to Run the Solution
 
@@ -247,6 +253,7 @@ and then execute it.
 NOTE: If you have a secure Execution Policy, you’ll have to set it to unrestricted
 before executing this script.
 
+```powershell
 $Url = "https://raw.githubusercontent.com/TheRenegadeCoder/sample-programs/master/archive/p/powershell/FizzBuzz.ps1"
 $CurrPath = (Get-Location).Path
 $FilePath = "$CurrPath\FizzBuzz.ps1"
@@ -277,3 +284,4 @@ $WebClient.DownloadFile($Url, $FilePath)
 # Buzz
 # 11
 # Fizz
+```
