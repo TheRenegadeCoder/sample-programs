@@ -70,14 +70,24 @@ The maximum value of 100.
 Determine which order to check for multiples to avoid missing edge cases.
 Write the output to the console.
 Where to Start?
-Well, this is where it varies for everyone. Depending on how you tend to work as a developer, your entry point will vary. Personally, I’ll be starting by creating the for loop that will iterate through all the numbers we need to analyze. This starts us off with something like the following for PowerShell:
+Well, this is where it varies for everyone. Depending on how you tend to work
+as a developer, your entry point will vary. Personally, I’ll be starting by
+creating the for loop that will iterate through all the numbers we need to analyze.
+This starts us off with something like the following for PowerShell:
 
 for ($x = 1; $x -le 100; $x++) {
   Write-Output $x
 }
-This will get us a starting point of outputting every number from 1 to 100. Now we should start putting in some if statements to determine if $x is a multiple of 3, 5, or both. As is the case with most modern programming languages, PowerShell has a modulus operator that will return the remainder of the division between two numbers.
+This will get us a starting point of outputting every number from 1 to 100. Now
+we should start putting in some if statements to determine if $x is a multiple
+of 3, 5, or both. As is the case with most modern programming languages, PowerShell
+has a modulus operator that will return the remainder of the division between two
+numbers.
 
-For example, doing Write-Output (25 % 5) would output 0, since 25 divided by 5 has no remainder. This also happens to mean the first value is a multiple of the second, which we can use to determine the multiples of $x. When I first wrote this script, my solution looked like so:
+For example, doing Write-Output (25 % 5) would output 0, since 25 divided by 5
+has no remainder. This also happens to mean the first value is a multiple of
+the second, which we can use to determine the multiples of $x. When I first
+wrote this script, my solution looked like so:
 
 for($x = 1; $x -le 100; $x++) {
   $Threes = $x%3
@@ -92,10 +102,18 @@ for($x = 1; $x -le 100; $x++) {
     Write-Output$x
   }
 }
-Cleaning Up Our First Draft
-While this works, it’s a bit clunky and doesn’t allow for us to easily modify it in the future if we want to add cases other than being a multiple of 3 or 5. I hadn’t quite realized this until I went looking for more information on this problem and found a video by Tom Scott. He pointed out that you could easily account for future adjustments by combining the output as a single variable for each number.
 
-While he used JavaScript, the solution should be easily understandable and looks like so:
+### Cleaning Up Our First Draft
+
+While this works, it’s a bit clunky and doesn’t allow for us to easily modify it
+in the future if we want to add cases other than being a multiple of 3 or 5. I
+hadn’t quite realized this until I went looking for more information on this
+problem and found a video by Tom Scott. He pointed out that you could easily
+account for future adjustments by combining the output as a single variable for
+each number.
+
+While he used JavaScript, the solution should be easily understandable and looks
+like so:
 
 for (var i = 1; i <= 100; i++) {
   var output = ""
@@ -104,7 +122,10 @@ for (var i = 1; i <= 100; i++) {
   if (output === "") output = i
   console.log(output)
 }
-As you can see, he creates the output variable for each iteration of $x and depending on the multiples, adds or replaces values to that variable. Then, in the end, he outputs it to the console using console.log.
+
+As you can see, he creates the output variable for each iteration of $x and
+depending on the multiples, adds or replaces values to that variable. Then, in
+the end, he outputs it to the console using console.log.
 
 Translating this to PowerShell, we get something like so:
 
@@ -115,18 +136,31 @@ for ($x = 1; $x -le 100; $x++) {
   if ($Output -eq "") { $Output = $x }
   Write-Output $Output
 }
-At this point, we have a working solution to the Fizz Buzz problem written in PowerShell. If you were to copy and paste it into a terminal you’d get something that looks like this:
+
+At this point, we have a working solution to the Fizz Buzz problem written in
+PowerShell. If you were to copy and paste it into a terminal you’d get something
+that looks like this:
 
 PowerShell FizzBuzz Script Output
-The default output of the FizzBuzz script written in PowerShell.
-Finally, A Script!
-Now, since this is PowerShell, it’s no fun just having a for loop that we need to copy paste. No, we need a script! 😈
 
-I created a file simply titled FizzBuzz.ps1 and got to work by adding the standard goodies at the top of a PowerShell script:
+The default output of the FizzBuzz script written in PowerShell.
+
+Finally, A Script!
+
+Now, since this is PowerShell, it’s no fun just having a for loop that we need
+to copy paste. No, we need a script! 😈
+
+I created a file simply titled FizzBuzz.ps1 and got to work by adding the standard
+goodies at the top of a PowerShell script:
 
 [CmdletBinding()]
 param ()
-Since I was initially writing this script for the sample programs repository I contribute to, I knew I wanted to support more than going from 1 to 100. Instead, I wanted users to be able to provide a minimum and maximum parameter that would let them modify the output. This simply means adding two parameters to the param () field like so:
+
+Since I was initially writing this script for the sample programs repository I
+contribute to, I knew I wanted to support more than going from 1 to 100. Instead,
+I wanted users to be able to provide a minimum and maximum parameter that would
+let them modify the output. This simply means adding two parameters to the param
+() field like so:
 
 param (
   [Parameter(Mandatory = $false, Position = 0)]
@@ -134,7 +168,12 @@ param (
   [Parameter(Mandatory = $false, Position = 1)]
   $Max = 100
 )
-The Mandatory and Position attributes tell PowerShell that the parameters have default values and that they aren’t mandatory, and the position attribute makes it possible to do something like .\FizzBuzz.ps1 0 75 to adjust the min and max without having to specify the parameter names. Then, with some minor changes to the for loop, we have our finished result!
+
+The Mandatory and Position attributes tell PowerShell that the parameters have
+default values and that they aren’t mandatory, and the position attribute makes
+it possible to do something like .\FizzBuzz.ps1 0 75 to adjust the min and max
+without having to specify the parameter names. Then, with some minor changes to
+the for loop, we have our finished result!
 
 <#
 .SYNOPSIS
@@ -188,10 +227,15 @@ for ($X = $Min; $X -le $Max; $X++) {
   if ($Output -eq "") { $Output = $X }
   Write-Output $Output
 }
-How to Run the Solution
-To run the Fizz Buzz script, launch a PowerShell console, grab a copy of the Fizz Buzz script from the repository (or copy/paste the code from above 😉), and then execute it.
 
-NOTE: If you have a secure Execution Policy, you’ll have to set it to unrestricted before executing this script.
+## How to Run the Solution
+
+To run the Fizz Buzz script, launch a PowerShell console, grab a copy of the
+Fizz Buzz script from the repository (or copy/paste the code from above 😉),
+and then execute it.
+
+NOTE: If you have a secure Execution Policy, you’ll have to set it to unrestricted
+before executing this script.
 
 $Url = "https://raw.githubusercontent.com/TheRenegadeCoder/sample-programs/master/archive/p/powershell/FizzBuzz.ps1"
 $CurrPath = (Get-Location).Path
