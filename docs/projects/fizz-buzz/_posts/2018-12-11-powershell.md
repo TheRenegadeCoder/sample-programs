@@ -253,7 +253,7 @@ and then execute it.
 NOTE: If you have a secure Execution Policy, you’ll have to set it to unrestricted
 before executing this script.
 
-```powershell
+```console
 $Url = "https://raw.githubusercontent.com/TheRenegadeCoder/sample-programs/master/archive/p/powershell/FizzBuzz.ps1"
 $CurrPath = (Get-Location).Path
 $FilePath = "$CurrPath\FizzBuzz.ps1"
@@ -285,3 +285,9 @@ $WebClient.DownloadFile($Url, $FilePath)
 # 11
 # Fizz
 ```
+
+---
+
+#### References
+
+[^1]: Stargator, “Hello World in Dart,” The Renegade Coder, 12-Jul-2018. [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-dart/>. [Accessed: 31-Oct-2018].
