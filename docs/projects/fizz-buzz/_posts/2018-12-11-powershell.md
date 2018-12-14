@@ -38,8 +38,6 @@ this without them 💗[^1]
 
 ### No More Anecdote
 
-Photo by Raj Eiamworakul on Unsplash
-
 And now we’re off to the juicy bits of the article! 🤤 If you’re unfamiliar with
 the Fizz Buzz interview problem, it’s a relatively simple problem that is adept
 at testing your knowledge and fundamental understanding of a given programming
@@ -148,12 +146,7 @@ for ($x = 1; $x -le 100; $x++) {
 ```
 
 At this point, we have a working solution to the Fizz Buzz problem written in
-PowerShell. If you were to copy and paste it into a terminal you’d get something
-that looks like this:
-
-PowerShell FizzBuzz Script Output
-
-The default output of the FizzBuzz script written in PowerShell.[^1]
+PowerShell.[^1]
 
 ### Finally, A Script!
 
