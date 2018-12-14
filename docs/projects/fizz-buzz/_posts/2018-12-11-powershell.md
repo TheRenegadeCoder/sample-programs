@@ -290,4 +290,4 @@ $WebClient.DownloadFile($Url, $FilePath)
 
 #### References
 
-[^1]: D. Leaman, “Fizz Buzz in PowerShell,” The Renegade Coder, 11-Nov-2018. [Online]. Available: <https://therenegadecoder.com/code/fizz-buzz-in-powershell/>. [Accessed: 11-Dec-2018].
+[^1]: D. Leaman, “Fizz Buzz in PowerShell,” The Renegade Coder, 16-Nov-2018. [Online]. Available: <https://therenegadecoder.com/code/fizz-buzz-in-powershell/>. [Accessed: 11-Dec-2018].
