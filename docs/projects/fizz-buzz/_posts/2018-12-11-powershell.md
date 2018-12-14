@@ -290,4 +290,4 @@ $WebClient.DownloadFile($Url, $FilePath)
 
 #### References
 
-[^1]: Stargator, “Hello World in Dart,” The Renegade Coder, 12-Jul-2018. [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-dart/>. [Accessed: 31-Oct-2018].
+[^1]: D. Leaman, “Fizz Buzz in PowerShell,” The Renegade Coder, 11-Nov-2018. [Online]. Available: <https://therenegadecoder.com/code/fizz-buzz-in-powershell/>. [Accessed: 11-Dec-2018].
