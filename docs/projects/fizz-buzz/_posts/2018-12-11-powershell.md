@@ -34,7 +34,7 @@ that some of the stuff goes over his head, I’ve “got a knack for it” as he
 
 In the end, I’d like to say thank you again to that friend of mine for the
 encouraging words, as I probably wouldn’t have had the motivation to start on
-this without them 💗
+this without them 💗[^1]
 
 ### No More Anecdote
 
@@ -49,7 +49,7 @@ For example, do you prefer to toss a bunch of things at the wall and see what
 works and whittle away the excess? Or do you prefer to lay out a plan for the
 program before you even write some code? If you’d like more information on the
 things interviewers can glean from a Fizz Buzz solution, feel free to check out
-this article from Lionell Pack on Forbes.
+this article from Lionell Pack on Forbes.[^1]
 
 ### What’s The Problem?
 
@@ -91,7 +91,7 @@ numbers.
 For example, doing Write-Output (25 % 5) would output 0, since 25 divided by 5
 has no remainder. This also happens to mean the first value is a multiple of
 the second, which we can use to determine the multiples of $x. When I first
-wrote this script, my solution looked like so:
+wrote this script, my solution looked like so:[^1]
 
 ```powershell
 for($x = 1; $x -le 100; $x++) {
@@ -153,7 +153,7 @@ that looks like this:
 
 PowerShell FizzBuzz Script Output
 
-The default output of the FizzBuzz script written in PowerShell.
+The default output of the FizzBuzz script written in PowerShell.[^1]
 
 ### Finally, A Script!
 
@@ -187,7 +187,7 @@ The Mandatory and Position attributes tell PowerShell that the parameters have
 default values and that they aren’t mandatory, and the position attribute makes
 it possible to do something like .\FizzBuzz.ps1 0 75 to adjust the min and max
 without having to specify the parameter names. Then, with some minor changes to
-the for loop, we have our finished result!
+the for loop, we have our finished result![^1]
 
 ```powershell
 <#
@@ -251,7 +251,7 @@ Fizz Buzz script from the repository (or copy/paste the code from above 😉),
 and then execute it.
 
 NOTE: If you have a secure Execution Policy, you’ll have to set it to unrestricted
-before executing this script.
+before executing this script.[^1]
 
 ```console
 $Url = "https://raw.githubusercontent.com/TheRenegadeCoder/sample-programs/master/archive/p/powershell/FizzBuzz.ps1"
