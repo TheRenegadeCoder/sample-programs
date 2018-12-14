@@ -8,6 +8,9 @@ authors:
   - alcha
 ---
 
+In this article, we'll be showing you how to implement Fizz Buzz in PowerShell. 
+Check it out!
+
 ## How to Implement the Solution
 
 I’m going to start with a little anecdote before getting started on the meaty
