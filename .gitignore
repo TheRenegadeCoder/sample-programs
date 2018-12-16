@@ -5,3 +5,5 @@
 wiki/
 _site/
 *.lock
+.vscode/
+.history/
