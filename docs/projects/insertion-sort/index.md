@@ -38,12 +38,6 @@ is the worst case.
 
 ### Examples
 
-In the examples below, each row is a single pass through all elements in the unsorted list.
-The element in __bold__ is the one that will be moved to the sorted list after the pass.
-
-
-### Examples: Single list
-
 In the examples below, each row inserts the element from the main pointer 
 into the front of the list and moves the main pointer to the next element.
 The element in __bold__ is the main pointer.
