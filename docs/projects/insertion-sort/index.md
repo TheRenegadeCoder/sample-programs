@@ -13,10 +13,12 @@ In this article, we'll tackle Insertion Sort, an inefficient sorting algorithm.
 
 ## Description
 
-Insertion sort is an algorithm that generally operates on a single list in place. It tracks a pointer
-that iterates through the list a single time, takes each item and inserts it sorted at the beginning
-of the list. By the time the pointer has iterated through the entire list, the beginning or
-now the entire list is now sorted.
+Insertion sort is an algorithm that generally operates on a single list in place.
+It tracks a pointer that iterates through the list a single time, takes each
+item and inserts it sorted at the beginning of the list. At any given point
+all elements, from the beginning of the list up through the pointer, are in order.
+Once the pointer has iterated through the entire list, all elements have been inserted
+in order at the front of the list, and the list is now fully sorted.
 
 ### Performance
 
