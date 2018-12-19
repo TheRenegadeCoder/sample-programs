@@ -12,6 +12,7 @@ Welcome to Sample Programs in Haskell!
   - Solution borrowed from [Haskell wiki](https://wiki.haskell.org/The_Fibonacci_sequence#Canonical_zipWith_implementation)
 - [File IO in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/597)
 - [Fizz Buzz in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/349)
+- [Game of Life in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/835)
 - [Hello World in Haskell](https://therenegadecoder.com/code/hello-world-in-haskell/)
 - [Job Sequencing with Deadlines in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/770)
 - [Longest Common Subsequence in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/577)
