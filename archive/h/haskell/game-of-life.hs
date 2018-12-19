@@ -11,6 +11,7 @@ import System.Console.ArgParser
 import System.Environment
 import Control.Concurrent
 import Control.Applicative
+import Control.Monad (replicateM_)
 
 
 type Position = (Int, Int)
@@ -66,11 +67,11 @@ instance Cell Node where
   atPosition (Alive (x, y)) (x1, y1) = x == x1 && y == y1
   atPosition _ _ = False
 
-  inGrid cell ps = any (\b -> b) $ fmap (atPosition cell) ps
+  inGrid cell ps = or $ fmap (atPosition cell) ps
 
   neighbors cell cells =
     let cellGrid = circle cell
-    in filter (flip inGrid (circle cell)) cells
+    in filter (`inGrid` circle cell) cells
 
   cellStep cell grid =
     let numNeighbors = length $ neighbors cell grid
@@ -91,19 +92,19 @@ makeGrid width spawnRate = spawn [Dead (x, y) | x <- [0..(width-1)], y <- [0..(w
 -- | 'spawn' takes a Grid and a list of indexes in the grid at which Nodes should spawn.
 -- It returns a Grid with Nodes spawned at those indexes.
 spawn :: Grid -> [Int] -> Grid
-spawn grid indexes = spawn' grid indexes 0
-  where spawn' [] _ _ = []
-        spawn' _ [] _ = []
-        spawn' (c:cs) (i:indexes) count
-          | i == count = (birth c):spawn' cs indexes     (count + 1)
-          | otherwise  =         c:spawn' cs (i:indexes) (count + 1)
+spawn grid indexes = go grid indexes 0
+  where go [] _ _ = []
+        go _ [] _ = []
+        go (c:cs) (i:indexes) count
+          | i == count = birth c:go cs indexes     (count + 1)
+          | otherwise  =       c:go cs (i:indexes) (count + 1)
 
 -- | 'simulate' takes a number of frames and a grid and iterates that grid frame times
 simulate :: Int -> Grid -> Game
 simulate 0 grid        = []
 simulate frameNum grid = grid:simulate (frameNum - 1) (step grid)
   where step :: Grid -> Grid
-        step grid = map (flip cellStep grid) grid
+        step grid = map (`cellStep` grid) grid
 
 -- | 'GoL' is a record for parsing the command line arguments.
 -- It takes 3 Int: width, framerate, and frames
@@ -157,7 +158,7 @@ rowStrings grd = reverse $ snd $ foldl go (0,[]) grd
   where go (row, []) n = (row, [strNode n])
         go (row, acc@(a:as)) n
           | getX n == row = (row, (a ++ "." ++ strNode n):as)
-          | otherwise     = (row+1, (strNode n):acc)
+          | otherwise     = (row+1, strNode n:acc)
 
 -- | 'strNode' converts a single node to a single character string
 -- "0" means dead "x" means alive
@@ -170,7 +171,7 @@ strNode (Alive _) = "x"
 -- clearing the console window. There are good alternatives to this method
 -- but they are either platform specific or require a library
 clearScreen :: IO ()
-clearScreen = mapM_ putStrLn $ replicate 1000 " "
+clearScreen = replicateM_ 1000 (putStrLn " ")
 
 
 -- | 'main' is the entrypoint of the program
