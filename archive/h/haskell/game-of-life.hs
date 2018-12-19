@@ -1,5 +1,4 @@
 module Main where
-
 import System.Console.ArgParser
 import System.Environment
 --import Text.Read
@@ -22,10 +21,16 @@ type Game = [Grid]
 
 class GridMember a where
   circle :: a -> [Position]
+  getX :: a -> Int
+  getY :: a -> Int
 
 instance GridMember Node where
   circle (Alive (x, y)) = [(x1, y1) | x1 <- [x-1..x+1], y1 <- [y-1..y+1], (x1,y1) /= (x,y)]
   circle _ = []
+  getX (Alive (x, _)) = x
+  getX (Dead (x, _)) = x
+  getY (Alive (_, y)) = y
+  getY (Dead (_, y)) = y
 
 class Cell a where
   isAlive :: a -> Bool
@@ -112,7 +117,17 @@ runGame (GoL width framerate frames spawn) =
   in simulate frames grid
 
 runGameIO :: GoL -> IO ()
-runGameIO = putStrLn . show . runGame
+runGameIO gol@(GoL width framerate frames spawn) = do
+  let game = runGame gol
+  printGame framerate game
+
+printGame :: Int -> Game -> IO ()
+printGame _ [] = putStrLn ""
+printGame delaySeconds (g:gs) = do
+  clearScreen
+  printGrid g
+  threadDelay (delaySeconds * 1000000)
+  printGame delaySeconds gs
 
 gridString :: Grid -> Int -> String
 gridString grid width = gridString' grid width 0
@@ -120,6 +135,28 @@ gridString grid width = gridString' grid width 0
         gridString' (g:gs) width column
           | column + 1 >= width =         show g ++ gridString' gs width 1
           | otherwise           = "\n" ++ show g ++ gridString' gs width 0
+
+
+printGrid :: Grid -> IO ()
+printGrid grd = mapM_ putStrLn $ toMultidimensional grd
+
+
+toMultidimensional :: Grid -> [String]
+toMultidimensional grd = reverse $ snd $ foldl go (0,[]) grd
+  where go (row, []) n = (row, [strNode n])
+        go (row, acc@(a:as)) n
+          | getX n == row = (row, (a ++ "." ++ strNode n):as)
+          | otherwise     = (row+1, (strNode n):acc)
+
+
+strNode :: Node -> String
+strNode (Dead _)  = "0"
+strNode (Alive _) = "x"
+
+
+clearScreen :: IO ()
+clearScreen = mapM_ putStrLn $ replicate 1000 " "
+
 
 main :: IO ()
 main = do
