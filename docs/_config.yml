@@ -16,3 +16,7 @@ markdown: kramdown
 
 # Posts permalink
 permalink: /:categories/:title/
+
+# Extra plugins
+plugins:
+  - jekyll-feed # See https://help.github.com/articles/atom-rss-feeds-for-github-pages/

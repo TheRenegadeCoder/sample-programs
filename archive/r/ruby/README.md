@@ -36,5 +36,5 @@ Welcome to Sample Programs in Ruby!
 [8]: https://github.com/ruby/ruby
 [9]: https://repl.it/languages/ruby
 [10]: https://github.com/TheRenegadeCoder/sample-programs/issues/433
-[11]: https://github.com/TheRenegadeCoder/sample-programs/issues/455
+[11]: https://therenegadecoder.com/code/reverse-a-string-in-ruby/
 [12]: https://github.com/TheRenegadeCoder/sample-programs/issues/542
