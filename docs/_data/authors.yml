@@ -39,17 +39,29 @@ martyav:
   name: Marty Hernandez Avedon
   email: martyavedon@gmail.com
   web: martyav.github.io
-  bio: 
-    A web/mobile developer & alumnus of Pursuit (aka Coalition For Queens). 
-    Currently interning with the Wikimedia Foundation; recently apprenticed at 
+  bio: |
+    A web/mobile developer & alumnus of Pursuit (aka Coalition For Queens).
+    Currently interning with the Wikimedia Foundation; recently apprenticed at
     Microsoft. I am most experienced working with Swift, Javascript, and C#.
-    Previous to all that, gigs included (in no particular order) A) writing for 
-    AskJeeves, B) handing out safe sex packets, C) painting houses, and D) 
+    Previous to all that, gigs included (in no particular order) A) writing for
+    AskJeeves, B) handing out safe sex packets, C) painting houses, and D)
     making flyers for local NYC nonprofits.
 
 nicovillanueva:
   name: Nico Villanueva
   email: villanueva.arg@gmail.com
+  web:
+  bio:
+
+noah11012:
+  name: Noah Nichols
+  email: 1101qbtext@gmail.com
+  web:
+  bio:
+
+samdoj:
+  name: samdoj
+  email: joedmasonsd@gmail.com
   web:
   bio:
 
@@ -61,12 +73,12 @@ stargator:
     Software Engineer in the Northern Virginia area. Worked with everything
     from Java to Dart to JavaScript. Most of my interest lies in DevOps and
     creating usable tooling.
-    
+
 stuin:
   name: Stuart Irwin
   email: stuin01@gmail.com
   web: http://stuintech.com
-  bio: 
+  bio:
 
 the_renegade_coder:
   name: Jeremy Grifski
