@@ -187,6 +187,7 @@ Just like last time, we open the same file. However, this time we're opening it
 for reading purposes. Then, we make sure the file is opened. If it isn't, we
 print a message to the screen and return:
 
+```c++
 std::fstream in("file.txt", std::ios::in);
 
 if(!in.is_open())
@@ -194,38 +195,50 @@ if(!in.is_open())
     std::cout << "Could not open file for reading!\n";
     return;
 }
+```
+
 After that, we can begin reading:
 
+```c++
 std::string line;
 while(std::getline(in, line))
 {
     std::cout << line << "\n";
 }
-To start, we create an empty std::string and loop line by line in the file until
-we reach EOF (end of file). std::getline takes a reference to a 
-std::basic_istream which std::fstream inherits from. The second argument is a
-reference to a std::string. It returns a reference to a std::basic_istream.
+```
 
-std::basic_istream inherits from std::basic_ios which overloads the bool 
-operator. This means we can use std::getline (or more precisely,
-  std::basic_istream ) in boolean contexts such as while conditionals.
+To start, we create an empty `std::string` and loop line by line in the file until
+we reach EOF (end of file). `std::getline` takes a reference to a 
+`std::basic_istream` which `std::fstream` inherits from. The second argument is a
+reference to a `std::string`. It returns a reference to a `std::basic_istream`.
+
+`std::basic_istream` inherits from `std::basic_ios` which overloads the bool 
+operator. This means we can use `std::getline` (or more precisely,
+`std::basic_istream`) in boolean contexts such as while conditionals.
 
 When we're done, we close the file and don't call flush because we just read
 from the file and haven't written anything to it:
 
+```c++
 in.close();
+```
+
 And, that's how we read from a file in C++.
 
-The Main Function
+### The Main Function
+
 As usual, C++ programs cannot be executed without a main function:
 
+```c++
 int main()
 {
     write_file();
     read_file();
 }
-Here, we make a call to each function we've created: write_file() and
-read_file(). And, that's it!
+```
+
+Here, we make a call to each function we've created: `write_file()` and
+`read_file()`. And, that's it!
 
 ## How to Run Solution
 
@@ -233,8 +246,11 @@ There are many online compilers such as Compiler Explorer that you can use to
 compile C++ code. If you have a compiler installed on your system such g++ or
 clang++ use the following commands:
 
+```console
 g++ -o program file.cpp
 clang++ -o program file.cpp
+```
+
 And, that's it! You've successfully executed the solution.
 
 ---
