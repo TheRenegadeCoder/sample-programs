@@ -16,6 +16,7 @@ Welcome to Sample Programs in Python!
 - [Hello World in Python][0]
 - [Job Sequencing with Deadlines in Python][30]
 - [Longest Common Subsequence][26]
+- [Prime Number in Python][36]
 - [Quine in Python][3]
 - [Reverse a String in Python][2]
 - [Roman Numberal Conversion in Python][25]
@@ -127,3 +128,4 @@ Welcome to Sample Programs in Python!
 [31]: https://github.com/TheRenegadeCoder/sample-programs/issues/811
 [32]: https://github.com/TheRenegadeCoder/sample-programs/issues/849
 [33]: https://github.com/TheRenegadeCoder/sample-programs/issues/852
+[36]: https://github.com/TheRenegadeCoder/sample-programs/issues/861
