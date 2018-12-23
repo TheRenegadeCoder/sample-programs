@@ -20,6 +20,7 @@ Welcome to Sample Programs in Python!
 - [Quine in Python][3]
 - [Reverse a String in Python][2]
 - [Roman Numberal Conversion in Python][25]
+- [Selection Sort in Python][39]
 
 ## Fun Facts
 
@@ -129,3 +130,4 @@ Welcome to Sample Programs in Python!
 [32]: https://github.com/TheRenegadeCoder/sample-programs/issues/849
 [33]: https://github.com/TheRenegadeCoder/sample-programs/issues/852
 [36]: https://github.com/TheRenegadeCoder/sample-programs/issues/861
+[39]: https://github.com/TheRenegadeCoder/sample-programs/issues/870
