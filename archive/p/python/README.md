@@ -12,6 +12,7 @@ Welcome to Sample Programs in Python!
 - [Fizz Buzz in Python][1]
 - [Game of Life in Python][4]
 - [Hello World in Python][0]
+- [Insertion Sort in Python][34]
 - [Job Sequencing with Deadlines in Python][30]
 - [Longest Common Subsequence][26]
 - [Quine in Python][3]
@@ -123,3 +124,4 @@ Welcome to Sample Programs in Python!
 [29]: https://therenegadecoder.com/code/file-io-in-python/
 [30]: https://github.com/TheRenegadeCoder/sample-programs/issues/765
 [31]: https://github.com/TheRenegadeCoder/sample-programs/issues/811
+[34]: https://github.com/TheRenegadeCoder/sample-programs/issues/855
