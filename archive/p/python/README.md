@@ -14,6 +14,7 @@ Welcome to Sample Programs in Python!
 - [Hello World in Python][0]
 - [Job Sequencing with Deadlines in Python][30]
 - [Longest Common Subsequence][26]
+- [Quick Sort in Python][37]
 - [Quine in Python][3]
 - [Reverse a String in Python][2]
 - [Roman Numberal Conversion in Python][25]
@@ -123,3 +124,4 @@ Welcome to Sample Programs in Python!
 [29]: https://therenegadecoder.com/code/file-io-in-python/
 [30]: https://github.com/TheRenegadeCoder/sample-programs/issues/765
 [31]: https://github.com/TheRenegadeCoder/sample-programs/issues/811
+[37]: https://github.com/TheRenegadeCoder/sample-programs/issues/864
