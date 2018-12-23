@@ -8,7 +8,7 @@ def is_prime(x):
         return True
     if x % 2 == 0:
         return False
-    return not bool([n for n in range(3, ceil(sqrt(x))+1) if x % n == 0])
+    return not bool([n for n in range(3, int(ceil(sqrt(x))+1)) if x % n == 0])
 
 
 def exit_with_error():
