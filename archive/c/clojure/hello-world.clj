@@ -5,3 +5,6 @@
   "Hello World"
   [& args]
   (println "Hello, World!"))
+
+(main)
+
