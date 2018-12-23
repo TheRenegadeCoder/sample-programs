@@ -8,7 +8,13 @@ def rot_13(string):
 
 
 def encrypt_char(c):
-    ltrs = ascii_uppercase if c in ascii_uppercase else ascii_lowercase
+    lts = None
+    if c in ascii_uppercase:
+        ltrs = ascii_uppercase
+    elif c in ascii_lowercase:
+        ltrs = ascii_lowercase
+    else:
+        return c
     new_index = (ltrs.index(c) + 13) % 26
     return ltrs[new_index]
 
