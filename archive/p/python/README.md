@@ -6,18 +6,24 @@ Welcome to Sample Programs in Python!
 
 - [Baklava in Python][22]
   - Solution borrowed from @erayak via the [baklava repo][21]
-  [Bubble Sort in Python][31]
+- [Bubble Sort in Python][31]
+- [Even Odd in Python][32]
+- [Factorial in Python][33]
 - [Fibonacci Sequence in Python][24]
 - [File IO in Python][29]
 - [Fizz Buzz in Python][1]
 - [Game of Life in Python][4]
 - [Hello World in Python][0]
+- [Insertion Sort in Python][34]
 - [Job Sequencing with Deadlines in Python][30]
 - [Longest Common Subsequence][26]
 - [Merge Sort in Python][35]
+- [Prime Number in Python][36]
 - [Quine in Python][3]
 - [Reverse a String in Python][2]
 - [Roman Numberal Conversion in Python][25]
+- [ROT-13 in Python][38]
+- [Selection Sort in Python][39]
 
 ## Fun Facts
 
@@ -124,4 +130,10 @@ Welcome to Sample Programs in Python!
 [29]: https://therenegadecoder.com/code/file-io-in-python/
 [30]: https://github.com/TheRenegadeCoder/sample-programs/issues/765
 [31]: https://github.com/TheRenegadeCoder/sample-programs/issues/811
+[32]: https://github.com/TheRenegadeCoder/sample-programs/issues/849
+[33]: https://github.com/TheRenegadeCoder/sample-programs/issues/852
+[34]: https://github.com/TheRenegadeCoder/sample-programs/issues/855
 [35]: https://github.com/TheRenegadeCoder/sample-programs/issues/858
+[36]: https://github.com/TheRenegadeCoder/sample-programs/issues/861
+[38]: https://github.com/TheRenegadeCoder/sample-programs/issues/867
+[39]: https://github.com/TheRenegadeCoder/sample-programs/issues/870
