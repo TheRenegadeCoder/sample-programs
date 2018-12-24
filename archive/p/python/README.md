@@ -19,6 +19,7 @@ Welcome to Sample Programs in Python!
 - [Longest Common Subsequence][26]
 - [Merge Sort in Python][35]
 - [Prime Number in Python][36]
+- [Quick Sort in Python][37]
 - [Quine in Python][3]
 - [Reverse a String in Python][2]
 - [Roman Numberal Conversion in Python][25]
@@ -135,5 +136,6 @@ Welcome to Sample Programs in Python!
 [34]: https://github.com/TheRenegadeCoder/sample-programs/issues/855
 [35]: https://github.com/TheRenegadeCoder/sample-programs/issues/858
 [36]: https://github.com/TheRenegadeCoder/sample-programs/issues/861
+[37]: https://github.com/TheRenegadeCoder/sample-programs/issues/864
 [38]: https://github.com/TheRenegadeCoder/sample-programs/issues/867
 [39]: https://github.com/TheRenegadeCoder/sample-programs/issues/870
