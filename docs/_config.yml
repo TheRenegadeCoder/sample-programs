@@ -6,7 +6,8 @@ google_analytics: UA-97956707-2
 show_downloads: true
 
 # Data
-title_image: {{ site.baseurl }}/assets/images/sample-programs-in-every-language-featured-image.JPEG
+image_path: /assets/images/
+title_image: sample-programs-in-every-language-featured-image.JPEG
 
 # Repo metadata
 repository: TheRenegadeCoder/sample-programs
