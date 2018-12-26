@@ -1,6 +1,5 @@
 <!-- Twitter cards -->
-<meta name="twitter:site"    content="@{{ site.twitter_username }}">
-<meta name="twitter:creator" content="@{{ page.author }}">
+<meta name="twitter:site"    content="@RenegadeCoder94">
 <meta name="twitter:title"   content="{{ page.title }}">
 
 {% if page.summary %}
@@ -9,9 +8,9 @@
 <meta name="twitter:description" content="{{ site.description }}">
 {% endif %}
 
-{% if page.image %}
+{% if page.featured-image %}
 <meta name="twitter:card"  content="summary_large_image">
-<meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
+<meta name="twitter:image" content="{{ site.baseurl }}/assets/images/{{ page.featured-image }}">
 {% else %}
 <meta name="twitter:card"  content="summary">
 <meta name="twitter:image" content="{{ site.title_image }}">
