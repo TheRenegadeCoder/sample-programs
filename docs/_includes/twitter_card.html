@@ -1,7 +1,7 @@
 <!-- Twitter cards -->
 <meta name="twitter:site"    content="@RenegadeCoder94">
 <meta name="twitter:title"   content="{{ page.title }}">
-<meta name="twitter:description" content="{{ page.excerpt }}">
+<meta name="twitter:description" content="{{ page.excerpt | strip_html }}">
 
 {% if page.featured-image %}
 <meta name="twitter:card"  content="summary_large_image">
