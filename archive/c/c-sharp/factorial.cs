@@ -19,7 +19,7 @@ namespace SamplePrograms
                 var n = BigInteger.Parse(args[0]);
                 if (n > 4550)
                 {
-                    Console.WriteLine($"{n}! is out of the reasonable bounds for calculation.");
+                    Console.WriteLine(string.Format("{0}! is out of the reasonable bounds for calculation.", n));
                     Environment.Exit(1);
                 }
                 var result = Fact(n);
