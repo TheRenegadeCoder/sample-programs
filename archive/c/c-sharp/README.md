@@ -4,16 +4,17 @@ Welcome to Sample Programs in C#!
 
 ## Sample Programs
 
+- [Baklava in C#][8]
+  - Solution borrowed from @toturkmen via the [baklava repo][1]
 - [Bubble Sort in C#][11]
 - [Even Odd in C#][12]
 - [Factorial in C#][13]
-- [Hello World in C#][2]
-- [Reverse a String in C#][3]
+- [File IO in C#][14]
 - [Fizz Buzz in C#][4]
-- [Baklava in C#][8]
-  - Solution borrowed from @toturkmen via the [baklava repo][1]
-- [Roman Numeral Conversion in C#][9]
+- [Hello World in C#][2]
 - [Longest Common Subsequence in C#][10]
+- [Reverse a String in C#][3]
+- [Roman Numeral Conversion in C#][9]
 
 ## Fun Facts
 
@@ -40,3 +41,4 @@ Welcome to Sample Programs in C#!
 [11]: https://github.com/TheRenegadeCoder/sample-programs/issues/886
 [12]: https://github.com/TheRenegadeCoder/sample-programs/issues/889
 [13]: https://github.com/TheRenegadeCoder/sample-programs/issues/893
+[14]: https://github.com/TheRenegadeCoder/sample-programs/issues/896
