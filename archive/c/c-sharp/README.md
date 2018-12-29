@@ -6,6 +6,7 @@ Welcome to Sample Programs in C#!
 
 - [Bubble Sort in C#][11]
 - [Even Odd in C#][12]
+- [File IO in C#][14]
 - [Hello World in C#][2]
 - [Reverse a String in C#][3]
 - [Fizz Buzz in C#][4]
@@ -38,3 +39,4 @@ Welcome to Sample Programs in C#!
 [10]: https://github.com/TheRenegadeCoder/sample-programs/issues/642
 [11]: https://github.com/TheRenegadeCoder/sample-programs/issues/886
 [12]: https://github.com/TheRenegadeCoder/sample-programs/issues/889
+[14]: https://github.com/TheRenegadeCoder/sample-programs/issues/896
