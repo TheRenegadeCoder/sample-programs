@@ -8,6 +8,7 @@ Welcome to Sample Programs in C#!
   - Solution borrowed from @toturkmen via the [baklava repo][1]
 - [Bubble Sort in C#][11]
 - [Even Odd in C#][12]
+- [Factorial in C#][13]
 - [File IO in C#][14]
 - [Fizz Buzz in C#][4]
 - [Hello World in C#][2]
@@ -39,4 +40,5 @@ Welcome to Sample Programs in C#!
 [10]: https://github.com/TheRenegadeCoder/sample-programs/issues/642
 [11]: https://github.com/TheRenegadeCoder/sample-programs/issues/886
 [12]: https://github.com/TheRenegadeCoder/sample-programs/issues/889
+[13]: https://github.com/TheRenegadeCoder/sample-programs/issues/893
 [14]: https://github.com/TheRenegadeCoder/sample-programs/issues/896
