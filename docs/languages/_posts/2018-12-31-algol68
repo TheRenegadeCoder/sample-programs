@@ -18,7 +18,7 @@ includes user-declared types, expression-based syntax, concurrency, and even sli
 Of course, I think the most interesting language feature is the overwhelming list of 
 reserved words which includes 60 different symbols. Most of these symbols I couldn’t 
 even guess their purpose. For example, what do you think `esac` does? How about 
-`ouse`? [James Jones offers a great explanation].
+`ouse`? [James Jones offers a great explanation][2].
 
 In general though, I find that most of the symbols are pretty typical. Many of which 
 provide either control flow or iteration. Meanwhile, others provide typing. So, 
