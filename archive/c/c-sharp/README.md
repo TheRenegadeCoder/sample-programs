@@ -14,6 +14,8 @@ Welcome to Sample Programs in C#!
 - [Hello World in C#][2]
 - [Insertion Sort in C#][15]
 - [Longest Common Subsequence in C#][10]
+- [Quine in C#][19]
+  - Solution borrowed from [Rosetta Code][20]
 - [Reverse a String in C#][3]
 - [Roman Numeral Conversion in C#][9]
 
@@ -44,3 +46,5 @@ Welcome to Sample Programs in C#!
 [13]: https://github.com/TheRenegadeCoder/sample-programs/issues/893
 [14]: https://github.com/TheRenegadeCoder/sample-programs/issues/896
 [15]: https://github.com/TheRenegadeCoder/sample-programs/issues/899
+[19]: https://github.com/TheRenegadeCoder/sample-programs/issues/911
+[20]: https://rosettacode.org/wiki/Quine#C.23
