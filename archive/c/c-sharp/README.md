@@ -16,6 +16,7 @@ Welcome to Sample Programs in C#!
 - [Longest Common Subsequence in C#][10]
 - [Reverse a String in C#][3]
 - [Roman Numeral Conversion in C#][9]
+- [Selection Sort in C#][22]
 
 ## Fun Facts
 
@@ -44,3 +45,4 @@ Welcome to Sample Programs in C#!
 [13]: https://github.com/TheRenegadeCoder/sample-programs/issues/893
 [14]: https://github.com/TheRenegadeCoder/sample-programs/issues/896
 [15]: https://github.com/TheRenegadeCoder/sample-programs/issues/899
+[22]: https://github.com/TheRenegadeCoder/sample-programs/issues/917
