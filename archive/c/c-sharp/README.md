@@ -15,6 +15,7 @@ Welcome to Sample Programs in C#!
 - [Insertion Sort in C#][15]
 - [Longest Common Subsequence in C#][10]
 - [Merge Sort in C#][16]
+- [Prime Number in C#][17]
 - [Quick Sort in C#][18]
 - [Quine in C#][19]
   - Solution borrowed from [Rosetta Code][20]
@@ -51,6 +52,7 @@ Welcome to Sample Programs in C#!
 [14]: https://github.com/TheRenegadeCoder/sample-programs/issues/896
 [15]: https://github.com/TheRenegadeCoder/sample-programs/issues/899
 [16]: https://github.com/TheRenegadeCoder/sample-programs/issues/902
+[17]: https://github.com/TheRenegadeCoder/sample-programs/issues/905
 [18]: https://github.com/TheRenegadeCoder/sample-programs/issues/908
 [19]: https://github.com/TheRenegadeCoder/sample-programs/issues/911
 [20]: https://rosettacode.org/wiki/Quine#C.23
