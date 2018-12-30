@@ -15,6 +15,7 @@ Welcome to Sample Programs in C#!
 - [Insertion Sort in C#][15]
 - [Longest Common Subsequence in C#][10]
 - [Merge Sort in C#][16]
+- [Quick Sort in C#][18]
 - [Reverse a String in C#][3]
 - [Roman Numeral Conversion in C#][9]
 
@@ -46,3 +47,4 @@ Welcome to Sample Programs in C#!
 [14]: https://github.com/TheRenegadeCoder/sample-programs/issues/896
 [15]: https://github.com/TheRenegadeCoder/sample-programs/issues/899
 [16]: https://github.com/TheRenegadeCoder/sample-programs/issues/902
+[18]: https://github.com/TheRenegadeCoder/sample-programs/issues/908
