@@ -21,6 +21,7 @@ Welcome to Sample Programs in C#!
 - [Reverse a String in C#][3]
 - [Roman Numeral Conversion in C#][9]
 - [ROT 13 in C#][21]
+- [Selection Sort in C#][22]
 
 ## Fun Facts
 
@@ -54,3 +55,4 @@ Welcome to Sample Programs in C#!
 [19]: https://github.com/TheRenegadeCoder/sample-programs/issues/911
 [20]: https://rosettacode.org/wiki/Quine#C.23
 [21]: https://github.com/TheRenegadeCoder/sample-programs/issues/914
+[22]: https://github.com/TheRenegadeCoder/sample-programs/issues/917
