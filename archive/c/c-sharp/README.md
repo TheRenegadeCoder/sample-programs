@@ -20,6 +20,7 @@ Welcome to Sample Programs in C#!
   - Solution borrowed from [Rosetta Code][20]
 - [Reverse a String in C#][3]
 - [Roman Numeral Conversion in C#][9]
+- [ROT 13 in C#][21]
 
 ## Fun Facts
 
@@ -52,3 +53,4 @@ Welcome to Sample Programs in C#!
 [18]: https://github.com/TheRenegadeCoder/sample-programs/issues/908
 [19]: https://github.com/TheRenegadeCoder/sample-programs/issues/911
 [20]: https://rosettacode.org/wiki/Quine#C.23
+[21]: https://github.com/TheRenegadeCoder/sample-programs/issues/914
