@@ -4,6 +4,7 @@ Welcome to Sample Programs in Java!
 
 ## Sample Programs
 
+- [Baklava in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/934)
 - [Hello World in Java](https://therenegadecoder.com/code/hello-world-in-java/)
 - [Reverse a String in Java](https://therenegadecoder.com/code/java/reverse-a-string-in-java/)
 - [Fizz Buzz in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/400)
