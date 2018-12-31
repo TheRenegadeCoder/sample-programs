@@ -20,7 +20,7 @@ public class Factorial
             long result = fact(n);
             System.out.println(result);
         }
-        catch (Exception e)
+        catch (NumberFormatException e)
         {
             System.out.println("Usage: please input a number");
             System.exit(1);
