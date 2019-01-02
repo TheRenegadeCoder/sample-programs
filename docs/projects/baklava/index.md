@@ -8,6 +8,11 @@ tags: [baklava]
 authors:
 ---
 
+In this article, we'll introduce the Baklava project, its requirements, and how
+to test it.
+
+## Description
+
 Baklava is a Turkish dessert, and its shape is like an equilateral quadrangle.
 It is used as an example for programming education in Turkish schools.
 
