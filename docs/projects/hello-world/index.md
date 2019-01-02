@@ -9,6 +9,11 @@ authors:
   - the_renegade_coder
 ---
 
+In this article, we'll cover the Hello World project, its requirements, and how
+to verify a solution.
+
+## Description
+
 Hello World is a standard program used to introduce a programming language.
 As a result, the rules are pretty simple: print "Hello, World!" to standard
 output. Ideally, the solution should be as simple as possible.
