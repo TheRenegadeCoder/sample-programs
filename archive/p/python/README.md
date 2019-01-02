@@ -125,13 +125,13 @@ Welcome to Sample Programs in Python!
 [23]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/file-io.py#L25
 [24]: https://github.com/TheRenegadeCoder/sample-programs/issues/492
 [25]: https://github.com/TheRenegadeCoder/sample-programs/issues/499
-[26]: https://github.com/TheRenegadeCoder/sample-programs/issues/570 
+[26]: https://github.com/TheRenegadeCoder/sample-programs/issues/570
 [27]: https://github.com/Boot-Error/sample-programs/blob/ced2e54804d8f801aee2b37fee6f443a6432cb9b/archive/p/python/lcs.py#L16
 [28]: https://github.com/Boot-Error/sample-programs/blob/ced2e54804d8f801aee2b37fee6f443a6432cb9b/archive/p/python/lcs.py#L17
 [29]: https://therenegadecoder.com/code/file-io-in-python/
 [30]: https://github.com/TheRenegadeCoder/sample-programs/issues/765
 [31]: https://github.com/TheRenegadeCoder/sample-programs/issues/811
-[32]: https://github.com/TheRenegadeCoder/sample-programs/issues/849
+[32]: https://github.com/TheRenegadeCoder/sample-programs/docs/projects/even-odd/_posts/2018-12-31-python.md
 [33]: https://github.com/TheRenegadeCoder/sample-programs/issues/852
 [34]: https://github.com/TheRenegadeCoder/sample-programs/issues/855
 [35]: https://github.com/TheRenegadeCoder/sample-programs/issues/858
