@@ -8,6 +8,7 @@ Welcome to Sample Programs in PHP!
 - [Fizz Buzz in PHP][3]
 - [Baklava in PHP][8]
   - Solution borrowed from @toturkmen and @erayak via the [baklava repo][1]
+- Fibonacci in PHP
 
 ## Fun Facts
 
