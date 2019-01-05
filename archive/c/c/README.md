@@ -14,6 +14,7 @@ Welcome to Sample Programs in C!
 - [Fibonacci in C][11]
 - [Factorial in C][13]
 - [Convex Hull in C][12]
+- [Bubble Sort][14]
 
 ## Fun Facts
 
@@ -40,3 +41,4 @@ Welcome to Sample Programs in C!
 [11]: https://github.com/TheRenegadeCoder/sample-programs/issues/486
 [13]: https://github.com/TheRenegadeCoder/sample-programs/issues/631
 [12]: https://github.com/TheRenegadeCoder/sample-programs/issues/628
+[14]: https://github.com/TheRenegadeCoder/sample-programs/issues/942
