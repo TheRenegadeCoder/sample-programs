@@ -2,11 +2,16 @@
 title: Even Odd in Every Language
 layout: default
 date: 2018-11-01
-last-modified: 2018-11-02
+last-modified: 2019-01-07
 featured-image:
 tags: [even-odd]
 authors:
 ---
+
+In this article, we'll tackle the even/odd project, its requirements,
+and how to test each solution.
+
+## Description
 
 An even number is an integer which is "evenly divisible" by two. This
 means that if the integer is divided by 2, it yields no remainder.
