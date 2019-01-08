@@ -2,11 +2,17 @@
 title: Fizz Buzz in Every Language
 layout: default
 date: 2018-11-01
-last-modified: 2018-11-02
+last-modified: 2019-01-08
 featured-image:
 tags: [fizz-buzz]
 authors:
+  - the_renegade_coder
 ---
+
+In this article, we're tackling the Fizz Buzz problem, its requirements, and
+how to test a solution.
+
+## Description
 
 Fizz Buzz is a typical interview question which tests the developers knowledge
 of flow control and operators. The goal of the problem is to output the
