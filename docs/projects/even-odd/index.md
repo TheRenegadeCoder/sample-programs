@@ -2,10 +2,11 @@
 title: Even Odd in Every Language
 layout: default
 date: 2018-11-01
-last-modified: 2019-01-07
-featured-image:
+last-modified: 2019-01-09
+featured-image: even-odd-in-every-language-featured-image.JPEG
 tags: [even-odd]
 authors:
+  - the_renegade_coder
 ---
 
 In this article, we'll tackle the even/odd project, its requirements,
