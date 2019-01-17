@@ -34,6 +34,7 @@ correctness of your solution:
 | Negative Case | -7 | Usage: please input a non-negative integer |
 | Empty Case | | Usage: please input a non-negative integer |
 | Zero Case | 0 | False |
+| One Case | 1 | False |
 | Two Case | 2 | True |
 | Small Composite Case | 4 | False |
 | Small Prime Case | 7 | True |
@@ -46,6 +47,7 @@ correctness of your solution:
 
 ## Further Reading
 
-- Fill as needed
+- [Why is the number one not a prime?][2]
 
 [1]: #requirements
+[2]: https://primes.utm.edu/notes/faq/one.html
