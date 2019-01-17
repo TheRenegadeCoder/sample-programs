@@ -31,6 +31,8 @@ correctness of your solution:
 
 | Description | Input | Output |
 |--------------|-------|--------|
+| Negative Case | -7 | Usage: please input a non-negative integer |
+| Empty Case | | Usage: please input a non-negative integer |
 | Zero Case | 0 | False |
 | Two Case | 2 | True |
 | Small Composite Case | 4 | False |
