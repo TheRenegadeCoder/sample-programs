@@ -17,7 +17,7 @@ def exit_with_error():
 def main(args):
     try:
         x = int(args[0])
-        if x <= 0:
+        if x < 0:
             exit_with_error()
         print(is_prime(x))
     except (IndexError,ValueError):
