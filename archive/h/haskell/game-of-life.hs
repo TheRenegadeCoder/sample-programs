@@ -10,17 +10,16 @@ import           System.Environment
 type Position = (Int, Int)
 
 data Node
-  = Alive Position
-  | Dead Position
+  = Alive Position Int
+  | Dead Position Int
   deriving (Show, Eq)
 
 type Grid = [Node]
 
 type Game = [Grid]
 
-class GridMember a
+class GridMember a where
   -- | 'circle' provides the eight positions that surround a GridMember
-  where
   circle :: a -> [Position]
   -- | 'getX' returns the x coordinate of a GridMember
   getX :: a -> Int
@@ -28,21 +27,25 @@ class GridMember a
   getY :: a -> Int
 
 instance GridMember Node where
-  circle (Alive (x, y)) =
+  circle (Alive (x, y) w) = map wrap
     [ (x1, y1)
     | x1 <- [x - 1 .. x + 1]
     , y1 <- [y - 1 .. y + 1]
     , (x1, y1) /= (x, y)
     ]
+      where wrap (x', y') = (go x', go y')
+            go n
+              | n < 0     = w - 1
+              | n > w     = 0
+              | otherwise = n
   circle _ = []
-  getX (Alive (x, _)) = x
-  getX (Dead (x, _))  = x
-  getY (Alive (_, y)) = y
-  getY (Dead (_, y))  = y
+  getX (Alive (x, _) _) = x
+  getX (Dead (x, _) _)  = x
+  getY (Alive (_, y) _) = y
+  getY (Dead (_, y) _)  = y
 
-class Cell a
+class Cell a where
   -- | 'isAlive' determines whether a cell is alive
-  where
   isAlive :: a -> Bool
   -- | 'kill' kills a cell
   kill :: a -> a
@@ -58,14 +61,14 @@ class Cell a
   cellStep :: a -> [a] -> a
 
 instance Cell Node where
-  isAlive (Alive _) = True
-  isAlive (Dead _)  = False
-  kill (Alive (x, y)) = Dead (x, y)
-  kill (Dead (x, y))  = Dead (x, y)
-  birth (Alive (x, y)) = Alive (x, y)
-  birth (Dead (x, y))  = Alive (x, y)
-  atPosition (Alive (x, y)) (x1, y1) = x == x1 && y == y1
-  atPosition _ _                     = False
+  isAlive (Alive _ _) = True
+  isAlive (Dead _ _)  = False
+  kill (Alive (x, y) w) = Dead (x, y) w
+  kill (Dead (x, y) w)  = Dead (x, y) w
+  birth (Alive (x, y) w) = Alive (x, y) w
+  birth (Dead (x, y) w)  = Alive (x, y) w
+  atPosition (Alive (x, y) w) (x1, y1) = x == x1 && y == y1
+  atPosition _ _                       = False
   inGrid cell ps = or $ fmap (atPosition cell) ps
   neighbors cell cells =
     let cellGrid = circle cell
@@ -82,7 +85,7 @@ instance Cell Node where
 -- | 'makeGrid' takes a width and a spawn rate and greats a grid with nodes spawned
 makeGrid :: Int -> Float -> Grid
 makeGrid width spawnRate =
-  spawn [Dead (x, y) | x <- [0 .. (width - 1)], y <- [0 .. (width - 1)]] $
+  spawn [Dead (x, y) width | x <- [0 .. (width - 1)], y <- [0 .. (width - 1)]] $
   getSpawnIndexes width spawnRate
   where
     getSpawnIndexes :: Int -> Float -> [Int]
@@ -173,8 +176,8 @@ rowStrings grd = reverse $ snd $ foldl go (0, []) grd
 -- | 'strNode' converts a single 'Node' to a single character 'String'
 -- where "0" means dead "x" means alive
 strNode :: Node -> String
-strNode (Dead _)  = "0"
-strNode (Alive _) = "x"
+strNode (Dead _ _)  = "0"
+strNode (Alive _ _) = "x"
 
 -- | 'clearScreen' prints 1000 empty lines to the console, effictively
 -- clearing the console window. There are good alternatives to this method
