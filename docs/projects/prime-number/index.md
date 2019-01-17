@@ -2,10 +2,11 @@
 title: Prime Numbers in Every Language
 layout: default
 date: 2018-11-01
-last-modified: 2018-11-02
+last-modified: 2019-01-17
 featured-image:
 tags: [prime-numbers]
 authors:
+  - the_renegade_coder
 ---
 
 A prime number is a positive integer which is divisible only by 1 and itself.
@@ -25,8 +26,20 @@ and outputs if the integer is a Prime number or not.
 
 ## Testing
 
-Verify that the actual output matches the expected output. See the
-[requirements][1] section for an example of the expected output.
+The following table contains various test cases that you can use to verify the 
+correctness of your solution:
+
+| Description | Input | Output |
+|--------------|-------|--------|
+| Negative Case | -7 | Usage: please input a non-negative integer |
+| Empty Case | | Usage: please input a non-negative integer |
+| Zero Case | 0 | False |
+| One Case | 1 | False |
+| Two Case | 2 | True |
+| Small Composite Case | 4 | False |
+| Small Prime Case | 7 | True |
+| Large Composite Case | 4011 | False |
+| Large Prime Case | 3727 | True |
 
 ## Articles
 
@@ -34,6 +47,7 @@ Verify that the actual output matches the expected output. See the
 
 ## Further Reading
 
-- Fill as needed
+- [Why is the number one not a prime?][2]
 
 [1]: #requirements
+[2]: https://primes.utm.edu/notes/faq/one.html
