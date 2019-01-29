@@ -12,7 +12,7 @@ def insertion_sort(xs):
 
 def insert(x, xs):
     left = list(takewhile(lambda i: i < x, xs))
-    right = xs[len(left):] if xs else xs
+    right = xs[len(left):]
     return left + [x] + right
     
 
@@ -23,6 +23,7 @@ def input_list(list_str):
 def exit_with_error():
     print('Usage: please provide a list of at least two integers to sort in the format “1, 2, 3, 4, 5”')
     sys.exit(1) 
+
 
 def main(args):
     try:
