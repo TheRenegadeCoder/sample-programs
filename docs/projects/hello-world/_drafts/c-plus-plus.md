@@ -1,6 +1,9 @@
-How to Implement the Solution
+## How to Implement the Solution
+
+
 Even though C++ was built on C, the implementation of Hello World in C++ is slightly different:
 
+```c++
 #include 
 using namespace std;
 int main()
@@ -8,6 +11,8 @@ int main()
 cout << "Hello, World!";
 return 0;
 }
+```
+
 It appears this implementation of Hello World may be competing with Java for hardest to learn. But at any rate, let’s break it down.
 
 Once again, the first line is an include statement. Here, we’re including the IO stream code in our solution. This is how we gain access to the IO objects like cout.
@@ -18,10 +23,14 @@ After that, we make a main method as usual. This is exactly the same as C, so I 
 
 Finally, we write our string to the cout stream. The syntax is a bit strange, but basically we can imagine that the Hello World string is inserted into the cout stream. In fact, the double-arrow operator is the insertion operator, and it has some fun properties. For instance, the operator can be chained together, but that’s a topic for another time.
 
-How to Run the Solution
+## How to Run the Solution
+
 Perhaps the easiest way to run the solution is to leverage the online gdb compiler.
 
 Alternatively, you can try to run the C++ code in a similar way described in the last article. Honestly, it’s pretty easy to write and run C/C++ code on most platforms:
 
+```console
 gcc -o reverse-string reverse-string.cpp
+```
+
 Unfortunately, Windows pretty much requires the use of Visual Studios. So, instead of sharing platform specific directions, I’ll fallback on my online compiler recommendation. Let me know if you have questions otherwise in the comments.
