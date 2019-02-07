@@ -1,5 +1,14 @@
-## How to Implement the Solution
+---
+title: Hello World in C++
+layout: default
+last-modified: 2019-02-06
+featured-image: hello-world-in-c-plus-plus-featured-image.JPEG
+tags: [c-plus-plus, hello-world]
+authors:
+  - the_renegade_coder
+---
 
+## How to Implement the Solution
 
 Even though C++ was built on C, the implementation of Hello World in 
 C++ is slightly different:
