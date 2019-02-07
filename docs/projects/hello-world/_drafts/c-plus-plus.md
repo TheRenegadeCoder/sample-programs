@@ -8,6 +8,8 @@ authors:
   - the_renegade_coder
 ---
 
+In this article, we'll be covering Hello World in C++.
+
 ## How to Implement the Solution
 
 Even though C++ was built on C, the implementation of Hello World in 
