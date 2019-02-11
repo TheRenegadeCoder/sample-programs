@@ -2,7 +2,7 @@
 title: Hello World in C++
 layout: default
 last-modified: 2019-02-06
-featured-image: hello-world-in-c-plus-plus-featured-image.JPEG
+featured-image: 
 tags: [c-plus-plus, hello-world]
 authors:
   - the_renegade_coder
