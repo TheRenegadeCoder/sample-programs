@@ -6,13 +6,14 @@ Welcome to Sample Programs in Go!
 
 - [Baklava in Go][7]
   - Solution borrowed from @toturkmen via the [baklava repo][1]
+- [Even Odd in Go][11]
+- [Factorial in Go][12]
 - [Fibonacci in Go][14]
   - Solution borrowed from ["A Tour of Go"][15]
 - [Fizz Buzz in Go][3]
 - [Hello World in Go][2]
-- [String Reverse in Go][8]
 - [Prime Number in Go][9]
-- [Even Odd in Go][11]
+- [String Reverse in Go][8]
 
 
 ## Fun Facts
@@ -38,6 +39,7 @@ Welcome to Sample Programs in Go!
 [8]: https://github.com/TheRenegadeCoder/sample-programs/issues/545
 [9]: https://github.com/TheRenegadeCoder/sample-programs/issues/610
 [11]: https://github.com/TheRenegadeCoder/sample-programs/issues/618
+[12]: https://github.com/TheRenegadeCoder/sample-programs/issues/974
 [13]: https://tour.golang.org/
 [14]: https://github.com/TheRenegadeCoder/sample-programs/issues/977
 [15]: https://tour.golang.org/concurrency/4
