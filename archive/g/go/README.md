@@ -8,6 +8,8 @@ Welcome to Sample Programs in Go!
   - Solution borrowed from @toturkmen via the [baklava repo][1]
 - [Even Odd in Go][11]
 - [Factorial in Go][12]
+- [Fibonacci in Go][14]
+  - Solution borrowed from ["A Tour of Go"][15]
 - [Fizz Buzz in Go][3]
 - [Hello World in Go][2]
 - [Prime Number in Go][9]
@@ -25,6 +27,7 @@ Welcome to Sample Programs in Go!
 - [Go Wiki][4]
 - [Go Docs][5]
 - [Go Github][6]
+- [A Tour of Go (Official)][13]
 
 [1]: https://github.com/toturkmen/baklava
 [2]: https://therenegadecoder.com/code/hello-world-in-go/
@@ -37,3 +40,6 @@ Welcome to Sample Programs in Go!
 [9]: https://github.com/TheRenegadeCoder/sample-programs/issues/610
 [11]: https://github.com/TheRenegadeCoder/sample-programs/issues/618
 [12]: https://github.com/TheRenegadeCoder/sample-programs/issues/974
+[13]: https://tour.golang.org/
+[14]: https://github.com/TheRenegadeCoder/sample-programs/issues/977
+[15]: https://tour.golang.org/concurrency/4
