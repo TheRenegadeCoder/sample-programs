@@ -1,3 +1,13 @@
+---
+title: Hello World in Crystal
+layout: default
+last-modified: 2019-02-28
+featured-image: hello-world-in-crystal-featured-image.JPEG
+tags: [crystal, hello-world]
+authors:
+  - the_renegade_coder
+---
+
 With the background out of the way, let’s implement Hello World in Crystal:
 
 ```crystal
