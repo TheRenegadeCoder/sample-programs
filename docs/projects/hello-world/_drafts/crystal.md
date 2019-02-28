@@ -8,6 +8,10 @@ authors:
   - the_renegade_coder
 ---
 
+In this article, we'll cover Hello World in Crystal.
+
+## How to Implement the Solution
+
 With the background out of the way, let’s implement Hello World in Crystal:
 
 ```crystal
