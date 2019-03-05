@@ -6,6 +6,7 @@ Welcome to Sample Programs in Go!
 
 - [Baklava in Go][7]
   - Solution borrowed from @toturkmen via the [baklava repo][1]
+- [Bubble Sort in Go][16]
 - [Even Odd in Go][11]
 - [Factorial in Go][12]
 - [Fibonacci in Go][14]
@@ -44,4 +45,5 @@ Welcome to Sample Programs in Go!
 [13]: https://tour.golang.org/
 [14]: https://github.com/TheRenegadeCoder/sample-programs/issues/977
 [15]: https://tour.golang.org/concurrency/4
+[16]: https://github.com/TheRenegadeCoder/sample-programs/issues/987
 [17]: https://github.com/TheRenegadeCoder/sample-programs/issues/990
