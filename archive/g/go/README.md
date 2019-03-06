@@ -11,6 +11,7 @@ Welcome to Sample Programs in Go!
 - [Fibonacci in Go][14]
   - Solution borrowed from ["A Tour of Go"][15]
 - [Fizz Buzz in Go][3]
+- [File IO in Go][17]
 - [Hello World in Go][2]
 - [Prime Number in Go][9]
 - [String Reverse in Go][8]
@@ -43,3 +44,4 @@ Welcome to Sample Programs in Go!
 [13]: https://tour.golang.org/
 [14]: https://github.com/TheRenegadeCoder/sample-programs/issues/977
 [15]: https://tour.golang.org/concurrency/4
+[17]: https://github.com/TheRenegadeCoder/sample-programs/issues/990
