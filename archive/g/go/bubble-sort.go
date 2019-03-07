@@ -46,7 +46,7 @@ func main() {
 	}
 
 	sNums := regexp.MustCompile(", ?").Split(os.Args[1], -1)
-	if len(sNums) <= 2 {
+	if len(sNums) < 2 {
 		exitWithError()
 	}
 
