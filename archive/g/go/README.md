@@ -14,6 +14,7 @@ Welcome to Sample Programs in Go!
 - [Fizz Buzz in Go][3]
 - [File IO in Go][17]
 - [Hello World in Go][2]
+- [Insertion Sort in Go][18]
 - [Prime Number in Go][9]
 - [String Reverse in Go][8]
 
@@ -47,3 +48,4 @@ Welcome to Sample Programs in Go!
 [15]: https://tour.golang.org/concurrency/4
 [16]: https://github.com/TheRenegadeCoder/sample-programs/issues/987
 [17]: https://github.com/TheRenegadeCoder/sample-programs/issues/990
+[18]: https://github.com/TheRenegadeCoder/sample-programs/issues/993
