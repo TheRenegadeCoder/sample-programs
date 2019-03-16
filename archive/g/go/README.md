@@ -15,6 +15,7 @@ Welcome to Sample Programs in Go!
 - [File IO in Go][17]
 - [Hello World in Go][2]
 - [Insertion Sort in Go][18]
+- [Job Sequencing in Go][19]
 - [Prime Number in Go][9]
 - [String Reverse in Go][8]
 
@@ -49,3 +50,4 @@ Welcome to Sample Programs in Go!
 [16]: https://github.com/TheRenegadeCoder/sample-programs/issues/987
 [17]: https://github.com/TheRenegadeCoder/sample-programs/issues/990
 [18]: https://github.com/TheRenegadeCoder/sample-programs/issues/993
+[19]: https://github.com/TheRenegadeCoder/sample-programs/issues/996
