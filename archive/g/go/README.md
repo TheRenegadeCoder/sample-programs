@@ -17,6 +17,7 @@ Welcome to Sample Programs in Go!
 - [Insertion Sort in Go][18]
 - [Job Sequencing in Go][19]
 - [Longest Common Subsequence in Go][20]
+- [Merge Sort in Go][21]
 - [Prime Number in Go][9]
 - [Quick Sort in Go][22]
 - [String Reverse in Go][8]
@@ -54,4 +55,5 @@ Welcome to Sample Programs in Go!
 [18]: https://github.com/TheRenegadeCoder/sample-programs/issues/993
 [19]: https://github.com/TheRenegadeCoder/sample-programs/issues/996
 [20]: https://github.com/TheRenegadeCoder/sample-programs/issues/999
+[21]: https://github.com/TheRenegadeCoder/sample-programs/issues/1002
 [22]: https://github.com/TheRenegadeCoder/sample-programs/issues/1005
