@@ -4,14 +4,17 @@ import shutil
 
 import pytest
 import docker
+import yaml
 
 from . import testinfo
 
 
 class Source:
-    def __init__(self, name, path):
+    def __init__(self, name, path, test_info_string):
         self._name = name
         self._path = path
+
+        self.test_info = testinfo.TestInfo.from_string(test_info_string, self)
 
     @property
     def full_path(self):
@@ -29,13 +32,11 @@ class Source:
     def extension(self):
         return os.path.splitext(self._name)[1]
 
-    def run(self, client, info_map, params=''):
-        container_info = testinfo.Container.from_test_info(testinfo.load_test_info(self, info_map))
-
+    def run(self, client, params=''):
         tmp_dir = tempfile.mkdtemp()
         shutil.copy(self.full_path, tmp_dir)
-        result = client.containers.run(container_info.image,
-                                       f'bash -c "cd /src && {container_info.cmd} {params}"',
+        result = client.containers.run(self.test_info.container_info.image,
+                                       f'bash -c "cd /src && {self.test_info.container_info.cmd} {params}"',
                                        remove=True,
                                        volumes={tmp_dir: {'bind': '/src', 'mode': 'rw'}})
         return result.decode('utf-8')
@@ -45,11 +46,18 @@ def get_sources(path):
     sources = {}
     for root, dirs, files in os.walk(path):
         path = os.path.abspath(root)
-        for file in files:
-            project_name = os.path.splitext(file)[0].lower()
-            if project_name not in sources:
-                sources[project_name] = []
-            sources[project_name].append(Source(file, path))
+        if "testinfo.yml" in files:
+            with open(os.path.join(path, 'testinfo.yml'), 'r') as file:
+                test_info_string = file.read()
+
+            folder_info = testinfo.FolderInfo.from_dict(yaml.safe_load(test_info_string)['folder'])
+            for file in files:
+                if file.endswith(folder_info.extension):
+                    project_name = os.path.splitext(file)[0].lower()
+                    if project_name not in sources:
+                        sources[project_name] = []
+                    source = Source(file, path, test_info_string)
+                    sources[project_name].append(source)
     return sources
 
 

@@ -1,15 +1,9 @@
-import os
-import tempfile
-import shutil
-
-import pytest
-import docker
 import yaml
 
 from jinja2 import Environment, BaseLoader, Template
 
 
-class Container:
+class ContainerInfo:
     def __init__(self, image, cmd):
         self._image = image
         self._cmd = cmd
@@ -23,22 +17,46 @@ class Container:
         return self._cmd
 
     @classmethod
-    def from_test_info(cls, test_info):
-        container_info = test_info['container']
-        return Container(container_info['image'], container_info['cmd'])
+    def from_dict(cls, dictionary):
+        return ContainerInfo(dictionary['image'], dictionary['cmd'])
 
 
-def get_test_info_map(test_info):
-    info_map = {}
-    for info in test_info:
-        with open(info.full_path) as file:
-            info_map[info.path] = file.read()
-    return info_map
+class FolderInfo:
+    def __init__(self, extension):
+        self._extension = extension
+
+    @property
+    def extension(self):
+        return self._extension
+
+    @classmethod
+    def from_dict(cls, dictionary):
+        return FolderInfo(dictionary['extension'])
 
 
-def load_test_info(source, info_map):
-    template = Environment(loader=BaseLoader).from_string(info_map[source.path])
-    template_string = template.render(source=source)
-    return yaml.load(template_string)
+class TestInfo:
+    def __init__(self, container_info, file_info):
+        self._container_info = container_info
+        self._file_info = file_info
 
+    @property
+    def container_info(self):
+        return self._container_info
 
+    @property
+    def file_info(self):
+        return self._file_info
+
+    @classmethod
+    def from_dict(cls, dictionary):
+        return TestInfo(
+            container_info=ContainerInfo.from_dict(dictionary['container']),
+            file_info=FolderInfo.from_dict(dictionary['folder'])
+        )
+
+    @classmethod
+    def from_string(cls, string, source):
+        template = Environment(loader=BaseLoader).from_string(string)
+        template_string = template.render(source=source)
+        info_yaml = yaml.safe_load(template_string)
+        return cls.from_dict(info_yaml)
