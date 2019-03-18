@@ -22,6 +22,7 @@ Welcome to Sample Programs in Go!
 - [Quick Sort in Go][22]
 - [Quine in Go][23]
   - Solution borrowed from [Rosetta Code][24]
+- [ROT 13 Number in Go][25]
 - [String Reverse in Go][8]
 
 
@@ -61,3 +62,4 @@ Welcome to Sample Programs in Go!
 [22]: https://github.com/TheRenegadeCoder/sample-programs/issues/1005
 [23]: https://github.com/TheRenegadeCoder/sample-programs/issues/1008
 [24]: http://rosettacode.org/wiki/Quine#Go
+[25]: https://github.com/TheRenegadeCoder/sample-programs/issues/1011
