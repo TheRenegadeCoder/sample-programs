@@ -18,6 +18,7 @@ Welcome to Sample Programs in Go!
 - [Job Sequencing in Go][19]
 - [Longest Common Subsequence in Go][20]
 - [Prime Number in Go][9]
+- [ROT 13 Number in Go][25]
 - [String Reverse in Go][8]
 
 
@@ -53,3 +54,4 @@ Welcome to Sample Programs in Go!
 [18]: https://github.com/TheRenegadeCoder/sample-programs/issues/993
 [19]: https://github.com/TheRenegadeCoder/sample-programs/issues/996
 [20]: https://github.com/TheRenegadeCoder/sample-programs/issues/999
+[25]: https://github.com/TheRenegadeCoder/sample-programs/issues/1011
