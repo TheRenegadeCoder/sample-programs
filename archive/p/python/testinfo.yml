@@ -1,0 +1,6 @@
+files:
+  extension: .py
+
+container:
+  image: python
+  cmd: python {{ source.name }}{{ source.extension }}
