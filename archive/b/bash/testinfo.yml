@@ -1,0 +1,7 @@
+folder:
+  extension: ".sh"
+
+container:
+  image: "bash"
+  tag: "5"
+  cmd: "bash {{ source.name }}{{ source.extension }}"

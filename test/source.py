@@ -6,6 +6,8 @@ import pytest
 import docker
 import yaml
 
+from docker import errors
+
 from . import testinfo
 
 
@@ -35,11 +37,40 @@ class Source:
     def run(self, client, params=''):
         tmp_dir = tempfile.mkdtemp()
         shutil.copy(self.full_path, tmp_dir)
-        result = client.containers.run(self.test_info.container_info.image,
-                                       f'bash -c "cd /src && {self.test_info.container_info.cmd} {params}"',
-                                       remove=True,
-                                       volumes={tmp_dir: {'bind': '/src', 'mode': 'rw'}})
+
+        image = get_image(
+            client=client,
+            container_info=self.test_info.container_info
+        )
+        volume_info = {tmp_dir: {'bind': '/src', 'mode': 'rw'}}
+        result = run_container(
+            client=client,
+            image=image,
+            container_info=self.test_info.container_info,
+            volume_info=volume_info,
+            params=params
+        )
+
+        shutil.rmtree(tmp_dir, ignore_errors=True)
         return result.decode('utf-8')
+
+
+def get_image(client, container_info):
+    try:
+        return client.images.pull(container_info.image, tag=str(container_info.tag))
+    except errors.APIError as e:
+        raise AssertionError(f"Unable to pull docker image " f"'{container_info.image}:{container_info.tag}'", e)
+
+
+def run_container(client, image, container_info, volume_info, params):
+    try:
+        return client.containers.run(image=image,
+                                     command=f'{container_info.cmd} {params}',
+                                     working_dir='/src',
+                                     remove=True,
+                                     volumes=volume_info)
+    except (errors.ContainerError, errors.APIError) as e:
+        raise AssertionError(f"Unable to run container with image {image}", e)
 
 
 def get_sources(path):

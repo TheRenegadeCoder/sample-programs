@@ -44,8 +44,6 @@ def test_baklava(docker_client, baklava):
           *
 """
     expected_lines = expected.split(os.linesep)
-    actual_lines = []
-    if baklava.extension == ".py":
-        actual = baklava.run(docker_client)
-        actual_lines = actual.split(os.linesep)
+    actual = baklava.run(docker_client)
+    actual_lines = actual.split(os.linesep)
     assert actual_lines == expected_lines

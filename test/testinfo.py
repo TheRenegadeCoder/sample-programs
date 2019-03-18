@@ -4,9 +4,10 @@ from jinja2 import Environment, BaseLoader, Template
 
 
 class ContainerInfo:
-    def __init__(self, image, cmd):
+    def __init__(self, image, tag, cmd):
         self._image = image
         self._cmd = cmd
+        self._tag = tag
 
     @property
     def image(self):
@@ -16,9 +17,13 @@ class ContainerInfo:
     def cmd(self):
         return self._cmd
 
+    @property
+    def tag(self):
+        return self._tag
+
     @classmethod
     def from_dict(cls, dictionary):
-        return ContainerInfo(dictionary['image'], dictionary['cmd'])
+        return ContainerInfo(dictionary['image'], dictionary['tag'], dictionary['cmd'])
 
 
 class FolderInfo:
