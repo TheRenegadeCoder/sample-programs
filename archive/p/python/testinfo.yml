@@ -1,5 +1,6 @@
 folder:
   extension: ".py"
+  naming: "hyphen"
 
 container:
   image: "python"

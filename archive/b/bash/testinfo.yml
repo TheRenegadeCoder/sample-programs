@@ -1,5 +1,6 @@
 folder:
   extension: ".sh"
+  naming: "hyphen"
 
 container:
   image: "bash"

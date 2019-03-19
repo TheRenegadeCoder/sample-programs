@@ -3,8 +3,8 @@ import os
 import pytest
 import docker
 
-from . import source, testinfo
-
+from test import source
+from test.project import ProjectType, sorting_types
 
 sources = source.get_sources('../archive')
 
@@ -14,25 +14,14 @@ def docker_client():
     return docker.from_env()
 
 
-@pytest.fixture(params=sources['baklava'],
-                ids=['baklava' + source.extension for source in sources['baklava']])
+@pytest.fixture(params=sources[ProjectType.Baklava],
+                ids=[source.name + source.extension for source in sources[ProjectType.Baklava]])
 def baklava(request):
     return request.param
 
 
-@pytest.fixture(params=sources['bubble-sort'] +
-                       sources['insertion-sort'] +
-                       sources['merge-sort'] +
-                       sources['quick-sort'] +
-                       sources['selection-sort'],
-                ids=[source.name + source.extension
-                     for source in (
-                             sources['bubble-sort'] +
-                             sources['insertion-sort'] +
-                             sources['merge-sort'] +
-                             sources['quick-sort'] +
-                             sources['selection-sort']
-                     )])
+@pytest.fixture(params=[source for project in sorting_types for source in sources[project]],
+                ids=[source.name + source.extension for project in sorting_types for source in sources[project]])
 def sort_source(request):
     return request.param
 

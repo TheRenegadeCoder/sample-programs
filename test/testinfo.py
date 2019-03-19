@@ -1,6 +1,18 @@
+from enum import Enum, auto
+
 import yaml
 
-from jinja2 import Environment, BaseLoader, Template
+from jinja2 import Environment, BaseLoader
+
+from test.project import ProjectType
+
+
+class NamingScheme(Enum):
+    hyphen = auto()
+    underscore = auto()
+    camel = auto()
+    pascal = auto()
+    lower = auto()
 
 
 class ContainerInfo:
@@ -27,16 +39,63 @@ class ContainerInfo:
 
 
 class FolderInfo:
-    def __init__(self, extension):
+    def __init__(self, extension, naming):
         self._extension = extension
+        try:
+            self._naming = NamingScheme[naming]
+        except KeyError:
+            raise KeyError(f'Unknown naming scheme: "{naming}"')
 
     @property
     def extension(self):
         return self._extension
 
+    @property
+    def naming(self):
+        return self._naming
+
+    def get_project_mappings(self, include_extension=False):
+        project_mapping = {
+            ProjectType.Baklava: ['baklava'],
+            ProjectType.BubbleSort: ['bubble', 'sort'],
+            ProjectType.ConvexHull: ['convex', 'hull'],
+            ProjectType.EvenOdd: ['even', 'odd'],
+            ProjectType.Factorial: ['factorial'],
+            ProjectType.Fibonacci: ['fibonacci'],
+            ProjectType.FileIO: ['file', 'io'],
+            ProjectType.FizzBuzz: ['fizz', 'buzz'],
+            ProjectType.HelloWorld: ['hello', 'world'],
+            ProjectType.InsertionSort: ['insertion', 'sort'],
+            ProjectType.JobSequencing: ['job', 'sequencing'],
+            ProjectType.LCS: ['lcs'],
+            ProjectType.MergeSort: ['merge', 'sort'],
+            ProjectType.MST: ['mst'],
+            ProjectType.Prime: ['prime'],
+            ProjectType.QuickSort: ['quick', 'sort'],
+            ProjectType.Quine: ['quine'],
+            ProjectType.ROT13: ['rot', '13'],
+            ProjectType.ReverseString: ['reverse', 'string'],
+            ProjectType.RomanNumeral: ['roman', 'numeral'],
+            ProjectType.SelectionSort: ['selection', 'sort'],
+        }
+        extension = self.extension if include_extension else ''
+        return {k: f'{self._get_project_name(v)}{extension}' for k, v in project_mapping.items()}
+
+    def _get_project_name(self, words):
+        if self.naming is NamingScheme.hyphen:
+            return '-'.join(words)
+        elif self.naming is NamingScheme.underscore:
+            return '_'.join(words)
+        elif self.naming is NamingScheme.camel:
+            return words[0].lower() + map(lambda word: word.upper(), words[1:])
+        elif self.naming is NamingScheme.pascal:
+            return map(lambda word: word.Upper(), words)
+        elif self.naming is NamingScheme.lower:
+            return map(lambda word: word.lower(), words)
+
     @classmethod
     def from_dict(cls, dictionary):
-        return FolderInfo(dictionary['extension'])
+        return FolderInfo(dictionary['extension'], dictionary['naming'])
 
 
 class TestInfo:
