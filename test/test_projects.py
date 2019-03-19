@@ -20,9 +20,20 @@ def baklava(request):
     return request.param
 
 
-@pytest.fixture(params=sources['bubble-sort'],
-                ids=['bubble-sort' + source.extension for source in sources['bubble-sort']])
-def bubble(request):
+@pytest.fixture(params=sources['bubble-sort'] +
+                       sources['insertion-sort'] +
+                       sources['merge-sort'] +
+                       sources['quick-sort'] +
+                       sources['selection-sort'],
+                ids=[source.name + source.extension
+                     for source in (
+                             sources['bubble-sort'] +
+                             sources['insertion-sort'] +
+                             sources['merge-sort'] +
+                             sources['quick-sort'] +
+                             sources['selection-sort']
+                     )])
+def sort_source(request):
     return request.param
 
 
@@ -94,6 +105,6 @@ sorting_permutations = (
 
 
 @pytest.mark.parametrize(sorting_permutations[0], sorting_permutations[1], ids=[p[0] for p in sorting_permutations[1]])
-def test_bubble_sort(description, in_params, expected, docker_client, bubble):
-    actual = bubble.run(docker_client, params=in_params)
+def test_sort(description, in_params, expected, docker_client, sort_source):
+    actual = sort_source.run(docker_client, params=in_params)
     assert actual.replace('[', '').replace(']', '').strip() == expected
