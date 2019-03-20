@@ -32,7 +32,6 @@ def main(args):
             exit_with_error()
         print(insertion_sort(xs))
     except (IndexError,ValueError):
-        raise
         exit_with_error()
 
 
