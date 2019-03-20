@@ -63,6 +63,8 @@ If you plan to add a new project, please make note of the directory structure.
 
 ## Naming Conventions
 
+### Directories
+
 As a general rule, if you're adding a new language, please use lowercase alphanumeric
 character sequences separated by dashes only. If we do not adhere to this rule,
 we risk limiting contributors by platform.
@@ -79,6 +81,25 @@ using c-star. The following table shares a few examples:
 | F#       | f-sharp               |
 
 Thanks for keeping this repository inclusive!
+
+### Source Files
+
+Each source file must be named using the file name specified in the project description.
+However, the naming convention for the filename (capitalization, hyphenation, etc...)
+should follow the industry standard for each language. If you are unsure of the naming
+convention for a given language, check the `testinfo.yaml` file found in the language directory.
+
+The following table shows examples of how to name a source file for the Even Odd Project
+for each naming convention:
+
+| Convention | Source Name |
+| ---------- | ----------- |
+| camel      | evenOdd.sh  |
+| hyphen     | even-odd.sh |
+| lower      | evenodd.sh  |
+| pascal     | EvenOdd.sh  |
+| underscore | even_odd.sh |
+
 
 ## Pull Requests
 
