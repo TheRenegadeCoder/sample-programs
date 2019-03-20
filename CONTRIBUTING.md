@@ -98,7 +98,7 @@ for each naming convention:
 | hyphen     | even-odd.sh |
 | lower      | evenodd.sh  |
 | pascal     | EvenOdd.sh  |
-| Underscore | even_odd.sh |
+| underscore | even_odd.sh |
 
 
 ## Pull Requests
