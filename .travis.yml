@@ -3,8 +3,7 @@ matrix:
     - language: python
       python:
         - "3.6"
-      script:
-        - echo "insert tests here"
+      script: test.sh
       deploy:
         provider: script
         script: bash -x deploy.sh
