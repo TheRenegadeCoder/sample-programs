@@ -14,14 +14,14 @@ def err()
   puts('Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"')
 end
 
-if ARGV.length < 1
-  err()
-else
-  begin
-    unsorted = ARGV[0].split(",").map {|i| Integer(i) }
+begin
+  unsorted = ARGV[0].split(",").map{|i| Integer(i)}
+  if unsorted.length > 1:
     sorted = bubble_sort(unsorted)
     print(sorted)
-  rescue
+  else
     err()
   end
+rescue
+  err()
 end
