@@ -36,7 +36,7 @@ class Source:
     def extension(self):
         return os.path.splitext(self._name)[1]
 
-    def run(self, client, params=''):
+    def run(self, client, params='', expect_error=False):
         tmp_dir = tempfile.mkdtemp()
         shutil.copy(self.full_path, tmp_dir)
 
@@ -50,29 +50,31 @@ class Source:
             image=image,
             container_info=self.test_info.container_info,
             volume_info=volume_info,
-            params=params
+            params=params,
+            expect_error=expect_error
         )
-
         shutil.rmtree(tmp_dir, ignore_errors=True)
         return result.decode('utf-8')
 
 
 def _get_image(client, container_info):
-    try:
         return client.images.pull(container_info.image, tag=str(container_info.tag))
-    except errors.APIError as e:
-        raise AssertionError(f"Unable to pull docker image " f"'{container_info.image}:{container_info.tag}'", e)
 
 
-def _run_container(client, image, container_info, volume_info, params):
-    try:
-        return client.containers.run(image=image,
-                                     command=f'{container_info.cmd} {params}',
-                                     working_dir='/src',
-                                     remove=True,
-                                     volumes=volume_info)
-    except (errors.ContainerError, errors.APIError) as e:
-        raise AssertionError(f"Unable to run container with image {image}", e)
+def _run_container(client, image, container_info, volume_info, params, expect_error):
+    container = client.containers.run(image=image,
+                                      command=f'{container_info.cmd} {params}',
+                                      working_dir='/src',
+                                      remove=not expect_error,
+                                      detach=expect_error,
+                                      volumes=volume_info)
+    if not expect_error:
+        return container
+
+    out = b''.join([line for line in container.logs(stdout=True, stderr=True, stream=True, follow=True)])
+    container.remove()
+    return out
+
 
 
 def get_sources(path):

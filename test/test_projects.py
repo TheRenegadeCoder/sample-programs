@@ -55,7 +55,7 @@ def test_baklava(docker_client, baklava):
     assert actual_lines == expected_lines
 
 
-sorting_permutations = (
+sorting_invalid_permutations = (
     'description,in_params,expected', [
         (
             'no input',
@@ -73,7 +73,13 @@ sorting_permutations = (
             'invalid input: wrong format',
             '"4 5 3"',
             'Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"'
-        ), (
+        )
+    ]
+)
+
+sorting_valid_permutations = (
+    'description,in_params,expected', [
+        (
             'sample input',
             '"4, 5, 3, 1, 2"',
             '1, 2, 3, 4, 5'
@@ -89,11 +95,20 @@ sorting_permutations = (
             'sample input: reverse sorted',
             '"9, 8, 7, 6, 5, 4, 3, 2, 1"',
             '1, 2, 3, 4, 5, 6, 7, 8, 9'
-        ),
-    ])
+        )
+    ]
+)
 
 
-@pytest.mark.parametrize(sorting_permutations[0], sorting_permutations[1], ids=[p[0] for p in sorting_permutations[1]])
-def test_sort(description, in_params, expected, docker_client, sort_source):
+@pytest.mark.parametrize(sorting_valid_permutations[0], sorting_valid_permutations[1],
+                         ids=[p[0] for p in sorting_valid_permutations[1]])
+def test_sort_valid(description, in_params, expected, docker_client, sort_source):
     actual = sort_source.run(docker_client, params=in_params)
     assert actual.replace('[', '').replace(']', '').strip() == expected
+
+
+@pytest.mark.parametrize(sorting_invalid_permutations[0], sorting_invalid_permutations[1],
+                         ids=[p[0] for p in sorting_invalid_permutations[1]])
+def test_sort_invalid(description, in_params, expected, docker_client, sort_source):
+    actual = sort_source.run(docker_client, params=in_params, expect_error=True)
+    assert actual.strip() == expected

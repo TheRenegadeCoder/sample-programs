@@ -17,7 +17,7 @@ def input_list(list_str):
 
 
 def exit_with_error():
-    print('Usage: please provide a list of at least two integers to sort in the format “1, 2, 3, 4, 5”')
+    print('Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"')
     sys.exit(1)
 
 
