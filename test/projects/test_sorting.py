@@ -3,7 +3,6 @@ import pytest
 from test.fixtures import sources, docker_client
 from test.project import sorting_types
 
-
 sorting_invalid_permutations = (
     'description,in_params,expected', [
         (
