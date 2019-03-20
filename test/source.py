@@ -6,8 +6,6 @@ import pytest
 import docker
 import yaml
 
-from docker import errors
-
 from test.project import ProjectType
 
 from test import testinfo
@@ -76,7 +74,6 @@ def _run_container(client, image, container_info, volume_info, params, expect_er
     return out
 
 
-
 def get_sources(path):
     sources = {k: [] for k in ProjectType}
     for root, dirs, files in os.walk(path):
@@ -91,8 +88,3 @@ def get_sources(path):
                     source = Source(project_name, path, test_info_string)
                     sources[project_type].append(source)
     return sources
-
-
-@pytest.fixture
-def docker_client():
-    return docker.from_env()

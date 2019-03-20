@@ -1,58 +1,7 @@
-import os
-
 import pytest
-import docker
 
-from test import source
-from test.project import ProjectType, sorting_types
-
-sources = source.get_sources('../archive')
-
-
-@pytest.fixture
-def docker_client():
-    return docker.from_env()
-
-
-@pytest.fixture(params=sources[ProjectType.Baklava],
-                ids=[source.name + source.extension for source in sources[ProjectType.Baklava]])
-def baklava(request):
-    return request.param
-
-
-@pytest.fixture(params=[source for project in sorting_types for source in sources[project]],
-                ids=[source.name + source.extension for project in sorting_types for source in sources[project]])
-def sort_source(request):
-    return request.param
-
-
-def test_baklava(docker_client, baklava):
-    expected = """          *
-         ***
-        *****
-       *******
-      *********
-     ***********
-    *************
-   ***************
-  *****************
- *******************
-*********************
- *******************
-  *****************
-   ***************
-    *************
-     ***********
-      *********
-       *******
-        *****
-         ***
-          *
-"""
-    expected_lines = expected.split(os.linesep)
-    actual = baklava.run(docker_client)
-    actual_lines = actual.split(os.linesep)
-    assert actual_lines == expected_lines
+from test.fixtures import sources, docker_client
+from test.project import sorting_types
 
 
 sorting_invalid_permutations = (
@@ -98,6 +47,12 @@ sorting_valid_permutations = (
         )
     ]
 )
+
+
+@pytest.fixture(params=[source for project in sorting_types for source in sources[project]],
+                ids=[source.name + source.extension for project in sorting_types for source in sources[project]])
+def sort_source(request):
+    return request.param
 
 
 @pytest.mark.parametrize(sorting_valid_permutations[0], sorting_valid_permutations[1],
