@@ -15,7 +15,7 @@ def err()
 end
 
 begin
-  unsorted = ARGV[0].split(",").map{|i| Integer(i)}
+  unsorted = ARGV[0].split(", ").map{|i| Integer(i)}
   if unsorted.length > 1
     sorted = bubble_sort(unsorted)
     print(sorted)
