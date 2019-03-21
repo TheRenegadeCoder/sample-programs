@@ -1,6 +1,6 @@
 import pytest
 
-from test.fixtures import sources, docker_client
+from test.fixtures import project_permutations, docker_client
 from test.project import ProjectType
 
 invalid_permutations = (
@@ -44,8 +44,8 @@ valid_permutations = (
 )
 
 
-@pytest.fixture(params=sources[ProjectType.EvenOdd],
-                ids=[source.name + source.extension for source in sources[ProjectType.EvenOdd]])
+@pytest.fixture(params=project_permutations[ProjectType.EvenOdd].params,
+                ids=project_permutations[ProjectType.EvenOdd].ids)
 def even_odd(request):
     return request.param
 

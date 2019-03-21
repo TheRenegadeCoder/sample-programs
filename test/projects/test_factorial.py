@@ -1,6 +1,6 @@
 import pytest
 
-from test.fixtures import sources, docker_client
+from test.fixtures import project_permutations, docker_client
 from test.project import ProjectType
 
 invalid_permutations = (
@@ -52,8 +52,8 @@ valid_permutations = (
 )
 
 
-@pytest.fixture(params=sources[ProjectType.Factorial],
-                ids=[source.name + source.extension for source in sources[ProjectType.Factorial]])
+@pytest.fixture(params=project_permutations[ProjectType.Factorial].params,
+                ids=project_permutations[ProjectType.Factorial].ids)
 def factorial(request):
     return request.param
 

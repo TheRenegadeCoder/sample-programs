@@ -2,12 +2,12 @@ import os
 
 import pytest
 
-from test.fixtures import sources, docker_client
+from test.fixtures import project_permutations, docker_client
 from test.project import ProjectType
 
 
-@pytest.fixture(params=sources[ProjectType.Baklava],
-                ids=[source.name + source.extension for source in sources[ProjectType.Baklava]])
+@pytest.fixture(params=project_permutations[ProjectType.Baklava].params,
+                ids=project_permutations[ProjectType.Baklava].ids)
 def baklava(request):
     return request.param
 
