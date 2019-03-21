@@ -1,6 +1,6 @@
 import pytest
 
-from test.fixtures import sources, docker_client
+from test.fixtures import project_permutations, docker_client
 from test.project import sorting_types
 
 sorting_invalid_permutations = (
@@ -48,8 +48,20 @@ sorting_valid_permutations = (
 )
 
 
-@pytest.fixture(params=[source for project in sorting_types for source in sources[project]],
-                ids=[source.name + source.extension for project in sorting_types for source in sources[project]])
+def _get_sorting_project_permutations():
+    perms = [project_permutations[sorting_type] for sorting_type in sorting_types]
+    spp = perms[0]
+    for perm in perms[1:]:
+        spp.params += perm.params
+        spp.ids += perm.ids
+    return spp
+
+
+sorting_project_permutations = _get_sorting_project_permutations()
+
+
+@pytest.fixture(params=sorting_project_permutations.params,
+                ids=sorting_project_permutations.ids)
 def sort_source(request):
     return request.param
 

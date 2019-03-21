@@ -32,3 +32,4 @@ sorting_types = [
     ProjectType.QuickSort,
     ProjectType.SelectionSort
 ]
+
