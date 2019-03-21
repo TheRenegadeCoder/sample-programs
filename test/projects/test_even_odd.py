@@ -3,7 +3,7 @@ import pytest
 from test.fixtures import sources, docker_client
 from test.project import ProjectType
 
-sorting_invalid_permutations = (
+invalid_permutations = (
     'description,in_params,expected', [
         (
             'no input',
@@ -21,7 +21,7 @@ sorting_invalid_permutations = (
     ]
 )
 
-sorting_valid_permutations = (
+valid_permutations = (
     'description,in_params,expected', [
         (
             'sample input: even',
@@ -50,15 +50,15 @@ def even_odd(request):
     return request.param
 
 
-@pytest.mark.parametrize(sorting_valid_permutations[0], sorting_valid_permutations[1],
-                         ids=[p[0] for p in sorting_valid_permutations[1]])
+@pytest.mark.parametrize(valid_permutations[0], valid_permutations[1],
+                         ids=[p[0] for p in valid_permutations[1]])
 def test_even_odd_valid(description, in_params, expected, docker_client, even_odd):
     actual = even_odd.run(docker_client, params=in_params)
     assert actual.replace('[', '').replace(']', '').strip() == expected
 
 
-@pytest.mark.parametrize(sorting_invalid_permutations[0], sorting_invalid_permutations[1],
-                         ids=[p[0] for p in sorting_invalid_permutations[1]])
-def test_even_invalid(description, in_params, expected, docker_client, even_odd):
+@pytest.mark.parametrize(invalid_permutations[0], invalid_permutations[1],
+                         ids=[p[0] for p in invalid_permutations[1]])
+def test_even_odd_invalid(description, in_params, expected, docker_client, even_odd):
     actual = even_odd.run(docker_client, params=in_params, expect_error=True)
     assert actual.strip() == expected
