@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-import argparse
+import sys
 
 
 class Job:
@@ -38,12 +38,20 @@ def iterate_job_sequence(available, complete=None):
     return iterate_job_sequence(available, complete)
 
 
+def exit_with_error():
+    print('Usage: please provide a list of profits and a list of deadlines')
+    sys.exit(1)
+
+
+def main(args):
+    try:
+        profits = input_list(args[0])
+        deadlines = input_list(args[1])
+        jobs = [Job(p, d) for p, d in zip(profits, deadlines)]
+        print(max_profit(jobs))
+    except (IndexError, ValueError):
+        exit_with_error()
+
+
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(usage='Usage: please provide a list of profits and a list of deadlines')
-    parser.add_argument('profits', type=input_list)
-    parser.add_argument('deadlines', type=input_list)
-    args = parser.parse_args()
-
-    jobs = [Job(p, d) for p, d in zip(args.profits, args.deadlines)]
-
-    print(max_profit(jobs))
+    main(sys.argv[1:])
