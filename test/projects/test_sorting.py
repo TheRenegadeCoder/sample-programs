@@ -2,6 +2,7 @@ import pytest
 
 from test.fixtures import project_permutations, docker_client
 from test.project import sorting_types
+from test.utilities import clean_list
 
 sorting_invalid_permutations = (
     'description,in_params,expected', [
@@ -70,7 +71,7 @@ def sort_source(request):
                          ids=[p[0] for p in sorting_valid_permutations[1]])
 def test_sort_valid(description, in_params, expected, docker_client, sort_source):
     actual = sort_source.run(docker_client, params=in_params)
-    assert actual.replace('[', '').replace(']', '').strip() == expected
+    assert clean_list(actual) == expected
 
 
 @pytest.mark.parametrize(sorting_invalid_permutations[0], sorting_invalid_permutations[1],
