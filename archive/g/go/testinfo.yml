@@ -4,5 +4,5 @@ folder:
 
 container:
   image: "golang"
-  tag: "1"
+  tag: "1.12"
   cmd: "go run {{ source.name }}{{ source.extension }}"
