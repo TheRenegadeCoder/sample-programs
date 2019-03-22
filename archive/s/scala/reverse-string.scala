@@ -20,7 +20,10 @@ object ReverseStringSample {
   }
 
   def main(args: Array[String]) {
-    val inputStr = readLine
-    println(reverseString(inputStr))
+    val inputStr: Option[String] = args.length match {
+      case 0 => None
+      case _ => Some(args(0))
+    }
+    inputStr.map(reverseString).map(println)
   }
 }
