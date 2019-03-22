@@ -1,0 +1,8 @@
+folder:
+  extension: ".go"
+  naming: "hyphen"
+
+container:
+  image: "golang"
+  tag: "1"
+  cmd: "go run {{ source.name }}{{ source.extension }}"
