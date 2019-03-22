@@ -6,6 +6,7 @@ Welcome to Sample Programs in Scala!
 
 - [Hello World in Scala][1]
 - [Fizz Buzz in Scala][2]
+- [Quicksort in Scala](https://github.com/TheRenegadeCoder/sample-programs/issues/1034)
 
 ## Fun Facts
 
