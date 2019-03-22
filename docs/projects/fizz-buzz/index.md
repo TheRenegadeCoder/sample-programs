@@ -38,7 +38,15 @@ Fizz
 4
 Buzz
 Fizz
-...
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+FizzBuzz
 ```
 
 The program should then be saved in a file called fizz buzz using the proper
