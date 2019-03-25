@@ -1,6 +1,6 @@
 import pytest
 
-from test.fixtures import project_permutations, docker_client
+from test.fixtures import project_permutations
 from test.project import ProjectType
 
 
@@ -108,11 +108,13 @@ Buzz
 
 
 @pytest.fixture(params=project_permutations[ProjectType.FizzBuzz].params,
-                ids=project_permutations[ProjectType.FizzBuzz].ids)
+                ids=project_permutations[ProjectType.FizzBuzz].ids,
+                scope='module')
 def fizz_buzz(request):
-    return request.param
+    yield request.param
+    request.param.cleanup()
 
 
-def test_fizz_buzz(docker_client, fizz_buzz):
-    actual = fizz_buzz.run(docker_client)
+def test_fizz_buzz(fizz_buzz):
+    actual = fizz_buzz.run()
     assert actual == expected

@@ -1,13 +1,5 @@
-import docker
-import pytest
-
 from test import source
 from test.project import ProjectType
-
-
-@pytest.fixture
-def docker_client():
-    return docker.from_env()
 
 
 class ProjectPermutation:

@@ -1,6 +1,6 @@
 import pytest
 
-from test.fixtures import project_permutations, docker_client
+from test.fixtures import project_permutations
 from test.project import ProjectType
 
 invalid_permutations = (
@@ -53,20 +53,22 @@ valid_permutations = (
 
 
 @pytest.fixture(params=project_permutations[ProjectType.Factorial].params,
-                ids=project_permutations[ProjectType.Factorial].ids)
+                ids=project_permutations[ProjectType.Factorial].ids,
+                scope='module')
 def factorial(request):
-    return request.param
+    yield request.param
+    request.param.cleanup()
 
 
 @pytest.mark.parametrize(valid_permutations[0], valid_permutations[1],
                          ids=[p[0] for p in valid_permutations[1]])
-def test_factorial_valid(description, in_params, expected, docker_client, factorial):
-    actual = factorial.run(docker_client, params=in_params)
+def test_factorial_valid(description, in_params, expected, factorial):
+    actual = factorial.run(params=in_params)
     assert actual.strip() == expected
 
 
 @pytest.mark.parametrize(valid_permutations[0], valid_permutations[1],
                          ids=[p[0] for p in valid_permutations[1]])
-def test_factorial_invalid(description, in_params, expected, docker_client, factorial):
-    actual = factorial.run(docker_client, params=in_params, expect_error=True)
+def test_factorial_invalid(description, in_params, expected, factorial):
+    actual = factorial.run(params=in_params)
     assert actual.strip() == expected

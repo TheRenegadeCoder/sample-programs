@@ -1,6 +1,6 @@
 import pytest
 
-from test.fixtures import project_permutations, docker_client
+from test.fixtures import project_permutations
 from test.project import sorting_types
 from test.utilities import clean_list
 
@@ -62,20 +62,22 @@ sorting_project_permutations = _get_sorting_project_permutations()
 
 
 @pytest.fixture(params=sorting_project_permutations.params,
-                ids=sorting_project_permutations.ids)
+                ids=sorting_project_permutations.ids,
+                scope='module')
 def sort_source(request):
-    return request.param
+    yield request.param
+    request.param.cleanup()
 
 
 @pytest.mark.parametrize(sorting_valid_permutations[0], sorting_valid_permutations[1],
                          ids=[p[0] for p in sorting_valid_permutations[1]])
-def test_sort_valid(description, in_params, expected, docker_client, sort_source):
-    actual = sort_source.run(docker_client, params=in_params)
+def test_sort_valid(description, in_params, expected, sort_source):
+    actual = sort_source.run(params=in_params)
     assert clean_list(actual) == expected
 
 
 @pytest.mark.parametrize(sorting_invalid_permutations[0], sorting_invalid_permutations[1],
                          ids=[p[0] for p in sorting_invalid_permutations[1]])
-def test_sort_invalid(description, in_params, expected, docker_client, sort_source):
-    actual = sort_source.run(docker_client, params=in_params, expect_error=True)
+def test_sort_invalid(description, in_params, expected, sort_source):
+    actual = sort_source.run(params=in_params)
     assert actual.strip() == expected
