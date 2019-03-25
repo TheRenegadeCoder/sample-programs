@@ -2,17 +2,19 @@ import os
 
 import pytest
 
-from test.fixtures import project_permutations, docker_client
+from test.fixtures import project_permutations
 from test.project import ProjectType
 
 
 @pytest.fixture(params=project_permutations[ProjectType.Baklava].params,
-                ids=project_permutations[ProjectType.Baklava].ids)
+                ids=project_permutations[ProjectType.Baklava].ids,
+                scope='module')
 def baklava(request):
-    return request.param
+    yield request.param
+    request.param.cleanup()
 
 
-def test_baklava(docker_client, baklava):
+def test_baklava(baklava):
     expected = """          *
          ***
         *****
@@ -36,6 +38,6 @@ def test_baklava(docker_client, baklava):
           *
 """
     expected_lines = expected.split(os.linesep)
-    actual = baklava.run(docker_client)
+    actual = baklava.run()
     actual_lines = actual.split(os.linesep)
     assert actual_lines == expected_lines

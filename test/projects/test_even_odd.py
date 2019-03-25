@@ -1,6 +1,6 @@
 import pytest
 
-from test.fixtures import project_permutations, docker_client
+from test.fixtures import project_permutations
 from test.project import ProjectType
 
 invalid_permutations = (
@@ -45,20 +45,22 @@ valid_permutations = (
 
 
 @pytest.fixture(params=project_permutations[ProjectType.EvenOdd].params,
-                ids=project_permutations[ProjectType.EvenOdd].ids)
+                ids=project_permutations[ProjectType.EvenOdd].ids,
+                scope='module')
 def even_odd(request):
-    return request.param
+    yield request.param
+    request.param.cleanup()
 
 
 @pytest.mark.parametrize(valid_permutations[0], valid_permutations[1],
                          ids=[p[0] for p in valid_permutations[1]])
-def test_even_odd_valid(description, in_params, expected, docker_client, even_odd):
-    actual = even_odd.run(docker_client, params=in_params)
+def test_even_odd_valid(description, in_params, expected, even_odd):
+    actual = even_odd.run(params=in_params)
     assert actual.replace('[', '').replace(']', '').strip() == expected
 
 
 @pytest.mark.parametrize(invalid_permutations[0], invalid_permutations[1],
                          ids=[p[0] for p in invalid_permutations[1]])
-def test_even_odd_invalid(description, in_params, expected, docker_client, even_odd):
-    actual = even_odd.run(docker_client, params=in_params, expect_error=True)
+def test_even_odd_invalid(description, in_params, expected, even_odd):
+    actual = even_odd.run(params=in_params)
     assert actual.strip() == expected

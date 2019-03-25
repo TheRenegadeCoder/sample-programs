@@ -1,10 +1,9 @@
 import os
-import shutil
-import tempfile
 
 import yaml
 
 from test import testinfo
+from test.containerfactory import ContainerFactory
 from test.project import ProjectType
 
 
@@ -48,70 +47,31 @@ class Source:
         """Returns parsed TestInfo object"""
         return self._test_info
 
-    def run(self, client, params='', expect_error=False):
+    def run(self, params=''):
         """
         Run the source and return the output
 
-        :param client: a docker client
         :param params: input passed to the source as it's run
-        :param expect_error: if set to True container exceptions will be caught and output will still be returned
         :return: the output of running the source
         """
-        tmp_dir = tempfile.mkdtemp()
-        shutil.copy(self.full_path, tmp_dir)
 
-        image = _get_image(
-            client=client,
-            container_info=self.test_info.container_info
+        container = ContainerFactory.get_container(self)
+        if self.test_info.container_info.build is not None:
+            container.exec_run(
+                cmd=f'{self.test_info.container_info.build}',
+                detach=False,
+                workdir='/src'
+            )
+
+        result = container.exec_run(
+            cmd=f'{self.test_info.container_info.cmd} {params}',
+            detach=False,
+            workdir='/src'
         )
-        volume_info = {tmp_dir: {'bind': '/src', 'mode': 'rw'}}
-        result = _run_container(
-            client=client,
-            image=image,
-            container_info=self.test_info.container_info,
-            volume_info=volume_info,
-            params=params,
-            expect_error=expect_error
-        )
-        shutil.rmtree(tmp_dir, ignore_errors=True)
-        return result.decode('utf-8')
+        return result[1].decode('utf-8')
 
-
-def _get_image(client, container_info):
-    """
-    Pull a docker image
-
-    :param client: a docker client
-    :param container_info: metadata about the image to pull
-    :return: a docker image
-    """
-    return client.images.pull(container_info.image, tag=str(container_info.tag))
-
-
-def _run_container(client, image, container_info, volume_info, params, expect_error):
-    """
-    Run source inside a container
-
-    :param client: a docker client
-    :param image: the image to run
-    :param container_info: metadata about the container to run
-    :param volume_info: a dictionary or list to configure volumes mounted inside the container
-    :param params: input to pass to the source as it is run
-    :param expect_error: if set to True container exceptions will be caught and output will still be returned
-    :return: the log of the container
-    """
-    container = client.containers.run(image=image,
-                                      command=f'{container_info.cmd} {params}',
-                                      working_dir='/src',
-                                      remove=not expect_error,
-                                      detach=expect_error,
-                                      volumes=volume_info)
-    if not expect_error:
-        return container
-
-    out = b''.join([line for line in container.logs(stdout=True, stderr=True, stream=True, follow=True)])
-    container.remove()
-    return out
+    def cleanup(self):
+        ContainerFactory.cleanup(self)
 
 
 def get_sources(path):

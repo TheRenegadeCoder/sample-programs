@@ -17,17 +17,19 @@ class NamingScheme(Enum):
 class ContainerInfo:
     """Configuration for a container to run for a directory"""
 
-    def __init__(self, image, tag, cmd):
+    def __init__(self, image, tag, cmd, build=None):
         """
         Initialize a ContainerInfo
 
         :param image: the image to run
         :param tag: the tag of the image to run
-        :param cmd: the command to run in the container
+        :param cmd: the command to run the source inside the container
+        :param build: an optional command to run to build the source before running the command
         """
         self._image = image
         self._cmd = cmd
         self._tag = tag
+        self._build = build
 
     @property
     def image(self):
@@ -36,13 +38,18 @@ class ContainerInfo:
 
     @property
     def cmd(self):
-        """Returns the command to run in the container"""
+        """Returns the command to run the source inside the container"""
         return self._cmd
 
     @property
     def tag(self):
         """Returns the tag of the image to run"""
         return self._tag
+
+    @property
+    def build(self):
+        """Returns the command to build the source before running it inside the container"""
+        return self._build
 
     @classmethod
     def from_dict(cls, dictionary):
@@ -52,7 +59,16 @@ class ContainerInfo:
         :param dictionary: the dictionary representing ContainerInfo
         :return: a new ContainerInfo
         """
-        return ContainerInfo(dictionary['image'], dictionary['tag'], dictionary['cmd'])
+        image = dictionary['image']
+        tag = dictionary['tag']
+        cmd = dictionary['cmd']
+        build = dictionary['build'] if 'build' in dictionary else None
+        return ContainerInfo(
+            image=image,
+            tag=tag,
+            cmd=cmd,
+            build=build
+        )
 
 
 class FolderInfo:

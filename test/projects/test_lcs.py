@@ -1,6 +1,6 @@
 import pytest
 
-from test.fixtures import project_permutations, docker_client
+from test.fixtures import project_permutations
 from test.project import ProjectType
 from test.utilities import clean_list
 
@@ -38,20 +38,22 @@ valid_permutations = (
 
 
 @pytest.fixture(params=project_permutations[ProjectType.LCS].params,
-                ids=project_permutations[ProjectType.LCS].ids)
+                ids=project_permutations[ProjectType.LCS].ids,
+                scope='module')
 def lcs(request):
-    return request.param
+    yield request.param
+    request.param.cleanup()
 
 
 @pytest.mark.parametrize(valid_permutations[0], valid_permutations[1],
                          ids=[p[0] for p in valid_permutations[1]])
-def test_lcs_valid(description, in_params, expected, docker_client, lcs):
-    actual = lcs.run(docker_client, params=in_params)
+def test_lcs_valid(description, in_params, expected, lcs):
+    actual = lcs.run(params=in_params)
     assert clean_list(actual) == expected
 
 
 @pytest.mark.parametrize(invalid_permutations[0], invalid_permutations[1],
                          ids=[p[0] for p in invalid_permutations[1]])
-def test_lcs_invalid(description, in_params, expected, docker_client, lcs):
-    actual = lcs.run(docker_client, params=in_params, expect_error=True)
+def test_lcs_invalid(description, in_params, expected, lcs):
+    actual = lcs.run(params=in_params)
     assert actual.strip() == expected
