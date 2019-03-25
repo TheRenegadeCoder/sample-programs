@@ -1,3 +1,13 @@
+---
+title: Hello World in Visual Basic
+layout: default
+last-modified: 2019-03-25
+featured-image: hello-world-in-visual-basic-featured-image.JPEG
+tags: [visual-basic, hello-world]
+authors:
+  - the_renegade_coder
+---
+
 ## How to Implement the Solution
 
 At any rate, let’s dive right into Hello World in Visual Basic .NET:
