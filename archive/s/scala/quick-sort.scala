@@ -1,25 +1,25 @@
 import scala.io.StdIn.readLine
 import scala.reflect.ClassTag
 
-object QuickSortSamples {
+object QuickSortSample {
   def main(args: Array[String]) {
-    // example of sorting integers
-    val inputInts = readLine().split(" ").map(_.toInt)
-    val sortedInts = quicksort(inputInts)
-    sortedInts.map(println)
-
-    // example of sorting words (Strings)
-    val inputWords = readLine().split(" ")
-    val sortedWords = quicksort(inputWords)
-    sortedWords.map(println)
-
-    // example of sorting using custom Ordering
-    object longerString extends Ordering[String] {
-      def compare(lhs: String, rhs: String): Int = lhs.length - rhs.length
+    // verify inputs are being provided
+    parseInput(args) match {
+      case None => println("Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"")
+      case Some(inputArr) => {
+        val output = quicksort(inputArr).mkString(", ")
+        println(output)
+      }
     }
+  }
 
-    val sortedWordsByLength = qsCustom(inputWords)(longerString)
-    sortedWordsByLength.map(println)
+  def parseInput(args: Array[String]): Option[Array[Int]] = args.length match {
+    case 0 => None
+    case _ => try {
+      Some(args(0).split(",").map(_.trim).map(_.toInt))
+    } catch {
+      case e: Throwable => None
+    }
   }
 
   // quick sort increasing elements
@@ -36,23 +36,6 @@ object QuickSortSamples {
       val rhs = arr.filter(_ > pivot)
 
       quicksort(lhs) ++ mid ++ quicksort(rhs)
-    }
-  }
-
-  // in case we want to sort using custom comparator,
-  // we implement sort that accepts an Ordering object to match scala.util.Sorting.quicksort signature
-  // Ordering[T] object implement compare(a: T, b: T), returning integers
-  // this helps comparing more complicated structures, with a custom-defined Ordering
-  def qsCustom[T: ClassTag](arr: Array[T])(order: Ordering[T]): Array[T] = arr.length match {
-    case 0 => arr
-    case 1 => arr
-    case _ => {
-      val pivot: T = arr(0)
-      val lhs = arr.filter(order.compare(_, pivot) < 0)
-      val mid = arr.filter(order.compare(_, pivot) == 0)
-      val rhs = arr.filter(order.compare(_, pivot) > 0)
-
-      qsCustom(lhs)(order) ++ mid ++ qsCustom(rhs)(order)
     }
   }
 }
