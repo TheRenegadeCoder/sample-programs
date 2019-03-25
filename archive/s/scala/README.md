@@ -7,6 +7,9 @@ Welcome to Sample Programs in Scala!
 - [Hello World in Scala][1]
 - [Fizz Buzz in Scala][2]
 - [Bubble Sort in Scala](https://github.com/TheRenegadeCoder/sample-programs/issues/1033)
+- [Game of Life in Scala](https://github.com/TheRenegadeCoder/sample-programs/issues/1035)
+- [Reverse String in Scala](https://github.com/TheRenegadeCoder/sample-programs/issues/1032)
+
 
 ## Fun Facts
 

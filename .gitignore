@@ -8,3 +8,6 @@ _site/
 .vscode/
 .history/
 *.swp
+.pytest_cache/
+__pycache__/
+
