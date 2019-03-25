@@ -8,6 +8,8 @@ authors:
   - the_renegade_coder
 ---
 
+In this article, we'll tackle hello world in Visual Basic .NET.
+
 ## How to Implement the Solution
 
 At any rate, let’s dive right into Hello World in Visual Basic .NET:
