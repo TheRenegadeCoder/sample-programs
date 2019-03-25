@@ -1,0 +1,8 @@
+folder:
+  extension: ".py"
+  naming: "underscore"
+
+container:
+  image: "python"
+  tag: "3.7-alpine"
+  cmd: "python {{ source.name }}{{ source.extension }}"

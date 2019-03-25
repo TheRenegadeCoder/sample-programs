@@ -1,5 +1,6 @@
 # Sample Programs in Every Language
 
+[![Build Status](https://travis-ci.com/TheRenegadeCoder/sample-programs.svg?branch=master)](https://travis-ci.com/TheRenegadeCoder/sample-programs)
 [![Join the chat at https://gitter.im/TheRenegadeCoder/sample-programs](https://badges.gitter.im/TheRenegadeCoder/sample-programs.svg)](https://gitter.im/TheRenegadeCoder/sample-programs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Welcome to the [Sample Programs in Every Language][0] repository! What began

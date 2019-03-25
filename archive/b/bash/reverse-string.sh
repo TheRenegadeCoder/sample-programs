@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read -p "Enter any string: " string
+string=$1
 strLength=${#string}
 
 for ((i=$strLength-1;i>-1;i--)); 
