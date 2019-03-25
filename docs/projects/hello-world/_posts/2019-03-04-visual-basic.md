@@ -33,7 +33,7 @@ call them subroutines rather than functions—as indicated by the Sub keyword.
 Finally, we have our print line. Much like languages like Java, we have to string 
 together a few references before we can actually write to the console. In other 
 words, we have to call WriteLine after we get a reference to the standard output 
-class from the System namespace.
+class from the System namespace.[^1]
 
 ## How to Run the Solution
 
@@ -42,4 +42,10 @@ way to run the solution is to copy it into an online VB.NET compiler.
 
 Alternatively, we can run the solution using Microsoft’s very own Visual Studio. 
 Of course, I’m not sure of it’s support on platforms beyond Windows. Don’t forget 
-to grab a copy of the Hello World in Visual Basic .NET solution.
+to grab a copy of the Hello World in Visual Basic .NET solution.[^1]
+
+---
+
+#### References
+
+[^1]: J. Grifski, “Hello World in Visual Basic .NET,” The Renegade Coder, 6-May-2018. [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-visual-basic-net/>. [Accessed: 25-Mar-2019].
