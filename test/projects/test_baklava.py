@@ -10,6 +10,7 @@ from test.project import ProjectType
                 ids=project_permutations[ProjectType.Baklava].ids,
                 scope='module')
 def baklava(request):
+    request.param.build()
     yield request.param
     request.param.cleanup()
 

@@ -7,6 +7,7 @@ from test.project import ProjectType
 @pytest.fixture(params=project_permutations[ProjectType.ReverseString].params,
                 ids=project_permutations[ProjectType.ReverseString].ids)
 def reverse_string(request):
+    request.param.build()
     yield request.param
     request.param.cleanup()
 

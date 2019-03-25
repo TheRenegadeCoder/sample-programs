@@ -8,6 +8,7 @@ from test.project import ProjectType
                 ids=project_permutations[ProjectType.HelloWorld].ids,
                 scope='module')
 def hello_world(request):
+    request.param.build()
     yield request.param
     request.param.cleanup()
 

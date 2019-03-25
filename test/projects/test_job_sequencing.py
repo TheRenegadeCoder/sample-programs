@@ -17,6 +17,10 @@ invalid_permutations = (
             'missing input',
             '"25 15 10 5"',
             'Usage: please provide a list of profits and a list of deadlines'
+        ), (
+            'lists different lengths',
+            '"1, 2, 3, 4", "1, 2, 3, 4, 5"',
+            'Usage: please provide a list of profits and a list of deadlines'
         )
     ]
 )
@@ -29,7 +33,7 @@ valid_permutations = (
             '50'
         ), (
             'sample input two',
-            '"20, 15, 10, 5, 1" "2, 2, 1, 3"',
+            '"20, 15, 10, 5, 1" "2, 2, 1, 3, 3"',
             '40'
         )
     ]
@@ -40,6 +44,7 @@ valid_permutations = (
                 ids=project_permutations[ProjectType.JobSequencing].ids,
                 scope='module')
 def job_sequencing(request):
+    request.param.build()
     yield request.param
     request.param.cleanup()
 

@@ -41,6 +41,7 @@ valid_permutations = (
                 ids=project_permutations[ProjectType.LCS].ids,
                 scope='module')
 def lcs(request):
+    request.param.build()
     yield request.param
     request.param.cleanup()
 

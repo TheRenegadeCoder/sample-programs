@@ -5,4 +5,5 @@ folder:
 container:
   image: "golang"
   tag: "1.12-alpine"
-  cmd: "go run {{ source.name }}{{ source.extension }}"
+  build: "go build -o {{ source.name }} {{ source.name}}{{ source.extension }}"
+  cmd: "./{{ source.name }}"

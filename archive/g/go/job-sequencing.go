@@ -97,6 +97,9 @@ func main() {
 
 	profits := strToSliceInt(os.Args[1])
 	deadlines := strToSliceInt(os.Args[2])
+	if len(profits) != len(deadlines) {
+		exitWithError()
+	}
 	jobs := buildJobSequence(profits, deadlines)
 	max := maxProfit(jobs)
 	fmt.Println(max)

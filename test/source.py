@@ -47,6 +47,15 @@ class Source:
         """Returns parsed TestInfo object"""
         return self._test_info
 
+    def build(self, params=''):
+        if self.test_info.container_info.build is not None:
+            container = ContainerFactory.get_container(self)
+            container.exec_run(
+                cmd=f'{self.test_info.container_info.build} {params}',
+                detach=False,
+                workdir='/src'
+            )
+
     def run(self, params=''):
         """
         Run the source and return the output
@@ -56,13 +65,6 @@ class Source:
         """
 
         container = ContainerFactory.get_container(self)
-        if self.test_info.container_info.build is not None:
-            container.exec_run(
-                cmd=f'{self.test_info.container_info.build}',
-                detach=False,
-                workdir='/src'
-            )
-
         result = container.exec_run(
             cmd=f'{self.test_info.container_info.cmd} {params}',
             detach=False,

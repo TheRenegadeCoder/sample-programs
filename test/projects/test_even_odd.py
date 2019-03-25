@@ -48,6 +48,7 @@ valid_permutations = (
                 ids=project_permutations[ProjectType.EvenOdd].ids,
                 scope='module')
 def even_odd(request):
+    request.param.build()
     yield request.param
     request.param.cleanup()
 

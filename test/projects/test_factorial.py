@@ -56,6 +56,7 @@ valid_permutations = (
                 ids=project_permutations[ProjectType.Factorial].ids,
                 scope='module')
 def factorial(request):
+    request.param.build()
     yield request.param
     request.param.cleanup()
 
