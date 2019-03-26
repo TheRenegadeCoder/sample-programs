@@ -1,7 +1,7 @@
 module Main where
 
-import System.Exit (exitWith, ExitCode(ExitFailure))
 import System.Environment
+import System.Exit (exitWith, ExitCode(ExitFailure))
 import Data.List (intercalate)
 
 -- Recursively find longest common subsequence
@@ -23,6 +23,7 @@ longest l1 l2
 -- Converts string in format "1, 2, 3" to a list of integers
 stringToList :: String -> [Int]
 stringToList str = read $ "[" ++ str ++ "]" :: [Int]
+
 
 listToString :: [Int] -> String
 listToString = intercalate ", " . map show
