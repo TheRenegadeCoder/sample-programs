@@ -59,6 +59,13 @@ func strToSliceInt(strList string) []int {
 	return nums
 }
 
+func sliceIntToString(list []int) (out string) {
+	bytes, _ := json.Marshal(list)
+	out = strings.Replace(string(bytes), ",", ", ", -1)
+	out = strings.Trim(out, "[]")
+	return
+}
+
 func exitWithError() {
 	fmt.Println("Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"")
 	os.Exit(1)
@@ -71,7 +78,5 @@ func main() {
 
 	nums := strToSliceInt(os.Args[1])
 	nums = mergeSort(nums)
-	str, _ := json.Marshal(nums)
-
-	fmt.Println(strings.Trim(string(str), "[]"))
+	fmt.Println(sliceIntToString(nums))
 }
