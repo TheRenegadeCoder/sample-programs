@@ -65,6 +65,7 @@ sorting_project_permutations = _get_sorting_project_permutations()
                 ids=sorting_project_permutations.ids,
                 scope='module')
 def sort_source(request):
+    request.param.build()
     yield request.param
     request.param.cleanup()
 

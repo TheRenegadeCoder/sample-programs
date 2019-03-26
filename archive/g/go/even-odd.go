@@ -6,17 +6,19 @@ import (
 	"strconv"
 )
 
+func exitWithError() {
+	fmt.Println("Usage: please input a number")
+	os.Exit(1)
+}
+
 func main () {
 	if len(os.Args) != 2 {
-		fmt.Printf("Usage: %s [integer]\n", os.Args[0])
-		os.Exit(0)
+	    exitWithError()
 	}
 	
 	n, err := strconv.Atoi(os.Args[1])
 	if err != nil {
-		fmt.Printf("%s\n", err)
-		fmt.Printf("Usage: %s [integer]\n", os.Args[0])
-		os.Exit(1)
+	    exitWithError()
 	}
 
 	if n % 2 == 0 {

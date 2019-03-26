@@ -13,6 +13,7 @@ def _get_expected(source):
                 ids=project_permutations[ProjectType.Quine].ids,
                 scope='module')
 def quine(request):
+    request.param.build()
     yield request.param
     request.param.cleanup()
 

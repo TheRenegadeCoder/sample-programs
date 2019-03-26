@@ -111,6 +111,7 @@ Buzz
                 ids=project_permutations[ProjectType.FizzBuzz].ids,
                 scope='module')
 def fizz_buzz(request):
+    request.param.build()
     yield request.param
     request.param.cleanup()
 

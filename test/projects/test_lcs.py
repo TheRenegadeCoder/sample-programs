@@ -30,8 +30,8 @@ valid_permutations = (
             '1, 4, 5, 6'
         ), (
             'sample input different length',
-            '"1, 4, 8, 6, 9, 5, 3, 15, 11, 6" "1, 7, 4, 5, 8"',
-            '1, 4, 8'
+            '"1, 4, 8, 6, 9, 3, 15, 11, 6" "1, 7, 4, 5, 8, 11, 6"',
+            '1, 4, 8, 11, 6'
         )
     ]
 )
@@ -41,6 +41,7 @@ valid_permutations = (
                 ids=project_permutations[ProjectType.LCS].ids,
                 scope='module')
 def lcs(request):
+    request.param.build()
     yield request.param
     request.param.cleanup()
 
