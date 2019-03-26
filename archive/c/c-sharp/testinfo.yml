@@ -1,6 +1,6 @@
 folder:
   extension: ".cs"
-  naming: "Pascal"
+  naming: "pascal"
 
 container:
   image: "mono"
