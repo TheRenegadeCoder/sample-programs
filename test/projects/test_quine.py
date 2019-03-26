@@ -19,6 +19,6 @@ def quine(request):
 
 
 def test_quine(quine):
-    expected = _get_expected(quine)
-    actual = quine.run()
+    expected = _get_expected(quine).strip()
+    actual = quine.run().strip()
     assert actual == expected
