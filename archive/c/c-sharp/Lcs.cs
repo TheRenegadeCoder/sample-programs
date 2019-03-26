@@ -22,11 +22,6 @@ namespace SamplePrograms
 
         public static void Main(string[] args)
         {
-            if (args.Length != 2)
-            {
-                Console.WriteLine("Usage: please provide two lists from which to produce the lcs");
-                Environment.Exit(1);
-            }
             try
             {
                 var list1 = args[0].Split(',').Select(i => i.Trim());
@@ -36,7 +31,7 @@ namespace SamplePrograms
             }
             catch
             {
-                Console.WriteLine("Error: invalid lists");
+                Console.WriteLine("Usage: please provide two lists in the format \"1, 2, 3, 4, 5\"");
                 Environment.Exit(1);
             }
         }
