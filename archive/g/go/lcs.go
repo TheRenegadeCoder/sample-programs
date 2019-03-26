@@ -1,10 +1,12 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"os"
 	"regexp"
 	"strconv"
+	"strings"
 )
 
 func lcs(list1 []int, list2 []int) (lcsList []int) {
@@ -30,12 +32,6 @@ func reverse(list []int) (reversed []int) {
 	}
 	return
 }
-
-func exitWithError() {
-	fmt.Println("Usage: please pass to lists to produce the lcs. For example: \"1, 4, 5, 3, 15, 6\" \"1, 7, 4, 5, 11, 6\"")
-	os.Exit(1)
-}
-
 func strToSliceInt(strList string) []int {
 	list := regexp.MustCompile(", ?").Split(strList, -1)
 	if len(list) < 2 {
@@ -52,6 +48,19 @@ func strToSliceInt(strList string) []int {
 	return nums
 }
 
+
+func exitWithError() {
+	fmt.Println("Usage: please provide two lists in the format \"1, 2, 3, 4, 5\"")
+	os.Exit(1)
+}
+
+func sliceIntToString(list []int) (out string) {
+	bytes, _ := json.Marshal(list)
+	out = strings.Replace(string(bytes), ",", ", ", -1)
+	out = strings.Trim(out, "[]")
+	return
+}
+
 func main() {
 	if len(os.Args) != 3 {
 		exitWithError()
@@ -59,5 +68,5 @@ func main() {
 
 	list1 := strToSliceInt(os.Args[1])
 	list2 := strToSliceInt(os.Args[2])
-	fmt.Println(reverse(lcs(list1, list2)))
+	fmt.Println(sliceIntToString(reverse(lcs(list1, list2))))
 }
