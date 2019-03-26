@@ -5,5 +5,5 @@ folder:
 container:
   image: "mono"
   tag: "5.18"  # Cannot use slim because it does not contain mcs for compilation
-  build: "mcs {{ source.name}}{{ source.extension }}"
+  build: "mcs -reference:System.Numerics {{ source.name}}{{ source.extension }}"
   cmd: "mono {{ source.name }}.exe"
