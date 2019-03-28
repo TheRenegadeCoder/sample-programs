@@ -1,5 +1,5 @@
-from test import source
-from test.project import ProjectType
+from samplerunner import source
+from samplerunner.project import ProjectType
 
 
 class ProjectPermutation:

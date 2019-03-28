@@ -1,8 +1,8 @@
 import pytest
 
-from test.fixtures import project_permutations
-from test.project import ProjectType
-from test.utilities import clean_list
+from samplerunner.projectpermutation import project_permutations
+from samplerunner.project import ProjectType
+from test import clean_list
 
 invalid_permutations = (
     'description,in_params,expected', [

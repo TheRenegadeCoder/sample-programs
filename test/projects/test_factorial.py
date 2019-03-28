@@ -1,7 +1,7 @@
 import pytest
 
-from test.fixtures import project_permutations
-from test.project import ProjectType
+from samplerunner.projectpermutation import project_permutations
+from samplerunner.project import ProjectType
 
 invalid_permutations = (
     'description,in_params,expected', [
