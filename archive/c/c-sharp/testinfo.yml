@@ -1,9 +1,0 @@
-folder:
-  extension: ".cs"
-  naming: "pascal"
-
-container:
-  image: "mono"
-  tag: "5.18"  # Cannot use slim because it does not contain mcs for compilation
-  build: "mcs -reference:System.Numerics {{ source.name}}{{ source.extension }}"
-  cmd: "mono {{ source.name }}.exe"
