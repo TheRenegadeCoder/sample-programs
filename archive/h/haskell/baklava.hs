@@ -16,7 +16,7 @@ baklavaGrow space asterisk
 -- Recursively shrink the baklava until asterisks <= zero
 baklavaShrink :: Int -> Int -> String
 baklavaShrink space asterisk
-  | asterisk <= 0 = line space 0
+  | asterisk <= 1 = line space 1
   | otherwise     = line space asterisk ++ "\n" ++ baklavaShrink (space + 1) (asterisk - 2)
 
 -- Return a single line of the baklava

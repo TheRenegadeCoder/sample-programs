@@ -47,14 +47,20 @@ class Source:
         """Returns parsed TestInfo object"""
         return self._test_info
 
+    def __repr__(self):
+        return f'Source(name: {self.name}, path: {self.path}'
+
     def build(self, params=''):
         if self.test_info.container_info.build is not None:
             container = ContainerFactory.get_container(self)
-            container.exec_run(
+            result = container.exec_run(
                 cmd=f'{self.test_info.container_info.build} {params}',
                 detach=False,
                 workdir='/src'
             )
+            if result[0] != 0:
+                raise RuntimeError(f'unable to build using cmd "{self.test_info.container_info.build} {params}":\n'
+                                   f'{result[1].decode("utf-8")}')
 
     def run(self, params=''):
         """
