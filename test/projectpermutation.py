@@ -1,3 +1,4 @@
+import os
 from samplerunner import source
 from samplerunner.project import ProjectType
 
@@ -9,7 +10,8 @@ class ProjectPermutation:
 
 
 def _get_project_permutations():
-    sources = source.get_sources('../archive')
+    path_to_directory_containing_this_file = os.path.dirname(os.path.abspath(__file__))
+    sources = source.get_sources(os.path.join(path_to_directory_containing_this_file, '..', 'archive'))
     return {project_type: _project_permutation(sources, project_type)for project_type in ProjectType}
 
 

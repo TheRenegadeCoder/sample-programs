@@ -2,7 +2,7 @@ import os
 
 import pytest
 
-from samplerunner.projectpermutation import project_permutations
+from test.projectpermutation import project_permutations
 from samplerunner.project import ProjectType
 
 

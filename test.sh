@@ -1,3 +1,2 @@
 #!/bin/bash
-cd test
-python -m pytest
+exec python -m samplerunner test

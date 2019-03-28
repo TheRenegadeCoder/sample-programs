@@ -7,12 +7,12 @@ from samplerunner.test import test
 
 def main():
     parser = argparse.ArgumentParser(
-        prog='sample-programs',
-        usage='''usage: sample-programs [-h] command
+        prog='samplerunner',
+        usage='''usage: samplerunner [-h] COMMAND
 
-positional arguments:
-  run         Run a specified archive item or group of archive items
-  test        Run unit tests
+Commands:
+  run         Run a specified archive item or group of archive items. Use `samplerunner run --help` for more information.
+  test        Run unit tests. Use `samplerunner test --help` for more information.
 
 optional arguments:
   -h, --help  show this help message and exit
@@ -34,7 +34,7 @@ optional arguments:
 
 def parse_run():
     parser = argparse.ArgumentParser(
-        prog='sample-programs',
+        prog='samplerunner',
         description='Run a specified archive item or group of archive items. This command can run a language, a project'
                     'or a source. Only one option may be specified.',
     )
@@ -44,7 +44,7 @@ def parse_run():
 
 def parse_test():
     parser = argparse.ArgumentParser(
-        prog='sample-programs',
+        prog='samplerunner',
         description='Run tests for a specified archive item or group of archive items. '
                     'This command can test a language, a project or a source. Only one option may be specified.'
     )
