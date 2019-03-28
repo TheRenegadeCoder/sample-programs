@@ -5,8 +5,8 @@ matrix:
         - "3.6"
       install: 
         - pip install -r requirements-test.txt
-        - bash -x samplerunner.sh --help
-      script: bash -x test.sh
+        - python -um samplerunner download
+      script: exec python -um samplerunner test
       deploy:
         provider: script
         script: bash -x deploy.sh
