@@ -82,7 +82,6 @@ def _collect_tests():
     return plugin.collected
 
 
-
 _module_mappings = {
     ProjectType.Baklava: 'test_baklava',
     ProjectType.BubbleSort: 'test_sorting',

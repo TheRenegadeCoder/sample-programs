@@ -69,33 +69,6 @@ def requires_params(project):
     return project_mapping[project]
 
 
-def requires_params(project):
-    project_mapping = {
-        ProjectType.Baklava: False,
-        ProjectType.BubbleSort: True,
-        ProjectType.ConvexHull: True,
-        ProjectType.EvenOdd: True,
-        ProjectType.Factorial: True,
-        ProjectType.Fibonacci: True,
-        ProjectType.FileIO: False,
-        ProjectType.FizzBuzz: False,
-        ProjectType.HelloWorld: False,
-        ProjectType.InsertionSort: True,
-        ProjectType.JobSequencing: True,
-        ProjectType.LCS: True,
-        ProjectType.MergeSort: True,
-        ProjectType.MST: True,
-        ProjectType.Prime: True,
-        ProjectType.QuickSort: True,
-        ProjectType.Quine: False,
-        ProjectType.ROT13: True,
-        ProjectType.ReverseString: True,
-        ProjectType.RomanNumeral: True,
-        ProjectType.SelectionSort: True,
-    }
-    return project_mapping[project]
-
-
 _project_words = {
     ProjectType.Baklava: ['baklava'],
     ProjectType.BubbleSort: ['bubble', 'sort'],
