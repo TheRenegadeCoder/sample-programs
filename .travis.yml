@@ -1,6 +1,9 @@
 matrix:
   include:
     - language: python
+      os:
+        - linux
+        - windows
       python:
         - "3.6"
       install: 
