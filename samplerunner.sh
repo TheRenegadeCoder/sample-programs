@@ -1,2 +1,2 @@
 #!/bin/bash
-exec python -m samplerunner
+exec python -m samplerunner $@

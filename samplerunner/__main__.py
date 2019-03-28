@@ -11,11 +11,8 @@ def main():
         usage='''usage: samplerunner [-h] COMMAND
 
 Commands:
-  run         Run a specified archive item or group of archive items. Use `samplerunner run --help` for more information.
-  test        Run unit tests. Use `samplerunner test --help` for more information.
-
-optional arguments:
-  -h, --help  show this help message and exit
+  run         Run sources or group of sources. Use `samplerunner run --help` for more information.
+  test        Run tests for sources or a group of sources. Use `samplerunner test --help` for more information.
 '''
     )
     parser.add_argument(
@@ -35,8 +32,8 @@ optional arguments:
 def parse_run():
     parser = argparse.ArgumentParser(
         prog='samplerunner',
-        description='Run a specified archive item or group of archive items. This command can run a language, a project'
-                    'or a source. Only one option may be specified.',
+        description='Run a source or a group of sources. This command can run a language, a project'
+                    'or a single source. Only one option may be specified.',
     )
     args = _parse_args_for_verb(parser)
     run(args)
@@ -45,8 +42,8 @@ def parse_run():
 def parse_test():
     parser = argparse.ArgumentParser(
         prog='samplerunner',
-        description='Run tests for a specified archive item or group of archive items. '
-                    'This command can test a language, a project or a source. Only one option may be specified.'
+        description='Test a source or a group of sources. This command can test a language, a project'
+                    'or a single source. Only one option may be specified.',
     )
     args = _parse_args_for_verb(parser)
     test(args)
