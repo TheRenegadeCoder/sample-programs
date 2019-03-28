@@ -1,6 +1,8 @@
 module Main where
 
 import System.Environment
+import System.Exit (exitWith, ExitCode(ExitFailure))
+import Data.List (intercalate)
 
 -- Recursively find longest common subsequence
 lcs :: Eq a => [a] -> [a] -> [a]
@@ -23,12 +25,17 @@ stringToList :: String -> [Int]
 stringToList str = read $ "[" ++ str ++ "]" :: [Int]
 
 
+listToString :: [Int] -> String
+listToString = intercalate ", " . map show
+
+
 main :: IO ()
 main = do
   args <- getArgs
   let l1 = stringToList $ head args :: [Int]
   let l2 = stringToList $ head $ tail args :: [Int]
-  if length args /= 2 then
-    error "You need to pass two lists of which to produce the lcs. For example ./lcs \"1, 4, 5, 3, 15, 6\" \"1, 7, 4, 5, 11, 6\"\n"
+  if length args /= 2 then do
+    putStrLn "Usage: please provide two lists in the format \"1, 2, 3, 4, 5\""
+    exitWith $ ExitFailure 1
   else
-    putStrLn $ show $ reverse $ lcs l1 l2
+    putStrLn $ listToString $ reverse $ lcs l1 l2

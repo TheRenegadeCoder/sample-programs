@@ -41,4 +41,6 @@ def test_baklava(baklava):
     expected_lines = expected.split(os.linesep)
     actual = baklava.run()
     actual_lines = actual.split(os.linesep)
-    assert actual_lines == expected_lines
+    for i in range(len(expected_lines)):
+        assert actual_lines[i] == expected_lines[i], f'line {i + 1} did not match'
+    assert len(actual_lines) == len(expected_lines), 'output contained extra trailing lines'

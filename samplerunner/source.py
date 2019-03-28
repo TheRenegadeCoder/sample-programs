@@ -47,6 +47,9 @@ class Source:
         """Returns parsed TestInfo object"""
         return self._test_info
 
+    def __repr__(self):
+        return f'Source(name: {self.name}, path: {self.path}'
+
     def build(self, params=''):
         if self.test_info.container_info.build is not None:
             container = ContainerFactory.get_container(self)
