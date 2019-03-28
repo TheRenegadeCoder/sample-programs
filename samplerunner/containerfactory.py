@@ -2,6 +2,7 @@ import docker
 import shutil
 import tempfile
 
+from datetime import datetime, timedelta
 from uuid import uuid4 as uuid
 
 
@@ -19,6 +20,7 @@ class ContainerFactory:
     _containers = {}
     _volume_dis = {}
     _client = docker.from_env()
+    _api_client = _client.api
 
     @classmethod
     def get_container(cls, source):
@@ -59,7 +61,20 @@ class ContainerFactory:
         images = cls._client.images.list(name=f'{container_info.image}:{str(container_info.tag)}')
         if len(images) == 1:
             return images[0]
-        return cls._client.images.pull(container_info.image, tag=str(container_info.tag))
+        print(f'Pulling {container_info.image}:{container_info.tag}... ', end='')
+        last_update = datetime.now()
+        for _ in cls._api_client.pull(
+            repository=container_info.image,
+            tag=str(container_info.tag),
+            stream=True,
+            decode=True
+        ):
+            if datetime.now() - last_update > timedelta(seconds=15):
+                print('... ', end='')
+        print('done')
+        images = cls._client.images.list(name=f'{container_info.image}:{str(container_info.tag)}')
+        if len(images) == 1:
+            return images[0]
 
     @classmethod
     def cleanup(cls, source):

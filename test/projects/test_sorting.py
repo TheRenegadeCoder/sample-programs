@@ -1,7 +1,7 @@
 import pytest
 
-from test.fixtures import project_permutations
-from test.project import sorting_types
+from test.projectpermutation import project_permutations
+from samplerunner.project import sorting_types
 from test.utilities import clean_list
 
 sorting_invalid_permutations = (
