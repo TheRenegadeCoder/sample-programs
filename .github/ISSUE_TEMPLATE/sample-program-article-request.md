@@ -1,6 +1,6 @@
 ---
 name: Sample Program Article Request
-about: Suggest an sample program article for this project (i.e. Hello World in Erlang)
+about: Suggest a sample program article for this project (i.e. Hello World in Erlang)
 title: Add [Sample Program] in [Language] Article
 labels: article, enhancement
 assignees: ''
