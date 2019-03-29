@@ -63,7 +63,7 @@ class ContainerFactory:
         if len(images) == 1:
             return images[0]
         if not quiet:
-            print(f'Pulling {container_info.image}:{container_info.tag}...', end='')
+            print(f'Pulling {container_info.image}:{container_info.tag}... ', end='')
         last_update = datetime.now()
         for _ in cls._api_client.pull(
                 repository=container_info.image,
@@ -71,11 +71,9 @@ class ContainerFactory:
                 stream=True,
                 decode=True
         ):
-            #if datetime.now() - last_update > timedelta(seconds=5) and not quiet:
-            #    print(' ...', end='')
-            #    last_update = datetime.now()
-            if not quiet:
-                print('.', end='')
+            if datetime.now() - last_update > timedelta(seconds=5) and not quiet:
+                print('... ', end='')
+                last_update = datetime.now()
         if not quiet:
             print('done')
         images = cls._client.images.list(name=f'{container_info.image}:{str(container_info.tag)}')
