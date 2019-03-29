@@ -5,21 +5,26 @@ For simplicity, please make sure that your pull request includes one and only on
 ## Complete the Applicable Sections Below
 
 Find which section best describes your pull request and make sure you fill
-it out.
+it out. To start, let us know which issue you've fixed.
 
-### Articles
-
-- [ ] I named the pull request using `Added <Sample Program> in <Language> Article` format
+- [ ] I fixed #your-issue-number-here
 
 ### Code Snippets
 
 - [ ] I named the pull request using `Added <Sample Program> in <Language>` format
-- [ ] I fixed #your-issue-number-here
 - [ ] I created/updated the language README
   - [ ] I added the sample program name to the README
   - [ ] I added fun facts (i.e. debut, developer, typing, etc.)
   - [ ] I added reference link(s) to the README
   - [ ] I added solution citations when necessary (see [plagiarism][2])
+
+### Documentation
+  
+  - [ ] I named the pull request using `Added/Updated <Sample Program> in <Language> Article` format
+  - [ ] I followed the applicable article template
+    - [ ] I added/updated a language article (i.e. The Python Programming Language)
+    - [ ] I added/updated a code snippet article (i.e. Hello World in Perl)
+    - [ ] I added/updated a project article (i.e. Fizz Buzz in Every Language)
 
 ## Notes
 
