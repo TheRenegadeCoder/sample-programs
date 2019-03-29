@@ -8,5 +8,5 @@ assignees: ''
 ---
 
 Please link some reference material for the language you'd like documented:
-  - example.com/path/to/docs/
-  - example.com/path/to/tutorial/
+  - https://example.com/path/to/docs/
+  - https://example.com/path/to/tutorial/
