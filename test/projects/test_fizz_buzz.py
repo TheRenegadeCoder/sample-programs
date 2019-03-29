@@ -1,7 +1,7 @@
 import pytest
 
-from test.fixtures import project_permutations
-from test.project import ProjectType
+from test.projectpermutation import project_permutations
+from samplerunner.project import ProjectType
 
 
 expected = """1

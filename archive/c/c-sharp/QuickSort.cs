@@ -19,7 +19,7 @@ public class QuickSort
 
     public static void ErrorAndExit()
     {
-        Console.WriteLine("Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5,\"");
+        Console.WriteLine("Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"");
         Environment.Exit(1);
     }
 

@@ -1,7 +1,7 @@
 import pytest
 
-from test.fixtures import project_permutations
-from test.project import ProjectType
+from test.projectpermutation import project_permutations
+from samplerunner.project import ProjectType
 
 
 def _get_expected(source):
@@ -19,6 +19,6 @@ def quine(request):
 
 
 def test_quine(quine):
-    expected = _get_expected(quine)
-    actual = quine.run()
+    expected = _get_expected(quine).strip()
+    actual = quine.run().strip()
     assert actual == expected
