@@ -1,7 +1,9 @@
 module Main where
 
-import System.Environment
 import Text.Read
+import System.Environment
+import System.Exit (exitWith, ExitCode(ExitFailure))
+import Data.List (intercalate)
 
 
 insertion :: Ord a => [a] -> [a]
@@ -31,12 +33,17 @@ verifyListLength []     = Nothing
 verifyListLength [x]    = Nothing
 verifyListLength (x:xs) = Just (x:xs)
 
+listToString :: [Int] -> String
+listToString = intercalate ", " . map show
+
 
 main :: IO ()
 main = do
   args <- getArgs
   let xs = headMaybe args >>= stringToListMaybe >>= verifyListLength
   case xs of
-    Nothing -> putStrLn "Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\""
-    Just xs  -> putStrLn $ show $ insertion xs
+    Nothing -> do
+      putStrLn "Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\""
+      exitWith $ ExitFailure 1
+    Just xs  -> putStrLn $ listToString $ insertion xs
 
