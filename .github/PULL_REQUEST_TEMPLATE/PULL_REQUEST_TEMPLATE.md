@@ -1,4 +1,6 @@
 ---
+name: "Default Pull Request Template"
+about: "Triggered on typical pull requests"
 reviewers: TheRenegadeCoder/core
 assignees: jrg94
 ---
