@@ -22,9 +22,9 @@ it out. To start, let us know which issue you've fixed.
 
   - [ ] I named the pull request using `Added/Updated <Sample Program> in <Language> Article` format
   - [ ] I followed the applicable article template
-    - [ ] I added/updated a language article (i.e. The Python Programming Language)
-    - [ ] I added/updated a code snippet article (i.e. Hello World in Perl)
-    - [ ] I added/updated a project article (i.e. Fizz Buzz in Every Language)
+    - [ ] I added/updated a [language article][4] (i.e. The Python Programming Language)
+    - [ ] I added/updated a [code snippet article][3] (i.e. Hello World in Perl)
+    - [ ] I added/updated a [project article][5] (i.e. Fizz Buzz in Every Language)
 
 ### Testing
 
@@ -36,4 +36,7 @@ it out. To start, let us know which issue you've fixed.
 Feel free to describe what you added or updated.
 
 [1]: https://therenegadecoder.com/code/sample-programs-in-every-language/
-[2]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/CONTRIBUTING.md#plagiarism
+[2]: ../CONTRIBUTING.md#plagiarism
+[3]: ../../docs/templates/CODE_ARTICLE_TAMPLE.md
+[4]: ../../docs/templates/LANGUAGE_ARTICLE_TEMPLATE.md
+[5]: ../../docs/templates/PROJECT_ARTICLE_TEMPLATE.md
