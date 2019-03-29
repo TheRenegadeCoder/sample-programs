@@ -11,7 +11,7 @@ it out. To start, let us know which issue you've fixed.
 
 ### Code Snippets
 
-- [ ] I named the pull request using `Added <Sample Program> in <Language>` format
+- [ ] I named the pull request using `Added/Updated <Sample Program> in <Language>` format
 - [ ] I created/updated the language README
   - [ ] I added the sample program name to the README
   - [ ] I added fun facts (i.e. debut, developer, typing, etc.)
@@ -19,12 +19,17 @@ it out. To start, let us know which issue you've fixed.
   - [ ] I added solution citations when necessary (see [plagiarism][2])
 
 ### Documentation
-  
+
   - [ ] I named the pull request using `Added/Updated <Sample Program> in <Language> Article` format
   - [ ] I followed the applicable article template
     - [ ] I added/updated a language article (i.e. The Python Programming Language)
     - [ ] I added/updated a code snippet article (i.e. Hello World in Perl)
     - [ ] I added/updated a project article (i.e. Fizz Buzz in Every Language)
+
+### Testing
+
+- [ ] I names the pull request using `Added/Updated <Language>/<Project> Testing` format
+- [ ] I followed the testinfo template, if applicable 
 
 ## Notes
 
