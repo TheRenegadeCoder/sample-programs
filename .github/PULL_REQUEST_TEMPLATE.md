@@ -33,7 +33,7 @@ Find which section best describes your pull request and make sure you fill it ou
 Feel free to describe what you added or updated.
 
 [1]: https://therenegadecoder.com/
-[2]: ../CONTRIBUTING.md#plagiarism
-[3]: ../../docs/templates/CODE_ARTICLE_TEMPLATE.md
-[4]: ../../docs/templates/LANGUAGE_ARTICLE_TEMPLATE.md
-[5]: ../../docs/templates/PROJECT_ARTICLE_TEMPLATE.md
+[2]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#plagiarism
+[3]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/docs/templates/CODE_ARTICLE_TEMPLATE.md
+[4]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/docs/templates/LANGUAGE_ARTICLE_TEMPLATE.md
+[5]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/docs/templates/PROJECT_ARTICLE_TEMPLATE.md
