@@ -2,7 +2,7 @@
 name: Language Test Request
 about: Suggest a language you'd like to see tested in this project (i.e. Perl)
 title: Add [Language] Testing
-labels: Tests, enhancement
+labels: enhancement, tests
 assignees: ''
 
 ---
