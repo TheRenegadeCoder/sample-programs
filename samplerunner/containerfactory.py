@@ -37,7 +37,7 @@ class ContainerFactory:
         shutil.copy(source.full_path, tmp_dir)
         cls._volume_dis[key] = tmp_dir
 
-        image = cls._get_image(source.test_info.container_info)
+        image = cls.get_image(source.test_info.container_info)
         volume_info = {tmp_dir: {'bind': '/src', 'mode': 'rw'}}
         if key not in cls._containers:
             cls._containers[key] = cls._client.containers.run(
@@ -51,27 +51,31 @@ class ContainerFactory:
         return cls._containers[key]
 
     @classmethod
-    def _get_image(cls, container_info):
+    def get_image(cls, container_info, quiet=False):
         """
         Pull a docker image
 
         :param container_info: metadata about the image to pull
+        :param quiet: whether to print output while downloading
         :return: a docker image
         """
         images = cls._client.images.list(name=f'{container_info.image}:{str(container_info.tag)}')
         if len(images) == 1:
             return images[0]
-        print(f'Pulling {container_info.image}:{container_info.tag}... ', end='')
+        if not quiet:
+            print(f'Pulling {container_info.image}:{container_info.tag}... ', end='')
         last_update = datetime.now()
         for _ in cls._api_client.pull(
-            repository=container_info.image,
-            tag=str(container_info.tag),
-            stream=True,
-            decode=True
+                repository=container_info.image,
+                tag=str(container_info.tag),
+                stream=True,
+                decode=True
         ):
-            if datetime.now() - last_update > timedelta(seconds=15):
+            if datetime.now() - last_update > timedelta(seconds=5) and not quiet:
                 print('... ', end='')
-        print('done')
+                last_update = datetime.now()
+        if not quiet:
+            print('done')
         images = cls._client.images.list(name=f'{container_info.image}:{str(container_info.tag)}')
         if len(images) == 1:
             return images[0]

@@ -3,6 +3,7 @@ import argparse
 
 from samplerunner.run import run
 from samplerunner.test import test
+from samplerunner.download import download
 
 
 def main():
@@ -13,20 +14,32 @@ def main():
 Commands:
   run         Run sources or group of sources. Use `samplerunner run --help` for more information.
   test        Run tests for sources or a group of sources. Use `samplerunner test --help` for more information.
+  download    Download all the docker images required to run the tests
 '''
     )
     parser.add_argument(
         'command',
         type=str,
         help='Subcommand to run',
-        choices=['run', 'test']
+        choices=['run', 'test', 'download']
     )
     args = parser.parse_args(sys.argv[1:2])
     commands = {
+        'download': parse_download,
         'run': parse_run,
         'test': parse_test,
     }
     commands[args.command]()
+
+
+def parse_download():
+    parser = argparse.ArgumentParser(
+        prog='samplerunner',
+        description='Run a source or a group of sources. This command can run a language, a project'
+                    'or a single source. Only one option may be specified.',
+    )
+    args = _parse_args_for_verb(parser)
+    download(args)
 
 
 def parse_run():
