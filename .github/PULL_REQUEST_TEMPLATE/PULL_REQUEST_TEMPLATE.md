@@ -29,11 +29,11 @@ it out. To start, let us know which issue you've fixed.
 ### Testing
 
 - [ ] I names the pull request using `Added/Updated <Language>/<Project> Testing` format
-- [ ] I followed the testinfo template, if applicable 
+- [ ] I followed the testinfo template, if applicable
 
 ## Notes
 
-Feel free to put whatever you want here.
+Feel free to describe what you added or updated.
 
 [1]: https://therenegadecoder.com/code/sample-programs-in-every-language/
 [2]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/CONTRIBUTING.md#plagiarism
