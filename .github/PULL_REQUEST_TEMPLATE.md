@@ -1,10 +1,3 @@
----
-name: "Default Pull Request Template"
-about: "Triggered on typical pull requests"
-reviewers: TheRenegadeCoder/core
-assignees: jrg94, auroq
----
-
 Congrats on taking the first step to contributing to the Sample Programs
 repository maintained by [The Renegade Coder][1]! For simplicity, please make
 sure that your pull request includes one and only one contribution.
