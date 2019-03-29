@@ -37,6 +37,6 @@ Feel free to describe what you added or updated.
 
 [1]: https://therenegadecoder.com/code/sample-programs-in-every-language/
 [2]: ../CONTRIBUTING.md#plagiarism
-[3]: ../../docs/templates/CODE_ARTICLE_TAMPLE.md
+[3]: ../../docs/templates/CODE_ARTICLE_TEMPLATE.md
 [4]: ../../docs/templates/LANGUAGE_ARTICLE_TEMPLATE.md
 [5]: ../../docs/templates/PROJECT_ARTICLE_TEMPLATE.md
