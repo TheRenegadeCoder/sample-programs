@@ -29,7 +29,7 @@ def _get_tests(src, project_type, all_tests):
 
 
 def _run_all():
-    pytest.main()
+    pytest.main(['-v'])
 
 
 def _run_language(language):
@@ -41,12 +41,12 @@ def _run_language(language):
     for project_type, sources in sources_by_type.items():
         for src in sources:
             tests += _get_tests(src, project_type, all_tests)
-    pytest.main(tests)
+    pytest.main(['-v'] + tests)
 
 
 def _run_project(project):
     project_type = get_project_type_by_name(project, case_insensitive=True)
-    pytest.main([f'test/projects/{_module_mappings[project_type]}.py'])
+    pytest.main(['-v', f'test/projects/{_module_mappings[project_type]}.py'])
 
 
 def _run_source(source):
@@ -57,7 +57,7 @@ def _run_source(source):
             filename = f'{src.name}{src.extension}'
             if filename.lower() == source.lower():
                 tests = _get_tests(src, project_type, all_tests)
-                pytest.main(tests)
+                pytest.main(['-v'] + tests)
                 break
         else:  # If didn't break inner loop continue
             continue
