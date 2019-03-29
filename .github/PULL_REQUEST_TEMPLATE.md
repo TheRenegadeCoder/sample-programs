@@ -2,7 +2,7 @@
 name: "Default Pull Request Template"
 about: "Triggered on typical pull requests"
 reviewers: TheRenegadeCoder/core
-assignees: jrg94
+assignees: jrg94, auroq
 ---
 
 Congrats on taking the first step to contributing to the Sample Programs
