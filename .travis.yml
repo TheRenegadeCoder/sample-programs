@@ -6,7 +6,7 @@ matrix:
       install: 
         - pip install -r requirements-test.txt
         - python -um samplerunner download
-      script: exec python -um samplerunner test
+      script: python -um samplerunner test
       deploy:
         provider: script
         script: bash -x deploy.sh
