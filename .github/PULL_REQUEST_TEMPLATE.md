@@ -1,11 +1,8 @@
-Congrats on taking the first step to contributing to the Sample Programs
-repository maintained by [The Renegade Coder][1]! For simplicity, please make
-sure that your pull request includes one and only one contribution.
+Congrats on taking the first step to contributing to the Sample Programs repository maintained by [The Renegade Coder][1]! For simplicity, please make sure that your pull request includes one and only one contribution.
 
 ## Complete the Applicable Sections Below
 
-Find which section best describes your pull request and make sure you fill
-it out. To start, let us know which issue you've fixed.
+Find which section best describes your pull request and make sure you fill it out. To start, let us know which issue you've fixed.
 
 - [ ] I fixed #your-issue-number-here
 
