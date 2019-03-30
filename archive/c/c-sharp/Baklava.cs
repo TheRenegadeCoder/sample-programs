@@ -16,8 +16,6 @@ class CSharp
                 new string (' ', (10 - i)) + new string ('*', (i * 2 + 1))
             );
 
-        Console.ReadLine ();
-
     }
 
 }
