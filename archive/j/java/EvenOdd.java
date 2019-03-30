@@ -29,7 +29,7 @@ public class EvenOdd
             String result = n % 2 == 0 ? "Even" : "Odd";
             System.out.println(result);
         }
-        catch (NumberFormatException | ArrayIndexOutOfBoundsException e)
+        catch (NumberFormatException | ArrayIndexOutOfBoundsException | StringIndexOutOfBoundsException e)
         {
             ErrorAndExit();
         }

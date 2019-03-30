@@ -1,5 +1,6 @@
 # Sample Programs in Every Language
 
+[![Build Status](https://travis-ci.com/TheRenegadeCoder/sample-programs.svg?branch=master)](https://travis-ci.com/TheRenegadeCoder/sample-programs)
 [![Join the chat at https://gitter.im/TheRenegadeCoder/sample-programs](https://badges.gitter.im/TheRenegadeCoder/sample-programs.svg)](https://gitter.im/TheRenegadeCoder/sample-programs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Welcome to the [Sample Programs in Every Language][0] repository! What began
@@ -9,7 +10,7 @@ in just about every programming language to date.
 
 ## Learn More
 
-Originally, I had planned to have an article written for every code snippet in this repository. 
+Originally, I had planned to have an article written for every code snippet in this repository.
 However, in the interest of growing this collection, I removed the pull request merge article requirement.
 As a result, not every code snippet in the repository has an associated article, yet.
 
@@ -24,8 +25,8 @@ At any rate, if articles sound interesting, here are a few to get you started:
 - [Reverse a String in Every Language][3]
 - [The Coolest Programming Language Features][4]
 
-Alternatively, feel free to leverage the links in the README files spread throughout the repository. 
-In addition, we have a rather extensive [wiki][5] which includes a table row for every language 
+Alternatively, feel free to leverage the links in the README files spread throughout the repository.
+In addition, we have a rather extensive [wiki][5] which includes a table row for every language
 in the repository. For each language, you'll find information like open issues and the number of snippets.
 
 Finally, you can keep up with the latest happening in this repository as well as all the others in this
@@ -37,7 +38,7 @@ To properly follow the recommended GitHub community standards, I've created [con
 instructions][6]. Please refer to this document before contributing to this repository.
 
 As an added note, I try to write articles for all the contributions. If you're interesting in helping out with
-that, [register for an account][7] on The Renegade Coder. When you're done, let me know, so I can elevate your privileges. 
+that, [register for an account][7] on The Renegade Coder. When you're done, let me know, so I can elevate your privileges.
 I'm always excited to have support from guest authors.
 
 ## Code of Conduct
@@ -73,9 +74,9 @@ Thanks for your support! :relaxed:
 [3]: https://therenegadecoder.com/code/reverse-a-string-in-every-language/
 [4]: https://therenegadecoder.com/blog/the-coolest-programming-language-features/
 [5]: https://github.com/jrg94/sample-programs/wiki
-[6]: https://github.com/jrg94/sample-programs/blob/master/CONTRIBUTING.md
+[6]: https://github.com/jrg94/sample-programs/blob/master/.github/CONTRIBUTING.md
 [7]: https://therenegadecoder.com/members/registration/
-[8]: https://github.com/jrg94/sample-programs/blob/master/CODE_OF_CONDUCT.md
+[8]: https://github.com/jrg94/sample-programs/blob/master/.github/CODE_OF_CONDUCT.md
 [9]: https://github.com/jrg94/sample-programs/blob/master/LICENSE
 [10]: https://therenegadecoder.com/
 [11]: https://therenegadecoder.com/blog/5-ways-you-can-support-the-renegade-coder/

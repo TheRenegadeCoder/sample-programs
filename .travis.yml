@@ -3,8 +3,10 @@ matrix:
     - language: python
       python:
         - "3.6"
-      script:
-        - echo "insert tests here"
+      install: 
+        - pip install -r requirements-test.txt
+        - python -um samplerunner download
+      script: python -um samplerunner test
       deploy:
         provider: script
         script: bash -x deploy.sh
