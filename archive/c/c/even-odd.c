@@ -1,17 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
+int main(int argc, char **argv)
 {
-    int input;
-    printf("Enter a Number: ");
-    scanf("%d", &input);
+    int input = atoi(argv[1]);
 
     if (input % 2 == 0) {
-        printf("%d is a Even.", input);
+        printf("Even\n");
     }
     else {
-        printf("%d is Odd.", input);
+        printf("Odd\n");
     }
 
     return 0;
