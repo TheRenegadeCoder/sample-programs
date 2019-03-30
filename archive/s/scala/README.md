@@ -6,11 +6,11 @@ Welcome to Sample Programs in Scala!
 
 - [Bubble Sort in Scala](https://github.com/TheRenegadeCoder/sample-programs/issues/1033)
 - [Hello World in Scala][1]
+- [File IO in Scala](https://github.com/TheRenegadeCoder/sample-programs/issues/1031)
 - [Fizz Buzz in Scala][2]
 - [Game of Life in Scala](https://github.com/TheRenegadeCoder/sample-programs/issues/1035)
 - [Quicksort in Scala](https://github.com/TheRenegadeCoder/sample-programs/issues/1034)
 - [Reverse String in Scala](https://github.com/TheRenegadeCoder/sample-programs/issues/1032)
-
 
 ## Fun Facts
 
