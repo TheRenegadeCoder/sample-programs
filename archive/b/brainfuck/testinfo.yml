@@ -1,0 +1,8 @@
+folder:
+  extension: ".bf"
+  naming: "hyphen"
+
+container:
+  image: "williamboman/brainfuck"
+  tag: "2.6.4"
+  cmd: "./{{ source.name }}{{ source.extension }}"
