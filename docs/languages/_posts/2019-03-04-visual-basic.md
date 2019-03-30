@@ -1,3 +1,13 @@
+---
+title: The Visual Basic Programming Language
+layout: default
+last-modified: 2019-03-30
+featured-image:
+tags: [visual-basic]
+authors:
+  - the_renegade_coder
+---
+
 According to Wikipedia, Visual Basic .NET (VB.NET) is a programming language 
 that was created by Microsoft in 2001. Beyond that, Wikipedia doesn’t have 
 much to offer in terms of historical information, so let’s move on.
