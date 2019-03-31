@@ -24,7 +24,7 @@ string -> String
 react -> React
 java -> Java
 car -> Car
-a long string term: A long string term
+a long string term -> A long string term
 ```
 
 In addition, there should be some error handling for situations where the user
