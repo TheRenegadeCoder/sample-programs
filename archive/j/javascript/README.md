@@ -10,6 +10,7 @@ Welcome to Sample Programs in JavaScript!
 - [Baklava in JavaScript][8]
   - Solution borrowed from @toturkmen via the [baklava repo][1]
 - [Fibonacci in JavaScript][9]
+- [Capitalize in JavaScript][]
 
 ## Fun Facts
 
