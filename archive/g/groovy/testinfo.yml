@@ -1,0 +1,8 @@
+folder:
+  extension: ".groovy"
+  naming: "hyphen"
+
+container:
+  image: "groovy"
+  tag: "3.0" 
+  cmd: "groovy {{ source.name }}"
