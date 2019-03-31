@@ -5,7 +5,7 @@ date: 2019-03-31
 last-modified: 2019-03-31
 featured-image:
 tags: [capitalize]
-authors:
+authors: [daniellunsc]
 ---
 
 In this article, we'll tackle the Capitalize program, its requirements, and how
