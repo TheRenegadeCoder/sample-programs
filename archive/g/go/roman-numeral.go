@@ -63,6 +63,6 @@ func main () {
 }
 
 func usageandexit (name string, code int) {
-	fmt.Printf("Usage: %s [roman numeral]\n", name)
+	fmt.Println("Usage please provide a string of roman numerals")
 	os.Exit(code)
 }

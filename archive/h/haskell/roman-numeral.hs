@@ -16,6 +16,7 @@ romanToDecimal :: String -> Int
 romanToDecimal roman = _romanToDecimal roman 0
 
 _romanToDecimal :: String -> Int -> Int
+_romanToDecimal [] totals  = totals
 _romanToDecimal [a] totals  = totals + (asDec a)
 _romanToDecimal (a1:a2:as) totals
   | (asDec a1) < (asDec a2) = _romanToDecimal (a2:as) (totals - (asDec a1))
@@ -27,6 +28,6 @@ main = do
   args <- getArgs
   let roman = head args
   if null args then
-    error "You need to pass a roman numeral to through the command line." 
+    error "Usage: please provide a string of roman numerals"
   else
     putStrLn $ show $ romanToDecimal roman
