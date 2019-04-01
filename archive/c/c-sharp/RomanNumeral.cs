@@ -18,6 +18,8 @@ namespace SamplePrograms
 
         private static int RomanToDecimal(string roman, int total=0)
         {
+            if (roman.Length < 1)
+                return total;
             var romanArray = roman.ToCharArray();
             if (romanArray.Length == 1)
                 return total + RomanDecMapping[romanArray[0]];
