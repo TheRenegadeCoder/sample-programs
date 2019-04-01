@@ -48,7 +48,6 @@ func strToSliceInt(strList string) []int {
 	return nums
 }
 
-
 func exitWithError() {
 	fmt.Println("Usage: please provide two lists in the format \"1, 2, 3, 4, 5\"")
 	os.Exit(1)

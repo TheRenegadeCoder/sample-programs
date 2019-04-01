@@ -6,7 +6,7 @@ import (
 	"strconv"
 )
 
-func main () {
+func main() {
 	var IsPrime bool = true
 
 	if len(os.Args) != 2 {
@@ -21,16 +21,16 @@ func main () {
 		os.Exit(1)
 	}
 
-	for i := 2; i <= n / 2; i++ {
-		if n % i == 0 {
+	for i := 2; i <= n/2; i++ {
+		if n%i == 0 {
 			IsPrime = false
 			break
 		}
 	}
 
 	if !IsPrime {
-		fmt.Printf("Composite\n");
+		fmt.Printf("Composite\n")
 	} else {
-		fmt.Printf("Prime\n");
+		fmt.Printf("Prime\n")
 	}
 }

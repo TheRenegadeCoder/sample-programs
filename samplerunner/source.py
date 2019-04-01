@@ -62,14 +62,14 @@ class Source:
                 raise RuntimeError(f'unable to build using cmd "{self.test_info.container_info.build} {params}":\n'
                                    f'{result[1].decode("utf-8")}')
 
-    def run(self, params=''):
+    def run(self, params=None):
         """
         Run the source and return the output
 
         :param params: input passed to the source as it's run
         :return: the output of running the source
         """
-
+        params = params or ''
         container = ContainerFactory.get_container(self)
         result = container.exec_run(
             cmd=f'{self.test_info.container_info.cmd} {params}',
