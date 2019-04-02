@@ -1,0 +1,9 @@
+folder:
+  extension: ".f95"
+  naming: "hyphen"
+
+container:
+  image: "gcc"
+  tag: "8.3" 
+  build: "gfortran -o {{ source.name }} {{ source.name }}{{ source.extension }}"
+  cmd: "./{{ source.name }}"
