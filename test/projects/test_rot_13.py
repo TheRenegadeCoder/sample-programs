@@ -47,14 +47,14 @@ def rot_13(request):
 
 @pytest.mark.parametrize(valid_permutations[0], valid_permutations[1],
                          ids=[p[0] for p in valid_permutations[1]])
-def test_rot_13(description, in_params, expected, rot_13):
+def test_rot_13_valid(description, in_params, expected, rot_13):
     actual = rot_13.run(params=in_params)
     assert actual.strip() == expected
 
 
 @pytest.mark.parametrize(invalid_permutations[0], invalid_permutations[1],
                          ids=[p[0] for p in invalid_permutations[1]])
-def test_rot_13(description, in_params, expected, rot_13):
+def test_rot_13_invalid(description, in_params, expected, rot_13):
     actual = rot_13.run(params=in_params)
     assert actual.strip() == expected
 
