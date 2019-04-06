@@ -15,15 +15,15 @@ invalid_permutations = (
         (
             'no input',
             None,
-            'Usage: please provide the number of fibonacci numbers to output'
+            'Usage: please provide the count of fibonacci numbers to output'
         ), (
             'empty input',
             '""',
-            'Usage: please provide the number of fibonacci numbers to output'
+            'Usage: please provide the count of fibonacci numbers to output'
         ), (
             'invalid input: not a number',
             '"a"',
-            'Usage: please provide the number of fibonacci numbers to output'
+            'Usage: please provide the count of fibonacci numbers to output'
         )
     ]
 )

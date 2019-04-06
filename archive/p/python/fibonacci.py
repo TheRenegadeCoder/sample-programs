@@ -23,7 +23,7 @@ def main(args):
     try:
         fibonacci(int(args[0]))
     except (IndexError, ValueError):
-        print("Usage: please provide the number of fibonacci numbers to output")
+        print("Usage: please provide the count of fibonacci numbers to output")
         sys.exit(1)
 
 
