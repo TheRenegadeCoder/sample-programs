@@ -27,18 +27,25 @@ namespace SamplePrograms
 
         }
 
+        public static void ExitWithError()
+        {
+            Console.WriteLine("Usage: please provide a string to encrypt");
+            Environment.Exit(1);
+        }
+
         public static void Main(string[] args)
         {
             try
             {
                 var str = args[0];
+                if (String.IsNullOrEmpty(str))
+                    ExitWithError();
                 var result = Encrypt(str);
                 Console.WriteLine(result);
             }
             catch
             {
-                Console.WriteLine("Usage: please provide a string to encrypt");
-                Environment.Exit(1);
+                ExitWithError();
             }
         }
     }
