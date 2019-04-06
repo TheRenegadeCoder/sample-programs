@@ -16,7 +16,7 @@ func fibonacci(n int, c chan int) {
 }
 
 func exitWithError() {
-	fmt.Println("Usage: please input the number of fibonacci elements to calculate as a positive integer")
+	fmt.Println("Usage: please input the count of fibonacci elements to calculate as a positive integer")
 	os.Exit(1)
 }
 
