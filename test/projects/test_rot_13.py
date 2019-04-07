@@ -23,15 +23,15 @@ valid_permutations = (
         (
             'sample input lower case',
             '"the quick brown fox jumped over the lazy dog"',
-            '"gur dhvpx oebja sbk whzcrq bire gur ynml qbt"',
+            'gur dhvpx oebja sbk whzcrq bire gur ynml qbt',
         ), (
             'sample input upper case',
             '"THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG"',
-            '"GUR DHVPX OEBJA SBK WHZCRQ BIRE GUR YNML QBT"',
+            'GUR DHVPX OEBJA SBK WHZCRQ BIRE GUR YNML QBT',
         ), (
             'sample input punctuation',
             '"The quick brown fox jumped. Was it over the lazy dog?',
-            '"Gur dhvpx oebja sbk whzcrq. Jnf bire gur ynml qbt?"',
+            'Gur dhvpx oebja sbk whzcrq. Jnf bire gur ynml qbt?',
         )
     ]
 )
