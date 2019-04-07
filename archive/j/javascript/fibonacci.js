@@ -16,5 +16,5 @@ num = process.argv[2];
 if (num && !isNaN(num)) {
     fibonacci(num);
 } else {
-    console.log("Usage: please provide the count of fibonacci numbers to output")
+    console.log("Usage: please input the count of fibonacci numbers to output")
 }

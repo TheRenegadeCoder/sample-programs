@@ -42,9 +42,9 @@ Some tests for your program are:
 
 | Description | Input | Output |
 | :---------- | :---- | :----- |
-| No Input                    |      | "Usage: please provide the count of fibonacci numbers to output" |
-| Empty Input                 | ""   | "Usage: please provide the count of fibonacci numbers to output" |
-| Invalid Input: not a number | word | "Usage: please provide the count of fibonacci numbers to output" |
+| No Input                    |      | "Usage: please input the count of fibonacci numbers to output" |
+| Empty Input                 | ""   | "Usage: please input the count of fibonacci numbers to output" |
+| Invalid Input: not a number | word | "Usage: please input the count of fibonacci numbers to output" |
 | Sample Input: 0  | 0  | |
 | Sample Input: 1  | 1  | 1: 1 |
 | Sample Input: 2  | 2  | 1: 1<br />2: 2 |

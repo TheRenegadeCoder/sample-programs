@@ -2,7 +2,7 @@
 
 count=$1
 
-[[ $count =~ ^[0-9]+$ ]] || { echo "Usage: please provide the count of fibonacci numbers to output"; exit 1; }
+[[ $count =~ ^[0-9]+$ ]] || { echo "Usage: please input the count of fibonacci numbers to output"; exit 1; }
 
 n=1
 n_minus_1=1

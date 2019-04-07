@@ -27,14 +27,14 @@ int main(int argc, char **argv)
     uintmax_t n;
 
     if (argc < 2) {
-        fprintf(stderr, "Usage: %s [n]\n", argv[0]);
+        fprintf(stderr, "Usage: please input the count of fibonacci numbers to output\n");
         return 1;
     }
 
     errno = 0;
     n = strtoumax(argv[1], NULL, 10);
     if (n == UINTMAX_MAX && errno == ERANGE) {
-        fprintf(stderr, "Invalid argument for n\n");
+        fprintf(stderr, "Usage please input the count of fibonacci numbers to output\n");
         return 1;
     }
 

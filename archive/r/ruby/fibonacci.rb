@@ -18,5 +18,5 @@ num = Integer(ARGV[0]) rescue -1
 if num >= 0
     fibonacci(num)
 else
-    print("Usage: please provide the count of fibonacci numbers to output")
+    print("Usage: please input the count of fibonacci numbers to output")
 end

@@ -8,7 +8,7 @@ namespace SamplePrograms
         {
             if(args.Length < 1)
             {
-                Console.WriteLine("Usage: \"Fibonacci.exe <term no to iterate to, with 0 as the first term number");
+                Console.WriteLine("Usage: please input the count of fibonacci");
                 Environment.Exit(0);
             }
 
