@@ -25,4 +25,4 @@ main = do
     putStrLn "Usage: please provide a string to encrypt"
     exitWith $ ExitFailure 1
   else
-    putStrLn $ show $ rot13 $ head args
+    putStrLn $ rot13 $ head args

@@ -30,8 +30,8 @@ valid_permutations = (
             'GUR DHVPX OEBJA SBK WHZCRQ BIRE GUR YNML QBT',
         ), (
             'sample input punctuation',
-            '"The quick brown fox jumped. Was it over the lazy dog?',
-            'Gur dhvpx oebja sbk whzcrq. Jnf bire gur ynml qbt?',
+            '"The quick brown fox jumped. Was it over the lazy dog?"',
+            'Gur dhvpx oebja sbk whzcrq. Jnf vg bire gur ynml qbt?',
         )
     ]
 )
