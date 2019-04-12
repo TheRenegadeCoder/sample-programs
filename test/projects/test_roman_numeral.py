@@ -66,7 +66,8 @@ valid_permutations = (
 
 
 @pytest.fixture(params=project_permutations[ProjectType.RomanNumeral].params,
-                ids=project_permutations[ProjectType.RomanNumeral].ids)
+                ids=project_permutations[ProjectType.RomanNumeral].ids,
+                scope='module')
 def roman_numeral(request):
     request.param.build()
     yield request.param

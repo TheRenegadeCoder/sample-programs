@@ -56,7 +56,8 @@ valid_permutations = (
 
 
 @pytest.fixture(params=project_permutations[ProjectType.Fibonacci].params,
-                ids=project_permutations[ProjectType.Fibonacci].ids)
+                ids=project_permutations[ProjectType.Fibonacci].ids,
+                scope='module')
 def fibonacci(request):
     request.param.build()
     yield request.param

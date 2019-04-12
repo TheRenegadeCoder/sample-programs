@@ -38,7 +38,8 @@ valid_permutations = (
 
 
 @pytest.fixture(params=project_permutations[ProjectType.ROT13].params,
-                ids=project_permutations[ProjectType.ROT13].ids)
+                ids=project_permutations[ProjectType.ROT13].ids,
+                scope='module')
 def rot_13(request):
     request.param.build()
     yield request.param
