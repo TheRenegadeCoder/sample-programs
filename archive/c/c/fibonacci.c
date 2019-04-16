@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <errno.h>
 #include <inttypes.h>
+#include <string.h>
 
 /*
  * This limit is chosen because fib(93) is the first number that is
@@ -26,7 +27,7 @@ int main(int argc, char **argv)
 {
     uintmax_t n;
 
-    if (argc < 2) {
+    if (argc < 2 || strcmp(argv[1], "") == 0) {
         fprintf(stderr, "Usage: please input the count of fibonacci numbers to output\n");
         return 1;
     }
