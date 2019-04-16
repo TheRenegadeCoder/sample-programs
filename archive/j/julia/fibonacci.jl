@@ -8,4 +8,8 @@ function fib(n)
     end
 end
 
-fib(parse(Int, ARGS[1]))
+if size(ARGS)[1] > 1
+    fib(parse(Int, ARGS[1]))
+else
+    println("Usage: please input the count of fibonacci numbers to output")
+end
