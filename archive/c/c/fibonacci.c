@@ -34,8 +34,8 @@ int main(int argc, char **argv)
 
     errno = 0;
     n = strtoumax(argv[1], NULL, 10);
-    if (n == UINTMAX_MAX && errno == ERANGE) {
-        fprintf(stderr, "Usage please input the count of fibonacci numbers to output\n");
+    if (n == 0 && strcmp(argv[1], "0") != 0 || (n == UINTMAX_MAX && errno == ERANGE)) {
+        fprintf(stderr, "Usage: please input the count of fibonacci numbers to output\n");
         return 1;
     }
 
