@@ -1,14 +1,20 @@
 function fibonacci(num) {
-    var n = Number(num);
-    var first = 0;
-    var second = 1;
-    var result = 0;
-    for (var i = 1; i <= n; i++) {
+    let n = Number(num);
+    let first = 0;
+    let second = 1;
+    let result = 0;
+    for (let i = 1; i <= n; i++) {
     	result = first + second;
     	first = second;
     	second = result;
-        console.log(i + ": " + first + "\n");
+        console.log(i + ": " + first);
     }
 }
 
-fibonacci(process.argv[2])
+num = process.argv[2];
+
+if (num && !isNaN(num)) {
+    fibonacci(num);
+} else {
+    console.log("Usage: please input the count of fibonacci numbers to output")
+}
