@@ -4,5 +4,5 @@ folder:
 
 container:
   image: "groovy"
-  tag: "2.5" 
-  cmd: "groovy {{ source.name }}{{ source.ext }}"
+  tag: "3.0-alpine" 
+  cmd: "groovy {{ source.name }}"
