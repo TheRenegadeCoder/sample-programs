@@ -25,5 +25,5 @@ main = do
   args <- getArgs
   let n = headMaybe args
   case n >>= readMaybe of
-    Nothing -> putStrLn "Usage: please input the number of fibonacci elements to calculate as a positive integer"
+    Nothing -> putStrLn "Usage: please input the count of fibonacci numbers to output"
     Just n  -> mapM_ (putStrLn) $ (printWithIndex . fibonacci) n

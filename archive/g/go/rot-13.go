@@ -30,5 +30,9 @@ func main() {
 		exitWithError()
 	}
 
+	if len(os.Args[1]) <= 0 {
+	    exitWithError()
+	}
+
 	fmt.Println(rot13(os.Args[1]))
 }

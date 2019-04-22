@@ -3,7 +3,7 @@ package main
 import "fmt"
 import "os"
 
-//Function to reverse a string 
+//Function to reverse a string
 func reverse_string(str string) string {
 	chars := []rune(str)
 	for i, j := 0, len(chars)-1; i < j; i, j = i+1, j-1 {
@@ -15,7 +15,7 @@ func reverse_string(str string) string {
 func main() {
 	// Check the command line args length
 	var argslen = len(os.Args)
-	
+
 	// If the length is 2, one command line arg exist
 	if argslen == 2 {
 		input := os.Args[1]

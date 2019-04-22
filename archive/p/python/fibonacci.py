@@ -1,14 +1,31 @@
 import sys
 
+
 def fibonacci(n):
-  first = 0
-  second = 1
-  result = 0
-  for i in range(1, int(n)+1):
-    result = first + second
-    first = second
-    second = result
-    print(i, ": ", first)
+    fib = fibs()
+    for i in range(1, n + 1):
+        print(f'{i}: {next(fib)}')
+
+
+def fibs():
+    first = 1
+    second = 1
+    yield first
+    yield second
+    while True:
+        new = first + second
+        yield new
+        first = second
+        second = new
+
+
+def main(args):
+    try:
+        fibonacci(int(args[0]))
+    except (IndexError, ValueError):
+        print("Usage: please input the count of fibonacci numbers to output")
+        sys.exit(1)
+
 
 if __name__ == "__main__":
-    fibonacci(sys.argv[1])
+    main(sys.argv[1:])
