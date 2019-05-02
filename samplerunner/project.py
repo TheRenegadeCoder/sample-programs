@@ -84,7 +84,7 @@ _project_words = {
     ProjectType.LCS: ['lcs'],
     ProjectType.MergeSort: ['merge', 'sort'],
     ProjectType.MST: ['mst'],
-    ProjectType.Prime: ['prime'],
+    ProjectType.Prime: ['prime', 'number'],
     ProjectType.QuickSort: ['quick', 'sort'],
     ProjectType.Quine: ['quine'],
     ProjectType.ROT13: ['rot', '13'],

@@ -19,8 +19,8 @@ def main(args):
         x = int(args[0])
         if x < 0:
             exit_with_error()
-        print(is_prime(x))
-    except (IndexError,ValueError):
+        print("Prime" if is_prime(x) else "Composite")
+    except (IndexError, ValueError):
         exit_with_error()
 
 
