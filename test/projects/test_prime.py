@@ -9,19 +9,23 @@ invalid_permutations = (
         (
             'no input',
             None,
-            'Usage: please input a non-negative number'
+            'Usage: please input a non-negative integer'
         ), (
             'empty input',
             '""',
-            'Usage: please input a non-negative number'
+            'Usage: please input a non-negative integer'
         ), (
             'invalid input: not a number',
             '"a"',
-            'Usage: please input a non-negative number'
+            'Usage: please input a non-negative integer'
+        ), (
+            'invalid input: not an integer',
+            '"6.7"',
+            'Usage: please input a non-negative integer'
         ), (
             'invalid input: negative',
             '"-7"',
-            'Usage: please input a non-negative number'
+            'Usage: please input a non-negative integer'
         )
     ]
 )
@@ -31,31 +35,31 @@ valid_permutations = (
         (
             'sample input 0',
             '"0"',
-            'False'
+            'false'
         ), (
             'sample input 1',
             '"1"',
-            'False'
+            'false'
         ), (
             'sample input 2',
             '"2"',
-            'True'
+            'true'
         ), (
             'sample input small composite',
             '"4"',
-            'False'
+            'false'
         ), (
             'sample input small prime',
             '"7"',
-            'True'
+            'true'
         ), (
             'sample input large composite',
             '"4011"',
-            'False'
+            'false'
         ), (
             'sample input large prime',
             '"3727"',
-            'True'
+            'true'
         )
     ]
 )
@@ -74,7 +78,7 @@ def prime(request):
                          ids=[p[0] for p in valid_permutations[1]])
 def test_fibonacci_valid(description, in_params, expected, prime):
     actual = prime.run(params=in_params)
-    assert actual.strip() == expected
+    assert actual.strip().lower() == expected
 
 
 @pytest.mark.parametrize(invalid_permutations[0], invalid_permutations[1],

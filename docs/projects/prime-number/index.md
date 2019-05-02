@@ -31,10 +31,11 @@ correctness of your solution:
 
 | Description | Input | Output |
 |--------------|-------|--------|
-| No Input | | "Usage: please input a non-negative number" |
-| Empty Input | "" | "Usage: please input a non-negative number" |
-| Invalid Input: not a number | a | "Usage: please input a non-negative number" |
-| Invalid Input: negative | -7  | "Usage: please input a non-negative number" |
+| No Input | | "Usage: please input a non-negative integer" |
+| Empty Input | "" | "Usage: please input a non-negative integer" |
+| Invalid Input: not a number | a | "Usage: please input a non-negative integer" |
+| Invalid Input: not an integer | 6.7 | "Usage: please input a non-negative integer" |
+| Invalid Input: negative | -7  | "Usage: please input a non-negative integer" |
 | Sample Input: Zero | 0 | False |
 | Sample Input: One | 1 | False |
 | Sample Input: Two | 2 | True |
