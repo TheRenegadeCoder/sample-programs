@@ -6,4 +6,10 @@ blogs:
     publish_date: 25-Apr-2018
     url: https://therenegadecoder.com/code/hello-world-in-julia/
     access_date: 01-May-2019
-    
+  grifski_hwwren_2018:
+    author: Jeremy Grifski
+    title: Hello World in Wren
+    publisher: The Renegade Coder
+    publish_date: 23-Apr-2018
+    url: https://therenegadecoder.com/code/hello-world-in-wren/
+    access_date: 02-May-2019
