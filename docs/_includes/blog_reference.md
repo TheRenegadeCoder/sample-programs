@@ -7,5 +7,5 @@
   {% assign pub_date = ref_data.publish_date %}
   {% assign url = ref_data.url %}
   {% assign acc_date = ref_data.access_date %}
-{{ author }}, "{{ title }}," {{ pub }}, {{ pub_date }}. [Online]. Available: <{{ url }}>. [Accessed: {{ acc_date }}].
+[^{{include.reference}}]: {{ author }}, "{{ title }}," {{ pub }}, {{ pub_date }}. [Online]. Available: <{{ url }}>. [Accessed: {{ acc_date }}].
 {% endif %}
