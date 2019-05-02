@@ -35,31 +35,31 @@ valid_permutations = (
         (
             'sample input 0',
             '"0"',
-            'false'
+            'composite'
         ), (
             'sample input 1',
             '"1"',
-            'false'
+            'composite'
         ), (
             'sample input 2',
             '"2"',
-            'true'
+            'prime'
         ), (
             'sample input small composite',
             '"4"',
-            'false'
+            'composite'
         ), (
             'sample input small prime',
             '"7"',
-            'true'
+            'prime'
         ), (
             'sample input large composite',
             '"4011"',
-            'false'
+            'composite'
         ), (
             'sample input large prime',
             '"3727"',
-            'true'
+            'prime'
         )
     ]
 )

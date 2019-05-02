@@ -36,13 +36,13 @@ correctness of your solution:
 | Invalid Input: not a number | a | "Usage: please input a non-negative integer" |
 | Invalid Input: not an integer | 6.7 | "Usage: please input a non-negative integer" |
 | Invalid Input: negative | -7  | "Usage: please input a non-negative integer" |
-| Sample Input: Zero | 0 | False |
-| Sample Input: One | 1 | False |
-| Sample Input: Two | 2 | True |
-| Sample Input: Small Composite | 4 | False |
-| Sample Input: Small Prime | 7 | True |
-| Sample Input: Large Composite | 4011 | False |
-| Sample Input: Large Prime | 3727 | True |
+| Sample Input: Zero | 0 | Composite |
+| Sample Input: One | 1 | Composite |
+| Sample Input: Two | 2 | Prime |
+| Sample Input: Small Composite | 4 | Composite |
+| Sample Input: Small Prime | 7 | Prime |
+| Sample Input: Large Composite | 4011 | Composite |
+| Sample Input: Large Prime | 3727 | Prime |
 
 ## Articles
 

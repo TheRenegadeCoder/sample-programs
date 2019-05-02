@@ -34,5 +34,9 @@ func main() {
 		exitWithError()
 	}
 
-	fmt.Println(isPrime(n))
+	if isPrime(n) {
+		fmt.Println("Prime")
+	} else {
+	    fmt.Println("Composite")
+	}
 }

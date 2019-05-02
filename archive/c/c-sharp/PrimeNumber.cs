@@ -31,7 +31,7 @@ namespace SamplePrograms
                     Console.WriteLine(string.Format("{0} is out of the reasonable bounds for calculation.", n));
                     Environment.Exit(1);
                 }
-                var result = IsPrime(n);
+                var result = IsPrime(n) ? "Prime" : "Composite";
                 Console.WriteLine(result);
             }
             catch
