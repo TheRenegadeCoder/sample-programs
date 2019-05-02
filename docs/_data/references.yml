@@ -1,0 +1,9 @@
+blogs:
+  grifski_hwjulia_2018: 
+    author: Jeremy Grifski
+    title: Hello World in Julia
+    publisher: The Renegade Coder
+    publish_date: 25-Apr-2018
+    url: https://therenegadecoder.com/code/hello-world-in-julia/
+    access_date: 01-May-2019
+    
