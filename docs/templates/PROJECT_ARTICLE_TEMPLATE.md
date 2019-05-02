@@ -35,4 +35,5 @@ authors:
 
 #### References
 
-[^1]: [some IEEE reference]
+{% include reference.md reference="reference_id" %}
+
