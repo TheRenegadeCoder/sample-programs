@@ -9,7 +9,7 @@ namespace SamplePrograms
         {
             if (x <= 1)
                 return false;
-            if (x % 2 == 0)
+            if (x != 2 && x % 2 == 0)
                 return false;
 
             for (ulong i = 3; i <= Convert.ToUInt64(Math.Sqrt(x)); i += 2)
@@ -31,12 +31,12 @@ namespace SamplePrograms
                     Console.WriteLine(string.Format("{0} is out of the reasonable bounds for calculation.", n));
                     Environment.Exit(1);
                 }
-                var result = IsPrime(n);
+                var result = IsPrime(n) ? "Prime" : "Composite";
                 Console.WriteLine(result);
             }
             catch
             {
-                Console.WriteLine("Usage: please input a non-negative number");
+                Console.WriteLine("Usage: please input a non-negative integer");
                 Environment.Exit(1);
             }
         }
