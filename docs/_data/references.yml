@@ -1,4 +1,11 @@
 blogs:
+  grifski_hwelm_2018:
+    author: Jeremy Grifski
+    title: Hello World in Elm
+    publisher: The Renegade Coder
+    publish_date: 22-Apr-2018
+    url: https://therenegadecoder.com/code/hello-world-in-elm/
+    access_date: 06-May-2019
   grifski_hwjulia_2018: 
     author: Jeremy Grifski
     title: Hello World in Julia
