@@ -20,6 +20,13 @@ blogs:
     publish_date: 25-Apr-2018
     url: https://therenegadecoder.com/code/hello-world-in-julia/
     access_date: 01-May-2019
+  grifski_hwpascal_2018:
+    author: Jeremy Grifski
+    titler: Hello World in Pascal
+    publisher: The Renegade Coder
+    publish_date: 14-Apr-2018
+    url: https://therenegadecoder.com/code/hello-world-in-pascal/
+    access_date: 08-May-2019
   grifski_hwwren_2018:
     author: Jeremy Grifski
     title: Hello World in Wren
