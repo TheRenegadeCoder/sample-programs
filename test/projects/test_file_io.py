@@ -15,7 +15,7 @@ def file_io(request):
     request.param.cleanup()
 
 
-def test_baklava(file_io):
+def test_file_io(file_io):
     actual = file_io.run()
     expected = file_io.exec("cat output.txt")
     assert actual.strip() == expected.strip()
