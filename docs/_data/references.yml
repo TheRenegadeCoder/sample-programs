@@ -22,7 +22,7 @@ blogs:
     access_date: 01-May-2019
   grifski_hwpascal_2018:
     author: Jeremy Grifski
-    titler: Hello World in Pascal
+    title: Hello World in Pascal
     publisher: The Renegade Coder
     publish_date: 14-Apr-2018
     url: https://therenegadecoder.com/code/hello-world-in-pascal/
