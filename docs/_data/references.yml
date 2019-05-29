@@ -1,4 +1,11 @@
 blogs:
+  grifski_hwelixir_2018:
+    author: Jeremy Grifski
+    title: Hello World in Elixir
+    publisher: The Renegade Coder
+    publish_date: 12-Apr-2018
+    url: https://therenegadecoder.com/code/hello-world-in-elixir/
+    access_date: 08-May-2019
   grifski_hwelm_2018:
     author: Jeremy Grifski
     title: Hello World in Elm
@@ -20,6 +27,13 @@ blogs:
     publish_date: 25-Apr-2018
     url: https://therenegadecoder.com/code/hello-world-in-julia/
     access_date: 01-May-2019
+  grifski_hwpascal_2018:
+    author: Jeremy Grifski
+    title: Hello World in Pascal
+    publisher: The Renegade Coder
+    publish_date: 14-Apr-2018
+    url: https://therenegadecoder.com/code/hello-world-in-pascal/
+    access_date: 08-May-2019
   grifski_hwperl_2018:
     author: Jeremy Grifski
     title: Hello World in Perl
