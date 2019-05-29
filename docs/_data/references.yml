@@ -34,6 +34,13 @@ blogs:
     publish_date: 14-Apr-2018
     url: https://therenegadecoder.com/code/hello-world-in-pascal/
     access_date: 08-May-2019
+  grifski_hwperl_2018:
+    author: Jeremy Grifski
+    title: Hello World in Perl
+    publisher: The Renegade Coder
+    publish_date: 08-April-2018
+    url: https://therenegadecoder.com/code/hello-world-in-perl/
+    access_date: 29-May-2019
   grifski_hwwren_2018:
     author: Jeremy Grifski
     title: Hello World in Wren
