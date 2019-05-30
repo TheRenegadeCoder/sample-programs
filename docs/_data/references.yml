@@ -20,7 +20,14 @@ blogs:
     publish_date: Apr-15-2018
     url: https://therenegadecoder.com/code/hello-world-in-hack/
     access_date: 07-May-2019
-  grifski_hwjulia_2018: 
+  grifski_hwhaskell_2018:
+    author: Jeremy Grifski
+    title: Hello World in Haskell
+    publisher: The Renegade Coder
+    publish_date: 07-April-2018
+    url: https://therenegadecoder.com/code/hello-world-in-haskell/
+    access_date: 20-May-2019
+  grifski_hwjulia_2018:
     author: Jeremy Grifski
     title: Hello World in Julia
     publisher: The Renegade Coder
