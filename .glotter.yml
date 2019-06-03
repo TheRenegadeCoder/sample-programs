@@ -1,0 +1,108 @@
+settings:
+  acronym_scheme: "two_letter_limit"
+
+projects:
+  baklava:
+    words:
+      - "baklava"
+    requires_parameters: false
+  bubblesort:
+    words:
+      - "bubble"
+      - "sort"
+    requires_parameters: true
+  convexhull:
+    words:
+      - "convex"
+      - "hull"
+    requires_parameters: true
+  evenodd:
+    words:
+      - "even"
+      - "odd"
+    requires_parameters: true
+  factorial:
+    words:
+      - "factorial"
+    requires_parameters: true
+  fibonacci:
+    words:
+      - "fibonacci"
+    requires_parameters: true
+  fileio:
+    words:
+      - "file"
+      - "io"
+    requires_parameters: false
+    acronyms:
+      - "io"
+  fizzbuzz:
+    words:
+      - "fizz"
+      - "buzz"
+    requires_parameters: false
+  helloworld:
+    words:
+      - "hello"
+      - "world"
+    requires_parameters: false
+  insertionsort:
+    words:
+      - "insertion"
+      - "sort"
+    requires_parameters: true
+  jobsequencing:
+    words:
+      - "job"
+      - "sequencing"
+    requires_parameters: true
+  lcs:
+    words:
+      - "lcs"
+    acronyms:
+      - "lcs"
+    requires_parameters: true
+  mergesort:
+    words:
+      - "merge"
+      - "sort"
+    requires_parameters: true
+  mst:
+    words:
+      - "mst"
+    acronyms:
+      - "mst"
+    requires_parameters: true
+  prime:
+    words:
+      - "prime"
+    requires_parameters: true
+  quicksort:
+    words:
+      - "quick"
+      - "sort"
+    requires_parameters: true
+  quine:
+    words:
+      - "quine"
+    requires_parameters: false
+  rot13:
+    words:
+      - "rot"
+      - "13"
+    requires_parameters: true
+  reversestring:
+    words:
+      - "reverse"
+      - "string"
+    requires_parameters: true
+  romannumeral:
+    words:
+      - "roman"
+      - "numeral"
+    requires_parameters: true
+  selectionsort:
+    words:
+      - "selection"
+      - "sort"
+    requires_parameters: true
