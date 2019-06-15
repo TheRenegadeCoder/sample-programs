@@ -1,6 +1,6 @@
 import os
 from enum import Enum, auto
-from glotter.__main__ import main as glotter_main
+from glotter import main as glotter_main
 from glotter import projects_enum, Settings
 
 
@@ -40,7 +40,6 @@ sorting_types = [
 
 def main():
     settings = Settings()
-    settings.source_root = os.path.abspath(os.path.join(os.path.dirname(__file__), 'archive'))
     glotter_main()
 
 
