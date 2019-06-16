@@ -39,7 +39,6 @@ sorting_types = [
 
 
 def main():
-    settings = Settings()
     glotter_main()
 
 

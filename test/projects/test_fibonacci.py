@@ -1,7 +1,7 @@
 import pytest
 
-from test.projectpermutation import project_permutations
-from samplerunner.project import ProjectType
+from runner import ProjectType
+from glotter import project_test, project_fixture
 
 
 def get_fibs(n):
@@ -55,15 +55,14 @@ valid_permutations = (
 )
 
 
-@pytest.fixture(params=project_permutations[ProjectType.Fibonacci].params,
-                ids=project_permutations[ProjectType.Fibonacci].ids,
-                scope='module')
+@project_fixture(ProjectType.Fibonacci)
 def fibonacci(request):
     request.param.build()
     yield request.param
     request.param.cleanup()
 
 
+@project_test(ProjectType.Fibonacci)
 @pytest.mark.parametrize(valid_permutations[0], valid_permutations[1],
                          ids=[p[0] for p in valid_permutations[1]])
 def test_fibonacci_valid(description, in_params, expected, fibonacci):
@@ -71,6 +70,7 @@ def test_fibonacci_valid(description, in_params, expected, fibonacci):
     assert actual.strip() == expected
 
 
+@project_test(ProjectType.Fibonacci)
 @pytest.mark.parametrize(invalid_permutations[0], invalid_permutations[1],
                          ids=[p[0] for p in invalid_permutations[1]])
 def test_fibonacci_invalid(description, in_params, expected, fibonacci):

@@ -1,7 +1,7 @@
 import pytest
 
-from test.projectpermutation import project_permutations
-from samplerunner.project import ProjectType
+from runner import ProjectType
+from glotter import project_test, project_fixture
 
 invalid_permutations = (
     'description,in_params,expected', [
@@ -52,15 +52,14 @@ valid_permutations = (
 )
 
 
-@pytest.fixture(params=project_permutations[ProjectType.Factorial].params,
-                ids=project_permutations[ProjectType.Factorial].ids,
-                scope='module')
+@project_fixture(ProjectType.Factorial)
 def factorial(request):
     request.param.build()
     yield request.param
     request.param.cleanup()
 
 
+@project_test(ProjectType.Factorial)
 @pytest.mark.parametrize(valid_permutations[0], valid_permutations[1],
                          ids=[p[0] for p in valid_permutations[1]])
 def test_factorial_valid(description, in_params, expected, factorial):
@@ -68,6 +67,7 @@ def test_factorial_valid(description, in_params, expected, factorial):
     assert actual.strip() == expected
 
 
+@project_test(ProjectType.Factorial)
 @pytest.mark.parametrize(valid_permutations[0], valid_permutations[1],
                          ids=[p[0] for p in valid_permutations[1]])
 def test_factorial_invalid(description, in_params, expected, factorial):

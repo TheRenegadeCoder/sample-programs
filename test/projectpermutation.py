@@ -1,6 +1,6 @@
 import os
-from samplerunner import source
-from samplerunner.project import ProjectType
+from glotter import source
+from runner import ProjectType
 
 
 class ProjectPermutation:
