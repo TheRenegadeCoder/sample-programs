@@ -5,7 +5,8 @@ from samplerunner.project import ProjectType
 
 
 @pytest.fixture(params=project_permutations[ProjectType.ReverseString].params,
-                ids=project_permutations[ProjectType.ReverseString].ids)
+                ids=project_permutations[ProjectType.ReverseString].ids,
+                scope='module')
 def reverse_string(request):
     request.param.build()
     yield request.param

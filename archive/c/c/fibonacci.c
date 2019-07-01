@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <errno.h>
 #include <inttypes.h>
+#include <string.h>
 
 /*
  * This limit is chosen because fib(93) is the first number that is
@@ -26,15 +27,15 @@ int main(int argc, char **argv)
 {
     uintmax_t n;
 
-    if (argc < 2) {
-        fprintf(stderr, "Usage: %s [n]\n", argv[0]);
+    if (argc < 2 || strcmp(argv[1], "") == 0) {
+        fprintf(stderr, "Usage: please input the count of fibonacci numbers to output\n");
         return 1;
     }
 
     errno = 0;
     n = strtoumax(argv[1], NULL, 10);
-    if (n == UINTMAX_MAX && errno == ERANGE) {
-        fprintf(stderr, "Invalid argument for n\n");
+    if (n == 0 && strcmp(argv[1], "0") != 0 || (n == UINTMAX_MAX && errno == ERANGE)) {
+        fprintf(stderr, "Usage: please input the count of fibonacci numbers to output\n");
         return 1;
     }
 

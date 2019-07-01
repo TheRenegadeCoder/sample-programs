@@ -31,15 +31,18 @@ correctness of your solution:
 
 | Description | Input | Output |
 |--------------|-------|--------|
-| Negative Case | -7 | Usage: please input a non-negative integer |
-| Empty Case | | Usage: please input a non-negative integer |
-| Zero Case | 0 | False |
-| One Case | 1 | False |
-| Two Case | 2 | True |
-| Small Composite Case | 4 | False |
-| Small Prime Case | 7 | True |
-| Large Composite Case | 4011 | False |
-| Large Prime Case | 3727 | True |
+| No Input | | "Usage: please input a non-negative integer" |
+| Empty Input | "" | "Usage: please input a non-negative integer" |
+| Invalid Input: not a number | a | "Usage: please input a non-negative integer" |
+| Invalid Input: not an integer | 6.7 | "Usage: please input a non-negative integer" |
+| Invalid Input: negative | -7  | "Usage: please input a non-negative integer" |
+| Sample Input: Zero | 0 | Composite |
+| Sample Input: One | 1 | Composite |
+| Sample Input: Two | 2 | Prime |
+| Sample Input: Small Composite | 4 | Composite |
+| Sample Input: Small Prime | 7 | Prime |
+| Sample Input: Large Composite | 4011 | Composite |
+| Sample Input: Large Prime | 3727 | Prime |
 
 ## Articles
 

@@ -22,4 +22,4 @@ authors:
 
 #### References
 
-[^1]: [some IEEE reference]
+{% include blog_reference.md reference="reference_id" %}

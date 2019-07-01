@@ -22,7 +22,7 @@ def main(args):
         elif n >= 996:
             exit_with_error('{}! is out of the reasonable bounds for calculation'.format(n))
         print(factorial(n))
-    except (IndexError,ValueError):
+    except (IndexError, ValueError):
         exit_with_error()
 
 

@@ -8,4 +8,13 @@ function fib(n)
     end
 end
 
-fib(parse(Int, ARGS[1]))
+function error() 
+   println("Usage: please input the count of fibonacci numbers to output") 
+end
+
+try
+    fib(parse(Int, ARGS[1]))
+catch e
+    error()
+end
+

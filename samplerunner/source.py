@@ -52,12 +52,8 @@ class Source:
 
     def build(self, params=''):
         if self.test_info.container_info.build is not None:
-            container = ContainerFactory.get_container(self)
-            result = container.exec_run(
-                cmd=f'{self.test_info.container_info.build} {params}',
-                detach=False,
-                workdir='/src'
-            )
+            command = f'{self.test_info.container_info.build} {params}'
+            result = self._container_exec(command)
             if result[0] != 0:
                 raise RuntimeError(f'unable to build using cmd "{self.test_info.container_info.build} {params}":\n'
                                    f'{result[1].decode("utf-8")}')
@@ -70,13 +66,33 @@ class Source:
         :return: the output of running the source
         """
         params = params or ''
-        container = ContainerFactory.get_container(self)
-        result = container.exec_run(
-            cmd=f'{self.test_info.container_info.cmd} {params}',
-            detach=False,
-            workdir='/src'
-        )
+        command = f'{self.test_info.container_info.cmd} {params}'
+        result = self._container_exec(command)
         return result[1].decode('utf-8')
+
+    def exec(self, command):
+        """
+        Run a command inside the container for a source
+
+        :param command: command to run
+        :return:  the output of the command as a string
+        """
+        result = self._container_exec(command)
+        return result[1].decode('utf-8')
+
+    def _container_exec(self, command):
+        """
+        Run a command inside the container for a source
+
+        :param command: command to run
+        :return:  the exit code and output of the command
+        """
+        container = ContainerFactory.get_container(self)
+        return container.exec_run(
+            cmd=command,
+            detach=False,
+            workdir='/src',
+        )
 
     def cleanup(self):
         ContainerFactory.cleanup(self)

@@ -4,6 +4,7 @@ Welcome to Sample Programs in Elixir!
 
 ## Sample Programs
 
+- [Fizz Buzz in Elixir](https://github.com/TheRenegadeCoder/sample-programs/issues/1102)
 - [Hello World in Elixir](https://therenegadecoder.com/code/hello-world-in-elixir/)
 
 ## Fun Facts
