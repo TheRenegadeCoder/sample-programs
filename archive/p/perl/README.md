@@ -17,7 +17,7 @@ Welcome to Sample Programs in Perl!
 ## References
 
 - [Perl Wiki][4]
-- [Pascal Docs][5]
+- [Perl Docs][5]
 - [Online Perl Interpreter][6]
 
 [1]: https://therenegadecoder.com/code/hello-world-in-perl
