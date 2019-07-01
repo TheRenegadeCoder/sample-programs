@@ -7,6 +7,7 @@ Welcome to Sample Programs in Groovy!
 - [Hello World in Groovy](https://github.com/jrg94/sample-programs/issues/33)
 - [Fibonacci in Groovy](https://github.com/TheRenegadeCoder/sample-programs/issues/568)
 - [Even Odd in Groovy](https://github.com/TheRenegadeCoder/sample-programs/issues/1106)
+- [Reverse A String in Groovy](https://github.com/TheRenegadeCoder/sample-programs/issues/1108)
 
 ## Fun Facts
 
