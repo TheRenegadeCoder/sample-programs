@@ -8,6 +8,7 @@ Welcome to Sample Programs in Groovy!
 - [Fibonacci in Groovy](https://github.com/TheRenegadeCoder/sample-programs/issues/568)
 - [Even Odd in Groovy](https://github.com/TheRenegadeCoder/sample-programs/issues/1106)
 - [Reverse A String in Groovy](https://github.com/TheRenegadeCoder/sample-programs/issues/1108)
+- [Capitalize in Groovy](https://github.com/TheRenegadeCoder/sample-programs/issues/1110)
 
 ## Fun Facts
 
