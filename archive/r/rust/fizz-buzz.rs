@@ -6,6 +6,8 @@ fn main() {
             println!("Fizz");
         } else if number % 5 == 0 {
             println!("Buzz");
+        } else {
+            println!("{}", number);
         }
     }
 }
