@@ -9,6 +9,7 @@ Welcome to Sample Programs in PHP!
 - [Baklava in PHP][8]
   - Solution borrowed from @toturkmen and @erayak via the [baklava repo][1]
 - [Fibonacci in PHP][9]
+- [String Reverse in PHP][10]
 
 ## Fun Facts
 
@@ -33,3 +34,4 @@ Welcome to Sample Programs in PHP!
 [7]: http://www.runphponline.com/
 [8]: https://github.com/TheRenegadeCoder/sample-programs/issues/431
 [9]: https://github.com/TheRenegadeCoder/sample-programs/issues/941
+[10]: https://github.com/TheRenegadeCoder/sample-programs/issues/1117
