@@ -10,6 +10,7 @@ Welcome to Sample Programs in Rust!
 - [Fizz Buzz in Rust](https://github.com/TheRenegadeCoder/sample-programs/issues/453)
 - [Reverse a String in Rust](https://github.com/jrg94/sample-programs/issues/261)
 - [Roman Numeral Conversion in Rust](https://github.com/TheRenegadeCoder/sample-programs/issues/536)
+- [ROT-13 in Rust](https://github.com/TheRenegadeCoder/sample-programs/issues/1118)
 
 ## Fun Facts
 
