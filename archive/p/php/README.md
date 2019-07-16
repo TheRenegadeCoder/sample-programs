@@ -10,6 +10,7 @@ Welcome to Sample Programs in PHP!
   - Solution borrowed from @toturkmen and @erayak via the [baklava repo][1]
 - [Fibonacci in PHP][9]
 - [String Reverse in PHP][10]
+- [Palindrome Word in PHP][11]
 
 ## Fun Facts
 
@@ -35,3 +36,4 @@ Welcome to Sample Programs in PHP!
 [8]: https://github.com/TheRenegadeCoder/sample-programs/issues/431
 [9]: https://github.com/TheRenegadeCoder/sample-programs/issues/941
 [10]: https://github.com/TheRenegadeCoder/sample-programs/issues/1117
+[11]: https://github.com/TheRenegadeCoder/sample-programs/issues/1121
