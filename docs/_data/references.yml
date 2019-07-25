@@ -17,7 +17,7 @@ blogs:
     author: Jeremy Grifski
     title: Hello World in Hack
     publisher: The Renegade Coder
-    publish_date: Apr-15-2018
+    publish_date: 15-Apr-2018
     url: https://therenegadecoder.com/code/hello-world-in-hack/
     access_date: 07-May-2019
   grifski_hwhaskell_2018:
@@ -45,8 +45,15 @@ blogs:
     author: Jeremy Grifski
     title: Hello World in Perl
     publisher: The Renegade Coder
-    publish_date: 08-April-2018
+    publish_date: 08-Apr-2018
     url: https://therenegadecoder.com/code/hello-world-in-perl/
+    access_date: 29-May-2019
+  grifski_hwracket_2018:
+    author: Jeremy Grifski
+    title: Hello World in Racket
+    publisher: The Renegade Coder
+    publish_date: 05-Apr-2018
+    url: https://therenegadecoder.com/code/hello-world-in-racket/
     access_date: 29-May-2019
   grifski_hwscala_2018:
     author: Jeremy Grifski
