@@ -34,6 +34,13 @@ blogs:
     publish_date: 25-Apr-2018
     url: https://therenegadecoder.com/code/hello-world-in-julia/
     access_date: 01-May-2019
+  grifski_hwlisp_2018:
+    author: Jeremy Grifski
+    title: Hello World in Lisp
+    publisher: The Renegade Coder
+    publish_date: 01-Apr-2018
+    url: https://therenegadecoder.com/code/hello-world-in-lisp/
+    access_date: 22-Aug-2019
   grifski_hwpascal_2018:
     author: Jeremy Grifski
     title: Hello World in Pascal
