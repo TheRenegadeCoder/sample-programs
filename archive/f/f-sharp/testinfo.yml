@@ -5,5 +5,5 @@ folder:
 container:
   image: "fsharp"
   tag: "10-netcore"
-  build: "fsharpc {{ source.name}}{{ source.extension }}"
-  cmd: "./{{ source.name }}.exe"
+  build: "fsharpc --standalone -o {{ source.name }} {{ source.name}}{{ source.extension }}"
+  cmd: "./{{ source.name }}"
