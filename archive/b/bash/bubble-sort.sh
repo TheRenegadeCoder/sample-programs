@@ -20,8 +20,6 @@ function bubble-sort {
 	done;
 }
 
-echo ${array[@]}
-
 bubble-sort
 
 echo ${array[@]}
