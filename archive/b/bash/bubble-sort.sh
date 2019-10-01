@@ -1,6 +1,6 @@
 #!/bin/bash
 
-array=(3 35 2 5 4 7 3 0 10 -2 12 3)
+array=( "$@" )
 
 function bubble-sort {
 	new_array=(${array[@]::${#array[@]}-1}) #all elements except the last one
