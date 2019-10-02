@@ -1,5 +1,5 @@
 ---
-title: <Sample Program> in <Language>
+title: FizzBuzz in JavaScript
 layout: default
 last-modified: 2019-10-02
 featured-image:
