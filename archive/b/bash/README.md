@@ -11,6 +11,7 @@ Welcome to Sample Programs in Bash!
   - Solution borrowed from @toturkman via the [baklava repo][1]
 - [Fibonacci in Bash][7]
 - [File IO in Bash][8]
+- [Bubble Sort in Bash][9]
 
 ## Fun Facts
 
@@ -28,3 +29,4 @@ Welcome to Sample Programs in Bash!
 [6]: https://github.com/TheRenegadeCoder/sample-programs/issues/422
 [7]: https://github.com/TheRenegadeCoder/sample-programs/issues/623
 [8]: https://github.com/TheRenegadeCoder/sample-programs/issues/638
+[9]: https://github.com/TheRenegadeCoder/sample-programs/issues/1134
