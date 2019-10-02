@@ -1,5 +1,7 @@
 #!/bin/bash
 
+ERROR="Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\""
+
 function bubble-sort {
 	new_array=(${array[@]::${#array[@]}-1}) #all elements except the last one
 	for i in "${!array[@]}"; do
@@ -18,14 +20,14 @@ function bubble-sort {
 	done;
 }
 
-
-if [ "$#" != "1" ]; then exit 1; fi; #wrong input
-if [[ ! "$1" =~ "," ]]; then exit 1; fi; #wrong format
+#Validation to fit criteria
+if [ "$#" != "1" ]; then echo $ERROR; exit 1; fi; #wrong input
+if [[ ! "$1" =~ "," ]]; then echo $ERROR; exit 1; fi; #wrong format
 
 array=($(echo $@ | tr ", " " "))
 
-if [ "${array[0]}" == "" ]; then exit 1; fi; #empty input
-if [ "${#array[@]}" == "1" ]; then exit 1; fi; #not a list
+if [ "${array[0]}" == "" ]; then echo $ERROR; exit 1; fi; #empty input
+if [ "${#array[@]}" == "1" ]; then echo $ERROR; exit 1; fi; #not a list
 
 bubble-sort array
 echo ${array[@]}
