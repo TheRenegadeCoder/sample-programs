@@ -1,7 +1,5 @@
 #!/bin/bash
 
-array=( "$@" )
-
 function bubble-sort {
 	new_array=(${array[@]::${#array[@]}-1}) #all elements except the last one
 	for i in "${!array[@]}"; do
@@ -20,6 +18,14 @@ function bubble-sort {
 	done;
 }
 
-bubble-sort
 
+if [ "$#" != "1" ]; then exit 1; fi; #wrong input
+if [[ ! "$1" =~ "," ]]; then exit 1; fi; #wrong format
+
+array=($(echo $@ | tr ", " " "))
+
+if [ "${array[0]}" == "" ]; then exit 1; fi; #empty input
+if [ "${#array[@]}" == "1" ]; then exit 1; fi; #not a list
+
+bubble-sort array
 echo ${array[@]}
