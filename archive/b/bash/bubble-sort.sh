@@ -30,4 +30,6 @@ if [ "${array[0]}" == "" ]; then echo $ERROR; exit 1; fi; #empty input
 if [ "${#array[@]}" == "1" ]; then echo $ERROR; exit 1; fi; #not a list
 
 bubble-sort array
-echo ${array[@]}
+arrayString=${array[@]}
+echo "${arrayString//" "/", "}"
+
