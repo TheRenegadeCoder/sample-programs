@@ -23,6 +23,7 @@ Welcome to Sample Programs in Python!
 - [Quine in Python][3]
 - [Reverse a String in Python][2]
 - [Roman Numberal Conversion in Python][25]
+- [Rotate Matrix in Python][40]
 - [ROT-13 in Python][38]
 - [Selection Sort in Python][39]
 
@@ -139,3 +140,4 @@ Welcome to Sample Programs in Python!
 [37]: https://github.com/TheRenegadeCoder/sample-programs/issues/864
 [38]: https://github.com/TheRenegadeCoder/sample-programs/issues/867
 [39]: https://github.com/TheRenegadeCoder/sample-programs/issues/870
+[40]: https://github.com/elveera14/sample-programs/commit/b971fe48c781e2f86f3517416e61e1457aa17774
