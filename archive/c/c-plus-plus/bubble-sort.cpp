@@ -84,7 +84,7 @@ int main(int argc, char *argv[]) {
   int size = numbers.size();
   if (size < 2) {
     std::cout << "Usage: please provide a list of at least two integers to "
-                 "sort in the format “1, 2, 3, 4, 5”"
+                 "sort in the format \"1, 2, 3, 4, 5\""
               << std::endl;
   } else {
     bubbleSort(numbers, size);
