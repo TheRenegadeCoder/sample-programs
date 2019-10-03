@@ -10,6 +10,7 @@ Welcome to Sample Programs in TypeScript!
 - [Game of Life in TypeScript][3]
 - [Hello World in TypeScript][2]
 - Reversing a String
+- Capitalize
 
 
 ## Fun Facts
