@@ -6,7 +6,7 @@ Welcome to Sample Programs in Elixir!
 
 - [Fizz Buzz in Elixir](https://github.com/TheRenegadeCoder/sample-programs/issues/1102)
 - [Hello World in Elixir](https://therenegadecoder.com/code/hello-world-in-elixir/)
-- [Baklava in Elixir](https://github.com/ogabrielluiz/sample-programs/blob/master/archive/e/elixir/baklava.ex/)
+- [Baklava in Elixir](https://github.com/TheRenegadeCoder/sample-programs/issues/1160)
 
 ## Fun Facts
 
