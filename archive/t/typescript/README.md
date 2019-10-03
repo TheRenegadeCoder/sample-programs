@@ -9,6 +9,7 @@ Welcome to Sample Programs in TypeScript!
 - [FizzBuzz in TypeScript][7]
 - [Game of Life in TypeScript][3]
 - [Hello World in TypeScript][2]
+- Reversing a String
 
 
 ## Fun Facts
