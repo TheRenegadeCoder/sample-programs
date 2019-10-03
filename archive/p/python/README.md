@@ -32,6 +32,7 @@ Welcome to Sample Programs in Python!
 - Developer: Python Software Foundation
 - Typing: Dynamic
 - License: Python Software Foundation License
+- [Zen of Python][41]
 
 ## Syntax
 
@@ -139,3 +140,4 @@ Welcome to Sample Programs in Python!
 [37]: https://github.com/TheRenegadeCoder/sample-programs/issues/864
 [38]: https://github.com/TheRenegadeCoder/sample-programs/issues/867
 [39]: https://github.com/TheRenegadeCoder/sample-programs/issues/870
+[41]: https://www.python.org/dev/peps/pep-0020/
