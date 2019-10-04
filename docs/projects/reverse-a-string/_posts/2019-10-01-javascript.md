@@ -1,5 +1,5 @@
 ---
-title: Reverse a string in JavaScript
+title: Reverse a String in JavaScript
 layout: default
 last-modified: 2019-10-01
 featured-image:

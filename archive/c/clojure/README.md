@@ -5,11 +5,13 @@ Welcome to Sample Programs in Clojure!
 ## Samples Programs
 
 - [Hello World in Clojure](https://github.com/TheRenegadeCoder/sample-programs/issues/844)
+- [Bubble Sort in Clojure](https://github.com/TheRenegadeCoder/sample-programs/issues/1151)
 
 ## Fun Facts
 
 - Debut: 2007
 - Typing: Dynamic
+- Interoparability: JAVA
 
 ## References
 
