@@ -11,6 +11,8 @@ Welcome to Sample Programs in JavaScript!
   - Solution borrowed from @toturkmen via the [baklava repo][1]
 - [Fibonacci in JavaScript][9]
 - [Capitalize in JavaScript][12]
+- [Import in JavaScript][13]
+- [Export in JavaScript][13]
 
 ## Fun Facts
 
@@ -37,3 +39,4 @@ Welcome to Sample Programs in JavaScript!
 [10]: https://developer.mozilla.org/en-US/
 [11]: https://www.w3schools.com/js/
 [12]: https://github.com/TheRenegadeCoder/sample-programs/issues/1067
+[13]: https://github.com/TheRenegadeCoder/sample-programs/issues/1178
