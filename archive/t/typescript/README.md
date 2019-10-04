@@ -11,8 +11,8 @@ Welcome to Sample Programs in TypeScript!
 - [Hello World in TypeScript][2]
 - Reversing a String in TypeScript  
 - Capitalize in TypeScript  
-- Import in TypeScript [9]
-- Export in TypeScript [9]
+- [Import in TypeScript][9]
+- [Export in TypeScript][9]
 
 
 ## Fun Facts
