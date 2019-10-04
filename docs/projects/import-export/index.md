@@ -5,7 +5,7 @@ date: 2019-10-04
 last-modified: 2019-10-04
 featured-image:
 tags: [Export, Import]
-authors: --Ray6464 
+authors: [Ray6464]
 ---
 
 Exporting and Importing data is required to create modules. What we basically do is create variables in one file (say this file's name is "export"), export them from the "export" file; then import them from another file (say the file's name is "import"), then use them in the "import" file.
