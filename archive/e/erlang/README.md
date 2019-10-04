@@ -4,7 +4,9 @@ Welcome to Sample Programs in Erlang!
 
 ## Sample Programs
 
-- [Hello World in Erlang](https://github.com/jrg94/sample-programs/issues/321)
+- [Hello World in Erlang](https://github.com/TheRenegadeCoder/sample-programs/issues/321)
+- [Bubble Sort in Erlang](https://github.com/TheRenegadeCoder/sample-programs/issues/1140)
+- [Fizz Buzz in Erlang](https://github.com/TheRenegadeCoder/sample-programs/issues/1166)
 
 ## Fun Facts
 

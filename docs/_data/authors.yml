@@ -130,8 +130,19 @@ veevidify:
   web:
   bio:
 
+
 ray6464:
   name: Ray Voice
   email: ray@vanet@gmail.com
   web: twitter: @rayshorthead
-  bio:  Likes to code & write.
+  bio: |
+    I like to code & write.
+
+wileymab:
+  name: Matt Wiley
+  email: wileymab@gmail.com
+  web:
+  bio: |
+    I'm just person. 
+    Sitting in front of some code. 
+    Asking it to start working.
