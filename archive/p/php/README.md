@@ -5,6 +5,7 @@ Welcome to Sample Programs in PHP!
 ## Sample Programs
 
 - [Hello World in PHP][2]
+- [Bubble Sort in PHP][12]
 - [Fizz Buzz in PHP][3]
 - [Baklava in PHP][8]
   - Solution borrowed from @toturkmen and @erayak via the [baklava repo][1]
@@ -37,3 +38,4 @@ Welcome to Sample Programs in PHP!
 [9]: https://github.com/TheRenegadeCoder/sample-programs/issues/941
 [10]: https://github.com/TheRenegadeCoder/sample-programs/issues/1117
 [11]: https://github.com/TheRenegadeCoder/sample-programs/issues/1121
+[12]: https://github.com/TheRenegadeCoder/sample-programs/issues/1175
