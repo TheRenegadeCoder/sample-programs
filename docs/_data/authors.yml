@@ -117,10 +117,18 @@ daniellunsc:
   email: danlunasc@gmail.com
   web:
   bio:
-  
+
 veevidify:
   name: veevidify
   email:
   web:
   bio:
 
+nickkeers:
+  name: Nick Keers
+  email:
+  web: https://nickkeers.co.uk/
+  bio: |
+    A software developer from the UK, I graduated from Keele University in 2015 with a bachelors in
+    Computer Science. Interested in mainly functional programming (Elixir, Erlang, F#) and writing
+    resilient, scalable systems. 
