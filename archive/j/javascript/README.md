@@ -11,6 +11,8 @@ Welcome to Sample Programs in JavaScript!
   - Solution borrowed from @toturkmen via the [baklava repo][1]
 - [Fibonacci in JavaScript][9]
 - [Capitalize in JavaScript][12]
+- Insertion Sort in JavaScript
+- Factorial of a Number in JavaScript
 
 ## Fun Facts
 
