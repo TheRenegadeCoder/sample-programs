@@ -1,0 +1,1 @@
+exports.myGreeting = "Hello World";

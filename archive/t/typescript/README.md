@@ -9,6 +9,10 @@ Welcome to Sample Programs in TypeScript!
 - [FizzBuzz in TypeScript][7]
 - [Game of Life in TypeScript][3]
 - [Hello World in TypeScript][2]
+- Reversing a String in TypeScript  
+- Capitalize in TypeScript  
+- [Import in TypeScript][9]
+- [Export in TypeScript][9]
 
 
 ## Fun Facts
@@ -29,3 +33,4 @@ Welcome to Sample Programs in TypeScript!
 [6]: https://github.com/TheRenegadeCoder/sample-programs/issues/434
 [7]: https://github.com/TheRenegadeCoder/sample-programs/issues/523
 [8]: https://github.com/TheRenegadeCoder/sample-programs/issues/531
+[9]: https://github.com/TheRenegadeCoder/sample-programs/issues/1178
