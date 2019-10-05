@@ -10,6 +10,7 @@ Welcome to Sample Programs in Kotlin!
 - [Fizz Buzz in Kotlin][7]
 - [Fibonacci Sequence in Kotlin][8]
 - [Reverse String in Kotlin][9]
+- [Factorial of a Number in Kotlin]
 
 ## Fun Facts
 
