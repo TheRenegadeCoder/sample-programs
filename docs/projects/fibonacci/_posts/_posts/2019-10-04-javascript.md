@@ -1,7 +1,7 @@
 ---
 title: Fibonacci in JavaScript  
 layout: default  
-last-modified: 2019-10-01 4
+last-modified: 2019-10-04
 featured-image:  
 tags: [javascript, fibonacci]  
 authors:[ Alina1Black ]
