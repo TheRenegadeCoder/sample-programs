@@ -10,4 +10,5 @@ _site/
 *.swp
 .pytest_cache/
 __pycache__/
-
+# erlang
+*.beam
