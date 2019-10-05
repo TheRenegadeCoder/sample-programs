@@ -1,5 +1,5 @@
 ---
-title: Fibonacci sequence in JavaScript  
+title: Fibonacci in JavaScript  
 layout: default  
 last-modified: 2019-10-01 4
 featured-image:  
