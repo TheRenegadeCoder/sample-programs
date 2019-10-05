@@ -25,6 +25,7 @@ Welcome to Sample Programs in Python!
 - [Roman Numberal Conversion in Python][25]
 - [ROT-13 in Python][38]
 - [Selection Sort in Python][39]
+- [Anagram in Python](https://github.com/TheRenegadeCoder/sample-programs/issues/432)
 
 ## Fun Facts
 
