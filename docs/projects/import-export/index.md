@@ -1,10 +1,10 @@
 ---
-title: Exporting & Importing variables in Every Language
+title: Import/Export in Every Language
 layout: default
 date: 2019-10-04
 last-modified: 2019-10-04
 featured-image:
-tags: [Export, Import]
+tags: [export, import]
 authors: [Ray6464]
 ---
 
