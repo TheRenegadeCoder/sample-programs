@@ -5,6 +5,7 @@ Welcome to Sample Programs in Verilog!
 ## Sample Programs
 
 - [Hello World in Verilog](https://github.com/jrg94/sample-programs/issues/97)
+- [Fibonacci Sequences in Verilog](https://github.com/TheSupremePatel/sample-programs/blob/verilog/fibonacci/archive/v/verilog/fibonacci_behavioural.v)
 
 ## Fun Facts
 
