@@ -1,7 +1,7 @@
 ---
-title: importing and exporting a variable in JavaScript  
+title: Import/Export in JavaScript  
 layout: default  
-last-modified: 2019-10-04  
+last-modified: 2019-10-06  
 featured-image:  
 tags: [javascript, import, export]  
 authors:  
