@@ -1,7 +1,7 @@
 ---
-title: importing and exporting a variable in TypeScript  
+title: Import/Export in TypeScript  
 layout: default  
-last-modified: 2019-10-04  
+last-modified: 2019-10-06  
 featured-image:  
 tags: [typescript, import, export]  
 authors:  
