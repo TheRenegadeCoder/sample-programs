@@ -9,6 +9,7 @@ Welcome to Sample Programs in Erlang!
 - [Fizz Buzz in Erlang](https://github.com/TheRenegadeCoder/sample-programs/issues/1166)
 - [Baklava in Erlang](https://github.com/TheRenegadeCoder/sample-programs/issues/1183)
 - [Reverse String in Erlang](https://github.com/TheRenegadeCoder/sample-programs/issues/1199)
+- [Factorial in Erlang](https://github.com/TheRenegadeCoder/sample-programs/issues/1203)
 
 ## Fun Facts
 
