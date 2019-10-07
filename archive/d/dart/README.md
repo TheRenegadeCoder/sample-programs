@@ -6,6 +6,7 @@ Welcome to Sample Programs in Dart!
 
 - [Hello World in Dart](https://therenegadecoder.com/blog/hello-world-in-dart/)
 - [Reverse String in Dart](https://github.com/TheRenegadeCoder/sample-programs/issues/460)
+- [Sleep Sort in Dart](https://github.com/TheRenegadeCoder/sample-programs/issues/1205)
 
 ## Fun Facts
 
