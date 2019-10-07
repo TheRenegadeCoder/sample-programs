@@ -25,7 +25,7 @@ Find which section best describes your pull request and make sure you fill it ou
 
 ### Testing
 
-- [ ] I names the pull request using `Added/Updated <Language>/<Project> Testing` format
+- [ ] I named the pull request using `Added/Updated <Language>/<Project> Testing` format
 - [ ] I followed the testinfo template, if applicable
 
 ## Notes
