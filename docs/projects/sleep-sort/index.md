@@ -13,7 +13,7 @@ In this article, we'll introduce Sleep Sort, a wired type of sorting algorithm.
 
 ## Description
 
-Sleep sort is a sorting algorithm that for each input numeric variable it starts a thread that automatically goes to sleep for given number of time units, eg. seconds. When a thread complets, it returns the number. When all threads complete, a sorted array of numbers is returned.
+Sleep sort is a sorting algorithm that for each input numeric variable it starts a thread (or thread like process) that automatically goes to sleep for given number of time units, eg. seconds. When a thread complets, it returns the number. When all threads complete, a sorted array of numbers is returned.
 
 
 ### Performance
