@@ -12,6 +12,7 @@ Welcome to Sample Programs in Bash!
 - [Fibonacci in Bash][7]
 - [File IO in Bash][8]
 - [Bubble Sort in Bash][9]
+- [Capitalize in Bash][10]
 
 ## Fun Facts
 
@@ -30,3 +31,4 @@ Welcome to Sample Programs in Bash!
 [7]: https://github.com/TheRenegadeCoder/sample-programs/issues/623
 [8]: https://github.com/TheRenegadeCoder/sample-programs/issues/638
 [9]: https://github.com/TheRenegadeCoder/sample-programs/issues/1134
+[10]: https://github.com/TheRenegadeCoder/sample-programs/issues/1216
