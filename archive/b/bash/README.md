@@ -13,6 +13,7 @@ Welcome to Sample Programs in Bash!
 - [File IO in Bash][8]
 - [Bubble Sort in Bash][9]
 - [Capitalize in Bash][10]
+- [ROT13 in Bash][11]
 
 ## Fun Facts
 
@@ -32,3 +33,4 @@ Welcome to Sample Programs in Bash!
 [8]: https://github.com/TheRenegadeCoder/sample-programs/issues/638
 [9]: https://github.com/TheRenegadeCoder/sample-programs/issues/1134
 [10]: https://github.com/TheRenegadeCoder/sample-programs/issues/1216
+[11]: https://github.com/TheRenegadeCoder/sample-programs/issues/1231
