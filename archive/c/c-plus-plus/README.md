@@ -24,3 +24,4 @@ Welcome to Sample Programs in C++!
 - [Cppreference C++ Docs](https://en.cppreference.com/w/cpp)
 - [C++ Online Compiler](http://cpp.sh/)
 - [Game of life wiki](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
+- [Mario Talevski project](https://github.com/MarioTalevski/game-of-life)
