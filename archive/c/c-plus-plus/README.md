@@ -9,6 +9,7 @@ Welcome to Sample Programs in C++!
 - [Reverse String in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/419)
 - [Fibonacci Sequence in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/496)
 - [Bubble Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1135)
+- [Insertion Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1240)
 
 ## Fun Facts
 
