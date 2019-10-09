@@ -15,14 +15,40 @@ In this article, we'll learn the implementation of insertion sort algorithm in C
 Let's first take a look at the solution. Then, we'll walk through each line of code:
 
 ```c++
-#include <iostream>
-#define num 1000000
+#include <iostream> 
+```
+```c++
+#include <sstream> 
+```
+```c++
+#include <string>
+```
+```c++
+#include <vector>
+```
+```c++
 using namespace std;
+```
 
-void insertion_sort(int arr[], int n){
+void insertion_sort(string str, vector<int> arr) 
+{ 
 
-    int t,j;
-    for(int i=1;i<n;i++){
+	stringstream ss;	 
+	ss << str; 
+	string temp; 
+	int found; 
+	while (!ss.eof()) 
+	{ 
+		ss >> temp; 
+		if (stringstream(temp) >> found) 
+		{
+		    arr.push_back(found);
+		}
+		temp = ""; 
+	} 
+	
+	int t,j;
+    for(int i=1;i<arr.size();i++){
         t = arr[i];
         j = i-1;
         while(j >= 0 && t<=arr[j]){
@@ -31,63 +57,72 @@ void insertion_sort(int arr[], int n){
         }
         arr[j+1] = t;
     }
-}
-
-void show(int arr[], int n)  
-{  
-
+    
     int i;  
-    for (i = 0; i < n; i++)  
+    for (i = 0; i < arr.size(); i++)  
         cout << arr[i] << " ";  
-    cout << endl; 
+    cout << endl;
 } 
 
-int main()  
-{  
+int main() 
+{ 
 
-    int n;  
-    cout<<"Enter the length of the array ";
-    cin>>n;
-    cout<<endl;
-    int arr[num];
-    for(int i=0;i<n;i++){
-        cin>>arr[i];
-    }
-  
-    insertion_sort(arr, n);   
-    
-    cout<<endl;
-    show(arr,n);
-  
-    return 0;  
-}    
+	string str;
+	vector<int>arr;
+	getline (cin, str); 
+	insertion_sort(str,arr); 
+	return 0; 
+} 
 ```
 
-### Includes and macros
+### Includes
 
 In our sample, we include a single standard library utility:
 
 ```c++
-#include <iostream>
-#define num 1000000
+#include <iostream> 
+```
+```c++
+#include <sstream> 
+```
+```c++
+#include <string>
+```
+```c++
+#include <vector>
+```
+```c++
 using namespace std;
 ```
 
 Here, we can see that we include the standard I/O for printing messages onto the
-screen and for taking the inputs from the user.
-
-The `#define` is a preprocessor directive that replaces the text with it's value 
-throughout the code before the compiler runs.
+screen and for taking the inputs from the user. The string stream library for accessing the string, the string to use the string data type as it not predefined in C++. The vector library to implement the concept of dynamic datatype vector.
 
 ### Insertion-Sort Function
 In our sample, this function is responsible for sorting the array according 
 to the insertion sort algorithm:
 
 ```c++
-void insertion_sort(int arr[], int n){
 
-    int t,j;
-    for(int i=1;i<n;i++){
+void insertion_sort(string str, vector<int> arr) 
+{ 
+
+	stringstream ss;	 
+	ss << str; 
+	string temp; 
+	int found; 
+	while (!ss.eof()) 
+	{ 
+		ss >> temp; 
+		if (stringstream(temp) >> found) 
+		{
+		    arr.push_back(found);
+		}
+		temp = ""; 
+	} 
+	
+	int t,j;
+    for(int i=1;i<arr.size();i++){
         t = arr[i];
         j = i-1;
         while(j >= 0 && t<=arr[j]){
@@ -96,10 +131,50 @@ void insertion_sort(int arr[], int n){
         }
         arr[j+1] = t;
     }
-}
+    
+    int i;  
+    for (i = 0; i < arr.size(); i++)  
+        cout << arr[i] << " ";  
+    cout << endl;
+} 
 ```
 
-This function accepts the input array and the size of the array from the main function 
+Following are the explanation for the respective code snippets.
+
+```c++
+
+    stringstream ss;	 
+	ss << str; 
+	string temp; 
+	int found; 
+	while (!ss.eof()) 
+	{ 
+		ss >> temp; 
+		if (stringstream(temp) >> found) 
+		{
+		    arr.push_back(found);
+		}
+		temp = ""; 
+	} 
+```
+
+This section is responsible for extracting the numbers from the string and adding them to a vector,
+so that easy iterative approach to insertion sort can be used.
+
+```c++
+
+    int t,j;
+    for(int i=1;i<arr.size();i++){
+        t = arr[i];
+        j = i-1;
+        while(j >= 0 && t<=arr[j]){
+            arr[j+1] = arr[j];
+            j--;
+        }
+        arr[j+1] = t;
+    } 
+```
+This section accepts the input array and the size of the array from the main function 
 Here we virtually divide the array into two parts i.e., the sorted and the unsorted part,
 initially, the first element in the array is considered as sorted, even if it is not sorted.
 Further, each element in the array is checked with the previous elements for the strict
@@ -114,19 +189,17 @@ the value stored in 't' throughout the sorted array, as soon we get the desired 
 place it there and then increment the sorted array end marker 'i' by unity.
 This process continues until the array unsorted array size is reduced to zero.
 
-### The Show Function
+### The display section
 
 It's quite self-explanatory that it displays the new altered array:
 
 ```c++
-void show(int arr[], int n)  
-{  
 
     int i;  
     for (i = 0; i < n; i++)  
         cout << arr[i] << " ";  
     cout << endl; 
-}
+
 ```
 It takes the altered array and then prints it by iterating through it.
 
@@ -138,33 +211,19 @@ As usual, C++ programs cannot be executed without a main function:
 int main()  
 {  
 
-    int n;  
-    cout<<"Enter the length of the array ";
-    cin>>n;
-    cout<<endl;
-    int arr[n];
-    for(int i=0;i<n;i++){
-        cin>>arr[i];
-    }
-  
-    insertion_sort(arr, n);   
-    
-    cout<<endl;
-    show(arr,n);
-  
-    return 0;  
+    string str;
+	vector<int>arr;
+	getline(cin, str); 
+	insertion_sort(str,arr); 
+	return 0;  
 } 
 ```
 
-Here the first `cout<<"Enter the length of the array "` just asks for an input for the array length, 
-which is required for array declaration, since static programs in C++ demand for an invariable length
-of the array for contiguous memory allocation in the system's memory, variable-length arrays are possible
-with pointers, but they are beyond the scope of 
-discussion in this tutorial.
+Here the getline function is used to input data in a line from the user.
 
 The for loop is responsible for the input into the array.
-Here, we make a call to each function we've created: `insertion_sort(arr, n)` and` show(arr,n)`, bypassing
-the array and the array length variables to the function such that they match with their respective function signatures. And, that's it!
+Here, we make a call to each function we've created: `insertion_sort(str, arr)`, bypassing
+the string input and the array to the function such that they match with their respective function signatures. And, that's it!
 
 
 ## How to Run the Solution
