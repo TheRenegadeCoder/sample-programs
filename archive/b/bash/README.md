@@ -4,15 +4,17 @@ Welcome to Sample Programs in Bash!
 
 ## Sample Programs
 
-- [Hello World in Bash][2]
-- [Reverse String in Bash][3]
-- [Fizz Buzz in Bash][4]
 - [Baklava in Bash][6]
   - Solution borrowed from @toturkman via the [baklava repo][1]
-- [Fibonacci in Bash][7]
-- [File IO in Bash][8]
 - [Bubble Sort in Bash][9]
 - [Capitalize in Bash][10]
+- [Factorial in Bash][13]
+  - Solution borrowed from [Log2Base2][12]
+- [Fibonacci in Bash][7]
+- [File IO in Bash][8]
+- [Fizz Buzz in Bash][4]
+- [Hello World in Bash][2]
+- [Reverse String in Bash][3]
 - [ROT13 in Bash][11]
 
 ## Fun Facts
@@ -22,6 +24,7 @@ Welcome to Sample Programs in Bash!
 ## References
 
 - [Bash Wiki][5]
+- [Log2Base2][12]
 
 [1]: https://github.com/toturkmen/baklava
 [2]: https://therenegadecoder.com/code/hello-world-in-bash/
@@ -34,3 +37,5 @@ Welcome to Sample Programs in Bash!
 [9]: https://github.com/TheRenegadeCoder/sample-programs/issues/1134
 [10]: https://github.com/TheRenegadeCoder/sample-programs/issues/1216
 [11]: https://github.com/TheRenegadeCoder/sample-programs/issues/1231
+[12]: https://www.log2base2.com/shell-script-examples/loop/shell-script-to-find-factorial-of-a-number.html
+[13]: https://github.com/TheRenegadeCoder/sample-programs/issues/1219

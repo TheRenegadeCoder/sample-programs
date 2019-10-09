@@ -11,6 +11,7 @@ Welcome to Sample Programs in C++!
 - [File Input/Output in C++](https://therenegadecoder.com/code/file-io-in-c-plus-plus/)
 - [Fizz Buzz in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1238)
 - [Hello World in C++](https://therenegadecoder.com/code/hello-world-in-c-plus-plus/)
+- [Insertion Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1240)
 - [Reverse String in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/419)
 
 ## Fun Facts
