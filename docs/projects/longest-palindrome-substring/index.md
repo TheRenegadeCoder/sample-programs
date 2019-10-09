@@ -5,7 +5,7 @@ date: 2019-10-08
 last-modified: 2018-10-09
 featured-image:
 tags: [longest-palindrome-substring]
-authors: Sayantan Paul(https://github.com/belikesayantan)
+authors: Sayantan Paul
 ---
 Given a string, we need to find the smallest substring inside the main string which is a palindrome.
 Palindrome is a phenomenon, where a string has same sequence of letters when read start --> end and end --> start.
