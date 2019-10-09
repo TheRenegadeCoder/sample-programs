@@ -1,10 +1,27 @@
-#include <iostream>
-#define num 1000000
-using namespace std;
+#include <iostream> 
+#include <sstream> 
+#include <string>
+#include <vector>
+using namespace std; 
 
-void insertion_sort(int arr[], int n){
-    int t,j;
-    for(int i=1;i<n;i++){
+void insertion_sort(string str, vector<int> arr) 
+{ 
+	stringstream ss;	 
+	ss << str; 
+	string temp; 
+	int found; 
+	while (!ss.eof()) 
+	{ 
+		ss >> temp; 
+		if (stringstream(temp) >> found) 
+		{
+		    arr.push_back(found);
+		}
+		temp = ""; 
+	} 
+	
+	int t,j;
+    for(int i=1;i<arr.size();i++){
         t = arr[i];
         j = i-1;
         while(j >= 0 && t<=arr[j]){
@@ -13,31 +30,18 @@ void insertion_sort(int arr[], int n){
         }
         arr[j+1] = t;
     }
-}
-
-void show(int arr[], int n)  
-{  
+    
     int i;  
-    for (i = 0; i < n; i++)  
+    for (i = 0; i < arr.size(); i++)  
         cout << arr[i] << " ";  
-    cout << endl; 
+    cout << endl;
 } 
 
-int main()  
-{  
-    int n;  
-    cout<<"Enter the length of the array ";
-    cin>>n;
-    cout<<endl;
-    int arr[num];
-    for(int i=0;i<n;i++){
-        cin>>arr[i];
-    }
-  
-    insertion_sort(arr, n);   
-    
-    cout<<endl;
-    show(arr,n);
-  
-    return 0;  
-}  
+int main() 
+{ 
+	string str;
+	vector<int>arr;
+	getline (cin, str); 
+	insertion_sort(str,arr); 
+	return 0; 
+} 
