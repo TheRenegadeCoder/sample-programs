@@ -29,5 +29,10 @@ def longestPalindrome(string):
 
 if __name__ == '__main__':
     string = str(input("Enter String: "))
+    if string == "" and string == None:
+        print("Incorrect input provided. Program Terminated")
     sub = longestPalindrome(string)
-    print("Longest Palindromic Substring is: {}".format(sub))
+    if len(sub) == 1:
+        print("No Palindromic substring present.")
+    else:
+        print("Longest Palindromic Substring is: {}".format(sub))
