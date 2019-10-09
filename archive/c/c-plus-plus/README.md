@@ -5,6 +5,7 @@ Welcome to Sample Programs in C++!
 ## Sample Programs
 
 - [Bubble Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1135)
+- [Capitalize in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1234)
 - [Even Odd in C++](https://sample-programs.therenegadecoder.com/projects/even-odd/)
 - [Factorial in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1237)
 - [Fibonacci Sequence in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/496)
