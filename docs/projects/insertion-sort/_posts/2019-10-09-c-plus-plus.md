@@ -16,19 +16,10 @@ Let's first take a look at the solution. Then, we'll walk through each line of c
 
 ```c++
 #include <iostream> 
-```
-```c++
 #include <sstream> 
-```
-```c++
 #include <string>
-```
-```c++
 #include <vector>
-```
-```c++
 using namespace std;
-```
 
 void insertion_sort(string str, vector<int> arr) 
 { 
@@ -81,17 +72,9 @@ In our sample, we include a single standard library utility:
 
 ```c++
 #include <iostream> 
-```
-```c++
 #include <sstream> 
-```
-```c++
 #include <string>
-```
-```c++
 #include <vector>
-```
-```c++
 using namespace std;
 ```
 
@@ -103,7 +86,6 @@ In our sample, this function is responsible for sorting the array according
 to the insertion sort algorithm:
 
 ```c++
-
 void insertion_sort(string str, vector<int> arr) 
 { 
 
@@ -142,7 +124,6 @@ void insertion_sort(string str, vector<int> arr)
 Following are the explanation for the respective code snippets.
 
 ```c++
-
     stringstream ss;	 
 	ss << str; 
 	string temp; 
@@ -162,7 +143,6 @@ This section is responsible for extracting the numbers from the string and addin
 so that easy iterative approach to insertion sort can be used.
 
 ```c++
-
     int t,j;
     for(int i=1;i<arr.size();i++){
         t = arr[i];
@@ -194,12 +174,10 @@ This process continues until the array unsorted array size is reduced to zero.
 It's quite self-explanatory that it displays the new altered array:
 
 ```c++
-
     int i;  
     for (i = 0; i < n; i++)  
         cout << arr[i] << " ";  
     cout << endl; 
-
 ```
 It takes the altered array and then prints it by iterating through it.
 
