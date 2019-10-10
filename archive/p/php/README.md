@@ -12,6 +12,7 @@ Welcome to Sample Programs in PHP!
 - [Fibonacci in PHP][9]
 - [String Reverse in PHP][10]
 - [Palindrome Word in PHP][11]
+- [Factorial in PHP][13]
 
 ## Fun Facts
 
@@ -39,3 +40,4 @@ Welcome to Sample Programs in PHP!
 [10]: https://github.com/TheRenegadeCoder/sample-programs/issues/1117
 [11]: https://github.com/TheRenegadeCoder/sample-programs/issues/1121
 [12]: https://github.com/TheRenegadeCoder/sample-programs/issues/1175
+[13]: https://github.com/TheRenegadeCoder/sample-programs/issues/1520
