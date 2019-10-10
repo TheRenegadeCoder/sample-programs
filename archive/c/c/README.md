@@ -46,4 +46,4 @@ Welcome to Sample Programs in C!
 [12]: https://github.com/TheRenegadeCoder/sample-programs/issues/628
 [14]: https://github.com/TheRenegadeCoder/sample-programs/issues/942
 [15]: https://github.com/TheRenegadeCoder/sample-programs/issues/1273
-[16]: https://github.com/TheRenegadeCoder/sample-programs/issues/1270
+[16]: https://en.wikipedia.org/wiki/ROT13
