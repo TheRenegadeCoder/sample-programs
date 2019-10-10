@@ -15,6 +15,8 @@ Welcome to Sample Programs in C!
 - [Factorial in C][13]
 - [Convex Hull in C][12]
 - [Bubble Sort][14]
+- [Capitalize in C][15]
+- [ROT-13 in C][16]
 
 ## Fun Facts
 
@@ -27,6 +29,7 @@ Welcome to Sample Programs in C!
 - [C Wiki][7]
 - [GNU C Reference Manual][8]
 - [Online C Compiler][9]
+- [ROT13 Wiki][16]
 
 [1]: https://github.com/toturkmen/baklava
 [2]: https://therenegadecoder.com/code/hello-world-in-c/
@@ -42,3 +45,5 @@ Welcome to Sample Programs in C!
 [13]: https://github.com/TheRenegadeCoder/sample-programs/issues/631
 [12]: https://github.com/TheRenegadeCoder/sample-programs/issues/628
 [14]: https://github.com/TheRenegadeCoder/sample-programs/issues/942
+[15]: https://github.com/TheRenegadeCoder/sample-programs/issues/1273
+[16]: https://en.wikipedia.org/wiki/ROT13
