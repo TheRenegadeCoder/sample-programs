@@ -14,12 +14,12 @@ char *captialize(char str[]) {
 }
 
 int main(int argc, char *argv[]) {
-    if(argc == 2 && !isdigit(*argv[1])) {
-        printf("Result: %s\n", captialize(argv[1]));
+    if(argc == 2 && strlen(argv[1]) != 0 && !isdigit(*argv[1])) {
+        printf("%s\n", captialize(argv[1]));
     } else if(argc > 2) {
         printf("Use quotes around multiple strings.\n");
     } else {
-        printf("Expected a string argument.\n");
+        printf("Usage: provide a string\n");
     }
 
     return 0;

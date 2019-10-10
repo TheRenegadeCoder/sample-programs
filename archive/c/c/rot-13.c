@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include <ctype.h>
 
 void rot13(char *str) {
@@ -13,11 +14,9 @@ void rot13(char *str) {
 }
 
 int main(int argc, char *argv[]) {
-    if(argc == 2 && !isdigit(*argv[1])) {
+    if(argc == 2 && strlen(argv[1]) != 0 && !isdigit(*argv[1])) {
         rot13(argv[1]);
-        printf("Result: %s\n", argv[1]);
-    } else if(argc > 2) {
-        printf("Use quotes around multiple strings.\n");
+        printf("%s\n", argv[1]);
     } else {
         printf("Usage: please provide a string to encrypt.\n");
     }
