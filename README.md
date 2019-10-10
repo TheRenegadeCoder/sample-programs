@@ -24,6 +24,7 @@ At any rate, if articles sound interesting, here are a few to get you started:
 - [Hello World in Every Language][2]
 - [Reverse a String in Every Language][3]
 - [The Coolest Programming Language Features][4]
+- [Longest Palindromic Substring in Every Language][16]
 
 Alternatively, feel free to leverage the links in the README files spread throughout the repository.
 In addition, we have a rather extensive [wiki][5] which includes a table row for every language
@@ -84,3 +85,4 @@ Thanks for your support! :relaxed:
 [13]: https://help.getadblock.com/support/solutions/articles/6000163989-how-do-i-pause-or-disable-adblock-
 [14]: https://twitter.com/RenegadeCoder94
 [15]: https://gitter.im/TheRenegadeCoder/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link
+[16]: https://therenegadecoder.com/code/longest-palindrome-substring-in-every-language/

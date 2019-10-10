@@ -18,6 +18,7 @@ Welcome to Sample Programs in Python!
 - [Insertion Sort in Python][34]
 - [Job Sequencing with Deadlines in Python][30]
 - [Longest Common Subsequence][26]
+- [Longest Palindromic Subsequence][42]
 - [Merge Sort in Python][35]
 - [Prime Number in Python][36]
 - [Quick Sort in Python][37]
