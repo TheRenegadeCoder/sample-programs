@@ -4,8 +4,9 @@ Welcome to Sample Programs in Lua!
 
 ## Sample Programs
 
-- [Hello World in Lua][2]
+- [Factorial in Lua][6]
 - [Fizz Buzz in Lua][1]
+- [Hello World in Lua][2]
 - [Reverse a String in Lua][5]
 
 ## Fun Facts
@@ -24,3 +25,4 @@ Welcome to Sample Programs in Lua!
 [3]: https://en.wikipedia.org/wiki/Lua_(programming_language)
 [4]: https://www.lua.org/
 [5]: https://github.com/TheRenegadeCoder/sample-programs/issues/446
+[6]: https://github.com/TheRenegadeCoder/sample-programs/issues/1435
