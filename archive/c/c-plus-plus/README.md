@@ -11,6 +11,7 @@ Welcome to Sample Programs in C++!
 - [Fibonacci Sequence in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/496)
 - [File Input/Output in C++](https://therenegadecoder.com/code/file-io-in-c-plus-plus/)
 - [Fizz Buzz in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1238)
+- [Game of Life in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1239)
 - [Hello World in C++](https://therenegadecoder.com/code/hello-world-in-c-plus-plus/)
 - [Insertion Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1240)
 - [Reverse String in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/419)
@@ -27,3 +28,5 @@ Welcome to Sample Programs in C++!
 - [CPlusPlus Docs for the C++ language and standard library](http://www.cplusplus.com/)
 - [Cppreference C++ Docs](https://en.cppreference.com/w/cpp)
 - [C++ Online Compiler](http://cpp.sh/)
+- [Game of life wiki](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
+- [Mario Talevski project](https://github.com/MarioTalevski/game-of-life)
