@@ -11,6 +11,7 @@ Welcome to Sample Programs in Java!
 - [Fizz Buzz in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/400)
 - [Game of Life in Java](https://github.com/jrg94/sample-programs/issues/108)
 - [Hello World in Java](https://therenegadecoder.com/code/hello-world-in-java/)
+- [Quine in Java](https://github.com/jrg94/sample-programs/issues/1374)
 - [Reverse a String in Java](https://therenegadecoder.com/code/java/reverse-a-string-in-java/)
 
 ## Fun Facts
