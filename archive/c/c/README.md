@@ -43,3 +43,4 @@ Welcome to Sample Programs in C!
 [13]: https://github.com/TheRenegadeCoder/sample-programs/issues/631
 [12]: https://github.com/TheRenegadeCoder/sample-programs/issues/628
 [14]: https://github.com/TheRenegadeCoder/sample-programs/issues/942
+[15]: https://github.com/TheRenegadeCoder/sample-programs/issues/1273
