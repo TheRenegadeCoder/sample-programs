@@ -18,7 +18,7 @@ int main(int argc, char *argv[]) {
         rot13(argv[1]);
         printf("%s\n", argv[1]);
     } else {
-        printf("Usage: please provide a string to encrypt.\n");
+        printf("Usage: please provide a string to encrypt\n");
     }
     
     return 0;
