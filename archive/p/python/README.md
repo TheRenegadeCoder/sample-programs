@@ -7,7 +7,7 @@ Welcome to Sample Programs in Python!
 - [Baklava in Python][22]
   - Solution borrowed from @erayak via the [baklava repo][21]
 - [Bubble Sort in Python][31]
-- [Capitalize in Python](capitalize.py)
+- Capitalize in Python
 - [Even Odd in Python][32]
 - [Factorial in Python][33]
 - [Fibonacci Sequence in Python][24]
