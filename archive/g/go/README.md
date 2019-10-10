@@ -7,6 +7,7 @@ Welcome to Sample Programs in Go!
 - [Baklava in Go][7]
   - Solution borrowed from @toturkmen via the [baklava repo][1]
 - [Bubble Sort in Go][16]
+- [Capitalize in Go][27]
 - [Even Odd in Go][11]
 - [Factorial in Go][12]
 - [Fibonacci in Go][14]
@@ -65,3 +66,4 @@ Welcome to Sample Programs in Go!
 [24]: http://rosettacode.org/wiki/Quine#Go
 [25]: https://github.com/TheRenegadeCoder/sample-programs/issues/1011
 [26]: https://github.com/TheRenegadeCoder/sample-programs/issues/1014
+[27]: https://github.com/TheRenegadeCoder/sample-programs/issues/1331
