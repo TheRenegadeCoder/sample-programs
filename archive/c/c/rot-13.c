@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <string.h>
+#include <ctype.h>
 
 void rot13(char *str) {
     for(int i = 0; str[i] != '\0'; i++) {
@@ -13,7 +13,7 @@ void rot13(char *str) {
 }
 
 int main(int argc, char *argv[]) {
-    if(argc == 2) {
+    if(argc == 2 && !isdigit(*argv[1])) {
         rot13(argv[1]);
         printf("Result: %s\n", argv[1]);
     } else if(argc > 2) {
