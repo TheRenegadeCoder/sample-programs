@@ -1,0 +1,1 @@
+public class Quine {public static void main(String[] args) {String s = "public class Quine {public static void main(String[] args) {String s = %r; System.out.printf(\"%s\", s);}}"; System.out.printf("%s", s);}}
