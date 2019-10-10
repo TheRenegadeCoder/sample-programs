@@ -15,6 +15,7 @@ Welcome to Sample Programs in C!
 - [Factorial in C][13]
 - [Convex Hull in C][12]
 - [Bubble Sort][14]
+- [Capitalize in C][15]
 
 ## Fun Facts
 
