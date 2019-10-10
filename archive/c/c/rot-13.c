@@ -20,4 +20,6 @@ int main(int argc, char *argv[]) {
     } else {
         printf("Usage: please provide a string to encrypt.\n");
     }
+    
+    return 0;
 }
