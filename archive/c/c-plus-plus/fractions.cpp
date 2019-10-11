@@ -1,4 +1,5 @@
 #include<iostream>
+#include<string>
 using namespace std;
 
 int gcd(int a, int b){
@@ -209,16 +210,64 @@ bool operator !=(const Fraction f1, const Fraction f2){
     return !(f1 == f2);
 }
 
-int main(){
+Fraction fromstr(string s){
+    int idx = s.find("/");
+    if(idx != string::npos){
+        string top = s.substr(0, idx);
+        string bottom = s.substr(idx+1);
+        int p = stoi(top);
+        int q = stoi(bottom);
+        return Fraction(p, q);
+    }
+    return Fraction(stoi(s));
+}
+
+int main(int argc, char const *argv[]){
     // Testing above class methods
-    Fraction f1(6, 2);
-    Fraction f2(1, 4);
-    cout<<-f1<<endl;
-    f1 += f2;
-    cout<<f1+f2<<endl;
-    cout<<f1*f2<<endl;
-    cout<<f1-f2<<endl;
-    cout<<f1/f2<<endl;
-    cout<<(f1 <= f2)<<endl;
+    if(argc != 4){
+        cout<<"Usage: "<< argv[0]<<"operand1 operator operand2";
+        exit(1);
+    }
+    string s1(argv[1]);
+    string op(argv[2]);
+    string s2(argv[3]);
+
+    Fraction o1 = fromstr(s1);
+    Fraction o2 = fromstr(s2);
+
+    if(op == "+"){
+        cout<< (o1 + o2) << endl;
+    }
+    else if(op == "-"){
+        cout<< (o1 - o2) << endl;
+    }
+    else if(op == "*"){
+        cout<< (o1 * o2) << endl;
+    }
+    else if(op == "/"){
+        cout<< (o1 / o2) << endl;
+    }
+    else if(op == "=="){
+        cout<< (o1 == o2) << endl;
+    }
+    else if(op == "!="){
+        cout<< (o1 != o2) << endl;
+    }
+    else if(op == ">"){
+        cout<< (o1 > o2) << endl;
+    }
+    else if(op == "<"){
+        cout<< (o1 < o2) << endl;
+    }
+    else if(op == ">="){
+        cout<< (o1 >= o2) << endl;
+    }
+    else if(op == "<="){
+        cout<< (o1 <= o2) << endl;
+    }
+    else{
+        cout<<"Error: Invalid operand "<<op<<endl;
+        exit(1);
+    }
     return 0;
 }

@@ -17,6 +17,7 @@ Let's first take a look at the solution.
 
 ```c++
 #include<iostream>
+#include<string>
 using namespace std;
 
 int gcd(int a, int b){
@@ -227,19 +228,68 @@ bool operator !=(const Fraction f1, const Fraction f2){
     return !(f1 == f2);
 }
 
-int main(){
+Fraction fromstr(string s){
+    int idx = s.find("/");
+    if(idx != string::npos){
+        string top = s.substr(0, idx);
+        string bottom = s.substr(idx+1);
+        int p = stoi(top);
+        int q = stoi(bottom);
+        return Fraction(p, q);
+    }
+    return Fraction(stoi(s));
+}
+
+int main(int argc, char const *argv[]){
     // Testing above class methods
-    Fraction f1(6, 2);
-    Fraction f2(1, 4);
-    cout<<-f1<<endl;
-    f1 += f2;
-    cout<<f1+f2<<endl;
-    cout<<f1*f2<<endl;
-    cout<<f1-f2<<endl;
-    cout<<f1/f2<<endl;
-    cout<<(f1 <= f2)<<endl;
+    if(argc != 4){
+        cout<<"Usage: "<< argv[0]<<"operand1 operator operand2";
+        exit(1);
+    }
+    string s1(argv[1]);
+    string op(argv[2]);
+    string s2(argv[3]);
+
+    Fraction o1 = fromstr(s1);
+    Fraction o2 = fromstr(s2);
+
+    if(op == "+"){
+        cout<< (o1 + o2) << endl;
+    }
+    else if(op == "-"){
+        cout<< (o1 - o2) << endl;
+    }
+    else if(op == "*"){
+        cout<< (o1 * o2) << endl;
+    }
+    else if(op == "/"){
+        cout<< (o1 / o2) << endl;
+    }
+    else if(op == "=="){
+        cout<< (o1 == o2) << endl;
+    }
+    else if(op == "!="){
+        cout<< (o1 != o2) << endl;
+    }
+    else if(op == ">"){
+        cout<< (o1 > o2) << endl;
+    }
+    else if(op == "<"){
+        cout<< (o1 < o2) << endl;
+    }
+    else if(op == ">="){
+        cout<< (o1 >= o2) << endl;
+    }
+    else if(op == "<="){
+        cout<< (o1 <= o2) << endl;
+    }
+    else{
+        cout<<"Error: Invalid operand "<<op<<endl;
+        exit(1);
+    }
     return 0;
 }
+
 ```
 
 Here, we defined the `Fraction` class which we'll use to provide new data type for working with fractions.
@@ -249,3 +299,6 @@ bottom will be assigned to denometor.Here we checks if denometor is zeros then w
 negative then we negate top and bottom before assigning them.
 We also have to implement getters for this Class and a method for unary operator `-`.
 We also have to implement friend functions(one can use normal method) for binary operators like +, -, >=, == etc.
+We also have to implement a function to covert string in Fraction type.
+Now in main function we are taking input from shell as arguments
+Usage: `./fractions "2/3" + "8/9"` In general `./fractions "op1" "operator" "op2"`
