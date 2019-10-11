@@ -35,11 +35,14 @@ function romanNumeralConversion(romanNumeral) {
     }
   }
 
-  // Adding (or subtracting) the values
+  // Calculating result (adding/subtracting)
   // 
   // Note: next will be undefined for the last element, it'll
   // still work though since 'any number' < undefined will
   // be false ... hacky - but works!
+  //
+  // Note 2: This does not account for wrongly formatted
+  // Roman Numerals like IIIIIIIIIX
 
   let answer = 0;
 
@@ -54,3 +57,13 @@ function romanNumeralConversion(romanNumeral) {
 
   return answer;
 }
+
+
+// CLI use needs to have node.js installed
+// Run like so:
+//   node roman-numeral.js I II III XXV XIV "" HI 700
+
+// Arguments from CLI
+var args = process.argv.slice(2);
+// Print out result of all arguments
+args.forEach(arg => console.log(romanNumeralConversion(arg)));
