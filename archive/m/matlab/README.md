@@ -5,7 +5,7 @@ Welcome to Sample Programs in MATLAB!
 ## Sample Programs
 
 - [Hello World in MATLAB](https://therenegadecoder.com/code/hello-world-in-matlab/)
-- [Odd Even in MATLAB](odd_even.m)
+- Odd Even in MATLAB
 
 ## Fun Facts
 
