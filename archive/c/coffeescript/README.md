@@ -5,6 +5,7 @@ Welcome to Sample Programs in CoffeeScript!
 ## Sample Programs
 
 - [Hello World in CoffeeScript](https://github.com/TheRenegadeCoder/sample-programs/issues/924)
+- [Factorial in CoffeeScript](https://github.com/TheRenegadeCoder/sample-programs/issues/1316)
 
 ## Fun Facts
 
