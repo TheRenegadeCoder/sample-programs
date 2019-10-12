@@ -7,6 +7,7 @@ Welcome to Sample Programs in C#!
 - [Baklava in C#][8]
   - Solution borrowed from @toturkmen via the [baklava repo][1]
 - [Bubble Sort in C#][11]
+- [Capitalize in C#][23]
 - [Even Odd in C#][12]
 - [Factorial in C#][13]
 - [File IO in C#][14]
@@ -58,3 +59,4 @@ Welcome to Sample Programs in C#!
 [20]: https://rosettacode.org/wiki/Quine#C.23
 [21]: https://github.com/TheRenegadeCoder/sample-programs/issues/914
 [22]: https://github.com/TheRenegadeCoder/sample-programs/issues/917
+[23]: https://github.com/TheRenegadeCoder/sample-programs/issues/1280
