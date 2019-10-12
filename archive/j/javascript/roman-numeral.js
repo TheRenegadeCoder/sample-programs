@@ -63,7 +63,14 @@ function romanNumeralConversion(romanNumeral) {
 // Run like so:
 //   node roman-numeral.js I II III XXV XIV "" HI 700
 
-// Arguments from CLI
+
+// Process arguments from CLI
+
 var args = process.argv.slice(2);
-// Print out result of all arguments
-args.forEach(arg => console.log(romanNumeralConversion(arg)));
+
+if (args.length < 1) {
+  console.log(romanNumeralConversion());
+} else {
+  args.forEach(arg => console.log(romanNumeralConversion(arg)));
+}
+
