@@ -5,6 +5,7 @@ Welcome to Sample Programs in Java!
 ## Sample Programs
 
 - [Baklava in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/934)
+- [Bubble Sort in Java] (https://github.com/TheRenegadeCoder/sample-programs/issues/1363)
 - [Even Odd in Java](https://github.com/jrg94/sample-programs/issues/937)
 - [Factorial in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/931)
 - [Fibonacci in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/483)
@@ -12,6 +13,7 @@ Welcome to Sample Programs in Java!
 - [Game of Life in Java](https://github.com/jrg94/sample-programs/issues/108)
 - [Hello World in Java](https://therenegadecoder.com/code/hello-world-in-java/)
 - [Reverse a String in Java](https://therenegadecoder.com/code/java/reverse-a-string-in-java/)
+
 
 ## Fun Facts
 
