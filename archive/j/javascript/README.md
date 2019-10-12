@@ -9,11 +9,12 @@ Welcome to Sample Programs in JavaScript!
 - [Fizz Buzz in JavaScript][4]
 - [Baklava in JavaScript][8]
   - Solution borrowed from @toturkmen via the [baklava repo][1]
+- Even Odd in JavaScript
 - [Factorial in JavaScript][15]
 - [Fibonacci in JavaScript][9]
 - File IO in JavaScript
 - [Capitalize in JavaScript][12]
-- [Insertion sort in javascript][16]
+- [Insertion sort in JavaScript][16]
 - [Import in JavaScript][13]
 - [Export in JavaScript][13]
 - [Prime Number in JavaScript][14]
