@@ -13,17 +13,15 @@ public class BubbleSortClass
 
    // If capacity is not given by user
    static final int DEFAULT_CAPACITY = 10;
-<<<<<<< HEAD
+
 
     // sets capacity
    private static final int INIT_CAPACITY = 75;
 
-=======
    
     // sets capacity
    private static final int INIT_CAPACITY = 75;
    
->>>>>>> eb2593e4569c75302ea5963a4d7c864c0863cefc
    // Array to hold numbers to be sorted
    int[] bubbleArray;
 
@@ -156,51 +154,5 @@ public class BubbleSortClass
         
         System.out.println();
        }
-   
-
-
-<<<<<<< HEAD
-    public static void main(String[] args) 
-   {
-
-      BubbleSortClass bubble = new BubbleSortClass();
-      int[] bubbleList = new int[ INIT_CAPACITY ];
-       // controls how many numbers you want to put in
-      int listSize = 8;
-
-       // adds numbers to array
-      bubble.addInt(3);
-      bubble.addInt(7);
-      bubble.addInt(8);
-      bubble.addInt(2);
-      bubble.addInt(6);
-      bubble.addInt(9);
-      bubble.addInt(11);
-      bubble.addInt(3);
-      bubbleList = bubble.runBubbleSort();
-       printList( bubbleList, listSize );
-
-
-
-   }
-
-    public static void printList( int[] intList, int size )
-       {
-        int index;
-
-        System.out.println( "Int List: " );
-
-        for( index = 0; index < size; index++ )
-           {
-            System.out.println( intList[ index ] );
-           }
-
-        System.out.println();
-       }
-
-
-
 }
-=======
-}
->>>>>>> eb2593e4569c75302ea5963a4d7c864c0863cefc
+
