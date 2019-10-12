@@ -5,7 +5,9 @@ date: 2019-03-31
 last-modified: 2019-03-31
 featured-image:
 tags: [capitalize]
-authors: [daniellunsc]
+authors: 
+ - daniellunsc
+ - the_renegade_coder
 ---
 
 In this article, we'll tackle the Capitalize program, its requirements, and how
@@ -28,12 +30,19 @@ a long string term -> A long string term
 ```
 
 In addition, there should be some error handling for situations where the user
-doesn't input any string or the content passed to function is not a string(i.e number, float or object)
+doesn't input a string.
 
 ## Testing
 
-Verify that the actual output matches the expected output. See the
-[requirements][1] section for an example of the expected output.
+Feel free to use the following table when testing capitalize programs
+
+| Description | Input | Output |
+|-------------|-------|--------|
+| No input | | "Usage: provide a string" |
+| Lowercase String | "hello" | "Hello" |
+| Uppercase String | "Hello" | "Hello" |
+| Long String | "hello world" | "Hello world" |
+| Symbols | "12345" | "12345" |
 
 ## Articles
 

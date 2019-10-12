@@ -24,6 +24,7 @@ At any rate, if articles sound interesting, here are a few to get you started:
 - [Hello World in Every Language][2]
 - [Reverse a String in Every Language][3]
 - [The Coolest Programming Language Features][4]
+- [Longest Palindromic Substring in Every Language][16]
 
 Alternatively, feel free to leverage the links in the README files spread throughout the repository.
 In addition, we have a rather extensive [wiki][5] which includes a table row for every language
@@ -60,7 +61,9 @@ a part of my website, [The Renegade Coder][10]. If you're looking to support The
 
 As a bit of a summary, here are a few links you can use to support this project:
 
-- [Subscribe to the The Renegade Coder][7]
+- Subscribe to the The Renegade Coder
+  - [Patreon][7]
+  - [Newsletter][17]
 - [Support via PayPal][12]
 - [Turn off AdBlock When Using The Renegade Coder][13]
 - [Comment & Share Articles][0]
@@ -75,7 +78,7 @@ Thanks for your support! :relaxed:
 [4]: https://therenegadecoder.com/blog/the-coolest-programming-language-features/
 [5]: https://github.com/jrg94/sample-programs/wiki
 [6]: https://github.com/jrg94/sample-programs/blob/master/.github/CONTRIBUTING.md
-[7]: https://therenegadecoder.com/members/registration/
+[7]: https://www.patreon.com/TheRenegadeCoder
 [8]: https://github.com/jrg94/sample-programs/blob/master/.github/CODE_OF_CONDUCT.md
 [9]: https://github.com/jrg94/sample-programs/blob/master/LICENSE
 [10]: https://therenegadecoder.com/
@@ -84,3 +87,5 @@ Thanks for your support! :relaxed:
 [13]: https://help.getadblock.com/support/solutions/articles/6000163989-how-do-i-pause-or-disable-adblock-
 [14]: https://twitter.com/RenegadeCoder94
 [15]: https://gitter.im/TheRenegadeCoder/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link
+[16]: https://therenegadecoder.com/code/longest-palindrome-substring-in-every-language/
+[17]: https://newsletter.therenegadecoder.com/

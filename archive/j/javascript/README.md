@@ -9,8 +9,11 @@ Welcome to Sample Programs in JavaScript!
 - [Fizz Buzz in JavaScript][4]
 - [Baklava in JavaScript][8]
   - Solution borrowed from @toturkmen via the [baklava repo][1]
+- [Factorial in JavaScript][15]
 - [Fibonacci in JavaScript][9]
+- File IO in JavaScript
 - [Capitalize in JavaScript][12]
+- [Insertion sort in javascript][16]
 - [Import in JavaScript][13]
 - [Export in JavaScript][13]
 - [Prime Number in JavaScript][14]
@@ -42,3 +45,5 @@ Welcome to Sample Programs in JavaScript!
 [12]: https://github.com/TheRenegadeCoder/sample-programs/issues/1067
 [13]: https://github.com/TheRenegadeCoder/sample-programs/issues/1178
 [14]: https://github.com/TheRenegadeCoder/sample-programs/issues/1191
+[15]: https://github.com/TheRenegadeCoder/sample-programs/issues/1383
+[16]: https://github.com/TheRenegadeCoder/sample-programs/issues/1382
