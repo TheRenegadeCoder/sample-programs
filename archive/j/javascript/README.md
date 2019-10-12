@@ -11,11 +11,13 @@ Welcome to Sample Programs in JavaScript!
   - Solution borrowed from @toturkmen via the [baklava repo][1]
 - [Factorial in JavaScript][15]
 - [Fibonacci in JavaScript][9]
+- File IO in JavaScript
 - [Capitalize in JavaScript][12]
+- [Insertion sort in javascript][16]
 - [Import in JavaScript][13]
 - [Export in JavaScript][13]
 - [Prime Number in JavaScript][14]
-- [Roman Numeral Conversion in JavaScript][16]
+- [Roman Numeral Conversion in JavaScript][17]
 
 ## Fun Facts
 
@@ -45,4 +47,5 @@ Welcome to Sample Programs in JavaScript!
 [13]: https://github.com/TheRenegadeCoder/sample-programs/issues/1178
 [14]: https://github.com/TheRenegadeCoder/sample-programs/issues/1191
 [15]: https://github.com/TheRenegadeCoder/sample-programs/issues/1383
-[16]: https://github.com/TheRenegadeCoder/sample-programs/issues/1391
+[16]: https://github.com/TheRenegadeCoder/sample-programs/issues/1382
+[17]: https://github.com/TheRenegadeCoder/sample-programs/issues/1391
