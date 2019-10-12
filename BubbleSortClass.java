@@ -13,17 +13,13 @@ public class BubbleSortClass
 
    // If capacity is not given by user
    static final int DEFAULT_CAPACITY = 10;
-<<<<<<< HEAD
 
     // sets capacity
    private static final int INIT_CAPACITY = 75;
 
-=======
-   
     // sets capacity
    private static final int INIT_CAPACITY = 75;
    
->>>>>>> eb2593e4569c75302ea5963a4d7c864c0863cefc
    // Array to hold numbers to be sorted
    int[] bubbleArray;
 
