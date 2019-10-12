@@ -14,7 +14,6 @@ Welcome to Sample Programs in Java!
 - [Hello World in Java](https://therenegadecoder.com/code/hello-world-in-java/)
 - [Reverse a String in Java](https://therenegadecoder.com/code/java/reverse-a-string-in-java/)
 
-
 ## Fun Facts
 
 - Debut: 1995
