@@ -7,6 +7,7 @@ Welcome to Sample Programs in Python!
 - [Baklava in Python][22]
   - Solution borrowed from @erayak via the [baklava repo][21]
 - [Bubble Sort in Python][31]
+- Capitalize in Python
 - [Even Odd in Python][32]
 - [Factorial in Python][33]
 - [Fibonacci Sequence in Python][24]
@@ -17,6 +18,7 @@ Welcome to Sample Programs in Python!
 - [Insertion Sort in Python][34]
 - [Job Sequencing with Deadlines in Python][30]
 - [Longest Common Subsequence][26]
+- [Longest Palindromic Subsequence][42]
 - [Merge Sort in Python][35]
 - [Prime Number in Python][36]
 - [Quick Sort in Python][37]
