@@ -25,6 +25,7 @@ At any rate, if articles sound interesting, here are a few to get you started:
 - [Reverse a String in Every Language][3]
 - [The Coolest Programming Language Features][4]
 - [Longest Palindromic Substring in Every Language][16]
+- https://therenegadecoder.com/code/fizz-buzz-in-every-language/
 
 Alternatively, feel free to leverage the links in the README files spread throughout the repository.
 In addition, we have a rather extensive [wiki][5] which includes a table row for every language
