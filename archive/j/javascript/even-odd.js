@@ -1,4 +1,4 @@
-const input = Number(process.argv[2]); //coerce the input into a number if possible
+const input = process.argv[2] != '' ? Number(process.argv[2]) : null; //coerce the input into a number, ignore empty string
 if(!Number.isInteger(input)){ //if there is no input, input = undefined and the statement still prints
     console.log('Usage: please input a number');
 } else {
