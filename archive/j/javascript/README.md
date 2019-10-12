@@ -17,6 +17,7 @@ Welcome to Sample Programs in JavaScript!
 - [Import in JavaScript][13]
 - [Export in JavaScript][13]
 - [Prime Number in JavaScript][14]
+- [Roman Numeral Conversion in JavaScript][17]
 
 ## Fun Facts
 
@@ -47,3 +48,4 @@ Welcome to Sample Programs in JavaScript!
 [14]: https://github.com/TheRenegadeCoder/sample-programs/issues/1191
 [15]: https://github.com/TheRenegadeCoder/sample-programs/issues/1383
 [16]: https://github.com/TheRenegadeCoder/sample-programs/issues/1382
+[17]: https://github.com/TheRenegadeCoder/sample-programs/issues/1391
