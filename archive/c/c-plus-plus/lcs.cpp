@@ -74,9 +74,10 @@ void longest_common_subsequence(vector<string> arr1, vector<string> arr2){
         	}
     	} 
 
-    	for(int i=0;i<array_of_lcs.size();i++){               //printing the lcs.
+    	for(int i=0;i<array_of_lcs.size()-1;i++){               //printing the lcs.
         	cout<<array_of_lcs[i]<<",";
     	}
+	cout<<array_of_lcs[array_of_lcs.size()-1]<<endl;         //printing the last element of lcs.
 
 }
 
@@ -85,7 +86,7 @@ void longest_common_subsequence(vector<string> arr1, vector<string> arr2){
 int main(int argc,char *argv[]) 
 {   
     	//In case there is no input, empty input or only single input.
-    	if (argc < 3 || std::string(argv[1]) == "")                  
+    	if (!(argc> 2 && std::string(argv[1]) != "" && std:: string(argv[2])!=""))                  
     	{
         	cout << "Usage: please provide two lists in the format “1, 2, 3, 4, 5”" << endl;
         	return 1;
