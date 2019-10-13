@@ -2,8 +2,6 @@
 
 class GetDnsRecords
 {
-    protected $domain = 'google.com';
-
     protected $types = [
         'A' => DNS_A,
         'NS' => DNS_NS,
@@ -11,11 +9,11 @@ class GetDnsRecords
         'SOA' => DNS_SOA
     ];
 
-    public function getAllRecords()
+    public function getAllRecords($domain)
     {
         $records = [];
         foreach ($this->types as $key => $type) {
-            $records[$key] = dns_get_record($this->domain,$type);
+            $records[$key] = dns_get_record($domain,$type);
         }
 
         echo $records;
