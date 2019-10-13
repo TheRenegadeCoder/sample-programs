@@ -1,5 +1,5 @@
 import java.util.*;
-public class longestCommonSubsequence{
+public class lcs{
 
     //A function to get the input string from the command line and form a array-list of elements from it.
     static ArrayList<String> split_strings(String str)         
