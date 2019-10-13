@@ -22,7 +22,7 @@ vector<string> splitStrings(string str)
 		word = word + str[i];               // character then accumulate it to 'word'                          
 	else { 
             	if ((int)word.size() != 0)                    // if 'word' is not an empty string, 
-			ubstr_list.push_back(word);              // then add this 'word' to the array 
+			substr_list.push_back(word);              // then add this to the array 
 			                                                // 'substr_list[]' 
 			// reset 'word' 
 			word = "";
