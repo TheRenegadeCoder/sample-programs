@@ -12,7 +12,7 @@ Welcome to Sample Programs in Java!
 - [Game of Life in Java](https://github.com/jrg94/sample-programs/issues/108)
 - [Hello World in Java](https://therenegadecoder.com/code/hello-world-in-java/)
 - [Reverse a String in Java](https://therenegadecoder.com/code/java/reverse-a-string-in-java/)
-- [Longest Common Sub Sequence](https://github.com/TheRenegadeCoder/sample-programs/issues/1364)
+- [Longest Common Sub Sequence in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/1364)
 - [Capitalize a String in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/1366)
 
 ## Fun Facts 
