@@ -16,6 +16,7 @@ Welcome to Sample Programs in PHP!
 - [Palindrome Word in PHP][11]
 - [ROT13 in PHP][15]
 - [String Reverse in PHP][10]
+- [Insertion Sort in PHP][17]
 
 ## Fun Facts
 
@@ -47,3 +48,4 @@ Welcome to Sample Programs in PHP!
 [14]: https://www.w3resource.com/php-exercises/searching-and-sorting-algorithm/searching-and-sorting-algorithm-exercise-17.php
 [15]: https://github.com/TheRenegadeCoder/sample-programs/issues/1530
 [16]: https://github.com/TheRenegadeCoder/sample-programs/issues/1533
+[17]: https://github.com/TheRenegadeCoder/sample-programs/issues/1524
