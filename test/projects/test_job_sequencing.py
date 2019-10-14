@@ -40,14 +40,14 @@ valid_permutations = (
 )
 
 
-@project_fixture(ProjectType.JobSequencing)
+@project_fixture(ProjectType.JobSequencing.key)
 def job_sequencing(request):
     request.param.build()
     yield request.param
     request.param.cleanup()
 
 
-@project_test(ProjectType.JobSequencing)
+@project_test(ProjectType.JobSequencing.key)
 @pytest.mark.parametrize(valid_permutations[0], valid_permutations[1],
                          ids=[p[0] for p in valid_permutations[1]])
 def test_job_sequencing_valid(description, in_params, expected, job_sequencing):
@@ -55,7 +55,7 @@ def test_job_sequencing_valid(description, in_params, expected, job_sequencing):
     assert actual.strip() == expected
 
 
-@project_test(ProjectType.JobSequencing)
+@project_test(ProjectType.JobSequencing.key)
 @pytest.mark.parametrize(invalid_permutations[0], invalid_permutations[1],
                          ids=[p[0] for p in invalid_permutations[1]])
 def test_job_sequencing_invalid(description, in_params, expected, job_sequencing):

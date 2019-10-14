@@ -65,14 +65,14 @@ valid_permutations = (
 )
 
 
-@project_fixture(ProjectType.RomanNumeral)
+@project_fixture(ProjectType.RomanNumeral.key)
 def roman_numeral(request):
     request.param.build()
     yield request.param
     request.param.cleanup()
 
 
-@project_test(ProjectType.RomanNumeral)
+@project_test(ProjectType.RomanNumeral.key)
 @pytest.mark.parametrize(valid_permutations[0], valid_permutations[1],
                          ids=[p[0] for p in valid_permutations[1]])
 def test_roman_numeral_valid(description, in_params, expected, roman_numeral):
@@ -80,7 +80,7 @@ def test_roman_numeral_valid(description, in_params, expected, roman_numeral):
     assert actual.strip() == expected
 
 
-@project_test(ProjectType.RomanNumeral)
+@project_test(ProjectType.RomanNumeral.key)
 @pytest.mark.parametrize(invalid_permutations[0], invalid_permutations[1],
                          ids=[p[0] for p in invalid_permutations[1]])
 def test_roman_numeral_invalid(description, in_params, expected, roman_numeral):

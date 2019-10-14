@@ -55,14 +55,14 @@ valid_permutations = (
 )
 
 
-@project_fixture(ProjectType.Fibonacci)
+@project_fixture(ProjectType.Fibonacci.key)
 def fibonacci(request):
     request.param.build()
     yield request.param
     request.param.cleanup()
 
 
-@project_test(ProjectType.Fibonacci)
+@project_test(ProjectType.Fibonacci.key)
 @pytest.mark.parametrize(valid_permutations[0], valid_permutations[1],
                          ids=[p[0] for p in valid_permutations[1]])
 def test_fibonacci_valid(description, in_params, expected, fibonacci):
@@ -70,7 +70,7 @@ def test_fibonacci_valid(description, in_params, expected, fibonacci):
     assert actual.strip() == expected
 
 
-@project_test(ProjectType.Fibonacci)
+@project_test(ProjectType.Fibonacci.key)
 @pytest.mark.parametrize(invalid_permutations[0], invalid_permutations[1],
                          ids=[p[0] for p in invalid_permutations[1]])
 def test_fibonacci_invalid(description, in_params, expected, fibonacci):

@@ -1,10 +1,7 @@
-import os
 from enum import Enum, auto
 from glotter import main as glotter_main
-from glotter import projects_enum, Settings
 
 
-@projects_enum
 class ProjectType(Enum):
     Baklava = auto()
     BubbleSort = auto()
@@ -28,14 +25,9 @@ class ProjectType(Enum):
     RomanNumeral = auto()
     SelectionSort = auto()
 
-
-sorting_types = [
-    ProjectType.BubbleSort,
-    ProjectType.InsertionSort,
-    ProjectType.MergeSort,
-    ProjectType.QuickSort,
-    ProjectType.SelectionSort,
-]
+    @property
+    def key(self):
+        return self.name.lower()
 
 
 def main():

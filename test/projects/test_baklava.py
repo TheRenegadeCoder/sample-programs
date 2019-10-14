@@ -4,14 +4,14 @@ from runner import ProjectType
 from glotter import project_test, project_fixture
 
 
-@project_fixture(ProjectType.Baklava)
+@project_fixture(ProjectType.Baklava.key)
 def baklava(request):
     request.param.build()
     yield request.param
     request.param.cleanup()
 
 
-@project_test(ProjectType.Baklava)
+@project_test(ProjectType.Baklava.key)
 def test_baklava(baklava):
     expected = """          *
          ***

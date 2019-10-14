@@ -7,14 +7,14 @@ def _get_expected(source):
         return file.read()
 
 
-@project_fixture(ProjectType.Quine)
+@project_fixture(ProjectType.Quine.key)
 def quine(request):
     request.param.build()
     yield request.param
     request.param.cleanup()
 
 
-@project_test(ProjectType.Quine)
+@project_test(ProjectType.Quine.key)
 def test_quine(quine):
     expected = _get_expected(quine).strip()
     actual = quine.run().strip()

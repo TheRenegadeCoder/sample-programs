@@ -107,14 +107,14 @@ Buzz
 """
 
 
-@project_fixture(ProjectType.FizzBuzz)
+@project_fixture(ProjectType.FizzBuzz.key)
 def fizz_buzz(request):
     request.param.build()
     yield request.param
     request.param.cleanup()
 
 
-@project_test(ProjectType.FizzBuzz)
+@project_test(ProjectType.FizzBuzz.key)
 def test_fizz_buzz(fizz_buzz):
     actual = fizz_buzz.run()
     assert actual == expected
