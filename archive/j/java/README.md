@@ -14,6 +14,7 @@ Welcome to Sample Programs in Java!
 - [Reverse a String in Java](https://therenegadecoder.com/code/java/reverse-a-string-in-java/)
 - [Capitalize a String in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/1366)
 - [File IO in Java](https://sample-programs.therenegadecoder.com/projects/file-io/)
+- [Insertion Sort in Java](https://sample-programs.therenegadecoder.com/projects/insertion-sort/)
 ## Fun Facts
 
 - Debut: 1995
