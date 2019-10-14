@@ -17,6 +17,7 @@ Welcome to Sample Programs in C!
 - [Bubble Sort][14]
 - [Capitalize in C][15]
 - [ROT-13 in C][16]
+- [Selection Sort in C] (https://github.com/TheRenegadeCoder/sample-programs/issues/1272)
 
 ## Fun Facts
 
