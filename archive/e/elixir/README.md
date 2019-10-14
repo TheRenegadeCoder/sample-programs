@@ -9,6 +9,7 @@ Welcome to Sample Programs in Elixir!
 - [Baklava in Elixir](https://github.com/TheRenegadeCoder/sample-programs/issues/1160)
 - [Bubble Sort in Elixir](https://github.com/TheRenegadeCoder/sample-programs/issues/1138)
 - Factorial in Elixir
+- [Longest Common Subsequence](https://sample-programs.therenegadecoder.com/projects/longest-common-subsequence/)
 
 ## Fun Facts
 
