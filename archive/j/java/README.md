@@ -12,7 +12,8 @@ Welcome to Sample Programs in Java!
 - [Game of Life in Java](https://github.com/jrg94/sample-programs/issues/108)
 - [Hello World in Java](https://therenegadecoder.com/code/hello-world-in-java/)
 - [Reverse a String in Java](https://therenegadecoder.com/code/java/reverse-a-string-in-java/)
-
+- [Capitalize a String in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/1366)
+- [File IO in Java](https://sample-programs.therenegadecoder.com/projects/file-io/)
 ## Fun Facts
 
 - Debut: 1995

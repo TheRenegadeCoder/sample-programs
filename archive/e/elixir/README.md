@@ -8,6 +8,8 @@ Welcome to Sample Programs in Elixir!
 - [Hello World in Elixir](https://therenegadecoder.com/code/hello-world-in-elixir/)
 - [Baklava in Elixir](https://github.com/TheRenegadeCoder/sample-programs/issues/1160)
 - [Bubble Sort in Elixir](https://github.com/TheRenegadeCoder/sample-programs/issues/1138)
+- Factorial in Elixir
+- [Longest Common Subsequence](https://sample-programs.therenegadecoder.com/projects/longest-common-subsequence/)
 
 ## Fun Facts
 
