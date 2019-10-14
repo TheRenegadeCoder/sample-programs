@@ -49,7 +49,7 @@ public class InsertionSort {
         //display the sorted list to the user
         String str="";
         for(int i=0;i<numList.size()-1;i++) {
-            str+=String.valueOf(numList.get(i);
+            str+=String.valueOf(numList.get(i));
             str+=+",";
         }
         str+=String.valueOf(numList.get(numList.size()-1));
