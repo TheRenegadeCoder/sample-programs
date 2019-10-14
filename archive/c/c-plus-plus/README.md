@@ -4,6 +4,7 @@ Welcome to Sample Programs in C++!
 
 ## Sample Programs
 
+- [Baklava in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1233)
 - [Bubble Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1135)
 - [Capitalize in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1234)
 - [Even Odd in C++](https://sample-programs.therenegadecoder.com/projects/even-odd/)
@@ -16,6 +17,8 @@ Welcome to Sample Programs in C++!
 - [Insertion Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1240)
 - [Reverse String in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/419)
 - [Fractions in c++](https://github.com/TheRenegadeCoder/sample-programs/tree/master/archive/c/c-plus-plus/)
+- [Longest Common Sub-sequence in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1262)
+
 ## Fun Facts
 
 - Debut: 1985

@@ -4,15 +4,20 @@ Welcome to Sample Programs in PHP!
 
 ## Sample Programs
 
-- [Hello World in PHP][2]
-- [Bubble Sort in PHP][12]
-- [Fizz Buzz in PHP][3]
 - [Baklava in PHP][8]
   - Solution borrowed from @toturkmen and @erayak via the [baklava repo][1]
-- [Fibonacci in PHP][9]
-- [String Reverse in PHP][10]
-- [Palindrome Word in PHP][11]
+- [Bubble Sort in PHP][12]
+- [Capitalize in PHP][16]
 - [Factorial in PHP][13]
+- [Fibonacci in PHP][9]
+- [Fizz Buzz in PHP][3]
+- [Hello World in PHP][2]
+- [Merge Sort in PHP][14]
+- [Palindrome Word in PHP][11]
+- [ROT13 in PHP][15]
+- [String Reverse in PHP][10]
+- [Insertion Sort in PHP][17]
+- [Add Roman Numeral Conversion in PHP][18]
 
 ## Fun Facts
 
@@ -41,3 +46,8 @@ Welcome to Sample Programs in PHP!
 [11]: https://github.com/TheRenegadeCoder/sample-programs/issues/1121
 [12]: https://github.com/TheRenegadeCoder/sample-programs/issues/1175
 [13]: https://github.com/TheRenegadeCoder/sample-programs/issues/1520
+[14]: https://www.w3resource.com/php-exercises/searching-and-sorting-algorithm/searching-and-sorting-algorithm-exercise-17.php
+[15]: https://github.com/TheRenegadeCoder/sample-programs/issues/1530
+[16]: https://github.com/TheRenegadeCoder/sample-programs/issues/1533
+[17]: https://github.com/TheRenegadeCoder/sample-programs/issues/1524
+[18]: https://github.com/TheRenegadeCoder/sample-programs/issues/1532
