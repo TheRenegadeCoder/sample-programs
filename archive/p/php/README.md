@@ -19,6 +19,7 @@ Welcome to Sample Programs in PHP!
 - [Insertion Sort in PHP][17]
 - [Roman Numeral Conversion in PHP][18]
 - [File IO in PHP][19]
+- [Prime Number in PHP][20]
 
 ## Fun Facts
 
@@ -53,3 +54,4 @@ Welcome to Sample Programs in PHP!
 [17]: https://github.com/TheRenegadeCoder/sample-programs/issues/1524
 [18]: https://github.com/TheRenegadeCoder/sample-programs/issues/1532
 [19]: https://github.com/TheRenegadeCoder/sample-programs/issues/1528
+[20]: https://github.com/TheRenegadeCoder/sample-programs/issues/1522
