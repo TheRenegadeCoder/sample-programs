@@ -14,6 +14,7 @@ Welcome to Sample Programs in Bash!
 - [File IO in Bash][8]
 - [Fizz Buzz in Bash][4]
 - [Hello World in Bash][2]
+- [Prime Number][14]
 - [Reverse String in Bash][3]
 - [ROT13 in Bash][11]
 
@@ -39,3 +40,4 @@ Welcome to Sample Programs in Bash!
 [11]: https://github.com/TheRenegadeCoder/sample-programs/issues/1231
 [12]: https://www.log2base2.com/shell-script-examples/loop/shell-script-to-find-factorial-of-a-number.html
 [13]: https://github.com/TheRenegadeCoder/sample-programs/issues/1219
+[14]: https://github.com/TheRenegadeCoder/sample-programs/issues/1227
