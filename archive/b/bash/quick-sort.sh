@@ -34,10 +34,19 @@ qsort_iter() {
 # compare function
 compare_str() { [[ $1 < $2 ]]; }
 
-# main
-array=( "$@" )
-qsort_iter compare_str "${array[@]}"
-echo "${qsort_ret[@]}"
+ERROR="Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\""
 
-# example run:
-#  quicksort.sh 5 4 3 2 1 4 4
+#Validation to fit criteria
+if [ "$#" != "1" ]; then echo $ERROR; exit 1; fi; #wrong input
+if [[ ! "$1" =~ "," ]]; then echo $ERROR; exit 1; fi; #wrong format
+
+array=($(echo $@ | tr ", " " "))
+
+if [ "${array[0]}" == "" ]; then echo $ERROR; exit 1; fi; #empty input
+if [ "${#array[@]}" == "1" ]; then echo $ERROR; exit 1; fi; #not a list
+
+qsort_iter compare_str "${array[@]}"
+arrayString=${qsort_ret[@]}
+echo "${arrayString// /, }"
+
+exit 0
