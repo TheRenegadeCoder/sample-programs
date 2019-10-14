@@ -88,7 +88,7 @@ int main(int argc,char *argv[])
     	//In case there is no input, empty input or only single input.
     	if (!(argc> 2 && std::string(argv[1]) != "" && std:: string(argv[2])!=""))                  
     	{
-        	cout << "Usage: please provide two lists in the format “1, 2, 3, 4, 5”" << endl;
+        	cout << "Usage: please provide two lists in the format \"1, 2, 3, 4, 5\"" << endl;
         	return 1;
     	}
 
