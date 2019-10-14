@@ -291,14 +291,194 @@ int main(int argc, char const *argv[]){
 }
 
 ```
+### Includes
 
-Here, we defined the `Fraction` class which we'll use to provide new data type for working with fractions.
-Inside this class, we begin by creating two private attributes numerator and denomenator.
-Constructor of fractions takes two optional arguments top and bottom where top will be assigned to numerator and
-bottom will be assigned to denometor.Here we checks if denometor is zeros then we throws an error and if denomenator is
-negative then we negate top and bottom before assigning them.
-We also have to implement getters for this Class and a method for unary operator `-`.
-We also have to implement friend functions(one can use normal method) for binary operators like +, -, >=, == etc.
-We also have to implement a function to covert string in Fraction type.
-Now in main function we are taking input from shell as arguments
-Usage: `./fractions "2/3" + "8/9"` In general `./fractions "op1" "operator" "op2"`
+In our sample, we include two standard library utilities:
+
+```c++
+#include <iostream>
+#include <string>
+```
+
+Here, we can see that we include the standard I/O for printing messages onto the
+screen and we include string for performing string operation
+
+### simple gcd function
+
+Here, We have defined gcd function which will give gcd of two numbers a and b using Euclid's Algorithm.
+```c++
+int gcd(int a, int b){
+    if(a<0){
+        a = -a;
+    }
+    while(a%b != 0){
+        int i = a;
+        int j = b;
+        a = j;
+        b = i%j;
+    }
+    return b;
+}
+```
+
+### constructor of Fraction class
+
+From there, we defined the `Fraction` class which we'll use to provide new data type for working with fractions:
+```c++
+class Fraction{
+private:
+    int numerator;
+    int denomenator;
+
+public:
+
+    Fraction(int top=0, int bottom=1){
+        if(bottom < 0){
+            top = -top;
+        }
+        else if(bottom == 0){
+            throw "Error: Denomenator can't be zero.";
+        }
+        int hcf = gcd(top, bottom);
+        numerator = top/hcf;
+        denomenator = bottom/hcf;
+    }
+```
+
+### Implementation of unary operator minus 
+
+Here, We implement method to handle unary minus operator which just negate numerator 
+```c++
+    Fraction operator -(){
+        int top = -numerator;
+        int bottom = denomenator;
+        return Fraction(top, bottom);
+    }
+```
+
+### Getters for numerator and denomenator
+
+Below methods are just getters for the private attribute numerator and denomenator
+```c++
+    int getnumerator(){
+        return numerator;
+    }
+
+    int getdenometor(){
+        return denomenator;
+    }
+```
+
+# Friend functions for Fraction class 
+
+Here, We implement friend functions for Fraction class to perform Arithmatic and Relational operation and displaying
+output of fraction using cout. This function just perform operator overloading.
+```c++
+    friend ostream &operator << (ostream &stream, const Fraction &frac);
+    friend Fraction operator +(const Fraction f1, const Fraction f2);
+    friend Fraction operator +(const Fraction f1, const int f2);
+    friend Fraction operator +(const int f1, const Fraction f2);
+    friend Fraction operator +=(const Fraction f1, const Fraction f2);
+    friend Fraction operator -(const Fraction f1, const Fraction f2);
+    friend Fraction operator -(const Fraction f1, const int f2);
+    friend Fraction operator -(const int f1, const Fraction f2);
+    friend Fraction operator -=(const Fraction f1, const Fraction f2);
+    friend Fraction operator *(const Fraction f1, const Fraction f2);
+    friend Fraction operator *(const Fraction f1, const int f2);
+    friend Fraction operator *(const int f1, const Fraction f2);
+    friend Fraction operator *=(const Fraction f1, const Fraction f2);
+    friend Fraction operator /(const Fraction f1, const Fraction f2);
+    friend Fraction operator /(const Fraction f1, const int f2);
+    friend Fraction operator /(const int f1, const Fraction f2);
+    friend Fraction operator /=(const Fraction f1, const Fraction f2);
+    friend bool  operator ==(const Fraction f1, const Fraction f2);
+    friend bool  operator <(const Fraction f1, const Fraction f2);
+    friend bool  operator >(const Fraction f1, const Fraction f2);
+    friend bool operator !=(const Fraction f1, const Fraction f2);
+    friend bool operator <=(const Fraction f1, const Fraction f2);
+    friend bool operator >=(const Fraction f1, const Fraction f2);
+};
+```
+### From string to Fraction type
+
+Here, We implemented function to perform conversion to Fraction from string object 
+EX: "2/7" -> Fraction(2, 7)
+```c++ 
+Fraction fromstr(string s){
+    int idx = s.find("/");
+    if(idx != string::npos){
+        string top = s.substr(0, idx);
+        string bottom = s.substr(idx+1);
+        int p = stoi(top);
+        int q = stoi(bottom);
+        return Fraction(p, q);
+    }
+    return Fraction(stoi(s));
+}
+```
+
+### Main function
+
+Here, we take varible arguments in main function from console to perform operation on fractions
+if argc(argument count) is not 4 that's ./fraction(default: ./a.out) operand1 operator operand2 then it exit the program
+otherwise, it converts those arguments to string object so that we can perform string to fraction coversion usinf fromstr function on it.
+```c++
+int main(int argc, char const *argv[]){
+    // Testing above class methods
+    if(argc != 4){
+        cout<<"Usage: "<< argv[0]<<"operand1 operator operand2";
+        exit(1);
+    }
+    string s1(argv[1]);
+    string op(argv[2]);
+    string s2(argv[3]);
+
+    Fraction o1 = fromstr(s1);
+    Fraction o2 = fromstr(s2);
+```
+
+### Execute Operations
+
+From there, we check which operator is sent in the argument and perform operations according to that operator.
+Ex: `if op == "+"` then print o1 + o2
+    `if op == "=="` then print o1 == o2
+```c++
+    if(op == "+"){
+        cout<< (o1 + o2) << endl;
+    }
+    else if(op == "-"){
+        cout<< (o1 - o2) << endl;
+    }
+    else if(op == "*"){
+        cout<< (o1 * o2) << endl;
+    }
+    else if(op == "/"){
+        cout<< (o1 / o2) << endl;
+    }
+    else if(op == "=="){
+        cout<< (o1 == o2) << endl;
+    }
+    else if(op == "!="){
+        cout<< (o1 != o2) << endl;
+    }
+    else if(op == ">"){
+        cout<< (o1 > o2) << endl;
+    }
+    else if(op == "<"){
+        cout<< (o1 < o2) << endl;
+    }
+    else if(op == ">="){
+        cout<< (o1 >= o2) << endl;
+    }
+    else if(op == "<="){
+        cout<< (o1 <= o2) << endl;
+    }
+    else{
+        cout<<"Error: Invalid operand "<<op<<endl;
+        exit(1);
+    }
+    return 0;
+}
+```
+
+
