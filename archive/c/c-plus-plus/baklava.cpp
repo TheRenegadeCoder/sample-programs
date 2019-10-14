@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
   n = 21;
   for(i=1; i<=(n+1)/2; )
     {
-      for(k=1; (n+1)/2-i+1>=k; k++)
+      for(k=1; (n+1)/2-i>=k; k++)
         cout<<" ";
       for(j=1; j<2*i; j++)
         cout<<"*";
@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
     {
       for(i=(n+1)/2-1; i>=1; i--)
         {
-          for(k=1; (n+1)/2-i+1>=k; k++)
+          for(k=1; (n+1)/2-i>=k; k++)
             cout<<" ";
           for(j=1; j<2*i; j++)
             cout<<"*";
