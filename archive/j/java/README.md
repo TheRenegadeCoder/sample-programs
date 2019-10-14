@@ -14,8 +14,9 @@ Welcome to Sample Programs in Java!
 - [Reverse a String in Java](https://therenegadecoder.com/code/java/reverse-a-string-in-java/)
 - [Longest Common Sub Sequence in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/1364)
 - [Capitalize a String in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/1366)
+- [File IO in Java](https://sample-programs.therenegadecoder.com/projects/file-io/)
 
-## Fun Facts 
+## Fun Facts
 
 - Debut: 1995
 - Developer: Sun Microsystems -> Oracle Corporation
