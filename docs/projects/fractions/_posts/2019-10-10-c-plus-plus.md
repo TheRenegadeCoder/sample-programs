@@ -369,7 +369,7 @@ Below methods are just getters for the private attribute numerator and denomenat
     }
 ```
 
-# Friend functions for Fraction class 
+### Friend functions for Fraction class 
 
 Here, We implement friend functions for Fraction class to perform Arithmatic and Relational operation and displaying
 output of fraction using cout. This function just perform operator overloading.
