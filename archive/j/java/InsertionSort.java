@@ -50,7 +50,7 @@ public class InsertionSort {
         String str="";
         for(int i=0;i<numList.size()-1;i++) {
             str+=String.valueOf(numList.get(i));
-            str+=+",";
+            str+=",";
         }
         str+=String.valueOf(numList.get(numList.size()-1));
         System.out.println(str);
