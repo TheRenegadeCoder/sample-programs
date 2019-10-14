@@ -16,6 +16,7 @@ Welcome to Sample Programs in Bash!
 - [Hello World in Bash][2]
 - [Reverse String in Bash][3]
 - [ROT13 in Bash][11]
+- [Quick Sort in Bash][14]
 
 ## Fun Facts
 
@@ -39,3 +40,4 @@ Welcome to Sample Programs in Bash!
 [11]: https://github.com/TheRenegadeCoder/sample-programs/issues/1231
 [12]: https://www.log2base2.com/shell-script-examples/loop/shell-script-to-find-factorial-of-a-number.html
 [13]: https://github.com/TheRenegadeCoder/sample-programs/issues/1219
+[14]: https://github.com/TheRenegadeCoder/sample-programs/issues/1228
