@@ -24,9 +24,29 @@ More specifically, begin with creating object instance of fraction class with tw
 numerator and denomenator.Using operator overloading feature of langauge implement basic arithmatic
 and relational operaions.
 
-## Testing
+For instance `./fractions "6/2" "+" "1/4"` would output `13/4`
 
-Verify that the actual output matches the expected output.
+In addition, there should be some error handling for situations where the user
+doesn't supply any input.
+
+
+## Testing
+Some tests for your program are:
+
+| Description | Input | Output |
+| :---------- | :---- | :----- |
+| No Input                    |      | "Usage: ./fractions operand1 operator operand2" |
+| Empty Input                 | ""   | "Usage: ./fractions operand1 operator operand2" |
+| Sample Input: | 2/3 + 4/5 | 22/15 |
+| Sample Input: | 2/3 * 4/5  | 8/15 |
+| Sample Input: | 2/3 - 4/5  | -2/15 |
+| Sample Input: | 2/3 / 4/5  | 5/6 |
+| Sample Input: | 2/3 == 4/5 | 0 |
+| Sample Input: | 2/3 > 4/5 | 0 |
+| Sample Input: | 2/3 < 4/5 | 1 |
+| Sample Input: | 2/3 >= 4/5 | 0 |
+| Sample Input: | 2/3 <= 4/5 | 1 |
+| Sample Input: | 2/3 != 4/5 | 1 |
 
 - Fill as needed
 
