@@ -4,7 +4,8 @@ from test.projectpermutation import project_permutations
 from samplerunner.project import ProjectType
 
 
-expected = """1
+expected = """
+1
 2
 Fizz
 4
