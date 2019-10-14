@@ -399,9 +399,214 @@ output of fraction using cout. This function just perform operator overloading.
     friend bool operator >=(const Fraction f1, const Fraction f2);
 };
 ```
+
+### stream operator
+
+Here, We overloaded stream operator so that we can use cout directly on Fraction object.
+```c++
+ostream &operator <<(ostream &stream, const Fraction &frac){
+    stream << frac.numerator << "/" << frac.denomenator;
+    return stream;
+}
+```
+
+### Addition 
+
+Here, We have defined methods for addition operator for different cases.
+EX: 1) Fraction(2, 3) + 6
+    2) Fraction(2, 3) + Fraction(4, 5)
+    3) 7 + Fraction(4, 5) 
+
+```c++
+Fraction operator +(const Fraction f1, const Fraction f2){
+    int top = f1.numerator*f2.denomenator + f2.numerator*f1.denomenator;
+    int bottom = f1.denomenator*f2.denomenator;
+    return Fraction(top, bottom);
+}
+
+Fraction operator +=(const Fraction f1, const Fraction f2){
+    return f1 + f2;
+}
+
+Fraction operator +(const Fraction f1, const int f2){
+    int top = f1.numerator + f2*f1.denomenator;
+    int bottom = f1.denomenator;
+    return Fraction(top, bottom);
+}
+
+Fraction operator +(const int f1, const Fraction f2){
+    int top = f1*f2.denomenator + f2.numerator;
+    int bottom = f2.denomenator;
+    return Fraction(top, bottom);
+}
+```
+
+### Substraction
+
+Here, We have defined methods for substraction operator for different cases.
+EX: 1) Fraction(2, 3) - 6
+    2) Fraction(2, 3) - Fraction(4, 5)
+    3) 7 - Fraction(4, 5) 
+```c++
+Fraction operator -(const Fraction f1, const Fraction f2){
+    int top = f1.numerator*f2.denomenator - f2.numerator*f1.denomenator;
+    int bottom = f1.denomenator*f2.denomenator;
+    return Fraction(top, bottom);
+}
+
+Fraction operator -=(const Fraction f1, const Fraction f2){
+    return f1 - f2;
+}
+
+Fraction operator -(const Fraction f1, const int f2){
+    int top = f1.numerator - f2*f1.denomenator;
+    int bottom = f1.denomenator;
+    return Fraction(top, bottom);
+}
+
+Fraction operator -(const int f1, const Fraction f2){
+    int top = f1*f2.denomenator - f2.numerator;
+    int bottom = f2.denomenator;
+    return Fraction(top, bottom);
+}
+```
+
+### Multiplication
+
+Here, We have defined methods for multiplication operator for different cases.
+EX: 1) Fraction(2, 3) * 6
+    2) Fraction(2, 3) * Fraction(4, 5)
+    3) 7 * Fraction(4, 5) 
+```c++   
+Fraction operator *(const Fraction f1, const Fraction f2){
+    int top = f1.numerator*f2.numerator;
+    int bottom = f1.denomenator*f2.denomenator;
+    return Fraction(top, bottom);
+}
+
+Fraction operator *=(const Fraction f1, const Fraction f2){
+    return f1*f2;
+}
+
+Fraction operator *(const Fraction f1, const int f2){
+    int top = f1.numerator*f2;
+    int bottom = f1.denomenator;
+    return Fraction(top, bottom);
+}
+
+Fraction operator *(const int f1, const Fraction f2){
+    int top = f1*f2.numerator;
+    int bottom = f2.denomenator;
+    return Fraction(top, bottom);
+}
+```
+
+### Division
+
+Here, We have defined methods for division operator for different cases.
+EX: 1) Fraction(2, 3) / 6
+    2) Fraction(2, 3) / Fraction(4, 5)
+    3) 7 / Fraction(4, 5) 
+```c++   
+Fraction operator /(const Fraction f1, const Fraction f2){
+    int top = f1.numerator*f2.denomenator;
+    int bottom = f1.denomenator*f2.numerator;
+    return Fraction(top, bottom);
+}
+
+Fraction operator /=(const Fraction f1, const Fraction f2){
+    return f1/f2;
+}
+
+Fraction operator /(const Fraction f1, const int f2){
+    int top = f1.numerator;
+    int bottom = f1.denomenator*f2;
+    return Fraction(top, bottom);
+}
+
+Fraction operator /(const int f1, const Fraction f2){
+    int top = f2.numerator;
+    int bottom = f2.denomenator*f1;
+    return Fraction(top, bottom);
+}
+```
+
+### Is equal to
+
+Here, We implemented `==` operator to check if two Fractions are equal to each other
+```c++ 
+bool operator ==(const Fraction f1, const Fraction f2){
+    int result = f1.numerator*f2.denomenator - f2.numerator*f1.denomenator;
+    if(result == 0){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+```
+
+### Greater than
+
+Here, We implemented `>` operator to check if first Fraction is greater than the second Fraction.
+```c++ 
+bool operator >(const Fraction f1, const Fraction f2){
+    int result = f1.numerator*f2.denomenator - f2.numerator*f1.denomenator;
+    if(result > 0){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+```
+
+### Less than
+
+Here, We implemented `<` operator to check if first Fraction is less than the second Fraction.
+```c++
+bool operator <(const Fraction f1, const Fraction f2){
+    int result = f1.numerator*f2.denomenator - f2.numerator*f1.denomenator;
+    if(result < 0){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+```
+
+### Greater than or equal to
+
+Here, We implemented `>=` operator to check if first Fraction is greater than or equal to the second Fraction.
+```c++ 
+bool operator >=(const Fraction f1, const Fraction f2){
+    return !(f1 < f2);
+}
+```
+
+### Less than
+
+Here, We implemented `<=` operator to check if first Fraction is less than or equal to the second Fraction.
+```c++
+bool operator <=(const Fraction f1, const Fraction f2){
+    return !(f1 > f2);
+}
+```
+
+### Is not equal to
+
+Here, We implemented `!=` operator to check if two Fractions aren't equal to each other
+```c++
+bool operator !=(const Fraction f1, const Fraction f2){
+    return !(f1 == f2);
+}
+```
+
 ### From string to Fraction type
 
-Here, We implemented function to perform conversion to Fraction from string object 
+Here, We implemented function to perform conversion to Fraction from string object for that we are using find method to find `/`
+in operand to differentiate numerator from denomenator after that we are using `stoi` to convert string to integer and finally we are returning newly created Fraction object. 
 EX: "2/7" -> Fraction(2, 7)
 ```c++ 
 Fraction fromstr(string s){
