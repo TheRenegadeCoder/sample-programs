@@ -11,7 +11,7 @@ if (!defined $number) {
 	chomp $number;
 }
 
-if (!defined $number || $number !~ /\^-{0,1}\d+$/ || $number < 0) {
+if (!defined $number || $number !~ /^\d+$/ || $number < 0) {
 	print "Usage: please input a non-negative integer\n";
 	exit;
 }
