@@ -6,6 +6,7 @@ last-modified: 2019-10-10
 feature-image:
 tags: [fractions]
 authors:
+  - niraj-kamdar
 ---
 
 In this article, we'll tackle fractions in every language.
