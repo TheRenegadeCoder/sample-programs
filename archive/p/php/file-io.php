@@ -41,10 +41,9 @@ function read_file($file_name) {
 }
 
 // Write, read, delete file
-$file_name = "text-file.txt";
+$file_name = "output.txt";
 if (write_file($file_name)) {
     read_file($file_name);
-    unlink($file_name);
 }
 
 ?>
