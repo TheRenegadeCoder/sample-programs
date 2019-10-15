@@ -17,7 +17,7 @@ public class InsertionSort {
         else {
             String[] stringList=args[0].split(","); //extract numbers from the passed string 
             for(int i=0;i<stringList.length;i++) {
-                numList.add(Integer.parseInt(stringList[i])); // convert to Int type and store in numList for sorting
+                numList.add(Integer.parseInt(stringList[i].trim())); // convert to Int type and store in numList for sorting
             }
 
             if(numList.size()<2) { // wrong/invalid input format
