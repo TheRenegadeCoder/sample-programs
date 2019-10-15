@@ -3,7 +3,7 @@
  *
  * @author nickb82
  */
-public class BubbleSortClass 
+public class BubbleSort
 {
    // How many elements in the array have a number
    int size;
