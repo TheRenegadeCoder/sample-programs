@@ -15,7 +15,13 @@ public class InsertionSort {
             System.out.println("Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"");
         }
         else {
-            String[] stringList=args[0].split(","); //extract numbers from the passed string 
+            String[] stringList=args[0].split(","); //extract numbers from the passed string
+           
+            if(stringList.length<2) { // wrong/invalid input format
+                System.out.println("Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"");
+            }
+            else {
+ 
             for(int i=0;i<stringList.length;i++) {
                 numList.add(Integer.parseInt(stringList[i].trim())); // convert to Int type and store in numList for sorting
             }
@@ -26,6 +32,7 @@ public class InsertionSort {
             else {
                 insertionSort(numList);
             }
+         }
 
         }
 
