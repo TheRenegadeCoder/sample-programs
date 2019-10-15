@@ -1,15 +1,18 @@
-from runner import ProjectType
-from glotter import project_test, project_fixture
+import pytest
+
+from test.projectpermutation import project_permutations
+from samplerunner.project import ProjectType
 
 
-@project_fixture(ProjectType.ReverseString.key)
+@pytest.fixture(params=project_permutations[ProjectType.ReverseString].params,
+                ids=project_permutations[ProjectType.ReverseString].ids,
+                scope='module')
 def reverse_string(request):
     request.param.build()
     yield request.param
     request.param.cleanup()
 
 
-@project_test(ProjectType.ReverseString.key)
 def test_reverse_string(reverse_string):
     actual = reverse_string.run(params='"Hello, World"')
     assert actual.strip() == 'dlroW ,olleH'

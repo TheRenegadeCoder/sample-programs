@@ -1,7 +1,7 @@
 import pytest
 
-from runner import ProjectType
-from glotter import project_test, project_fixture
+from test.projectpermutation import project_permutations
+from samplerunner.project import ProjectType
 
 
 expected = """1
@@ -107,14 +107,15 @@ Buzz
 """
 
 
-@project_fixture(ProjectType.FizzBuzz.key)
+@pytest.fixture(params=project_permutations[ProjectType.FizzBuzz].params,
+                ids=project_permutations[ProjectType.FizzBuzz].ids,
+                scope='module')
 def fizz_buzz(request):
     request.param.build()
     yield request.param
     request.param.cleanup()
 
 
-@project_test(ProjectType.FizzBuzz.key)
 def test_fizz_buzz(fizz_buzz):
     actual = fizz_buzz.run()
     assert actual == expected

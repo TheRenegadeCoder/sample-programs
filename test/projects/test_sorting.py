@@ -1,3 +1,7 @@
+import pytest
+
+from test.projectpermutation import project_permutations
+from samplerunner.project import sorting_types
 from test.utilities import clean_list
 
 sorting_invalid_permutations = (
@@ -45,27 +49,36 @@ sorting_valid_permutations = (
 )
 
 
-def get_valid_permutations_parametrization():
-    return {
-        'argnames': sorting_valid_permutations[0],
-        'argvalues': sorting_valid_permutations[1],
-        'ids': [p[0] for p in sorting_valid_permutations[1]],
-    }
+def _get_sorting_project_permutations():
+    perms = [project_permutations[sorting_type] for sorting_type in sorting_types]
+    spp = perms[0]
+    for perm in perms[1:]:
+        spp.params += perm.params
+        spp.ids += perm.ids
+    return spp
 
 
-def get_invalid_permutations_parametrization():
-    return {
-        'argnames': sorting_invalid_permutations[0],
-        'argvalues': sorting_invalid_permutations[1],
-        'ids': [p[0] for p in sorting_invalid_permutations[1]],
-    }
+sorting_project_permutations = _get_sorting_project_permutations()
 
 
-def base_test_sort_valid(description, in_params, expected, sort_source):
+@pytest.fixture(params=sorting_project_permutations.params,
+                ids=sorting_project_permutations.ids,
+                scope='module')
+def sort_source(request):
+    request.param.build()
+    yield request.param
+    request.param.cleanup()
+
+
+@pytest.mark.parametrize(sorting_valid_permutations[0], sorting_valid_permutations[1],
+                         ids=[p[0] for p in sorting_valid_permutations[1]])
+def test_sort_valid(description, in_params, expected, sort_source):
     actual = sort_source.run(params=in_params)
     assert clean_list(actual) == expected
 
 
-def base_test_sort_invalid(description, in_params, expected, sort_source):
+@pytest.mark.parametrize(sorting_invalid_permutations[0], sorting_invalid_permutations[1],
+                         ids=[p[0] for p in sorting_invalid_permutations[1]])
+def test_sort_invalid(description, in_params, expected, sort_source):
     actual = sort_source.run(params=in_params)
     assert actual.strip() == expected
