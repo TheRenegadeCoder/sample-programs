@@ -1,7 +1,7 @@
 import pytest
 
-from test.projectpermutation import project_permutations
-from samplerunner.project import ProjectType
+from runner import ProjectType
+from glotter import project_test, project_fixture
 
 
 invalid_permutations = (
@@ -65,25 +65,25 @@ valid_permutations = (
 )
 
 
-@pytest.fixture(params=project_permutations[ProjectType.Prime].params,
-                ids=project_permutations[ProjectType.Prime].ids,
-                scope='module')
+@project_fixture(ProjectType.Prime.key)
 def prime(request):
     request.param.build()
     yield request.param
     request.param.cleanup()
 
 
+@project_test(ProjectType.Prime.key)
 @pytest.mark.parametrize(valid_permutations[0], valid_permutations[1],
                          ids=[p[0] for p in valid_permutations[1]])
-def test_fibonacci_valid(description, in_params, expected, prime):
+def test_prime_valid(description, in_params, expected, prime):
     actual = prime.run(params=in_params)
     assert actual.strip().lower() == expected
 
 
+@project_test(ProjectType.Prime.key)
 @pytest.mark.parametrize(invalid_permutations[0], invalid_permutations[1],
                          ids=[p[0] for p in invalid_permutations[1]])
-def test_fibonacci_invalid(description, in_params, expected, prime):
+def test_prime_invalid(description, in_params, expected, prime):
     actual = prime.run(params=in_params)
     assert actual.strip() == expected
 

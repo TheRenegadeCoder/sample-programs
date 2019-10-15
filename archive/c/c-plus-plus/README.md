@@ -4,6 +4,7 @@ Welcome to Sample Programs in C++!
 
 ## Sample Programs
 
+- [Baklava in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1233)
 - [Bubble Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1135)
 - [Capitalize in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1234)
 - [Even Odd in C++](https://sample-programs.therenegadecoder.com/projects/even-odd/)
@@ -11,18 +12,19 @@ Welcome to Sample Programs in C++!
 - [Fibonacci Sequence in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/496)
 - [File Input/Output in C++](https://therenegadecoder.com/code/file-io-in-c-plus-plus/)
 - [Fizz Buzz in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1238)
+- [Fractions in c++](https://github.com/TheRenegadeCoder/sample-programs/tree/master/archive/c/c-plus-plus/)
 - [Game of Life in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1239)
 - [Hello World in C++](https://therenegadecoder.com/code/hello-world-in-c-plus-plus/)
 - [Insertion Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1240)
-- [Reverse String in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/419)
-- [Fractions in c++](https://github.com/TheRenegadeCoder/sample-programs/tree/master/archive/c/c-plus-plus/)
 - [Longest Common Sub-sequence in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1262)
 - Prime Number in C++
+- [Reverse String in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/419)
 
 ## Fun Facts
 
 - Debut: 1985
 - Typing: Static
+- Developer: Bjarne Strotrup
 
 ## References
 
