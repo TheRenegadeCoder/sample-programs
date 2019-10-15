@@ -16,12 +16,14 @@ Welcome to Sample Programs in C++!
 - [Hello World in C++](https://therenegadecoder.com/code/hello-world-in-c-plus-plus/)
 - [Insertion Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1240)
 - [Reverse String in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/419)
+- [Fractions in c++](https://github.com/TheRenegadeCoder/sample-programs/tree/master/archive/c/c-plus-plus/)
 - [Longest Common Sub-sequence in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1262)
 
 ## Fun Facts
 
 - Debut: 1985
 - Typing: Static
+- Developer: Bjarne Strotrup
 
 ## References
 
