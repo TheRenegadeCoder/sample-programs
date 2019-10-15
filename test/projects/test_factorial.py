@@ -68,8 +68,8 @@ def test_factorial_valid(description, in_params, expected, factorial):
     assert actual.strip() == expected
 
 
-@pytest.mark.parametrize(valid_permutations[0], valid_permutations[1],
-                         ids=[p[0] for p in valid_permutations[1]])
+@pytest.mark.parametrize(invalid_permutations[0], invalid_permutations[1],
+                         ids=[p[0] for p in invalid_permutations[1]])
 def test_factorial_invalid(description, in_params, expected, factorial):
     actual = factorial.run(params=in_params)
     assert actual.strip() == expected
