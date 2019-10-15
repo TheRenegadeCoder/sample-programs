@@ -8,9 +8,13 @@ tags: [fractions]
 authors:
 ---
 
-languages like python have built-in utilities or functions for working with fractions.
-Many of these fractions functions follow a similar pattern across programming languages:
-Takes a numerator and a denomenator as an attribute.
+In this article, we'll tackle fractions in every language.
+
+## Description
+
+Languages like python have built-in utilities or functions for working with fractions.
+Many of these fractions functions follow a similar pattern across programming languages: 
+takes a numerator and a denomenator as an attribute.
 Perform basic arithmatic and relational operations with operator overloading.
 
 ## Requirements
@@ -48,5 +52,6 @@ Some tests for your program are:
 | Sample Input: | 2/3 <= 4/5 | 1 |
 | Sample Input: | 2/3 != 4/5 | 1 |
 
-- Fill as needed
+## Articles
 
+{% include article_list.md collection=site.categories.fractions % }
