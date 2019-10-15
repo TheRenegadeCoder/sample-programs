@@ -19,7 +19,7 @@ int main() {
   char buffer[1024];
   char *aux;
   
-  char *msg = "Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5" ";
+  char *msg = "Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\" ";
   
   fgets(buffer,1023,stdin);
   aux=strtok(buffer, ",");
