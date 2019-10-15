@@ -3,7 +3,7 @@
 #include<stdio.h>
 #include<conio.h>
 
-#define MAX_SIZE 5
+#define MAX_SIZE 100
 
 void merge_sort(int, int);              // Recursive function used for sorting
 void merge_array(int, int, int, int);   // Merges two halves of subarray
@@ -13,21 +13,38 @@ int arr_sort[MAX_SIZE];                // Array arr_sort declared globally
 
 int main() {
   int i;
-
-  printf("\nEnter %d Elements for Sorting\n", MAX_SIZE);
-  for (i = 0; i < MAX_SIZE; i++)
-    scanf("%d", &arr_sort[i]);
-
-  printf("\nYour Data   :");
-  for (i = 0; i < MAX_SIZE; i++) {
-    printf("\t%d", arr_sort[i]);       // Given Array
+  int length=0;
+  char buffer[1024];
+  char *aux;
+  
+  char msg[100] = " Usage: please provide a list of at least two integers to sort in the format “1, 2, 3, 4, 5” ";
+  
+  fgets(buffer,1023,stdin);
+  aux=strtok(buffer, ",");
+  
+  if(strlen(buffer)==0){
+    printf("%s",&msg);
   }
+  
+  while(aux)
+  {
+  arr_sort[length]=atoi(aux);
+  length++;
+  aux=strtok(NULL, ",");
+  }
+  
+  if(length==0||length==1) printf("%s",&msg);
+  
+  else {
+  merge_sort(0, length - 1);        // Call for complete array arr_sort 
 
-  merge_sort(0, MAX_SIZE - 1);        // Call for complete array arr_sort 
-
-  printf("\n\nSorted Data :");
-  for (i = 0; i < MAX_SIZE; i++) {
-    printf("\t%d", arr_sort[i]);      // Final Array
+  printf("\n\nSorted Data : ");
+  for (i = 0; i < length; i++) {
+    if(i!=length-1)
+      printf("%d, ", arr_sort[i]);     
+    else
+      printf("%d",arr_sort[i]);
+  }
   }
   getch();
 
