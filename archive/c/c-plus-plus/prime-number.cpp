@@ -6,8 +6,13 @@ using namespace std;
 
 int main(int argc, char **argv)
 {
-    if (argc == 1 || argv[1][0] == '\0' || (atoi(argv[1]) == 0 && strcmp(argv[1], "0") != 0)) {
-        cout<<"Usage: please input a number\n";
+    if (argc == 1){
+        cout<<"Usage: please input a non-negative integer\n";
+        return 1;
+    }
+    string tmp = argv[1];
+    if (argc == 1 || argv[1][0] == '\0' || (atoi(argv[1]) == 0 && strcmp(argv[1], "0") != 0) || atoi(argv[1]) < 0 || tmp.find(".") != string::npos ) {
+        cout<<"Usage: please input a non-negative integer\n";
     } 
     else {
         int input = atoi(argv[1]);
