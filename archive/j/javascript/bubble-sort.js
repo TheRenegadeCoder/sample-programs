@@ -35,9 +35,6 @@ function bubblesort(arr) {
  */
 
 function main(input) {
-    // usage text
-    const usage = `Usage: please provide a list of at least two integers to sort in the format “1, 2, 3, 4, 5”`;
-
     /**
      * If the string matches the format `"[number], [number], (... [number])"`,
      * we have a valid input.
@@ -71,6 +68,11 @@ function main(input) {
     }
 }
 
-// run the executable function
-const input = process.argv[2];
-main(input);
+// usage text
+const usage = `Usage: please provide a list of at least two integers to sort in the format “1, 2, 3, 4, 5”`;
+
+if (process.argv.length > 2) {
+    // run the executable function
+    const input = process.argv[2];
+    main(input);
+}
