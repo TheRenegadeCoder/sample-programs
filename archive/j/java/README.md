@@ -17,7 +17,7 @@ Welcome to Sample Programs in Java!
 - [File IO in Java](https://sample-programs.therenegadecoder.com/projects/file-io/)
 - [Insertion Sort in Java](https://sample-programs.therenegadecoder.com/projects/insertion-sort/)
 - [Selection Sort in Java](SelectionSort.java)
-
+- [Bubble Sort in Java](BubbleSort.java)
 ## Fun Facts
 
 - Debut: 1995
