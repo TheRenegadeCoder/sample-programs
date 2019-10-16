@@ -7,8 +7,9 @@ Welcome to Sample Programs in Haskell!
 - [Baklava in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/575)
 - [Bubble Sort in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/800)
 - [Even Odd in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/743)
+- [Capitalize in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/1356)
 - [Factorial in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/746)
-- [Fibonacci in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/543)
+- [Fibonacci in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/543)https://github.com/TheRenegadeCoder/sample-programs/issues/1356
   - Solution borrowed from [Haskell wiki](https://wiki.haskell.org/The_Fibonacci_sequence#Canonical_zipWith_implementation)
 - [File IO in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/597)
 - [Fizz Buzz in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/349)
