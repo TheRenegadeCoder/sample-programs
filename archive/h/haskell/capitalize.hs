@@ -8,7 +8,10 @@ capitalize [] = []
 
 
 main = do  
-    -- TODO: error handling when user inputs nothing
-    putStrLn "Input string to capitalize first letter"
-    firstName <- getLine  
-    print (capitalize firstName)
+    putStrLn "Input string of choice to capitalize first letter"
+    inputStr <- getLine  
+    if null inputStr
+        then return ()
+        else do putStrLn $ capitalize inputStr
+
+
