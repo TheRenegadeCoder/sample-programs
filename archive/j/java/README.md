@@ -17,6 +17,7 @@ Welcome to Sample Programs in Java!
 - [File IO in Java](https://sample-programs.therenegadecoder.com/projects/file-io/)
 - [Insertion Sort in Java](https://sample-programs.therenegadecoder.com/projects/insertion-sort/)
 - [Selection Sort in Java](SelectionSort.java)
+- [Prime Number in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/1372)
 
 ## Fun Facts
 
