@@ -2,6 +2,9 @@
 use strict;
 use warnings;
 
+# no input
+usage() unless @ARGV == 1;
+
 # accept input as argument
 my ($number) = @ARGV;
 
@@ -12,8 +15,7 @@ if (!defined $number) {
 }
 
 if (!defined $number || $number !~ /^\d+$/ || $number < 0) {
-	print "Usage: please input a non-negative integer\n";
-	exit;
+	usage();
 }
 
 my $factorial = 1;
@@ -23,3 +25,8 @@ for (my $i = 1; $i <= $number; $i++) {
 }
 
 print "$factorial\n";
+
+sub usage {
+	print "Usage: please input a non-negative integer\n";
+	exit;
+}

@@ -22,6 +22,12 @@ function main(input) {
     // Usage text
     const usage = 'Usage: please input a non-negative integer';
 
+    // No input
+    if ( !input ) {
+        console.log(usage)
+        return
+    }
+
     /**
      * If we remove all the integer characters from the input and are left with
      * an empty string, then we have a valid integer.
