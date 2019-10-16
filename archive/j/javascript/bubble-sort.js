@@ -69,7 +69,7 @@ function main(input) {
 }
 
 // usage text
-const usage = `Usage: please provide a list of at least two integers to sort in the format “1, 2, 3, 4, 5”`;
+const usage = `Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"`;
 
 if (process.argv.length > 2) {
     // run the executable function
