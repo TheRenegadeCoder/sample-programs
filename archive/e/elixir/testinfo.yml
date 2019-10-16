@@ -1,0 +1,9 @@
+folder:
+  extension: ".ex"
+  naming: "hyphen"
+
+container:
+  image: "elixir"
+  tag: "1.9.2-alpine"
+  cmd: "elixir {{ source.name }}{{ source.extension }}"
+  

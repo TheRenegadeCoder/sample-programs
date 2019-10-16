@@ -15,6 +15,7 @@ Welcome to Sample Programs in Java!
 - [Longest Common Sub Sequence in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/1364)
 - [Capitalize a String in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/1366)
 - [File IO in Java](https://sample-programs.therenegadecoder.com/projects/file-io/)
+- [Insertion Sort in Java](https://sample-programs.therenegadecoder.com/projects/insertion-sort/)
 - [Selection Sort in Java](SelectionSort.java)
 - [Binary Search in Java](BinarySearch.java)
 
