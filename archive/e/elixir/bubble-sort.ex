@@ -1,18 +1,18 @@
 defmodule Bubble do
   @doc """
-  Sort the given input using bubble sort
+  Sort the giveen input using bubble sort
   """
   def main(args) do
     cond do
-      length(args) < 2 ->
+      length(args) != 1 
+      or List.first(args) == "" 
+      or List.first(args) |> String.split(",") |> length < 2 ->
         IO.puts("Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"")
       true ->
-        input =
-          Enum.map(args, fn s ->
-            String.trim(s, ",")
-            |> String.trim()
-            |> String.to_integer()
-          end)
+        input = List.first(args)
+        |> String.split(",") 
+        |> Enum.map(&String.trim/1)
+        |> Enum.map(&String.to_integer/1)
         sorted_list = pass(input, [])
         IO.puts(Enum.join(sorted_list, ", "))
     end
