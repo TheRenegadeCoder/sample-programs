@@ -8,6 +8,7 @@ Welcome to Sample Programs in MATLAB!
 - Odd Even in MATLAB
 - Factorial in MATLAB
 - Bubble Sort in MATLAB
+- Prime Number in MATLAB
 
 ## Fun Facts
 
