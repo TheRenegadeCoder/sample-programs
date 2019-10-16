@@ -1,7 +1,7 @@
 defmodule LongestCommonSubsequence do
   def main() do
     lcs = solve(System.argv())
-    IO.puts("The longest common subsequence is [#{lcs}] \n")
+    IO.puts("#{lcs}")
   end
 
   def solve([as, bs]) when is_bitstring(as) and is_bitstring(bs) do
@@ -13,7 +13,7 @@ defmodule LongestCommonSubsequence do
   end
 
   def print_usage() do
-    ~s(usage: please provide two lists in the format "1, 2, 3, 4, 5")
+    ~s(Usage: please provide two lists in the format "1, 2, 3, 4, 5")
   end
 
   def lcs([], _) do
