@@ -16,15 +16,12 @@ public class BubbleSort
 
     // sets capacity
    private static final int INIT_CAPACITY = 75;
-
-    // sets capacity
-   private static final int INIT_CAPACITY = 75;
    
    // Array to hold numbers to be sorted
    int[] bubbleArray;
 
    // Default constructor
-   BubbleSortClass()
+   BubbleSort()
    {
       size = 0;
       capacity = DEFAULT_CAPACITY;
@@ -33,7 +30,7 @@ public class BubbleSort
    }
 
    // Set your own capactity
-   BubbleSortClass(int setCapacity)
+   BubbleSort(int setCapacity)
    {
       size = 0;
       capacity = setCapacity;
@@ -41,7 +38,7 @@ public class BubbleSort
    }
 
    // Copy constrcutor
-   BubbleSortClass(BubbleSortClass copied)
+   BubbleSort(BubbleSortClass copied)
    {
       size = copied.size;
       capacity = copied.capacity;
