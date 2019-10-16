@@ -47,7 +47,7 @@ public class PrimeNumber {
             }
 
         } catch (NumberFormatException | PrimeNumberException e) {
-            System.err.println("Usage: please, provide input a non-negative integer");
+            System.err.println("Usage: please input a non-negative integer");
         }
     }
 }
