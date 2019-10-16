@@ -45,7 +45,7 @@ assert(is_prime(3727) === TRUE);
 
 // Check argument
 if ($argc < 2 || !is_numeric($argv[1]) || strpos($argv[1], '.') !== FALSE || strpos($argv[1], '-') !== FALSE) {
-    echo "Usage: please, provide input a non-negative integer\n";
+    echo "Usage: please input a non-negative integer\n";
     exit(1);
 }
 
