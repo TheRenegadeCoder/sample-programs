@@ -18,6 +18,8 @@ Welcome to Sample Programs in Java!
 - [Insertion Sort in Java](https://sample-programs.therenegadecoder.com/projects/insertion-sort/)
 - [Selection Sort in Java](SelectionSort.java)
 - [Bubble Sort in Java](BubbleSort.java)
+- [Prime Number in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/1372)
+
 ## Fun Facts
 
 - Debut: 1995
