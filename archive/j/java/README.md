@@ -16,7 +16,6 @@ Welcome to Sample Programs in Java!
 - [Capitalize a String in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/1366)
 - [File IO in Java](https://sample-programs.therenegadecoder.com/projects/file-io/)
 - [Selection Sort in Java](SelectionSort.java)
-- [Binary Search in Java](BinarySearch.java)
 
 ## Fun Facts
 
