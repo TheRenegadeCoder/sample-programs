@@ -2,7 +2,7 @@ defmodule Factorial do
   def main(args) do
     args
     |> List.first
-    |> String.to_integer
+    |> as_integer
     |> get
     |> IO.puts()
   end
@@ -21,6 +21,14 @@ defmodule Factorial do
 
   def get(n) do
     get(n, 1)
+  end
+
+  def as_integer(n) do
+    try do
+        String.to_integer(n)
+    rescue
+        ArgumentError -> -1
+    end
   end
 end
 
