@@ -38,7 +38,7 @@ public class BubbleSort
    }
 
    // Copy constrcutor
-   BubbleSort(BubbleSortClass copied)
+   BubbleSort(BubbleSort copied)
    {
       size = copied.size;
       capacity = copied.capacity;
@@ -115,7 +115,7 @@ public class BubbleSort
     public static void main(String[] args) 
    {
       
-      BubbleSortClass bubble = new BubbleSortClass();
+      BubbleSort bubble = new BubbleSort();
       int[] bubbleList = new int[ INIT_CAPACITY ];
        // controls how many numbers you want to put in
       int listSize = 8;
