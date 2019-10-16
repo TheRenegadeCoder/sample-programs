@@ -60,7 +60,7 @@ function main(input) {
         arr = arr.filter(n => n);
 
         // apply bubblesort and output result
-        console.log(bubblesort(arr));
+        console.log(bubblesort(arr).toString());
     }
     else {
         // invalid input
@@ -69,10 +69,13 @@ function main(input) {
 }
 
 // usage text
-const usage = `Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"`;
+const usage = `Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"`;
 
 if (process.argv.length > 2) {
     // run the executable function
     const input = process.argv[2];
     main(input);
+}
+else {
+    console.log(usage);
 }
