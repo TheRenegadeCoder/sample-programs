@@ -36,26 +36,26 @@ function bubblesort(arr) {
 
 function main(input) {
     // usage text
-    const usage = `Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"`;
+    const usage = `Usage: please provide a list of at least two integers to sort in the format “1, 2, 3, 4, 5”`;
 
     /**
-     * If the string matches the format `"[number], [number], (... [number])"`
+     * If the string matches the format `"[number], [number], (... [number])"`,
      * we have a valid input.
      */
-    const inputValidation = /^(\d+,\s*){2,}$/m;
+    const inputValidation = /^"?(\d+,\s*){2,}\d+(,"?|"?)$/gm;
 
-    if (inputValidation.test(input)) {
+    if (inputValidation.test(input) == true) {
         // valid input
         let arr;
 
         /**
          * Format string to be bubblesorted.
-         *  - strip all whitespace
+         *  - strip all whitespace and quotations
          *  - split into array at ',' character
          *  - convert all elements to integers
          *  - filter out NaN elements (uncaught text characters or empty elements)
          */
-        arr = input.replace(/\s/g, '');
+        arr = input.replace(/(\s|"|'|`)/g, '');
         arr = arr.split(',');
         arr = arr.map(function (n) {
             return parseInt(n, 10);
