@@ -1,7 +1,7 @@
 // Merge Sort In C Language
 
 #include<stdio.h>
-#include<conio.h>
+//#include<conio.h>
 #include<string.h>
 #include<stdlib.h>
 
@@ -47,7 +47,7 @@ int main() {
       printf("%d",arr_sort[i]);
   }
   }
-  getch();
+  //getch();
 
 }
 
