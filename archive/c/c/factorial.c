@@ -31,7 +31,6 @@ int main (int argc, char *argv[])
 	if (endptr == argv[1] ||
 			!(*endptr == '\0' || *endptr == '\n') ||
 			n < 0) {
-		// fprintf(stderr, "Not a positive integer\n");
 		fprintf(stderr, "Usage: please input a non-negative integer\n");
 		exit(1);
 	}
