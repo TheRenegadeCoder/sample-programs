@@ -1,12 +1,11 @@
-#!/usr/bin/env elixir
 defmodule Bubble do
   @doc """
-  Sort the giveen input using bubble sort
+  Sort the given input using bubble sort
   """
   def main(args) do
     cond do
       length(args) < 2 ->
-        IO.puts("Usage: please provide a list of at least two integers to sort in the format “1, 2, 3, 4, 5”")
+        IO.puts("Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"")
       true ->
         input =
           Enum.map(args, fn s ->
@@ -44,5 +43,3 @@ defmodule Bubble do
 end
 
 Bubble.main(System.argv())
-
-
