@@ -15,7 +15,7 @@ Welcome to Sample Programs in Java!
 - [Longest Common Sub Sequence in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/1364)
 - [Capitalize a String in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/1366)
 - [File IO in Java](https://sample-programs.therenegadecoder.com/projects/file-io/)
-
+- [Bubble Sort in Java](BubbleSort.java)
 ## Fun Facts
 
 - Debut: 1995
