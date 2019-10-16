@@ -1,10 +1,27 @@
 defmodule Factorial do
-  def main(args) do
-    args
-    |> List.first
-    |> String.to_integer
-    |> get
+  def main(args) when length(args) == 0 do
+    get(-1)
     |> IO.puts()
+  end
+
+  def main(args) do
+    cond do
+      length(args) == 0 ->
+        get(-1)
+        |> IO.puts()
+      List.first(args) == "" ->
+        get(-1)
+        |> IO.puts()
+      not is_integer(List.first(args)) ->
+        get(-1)
+        |> IO.puts()
+      true ->
+        args
+        |> List.first
+        |> String.to_integer
+        |> get
+        |> IO.puts()
+    end
   end
 
   def get(0, acc) do
