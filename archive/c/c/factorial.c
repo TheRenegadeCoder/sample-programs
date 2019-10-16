@@ -15,7 +15,6 @@ int main (int argc, char *argv[])
 
 	/* Correct nmber of args? */
 	if (argc != 2) {
-		// printf("Usage: %s [positive integer]\n", argv[0]);
 		printf("Usage: please input a non-negative integer\n");
 		exit(0);
 	}
