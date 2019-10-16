@@ -18,6 +18,7 @@ Welcome to Sample Programs in Java!
 - [Insertion Sort in Java](https://sample-programs.therenegadecoder.com/projects/insertion-sort/)
 - [Selection Sort in Java](SelectionSort.java)
 - [Bubble Sort in Java](BubbleSort.java)
+- [Merge Sort in Java](https://sample-programs.therenegadecoder.com/projects/merge-sort/)
 ## Fun Facts
 
 - Debut: 1995
