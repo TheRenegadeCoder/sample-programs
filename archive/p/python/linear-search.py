@@ -3,6 +3,10 @@ import sys
 def sysarg_to_list(string):
     return [int(x.strip(" "), 10) for x in string.split(',')]
 
+if(len(sys.argv) != 2):
+    print("Enter two arguments: key and string containing array elements")
+    exit()
+
 key = int(sys.argv[1])
 array = sysarg_to_list(sys.argv[2])
 size = len(array)
