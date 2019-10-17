@@ -60,7 +60,14 @@ function main(input) {
         arr = arr.filter(n => n);
 
         // apply bubblesort and output result
-        console.log(bubblesort(arr).toString());
+        arr = bubblesort(arr);
+
+        let str;
+
+        str = arr.toString();
+        str = str.replace(/,/g, ', ');
+
+        console.log(str);
     }
     else {
         // invalid input
