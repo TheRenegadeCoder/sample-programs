@@ -1,15 +1,16 @@
 module Main where 
+
 import Data.Char
+import System.Environment
 
 capitalize :: String -> String
 capitalize (head:tail) = toUpper head : tail
 capitalize [] = []
 
 main = do  
-    putStrLn "Input string of choice to capitalize first letter"
-    inputStr <- getLine  
-    if null inputStr
-        then return ()
-        else do putStrLn $ capitalize inputStr
-
+    [inputStr] <- getArgs
+    if null inputStr then
+        error "Input string of choice to capitalize first letter"
+    else
+        putStrLn $ capitalize inputStr
 
