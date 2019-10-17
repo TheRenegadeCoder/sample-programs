@@ -58,3 +58,4 @@ Welcome to Sample Programs in PHP!
 [19]: https://github.com/TheRenegadeCoder/sample-programs/issues/1528
 [20]: https://github.com/TheRenegadeCoder/sample-programs/issues/1522
 [21]: https://github.com/TheRenegadeCoder/sample-programs/issues/1518
+[22]: https://github.com/TheRenegadeCoder/sample-programs/issues/1523
