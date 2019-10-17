@@ -1,0 +1,8 @@
+folder:
+  extension: ".nim"
+  naming: "underscore"
+
+container:
+  image: "nimlang/nim"
+  tag: "1.0.0-alpine"
+  cmd: "nim c -r --verbosity:0 {{ source.name }}{{ source.extension }}"
