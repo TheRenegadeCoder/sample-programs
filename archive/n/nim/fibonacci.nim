@@ -6,11 +6,8 @@ import strutils
 var n: BiggestUInt
 try:
     n = paramStr(1).parseBiggestUInt
-except IndexError:
+except IndexError, ValueError:
     echo "Usage: please input the count of fibonacci numbers to output"
-    quit(1)
-except ValueError:
-    echo "invalid input: not a number"
     quit(1)
 
 var previouspreviousInt: BiggestUInt
