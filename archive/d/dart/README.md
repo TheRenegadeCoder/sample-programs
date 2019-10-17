@@ -8,6 +8,7 @@ Welcome to Sample Programs in Dart!
 - [Even Odd in Dart](https://therenegadecoder.com/code/even-odd-in-dart/)
 - [Hello World in Dart](https://therenegadecoder.com/blog/hello-world-in-dart/)
 - [Reverse String in Dart](https://therenegadecoder.com/code/reverse-a-string-in-dart/)
+- [Rot13 in Dart][1]
 
 ## Fun Facts
 
@@ -21,4 +22,5 @@ Welcome to Sample Programs in Dart!
 - [Dart GitHub Community](https://github.com/dart-lang)
 - [Online Dart Editor](https://dartpad.dartlang.org/)
 
+[1]: https://github.com/TheRenegadeCoder/sample-programs/issues/1676
 [2]: https://github.com/TheRenegadeCoder/sample-programs/issues/1679
