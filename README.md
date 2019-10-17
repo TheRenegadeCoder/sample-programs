@@ -35,6 +35,8 @@ organization through our Gitter community. [Come chat!][15]
 
 ## Contribute
 
+[![](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/images/0)](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/links/0)[![](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/images/1)](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/links/1)[![](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/images/2)](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/links/2)[![](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/images/3)](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/links/3)[![](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/images/4)](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/links/4)[![](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/images/5)](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/links/5)[![](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/images/6)](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/links/6)[![](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/images/7)](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/links/7)
+
 To properly follow the recommended GitHub community standards, I've created [contribution
 instructions][6]. Please refer to this document before contributing to this repository.
 
