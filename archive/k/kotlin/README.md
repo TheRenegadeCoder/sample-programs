@@ -10,6 +10,8 @@ Welcome to Sample Programs in Kotlin!
 - [Fizz Buzz in Kotlin][7]
 - [Fibonacci Sequence in Kotlin][8]
 - [Reverse String in Kotlin][9]
+- [Capitalize in Kotlin][10]
+- [FileIO in Kotlin][11]
 
 ## Fun Facts
 
@@ -33,3 +35,5 @@ Welcome to Sample Programs in Kotlin!
 [7]: https://github.com/TheRenegadeCoder/sample-programs/issues/511
 [8]: https://github.com/TheRenegadeCoder/sample-programs/issues/566
 [9]: https://github.com/TheRenegadeCoder/sample-programs/issues/587
+[10]: https://github.com/TheRenegadeCoder/sample-programs/issues/1393
+[10]: https://github.com/TheRenegadeCoder/sample-programs/issues/1398

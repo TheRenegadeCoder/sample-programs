@@ -1,31 +1,53 @@
+/** Prime number exception to handle errors. */
+class PrimeNumberException extends Exception {}
+
+/**
+ * Prime number program.
+ */
 public class PrimeNumber {
 
-	public static void main(String[] args) throws Exception {
-		try {
-			int n = Integer.parseInt(args[0]);
-			
-			if (n < 0)
-				throw new Exception();
-			
-			else if (n % 2 == 0 && n != 2 || n == 0 || n == 1) {
-				System.out.println("Composite");
-				System.exit(0);
-			}
-				
-			for (int i = 3; i <= Math.ceil(Math.sqrt(n)) + 1; i++)
-				if ( n % i == 0 && n != i) {
-					System.out.println("Composite");
-					System.exit(0);
-				}
-			
-				else if (i == Math.ceil(Math.sqrt(n)) + 1)
-					System.out.println("Prime");
-		}
-		
-		catch(Exception e) {
-	            System.out.println("Usage: please input a non-negative integer");
-        	    System.exit(1);
-        	}
-	}
-	
+    /**
+     * Determine if an integer is a prime number.
+     * @param number Non negative integer to check.
+     * @return true if the number is prime, false otherwise.
+     */
+    public static boolean isPrime(int number) {
+        if ((number % 2 == 0 && number != 2) || number == 1) {
+            return false;
+        }
+
+        boolean foundFactor = false;
+        for (int n = 3; n <= (int) Math.ceil(Math.sqrt(number)); ++n) {
+            if ((number % n) == 0) {
+                foundFactor = true;
+                break;
+            }
+        }
+        return !foundFactor;
+    }
+
+    /**
+     * Main.
+     * @param args command line arguments.
+     */
+    public static void main(String[] args) {
+        try {
+
+            // Check argument
+            if (args.length < 1 || args[0].indexOf('-') != -1) {
+                throw new PrimeNumberException();
+            }
+
+            // Convert to int and check
+            if (isPrime(Integer.valueOf(args[0]))) {
+                System.out.println("Prime");
+
+            } else {
+                System.out.println("Composite");
+            }
+
+        } catch (NumberFormatException | PrimeNumberException e) {
+            System.err.println("Usage: please input a non-negative integer");
+        }
+    }
 }
