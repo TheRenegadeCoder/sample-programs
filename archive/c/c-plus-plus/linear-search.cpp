@@ -26,6 +26,10 @@ std::vector<int> sysarg_to_list(std::string str) {
 }
 
 int main(int argc, char** argv) {
+  if(argc < 2) {
+    std::cout<<"Needed two arguments: key and string containing array elements\n";
+    exit(1);
+  }
   int size, key;
   key = atoi(argv[1]);
   std::string arr_string = argv[2];
