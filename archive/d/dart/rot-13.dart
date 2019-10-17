@@ -1,14 +1,12 @@
 import 'dart:io';
 
 main(List<String> args) {
-  if (args.isEmpty) {
-    stdout.write("Enter string to encode/decode: ");
-    args = [stdin.readLineSync()];
+  if (args.isEmpty || args[0].isEmpty) {
+    print("Usage: please provide a string to encrypt");
+    exit(1);
+  } else {
+    print( rot13(args[0]) );
   }
-
-  args.forEach((arg) {
-    print(rot13(arg));
-  });
 }
 
 String rot13(String input) {
@@ -20,7 +18,6 @@ String rot13(String input) {
   int zUpper = "Z".codeUnitAt(0);
 
   List<String> coded = [];
-  String codedResult;
 
   input.codeUnits.forEach((char) {
     if ((char >= aLower && char < nLower) ||
@@ -34,12 +31,5 @@ String rot13(String input) {
     }
   });
 
-  if (coded.isNotEmpty) {
-    codedResult = coded.join();
-  } else {
-    print("Usage: please provide a string to encrypt");
-    exit(1);
-  }
-
-  return codedResult;
+  return coded.join();
 }
