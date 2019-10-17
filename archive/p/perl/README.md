@@ -8,6 +8,8 @@ Welcome to Sample Programs in Perl!
 - [Reverse a String in Perl][2]
 - [Fizz Buzz in Perl][3]
 - [Factorial in Perl](factorial.pl)
+- [File IO in Perl](https://github.com/TheRenegadeCoder/sample-programs/issues/1510)
+- [Even/Odd in Perl](even-odd.pl)
 
 ## Fun Facts
 
