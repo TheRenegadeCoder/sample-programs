@@ -20,7 +20,6 @@ Welcome to Sample Programs in PHP!
 - [Roman Numeral Conversion in PHP][18]
 - [File IO in PHP][19]
 - [Prime Number in PHP][20]
-- [Quick Sort in PHP][21]
 - [Selection Sort in PHP][22]
 - [Game of Life in PHP][23]
 
@@ -58,6 +57,5 @@ Welcome to Sample Programs in PHP!
 [18]: https://github.com/TheRenegadeCoder/sample-programs/issues/1532
 [19]: https://github.com/TheRenegadeCoder/sample-programs/issues/1528
 [20]: https://github.com/TheRenegadeCoder/sample-programs/issues/1522
-[21]: https://github.com/TheRenegadeCoder/sample-programs/issues/1636
 [22]: https://github.com/TheRenegadeCoder/sample-programs/issues/1638
 [23]: https://github.com/TheRenegadeCoder/sample-programs/issues/1518
