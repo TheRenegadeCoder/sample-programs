@@ -1,18 +1,40 @@
 #include <iostream>
+#include <vector>
+#include <sstream>
 
-int main() {
-  int size, key;
-  std::cout<<"Enter the size of array: ";
-  std::cin>>size;
-  int array[size];
-  std::cout<<"Enter the elements of array: \n";
-  for(int i=0; i<size; i++) {
-    std::cout<<"Enter array element at position "<<i+1<<": ";
-    std::cin>>array[i];
+std::vector<int> sysarg_to_list(std::string str) {
+  std::vector<int> ret;
+  std::string s = "";
+  for(int i=0; i<str.length(); i++) {
+    if(str[i] == ' ')
+      continue;
+    if(str[i] == ',') {
+      std::stringstream ss(s);
+      int num = 0;
+      ss >> num;
+      ret.push_back(num);
+      s = "";
+      continue;
+    }
+    s += str[i];
   }
-  std::cout<<"Enter the key to search: ";
-  std::cin>>key;
+  std::stringstream ss(s);
+  int num = 0;
+  ss >> num;
+  ret.push_back(num);
+  return ret;
+}
+
+int main(int argc, char** argv) {
+  int size, key;
+  key = atoi(argv[1]);
+  std::string arr_string = argv[2];
+
+  std::vector<int> array = sysarg_to_list(arr_string);
+  size = array.size();
+
   int flag=0, pos=-1;
+
   for(int i=0; i<size; i++)
     if(array[i] == key) {
       flag = 1;
@@ -20,7 +42,7 @@ int main() {
       break;
     }
   if(flag)
-    std::cout<<key<<" is found at position "<<pos+1<<".\n";
+    std::cout<<key<<" is found at position "<<pos<<".\n";
   else
     std::cout<<key<<" is not found in array.\n";
 
