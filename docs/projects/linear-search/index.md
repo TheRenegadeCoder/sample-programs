@@ -40,21 +40,21 @@ Linear search is not efficient for large arrays, but for relatively smaller arra
 
 <b>Iteration 1</b>
 <br>array[i] = array[0] = 1
-\nkey = 3
-\nkey != array[i]
+<br>key = 3
+<br>key != array[i]
 
 <b>Iteration 2</b>
-\narray[i] = array[i] = 2
-\nkey = 3
-\nkey != array[i]
+<br>array[i] = array[i] = 2
+<br>key = 3
+<br>key != array[i]
 
 <b>Iteration 3</b>
-\narray[i] = array[2] = 3
-\nkey = 3
-\nkey = array[i]
-\nbreak
-\nflag = 1
-\npos = 2
+<br>array[i] = array[2] = 3
+<br>key = 3
+<br>key = array[i]
+<br>break
+<br>flag = 1
+<br>pos = 2
 
 ## Requirements
 
