@@ -21,10 +21,9 @@ if n == 0:
     echo ""
     quit(0)
 
-for i in 1..<n:
+for i in 1..n:
+    echo i, ": ", currentInt
     previouspreviousInt = previousInt
     previousInt = currentInt
     currentInt = previouspreviousInt + previousInt
-
-echo currentInt
 
