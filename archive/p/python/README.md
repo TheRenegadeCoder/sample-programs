@@ -82,7 +82,7 @@ Welcome to Sample Programs in Python!
   - [x] [The `return` Statement][10]
   - [ ] The `yield` Statement
   - [ ] The `raise` Statement
-  - [x] [The `break` Statement][44]
+  - [x] The `break` Statement
   - [ ] The `continue` Statement
   - [x] [The `import` Statement][11]
   - [ ] The `global` Statement
@@ -145,4 +145,3 @@ Welcome to Sample Programs in Python!
 [39]: https://github.com/TheRenegadeCoder/sample-programs/issues/870
 [41]: https://www.python.org/dev/peps/pep-0020/
 [43]: https://github.com/TheRenegadeCoder/sample-programs/issues/1536
-[44]:
