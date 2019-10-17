@@ -5,12 +5,6 @@ use warnings;
 # accept input as argument
 my ($number) = @ARGV;
 
-# if not provided, read from standard input
-if (!defined $number) {
-	$number = <STDIN>;
-	chomp $number;
-}
-
 if (!defined $number || $number !~ /^\-?\d+$/) {
 	print "Usage: please input a number\n";
 	exit;
