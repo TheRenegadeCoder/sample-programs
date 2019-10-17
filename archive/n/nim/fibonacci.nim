@@ -2,12 +2,12 @@
 import strutils
 
 echo "Input the number of iterations (n): "
-var n = parseInt(readline(stdin))
+let n = stdin.readline.parseBiggestUInt
 echo "------------------------------`"
 
-var previouspreviousInt: int
-var previousInt: int = 0
-var currentInt: int = 1
+var previouspreviousInt: BiggestUInt
+var previousInt: BiggestUInt = 0
+var currentInt: BiggestUInt = 1
 
 for i in 1..n:
     previouspreviousInt = previousInt
