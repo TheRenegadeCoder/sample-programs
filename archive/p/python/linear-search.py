@@ -5,7 +5,7 @@ def sysarg_to_list(string):
 
 if(len(sys.argv) != 2):
     print("Enter two arguments: key and string containing array elements")
-    exit()
+    sys.exit()
 
 key = int(sys.argv[1])
 array = sysarg_to_list(sys.argv[2])
