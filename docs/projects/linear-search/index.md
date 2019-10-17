@@ -71,7 +71,7 @@ $ ./linear-search 3 "1, 2, 3, 4, 5"
 #### Python Program:
 
 ```console
-$ cd archives/c/c-plus-plus/
+$ cd archives/p/python/
 $ python linear-search.py 6 "1, 2, 3, 4, 5"
 6 not found in the array .
 ```
