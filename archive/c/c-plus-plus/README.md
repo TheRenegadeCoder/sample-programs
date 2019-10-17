@@ -18,6 +18,7 @@ Welcome to Sample Programs in C++!
 - [Reverse String in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/419)
 - [Fractions in c++](https://github.com/TheRenegadeCoder/sample-programs/tree/master/archive/c/c-plus-plus/)
 - [Longest Common Sub-sequence in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1262)
+- [Selection Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1683)
 
 ## Fun Facts
 
