@@ -22,12 +22,16 @@ namespace SamplePrograms
                     Console.WriteLine(string.Format("{0}! is out of the reasonable bounds for calculation.", n));
                     Environment.Exit(1);
                 }
+                else if (n < 0) {
+                    Console.WriteLine("Usage: please input a non-negative integer");
+                    Environment.Exit(1);
+                }
                 var result = Fact(n);
                 Console.WriteLine(result);
             }
             catch
             {
-                Console.WriteLine("Usage: please input a number");
+                Console.WriteLine("Usage: please input a non-negative integer");
                 Environment.Exit(1);
             }
         }

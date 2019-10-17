@@ -20,7 +20,7 @@ function roman_to_decimal($romans) {
         // check if the character is a roman numeral
         $numeral = strtoupper($romans[$i]);
         if (!array_key_exists($numeral, $roman_values)) {
-            throw new Exception("Invalid string of roman numerals");
+            throw new Exception("invalid string of roman numerals");
         }
 
         // convert to decimal and add/subtract from total.
@@ -76,7 +76,7 @@ try {
 
     // Check argument count
     if ($argc < 2) {
-        echo "Usage: please, provide a string of roman numerals\n";
+        echo "Usage: please provide a string of roman numerals\n";
         exit(1);
     }
 

@@ -1,0 +1,9 @@
+folder:
+  extension: ".nim"
+  naming: "underscore"
+
+container:
+  image: "nimlang/nim"
+  tag: "1.0.0-alpine"
+  build: "nim c {{ source.name }}{{ source.extension }}"
+  cmd: "./{{ source.name }}"

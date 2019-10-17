@@ -1,9 +1,12 @@
-# Factorial Implentation (Recursion)
-# Author : pearl2201
-# Connect at : https://www.facebook.com/pearl.2201
-# created date : 12 October, 2019
-
 defmodule Factorial do
+  def main(args) do
+    args
+    |> List.first
+    |> as_integer
+    |> get
+    |> IO.puts()
+  end
+
   def get(0, acc) do
     acc
   end
@@ -12,28 +15,21 @@ defmodule Factorial do
     get(n - 1, acc * n)
   end
 
-  def get(n) when not is_integer(n) do
-    {:error, :the_input_is_not_valid}
-  end
-
-  def get(n) when n < 0 do
-    {:error, :the_input_is_not_valid}
+  def get(n) when not is_integer(n) or n < 0 do
+    "Usage: please input a non-negative integer"
   end
 
   def get(n) do
     get(n, 1)
   end
-end
 
-ExUnit.start()
-
-defmodule FactorialTests do
-  use ExUnit.Case
-
-  test "Factorial" do
-    assert Factorial.get("test_string") == {:error, :the_input_is_not_valid}
-    assert Factorial.get(-1) == {:error, :the_input_is_not_valid}
-    assert Factorial.get(0) == 1
-    assert Factorial.get(10) == 3_628_800
+  def as_integer(n) do
+    try do
+        String.to_integer(n)
+    rescue
+        ArgumentError -> -1
+    end
   end
 end
+
+Factorial.main(System.argv())

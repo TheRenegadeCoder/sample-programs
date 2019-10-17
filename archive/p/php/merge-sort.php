@@ -29,9 +29,14 @@ function merge($left, $right){
 	}
 	return $res;
 }
-$test_array = array(100, 54, 7, 2, 5, 4, 1);
-echo "Original Array : ";
-echo implode(', ',$test_array );
-echo "\nSorted Array :";
+
+$test_array = array_map('intval', explode(',', $argv[1]));
+$array_size = count($test_array);
+
+if ($array_size <= 1)
+{
+    exit('Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"');
+}
+
 echo implode(', ',merge_sort($test_array))."\n";
 ?>

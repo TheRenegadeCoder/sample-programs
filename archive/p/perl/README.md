@@ -7,6 +7,8 @@ Welcome to Sample Programs in Perl!
 - [Hello World in Perl][1]
 - [Reverse a String in Perl][2]
 - [Fizz Buzz in Perl][3]
+- [Factorial in Perl](factorial.pl)
+- [File IO in Perl](https://github.com/TheRenegadeCoder/sample-programs/issues/1510)
 
 ## Fun Facts
 
@@ -26,3 +28,4 @@ Welcome to Sample Programs in Perl!
 [4]: https://en.wikipedia.org/wiki/Perl
 [5]: https://www.perl.org
 [6]: https://www.jdoodle.com/execute-perl-online
+

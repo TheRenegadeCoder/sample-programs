@@ -12,7 +12,6 @@
 $input = NULL;
 if (
     sizeof($argv) < 2 ||
-    empty($argv[1]) ||
     !is_numeric($argv[1]) ||
     intval($argv[1]) < 0
 ) {

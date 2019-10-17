@@ -17,6 +17,8 @@ Welcome to Sample Programs in C!
 - [Bubble Sort][14]
 - [Capitalize in C][15]
 - [ROT-13 in C][16]
+- [Prime Numbers in C][17]
+- [Merge Sort in C][18]
 
 ## Fun Facts
 
@@ -47,3 +49,5 @@ Welcome to Sample Programs in C!
 [14]: https://github.com/TheRenegadeCoder/sample-programs/issues/942
 [15]: https://github.com/TheRenegadeCoder/sample-programs/issues/1273
 [16]: https://en.wikipedia.org/wiki/ROT13
+[17]: https://github.com/TheRenegadeCoder/sample-programs/issues/1277
+[18]: https://github.com/TheRenegadeCoder/sample-programs/issues/1267
