@@ -58,50 +58,37 @@ Linear search is not efficient for large arrays, but for relatively smaller arra
 
 ## Requirements
 
-Write a sample program that takes a list of numbers in the format "4, 5, 3, 1, 2".
-It should then sort the numbers and output them:
+Write a sample program that takes a key in the format 3 and a list of numbers in the format "1, 2, 3, 4, 5".
+#### C++ Program:
 
 ```console
-$ ./bubble-sort.lang "4, 5, 3, 1, 2"
-1, 2, 3, 4, 5
+$ cd archives/c/c-plus-plus/
+$ g++ -o linear-search linear-search.cpp
+$ ./linear-search 3 "1, 2, 3, 4, 5"
+3 found at position 2.
 ```
 
-The solution should handle duplicate elements
+#### Python Program:
 
 ```console
-$ ./bubble-sort.lang "4, 5, 3, 1, 4, 2"
-1, 2, 3, 4, 4, 5
+$ cd archives/c/c-plus-plus/
+$ python linear-search.py 6 "1, 2, 3, 4, 5"
+6 not found in the array .
 ```
 
 In addition, there should be some error handling for situations where the user
 doesn't supply correct input.
 
-## Testing
-
-The following table contains various test cases that you can use to
-verify the correctness of your solution:
-
-| Description                  | Input | Output |
-|------------------------------|-------|--------|
-| No Input                     |       | Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5" |
-| Empty Input                  | ""    | Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5" |
-| Invalid Input: Not a List    | 1     | Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5" |
-| Invalid Input: Wrong Format  | 4 5 3 | Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5" |
-| Sample Input                 | 4, 5, 3, 1, 2             | 1, 2, 3, 4, 5             |
-| Sample Input: With Duplicate | 4, 5, 3, 1, 4, 2          | 1, 2, 3, 4, 4, 5          |
-| Sample Input: Already Sorted | 1, 2, 3, 4, 5             | 1, 2, 3, 4, 5             |
-| Sample Input: Reverse Sorted | 9, 8, 7, 6, 5, 4, 3, 2, 1 | 1, 2, 3, 4, 5, 6, 7, 8, 9 |
-
 ## Articles
 
-{% include article_list.md collection=site.categories.bubble-sort %}
+{% include article_list.md collection=site.categories.linear-search %}
 
 ## Further Readings
 
-- [Bubble sort on Wikipedia][1]
+- [Linear search on Wikipedia][1]
 - [A beginner's guide to Big O notation- Rob Bell][2]
 - [Big O notation on Wikipedia][3]
 
-[1]: https://en.wikipedia.org/wiki/Bubble_sort
+[1]: https://en.wikipedia.org/wiki/Linear_search
 [2]: https://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/
 [3]: https://en.wikipedia.org/wiki/Big_O_notation
