@@ -20,6 +20,7 @@ This simple program picks a string and return the first letter of it in uppercas
 ## Requirements
 
 For this sample program, each solution should return the string with the first letter in uppercase.
+In other words, do not change anything else about the input string.
 
 ```
 string -> String
@@ -42,6 +43,7 @@ Feel free to use the following table when testing capitalize programs
 | Lowercase String | "hello" | "Hello" |
 | Uppercase String | "Hello" | "Hello" |
 | Long String | "hello world" | "Hello world" |
+| Mixed Casing | "heLLo World" | "HeLLo World" |
 | Symbols | "12345" | "12345" |
 
 ## Articles
