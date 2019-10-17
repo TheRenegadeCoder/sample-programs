@@ -39,7 +39,7 @@ Linear search is not efficient for large arrays, but for relatively smaller arra
 ### Example: key=3, array=[1, 2, 3, 4, 5]
 
 <b>Iteration 1</b>
-\narray[i] = array[0] = 1
+<br>array[i] = array[0] = 1
 \nkey = 3
 \nkey != array[i]
 
