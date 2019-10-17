@@ -8,20 +8,21 @@ Welcome to Sample Programs in PHP!
   - Solution borrowed from @toturkmen and @erayak via the [baklava repo][1]
 - [Bubble Sort in PHP][12]
 - [Capitalize in PHP][16]
+- [Convex Hull in PHP][23]
 - [Even/Odd in PHP][22]
 - [Factorial in PHP][13]
 - [Fibonacci in PHP][9]
+- [File IO in PHP][19]
 - [Fizz Buzz in PHP][3]
+- [Game of Life in PHP][21]
 - [Hello World in PHP][2]
+- [Insertion Sort in PHP][17]
 - [Merge Sort in PHP][14]
 - [Palindrome Word in PHP][11]
+- [Prime Number in PHP][20]
+- [Roman Numeral Conversion in PHP][18]
 - [ROT13 in PHP][15]
 - [String Reverse in PHP][10]
-- [Insertion Sort in PHP][17]
-- [Roman Numeral Conversion in PHP][18]
-- [File IO in PHP][19]
-- [Prime Number in PHP][20]
-- [Game of Life in PHP][21]
 
 ## Fun Facts
 
@@ -59,3 +60,4 @@ Welcome to Sample Programs in PHP!
 [20]: https://github.com/TheRenegadeCoder/sample-programs/issues/1522
 [21]: https://github.com/TheRenegadeCoder/sample-programs/issues/1518
 [22]: https://github.com/TheRenegadeCoder/sample-programs/issues/1523
+[23]: https://github.com/TheRenegadeCoder/sample-programs/issues/1534
