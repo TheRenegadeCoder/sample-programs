@@ -2,7 +2,7 @@ module Main where
 import Data.Char
 
 capitalize :: String -> String
-capitalize (head:tail) = toUpper head : map toLower tail
+capitalize (head:tail) = toUpper head : tail
 capitalize [] = []
 
 main = do  
