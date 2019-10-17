@@ -5,7 +5,6 @@ def sysarg_to_list(string):
 
 key = int(sys.argv[1])
 array = sysarg_to_list(sys.argv[2])
-print(array)
 size = len(array)
 
 flag = 0
