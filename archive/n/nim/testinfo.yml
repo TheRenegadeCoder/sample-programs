@@ -5,4 +5,4 @@ folder:
 container:
   image: "nimlang/nim"
   tag: "1.0.0-alpine"
-  cmd: "nim c -r --verbosity:0 {{ source.name }}{{ source.extension }}"
+  cmd: "nim c -r {{ source.name }}{{ source.extension }}"
