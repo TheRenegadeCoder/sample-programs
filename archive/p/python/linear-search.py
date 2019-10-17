@@ -1,12 +1,11 @@
-size = int(input("Enter the size of array: "))
+import sys
 
-array = []
+def sysarg_to_list(string):
+    return [int(x.strip(" "), 10) for x in string.split(',')]
 
-for i in range(size):
-    inp = int(input("Enter array item " + str(i+1) + ": "))
-    array.append(inp)
-
-key = int(input("Enter the key to search: "))
+key = int(sys.argv[1])
+array = sysarg_to_list(sys.argv[2])
+size = len(array)
 
 flag = 0
 pos = -1
