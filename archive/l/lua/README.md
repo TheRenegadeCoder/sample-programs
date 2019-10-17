@@ -3,7 +3,7 @@
 Welcome to Sample Programs in Lua!
 
 ## Sample Programs
-
+- [Capitalize in Lua][8]
 - [Factorial in Lua][6]
 - [Fizz Buzz in Lua][1]
 - [Hello World in Lua][2]
@@ -28,3 +28,4 @@ Welcome to Sample Programs in Lua!
 [5]: https://github.com/TheRenegadeCoder/sample-programs/issues/446
 [6]: https://github.com/TheRenegadeCoder/sample-programs/issues/1435
 [7]: https://github.com/TheRenegadeCoder/sample-programs/issues/1438
+[8]: https://github.com/TheRenegadeCoder/sample-programs/issues/1433
