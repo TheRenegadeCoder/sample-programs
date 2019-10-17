@@ -39,22 +39,22 @@ Linear search is not efficient for large arrays, but for relatively smaller arra
 ### Example: key=3, array=[1, 2, 3, 4, 5]
 
 <b>Iteration 1</b>
-array[i] = array[0] = 1
-key = 3
-key != array[i]
+\narray[i] = array[0] = 1
+\nkey = 3
+\nkey != array[i]
 
 <b>Iteration 2</b>
-array[i] = array[i] = 2
-key = 3
-key != array[i]
+\narray[i] = array[i] = 2
+\nkey = 3
+\nkey != array[i]
 
 <b>Iteration 3</b>
-array[i] = array[2] = 3
-key = 3
-key = array[i]
-break
-flag = 1
-pos = 2
+\narray[i] = array[2] = 3
+\nkey = 3
+\nkey = array[i]
+\nbreak
+\nflag = 1
+\npos = 2
 
 ## Requirements
 
