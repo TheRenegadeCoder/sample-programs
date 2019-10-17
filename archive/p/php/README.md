@@ -8,6 +8,7 @@ Welcome to Sample Programs in PHP!
   - Solution borrowed from @toturkmen and @erayak via the [baklava repo][1]
 - [Bubble Sort in PHP][12]
 - [Capitalize in PHP][16]
+- [Even/Odd in PHP][22]
 - [Factorial in PHP][13]
 - [Fibonacci in PHP][9]
 - [Fizz Buzz in PHP][3]
