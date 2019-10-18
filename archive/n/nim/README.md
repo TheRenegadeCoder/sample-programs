@@ -5,6 +5,7 @@ Welcome to Sample Programs in Nim!
 ## Sample Programs
 
 - [Hello World in Nim](https://github.com/jrg94/sample-programs/issues/68)
+- [Fibonacci in Nim](https://github.com/TheRenegadeCoder/sample-programs/issues/1669)
 
 ## Fun Facts
 
