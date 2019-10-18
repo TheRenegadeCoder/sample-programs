@@ -3,6 +3,6 @@ folder:
   naming: "hyphen"
 
 container:
-  image: "dart"
+  image: "google/dart"
   tag: "2.5"
   cmd: "dart {{ source.name }}{{ source.extension }}"
