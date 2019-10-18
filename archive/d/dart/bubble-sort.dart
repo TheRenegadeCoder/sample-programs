@@ -3,10 +3,10 @@ import 'dart:io';
 main(List<String> args) {
   try {
     List<double> numbersList = parseInput(args.join());
-    if (numbersList.length <= 1) exit_with_error();
+    if (numbersList.length <= 1) exitWithError();
     print(bubbleSort(numbersList));
   } catch (e) {
-    exit_with_error();
+    exitWithError();
   }
 }
 
@@ -58,7 +58,7 @@ List<double> parseInput(String input) {
   return parsedList;
 }
 
-exit_with_error() {
+exitWithError() {
   print(
       'Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"');
   exit(1);
