@@ -1,5 +1,13 @@
 <?php
 
+$numbers = array_map('intval', explode(',', $argv[1]));
+$array_size = count($numbers);
+if ($array_size <= 1)
+{
+    exit('Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"');
+}
+
+
 function selection_sort($data)
 {
 for($i=0; $i<count($data)-1; $i++) {
@@ -15,14 +23,11 @@ return $data;
 }
 
 function swap_positions($data1, $left, $right) {
-	$backup_old_data_right_value = $data1[$right];
+	$backup = $data1[$right];
 	$data1[$right] = $data1[$left];
-	$data1[$left] = $backup_old_data_right_value;
+	$data1[$left] = $backup;
 	return $data1;
 }
-$my_array = array(3, 0, 2, 5, -1, 4, 1);
-echo "Original Array :\n";
-echo implode(', ',$my_array );
-echo "\nSorted Array :\n";
-echo implode(', ',selection_sort($my_array)). PHP_EOL;
+
+echo implode(', ',selection_sort($numbers));
 ?>
