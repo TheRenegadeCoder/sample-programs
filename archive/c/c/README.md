@@ -19,6 +19,7 @@ Welcome to Sample Programs in C!
 - [ROT-13 in C][16]
 - [Prime Numbers in C][17]
 - [Merge Sort in C][18]
+- [Insertion Sort in C][19]
 
 ## Fun Facts
 
