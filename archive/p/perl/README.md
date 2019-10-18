@@ -4,11 +4,13 @@ Welcome to Sample Programs in Perl!
 
 ## Sample Programs
 
-- [Hello World in Perl][1]
-- [Reverse a String in Perl][2]
-- [Fizz Buzz in Perl][3]
+- [Capitalize in Perl](capitalize.pl)
+- [Even/Odd in Perl](even-odd.pl)
 - [Factorial in Perl](factorial.pl)
 - [File IO in Perl](https://github.com/TheRenegadeCoder/sample-programs/issues/1510)
+- [Fizz Buzz in Perl][3]
+- [Hello World in Perl][1]
+- [Reverse a String in Perl][2]
 
 ## Fun Facts
 
