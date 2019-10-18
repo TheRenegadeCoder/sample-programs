@@ -1,6 +1,12 @@
 <?php
  
-    $unsorted_numbers = array(3,7,1,26,43,12,6,21,23,73);
+    $numbers = array_map('intval', explode(',', $argv[1]));
+    $array_size = count($numbers);
+    
+    if ($array_size <= 1)
+    {
+        exit('Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"');
+    }
  
     function quicksort($array)
     {
@@ -20,7 +26,7 @@
         return array_merge(quicksort($left_element), array($pivot_element), quicksort($right_element));
     }
  
-    $sorted_numbers = quicksort($unsorted_numbers);
+    $sorted_numbers = quicksort($numbers);
  
-    print_r($sorted_numbers);
+    echo implode(', ', $numbers);
 ?>
