@@ -16,17 +16,9 @@ Public Module ReverseString
     System.Console.WriteLine($"Reversed: {reversedString}")
   End Sub
 
-  Public Function ReverseString(input As String) As String
-    Dim chars = input.ToCharArray()
-
-    System.Console.WriteLine(chars.Length)
-
-    Dim reversedChars(input.Length) As Char
-
-    For i = 0 To chars.Length - 1
-      reversedChars(input.Length - 1 - i) = chars(i)
-    Next
-
-    Return New String(reversedChars)
-  End Function
+    Public Function ReverseString(ByVal input As String) As String
+        Dim chars() As Char = input.ToCharArray()
+        Array.Reverse(chars)
+        Return New String(chars)
+    End Function
 End Module

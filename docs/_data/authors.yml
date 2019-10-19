@@ -1,3 +1,9 @@
+agilob:
+  name: agilob
+  email:
+  web: https://b.agilob.net
+  bio:
+
 alcha:
   name: Devin Leaman
   email: info@hasslefree.solutions
@@ -11,12 +17,12 @@ alexandra_woerner:
   email: alexandrawoerner92@googlemail.com
   web:
   bio:
-  
+
 Alina1Black:
-  name: Alina1Black 
+  name: Alina1Black
   email:
   web:
-  bio: 
+  bio:
 
 auroq:
   name: Parker Johansen
@@ -40,7 +46,7 @@ chrboe:
   email: christoph@boehmwalder.at
   web:
   bio:
-  
+
 daniellunsc:
   name: Daniel Luna
   email: danlunasc@gmail.com
@@ -57,6 +63,12 @@ hmajid2301:
   name: Haseeb Majid
   email:
   web: https://hmajid2301.github.io
+  bio:
+
+MandyMericle:
+  name: Mandy Mericle
+  email: mandmericle@gmail.com
+  web:
   bio:
 
 martyav:
@@ -82,7 +94,13 @@ noah11012:
   email: 1101qbtext@gmail.com
   web:
   bio:
-  
+
+niraj-kamdar:
+  name: Niraj Kamdar
+  email: nirajkamdar27@pm.me
+  web:
+  bio:
+
 ray6464:
   name: Ray Voice
   email: ray@vanet@gmail.com
@@ -94,6 +112,12 @@ samdoj:
   name: samdoj
   email: joedmasonsd@gmail.com
   web:
+  bio:
+
+slashdoom:
+  name: P. Ryon (slashdoom)
+  email: patrick@slashdoom.com
+  web: https://slashdoom.com
   bio:
 
 stargator:
@@ -130,7 +154,7 @@ two_clutch:
   email: maximillianaza@gmail.com
   web:
   bio: I'm me. I code. And I chill.
-  
+
 veevidify:
   name: veevidify
   email:
@@ -150,13 +174,13 @@ nickkeers:
   bio: |
     A software developer from the UK, I graduated from Keele University in 2015 with a bachelors in
     Computer Science. Interested in mainly functional programming (Elixir, Erlang, F#) and writing
-    resilient, scalable systems. 
+    resilient, scalable systems.
 
 wileymab:
   name: Matt Wiley
   email: wileymab@gmail.com
   web:
   bio: |
-    I'm just person. 
-    Sitting in front of some code. 
+    I'm just person.
+    Sitting in front of some code.
     Asking it to start working.
