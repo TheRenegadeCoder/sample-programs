@@ -23,6 +23,7 @@ Welcome to Sample Programs in PHP!
 - [Quine in PHP][24]
 - [Roman Numeral Conversion in PHP][18]
 - [ROT13 in PHP][15]
+- [Selection Sort in PHP][24]
 - [String Reverse in PHP][10]
 
 ## Fun Facts
@@ -59,6 +60,7 @@ Welcome to Sample Programs in PHP!
 [18]: https://github.com/TheRenegadeCoder/sample-programs/issues/1532
 [19]: https://github.com/TheRenegadeCoder/sample-programs/issues/1528
 [20]: https://github.com/TheRenegadeCoder/sample-programs/issues/1522
+[24]: https://github.com/TheRenegadeCoder/sample-programs/issues/1638
 [21]: https://github.com/TheRenegadeCoder/sample-programs/issues/1518
 [22]: https://github.com/TheRenegadeCoder/sample-programs/issues/1523
 [23]: https://github.com/TheRenegadeCoder/sample-programs/issues/1534
