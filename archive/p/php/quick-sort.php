@@ -28,5 +28,5 @@
  
     $sorted_numbers = quicksort($numbers);
  
-    echo implode(', ', $numbers);
+    echo implode(', ', $sorted_numbers);
 ?>
