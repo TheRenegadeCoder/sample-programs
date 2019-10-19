@@ -16,6 +16,10 @@ int main(int argc, char **argv)
     } 
     else {
         int input = atoi(argv[1]);
+        if(input == 0 || input ==1){
+            cout<<"composite\n";
+            return 0;
+        }
         for(int i = 2; i < input; ++i){
             if(input % i == 0){
                 cout<<"composite\n";
