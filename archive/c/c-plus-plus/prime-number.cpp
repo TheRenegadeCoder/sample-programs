@@ -18,7 +18,7 @@ int main(int argc, char **argv)
         int input = atoi(argv[1]);
         for(int i = 2; i < input; ++i){
             if(input % i == 0){
-                cout<<"Not Prime\n";
+                cout<<"composite\n";
                 return 0;
             }
         }
