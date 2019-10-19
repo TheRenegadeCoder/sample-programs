@@ -5,7 +5,7 @@ Welcome to Sample Programs in Lisp!
 ## Sample Programs
 
 - [Hello World in Lisp](https://therenegadecoder.com/code/hello-world-in-lisp/)
-- [Fizz Buzz in Lisp](https://github.com/TheRenegadeCoder/sample-programs/issues/653)
+- [Fizz Buzz in Lisp](https://github.com/TheRenegadeCoder/sample-programs/blob/master/docs/projects/fizz-buzz/_posts/2019-10-18-lisp.md)
 
 ## Fun Facts
 
