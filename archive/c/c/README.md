@@ -4,22 +4,23 @@ Welcome to Sample Programs in C!
 
 ## Sample Programs
 
-- [Hello World in C][2]
-- [Reverse String in C][3]
-- [Fizz Buzz in C][4]
-- [File Input/Ouput in C][5]
 - [Baklava in C][10]
   - Solution borrowed from @toturkmen and @ahmeturganci via the [baklava repo][1]
-- [Game of Life in C][6]
-- [Fibonacci in C][11]
-- [Factorial in C][13]
-- [Convex Hull in C][12]
 - [Bubble Sort][14]
 - [Capitalize in C][15]
-- [ROT-13 in C][16]
-- [Prime Numbers in C][17]
-- [Merge Sort in C][18]
+- [Convex Hull in C][12]
+- [Factorial in C][13]
+- [Fibonacci in C][11]
+- [File Input/Ouput in C][5]
+- [Fizz Buzz in C][4]
+- [Game of Life in C][6]
+- [Hello World in C][2]
 - [Insertion Sort in C][19]
+- [Merge Sort in C][18]
+- [Prime Numbers in C][17]
+- [Quine in C][20]
+- [Reverse String in C][3]
+- [ROT-13 in C][16]
 
 ## Fun Facts
 
@@ -52,3 +53,5 @@ Welcome to Sample Programs in C!
 [16]: https://en.wikipedia.org/wiki/ROT13
 [17]: https://github.com/TheRenegadeCoder/sample-programs/issues/1277
 [18]: https://github.com/TheRenegadeCoder/sample-programs/issues/1267
+[19]: https://github.com/TheRenegadeCoder/sample-programs/issues/1266
+[20]: https://github.com/TheRenegadeCoder/sample-programs/issues/1274
