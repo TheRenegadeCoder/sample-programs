@@ -59,7 +59,7 @@ void print(long long arr[], int size)
 
 int main(int argc[1],char **argv)
 {
-    while(strlen(argv[1])==0){
+    while(argv[1]==NULL||strlen(argv[1])==0){
         printf("Usage: please provide a list of at least two integers to sort in the format “1, 2, 3, 4, 5”\n");
         return 0;
     }
