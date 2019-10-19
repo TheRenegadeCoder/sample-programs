@@ -20,11 +20,12 @@ Welcome to Sample Programs in PHP!
 - [Merge Sort in PHP][14]
 - [Palindrome Word in PHP][11]
 - [Prime Number in PHP][20]
-- [Quine in PHP][24]
+- [Quine in PHP][25]
 - [Roman Numeral Conversion in PHP][18]
 - [ROT13 in PHP][15]
 - [Selection Sort in PHP][24]
 - [String Reverse in PHP][10]
+- [Quick Sort in PHP][26]
 
 ## Fun Facts
 
@@ -62,6 +63,8 @@ Welcome to Sample Programs in PHP!
 [20]: https://github.com/TheRenegadeCoder/sample-programs/issues/1522
 [24]: https://github.com/TheRenegadeCoder/sample-programs/issues/1638
 [21]: https://github.com/TheRenegadeCoder/sample-programs/issues/1518
+[26]: https://github.com/TheRenegadeCoder/sample-programs/issues/1636
 [22]: https://github.com/TheRenegadeCoder/sample-programs/issues/1523
 [23]: https://github.com/TheRenegadeCoder/sample-programs/issues/1534
-[24]: https://github.com/TheRenegadeCoder/sample-programs/issues/1529
+[25]: https://github.com/TheRenegadeCoder/sample-programs/issues/1529
+
