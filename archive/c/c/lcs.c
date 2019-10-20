@@ -10,7 +10,7 @@ long long get_val(int tmp[],int len){
     long long value=0,mult=1;
     for(int i=len-1;i>-1;--i){
         if(tmp[i]==' '-'0'){
-            printf("\"Usage: please provide two lists in the format \"1, 2, 3, 4, 5\"");
+            printf("Usage: please provide two lists in the format \"1, 2, 3, 4, 5\"");
             exit(0);
         }
         value+=tmp[i]*mult;
@@ -44,7 +44,7 @@ void find(int l,int r){
 int main(int argc,char **argv)
 {
     if(argv[1]==NULL||strlen(argv[1])==0||argv[2]==NULL||strlen(argv[2])==0){
-        printf("\"Usage: please provide two lists in the format \"1, 2, 3, 4, 5\"");
+        printf("Usage: please provide two lists in the format \"1, 2, 3, 4, 5\"");
         return 0;
     }
 
@@ -81,10 +81,8 @@ int main(int argc,char **argv)
     memset(lc,-1,sizeof(lc));
     lcs(len1-1,pos-1);
     find(len1-1,pos-1);
-    printf("\"");
     for(int i=indic-1;i>-1;--i){
         printf("%lld",ans[i]);
         if(i!=0)printf(", ");
     }
-    printf("\"");
 }
