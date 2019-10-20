@@ -7,7 +7,7 @@ int val[150];
 int main(int argc,char **argv)
 {
     if(argv[1]==NULL){
-        printf("\"Usage: please provide a string of roman numerals\"\n");
+        printf("Usage: please provide a string of roman numerals");
         return 0;
     }
     if(strlen(argv[1])==0){
@@ -27,14 +27,14 @@ int main(int argc,char **argv)
     
     for(int i=1;i<len;++i){
         if(!val[argv[1][i]]){
-            printf("\"Error: invalid string of roman numerals\"");
+            printf("Error: invalid string of roman numerals");
             return 0;
         }
         if(val[argv[1][i]]>val[argv[1][i-1]])ans-=2*val[argv[1][i-1]];
         ans+=val[argv[1][i]];
     }
     if(!val[argv[1][0]]){
-        printf("\"Error: invalid string of roman numerals\"");
+        printf("Error: invalid string of roman numerals");
         return 0;
     }
     printf("%lld",ans+val[argv[1][0]]);
