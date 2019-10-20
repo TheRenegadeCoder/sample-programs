@@ -1,7 +1,7 @@
 (ns reverse-string
 	(:gen-class))
 
-(defn reverse [s]
-  (clojure.string/reverse s))
+(defn main [s]
+  (println(clojure.string/reverse s)))
 
-(reverse "Hello, World")
+(main (first *command-line-args*))
