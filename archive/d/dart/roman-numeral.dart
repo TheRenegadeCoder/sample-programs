@@ -1,7 +1,6 @@
 void main(List<String> args) {
   try{
     Map numerals = numeral_map();
-    // var values = List<int>();
     List<int> values = [0];
     for(int i=0; i<args[0].length; i++){
       values.add(numerals[args[0][i]]);
@@ -19,10 +18,8 @@ void main(List<String> args) {
   on NoSuchMethodError{
     print("Error: invalid string of roman numerals");
   }
-  // catch(e){
-  //   print("Usage: please input a number");
-  // }
 }
+
 Map numeral_map(){
   var numerals = new Map();
   numerals['I'] = 1;
