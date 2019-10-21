@@ -4,6 +4,7 @@ Welcome to Sample Programs in Dart!
 
 ## Sample Programs
 
+- [Baklava in Dart][4]
 - [Bubble Sort in Dart][3]
 - [Capitalize in Dart][2]
 - [Even Odd in Dart](https://therenegadecoder.com/code/even-odd-in-dart/)
@@ -27,3 +28,4 @@ Welcome to Sample Programs in Dart!
 [1]: https://github.com/TheRenegadeCoder/sample-programs/issues/1676
 [2]: https://github.com/TheRenegadeCoder/sample-programs/issues/1679
 [3]: https://github.com/TheRenegadeCoder/sample-programs/issues/1695
+[4]: https://github.com/TheRenegadeCoder/sample-programs/issues/1728
