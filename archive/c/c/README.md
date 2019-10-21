@@ -18,6 +18,7 @@ Welcome to Sample Programs in C!
 - [Insertion Sort in C][19]
 - [Merge Sort in C][18]
 - [Prime Numbers in C][17]
+- [Quick Sort in C][21]
 - [Quine in C][20]
 - [Reverse String in C][3]
 - [ROT-13 in C][16]
@@ -55,3 +56,4 @@ Welcome to Sample Programs in C!
 [18]: https://github.com/TheRenegadeCoder/sample-programs/issues/1267
 [19]: https://github.com/TheRenegadeCoder/sample-programs/issues/1266
 [20]: https://github.com/TheRenegadeCoder/sample-programs/issues/1274
+[21]: https://sample-programs.therenegadecoder.com/projects/quick-sort/
