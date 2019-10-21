@@ -7,6 +7,7 @@ Welcome to Sample Programs in Dart!
 - [Bubble Sort in Dart][3]
 - [Capitalize in Dart][2]
 - [Even Odd in Dart](https://therenegadecoder.com/code/even-odd-in-dart/)
+- [Fibonacci in Dart](https://therenegadecoder.com/code/fibonacci-in-dart/)
 - [Hello World in Dart](https://therenegadecoder.com/blog/hello-world-in-dart/)
 - [Reverse String in Dart](https://therenegadecoder.com/code/reverse-a-string-in-dart/)
 - [Rot13 in Dart][1]
