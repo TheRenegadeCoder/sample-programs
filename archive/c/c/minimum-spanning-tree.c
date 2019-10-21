@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include <string.h>
 
+struct Edge{ 
+	int src, dest;
+    long long weight; 
+}; 
+
 long long get_val(int tmp[],int len){
     long long value=0,mult=1;
     for(int i=len-1;i>-1;--i){
@@ -15,116 +20,81 @@ long long get_val(int tmp[],int len){
     return value;
 }
 
-
-struct Edge 
-{ 
-	int src, dest;
-    long long weight; 
-}; 
-
-
-struct Graph 
-{ 
-	
+struct Graph{ 
 	int V, E; 
 	struct Edge* edge; 
 }; 
 
-struct Graph* createGraph(int V, int E) 
-{ 
+struct Graph* createGraph(int V, int E){ 
 	struct Graph* graph = malloc(sizeof(struct Graph)); 
 	graph->V = V; 
 	graph->E = E; 
-
 	graph->edge = malloc(sizeof(struct Edge)*E); 
-
 	return graph; 
 } 
 
-struct subset 
-{ 
+struct subset{ 
 	int parent; 
 	int rank; 
 }; 
 
-int find(struct subset subsets[], int i) 
-{ 
+int find(struct subset subsets[], int i){ 
 	if (subsets[i].parent != i) 
 		subsets[i].parent = find(subsets, subsets[i].parent); 
-
 	return subsets[i].parent; 
 } 
 
-void Union(struct subset subsets[], int x, int y) 
-{ 
+void Union(struct subset subsets[], int x, int y){ 
 	int xroot = find(subsets, x); 
 	int yroot = find(subsets, y); 
-	if (subsets[xroot].rank < subsets[yroot].rank) 
-		subsets[xroot].parent = yroot; 
-	else if (subsets[xroot].rank > subsets[yroot].rank) 
-		subsets[yroot].parent = xroot; 
-	else
-	{ 
+	if (subsets[xroot].rank < subsets[yroot].rank) subsets[xroot].parent = yroot; 
+	else if (subsets[xroot].rank > subsets[yroot].rank) subsets[yroot].parent = xroot; 
+	else{ 
 		subsets[yroot].parent = xroot; 
 		subsets[xroot].rank++; 
 	} 
 } 
 
-int myComp(const void* a, const void* b) 
-{ 
+int myComp(const void* a, const void* b){ 
 	struct Edge* a1 = (struct Edge*)a; 
 	struct Edge* b1 = (struct Edge*)b; 
 	return a1->weight > b1->weight; 
 } 
 
-void KruskalMST(struct Graph* graph) 
-{ 
+void KruskalMST(struct Graph* graph){ 
 	int V = graph->V; 
     long long res=0;
 	int e = 0; 
 	int i = 0;  
-
 	qsort(graph->edge, graph->E, sizeof(graph->edge[0]), myComp); 
-	
-	struct subset *subsets = 
-		(struct subset*) malloc( V * sizeof(struct subset) ); 
-	for (int v = 0; v < V; ++v) 
-	{ 
+    
+	struct subset *subsets =(struct subset*)malloc( V * sizeof(struct subset) ); 
+	for(int v = 0; v < V; ++v){ 
 		subsets[v].parent = v; 
 		subsets[v].rank = 0; 
 	} 
-	while (e < V - 1 && i < graph->E) 
-	{ 
+	while (e < V - 1 && i < graph->E){ 
 		struct Edge next_edge = graph->edge[i++]; 
-
 		int x = find(subsets, next_edge.src); 
 		int y = find(subsets, next_edge.dest); 
-		
-		if (x != y) 
-		{ 
+		if (x != y){ 
 			res = res + next_edge.weight; 
 			Union(subsets, x, y); 
 		} 
 	} 
-
-	printf("%lld", res); 
+	printf("%lld",res); 
 	return; 
 } 
 
-
-int floorSqrt(int x) 
-{ 
-    if (x == 0 || x == 1) 
-    return x; 
-    int i = 1, result = 1; 
-    while (result <= x) 
-    { 
+int floorSqrt(int x){ 
+    if (x == 0 || x == 1)return x; 
+    int i = 1,result = 1; 
+    while (result <= x){ 
       i++; 
       result = i * i; 
     } 
     return i - 1; 
 }
-
 
 int main(int argc,char **argv)
 {
