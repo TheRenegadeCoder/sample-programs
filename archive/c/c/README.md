@@ -16,6 +16,7 @@ Welcome to Sample Programs in C!
 - [Game of Life in C][6]
 - [Hello World in C][2]
 - [Insertion Sort in C][19]
+- [Minimum Spanning Tree][21]
 - [Merge Sort in C][18]
 - [Prime Numbers in C][17]
 - [Quine in C][20]
@@ -55,3 +56,4 @@ Welcome to Sample Programs in C!
 [18]: https://github.com/TheRenegadeCoder/sample-programs/issues/1267
 [19]: https://github.com/TheRenegadeCoder/sample-programs/issues/1266
 [20]: https://github.com/TheRenegadeCoder/sample-programs/issues/1274
+[21]: https://sample-programs.therenegadecoder.com/projects/minimum-spanning-tree/
