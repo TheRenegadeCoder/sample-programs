@@ -62,6 +62,7 @@ class LongestCommonSubsequence {
 
 }
 
+const DELIMITER = ", ";
 const noInputException = () => 'Usage: please provide two lists in the format "1, 2, 3, 4, 5"';
 const main = (input) => {
   try {
@@ -79,5 +80,5 @@ const main = (input) => {
   }
 }
 
-// main('"1, 4, 5, 3, 15, 6" "1, 7, 4, 5, 11, 6"')
-main(process.argv[2])
+main('"1, 4, 5, 3, 15, 6" "1, 7, 4, 5, 11, 6"')
+// main(process.argv[2])
