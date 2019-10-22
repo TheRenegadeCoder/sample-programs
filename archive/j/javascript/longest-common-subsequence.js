@@ -58,12 +58,10 @@ const DELIMITER = ", ";
 const noInputException = () => 'Usage: please provide two lists in the format "1, 2, 3, 4, 5"';
 const main = (input1, input2) => {
   try {
-    if(!input1) throw noInputException();
-    if(!input2) throw noInputException();
+    if(!input1 || !input2) throw noInputException();
     const arr1 = input1.split(DELIMITER);
     const arr2 = input2.split(DELIMITER);
-    if(!arr1.length) throw noInputException();
-    if(!arr2.length) throw noInputException();
+    if(!arr1.length || !arr2.length) throw noInputException();
     const lcs = new LongestCommonSubsequence();
     lcs.getLCS(arr1, arr2);
     process.exit(0);
