@@ -80,10 +80,5 @@ const main = (input) => {
   }
 }
 
-<<<<<<< HEAD:archive/j/javascript/longest-common-subsequence.js
-main('"1, 4, 5, 3, 15, 6" "1, 7, 4, 5, 11, 6"')
-// main(process.argv[2])
-=======
-// main("1, 4, 5, 3, 15, 6","1, 7, 4, 5, 11, 6")
-main(process.argv[2], process.argv[3])
->>>>>>> 820d52ba52c70def803d544cb68e93ad319e9274:archive/j/javascript/lcs.js
+// main('"1, 4, 5, 3, 15, 6" "1, 7, 4, 5, 11, 6"')
+main(process.argv[2])
