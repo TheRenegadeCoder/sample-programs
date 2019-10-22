@@ -17,7 +17,8 @@ class LongestCommonSubsequence {
     this.initialize();
     let result = this.findLCSRecursive(input1, input2);
     result = this.findLCSTopDown(input1, input2);
-    console.log(`${JSON.stringify(Array.from(result).reduce((acc,item) => acc + ", " + item))}`);
+    let output = input1.filter((item) => result.has(item));
+    console.log(`${JSON.stringify(output.reduce((acc,item) => acc + ", " + item))}`);
     // console.log(`Recursive - ${this.recursiveCount}, TopDown - ${this.topDownCount}`);
   }
 
@@ -63,11 +64,12 @@ class LongestCommonSubsequence {
 
 const DELIMITER = ", ";
 const noInputException = () => 'Usage: please provide two lists in the format "1, 2, 3, 4, 5"';
-const main = (input1, input2) => {
+const main = (input) => {
   try {
-    if(!input1 || !input2) throw noInputException();
-    const arr1 = input1.split(DELIMITER);
-    const arr2 = input2.split(DELIMITER);
+    if(!input) throw noInputException();
+    let inputs = input.split('" "');
+    const arr1 = inputs[0].replace('"', '').split(DELIMITER);
+    const arr2 = inputs[1].replace('"', '').split(DELIMITER);
     if(!arr1.length || !arr2.length) throw noInputException();
     const lcs = new LongestCommonSubsequence();
     lcs.getLCS(arr1, arr2);
@@ -78,5 +80,5 @@ const main = (input1, input2) => {
   }
 }
 
-main("1, 4, 5, 3, 15, 6","1, 7, 4, 5, 11, 6")
-// main(process.argv[2], process.argv[3])
+main('"1, 4, 5, 3, 15, 6" "1, 7, 4, 5, 11, 6"')
+// main(process.argv[2])
