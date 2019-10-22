@@ -3,12 +3,14 @@
 Welcome to Sample Programs in Lua!
 
 ## Sample Programs
-
+- [Capitalize in Lua][8]
+- [Even Odd in Lua][9]
 - [Factorial in Lua][6]
 - [Fizz Buzz in Lua][1]
 - [Hello World in Lua][2]
 - [Reverse a String in Lua][5]
 - [Add Fibonacci in Lua][7]
+- ["Encrypt" using rot-13][10]
 
 ## Fun Facts
 
@@ -28,3 +30,6 @@ Welcome to Sample Programs in Lua!
 [5]: https://github.com/TheRenegadeCoder/sample-programs/issues/446
 [6]: https://github.com/TheRenegadeCoder/sample-programs/issues/1435
 [7]: https://github.com/TheRenegadeCoder/sample-programs/issues/1438
+[8]: https://github.com/TheRenegadeCoder/sample-programs/issues/1433
+[9]: https://github.com/TheRenegadeCoder/sample-programs/issues/1432
+[10]: https://github.com/TheRenegadeCoder/sample-programs/issues/1447

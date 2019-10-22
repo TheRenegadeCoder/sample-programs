@@ -20,8 +20,10 @@ Welcome to Sample Programs in JavaScript!
 - [Prime Number in JavaScript][14]
 - [Reverse a String in JavaScript (No Emoji Support)][3]
 - [Roman Numeral Conversion in JavaScript][17]
-- [Convex Hull in Javascript][20]
-- [Selection Sort in JavaScript][19]
+- [Convex Hull in Javascript][18]
+- [Selection Sort in JavaSciprt][19]
+- [Quick Sort in JavaScript][20]
+
 
 ## Fun Facts
 
@@ -53,6 +55,6 @@ Welcome to Sample Programs in JavaScript!
 [15]: https://github.com/TheRenegadeCoder/sample-programs/issues/1383
 [16]: https://github.com/TheRenegadeCoder/sample-programs/issues/1382
 [17]: https://github.com/TheRenegadeCoder/sample-programs/issues/1391
-[18]: https://github.com/TheRenegadeCoder/sample-programs/issues/1378
+[18]: https://github.com/TheRenegadeCoder/sample-programs/issues/1376
 [19]: https://github.com/TheRenegadeCoder/sample-programs/issues/1380
-[20]: https://github.com/TheRenegadeCoder/sample-programs/issues/1376
+[20]: https://github.com/TheRenegadeCoder/sample-programs/issues/1649

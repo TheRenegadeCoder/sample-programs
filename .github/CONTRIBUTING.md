@@ -13,6 +13,7 @@ for as many languages as possible.
     -   [Code][37]
     -   [Articles][38]
     -   [Projects][5]
+    -   [Tests][43]
 -   [Plagiarism][17]
 
 ## Repository Structure
@@ -31,15 +32,18 @@ a list of language folders that share the same first character as the parent fol
 Within each language folder, you'll find the following:
 
 -   A README
--   A list of program files.
+-   A list of project files.
+-   A testinfo.yml
 
-Now, each program file maps to an ongoing project that you can find in the
-Docs directory. As for the README, it contains a list of the program files that
+Now, each program file maps to an ongoing project that you can find in the Docs directory.
+As for the README, it contains a list of the project files that
 link to existing articles in the documentation. In addition, the README contains
 links to language references and a list of fun facts.
+The testinfo.yml provides information about the projects in the folder
+to our testing library.
 
 Naturally, if you wish to add a completely new language to the repository, you'll
-need to follow this repository structure. Now, let's get to the rules!
+need to follow this repository structure.
 
 ### Docs
 
@@ -65,9 +69,9 @@ If you plan to add a new project, please make note of the directory structure.
 
 ### Directories
 
-As a general rule, if you're adding a new language, please use lowercase alphanumeric
-character sequences separated by dashes only. If we do not adhere to this rule,
-we risk limiting contributors by platform.
+As a general rule, if you're adding a new language, please name the directory
+using lowercase alphanumeric character sequences separated by dashes only.
+If we do not adhere to this rule, we risk limiting contributors by platform.
 
 For example, let's say someone adds C_ to our repository. If we name the directory
 c_, then Windows users will be unable to clone the repository. Instead, consider
@@ -99,7 +103,6 @@ for each naming convention:
 | lower      | evenodd.sh  |
 | pascal     | EvenOdd.sh  |
 | underscore | even_odd.sh |
-
 
 ## Pull Requests
 
@@ -241,6 +244,59 @@ Finally, you can also introduce a new language article. To do so, add a new
 Feel free to look at other articles in the collection for inspiration on how
 to fill out that template.
 
+## Tests
+
+All tests are automatically as part of the build process for this project.
+Running all tests does take some time due to the nature of the project.
+When making a pull request, please ensure all tests passed in travis.
+We cannot merge any pull requests with failing tests.
+
+### Writing Testable Code
+
+Since this project is basically just a large collection of related, but isolated files,
+we have decided to automate testing using predefined test cases as input and checking for expected output.
+All programs that require input should take that input as command line arguments.
+They should then print the output of the program to the console.
+**Each program should print the expected result of the program with no other output.**
+
+To know what input will be tested and what output is expected,
+refer to "Testing" section of each [project documentation][44].
+Each project has a table containing a short name for the test,
+the input that will be used for the test and the expected output.
+
+Next make sure to follow the naming conventions specified in the [Naming Conventions][2] section above.
+To see the naming conventions for projects that have existing tests refer to the "words"
+list in the [.glotter.yml][46] and to the `testinfo.yml` file in the language folder.
+
+### Running Tests Locally
+
+#### Dependencies
+
+- Docker
+  - As there are so many languages contained in this project, we use docker to automatically generate
+    consistent, stable build/test environments.
+- Python 3.7+
+  - We use glotter as our testing library. Make sure you have python installed.
+    Then use `pip install -r requirements.txt` (preferably in a virtual environment) to install glotter and its dependencies.
+
+#### Starting a test run
+
+Starting a test run is done by using python to call `runner.py`.
+For windows, this can be done by calling `samplerunner.bat`
+On systems with bash installed, just call `./samplrunner.sh`
+
+Running Glotter with no arguments will just print out a help menu.
+
+Some common cases for testing are outlined below.
+
+| Purpose | Command | Example |
+| --- | --- | --- |
+| Run all tests | `./samplrunner.sh test | `./samplerunner.sh test` |
+| Run all project tests for a given language | `./samplrunner.sh test -l {LANGUAGE_NAME}` | `./samplerunner.sh test -l c-sharp` |
+| Run all language tests for a given project | `./samplrunner.sh test -p {PROJECT_KEY}` | `./samplerunner.sh test -p evenodd` |
+| Run all tests for a specific program | `./samplrunner.sh test -s {NAME_OF_PROJECT}.{EXTENSION}` | `./samplerunner.sh -s Fibonacci.java` |
+
+
 ## Plagiarism
 
 **Please** do not submit work that is copied from another source. If work is found to be
@@ -258,36 +314,40 @@ These rules help grow and cultivate the community in a positive manner.
 [2]: #naming-conventions
 [4]: #pull-requests
 [5]: #projects
-[6]: docs/hello-world/index.md
-[7]: docs/fizz-buzz.index.md
-[8]: docs/reverse-a-string/index.md
-[9]: docs/quine.md
-[10]: docs/game-of-life/index.md
+[6]: ../docs/hello-world/index.md
+[7]: ../docs/fizz-buzz.index.md
+[8]: ../docs/reverse-a-string/index.md
+[9]: ../docs/quine.md
+[10]: ../docs/game-of-life/index.md
 [11]: https://therenegadecoder.com/members/registration/
 [12]: https://therenegadecoder.com/wp-admin/
 [13]: https://github.com/jrg94/sample-programs/blob/master/archive/p/python/README.md
 [17]: #plagiarism
-[18]: docs/file-io.md
+[18]: ../docs/file-io.md
 [19]: https://en.gravatar.com/
 [20]: https://help.github.com/articles/fork-a-repo
 [21]: https://therenegadecoder.com/code/hello-world-in-every-language/
 [22]: https://therenegadecoder.com/code/reverse-a-string-in-every-language/
 [23]: https://therenegadecoder.com/series/fizz-buzz-in-every-language/
-[24]: docs/baklava/index.md
-[25]: docs/fibonacci/index.md
-[26]: docs/roman-numeral-conversion/index.md
-[28]: docs/longest-common-subsequence/index.md
-[29]: docs/convex-hull/index.md
+[24]: ../docs/baklava/index.md
+[25]: ../docs/fibonacci/index.md
+[26]: ../docs/roman-numeral-conversion/index.md
+[28]: ../docs/longest-common-subsequence/index.md
+[29]: ../docs/convex-hull/index.md
 [30]: https://github.com/TheRenegadeCoder/image-titler
-[31]: docs/even-odd/index.md
-[32]: docs/prime-number/index.md
-[33]: docs/factorial/index.md
+[31]: ../docs/even-odd/index.md
+[32]: ../docs/prime-number/index.md
+[33]: ../docs/factorial/index.md
 [34]: https://therenegadecoder.com/code/sample-programs-in-every-language/
 [35]: #archives
 [36]: #docs
 [37]: #code
 [38]: #articles
 [39]: https://therenegadecoder.github.io/sample-programs
-[40]: docs/templates/CODE_ARTICLE_TEMPLATE.md
-[41]: docs/templates/PROJECT_ARTICLE_TEMPLATE.md
-[42]: docs/templates/LANGUAGE_ARTICLE_TEMPLATE.md
+[40]: ../docs/templates/CODE_ARTICLE_TEMPLATE.md
+[41]: ../docs/templates/PROJECT_ARTICLE_TEMPLATE.md
+[42]: ../docs/templates/LANGUAGE_ARTICLE_TEMPLATE.md
+[43]: #tests
+[44]: https://sample-programs.therenegadecoder.com/projects/
+[45]: https://sample-programs.therenegadecoder.com/projects/factorial/
+[46]: ../.glotter.yml
