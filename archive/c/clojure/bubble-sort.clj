@@ -14,4 +14,34 @@
       xs
       (recur ys))))
 
-(bubble-sort [3 2 4 1]) ; [1 2 3 4]
+(defn- convert-to-int-array [string]
+  (->> (clojure.string/split string #", " )
+       (map #(Integer/parseInt %))))
+
+(defn- convert-to-string [int-array]
+  (clojure.string/join ", " int-array))
+
+(defn- print-bubble-sort [string]   
+  (println 
+    (convert-to-string 
+      (bubble-sort 
+        (convert-to-int-array string)))))
+
+(defn- is-valid-input [args]
+  (and 
+    (not= (count args) 0) 
+    (not= (first args) "")
+    (> (count (convert-to-int-array (first args))) 1)
+    ))
+
+(defn- print-error []
+  (println "Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\""))
+
+(defn main [args]
+  (try
+    (if (is-valid-input args) 
+      (print-bubble-sort (first args)) 
+      (print-error))
+    (catch Exception e (print-error))))
+
+(main *command-line-args*)
