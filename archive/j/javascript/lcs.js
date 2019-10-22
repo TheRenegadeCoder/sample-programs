@@ -62,7 +62,6 @@ class LongestCommonSubsequence {
 
 }
 
-const DELIMITER = ", ";
 const noInputException = () => 'Usage: please provide two lists in the format "1, 2, 3, 4, 5"';
 const main = (input) => {
   try {
