@@ -18,7 +18,7 @@ class LongestCommonSubsequence {
     let result = this.findLCSRecursive(input1, input2);
     result = this.findLCSTopDown(input1, input2);
     let output = input1.filter((item) => result.has(item));
-    console.log(`${JSON.stringify(output.reduce((acc,item) => acc + ", " + item))}`);
+    console.log(`"${JSON.stringify(output.reduce((acc,item) => acc + ", " + item))}"`);
     // console.log(`Recursive - ${this.recursiveCount}, TopDown - ${this.topDownCount}`);
   }
 
@@ -80,5 +80,5 @@ const main = (input) => {
   }
 }
 
-main('"1, 4, 5, 3, 15, 6" "1, 7, 4, 5, 11, 6"')
-// main(process.argv[2])
+// main('"1, 4, 5, 3, 15, 6" "1, 7, 4, 5, 11, 6"')
+main(process.argv[2])
