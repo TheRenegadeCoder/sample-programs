@@ -22,6 +22,7 @@ Welcome to Sample Programs in C!
 - [Prime Numbers in C][17]
 - [Quine in C][20]
 - [Reverse String in C][3]
+- [Roman Numeral Conversion in C][21]
 - [ROT-13 in C][16]
 
 ## Fun Facts
@@ -59,3 +60,4 @@ Welcome to Sample Programs in C!
 [20]: https://github.com/TheRenegadeCoder/sample-programs/issues/1274
 [21]: https://sample-programs.therenegadecoder.com/projects/longest-common-subsequence/
 [22]: https://sample-programs.therenegadecoder.com/projects/minimum-spanning-tree/
+[23]: https://sample-programs.therenegadecoder.com/projects/roman-numeral-conversion/
