@@ -18,6 +18,7 @@ Welcome to Sample Programs in C!
 - [Insertion Sort in C][19]
 - [Least Common Subsequence in C][21]
 - [Merge Sort in C][18]
+- [Minimum Spanning Tree][21]
 - [Prime Numbers in C][17]
 - [Quine in C][20]
 - [Reverse String in C][3]
@@ -57,3 +58,4 @@ Welcome to Sample Programs in C!
 [19]: https://github.com/TheRenegadeCoder/sample-programs/issues/1266
 [20]: https://github.com/TheRenegadeCoder/sample-programs/issues/1274
 [21]: https://sample-programs.therenegadecoder.com/projects/longest-common-subsequence/
+[22]: https://sample-programs.therenegadecoder.com/projects/minimum-spanning-tree/
