@@ -4,7 +4,7 @@ Welcome to Sample Programs in Bash!
 
 ## Sample Programs
 
-- [Baklava in Bash][6]
+- [Baklava in Bash][6] 
   - Solution borrowed from @toturkman via the [baklava repo][1]
 - [Bubble Sort in Bash][9]
 - [Capitalize in Bash][10]
@@ -13,11 +13,12 @@ Welcome to Sample Programs in Bash!
 - [Fibonacci in Bash][7]
 - [File IO in Bash][8]
 - [Fizz Buzz in Bash][4]
+- [Game of Life in Bash][16]
 - [Hello World in Bash][2]
 - [Prime Number][15]
+- [Quick Sort in Bash][14]
 - [Reverse String in Bash][3]
 - [ROT13 in Bash][11]
-- [Quick Sort in Bash][14]
 
 ## Fun Facts
 
@@ -43,3 +44,4 @@ Welcome to Sample Programs in Bash!
 [13]: https://github.com/TheRenegadeCoder/sample-programs/issues/1219
 [14]: https://github.com/TheRenegadeCoder/sample-programs/issues/1228
 [15]: https://github.com/TheRenegadeCoder/sample-programs/issues/1227
+[16]: https://github.com/TheRenegadeCoder/sample-programs/issues/1220

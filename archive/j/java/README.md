@@ -11,7 +11,7 @@ Welcome to Sample Programs in Java!
 - [Factorial in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/931)
 - [Fibonacci in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/483)
 - [File IO in Java](https://sample-programs.therenegadecoder.com/projects/file-io/)
-- [Fizz Buzz in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/400)
+- [Fizz Buzz in Java](https://sample-programs.therenegadecoder.com/projects/fizz-buzz/java/)
 - [Game of Life in Java](https://github.com/jrg94/sample-programs/issues/108)
 - [Hello World in Java](https://therenegadecoder.com/code/hello-world-in-java/)
 - [Insertion Sort in Java](https://sample-programs.therenegadecoder.com/projects/insertion-sort/)
