@@ -1,0 +1,14 @@
+//program to find even or odd number.
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    int s;
+    clrscr();
+    scanf("%d",&s);
+    if(s%2==0)
+    printf("Even");
+    else if(s%2!=0)
+    printf("Odd");
+    return 0;
+    }
