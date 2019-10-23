@@ -79,10 +79,8 @@ const main = (input) => {
     if(!arr1.length || !arr2.length) throw noInputException();
     const lcs = new LongestCommonSubsequence();
     lcs.getLCS(arr1, arr2);
-    process.exit(0);
   } catch(e) {
     console.log(e);
-    process.exit(1);
   }
 }
 
