@@ -22,6 +22,7 @@ Welcome to Sample Programs in JavaScript!
 - [Convex Hull in Javascript][18]
 - [Selection Sort in JavaSciprt][19]
 - [Quick Sort in JavaSciprt][20]
+- [Binary Search in JavaSciprt][21]
 
 
 ## Fun Facts
@@ -57,3 +58,4 @@ Welcome to Sample Programs in JavaScript!
 [18]: https://github.com/TheRenegadeCoder/sample-programs/issues/1376
 [19]: https://github.com/TheRenegadeCoder/sample-programs/issues/1380
 [20]: https://github.com/TheRenegadeCoder/sample-programs/issues/1743
+[21]: https://github.com/TheRenegadeCoder/sample-programs/issues/1747
