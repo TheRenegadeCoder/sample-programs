@@ -4,6 +4,7 @@ Welcome to Sample Programs in Perl!
 
 ## Sample Programs
 
+- [Baklava in Perl][8]
 - [Capitalize in Perl](capitalize.pl)
 - [Even/Odd in Perl](even-odd.pl)
 - [Factorial in Perl](factorial.pl)
@@ -32,4 +33,5 @@ Welcome to Sample Programs in Perl!
 [5]: https://www.perl.org
 [6]: https://www.jdoodle.com/execute-perl-online
 [7]: https://github.com/TheRenegadeCoder/sample-programs/issues/1501
+[8]: https://github.com/TheRenegadeCoder/sample-programs/issues/1511
 
