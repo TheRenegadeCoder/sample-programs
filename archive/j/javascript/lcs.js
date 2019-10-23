@@ -81,6 +81,7 @@ const main = (input) => {
     lcs.getLCS(arr1, arr2);
   } catch(e) {
     console.log(e);
+    process.exit();
   }
 }
 
