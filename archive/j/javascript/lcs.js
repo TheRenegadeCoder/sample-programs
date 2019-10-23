@@ -23,7 +23,7 @@ class LongestCommonSubsequence {
         return item
       }
     });
-    console.log(`"${JSON.stringify(output.reduce((acc,item) => item && acc + ", " + item))}"`);
+    console.log(`${JSON.stringify(output.reduce((acc,item) => item && acc + ", " + item))}`);
     // console.log(`Recursive - ${this.recursiveCount}, TopDown - ${this.topDownCount}`);
   }
 
@@ -68,21 +68,27 @@ class LongestCommonSubsequence {
 }
 
 const DELIMITER = ", ";
-const noInputException = () => 'Usage: please provide two lists in the format "1, 2, 3, 4, 5"';
+
+const exit = () => {
+  console.log('Usage: please provide two lists in the format "1, 2, 3, 4, 5"')
+  process.exit();
+};
+
 const main = (input) => {
-  try {
-    if(!input) throw noInputException();
-    let inputs = input.split('" "');
-    if(!inputs[0] || !inputs[1]) throw noInputException();
-    const arr1 = inputs[0].replace('"', '').split(DELIMITER);
-    const arr2 = inputs[1].replace('"', '').split(DELIMITER);
-    if(!arr1.length || !arr2.length) throw noInputException();
-    const lcs = new LongestCommonSubsequence();
-    lcs.getLCS(arr1, arr2);
-  } catch(e) {
-    console.log(e);
-    process.exit();
+  if(!input) {
+    exit();
   }
+  let inputs = input.split('" "');
+  if(!inputs[0] || !inputs[1]) {
+    exit();
+  }
+  const arr1 = inputs[0].replace('"', '').split(DELIMITER);
+  const arr2 = inputs[1].replace('"', '').split(DELIMITER);
+  if(!arr1.length || !arr2.length) {
+    exit();
+  }
+  const lcs = new LongestCommonSubsequence();
+  lcs.getLCS(arr1, arr2);
 }
 
 // main();
