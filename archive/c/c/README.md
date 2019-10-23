@@ -20,6 +20,7 @@ Welcome to Sample Programs in C!
 - [Merge Sort in C][18]
 - [Minimum Spanning Tree][21]
 - [Prime Numbers in C][17]
+- [Quick Sort in C][24]
 - [Quine in C][20]
 - [Reverse String in C][3]
 - [Roman Numeral Conversion in C][21]
@@ -61,3 +62,4 @@ Welcome to Sample Programs in C!
 [21]: https://sample-programs.therenegadecoder.com/projects/longest-common-subsequence/
 [22]: https://sample-programs.therenegadecoder.com/projects/minimum-spanning-tree/
 [23]: https://sample-programs.therenegadecoder.com/projects/roman-numeral-conversion/
+[24]: https://sample-programs.therenegadecoder.com/projects/quick-sort/

@@ -19,6 +19,7 @@ Welcome to Sample Programs in C++!
 - [Longest Common Sub-sequence in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1262)
 - Prime Number in C++
 - [Reverse String in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/419)
+- [Roman Numeral Conversion in C++](https://github.com/TheRenegadeCoder/sample-programs/tree/master/archive/c/c-plus-plus)
 
 ## Fun Facts
 

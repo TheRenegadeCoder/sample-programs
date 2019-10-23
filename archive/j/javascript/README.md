@@ -23,7 +23,8 @@ Welcome to Sample Programs in JavaScript!
 - [Convex Hull in Javascript][18]
 - [Selection Sort in JavaSciprt][19]
 - [Quick Sort in JavaScript][20]
-- [Longest common subsequence][21]
+- [Rotate by 13 in JavaScript][21]
+- [Longest common subsequence][22]
 
 
 ## Fun Facts
@@ -59,4 +60,5 @@ Welcome to Sample Programs in JavaScript!
 [18]: https://github.com/TheRenegadeCoder/sample-programs/issues/1376
 [19]: https://github.com/TheRenegadeCoder/sample-programs/issues/1380
 [20]: https://github.com/TheRenegadeCoder/sample-programs/issues/1649
-[21]: https://github.com/TheRenegadeCoder/sample-programs/issues/1381
+[21]: https://github.com/TheRenegadeCoder/sample-programs/issues/1379
+[22]: https://github.com/TheRenegadeCoder/sample-programs/issues/1381
