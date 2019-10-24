@@ -47,7 +47,9 @@ If any user input errors occur, the script should output the following usage mes
 
 | Description | List Input | Integer Input | Output |
 |-------------|------------|---------------|--------|
-| No Input    |            |               | "Usage: please provide a list of integers ("1, 4, 5, 11, 12") and the integer to find ("11")" |
+| No Input    |            |               | `Usage: please provide a list of integers ("1, 4, 5, 11, 12") and the integer to find ("11")` |
+| Missing Input | "1, 2, 3, 4" | | `Usage: please provide a list of integers ("1, 4, 5, 11, 12") and the integer to find ("11")` |
+| Out of Order Input | "3, 5, 1, 2" | "3" | `Usage: please provide a list of integers ("1, 4, 5, 11, 12") and the integer to find ("11")` |
 
 ## Articles
 
