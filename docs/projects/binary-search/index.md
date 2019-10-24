@@ -62,7 +62,7 @@ If any user input errors occur, the script should output the following usage mes
 
 ## Articles
 
-{% include article_list.md collection=site.categories.binary-search % }
+{% include article_list.md collection=site.categories.binary-search %}
 
 ## Further Reading
 
