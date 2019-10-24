@@ -7,6 +7,11 @@ projects:
     words:
       - "baklava"
     requires_parameters: false
+  binarysearch:
+    words:
+      - "binary"
+      - "search"
+    requires_parameters: true
   bubblesort:
     words:
       - "bubble"
