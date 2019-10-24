@@ -48,25 +48,23 @@ If any user input errors occur, the script should output the following usage mes
 | Description | List Input | Integer Input | Output |
 |-------------|------------|---------------|--------|
 | No Input    |            |               | error* |
-| Missing Input | "1, 2, 3, 4" | | error* |
-| Out of Order Input | "3, 5, 1, 2" | "3" | error* |
-| Sample Input: First True | "1, 3, 5, 7" | "1" | `true` |
-| Sample Input: Last True | "1, 3, 5, 7" | "7" | `true` |
-| Sample Input: Middle True | "1, 3, 5, 7" | "5" | `true` |
-| Sample Input: Zero False | "" | "5" | `false` |
-| Sample Input: One True | "5" | "5" | `true` |
-| Sample Input: One False | "5" | "7" | `false` |
-| Sample Input: Many False | "1, 3, 5, 6" | "7" | `false` |
+| Missing Input | `1, 2, 3, 4` | | error* |
+| Out of Order Input | `3, 5, 1, 2` | `3` | error* |
+| Sample Input: First True | `1, 3, 5, 7` | `1` | `true` |
+| Sample Input: Last True | `1, 3, 5, 7` | `7` | `true` |
+| Sample Input: Middle True | `1, 3, 5, 7` | `5` | `true` |
+| Sample Input: Zero False | `""` | `5` | `false` |
+| Sample Input: One True | `5` | `5` | `true` |
+| Sample Input: One False | `5` | `7` | `false` |
+| Sample Input: Many False | `1, 3, 5, 6` | `7` | `false` |
 
 \*The error string to print: `Usage: please provide a list of sorted integers ("1, 4, 5, 11, 12") and the integer to find ("11")`
 
 ## Articles
 
-{% include article_list.md collection=site.categories.[name of project] % }
+{% include article_list.md collection=site.categories.binary-search % }
 
 ## Further Reading
-
-- [List useful links here]
 
 ---
 
