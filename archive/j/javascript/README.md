@@ -4,41 +4,41 @@ Welcome to Sample Programs in JavaScript!
 
 ## Sample Programs
 
-- [Baklava in JavaScript][8]
-  - Solution borrowed from @toturkmen via the [baklava repo][1]
-- [Bubblesort in Javascript][18]
-- [Capitalize in JavaScript][12]
-- Even Odd in JavaScript
-- [Export in JavaScript][13]
-- [Factorial in JavaScript][15]
-- [Fibonacci in JavaScript][9]
-- File IO in JavaScript
-- [Fizz Buzz in JavaScript][4]
-- [Hello World in JavaScript][2]
-- [Insertion sort in JavaScript][16]
-- [Import in JavaScript][13]
-- [Prime Number in JavaScript][14]
-- [Reverse a String in JavaScript (No Emoji Support)][3]
-- [Roman Numeral Conversion in JavaScript][17]
-- [Convex Hull in Javascript][18]
-- [Selection Sort in JavaSciprt][19]
-- [Quick Sort in JavaScript][20]
-- [Rotate by 13 in JavaScript][21]
-- [Longest common subsequence][22]
-
+-   [Baklava in JavaScript][8]
+    -   Solution borrowed from @toturkmen via the [baklava repo][1]
+-   [Bubblesort in Javascript][18]
+-   [Capitalize in JavaScript][12]
+-   Even Odd in JavaScript
+-   [Export in JavaScript][13]
+-   [Factorial in JavaScript][15]
+-   [Fibonacci in JavaScript][9]
+-   File IO in JavaScript
+-   [Fizz Buzz in JavaScript][4]
+-   [Hello World in JavaScript][2]
+-   [Insertion sort in JavaScript][16]
+-   [Import in JavaScript][13]
+-   [Prime Number in JavaScript][14]
+-   [Reverse a String in JavaScript (No Emoji Support)][3]
+-   [Roman Numeral Conversion in JavaScript][17]
+-   [Convex Hull in Javascript][18]
+-   [Selection Sort in JavaSciprt][19]
+-   [Quick Sort in JavaScript][20]
+-   [Rotate by 13 in JavaScript][21]
+-   [Game of Life in JavaScript][22]
+- [Longest common subsequence][23]
 
 ## Fun Facts
 
-- Debut: 1995
-- Typing: Dynamic
+-   Debut: 1995
+-   Typing: Dynamic
 
 ## References
 
-- [JavaScript Wiki][5]
-- [JavaScript Docs][6]
-- [Online JavaScript Editor][7]
-- [Web Standards/Documentation][10]
-- [JavaScript beginner tutorial][11]
+-   [JavaScript Wiki][5]
+-   [JavaScript Docs][6]
+-   [Online JavaScript Editor][7]
+-   [Web Standards/Documentation][10]
+-   [JavaScript beginner tutorial][11]
 
 [1]: https://github.com/toturkmen/baklava
 [2]: https://therenegadecoder.com/code/hello-world-in-javascript/
@@ -61,4 +61,5 @@ Welcome to Sample Programs in JavaScript!
 [19]: https://github.com/TheRenegadeCoder/sample-programs/issues/1380
 [20]: https://github.com/TheRenegadeCoder/sample-programs/issues/1649
 [21]: https://github.com/TheRenegadeCoder/sample-programs/issues/1379
-[22]: https://github.com/TheRenegadeCoder/sample-programs/issues/1381
+[22]: https://github.com/TheRenegadeCoder/sample-programs/issues/1377
+[23]: https://github.com/TheRenegadeCoder/sample-programs/issues/1381

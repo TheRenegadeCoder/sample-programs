@@ -41,10 +41,6 @@ organization through our Gitter community. [Come chat!][15]
 To properly follow the recommended GitHub community standards, I've created [contribution
 instructions][6]. Please refer to this document before contributing to this repository.
 
-As an added note, I try to write articles for all the contributions. If you're interesting in helping out with
-that, [register for an account][7] on The Renegade Coder. When you're done, let me know, so I can elevate your privileges.
-I'm always excited to have support from guest authors.
-
 ## Code of Conduct
 
 In accordance with recommended GitHub community standards, I've included the
