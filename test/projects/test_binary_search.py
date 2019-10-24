@@ -25,13 +25,33 @@ invalid_permutations = (
 valid_permutations = (
     'description,in_params,expected', [
         (
-            'sample input same length',
-            '"1, 4, 5, 3, 15, 6" "1, 7, 4, 5, 11, 6"',
-            '1, 4, 5, 6'
+            'sample input first true',
+            '"1, 3, 5, 7" "1"',
+            'true'
         ), (
-            'sample input different length',
-            '"1, 4, 8, 6, 9, 3, 15, 11, 6" "1, 7, 4, 5, 8, 11, 6"',
-            '1, 4, 8, 11, 6'
+            'sample input last true',
+            '"1, 3, 5, 7" "7"',
+            'true'
+        ), (
+            'sample input middle true',
+            '"1, 3, 5, 7" "5"',
+            'true'
+        ), (
+            'sample input zero false',
+            '"" "5"',
+            'false'
+        ), (
+            'sample input one true',
+            '"5" "5"',
+            'true'
+        ), (
+            'sample input one false',
+            '"5" "7"',
+            'false'
+        ), (
+            'sample input many false',
+            '"1, 3, 5, 6" "7"',
+            'false'
         )
     ]
 )
