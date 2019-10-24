@@ -74,16 +74,12 @@ const exit = () => {
   process.exit();
 };
 
-const main = (input) => {
-  if(!input) {
+const main = (input1, input2) => {
+  if(!input1 || !input2) {
     exit();
   }
-  let inputs = input.split('" "');
-  if(!inputs[0] || !inputs[1]) {
-    exit();
-  }
-  const arr1 = inputs[0].replace('"', '').split(DELIMITER);
-  const arr2 = inputs[1].replace('"', '').split(DELIMITER);
+  const arr1 = input1.replace('"', '').split(DELIMITER);
+  const arr2 = input2.replace('"', '').split(DELIMITER);
   if(!arr1.length || !arr2.length) {
     exit();
   }
@@ -93,6 +89,6 @@ const main = (input) => {
 
 // main();
 // main('"25 15 10 5"')
-// main('"1, 4, 5, 3, 15, 6" "1, 7, 4, 5, 11, 6"'); // test - 1
-// main('"1, 4, 8, 6, 9, 3, 15, 11, 6" "1, 7, 4, 5, 8, 11, 6"') // test - 2
-main(process.argv[2])
+// main('1, 4, 5, 3, 15, 6', '1, 7, 4, 5, 11, 6'); // test - 1
+// main('1, 4, 8, 6, 9, 3, 15, 11, 6', '1, 7, 4, 5, 8, 11, 6') // test - 2
+main(process.argv[2], process.argv[3])
