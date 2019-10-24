@@ -11,8 +11,12 @@ invalid_permutations = (
             None,
             'Usage: please provide a list of sorted integers ("1, 4, 5, 11, 12") and the integer to find ("11")'
         ), (
-            'missing input',
+            'missing input: target',
             '"1, 2, 3, 4"',
+            'Usage: please provide a list of sorted integers ("1, 4, 5, 11, 12") and the integer to find ("11")'
+        ), (
+            'missing input: list',
+            '"" "5"',
             'Usage: please provide a list of sorted integers ("1, 4, 5, 11, 12") and the integer to find ("11")'
         ), (
             'out of order input',
@@ -36,10 +40,6 @@ valid_permutations = (
             'sample input middle true',
             '"1, 3, 5, 7" "5"',
             'true'
-        ), (
-            'sample input zero false',
-            '"" "5"',
-            'false'
         ), (
             'sample input one true',
             '"5" "5"',
@@ -69,7 +69,7 @@ def binary_search(request):
                          ids=[p[0] for p in valid_permutations[1]])
 def test_binary_search_valid(description, in_params, expected, binary_search):
     actual = binary_search.run(params=in_params)
-    assert clean_list(actual) == expected
+    assert actual.strip().lower() == expected
 
 
 @project_test(ProjectType.BinarySearch.key)
