@@ -41,11 +41,13 @@ integer to find:
 
 If successful, the script should return `true`. Otherwise, the script should return `false`. 
 If any user input errors occur, the script should output the following usage message:
-"Usage: please provide a list of integers ("1, 4, 5, 11, 12") and the integer to find ("11")".
+`Usage: please provide a list of integers ("1, 4, 5, 11, 12") and the integer to find ("11")`.
 
 ## Testing
 
-[Outline a comprehensive set of tests here]
+| Description | List Input | Integer Input | Output |
+|-------------|------------|---------------|--------|
+| No Input    |            |               | "Usage: please provide a list of integers ("1, 4, 5, 11, 12") and the integer to find ("11")" |
 
 ## Articles
 
