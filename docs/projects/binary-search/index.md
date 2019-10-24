@@ -41,15 +41,20 @@ integer to find:
 
 If successful, the script should return `true`. Otherwise, the script should return `false`. 
 If any user input errors occur, the script should output the following usage message:
-`Usage: please provide a list of integers ("1, 4, 5, 11, 12") and the integer to find ("11")`.
+`Usage: please provide a list of sorted integers ("1, 4, 5, 11, 12") and the integer to find ("11")`.
 
 ## Testing
 
 | Description | List Input | Integer Input | Output |
 |-------------|------------|---------------|--------|
-| No Input    |            |               | `Usage: please provide a list of integers ("1, 4, 5, 11, 12") and the integer to find ("11")` |
-| Missing Input | "1, 2, 3, 4" | | `Usage: please provide a list of integers ("1, 4, 5, 11, 12") and the integer to find ("11")` |
-| Out of Order Input | "3, 5, 1, 2" | "3" | `Usage: please provide a list of integers ("1, 4, 5, 11, 12") and the integer to find ("11")` |
+| No Input    |            |               | error* |
+| Missing Input | "1, 2, 3, 4" | | error* |
+| Out of Order Input | "3, 5, 1, 2" | "3" | error* |
+| Sample Input: First True | "1, 3, 5, 7" | "1" | `true` |
+| Sample Input: Last True | "1, 3, 5, 7" | "7" | `true` |
+| Sample Input: Middle True | "1, 3, 5, 7" | "5" | `true` |
+
+* The error string to print: `Usage: please provide a list of sorted integers ("1, 4, 5, 11, 12") and the integer to find ("11")`
 
 ## Articles
 
