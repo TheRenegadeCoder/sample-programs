@@ -20,6 +20,7 @@ Welcome to Sample Programs in Java!
 - [Prime Number in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/1372)
 - [Reverse a String in Java](https://therenegadecoder.com/code/java/reverse-a-string-in-java/)
 - [Selection Sort in Java](SelectionSort.java)
+- [Cesar Cipher in Java](CesarCipher.java)
 
 ## Fun Facts
 
