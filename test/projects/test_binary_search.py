@@ -57,24 +57,24 @@ valid_permutations = (
 )
 
 
-@project_fixture(ProjectType.LCS.key)
-def lcs(request):
+@project_fixture(ProjectType.BinarySearch.key)
+def binary_search(request):
     request.param.build()
     yield request.param
     request.param.cleanup()
 
 
-@project_test(ProjectType.LCS.key)
+@project_test(ProjectType.BinarySearch.key)
 @pytest.mark.parametrize(valid_permutations[0], valid_permutations[1],
                          ids=[p[0] for p in valid_permutations[1]])
-def test_lcs_valid(description, in_params, expected, lcs):
+def test_binary_search_valid(description, in_params, expected, lcs):
     actual = lcs.run(params=in_params)
     assert clean_list(actual) == expected
 
 
-@project_test(ProjectType.LCS.key)
+@project_test(ProjectType.BinarySearch.key)
 @pytest.mark.parametrize(invalid_permutations[0], invalid_permutations[1],
                          ids=[p[0] for p in invalid_permutations[1]])
-def test_lcs_invalid(description, in_params, expected, lcs):
+def test_binary_search_invalid(description, in_params, expected, lcs):
     actual = lcs.run(params=in_params)
     assert actual.strip() == expected
