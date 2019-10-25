@@ -23,7 +23,7 @@ class LongestCommonSubsequence {
         return item
       }
     });
-    console.log(`"${JSON.stringify(output.reduce((acc,item) => item && acc + ", " + item))}"`);
+    console.log(`${JSON.stringify(output.reduce((acc,item) => item && acc + ", " + item))}`);
     // console.log(`Recursive - ${this.recursiveCount}, TopDown - ${this.topDownCount}`);
   }
 
