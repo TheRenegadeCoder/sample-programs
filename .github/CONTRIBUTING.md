@@ -22,7 +22,7 @@ Before we get into the contribution rules, we should probably get an understandi
 how this repository is structured.
 
 At the root of the repository, there are several housekeeping files that shouldn't matter
-much to the average user. The only items that matters are the archives and the docs folder.
+much to the average user. The only items that matter are the archives and the docs folder.
 
 ### Archives
 
