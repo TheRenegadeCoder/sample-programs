@@ -36,7 +36,7 @@ Within each language folder, you'll find the following:
 -   A testinfo.yml
 
 Now, each program file maps to an ongoing project that you can find in the Docs directory.
-As for as the README, it contains a list of the project files that
+As for the README, it contains a list of the project files that
 links to existing articles in the documentation. In addition, the README contains
 links to language references and a list of fun facts.
 The testinfo.yml provides information about the projects in the folder
