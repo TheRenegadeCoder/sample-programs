@@ -68,7 +68,7 @@ vector<int> convert(string s){
 	if(num.size()>0){
 		v.push_back(check(num));
 	}
-
+	
 	return v;
 }
 
@@ -85,7 +85,7 @@ int main(int argc,char* argv[]){
 	/*
 		Conditon to check if given input has more than 2 integers
 	*/
-	if(v.size()<1){
+	if(v.size()<2){
 		cout<<"Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\""<<endl;
 		exit(0);
 	}
@@ -107,7 +107,8 @@ int main(int argc,char* argv[]){
 		swap(v[min_idx],v[i]);
 	}
 
-	for(int i=0;i<n;i++){
-		cout<<v[i]<<" ";
+	for(int i=0;i<n-1;i++){
+		cout<<v[i]<<", ";
 	}
+	cout<<v[n-1];
 }
