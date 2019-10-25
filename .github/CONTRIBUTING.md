@@ -18,11 +18,11 @@ for as many languages as possible.
 
 ## Repository Structure
 
-Before we get into the contribution rules, we should probably get an understanding for
+Before we get into the contribution rules, we should probably get an understanding of
 how this repository is structured.
 
 At the root of the repository, there are several housekeeping files that shouldn't matter
-much to the average user. The only item that matters is the archives and the docs folder.
+much to the average user. The only items that matter are the archives and the docs folder.
 
 ### Archives
 
@@ -37,7 +37,7 @@ Within each language folder, you'll find the following:
 
 Now, each program file maps to an ongoing project that you can find in the Docs directory.
 As for the README, it contains a list of the project files that
-link to existing articles in the documentation. In addition, the README contains
+links to existing articles in the documentation. In addition, the README contains
 links to language references and a list of fun facts.
 The testinfo.yml provides information about the projects in the folder
 to our testing library.
@@ -186,32 +186,31 @@ At any rate, let's have some fun!
 ### Articles
 
 As a bonus to this repository, there are associated articles for every script.
-However, the articles do take awhile to write, so you can help by writing them
+However, the articles do take a while to write, so you can help by writing them
 as well.
 
 Previously, we had hosted all of the articles on [The Renegade Coder][34], but
 we've since moved away from that to support open-source editing. Now, you
 can add and update any article you want.
 
-Currently, there are three types of articles you can write: code, project, and
+Currently, there are three types of articles you can write: code, project and
 language. You can find out more about this type of articles below.
 
 #### Code
 
-To get started, you'll want to create a new markdown file (i.e. `python.md`)
+To get started, you'll want to create a new markdown file (eg: `python.md`)
 using the [CODE_ARTICLE_TEMPLATE][40] in the docs/projects folder of your
 choice.
 
 Make sure you populate the top section (aka the Front Matter) before you're done.
 
-In the top section, you'll want to break down and
-explain your code snippet.
+In the top section, you'll want to break down and explain your code snippet.
 
 In the `## How to Run Solution`, you'll want to explicitly detail how to run
 your solution. In general, we like to include one local solution and one online
 solution. More is always appreciated.
 
-Finally, in the `#### References`, you'll want to place you IEEE citations.
+Finally, in the `#### References`, you'll want to place your IEEE citations.
 We'd like to keep things relatively formal, so if you borrow content, please
 properly cite it here.
 
@@ -246,7 +245,7 @@ to fill out that template.
 
 ## Tests
 
-All tests are automatically as part of the build process for this project.
+All tests are automatically run as part of the build process for this project.
 Running all tests does take some time due to the nature of the project.
 When making a pull request, please ensure all tests passed in travis.
 We cannot merge any pull requests with failing tests.
