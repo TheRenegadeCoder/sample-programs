@@ -6,6 +6,7 @@ Welcome to Sample Programs in Python!
 
 - [Baklava in Python][22]
   - Solution borrowed from @erayak via the [baklava repo][21]
+- [Binary Search][31]
 - [Bubble Sort in Python][31]
 - Capitalize in Python
 - [Even Odd in Python][32]
