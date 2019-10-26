@@ -9,11 +9,7 @@ invalid_permutations = (
         (
             'no input',
             None,
-            'Usage: please provide a string to encrypt'
-        ), (
-            'empty input',
-            '""',
-            'Usage: please provide a string to encrypt'
+            'Usage: please provide a string'
         )
     ]
 )
@@ -21,17 +17,13 @@ invalid_permutations = (
 valid_permutations = (
     'description,in_params,expected', [
         (
-            'sample input lower case',
-            '"the quick brown fox jumped over the lazy dog"',
-            'gur dhvpx oebja sbk whzcrq bire gur ynml qbt',
+            'sample input: lowercase string',
+            '"hello"',
+            'Hello',
         ), (
-            'sample input upper case',
-            '"THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG"',
-            'GUR DHVPX OEBJA SBK WHZCRQ BIRE GUR YNML QBT',
-        ), (
-            'sample input punctuation',
-            '"The quick brown fox jumped. Was it over the lazy dog?"',
-            'Gur dhvpx oebja sbk whzcrq. Jnf vg bire gur ynml qbt?',
+            'sample input: uppercase string',
+            '"Hello"',
+            'Hello',
         )
     ]
 )
