@@ -15,6 +15,7 @@ Welcome to Sample Programs in C!
 - [Fizz Buzz in C][4]
 - [Game of Life in C][6]
 - [Hello World in C][2]
+- [Heap Sort in C][25]
 - [Insertion Sort in C][19]
 - [Least Common Subsequence in C][21]
 - [Merge Sort in C][18]
@@ -63,3 +64,4 @@ Welcome to Sample Programs in C!
 [22]: https://sample-programs.therenegadecoder.com/projects/minimum-spanning-tree/
 [23]: https://sample-programs.therenegadecoder.com/projects/roman-numeral-conversion/
 [24]: https://sample-programs.therenegadecoder.com/projects/quick-sort/
+[25]: https://github.com/ayush163/sample-programs/commit/70b36fa5d10b5f7b8d1c96ad3726bbec75cf8863
