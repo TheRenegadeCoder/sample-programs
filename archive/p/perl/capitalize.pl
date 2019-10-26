@@ -6,7 +6,7 @@ use warnings;
 my ($string) = @ARGV;
 
 if (!defined $string) {
-	print "Usage: provide a string\n";
+	print "Usage: please provide a string\n";
 	exit;
 }
 
