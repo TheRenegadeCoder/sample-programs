@@ -7,7 +7,7 @@ import (
 )
 
 func exitWithError() {
-	fmt.Println("Usage: provide a string")
+	fmt.Println("Usage: please provide a string")
 	os.Exit(1)
 }
 
