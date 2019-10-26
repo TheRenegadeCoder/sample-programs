@@ -1,7 +1,7 @@
 (ns capitalize
 	(:gen-class))
 
-(defn capitalize [s]
-  (clojure.string/capitalize s))
+(defn main [s]
+  (println(clojure.string/capitalize s)))
 
-(capitalize "a long string term")
+(main (first *command-line-args*))
