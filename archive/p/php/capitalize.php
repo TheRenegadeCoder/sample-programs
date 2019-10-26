@@ -1,6 +1,6 @@
 <?php
 
-$inputString = "hello world.";
+$inputString = $argv[1];
 $capitalized = ucfirst($inputString);
 
-echo $inputString;
+echo $capitalized;
