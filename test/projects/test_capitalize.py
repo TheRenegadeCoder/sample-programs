@@ -41,24 +41,24 @@ valid_permutations = (
 )
 
 
-@project_fixture(ProjectType.ROT13.key)
-def rot_13(request):
+@project_fixture(ProjectType.Capitalize.key)
+def capitalize(request):
     request.param.build()
     yield request.param
     request.param.cleanup()
 
 
-@project_test(ProjectType.ROT13.key)
+@project_test(ProjectType.Capitalize.key)
 @pytest.mark.parametrize(valid_permutations[0], valid_permutations[1],
                          ids=[p[0] for p in valid_permutations[1]])
-def test_rot_13_valid(description, in_params, expected, rot_13):
-    actual = rot_13.run(params=in_params)
+def test_capitalize_valid(description, in_params, expected, capitalize):
+    actual = capitalize.run(params=in_params)
     assert actual.strip() == expected
 
 
-@project_test(ProjectType.ROT13.key)
+@project_test(ProjectType.Capitlize.key)
 @pytest.mark.parametrize(invalid_permutations[0], invalid_permutations[1],
                          ids=[p[0] for p in invalid_permutations[1]])
-def test_rot_13_invalid(description, in_params, expected, rot_13):
-    actual = rot_13.run(params=in_params)
+def test_capitalize_invalid(description, in_params, expected, capitalize):
+    actual = capitalize.run(params=in_params)
     assert actual.strip() == expected
