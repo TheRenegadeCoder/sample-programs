@@ -25,7 +25,7 @@ namespace SamplePrograms
                 Console.WriteLine("Usage: please provide a string");
                 return;
             }
-            args[0].FirstCharToUpper();
+            Console.WriteLine(args[0].FirstCharToUpper());
         }
     }
 }
