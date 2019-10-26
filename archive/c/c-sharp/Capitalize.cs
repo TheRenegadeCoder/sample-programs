@@ -22,7 +22,7 @@ namespace SamplePrograms
         {
             if (!args.Any())
             {
-                Console.WriteLine("Please inform some string");
+                Console.WriteLine("Usage: please provide a string");
                 return;
             }
             args[0].FirstCharToUpper();
