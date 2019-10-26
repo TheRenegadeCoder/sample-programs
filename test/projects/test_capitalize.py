@@ -10,6 +10,10 @@ invalid_permutations = (
             'no input',
             None,
             'Usage: please provide a string'
+        ), (
+            'empty input',
+            '""',
+            'Usage: please provide a string'
         )
     ]
 )
