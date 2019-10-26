@@ -56,7 +56,7 @@ def test_capitalize_valid(description, in_params, expected, capitalize):
     assert actual.strip() == expected
 
 
-@project_test(ProjectType.Capitlize.key)
+@project_test(ProjectType.Capitalize.key)
 @pytest.mark.parametrize(invalid_permutations[0], invalid_permutations[1],
                          ids=[p[0] for p in invalid_permutations[1]])
 def test_capitalize_invalid(description, in_params, expected, capitalize):
