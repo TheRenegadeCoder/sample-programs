@@ -19,11 +19,23 @@ valid_permutations = (
         (
             'sample input: lowercase string',
             '"hello"',
-            'Hello',
+            'Hello'
         ), (
             'sample input: uppercase string',
             '"Hello"',
-            'Hello',
+            'Hello'
+        ), (
+            'sample input: long string',
+            '"hello world"',
+            'Hello world'
+        ), (
+            'sample input: mixed casing',
+            '"heLLo World"',
+            'HeLLo World'
+        ), (
+            'sample input: symbols',
+            '"12345"',
+            '12345'
         )
     ]
 )
