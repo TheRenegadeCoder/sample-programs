@@ -1,13 +1,17 @@
-X = [int(i.strip()) for i in input().rstrip().split(',')]
-Y = [int(i.strip()) for i in input().rstrip().split(',')]
+#! usr/bin/env python
+
+from math import sqrt
+import sys
+
+
+X = [ int(i.strip()) for i in sys.argv[1].split(',') if i]
+Y = [ int(i.strip()) for i in sys.argv[2].split(',') if i]
+
+assert len(X) == len(Y), 'Wrong Input'
 
 Z = list(set((zip(X, Y))))
 X = [i for i, j in Z]
 Y = [j for i, j in Z]
-
-
-from math import sqrt
-
 
 def dist(point1, point2):
     """
@@ -87,7 +91,7 @@ def foo(z):
     topmost = [(i,j) for i, j in z if j == max(Y)]
     v1 = sorted(topmost)[0]
     finallist.append(v1)
-    next_point = v1[0], v1[0]+1 # just a non v1 point choosed
+    next_point = v1[0], v1[1]+1 # just a non v1 point choosed
     pivot = v1
     while next_point!= v1:
         next_point = next_hurdle(z, pivot, finallist)
@@ -95,15 +99,16 @@ def foo(z):
         finallist.append(next_point)
     return finallist
 
-convex_polygon_coords = foo(Z)
-print(convex_polygon_coords)
+
+if __name__ == '__main__':
+    convex_polygon_coords = foo(Z)
+    print(convex_polygon_coords)
 
 """ unwrap below lines for getting a plot """
 
 """
 import matplotlib.pyplot as plt
-from matplotlib import style
-style.use('dark_background')
+plt.style.use('dark_background')
 plt.scatter(X,Y)
 k1 = convex_polygon_coords
 plt.plot([i for i, j in k1], [j for i, j in k1], '--y')
@@ -114,4 +119,3 @@ plt.xlabel('{}'.format(k1))
 #plt.savefig('sample.svg')  #enable this comment for saving an image of plot
 plt.show()
 """
-
