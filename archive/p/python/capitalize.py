@@ -8,6 +8,6 @@ def capitalize(input):
 
 if(__name__ == '__main__'):
     if(len(sys.argv) == 1):
-        print('Usage: provide a string as the first command line argument')
+        print('Usage: please provide a string')
     else:
         capitalize(sys.argv[1]) #most arguments from argv will be treated as a string
