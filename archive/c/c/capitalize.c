@@ -19,7 +19,7 @@ int main(int argc, char *argv[]) {
     } else if(argc > 2) {
         printf("Use quotes around multiple strings.\n");
     } else {
-        printf("Usage: provide a string\n");
+        printf("Usage: please provide a string\n");
     }
 
     return 0;
