@@ -1,12 +1,8 @@
 import 'dart:io';
 
 main(List<String> args) {
-  if (args.isEmpty) {
-    stdout.write("Enter string to capitalize: ");
-    args = [stdin.readLineSync()];
-  }
 
-  if (args[0].isEmpty) {
+  if (args.isEmpty || args[0].isEmpty) {
     print("Usage: provide a string");
     exit(1);
   }
