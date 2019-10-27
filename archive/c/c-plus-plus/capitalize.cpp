@@ -3,12 +3,9 @@
 
 int main(int argc, const char *argv[])
 {
-    if (argc < 2) { //If there is less than 2 arguments, no string was passed
-        std::cout << "Error: You must imput a string!";
+    if (argc < 2 || argv[1][0] == '\0') { //If there is less than 2 arguments, no string was passed
+        std::cout << "Usage: please provide a string";
         return 1;
-    }
-    if (!(*argv[1] > 0x61 && *argv[1] < 0x7A)) { //If the first character is not a lowercase letter, return an error
-        std::cout << "Error: Fist character of string must be a lowercase letter!";
     }
 
     for (int i = 1; i < argc; i++) {
