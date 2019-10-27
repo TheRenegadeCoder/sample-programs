@@ -15,7 +15,7 @@ public class Capitalize
     {
         if (args.length == 0 || args[0].equals(""))
         {
-            System.out.println("Please enter a valid string to be capitalized");
+            System.out.println("Usage: please provide a string");
             System.exit(1);
         }
         String sentence = args[0];
