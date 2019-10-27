@@ -17,13 +17,15 @@ class LongestCommonSubsequence {
     this.initialize();
     let result = this.findLCSRecursive(input1, input2);
     result = this.findLCSTopDown(input1, input2);
-    let output = input2.filter((item) => { 
+    let output = [];
+    input2.forEach(item => {
       if(result.has(item)) {
         result.delete(item);
-        return item
+        output.push(parseInt(item));
       }
     });
-    console.log(`"${JSON.stringify(output.reduce((acc,item) => item && acc + ", " + item))}"`);
+    // console.log(`"${JSON.stringify(output.reduce((acc,item) => item && acc + ", " + item))}"`);
+    console.log(`${output}`);
     // console.log(`Recursive - ${this.recursiveCount}, TopDown - ${this.topDownCount}`);
   }
 
@@ -90,5 +92,5 @@ const main = (input1, input2) => {
 // main();
 // main('"25 15 10 5"')
 // main('1, 4, 5, 3, 15, 6', '1, 7, 4, 5, 11, 6'); // test - 1
-// main('1, 4, 8, 6, 9, 3, 15, 11, 6', '1, 7, 4, 5, 8, 11, 6') // test - 2
-main(process.argv[2], process.argv[3])
+main('1, 4, 8, 6, 9, 3, 15, 11, 6', '1, 7, 4, 5, 8, 11, 6') // test - 2
+// main(process.argv[2], process.argv[3])
