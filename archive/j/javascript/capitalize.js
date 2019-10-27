@@ -2,4 +2,13 @@ function capitalize(stringToCapitalize) {
     return stringToCapitalize[0].toUpperCase() + stringToCapitalize.slice(1);
 }
 
-console.log(capitalize(process.argv[2]))
+function main() {
+    if (process.argv.length == 3 && process.argv[2].length > 0) {
+        let input = process.argv[2];
+        console.log(capitalize(input)); 
+    } else {
+        console.log("Usage: provide a string");
+    }
+}
+
+main();
