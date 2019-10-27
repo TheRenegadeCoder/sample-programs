@@ -1,10 +1,8 @@
 #!/bin/bash
 
-for phrase in "$@"
-do
-    if [[ $phrase =~ [0-9] ]]; then
-        echo "Arguments must be strings"
-        exit 1
-    fi
-    echo ${phrase^}
-done
+if [ -z "$1" ]; then
+    echo "Usage: please provide a string"
+    exit 1
+fi
+
+echo ${1^}
