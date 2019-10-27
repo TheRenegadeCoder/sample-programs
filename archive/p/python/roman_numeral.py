@@ -36,17 +36,17 @@ def roman_to_decimal(string):
   
                 # Value of current symbol is greater 
                 # or equal to the next symbol 
-                res = res + s1 
-                i = i + 1
+                res += s1 
+                i += 1
             else: 
   
-                # Value of current symbol is greater 
-                # or equal to the next symbol 
+                # Value of current symbol is less than 
+                # to the next symbol 
                 res = res + s2 - s1 
-                i = i + 2
+                i += 2
         else: 
-            res = res + s1 
-            i = i + 1
+            res += s1 
+            i += 1
   
     return res
 

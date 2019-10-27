@@ -1,7 +1,7 @@
 <?php
 
-if ($argc < 2 || !is_numeric($argv[1]) || intval($argv[1]) < 1) {
-    die("Please, provide a positive integer as argument.");
+if ($argc < 2 || !is_numeric($argv[1]) || intval($argv[1]) < 0) {
+    die("Usage: please input the count of fibonacci numbers to output");
 }
 
 $input = intval($argv[1]);
