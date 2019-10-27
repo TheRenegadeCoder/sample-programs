@@ -23,7 +23,7 @@ def input_list(list_str):
 
 
 def exit_with_error():
-    print('Usage: please provide a list of at least two integers to sort in the format “1, 2, 3, 4, 5”')
+    print('Usage: please provide a list of sorted integers ("1, 4, 5, 11, 12") and the integer to find ("11")')
     sys.exit(1)
 
 
