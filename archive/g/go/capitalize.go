@@ -7,7 +7,7 @@ import (
 )
 
 func exitWithError() {
-	fmt.Println("Usage: provide a string")
+	fmt.Println("Usage: please provide a string")
 	os.Exit(1)
 }
 
@@ -19,7 +19,7 @@ func uppercaseFirst(str string) string {
 }
 
 func main() {
-	if len(os.Args) != 2 {
+	if len(os.Args) != 2 || len(os.Args[1]) == 0 {
 		exitWithError()
 	}
 

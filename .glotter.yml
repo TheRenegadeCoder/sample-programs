@@ -17,6 +17,10 @@ projects:
       - "bubble"
       - "sort"
     requires_parameters: true
+  capitalize:
+    words:
+      - "capitalize"
+    requires_parameters: true
   convexhull:
     words:
       - "convex"

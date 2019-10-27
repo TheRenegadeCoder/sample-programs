@@ -8,9 +8,9 @@ capitalize (head:tail) = toUpper head : tail
 capitalize [] = []
 
 main = do  
-    [inputStr] <- getArgs
-    if null inputStr then
-        error "Input string of choice to capitalize first letter"
-    else
-        putStrLn $ capitalize inputStr
-
+    args <- getArgs
+    case args of
+      [inputStr] -> case inputStr of
+        [] -> putStrLn "Usage: please provide a string"
+        _  -> putStrLn $ capitalize inputStr
+      _          -> putStrLn "Usage: please provide a string"
