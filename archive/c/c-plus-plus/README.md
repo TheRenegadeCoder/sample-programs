@@ -5,6 +5,7 @@ Welcome to Sample Programs in C++!
 ## Sample Programs
 
 - [Baklava in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1233)
+- [Binary Search in C++](https://github.com/TheRenegadeCoder/sample-programs/tree/master/archive/c/c-plus-plus)
 - [Bubble Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1135)
 - [Capitalize in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1234)
 - [Even Odd in C++](https://sample-programs.therenegadecoder.com/projects/even-odd/)
