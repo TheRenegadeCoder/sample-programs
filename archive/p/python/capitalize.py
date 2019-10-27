@@ -5,7 +5,7 @@ def capitalize(input):
         print(input[0].capitalize() + input[1:])
 
 if __name__ == '__main__':
-    if(len(sys.argv) == 1):
+    if(len(sys.argv) == 1 || len(sys.argv[1]) == 0):
         print('Usage: please provide a string')
     else:
         capitalize(sys.argv[1])
