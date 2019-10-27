@@ -3,29 +3,18 @@ using System.Linq;
 
 namespace SamplePrograms
 {
-    public static class StringExtensions
-    {
-        public static string FirstCharToUpper(this string input)
-        {
-            switch (input)
-            {
-                case null: throw new ArgumentNullException(nameof(input));
-                case "": throw new ArgumentException($"{nameof(input)} cannot be empty", nameof(input));
-                default: return input.First().ToString().ToUpper() + input.Substring(1);
-            }
-        }
-    }
-
     class Program
     {
         static void Main(string[] args)
         {
-            if (!args.Any())
+            if (!args.Any() || args[0] == "")
             {
                 Console.WriteLine("Usage: please provide a string");
                 return;
             }
-            Console.WriteLine(args[0].FirstCharToUpper());
+            string input = args[0];
+            string output = input.First().ToString().ToUpper() + input.Substring(1);
+            Console.WriteLine(output);
         }
     }
 }
