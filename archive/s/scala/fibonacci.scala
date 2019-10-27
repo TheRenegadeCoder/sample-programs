@@ -22,9 +22,11 @@ object TestClass {
 
 
   def main(args: Array[String]): Unit = {
-    // Takes input from user and outputs corresponding fibonacci number
-    println("Please enter an index: ")
-    val index = scala.io.StdIn.readInt()
+    // Takes the first argument and uses it as index
+    if (args.length == 0) {
+      println("Please enter an index as an argument")
+    }
+    val index = args(0).toInt
     println(fibonacci_rec(index))
   }
 }
