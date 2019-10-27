@@ -92,5 +92,5 @@ const main = (input1, input2) => {
 // main();
 // main('"25 15 10 5"')
 // main('1, 4, 5, 3, 15, 6', '1, 7, 4, 5, 11, 6'); // test - 1
-main('1, 4, 8, 6, 9, 3, 15, 11, 6', '1, 7, 4, 5, 8, 11, 6') // test - 2
-// main(process.argv[2], process.argv[3])
+// main('1, 4, 8, 6, 9, 3, 15, 11, 6', '1, 7, 4, 5, 8, 11, 6') // test - 2
+main(process.argv[2], process.argv[3])
