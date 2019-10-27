@@ -51,7 +51,6 @@ public class JobSequencing {
 
         for (int i = 0; i < size; i++) {
             Integer x = ts.floor(jobs.get(i).deadline - 1);
-            System.out.println("x: " + x);
 
             if (x != null) {
                 maxProfit += jobs.get(i).profit;
@@ -61,10 +60,10 @@ public class JobSequencing {
         return maxProfit;
     }
 
-    private static List<Integer> getList(String arg) {
+    private static List<Integer> converStringToList(String arg) {
         List<Integer> list = new ArrayList<>();
         if (arg.length() > 0) {
-            for (String p : arg.split(", ")) {
+            for (String p : arg.split(",")) {
                 list.add(Integer.parseInt(p.trim()));
             }
         }
@@ -74,16 +73,13 @@ public class JobSequencing {
     public static void main(String[] args) {
 
         try {
-            Scanner scanner = new Scanner(System.in);
-            System.out.print("Please enter job profits separated by \", \" (e.g., 25, 15, 10, 5):");
-            List<Integer> profits = getList(scanner.nextLine());
-            System.out.print("Please enter job deadlines separated by \", \" (e.g., 3, 1, 2, 2):");
-            List<Integer> deadlines = getList(scanner.nextLine());
-
-            // null, empty or too many input
-            if (profits == null || profits.size() < 1 ) {
+            //Check for no input and empty input and missing input
+            if(args.length < 2 || "".equals(args[0]) || "".equals(args[1])) {
                 throw new InvalidInputException();
             }
+
+            List<Integer> profits = converStringToList(args[0]);
+            List<Integer> deadlines = converStringToList(args[1]);
 
             //Check if two lists are different Lengths
             if (profits.size() != deadlines.size()) {
