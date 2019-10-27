@@ -7,7 +7,7 @@ function main() {
         let input = process.argv[2];
         console.log(capitalize(input)); 
     } else {
-        console.log("Usage: provide a string");
+        console.log("Usage: please provide a string");
     }
 }
 
