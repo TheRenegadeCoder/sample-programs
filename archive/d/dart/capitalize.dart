@@ -3,7 +3,7 @@ import 'dart:io';
 main(List<String> args) {
 
   if (args.isEmpty || args[0].isEmpty) {
-    print("Usage: provide a string");
+    print("Usage: please provide a string");
     exit(1);
   }
 
