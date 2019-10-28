@@ -31,7 +31,7 @@ Dijkstra's algorithm to find the shortest path between a and b. It picks the unv
 ## Requirements
 
 ```console
-./dijkstra.lang "4, 3, 2, 1, 3, 1, 3, 1, 3, 4, 5, 2, 3"
+./dijkstra.lang 4 3 "2, 1, 3, 1, 3, 1, 3, 4, 5" 2 3
 ```
 
 Here we've chosen to represent the graph as a adjacency list of pairs of integers.
