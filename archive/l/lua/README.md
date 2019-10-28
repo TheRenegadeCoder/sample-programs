@@ -14,6 +14,7 @@ Welcome to Sample Programs in Lua!
 - [Add Fibonacci in Lua][7]
 - ["Encrypt" using rot-13][10]
 - [Roman Numeral Conversion][12]
+- [Bubble Sort in Lua][13]
 
 ## Fun Facts
 
@@ -38,3 +39,4 @@ Welcome to Sample Programs in Lua!
 [10]: https://github.com/TheRenegadeCoder/sample-programs/issues/1447
 [11]: https://github.com/TheRenegadeCoder/sample-programs/issues/1442
 [12]: https://github.com/TheRenegadeCoder/sample-programs/issues/1448
+[13]: https://github.com/TheRenegadeCoder/sample-programs/issues/1450
