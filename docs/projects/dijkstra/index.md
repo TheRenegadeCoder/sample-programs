@@ -52,10 +52,10 @@ Then two numbers (Source, Destination).
 | No Input         |                                                                             | "Usage: please provide a comma-separated list of integers" |
 | Empty Input      | ""                                                                          | "Usage: please provide a comma-separated list of integers" |
 | Input < 2 | "3"                                                          | "Usage: please provide a comma-separated list of integers" |
-| number of nodes < 2 | "1, 1, 1, 2, 3, 1, 2"                                                          | "Usage: please provide a comma-separated list of integers" |
-| number of edges < 1 | "1, 0"                                                          | "Usage: please provide a comma-separated list of integers" |
-| Input size != 4 + m * 3 | "2, 1, 1, 2, 3, 1"                                                          | "Usage: please provide a comma-separated list of integers" |
-| Proper Input     | "2, 1, 1, 2, 3, 1, 2" | 3                                                       |
+| number of nodes < 2 | 1 1 "1, 2, 3" 1 2                                                          | "Usage: please provide a comma-separated list of integers" |
+| number of edges < 1 | 1 0                                                          | "Usage: please provide a comma-separated list of integers" |
+| Input size != 4 + m * 3 | 2 1 "1, 2, 3" 1                                                          | "Usage: please provide a comma-separated list of integers" |
+| Proper Input     | 2 1 "1, 2, 3" 1 2 | 3                                                       |
 
 ## Resources
 
