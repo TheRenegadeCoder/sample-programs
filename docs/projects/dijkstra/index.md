@@ -47,15 +47,14 @@ Then two numbers (Source, Destination).
 
 ## Testing
 
-| Description      | Input                                                                       | Output                                                     |
-| ---------------- | --------------------------------------------------------------------------- | ---------------------------------------------------------- |
-| No Input         |                                                                             | "Usage: please provide a comma-separated list of integers" |
-| Empty Input      | ""                                                                          | "Usage: please provide a comma-separated list of integers" |
-| Input < 2 | "3"                                                          | "Usage: please provide a comma-separated list of integers" |
-| number of nodes < 2 | 1 1 "1, 2, 3" 1 2                                                          | "Usage: please provide a comma-separated list of integers" |
-| number of edges < 1 | 1 0                                                          | "Usage: please provide a comma-separated list of integers" |
-| Input size != 4 + m * 3 | 2 1 "1, 2, 3" 1                                                          | "Usage: please provide a comma-separated list of integers" |
-| Proper Input     | 2 1 "1, 2, 3" 1 2 | 3                                                       |
+| Description | Nodes (n) | Edges (m) | Adjacency List | Source | Destination | Output |
+| ----------- | --------- | --------- | -------------- | ------ | ----------- | ------ |
+| No Input    | | | | | | "Usage: please provide a comma-separated list of integers" |
+| Empty Input | "" | "" | "" | "" | "" | "Usage: please provide a comma-separated list of integers" |
+| n < 2 | 1 | 1 | "1, 2, 3" | 1 | 2 | "Usage: please provide a comma-separated list of integers" |
+| m < 1 | 1 | 0 | "" | "" | "" | "Usage: please provide a comma-separated list of integers" |
+| Input size != 4 + m * 3 | 2 | 1 | "1, 2, 3" | 1 | 2 | "Usage: please provide a comma-separated list of integers" |
+| Proper Input | 2 | 1 | "1, 2, 3" | 1 | 2 | 3 |                                                       |
 
 ## Resources
 
