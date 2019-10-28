@@ -232,11 +232,11 @@ file containing a project description in the docs/projects folder. The project f
 should follow the [PROJECT_ARTICLE_TEMPLATE.md][41].
 
 Feel free to browse other projects to get an idea of how to fill out each
-section. However, in general, here's a nice check list to make sure you've 
+section. In general, here's a nice check list to make sure you've 
 filled it out properly:
 
 - [ ] Write a high-level description of the project
-- [ ] Write out detailed requirements for the program including:
+- [ ] Write out detailed requirements for the project including:
   - [ ] a sample of a generic command line execution (i.e. `program.lang 2 3 "Hi"`)
   - [ ] a description of expected inputs and outputs
   - [ ] a description of assumptions
@@ -245,6 +245,8 @@ filled it out properly:
 Keep in mind that projects in this repository are command line driven. 
 In other words, **input should always be pulled off the command line as
 command line arguments** rather than prompted and accepted on standard input.
+This allows us to perform quick and easy black box testing by passing
+command line arguments and observing the output.
 
 #### Languages
 
