@@ -103,19 +103,3 @@ def foo(z):
 if __name__ == '__main__':
     convex_polygon_coords = foo(Z)
     print(convex_polygon_coords)
-
-""" unwrap below lines for getting a plot """
-
-"""
-import matplotlib.pyplot as plt
-plt.style.use('dark_background')
-plt.scatter(X,Y)
-k1 = convex_polygon_coords
-plt.plot([i for i, j in k1], [j for i, j in k1], '--y')
-plt.grid('True')
-for i in Z:
-    plt.text(*i, '{}'.format(i))
-plt.xlabel('{}'.format(k1))
-#plt.savefig('sample.svg')  #enable this comment for saving an image of plot
-plt.show()
-"""
