@@ -1,0 +1,4 @@
+import Base@0
+
+main : Output
+  print("Hello, world!")

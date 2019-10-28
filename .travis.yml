@@ -4,9 +4,9 @@ matrix:
       python:
         - "3.7"
       install: 
-        - pip install -r requirements-test.txt
-        - python -um samplerunner download
-      script: python -um samplerunner test
+        - pip install -r requirements.txt
+        - python runner.py download
+      script: python runner.py test
       deploy:
         provider: script
         script: bash -x deploy.sh
