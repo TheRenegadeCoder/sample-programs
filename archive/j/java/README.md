@@ -7,6 +7,7 @@ Welcome to Sample Programs in Java!
 - [Baklava in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/934)
 - [Bubble Sort in Java](BubbleSort.java)
 - [Capitalize a String in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/1366)
+- [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/1365)
 - [Even Odd in Java](https://github.com/jrg94/sample-programs/issues/937)
 - [Factorial in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/931)
 - [Fibonacci in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/483)
@@ -20,7 +21,6 @@ Welcome to Sample Programs in Java!
 - [Merge Sort in Java](https://sample-programs.therenegadecoder.com/projects/merge-sort/)
 - [Prime Number in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/1372)
 - [Reverse a String in Java](https://therenegadecoder.com/code/java/reverse-a-string-in-java/)
-- [Roman Numeral Conversion in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/1361)
 - [ROT-13 in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/1369)
 - [Selection Sort in Java](SelectionSort.java)
 
