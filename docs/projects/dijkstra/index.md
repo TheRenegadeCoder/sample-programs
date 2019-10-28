@@ -31,30 +31,46 @@ Dijkstra's algorithm to find the shortest path between a and b. It picks the unv
 ## Requirements
 
 ```console
-./dijkstra.lang 4 3 "2, 1, 3, 1, 3, 1, 3, 4, 5" 2 3
+./dijkstra.lang "0, 2, 0, 6, 0, 2, 0, 3, 8, 5, 0, 3, 0, 0, 7, 6, 8, 0, 0, 9, 0, 5, 7, 9, 0"
 ```
 
-Here we've chosen to represent the graph as a adjacency list of pairs of integers.
+Here we've chosen to represent the matrix as a serialized list of integers. Since
+the input string represents a square matrix, we should be able to take the
+square root of the length to determine where the rows are in the string. In this
+case, we have 25 values, so we must have 5 nodes.
 
-First number is the number of nodes (n).
+The source is node 0.
 
-Second number in the number of edges (m).
+If we reformat the input string as a matrix, we'll notice that the values in the
+matrix represent the edge weight between each node. For example, we
+could reformat our example to look something like the following:
 
-Then we take m * 3 number as input.
-
-Then two numbers (Source, Destination).
+| Mapping | 0   | 1   | 2   | 3   | 4   |
+| ------- | --- | --- | --- | --- | --- |
+| 0       | 0   | 2   | 0   | 6   | 0   |
+| 1       | 2   | 0   | 3   | 8   | 5   |
+| 2       | 0   | 3   | 0   | 0   | 7   |
+| 3       | 6   | 8   | 0   | 0   | 9   |
+| 4       | 0   | 5   | 7   | 9   | 0   |
 
 
 ## Testing
 
-| Description | Nodes (n) | Edges (m) | Adjacency List | Source | Destination | Output |
-| ----------- | --------- | --------- | -------------- | ------ | ----------- | ------ |
-| No Input    | | | | | | "Usage: please provide a comma-separated list of integers" |
-| Empty Input | "" | "" | "" | "" | "" | "Usage: please provide a comma-separated list of integers" |
-| n < 2 | 1 | 1 | "1, 2, 3" | 1 | 2 | "Usage: please provide a comma-separated list of integers" |
-| m < 1 | 1 | 0 | "" | "" | "" | "Usage: please provide a comma-separated list of integers" |
-| Input size != 4 + m * 3 | 2 | 1 | "1, 2, 3" | 1 | 2 | "Usage: please provide a comma-separated list of integers" |
-| Proper Input | 2 | 1 | "1, 2, 3" | 1 | 2 | 3 |                                                       |
+| Description      | Input                                                                       | Output                                                     |
+| ---------------- | --------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| No Input         |                                                                             | "Usage: please provide a comma-separated list of integers" |
+| Empty Input      | ""                                                                          | "Usage: please provide a comma-separated list of integers" |
+| Non-Square Input | "1, 0, 3, 0, 5, 1"                                                          | "Usage: please provide a comma-separated list of integers" |
+| Proper Input     | "0, 2, 0, 6, 0, 2, 0, 3, 8, 5, 0, 3, 0, 0, 7, 6, 8, 0, 0, 9, 0, 5, 7, 9, 0" | 0 2 5 6 7 |
+
+| Vertex | Distance |
+| ------ | -------- |
+| 0 | 0 |
+| 1 | 2 |
+| 2 | 5 |
+| 3 | 6 |
+| 4 | 7 |
+
 
 ## Resources
 
