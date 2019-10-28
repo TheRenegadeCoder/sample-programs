@@ -13,6 +13,7 @@ Welcome to Sample Programs in Lua!
 - [Reverse a String in Lua][5]
 - [Add Fibonacci in Lua][7]
 - ["Encrypt" using rot-13][10]
+- [Roman Numeral Conversion][12]
 
 ## Fun Facts
 
@@ -36,3 +37,4 @@ Welcome to Sample Programs in Lua!
 [9]: https://github.com/TheRenegadeCoder/sample-programs/issues/1432
 [10]: https://github.com/TheRenegadeCoder/sample-programs/issues/1447
 [11]: https://github.com/TheRenegadeCoder/sample-programs/issues/1442
+[12]: https://github.com/TheRenegadeCoder/sample-programs/issues/1448
