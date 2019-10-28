@@ -20,6 +20,7 @@ Welcome to Sample Programs in Java!
 - [Merge Sort in Java](https://sample-programs.therenegadecoder.com/projects/merge-sort/)
 - [Prime Number in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/1372)
 - [Reverse a String in Java](https://therenegadecoder.com/code/java/reverse-a-string-in-java/)
+- [ROT-13 in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/1369)
 - [Selection Sort in Java](SelectionSort.java)
 
 ## Fun Facts
