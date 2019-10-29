@@ -160,7 +160,7 @@ initially, the first element in the array is considered as sorted, even if it is
 Further, each element in the array is checked with the previous elements for the strict
 inequality with each iteration, the sorting algorithm removes one element at a time and
 finds the appropriate location within the sorted array and inserts it there. The iteration
-continues until the unsorted array is empty.
+continues until the unsorted array is empty, and get's it finally sorted.
 
 Above you can see, that the variable 't' holds the unsorted array's first element and 'j' 
 here keeps track of the index of the last element of the sorted array. Now we iterate 
@@ -227,4 +227,4 @@ instead of sharing platform-specific directions, I’ll fall back on my online c
 
 #### References
 
-[^1]: S. Singh, “Insertion Sort in C++,” The Renegade Coder, 09-Oct-2019. [Online]. Available: <https://therenegadecoder.com/code/insertion-sort-in-c-plus-plus/>.
+S. Singh, “Insertion Sort in C++,” The Renegade Coder, 09-Oct-2019. [Online]. Available: <https://therenegadecoder.com/code/insertion-sort-in-c-plus-plus/>.
