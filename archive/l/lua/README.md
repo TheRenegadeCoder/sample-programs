@@ -4,17 +4,19 @@
 Welcome to Sample Programs in Lua!
 
 ## Sample Programs
+
+- [Baklava in Lua][14]
+- [Bubble Sort in Lua][13]
 - [Capitalize in Lua][8]
 - [Even Odd in Lua][9]
 - [Factorial in Lua][6]
-- [Prime Number in Lua][10]
+- [Fibonacci in Lua][7]
 - [Fizz Buzz in Lua][1]
 - [Hello World in Lua][2]
+- [Prime Number in Lua][11]
 - [Reverse a String in Lua][5]
-- [Add Fibonacci in Lua][7]
-- ["Encrypt" using rot-13][10]
+- [ROT-13 in Lua][10]
 - [Roman Numeral Conversion][12]
-- [Bubble Sort in Lua][13]
 
 ## Fun Facts
 
@@ -40,3 +42,4 @@ Welcome to Sample Programs in Lua!
 [11]: https://github.com/TheRenegadeCoder/sample-programs/issues/1442
 [12]: https://github.com/TheRenegadeCoder/sample-programs/issues/1448
 [13]: https://github.com/TheRenegadeCoder/sample-programs/issues/1450
+[14]: https://github.com/TheRenegadeCoder/sample-programs/issues/1444
