@@ -1,0 +1,8 @@
+folder:
+  extension: ".erl"
+  naming: "underscore"
+
+container:
+  image: "erlang"
+  tag: "22.1.5-alpine"
+  cmd: "escript {{ source.name }}{{ source.extension }}"
