@@ -296,7 +296,7 @@ list in the [.glotter.yml][46] and to the `testinfo.yml` file in the language fo
 
 Starting a test run is done by using python to call `runner.py`.
 For windows, this can be done by calling `samplerunner.bat`
-On systems with bash installed, just call `./samplrunner.sh`
+On systems with bash installed, just call `./samplerunner.sh`
 
 Running Glotter with no arguments will just print out a help menu.
 
@@ -304,10 +304,10 @@ Some common cases for testing are outlined below.
 
 | Purpose | Command | Example |
 | --- | --- | --- |
-| Run all tests | `./samplrunner.sh test | `./samplerunner.sh test` |
-| Run all project tests for a given language | `./samplrunner.sh test -l {LANGUAGE_NAME}` | `./samplerunner.sh test -l c-sharp` |
-| Run all language tests for a given project | `./samplrunner.sh test -p {PROJECT_KEY}` | `./samplerunner.sh test -p evenodd` |
-| Run all tests for a specific program | `./samplrunner.sh test -s {NAME_OF_PROJECT}.{EXTENSION}` | `./samplerunner.sh -s Fibonacci.java` |
+| Run all tests | `./samplerunner.sh test | `./samplerunner.sh test` |
+| Run all project tests for a given language | `./samplerunner.sh test -l {LANGUAGE_NAME}` | `./samplerunner.sh test -l c-sharp` |
+| Run all language tests for a given project | `./samplerunner.sh test -p {PROJECT_KEY}` | `./samplerunner.sh test -p evenodd` |
+| Run all tests for a specific program | `./samplerunner.sh test -s {NAME_OF_PROJECT}.{EXTENSION}` | `./samplerunner.sh -s Fibonacci.java` |
 
 
 ## Plagiarism
