@@ -1,7 +1,7 @@
 #!/bin/bash
 count=$1
 
-[[ $count =~ ^[0-9]+$ ]] || { echo "Usage: please input the count of fibonacci numbers to output"; exit 1; }
+[[ $count =~ ^[0-9]+$ ]] || { echo "Usage: please input a number"; exit 1; }
 
 rem=$(( $count % 2 ))
  
