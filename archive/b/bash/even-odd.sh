@@ -1,7 +1,7 @@
 #!/bin/bash
 count=$1
 
-[[ $count =~ ^[0-9]+$ && ((count > 0)) ]] || { echo "Usage: please input a number"; exit 1; }
+[[ $count =~ ^[-+]?[0-9]+$ ]] || { echo "Usage: please input a number"; exit 1; }
 
 rem=$(( $count % 2 ))
  
@@ -11,4 +11,3 @@ then
 else
     echo "Odd"
 fi
-    
