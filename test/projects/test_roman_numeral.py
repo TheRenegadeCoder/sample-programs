@@ -9,7 +9,8 @@ invalid_permutations = (
         (
             'no input',
             None,
-            'Usage: please provide a string of roman numerals'
+            ("Usage: please provide a string of roman numerals or "
+             "a positive integer to convert.")
         ), (
             'invalid input',
             '"XT"',
@@ -87,3 +88,11 @@ def test_roman_numeral_invalid(description, in_params, expected, roman_numeral):
     actual = roman_numeral.run(params=in_params)
     assert actual.strip() == expected
 
+
+@project_test(ProjectType.RomanNumeral.key)
+def test_roman_numeral():
+    """Pytyest function to ensure conversion.
+    >>> test_roman_numeral()
+    """
+    for i in range(1, 10000):
+        assert i == roman_numeral.run(params=i)

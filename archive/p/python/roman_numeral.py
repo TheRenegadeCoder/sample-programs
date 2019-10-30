@@ -12,7 +12,7 @@ _numerals = {'I': 1,
              'C': 100,
              'D': 500,
              'M': 1000
-            }
+             }
 _revNumerals = {v: k for k, v in _numerals.items()}
 
 
@@ -127,17 +127,9 @@ def exit_with_error(msg):
     sys.exit(1)
 
 
-def test_roman_numeral():
-    """Pytyest function to ensure conversion.
-    >>> test_roman_numeral()
-    """
-    for i in range(1, 10000):
-        assert i == roman_to_decimal(decimal_to_roman(i))
-
-
 def main(args):
     if len(args) < 1:
-        exit_with_error("Usage: please provide a string of roman numerals or " 
+        exit_with_error("Usage: please provide a string of roman numerals or "
                         "a positive integer to convert.")
 
     try:
