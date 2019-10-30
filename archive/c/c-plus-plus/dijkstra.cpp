@@ -71,10 +71,10 @@ int dijkstra(int Source, int Destination, int Number_of_nodes)
 
 int main(int argc, char *argv[])
 {
-	
+
 	if (argc < 4 || std::string(argv[1]).size() == 0)
 	{
-		if (argc == 3) 
+		if (argc == 3)
 		{
 			cout << "Usage: please provide a destination\n";
 			return 1;
@@ -91,16 +91,22 @@ int main(int argc, char *argv[])
 
 	vector<int> num;
 	int val = 0;
+	int neg = 1;
 	for (int i = 0; i < s.size(); ++i)
 	{
 		if (s[i] == ',' && i <= s.size() - 3 && s[i+1] == ' ')
 		{
-			num.push_back(val); i++;
+			num.push_back(val * neg); i++;
+			val = 0, neg = 1;
 		}
 		else if (s[i] >= '0' && s[i] <= '9')
 		{
 			val *= 10;
 			val += s[i] - '0';
+		}
+		else if (!val && neg != -1 && s[i] == '-')
+		{
+			neg = -1;
 		}
 		else
 		{
@@ -108,7 +114,7 @@ int main(int argc, char *argv[])
 			return 1;
 		}
 	}
-	num.push_back(val);
+	num.push_back(val * neg);
 
 
 	int sz = num.size();
@@ -132,4 +138,13 @@ int main(int argc, char *argv[])
 			}
 		}
 	}
+	int source , destination;
+	source = atoi(argv[2]);
+	destination = atoi(argv[3]);
+	if (source < 0 || destination < 0)
+	{
+		cout << "Usage: please provide positive node number\n";
+		return 1;
+	}
+	cout << source << " " << destination << '\n';
 }
