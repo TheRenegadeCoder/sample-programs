@@ -1,5 +1,5 @@
 
-import 'dart:math';
+import 'bubble-sort.dart';
 
 /**
  *
@@ -31,22 +31,21 @@ partition(List lst,int start,int end){
   return start_position+1;
 }
 
-swap(List lst, int position, int position2){
+swap(List<double> lst, int position, int position2){
   var tmp = lst[position];
   lst[position] = lst[position2];
   lst[position2] = tmp;
 }
 
+main(List<String> args){
+  try {
 
-main(){
+  List<double> lst = parseInput(args.join());
 
-  var rng = new Random();
-  List test_lst = new List<int>.generate(12, (int index) => (index+1) * rng.nextInt(100));
-
-  print(test_lst);
-
-  quicksort(test_lst, 0, test_lst.length-1);
-
-  print(test_lst);
-
+  if (lst.length <= 1) exitWithError();
+    quicksort(lst, 0, lst.length - 1);
+  }
+  catch (e){
+      exitWithError();
+  }
 }
