@@ -90,7 +90,7 @@ def test_roman_numeral_invalid(description, in_params, expected, roman_numeral):
 
 
 @project_test(ProjectType.RomanNumeral.key)
-def test_roman_numeral():
+def test_roman_numeral(roman_numeral):
     """Pytyest function to ensure conversion.
     >>> test_roman_numeral()
     """
