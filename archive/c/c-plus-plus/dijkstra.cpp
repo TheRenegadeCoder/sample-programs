@@ -3,8 +3,9 @@
 #include <iostream>
 #include <vector>
 #include <queue>
+#include <math.h>
 using std::vector;
-using std::priority_queue;
+using std::queue;
 using std::cin;
 using std::cout;
 using std::pair;
@@ -12,7 +13,7 @@ using std::make_pair;
 
 const int OO = 1e9;   // Infinity
 vector<int> SP;
-vector< vector<pair<int,int> > > adj;
+vector<vector<int>> adj;
 
 struct node
 {
@@ -31,7 +32,7 @@ int dijkstra(int Source, int Destination, int Number_of_nodes)
 {
 	// Create a priority queue to store nodes that
 	// are being preprocessed.
-	priority_queue<node> q;
+	queue<node> q;
 
 	// Create a vector for distances and initialize all
     // distances as infinite (OO)
@@ -45,19 +46,21 @@ int dijkstra(int Source, int Destination, int Number_of_nodes)
 
 	while(!q.empty())
 	{
-		node cur = q.top();
+		node cur = q.front();
 		q.pop();
 		int u = cur.id;
 		int cost = cur.cost;
 		// Get all adjacent of u.
-		for (auto v : adj[u])
+		for (int i = 0; i < Number_of_nodes; i++)
 		{
+			int v = adj[u][i];
+			if (!v) continue;
 			// If there is shorted path to v through u.
-			if (cost + v.second < SP[v.first])
+			if (cost + v < SP[i])
 			{
 				// Updating distance of v
-				SP[v.first] = cost + v.second;
-				q.push(node(v.first, SP[v.first]));
+				SP[i] = cost + v;
+				q.push(node(i, SP[i]));
 			}
 		}
 	}
@@ -66,36 +69,67 @@ int dijkstra(int Source, int Destination, int Number_of_nodes)
 }
 
 
-int main()
+int main(int argc, char *argv[])
 {
-	int n,m;
-	cout << "Enter the number of nodes : \n";
-	cin >> n;
-	adj.resize(n);
-	cout << "Enter the number of edges : \n";
-	cin >> m;
-	int u,v,w;
-	for (int i = 0; i < m; i++)
+	
+	if (argc < 4 || std::string(argv[1]).size() == 0)
 	{
-		cout << "Edge " << i+1 << " From : ";
-		cin >> u;
-		cout << "To : ";
-		cin >> v;
-		cout << "Weight : ";
-		cin >> w;
-		adj[u].push_back(make_pair(v,w));
+		if (argc == 3) 
+		{
+			cout << "Usage: please provide a destination\n";
+			return 1;
+		}
+		if (argc == 2)
+		{
+			cout << "Usage: please provide source and destination\n";
+			return 1;
+		}
+		cout << "Usage: please provide a comma-separated list of integers\n";
+		return 1;
+	}
+	std::string s = std::string(argv[1]);
+
+	vector<int> num;
+	int val = 0;
+	for (int i = 0; i < s.size(); ++i)
+	{
+		if (s[i] == ',' && i <= s.size() - 3 && s[i+1] == ' ')
+		{
+			num.push_back(val); i++;
+		}
+		else if (s[i] >= '0' && s[i] <= '9')
+		{
+			val *= 10;
+			val += s[i] - '0';
+		}
+		else
+		{
+			cout << "Usage: please provide a comma-separated list of integers\n";
+			return 1;
+		}
+	}
+	num.push_back(val);
+
+
+	int sz = num.size();
+	int n = sqrt(sz);
+	if (n * n != sz)
+	{
+		cout << "Usage: please provide a comma-separated list of integers\n";
+		return 1;
 	}
 
-	cout << "Run Dijkstra From : ";
-	cin >> u;
-	cout << "To : ";
-	cin >> v;
-
-	int Answer = dijkstra(u,v,n);
-	if (Answer == OO)
-		cout << "No path from node : " << u << " to node : " << v << '\n';
-	else
-		cout << "The Minimum Cost to go from node : " << u
-		 	<<  " to node : " << v << " is : " << Answer << '\n';
-
+	adj.resize(n, vector<int>(n));
+	for (int i = 0; i < n; ++i)
+	{
+		for (int j = 0; j < n; ++j)
+		{
+			adj[i][j] = num[i * n + j];
+			if (adj[i][j] < 0)
+			{
+				cout << "Usage: please provide positive weights\n";
+				return 1;
+			}
+		}
+	}
 }
