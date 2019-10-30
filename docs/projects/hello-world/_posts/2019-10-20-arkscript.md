@@ -1,7 +1,7 @@
 ---
 title: Hello World in Arkscript
 layout: default
-last-modified: 2018-10-22
+last-modified: 2019-10-22
 featured-image: hello-world-in-python-featured-image.JPEG
 tags: [arkscript, hello-world]
 authors:
@@ -10,8 +10,8 @@ authors:
 
 Welcome to this originally first edition of the Hello World in Every Language
 series where I plan to embark on a journey of coding language exploration. 
-First up, how to implement Hello World in Python. t
--Its really easy. Let's just get into it
+First up, how to implement Hello World in ArkScript.
+Its really easy. Let's just get into it
 
 ## How to Implement the Solution
 
@@ -33,7 +33,9 @@ They will be executed one after another, in the same scope.[^1]
 ## How to Run Solution
 
 For Linux users, first download the ark-linux64.zip and the lib.zip. More info about different OSs on the Superfola github page linked below.
-Or If you want to skip the hassle, just go to any online editor to give this a try.
+
+Go to ArkScript/releases and download the latest one corresponding to your operating system. If you want to install it system-wide, see the wiki, otherwise just unzip the archive wherever you want, open a terminal and launch Ark --repl --lib ./lib (to tell it the lib isn't installed system-wide). It will start an ArkScript interpreter where you can type in the code given above.
+
 ---
 
 #### References
