@@ -96,6 +96,11 @@ int main(int argc, char *argv[])
 	{
 		if (s[i] == ',' && i <= s.size() - 3 && s[i+1] == ' ')
 		{
+			if (!val && neg == -1)
+			{
+				cout << "Usage: please provide a comma-separated list of integers\n";
+				return 1;
+			}
 			num.push_back(val * neg); i++;
 			val = 0, neg = 1;
 		}
@@ -113,6 +118,11 @@ int main(int argc, char *argv[])
 			cout << "Usage: please provide a comma-separated list of integers\n";
 			return 1;
 		}
+	}
+	if (!val && neg == -1)
+	{
+		cout << "Usage: please provide a comma-separated list of integers\n";
+		return 1;
 	}
 	num.push_back(val * neg);
 
@@ -146,5 +156,16 @@ int main(int argc, char *argv[])
 		cout << "Usage: please provide positive node number\n";
 		return 1;
 	}
-	cout << source << " " << destination << '\n';
+	if (source > n - 1 || destination > n - 1)
+	{
+		cout << "Usage: please provide a node number in the Graph\n";
+		return 1;
+	}
+	int ans = dijkstra(source, destination, n);
+	if (ans == OO)
+	{
+		cout << "There is no way between "<<source<<" and "<<destination << '\n';
+		return 0;
+	}
+	cout << ans << "\n";
 }
