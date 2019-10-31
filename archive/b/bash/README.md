@@ -8,6 +8,7 @@ Welcome to Sample Programs in Bash!
   - Solution borrowed from @toturkman via the [baklava repo][1]
 - [Bubble Sort in Bash][9]
 - [Capitalize in Bash][10]
+- [Even Odd in Bash][17]
 - [Factorial in Bash][13]
   - Solution borrowed from [Log2Base2][12]
 - [Fibonacci in Bash][7]
@@ -45,3 +46,4 @@ Welcome to Sample Programs in Bash!
 [14]: https://github.com/TheRenegadeCoder/sample-programs/issues/1228
 [15]: https://github.com/TheRenegadeCoder/sample-programs/issues/1227
 [16]: https://github.com/TheRenegadeCoder/sample-programs/issues/1220
+[17]: https://github.com/TheRenegadeCoder/sample-programs/issues/1218

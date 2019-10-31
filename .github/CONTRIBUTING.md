@@ -232,7 +232,21 @@ file containing a project description in the docs/projects folder. The project f
 should follow the [PROJECT_ARTICLE_TEMPLATE.md][41].
 
 Feel free to browse other projects to get an idea of how to fill out each
-section.
+section. In general, here's a nice check list to make sure you've 
+filled it out properly:
+
+- [ ] Write a high-level description of the project
+- [ ] Write out detailed requirements for the project including:
+  - [ ] a sample of a generic command line execution (i.e. `program.lang 2 3 "Hi"`)
+  - [ ] a description of expected inputs and outputs
+  - [ ] a description of assumptions
+- [ ] Write out a table of tests which include a diverse range of inputs and their expected outputs
+
+Keep in mind that projects in this repository are command line driven. 
+In other words, **input should always be pulled off the command line as
+command line arguments** rather than prompted and accepted on standard input.
+This allows us to perform quick and easy black box testing by passing
+command line arguments and observing the output.
 
 #### Languages
 
@@ -282,7 +296,7 @@ list in the [.glotter.yml][46] and to the `testinfo.yml` file in the language fo
 
 Starting a test run is done by using python to call `runner.py`.
 For windows, this can be done by calling `samplerunner.bat`
-On systems with bash installed, just call `./samplrunner.sh`
+On systems with bash installed, just call `./samplerunner.sh`
 
 Running Glotter with no arguments will just print out a help menu.
 
@@ -290,10 +304,10 @@ Some common cases for testing are outlined below.
 
 | Purpose | Command | Example |
 | --- | --- | --- |
-| Run all tests | `./samplrunner.sh test | `./samplerunner.sh test` |
-| Run all project tests for a given language | `./samplrunner.sh test -l {LANGUAGE_NAME}` | `./samplerunner.sh test -l c-sharp` |
-| Run all language tests for a given project | `./samplrunner.sh test -p {PROJECT_KEY}` | `./samplerunner.sh test -p evenodd` |
-| Run all tests for a specific program | `./samplrunner.sh test -s {NAME_OF_PROJECT}.{EXTENSION}` | `./samplerunner.sh -s Fibonacci.java` |
+| Run all tests | `./samplerunner.sh test | `./samplerunner.sh test` |
+| Run all project tests for a given language | `./samplerunner.sh test -l {LANGUAGE_NAME}` | `./samplerunner.sh test -l c-sharp` |
+| Run all language tests for a given project | `./samplerunner.sh test -p {PROJECT_KEY}` | `./samplerunner.sh test -p evenodd` |
+| Run all tests for a specific program | `./samplerunner.sh test -s {NAME_OF_PROJECT}.{EXTENSION}` | `./samplerunner.sh -s Fibonacci.java` |
 
 
 ## Plagiarism

@@ -17,6 +17,7 @@ Welcome to Sample Programs in PHP!
 - [Game of Life in PHP][21]
 - [Hello World in PHP][2]
 - [Insertion Sort in PHP][17]
+- [Job Sequencing][26]
 - [Merge Sort in PHP][14]
 - [Palindrome Word in PHP][11]
 - [Prime Number in PHP][20]
@@ -67,4 +68,5 @@ Welcome to Sample Programs in PHP!
 [22]: https://github.com/TheRenegadeCoder/sample-programs/issues/1523
 [23]: https://github.com/TheRenegadeCoder/sample-programs/issues/1534
 [25]: https://github.com/TheRenegadeCoder/sample-programs/issues/1529
+[26]: https://github.com/TheRenegadeCoder/sample-programs/issues/1525
 
