@@ -11,6 +11,7 @@ Welcome to Sample Programs in Lua!
 - [Reverse a String in Lua][5]
 - [Add Fibonacci in Lua][7]
 - ["Encrypt" using rot-13][10]
+- [File IO in lua][13]
 
 ## Fun Facts
 
@@ -33,3 +34,4 @@ Welcome to Sample Programs in Lua!
 [8]: https://github.com/TheRenegadeCoder/sample-programs/issues/1433
 [9]: https://github.com/TheRenegadeCoder/sample-programs/issues/1432
 [10]: https://github.com/TheRenegadeCoder/sample-programs/issues/1447
+[13]: https://github.com/TheRenegadeCoder/sample-programs/issues/1451
