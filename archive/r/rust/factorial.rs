@@ -12,12 +12,6 @@ fn main() {
         .trim()
         .parse()
         .expect("please input a non-negative integer");
-    // let mut index = input_num;
-    // let mut factorial = input_num;
-    // for index in input_num..1 {
-    //     index = index -1;
-    //     factorial = factorial * index;
-    // }
     let mut n = input_num as u128;
     let mut result = 1;
     while n > 0 {
