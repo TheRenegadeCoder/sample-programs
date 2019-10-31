@@ -5,6 +5,7 @@ Welcome to Sample Programs in Racket!
 ## Sample Programs
 
 - [Hello World in Racket](https://therenegadecoder.com/code/hello-world-in-racket/)
+- [Fibonacci in Racket]
 
 ## Fun Facts
 
