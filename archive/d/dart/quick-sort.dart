@@ -54,7 +54,7 @@ main(List<String> args) {
     List<int> lst = parseInput(args);
     if (lst.length <= 1) exitWithError();
       quicksort(lst, 0, lst.length - 1);
-      print(lst);
+      print(lst.join(", "));
   }catch (e) {
     exitWithError();
   }
