@@ -1,4 +1,6 @@
 
+import 'dart:io';
+
 import 'bubble-sort.dart';
 
 /**
@@ -31,22 +33,29 @@ partition(List lst,int start,int end){
   return start_position+1;
 }
 
-swap(List<double> lst, int position, int position2){
+swap(List<int> lst, int position, int position2){
   var tmp = lst[position];
   lst[position] = lst[position2];
   lst[position2] = tmp;
 }
 
-main(List<String> args){
-  try {
-
-  List<double> lst = parseInput(args.join());
-
-  if (lst.length <= 1) exitWithError();
-    quicksort(lst, 0, lst.length - 1);
-    print(lst);
+List<int>parseInput(List<String> input){
+  List<int> lst = [];
+  var inputString = input.join().replaceAll(" ", "").replaceAll("'", "").split(",");
+  for(var stringNumber in inputString){
+    lst.add(int.parse(stringNumber));
   }
-  catch (e){
-      exitWithError();
+  return lst;
+}
+
+main(List<String> args) {
+
+  try {
+    List<int> lst = parseInput(args);
+    if (lst.length <= 1) exitWithError();
+      quicksort(lst, 0, lst.length - 1);
+      print(lst);
+  }catch (e) {
+    exitWithError();
   }
 }
