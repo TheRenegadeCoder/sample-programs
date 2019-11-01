@@ -6,6 +6,7 @@ Welcome to Sample Programs in Racket!
 
 - [Hello World in Racket](https://therenegadecoder.com/code/hello-world-in-racket/)
 - [Fibonacci in Racket](https://github.com/TheRenegadeCoder/sample-programs/issues/1852)
+- [Factorial in Racket](https://github.com/TheRenegadeCoder/sample-programs/issues/1853)
 
 
 
