@@ -44,6 +44,7 @@ main(List<String> args){
 
   if (lst.length <= 1) exitWithError();
     quicksort(lst, 0, lst.length - 1);
+    print(lst);
   }
   catch (e){
       exitWithError();
