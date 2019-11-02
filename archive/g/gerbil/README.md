@@ -4,7 +4,7 @@ Welcome to Sample Programs in Gerbil!
 
 ## Sample Programs
 
-- [Hello World in Gerbil]
+- [Hello World in Gerbil](https://github.com/TheRenegadeCoder/sample-programs/issues/1854)
 
 ## Fun Facts
 
