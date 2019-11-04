@@ -1,8 +1,6 @@
 
 import 'dart:io';
 
-import 'bubble-sort.dart';
-
 /**
  *
  * Merge sort Algorithm from introduction to algorithm
@@ -47,6 +45,13 @@ List<int>parseInput(List<String> input){
   }
   return lst;
 }
+
+exitWithError() {
+  print(
+      'Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"');
+  exit(1);
+}
+
 
 main(List<String> args) {
 
