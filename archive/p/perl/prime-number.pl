@@ -2,7 +2,7 @@
 # Issue  #1834
 # Accept a number on command line and print if it is Prime or Composite
 # Prime Numbers will have only 1 Divisor, itself..  Use that to determine Composite.
-
+# Note: 0 and 1 are Composite numbers, 2 is a Prime Number
 use warnings;
 
 my ($prime) = @ARGV;
@@ -24,11 +24,17 @@ if ( $prime < 0 ) {
 # Only Integer
 if ( $prime =~ /^-?\d+$/ ) {
 
-    # If 1 or the Number is Even
-    if ( ( $prime == 1 ) || ( $prime % 2 == 0 ) ) {
+    # If number is 0 or 1
+    if ( ( $prime == 1 ) || ( $prime  == 0 ) ) {
         print("Composite");
         exit(0);
     }
+    #  Number is Even
+    elsif  ( $prime == 2 ) {
+        print("Prime");
+        exit(0);
+    }
+
     else {
         #   Check how many divisors for the given number
         $i               = 0;
