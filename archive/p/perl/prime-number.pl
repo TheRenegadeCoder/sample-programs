@@ -11,9 +11,12 @@ $num_args = $#ARGV + 1;
 
 # Empty input
 if ( $num_args < 1 ) {
-    print "Usage: please input a non-negative integer";
+    print ("Usage: please input a non-negative integer");
     exit(0);
 }
+
+# Only Integer
+if ( $prime =~ /^-?\d+$/ ) {
 
 # Negative Number
 if ( $prime < 0 ) {
@@ -21,17 +24,14 @@ if ( $prime < 0 ) {
     exit(0);
 }
 
-# Only Integer
-if ( $prime =~ /^-?\d+$/ ) {
 
-    # If number is 0 or 1
+    # If 1 or the Number is Even
     if ( ( $prime == 1 ) || ( $prime  == 0 ) ) {
         print("Composite");
         exit(0);
     }
-    #  Number is Even
     elsif  ( $prime == 2 ) {
-        print("Prime");
+                print("Prime");
         exit(0);
     }
 
