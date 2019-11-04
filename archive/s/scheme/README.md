@@ -6,6 +6,7 @@ Welcome to Sample Programs in Scheme!
 
 - [Hello World in Scheme](https://therenegadecoder.com/code/hello-world-in-scheme/)
 - [Reverse a String in Scheme](https://therenegadecoder.com/code/reverse-a-string-in-scheme/)
+- [Fibonacci in Scheme](https://sample-programs.therenegadecoder.com/projects/fibonacci/)
 
 ## Fun Facts
 
