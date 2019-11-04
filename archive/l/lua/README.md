@@ -11,6 +11,7 @@ Welcome to Sample Programs in Lua!
 - [Even Odd in Lua][9]
 - [Factorial in Lua][6]
 - [Fibonacci in Lua][7]
+- [File IO in lua][15]
 - [Fizz Buzz in Lua][1]
 - [Hello World in Lua][2]
 - [Prime Number in Lua][11]
@@ -43,3 +44,5 @@ Welcome to Sample Programs in Lua!
 [12]: https://github.com/TheRenegadeCoder/sample-programs/issues/1448
 [13]: https://github.com/TheRenegadeCoder/sample-programs/issues/1450
 [14]: https://github.com/TheRenegadeCoder/sample-programs/issues/1444
+[15]: https://github.com/TheRenegadeCoder/sample-programs/issues/1451
+

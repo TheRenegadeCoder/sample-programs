@@ -25,6 +25,7 @@ Welcome to Sample Programs in JavaScript!
 -   [Quick Sort in JavaScript][20]
 -   [Rotate by 13 in JavaScript][21]
 -   [Game of Life in JavaScript][22]
+-	[Merge Sort in JavaScript][23]
 
 ## Fun Facts
 
@@ -61,3 +62,4 @@ Welcome to Sample Programs in JavaScript!
 [20]: https://github.com/TheRenegadeCoder/sample-programs/issues/1649
 [20]: https://github.com/TheRenegadeCoder/sample-programs/issues/1379
 [22]: https://github.com/TheRenegadeCoder/sample-programs/issues/1377
+[23]: https://github.com/TheRenegadeCoder/sample-programs/issues/1385
