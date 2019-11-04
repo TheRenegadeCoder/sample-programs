@@ -19,8 +19,3 @@
             
   
 (factorial (string->number (read-line)))
-     
-    
-    
-
-
