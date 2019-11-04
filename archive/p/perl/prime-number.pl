@@ -7,8 +7,13 @@ use warnings;
 
 my ($prime) = @ARGV;
 
+if ($#ARGV < 2){
+    print("Usage: please input a non-negative integer");
+    exit(0);
+}
 if ( $prime <= 0 ) {
     print("Usage: please input a non-negative integer");
+    exit(0);
 }
 else {
     if ( $prime % 2 == 0 ) {
