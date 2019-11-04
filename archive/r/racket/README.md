@@ -8,10 +8,6 @@ Welcome to Sample Programs in Racket!
 - [Fibonacci in Racket](https://github.com/TheRenegadeCoder/sample-programs/issues/1852)
 - [Factorial in Racket](https://github.com/TheRenegadeCoder/sample-programs/issues/1853)
 
-
-
-
-
 ## Fun Facts
 
 - Debut: 1994
