@@ -7,12 +7,6 @@ use warnings;
 
 my ($prime) = @ARGV;
 
-# if (not defined $prime) {
-#   die "please input a non-negative integer";
-# }
-
-# print "Arguments are ", $ARGV[0], "KAJJI", $ARGV[1], "KAJJI";
-
 $num_args = $#ARGV + 1;
 
 # Empty input
@@ -30,7 +24,7 @@ if ( $prime < 0 ) {
 # Only Integer
 if ( $prime =~ /^-?\d+$/ ) {
 
-    # If 1 or te Number is Even
+    # If 1 or the Number is Even
     if ( ( $prime == 1 ) || ( $prime % 2 == 0 ) ) {
         print("Composite");
         exit(0);
