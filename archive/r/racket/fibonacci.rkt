@@ -21,8 +21,3 @@
     
   
 (fibonacci (string->number (read-line)))
-     
-    
-    
-
-

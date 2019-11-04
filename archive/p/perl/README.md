@@ -13,6 +13,7 @@ Welcome to Sample Programs in Perl!
 - [Hello World in Perl][1]
 - [Quine in Perl][7]
 - [Reverse a String in Perl][2]
+- [ROT-13 in Perl][9]
 
 ## Fun Facts
 
@@ -34,4 +35,4 @@ Welcome to Sample Programs in Perl!
 [6]: https://www.jdoodle.com/execute-perl-online
 [7]: https://github.com/TheRenegadeCoder/sample-programs/issues/1501
 [8]: https://github.com/TheRenegadeCoder/sample-programs/issues/1511
-
+[9]: https://github.com/TheRenegadeCoder/sample-programs/issues/1824
