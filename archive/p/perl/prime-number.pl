@@ -26,7 +26,7 @@ if ( $prime < 0 ) {
 
 
     # If 1 or the Number is Even
-    if ( ( $prime == 1 ) || ( $prime  == 0 ) ) {
+    if ( ( $prime == 1 ) || ( $prime  == 0 )  ||  ( $prime  %2 == 0 ) ) {
         print("Composite");
         exit(0);
     }
