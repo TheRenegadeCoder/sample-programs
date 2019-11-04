@@ -8,7 +8,7 @@ use warnings;
 my ($prime) = @ARGV;
 
 if ( $prime <= 0 ) {
-    print("please input a non-negative integer");
+    print("Usage: please input a non-negative integer");
 }
 else {
     if ( $prime % 2 == 0 ) {
