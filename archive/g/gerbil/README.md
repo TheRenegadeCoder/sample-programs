@@ -15,6 +15,6 @@ Welcome to Sample Programs in Gerbil!
 
 ## References
 
-- [Gerbil Github]    [https://github.com/vyzo/gerbil]
-- [Gerbil Guide]     [https://cons.io/]
-- [Gerbil Tutorials] [https://cons.io/tutorials/]
+- [Gerbil Github](https://github.com/vyzo/gerbil)
+- [Gerbil Guide](https://cons.io/)
+- [Gerbil Tutorials](https://cons.io/tutorials/)
