@@ -84,7 +84,7 @@ Welcome to Sample Programs in Python!
   - [x] [The `return` Statement][10]
   - [ ] The `yield` Statement
   - [ ] The `raise` Statement
-  - [ ] The `break` Statement
+  - [x] The `break` Statement
   - [ ] The `continue` Statement
   - [x] [The `import` Statement][11]
   - [ ] The `global` Statement
@@ -131,7 +131,7 @@ Welcome to Sample Programs in Python!
 [23]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/file-io.py#L25
 [24]: https://github.com/TheRenegadeCoder/sample-programs/issues/492
 [25]: https://github.com/TheRenegadeCoder/sample-programs/issues/499
-[26]: https://github.com/TheRenegadeCoder/sample-programs/issues/570 
+[26]: https://github.com/TheRenegadeCoder/sample-programs/issues/570
 [27]: https://github.com/Boot-Error/sample-programs/blob/ced2e54804d8f801aee2b37fee6f443a6432cb9b/archive/p/python/lcs.py#L16
 [28]: https://github.com/Boot-Error/sample-programs/blob/ced2e54804d8f801aee2b37fee6f443a6432cb9b/archive/p/python/lcs.py#L17
 [29]: https://therenegadecoder.com/code/file-io-in-python/
