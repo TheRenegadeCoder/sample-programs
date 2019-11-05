@@ -6,10 +6,10 @@ fizz_buzz <- function(){
     if (!mod3 && !mod5){
       out=x
     }
-    if (x%%3==0){
+    if (mod3){
       out='Fizz'
     }
-    if (x%%5==0){
+    if (mod5){
       out=paste0(out,'Buzz')
     }
     print(out)
