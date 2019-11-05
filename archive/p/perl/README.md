@@ -14,6 +14,7 @@ Welcome to Sample Programs in Perl!
 - [Quine in Perl][7]
 - [Reverse a String in Perl][2]
 - [ROT-13 in Perl][9]
+- [Prime Number in Perl](https://github.com/TheRenegadeCoder/sample-programs/issues/1834)
 
 ## Fun Facts
 
