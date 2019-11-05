@@ -8,6 +8,7 @@ Welcome to Sample Programs in C++!
 - [Binary Search in C++](https://github.com/TheRenegadeCoder/sample-programs/tree/master/archive/c/c-plus-plus)
 - [Bubble Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1135)
 - [Capitalize in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1234)
+- [Dijkstra in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1796)
 - [Even Odd in C++](https://sample-programs.therenegadecoder.com/projects/even-odd/)
 - [Factorial in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1237)
 - [Fibonacci Sequence in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/496)
@@ -20,10 +21,10 @@ Welcome to Sample Programs in C++!
 - [Longest Common Sub-sequence in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1262)
 - [Merge Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/tree/master/archive/c/c-plus-plus)
 - Prime Number in C++
+- [Quick Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1848)
 - [Reverse String in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/419)
 - [Roman Numeral Conversion in C++](https://github.com/TheRenegadeCoder/sample-programs/tree/master/archive/c/c-plus-plus)
 - [Selection Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1683)
-- [Dijkstra in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1796)
 
 ## Fun Facts
 
