@@ -15,3 +15,5 @@ fizz_buzz <- function(){
     print(out)
   }
 }
+
+fizz_buzz()
