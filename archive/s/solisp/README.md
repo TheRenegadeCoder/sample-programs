@@ -7,6 +7,7 @@ Welcome to Sample Programs in Solisp!
 ## Fun Facts
 
 - Debut: 2019
+- Developer: Stuart Irwin
 - Typing: Dynamic
 
 ## References
