@@ -4,10 +4,10 @@ Welcome to Sample Programs in Solisp!
 
 ## Sample Programs
 
-- baklava
-- fizz-buzz
-- hello
-- reverse
+- Baklava in Solisp
+- Fizz Buzz in Solisp
+- Hello World in Solisp
+- Reverse String in Solisp
 
 ## Fun Facts
 
