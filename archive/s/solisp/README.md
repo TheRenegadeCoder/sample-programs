@@ -4,6 +4,11 @@ Welcome to Sample Programs in Solisp!
 
 ## Sample Programs
 
+- baklava
+- fizz-buzz
+- hello
+- reverse
+
 ## Fun Facts
 
 - Debut: 2019
