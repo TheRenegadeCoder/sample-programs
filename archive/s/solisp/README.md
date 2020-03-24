@@ -4,6 +4,11 @@ Welcome to Sample Programs in Solisp!
 
 ## Sample Programs
 
+- Baklava in Solisp
+- Fizz Buzz in Solisp
+- Hello World in Solisp
+- Reverse String in Solisp
+
 ## Fun Facts
 
 - Debut: 2019
