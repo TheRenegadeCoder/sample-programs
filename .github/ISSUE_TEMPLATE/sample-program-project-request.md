@@ -8,7 +8,7 @@ assignees: ''
 
 ---
 
-Please describe the project you would link included in the collection (links are great too!):
+Please describe the project you would like included in the collection (links are great too!):
 
 If possible, please provide some test cases for the new project:
 
