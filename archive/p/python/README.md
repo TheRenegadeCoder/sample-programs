@@ -4,6 +4,7 @@ Welcome to Sample Programs in Python!
 
 ## Sample Programs
 
+- [Anagram in Python][40]
 - [Baklava in Python][22]
   - Solution borrowed from @erayak via the [baklava repo][21]
 - [Binary Search][31]
@@ -145,6 +146,7 @@ Welcome to Sample Programs in Python!
 [37]: https://github.com/TheRenegadeCoder/sample-programs/issues/864
 [38]: https://github.com/TheRenegadeCoder/sample-programs/issues/867
 [39]: https://github.com/TheRenegadeCoder/sample-programs/issues/870
+[40]: https://github.com/TheRenegadeCoder/sample-programs/issues/1161
 [41]: https://www.python.org/dev/peps/pep-0020/
 [43]: https://github.com/TheRenegadeCoder/sample-programs/issues/1536
 [44]: https://github.com/TheRenegadeCoder/sample-programs/issues/1535
