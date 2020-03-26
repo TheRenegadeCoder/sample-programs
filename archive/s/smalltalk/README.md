@@ -4,7 +4,7 @@ Welcome to Sample Programs in Smalltalk!
 
 ## Sample Programs
 
-- Hello World in Smalltalk
+- [Hello World in Smalltalk](https://github.com/jrg94/sample-programs/issues/84)
 
 ## Fun Facts
 

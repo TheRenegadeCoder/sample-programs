@@ -4,7 +4,8 @@ Welcome to Sample Programs in Pascal!
 
 ## Sample Programs
 
-- [Hello World in Pascal](https://therenegadecoder.com/code/hello-world-in-pascal/)
+- [Fizz Buzz in Pascal][1]
+- [Hello World in Pascal][2]
 
 ## Fun Facts
 
@@ -13,6 +14,12 @@ Welcome to Sample Programs in Pascal!
 
 ## References
 
-- [Pascal Wiki](https://en.wikipedia.org/wiki/Pascal_(programming_language))
-- [Pascal Docs](https://www.freepascal.org/docs.var)
-- [Online Pascal Compiler](https://www.jdoodle.com/execute-pascal-online)
+- [Pascal Wiki][3]
+- [Pascal Docs][4]
+- [Online Pascal Compiler][5]
+
+[1]: https://github.com/TheRenegadeCoder/sample-programs/issues/548
+[2]: https://therenegadecoder.com/code/hello-world-in-pascal/
+[3]: https://en.wikipedia.org/wiki/Pascal_(programming_language)
+[4]: https://www.freepascal.org/docs.var
+[5]: https://www.jdoodle.com/execute-pascal-online

@@ -4,7 +4,7 @@ Welcome to Sample Programs in Factor!
 
 ## Sample Programs
 
-- Hello World in Factor
+- [Hello World in Factor](https://github.com/jrg94/sample-programs/issues/125)
 
 ## Fun Facts
 

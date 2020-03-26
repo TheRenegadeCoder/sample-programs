@@ -4,7 +4,7 @@ Welcome to Sample Programs in Goby!
 
 ## Sample Programs
 
-- Hello World in Goby
+- [Hello World in Goby](https://github.com/jrg94/sample-programs/issues/31)
 
 ## Fun Facts
 

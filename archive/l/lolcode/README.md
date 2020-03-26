@@ -4,7 +4,7 @@ Welcome to Sample Programs in LOLCODE!
 
 ## Sample Programs
 
-- Hello World in LOLCODE
+- [Hello World in LOLCODE](https://github.com/jrg94/sample-programs/issues/167)
 
 ## Fun Facts
 

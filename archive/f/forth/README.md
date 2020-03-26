@@ -4,7 +4,7 @@ Welcome to Sample Programs in Forth!
 
 ## Sample Programs
 
-- Hello World in Forth
+- [Hello World in Forth](https://github.com/jrg94/sample-programs/issues/95)
 
 ## Fun Facts
 

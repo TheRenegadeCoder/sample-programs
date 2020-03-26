@@ -4,7 +4,7 @@ Welcome to Sample Programs in Pyret!
 
 ## Sample Programs
 
-- Hello World in Pyret
+- [Hello World in Pyret](https://github.com/jrg94/sample-programs/issues/62)
 
 ## Fun Facts
 

@@ -1,0 +1,8 @@
+folder:
+  extension: ".gb"
+  naming: "hyphen"
+
+container:
+  image: "gobylang/goby"
+  tag: "v0.1.10"
+  cmd: "goby {{ source.name }}{{ source.extension }}"

@@ -4,7 +4,7 @@ Welcome to Sample Programs in Kitten!
 
 ## Sample Programs
 
-- Hello World in Kitten
+- [Hello World in Kitten](https://github.com/jrg94/sample-programs/issues/123)
 
 ## Fun Facts
 

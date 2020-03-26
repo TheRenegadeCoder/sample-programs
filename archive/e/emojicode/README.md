@@ -4,7 +4,7 @@ Welcome to Sample Programs in Emojicode!
 
 ## Sample Programs
 
-- Hello World in Emojicode
+- [Hello World in Emojicode](https://github.com/jrg94/sample-programs/issues/134)
 
 ## Fun Facts
 

@@ -4,7 +4,7 @@ Welcome to Sample Programs in Tcl!
 
 ## Sample Programs
 
-- Hello World in Tcl
+- [Hello World in Tcl](https://github.com/jrg94/sample-programs/issues/34)
 
 ## Fun Facts
 

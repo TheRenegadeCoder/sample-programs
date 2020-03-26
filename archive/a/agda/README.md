@@ -4,7 +4,7 @@ Welcome to Sample Programs in Agda!
 
 ## Sample Programs
 
-- Hello World in Agda
+- [Hello World in Agda](https://github.com/jrg94/sample-programs/issues/121)
 
 ## Fun Facts
 

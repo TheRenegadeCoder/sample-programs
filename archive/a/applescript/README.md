@@ -4,7 +4,7 @@ Welcome to Sample Programs in AppleScript!
 
 ## Sample Programs
 
-- Hello World in AppleScript
+- [Hello World in AppleScript](https://github.com/jrg94/sample-programs/issues/88)
 
 ## Fun Facts
 

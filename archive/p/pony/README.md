@@ -4,7 +4,7 @@ Welcome to Sample Programs in Pony!
 
 ## Sample Programs
 
-- Hello World in Pony
+- [Hello World in Pony](https://github.com/jrg94/sample-programs/issues/86)
 
 ## Fun Facts
 

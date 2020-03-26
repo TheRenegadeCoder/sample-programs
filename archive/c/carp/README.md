@@ -4,7 +4,7 @@ Welcome to Sample Programs in Carp!
 
 ## Sample Programs
 
-- Hello World in Carp
+- [Hello World in Carp](https://github.com/jrg94/sample-programs/issues/284)
 
 ## Fun Facts
 

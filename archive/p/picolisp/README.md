@@ -5,7 +5,7 @@ Welcome to Sample Programs in PicoLisp!
 ## Sample Programs
 
 - [Hello World in PicoLisp (CLI)](https://therenegadecoder.com/code/hello-world-in-picolisp/)
-- Reverse a String in PicoLisp (CLI)
+- [Reverse a String in PicoLisp (CLI)](https://github.com/jrg94/sample-programs/issues/154)
 
 ## Fun Facts
 

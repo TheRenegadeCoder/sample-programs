@@ -1,0 +1,33 @@
+matrix:
+  include:
+    - language: python
+      python:
+        - "3.7"
+      install: 
+        - pip install -r requirements.txt
+        - python runner.py download
+      script: python runner.py test
+      deploy:
+        provider: script
+        script: bash -x deploy.sh
+    - language: ruby
+      before_install:
+        - cd docs/
+      rvm:
+        - 2.4
+      script:
+        - bundle exec jekyll build --future
+        - bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html --disable_external	
+      env:
+        global:
+          - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+
+
+notifications:
+  email: false
+  webhooks:
+    urls:
+      - https://webhooks.gitter.im/e/f694e2f80d5bba482051
+    on_success: always
+    on_failure: always
+    on_start: never

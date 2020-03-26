@@ -4,7 +4,9 @@ Welcome to Sample Programs in R!
 
 ## Sample Programs
 
-- Hello World in R
+- [Hello World in R](https://therenegadecoder.com/code/hello-world-in-r)
+- [FizzBuzz in R] (https://therenegadecoder.com/series/fizz-buzz-in-every-language/)
+
 
 ## Fun Facts
 

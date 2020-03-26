@@ -4,7 +4,7 @@ Welcome to Sample Programs in ELENA!
 
 ## Sample Programs
 
-- Hello World in ELENA
+- [Hello World in ELENA](https://github.com/jrg94/sample-programs/issues/127)
 
 ## Fun Facts
 

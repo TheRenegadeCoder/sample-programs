@@ -4,7 +4,7 @@ Welcome to Sample Programs in Odin!
 
 ## Sample Programs
 
-- Hello World in Odin
+- [Hello World in Odin](https://github.com/jrg94/sample-programs/issues/236)
 
 ## Fun Facts
 

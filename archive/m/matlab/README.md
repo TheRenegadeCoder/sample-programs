@@ -4,7 +4,12 @@ Welcome to Sample Programs in MATLAB!
 
 ## Sample Programs
 
-- Hello World in MATLAB
+- [Hello World in MATLAB](https://therenegadecoder.com/code/hello-world-in-matlab/)
+- Odd Even in MATLAB
+- Factorial in MATLAB
+- Bubble Sort in MATLAB
+- Prime Number in MATLAB
+- Fibonacci in MATLAB
 
 ## Fun Facts
 

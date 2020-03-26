@@ -4,7 +4,8 @@ Welcome to Sample Programs in F#!
 
 ## Sample Programs
 
-- Hello World in F#
+- [Baklava in F#](https://github.com/TheRenegadeCoder/sample-programs/issues/1128)
+- [Hello World in F#](https://github.com/jrg94/sample-programs/issues/104)
 
 ## Fun Facts
 

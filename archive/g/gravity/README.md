@@ -4,7 +4,7 @@ Welcome to Sample Programs in Gravity!
 
 ## Sample Programs
 
-- Hello World in Gravity
+- [Hello World in Gravity](https://github.com/jrg94/sample-programs/issues/66)
 
 ## Fun Facts
 
