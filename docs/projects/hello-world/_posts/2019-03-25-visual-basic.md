@@ -46,6 +46,10 @@ Alternatively, we can run the solution using Microsoft’s very own Visual Studi
 Of course, I’m not sure of it’s support on platforms beyond Windows. Don’t forget 
 to grab a copy of the Hello World in Visual Basic .NET solution.
 
+## Further Reading
+
+- [Hello World in Solidity][1] on The Renegade Coder
+
 ---
 
 #### References

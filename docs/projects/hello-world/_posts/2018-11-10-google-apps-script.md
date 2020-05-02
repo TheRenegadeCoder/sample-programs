@@ -35,6 +35,10 @@ Alternatively, we can write scripts locally and upload them to Google Drive. At 
 
 If you know of other ways to run Google Apps Script code, let me know in the comments.
 
+## Further Reading
+
+- [Hello World in Solidity][1] on The Renegade Coder
+
 ---
 
 #### References

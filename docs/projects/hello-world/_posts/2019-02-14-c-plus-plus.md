@@ -64,6 +64,10 @@ instead of sharing platform specific directions, I’ll fallback on my online
 compiler recommendation. Let me know if you have questions otherwise in the 
 comments.
 
+## Further Reading
+
+- [Hello World in Solidity][1] on The Renegade Coder
+
 ---
 
 #### References
