@@ -38,7 +38,6 @@ Selection sort always performs at O(n<sup>2</sup>). This is because the algorith
 loops do not depend on the values of the items in the list. That means that even if
 the list is already sorted, the full sorting process will still be performed.
 
-
 ### Examples: Two lists
 
 In the examples below, each row is a single pass through all elements in the unsorted list.
@@ -90,7 +89,6 @@ The element in __bold__ is the one that will be moved to the end of the sorted s
 -   1     2     3     4   __5__ 
 -   1     2     3     4     5    
 
-
 ## Requirements
 
 Write a sample program that takes a list of numbers in the format "4, 5, 3, 1, 2".
@@ -131,7 +129,7 @@ verify the correctness of your solution:
 
 {% include article_list.md collection=site.categories.selection-sort %}
 
-## Further Readings
+## Further Reading
 
 - [Selection sort on Wikipedia][1]
 - [A beginner's guide to Big O notation- Rob Bell][2]

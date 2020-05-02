@@ -21,7 +21,6 @@ Linear search is quite intuitive, it is basically searching an element in an arr
 4. If they match set the flag to 1, position to the current iteration and break from the loop.
 5. If entire loop is traversed and the element is not found the value of flag will be 0 and user can notified that key is not in array.
 
-
 ### Performance
 
 The performance of searching algorithms is generally defined in "Big O notation".
@@ -59,7 +58,8 @@ Linear search is not efficient for large arrays, but for relatively smaller arra
 ## Requirements
 
 Write a sample program that takes a key in the format 3 and a list of numbers in the format "1, 2, 3, 4, 5".
-#### C++ Program:
+
+### C++ Program
 
 ```console
 $ cd archives/c/c-plus-plus/
@@ -68,7 +68,7 @@ $ ./linear-search 3 "1, 2, 3, 4, 5"
 3 found at position 2.
 ```
 
-#### Python Program:
+### Python Program
 
 ```console
 $ cd archives/p/python/

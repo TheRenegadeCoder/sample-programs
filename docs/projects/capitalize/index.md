@@ -51,4 +51,8 @@ Feel free to use the following table when testing capitalize programs
 
 {% include article_list.md collection=site.categories.capitalize %}
 
+## Further Reading
+
+- Fill out as needed
+
 [1]: #requirements

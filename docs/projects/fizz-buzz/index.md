@@ -63,10 +63,8 @@ Verify that the actual output matches the expected output. See the
 
 ## Further Reading
 
--   [Fizz Buzz in Every Language by The Renegade Coder][2]
+- [Fizz Buzz in Every Language by The Renegade Coder][2]
 
 [1]: ../assets/Fizz_Buzz.png
-
 [2]: https://therenegadecoder.com/series/fizz-buzz-in-every-language/
-
 [3]: #requirements

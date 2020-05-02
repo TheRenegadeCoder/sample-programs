@@ -66,6 +66,4 @@ If any user input errors occur, the script should output the following usage mes
 
 ## Further Reading
 
----
-
-#### References
+- Fill out as needed

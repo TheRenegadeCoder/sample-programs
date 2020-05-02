@@ -62,7 +62,6 @@ The element in __bold__ is the main pointer.
 -   1     3     4     5   __2__ 
 -   1     2     3     4     5    
 
-
 ## Requirements
 
 Write a sample program that takes a list of numbers in the format "4, 5, 3, 1, 2".

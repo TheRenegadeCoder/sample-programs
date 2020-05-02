@@ -15,7 +15,6 @@ For example: 2, 3, 5, 7, 11, 13
 Since every number is divisible by One so, Two is the only even and the
 smallest prime number.
 
-
 ## Requirements
 
 Create a file called Prime Number using the naming

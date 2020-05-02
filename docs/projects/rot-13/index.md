@@ -62,7 +62,7 @@ verify the correctness of your solution:
 
 {% include article_list.md collection=site.categories.rot-13 %}
 
-## Further Readings
+## Further Reading
 
 - [ROT-13 on Wikipedia][1]
 

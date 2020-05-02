@@ -34,8 +34,8 @@ For instance `./fractions "6/2" "+" "1/4"` would output `13/4`
 In addition, there should be some error handling for situations where the user
 doesn't supply any input.
 
-
 ## Testing
+
 Some tests for your program are:
 
 | Description | Input | Output |
@@ -56,3 +56,7 @@ Some tests for your program are:
 ## Articles
 
 {% include article_list.md collection=site.categories.fractions %}
+
+## Further Reading
+
+- Fill out as needed

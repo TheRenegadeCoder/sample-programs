@@ -11,7 +11,7 @@ authors:
 Given two arrays of numbers, find the longest common subsequence. For example, let's say we have the
 following pair of arrays:
 
-```
+```python
 A = [1, 4, 5, 3, 15, 6]
 B = [1, 7, 4, 5, 11, 6]
 ```
@@ -30,7 +30,7 @@ to find the longest common subsequence and output it in comma separated list not
 
 The following is recursive pseudocode that you can use for reference:
 
-```
+```python
 LCS(arrayA, arrayB, indexA, indexB):
   if indexA == 0 || indexB == 0:
     return 0

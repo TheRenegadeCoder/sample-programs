@@ -49,8 +49,9 @@ The simple approach is to check each substring whether the substring is a palind
 ### Method 2 ( Dynamic Programming )
 
 The time complexity can be reduced by storing results of subproblems. We maintain a boolean table[n][n] that is filled in bottom up manner. The value of table[i][j] is true, if the substring is palindrome, otherwise false. To calculate table[i][j], we first check the value of table[i+1][j-1], if the value is true and str[i] is same as str[j], then we make table[i][j] true. Otherwise, the value of table[i][j] is made false.
+
 - Time complexity: O ( n^2 )
-- Auxiliary Space: O ( n^2 ) 
+- Auxiliary Space: O ( n^2 )
 
 ### Method 3
 
@@ -63,6 +64,7 @@ Fix a centre and expand in both directions for longer palindromes.
 #### Step to generate even length palindrome
 
 Fix two centre ( low and high ) and expand in both directions for longer palindromes.
+
 - Time complexity: O (n<sup>2</sup>) where n is the length of input string.
 - Auxiliary Space: O ( 1 )
 
@@ -77,3 +79,11 @@ The following table contains various test cases that you can use to verify the c
 |Non-Palindromic string with initial capital letters|"Polip"|"No Palindromic substring present."|
 |Palindromic string with disordered casing|"BoOroO"|"No Palindromic substring present."|
 |Palindromic string with letters and numerics|"6eie6o6"|"Longest Palindromic Substring is: 6eie6"|
+
+## Articles
+
+{% include article_list.md collection=site.categories.longest-palindrome-substring %}
+
+## Further Reading
+
+- Fill as needed
