@@ -37,14 +37,9 @@ If you know of other ways to run Google Apps Script code, let me know in the com
 
 ## Further Reading
 
-- [Hello World in Google Apps Script][1] on The Renegade Coder
-
----
-
-#### References
-
-[^1]: J. Grifski, “Hello World in Google Apps Script,” The Renegade Coder, 22-May-2018. [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-google-apps-script/>. [Accessed: 10-Nov-2018].
+- [Hello World in Google Apps Script][4] on The Renegade Coder
 
 [1]: https://therenegadecoder.com/code/hello-world-in-javascript/
 [2]: https://www.google.com/script/start/
 [3]: https://developers.google.com/apps-script/guides/standalone
+[4]: https://therenegadecoder.com/code/hello-world-in-google-apps-script/
