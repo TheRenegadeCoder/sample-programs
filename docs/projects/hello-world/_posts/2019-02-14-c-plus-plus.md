@@ -66,7 +66,7 @@ comments.
 
 ## Further Reading
 
-- [Hello World in Solidity][1] on The Renegade Coder
+- [Hello World in C++][1] on The Renegade Coder
 
 ---
 

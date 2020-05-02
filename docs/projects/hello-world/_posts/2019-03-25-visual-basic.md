@@ -48,7 +48,7 @@ to grab a copy of the Hello World in Visual Basic .NET solution.
 
 ## Further Reading
 
-- [Hello World in Solidity][1] on The Renegade Coder
+- [Hello World in Visual Basic .NET][1] on The Renegade Coder
 
 ---
 

@@ -56,7 +56,7 @@ And, that's it!
 
 ## Further Reading
 
-- [Hello World in Opa][2] on The Renegade Coder
+- [Hello World in PowerShell][2] on The Renegade Coder
 
 [1]: {{ site.baseurl }}{% post_url /languages/2018-11-01-powershell %}
 [2]: https://therenegadecoder.com/code/hello-world-in-powershell/
