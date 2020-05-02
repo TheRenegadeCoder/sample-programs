@@ -68,8 +68,4 @@ comments.
 
 - [Hello World in C++][1] on The Renegade Coder
 
----
-
-#### References
-
-[^1]: J. Grifski, “Hello World in C++,” The Renegade Coder, 19-Mar-2018. [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-c-plus-plus/>. [Accessed: 07-Feb-2019].
+[1]: https://therenegadecoder.com/code/hello-world-in-c-plus-plus/

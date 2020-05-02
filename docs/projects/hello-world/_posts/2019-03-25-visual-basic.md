@@ -50,8 +50,4 @@ to grab a copy of the Hello World in Visual Basic .NET solution.
 
 - [Hello World in Visual Basic .NET][1] on The Renegade Coder
 
----
-
-#### References
-
-[^1]: J. Grifski, “Hello World in Visual Basic .NET,” The Renegade Coder, 6-May-2018. [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-visual-basic-net/>. [Accessed: 25-Mar-2019].
+[1]: https://therenegadecoder.com/code/hello-world-in-visual-basic-net/
