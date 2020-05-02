@@ -2,7 +2,7 @@
 title: Insertion Sort in Every Language 
 layout: default
 date: 2018-12-16
-last-modified: 2018-12-16
+last-modified: 2020-05-02
 featured-image:
 tags: [insertion-sort]
 authors:

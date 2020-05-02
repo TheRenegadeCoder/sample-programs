@@ -2,7 +2,7 @@
 title: Linear Search in Every Language
 layout: default
 date: 2019-10-17
-last-modified: 2019-10-17
+last-modified: 2020-05-02
 featured-image:
 tags: [linear-search]
 authors:

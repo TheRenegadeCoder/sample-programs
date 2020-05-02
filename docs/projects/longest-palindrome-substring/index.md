@@ -2,7 +2,7 @@
 title: Longest Palindromic Substring in Every Language
 layout: default
 date: 2019-10-08
-last-modified: 2018-10-09
+last-modified: 2020-05-02
 featured-image:
 tags: [longest-palindrome-substring]
 authors: 

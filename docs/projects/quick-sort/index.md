@@ -2,7 +2,7 @@
 title: Quick Sort in Every Language 
 layout: default
 date: 2018-11-29
-last-modified: 2018-11-29
+last-modified: 2020-05-02
 featured-image:
 tags: [quick-sort]
 authors:

@@ -1,7 +1,7 @@
 ---
 title: Insertion Sort in C++
 layout: default
-last-modified: 2019-10-09
+last-modified: 2020-05-02
 featured-image:
 tags: [c-plus-plus, Insertion-sort]
 authors:
@@ -224,7 +224,8 @@ gcc -o reverse-string reverse-string.cpp
 Unfortunately, Windows pretty much requires the use of Visual Studios. So, 
 instead of sharing platform-specific directions, I’ll fall back on my online compiler recommendation.[^1]
 
+## Further Reading
 
-#### References
+- [Insertion Sort in C++][1]
 
-S. Singh, “Insertion Sort in C++,” The Renegade Coder, 09-Oct-2019. [Online]. Available: <https://therenegadecoder.com/code/insertion-sort-in-c-plus-plus/>.
+[1]: https://therenegadecoder.com/code/insertion-sort-in-c-plus-plus/

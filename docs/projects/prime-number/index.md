@@ -2,7 +2,7 @@
 title: Prime Numbers in Every Language
 layout: default
 date: 2018-11-01
-last-modified: 2019-01-17
+last-modified: 2020-05-02
 featured-image:
 tags: [prime-numbers]
 authors:
