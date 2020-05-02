@@ -99,7 +99,7 @@ to grab a copy of the Hello World in Visual Basic .NET solution.[^1]
 
 ## Further Reading
 
--   [Reverse a String in Every Language by The Renegade Coder][1]
+- [Reverse a String in Every Language by The Renegade Coder][1]
 
 [1]: https://therenegadecoder.com/series/reverse-a-string-in-every-language/
 
