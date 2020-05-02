@@ -18,4 +18,4 @@ authors:
 
 #### References
 
-{% include reference.md reference="reference_id" %}
+- [a list of references]
