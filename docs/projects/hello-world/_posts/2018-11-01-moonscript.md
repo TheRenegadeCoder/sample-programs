@@ -43,7 +43,7 @@ local z = x + y
 return print(y)
 ```
 
-How cool is that?[^1]
+How cool is that?
 
 ## How to Run the Solution
 
@@ -72,7 +72,7 @@ Also, you can compile your .moon file into Lua by using this command:
 moonc ./YOURFILE.moon
 ```
 
-Alternatively, you can always [run MoonScript using an online compiler][6].[^1]
+Alternatively, you can always [run MoonScript using an online compiler][6].
 
 ## Further Reading
 
