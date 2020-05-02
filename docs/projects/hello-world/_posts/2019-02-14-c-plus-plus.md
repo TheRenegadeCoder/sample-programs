@@ -44,7 +44,7 @@ Finally, we write our string to the cout stream. The syntax is a bit
 strange, but basically we can imagine that the Hello World string is 
 inserted into the cout stream. In fact, the double-arrow operator is 
 the insertion operator, and it has some fun properties. For instance, 
-the operator can be chained together, but that’s a topic for another time.[^1]
+the operator can be chained together, but that’s a topic for another time.
 
 ## How to Run the Solution
 
@@ -62,7 +62,7 @@ gcc -o reverse-string reverse-string.cpp
 Unfortunately, Windows pretty much requires the use of Visual Studios. So, 
 instead of sharing platform specific directions, I’ll fallback on my online 
 compiler recommendation. Let me know if you have questions otherwise in the 
-comments.[^1]
+comments.
 
 ---
 
