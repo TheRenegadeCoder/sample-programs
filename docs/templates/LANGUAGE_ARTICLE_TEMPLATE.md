@@ -14,8 +14,6 @@ authors:
 
 {% include article_list.md collection=site.tags.[name of language] %}
 
----
+## Further Reading
 
-#### References
-
-- [a list of references]
+- [List useful links here]

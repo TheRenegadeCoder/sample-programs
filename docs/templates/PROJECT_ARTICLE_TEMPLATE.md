@@ -30,9 +30,3 @@ authors:
 ## Further Reading
 
 - [List useful links here]
-
----
-
-#### References
-
-- [a list of references]

@@ -18,8 +18,6 @@ authors:
 
 [Insert directions here]
 
----
+## Further Reading
 
-#### References
-
-- [a list of references]
+- [List useful links here]
