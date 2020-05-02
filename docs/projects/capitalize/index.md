@@ -2,7 +2,7 @@
 title: Capitalize in Every Language
 layout: default
 date: 2019-03-31
-last-modified: 2019-03-31
+last-modified: 2020-05-02
 featured-image:
 tags: [capitalize]
 authors: 

@@ -2,7 +2,7 @@
 title: Binary Search in Every Language
 layout: default
 date: 2019-10-25
-last-modified: 2019-10-25
+last-modified: 2020-05-02
 featured-image: 
 tags: [binary-search]
 authors:

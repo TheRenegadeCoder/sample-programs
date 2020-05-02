@@ -1,7 +1,7 @@
 ---
 title: fractions in C++
 layout: default
-last-modified: 2019-10-10
+last-modified: 2020-05-02
 featured-image:
 tags: [c-plus-plus, fractions]
 authors:

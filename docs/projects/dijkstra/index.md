@@ -2,7 +2,7 @@
 title: Dijkstra in Every Language
 layout: default
 date: 2019-10-28
-last-modified: 2019-10-28
+last-modified: 2020-05-02
 featured-image: 
 authors:
   - fuboki10

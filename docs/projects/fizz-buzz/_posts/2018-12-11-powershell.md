@@ -1,7 +1,7 @@
 ---
 title: Fizz Buzz in PowerShell
 layout: default
-last-modified: 2018-12-11
+last-modified: 2020-05-02
 featured-image:
 tags: [powershell, fizz-buzz]
 authors:

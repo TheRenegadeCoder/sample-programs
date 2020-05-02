@@ -1,11 +1,10 @@
 ---
 title: Fibonacci in JavaScript  
 layout: default  
-last-modified: 2019-10-04
+last-modified: 2020-05-02
 featured-image:  
 tags: [javascript, fibonacci]  
-authors:[ Alina1Black ]
-
+authors: [Alina1Black]
 ---
 
 In this article, we will write an algorithm of the Fibonacci sequence in JavaScript.

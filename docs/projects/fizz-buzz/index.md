@@ -2,7 +2,7 @@
 title: Fizz Buzz in Every Language
 layout: default
 date: 2018-11-01
-last-modified: 2019-01-08
+last-modified: 2020-05-02
 featured-image:
 tags: [fizz-buzz]
 authors:

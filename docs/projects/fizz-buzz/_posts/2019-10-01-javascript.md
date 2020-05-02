@@ -1,7 +1,7 @@
 ---
 title: FizzBuzz in JavaScript
 layout: default
-last-modified: 2019-10-02
+last-modified: 2020-05-02
 featured-image:
 tags: [javascript, fizzbuzz]
 authors:

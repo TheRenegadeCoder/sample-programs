@@ -2,7 +2,7 @@
 title: Even Odd in Every Language
 layout: default
 date: 2018-11-01
-last-modified: 2019-03-20
+last-modified: 2020-05-02
 featured-image: even-odd-in-every-language-featured-image.JPEG
 tags: [even-odd]
 authors:

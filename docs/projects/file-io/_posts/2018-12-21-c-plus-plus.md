@@ -1,7 +1,7 @@
 ---
 title: File IO in C++
 layout: default
-last-modified: 2018-12-21
+last-modified: 2020-05-02
 featured-image:
 tags: [c-plus-plus, file-io]
 authors:
