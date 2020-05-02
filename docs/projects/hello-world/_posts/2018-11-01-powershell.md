@@ -1,7 +1,7 @@
 ---
 title: Hello World in PowerShell
 layout: default
-last-modified: 2018-11-02
+last-modified: 2020-05-02
 featured-image: hello-world-in-powershell-featured-image.JPEG
 tags: [powershell, hello-world]
 authors:
@@ -29,7 +29,7 @@ Hello, World!
 ```
 
 As is the case with most modern scripting languages, getting a Hello World
-sample running is really easy.[^1]
+sample running is really easy.
 
 ## How to Run the Solution
 
@@ -52,12 +52,11 @@ Hello, World!
 [20:35:56]:powershell$
 ```
 
-And, that's it![^1]
+And, that's it!
 
----
+## Further Reading
 
-#### References
-
-[^1]: D. Leaman, “Hello World in PowerShell,” The Renegade Coder, 28-Jul-2018. [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-powershell/>. [Accessed: 31-Oct-2018].
+- [Hello World in Opa][2] on The Renegade Coder
 
 [1]: {{ site.baseurl }}{% post_url /languages/2018-11-01-powershell %}
+[2]: https://therenegadecoder.com/code/hello-world-in-powershell/
