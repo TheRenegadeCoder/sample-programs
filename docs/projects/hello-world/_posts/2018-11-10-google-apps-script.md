@@ -1,7 +1,7 @@
 ---
 title: Hello World in Google Apps Script
 layout: default
-last-modified: 2018-11-10
+last-modified: 2020-05-02
 featured-image: hello-world-in-google-apps-script-featured-image.JPEG
 tags: [google-apps-script, hello-world]
 authors:
