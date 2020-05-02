@@ -1,7 +1,7 @@
 ---
 title: Hello World in MoonScript
 layout: default
-last-modified: 2018-11-02
+last-modified: 2020-05-02
 featured-image: hello-world-in-moonscript-featured-image.JPEG
 tags: [moonscript, hello-world]
 authors:
@@ -74,12 +74,11 @@ moonc ./YOURFILE.moon
 
 Alternatively, you can always [run MoonScript using an online compiler][6].[^1]
 
----
+## Further Reading
 
-#### References
+- [Hello World in MoonScript][1] on The Renegade Coder
 
-[^1]: B. Mohamed, “Hello World in MoonScript,” The Renegade Coder, 02-Sep-2018. [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-moonscript/>. [Accessed: 31-Oct-2018].
-
+[1]: https://therenegadecoder.com/code/hello-world-in-moonscript/
 [4]: https://github.com/leafo/moonscript/releases/download/win32-v0.5.0/moonscript-187bac54ee5a7450013e9c38e005a0e671b76f45.zip
 [5]: https://luarocks.org/
 [6]: https://moonscript.org/compiler/
