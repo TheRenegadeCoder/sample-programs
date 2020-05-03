@@ -13,7 +13,7 @@ the preferred way to manage Windows servers in the future.
 
 [Jeffrey Snover][1] is largely credited as the designer behind the language, while
 Bruce Payette and James Truher were also on the project, and in an interview in
-2017, Snover explained the motivation behind creating PowerShell:[^2]
+2017, [Snover explained the motivation behind creating PowerShell][7]:
 
     I’d been driving a bunch of managing changes, and then I originally took the UNIX
     tools and made them available on Windows, and then it just didn’t work. Right?
@@ -32,7 +32,7 @@ Microsoft formally renamed Monad to Windows PowerShell, followed by the release
 candidate 1 version.
 
 PowerShell is now up to version 5.1 for stable builds and the new 6.0 version
-which was announced in 2016 is in public beta. The largest change in this version
+which was announced in [2016 is in public beta][8]. The largest change in this version
 is it’s now open-source and will now be called PowerShell Core as it runs on
 [.NET Core][4] as opposed to the [.NET Framework][5] which previous versions use.[^3]
 
@@ -44,16 +44,11 @@ is it’s now open-source and will now be called PowerShell Core as it runs on
 
 -
 
----
-
-#### References
-
-[^1]: D. Leaman, “Hello World in PowerShell,” The Renegade Coder, 28-Jul-2018. [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-powershell/>. [Accessed: 31-Oct-2018].
-[^2]: "To Be Continuous \| Ep. #37, The Man Behind Windows PowerShell," Heavybit, 14-Sep-2017. [Online]. Available: <https://www.heavybit.com/library/podcasts/to-be-continuous/ep-37-the-man-behind-windows-powershell/>. [Accessed: 31-Oct-2018].
-[^3]: “PowerShell is Microsofts latest open source release, coming to Linux, OS X,” Ars Technica, 18-Aug-2016. [Online]. Available: <https://arstechnica.com/information-technology/2016/08/powershell-is-microsofts-latest-open-source-release-coming-to-linux-os-x/>. [Accessed: 31-Oct-2018].
-
 [1]: https://en.wikipedia.org/wiki/Jeffrey_Snover
 [2]: https://www.microsoft.com/
 [3]: https://blogs.msdn.microsoft.com/powershell/2007/03/18/monad-manifesto-the-origin-of-windows-powershell/
 [4]: https://www.microsoft.com/net/download
 [5]: https://www.microsoft.com/net/learn/architecture
+[6]: https://therenegadecoder.com/code/hello-world-in-powershell/
+[7]: https://www.heavybit.com/library/podcasts/to-be-continuous/ep-37-the-man-behind-windows-powershell/
+[8]: https://arstechnica.com/information-technology/2016/08/powershell-is-microsofts-latest-open-source-release-coming-to-linux-os-x/

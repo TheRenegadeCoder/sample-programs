@@ -31,12 +31,7 @@ MoonScript and Lua APIs called Lapis.
 
 -
 
----
-
-#### References
-
-[^1]: B. Mohamed, “Hello World in MoonScript,” The Renegade Coder, 02-Sep-2018. [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-moonscript/>. [Accessed: 31-Oct-2018].
-
 [1]: https://moonscript.org/
 [2]: https://github.com/leafo
 [3]: http://itch.io/
+[4]: https://therenegadecoder.com/code/hello-world-in-moonscript/
