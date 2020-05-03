@@ -40,6 +40,10 @@ is it’s now open-source and will now be called PowerShell Core as it runs on
 
 {% include article_list.md collection=site.tags.powershell %}
 
+## Further Reading
+
+-
+
 ---
 
 #### References
