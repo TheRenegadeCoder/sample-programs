@@ -32,11 +32,6 @@ write add-ons for G Suite applications. Otherwise, you’ll probably never use i
 
 -
 
----
-
-#### References
-
-[^1]: J. Grifski, “Hello World in Google Apps Script,” The Renegade Coder, 22-May-2018. [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-google-apps-script/>. [Accessed: 10-Nov-2018].
-
 [1]: https://en.wikipedia.org/wiki/Google_Apps_Script
 [2]: https://therenegadecoder.com/code/hello-world-in-javascript/
+[3]: https://therenegadecoder.com/code/hello-world-in-google-apps-script/
