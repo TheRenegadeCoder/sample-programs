@@ -34,7 +34,7 @@ candidate 1 version.
 PowerShell is now up to version 5.1 for stable builds and the new 6.0 version
 which was announced in 2016 is in public beta. The largest change in this version
 is it’s now open-source and will now be called PowerShell Core as it runs on
-[.NET Core][4] as opposed to the [.NET Framework][5] which previous versions use.[^1][^3]
+[.NET Core][4] as opposed to the [.NET Framework][5] which previous versions use.[^3]
 
 ## Articles
 

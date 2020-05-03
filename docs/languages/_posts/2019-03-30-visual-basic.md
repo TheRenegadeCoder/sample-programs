@@ -23,7 +23,7 @@ braces or whitespace.
 Beyond that, VB.NET has several versions. In fact, VB.NET only really refers 
 to the language before 2005, but the syntax is largely the same today. Of 
 course, I’ve sort of lumped them together in the same way I’ve recognized 
-Python as one language instead of two.[^1]
+Python as one language instead of two.
 
 ## Articles
 

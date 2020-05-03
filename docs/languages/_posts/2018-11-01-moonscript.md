@@ -21,7 +21,7 @@ How did MoonScript start you may ask? Well, its author [Leaf Corcoran][2] built
 MoonScript, started building games with MoonScript, added them to [itch.io][3]—an
 online platform for indie games which is also built with MoonScript—then
 generalized the code base to a general purpose web framework with both
-MoonScript and Lua APIs called Lapis.[^1]
+MoonScript and Lua APIs called Lapis.
 
 ## Articles
 
