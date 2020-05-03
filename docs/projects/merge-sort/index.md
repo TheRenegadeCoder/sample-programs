@@ -2,7 +2,7 @@
 title: Merge Sort in Every Language 
 layout: default
 date: 2018-11-29
-last-modified: 2018-11-29
+last-modified: 2020-05-02
 featured-image:
 tags: [merge-sort]
 authors:
@@ -39,8 +39,6 @@ article by Rob Bell or the wikipedia entry listed in further readings below.
 | Average case | O(n log n) |
 | Worst case | O(n log n) |
 
-
-
 ### Examples
 
 The examples below were taken from [Wikipedia's article about Merge sort][1].
@@ -48,7 +46,6 @@ The examples below were taken from [Wikipedia's article about Merge sort][1].
 ![Merge sort example image](https://upload.wikimedia.org/wikipedia/commons/e/e6/Merge_sort_algorithm_diagram.svg)
 
 ![Merge sort example gif](https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif)
-
 
 ## Requirements
 

@@ -2,7 +2,7 @@
 title: Import/Export in Every Language
 layout: default
 date: 2019-10-04
-last-modified: 2019-10-06
+last-modified: 2020-05-02
 featured-image:
 tags: [export, import]
 authors: [Ray6464]
@@ -19,24 +19,29 @@ In this example the goal is to write a variable in one file, and log it's value 
 Supposing that you have 2 files in the same directory, named "import" and "export" with your code in them. If "export" has a variable, then you should be able to log/print it from "import". Follow is some mock-code as an example:-  
 
 export file:-  
+
 ```
 int x = 123;  
-```  
+```
+
 ```
 let y = "Hello";  
 ```  
 
-import file:-  
+import file:- 
+
 ```
 printf(x);       //prints: 123
-```  
+```
+
 ```
 console.log(y);  //logs: "Hello"  
 ```
+
 ## Articles
 
 {% include article_list.md collection=site.categories.reverse-a-string %}
 
 ## Further Reading
 
-// needs improvement
+- Fill out as needed

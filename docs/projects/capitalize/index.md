@@ -2,7 +2,7 @@
 title: Capitalize in Every Language
 layout: default
 date: 2019-03-31
-last-modified: 2019-03-31
+last-modified: 2020-05-02
 featured-image:
 tags: [capitalize]
 authors: 
@@ -50,5 +50,9 @@ Feel free to use the following table when testing capitalize programs
 ## Articles
 
 {% include article_list.md collection=site.categories.capitalize %}
+
+## Further Reading
+
+- Fill out as needed
 
 [1]: #requirements

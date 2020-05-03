@@ -2,7 +2,7 @@
 title: Quick Sort in Every Language 
 layout: default
 date: 2018-11-29
-last-modified: 2018-11-29
+last-modified: 2020-05-02
 featured-image:
 tags: [quick-sort]
 authors:
@@ -54,9 +54,7 @@ Each row shows the comparison of an element to the pivot (steps 2-3).
 The arrows convey splitting each list into sublists and then bringing them back together (steps
 4-5).
 
-
 ![Quick sort example](https://upload.wikimedia.org/wikipedia/commons/a/af/Quicksort-diagram.svg)
-
 
 ## Requirements
 
@@ -98,7 +96,7 @@ verify the correctness of your solution:
 
 {% include article_list.md collection=site.categories.quick-sort %}
 
-## Further Readings
+## Further Reading
 
 - [Quick sort on Wikipedia][1]
 - [A beginner's guide to Big O notation- Rob Bell][2]

@@ -30,10 +30,3 @@ authors:
 ## Further Reading
 
 - [List useful links here]
-
----
-
-#### References
-
-{% include reference.md reference="reference_id" %}
-

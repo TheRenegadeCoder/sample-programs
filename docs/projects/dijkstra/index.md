@@ -2,7 +2,7 @@
 title: Dijkstra in Every Language
 layout: default
 date: 2019-10-28
-last-modified: 2019-10-28
+last-modified: 2020-05-02
 featured-image: 
 authors:
   - fuboki10
@@ -60,7 +60,6 @@ Then we take the Source and the Destination.
 
 The Output will be the Cost of the Shortest Path from Source to Destination.  
   
-
 ## Testing
 
 | Description      | Matrix   | Source      | Destination | Output                                          |
@@ -77,13 +76,10 @@ The Output will be the Cost of the Shortest Path from Source to Destination.
 | No way                     | "0, 0, 0, 0" | "0" | "1"   |  "There is no way between {Source} and {Destination}"|
 | Proper Input               | "0, 2, 0, 6, 0, 2, 0, 3, 8, 5, 0, 3, 0, 0, 7, 6, 8, 0, 0, 9, 0, 5, 7, 9, 0" | "0" | "1" | 2 |
 
+## Further Reading
 
-
-## Resources
-
-[Dijkstra's algorithm Wikipedia][1]
-
-[Dijkstra’s shortest path algorithm][2]
+- [Dijkstra's algorithm Wikipedia][1]
+- [Dijkstra’s shortest path algorithm][2]
 
 [1]: https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
 [2]: https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7

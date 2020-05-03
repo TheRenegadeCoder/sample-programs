@@ -2,7 +2,7 @@
 title: Selection Sort in Every Language 
 layout: default
 date: 2018-11-29
-last-modified: 2018-11-29
+last-modified: 2020-05-02
 featured-image:
 tags: [selection-sort]
 authors:
@@ -37,7 +37,6 @@ article by Rob Bell or the wikipedia entry listed in further readings below.
 Selection sort always performs at O(n<sup>2</sup>). This is because the algorithm's
 loops do not depend on the values of the items in the list. That means that even if
 the list is already sorted, the full sorting process will still be performed.
-
 
 ### Examples: Two lists
 
@@ -90,7 +89,6 @@ The element in __bold__ is the one that will be moved to the end of the sorted s
 -   1     2     3     4   __5__ 
 -   1     2     3     4     5    
 
-
 ## Requirements
 
 Write a sample program that takes a list of numbers in the format "4, 5, 3, 1, 2".
@@ -131,7 +129,7 @@ verify the correctness of your solution:
 
 {% include article_list.md collection=site.categories.selection-sort %}
 
-## Further Readings
+## Further Reading
 
 - [Selection sort on Wikipedia][1]
 - [A beginner's guide to Big O notation- Rob Bell][2]

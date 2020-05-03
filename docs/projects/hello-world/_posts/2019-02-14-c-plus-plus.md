@@ -1,7 +1,7 @@
 ---
 title: Hello World in C++
 layout: default
-last-modified: 2019-02-14
+last-modified: 2020-05-02
 featured-image: 
 tags: [c-plus-plus, hello-world]
 authors:
@@ -44,7 +44,7 @@ Finally, we write our string to the cout stream. The syntax is a bit
 strange, but basically we can imagine that the Hello World string is 
 inserted into the cout stream. In fact, the double-arrow operator is 
 the insertion operator, and it has some fun properties. For instance, 
-the operator can be chained together, but that’s a topic for another time.[^1]
+the operator can be chained together, but that’s a topic for another time.
 
 ## How to Run the Solution
 
@@ -62,10 +62,10 @@ gcc -o reverse-string reverse-string.cpp
 Unfortunately, Windows pretty much requires the use of Visual Studios. So, 
 instead of sharing platform specific directions, I’ll fallback on my online 
 compiler recommendation. Let me know if you have questions otherwise in the 
-comments.[^1]
+comments.
 
----
+## Further Reading
 
-#### References
+- [Hello World in C++][1] on The Renegade Coder
 
-[^1]: J. Grifski, “Hello World in C++,” The Renegade Coder, 19-Mar-2018. [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-c-plus-plus/>. [Accessed: 07-Feb-2019].
+[1]: https://therenegadecoder.com/code/hello-world-in-c-plus-plus/

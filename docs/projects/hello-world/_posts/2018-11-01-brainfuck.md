@@ -1,7 +1,7 @@
 ---
 title: Hello World in Brainfuck
 layout: default
-last-modified: 2018-11-02
+last-modified: 2020-05-02
 featured-image: hello-world-in-brainfuck-featured-image.JPEG
 tags: [brainfuck, hello-world]
 authors:
@@ -74,7 +74,7 @@ a lowercase ‘e’.
 
 This is basically how the entire program works. It’s just a matter of choosing
 the right path in order to get from one value to the next by only using simple
-addition, subtraction, and loops.[^1]
+addition, subtraction, and loops.
 
 ## How to Run the Solution
 
@@ -86,16 +86,15 @@ online or offline:
 - [Dcode.fr][5]
 
 As a starting point, [here’s this example on “Brainfuck Visualizer”][6], an online
-tool that displays each step of a Brainfuck program’s execution.[^1]
+tool that displays each step of a Brainfuck program’s execution.
 
----
+## Further Reading
 
-#### References
-
-[^1]: C. Böhmwalder, “Hello World in Brainfuck,” The Renegade Coder, 31-Aug-2018. [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-brainfuck/>. [Accessed: 31-Oct-2018].
+- [Hello World in Brainfuck][7] on The Renegade Coder
 
 [2]: http://www.asciitable.com/index/asciifull.gif
 [3]: https://copy.sh/brainfuck/
 [4]: https://sange.fi/esoteric/brainfuck/impl/interp/i.html
 [5]: https://www.dcode.fr/brainfuck-language
 [6]: http://bf.jamesliu.info/
+[7]: https://therenegadecoder.com/code/hello-world-in-brainfuck/

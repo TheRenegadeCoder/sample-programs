@@ -1,7 +1,7 @@
 ---
 title: FizzBuzz in JavaScript
 layout: default
-last-modified: 2019-10-02
+last-modified: 2020-05-02
 featured-image:
 tags: [javascript, fizzbuzz]
 authors:
@@ -62,7 +62,7 @@ To understand the main logic of this programm you need to know
 
 ## The modulo (remainder) operator %
 
->> The remainder operator returns the remainder left over when one operand is divided by a second operand. It always takes the sign of the dividend.[^1]
+>> The remainder operator returns the remainder left over when one operand is divided by a second operand. It always takes the sign of the dividend. ([Mozilla][1])
 
 The trick here is to create a _truthy_ value for the if statements. This is why you can see the `i % 3 == 0` etc. conditionals. If a number is divisible by 3 there will be no remainder, in other words the remainder is true and thus i % 3 == 0 (% 5, % 15) is true in these cases.
 
@@ -73,14 +73,14 @@ Hint: Instead of `i % 15 == 0` you could also write `i % 3 && i % 5`.
 Last but not least it prints the number via the else clause `else console.log(i);` if none of the conditionals were true.
 
 Extra mile: If you want you can move the conditionals into variables and move them up the scope, right after the second line between the for loop and the first if statement.
-For example: const divisibleBy3 = i % 3. This way you'd remove the use of magic numbers.[^2]
+For example: const divisibleBy3 = i % 3. This way you'd remove the use of [magic numbers][2].
 
 Fun Fact: Despite being a simple programming exercise there is a controversal article about the question [Why can't programmers program?](https://blog.codinghorror.com/why-cant-programmers-program/) that even led to an ["enterprise-class"](https://github.com/EnterpriseQualityCoding/FizzBuzzEnterpriseEdition) version of this game.
-
 
 ## How to Run Solution
 
 ### In the Browser
+
 To try out this script just copy it, open the dev tools of your Browser (F12 by default in most cases), head to the `console` tab, paste in the script and press enter to run it.
 
 ### Node.js
@@ -89,9 +89,10 @@ Download and install Node.js.
 Save the script in for example index.js and from the same directory open a console of your choice (cmd, powershell, bash, etc.) and run `node index.js`.
 Hint: Depending on your operating system the node binary might be called slightly different for example on some linux distris you'd need to type `nodejs index.js` instead.
 
----
+## Further Reading
 
-#### References
+- [Arithmetic Operators][1] on Mozilla
+- [Magic Number][2] on Wikipedia
 
-[^1]: Mozilla Developer Network, "Arithmetic Operators". [Online]. Available: <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder>. [Accessed: 01-Oct-2019].
-[^2]: Wikipedia, “Magic number (programming)". [Online]. Available: <https://en.wikipedia.org/wiki/Magic_number_(programming)>. [Accessed: 01-Oct-2019].
+[1]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder
+[2]: https://en.wikipedia.org/wiki/Magic_number_(programming)

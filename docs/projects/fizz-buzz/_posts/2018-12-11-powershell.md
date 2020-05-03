@@ -1,7 +1,7 @@
 ---
 title: Fizz Buzz in PowerShell
 layout: default
-last-modified: 2018-12-11
+last-modified: 2020-05-02
 featured-image:
 tags: [powershell, fizz-buzz]
 authors:
@@ -37,7 +37,7 @@ that some of the stuff goes over his head, I’ve “got a knack for it” as he
 
 In the end, I’d like to say thank you again to that friend of mine for the
 encouraging words, as I probably wouldn’t have had the motivation to start on
-this without them 💗[^1]
+this without them 💗
 
 ### No More Anecdote
 
@@ -50,7 +50,7 @@ For example, do you prefer to toss a bunch of things at the wall and see what
 works and whittle away the excess? Or do you prefer to lay out a plan for the
 program before you even write some code? If you’d like more information on the
 things interviewers can glean from a Fizz Buzz solution, feel free to check out
-this article from Lionell Pack on Forbes.[^1]
+this article from Lionell Pack on Forbes.
 
 ### What’s The Problem?
 
@@ -92,7 +92,7 @@ numbers.
 For example, doing Write-Output (25 % 5) would output 0, since 25 divided by 5
 has no remainder. This also happens to mean the first value is a multiple of
 the second, which we can use to determine the multiples of $x. When I first
-wrote this script, my solution looked like so:[^1]
+wrote this script, my solution looked like so:
 
 ```powershell
 for($x = 1; $x -le 100; $x++) {
@@ -149,7 +149,7 @@ for ($x = 1; $x -le 100; $x++) {
 ```
 
 At this point, we have a working solution to the Fizz Buzz problem written in
-PowerShell.[^1]
+PowerShell.
 
 ### Finally, A Script!
 
@@ -183,7 +183,7 @@ The Mandatory and Position attributes tell PowerShell that the parameters have
 default values and that they aren’t mandatory, and the position attribute makes
 it possible to do something like .\FizzBuzz.ps1 0 75 to adjust the min and max
 without having to specify the parameter names. Then, with some minor changes to
-the for loop, we have our finished result![^1]
+the for loop, we have our finished result!
 
 ```powershell
 <#
@@ -247,7 +247,7 @@ Fizz Buzz script from the repository (or copy/paste the code from above 😉),
 and then execute it.
 
 NOTE: If you have a secure Execution Policy, you’ll have to set it to unrestricted
-before executing this script.[^1]
+before executing this script.
 
 ```console
 $Url = "https://raw.githubusercontent.com/TheRenegadeCoder/sample-programs/master/archive/p/powershell/FizzBuzz.ps1"
@@ -282,8 +282,8 @@ $WebClient.DownloadFile($Url, $FilePath)
 # Fizz
 ```
 
----
+## Further Reading
 
-#### References
+- [Fizz Buzz in PowerShell][1] on The Renegade Coder
 
-[^1]: D. Leaman, “Fizz Buzz in PowerShell,” The Renegade Coder, 16-Nov-2018. [Online]. Available: <https://therenegadecoder.com/code/fizz-buzz-in-powershell/>. [Accessed: 11-Dec-2018].
+[1]: https://therenegadecoder.com/code/fizz-buzz-in-powershell/

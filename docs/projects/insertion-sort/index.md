@@ -2,7 +2,7 @@
 title: Insertion Sort in Every Language 
 layout: default
 date: 2018-12-16
-last-modified: 2018-12-16
+last-modified: 2020-05-02
 featured-image:
 tags: [insertion-sort]
 authors:
@@ -61,7 +61,6 @@ The element in __bold__ is the main pointer.
 -   3     4     5   __1__   2   
 -   1     3     4     5   __2__ 
 -   1     2     3     4     5    
-
 
 ## Requirements
 

@@ -18,8 +18,6 @@ authors:
 
 [Insert directions here]
 
----
+## Further Reading
 
-#### References
-
-{% include blog_reference.md reference="reference_id" %}
+- [List useful links here]

@@ -2,7 +2,7 @@
 title: Minimum Spanning Tree in Every Language
 layout: default
 date: 2018-11-03
-last-modified: 2018-11-03
+last-modified: 2020-05-02
 featured-image:
 tags: [minimum-spanning-tree]
 authors:
@@ -77,8 +77,8 @@ In other words, what is the cost of the minimum spanning tree?
 
 {% include article_list.md collection=site.categories.minimum-spanning-tree %}
 
-## Resources
+## Further Reading
 
-[Prim's and Kruskal's Algorithms by Abdul Bari][1]
+- [Prim's and Kruskal's Algorithms by Abdul Bari][1]
 
 [1]: https://www.youtube.com/watch?v=4ZlRH0eK-qQ

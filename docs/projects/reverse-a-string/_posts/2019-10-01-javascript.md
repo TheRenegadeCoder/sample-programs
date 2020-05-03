@@ -1,7 +1,7 @@
 ---
 title: Reverse a String in JavaScript
 layout: default
-last-modified: 2019-10-01
+last-modified: 2020-05-02
 featured-image:
 tags: [javascript, reverse-a-string, string-reversal]
 authors:
@@ -67,3 +67,7 @@ To run this example you can simply open the dev tools of your browser (F12) in m
 There you can paste in the code snippet from above.
 
 Alternatively you can view and play around with the script at [jsfiddle.net](https://jsfiddle.net/dbmyxkwz/).
+
+## Further Reading
+
+- Fill out as needed

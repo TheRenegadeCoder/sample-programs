@@ -35,8 +35,7 @@ Verify that the actual output matches the expected output. See the
 
 ## Further Reading
 
--   [Hello World in Every Language by The Renegade Coder][1]
+- [Hello World in Every Language by The Renegade Coder][1]
 
 [1]: https://therenegadecoder.com/series/hello-world-in-every-language/
-
 [2]: #requirements

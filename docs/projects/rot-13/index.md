@@ -2,7 +2,7 @@
 title: ROT-13 in Every Language
 layout: default
 date: 2018-11-20
-last-modified: 2018-11-20
+last-modified: 2020-05-02
 featured-image:
 tags: [rot-13]
 authors:
@@ -62,7 +62,7 @@ verify the correctness of your solution:
 
 {% include article_list.md collection=site.categories.rot-13 %}
 
-## Further Readings
+## Further Reading
 
 - [ROT-13 on Wikipedia][1]
 

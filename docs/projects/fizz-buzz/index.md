@@ -2,7 +2,7 @@
 title: Fizz Buzz in Every Language
 layout: default
 date: 2018-11-01
-last-modified: 2019-01-08
+last-modified: 2020-05-02
 featured-image:
 tags: [fizz-buzz]
 authors:
@@ -63,10 +63,8 @@ Verify that the actual output matches the expected output. See the
 
 ## Further Reading
 
--   [Fizz Buzz in Every Language by The Renegade Coder][2]
+- [Fizz Buzz in Every Language by The Renegade Coder][2]
 
 [1]: ../assets/Fizz_Buzz.png
-
 [2]: https://therenegadecoder.com/series/fizz-buzz-in-every-language/
-
 [3]: #requirements

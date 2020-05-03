@@ -1,7 +1,7 @@
 ---
 title: File IO in C++
 layout: default
-last-modified: 2018-12-21
+last-modified: 2020-05-02
 featured-image:
 tags: [c-plus-plus, file-io]
 authors:
@@ -64,7 +64,7 @@ int main()
 }
 ```
 
-In less than 50 lines, we have our solution![^1]
+In less than 50 lines, we have our solution!
 
 ### Includes
 
@@ -78,7 +78,7 @@ In our sample, we include three different standard library utilities:
 
 Here, we can see that we include he standard I/O for printing messages onto the
 screen, the standard file I/O for accessing files, and the C++ string library
-for storing each line in the file.[^1]
+for storing each line in the file.
 
 ### Writing to a File
 
@@ -159,7 +159,7 @@ good idea to always close a file when done. After all, if enough files are open,
 the OS might complain and not allow us to open another file until some other
 files have been closed. This is called the file descriptor limit and not closing
 files and opening new ones over time can exhaust the number of file descriptors
-available.[^1]
+available.
 
 ### Reading from a File
 
@@ -226,7 +226,7 @@ from the file and haven't written anything to it:
 in.close();
 ```
 
-And, that's how we read from a file in C++.[^1]
+And, that's how we read from a file in C++.
 
 ### The Main Function
 
@@ -241,7 +241,7 @@ int main()
 ```
 
 Here, we make a call to each function we've created: `write_file()` and
-`read_file()`. And, that's it![^1]
+`read_file()`. And, that's it!
 
 ## How to Run Solution
 
@@ -254,10 +254,10 @@ g++ -o program file.cpp
 clang++ -o program file.cpp
 ```
 
-And, that's it! You've successfully executed the solution.[^1]
+And, that's it! You've successfully executed the solution.
 
----
+## Further Reading
 
-#### References
+- [File IO in C++][1] on The Renegade Coder
 
-[^1]: N. Nichols, “File IO in C++,” The Renegade Coder, 29-Oct-2018. [Online]. Available: <https://therenegadecoder.com/code/file-io-in-c-plus-plus/>. [Accessed: 21-Dec-2018].
+[1]: https://therenegadecoder.com/code/file-io-in-c-plus-plus/
