@@ -1,7 +1,7 @@
 ---
 title: The C++ Programming Language
 layout: default
-last-modified: 2019-10-19
+last-modified: 2020-05-02
 featured-image:
 tags: [c-plus-plus]
 authors:
@@ -18,10 +18,9 @@ However, with great power comes great responsibility. As a result, I personally 
 
 {% include article_list.md collection=site.tags.c-plus-plus %}
 
----
+## Further Reading
 
-#### References
+- [Hello World in C++][1] on The Renegade Coder
 
-[^1]: J. Grifski, “Hello World in C++,” The Renegade Coder, 19-Mar-2018. [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-c-plus-plus/>. [Accessed: 19-Oct-2019].
-
+[1]: https://therenegadecoder.com/code/hello-world-in-c-plus-plus/
 [2]: https://en.wikipedia.org/wiki/C%2B%2B

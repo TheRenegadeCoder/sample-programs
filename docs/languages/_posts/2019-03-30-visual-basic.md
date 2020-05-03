@@ -1,7 +1,7 @@
 ---
 title: The Visual Basic Programming Language
 layout: default
-last-modified: 2019-03-30
+last-modified: 2020-05-02
 featured-image:
 tags: [visual-basic]
 authors:
@@ -23,14 +23,14 @@ braces or whitespace.
 Beyond that, VB.NET has several versions. In fact, VB.NET only really refers 
 to the language before 2005, but the syntax is largely the same today. Of 
 course, I’ve sort of lumped them together in the same way I’ve recognized 
-Python as one language instead of two.[^1]
+Python as one language instead of two.
 
 ## Articles
 
 {% include article_list.md collection=site.tags.visual-basic %}
 
----
+## Further Reading
 
-#### References
+- [Hello World in Visual Basic .NET][1] on The Renegade Coder
 
-[^1]: J. Grifski, “Hello World In Visual Basic .NET,” The Renegade Coder, 6-May-2018. [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-visual-basic-net/>. [Accessed: 30-Mar-2019].
+[1]: https://therenegadecoder.com/code/hello-world-in-visual-basic-net/

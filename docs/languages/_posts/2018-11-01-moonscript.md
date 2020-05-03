@@ -1,7 +1,7 @@
 ---
 title: The MoonScript Programming Language
 layout: default
-last-modified: 2018-11-05
+last-modified: 2020-05-02
 tags: [moonscript]
 authors:
   - bassem_mohamed
@@ -21,18 +21,17 @@ How did MoonScript start you may ask? Well, its author [Leaf Corcoran][2] built
 MoonScript, started building games with MoonScript, added them to [itch.io][3]—an
 online platform for indie games which is also built with MoonScript—then
 generalized the code base to a general purpose web framework with both
-MoonScript and Lua APIs called Lapis.[^1]
+MoonScript and Lua APIs called Lapis.
 
 ## Articles
 
 {% include article_list.md collection=site.tags.moonscript %}
 
----
+## Further Reading
 
-#### References
-
-[^1]: B. Mohamed, “Hello World in MoonScript,” The Renegade Coder, 02-Sep-2018. [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-moonscript/>. [Accessed: 31-Oct-2018].
+- [Hello World in MoonScript][4] on The Renegade Coder
 
 [1]: https://moonscript.org/
 [2]: https://github.com/leafo
 [3]: http://itch.io/
+[4]: https://therenegadecoder.com/code/hello-world-in-moonscript/

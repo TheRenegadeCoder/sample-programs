@@ -1,7 +1,7 @@
 ---
 title: The Brainfuck Programming Language
 layout: default
-last-modified: 2018-11-05
+last-modified: 2020-05-02
 featured-image:
 tags: [brainfuck]
 authors:
@@ -26,16 +26,15 @@ execution jumps to the end of the loop. Likewise, a loop ends when the value is
 zero, otherwise the program jumps to the beginning of the loop. The remaining
 two instructions, `,` and `.` read one character from the input into the current
 cell and write one character from the current cell to the output, respectively.
-That’s it![^1]
+That’s it!
 
 ## Articles
 
 {% include article_list.md collection=site.tags.brainfuck %}
 
----
+## Further Reading
 
-#### References
-
-[^1]: C. Böhmwalder, “Hello World in Brainfuck,” The Renegade Coder, 31-Aug-2018. [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-brainfuck/>. [Accessed: 31-Oct-2018].
+- [Hello World in Brainfuck][2] on The Renegade Code
 
 [1]: https://en.wikipedia.org/wiki/Brainfuck
+[2]: https://therenegadecoder.com/code/hello-world-in-brainfuck/

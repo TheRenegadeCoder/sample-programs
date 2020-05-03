@@ -1,7 +1,7 @@
 ---
 title: The Google Apps Script Programming Language
 layout: default
-last-modified: 2018-11-17
+last-modified: 2020-05-02
 featured-image:
 tags: [google-apps-script]
 authors:
@@ -22,17 +22,16 @@ time zones during execution. As a result, developers have to be very deliberate
 in their scripts.
 
 Overall, Google Apps Script appears to be a great tool for anyone looking to
-write add-ons for G Suite applications. Otherwise, you’ll probably never use it.[^1]
+write add-ons for G Suite applications. Otherwise, you’ll probably never use it.
 
 ## Articles
 
 {% include article_list.md collection=site.tags.google-apps-script %}
 
----
+## Further Reading
 
-#### References
-
-[^1]: J. Grifski, “Hello World in Google Apps Script,” The Renegade Coder, 22-May-2018. [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-google-apps-script/>. [Accessed: 10-Nov-2018].
+- [Hello World in Google Apps Script][3] on The Renegade Coder
 
 [1]: https://en.wikipedia.org/wiki/Google_Apps_Script
 [2]: https://therenegadecoder.com/code/hello-world-in-javascript/
+[3]: https://therenegadecoder.com/code/hello-world-in-google-apps-script/
