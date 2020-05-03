@@ -30,7 +30,7 @@ write add-ons for G Suite applications. Otherwise, you’ll probably never use i
 
 ## Further Reading
 
--
+- [Hello World in Google Apps Script][3] on The Renegade Coder
 
 [1]: https://en.wikipedia.org/wiki/Google_Apps_Script
 [2]: https://therenegadecoder.com/code/hello-world-in-javascript/

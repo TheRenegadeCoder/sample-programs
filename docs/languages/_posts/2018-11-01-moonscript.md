@@ -29,7 +29,7 @@ MoonScript and Lua APIs called Lapis.
 
 ## Further Reading
 
--
+- [Hello World in MoonScript][4] on The Renegade Coder
 
 [1]: https://moonscript.org/
 [2]: https://github.com/leafo

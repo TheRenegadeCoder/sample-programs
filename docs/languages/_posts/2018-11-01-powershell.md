@@ -42,7 +42,7 @@ is it’s now open-source and will now be called PowerShell Core as it runs on
 
 ## Further Reading
 
--
+- [Hello World in PowerShell][6] on The Renegade Coder
 
 [1]: https://en.wikipedia.org/wiki/Jeffrey_Snover
 [2]: https://www.microsoft.com/
