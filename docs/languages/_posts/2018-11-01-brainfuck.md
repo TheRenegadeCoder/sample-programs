@@ -34,12 +34,7 @@ That’s it!
 
 ## Further Reading
 
--
-
----
-
-#### References
-
-[^1]: C. Böhmwalder, “Hello World in Brainfuck,” The Renegade Coder, 31-Aug-2018. [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-brainfuck/>. [Accessed: 31-Oct-2018].
+- [Hello World in Brainfuck][2] on The Renegade Code
 
 [1]: https://en.wikipedia.org/wiki/Brainfuck
+[2]: https://therenegadecoder.com/code/hello-world-in-brainfuck/

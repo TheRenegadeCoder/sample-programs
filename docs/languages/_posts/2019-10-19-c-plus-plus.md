@@ -20,12 +20,7 @@ However, with great power comes great responsibility. As a result, I personally 
 
 ## Further Reading
 
--
+- [Hello World in C++][1] on The Renegade Coder
 
----
-
-#### References
-
-[^1]: J. Grifski, “Hello World in C++,” The Renegade Coder, 19-Mar-2018. [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-c-plus-plus/>. [Accessed: 19-Oct-2019].
-
+[1]: https://therenegadecoder.com/code/hello-world-in-c-plus-plus/
 [2]: https://en.wikipedia.org/wiki/C%2B%2B
