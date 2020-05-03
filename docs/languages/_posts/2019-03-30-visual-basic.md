@@ -33,8 +33,4 @@ Python as one language instead of two.
 
 -
 
----
-
-#### References
-
-[^1]: J. Grifski, “Hello World In Visual Basic .NET,” The Renegade Coder, 6-May-2018. [Online]. Available: <https://therenegadecoder.com/code/hello-world-in-visual-basic-net/>. [Accessed: 30-Mar-2019].
+[1]: https://therenegadecoder.com/code/hello-world-in-visual-basic-net/
