@@ -1,7 +1,7 @@
 ---
 title: The PowerShell Programming Language
 layout: default
-last-modified: 2018-11-05
+last-modified: 2020-05-02
 tags: [powershell]
 authors:
   - alcha

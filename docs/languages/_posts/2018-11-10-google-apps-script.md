@@ -1,7 +1,7 @@
 ---
 title: The Google Apps Script Programming Language
 layout: default
-last-modified: 2018-11-17
+last-modified: 2020-05-02
 featured-image:
 tags: [google-apps-script]
 authors:
