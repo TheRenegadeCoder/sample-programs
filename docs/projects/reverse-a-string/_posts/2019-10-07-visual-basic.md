@@ -93,7 +93,7 @@ Dim chars() As Char = input.ToCharArray()
 The character array `chars` can be reversed using the the `Array.Reverse()` function
 
 ```vb
-'i.e. ['I', 'd', 'l', 'r', 'o', ',W, ' ', ',', 'o', 'l', 'l', 'e', 'H'] 
+'i.e. ['I', 'd', 'l', 'r', 'o', ',W, ' ', ',', 'o', 'l', 'l', 'e', 'H']
 Array.Reverse(chars)
 ```
 
@@ -107,11 +107,11 @@ This function executes correctly with any ASCII string. I also executes with an 
 
 ## How to Run the Solution
 
-With our solution implemented, we should probably give it a run. Perhaps the easiest 
+With our solution implemented, we should probably give it a run. Perhaps the easiest
 way to run the solution is to copy it into an online VB.NET compiler.
 
-Alternatively, we can run the solution using Microsoft’s very own Visual Studio. 
-Of course, I’m not sure of it’s support on platforms beyond Windows. Don’t forget 
+Alternatively, we can run the solution using Microsoft’s very own Visual Studio.
+Of course, I’m not sure of it’s support on platforms beyond Windows. Don’t forget
 to grab a copy of the Hello World in Visual Basic .NET solution.[^1]
 
 ## Further Reading
