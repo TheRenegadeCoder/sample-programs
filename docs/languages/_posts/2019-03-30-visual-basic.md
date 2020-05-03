@@ -31,6 +31,6 @@ Python as one language instead of two.
 
 ## Further Reading
 
--
+- [Hello World in Visual Basic .NET][1] on The Renegade Coder
 
 [1]: https://therenegadecoder.com/code/hello-world-in-visual-basic-net/
