@@ -1,8 +1,8 @@
-string = str(input("Enter the string:"))
-L = len(string)
-for i in range(L, 0, -1):
-    for j in range(L):
-        if string[i] == string[j]:
-            print("Palindrome.")
-        else:
-            print("Not  Palindrome.")
+def isPalindrome(string):
+    string = string.lower()
+    if len(string) == 1:
+        return True
+    elif string[0] != string[-1]:
+        return False
+    else:
+        return isPalindrome(string[1:-1])
