@@ -1,7 +1,7 @@
 # Sample Programs in Every Language
 
 [![Build Status](https://travis-ci.com/TheRenegadeCoder/sample-programs.svg?branch=master)](https://travis-ci.com/TheRenegadeCoder/sample-programs)
-[![Discord](https://img.shields.io/discord/612072397545275424)](https://discord.gg/5CHchF)  
+[![Discord](https://img.shields.io/discord/612072397545275424)](https://discord.gg/Jhmtj7Z)  
 
 
 Welcome to the [Sample Programs in Every Language][0] repository! What began
@@ -87,7 +87,7 @@ Thanks for your support! :relaxed:
 [12]: https://www.paypal.me/therenegadecoder
 [13]: https://help.getadblock.com/support/solutions/articles/6000163989-how-do-i-pause-or-disable-adblock-
 [14]: https://twitter.com/RenegadeCoder94
-[15]: https://discord.gg/5CHchF
+[15]: https://discord.gg/Jhmtj7Z
 [16]: https://therenegadecoder.com/code/longest-palindrome-substring-in-every-language/
 [17]: https://newsletter.therenegadecoder.com/
 [18]: https://therenegadecoder.com/code/fizz-buzz-in-every-language/
