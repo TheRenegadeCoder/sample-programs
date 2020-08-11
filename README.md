@@ -1,7 +1,7 @@
 # Sample Programs in Every Language
 
 [![Build Status](https://travis-ci.com/TheRenegadeCoder/sample-programs.svg?branch=master)](https://travis-ci.com/TheRenegadeCoder/sample-programs)
-[![Discord Chat](https://img.shields.io/discord/308323056592486420.svg)](https://discord.gg/5CHchF)  
+[![Discord](https://img.shields.io/discord/612072397545275424)](https://discord.gg/5CHchF)  
 
 
 Welcome to the [Sample Programs in Every Language][0] repository! What began
