@@ -1,7 +1,8 @@
 # Sample Programs in Every Language
 
 [![Build Status](https://travis-ci.com/TheRenegadeCoder/sample-programs.svg?branch=master)](https://travis-ci.com/TheRenegadeCoder/sample-programs)
-[![Join the chat at https://gitter.im/TheRenegadeCoder/sample-programs](https://badges.gitter.im/TheRenegadeCoder/sample-programs.svg)](https://gitter.im/TheRenegadeCoder/sample-programs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Discord](https://img.shields.io/discord/612072397545275424)](https://discord.gg/5CHchF)  
+
 
 Welcome to the [Sample Programs in Every Language][0] repository! What began
 as a simple [100 Days of Code][1] challenge has expanded into a fun project.
@@ -33,7 +34,7 @@ In addition, we have a rather extensive [wiki][5] which includes a table row for
 in the repository. For each language, you'll find information like open issues and the number of snippets.
 
 Finally, you can keep up with the latest happening in this repository as well as all the others in this
-organization through our Gitter community. [Come chat!][15]
+organization through our Discord community. [Come chat!][15]
 
 ## Contribute
 
@@ -86,7 +87,7 @@ Thanks for your support! :relaxed:
 [12]: https://www.paypal.me/therenegadecoder
 [13]: https://help.getadblock.com/support/solutions/articles/6000163989-how-do-i-pause-or-disable-adblock-
 [14]: https://twitter.com/RenegadeCoder94
-[15]: https://gitter.im/TheRenegadeCoder/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link
+[15]: https://discord.gg/5CHchF
 [16]: https://therenegadecoder.com/code/longest-palindrome-substring-in-every-language/
 [17]: https://newsletter.therenegadecoder.com/
 [18]: https://therenegadecoder.com/code/fizz-buzz-in-every-language/
