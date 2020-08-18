@@ -45,25 +45,19 @@ to our testing library.
 Naturally, if you wish to add a completely new language to the repository, you'll
 need to follow this repository structure.
 
-### Docs
+### Test
 
-Meanwhile, the docs folder contains all of the documentation relevant to
-the code in the repo. More specifically, we try to write articles for every
-code snippet in the repo, so you'll find all of those here.
+Meanwhile, the test folder contains all of the testing related files. Tests are
+organized by project and administered through Glotter. This toolkit allows us
+to write blackbox tests in Python for any programming language. 
 
-While the archives folder is organized by language, the docs folder is organized
-by project. Each project folder contains a rule set (`index.md`) and a collection
-of articles organized by language name.
+To see what projects are already covered, take a peek in the projects folder. 
+There, you'll find each test file which contains the set of valid and invalid
+tests. 
 
-For example, the `_hello_world` directory contains an `index.md` which houses
-the rules for the project and several articles such as:
-
-- `python.md`
-- `lisp.md`
-- `bash.md`
-- etc.
-
-If you plan to add a new project, please make note of the directory structure.
+To create your own tests, you'll need to either modify the existing test files
+or create a new one for a new project. Keep in mind that tests must be written
+according to the [project documentation][44]. 
 
 ## Naming Conventions
 
