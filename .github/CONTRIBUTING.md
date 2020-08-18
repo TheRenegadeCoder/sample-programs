@@ -11,8 +11,6 @@ for as many languages as possible.
 -   [Naming Conventions][2]
 -   [Pull Requests][4]
     -   [Code][37]
-    -   [Articles][38]
-    -   [Projects][5]
     -   [Tests][43]
 -   [Plagiarism][17]
 
@@ -67,8 +65,8 @@ As a general rule, if you're adding a new language, please name the directory
 using lowercase alphanumeric character sequences separated by dashes only.
 If we do not adhere to this rule, we risk limiting contributors by platform.
 
-For example, let's say someone adds C_ to our repository. If we name the directory
-c_, then Windows users will be unable to clone the repository. Instead, consider
+For example, let's say someone adds C\* to our repository. If we name the directory
+c\*, then Windows users will be unable to clone the repository. Instead, consider
 using c-star. The following table shares a few examples:
 
 | Language | Proper Directory Name |
@@ -101,11 +99,10 @@ for each naming convention:
 ## Pull Requests
 
 If you wish to contribute, [fork][20] the repo and make a pull request
-with your changes. Ideally, your contribution should be in one of three categories:
+with your changes. Ideally, your contribution should be in one of two categories:
 
 1. Code
-2. Articles
-3. Projects
+2. Tests
 
 We'll break these down in the following sections.
 
@@ -177,88 +174,14 @@ pull request template.
 
 At any rate, let's have some fun!
 
-### Articles
-
-As a bonus to this repository, there are associated articles for every script.
-However, the articles do take a while to write, so you can help by writing them
-as well.
-
-Previously, we had hosted all of the articles on [The Renegade Coder][34], but
-we've since moved away from that to support open-source editing. Now, you
-can add and update any article you want.
-
-Currently, there are three types of articles you can write: code, project and
-language. You can find out more about this type of articles below.
-
-#### Code
-
-To get started, you'll want to create a new markdown file (eg: `python.md`)
-using the [CODE_ARTICLE_TEMPLATE][40] in the docs/projects folder of your
-choice.
-
-Make sure you populate the top section (aka the Front Matter) before you're done.
-
-In the top section, you'll want to break down and explain your code snippet.
-
-In the `## How to Run Solution`, you'll want to explicitly detail how to run
-your solution. In general, we like to include one local solution and one online
-solution. More is always appreciated.
-
-Finally, in the `#### References`, you'll want to place your IEEE citations.
-We'd like to keep things relatively formal, so if you borrow content, please
-properly cite it here.
-
-If you'd like to add a featured image to any article, you can generate your
-own featured image by downloading an image of your choice from Pixabay and
-running the [Image Titler][30] program. Then, add the image to the assets
-folder, and link it in your article via the `featured-image` tag in the
-Front Matter.
-
-And, that's it! We'll review your article once you've made the appropriate
-pull request.
-
-#### Projects
-
-Currently, you can find a list of projects on our [project homepage][39].
-
-If you'd like to add a project, feel free to create a pull request with a new
-file containing a project description in the docs/projects folder. The project file
-should follow the [PROJECT_ARTICLE_TEMPLATE.md][41].
-
-Feel free to browse other projects to get an idea of how to fill out each
-section. In general, here's a nice check list to make sure you've 
-filled it out properly:
-
-- [ ] Write a high-level description of the project
-- [ ] Write out detailed requirements for the project including:
-  - [ ] a sample of a generic command line execution (i.e. `program.lang 2 3 "Hi"`)
-  - [ ] a description of expected inputs and outputs
-  - [ ] a description of assumptions
-- [ ] Write out a table of tests which include a diverse range of inputs and their expected outputs
-
-Keep in mind that projects in this repository are command line driven. 
-In other words, **input should always be pulled off the command line as
-command line arguments** rather than prompted and accepted on standard input.
-This allows us to perform quick and easy black box testing by passing
-command line arguments and observing the output.
-
-#### Languages
-
-Finally, you can also introduce a new language article. To do so, add a new
-`<languag>.md` file to the docs/languages folder using the
-[LANGUAGE_ARTICLE_TEMPLATE.md][42].
-
-Feel free to look at other articles in the collection for inspiration on how
-to fill out that template.
-
-## Tests
+### Tests
 
 All tests are automatically run as part of the build process for this project.
 Running all tests does take some time due to the nature of the project.
 When making a pull request, please ensure all tests passed in travis.
 We cannot merge any pull requests with failing tests.
 
-### Writing Testable Code
+#### Writing Testable Code
 
 Since this project is basically just a large collection of related, but isolated files,
 we have decided to automate testing using predefined test cases as input and checking for expected output.
@@ -275,9 +198,9 @@ Next make sure to follow the naming conventions specified in the [Naming Convent
 To see the naming conventions for projects that have existing tests refer to the "words"
 list in the [.glotter.yml][46] and to the `testinfo.yml` file in the language folder.
 
-### Running Tests Locally
+#### Running Tests Locally
 
-#### Dependencies
+##### Dependencies
 
 - Docker
   - As there are so many languages contained in this project, we use docker to automatically generate
@@ -286,7 +209,7 @@ list in the [.glotter.yml][46] and to the `testinfo.yml` file in the language fo
   - We use glotter as our testing library. Make sure you have python installed.
     Then use `pip install -r requirements.txt` (preferably in a virtual environment) to install glotter and its dependencies.
 
-#### Starting a test run
+##### Starting a test run
 
 Starting a test run is done by using python to call `runner.py`.
 For windows, this can be done by calling `samplerunner.bat`
@@ -298,11 +221,17 @@ Some common cases for testing are outlined below.
 
 | Purpose | Command | Example |
 | --- | --- | --- |
-| Run all tests | `./samplerunner.sh test | `./samplerunner.sh test` |
+| Run all tests | `./samplerunner.sh test` | `./samplerunner.sh test` |
 | Run all project tests for a given language | `./samplerunner.sh test -l {LANGUAGE_NAME}` | `./samplerunner.sh test -l c-sharp` |
 | Run all language tests for a given project | `./samplerunner.sh test -p {PROJECT_KEY}` | `./samplerunner.sh test -p evenodd` |
 | Run all tests for a specific program | `./samplerunner.sh test -s {NAME_OF_PROJECT}.{EXTENSION}` | `./samplerunner.sh -s Fibonacci.java` |
 
+#### Writing Tests
+
+Currently, Auroq handles most of the test writing. However, if you would like to contribute your own
+test files, get in touch with him. Alternatively, you can use the existing examples to try to write
+your own tests. Be aware that writing tests is a huge process that may or may not result in the
+modification of many existing files. 
 
 ## Plagiarism
 
