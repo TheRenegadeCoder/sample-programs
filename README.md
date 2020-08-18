@@ -17,6 +17,7 @@ To get up to speed quickly, check out the [contributing doc][6]. Otherwise,
 here are some helpful links:
 
 - [Wiki][5]: a set of dynamic tables that track every language and snippet in the repo
+- [Projects][20]: a list of projects currently accepting code snippets
 - [Discord][15]: an invite to our community discord
 - [Code of Conduct][8]: a copy of the Contributor Convenant
 - [License][9]: a copy of the MIT license document
@@ -25,9 +26,7 @@ here are some helpful links:
 
 Sample Programs in Every Language is a project run by myself, Jeremy Grifski, as
 a part of my website, [The Renegade Coder][10]. If you're looking to support The Renegade Coder, check out my
-[list of ways you can grow the site][11].
-
-As a bit of a summary, here are a few links you can use to support this project:
+[list of ways you can grow the site][11]. To summarize, here are a few links you can use to support this project:
 
 - Subscribe to the The Renegade Coder
   - [Patreon][7]
@@ -60,3 +59,4 @@ Thanks for your support! :relaxed:
 [17]: https://newsletter.therenegadecoder.com/
 [18]: https://therenegadecoder.com/code/fizz-buzz-in-every-language/
 [19]: https://therenegadecoder.com/code/python-code-snippets-for-everyday-problems/
+[20]: https://sample-programs.therenegadecoder.com/projects/
