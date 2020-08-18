@@ -118,7 +118,11 @@ Naturally, this repo contains a lot of code snippets. If you find any that are
 missing, you're free to add them. However, we are strict in the types of code
 snippets you can add. If you're looking for the most up to date list of code snippets,
 check out the [projects page][44]. All snippets must adhere to the requirements outlined
-in their project page.
+in their project page. If there's a code snippet you'd like to include that doesn't
+currently exist in the list of projects, head over to the [documentation repo][47] to 
+define it!
+
+#### Add One and Only One Snippet at a Time
 
 For simplicity, we ask that you **only make pull requests for one
 language and one project at a time.**
@@ -137,7 +141,9 @@ In this scenario, there will likely be a merge conflict that we can easily
 resolve when you make your pull request. This is the ideal workflow for this
 repo.
 
-However, there will be times when you may want to add a new language to the repo.
+#### Create READMEs for New Languages
+
+Ocassionally, there will be times when you may want to add a new language to the repo.
 When adding new languages, make sure you include a README using the following template:
 
 ```markdown
@@ -294,3 +300,4 @@ These rules help grow and cultivate the community in a positive manner.
 [44]: https://sample-programs.therenegadecoder.com/projects/
 [45]: https://sample-programs.therenegadecoder.com/projects/factorial/
 [46]: ../.glotter.yml
+[47]: https://github.com/TheRenegadeCoder/sample-programs-website
