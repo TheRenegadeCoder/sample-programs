@@ -7,8 +7,8 @@ for as many languages as possible.
 
 -   [Repository Structure][1]
     -   [Archives][35]
-    -   [Docs][36]
--   [Naming Conventions][2]
+    -   [Test][36]
+-   [File Naming Conventions][2]
 -   [Pull Requests][4]
     -   [Code][37]
     -   [Tests][43]
@@ -57,7 +57,11 @@ To create your own tests, you'll need to either modify the existing test files
 or create a new one for a new project. Keep in mind that tests must be written
 according to the [project documentation][44]. 
 
-## Naming Conventions
+## File Naming Conventions
+
+Before you add any files to the repo, be aware of your file naming conventions.
+As you'll see in this section, incorrect naming conventions can cause problems
+for some users. 
 
 ### Directories
 
@@ -96,6 +100,8 @@ for each naming convention:
 | pascal     | EvenOdd.sh  |
 | underscore | even_odd.sh |
 
+Naming conventions are important as they help our testing engine, Glotter, parse file names.
+
 ## Pull Requests
 
 If you wish to contribute, [fork][20] the repo and make a pull request
@@ -109,9 +115,12 @@ We'll break these down in the following sections.
 ### Code
 
 Naturally, this repo contains a lot of code snippets. If you find any that are
-missing, you're free to add them.
+missing, you're free to add them. However, we are strict in the types of code
+snippets you can add. If you're looking for the most up to date list of code snippets,
+check out the [projects page][44]. All snippets must adhere to the requirements outlined
+in their project page.
 
-However, for simplicity, we ask that you **only make pull requests for one
+For simplicity, we ask that you **only make pull requests for one
 language and one project at a time.**
 
 For instance, let's say you find that the Python collection is missing both
@@ -170,9 +179,7 @@ language, we track it in its README with links. Check out the [Python README][13
 for an example.
 
 Don't worry if you forget any of this; we have a check list of reminders in the
-pull request template.
-
-At any rate, let's have some fun!
+pull request template. At any rate, let's have some fun!
 
 ### Tests
 
@@ -200,7 +207,7 @@ list in the [.glotter.yml][46] and to the `testinfo.yml` file in the language fo
 
 #### Running Tests Locally
 
-##### Dependencies
+In order to run the tests locally, **you will need the following dependencies**:
 
 - Docker
   - As there are so many languages contained in this project, we use docker to automatically generate
@@ -209,7 +216,7 @@ list in the [.glotter.yml][46] and to the `testinfo.yml` file in the language fo
   - We use glotter as our testing library. Make sure you have python installed.
     Then use `pip install -r requirements.txt` (preferably in a virtual environment) to install glotter and its dependencies.
 
-##### Starting a test run
+After that, running the tests is a matter of using the following commands:
 
 Starting a test run is done by using python to call `runner.py`.
 For windows, this can be done by calling `samplerunner.bat`
@@ -228,7 +235,7 @@ Some common cases for testing are outlined below.
 
 #### Writing Tests
 
-Currently, Auroq handles most of the test writing. However, if you would like to contribute your own
+Currently, @auroq handles most of the test writing. However, if you would like to contribute your own
 test files, get in touch with him. Alternatively, you can use the existing examples to try to write
 your own tests. Be aware that writing tests is a huge process that may or may not result in the
 modification of many existing files. 
@@ -247,7 +254,7 @@ These rules help grow and cultivate the community in a positive manner.
 
 [0]: #please-read
 [1]: #repository-structure
-[2]: #naming-conventions
+[2]: #file-naming-conventions
 [4]: #pull-requests
 [5]: #projects
 [6]: ../docs/hello-world/index.md
@@ -276,7 +283,7 @@ These rules help grow and cultivate the community in a positive manner.
 [33]: ../docs/factorial/index.md
 [34]: https://therenegadecoder.com/code/sample-programs-in-every-language/
 [35]: #archives
-[36]: #docs
+[36]: #test
 [37]: #code
 [38]: #articles
 [39]: https://therenegadecoder.github.io/sample-programs
