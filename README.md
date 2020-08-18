@@ -6,7 +6,7 @@
 
 Welcome to the [Sample Programs in Every Language][0] repository! What began
 as a simple [100 Days of Code][1] challenge has expanded into a fun project.
-Within this repository, you'll find a growing collection of simple programs
+Within this repository, you'll find a growing collection of sample programs
 in just about every programming language to date.
 
 ## Learn More
