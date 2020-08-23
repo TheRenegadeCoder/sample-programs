@@ -1,6 +1,6 @@
 ---
 name: Code Snippet Request
-about: Suggest a code snippet for this project (i.e. Hello World in Grain)
+about: Suggest a code snippet (e.g. Hello World in Grain)
 title: Add [Sample Program] in [Language]
 labels: enhancement
 assignees: ''
