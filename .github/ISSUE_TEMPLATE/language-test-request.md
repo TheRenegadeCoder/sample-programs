@@ -1,6 +1,6 @@
 ---
 name: Language Test Request
-about: Suggest a language you'd like to see tested in this project (i.e. Perl)
+about: Suggest a language you'd like to see tested (e.g. Perl)
 title: Add [Language] Testing
 labels: enhancement, tests
 assignees: ''
