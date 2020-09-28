@@ -13,6 +13,7 @@ Welcome to Sample Programs in Ruby!
 - [Hello World in Ruby][2]
 - [Quine in Ruby][4]
 - [Reverse String in Ruby][11]
+- [Fatorial in Ruby][1891]
 - Even Odd in Ruby
 
 ## Fun Facts
@@ -41,3 +42,4 @@ Welcome to Sample Programs in Ruby!
 [11]: https://therenegadecoder.com/code/reverse-a-string-in-ruby/
 [12]: https://github.com/TheRenegadeCoder/sample-programs/issues/542
 [13]: https://github.com/TheRenegadeCoder/sample-programs/issues/1023
+[1891]: https://github.com/TheRenegadeCoder/sample-programs/pull/1891
