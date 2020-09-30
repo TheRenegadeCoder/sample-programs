@@ -30,6 +30,7 @@ Welcome to Sample Programs in Java!
 - Debut: 1995
 - Developer: Sun Microsystems -> Oracle Corporation
 - Typing: Static
+- Paradigm: object oriented
 
 ## References
 
