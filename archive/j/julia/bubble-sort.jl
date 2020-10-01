@@ -2,12 +2,15 @@
 
 function BubbleSort(arr)
     l = length(arr)
-    for i = 1:l-1
+    swapped = true
+    while swapped
+        swapped = false
         for j = 2:l
             if arr[j-1] > arr[j]
                 tmp = arr[j-1]
                 arr[j-1] = arr[j]
                 arr[j] = tmp
+                swapped = true
             end
         end
     end
