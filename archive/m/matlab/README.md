@@ -10,6 +10,7 @@ Welcome to Sample Programs in MATLAB!
 - Bubble Sort in MATLAB
 - Prime Number in MATLAB
 - Fibonacci in MATLAB
+- FizzBuzz in MATLAB
 
 ## Fun Facts
 
