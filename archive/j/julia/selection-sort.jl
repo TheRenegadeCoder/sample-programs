@@ -1,16 +1,14 @@
 #!/usr/bin/julia
 
-function BubbleSort(arr)
+function SelectionSort(arr)
     l = length(arr)
-    for i = 1:l-1
-        for j = 2:l
-            if arr[j-1] > arr[j]
-                tmp = arr[j-1]
-                arr[j-1] = arr[j]
-                arr[j] = tmp
-            end
-        end
+    sorted_list = []
+    for i = 1:l
+        m = minimum(arr)
+        push!(sorted_list,m)
+        deleteat!(arr, findfirst(x->x==m,arr))
     end
+    return sorted_list
 end
 
 function error()
@@ -44,8 +42,8 @@ end
 try
 
     n = HandleInput(ARGS[1])
-    BubbleSort(n)
-    PrintOutput(n)
+    sorted = SelectionSort(n)
+    PrintOutput(sorted)
 
 catch e
     error()
