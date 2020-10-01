@@ -1,0 +1,11 @@
+from decouple import config
+from sparkpost import SparkPost
+
+def send_email(subject,message,html_content,to_mail):
+    SPARK_API_KEY = config('SPARK_API',cast=str)
+    sparky = SparkPost(SPARK_API_KEY)
+    response = sparky.transmissions.send(
+        recipients = to_mail,
+        html = html_content,
+        from_email = '<Name>@<YOU_DOMAIN>',
+        subject = subject)
