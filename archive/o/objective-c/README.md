@@ -7,6 +7,7 @@ Welcome to Sample Programs in Objective-C!
 - [Hello World in Objective-C](https://therenegadecoder.com/code/hello-world-in-objective-c/)
 - [Even Odd in Objective-C](https://github.com/TheRenegadeCoder/sample-programs/issues/1486)
 - [Factorial](factorial.m)
+- [Fibonacci in Objective-C](https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/o/objective-c/fribonacci.m)
 - [Fizz Buzz in Objective-C](https://github.com/TheRenegadeCoder/sample-programs/issues/1492)
 - [Reverse a String in Objective-C](reverse-string.m)
 
