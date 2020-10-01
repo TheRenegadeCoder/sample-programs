@@ -49,7 +49,8 @@ def rot_13(request):
                          ids=[p[0] for p in valid_permutations[1]])
 def test_rot_13_valid(description, in_params, expected, rot_13):
     actual = rot_13.run(params=in_params)
-    assert actual.strip() == expected
+   if actual.strip() != expected:
+        raise AssertionError
 
 
 @project_test(ProjectType.ROT13.key)
