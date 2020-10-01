@@ -23,6 +23,7 @@ Welcome to Sample Programs in Java!
 - [Reverse a String in Java](https://therenegadecoder.com/code/java/reverse-a-string-in-java/)
 - [ROT-13 in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/1369)
 - [Selection Sort in Java](SelectionSort.java)
+- [Singleton Pattern in Java](Singleton.java)
 - [Quick Sort in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/1370)
 
 ## Fun Facts
