@@ -8,6 +8,7 @@ Welcome to Sample Programs in Lisp!
 - [Fizz Buzz in Lisp](https://sample-programs.therenegadecoder.com/projects/fizz-buzz/lisp/)
 - [Hello World in Lisp](https://therenegadecoder.com/code/hello-world-in-lisp/)
 - [Prime Number in Lisp](https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/l/lisp/prime-number.lsp)
+- [Factorial in Lisp](https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/l/lisp/factorial.lsp)
 
 ## Fun Facts
 
