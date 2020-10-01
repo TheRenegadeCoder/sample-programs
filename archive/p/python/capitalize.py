@@ -1,6 +1,11 @@
 import sys
 
 def capitalize(input):
+    ''' capitalize(self, /)
+ |      Return a capitalized version of the string.
+ |
+ |      More specifically, make the first character have upper case and the rest lower
+ |      case.'''
     if len(input) > 0:
         print(input.capitalize())
 
