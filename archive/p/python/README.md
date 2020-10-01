@@ -32,6 +32,7 @@ Welcome to Sample Programs in Python!
 - [Selection Sort in Python][39]
 - [Convex Hull in Python][44]
 - [Counting Sort][45]
+  - Solution inspired from [here][46]
 
 ## Fun Facts
 
@@ -152,3 +153,4 @@ Welcome to Sample Programs in Python!
 [43]: https://github.com/TheRenegadeCoder/sample-programs/issues/1536
 [44]: https://github.com/TheRenegadeCoder/sample-programs/issues/1535
 [45]: https://github.com/TheRenegadeCoder/sample-programs/issues/1934
+[46]: https://www.geeksforgeeks.org/counting-sort/
