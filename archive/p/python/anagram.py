@@ -5,7 +5,6 @@ import sys
 def anagram(str1, str2):
     str1 = str1.replace(" ", "").lower()
     str2 = str2.replace(" ", "").lower()
-
     # Edge case check
     if len(str1) != len(str2):
         return False
