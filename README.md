@@ -1,4 +1,4 @@
-# Sample Programs in Every Language
+# Sample Programs in Every Language using python
 
 [![Build Status](https://travis-ci.com/TheRenegadeCoder/sample-programs.svg?branch=master)](https://travis-ci.com/TheRenegadeCoder/sample-programs)
 [![Discord](https://img.shields.io/discord/612072397545275424)](https://discord.gg/Jhmtj7Z)  
