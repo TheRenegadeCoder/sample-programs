@@ -25,6 +25,7 @@ Welcome to Sample Programs in C++!
 - [Reverse String in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/419)
 - [Roman Numeral Conversion in C++](https://github.com/TheRenegadeCoder/sample-programs/tree/master/archive/c/c-plus-plus)
 - [Selection Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1683)
+- [Binary Exponentiation in C++](https://github.com/TheRenegadeCoder/sample-programs/tree/master/archive/c/c-plus-plus)
 
 ## Fun Facts
 
