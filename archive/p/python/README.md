@@ -31,6 +31,7 @@ Welcome to Sample Programs in Python!
 - [ROT-13 in Python][38]
 - [Selection Sort in Python][39]
 - [Convex Hull in Python][44]
+- [Counting Sort][45]
 
 ## Fun Facts
 
@@ -150,3 +151,4 @@ Welcome to Sample Programs in Python!
 [41]: https://www.python.org/dev/peps/pep-0020/
 [43]: https://github.com/TheRenegadeCoder/sample-programs/issues/1536
 [44]: https://github.com/TheRenegadeCoder/sample-programs/issues/1535
+[45]: https://github.com/TheRenegadeCoder/sample-programs/issues/1934
