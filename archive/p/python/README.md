@@ -8,6 +8,7 @@ Welcome to Sample Programs in Python!
 - [Baklava in Python][22]
   - Solution borrowed from @erayak via the [baklava repo][21]
 - [Binary Search][31]
+- [Boyre Moore Algorithm][]
 - [Bubble Sort in Python][31]
 - Capitalize in Python
 - [Even Odd in Python][32]
@@ -23,6 +24,7 @@ Welcome to Sample Programs in Python!
 - [Longest Palindromic Subsequence][42]
 - [Merge Sort in Python][35]
 - [Minimum Spanning Tree][43]
+- [Palindrome Checker OneLiner][]
 - [Prime Number in Python][36]
 - [Quick Sort in Python][37]
 - [Quine in Python][3]
