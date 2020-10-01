@@ -71,7 +71,6 @@ def _test_case_1():
     except SystemExit:
         pass
 
-
 def _test_case_2():
     log('Test case 2')
     sys.argv = sys.argv[:1] + [""]
