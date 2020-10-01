@@ -32,6 +32,7 @@ Welcome to Sample Programs in C++!
 - Debut: 1985
 - Typing: Static
 - Developer: Bjarne Strotrup
+- C++ got the OOP features from Simula67 Programming language.
 
 ## References
 
@@ -42,3 +43,4 @@ Welcome to Sample Programs in C++!
 - [C++ Online Compiler](http://cpp.sh/)
 - [Game of life wiki](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
 - [Mario Talevski project](https://github.com/MarioTalevski/game-of-life)
+- [C++ Reference Gfg](https://www.geeksforgeeks.org/c-plus-plus/)
