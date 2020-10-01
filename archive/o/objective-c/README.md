@@ -5,9 +5,10 @@ Welcome to Sample Programs in Objective-C!
 ## Sample Programs
 
 - [Hello World in Objective-C](https://therenegadecoder.com/code/hello-world-in-objective-c/)
-- [Reverse a String in Objective-C](reverse-string.m)
-- [Fizz Buzz in Objective-C](https://github.com/TheRenegadeCoder/sample-programs/issues/1492)
+- [Even Odd in Objective-C](https://github.com/TheRenegadeCoder/sample-programs/issues/1486)
 - [Factorial](factorial.m)
+- [Fizz Buzz in Objective-C](https://github.com/TheRenegadeCoder/sample-programs/issues/1492)
+- [Reverse a String in Objective-C](reverse-string.m)
 
 ## Fun Facts
 
