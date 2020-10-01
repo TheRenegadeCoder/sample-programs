@@ -31,6 +31,11 @@ struct IntFraction {
     var numerator, denominator: Int
 
     init(_ num:Int, _ denom:Int) {
+        guard denom != 0 else {
+            print("Error: Denominator cannot be 0")
+            exit(0)
+        }
+
         var num = num
         if denom < 0 {
             num = -num
