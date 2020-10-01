@@ -30,6 +30,6 @@ def counting_sort(arr):
 
 
 # create array and call counting_sort function
-arr = [10, 9, 1, 12]
+arr = [10, 9, 1, 12, 6, 5, 7]
 ans = counting_sort(arr)
 print("Sorted character array is: " + str(ans))
