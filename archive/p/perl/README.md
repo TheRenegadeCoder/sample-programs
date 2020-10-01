@@ -15,6 +15,7 @@ Welcome to Sample Programs in Perl!
 - [Reverse a String in Perl][2]
 - [ROT-13 in Perl][9]
 - [Prime Number in Perl](https://github.com/TheRenegadeCoder/sample-programs/issues/1834)
+- [Prime Number Checker in Perl][10]
 
 ## Fun Facts
 
@@ -37,3 +38,4 @@ Welcome to Sample Programs in Perl!
 [7]: https://github.com/TheRenegadeCoder/sample-programs/issues/1501
 [8]: https://github.com/TheRenegadeCoder/sample-programs/issues/1511
 [9]: https://github.com/TheRenegadeCoder/sample-programs/issues/1824
+[10]: https://yuvarajarumugam.wordpress.com/2010/08/06/find-prime-number-using-perl/
