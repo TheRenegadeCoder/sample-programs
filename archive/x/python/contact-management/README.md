@@ -1,1 +1,1 @@
-# simple apps in python 
+# management contact in python  
