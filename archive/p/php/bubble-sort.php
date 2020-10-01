@@ -1,11 +1,12 @@
 <?php
 
-$numbers = array(1,3,2,5,2);
+$numbers = array_map('intval', explode(',', $argv[1]));
 $array_size = count($numbers);
 
-echo "Numbers before sort: ";
-for ( $i = 0; $i < $array_size; $i++ )
-   echo $numbers[$i];
+if ($array_size <= 1)
+{
+    exit('Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"');
+}
 
 
 for ( $i = 0; $i < $array_size; $i++ )
@@ -21,8 +22,6 @@ for ( $i = 0; $i < $array_size; $i++ )
    }
 }
 
-echo " Numbers after sort: ";
-for( $i = 0; $i < $array_size; $i++ )
-   echo $numbers[$i];
+echo implode(', ', $numbers);
 
 ?>

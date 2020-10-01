@@ -12,6 +12,7 @@ Welcome to Sample Programs in C#!
 - [Factorial in C#][13]
 - [File IO in C#][14]
 - [Fizz Buzz in C#][4]
+- [Game of Life in C#][24]
 - [Hello World in C#][2]
 - [Insertion Sort in C#][15]
 - [Longest Common Subsequence in C#][10]
@@ -60,3 +61,4 @@ Welcome to Sample Programs in C#!
 [21]: https://github.com/TheRenegadeCoder/sample-programs/issues/914
 [22]: https://github.com/TheRenegadeCoder/sample-programs/issues/917
 [23]: https://github.com/TheRenegadeCoder/sample-programs/issues/1280
+[24]: https://github.com/TheRenegadeCoder/sample-programs/issues/1278

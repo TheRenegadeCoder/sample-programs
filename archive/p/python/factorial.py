@@ -9,7 +9,7 @@ def factorial(n):
 
 
 def exit_with_error(msg=None):
-    msg = msg or 'Usage: plase input a non-negative integer'
+    msg = msg or 'Usage: please input a non-negative integer'
     print(msg)
     sys.exit(1)
 

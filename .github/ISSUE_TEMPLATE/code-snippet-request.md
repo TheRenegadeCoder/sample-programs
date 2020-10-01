@@ -1,18 +1,21 @@
 ---
 name: Code Snippet Request
-about: Suggest a code snippet for this project (i.e. Hello World in Grain)
+about: Suggest a code snippet (e.g. Hello World in Grain)
 title: Add [Sample Program] in [Language]
 labels: enhancement
 assignees: ''
-
 ---
 
-If possible, please provide a link(s) to the language documentation to prove its existence:
+Please link the documentation for this project in the space below (note: don't 
+forget to remove the backticks). To find the existing list of supported projects, 
+[look here][1]:
 
-- https://example-lang.com
+`[Project Link](https://sample-programs.therenegadecoder.com/projects/some-project)`
 
-If possible, please provide a code snippet of Hello World in the language:
+If this code snippet adds a new language to the repo, please provide a link(s) to the 
+language documentation to prove its existence in the space below. Feel free to omit
+this section otherwise.
 
-```lang
-...
-````
+`[Project Documentation](https://example-lang.com)`
+
+[1]: https://sample-programs.therenegadecoder.com/projects/

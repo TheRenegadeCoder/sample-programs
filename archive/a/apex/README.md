@@ -6,6 +6,7 @@ Welcome to Sample Programs in Apex!
 
 - [Hello World in Apex](https://github.com/TheRenegadeCoder/sample-programs/issues/585)
   - Inspired from [SendGrid Blog](https://sendgrid.com/blog/hello-world-apex/)
+- Reverse a String in Apex
 
 ## Fun Facts
 
