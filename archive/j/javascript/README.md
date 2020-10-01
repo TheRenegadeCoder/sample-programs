@@ -8,6 +8,7 @@ Welcome to Sample Programs in JavaScript!
     -   Solution borrowed from @toturkmen via the [baklava repo][1]
 -   [Bubblesort in Javascript][18]
 -   [Capitalize in JavaScript][12]
+- 	[Binary Search in JavaSciprt] [25]
 -   Even Odd in JavaScript
 -   [Export in JavaScript][13]
 -   [Factorial in JavaScript][15]
@@ -66,3 +67,4 @@ Welcome to Sample Programs in JavaScript!
 [22]: https://github.com/TheRenegadeCoder/sample-programs/issues/1377
 [23]: https://github.com/TheRenegadeCoder/sample-programs/issues/1385
 [24]: https://github.com/TheRenegadeCoder/sample-programs/issues/1384
+[25]: https://github.com/TheRenegadeCoder/sample-programs/issues/1747
