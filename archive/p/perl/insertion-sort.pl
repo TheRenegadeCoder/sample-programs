@@ -12,14 +12,14 @@ if ($num_args == 0) {
 	for ($i = 0;$i < $n;$i++) {
 	    $arr[$i] = int($arr[$i])
 	}
-        for ($i = 0;$i < $n;$i = $i + 1) {
-            for ($j = 0;$j < $n - $i - 1;$j = $j + 1) {
-                if ($arr[$j] > $arr[$j + 1]) {
-                    $temp = $arr[$j];
-                    $arr[$j] = $arr[$j + 1];
-                    $arr[$j + 1] = $temp;
-                }
-            }
+        for ($i = 1;$i < $n;$i = $i + 1) {
+            $p = $arr[$i];
+	    $j = $i - 1;
+	    while($j >= 0 && $arr[$j] > $p) {
+		$arr[$j + 1] = $arr[$j];
+		$j = $j - 1;
+	    }
+	    $arr[$j + 1] = $p;
         }
         for ($i = 0;$i < $n;$i = $i + 1) {
             if ($i == 0) {
