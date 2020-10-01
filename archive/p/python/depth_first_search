@@ -1,0 +1,32 @@
+# This is basic DFS algorithm implementation with adjacency list on an unweighted graph
+# The worst case time complexity of the algorithm is O(V+E)
+# i.e sum of number of vertices and edges
+
+# Sample Adjacency List
+g = {  0:[1,9],
+       1:[0,8],
+       2:[3,8],
+       3:[2,4,5],
+       4:[3],
+       5:[3,6],
+       6:[5,7],
+       7:[8,11,10,6],
+       8:[7,1,9,2],
+       9:[0,8,10],
+       10:[7,11,9],
+       11:[7,10]}
+
+visited = [ False for i in g]
+def dfs(at):
+    if visited[at] : return
+    
+    # if you want to see which nodes the algorithm is visiting
+    print(at)
+    
+    visited[at] = True
+    neighbours = g[at]
+    for next in neighbours:
+        dfs(next)
+
+# For testing purposes
+dfs(0)
