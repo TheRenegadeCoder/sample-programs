@@ -31,6 +31,7 @@ Welcome to Sample Programs in Python!
 - [ROT-13 in Python][38]
 - [Selection Sort in Python][39]
 - [Convex Hull in Python][44]
+- [Decimal to Binay in Python][45]
 
 ## Fun Facts
 
