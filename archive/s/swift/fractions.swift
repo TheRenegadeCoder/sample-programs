@@ -151,6 +151,6 @@ case "!=":
     let res = operand1 != operand2
     print("\(res.intValue)")
 default:
-    print("No matching operation for operand: '\(op)'")
+    print("No matching operation for symbol: '\(op)'")
     exit(0)
 }
