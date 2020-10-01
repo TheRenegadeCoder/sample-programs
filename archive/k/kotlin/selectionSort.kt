@@ -10,22 +10,20 @@ fun main(args: Array<String>)
         println("Usage: please provide a list of at least two integers to sort in the format “1, 2, 3, 4, 5”")
         return
     }
-    var swapped:Boolean = false
+    var min:Int
     for(i in 0 until nums.count()-1)
     {
-        swapped = false
-        for(j in 0 until nums.count()-i-1)
+        min = i
+        for(j in i+1 until nums.count())
         {
-            if(nums[j]>nums[j+1])
+            if(nums[j]<nums[min])
             {
-                //swap
-                nums[j] = nums[j+1].also {nums[j+1] =  nums[j]}
-                swapped = true
+                min = j
             }
-        }
-        if (swapped==false)
-        {
-            break
+            if(min!=i)
+            {
+                nums[i] = nums[min].also {nums[min] =  nums[i]}
+            }
         }
     }
     for(i in 0 until nums.count())
