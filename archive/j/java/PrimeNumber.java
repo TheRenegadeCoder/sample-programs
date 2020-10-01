@@ -38,6 +38,10 @@ public class PrimeNumber {
                 throw new PrimeNumberException();
             }
 
+            if (args[0].trim().equals("1")){
+                System.out.println("The number 1 which is neither Prime nor Composite");
+                System.exit(1);
+            }
             // Convert to int and check
             if (isPrime(Integer.valueOf(args[0]))) {
                 System.out.println("Prime");
