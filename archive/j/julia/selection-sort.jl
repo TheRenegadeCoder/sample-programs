@@ -12,7 +12,7 @@ function SelectionSort(arr)
 end
 
 function error()
-    println("Usage: please Usage: please provide a list of at least two integers to sort in the format “1, 2, 3, 4, 5”")
+    println("Usage: please provide a list of at least two integers to sort in the format “1, 2, 3, 4, 5”")
 end
 
 function HandleInput(inp)
