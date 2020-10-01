@@ -98,7 +98,7 @@ class Board:
                 status_main_cell = cell_object.is_alive()
 
                 # If the cell is alive, check the neighbour status.
-                if status_main_cell == True:
+                if status_main_cell is True:
                     if len(living_neighbours_count) < 2 or len(living_neighbours_count) > 3:
                         gets_killed.append(cell_object)
 
