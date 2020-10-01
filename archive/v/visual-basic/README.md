@@ -6,6 +6,7 @@ Welcome to Sample Programs in Visual Basic .NET
 
 - [Hello World in Visual Basic .NET](https://therenegadecoder.com/code/hello-world-in-visual-basic-net)
 - [Reverse String in Visual Basic .NET (No Emoji Support)](https://github.com/jrg94/sample-programs/issues/132)
+- [FizzBuzz in Visual Basic .NET](https://github.com/jrg94/sample-programs/issues/1986)
 
 ## Fun Facts
 
