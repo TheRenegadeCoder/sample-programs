@@ -7,7 +7,7 @@ Welcome to Sample Programs in Objective-C!
 - [Hello World in Objective-C](https://therenegadecoder.com/code/hello-world-in-objective-c/)
 - [Reverse a String in Objective-C](reverse-string.m)
 - [Fizz Buzz in Objective-C](https://github.com/TheRenegadeCoder/sample-programs/issues/1492)
-
+- [Factorial in Objective-C] (https://github.com/TheRenegadeCoder/sample-programs/issues/1495)
 ## Fun Facts
 
 - Debut: 1984
