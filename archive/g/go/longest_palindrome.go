@@ -7,7 +7,7 @@ func longestPalSubstr(str string) string {
 	start := 1
 	result := ""
 
-	if len(str) < 3 || str == "" {
+	if len(str) < 2 || str == "" {
 		return "Incorrect input provided. Program Terminated"
 	}
 
