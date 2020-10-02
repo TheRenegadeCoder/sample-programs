@@ -9,7 +9,7 @@ fun main(args: Array<String>) {
     for (i in 1..number) {
         factorial *= i.toLong()
     }
-    println("Factorial of $number = $factorial")
+    println("Factorial of $number is $factorial")
 }
 
 
@@ -26,5 +26,5 @@ fun main(args: Array<String>) {
         factorial *= i.toLong()
         i++
     }
-    println("Factorial of $number = $factorial")
+    println("Factorial of $number is $factorial")
 }
