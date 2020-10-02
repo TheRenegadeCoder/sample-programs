@@ -30,6 +30,7 @@ Welcome to Sample Programs in Python!
 - [Roman Numberal Conversion in Python][25]
 - [ROT-13 in Python][38]
 - [Selection Sort in Python][39]
+- Two way linear search
 - [Convex Hull in Python][44]
 
 ## Fun Facts
