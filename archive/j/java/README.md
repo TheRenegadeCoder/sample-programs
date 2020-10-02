@@ -6,8 +6,6 @@ Welcome to Sample Programs in Java!
 
 - [Baklava in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/934)
 - [Bubble Sort in Java](BubbleSort.java)
-- [Binary Search](BinarySearch.java)
-- [Bucket Sort](BucketSort.java)
 - [Capitalize a String in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/1366)
 - [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/1365)
 - [Even Odd in Java](https://github.com/jrg94/sample-programs/issues/937)
