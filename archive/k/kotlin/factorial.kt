@@ -3,7 +3,8 @@
 // Using For Loop
 
 fun main(args: Array<String>) {
-
+    
+    // Taking the input from the user
     val number = args[0].toInt()
     var factorial: Long = 1
     for (i in 1..number) {
@@ -19,6 +20,7 @@ fun main(args: Array<String>) {
 
 fun main(args: Array<String>) {
 
+    // Taking the input from the user
     val number = args[0].toInt()
     var i = 1
     var factorial: Long = 1
