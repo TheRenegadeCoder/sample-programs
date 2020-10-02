@@ -1,7 +1,11 @@
 #include <iostream>
 #include <cstdlib>
 using namespace std;
-
+int reccur(int k)
+{
+  if(k == 1) return 1;
+  return k * reccur(k-1);
+}
 int main(int argc, char *argv[])
 {
   if (argc < 2 || std::string(argv[1]) == "")
@@ -25,7 +29,11 @@ int main(int argc, char *argv[])
   for(i=1; i<=n; i++)
   {    
       fact=fact*i;    
-  }    
-  cout<<fact<<endl;  
+  }
+  //Iterative solution
+  cout<<"Factorial using iteration " <<fact<<endl;  
+  
+  //reccursive solution
+  cout<<"Factorial using reccursion "<<reccur(n)<<endl;
   return 0;
 }
