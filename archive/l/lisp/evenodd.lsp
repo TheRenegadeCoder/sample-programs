@@ -9,8 +9,8 @@
 	(princ "The mod version is: ")
 	(write leftover)
 	(if (= 0 leftover)
-		(format t "~% num is even."))
-	
+		(format t "~% num is even.")
+		(format t "~% num is odd."))
 	(terpri)
 )
 
