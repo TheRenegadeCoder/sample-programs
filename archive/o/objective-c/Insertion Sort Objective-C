@@ -1,0 +1,16 @@
+//Insertion Sort of an array of integers
+//**************************************
+NSMutableArray* insertionSort(NSMutableArray* unsortedArray){
+    if(!unsortedArray) return nil;
+    if(unsortedArray.count<2) return unsortedArray;
+    
+    for (int j=1; j<unsortedArray.count; j++) {
+        int i = j;
+        while(i>0 && [[unsortedArray objectAtIndex:(i-1)] intValue] > [[unsortedArray objectAtIndex:i] intValue])
+        {
+            [unsortedArray exchangeObjectAtIndex:i withObjectAtIndex:(i-1)];
+            i--;
+        }
+    }
+    return unsortedArray;
+}
