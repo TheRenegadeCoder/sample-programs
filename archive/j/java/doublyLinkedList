@@ -1,0 +1,148 @@
+import java.io.*;
+
+public class Node {
+	int data;
+	Node next;
+	Node prev;
+	
+	Node(int data) {
+		this.data = data;
+	}
+	
+}
+
+public class Main {
+
+	static Node first = null;
+	
+	void traverse(Node node) {
+		Node head = node;
+		while(head!=null) {
+			System.out.print(head.data + " ");
+			head = head.next;
+		}
+		System.out.println();
+	}
+	
+	void reverse(Node node) {
+		Node head = node;
+		Node temp = null;
+		Node last = null;
+		
+		int counter = 0;
+		
+		while(head != null) {
+			last = head;
+			head = head.next;
+			counter++;
+		}
+		
+		head = last;
+		
+		while(counter > 0) {
+			temp = head.next;
+			head.next = head.prev;
+			head.prev = temp;
+			
+			head = head.next;
+			counter--;
+		}
+		
+		first = last;
+		
+	}
+	
+	void midInsertion(Node node, int data, int index) {		
+		Node head = node;
+		Node temp = null;
+		
+		for(int i=0;i<index;i++) {
+			temp = head;
+			head = head.next;
+			if(head == null) {
+				System.out.println("Invalid Index.");
+				return;
+			}
+		}
+		
+		temp.next = new Node(data);
+		temp.next.prev = temp;
+		temp.next.next = head;
+		head.prev = temp.next;
+		
+	}
+	
+	void deletion(Node node, int index) {
+		Node head = node;
+		Node temp = null;
+		for(int i=0;i<index;i++) {
+			temp = head;
+			head = head.next;
+			if(head == null) {
+				System.out.println("Invalid Index.");
+				return;
+			}
+		}
+		
+		temp.next = head.next;
+		head.next.prev = temp;
+		head = null;
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		try {
+			
+			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+			
+			Main ob = new Main();
+			
+			Node head = null;
+			Node temp = null;
+			
+			int n;
+			System.out.print("Enter the number of elements : ");
+			n = Integer.parseInt(br.readLine());
+			
+			String input = br.readLine();
+			
+			for(int i=0;i<n;i++) {
+				if(i==0) {
+					head = new Node(Integer.parseInt(input));
+					head.next = null;
+					head.prev = null;
+					first = head;
+				} else {
+					temp = head;
+					head = new Node(Integer.parseInt(input));
+					head.prev = temp;
+					temp.next = head;
+					head.next = null;
+				}
+				if(i<n-1)
+					input = br.readLine();
+			}
+			//Traversing
+			System.out.println("Out : ");
+			ob.traverse(first);
+			
+			System.out.println("reverse Out : ");
+			ob.reverse(first);
+			ob.traverse(first);
+			
+			System.out.println("insertion mid");
+			ob.midInsertion(first,6,2);
+			ob.traverse(first);
+			
+			System.out.println("Deletion mid");
+			ob.deletion(first, 4);
+			ob.traverse(first);
+			
+		} catch(Exception E) {
+			E.printStackTrace();
+		}
+
+	}
+
+}
