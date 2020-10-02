@@ -19,6 +19,7 @@ Welcome to Sample Programs in Python!
 - [Hello World in Python][0]
 - [Insertion Sort in Python][34]
 - [Job Sequencing with Deadlines in Python][30]
+- [Jump Search][45]
 - [Longest Common Subsequence][26]
 - [Longest Palindromic Subsequence][42]
 - [Merge Sort in Python][35]
@@ -151,3 +152,4 @@ Welcome to Sample Programs in Python!
 [41]: https://www.python.org/dev/peps/pep-0020/
 [43]: https://github.com/TheRenegadeCoder/sample-programs/issues/1536
 [44]: https://github.com/TheRenegadeCoder/sample-programs/issues/1535
+[45]: https://github.com/soumalyatheking22012001/sample-programs/blob/master/archive/p/python/jump%20search.py
