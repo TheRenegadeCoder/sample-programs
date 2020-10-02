@@ -2,7 +2,6 @@
 import sys
 from math import sqrt, ceil
 
-
 def is_prime(x):
     if (x % 2 == 0 and x is not 2) or (x == 1):
         return False
