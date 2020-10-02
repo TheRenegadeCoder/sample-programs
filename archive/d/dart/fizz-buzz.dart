@@ -2,10 +2,10 @@ void fizzBuzz(int maxNumber){
   for(int i=1;i<=maxNumber;i++){
     String output = "";
     if(i%3 == 0){
-      output += "fizz";
+      output += "Fizz";
     }
     if(i%5 == 0){
-      output += "buzz";
+      output += "Buzz";
     }
     if(output == ""){
       output = "$i";
