@@ -4,8 +4,8 @@
 [![Discord](https://img.shields.io/discord/612072397545275424)](https://discord.gg/Jhmtj7Z)  
 
 
-Welcome to the [Sample Programs in Every Language][0] repository! What began
-as a simple [100 Days of Code][1] challenge has expanded into a fun project.
+Welcome to the [Sample Programs in Every Language][0] repository!
+What began as a simple [100 Days of Code][1] challenge has expanded into a fun project.
 Within this repository, you'll find a growing collection of sample programs
 in just about every programming language to date.
 
@@ -13,8 +13,7 @@ in just about every programming language to date.
 
 [![](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/images/0)](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/links/0)[![](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/images/1)](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/links/1)[![](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/images/2)](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/links/2)[![](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/images/3)](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/links/3)[![](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/images/4)](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/links/4)[![](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/images/5)](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/links/5)[![](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/images/6)](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/links/6)[![](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/images/7)](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/links/7)
 
-To get up to speed quickly, check out the [contributing doc][6]. Otherwise, 
-here are some helpful links:
+To get up to speed quickly, check out the [contributing doc][6]. Otherwise, here are some helpful links:
 
 - [Wiki][5]: a set of dynamic tables that track every language and snippet in the repo
 - [Projects][20]: a list of projects currently accepting code snippets
