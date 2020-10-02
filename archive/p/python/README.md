@@ -32,6 +32,7 @@ Welcome to Sample Programs in Python!
 - [Selection Sort in Python][39]
 - [Convex Hull in Python][44]
 - [Sleep sort in Python][https://github.com/TheRenegadeCoder/sample-programs/issues/1988]
+- [Banker's Algorithm in Python][45]
 
 ## Fun Facts
 
@@ -151,3 +152,4 @@ Welcome to Sample Programs in Python!
 [41]: https://www.python.org/dev/peps/pep-0020/
 [43]: https://github.com/TheRenegadeCoder/sample-programs/issues/1536
 [44]: https://github.com/TheRenegadeCoder/sample-programs/issues/1535
+[45]: https://github.com/abhhii/sample-programs/blob/master/archive/p/python/bankers_algorithm.py
