@@ -11,6 +11,7 @@ Welcome to Sample Programs in MATLAB!
 - Prime Number in MATLAB
 - Fibonacci in MATLAB
 - FizzBuzz in MATLAB
+- Reverse in MATLAB [1]
 
 ## Fun Facts
 
@@ -23,3 +24,4 @@ Welcome to Sample Programs in MATLAB!
 
 - [MATLAB Wiki](https://en.wikipedia.org/wiki/MATLAB)
 - [MATLAB Docs](https://www.mathworks.com/)
+- [1](https://github.com/TheRenegadeCoder/sample-programs/issues/1460)
