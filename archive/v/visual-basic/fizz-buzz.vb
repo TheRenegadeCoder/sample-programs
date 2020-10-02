@@ -6,7 +6,7 @@ Module FizzBuzz
     Sub FizzBuzz()
         Dim first = True
         Dim i As Integer
-        For i = 0 To 99
+        For i = 1 To 100
             If i Mod 15 = 0 Then
                 If first Then
                     System.Console.Write("FizzBuzz")
@@ -28,6 +28,13 @@ Module FizzBuzz
                     first = False
                 Else
                     System.Console.Write(", Fizz")
+                End If
+            Else
+                If first Then
+                    System.Console.Write(Str(i))
+                    first = False
+                Else
+                    System.Console.Write($", {Str(i)}")
                 End If
             End If
         Next
