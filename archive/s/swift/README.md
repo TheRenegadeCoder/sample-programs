@@ -9,6 +9,7 @@ Welcome to Sample Programs in Swift!
 - [Fizzbuzz in Swift](https://github.com/TheRenegadeCoder/sample-programs/issues/482)
 - [Baklava in Swift](https://github.com/TheRenegadeCoder/sample-programs/issues/620)
 - Fibonacci String in Swift
+- Fractions in Swift
 
 ## Fun Facts
 
