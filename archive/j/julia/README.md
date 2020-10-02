@@ -8,6 +8,7 @@ Welcome to Sample Programs in Julia!
 - [Baklava in Julia](https://github.com/TheRenegadeCoder/sample-programs/pull/485)
 - [Fibonacci in Julia](https://github.com/TheRenegadeCoder/sample-programs/issues/529)
 - [FizzBuzz in Julia](https://github.com/TheRenegadeCoder/sample-programs/issues/532)
+- Prime number checker in Julia. [Also see](http://juliamath.github.io/Primes.jl/v0.1/)
 
 ## Fun Facts
 
