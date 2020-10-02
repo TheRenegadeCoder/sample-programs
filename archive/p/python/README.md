@@ -27,6 +27,7 @@ Welcome to Sample Programs in Python!
 - [Quick Sort in Python][37]
 - [Quine in Python][3]
 - [Reverse a String in Python][2]
+- Right Triangle Pattern
 - [Roman Numberal Conversion in Python][25]
 - [ROT-13 in Python][38]
 - [Selection Sort in Python][39]
