@@ -25,6 +25,7 @@ Welcome to Sample Programs in C!
 - [Reverse String in C][3]
 - [Roman Numeral Conversion in C][21]
 - [ROT-13 in C][16]
+- [Selection sort in C][]
 
 ## Fun Facts
 
