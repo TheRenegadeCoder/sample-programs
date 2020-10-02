@@ -30,7 +30,19 @@ class ProjectType(Enum):
     @property
     def key(self):
         return self.name.lower()
-
+class HelloWorld(Enum):
+    print("Hello world")
+class EvenOdd(Enum):
+    num = int(input("Enter number\n"))
+    if num%2 == 0:
+        print("The number: Even")
+        
+    else:
+        print("The number: Odd")
+class Capitalize(Enum):
+    txt = input("Enter text here: \n")
+    b = txt.capitalize()
+    print(f"Capitalized text is: {b}")
 
 def main():
     glotter_main()
