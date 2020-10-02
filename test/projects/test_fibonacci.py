@@ -2,14 +2,10 @@ import pytest
 
 from runner import ProjectType
 from glotter import project_test, project_fixture
-
 def get_fibs(n):
-    if n == 1:
-        return 1
-    if n == 2:
-        return 1
-    else:
-        return fibs(n-1) + fibs(n-2)
+    fibs = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+    for i in range(n):
+        yield f'{i + 1}: {fibs[i]}'
 
 
 invalid_permutations = (
