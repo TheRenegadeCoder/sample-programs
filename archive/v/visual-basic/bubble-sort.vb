@@ -1,16 +1,9 @@
 Public Module BubbleSort
-    Public Sub Main()
-        Dim sortArray(9) As Integer
-        sortArray(0) = 100
-        sortArray(1) = 20
-        sortArray(2) = 30
-        sortArray(3) = 70
-        sortArray(4) = 10
-        sortArray(5) = 40
-        sortArray(6) = 90
-        sortArray(7) = 80
-        sortArray(8) = 60
-        sortArray(9) = 50
+    Public Sub Main(args As String())
+        Console.WriteLine("GetCommandLineArgs: {0}", String.Join(", ", args))
+        Dim listOfStringInputs = args.ToList
+        Dim sortArray = listOfStringInputs.ConvertAll(Function(inputs) Int32.Parse(inputs)).ToArray
+
         sortArray = BubbleSort(sortArray)
         Dim outputSorted As String = String.Join(", ", sortArray)
         System.Console.WriteLine($"Sorted: {outputSorted}")
