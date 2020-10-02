@@ -11,6 +11,7 @@ Welcome to Sample Programs in MATLAB!
 - Prime Number in MATLAB
 - Fibonacci in MATLAB
 - FizzBuzz in MATLAB
+- [Selection Sort in MATLAB](https://github.com/TheRenegadeCoder/sample-programs/issues/1463)
 
 ## Fun Facts
 
