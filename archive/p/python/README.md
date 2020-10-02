@@ -19,6 +19,7 @@ Welcome to Sample Programs in Python!
 - [Hello World in Python][0]
 - [Insertion Sort in Python][34]
 - [Job Sequencing with Deadlines in Python][30]
+- Left Triangle Pattern
 - [Longest Common Subsequence][26]
 - [Longest Palindromic Subsequence][42]
 - [Merge Sort in Python][35]
