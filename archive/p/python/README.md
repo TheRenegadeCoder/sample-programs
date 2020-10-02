@@ -11,6 +11,7 @@ Welcome to Sample Programs in Python!
 - [Bubble Sort in Python][31]
 - Capitalize in Python
 - [Even Odd in Python][32]
+- Expand Number
 - [Factorial in Python][33]
 - [Fibonacci Sequence in Python][24]
 - [File IO in Python][29]
