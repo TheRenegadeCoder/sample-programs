@@ -21,27 +21,11 @@ invalid_permutations = (
     ]
 )
 
-valid_permutations = (
-    'description,in_params,expected', [
-        (
-            'sample input: even',
-            '2',
-            'Even'
-        ), (
-            'sample input: odd',
-            '5',
-            'Odd'
-        ), (
-            'sample input: negative even',
-            '-14',
-            'Even'
-        ), (
-            'sample input: negative odd',
-            '-27',
-            'Odd'
-        )
-    ]
-)
+def EvenOdd(n):
+    if n % 2 == 0:
+        yield 'Even'
+    else:
+        yield 'Odd'
 
 
 @project_fixture(ProjectType.EvenOdd.key)
