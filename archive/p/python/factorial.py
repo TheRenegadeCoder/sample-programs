@@ -21,13 +21,11 @@ def exit_with_error(msg=None):
 def main(args):
     try:
         n = int(args[0])
-        print(n)
         if n < 0:
             exit_with_error()
         elif n >= 996:
             exit_with_error('{}! is out of the reasonable bounds for calculation'.format(n))
         print(factorial(n))
-
         #print(factorial2(n))
 
 
