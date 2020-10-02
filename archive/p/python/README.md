@@ -31,6 +31,7 @@ Welcome to Sample Programs in Python!
 - [ROT-13 in Python][38]
 - [Selection Sort in Python][39]
 - [Convex Hull in Python][44]
+- [Sleep sort in Python][https://github.com/TheRenegadeCoder/sample-programs/issues/1988]
 
 ## Fun Facts
 
