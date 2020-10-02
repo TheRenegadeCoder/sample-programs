@@ -34,7 +34,12 @@ fun main(args: Array<String>) {
     var i = 1
     var factorial: Long = 1
     while (i <= number) {
+        if (i == 0){
+        	factorial = 1}
+       else{
         factorial *= i.toLong()
+       }
+        
         i++
     }
     println("Factorial of $number is $factorial")
