@@ -27,7 +27,7 @@ Welcome to Sample Programs in Go!
 - [ROT 13 Number in Go][25]
 - [Selection Sort in Go][26]
 - [String Reverse in Go][8]
-- [Longest Palindromic Substring][29]
+- [Longest Palindromic Substring in Go][29]
 
 
 ## Fun Facts
