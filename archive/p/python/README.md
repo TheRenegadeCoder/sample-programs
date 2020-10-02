@@ -24,6 +24,7 @@ Welcome to Sample Programs in Python!
 - [Merge Sort in Python][35]
 - [Minimum Spanning Tree][43]
 - [Prime Number in Python][36]
+-  Pyramid Pattern
 - [Quick Sort in Python][37]
 - [Quine in Python][3]
 - [Reverse a String in Python][2]
