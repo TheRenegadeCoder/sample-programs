@@ -14,7 +14,7 @@ Welcome to Sample Programs in Boo!
 
 ## References
 
-- [Brainfuck Wiki][3]
+- [Boo Wiki][3]
 
 
 [1]: https://github.com/subhayuroy/sample-programs/blob/master/archive/b/boo/helloworld.boo
