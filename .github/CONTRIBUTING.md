@@ -40,20 +40,20 @@ links to language references and a list of fun facts.
 The testinfo.yml provides information about the projects in the folder
 to our testing library.
 
-Naturally, if you wish to add a completely new language to the repository, you'll
-need to follow this repository structure.
+Naturally, if you wish to add a completely new language to the repository, you must
+follow this repository structure.
 
 ### Test
 
-Meanwhile, the test folder contains all of the testing related files. Tests are
+Meanwhile, the test folder contains all the testing related files. Tests are
 organized by project and administered through Glotter. This toolkit allows us
-to write blackbox tests in Python for any programming language. 
+to write black-box tests in Python for any programming language. 
 
 To see what projects are already covered, take a peek in the projects folder. 
 There, you'll find each test file which contains the set of valid and invalid
 tests. 
 
-To create your own tests, you'll need to either modify the existing test files
+To create your own tests, you must either modify the existing test files
 or create a new one for a new project. Keep in mind that tests must be written
 according to the [project documentation][44]. 
 
@@ -70,7 +70,7 @@ using lowercase alphanumeric character sequences separated by dashes only.
 If we do not adhere to this rule, we risk limiting contributors by platform.
 
 For example, let's say someone adds C\* to our repository. If we name the directory
-c\*, then Windows users will be unable to clone the repository. Instead, consider
+c\*, then Windows users cannot clone the repository. Instead, consider
 using c-star. The following table shares a few examples:
 
 | Language | Proper Directory Name |
@@ -84,8 +84,8 @@ Thanks for keeping this repository inclusive!
 
 ### Source Files
 
-Each source file must be named using the file name specified in the project description.
-However, the naming convention for the filename (capitalization, hyphenation, etc...)
+Each source file must be named using the filename specified in the project description.
+However, the naming convention for the filename (capitalization, hyphenation, etc.)
 should follow the industry standard for each language. If you are unsure of the naming
 convention for a given language, check the `testinfo.yaml` file found in the language directory.
 
@@ -116,7 +116,7 @@ We'll break these down in the following sections.
 
 Naturally, this repo contains a lot of code snippets. If you find any that are
 missing, you're free to add them. However, we are strict in the types of code
-snippets you can add. If you're looking for the most up to date list of code snippets,
+snippets you can add. If you're looking for the most up-to-date list of code snippets,
 check out the [projects page][44]. All snippets must adhere to the requirements outlined
 in their project page. If there's a code snippet you'd like to include that doesn't
 currently exist in the list of projects, head over to the [documentation repo][47] to 
@@ -131,19 +131,19 @@ For instance, let's say you find that the Python collection is missing both
 Hello World and Fibonacci, and you'd like to add them both. It would be to
 your advantage to then fork the repo and make a branch for each program.
 
-On your Hello World branch, you should add your sample program and update the
-Python README to reflect the change. Then, you should make a pull request.
+On your Hello World branch, add your sample program and update the
+Python README to reflect the change. Then make a pull request.
 Because you've made a branch, you won't have to wait for us to approve the change.
 You can quickly jump back to master and create a new branch for your next
 program.
 
-In this scenario, there will likely be a merge conflict that we can easily
+In this scenario, there will probably be a merge conflict that we can easily
 resolve when you make your pull request. This is the ideal workflow for this
 repo.
 
 #### Create READMEs for New Languages
 
-Ocassionally, there will be times when you may want to add a new language to the repo.
+Occasionally, there will be times when you may want to add a new language to the repo.
 When adding new languages, make sure you include a README using the following template:
 
 ```markdown
@@ -166,8 +166,8 @@ Welcome to Sample Programs in [Insert Language Here]!
 
 In the section labeled `[Insert List of Sample Program Additions Here]`, please
 add the name of the sample program you've added. Ideally, you would link to the
-article here. At this point, however, the article doesn't exist. Instead, you
-should create an issue for the article and link the issue here.
+article here. At this point, however, the article doesn't exist. Instead, create 
+an issue for the article and link the issue here.
 
 In addition, in the section labeled `[Insert List of Fun Facts Here]`, please
 add fun information like when the language debuted, who develops the language,
@@ -184,20 +184,20 @@ README. Every time a unique language syntax appears in the repo for a particular
 language, we track it in its README with links. Check out the [Python README][13]
 for an example.
 
-Don't worry if you forget any of this; we have a check list of reminders in the
+Don't worry if you forget any of this; we have a checklist of reminders in the
 pull request template. At any rate, let's have some fun!
 
 ### Tests
 
 All tests are automatically run as part of the build process for this project.
-Running all tests does take some time due to the nature of the project.
+Running all tests takes some time due to the project.
 When making a pull request, please ensure all tests passed in travis.
 We cannot merge any pull requests with failing tests.
 
 #### Writing Testable Code
 
-Since this project is basically just a large collection of related, but isolated files,
-we have decided to automate testing using predefined test cases as input and checking for expected output.
+Since this project is basically just an enormous collection of related, but isolated files,
+we have decided to automate testing using pre-defined test cases as input and checking for expected output.
 All programs that require input should take that input as command line arguments.
 They should then print the output of the program to the console.
 **Each program should print the expected result of the program with no other output.**
@@ -207,16 +207,16 @@ refer to "Testing" section of each [project documentation][44].
 Each project has a table containing a short name for the test,
 the input that will be used for the test and the expected output.
 
-Next make sure to follow the naming conventions specified in the [Naming Conventions][2] section above.
+Next, follow the naming conventions specified in the [Naming Conventions][2] section above.
 To see the naming conventions for projects that have existing tests refer to the "words"
 list in the [.glotter.yml][46] and to the `testinfo.yml` file in the language folder.
 
 #### Running Tests Locally
 
-In order to run the tests locally, **you will need the following dependencies**:
+To run the tests locally, **you will need the following dependencies**:
 
 - Docker
-  - As there are so many languages contained in this project, we use docker to automatically generate
+  - As there are so many languages in this project, we use docker to automatically generate
     consistent, stable build/test environments.
 - Python 3.7+
   - We use glotter as our testing library. Make sure you have python installed.
@@ -242,16 +242,16 @@ Some common cases for testing are outlined below.
 #### Writing Tests
 
 Currently, @auroq handles most of the test writing. However, if you would like to contribute your own
-test files, get in touch with him. Alternatively, you can use the existing examples to try to write
+test files, get in touch with him. Alternatively, you can use the existing examples to write
 your own tests. Be aware that writing tests is a huge process that may or may not result in the
 modification of many existing files. 
 
 ## Plagiarism
 
 **Please** do not submit work that is copied from another source. If work is found to be
-plagiarized, the issue must be remedied ASAP. The quickest solution is to cite the source--a citation
+plagiarized, the issue must be remedied ASAP. The quickest solution is to cite the source—a citation
 in the README would suffice. After that, the solution should be adapted as needed. If necessary, the
-solution will be removed at the authors request.
+solution will be removed at the author's request.
 
 Whenever possible, **please** request the original author to share their solution with this repo. This
 keeps the repo tidy by eliminating the need for citations.

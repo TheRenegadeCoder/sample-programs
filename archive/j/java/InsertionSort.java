@@ -54,15 +54,11 @@ public class InsertionSort {
             numList.set(k+1, val);
         }
         //display the sorted list to the user
-        String str="";
-        for(int i=0;i<numList.size()-1;i++) {
-            str+=String.valueOf(numList.get(i));
-            str+=", ";
+        for(int i=0; i < numList.size() - 1; i++) {
+            System.out.print(numList.get(i) + ", ");
         }
-        str+=String.valueOf(numList.get(numList.size()-1));
-        System.out.println(str);
+        System.out.print(numList.get(numList.size() - 1));
+        
     }
 
 }
-
-
