@@ -29,13 +29,13 @@ fn binary_search(search_arr: &Vec<i32>, target: &i32) -> Option<usize> {
 }
 
 fn main() {
-    let args: Vec<String> = env::args().collect();
-    let config = Config::new(&args);
-    
-    match binary_search(&config.arr, &config.target) {
-      Some(_) => println!("true"),
-      None => println!("false"),
-    }
+  let args: Vec<String> = env::args().collect();
+  let config = Config::new(&args);
+  
+  match binary_search(&config.arr, &config.target) {
+    Some(_) => println!("true"),
+    None => println!("false"),
+  }
 }
 
 struct Config {
