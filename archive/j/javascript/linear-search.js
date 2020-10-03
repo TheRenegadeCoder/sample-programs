@@ -30,7 +30,7 @@ const exit = () => {
 const main = (input, key) => {
     try {
         arr = sanitizeArray(input);
-        arr.length <= 1 || key == undefined ? exit() : console.log(LinSearch(arr, key));
+        arr.length < 1 || key == undefined ? exit() : console.log(LinSearch(arr, key));
     } catch(err) {
         exit();
     }
