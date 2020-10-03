@@ -5,15 +5,20 @@ public class LinearSearch {
     public static void main(String[] args) {
         try {
             ArrayList<Integer> listOfNumbers = new ArrayList<>();
-            String[] NumberArray = args[0].split(",");
+            Integer keyToSearch = Integer.parseInt(args[0]);
+            String[] NumberArray = args[1].split(",");
             for(String Number: NumberArray) {
                 listOfNumbers.add(Integer.parseInt(Number.trim()));
             }
-            Integer keyToSearch = Integer.parseInt(args[1]);
             if(listOfNumbers.size() >= 2){
                 StringBuilder output = new StringBuilder();
-                Boolean searched = linearSearch(listOfNumbers, keyToSearch);
-                System.out.println(searched);
+                Integer searched = linearSearch(listOfNumbers, keyToSearch);
+                if(searched != -1) {
+                    System.out.println(keyToSearch + " found at position " + searched + ".");
+                } else {
+                    System.out.println(keyToSearch + " not found in the array.");
+                }
+
             }else{
                 System.out.println("Usage: please provide a list of at least two integers to search in the format \"1, 2, 3, 4, 5\"");
             }
@@ -23,11 +28,11 @@ public class LinearSearch {
         }
     }
 
-    private static Boolean linearSearch(ArrayList<Integer> list, Integer keyToSearch) {
-        Boolean ans = false;
+    private static Integer linearSearch(ArrayList<Integer> list, Integer keyToSearch) {
+        Integer ans = -1;
         for (Integer number : list) {
             if(number == keyToSearch) {
-                ans = true;
+                ans = list.indexOf(number);
                 break;
             }
         }
