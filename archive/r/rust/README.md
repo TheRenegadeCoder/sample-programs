@@ -16,6 +16,7 @@ Welcome to Sample Programs in Rust!
 - [Factorial in Rust](https://github.com/TheRenegadeCoder/sample-programs/pull/1831)
 - [Prime Number in Rust](https://github.com/TheRenegadeCoder/sample-programs/pull/1832)
 - [Binary Search in Rust](https://github.com/TheRenegadeCoder/sample-programs/pull/2085)
+- [Merge Sort in Rust](https://github.com/TheRenegadeCoder/sample-programs/pull/2107)
 
 ## Fun Facts
 
