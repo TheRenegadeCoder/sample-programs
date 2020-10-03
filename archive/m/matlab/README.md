@@ -13,6 +13,7 @@ Welcome to Sample Programs in MATLAB!
 - [Hello World in MATLAB][3]
 - Odd Even in MATLAB
 - Prime Number in MATLAB
+- [Reverse in MATLAB][5]
 - [Selection Sort in MATLAB][4]
 
 ## Fun Facts
@@ -31,3 +32,4 @@ Welcome to Sample Programs in MATLAB!
 [2]: https://github.com/TheRenegadeCoder/sample-programs/issues/1452
 [3]: https://therenegadecoder.com/code/hello-world-in-matlab/
 [4]: https://github.com/TheRenegadeCoder/sample-programs/issues/1463
+[5]: https://github.com/TheRenegadeCoder/sample-programs/issues/1460
