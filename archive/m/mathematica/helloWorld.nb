@@ -1,0 +1,2 @@
+(* Hello world in Mathematica *)
+Print["Hello World!"]
