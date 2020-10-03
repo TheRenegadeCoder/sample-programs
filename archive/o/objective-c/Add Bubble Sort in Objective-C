@@ -1,15 +1,14 @@
-//Begin test Bubble Sorting Code
+
     NSArray *dArray =@[@101, @201, @301,@121,@11,@123,@21,@14,@32,@76,@89,@987,@65];
     NSMutableArray *dataArray = [NSMutableArray arrayWithArray:dArray];
-
-    //Check Bubble Sort
+    
     NSArray *bubbleSortedArray = [self bubbleSort:dataArray];
     NSLog(@"bubbleSortCount %d",bubbleSortCount);     //Number of Iterations //bubbleSortCount is a static variable initialized to 0 //Gives the average & worst case of n^2
     NSLog(@"bubbleSortedArray %@",bubbleSortedArray); //Prints the sorted array
     bubbleSortCount =0;  //Reinitialize the static variable to 0 to retest
     NSLog(@"bubbleSortedArray %@",[self bubbleSort:bubbleSortedArray]); //Resort the already sorted array
     NSLog(@"bubbleSortCount %d",bubbleSortCount); //Gives the best case count of n
-//End test Bubble Sorting Code
+
 
 -(NSArray *)bubbleSort:(NSMutableArray *)unsortedDataArray
 {
