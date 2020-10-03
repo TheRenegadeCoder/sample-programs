@@ -18,6 +18,7 @@ Welcome to Sample Programs in Java!
 - [Hello World in Java](https://therenegadecoder.com/code/hello-world-in-java/)
 - [Insertion Sort in Java](https://sample-programs.therenegadecoder.com/projects/insertion-sort/)
 - [Job Sequencing in Java](https://sample-programs.therenegadecoder.com/projects/job-sequencing-with-deadlines/)
+- [Linear Search in Java](LinearSearch.java)
 - [Longest Common Sub Sequence in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/1364)
 - [Merge Sort in Java](https://sample-programs.therenegadecoder.com/projects/merge-sort/)
 - [Prime Number in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/1372)
