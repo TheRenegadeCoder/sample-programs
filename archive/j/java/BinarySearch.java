@@ -6,8 +6,8 @@ class BinarySearch
    public static void main(String args[])
    {
       int counter, item, first, last, middle;
-	  int array[] = {10,20,30,40,50};
-      item = 30;
+      int array[] = {1, 4, 5, 11, 12};
+      item = 11;
       first = 0;
       last = array.length - 1;
       middle = (first + last)/2;
