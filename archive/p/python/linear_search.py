@@ -9,7 +9,7 @@ def linear_search(array: list, key: int) -> bool:
             return True
     return False
 
-if len(sys.argv) != 2:
+if len(sys.argv) != 3 or not sys.argv[1]:
     print('Usage: please provide a list of sorted integers ("1, 4, 5, 11, 12") and the integer to find ("11")')
 else:
     key = int(sys.argv[2])
