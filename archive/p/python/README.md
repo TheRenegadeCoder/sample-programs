@@ -19,6 +19,7 @@ Welcome to Sample Programs in Python!
 - [Hello World in Python][0]
 - [Insertion Sort in Python][34]
 - [Job Sequencing with Deadlines in Python][30]
+- [Kadane's Algorithm in Pythone][46]
 - [Longest Common Subsequence][26]
 - [Longest Palindromic Subsequence][42]
 - [Merge Sort in Python][35]
@@ -152,3 +153,4 @@ Welcome to Sample Programs in Python!
 [43]: https://github.com/TheRenegadeCoder/sample-programs/issues/1536
 [44]: https://github.com/TheRenegadeCoder/sample-programs/issues/1535
 [45]: https://github.com/TheRenegadeCoder/sample-programs/issues/1988
+[46]: https://github.com/TheRenegadeCoder/sample-programs/issues/2054
