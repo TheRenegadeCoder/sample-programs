@@ -1,29 +1,15 @@
 /* Program: Binary Search
  * Input: Number of elements, element's values, value to be searched
  * Output:Position of the number input by user among other numbers*/
-import java.util.Scanner;
 class BinarySearch
 {
    public static void main(String args[])
    {
-      int counter, num, item, array[], first, last, middle;
-      //To capture user input
-      Scanner input = new Scanner(System.in);
-      System.out.println("Enter number of elements:");
-      num = input.nextInt(); 
-
-      //Creating array to store the all the numbers
-      array = new int[num];
-
-      System.out.println("Enter " + num + " integers");
-      //Loop to store each numbers in array
-      for (counter = 0; counter < num; counter++)
-          array[counter] = input.nextInt();
-
-      System.out.println("Enter the search value:");
-      item = input.nextInt();
+      int counter, item, first, last, middle;
+	  int array[] = {10,20,30,40,50};
+      item = 30;
       first = 0;
-      last = num - 1;
+      last = array.length - 1;
       middle = (first + last)/2;
 
       while( first <= last )
