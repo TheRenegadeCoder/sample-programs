@@ -1,3 +1,7 @@
+#![feature(is_sorted)]
+
+use std::env;
+
 fn binary_search(search_arr: &Vec<i32>, target: &i32) -> Option<usize> {
   let mut low: i8 = 0;
   let mut high: i8 = search_arr.len() as i8 - 1;
@@ -24,19 +28,37 @@ fn binary_search(search_arr: &Vec<i32>, target: &i32) -> Option<usize> {
   return None;
 }
 
-
 fn main() {
-    let arr_1 = vec![0, 3, 6, 8, 9, 10, 12];
-    let target_1 = 6;
+    let args: Vec<String> = env::args().collect();
+    let config = Config::new(&args);
+    
+    match binary_search(&config.arr, &config.target) {
+      Some(_) => println!("true"),
+      None => println!("false"),
+    }
+}
 
-    if let Some(i) = binary_search(&arr_1, &target_1) {
-      println!("Target {} found at index {} in arr {:?}", target_1, i, arr_1);
+struct Config {
+  arr: Vec<i32>,
+  target: i32,
+}
+
+impl Config {
+  fn new(args: &[String]) -> Config {
+    let err_msg = "Usage: please provide a list of sorted integers \"1 4 5 11 12\" and the integer to find \"11\"";
+
+    if args.len() < 3 {
+      panic!(err_msg);
+    }
+    
+    let arr: Vec<i32> = args[1].clone().split_whitespace().map(|s| s.parse().expect(err_msg)).collect();
+
+    if !arr.is_sorted() {
+      panic!(err_msg);
     }
 
-    let arr_2 = vec![0, 3, 6, 8, 9, 10, 12];
-    let target_2 = 11;
+    let target = args[2].clone().parse().expect(err_msg);
 
-    if let None = binary_search(&arr_2, &target_2) {
-      println!("Target {} not found in arr {:?}", target_2, arr_2);
-    }
+    Config { arr, target }
+  }
 }
