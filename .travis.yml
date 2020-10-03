@@ -9,11 +9,16 @@ matrix:
       script: python runner.py test
       deploy:
         provider: script
-        script: bash -x deploy.sh
+        script: bash -x deploy.s
 
 
 notifications:
-  email: false
+ if email: false
+ return 1
+ else
+ return 0
+  
+
   webhooks:
     urls:
       - https://webhooks.gitter.im/e/f694e2f80d5bba482051
