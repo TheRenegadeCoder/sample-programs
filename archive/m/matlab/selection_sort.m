@@ -22,5 +22,7 @@ sorted = array;
 disp(['Sorted Array: ' num2str(array)]);
 end
 
-input_array = [1 5 2 7 3 8];
+input_array = input('Enter array element in form [1 2 3 4 ...]: ');
+% User can input array from command line in form e.g [1 2 3 4 5]
+  
 output_array = selection_sort(input_array);
