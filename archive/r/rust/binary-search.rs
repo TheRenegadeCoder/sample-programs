@@ -29,36 +29,28 @@ fn binary_search(search_arr: &Vec<i32>, target: &i32) -> Option<usize> {
 }
 
 fn main() {
+  let err_msg = "Usage: please provide a list of sorted integers \"1, 4, 5, 11, 12\" and the integer to find \"11\"";
   let args: Vec<String> = env::args().collect();
-  let config = Config::new(&args);
+
+  if args.len() < 3 {
+    panic!(err_msg);
+  }
+
+  let arr: Vec<i32> = args[1].clone()
+    .split(",")
+    .map(|s| s.trim().parse().expect(err_msg))
+    .collect();
+
+  if !arr.is_sorted() {
+    panic!(err_msg);
+  }
   
-  match binary_search(&config.arr, &config.target) {
+  let target = args[2].clone()
+    .parse()
+    .expect(err_msg);
+  
+  match binary_search(&arr, &target) {
     Some(_) => println!("true"),
     None => println!("false"),
-  }
-}
-
-struct Config {
-  arr: Vec<i32>,
-  target: i32,
-}
-
-impl Config {
-  fn new(args: &[String]) -> Config {
-    let err_msg = "Usage: please provide a list of sorted integers \"1, 4, 5, 11, 12\" and the integer to find \"11\"";
-
-    if args.len() < 3 {
-      panic!(err_msg);
-    }
-    
-    let arr: Vec<i32> = args[1].clone().split(",").map(|s| s.trim().parse().expect(err_msg)).collect();
-
-    if !arr.is_sorted() {
-      panic!(err_msg);
-    }
-
-    let target = args[2].clone().parse().expect(err_msg);
-
-    Config { arr, target }
   }
 }
