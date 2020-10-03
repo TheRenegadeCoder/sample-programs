@@ -15,6 +15,7 @@ Welcome to Sample Programs in Rust!
 - [Even/Odd Number in Rust](https://github.com/TheRenegadeCoder/sample-programs/pull/1829)
 - [Factorial in Rust](https://github.com/TheRenegadeCoder/sample-programs/pull/1831)
 - [Prime Number in Rust](https://github.com/TheRenegadeCoder/sample-programs/pull/1832)
+- [Binary Search in Rust](https://github.com/TheRenegadeCoder/sample-programs/pull/2085)
 
 ## Fun Facts
 

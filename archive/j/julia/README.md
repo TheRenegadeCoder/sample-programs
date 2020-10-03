@@ -4,10 +4,11 @@ Welcome to Sample Programs in Julia!
 
 ## Sample Programs
 
-- [Hello World in Julia](https://therenegadecoder.com/code/hello-world-in-julia/)
 - [Baklava in Julia](https://github.com/TheRenegadeCoder/sample-programs/pull/485)
+- [Bubble Sort in Julia](https://github.com/TheRenegadeCoder/sample-programs/pull/1935)
 - [Fibonacci in Julia](https://github.com/TheRenegadeCoder/sample-programs/issues/529)
 - [FizzBuzz in Julia](https://github.com/TheRenegadeCoder/sample-programs/issues/532)
+- [Hello World in Julia](https://therenegadecoder.com/code/hello-world-in-julia/)
 
 ## Fun Facts
 
