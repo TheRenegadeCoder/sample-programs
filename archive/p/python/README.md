@@ -10,6 +10,7 @@ Welcome to Sample Programs in Python!
 - [Binary Search][31]
 - [Bubble Sort in Python][31]
 - Capitalize in Python
+- [Collatz conjecture](https://en.wikipedia.org/wiki/Collatz_conjecture)
 - [Even Odd in Python][32]
 - [Factorial in Python][33]
 - [Fibonacci Sequence in Python][24]
