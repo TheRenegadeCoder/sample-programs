@@ -45,13 +45,13 @@ struct Config {
 
 impl Config {
   fn new(args: &[String]) -> Config {
-    let err_msg = "Usage: please provide a list of sorted integers \"1 4 5 11 12\" and the integer to find \"11\"";
+    let err_msg = "Usage: please provide a list of sorted integers \"1, 4, 5, 11, 12\" and the integer to find \"11\"";
 
     if args.len() < 3 {
       panic!(err_msg);
     }
     
-    let arr: Vec<i32> = args[1].clone().split_whitespace().map(|s| s.parse().expect(err_msg)).collect();
+    let arr: Vec<i32> = args[1].clone().split(",").map(|s| s.trim().parse().expect(err_msg)).collect();
 
     if !arr.is_sorted() {
       panic!(err_msg);
