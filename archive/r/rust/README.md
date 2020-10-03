@@ -18,6 +18,7 @@ Welcome to Sample Programs in Rust!
 - [Binary Search in Rust](https://github.com/TheRenegadeCoder/sample-programs/pull/2085)
 - [Merge Sort in Rust](https://github.com/TheRenegadeCoder/sample-programs/pull/2107)
 - [Insertion Sort in Rust](https://github.com/TheRenegadeCoder/sample-programs/pull/2103)
+- [Bubble Sort in Rust](https://github.com/TheRenegadeCoder/sample-programs/pull/2113)
 
 ## Fun Facts
 
