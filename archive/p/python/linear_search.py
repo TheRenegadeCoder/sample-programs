@@ -7,8 +7,8 @@ if(len(sys.argv) != 2):
     print("Enter two arguments: key and string containing array elements")
     sys.exit()
 
-key = int(sys.argv[1])
-array = sysarg_to_list(sys.argv[2])
+key = int(sys.argv[2])
+array = sysarg_to_list(sys.argv[1])
 size = len(array)
 
 flag = 0
