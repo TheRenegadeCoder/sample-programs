@@ -18,6 +18,7 @@ Welcome to Sample Programs in JavaScript!
 -   [Insertion sort in JavaScript][16]
 -   [Import in JavaScript][13]
 -   Linear Search in JavaScript
+-   Game Mars Probe
 -   [Prime Number in JavaScript][14]
 -   [Reverse a String in JavaScript (No Emoji Support)][3]
 -   [Roman Numeral Conversion in JavaScript][17]
