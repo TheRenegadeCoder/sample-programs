@@ -4,7 +4,7 @@ def sysarg_to_list(string):
     return [int(x.strip(" "), 10) for x in string.split(',')]
 
 if(len(sys.argv) != 2):
-    print("Enter two arguments: key and string containing array elements")
+    print('Usage: please provide a list of sorted integers ("1, 4, 5, 11, 12") and the integer to find ("11")')
     sys.exit()
 
 key = int(sys.argv[2])
@@ -20,7 +20,4 @@ for i in range(size):
         pos = i
         break
 
-if(flag):
-    print(key, "found at position", pos, ".")
-else:
-    print(key, "not in the array.")
+print(flag)
