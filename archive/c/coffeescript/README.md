@@ -4,10 +4,11 @@ Welcome to Sample Programs in CoffeeScript!
 
 ## Sample Programs
 
-- [Hello World in CoffeeScript](https://github.com/TheRenegadeCoder/sample-programs/issues/924)
 - [Factorial in CoffeeScript](https://github.com/TheRenegadeCoder/sample-programs/issues/1316)
-- [FizzBuzz in CoffeeScript](https://github.com/TheRenegadeCoder/sample-programs/issues/1313)
 - [File IO in CoffeeScript](https://github.com/TheRenegadeCoder/sample-programs/issues/1317)
+- [FizzBuzz in CoffeeScript](https://github.com/TheRenegadeCoder/sample-programs/issues/1313)
+- [Hello World in CoffeeScript](https://github.com/TheRenegadeCoder/sample-programs/issues/924)
+- [Quine in CoffeeScript](https://github.com/TheRenegadeCoder/sample-programs/issues/1309)
 
 ## Fun Facts
 
