@@ -6,13 +6,6 @@
 
     This is a P4 Even Odd code:
 
-    When a packet arrives to the switch with some payload
-    data of 88 bites, the switch will forward the packet 
-    changing the payload to "Hello World".
-
-    The program is not intended to calculate a new checksum,
-    many errors can occur avoiding that process.
-
     We defined a new packet header "operation" as follow:
 
                     0                                     1
@@ -32,7 +25,7 @@
     is 1; it is even if its last digit is 0. The result will be set in flag.
 
 
-    
+
 
     @ecwolf
 
