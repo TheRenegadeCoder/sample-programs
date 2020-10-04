@@ -13,6 +13,7 @@ Welcome to Sample Programs in C++!
 - [Factorial in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1237)
 - [Fibonacci Sequence in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/496)
 - [File Input/Output in C++](https://therenegadecoder.com/code/file-io-in-c-plus-plus/)
+- [Fisher-Yates shuffling algorithm]
 - [Fizz Buzz in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1238)
 - [Fractions in c++](https://github.com/TheRenegadeCoder/sample-programs/tree/master/archive/c/c-plus-plus/)
 - [Game of Life in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1239)
@@ -41,3 +42,4 @@ Welcome to Sample Programs in C++!
 - [C++ Online Compiler](http://cpp.sh/)
 - [Game of life wiki](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
 - [Mario Talevski project](https://github.com/MarioTalevski/game-of-life)
+- [Fisher-Yates shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle)
