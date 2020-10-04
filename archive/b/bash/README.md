@@ -20,6 +20,7 @@ Welcome to Sample Programs in Bash!
 - [Quick Sort in Bash][14]
 - [Reverse String in Bash][3]
 - [ROT13 in Bash][11]
+- [Quine in Bash][18]
 
 ## Fun Facts
 
@@ -47,3 +48,4 @@ Welcome to Sample Programs in Bash!
 [15]: https://github.com/TheRenegadeCoder/sample-programs/issues/1227
 [16]: https://github.com/TheRenegadeCoder/sample-programs/issues/1220
 [17]: https://github.com/TheRenegadeCoder/sample-programs/issues/1218
+[18]: https://github.com/TheRenegadeCoder/sample-programs/issues/1229
