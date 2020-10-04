@@ -1,6 +1,6 @@
 # Sample Programs in BAIK
 
-Welcome to Sample Programs in BAIK! (Bahasa Anak Indonesia untuk Komputer)
+Welcome to Sample Programs in BAIK (Bahasa Anak Indonesia untuk Komputer)
 
 ## Fun Facts
 
@@ -11,4 +11,4 @@ Welcome to Sample Programs in BAIK! (Bahasa Anak Indonesia untuk Komputer)
 ## References
 
 - [BAIK Website](https://baik-lang.id/)
-- [Baik GitHub](https://github.com/baik-lang/)
+- [BAIK GitHub](https://github.com/baik-lang/)
