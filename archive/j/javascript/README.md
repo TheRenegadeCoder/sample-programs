@@ -17,6 +17,7 @@ Welcome to Sample Programs in JavaScript!
 -   [Hello World in JavaScript][2]
 -   [Insertion sort in JavaScript][16]
 -   [Import in JavaScript][13]
+-   Linear Search in JavaScript
 -   [Prime Number in JavaScript][14]
 -   [Reverse a String in JavaScript (No Emoji Support)][3]
 -   [Roman Numeral Conversion in JavaScript][17]
@@ -26,6 +27,7 @@ Welcome to Sample Programs in JavaScript!
 -   [Rotate by 13 in JavaScript][21]
 -   [Game of Life in JavaScript][22]
 -	[Merge Sort in JavaScript][23]
+-	[Quine in JavaScript][24]
 
 ## Fun Facts
 
@@ -63,3 +65,4 @@ Welcome to Sample Programs in JavaScript!
 [20]: https://github.com/TheRenegadeCoder/sample-programs/issues/1379
 [22]: https://github.com/TheRenegadeCoder/sample-programs/issues/1377
 [23]: https://github.com/TheRenegadeCoder/sample-programs/issues/1385
+[24]: https://github.com/TheRenegadeCoder/sample-programs/issues/1384

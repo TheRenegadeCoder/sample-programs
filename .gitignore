@@ -13,3 +13,5 @@ __pycache__/
 .scratch
 # erlang
 *.beam
+
+.DS_Store

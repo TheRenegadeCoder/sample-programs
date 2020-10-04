@@ -12,7 +12,7 @@ Find which section best describes your pull request and make sure you fill it ou
 - [ ] I named the pull request using `Added/Updated <Sample Program> in <Language>` format
 - [ ] I created/updated the language README
   - [ ] I added the sample program name to the README
-  - [ ] I added fun facts (i.e. debut, developer, typing, etc.)
+  - [ ] I added fun facts (i.e. debut developer, typing, etc.)
   - [ ] I added reference link(s) to the README
   - [ ] I added solution citations when necessary (see [plagiarism][2])
 
