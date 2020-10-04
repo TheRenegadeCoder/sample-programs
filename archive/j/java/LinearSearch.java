@@ -10,16 +10,16 @@ public class LinearSearch {
             for(String Number: NumberArray) {
                 listOfNumbers.add(Integer.parseInt(Number.trim()));
             }
-            if(listOfNumbers.size() >= 2){
+            if(listOfNumbers.size() >= 1){
                 StringBuilder output = new StringBuilder();
                 Boolean searched = linearSearch(listOfNumbers, keyToSearch);
                 System.out.println(searched);
             }else{
-                System.out.println("Usage: please provide a list of at least two integers to search in the format \"1, 2, 3, 4, 5\"");
+                System.out.println("Usage: please provide a list of sorted integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")");
             }
         }
         catch(Exception e) {
-            System.out.println("Usage: please provide a list of at least two integers to search in the format \"1, 2, 3, 4, 5\"");
+            System.out.println("Usage: please provide a list of sorted integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")");
         }
     }
 
