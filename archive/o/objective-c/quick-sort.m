@@ -20,7 +20,7 @@
     
     int numberOfItems = (int)[dataset count];
     
-    if (numberOfItems < 1) {
+    if (numberOfItems < 2) {
         return dataset;
     }
     
