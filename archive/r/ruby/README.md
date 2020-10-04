@@ -14,6 +14,7 @@ Welcome to Sample Programs in Ruby!
 - [Quine in Ruby][4]
 - [Reverse String in Ruby][11]
 - Even Odd in Ruby
+- [Roman Numeral Conversion][14]
 
 ## Fun Facts
 
@@ -41,3 +42,4 @@ Welcome to Sample Programs in Ruby!
 [11]: https://therenegadecoder.com/code/reverse-a-string-in-ruby/
 [12]: https://github.com/TheRenegadeCoder/sample-programs/issues/542
 [13]: https://github.com/TheRenegadeCoder/sample-programs/issues/1023
+[14]: https://github.com/TheRenegadeCoder/sample-programs/issues/1532
