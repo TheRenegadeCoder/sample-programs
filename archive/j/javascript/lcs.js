@@ -48,7 +48,7 @@ function lcs(arr1, arr2) {
 }
 
 //Usage Text
-const usage = `Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"`;
+const usage = `“Usage: please provide two lists in the format “1, 2, 3, 4, 5”`;
 if(process.argv.length <4 || process.argv[2] == "" || process.argv[3] == "") {
   console.log(usage);
   return;
