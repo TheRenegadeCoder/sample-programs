@@ -22,4 +22,4 @@ Welcome to Sample Programs in P4!
 [0]: https://github.com/TheRenegadeCoder/sample-programs/issues/2117
 [1]: https://p4.org/code/
 [2]: https://github.com/p4lang/p4c
-[0]: https://github.com/TheRenegadeCoder/sample-programs/issues/2125
+[3]: https://github.com/TheRenegadeCoder/sample-programs/issues/2125
