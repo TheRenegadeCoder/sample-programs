@@ -24,6 +24,7 @@ Welcome to Sample Programs in Java!
 - [ROT-13 in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/1369)
 - [Selection Sort in Java](SelectionSort.java)
 - [Quick Sort in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/1370)
+- [Quine in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/1374)
 
 ## Fun Facts
 
