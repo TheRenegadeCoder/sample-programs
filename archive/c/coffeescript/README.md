@@ -7,6 +7,7 @@ Welcome to Sample Programs in CoffeeScript!
 - [Hello World in CoffeeScript](https://github.com/TheRenegadeCoder/sample-programs/issues/924)
 - [Factorial in CoffeeScript](https://github.com/TheRenegadeCoder/sample-programs/issues/1316)
 - [FizzBuzz in CoffeeScript](https://github.com/TheRenegadeCoder/sample-programs/issues/1313)
+- [Quine in CoffeeScript](https://github.com/TheRenegadeCoder/sample-programs/issues/1309)
 
 ## Fun Facts
 
