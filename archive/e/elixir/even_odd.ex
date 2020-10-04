@@ -3,7 +3,7 @@ defmodule EvenOdd do
 
     @doc """
     Determine whether a supplied number is Even or Odd.
-    Return a 'usage' string if the argument is invalid. 
+    Return an error-string if the argument is missing or invalid. 
     """
     @spec main(argv :: list( String.t())) :: String.t()
     def main(argv) do
