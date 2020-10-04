@@ -1,0 +1,46 @@
+# ###################################
+#  Contoh Bubble Sort
+# ###################################
+tulis "Bubble Sort dengan BAIK\n"
+
+x[] = {9, 4, 6, 2, 1, 8}
+
+NUMDATA = panjang x
+tulis "NUMDATA = ", NUMDATA, "\n"
+tulis "------------------------\n"
+
+tulis "Sebelum Bubble sort : "
+&ShowData(x, NUMDATA)
+
+x = &BubleSort(x, NUMDATA)
+
+tulis "Setelah Bubble sort : "
+&ShowData(x, NUMDATA)
+
+tamat
+# ####################################
+
+fungsi ShowData(X, N) {
+  untuk(i=0; i<N; i=i+1) ulang
+   tulis X[i], " "
+  lagi
+  tulis "\n"
+}
+
+fungsi BubleSort(XX, NN) {
+  untuk(k=0; k < NN - 1; k=k+1) ulang
+    tulis "-->sorting step=",k,"\n"
+    untuk(l=NN-1; l > k; l=l-1) ulang
+
+      kalau XX[l-1] > XX[l] maka
+        tmp = XX[l]
+        XX[l] = XX[l-1]
+        XX[l-1] = tmp
+      akhirkalau
+
+    lagi
+
+    &ShowData(XX, NN)
+  lagi
+  balik XX
+}

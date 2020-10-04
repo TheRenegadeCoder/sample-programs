@@ -1,0 +1,26 @@
+tulis "tes rekursif dgn BAIK - Faktorial\n"
+
+A = 5
+
+F = &tesFaktorial(A)
+tulis "F=",F,"\n"
+
+tulis "== selesai ==\n"
+
+tamat
+
+fungsi tesFaktorial(a) {
+  ret = 1
+  tulis "a start=",a,"\n"
+
+  kalau a == 1 maka
+    ret = 1
+  lainnya
+    b = &tesFaktorial(a - 1)
+    ret = a * b
+  akhirkalau
+
+  tulis "a end=",a,"\n"
+
+  balik ret
+}

@@ -1,0 +1,81 @@
+# #######################
+#  Contoh Quick Sort
+# #######################
+tulis "Quick Sort dengan BAIK\n"
+global NUMDATA
+
+x[] = {9, 4, 6, 2, 1, 7}
+
+NUMDATA = panjang x
+tulis "NUMDATA = ", NUMDATA, "\n"
+
+tulis "------------------------\n"
+
+tulis "Sebelum Quick sort : "
+&ShowData(x, NUMDATA)
+
+&QuickSort(x, 0, 5)
+
+tulis "Setelah Quick sort : "
+&ShowData(x, NUMDATA)
+
+tamat
+# ####################################
+
+fungsi ShowData(XX, TOT) {
+  untuk(k=0; k<TOT; k=k+1) ulang
+   tulis XX[k], " "
+  lagi
+
+  tulis "\n"
+}
+
+fungsi Swap(X, x, y) {
+  tmp = X[x]
+  X[x] = X[y]
+  X[y] = tmp
+}
+
+
+fungsi QuickSort(X, left, right) {
+  i = left
+  j = right
+  mid = (left + right)/2
+
+  pivot = X[mid]
+  tulis "pivot = ", pivot, "\n"
+
+  selagi (1) lakukan
+    # tulis "X[i] = ", X[i], "\n"
+    selagi (X[i] < pivot) lakukan
+      # tulis "i = ", i, " , X[i] = ", X[i], "\n"
+      i++
+    baliklagi
+
+    selagi (pivot < X[j]) lakukan
+      # tulis "j = ", j, " , X[j] = ", X[j], "\n"
+      j--
+    baliklagi
+
+    kalau i >= j  maka keluarselagi
+
+    &Swap(X, i, j)
+    i++
+    j--
+
+  baliklagi
+
+  tulis "---> setelah swap sorting\n"
+  &ShowData(X, NUMDATA)
+
+  I = i - 1
+  kalau(left < I) maka
+    &QuickSort(X, left, I)
+  akhirkalau
+
+  J = j + 1
+  kalau(J < right) maka
+    &QuickSort(X, J, right)
+  akhirkalau
+
+}

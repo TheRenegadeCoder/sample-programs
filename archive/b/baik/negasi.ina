@@ -1,0 +1,10 @@
+tulis "Tes Operasi Negasi - Bukan \n"
+
+A=1
+B=not A
+
+tulis "A=",A,"\n"
+tulis "B=",B,"\n"
+
+
+tamat
