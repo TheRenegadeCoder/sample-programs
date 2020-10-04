@@ -2,14 +2,6 @@
   (:gen-class)
   (:require [clojure.string :refer [join]]))
 
-(defn- is-valid-input [args]
-  (and
-    (not= (count args) 0)
-    (not= (Integer/parseUnsignedInt args) nil)))
-
-(defn- print-error []
-  (println "Usage: please provide a number"))
-
 (defn- is-multiple-of-3 [n]
   (= (mod n 3) 0))
 
@@ -26,10 +18,4 @@
 (defn- fizzbuzz [n]
   (join "\n" (map n-to-str (range 1 (+ n 1)))))
 
-(defn main [args]
-  (if (is-valid-input args)
-    (println (fizzbuzz (Integer/parseUnsignedInt args)))
-    (print-error)
-    ))
-
-(main (first *command-line-args*))
+(println (fizzbuzz 100))
