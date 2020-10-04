@@ -28,6 +28,7 @@ Welcome to Sample Programs in JavaScript!
 -   [Game of Life in JavaScript][22]
 -	[Merge Sort in JavaScript][23]
 -	[Quine in JavaScript][24]
+-   [LCS in JavaScript][28]
 
 ## Fun Facts
 
@@ -70,3 +71,4 @@ Welcome to Sample Programs in JavaScript!
 [25]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/j/javascript/even-odd.js
 [26]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/j/javascript/file-io.js
 [27]:https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/j/javascript/linear-search.js
+[28]: https://github.com/TheRenegadeCoder/sample-programs/issues/1381
