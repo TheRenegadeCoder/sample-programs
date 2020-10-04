@@ -44,11 +44,11 @@ function lcs(arr1, arr2) {
             
     }
     //Converting the LCS array into a comma separated string
-    console.log(result.join(','));
+    console.log(result.join(', '));
 }
 
 //Usage Text
-const usage = `“Usage: please provide two lists in the format “1, 2, 3, 4, 5”`;
+const usage = `Usage: please provide two lists in the format "1, 2, 3, 4, 5"`;
 if(process.argv.length <4 || process.argv[2] == "" || process.argv[3] == "") {
   console.log(usage);
   return;
