@@ -1,0 +1,1 @@
+echo $BASH_COMMAND
