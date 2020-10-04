@@ -11,10 +11,12 @@ Welcome to Sample Programs in Objective-C!
 - [Fizz Buzz in Objective-C](https://github.com/TheRenegadeCoder/sample-programs/issues/1492)
 - [Reverse a String in Objective-C](reverse-string.m)
 - [Merge sort in Objective-C](merge-sort.m)
+- [File IO in Objective-C](https://github.com/TheRenegadeCoder/sample-programs/issues/1482)
 
 ## Fun Facts
 
 - Debut: 1984
+- Objective-C is a superset of C, any C program can be compiled with an Objective-C compiler.
 
 ## References
 
