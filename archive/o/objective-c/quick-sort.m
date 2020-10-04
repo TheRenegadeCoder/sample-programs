@@ -9,14 +9,14 @@
 
 @interface QuickSort: NSObject
  
-- (NSArray *) quickSort:(NSArray *)dataset;
+- (NSArray *)quickSort:(NSArray *)dataset;
 - (NSString *)getUserInput;
 
 @end
 
 @implementation QuickSort
 
-- (NSArray *) quickSort:(NSArray *)dataset {
+- (NSArray *)quickSort:(NSArray *)dataset {
     
     int numberOfItems = (int)[dataset count];
     
@@ -63,7 +63,6 @@
     NSData *data = handle.availableData;
     NSString *input = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
     
-
     NSCharacterSet *set = [NSCharacterSet newlineCharacterSet];
     NSString *userInput = [input stringByTrimmingCharactersInSet:set];
 
