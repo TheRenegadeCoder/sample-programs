@@ -31,7 +31,7 @@ Welcome to Sample Programs in Python!
 - [ROT-13 in Python][38]
 - [Selection Sort in Python][39]
 - [Convex Hull in Python][44]
-- [Sleep sort in Python][https://github.com/TheRenegadeCoder/sample-programs/issues/1988]
+- [Sleep sort in Python][45]
 
 ## Fun Facts
 
@@ -47,14 +47,14 @@ Welcome to Sample Programs in Python!
   - [ ] The Power Operator
   - [ ] Unary Arithmetic and Bitwise Operations
     - [ ] The Plus (`+`) Operator
-    - [ ] The Minus (`-`) Operator
+    - [x] [The Minus (`-`) Operator][57]
     - [ ] The Invert (`~`) Operator
   - [ ] Binary Arithmetic Operations
     - [x] [The Addition (`+`) Operator][20]
     - [x] [The Subtraction (`-`) Operator][19]
-    - [ ] The Multiplication (`*`) Operator
+    - [x] [The Multiplication (`*`) Operator][48]
     - [x] [The Division (`/`) Operator][18]
-    - [ ] The Floor Division (`//`) Operator
+    - [x] [The Floor Division (`//`) Operator][58]
     - [ ] The Matrix Multiplication (`@`) Operator
     - [x] [The Modulus (`%`) Operator][9]
   - [ ] Shifting Operations
@@ -64,30 +64,30 @@ Welcome to Sample Programs in Python!
     - [ ] The Bitwise AND (`&`) Operation
     - [ ] The Bitwise OR (`|`) Operation
     - [ ] The Bitwise XIR (`^`) Operation
-  - [ ] Comparison Operations
+  - [x] Comparison Operations
     - [x] [The Less Than (`<`) Operator][14]
-    - [ ] The Less Than Equals (`<=`) Operator
+    - [x] [The Less Than Equals (`<=`) Operator][55]
     - [x] [The Equals (`==`) Operator][9]
-    - [ ] The Greater Than Equals (`>=`) Operator
+    - [x] [The Greater Than Equals (`>=`) Operator][56]
     - [x] [The Greater Than (`>`) Operator][13]
     - [x] [The Not Equals (`!=`) Operator][27]
-    - [ ] The `is` Operator
-    - [ ] The `in` Operator
-  - [ ] Boolean Operations
-    - [ ] The `or` Operator
+    - [x] [The `is` Operator][59]
+    - [x] [The `in` Operator][60]
+  - [x] Boolean Operations
+    - [x] [The `or` Operator][47]
     - [x] [The `and` Operator][14]
     - [x] [The `not` Operator][15]
   - [ ] Lambda
 - [ ] Simple Statements
   - [x] [Assignment Statement][5]
-  - [ ] The `assert` Statement
+  - [x] [The `assert` Statement][49]
   - [x] [The `pass` Statement][28]
-  - [ ] The `del` Statement
+  - [x] [The `del` Statement][50]
   - [x] [The `return` Statement][10]
-  - [ ] The `yield` Statement
+  - [x] [The `yield` Statement][50]
   - [ ] The `raise` Statement
-  - [x] The `break` Statement
-  - [ ] The `continue` Statement
+  - [x] [The `break` Statement][52]
+  - [x] [The `continue` Statement][53]
   - [x] [The `import` Statement][11]
   - [ ] The `global` Statement
   - [ ] The `nonlocal` Statement
@@ -95,8 +95,8 @@ Welcome to Sample Programs in Python!
   - [x] [The `if` Statement][9]
   - [x] [The `while` Statement][23]
   - [x] [The `for` Statement][12]
-  - [ ] The `try` Statement
-  - [ ] The `with` Statement
+  - [x] [The `try` Statement][46]
+  - [x] [The `with` Statement][54]
   - [x] [Function Definition][17]
   - [x] [Class Definition][16]
   - [ ] Coroutines
@@ -149,5 +149,22 @@ Welcome to Sample Programs in Python!
 [39]: https://github.com/TheRenegadeCoder/sample-programs/issues/870
 [40]: https://github.com/TheRenegadeCoder/sample-programs/issues/1161
 [41]: https://www.python.org/dev/peps/pep-0020/
+[42]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/longest_palindrome_substring.py
 [43]: https://github.com/TheRenegadeCoder/sample-programs/issues/1536
 [44]: https://github.com/TheRenegadeCoder/sample-programs/issues/1535
+[45]: https://github.com/TheRenegadeCoder/sample-programs/issues/1988
+[46]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/file_io.py#L3
+[47]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/capitalize.py#L8
+[48]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/factorial.py#L8
+[49]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/convex_hull.py#L10
+[50]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/bubble_sort.py#L13
+[51]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/fibonacci.py#L13
+[52]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/longest_palindrome_substring.py#L15
+[53]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/convex_hull.py#L79
+[54]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/file_io.py#L4
+[55]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/bubble_sort.py#L8
+[56]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/game_of_life.py#L141
+[57]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/binary_search.py#L15
+[58]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/longest_palindrome_substring.py#L17
+[59]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/prime_number.py#L7
+[60]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/rot_13.py#L7
