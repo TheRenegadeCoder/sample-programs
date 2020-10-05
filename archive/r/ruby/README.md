@@ -13,6 +13,7 @@ Welcome to Sample Programs in Ruby!
 - [Hello World in Ruby][2]
 - [Quine in Ruby][4]
 - [Reverse String in Ruby][11]
+- [Say Happy Birthday!]
 - Even Odd in Ruby
 
 ## Fun Facts
