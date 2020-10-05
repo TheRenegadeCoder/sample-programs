@@ -19,6 +19,7 @@ Welcome to Sample Programs in Bash!
 - [Prime Number][15]
 - [Quick Sort in Bash][14]
 - [Reverse String in Bash][3]
+- [Roman Numeral Conversion in Bash][19]
 - [ROT13 in Bash][11]
 - [Quine in Bash][18]
 
@@ -49,3 +50,5 @@ Welcome to Sample Programs in Bash!
 [16]: https://github.com/TheRenegadeCoder/sample-programs/issues/1220
 [17]: https://github.com/TheRenegadeCoder/sample-programs/issues/1218
 [18]: https://github.com/TheRenegadeCoder/sample-programs/issues/1229
+[19]: https://github.com/TheRenegadeCoder/sample-programs/issues/2144
+
