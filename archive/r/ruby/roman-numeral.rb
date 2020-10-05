@@ -21,10 +21,11 @@ def roman_valid?(roman_numbers)
 end
 
 def roman_to_decimal(full_roman_number)
+  return 'Usage: please provide a string of roman numerals' if full_roman_number.nil?
   return 0 if full_roman_number.empty?
 
   roman_numbers = full_roman_number.upcase.split('')
-  raise 'Invalid Roman Number' unless roman_valid?(roman_numbers)
+  return 'Error: invalid string of roman numerals' unless roman_valid?(roman_numbers)
 
   previous = 0
   total = 0
@@ -37,7 +38,7 @@ def roman_to_decimal(full_roman_number)
     previous = value
   end
 
-  p total
+  total
 end
 
-roman_to_decimal(ARGV[0])
+p roman_to_decimal(ARGV[0])
