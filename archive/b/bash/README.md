@@ -20,6 +20,9 @@ Welcome to Sample Programs in Bash!
 - [Quick Sort in Bash][14]
 - [Reverse String in Bash][3]
 - [ROT13 in Bash][11]
+- [Selection Sort in Bash][18]
+  - Solution borrowed from [technicalworldforyou][19]
+- [Quine in Bash][20]
 
 ## Fun Facts
 
@@ -47,3 +50,6 @@ Welcome to Sample Programs in Bash!
 [15]: https://github.com/TheRenegadeCoder/sample-programs/issues/1227
 [16]: https://github.com/TheRenegadeCoder/sample-programs/issues/1220
 [17]: https://github.com/TheRenegadeCoder/sample-programs/issues/1218
+[18]: https://github.com/TheRenegadeCoder/sample-programs/issues/1232
+[19]: http://technicalworldforyou.blogspot.com/2012/08/selection-sort-using-shell-script.html
+[20]: https://github.com/TheRenegadeCoder/sample-programs/issues/1229

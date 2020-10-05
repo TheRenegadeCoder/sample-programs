@@ -1,3 +1,4 @@
+
 # Sample Programs in Java
 
 Welcome to Sample Programs in Java!
@@ -17,6 +18,7 @@ Welcome to Sample Programs in Java!
 - [Hello World in Java](https://therenegadecoder.com/code/hello-world-in-java/)
 - [Insertion Sort in Java](https://sample-programs.therenegadecoder.com/projects/insertion-sort/)
 - [Job Sequencing in Java](https://sample-programs.therenegadecoder.com/projects/job-sequencing-with-deadlines/)
+- [Linear Search in Java](LinearSearch.java)
 - [Longest Common Sub Sequence in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/1364)
 - [Merge Sort in Java](https://sample-programs.therenegadecoder.com/projects/merge-sort/)
 - [Prime Number in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/1372)
@@ -37,3 +39,4 @@ Welcome to Sample Programs in Java!
 - [Java Wiki](https://en.wikipedia.org/wiki/Java_(programming_language))
 - [Java Docs](https://docs.oracle.com/en/java/)
 - [Java Online Compiler](https://www.jdoodle.com/online-java-compiler)
+
