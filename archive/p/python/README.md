@@ -52,7 +52,7 @@ Welcome to Sample Programs in Python!
   - [ ] Binary Arithmetic Operations
     - [x] [The Addition (`+`) Operator][20]
     - [x] [The Subtraction (`-`) Operator][19]
-    - [ ] The Multiplication (`*`) Operator
+    - [x] [The Multiplication (`*`) Operator][48]
     - [x] [The Division (`/`) Operator][18]
     - [ ] The Floor Division (`//`) Operator
     - [ ] The Matrix Multiplication (`@`) Operator
@@ -74,20 +74,20 @@ Welcome to Sample Programs in Python!
     - [ ] The `is` Operator
     - [ ] The `in` Operator
   - [ ] Boolean Operations
-    - [ ] The `or` Operator
+    - [x] The `or` Operator[47]
     - [x] [The `and` Operator][14]
     - [x] [The `not` Operator][15]
   - [ ] Lambda
 - [ ] Simple Statements
   - [x] [Assignment Statement][5]
-  - [ ] The `assert` Statement
+  - [x] [The `assert` Statement][49]
   - [x] [The `pass` Statement][28]
-  - [ ] The `del` Statement
+  - [x] [The `del` Statement][50]
   - [x] [The `return` Statement][10]
-  - [ ] The `yield` Statement
+  - [x] [The `yield` Statement][50]
   - [ ] The `raise` Statement
-  - [x] The `break` Statement
-  - [ ] The `continue` Statement
+  - [x] [The `break` Statement][52]
+  - [x] [The `continue` Statement][53]
   - [x] [The `import` Statement][11]
   - [ ] The `global` Statement
   - [ ] The `nonlocal` Statement
@@ -95,7 +95,7 @@ Welcome to Sample Programs in Python!
   - [x] [The `if` Statement][9]
   - [x] [The `while` Statement][23]
   - [x] [The `for` Statement][12]
-  - [ ] The `try` Statement
+  - [x] [The `try` Statement][46]
   - [ ] The `with` Statement
   - [x] [Function Definition][17]
   - [x] [Class Definition][16]
@@ -153,3 +153,12 @@ Welcome to Sample Programs in Python!
 [43]: https://github.com/TheRenegadeCoder/sample-programs/issues/1536
 [44]: https://github.com/TheRenegadeCoder/sample-programs/issues/1535
 [45]: https://github.com/TheRenegadeCoder/sample-programs/issues/1988
+[46]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/file_io.py#L3
+[47]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/capitalize.py#L8
+[48]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/factorial.py#L8
+[49]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/convex_hull.py#L10
+[50]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/bubble_sort.py#L13
+[51]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/fibonacci.py#L13
+[52]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/longest_palindrome_substring.py#L15
+[53]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/convex_hull.py#L79
+[54]: 
