@@ -8,7 +8,6 @@ Welcome to Sample Programs in Java!
 - [Bubble Sort in Java](BubbleSort.java)
 - [Capitalize a String in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/1366)
 - [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/1365)
-- [Counting Sort in Java](CountingSort.java)
 - [Even Odd in Java](https://github.com/jrg94/sample-programs/issues/937)
 - [Factorial in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/931)
 - [Fibonacci in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/483)
