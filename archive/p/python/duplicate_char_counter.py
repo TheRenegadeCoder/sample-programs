@@ -10,14 +10,15 @@ def duplicate_counter(text):
     return char_dict
 
 
-def main():
+def main(args):
     try:
-        user_input = input("Text input: ")
-        for char, occurrences in duplicate_counter(user_input).items():  # Iterate through user_input's letters and their respective occurrence amount
+        for char, occurrences in duplicate_counter(args[0]).items():  # Iterate through arguments's letters and find their respective occurrence amount
             print("Characters: {}, Occurrences: {}".format(char, occurrences))  # Print it to console, with easy to read formatting
+    except IndexError:
+        print("Please provide a valid string.")
     except Exception as e:
         logging.exception(e)  # Log any exceptions
 
 
 if __name__ == "__main__":
-    main()
+    main(sys.argv[1:])
