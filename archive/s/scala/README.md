@@ -12,7 +12,7 @@ Welcome to Sample Programs in Scala!
 - [Game of Life in Scala](https://github.com/TheRenegadeCoder/sample-programs/issues/1035)
 - [Quicksort in Scala](https://github.com/TheRenegadeCoder/sample-programs/issues/1034)
 - [Reverse String in Scala](https://github.com/TheRenegadeCoder/sample-programs/issues/1032)
-
+- [Factorial in Scala](https://github.com/TheRenegadeCoder/sample-programs-website/issues/332)
 ## Fun Facts
 
 - Debut: 2004
