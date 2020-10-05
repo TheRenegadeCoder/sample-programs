@@ -8,11 +8,13 @@ Welcome to Sample Programs in MATLAB!
 - [Capitalize in MATLAB][1]
 - Factorial in MATLAB
 - Fibonacci in MATLAB
+- [File IO in MATLAB][2]
 - FizzBuzz in MATLAB
-- [Hello World in MATLAB](https://therenegadecoder.com/code/hello-world-in-matlab/)
+- [Hello World in MATLAB][3]
 - Odd Even in MATLAB
 - Prime Number in MATLAB
-- [Selection Sort in MATLAB](https://github.com/TheRenegadeCoder/sample-programs/issues/1463)
+- [Reverse in MATLAB][5]
+- [Selection Sort in MATLAB][4]
 
 ## Fun Facts
 
@@ -27,3 +29,7 @@ Welcome to Sample Programs in MATLAB!
 - [MATLAB Docs](https://www.mathworks.com/)
 
 [1]: https://github.com/TheRenegadeCoder/sample-programs/issues/1458
+[2]: https://github.com/TheRenegadeCoder/sample-programs/issues/1452
+[3]: https://therenegadecoder.com/code/hello-world-in-matlab/
+[4]: https://github.com/TheRenegadeCoder/sample-programs/issues/1463
+[5]: https://github.com/TheRenegadeCoder/sample-programs/issues/1460
