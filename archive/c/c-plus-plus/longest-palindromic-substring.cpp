@@ -45,17 +45,31 @@ int longestPalindrome(char* str)
 		} 
 	} 
 
-	cout << "Longest palindrome substring is: "; 
-	printSubStr(str, start, start + maxLength - 1); 
+    if (maxLength == 1)
+    {
+        std::cout<<"No Palindromic substring present.";
+    }
+    else {
+        cout << "Longest palindrome substring is: "; 
+	    printSubStr(str, start, start + maxLength - 1); 
+    }
 
 	return maxLength; 
 } 
 
 int main() 
 { 
-	char str[] = "paapaapap"; 
-	cout << "\nLength is: "
-		<< longestPalindrome(str) 
-		<< endl; 
+	char str[100];
+
+    getline(std::cin, str);
+
+    if (str[0] == '\0' ) 
+    {
+        std::cout<<"Incorrect input provided. Program Terminated";
+        exit(0);
+    }
+    
+    longestPalindrome(str);
+
 	return 0; 
 } 
