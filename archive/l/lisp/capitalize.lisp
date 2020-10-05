@@ -5,3 +5,5 @@
  (string-capitalize "kludgy-hash-search") ; "Kludgy-Hash-Search"
  (string-capitalize "DON'T!") ; "Don'T!"    ;not "Don't!"
  (string-capitalize "pipe 13a, foo16c") ; "Pipe 13a, Foo16c"
+
+ 
