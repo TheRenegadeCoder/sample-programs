@@ -4,6 +4,7 @@ Welcome to Sample Programs in CoffeeScript!
 
 ## Sample Programs
 
+- [Capitalize First Letter in CoffeeScript](https://github.com/TheRenegadeCoder/sample-programs/issues/1325)
 - [Factorial in CoffeeScript](https://github.com/TheRenegadeCoder/sample-programs/issues/1316)
 - [File IO in CoffeeScript](https://github.com/TheRenegadeCoder/sample-programs/issues/1317)
 - [FizzBuzz in CoffeeScript](https://github.com/TheRenegadeCoder/sample-programs/issues/1313)
