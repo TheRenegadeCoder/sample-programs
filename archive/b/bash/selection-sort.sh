@@ -3,23 +3,19 @@
 # 04/10/2020
 
 function exit_with_err(){
-    USAGE='Usage: please provide a list of at least two integers to sort in the format “1,2,3,4,5”'
+    USAGE='Usage: please provide a list of at least two integers to sort in the format “1, 2, 3, 4, 5”'
     echo $USAGE
     exit 1
 }
 
-if [ ! $# -eq 1 ]; then
+N_check=$(echo "$@" | awk -F', ' '{ print NF-1 }')
+if [ $N_check -lt 1 ]; then
     exit_with_err
 fi
 
 # Read args and spit on ','
-IFS=',' read -r -a array <<< "$@"
+IFS=', ' read -r -a array <<< "$@"
 N=${#array[@]}
-
-if [ $N -eq 1 ]; then
-    exit_with_err
-fi
-
 
 # Selection sort logic
 for((i=0;i<N-1;i++));do
@@ -39,6 +35,6 @@ for((i=0;i<N-1;i++));do
 done
 
 # Join array with commas
-str=$(printf ',%s' "${array[@]}")
-str=${str:1}
+str=$(printf ', %s' "${array[@]}")
+str=${str:2}
 echo $str
