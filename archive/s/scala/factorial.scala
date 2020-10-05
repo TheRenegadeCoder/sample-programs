@@ -1,23 +1,26 @@
-// Scala Program to calculate Factorial 
-// of a number using recursion 
+// Scala Program to calculate 
+// Factorial of a number 
 
 // Creating object 
-object compile
+object GFG 
 { 
-	// Function to calculate 
-	// factorial using Recursive 
-	// formula (i.e N! = N * N-1 !) 
-	def factorial(n: Int): Int =
-	{ 
-		if (n == 0) 
-			return 1
-		else
-			return n * factorial(n-1) 
+	// Iterative way to calculate 
+	// factorial 
+	def factorial(n: Int): Int = { 
+		
+		var f = 1
+		for(i <- 1 to n) 
+		{ 
+			f = f * i; 
+		} 
+		
+		return f 
 	} 
 
 	// Driver Code 
 	def main(args: Array[String]) 
-	{ 
-		println(factorial(5)) 
+	{   val m= args(0).toInt
+		println(factorial(m)) 
 	} 
+
 } 
