@@ -1,0 +1,5 @@
+class HELLO_WORLD is
+   main is
+      #OUT+"Hello, World!";
+   end;
+end;

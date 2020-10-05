@@ -24,6 +24,7 @@ public class GameOfLife {
     frame.getContentPane().add(grid);
     frame.pack();
     frame.setVisible(true);
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
     for (int i = 0; i < this.totalFrames; i++) {
       try        
       {

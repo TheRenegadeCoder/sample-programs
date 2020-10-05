@@ -72,6 +72,11 @@ projects:
     acronyms:
       - "lcs"
     requires_parameters: true
+  linearsearch:
+    words:
+      - "linear"
+      - "search"
+    requires_parameters: true
   mergesort:
     words:
       - "merge"
