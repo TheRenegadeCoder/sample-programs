@@ -47,14 +47,14 @@ Welcome to Sample Programs in Python!
   - [ ] The Power Operator
   - [ ] Unary Arithmetic and Bitwise Operations
     - [ ] The Plus (`+`) Operator
-    - [ ] The Minus (`-`) Operator
+    - [x] [The Minus (`-`) Operator][57]
     - [ ] The Invert (`~`) Operator
   - [ ] Binary Arithmetic Operations
     - [x] [The Addition (`+`) Operator][20]
     - [x] [The Subtraction (`-`) Operator][19]
     - [x] [The Multiplication (`*`) Operator][48]
     - [x] [The Division (`/`) Operator][18]
-    - [ ] The Floor Division (`//`) Operator
+    - [x] [The Floor Division (`//`) Operator][58]
     - [ ] The Matrix Multiplication (`@`) Operator
     - [x] [The Modulus (`%`) Operator][9]
   - [ ] Shifting Operations
@@ -64,17 +64,17 @@ Welcome to Sample Programs in Python!
     - [ ] The Bitwise AND (`&`) Operation
     - [ ] The Bitwise OR (`|`) Operation
     - [ ] The Bitwise XIR (`^`) Operation
-  - [ ] Comparison Operations
+  - [x] Comparison Operations
     - [x] [The Less Than (`<`) Operator][14]
-    - [ ] The Less Than Equals (`<=`) Operator
+    - [x] [The Less Than Equals (`<=`) Operator][55]
     - [x] [The Equals (`==`) Operator][9]
-    - [ ] The Greater Than Equals (`>=`) Operator
+    - [x] [The Greater Than Equals (`>=`) Operator][56]
     - [x] [The Greater Than (`>`) Operator][13]
     - [x] [The Not Equals (`!=`) Operator][27]
-    - [ ] The `is` Operator
-    - [ ] The `in` Operator
-  - [ ] Boolean Operations
-    - [x] The `or` Operator[47]
+    - [x] [The `is` Operator][59]
+    - [x] [The `in` Operator][60]
+  - [x] Boolean Operations
+    - [x] [The `or` Operator][47]
     - [x] [The `and` Operator][14]
     - [x] [The `not` Operator][15]
   - [ ] Lambda
@@ -96,7 +96,7 @@ Welcome to Sample Programs in Python!
   - [x] [The `while` Statement][23]
   - [x] [The `for` Statement][12]
   - [x] [The `try` Statement][46]
-  - [ ] The `with` Statement
+  - [x] [The `with` Statement][54]
   - [x] [Function Definition][17]
   - [x] [Class Definition][16]
   - [ ] Coroutines
@@ -161,4 +161,10 @@ Welcome to Sample Programs in Python!
 [51]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/fibonacci.py#L13
 [52]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/longest_palindrome_substring.py#L15
 [53]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/convex_hull.py#L79
-[54]: 
+[54]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/file_io.py#L4
+[55]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/bubble_sort.py#L8
+[56]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/game_of_life.py#L141
+[57]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/binary_search.py#L15
+[58]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/longest_palindrome_substring.py#L17
+[59]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/prime_number.py#L7
+[60]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/rot_13.py#L7
