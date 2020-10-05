@@ -3,7 +3,7 @@
 # 04/10/2020
 
 function exit_with_err(){
-    USAGE='Usage: please provide a list of at least two integers to sort in the format “1, 2, 3, 4, 5”'
+    USAGE='Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"'
     echo $USAGE
     exit 1
 }
