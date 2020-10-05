@@ -10,6 +10,7 @@ Welcome to Sample Programs in Elixir!
 - [Bubble Sort in Elixir](https://github.com/TheRenegadeCoder/sample-programs/issues/1138)
 - Factorial in Elixir
 - [Longest Common Subsequence](https://sample-programs.therenegadecoder.com/projects/longest-common-subsequence/)
+- Even Odd in Elixir
 
 ## Fun Facts
 
