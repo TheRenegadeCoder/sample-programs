@@ -19,6 +19,7 @@ Welcome to Sample Programs in C++!
 - [Hello World in C++](https://therenegadecoder.com/code/hello-world-in-c-plus-plus/)
 - [Insertion Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1240)
 - [Longest Common Sub-sequence in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1262)
+- [Longest Palindromic Substring in C++]
 - [Merge Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/tree/master/archive/c/c-plus-plus)
 - Prime Number in C++
 - [Quick Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1848)
