@@ -4,12 +4,12 @@ Welcome to Sample Programs in Python!
 
 ## Sample Programs
 
-- [Anagram in Python][40]
 - [Baklava in Python][22]
   - Solution borrowed from @erayak via the [baklava repo][21]
 - [Binary Search][31]
 - [Bubble Sort in Python][31]
 - Capitalize in Python
+- [Convex Hull in Python][44]
 - [Even Odd in Python][32]
 - [Factorial in Python][33]
 - [Fibonacci Sequence in Python][24]
@@ -30,7 +30,6 @@ Welcome to Sample Programs in Python!
 - [Roman Numberal Conversion in Python][25]
 - [ROT-13 in Python][38]
 - [Selection Sort in Python][39]
-- [Convex Hull in Python][44]
 - [Sleep sort in Python][45]
 
 ## Fun Facts
@@ -147,7 +146,6 @@ Welcome to Sample Programs in Python!
 [37]: https://github.com/TheRenegadeCoder/sample-programs/issues/864
 [38]: https://github.com/TheRenegadeCoder/sample-programs/issues/867
 [39]: https://github.com/TheRenegadeCoder/sample-programs/issues/870
-[40]: https://github.com/TheRenegadeCoder/sample-programs/issues/1161
 [41]: https://www.python.org/dev/peps/pep-0020/
 [42]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/longest_palindrome_substring.py
 [43]: https://github.com/TheRenegadeCoder/sample-programs/issues/1536
