@@ -1,6 +1,6 @@
 # Sample Programs in Python
 
-Welcome to Sample Programs in Python! To find documentationr related to the Python 
+Welcome to Sample Programs in Python! To find documentation related to the Python 
 code in this repo, look [here][trc-python-docs].
 
 ## Sample Programs
