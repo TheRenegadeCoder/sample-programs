@@ -26,6 +26,7 @@ Welcome to Sample Programs in C!
 - [Roman Numeral Conversion in C][21]
 - [ROT-13 in C][16]
 - [Reader Writer Problem Using Semophores in C][29]
+- [Selection sory in C][25]
 
 ## Fun Facts
 
@@ -65,3 +66,5 @@ Welcome to Sample Programs in C!
 [23]: https://sample-programs.therenegadecoder.com/projects/roman-numeral-conversion/
 [24]: https://sample-programs.therenegadecoder.com/projects/quick-sort/
 [29]: https://github.com/balajidass07/sample-programs/blob/master/archive/c/c/reader_writer_semaphore.c
+[25]: https://github.com/TheRenegadeCoder/sample-programs/issues/1272
+
