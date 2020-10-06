@@ -3,7 +3,8 @@ name: New Code Snippet
 about: Add a code snippet in an existing language
 title: Add {PROJECT} in {LANGUAGE}
 labels: enhancement
-assignees: '@TheRenegadeCoder/core'
+reviewers: '@TheRenegadeCoder/core'
+assignees: ''
 ---
 
 Congrats on taking the first step to contributing to the Sample Programs repository maintained by [The Renegade Coder][renegade-coder]! 

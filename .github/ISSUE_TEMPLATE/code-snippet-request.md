@@ -3,7 +3,7 @@ name: Code Snippet Request
 about: Request a code snippet (e.g. Hello World in Grain)
 title: Add {PROJECT} in {LANGUAGE}
 labels: enhancement
-assignees: '@TheRenegadeCoder/core'
+assignees: ''
 ---
 
 To request a new code snippet, please fill out the following:

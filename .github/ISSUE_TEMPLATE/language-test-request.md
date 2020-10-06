@@ -3,7 +3,7 @@ name: Language Test Request
 about: Request tests for an existing language that is missing a testinfo.yml (e.g. Perl)
 title: Add {LANGUAGE} Testing
 labels: enhancement, tests
-assignees: '@TheRenegadeCoder/core'
+assignees: ''
 ---
 
 To request a new language, please fill out the following:
