@@ -27,18 +27,20 @@ def roman_to_decimal(full_roman_number)
   roman_numbers = full_roman_number.upcase.split('')
   return 'Error: invalid string of roman numerals' unless roman_valid?(roman_numbers)
 
-  previous = 0
   total = 0
 
-  roman_numbers.each do |roman_number|
-    value = ROMAN_VALUES[roman_number.to_sym]
-
-    total += value if (value >= previous)
-    total -= value unless (value >= previous)
-    previous = value
+  roman_numbers.each_with_index do |roman_number, index|
+    current_value = ROMAN_VALUES[roman_number.to_sym]
+    next_value = ROMAN_VALUES[roman_numbers[index+1]&.to_sym] || 0
+    
+    if (current_value >= next_value)
+      total += current_value
+    else
+      total -= current_value
+    end
   end
 
   total
 end
 
-p roman_to_decimal(ARGV[0])
+print(roman_to_decimal(ARGV[0]))
