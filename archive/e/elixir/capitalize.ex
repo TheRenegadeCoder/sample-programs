@@ -10,7 +10,8 @@ defmodule Capitalize do
         3. Multiple strings/words -> capitalize first word
     """
     def main([]) do "Usage: please provide a string" end
-     
+    def main([ "" | []]) do "Usage: please provide a string" end
+
     def main([ head | [] ]) do
         capitalize_word(head)
     end
