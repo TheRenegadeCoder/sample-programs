@@ -1,6 +1,7 @@
 # Sample Programs in Python
 
-Welcome to Sample Programs in Python!
+Welcome to Sample Programs in Python! To find documentationr related to the Python 
+code in this repo, look [here][trc-python-docs].
 
 ## Sample Programs
 
@@ -18,7 +19,7 @@ Welcome to Sample Programs in Python!
 - [Game of Life in Python][game-of-life-article-issue]
 - [Hello World in Python][hello-world-article]
 - [Insertion Sort in Python][34]
-- [Job Sequencing with Deadlines in Python][30]
+- [Job Sequencing with Deadlines in Python][job-sequencing-article-issue]
 - [Longest Common Subsequence][26]
 - [Longest Palindromic Subsequence][42]
 - [Merge Sort in Python][35]
@@ -109,10 +110,12 @@ Welcome to Sample Programs in Python!
 [fizz-buzz-article]: https://therenegadecoder.com/code/fizz-buzz-in-python/
 [game-of-life-article-issue]: https://github.com/jrg94/sample-programs/issues/111
 [hello-world-article]: https://therenegadecoder.com/code/hello-world-in-python/
+[job-sequencing-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/70
 [python-online-repl]: https://repl.it/languages/python3
 [python-website]: https://www.python.org/
 [python-wiki]: https://en.wikipedia.org/wiki/Python_(programming_language)
 [reverse-a-string-article]: https://therenegadecoder.com/code/reverse-a-string-in-python/
+[trc-python-docs]: https://sample-programs.therenegadecoder.com/languages/python/
 [quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/223
 
 [5]: https://github.com/jrg94/sample-programs/blob/ed000670bc5ecd2778a65571752ec983be7a14e7/archive/p/python/fizz-buzz.py#L2
@@ -137,7 +140,6 @@ Welcome to Sample Programs in Python!
 [27]: https://github.com/Boot-Error/sample-programs/blob/ced2e54804d8f801aee2b37fee6f443a6432cb9b/archive/p/python/lcs.py#L16
 [28]: https://github.com/Boot-Error/sample-programs/blob/ced2e54804d8f801aee2b37fee6f443a6432cb9b/archive/p/python/lcs.py#L17
 [29]: https://therenegadecoder.com/code/file-io-in-python/
-[30]: https://github.com/TheRenegadeCoder/sample-programs/issues/765
 [31]: https://github.com/TheRenegadeCoder/sample-programs/issues/811
 [32]: https://github.com/TheRenegadeCoder/sample-programs/issues/849
 [33]: https://github.com/TheRenegadeCoder/sample-programs/issues/852
