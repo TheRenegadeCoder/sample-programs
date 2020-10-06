@@ -1,13 +1,24 @@
 fun main(args: Array<String>) {
-    args.forEach { println(it) }
-    var jobs = buildJobs(args)
+    val jobs = buildJobs(args)
     if (jobs.isNullOrEmpty()) {
         println("Usage: please provide a list of profits and a list of deadlines")
     } else {
-        jobs.forEach { println("(${it.profit}, ${it.deadline})") }
-        jobs = jobs.sortedByDescending { it.profit }
-        jobs.forEach { println("(${it.profit}, ${it.deadline})") }
+        println(maxProfit(jobs.sortedByDescending { it.profit }))
     }
+}
+
+private fun maxProfit(sortedJobs: List<Job>): Int {
+    val scheduled = hashSetOf<Int>()
+    var profit = 0
+    sortedJobs.forEach {
+        for (i in it.deadline downTo 1) {
+            if (scheduled.add(i)) {
+                profit += it.profit
+                break
+            }
+        }
+    }
+    return profit
 }
 
 private fun buildJobs(args: Array<String>): List<Job>? {
