@@ -25,7 +25,7 @@ Welcome to Sample Programs in C!
 - [Reverse String in C][3]
 - [Roman Numeral Conversion in C][21]
 - [ROT-13 in C][16]
-- [Reader Writer Problem Using Semophores in C][25]
+- [Reader Writer Problem Using Semophores in C][29]
 
 ## Fun Facts
 
@@ -64,4 +64,4 @@ Welcome to Sample Programs in C!
 [22]: https://sample-programs.therenegadecoder.com/projects/minimum-spanning-tree/
 [23]: https://sample-programs.therenegadecoder.com/projects/roman-numeral-conversion/
 [24]: https://sample-programs.therenegadecoder.com/projects/quick-sort/
-[25]: https://github.com/balajidass07/sample-programs/blob/master/archive/c/c/reader_writer_semaphore.c
+[29]: https://github.com/balajidass07/sample-programs/blob/master/archive/c/c/reader_writer_semaphore.c
