@@ -14,9 +14,9 @@ Welcome to Sample Programs in Python!
 - [Factorial in Python][33]
 - [Fibonacci Sequence in Python][24]
 - [File IO in Python][29]
-- [Fizz Buzz in Python][1]
+- [Fizz Buzz in Python][fizz-buzz-article]
 - [Game of Life in Python][4]
-- [Hello World in Python][0]
+- [Hello World in Python][hello-world-article]
 - [Insertion Sort in Python][34]
 - [Job Sequencing with Deadlines in Python][30]
 - [Longest Common Subsequence][26]
@@ -25,8 +25,8 @@ Welcome to Sample Programs in Python!
 - [Minimum Spanning Tree][43]
 - [Prime Number in Python][36]
 - [Quick Sort in Python][37]
-- [Quine in Python][3]
-- [Reverse a String in Python][2]
+- [Quine in Python][quine-article-issue]
+- [Reverse a String in Python][reverse-a-string-article]
 - [Roman Numberal Conversion in Python][25]
 - [ROT-13 in Python][38]
 - [Selection Sort in Python][39]
@@ -106,10 +106,11 @@ Welcome to Sample Programs in Python!
 - [Python Docs][7]
 - [Python REPL][8]
 
-[0]: https://therenegadecoder.com/code/hello-world-in-python/
-[1]: https://therenegadecoder.com/code/fizz-buzz-in-python/
-[2]: https://therenegadecoder.com/code/reverse-a-string-in-python/
-[3]: https://github.com/jrg94/sample-programs/issues/319
+[fizz-buzz-article]: https://therenegadecoder.com/code/fizz-buzz-in-python/
+[hello-world-article]: https://therenegadecoder.com/code/hello-world-in-python/
+[reverse-a-string-article]: https://therenegadecoder.com/code/reverse-a-string-in-python/
+[quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/223
+
 [4]: https://github.com/jrg94/sample-programs/issues/111
 [5]: https://github.com/jrg94/sample-programs/blob/ed000670bc5ecd2778a65571752ec983be7a14e7/archive/p/python/fizz-buzz.py#L2
 [6]: https://en.wikipedia.org/wiki/Python_(programming_language)
