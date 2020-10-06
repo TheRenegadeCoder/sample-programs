@@ -11,6 +11,7 @@ Welcome to Sample Programs in Elixir!
 - Factorial in Elixir
 - [Longest Common Subsequence](https://sample-programs.therenegadecoder.com/projects/longest-common-subsequence/)
 - Even Odd in Elixir
+- Capitalize in Elixir
 
 ## Fun Facts
 
