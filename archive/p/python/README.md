@@ -15,7 +15,7 @@ Welcome to Sample Programs in Python!
 - [Fibonacci Sequence in Python][24]
 - [File IO in Python][29]
 - [Fizz Buzz in Python][fizz-buzz-article]
-- [Game of Life in Python][4]
+- [Game of Life in Python][game-of-life-article-issue]
 - [Hello World in Python][hello-world-article]
 - [Insertion Sort in Python][34]
 - [Job Sequencing with Deadlines in Python][30]
@@ -102,20 +102,20 @@ Welcome to Sample Programs in Python!
 
 ## References
 
-- [Python Wiki][6]
-- [Python Docs][7]
-- [Python REPL][8]
+- [Python Wiki][python-wiki]
+- [Python Docs][python-website]
+- [Python REPL][python-online-repl]
 
 [fizz-buzz-article]: https://therenegadecoder.com/code/fizz-buzz-in-python/
+[game-of-life-article-issue]: https://github.com/jrg94/sample-programs/issues/111
 [hello-world-article]: https://therenegadecoder.com/code/hello-world-in-python/
+[python-online-repl]: https://repl.it/languages/python3
+[python-website]: https://www.python.org/
+[python-wiki]: https://en.wikipedia.org/wiki/Python_(programming_language)
 [reverse-a-string-article]: https://therenegadecoder.com/code/reverse-a-string-in-python/
 [quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/223
 
-[4]: https://github.com/jrg94/sample-programs/issues/111
 [5]: https://github.com/jrg94/sample-programs/blob/ed000670bc5ecd2778a65571752ec983be7a14e7/archive/p/python/fizz-buzz.py#L2
-[6]: https://en.wikipedia.org/wiki/Python_(programming_language)
-[7]: https://www.python.org/
-[8]: https://repl.it/languages/python3
 [9]: https://github.com/jrg94/sample-programs/blob/ed000670bc5ecd2778a65571752ec983be7a14e7/archive/p/python/fizz-buzz.py#L3
 [10]: https://github.com/jrg94/sample-programs/blob/d91bd1c507723448314d18a377c1ac729172ddf6/archive/p/python/game-of-life.py#L24
 [11]: https://github.com/jrg94/sample-programs/blob/d91bd1c507723448314d18a377c1ac729172ddf6/archive/p/python/game-of-life.py#L1
