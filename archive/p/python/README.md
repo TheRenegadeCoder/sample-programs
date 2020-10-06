@@ -1,36 +1,36 @@
 # Sample Programs in Python
 
-Welcome to Sample Programs in Python!
+Welcome to Sample Programs in Python! To find documentation related to the Python 
+code in this repo, look [here][trc-python-docs].
 
 ## Sample Programs
 
-- [Anagram in Python][40]
 - [Baklava in Python][22]
   - Solution borrowed from @erayak via the [baklava repo][21]
 - [Binary Search][31]
 - [Bubble Sort in Python][31]
 - Capitalize in Python
+- [Convex Hull in Python][44]
 - [Even Odd in Python][32]
 - [Factorial in Python][33]
 - [Fibonacci Sequence in Python][24]
 - [File IO in Python][29]
-- [Fizz Buzz in Python][1]
-- [Game of Life in Python][4]
-- [Hello World in Python][0]
+- [Fizz Buzz in Python][fizz-buzz-article]
+- [Game of Life in Python][game-of-life-article-issue]
+- [Hello World in Python][hello-world-article]
 - [Insertion Sort in Python][34]
-- [Job Sequencing with Deadlines in Python][30]
+- [Job Sequencing with Deadlines in Python][job-sequencing-article-issue]
 - [Longest Common Subsequence][26]
 - [Longest Palindromic Subsequence][42]
 - [Merge Sort in Python][35]
 - [Minimum Spanning Tree][43]
 - [Prime Number in Python][36]
 - [Quick Sort in Python][37]
-- [Quine in Python][3]
-- [Reverse a String in Python][2]
+- [Quine in Python][quine-article-issue]
+- [Reverse a String in Python][reverse-a-string-article]
 - [Roman Numberal Conversion in Python][25]
 - [ROT-13 in Python][38]
 - [Selection Sort in Python][39]
-- [Convex Hull in Python][44]
 - [Sleep sort in Python][45]
 
 ## Fun Facts
@@ -103,19 +103,22 @@ Welcome to Sample Programs in Python!
 
 ## References
 
-- [Python Wiki][6]
-- [Python Docs][7]
-- [Python REPL][8]
+- [Python Wiki][python-wiki]
+- [Python Docs][python-website]
+- [Python REPL][python-online-repl]
 
-[0]: https://therenegadecoder.com/code/hello-world-in-python/
-[1]: https://therenegadecoder.com/code/fizz-buzz-in-python/
-[2]: https://therenegadecoder.com/code/reverse-a-string-in-python/
-[3]: https://github.com/jrg94/sample-programs/issues/319
-[4]: https://github.com/jrg94/sample-programs/issues/111
+[fizz-buzz-article]: https://therenegadecoder.com/code/fizz-buzz-in-python/
+[game-of-life-article-issue]: https://github.com/jrg94/sample-programs/issues/111
+[hello-world-article]: https://therenegadecoder.com/code/hello-world-in-python/
+[job-sequencing-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/70
+[python-online-repl]: https://repl.it/languages/python3
+[python-website]: https://www.python.org/
+[python-wiki]: https://en.wikipedia.org/wiki/Python_(programming_language)
+[reverse-a-string-article]: https://therenegadecoder.com/code/reverse-a-string-in-python/
+[trc-python-docs]: https://sample-programs.therenegadecoder.com/languages/python/
+[quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/223
+
 [5]: https://github.com/jrg94/sample-programs/blob/ed000670bc5ecd2778a65571752ec983be7a14e7/archive/p/python/fizz-buzz.py#L2
-[6]: https://en.wikipedia.org/wiki/Python_(programming_language)
-[7]: https://www.python.org/
-[8]: https://repl.it/languages/python3
 [9]: https://github.com/jrg94/sample-programs/blob/ed000670bc5ecd2778a65571752ec983be7a14e7/archive/p/python/fizz-buzz.py#L3
 [10]: https://github.com/jrg94/sample-programs/blob/d91bd1c507723448314d18a377c1ac729172ddf6/archive/p/python/game-of-life.py#L24
 [11]: https://github.com/jrg94/sample-programs/blob/d91bd1c507723448314d18a377c1ac729172ddf6/archive/p/python/game-of-life.py#L1
@@ -137,7 +140,6 @@ Welcome to Sample Programs in Python!
 [27]: https://github.com/Boot-Error/sample-programs/blob/ced2e54804d8f801aee2b37fee6f443a6432cb9b/archive/p/python/lcs.py#L16
 [28]: https://github.com/Boot-Error/sample-programs/blob/ced2e54804d8f801aee2b37fee6f443a6432cb9b/archive/p/python/lcs.py#L17
 [29]: https://therenegadecoder.com/code/file-io-in-python/
-[30]: https://github.com/TheRenegadeCoder/sample-programs/issues/765
 [31]: https://github.com/TheRenegadeCoder/sample-programs/issues/811
 [32]: https://github.com/TheRenegadeCoder/sample-programs/issues/849
 [33]: https://github.com/TheRenegadeCoder/sample-programs/issues/852
@@ -147,7 +149,6 @@ Welcome to Sample Programs in Python!
 [37]: https://github.com/TheRenegadeCoder/sample-programs/issues/864
 [38]: https://github.com/TheRenegadeCoder/sample-programs/issues/867
 [39]: https://github.com/TheRenegadeCoder/sample-programs/issues/870
-[40]: https://github.com/TheRenegadeCoder/sample-programs/issues/1161
 [41]: https://www.python.org/dev/peps/pep-0020/
 [42]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/longest_palindrome_substring.py
 [43]: https://github.com/TheRenegadeCoder/sample-programs/issues/1536
