@@ -3,7 +3,7 @@ name: Project Test Request
 about: Request tests for a project that is missing tests (e.g. Linear Search)
 title: Add {PROJECT} Testing
 labels: enhancement, tests
-assignees: '@TheRenegadeCoder/core'
+assignees: ''
 ---
 
 To request tests for a new project, please fill out the following:

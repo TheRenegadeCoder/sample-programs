@@ -3,7 +3,8 @@ name: Refactor
 about: Modify an existing code snippet or tests
 title: Modify {PROJECT} {TESTS} in {LANGUAGE}
 labels: refactor
-assignees: '@TheRenegadeCoder/core'
+reviewers: '@TheRenegadeCoder/core'
+assignees: ''
 ---
 
 Congrats on taking the first step to contributing to the Sample Programs repository maintained by [The Renegade Coder][renegade-coder]! 
