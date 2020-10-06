@@ -5,6 +5,7 @@ code in this repo, look [here][trc-python-docs].
 
 ## Sample Programs
 
+- [Argparse demo][61]
 - [Baklava in Python][22]
   - Solution borrowed from @erayak via the [baklava repo][21]
 - [Binary Search][31]
@@ -169,3 +170,4 @@ code in this repo, look [here][trc-python-docs].
 [58]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/longest_palindrome_substring.py#L17
 [59]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/prime_number.py#L7
 [60]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/rot_13.py#L7
+[61]:  https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/argparse.py
