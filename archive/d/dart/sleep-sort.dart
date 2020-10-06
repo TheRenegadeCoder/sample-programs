@@ -2,10 +2,10 @@ import 'dart:async';
 
 void main(List<String> args) async {
 
-  List<int> userInput = args.map((str) => int.tryParse(str))
+  List<int> userInput = args[0].split(",").map((str) => int.tryParse(str))
     .takeWhile((test) => test != null)
     .toList();
-
+    
   List<int> sorted = await sleepsort(userInput);
 
   print(sorted);
