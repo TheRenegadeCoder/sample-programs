@@ -27,6 +27,7 @@ class ProjectType(Enum):
     ReverseString = auto()
     RomanNumeral = auto()
     SelectionSort = auto()
+    SleepSort = auto()
 
     @property
     def key(self):
