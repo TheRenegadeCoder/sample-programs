@@ -19,6 +19,9 @@ for as many languages as possible.
     -   [Add One and Only One Snippet at a Time][add-one-and-only-one-snippet-at-a-time] 
     -   [Requirements for a New Project][requirements-for-a-new-project] 
     -   [Requirements for a New Language][requirements-for-a-new-language] 
+-   [Issues in Detail][issues-in-detail]
+    -   [Modifying Existing Code Snippets][modifying-existing-code-snippets]
+    -   [Modifying Existing Tests][modifying-existing-tests]
 -   [Tests in Detail][tests-in-detail]
     -   [Writing Testable Code][writing-testable-code]
     -   [Running Tests Locally][running-tests-locally]
@@ -33,13 +36,13 @@ You will find more detail about each guideline throughout the rest of this docum
 
 ### Pull Requests
 
-- Pull requests for code snippets must pass _all_ tests. [More info...][all-tests-must-pass]
-- Pull requests for code snippets in new language must _must_ include a `testinfo.yml` file
-  in order to test snippets in the new language. [More info...][add-testinfoyml]
-- Pull requests for code snippets in new language _must_ include a `README.md`
-  containing information about the language. [More info...][create-readmes]
-- Pull requests for code snippets _must_ match an existing project. [More info...][requirements-for-a-new-project]
+- Pull requests must pass _all_ tests. [More info...][all-tests-must-pass]
 - Pull requests for code snippets _must_ match an existing issue. [More info...][claiming-an-issue]
+- Pull requests for code snippets _must_ match an existing project. [More info...][requirements-for-a-new-project]
+- Pull requests for code snippets in a **new language** must _must_ include a `testinfo.yml` file
+  in order to test snippets in the new language. [More info...][add-testinfoyml]
+- Pull requests for code snippets in a **new language** _must_ include a `README.md`
+  containing information about the language. [More info...][create-readmes]
 
 ### Issues
 
@@ -175,7 +178,7 @@ repo.
 
 Generally, if you are implementing a code snippet in a pre-existing language for a pre-existing project, testing is already all setup.
 All you need to do is [name your file correctly][file-naming-conventions] and [ensure it has a valid entrypoint][writing-testable-code].
-If you are able to, we recommend running the tests locally with teh appropriate flags to verify.
+If you are able to, we recommend running the tests locally with the appropriate flags to verify.
 See the [running-tests-locally][running-tests-locally] section below for more information.
 
 If you are absolutely unable to run the tests locally,
