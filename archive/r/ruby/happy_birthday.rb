@@ -3,7 +3,8 @@ if ARGV.length < 1
 else
 
     def say_happy_birthday(name, birthday)
-      if birthday == Time.now.strftime("%d/%m/%Y")
+      day_month = birthday.split('/')
+      if "#{day_month[0]}/#{day_month[1]}" == Time.now.strftime("%d/%m")
         puts "Hi #{name}, Happy Birthday!!!!!"
       else
         puts "Hi #{name}, have a wonderful day :)"
