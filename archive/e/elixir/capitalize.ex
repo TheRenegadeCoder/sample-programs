@@ -8,13 +8,6 @@ defmodule Capitalize do
         1. No argument / empty string -> return error string
         2. Single quoted string -> Assume fist word starts at index 0, capitalize first letter
         3. Multiple strings/words -> capitalize first word
-
-        words = String.split(head)
-        case length(words) do
-            1 -> capitalize_word(head)
-            _ -> main(words)
-        end
-
     """
     def main([]) do "Usage: please provide a string" end
      
