@@ -20,6 +20,7 @@ code in this repo, look [here][trc-python-docs].
 - [Hello World in Python][hello-world-article]
 - [Insertion Sort in Python][34]
 - [Job Sequencing with Deadlines in Python][job-sequencing-article-issue]
+- [Kadane's Algorithm](https://github.com/TheRenegadeCoder/sample-programs/issues/2054)
 - [Longest Common Subsequence][26]
 - [Longest Palindromic Subsequence][42]
 - [Merge Sort in Python][35]
