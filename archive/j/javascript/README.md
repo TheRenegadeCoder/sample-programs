@@ -29,6 +29,7 @@ Welcome to Sample Programs in JavaScript!
 -	[Merge Sort in JavaScript][23]
 -	[Quine in JavaScript][24]
 -   [LCS in JavaScript][28]
+-   [Job Sequencing with Deadlines in JavaScript][29]
 
 ## Fun Facts
 
@@ -72,3 +73,4 @@ Welcome to Sample Programs in JavaScript!
 [26]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/j/javascript/file-io.js
 [27]:https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/j/javascript/linear-search.js
 [28]: https://github.com/TheRenegadeCoder/sample-programs/issues/1381
+[29]: https://github.com/TheRenegadeCoder/sample-programs/pull/2163
