@@ -1,11 +1,11 @@
 fun main() {
-    var n: Int
-    var num: Int
-    var digit: Int
-    var rev: Int = 0
+    var n: Long
+    var num: Long
+    var digit: Long
+    var rev: Long = 0
 
     print("Enter a positive number: ")
-    num = readLine()!!.toInt()
+    num = readLine()!!.toLong()
 
     n = num
 
@@ -13,7 +13,7 @@ fun main() {
         digit = num % 10
         rev = (rev * 10) + digit
         num = num / 10
-    }while (num != 0)
+    }while (num != 0L)
 
     println("The reverse of the number is: $rev")
 
