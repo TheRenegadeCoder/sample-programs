@@ -3,14 +3,17 @@ fun main(args: Array<String>) {
     if (jobs.isNullOrEmpty()) {
         println("Usage: please provide a list of profits and a list of deadlines")
     } else {
-        println(maxProfit(jobs.sortedByDescending { it.profit }))
+        println(maxProfit(jobs))
     }
 }
 
-private fun maxProfit(sortedJobs: List<Job>): Int {
+/**
+ * Calculates the maximum profit of a list of jobs
+ */
+private fun maxProfit(jobs: List<Job>): Int {
     val scheduled = hashSetOf<Int>()
     var profit = 0
-    sortedJobs.forEach {
+    jobs.sortedByDescending { it.profit }.forEach {
         for (i in it.deadline downTo 1) {
             if (scheduled.add(i)) {
                 profit += it.profit
@@ -21,6 +24,9 @@ private fun maxProfit(sortedJobs: List<Job>): Int {
     return profit
 }
 
+/**
+ * Builds job list with input arguments
+ */
 private fun buildJobs(args: Array<String>): List<Job>? {
     if (args.isNullOrEmpty() || args.size < 2 || args.any { it.isBlank() }) return null
 
@@ -31,6 +37,12 @@ private fun buildJobs(args: Array<String>): List<Job>? {
     return profits.mapIndexed { index, profit -> Job(profit, deadlines[index]) }
 }
 
+/**
+ * Represents the information of a job
+ */
 class Job(val profit: Int, val deadline: Int)
 
+/**
+ * Extracts an array of integers from the string
+ */
 fun String.toIntArray() = split(",").mapNotNull { it.trim().toIntOrNull() }
