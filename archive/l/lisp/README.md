@@ -11,6 +11,7 @@ Welcome to Sample Programs in Lisp!
 - [Factorial in Lisp](https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/l/lisp/factorial.lsp)
 - [Fibonacci sequence in Lisp](https://github.com/TheRenegadeCoder/sample-programs/issues/1418)
 - [Quick Sort in Lisp](https://github.com/TheRenegadeCoder/sample-programs/issues/1430)
+- [Capitalize in Lisp](https://github.com/TheRenegadeCoder/sample-programs/issues/1424)
 
 ## Fun Facts
 
