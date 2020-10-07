@@ -1,6 +1,6 @@
 name: Greetings
 
-on: [pull_request, issues]
+on: [pull_request_target, issues]
 
 jobs:
   greeting:
@@ -16,5 +16,5 @@ jobs:
           - Become a [patron](https://www.patreon.com/TheRenegadeCoder)
           - Join us on [Discord](https://discord.gg/Jhmtj7Z)
           - And, check out the rest of the [list](https://therenegadecoder.com/blog/ways-you-can-help-grow-the-renegade-coder/) which includes links to The Renegade Coder [YouTube channel](https://www.youtube.com/channel/UCpyoVwOqYRlSAEUPEn7P9hw) and [Twitter account](https://twitter.com/RenegadeCoder94)
-
+          
           Thanks for your help!
