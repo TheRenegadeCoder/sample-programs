@@ -1,8 +1,12 @@
 import hashlib
 def encrypt_string(hash_string):
     sha_signature = \
+            # encoding Hacktofest using encode() 
+            # then sending to SHA256()
         hashlib.sha256(hash_string.encode()).hexdigest()
     return sha_signature
-hash_string = 'confidential data'
+# initializing string 
+hash_string = 'Hacktoberfest'
+# printing the equivalent hexadecimal value. 
 sha_signature = encrypt_string(hash_string)
 print(sha_signature)
