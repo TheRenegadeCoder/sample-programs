@@ -1,0 +1,8 @@
+folder:
+  extension: ".lsp"
+  naming: "hyphen"
+
+container:
+  image: "daewok/lisp-devel"
+  tag: "ql"
+  cmd: "sbcl --script ./{{ source.name }}{{ source.extension }}"
