@@ -1,0 +1,1 @@
+(write-line (string-capitalize (read)))
