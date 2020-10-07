@@ -18,7 +18,7 @@ For more information please refer to our [contributing documentation][contributi
 - [ ] I fixed #your-issue-number-here
 - [ ] I have read about modifying existing code snippets or tests in the [contributing documentation][contributing-modifications]
 - [ ] I have explained why this modification is _necessary_ either in the issue linked above or in the notes below
-- [ ] I named the pull request using `Modify {PROJECT} {TESTS} in {LANGUAGE}` format
+- [ ] I named the pull request using `Modify {PROJECT} {tests} in {LANGUAGE}` format
   
 ## Notes
 

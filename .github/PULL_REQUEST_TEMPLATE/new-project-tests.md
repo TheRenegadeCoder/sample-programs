@@ -16,7 +16,7 @@ Please fill out the following sections.
 For more information please refer to our [contributing documentation][contributing]
 
 - [ ] I fixed #your-issue-number-here
-- [ ] I named the pull request using `Add {PROJECT}` format
+- [ ] I named the pull request using `Add {PROJECT} tests` format
 - [ ] I verified the project exists on the [Sample Programs Project List][sample-programs-project-list]
 - [ ] I added tests for every test case in the Testing table of the project description for the given project. (See [contributing documentation][contributing-tests-in-detail])
   
