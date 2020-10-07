@@ -122,3 +122,8 @@ projects:
       - "selection"
       - "sort"
     requires_parameters: true
+  sleepsort:
+    words:
+      - "sleep"
+      - "sort"
+    requires_parameters: true
