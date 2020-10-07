@@ -5,6 +5,7 @@ Welcome to Sample Programs in Rexx!
 ## Sample Programs
 
 - [Hello World in Rexx](https://github.com/jrg94/sample-programs/issues/32)
+- [Prime Number in Rexx](https://github.com/jrg94/sample-programs/issues/2175)
 
 ## Fun Facts
 
