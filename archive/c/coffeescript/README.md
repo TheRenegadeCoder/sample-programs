@@ -11,6 +11,7 @@ Welcome to Sample Programs in CoffeeScript!
 - [Hello World in CoffeeScript](https://github.com/TheRenegadeCoder/sample-programs/issues/924)
 - [Quine in CoffeeScript](https://github.com/TheRenegadeCoder/sample-programs/issues/1309)
 - [Baklava in CoffeeScript](https://github.com/TheRenegadeCoder/sample-programs/pull/2184)
+- [Even Odd in CoffeeScript](https://github.com/TheRenegadeCoder/sample-programs/pull/2193)
 
 ## Fun Facts
 
