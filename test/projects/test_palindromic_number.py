@@ -47,7 +47,7 @@ def palindromic_number(request):
 @project_test(ProjectType.PalindromicNumber.key)
 @pytest.mark.parametrize(valid_permutations[0], valid_permutations[1],
                          ids=[p[0] for p in valid_permutations[1]])
-def test_palindromic_number_valid(description, in_params, expected, binary_search):
+def test_palindromic_number_valid(description, in_params, expected, palindromic_number):
     actual = palindromic_number.run(params=in_params)
     assert actual.strip().lower() == expected
 
