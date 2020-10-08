@@ -20,6 +20,7 @@ class ProjectType(Enum):
     LinearSearch = auto()
     MergeSort = auto()
     MST = auto()
+    PalindromicNumber = auto()
     Prime = auto()
     QuickSort = auto()
     Quine = auto()
