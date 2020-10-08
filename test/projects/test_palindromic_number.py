@@ -55,6 +55,6 @@ def test_palindromic_number_valid(description, in_params, expected, binary_searc
 @project_test(ProjectType.PalindromicNumber.key)
 @pytest.mark.parametrize(invalid_permutations[0], invalid_permutations[1],
                          ids=[p[0] for p in invalid_permutations[1]])
-def test_palindromic_number_invalid(description, in_params, expected, binary_search):
+def test_palindromic_number_invalid(description, in_params, expected, palindromic_number):
     actual = palindromic_number.run(params=in_params)
     assert actual.strip() == expected
