@@ -18,6 +18,11 @@ invalid_permutations = (
             'invalid input: not a number',
             "a",
             'Usage: please input a number'
+        ),
+        (
+            'invalid input: not enough digits',
+            "a",
+            'Usage: enter a number with more than 1 figure'
         )
     ]
 )
