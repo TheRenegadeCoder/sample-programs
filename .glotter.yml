@@ -88,6 +88,11 @@ projects:
     acronyms:
       - "mst"
     requires_parameters: true
+  palindromicnumber:
+    words:
+      - "palindromic"
+      - "number"
+    requires_parameters: true
   prime:
     words:
       - "prime"
