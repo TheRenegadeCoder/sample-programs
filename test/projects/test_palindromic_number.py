@@ -12,7 +12,7 @@ invalid_permutations = (
             'Usage: please input a number'
         ), (
             'empty input',
-            None,
+            "",
             'Usage: please input a number'
         ), (
             'invalid input: not a number',
