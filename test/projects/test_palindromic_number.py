@@ -9,20 +9,20 @@ invalid_permutations = (
         (
             'no input',
             None,
-            'Usage: please input a number'
+            'Usage: please input a number with at least two digits'
         ), (
             'empty input',
             "",
-            'Usage: please input a number'
+            'Usage: please input a number with at least two digits'
         ), (
             'invalid input: not a number',
             "a",
-            'Usage: please input a number'
+            'Usage: please input a number with at least two digits'
         ),
         (
             'invalid input: not enough digits',
-            "a",
-            'Usage: enter a number with more than 1 figure'
+            "7",
+            'Usage: please input a number with at least two digits'
         )
     ]
 )
