@@ -13,7 +13,7 @@ Welcome to Sample Programs in Kotlin!
 - [Capitalize in Kotlin][10]
 - [FileIO in Kotlin][11]
 - [Quine in Kotlin][12]
-- [Factorial in Kotlin][13]
+- [Factorial in Kotlin][14]
 
 ## Fun Facts
 
@@ -40,4 +40,4 @@ Welcome to Sample Programs in Kotlin!
 [10]: https://github.com/TheRenegadeCoder/sample-programs/issues/1393
 [11]: https://github.com/TheRenegadeCoder/sample-programs/issues/1398
 [12]: https://github.com/TheRenegadeCoder/sample-programs/issues/1712
-[13]: https://github.com/TheRenegadeCoder/sample-programs/issues/1399
+[14]: https://github.com/TheRenegadeCoder/sample-programs/issues/1399
