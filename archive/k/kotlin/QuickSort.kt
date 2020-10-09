@@ -3,18 +3,18 @@ fun main(args: Array<String>)
     var arr: IntArray
     try
     {
-        arr = readLine()!!.split(", ").map{ it.toInt() }.toIntArray()
+        arr = args[0].split(", ").map{ it.toInt() }.toIntArray()
     }
     catch(e: Exception)
     {
-        println("Usage: please provide a list of at least two integers to sort in the format “1, 2, 3, 4, 5”")
+        println("Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"")
         return
     }
 
     var ans:IntArray = quickSort(arr)
     for(i in 0 until ans.count())
     {
-        if (i==ans.count()-1)
+        if (i==ans.count() - 1)
         {
             println("${ans[i]}")
             return
@@ -29,30 +29,26 @@ fun quickSort(arr: IntArray):IntArray
     {
         return(arr.sliceArray(0..0))
     }
-    var pivot:Int = (arr.count()-1)/2
-    // println("swap: ${arr[pivot]} ${arr[arr.count()-1]}")
-    arr[pivot] = arr[arr.count()-1].also {arr[arr.count()-1] =  arr[pivot]}
+    var pivot:Int = (arr.count() - 1) / 2 
+    arr[pivot] = arr[arr.count() - 1].also {arr[arr.count() - 1] =  arr[pivot]}
     pivot = arr.count()-1
 
     var ans = intArrayOf()
     var left = intArrayOf()
     for(i in 0 until arr.count())
     {
-        // println("lBound: ${arr[i]}")
-        if(arr[i]>arr[pivot] || i == pivot)
+        if(arr[i] > arr[pivot] || i == pivot)
         {
-            for(j in arr.count()-2 downTo 0)
+            for(j in arr.count() - 2 downTo 0)
             {
-                // println("uBound: ${arr[j]}")
                 if(i>j || j == 0)
                 {
-                    // println("swap: ${arr[pivot]} ${arr[i]}")
                     arr[pivot] = arr[i].also {arr[i] =  arr[pivot]}
                     pivot = i
                     
                     if(pivot!=0){
                         left = arr.sliceArray(0..pivot-1)
-                        ans = quickSort(arr.sliceArray(0..pivot-1))
+                        ans = quickSort(arr.sliceArray(0..pivot - 1))
                         ans = ans + arr.sliceArray(pivot..pivot)
                     }
                     else
@@ -60,7 +56,7 @@ fun quickSort(arr: IntArray):IntArray
                         ans = arr.sliceArray(pivot..pivot)
                     }
                     if(pivot!=arr.count()-1){
-                        ans = ans + quickSort(arr.sliceArray(pivot+1..arr.count()-1))
+                        ans = ans + quickSort(arr.sliceArray(pivot + 1..arr.count() - 1))
                     }
                     
                     return (ans)
