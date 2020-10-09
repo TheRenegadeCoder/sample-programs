@@ -1,14 +1,11 @@
-import java.lang.NumberFormatException
-
-fun main() {
+fun main(args: Array<String>) {
     var n: Int
     var num: Int
     var digit: Int
     var rev: Int = 0
 
-    print("Enter a positive number: ")
     try {
-        num = readLine()!!.toInt()
+        num = args[0].toInt()
 
         if (num.toString().length > 1){
             n = num
@@ -19,19 +16,17 @@ fun main() {
                 num = num / 10
             }while (num != 0)
 
-            println("The reverse of the number is: $rev")
-
             if (n == rev){
                 println(true)
             }else{
                 println(false)
             }
         }else{
-            print("Enter a number with more than 1 figure")
+            println("Usage: please input a number with at least two digits")
         }
 
 
-    }catch(e: NumberFormatException){
-        println("Please input a number")
+    }catch(e: Exception){
+        println("Usage: please input a number with at least two digits")
     }
 }
