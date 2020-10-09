@@ -7,6 +7,7 @@ Welcome to Sample Programs in Ruby!
 - [Baklava in Ruby][10]
     - Solution borrowed from @erayak via the [baklava repo][1]
 - [Bubble Sort in Ruby][13]
+- [Capitalize in Ruby][15]
 - [Fibonacci in Ruby][12]
 - [File IO in Ruby][5]
 - [Fizz Buzz in Ruby][3]
@@ -14,6 +15,7 @@ Welcome to Sample Programs in Ruby!
 - [Quine in Ruby][4]
 - [Reverse String in Ruby][11]
 - Even Odd in Ruby
+- [Roman Numeral Conversion][14]
 
 ## Fun Facts
 
@@ -41,3 +43,5 @@ Welcome to Sample Programs in Ruby!
 [11]: https://therenegadecoder.com/code/reverse-a-string-in-ruby/
 [12]: https://github.com/TheRenegadeCoder/sample-programs/issues/542
 [13]: https://github.com/TheRenegadeCoder/sample-programs/issues/1023
+[14]: https://github.com/TheRenegadeCoder/sample-programs/issues/1532
+[15]: https://sample-programs.therenegadecoder.com/projects/capitalize/

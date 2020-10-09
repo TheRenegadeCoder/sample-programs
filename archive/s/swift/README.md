@@ -10,6 +10,7 @@ Welcome to Sample Programs in Swift!
 - [Baklava in Swift](https://github.com/TheRenegadeCoder/sample-programs/issues/620)
 - Fibonacci String in Swift
 - Fractions in Swift
+- Even Odd in Swift
 
 ## Fun Facts
 
