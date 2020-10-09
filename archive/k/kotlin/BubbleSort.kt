@@ -4,7 +4,7 @@ fun main(args: Array<String>)
     try
     {
         nums = args[0].split(", ").map{ it.toInt() }.toIntArray()
-        if (arr.size < 2) {
+        if (nums.size < 2) {
             throw Exception()
         }
     }
