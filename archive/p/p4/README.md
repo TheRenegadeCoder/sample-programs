@@ -5,6 +5,7 @@ Welcome to Sample Programs in P4!
 ## Sample Programs
 
 - [Hello World in P4][0]
+- [Even Odd in P4][3]
 
 ## Fun Facts
 
@@ -21,3 +22,4 @@ Welcome to Sample Programs in P4!
 [0]: https://github.com/TheRenegadeCoder/sample-programs/issues/2117
 [1]: https://p4.org/code/
 [2]: https://github.com/p4lang/p4c
+[3]: https://github.com/TheRenegadeCoder/sample-programs/issues/2125

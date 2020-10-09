@@ -8,16 +8,16 @@ Welcome to Sample Programs in JavaScript!
     -   Solution borrowed from @toturkmen via the [baklava repo][1]
 -   [Bubblesort in Javascript][18]
 -   [Capitalize in JavaScript][12]
--   Even Odd in JavaScript
+-   [Even Odd in JavaScript][25]
 -   [Export in JavaScript][13]
 -   [Factorial in JavaScript][15]
 -   [Fibonacci in JavaScript][9]
--   File IO in JavaScript
+-   [File IO in JavaScript][26]
 -   [Fizz Buzz in JavaScript][4]
 -   [Hello World in JavaScript][2]
 -   [Insertion sort in JavaScript][16]
 -   [Import in JavaScript][13]
--   Linear Search in JavaScript
+-   [Linear Search in JavaScript][27]
 -   [Prime Number in JavaScript][14]
 -   [Reverse a String in JavaScript (No Emoji Support)][3]
 -   [Roman Numeral Conversion in JavaScript][17]
@@ -28,6 +28,8 @@ Welcome to Sample Programs in JavaScript!
 -   [Game of Life in JavaScript][22]
 -	[Merge Sort in JavaScript][23]
 -	[Quine in JavaScript][24]
+-   [LCS in JavaScript][28]
+-   [Job Sequencing with Deadlines in JavaScript][29]
 
 ## Fun Facts
 
@@ -63,6 +65,12 @@ Welcome to Sample Programs in JavaScript!
 [19]: https://github.com/TheRenegadeCoder/sample-programs/issues/1380
 [20]: https://github.com/TheRenegadeCoder/sample-programs/issues/1649
 [20]: https://github.com/TheRenegadeCoder/sample-programs/issues/1379
+[21]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/j/javascript/rot-13.js
 [22]: https://github.com/TheRenegadeCoder/sample-programs/issues/1377
 [23]: https://github.com/TheRenegadeCoder/sample-programs/issues/1385
 [24]: https://github.com/TheRenegadeCoder/sample-programs/issues/1384
+[25]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/j/javascript/even-odd.js
+[26]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/j/javascript/file-io.js
+[27]:https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/j/javascript/linear-search.js
+[28]: https://github.com/TheRenegadeCoder/sample-programs/issues/1381
+[29]: https://github.com/TheRenegadeCoder/sample-programs/pull/2163

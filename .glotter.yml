@@ -88,6 +88,11 @@ projects:
     acronyms:
       - "mst"
     requires_parameters: true
+  palindromicnumber:
+    words:
+      - "palindromic"
+      - "number"
+    requires_parameters: true
   prime:
     words:
       - "prime"
@@ -120,5 +125,10 @@ projects:
   selectionsort:
     words:
       - "selection"
+      - "sort"
+    requires_parameters: true
+  sleepsort:
+    words:
+      - "sleep"
       - "sort"
     requires_parameters: true
