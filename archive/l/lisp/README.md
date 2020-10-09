@@ -24,3 +24,4 @@ Welcome to Sample Programs in Lisp!
 - [Lisp Wiki](https://en.wikipedia.org/wiki/Lisp_(programming_language))
 - [Common Lisp Wiki](https://en.wikipedia.org/wiki/Common_Lisp)
 - [Rextester](https://rextester.com/VOFE52929)
+- [Common Lisp Cookbook Project](http://cl-cookbook.sourceforge.net)
