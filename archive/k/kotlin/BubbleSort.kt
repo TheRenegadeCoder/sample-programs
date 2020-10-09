@@ -3,11 +3,11 @@ fun main(args: Array<String>)
     var nums: IntArray
     try
     {
-        nums = readLine()!!.split(", ").map{ it.toInt() }.toIntArray()
+        nums = args[0].split(", ").map{ it.toInt() }.toIntArray()
     }
     catch(e: Exception)
     {
-        println("Usage: please provide a list of at least two integers to sort in the format “1, 2, 3, 4, 5”")
+        println("Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"")
         return
     }
     var swapped:Boolean = false
