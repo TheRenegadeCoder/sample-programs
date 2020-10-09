@@ -19,7 +19,7 @@ fun lcsOf(a: List<String>, b: List<String>) = lcsOf(a.toMutableList(), b.toMutab
 fun main(args: Array<String>) {
     if (args.size != 2 || args[0].isBlank() || args[1].isBlank()) {
         // print and exit if we don't have the correct number of arguments
-        println("Usage: Usage: please provide two lists in the format \"1, 2, 3, 4, 5\"");
+        println("Usage: please provide two lists in the format \"1, 2, 3, 4, 5\"")
         return
     }
 
@@ -27,5 +27,5 @@ fun main(args: Array<String>) {
     val seqA = args[0].split(",").map { it.trim() }
     val seqB = args[1].split(",").map { it.trim() }
 
-    lcsOf(seqA, seqB).joinToString(",").also { println(it) }
+    lcsOf(seqA, seqB).joinToString(", ").also { println(it) }
 }
