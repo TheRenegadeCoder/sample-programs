@@ -1,7 +1,7 @@
 import java.math.BigInteger
 
 fun main(args: Array<String>) {
-    if (args.isNullOrEmpty() || args[0].isBlank() || args[0].toIntOrNull()?.takeIf { it >= 0 } == null) {
+    if (args.isNullOrEmpty() || args[0].toIntOrNull()?.takeIf { it >= 0 } == null) {
         println("Usage: please input a non-negative integer")
         return
     }

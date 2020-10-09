@@ -28,7 +28,7 @@ private fun maxProfit(jobs: List<Job>): Int {
  * Builds job list with input arguments
  */
 private fun buildJobs(args: Array<String>): List<Job>? {
-    if (args.isNullOrEmpty() || args.size < 2 || args.any { it.isBlank() }) return null
+    if (args.run { isNullOrEmpty() || size < 2 || any { it.isBlank() } }) return null
 
     val profits = args[0].toIntArray()
     val deadlines = args[1].toIntArray()

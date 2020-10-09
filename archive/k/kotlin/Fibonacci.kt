@@ -2,7 +2,7 @@ import kotlin.system.exitProcess
 
 // First arg is number of iterations to run
 fun main(args: Array<String>) {
-    if (args.isNullOrEmpty() || args[0].isBlank() || args[0].toIntOrNull()?.takeIf { it >= 0 } == null) {
+    if (args.isNullOrEmpty() || args[0].toIntOrNull()?.takeIf { it >= 0 } == null) {
         println("Usage: please input the count of fibonacci numbers to output")
         return
     }

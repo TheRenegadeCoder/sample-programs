@@ -1,5 +1,5 @@
 fun main(args: Array<String>) {
-    if (args.isNullOrEmpty() || args[0].isBlank() || args[0].toIntOrNull() == null) {
+    if (args.isNullOrEmpty() || args[0].toIntOrNull() == null) {
         println("Usage: please input a number")
         return
     }
