@@ -4,6 +4,9 @@ fun main(args: Array<String>)
     try
     {
         arr = args[0].split(", ").map{ it.toInt() }.toIntArray()
+        if (arr.size < 2) {
+            throw Exception()
+        }
     }
     catch(e: Exception)
     {
