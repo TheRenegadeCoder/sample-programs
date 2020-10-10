@@ -3,5 +3,12 @@
       1
       (* n (factorial (- n 1))) ) )
 
-(loop for i from 0 to 16
-   do (format t "~D! = ~D~%" i (factorial i)) )
+(defparameter num -1)
+(defparameter input (car (cdr *posix-argv*)))
+(if (not (null input))
+  (defparameter num (parse-integer input :junk-allowed t)))
+
+(if (or (null num) (< num 0))
+  (write-line "Usage: please input a non-negative integer")
+  (write-line (princ-to-string (factorial num)))
+)
