@@ -10,6 +10,7 @@ code in this repo, look [here][trc-python-docs].
 - [Binary Search][31]
 - [Bubble Sort in Python][31]
 - Capitalize in Python
+- [Collatz Sequence in Python][collatz-article-issue]
 - [Convex Hull in Python][44]
 - [Even Odd in Python][32]
 - [Factorial in Python][33]
