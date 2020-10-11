@@ -8,13 +8,15 @@
     (reverse acc)
     (countfibs (cons (list n (car fibs)) acc) (+ 1 n) (cdr fibs))))
 
+(defun maybe-pos-int (input)
+  (cond
+    ((null input) nil)
+    ((string= input "") nil)
+    ((every #'digit-char-p input) (parse-integer input))
+    (t nil)))
 
-(defparameter num -1)
-(defparameter input (car (cdr *posix-argv*)))
-(if (not (null input))
-  (defparameter num (parse-integer input :junk-allowed t)))
-
-(if (or (null num) (< num 0))
-  (write-line "Usage: please input the count of fibonacci numbers to output")
-  (dolist (item (countfibs (list) 1 (fibonacci num)))
-    (format t "~D: ~D~%" (car item) (cadr item))))
+(defparameter num (maybe-pos-int (cadr *posix-argv*)))
+(cond
+  ((null num) (write-line "Usage: please input the count of fibonacci numbers to output"))
+  (t (dolist (item (countfibs (list) 1 (fibonacci num)))
+    (format t "~D: ~D~%" (car item) (cadr item)))))

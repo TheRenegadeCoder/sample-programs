@@ -26,7 +26,7 @@
     ((every #'digit-char-p input) (parse-integer input))
     (t nil)))
 
-(defparameter num (maybe-pos-int (car (cdr *posix-argv*))))
-(if (null num)
-  (write-line "Usage: please input a non-negative integer")
-  (print-bool (primep num)))
+(defparameter num (maybe-pos-int (cadr *posix-argv*)))
+(cond
+  ((null num) (write-line "Usage: please input a non-negative integer"))
+  (t (print-bool (primep num))))

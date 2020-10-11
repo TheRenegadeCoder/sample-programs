@@ -3,12 +3,15 @@
       1
       (* n (factorial (- n 1))) ) )
 
-(defparameter num -1)
-(defparameter input (car (cdr *posix-argv*)))
-(if (not (null input))
-  (defparameter num (parse-integer input :junk-allowed t)))
+(defun maybe-pos-int (input)
+  (cond
+    ((null input) nil)
+    ((string= input "") nil)
+    ((every #'digit-char-p input) (parse-integer input))
+    (t nil)))
 
-(if (or (null num) (< num 0))
-  (write-line "Usage: please input a non-negative integer")
-  (print (factorial num))
+(defparameter num (maybe-pos-int (cadr *posix-argv*)))
+(cond
+  ((null num) (write-line "Usage: please input a non-negative integer"))
+  (t (print (factorial num)))
 )
