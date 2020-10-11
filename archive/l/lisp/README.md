@@ -21,7 +21,10 @@ Welcome to Sample Programs in Lisp!
 
 ## References
 
-- [Lisp Wiki](https://en.wikipedia.org/wiki/Lisp_(programming_language))
-- [Common Lisp Wiki](https://en.wikipedia.org/wiki/Common_Lisp)
+- [Common Lisp Website](https://lisp-lang.org/)
+- [Lisp Wikipedia](https://en.wikipedia.org/wiki/Lisp_(programming_language))
+- [Common Lisp Wikipedia](https://en.wikipedia.org/wiki/Common_Lisp)
+- [Common Lisp Wiki](https://www.cliki.net/)
+- [Common Lisp Style Guide](https://lisp-lang.org/style-guide/)
 - [Rextester](https://rextester.com/VOFE52929)
 - [Common Lisp Cookbook Project](http://cl-cookbook.sourceforge.net)
