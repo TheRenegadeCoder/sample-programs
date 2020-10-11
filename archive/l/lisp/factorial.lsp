@@ -10,5 +10,5 @@
 
 (if (or (null num) (< num 0))
   (write-line "Usage: please input a non-negative integer")
-  (write-line (princ-to-string (factorial num)))
+  (print (factorial num))
 )
