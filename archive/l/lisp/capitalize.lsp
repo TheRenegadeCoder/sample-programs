@@ -13,9 +13,8 @@
    (concatenate 'string
      (string-upcase (subseq str 0 1)) (subseq str 1)))
 
-
-(defparameter input (split-string (car (cdr *posix-argv*))))
-(if (= (length (car input)) 0)
-  (write-line "Usage: please provide a string")
-  (write-line (join-string (cons (capitalize (car input)) (cdr input))))
+(defparameter input (split-string (cadr *posix-argv*)))
+(cond
+  ((= (length (car input)) 0) (write-line "Usage: please provide a string"))
+  (t (write-line (join-string (cons (capitalize (car input)) (cdr input)))))
 )
