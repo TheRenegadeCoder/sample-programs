@@ -1,12 +1,12 @@
 (defun fibonacci (n &optional (a 1) (b 1) (acc))
   (if (<= n 0)
-    (reverse acc)
-    (fibonacci (- n 1) b (+ a b) (cons a acc))))
+      (reverse acc)
+      (fibonacci (- n 1) b (+ a b) (cons a acc))))
 
 (defun countfibs(acc n fibs)
   (if (< (length fibs) 1)
-    (reverse acc)
-    (countfibs (cons (list n (car fibs)) acc) (+ 1 n) (cdr fibs))))
+      (reverse acc)
+      (countfibs (cons (list n (car fibs)) acc) (+ 1 n) (cdr fibs))))
 
 (defun maybe-pos-int (input)
   (cond
