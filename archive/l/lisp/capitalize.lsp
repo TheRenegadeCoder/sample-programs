@@ -16,5 +16,4 @@
 (defparameter input (split-string (cadr *posix-argv*)))
 (cond
   ((= (length (car input)) 0) (write-line "Usage: please provide a string"))
-  (t (write-line (join-string (cons (capitalize (car input)) (cdr input)))))
-)
+  (t (write-line (join-string (cons (capitalize (car input)) (cdr input))))))
