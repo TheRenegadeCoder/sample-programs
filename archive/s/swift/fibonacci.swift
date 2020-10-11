@@ -1,19 +1,31 @@
-func fibonacciProgram(n: Int) {
-    var f1=1, f2=1, fib=0
-    for i in 3...n {
+import Foundation
+
+func fibonacciProgram(_ n: Int) {
+    var f1=0, f2=1, fib=1
+    for i in 0..<n {
+        print("\(i+1): \(fib)")
         fib = f1 + f2
-        print("Fibonacci: \(i) = \(fib)")
         f1 = f2
         f2 = fib
     }
 }
 
 
-func fibonacciRecursive(n: Int) -> Int {
-    if (n == 0){
+func fibonacciRecursive(_ n: Int) -> Int {
+    if (n == 0) {
         return 0
     } else if (n == 1) {
         return 1
     }
-    return fibonacciR(n-1) + fibonacciR(n-2)
+    return fibonacciRecursive(n-1) + fibonacciRecursive(n-2)
 }
+
+/*
+    Check if there is exactly one argument and if it can be parsed as an integer
+*/
+guard CommandLine.argc == 2, let number = Int(CommandLine.arguments[1]) else {
+    print("Usage: please input the count of fibonacci numbers to output")
+    exit(0)
+}
+
+fibonacciProgram(number)
