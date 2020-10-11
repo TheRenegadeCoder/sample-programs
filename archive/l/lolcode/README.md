@@ -15,5 +15,5 @@ Welcome to Sample Programs in LOLCODE!
 
 ## References
 
-- [Lua Wiki](https://en.wikipedia.org/wiki/Lua_(programming_language))
-- [Lua Docs](https://www.lua.org/)
+- [LOLCODE wiki](https://en.wikipedia.org/wiki/LOLCODE)
+- [LOLCODE Docs](http://www.lolcode.org/)
