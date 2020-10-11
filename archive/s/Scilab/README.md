@@ -6,21 +6,22 @@ Scilab includes hundreds of mathematical functions. It has a high level programm
 
 A large number of functionalities is included in Scilab:
 
-# Maths & Simulation
+## Maths & Simulation
 For usual engineering and science applications including mathematical operations and data analysis.
-# 2-D & 3-D Visualization
+## 2-D & 3-D Visualization
 Graphics functions to visualize, annotate and export data and many ways to create and customize various types of plots and charts.
-# Optimization
+## Optimization
 Algorithms to solve constrained and unconstrained continuous and discrete optimization problems.
-# Statistics
+## Statistics
 Tools to perform data analysis and modeling
-# Control Systems
+## Control Systems
 Standard algorithms and tools for control system study
-# Signal Processing
+## Signal Processing
 Visualize, analyze and filter signals in time and frequency domains.
-# Application Development
+## Application Development
 Increase Scilab native functionalities and manage data exchanges with external tools.
-#Xcos - Dynamic systems modeling
+
+## Xcos - Dynamic systems modeling
 Modeling mechanical systems, hydraulic circuits, control systems...
 
 ## References
