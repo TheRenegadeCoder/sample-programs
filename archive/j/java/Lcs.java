@@ -1,5 +1,5 @@
 import java.util.*;
-public class lcs{
+public class Lcs{
 
     //A function to get the input string from the command line and form a array-list of elements from it.
     static ArrayList<String> split_strings(String str)         
@@ -79,7 +79,7 @@ public class lcs{
     }
 
 
-    //Driver code.
+    //Driver code.d
     public static void main(String args[]) {
 
         if(args.length <2 || args[0] == "" || args[1] == "") {
