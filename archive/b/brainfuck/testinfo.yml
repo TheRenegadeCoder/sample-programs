@@ -5,4 +5,4 @@ folder:
 container:
   image: "williamboman/brainfuck"
   tag: "latest" 
-  cmd: "./{{ source.name }}"
+  cmd: "< ./{{ source.name }}"
