@@ -3,6 +3,6 @@ folder:
   naming: "hyphen"
 
 container:
-  image: "esolang/brainfuck-esotope"
+  image: "williamboman/brainfuck"
   tag: "latest" 
-  cmd: "brainfuck-esotope {{ source.name }}"
+  cmd: "./{{ source.name }}"
