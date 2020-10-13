@@ -1,0 +1,8 @@
+folder:
+  extension: ".lua"
+  naming: "hyphen"
+
+container:
+  image: "nickblah/lua"
+  tag: "5.0-alpine" 
+  cmd: "lua {{ source.name }}"
