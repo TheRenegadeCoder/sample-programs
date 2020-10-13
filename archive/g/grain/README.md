@@ -4,7 +4,7 @@ Welcome to Sample Programs in Grain!
 
 ## Sample Programs
 
-- [Hello World in Grain](https://github.com/jrg94/sample-programs/issues/31)
+- [Hello World in Grain](https://github.com/jrg94/sample-programs/issues/1076)
 
 ## Fun Facts
 
