@@ -29,5 +29,5 @@ Feel free to describe what you added or updated.
 
 [renegade-coder]: https://therenegadecoder.com/
 [contributing-plagiarism]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#plagiarism
-[contributing-readme]: https://github.com/TheRenegadeCoder/sample-programs/blob/contributing/.github/CONTRIBUTING.md#create-readmes
+[contributing-readme]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#create-readmes
 [contributing]: ../CONTRIBUTING.md
