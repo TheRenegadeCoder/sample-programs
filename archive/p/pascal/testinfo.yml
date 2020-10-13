@@ -1,6 +1,6 @@
 folder:
   extension: ".pas"
-  naming: "hyphen"
+  naming: "underscore"
 
 container:
   image: "cyberdojofoundation/freepascal"
