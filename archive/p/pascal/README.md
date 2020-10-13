@@ -6,6 +6,8 @@ Welcome to Sample Programs in Pascal!
 
 - [Fizz Buzz in Pascal][1]
 - [Hello World in Pascal][2]
+-[Baklava in Pascal][3]
+
 
 ## Fun Facts
 
