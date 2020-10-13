@@ -3,6 +3,6 @@ folder:
   naming: "lower"
 
 container:
-  image: "grain-lang/grain"
+  image: "grain10zhang/crm"
   tag: "latest"
   cmd: "grain {{ source.name }}{{ source.extension }}"
