@@ -1,0 +1,8 @@
+folder:
+  extension: ".gr"
+  naming: "lower"
+
+container:
+  image: "grain-lang/grain"
+  tag: "1.9.2-alpine"
+  cmd: "grain {{ source.name }}{{ source.extension }}"
