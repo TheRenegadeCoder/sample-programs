@@ -8,28 +8,28 @@ Welcome to Sample Programs in JavaScript!
     -   Solution borrowed from @toturkmen via the [baklava repo][1]
 -   [Bubblesort in Javascript][18]
 -   [Capitalize in JavaScript][12]
+-   [Convex Hull in Javascript][18]
 -   [Even Odd in JavaScript][25]
 -   [Export in JavaScript][13]
 -   [Factorial in JavaScript][15]
 -   [Fibonacci in JavaScript][9]
 -   [File IO in JavaScript][26]
 -   [Fizz Buzz in JavaScript][4]
--   [Hello World in JavaScript][2]
--   [Insertion sort in JavaScript][16]
--   [Import in JavaScript][13]
--   [Linear Search in JavaScript][27]
--   [Prime Number in JavaScript][14]
--   [Reverse a String in JavaScript (No Emoji Support)][3]
--   [Roman Numeral Conversion in JavaScript][17]
--   [Convex Hull in Javascript][18]
--   [Selection Sort in JavaSciprt][19]
--   [Quick Sort in JavaScript][20]
--   [Rotate by 13 in JavaScript][21]
 -   [Game of Life in JavaScript][22]
--	[Merge Sort in JavaScript][23]
--	[Quine in JavaScript][24]
--   [LCS in JavaScript][28]
+-   [Hello World in JavaScript][2]
+-   [Import in JavaScript][13]
+-   [Insertion Sort in JavaScript][16]
 -   [Job Sequencing with Deadlines in JavaScript][29]
+-   [LCS in JavaScript][28]
+-   [Linear Search in JavaScript][27]
+-	[Merge Sort in JavaScript][23]
+-   [Prime Number in JavaScript][14]
+-   [Quick Sort in JavaScript][20]
+-	[Quine in JavaScript][24]
+-   [Reverse a String in JavaScript][3]
+-   [Roman Numeral Conversion in JavaScript][17]
+-   [ROT-13 in JavaScript][21]
+-   [Selection Sort in JavaSciprt][19]
 
 ## Fun Facts
 
@@ -38,18 +38,19 @@ Welcome to Sample Programs in JavaScript!
 
 ## References
 
--   [JavaScript Wiki][5]
--   [JavaScript Docs][6]
+-   [JavaScript Wiki][javascript-wiki]
+-   [JavaScript Docs][javascript-website]
 -   [Online JavaScript Editor][7]
 -   [Web Standards/Documentation][10]
 -   [JavaScript beginner tutorial][11]
+
+[javascript-wiki]: https://en.wikipedia.org/wiki/JavaScript
+[javascript-website]: https://www.javascript.com/
 
 [1]: https://github.com/toturkmen/baklava
 [2]: https://therenegadecoder.com/code/hello-world-in-javascript/
 [3]: https://github.com/jrg94/sample-programs/issues/93
 [4]: https://github.com/jrg94/sample-programs/issues/293
-[5]: https://en.wikipedia.org/wiki/JavaScript
-[6]: https://www.javascript.com/
 [7]: https://js.do/
 [8]: https://github.com/TheRenegadeCoder/sample-programs/issues/429
 [9]: https://github.com/TheRenegadeCoder/sample-programs/issues/488
