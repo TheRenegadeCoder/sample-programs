@@ -2,7 +2,8 @@
 Scilab is free and open source software for numerical computation providing a powerful computing environment for engineering and scientific applications.
 
 # What does Scilab do ?
-Scilab includes hundreds of mathematical functions. It has a high level programming language allowing access to advanced data structures, 2-D and 3-D graphical functions.
+Scilab includes hundreds of mathematical functions.
+It has a high level programming language allowing access to advanced data structures, 2-D and 3-D graphical functions.
 
 A large number of functionalities is included in Scilab:
 
