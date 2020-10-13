@@ -4,5 +4,5 @@ folder:
 
 container:
   image: "grain-lang/grain"
-  tag: "1.9.2-alpine"
+  tag: "latest"
   cmd: "grain {{ source.name }}{{ source.extension }}"
