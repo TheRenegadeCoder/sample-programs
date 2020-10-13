@@ -8,7 +8,6 @@ Welcome to Sample Programs in Grain!
 
 ## Fun Facts
 
-- Debut: 2020
 - Typing: Strongly-typed
 - Functional programming language
 
