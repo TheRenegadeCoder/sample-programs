@@ -1,5 +1,6 @@
 def maximum_subarray():
-    str_input = input()
+    # takes care of both empty input and no input
+    str_input = input().strip()
     if str_input == "":
         print("Usage: Please provide a list of at least two integers to sort in the format: '1, 2, 3, 4, 5'")
         return
