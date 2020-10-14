@@ -1,32 +1,26 @@
 def write_file():
 
     try:
-        out = open("output.txt", "w")
+        with open("output.txt", "w") as out:
+            out.write("Hi! I'm a line of text in this file!\n")
+            out.write("Me, too!\n")
+            
     except OSError as e:
         print("Cannot open file: {}", e)
         return
 
 
-    out.write("Hi! I'm a line of text in this file!\n")
-    out.write("Me, too!\n")
-
-    out.flush()
-    out.close()
-
 def read_file():
     
     try:
-        in_file = open("output.txt", "r")
+        with open("output.txt", "r") as in_file:
+            for line in in_file:
+                print(line.strip())
+                
     except OSError as e:
         print("Cannot open file to read: {}", e)
         return
-    
-    line = in_file.readline()
-    while line:
-        print(line.rstrip('\n'))
-        line = in_file.readline()
-    
-    in_file.close()
+
 
 if __name__ == '__main__':
     write_file()

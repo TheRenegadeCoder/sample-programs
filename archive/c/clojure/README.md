@@ -8,12 +8,13 @@ Welcome to Sample Programs in Clojure!
 - [Bubble Sort in Clojure](https://github.com/TheRenegadeCoder/sample-programs/issues/1151)
 - [Capitalize in Clojure](https://github.com/TheRenegadeCoder/sample-programs/issues/1295)
 - [Reverse A String in Clojure](https://github.com/TheRenegadeCoder/sample-programs/issues/1288)
+- [Fizz Buzz in Clojure](https://github.com/TheRenegadeCoder/sample-programs/issues/1297)
 
 ## Fun Facts
 
 - Debut: 2007
 - Typing: Dynamic
-- Interoparability: JAVA
+- Interoperability: JAVA
 
 ## References
 

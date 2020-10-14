@@ -1,18 +1,26 @@
 ---
 name: Code Snippet Request
-about: Suggest a code snippet for this project (i.e. Hello World in Grain)
-title: Add [Sample Program] in [Language]
+about: Request a code snippet (e.g. Hello World in Grain)
+title: Add {PROJECT} in {LANGUAGE}
 labels: enhancement
 assignees: ''
-
 ---
 
-If possible, please provide a link(s) to the language documentation to prove its existence:
+To request a new code snippet, please fill out the following:
 
-- https://example-lang.com
+Project name: 
+Project link: https://sample-programs.therenegadecoder.com/projects/my-project-name
+Language: 
 
-If possible, please provide a code snippet of Hello World in the language:
+If this code snippet will also be the first in a new language, please fill out the following:
 
-```lang
-...
-````
+Official Language Style Guide: 
+Official Language Website: 
+Official Language Docker Image: https://hub.docker.com/r/repository/image 
+
+> The project link must be a link to a project on the [Sample Programs Website project list][sample-programs-project-list].
+> If you would like to add a new project to the Sample Programs Website,
+> please first make a pull request to the [Sample Programs Website][sample-programs-website].
+
+[sample-programs-website]: https://github.com/TheRenegadeCoder/sample-programs-website
+[sample-programs-project-list]: https://sample-programs.therenegadecoder.com/projects/

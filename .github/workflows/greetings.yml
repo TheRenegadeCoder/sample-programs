@@ -1,0 +1,20 @@
+name: Greetings
+
+on: [pull_request_target, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        pr-message: |
+          Hey @${{ github.actor }}! Thanks for contributing to this project! We are a rather small team, so it may take some time to process this request. In the meantime, there are several ways you can make yourself a part of The Renegade Coder community. For instance, you can:
+          
+          - Subscribe to the [monthly newsletter](https://newsletter.therenegadecoder.com/)
+          - Become a [patron](https://www.patreon.com/TheRenegadeCoder)
+          - Join us on [Discord](https://discord.gg/Jhmtj7Z)
+          - And, check out the rest of the [list](https://therenegadecoder.com/blog/ways-you-can-help-grow-the-renegade-coder/) which includes links to The Renegade Coder [YouTube channel](https://www.youtube.com/channel/UCpyoVwOqYRlSAEUPEn7P9hw) and [Twitter account](https://twitter.com/RenegadeCoder94)
+          
+          Thanks for your help!

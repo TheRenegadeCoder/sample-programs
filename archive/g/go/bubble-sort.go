@@ -25,16 +25,6 @@ func bubbleSort(list []int) []int {
 	return list
 }
 
-func swap(list []int, firstIndex int, secondIndex int) bool {
-	if list[firstIndex] > list[secondIndex] {
-		x := list[firstIndex]
-		list[firstIndex] = list[secondIndex]
-		list[secondIndex] = x
-		return true
-	}
-	return false
-}
-
 func strToSliceInt(strList string) []int {
 	list := regexp.MustCompile(", ?").Split(strList, -1)
 	if len(list) < 2 {

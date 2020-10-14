@@ -5,21 +5,58 @@ for as many languages as possible.
 
 ## Table of Contents
 
--   [Repository Structure][1]
-    -   [Archives][35]
-    -   [Docs][36]
--   [Naming Conventions][2]
--   [Pull Requests][4]
-    -   [Code][37]
-    -   [Articles][38]
-    -   [Projects][5]
-    -   [Tests][43]
--   [Plagiarism][17]
+-   [Overview][overview]
+    -   [Pull Requests][pull-requests]
+    -   [Issues][issues]
+-   [Repository Structure][repository-structure]
+    -   [Archives][archives]
+    -   [Test][test]
+-   [File Naming Conventions][file-naming-conventions]
+    -   [Directories][directories]
+    -   [Source Files][source-files]
+-   [Pull Requests in Detail][pull-requests-in-detail]
+    -   [Claiming an Issue][claiming-an-issue] 
+    -   [Add One and Only One Snippet at a Time][add-one-and-only-one-snippet-at-a-time] 
+    -   [Requirements for a New Project][requirements-for-a-new-project] 
+    -   [Requirements for a New Language][requirements-for-a-new-language] 
+-   [Issues in Detail][issues-in-detail]
+    -   [Modifying Existing Code Snippets][modifying-existing-code-snippets]
+    -   [Modifying Existing Tests][modifying-existing-tests]
+-   [Tests in Detail][tests-in-detail]
+    -   [Writing Testable Code][writing-testable-code]
+    -   [Running Tests Locally][running-tests-locally]
+    -   [Adding a testsinfo.yml][adding-a-testinfoyml]
+-   [Plagiarism][plagiarism]
+
+## Overview
+
+Any issues or pull requests must adhere to the guidelines below.
+Any that do not will be closed.
+You will find more detail about each guideline throughout the rest of this document
+
+### Pull Requests
+
+- Pull requests must pass _all_ tests. [More info...][all-tests-must-pass]
+- Pull requests for code snippets _must_ match an existing issue. [More info...][claiming-an-issue]
+- Pull requests for code snippets _must_ match an existing project. [More info...][requirements-for-a-new-project]
+- Pull requests for code snippets in a **new language** must _must_ include a `testinfo.yml` file
+  in order to test snippets in the new language. [More info...][add-testinfoyml]
+- Pull requests for code snippets in a **new language** _must_ include a `README.md`
+  containing information about the language. [More info...][create-readmes]
+
+### Issues
+
+#### Code Snippets
+- Issues for code snippets _must_ link to the relevant project.  [More info...][issues-in-detail]
+- Issues to fix existing code snippets _must_ explain why an enhancement is _necessary_. [More info...][modifying-existing-code-snippets]
+
+#### Tests
+
+- Issues for tests _must_ link to the relevant project. [More info...][issues-in-detail]
+- Issues to modify tests _must_ explain why modification is _necessary_. [More info...][modifying-existing-tests]
+
 
 ## Repository Structure
-
-Before we get into the contribution rules, we should probably get an understanding of
-how this repository is structured.
 
 At the root of the repository, there are several housekeeping files that shouldn't matter
 much to the average user. The only items that matter are the archives and the docs folder.
@@ -39,33 +76,28 @@ Now, each program file maps to an ongoing project that you can find in the Docs 
 As for the README, it contains a list of the project files that
 links to existing articles in the documentation. In addition, the README contains
 links to language references and a list of fun facts.
-The testinfo.yml provides information about the projects in the folder
+The `testinfo.yml` provides information about the projects in the folder
 to our testing library.
 
-Naturally, if you wish to add a completely new language to the repository, you'll
-need to follow this repository structure.
+Naturally, if you wish to add a completely new language to the repository, you must
+follow this repository structure.
 
-### Docs
+### Test
 
-Meanwhile, the docs folder contains all of the documentation relevant to
-the code in the repo. More specifically, we try to write articles for every
-code snippet in the repo, so you'll find all of those here.
+Meanwhile, the test folder contains all the testing related files. Tests are
+organized by project and administered through [Glotter][glotter]. This toolkit allows us
+to write black-box tests in Python for any programming language. 
 
-While the archives folder is organized by language, the docs folder is organized
-by project. Each project folder contains a rule set (`index.md`) and a collection
-of articles organized by language name.
+To see what projects are already covered, take a peek in the [projects folder][test-projects-folder]. 
+There, you'll find each test file which contains the set of valid and invalid tests. 
 
-For example, the `_hello_world` directory contains an `index.md` which houses
-the rules for the project and several articles such as:
+To create your own tests, see [Tests in Detail][tests-in-detail] below.
 
-- `python.md`
-- `lisp.md`
-- `bash.md`
-- etc.
+## File Naming Conventions
 
-If you plan to add a new project, please make note of the directory structure.
-
-## Naming Conventions
+Before you add any files to the repo, be aware of your file naming conventions.
+As you'll see in this section, incorrect naming conventions can cause problems
+for some users. 
 
 ### Directories
 
@@ -73,8 +105,8 @@ As a general rule, if you're adding a new language, please name the directory
 using lowercase alphanumeric character sequences separated by dashes only.
 If we do not adhere to this rule, we risk limiting contributors by platform.
 
-For example, let's say someone adds C_ to our repository. If we name the directory
-c_, then Windows users will be unable to clone the repository. Instead, consider
+For example, let's say someone adds C\* to our repository. If we name the directory
+c\*, then Windows users cannot clone the repository. Instead, consider
 using c-star. The following table shares a few examples:
 
 | Language | Proper Directory Name |
@@ -88,8 +120,8 @@ Thanks for keeping this repository inclusive!
 
 ### Source Files
 
-Each source file must be named using the file name specified in the project description.
-However, the naming convention for the filename (capitalization, hyphenation, etc...)
+Each source file must be named using the filename specified in the project description.
+However, the naming convention for the filename (capitalization, hyphenation, etc.)
 should follow the industry standard for each language. If you are unsure of the naming
 convention for a given language, check the `testinfo.yaml` file found in the language directory.
 
@@ -104,41 +136,81 @@ for each naming convention:
 | pascal     | EvenOdd.sh  |
 | underscore | even_odd.sh |
 
-## Pull Requests
+Naming conventions are important as they help our testing engine, [Glotter][glotter], parse file names.
 
-If you wish to contribute, [fork][20] the repo and make a pull request
-with your changes. Ideally, your contribution should be in one of three categories:
+## Pull Requests in Detail
 
-1. Code
-2. Articles
-3. Projects
+If you wish to contribute, [fork][fork-a-repo] the repo and make a pull request
 
-We'll break these down in the following sections.
+Naturally, this repo contains a lot of code snippets.
+If you find any that are missing, please add them!
+To do so refer to the sections below:
 
-### Code
+### Claiming an Issue
 
-Naturally, this repo contains a lot of code snippets. If you find any that are
-missing, you're free to add them.
+Start by identifying the [issue][sample-program-issues] for the project and language.
+Use our issue labels to make finding the right issue easier.
+If an issue does not exist please [create one][issues-in-detail].
+Make a comment to claim the issue.
+Since we are a small team, it may take a while to acknowledge your claim.
+However, if you are the first to comment on an issue, go ahead and begin work.
+We will assign issues based on the first person to _comment_.
 
-However, for simplicity, we ask that you **only make pull requests for one
-language and one project at a time.**
+### Add One and Only One Snippet at a Time
+
+For simplicity, we ask that you **only make pull requests for one language and one project at a time.**
 
 For instance, let's say you find that the Python collection is missing both
 Hello World and Fibonacci, and you'd like to add them both. It would be to
 your advantage to then fork the repo and make a branch for each program.
 
-On your Hello World branch, you should add your sample program and update the
-Python README to reflect the change. Then, you should make a pull request.
+On your Hello World branch, add your sample program and update the
+Python README to reflect the change. Then make a pull request.
 Because you've made a branch, you won't have to wait for us to approve the change.
 You can quickly jump back to master and create a new branch for your next
 program.
 
-In this scenario, there will likely be a merge conflict that we can easily
+In this scenario, there will probably be a merge conflict that we can easily
 resolve when you make your pull request. This is the ideal workflow for this
 repo.
 
-However, there will be times when you may want to add a new language to the repo.
-When adding new languages, make sure you include a README using the following template:
+### All Tests Must Pass
+
+Generally, if you are implementing a code snippet in a pre-existing language for a pre-existing project, testing is already all setup.
+All you need to do is [name your file correctly][file-naming-conventions] and [ensure it has a valid entrypoint][writing-testable-code].
+If you are able to, we recommend running the tests locally with the appropriate flags to verify.
+See the [running-tests-locally][running-tests-locally] section below for more information.
+
+If you are absolutely unable to run the tests locally,
+create a [draft pull request][draft-pull-request] to verify your work before submitting a real pull request for review.
+
+### Requirements for a New Project
+
+#### Add project to Sample Programs Website
+
+This repository contains code snippets that match the [project list on the Sample Programs Website][project-list].
+Thus we will only accept code snippets that have a matching project there.
+
+If you believe you have a project that [fits the scope of this project][sample-programs-website],
+first make a pull request to [that repository][sample-programs-website].
+Once that pull request has been accepted, return here and implement code and tests.
+
+#### Add test for project
+
+If you are the first to implement a solution for a new project or if you come across a project that does not have tests,
+you must add tests for your pull request to be accepted.
+
+Add a new test in the [test projects folder][test-projects-folder] named in the format `test_project_name.py`.
+See [Tests in Detail][tests-in-detail] below for more information.
+
+### Requirements for a New Language
+
+Occasionally, there will be times when you may want to add a new language to the repo.
+When adding new languages, make sure you include a README and setup the language for testing.
+
+#### Create READMEs
+
+Language READMEs should use the following format:
 
 ```markdown
 # Sample Programs in [Insert Language Here]
@@ -160,8 +232,8 @@ Welcome to Sample Programs in [Insert Language Here]!
 
 In the section labeled `[Insert List of Sample Program Additions Here]`, please
 add the name of the sample program you've added. Ideally, you would link to the
-article here. At this point, however, the article doesn't exist. Instead, you
-should create an issue for the article and link the issue here.
+article here. At this point, however, the article doesn't exist. Instead, create 
+an issue for the article and link the issue here.
 
 In addition, in the section labeled `[Insert List of Fun Facts Here]`, please
 add fun information like when the language debuted, who develops the language,
@@ -175,124 +247,95 @@ are browsing the repository.
 
 If you're feeling adventurous, we're interested in adding a syntax section to each
 README. Every time a unique language syntax appears in the repo for a particular
-language, we track it in its README with links. Check out the [Python README][13]
+language, we track it in its README with links. Check out the [Python README][python-readme]
 for an example.
 
-Don't worry if you forget any of this; we have a check list of reminders in the
-pull request template.
+#### Add `testinfo.yml`
 
-At any rate, let's have some fun!
+In addition to the README, all new languages must be setup for testing.
+To do so, add a file called `testinfo.yml` to the new language directory.
 
-### Articles
+Refer to the [Glotter Wiki][glotter-directory-config] and the [Tests in Detail section][tests-in-detail] below
+for more information about the contents of that file.
 
-As a bonus to this repository, there are associated articles for every script.
-However, the articles do take a while to write, so you can help by writing them
-as well.
+## Issues in Detail
 
-Previously, we had hosted all of the articles on [The Renegade Coder][34], but
-we've since moved away from that to support open-source editing. Now, you
-can add and update any article you want.
+Any issues for code or tests must reference the relevant project.
+To do so go to the [Projects List page][projects-list] on the Sample Programs website.
+Find the project page from the list of projects there and paste a link to that page into the issue.
 
-Currently, there are three types of articles you can write: code, project and
-language. You can find out more about this type of articles below.
+For simplicity, we ask that you **only make one issue for one language and one project at a time.**
+This and the project link help is tagging and maintaining issues and pull requests.
+(See [the pull request section above][add-one-and-only-one-snippet-at-a-time] for the pull request side of this flow)
 
-#### Code
+As such please name the issue in the format "{Add/modify} {project name} in {language}."
+For example if I were to add a new snippet for the fibonacci project in python,
+I would name my issue "Add Fibonacci in Python".
+If I were to modify an existing snippet for the fibonacci project in python,
+I would name my issue "Modify Fibonacci in Python".
 
-To get started, you'll want to create a new markdown file (eg: `python.md`)
-using the [CODE_ARTICLE_TEMPLATE][40] in the docs/projects folder of your
-choice.
+Issues that are too broad will be closed and or split into multiple issues that follow proper naming format.
 
-Make sure you populate the top section (aka the Front Matter) before you're done.
+### Modifying Existing Code Snippets
 
-In the top section, you'll want to break down and explain your code snippet.
+The intended purpose of this repository is to promote learning and sharing of programming languages.
+In order to do so, we have intentionally selected relatively small projects that can be implemented as simple single file code snippets.
+We realize that there are many different ways to implement these projects even within the same language.
 
-In the `## How to Run Solution`, you'll want to explicitly detail how to run
-your solution. In general, we like to include one local solution and one online
-solution. More is always appreciated.
+Some existing implementations may not be the "best" or "most efficient" implementation.
+We are okay with that as long as the code snippet still helps with our goal to promote learning.
 
-Finally, in the `#### References`, you'll want to place your IEEE citations.
-We'd like to keep things relatively formal, so if you borrow content, please
-properly cite it here.
+That means that **we will not accept issues or pull requests to modify existing snippets**
+unless you are able to explain in the issue why the existing implementation does not follow the guidelines specified
+in the [project documentation][project-list] or why the existing implementation detracts from the goal of this repository in some way.
 
-If you'd like to add a featured image to any article, you can generate your
-own featured image by downloading an image of your choice from Pixabay and
-running the [Image Titler][30] program. Then, add the image to the assets
-folder, and link it in your article via the `featured-image` tag in the
-Front Matter.
+If you are making such a claim, we recommend waiting for approval from the core team (`@TheRenegadeCoder/core`) for beginning work on a pull request.
 
-And, that's it! We'll review your article once you've made the appropriate
-pull request.
+### Modifying Existing Tests
 
-#### Projects
+The same general principal applies to tests as it does to code snippets.
+That said, tests are not the final product of this repository as the code snippets are.
+Please explain in detail why a change needs to be made to tests.
+We will likely be less strict about such requests
+but still recommend waiting for approval from the core team (`@TheRenegadeCoder/core`) for beginning work that will become a pull requset.
 
-Currently, you can find a list of projects on our [project homepage][39].
 
-If you'd like to add a project, feel free to create a pull request with a new
-file containing a project description in the docs/projects folder. The project file
-should follow the [PROJECT_ARTICLE_TEMPLATE.md][41].
-
-Feel free to browse other projects to get an idea of how to fill out each
-section. In general, here's a nice check list to make sure you've 
-filled it out properly:
-
-- [ ] Write a high-level description of the project
-- [ ] Write out detailed requirements for the project including:
-  - [ ] a sample of a generic command line execution (i.e. `program.lang 2 3 "Hi"`)
-  - [ ] a description of expected inputs and outputs
-  - [ ] a description of assumptions
-- [ ] Write out a table of tests which include a diverse range of inputs and their expected outputs
-
-Keep in mind that projects in this repository are command line driven. 
-In other words, **input should always be pulled off the command line as
-command line arguments** rather than prompted and accepted on standard input.
-This allows us to perform quick and easy black box testing by passing
-command line arguments and observing the output.
-
-#### Languages
-
-Finally, you can also introduce a new language article. To do so, add a new
-`<languag>.md` file to the docs/languages folder using the
-[LANGUAGE_ARTICLE_TEMPLATE.md][42].
-
-Feel free to look at other articles in the collection for inspiration on how
-to fill out that template.
-
-## Tests
+## Tests in Detail
 
 All tests are automatically run as part of the build process for this project.
-Running all tests does take some time due to the nature of the project.
+Running all tests takes some time due to the project.
 When making a pull request, please ensure all tests passed in travis.
 We cannot merge any pull requests with failing tests.
 
 ### Writing Testable Code
 
-Since this project is basically just a large collection of related, but isolated files,
-we have decided to automate testing using predefined test cases as input and checking for expected output.
+Since this project is basically just an enormous collection of related, but isolated files,
+we have decided to automate testing using pre-defined test cases as input and checking for expected output.
 All programs that require input should take that input as command line arguments.
 They should then print the output of the program to the console.
 **Each program should print the expected result of the program with no other output.**
 
 To know what input will be tested and what output is expected,
-refer to "Testing" section of each [project documentation][44].
+refer to "Testing" section of each [project documentation][project-list].
 Each project has a table containing a short name for the test,
 the input that will be used for the test and the expected output.
 
-Next make sure to follow the naming conventions specified in the [Naming Conventions][2] section above.
+Next, follow the naming conventions specified in the [Naming Conventions][file-naming-conventions] section above.
 To see the naming conventions for projects that have existing tests refer to the "words"
-list in the [.glotter.yml][46] and to the `testinfo.yml` file in the language folder.
+list in the [.glotter.yml][project-glotter-yml] and to the `testinfo.yml` file in the language folder.
 
 ### Running Tests Locally
 
-#### Dependencies
+To run the tests locally, **you will need the following dependencies**:
 
 - Docker
-  - As there are so many languages contained in this project, we use docker to automatically generate
+  - As there are so many languages in this project, we use docker to automatically generate
     consistent, stable build/test environments.
 - Python 3.7+
   - We use glotter as our testing library. Make sure you have python installed.
     Then use `pip install -r requirements.txt` (preferably in a virtual environment) to install glotter and its dependencies.
 
-#### Starting a test run
+After that, running the tests is a matter of using the following commands:
 
 Starting a test run is done by using python to call `runner.py`.
 For windows, this can be done by calling `samplerunner.bat`
@@ -304,63 +347,76 @@ Some common cases for testing are outlined below.
 
 | Purpose | Command | Example |
 | --- | --- | --- |
-| Run all tests | `./samplerunner.sh test | `./samplerunner.sh test` |
+| Run all tests | `./samplerunner.sh test` | `./samplerunner.sh test` |
 | Run all project tests for a given language | `./samplerunner.sh test -l {LANGUAGE_NAME}` | `./samplerunner.sh test -l c-sharp` |
 | Run all language tests for a given project | `./samplerunner.sh test -p {PROJECT_KEY}` | `./samplerunner.sh test -p evenodd` |
 | Run all tests for a specific program | `./samplerunner.sh test -s {NAME_OF_PROJECT}.{EXTENSION}` | `./samplerunner.sh -s Fibonacci.java` |
 
+### Adding a testsinfo.yml
+
+Each project directory should contain a file called `testinfo.yml`.
+This file contains information that tell the testing framework how to identify, build, and execute source files in this language.
+Refer to the [Glotter Wiki][glotter-directory-config] for detailed information about the structure of the `testinfo.yml` file.
+
+For the container section of the file, we prefer to use [official language images][docker-official-images].
+If no official image is available, please try to use one that commonly used by developers in the language
+and that is provided by a contributor that you trust.
+
+If no docker image exists for the language at all, please reach out to the core team in your github issue using `@TheRenegadeCoder/core`.
 
 ## Plagiarism
 
 **Please** do not submit work that is copied from another source. If work is found to be
-plagiarized, the issue must be remedied ASAP. The quickest solution is to cite the source--a citation
+plagiarized, the issue must be remedied ASAP. The quickest solution is to cite the source—a citation
 in the README would suffice. After that, the solution should be adapted as needed. If necessary, the
-solution will be removed at the authors request.
+solution will be removed at the author's request.
 
 Whenever possible, **please** request the original author to share their solution with this repo. This
 keeps the repo tidy by eliminating the need for citations.
 
 These rules help grow and cultivate the community in a positive manner.
 
-[0]: #please-read
-[1]: #repository-structure
-[2]: #naming-conventions
-[4]: #pull-requests
-[5]: #projects
-[6]: ../docs/hello-world/index.md
-[7]: ../docs/fizz-buzz.index.md
-[8]: ../docs/reverse-a-string/index.md
-[9]: ../docs/quine.md
-[10]: ../docs/game-of-life/index.md
-[11]: https://therenegadecoder.com/members/registration/
-[12]: https://therenegadecoder.com/wp-admin/
-[13]: https://github.com/jrg94/sample-programs/blob/master/archive/p/python/README.md
-[17]: #plagiarism
-[18]: ../docs/file-io.md
-[19]: https://en.gravatar.com/
-[20]: https://help.github.com/articles/fork-a-repo
-[21]: https://therenegadecoder.com/code/hello-world-in-every-language/
-[22]: https://therenegadecoder.com/code/reverse-a-string-in-every-language/
-[23]: https://therenegadecoder.com/series/fizz-buzz-in-every-language/
-[24]: ../docs/baklava/index.md
-[25]: ../docs/fibonacci/index.md
-[26]: ../docs/roman-numeral-conversion/index.md
-[28]: ../docs/longest-common-subsequence/index.md
-[29]: ../docs/convex-hull/index.md
-[30]: https://github.com/TheRenegadeCoder/image-titler
-[31]: ../docs/even-odd/index.md
-[32]: ../docs/prime-number/index.md
-[33]: ../docs/factorial/index.md
-[34]: https://therenegadecoder.com/code/sample-programs-in-every-language/
-[35]: #archives
-[36]: #docs
-[37]: #code
-[38]: #articles
-[39]: https://therenegadecoder.github.io/sample-programs
-[40]: ../docs/templates/CODE_ARTICLE_TEMPLATE.md
-[41]: ../docs/templates/PROJECT_ARTICLE_TEMPLATE.md
-[42]: ../docs/templates/LANGUAGE_ARTICLE_TEMPLATE.md
-[43]: #tests
-[44]: https://sample-programs.therenegadecoder.com/projects/
-[45]: https://sample-programs.therenegadecoder.com/projects/factorial/
-[46]: ../.glotter.yml
+[overview]: #overview
+[pull-requests]: #pull-requests
+[issues]: #issues
+[repository-structure]: #repository-structure
+[archives]: #archives
+[test]: #test
+[file-naming-conventions]: #file-naming-conventions
+[directories]: #directories
+[source-files]: #source-files
+[pull-requests-in-detail]: #pull-requests-in-detail
+[claiming-an-issue]: #claiming-an-issue
+[add-one-and-only-one-snippet-at-a-time]: #add-one-and-only-one-snippet-at-a-time
+[all-tests-must-pass]: #all-tests-must-pass
+[requirements-for-a-new-project]: #requirements-for-a-new-project
+[add-project-to-sample-programs-website]: #add-project-to-sample-programs-website
+[add-test-for-project]: #add-test-for-project
+[requirements-for-a-new-language]: #requirements-for-a-new-language
+[create-readmes]: #create-readmes
+[add-testinfoyml]: #add-testinfoyml
+[issues-in-detail]: #issues-in-detail
+[modifying-existing-code-snippets]: #modifying-existing-code-snippets
+[modifying-existing-tests]: #modifying-existing-tests
+[tests-in-detail]: #tests-in-detail
+[writing-testable-code]: #writing-testable-code
+[running-tests-locally]: #running-tests-locally
+[adding-a-testinfoyml]: #adding-a-testsinfoyml
+[plagiarism]: #plagiarism
+
+[sample-programs-issues]: https://github.com/TheRenegadeCoder/sample-programs/issues
+
+[project-list]: https://sample-programs.therenegadecoder.com/projects/
+[glotter]: https://github.com/auroq/glotter
+[glotter-wiki]: https://github.com/auroq/glotter/wiki
+[glotter-directory-config]: https://github.com/auroq/glotter/wiki/Directory-Level-Configuration
+[sample-programs-website]: https://github.com/TheRenegadeCoder/sample-programs-website
+[sample-programs-website-contributing]: https://github.com/TheRenegadeCoder/sample-programs-website
+
+[project-glotter-yml]: ../.glotter.yml
+[test-projectes-folder]: ../test/projects
+[python-readme]: https://github.com/jrg94/sample-programs/blob/master/archive/p/python/README.md
+
+[fork-a-repo]: https://help.github.com/articles/fork-a-repo
+[draft-pull-request]: https://github.blog/2019-02-14-introducing-draft-pull-requests/
+[docker-official-images]: https://docs.docker.com/docker-hub/official_images/

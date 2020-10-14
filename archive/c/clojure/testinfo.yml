@@ -5,4 +5,4 @@ folder:
 container:
   image: "clojure"
   tag: "tools-deps"
-  cmd: "clojure ./{{ source.name}}{{ source.extension }}"
+  cmd: "clojure -M ./{{ source.name}}{{ source.extension }}"
