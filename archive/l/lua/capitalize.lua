@@ -7,5 +7,6 @@ else
     for i,v in pairs(str) do
         s = s .. v .. " "
     end
-    print(s:gsub("^%l", string.upper))  
+    s, _ = s:gsub("^%l", string.upper)
+    print(s)  
 end
