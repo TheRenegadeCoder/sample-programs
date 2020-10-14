@@ -1,5 +1,3 @@
--module(hello_world).
--export([start/0]).
+-export([main/1]).
 
-start() ->
-   io:format("Hello, World!~n").
+main([]) -> io:format("Hello, World!~n").
