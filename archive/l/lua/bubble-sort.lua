@@ -42,5 +42,3 @@ for k,v in pairs(nums) do
         io.write(', ')
     end
 end
-
-print()
