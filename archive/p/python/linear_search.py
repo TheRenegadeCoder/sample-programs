@@ -1,26 +1,17 @@
 import sys
 
-def sysarg_to_list(string):
+def sysarg_to_list(string: str):
     return [int(x.strip(" "), 10) for x in string.split(',')]
 
-if(len(sys.argv) != 2):
-    print("Enter two arguments: key and string containing array elements")
-    sys.exit()
+def linear_search(array: list, key: int) -> bool:
+    for item in array:
+        if item == key:
+            return True
+    return False
 
-key = int(sys.argv[1])
-array = sysarg_to_list(sys.argv[2])
-size = len(array)
-
-flag = 0
-pos = -1
-
-for i in range(size):
-    if array[i] == key:
-        flag = 1
-        pos = i
-        break
-
-if(flag):
-    print(key, "found at position", pos, ".")
+if len(sys.argv) != 3 or not sys.argv[1]:
+    print('Usage: please provide a list of sorted integers ("1, 4, 5, 11, 12") and the integer to find ("11")')
 else:
-    print(key, "not in the array.")
+    key = int(sys.argv[2])
+    array = sysarg_to_list(sys.argv[1])
+    print(linear_search(array, key))

@@ -1,9 +1,5 @@
-for i in range(1, 101):
-    line = ''
-    if i % 3 == 0:
-        line += "Fizz"
-    if i % 5 == 0:
-        line += "Buzz"
-    if not line:
-        line += str(i)
-    print(line)
+for n in range(1, 101):
+    if n % 3 == 0:
+        print("FizzBuzz" if n % 5 == 0 else "Fizz")
+        continue
+    print("Buzz" if n % 5 == 0 else n)
