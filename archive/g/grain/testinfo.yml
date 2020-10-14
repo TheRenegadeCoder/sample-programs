@@ -5,4 +5,4 @@ folder:
 container:
   image: "grainlang/grain"
   tag: "latest"
-  cmd: 'echo "$(grain {{ source.name }}{{ source.extension }})" | tr -d \"'
+  cmd: "grain {{ source.name }}{{ source.extension }}"
