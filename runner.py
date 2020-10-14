@@ -17,8 +17,10 @@ class ProjectType(Enum):
     InsertionSort = auto()
     JobSequencing = auto()
     LCS = auto()
+    LinearSearch = auto()
     MergeSort = auto()
     MST = auto()
+    PalindromicNumber = auto()
     Prime = auto()
     QuickSort = auto()
     Quine = auto()
@@ -26,6 +28,7 @@ class ProjectType(Enum):
     ReverseString = auto()
     RomanNumeral = auto()
     SelectionSort = auto()
+    SleepSort = auto()
 
     @property
     def key(self):

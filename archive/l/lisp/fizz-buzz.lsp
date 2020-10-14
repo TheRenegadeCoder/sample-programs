@@ -1,9 +1,10 @@
-(dotimes (run 100) 
-    (setq num (+ run 1))
-    (write-line (cond 
-        ((and (= (mod num 3) 0) (= (mod num 5) 0)) "FizzBuzz")
-        ((= (mod num 3) 0) "Fizz")
-        ((= (mod num 5) 0) "Buzz")
-        (t (write-to-string num))
-    ))
-)
+(defun divides-by (num divisor)
+    (= (mod num divisor) 0))
+
+(dotimes (num 100)
+    (write-line
+      (cond
+        ((and (divides-by (+ num 1) 3) (divides-by (+ num 1) 5)) "FizzBuzz")
+        ((divides-by (+ num 1) 3) "Fizz")
+        ((divides-by (+ num 1) 5) "Buzz")
+        (t (write-to-string (+ num 1))))))

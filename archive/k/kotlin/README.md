@@ -4,15 +4,18 @@ Welcome to Sample Programs in Kotlin!
 
 ## Sample Programs
 
-- [Hello World in Kotlin][2]
 - [Baklava in Kotlin][6]
-  - Solution borrowed from @toturkmen via the [baklava repo][1]
-- [Fizz Buzz in Kotlin][7]
-- [Fibonacci Sequence in Kotlin][8]
-- [Reverse String in Kotlin][9]
+  - Solution borrowed from @toturkmen via the [baklava repo][baklava-repo]
 - [Capitalize in Kotlin][10]
+- [Factorial in Kotlin][14]
+- [Fibonacci Sequence in Kotlin][8]
 - [FileIO in Kotlin][11]
+- [Fizz Buzz in Kotlin][7]
+- [Hello World in Kotlin][hello-world-article]
+- [Job Sequencing with Deadlines in Kotlin][13]
 - [Quine in Kotlin][12]
+- [Reverse String in Kotlin][9]
+- [ROT-13 in Kotlin][1407]
 
 ## Fun Facts
 
@@ -23,15 +26,16 @@ Welcome to Sample Programs in Kotlin!
 
 ## References
 
-- [Kotlin Wiki][3]
-- [Kotlin Docs][4]
-- [Kotlin GitHub][5]
+- [Kotlin Wiki][kotlin-wiki]
+- [Kotlin Docs][kotlin-docs]
+- [Kotlin GitHub][kotlin-source]
 
-[1]: https://github.com/toturkmen/baklava
-[2]: https://therenegadecoder.com/code/hello-world-in-kotlin/
-[3]: https://en.wikipedia.org/wiki/Kotlin_(programming_language)
-[4]: https://kotlinlang.org/
-[5]: https://github.com/JetBrains/kotlin
+[baklava-repo]: https://github.com/toturkmen/baklava
+[hello-world-article]: https://therenegadecoder.com/code/hello-world-in-kotlin/
+[kotlin-docs]: https://kotlinlang.org/
+[kotlin-wiki]: https://en.wikipedia.org/wiki/Kotlin_(programming_language)
+[kotlin-source]: https://github.com/JetBrains/kotlin
+
 [6]: https://github.com/TheRenegadeCoder/sample-programs/issues/430
 [7]: https://github.com/TheRenegadeCoder/sample-programs/issues/511
 [8]: https://github.com/TheRenegadeCoder/sample-programs/issues/566
@@ -39,3 +43,5 @@ Welcome to Sample Programs in Kotlin!
 [10]: https://github.com/TheRenegadeCoder/sample-programs/issues/1393
 [11]: https://github.com/TheRenegadeCoder/sample-programs/issues/1398
 [12]: https://github.com/TheRenegadeCoder/sample-programs/issues/1712
+[13]: https://github.com/TheRenegadeCoder/sample-programs/issues/1409
+[14]: https://github.com/TheRenegadeCoder/sample-programs/issues/1399

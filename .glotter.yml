@@ -72,6 +72,11 @@ projects:
     acronyms:
       - "lcs"
     requires_parameters: true
+  linearsearch:
+    words:
+      - "linear"
+      - "search"
+    requires_parameters: true
   mergesort:
     words:
       - "merge"
@@ -82,6 +87,11 @@ projects:
       - "mst"
     acronyms:
       - "mst"
+    requires_parameters: true
+  palindromicnumber:
+    words:
+      - "palindromic"
+      - "number"
     requires_parameters: true
   prime:
     words:
@@ -115,5 +125,10 @@ projects:
   selectionsort:
     words:
       - "selection"
+      - "sort"
+    requires_parameters: true
+  sleepsort:
+    words:
+      - "sleep"
       - "sort"
     requires_parameters: true
