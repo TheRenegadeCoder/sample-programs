@@ -1,0 +1,8 @@
+folder:
+  extension: ".erl"
+  naming: "underscore"
+
+container:
+  image: "erlang"
+  tag: "23-slim"
+  cmd: "escript {{ source.name }}{{ source.extension }}"
