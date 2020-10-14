@@ -5,4 +5,5 @@ folder:
 container:
   image: "erlang"
   tag: "23-slim"
-  cmd: "escript {{ source.name }}{{ source.extension }}"
+  build: "erlc {{ source.name }}{{ source.extension }}"
+  cmd: "erl -noshell -s {{ source.name }} start -s init stop"
