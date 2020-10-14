@@ -1,9 +1,6 @@
--module(fizz_buzz).
--export([start/0]).
+-export([main/1]).
 
-% Run with: erl -noshell -run fizz_buzz -s init stop
-
-start() ->
+main([]) ->
     fizz_buzz(1, 100).
 
 fizz_buzz(N, Max) when N > Max -> [];
