@@ -5,7 +5,7 @@ end
 
 if (#arg < 1)
 then
-    print('Usage: provide a string')
+    print('Usage: please provide a string to encrypt')
 else
     str = {...}
     for i,v in pairs(str) do
