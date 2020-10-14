@@ -5,7 +5,7 @@ function isPrime(n)
     usage = "Usage: please input a non-negative integer"
     local n = tonumber(n)
     --catch nil, negative and non int numbers
-    if not n or (n % 1 ~= 0) then 
+    if not n or n < 0 or (n % 1 ~= 0) then 
         print(usage)
     --catch 0 and 1
     elseif n < 2 then
