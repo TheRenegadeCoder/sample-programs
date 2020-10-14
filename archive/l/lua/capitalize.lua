@@ -1,6 +1,6 @@
-if (#arg < 1)
+if (#arg < 1 or arg[1] == '')
 then
-    print('Usage: provide a string')
+    print('Usage: please provide a string')
 else
     str = {...}
     s = ""
