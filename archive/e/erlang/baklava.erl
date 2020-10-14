@@ -1,9 +1,7 @@
--module(baklava).
--export([start/1]).
+-export([main/1]).
 
--spec start(MaxWidth :: integer()) -> ok.
-start(MaxWidth) ->
-    baklava(MaxWidth, 0),
+main([]) ->
+    baklava(10, 0),
     ok.
 
 -spec baklava(MaxWidth :: integer(),
