@@ -4,4 +4,5 @@ folder:
 
 container:
   image: "esolang/befunge98"
+  tag: "latest"
   cmd: "befunge98 {{ source.name }}"
