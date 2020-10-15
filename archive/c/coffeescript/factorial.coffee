@@ -3,7 +3,7 @@ factorial = (n) ->
     [1..n].reduce (x, y) -> x * y
     
 main = () ->
-    return factorial(process.argv[2]) if process.argv.length >= 2
+    return factorial(process.argv[2]) if process.argv.length == 3 
     "Usage: please input a non-negative integer"
-    
+
 console.log main()
