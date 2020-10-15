@@ -7,7 +7,6 @@ def longestPalindrome(string):
         centres.append(centres[0] - diff)
 
     for centre in centres:
-
         if(min(centre + 1, 2 * len(string) - 1 - centre) <= len(longest)):
             break
         if centre % 2 == 0:

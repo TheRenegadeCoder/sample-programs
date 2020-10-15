@@ -46,8 +46,9 @@ class Board:
         """
         self._rows = rows
         self._columns = columns
-        self._grid = [[Cell() for column_cells in range(self._columns)]
-                      for row_cells in range(self._rows)]
+        self._grid = [
+            [Cell() for _ in range(self._columns)] for _ in range(self._rows)
+        ]
 
         self._generate_board()
 
