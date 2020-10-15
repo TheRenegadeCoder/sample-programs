@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 import sys
 
 
@@ -15,10 +14,9 @@ def main(args):
     try:
         num = int(args[0])
         print(even_odd(num))
-    except (IndexError,ValueError):
+    except (IndexError, ValueError):
         exit_with_error()
 
 
 if __name__ == "__main__":
     main(sys.argv[1:])
-

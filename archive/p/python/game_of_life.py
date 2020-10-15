@@ -46,7 +46,8 @@ class Board:
         """
         self._rows = rows
         self._columns = columns
-        self._grid = [[Cell() for column_cells in range(self._columns)] for row_cells in range(self._rows)]
+        self._grid = [[Cell() for column_cells in range(self._columns)]
+                      for row_cells in range(self._rows)]
 
         self._generate_board()
 
@@ -145,7 +146,8 @@ class Board:
                     valid_neighbour = False
 
                 if valid_neighbour:
-                    neighbour_list.append(self._grid[neighbour_row][neighbour_column])
+                    neighbour_list.append(
+                        self._grid[neighbour_row][neighbour_column])
         return neighbour_list
 
 

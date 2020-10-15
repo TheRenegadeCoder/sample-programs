@@ -1,6 +1,3 @@
-"""
-Given a string S, find the longest palindromic substring in S.
-"""
 def longestPalindrome(string):
     longest = ""
 
@@ -21,11 +18,12 @@ def longestPalindrome(string):
         while left >= 0 and right < len(string) and string[left] == string[right]:
             left -= 1
             right += 1
-        
+
         if right - left > len(longest):
             longest = string[left + 1: right]
-        
+
     return longest
+
 
 if __name__ == '__main__':
     string = str(input("Enter String: "))

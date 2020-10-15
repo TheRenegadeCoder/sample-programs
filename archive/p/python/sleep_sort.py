@@ -16,13 +16,13 @@ def error_and_exit():
     print('Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"')
     sys.exit()
 
-    
+
 def main():
     if len(sys.argv) == 1 or not sys.argv[1] or len(sys.argv[1].split(",")) == 1:
         error_and_exit()
-        
+
     array = arg_to_list(sys.argv[1])
-    
+
     threads = []
     output = []
     for i in array:
@@ -30,10 +30,11 @@ def main():
         thread = threading.Thread(target=sleep_sort, args=arg_tuple)
         thread.start()
         threads.append(thread)
-        
+
     for thread in threads:
         thread.join()
-        
+
     print(output)
+
 
 main()
