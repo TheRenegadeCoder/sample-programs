@@ -19,8 +19,8 @@ def main(args):
         if n < 0:
             exit_with_error()
         elif n >= 996:
-            exit_with_error(
-                '{}! is out of the reasonable bounds for calculation'.format(n))
+            msg = f'{n}! is out of the reasonable bounds for calculation'
+            exit_with_error(msg)
         print(factorial(n))
     except (IndexError, ValueError):
         exit_with_error()
