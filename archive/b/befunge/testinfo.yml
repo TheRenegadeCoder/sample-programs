@@ -3,7 +3,6 @@ folder:
   naming: "hyphen"
 
 container:
-  image: "baekjoon/onlinejudge-tbc"
-  tag: "1.0"
-  build: "/tbc {{ source.name }}{{ source.extension }} > Main.c && /usr/bin/gcc -o Main Main.c"
-  cmd: "./Main"
+  image: "esolang/befunge98"
+  tag: "latest"
+  cmd: "befunge98 {{ source.name }}{{ source.extension }}"

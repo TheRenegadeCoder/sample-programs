@@ -116,5 +116,11 @@ def fizz_buzz(request):
 
 @project_test(ProjectType.FizzBuzz.key)
 def test_fizz_buzz(fizz_buzz):
-    actual = fizz_buzz.run()
+    raw = fizz_buzz.run().split('\n')
+
+    #Remove all trailing spaces
+    actual = ""
+    for line in raw:
+    	actual += line.strip() + '\n'
+
     assert actual == expected
