@@ -1,0 +1,7 @@
+(;module: {#;doc "This will be our program's main module."}
+  lux
+  (lux (codata io)
+       [cli #+ program:]))
+
+(program: args
+  (io (log! "Hello, world!")))
