@@ -10,6 +10,8 @@ Welcome to Sample Programs in Erlang!
 - [Baklava in Erlang](https://github.com/TheRenegadeCoder/sample-programs/issues/1183)
 - [Reverse String in Erlang](https://github.com/TheRenegadeCoder/sample-programs/issues/1199)
 - [Factorial in Erlang](https://github.com/TheRenegadeCoder/sample-programs/issues/1203)
+- [Fibonacci in Erlang](https://github.com/TheRenegadeCoder/sample-programs/issues/2120)
+
 
 ## Fun Facts
 
