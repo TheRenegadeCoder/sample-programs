@@ -4,7 +4,7 @@ factorial = (n) ->
     
 main = () ->
     args = process.argv
-    return factorial(args[2]) if args.length == 3 and args[2] != ""
+    return factorial(args[2]) if args.length == 3 and isFinite(args[2])
     "Usage: please input a non-negative integer"
 
 console.log main()
