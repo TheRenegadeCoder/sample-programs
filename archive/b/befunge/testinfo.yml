@@ -5,4 +5,5 @@ folder:
 container:
   image: "baekjoon/onlinejudge-tbc"
   tag: "1.0"
-  cmd: "./Main {{ source.name }}{{ source.extension }}"
+  build: "/tbc {{ source.name }}{{ source.extension }} > Main.c && /usr/bin/gcc -o Main Main.c"
+  cmd: "./Main"
