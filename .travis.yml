@@ -1,22 +1,14 @@
-matrix:
-  include:
-    - language: python
-      python:
-        - "3.7"
-      install: 
-        - pip install -r requirements.txt
-        - python runner.py download
-      script: python runner.py test
-      deploy:
-        provider: script
-        script: bash -x deploy.sh
+language: python
+python:
+  - "3.7"
+install: 
+  - pip install -r requirements.txt
+  - travis_wait python runner.py download
+script: python runner.py test
+deploy:
+  provider: script
+  script: bash -x deploy.sh
 
 
 notifications:
   email: false
-  webhooks:
-    urls:
-      - https://webhooks.gitter.im/e/f694e2f80d5bba482051
-    on_success: always
-    on_failure: always
-    on_start: never
