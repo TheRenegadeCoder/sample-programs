@@ -3,6 +3,6 @@ folder:
   naming: "hyphen"
 
 container:
-  image: "esolang/befunge98"
-  tag: "latest"
-  cmd: "befunge98 {{ source.name }}{{ source.extension }}"
+  image: "baekjoon/onlinejudge-tbc"
+  tag: "1.0"
+  cmd: "./Main {{ source.name }}{{ source.extension }}"
