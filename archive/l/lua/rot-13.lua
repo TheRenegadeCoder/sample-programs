@@ -1,20 +1,19 @@
--- See: https://stackoverflow.com/questions/9695697/lua-replacement-for-the-operator/20858039#20858039
-function mod(a, b)
-    return a - (math.floor(a/b)*b)
+local function ascii_base(s)
+  return s:lower() == s and ('a'):byte() or ('A'):byte()
 end
 
-if (#arg < 1)
+function caesar_cipher(str, key)
+  return (str:gsub('%a', function(s)
+    local base = ascii_base(s)
+    return string.char(((s:byte() - base + key) % 26) + base)
+  end))
+end
+
+if (#arg < 1 or arg[1] == "")
 then
-    print('Usage: provide a string')
+    print('Usage: please provide a string to encrypt')
 else
-    str = {...}
-    for i,v in pairs(str) do
-        for k = 1, #v do
-            local c = v:sub(k,k)
-            io.write(string.char(mod(string.byte(c) - 97 + 13, 26) + 97))
-        end
-        io.write(" ")
-    end
+    io.write(caesar_cipher(arg[1], 13))
 end
 
 io.write("\n")
