@@ -3,13 +3,13 @@ nums = {}
 
 -- Exit if no list is entered or list is empty
 if arg[1] == nil or #arg[1] == 0 then
-    print('Usage: please provide a list of at least two integers to sort in the format “1, 2, 3, 4, 5”')
+    print('Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"')
     return
 end
 
 -- Exit if list has a single entry or is not formatted with commas
 if (not string.match(arg[1], " ")) or (not string.match(arg[1], ",")) then
-    print('Usage: please provide a list of at least two integers to sort in the format “1, 2, 3, 4, 5”')
+    print('Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"')
     return
 end
 
@@ -42,3 +42,5 @@ for k,v in pairs(nums) do
         io.write(', ')
     end
 end
+
+io.write("\n")
