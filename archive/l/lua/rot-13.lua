@@ -1,19 +1,20 @@
--- See: https://stackoverflow.com/questions/9695697/lua-replacement-for-the-operator/20858039#20858039
 function mod(a, b)
     return a - (math.floor(a/b)*b)
 end
 
 if (#arg < 1)
 then
-    print('Usage: please provide a string to encrypt')
+    print('Usage: provide a string')
 else
-    str = {...}
-    for i,v in pairs(str) do
-        for k = 1, #v do
-            local c = v:sub(k,k)
+    str = arg[1]
+    for k = 1, #str do
+        local c = str:sub(k,k)
+        if (c ~= " ")
+        then
             io.write(string.char(mod(string.byte(c) - 97 + 13, 26) + 97))
+        else
+            io.write(" ")
         end
-        io.write(" ")
     end
 end
 
