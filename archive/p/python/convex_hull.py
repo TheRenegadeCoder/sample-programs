@@ -8,59 +8,24 @@ Y = [int(i.strip()) for i in sys.argv[2].split(',') if i]
 assert len(X) == len(Y), 'Wrong Input'
 
 Z = list(set((zip(X, Y))))
-X = [i for i, j in Z]
-Y = [j for i, j in Z]
+X = [i for i, _ in Z]
+Y = [j for _, j in Z]
 
 
 def dist(point1, point2):
-    """
-    Returns the distance between 2d points: point1 and point2
-    """
     x1, y1 = point1
     x2, y2 = point2
     return sqrt(abs((x2 - x1)**2 + (y2 - y1)**2))
 
 
-def farthest(point, setofpoints):
-    """
-    setofpoints are all colinear, along with 'point'
-    This function returns the farthest point from setofpoints wrt 'point'.
-    """
-    d = [(dist(point, i), i) for i in setofpoints]
+def farthest(point, set_of_points):
+    d = [(dist(point, i), i) for i in set_of_points]
     d = list(set(d))
     d = sorted(d, reverse=True)
     return d[0][1]
 
 
 def orient(point1, point2, point3):
-    # point3 is the target point.
-    # if point2 is counterclockwise for point3, wrt point1; then we send 2, similarly for other cases.
-    """
-    0 --> points are colinear  
-    1 --> Clockwise  
-    2 --> Counterclockwise
-    ------------------------------------------
-
-    a x b = a.b.sin(theta) n
-    a x b = | i    j    k |
-            | a1   a2   a3|
-            | b1   b2   b3|
-    When k component is missing then:
-
-    a x b = k|a1   a2|
-             |b1   b2|
-
-    Also a x b is positive only when they are clockwise, relative to coord axes; i.e. b is future path of a.
-
-    Thus vector product holds the key for rotation.
-
-    | x2-x1  x3-x1 |
-    | y2-y1  y3-y1 |
-    So, we shift the origin on x1, y1 and then we compute this determinant for sign takings.
-
-    Thus this determinant's sign will tell about the sign of normal vector.
-    Also, in cross product, when angle is 0, sintheta is 0 thus result is zero.
-    """
     x1, y1 = point1
     x2, y2 = point2
     x3, y3 = point3
@@ -73,12 +38,12 @@ def orient(point1, point2, point3):
         return 2
 
 
-def next_hurdle(setofpoints, pivot, finallist):
+def next_hurdle(setofpoints, pivot, final_list):
     z = setofpoints
-    finallist = finallist[1:]
+    final_list = final_list[1:]
     k = []
     for i in z:
-        if i in finallist:
+        if i in final_list:
             continue
         bool1 = 1
         for j in z:
@@ -91,17 +56,17 @@ def next_hurdle(setofpoints, pivot, finallist):
 
 
 def foo(z):
-    finallist = []
+    final_list = []
     topmost = [(i, j) for i, j in z if j == max(Y)]
     v1 = sorted(topmost)[0]
-    finallist.append(v1)
-    next_point = v1[0], v1[1]+1  # just a non v1 point choosed
+    final_list.append(v1)
+    next_point = v1[0], v1[1] + 1
     pivot = v1
     while next_point != v1:
-        next_point = next_hurdle(z, pivot, finallist)
+        next_point = next_hurdle(z, pivot, final_list)
         pivot = next_point
-        finallist.append(next_point)
-    return finallist
+        final_list.append(next_point)
+    return final_list
 
 
 if __name__ == '__main__':
