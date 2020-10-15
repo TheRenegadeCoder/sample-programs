@@ -11,7 +11,7 @@ end
 
 if (#arg < 1 or arg[1] == "")
 then
-    print('Usage: provide a string')
+    print('Usage: please provide a string to encrypt')
 else
     io.write(caesar_cipher(arg[1], 13))
 end
