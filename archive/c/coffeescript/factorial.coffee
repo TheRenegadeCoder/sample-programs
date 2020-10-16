@@ -1,6 +1,6 @@
 factorial = (n) ->
     return usage() if n < 0
-    return 1 if n == 0
+    return 1 if n == "0"
     [1..n].reduce (x, y) -> x * y
     
 usage = () ->
