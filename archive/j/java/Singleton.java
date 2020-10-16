@@ -4,6 +4,7 @@ class Singleton {
     }
 }
 
+//add this class to a second file called "Example"
 class Example {
     private static Example MyInstance;
     private Example() {}
