@@ -22,27 +22,6 @@ func longestPalindrome(s string) string {
 	for i := n - 1; i >= 0; i-- {
 		for j := i; j < n; j++ {
 			if i == j {
-				d[i][j] = truepackage main
-
-import (
-	"fmt"
-	"unicode"
-)
-
-func longestPalindrome(s string) string {
-	if len(s) == 0 {
-		return "Incorrect input provided. Program Terminated"
-	}
-
-	start, n, maxLen := 0, len(s), 0
-	d := make([][]bool, n)
-	for i := 0; i < n; i++ {
-		d[i] = make([]bool, n)
-	}
-
-	for i := n - 1; i >= 0; i-- {
-		for j := i; j < n; j++ {
-			if i == j {
 				d[i][j] = true
 			} else if i+1 == j {
 				d[i][j] = s[i] == s[j]
