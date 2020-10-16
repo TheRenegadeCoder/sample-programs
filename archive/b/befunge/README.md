@@ -4,8 +4,8 @@ Welcome to Sample Programs in Befunge!
 
 ## Sample Programs
 
-- Baklava in Befunge
-- [Fizz Buzz in Befunge](https://github.com/TheRenegadeCoder/sample-programs/issues/603)
+- [Baklava in Befunge](https://github.com/TheRenegadeCoder/sample-programs-website/issues/362)
+- [Fizz Buzz in Befunge](https://sample-programs.therenegadecoder.com/projects/fizz-buzz/befunge/)
 - [Hello World in Befunge](https://therenegadecoder.com/code/hello-world-in-befunge/)
 - Quine in Befunge
 
