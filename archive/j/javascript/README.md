@@ -26,6 +26,7 @@ Welcome to Sample Programs in JavaScript!
 -   [Prime Number in JavaScript][14]
 -   [Quick Sort in JavaScript][20]
 -	[Quine in JavaScript][24]
+-   [Remove Whitespace from String in Javascript][30]
 -   [Reverse a String in JavaScript][3]
 -   [Roman Numeral Conversion in JavaScript][17]
 -   [ROT-13 in JavaScript][21]
@@ -43,6 +44,7 @@ Welcome to Sample Programs in JavaScript!
 -   [Online JavaScript Editor][7]
 -   [Web Standards/Documentation][10]
 -   [JavaScript beginner tutorial][11]
+-   [30 Seconds Of Code][31]
 
 [javascript-wiki]: https://en.wikipedia.org/wiki/JavaScript
 [javascript-website]: https://www.javascript.com/
@@ -75,3 +77,5 @@ Welcome to Sample Programs in JavaScript!
 [27]:https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/j/javascript/linear-search.js
 [28]: https://github.com/TheRenegadeCoder/sample-programs/issues/1381
 [29]: https://github.com/TheRenegadeCoder/sample-programs/pull/2163
+[30]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/j/javascript/remove-whitespace.js
+[31]: https://www.30secondsofcode.org/
