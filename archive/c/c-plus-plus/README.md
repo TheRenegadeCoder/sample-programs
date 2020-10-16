@@ -22,6 +22,7 @@ Welcome to Sample Programs in C++!
 - [Merge Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/tree/master/archive/c/c-plus-plus)
 - Prime Number in C++
 - [Quick Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1848)
+- [Reverse Number in C++](https://github.com/TheRenegadeCoder/sample-programs/tree/master/archive/c/c-plus-plus)
 - [Reverse String in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/419)
 - [Roman Numeral Conversion in C++](https://github.com/TheRenegadeCoder/sample-programs/tree/master/archive/c/c-plus-plus)
 - [Selection Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1683)
