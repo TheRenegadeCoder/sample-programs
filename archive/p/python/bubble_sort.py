@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 import sys
 from functools import reduce
 
@@ -13,7 +12,7 @@ def bubble_sort(xs):
             del xs[1]
             return [x1] + pass_list(xs)
         return [x0] + pass_list(xs[1:])
-    return reduce(lambda acc, _ : pass_list(acc), xs, xs[:])
+    return reduce(lambda acc, _: pass_list(acc), xs, xs[:])
 
 
 def input_list(list_str):
@@ -31,10 +30,9 @@ def main(args):
         if len(xs) <= 1:
             exit_with_error()
         print(bubble_sort(xs))
-    except (IndexError,ValueError):
+    except (IndexError, ValueError):
         exit_with_error()
 
 
 if __name__ == "__main__":
     main(sys.argv[1:])
-

@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 import sys
 from string import ascii_uppercase, ascii_lowercase
 
@@ -8,7 +7,6 @@ def rot_13(string):
 
 
 def encrypt_char(c):
-    lts = None
     if c in ascii_uppercase:
         ltrs = ascii_uppercase
     elif c in ascii_lowercase:
@@ -30,10 +28,9 @@ def main(args):
         if len(string) <= 0:
             exit_with_error()
         print(rot_13(string))
-    except (IndexError,ValueError):
+    except (IndexError, ValueError):
         exit_with_error()
 
 
 if __name__ == "__main__":
     main(sys.argv[1:])
-
