@@ -6,6 +6,7 @@ Welcome to Sample Programs in Pascal!
 
 - [Fizz Buzz in Pascal][1]
 - [Hello World in Pascal][2]
+- [Reverse String in Pascal][3]
 
 ## Fun Facts
 
