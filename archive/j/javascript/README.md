@@ -36,6 +36,7 @@ Welcome to Sample Programs in JavaScript!
 
 -   Debut: 1995
 -   Typing: Dynamic
+-   MultipleThreading: Not supported yet
 
 ## References
 
