@@ -63,7 +63,7 @@ Add notes here...
 
 [renegade-coder]: https://therenegadecoder.com/
 [contributing-plagiarism]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#plagiarism
-C[contributing-new-project]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#requirements-for-a-new-project
+[contributing-new-project]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#requirements-for-a-new-project
 [contributing-readme]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#create-readmes
 [contributing-tests-in-detail]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#tests-in-detail
 [contributing]: ../CONTRIBUTING.md
