@@ -30,7 +30,7 @@ Welcome to Sample Programs in JavaScript!
 -   [Roman Numeral Conversion in JavaScript][17]
 -   [ROT-13 in JavaScript][21]
 -   [Selection Sort in JavaSciprt][19]
--   [Longest Palindromic Substring][30]
+-   [Longest Palindromic Substring in JavaSciprt][30]
 
 ## Fun Facts
 
