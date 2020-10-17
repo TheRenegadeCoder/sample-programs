@@ -30,6 +30,7 @@ Welcome to Sample Programs in JavaScript!
 -   [Roman Numeral Conversion in JavaScript][17]
 -   [ROT-13 in JavaScript][21]
 -   [Selection Sort in JavaSciprt][19]
+-   [Longest Palindromic Substring][30]
 
 ## Fun Facts
 
@@ -75,3 +76,4 @@ Welcome to Sample Programs in JavaScript!
 [27]:https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/j/javascript/linear-search.js
 [28]: https://github.com/TheRenegadeCoder/sample-programs/issues/1381
 [29]: https://github.com/TheRenegadeCoder/sample-programs/pull/2163
+[30]: https://github.com/TheRenegadeCoder/sample-programs/issues/2245
