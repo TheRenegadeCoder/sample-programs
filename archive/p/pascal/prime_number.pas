@@ -1,13 +1,12 @@
-program prime_check;
-
+program prime_check(input, output, stdErr);
+(* Read a number from Commandline, Check  if it is Prime or Composite*)
 var
-{ local variable declaration }
  buf: String;
 (* prime, factorial, check:Cardinal;*)
 i, max_divisor, check, flag: integer;
 prime: Cardinal;
 begin    
-  readln(buf);
+  buf:= paramStr(1);
   Val(buf, prime, check);  
   if check <> 0
   then
