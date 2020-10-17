@@ -6,11 +6,17 @@ Welcome to Sample Programs in Pascal!
 
 - [Fizz Buzz in Pascal][1]
 - [Hello World in Pascal][2]
+- [Even Odd in Pascal]
+- [Reverse String in Pascal]
+- [Factorial in Pascal]
+- [Baklava in Pascal]
+- [Prime Number in Pascal]
 
 ## Fun Facts
 
 - Debut: 1970
 - Typing: Static
+- Skype, TeX and Apple Lisa, were all built using Pascal
 
 ## References
 
