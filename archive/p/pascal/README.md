@@ -9,6 +9,7 @@ Welcome to Sample Programs in Pascal!
 - [Fizz Buzz in Pascal][fizz-buzz]
 - [Hello World in Pascal][hello-world]
 - [Prime Number in Pascal][prime-number]
+- [Reverse String in Pascal][reverse-string]
 
 ## Fun Facts
 
@@ -32,3 +33,4 @@ Welcome to Sample Programs in Pascal!
 [fizz-buzz]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/162
 [hello-world]: https://therenegadecoder.com/code/hello-world-in-pascal/
 [prime-number]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/369
+[reverse-string]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/370
