@@ -6,9 +6,9 @@ var
 buf: string;
 begin
   buf := paramStr(1);
-  if buf = ''    then
-  writeln('Usage: please provide a string')
+  if buf = ''  then
+    writeln('Usage: please provide a string')
   else
-  buf[1] := UpCase(buf[1]);
-  writeln(buf);
- end. 
+    buf[1] := UpCase(buf[1]);
+    writeln(buf);
+end.
