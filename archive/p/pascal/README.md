@@ -6,11 +6,13 @@ Welcome to Sample Programs in Pascal!
 
 - [Fizz Buzz in Pascal][1]
 - [Hello World in Pascal][2]
+- [Factorial in Pascal][3]
 
 ## Fun Facts
 
 - Debut: 1970
 - Typing: Static
+- Skype was built using Pascal
 
 ## References
 
