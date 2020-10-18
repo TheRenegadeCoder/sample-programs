@@ -1,4 +1,5 @@
 args<- commandArgs(TRUE)
+
 if(length(args) > 0 ){
   if (args[1] != ""){
     splits <- strsplit(args, "")[[1]]
