@@ -6,7 +6,10 @@ Welcome to Sample Programs in Pascal!
 
 - [Fizz Buzz in Pascal][1]
 - [Hello World in Pascal][2]
--[Baklava in Pascal][3]
+-[Baklava in Pascal](https://github.com/TheRenegadeCoder/sample-programs/issues/2214)
+-[Factorial in Pascal](https://github.com/TheRenegadeCoder/sample-programs/issues/2219)
+-[Reverse String in Pascal](https://github.com/TheRenegadeCoder/sample-programs/issues/2221)
+-[Capitalize First Letter in Pascal](https://github.com/TheRenegadeCoder/sample-programs/issues/2248)
 
 
 ## Fun Facts
