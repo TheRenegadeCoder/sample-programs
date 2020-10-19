@@ -4,10 +4,9 @@ Welcome to Sample Programs in R!
 
 ## Sample Programs
 
-- [Hello World in R][hello-world-article]
-- [FizzBuzz in R][fizz-buzz-article-issue]
 - [Capitalize in R][capitalize-article-issue]
-
+- [FizzBuzz in R][fizz-buzz-article-issue]
+- [Hello World in R][hello-world-article]
 
 ## Fun Facts
 
