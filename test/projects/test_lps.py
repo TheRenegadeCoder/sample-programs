@@ -18,11 +18,6 @@ invalid_permutations = (
             'invalid input: no palindromic present',
             "Polip",
             'No Palindromic substring present.'
-        ),
-        (
-            'invalid input: no palindromic present',
-            "Polip",
-            'No Palindromic substring present.'
         )
     ]
 )
