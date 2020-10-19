@@ -14,13 +14,13 @@ if(length(args) > 0){
   cat(fact)
   # else a < 0
     } else{
-      cat("Usage:please enter non-negative number")
+      cat("Usage: please input a non-negative integer")
           }
   #  Negative Input
   }else{
-    cat("Usage:please enter non-negative number")
+    cat("Usage: please input a non-negative integer")
      }
 # Empty Command Line Param
 }else{
-    cat("Usage:please enter non-negative number")
+    cat("Usage: please input a non-negative integer")
      }
