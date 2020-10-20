@@ -41,8 +41,5 @@ if __name__ == "__main__":
             print(False)
         else:
             print(True)
-    except IndexError:
-        exit_with_error()
-
-    except ValueError:
+    except (IndexError, ValueError):
         exit_with_error()

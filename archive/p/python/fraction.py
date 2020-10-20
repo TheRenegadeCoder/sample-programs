@@ -24,15 +24,15 @@ def main(args):
         try:
             o1 = Fraction(args[0])
         except ValueError:
-            print("Invalid operand: {}".format(args[0]))
+            print(f"Invalid operand: {args[0]}")
         try:
             o2 = Fraction(args[2])
         except ValueError:
-            print("Invalid operand: {}".format(args[2]))
+            print(f"Invalid operand: {args[2]}")
         try:
             print(d[args[1]](o1, o2))
         except KeyError:
-            print("Invalid operator: {}".format(args[1]))
+            print(f"Invalid operator: {args[1]}")
 
 
 if __name__ == "__main__":

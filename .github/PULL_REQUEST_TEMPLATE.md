@@ -37,6 +37,15 @@ For more information please refer to our [contributing documentation][contributi
 - [ ] I verified the project exists on the [Sample Programs Project List][sample-programs-project-list]
 - [ ] I added tests for every test case in the Testing table of the project description for the given project. (See [contributing documentation][contributing-tests-in-detail])
 
+
+## I Am Adding New Tests for a Language
+
+- [ ] I fixed #your-issue-number-here
+- [ ] I named the pull request using `Add {LANGUAGE} tests` format\
+- [ ] I added a `testinfo.yml` files (see [contributing documentation][contributing-new-language])
+  - [ ] I used an officially supported docker image or one that I personally trust
+- [ ] I verified all tests are passing
+
   
 ## I Am Modifying an Existing Code Snippet or Existing Tests
 
@@ -54,9 +63,9 @@ Add notes here...
 
 [renegade-coder]: https://therenegadecoder.com/
 [contributing-plagiarism]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#plagiarism
-[contributing-new-project]: https://github.com/TheRenegadeCoder/sample-programs/blob/contributing/.github/CONTRIBUTING.md#requirements-for-a-new-project
-[contributing-readme]: https://github.com/TheRenegadeCoder/sample-programs/blob/contributing/.github/CONTRIBUTING.md#create-readmes
-[contributing-tests-in-detail]: https://github.com/TheRenegadeCoder/sample-programs/blob/contributing/.github/CONTRIBUTING.md#tests-in-detail
+[contributing-new-project]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#requirements-for-a-new-project
+[contributing-readme]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#create-readmes
+[contributing-tests-in-detail]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#tests-in-detail
 [contributing]: ../CONTRIBUTING.md
 [sample-programs-project-list]: https://sample-programs.therenegadecoder.com/projects/
-[contributing-modifications]: https://github.com/TheRenegadeCoder/sample-programs/blob/contributing/.github/CONTRIBUTING.md#modifying-existing-code-snippets
+[contributing-modifications]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#modifying-existing-code-snippets
