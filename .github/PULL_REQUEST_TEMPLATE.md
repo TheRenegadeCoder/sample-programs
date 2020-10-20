@@ -63,9 +63,9 @@ Add notes here...
 
 [renegade-coder]: https://therenegadecoder.com/
 [contributing-plagiarism]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#plagiarism
-[contributing-new-project]: https://github.com/TheRenegadeCoder/sample-programs/blob/contributing/.github/CONTRIBUTING.md#requirements-for-a-new-project
-[contributing-readme]: https://github.com/TheRenegadeCoder/sample-programs/blob/contributing/.github/CONTRIBUTING.md#create-readmes
-[contributing-tests-in-detail]: https://github.com/TheRenegadeCoder/sample-programs/blob/contributing/.github/CONTRIBUTING.md#tests-in-detail
+[contributing-new-project]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#requirements-for-a-new-project
+[contributing-readme]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#create-readmes
+[contributing-tests-in-detail]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#tests-in-detail
 [contributing]: ../CONTRIBUTING.md
 [sample-programs-project-list]: https://sample-programs.therenegadecoder.com/projects/
-[contributing-modifications]: https://github.com/TheRenegadeCoder/sample-programs/blob/contributing/.github/CONTRIBUTING.md#modifying-existing-code-snippets
+[contributing-modifications]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#modifying-existing-code-snippets

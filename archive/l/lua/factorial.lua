@@ -21,7 +21,7 @@ main = function(input)
     maxInput = 20
     usage = "Usage: please input a non-negative integer"
 
-    if not (input == nil)
+    if not (input == nil or input == "")
     then
         inputValidation = input:gsub('[0-9]','')
         if inputValidation:len() == 0

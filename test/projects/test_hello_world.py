@@ -12,4 +12,4 @@ def hello_world(request):
 @project_test(ProjectType.HelloWorld.key)
 def test_hello_world(hello_world):
     actual = hello_world.run()
-    assert actual.strip() == 'Hello, World!'
+    assert actual.strip().strip('"') == 'Hello, World!'

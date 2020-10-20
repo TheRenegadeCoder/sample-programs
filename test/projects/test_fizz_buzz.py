@@ -4,7 +4,7 @@ from runner import ProjectType
 from glotter import project_test, project_fixture
 
 
-expected = """1
+expected_raw = """1
 2
 Fizz
 4
@@ -116,5 +116,18 @@ def fizz_buzz(request):
 
 @project_test(ProjectType.FizzBuzz.key)
 def test_fizz_buzz(fizz_buzz):
-    actual = fizz_buzz.run()
+    actual = trim_whitespace(fizz_buzz.run())
+    expected = trim_whitespace(expected_raw)
+
     assert actual == expected
+
+
+@project_test(ProjectType.FizzBuzz.key)
+def test_fizz_buzz_line_count(fizz_buzz):
+    expected_count = len(expected_raw.split('\n'))
+    actual_count = len(fizz_buzz.run().split('\n'))
+    assert actual_count == expected_count
+
+
+def trim_whitespace(val):
+    return ''.join([v.strip() for v in val.split('\n')])
