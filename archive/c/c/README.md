@@ -6,6 +6,7 @@ Welcome to Sample Programs in C!
 
 - [Baklava in C][10]
   - Solution borrowed from @toturkmen and @ahmeturganci via the [baklava repo][1]
+- [Removing extra whiteSpaces][26]  
 - [Bubble Sort][14]
 - [Capitalize in C][15]
 - [Convex Hull in C][12]
@@ -65,3 +66,4 @@ Welcome to Sample Programs in C!
 [23]: https://sample-programs.therenegadecoder.com/projects/roman-numeral-conversion/
 [24]: https://sample-programs.therenegadecoder.com/projects/quick-sort/
 [25]: https://github.com/TheRenegadeCoder/sample-programs/issues/1272
+[26]: https://github.com/TheRenegadeCoder/sample-programs/issues/2290
