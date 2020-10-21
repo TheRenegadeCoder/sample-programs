@@ -26,17 +26,13 @@ class Cell:
         method checks if the cell is ALIVE
         returns True if it is alive, False if not.
         """
-        if self._status == 'Alive':
-            return True
-        return False
+        return True if self._status == 'Alive' else False
 
     def get_print_character(self):
         """
         method returning a status character of our choice to print on the board
         """
-        if self.is_alive():
-            return 'O'
-        return '.'
+        return 'O' if self.is_alive() else '.'
 
 
 class Board:
