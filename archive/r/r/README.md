@@ -4,8 +4,11 @@ Welcome to Sample Programs in R!
 
 ## Sample Programs
 
+- [Baklava in R](https://github.com/TheRenegadeCoder/sample-programs/issues/2306)
 - [Capitalize in R][capitalize-article-issue]
+- [Even-Odd in R](https://github.com/TheRenegadeCoder/sample-programs/pull/2299)
 - [Hello World in R](https://therenegadecoder.com/code/hello-world-in-r)
+- [Fibonacci in R](https://github.com/TheRenegadeCoder/sample-programs/issues/2303)
 - [FizzBuzz in R](https://therenegadecoder.com/series/fizz-buzz-in-every-language/)
 - [Prime in R](https://github.com/TheRenegadeCoder/sample-programs/issues/2272)
 
