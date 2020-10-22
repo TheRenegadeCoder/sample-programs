@@ -8,6 +8,8 @@ Welcome to Sample Programs in R!
 - [Hello World in R](https://therenegadecoder.com/code/hello-world-in-r)
 - [FizzBuzz in R](https://therenegadecoder.com/series/fizz-buzz-in-every-language/)
 - [Prime in R](https://github.com/TheRenegadeCoder/sample-programs/issues/2272)
+- [Odd-Even in R](https://github.com/TheRenegadeCoder/sample-programs/issues/2297)
+- [Fibonacci in R](https://github.com/TheRenegadeCoder/sample-programs/issues/2301)
 
 ## Fun Facts
 
