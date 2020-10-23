@@ -1,8 +1,9 @@
 args<-commandArgs(TRUE)
 if(length(args) > 0){
   a1 = args[1]
-  a = as.integer(a1)
-  if(!(is.na(a) )){
+  # as.integer or as.numeric both..
+  a = as.numeric(a1)
+  if(!(is.na(a))){
     if(a %% 2 == 0){
       cat("Even")
     }else{
@@ -11,7 +12,6 @@ if(length(args) > 0){
   }else{
   cat("Usage: please input a number")
 }
-
 } else{
   cat("Usage: please input a number")
 }
