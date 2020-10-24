@@ -9,15 +9,15 @@ invalid_permutations = (
         (
             'no input',
             None,
-            'Incorrect input provided. Program Terminated'
+            'Usage: please provide a string that contains at least one palindrome'
         ), (
             'empty input',
             "",
-            'Incorrect input provided. Program Terminated'
+            'Usage: please provide a string that contains at least one palindrome'
         ), (
-            'invalid input: no palindromic present',
-            "Polip",
-            'No Palindromic substring present.'
+            'invalid input: no palindromes',
+            "polip",
+            'Usage: please provide a string that contains at least one palindrome'
         )
     ]
 )
@@ -25,13 +25,17 @@ invalid_permutations = (
 valid_permutations = (
     'description,in_params,expected', [
         (
-            'sample input: longest palindrome of 6eie6',
-            '6eie6o6',
-            'Longest Palindromic Substring is: 6eie6'
+            'sample input: one palindrome',
+            'racecar',
+            'racecar'
         ), (
-            'sample input: longest palindrome of 6oooo6',
-            '6eie6o6oooo6',
-            'Longest Palindromic Substring is: 6oooo6'
+            'sample input: two palindrome',
+            'kayak mom',
+            'kayak'
+        ), (
+            'sample input: complex palindrome',
+            'step on no pets',
+            'step on no pets'
         ),
     ]
 )
