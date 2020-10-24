@@ -5,7 +5,8 @@ if(length(args) > 0){
   a1 = args[1]
   # as.integer or as.numeric both..
   a = as.numeric(a1)
-  if (is.na(a) != 0){
+  # Suppress Warnings can't be put inside 
+  if (is.na(a) == 0){
     if(a %% 2 == 0){
       cat("Even")
     }else{
