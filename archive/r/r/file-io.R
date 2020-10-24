@@ -18,7 +18,6 @@ file_create_result = tryCatch({
 # Catch File Open Error
 if(file.exists("output.txt")){
   f_open = readLines("output.txt")
-  cat("\n\n", f_open)
   singleString <- paste(readLines("output.txt"), collapse=" ")
   cat(singleString)
 } else{
