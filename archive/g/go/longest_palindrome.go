@@ -1,40 +1,43 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+	"strings"
+)
+
+const errorMessage = "Usage: please provide a string that contains at least one palindrome"
+
+func reverse(s string) string {
+	result := ""
+	for _, v := range s {
+		result = string(v) + result
+	}
+	return result
+}
 
 func longestPalSubstr(str string) string {
-	maxLength := 1
-	start := 1
 	result := ""
 
 	if len(str) < 2 || str == "" {
-		return "Incorrect input provided. Program Terminated"
+		return errorMessage
 	}
 
-	for i := 0; i < len(str); i++ {
-		for j := i; j < len(str); j++ {
-			flag := true
+	for i := 1; i < len(str); i++ {
+		for j := 0; j < len(str)-i; j++ {
+			possiblePal := strings.ToLower(str[j : j+i+1])
 
-			// check palindrome
-			for k := 0; k < (j-i+1)/2; k++ {
-				if str[i + k] != str[j - k] {
-					flag = false
-				}
+			fmt.Println(possiblePal)
+
+			if possiblePal == reverse(possiblePal) && len(possiblePal) > len(result) {
+				result = possiblePal
 			}
 
-			// palindrome
-			if flag && (j - i + 1) > maxLength {
-				start = i
-				maxLength = j - i + 1
-			}
 		}
 	}
 
-	p := printSubStr(str, start, start + maxLength - 1)
-	if len(p) > 0 {
-		result = fmt.Sprintf("Longest Palindromic Substring is: %s", p)
-	} else {
-		result = "No Palindromic substring present."
+	if len(result) == 0 {
+		result = errorMessage
 	}
 	return result
 }
@@ -49,7 +52,9 @@ func printSubStr(str string, low, high int) string {
 }
 
 func main() {
-	str := "paapaapap";
-	res := longestPalSubstr(str)
-	fmt.Println(res)
+	if len(os.Args) < 2 {
+		fmt.Println(errorMessage)
+	} else {
+		fmt.Println(longestPalSubstr(os.Args[1]))
+	}
 }
