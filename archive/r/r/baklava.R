@@ -1,5 +1,5 @@
 # Top part of Baklava
-for(i in 0:9){
+for(i in 0:10){
   spaces = 10 - i
   stars = i*2 + 1
   for(j in 0:spaces){
