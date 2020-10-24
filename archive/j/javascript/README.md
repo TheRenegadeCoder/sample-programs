@@ -31,6 +31,7 @@ Welcome to Sample Programs in JavaScript!
 -   [Roman Numeral Conversion in JavaScript][17]
 -   [ROT-13 in JavaScript][21]
 -   [Selection Sort in JavaSciprt][19]
+-   [find the length of longest word in a string][31]
 
 ## Fun Facts
 
@@ -77,3 +78,4 @@ Welcome to Sample Programs in JavaScript!
 [28]: https://github.com/TheRenegadeCoder/sample-programs/issues/1381
 [29]: https://github.com/TheRenegadeCoder/sample-programs/pull/2163
 [30]: https://github.com/TheRenegadeCoder/sample-programs/issues/2245
+[31]: https://github.com/TheRenegadeCoder/sample-programs/issues/2313
