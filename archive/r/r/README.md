@@ -5,8 +5,10 @@ Welcome to Sample Programs in R!
 ## Sample Programs
 
 - [Capitalize in R][capitalize-article-issue]
-- [FizzBuzz in R][fizz-buzz-article-issue]
-- [Hello World in R][hello-world-article]
+- [Hello World in R](https://therenegadecoder.com/code/hello-world-in-r)
+- [FizzBuzz in R](https://therenegadecoder.com/series/fizz-buzz-in-every-language/)
+- [Prime in R](https://github.com/TheRenegadeCoder/sample-programs/issues/2272)
+- [File Input/Output in R](https://github.com/TheRenegadeCoder/sample-programs/issues/2309)
 
 ## Fun Facts
 
