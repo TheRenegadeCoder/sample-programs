@@ -30,11 +30,11 @@ valid_permutations = (
             'racecar'
         ), (
             'sample input: two palindrome',
-            'kayak mom',
+            '"kayak mom"',
             'kayak'
         ), (
             'sample input: complex palindrome',
-            'step on no pets',
+            '"step on no pets"',
             'step on no pets'
         ),
     ]
