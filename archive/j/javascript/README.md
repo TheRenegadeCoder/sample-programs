@@ -33,6 +33,7 @@ Welcome to Sample Programs in JavaScript!
 -   [Selection Sort in JavaSciprt][19]
 -   [Binary Search in JavaScript][31]
 -   [Longest word in a string in JavaScript][32]
+-   [Sum All Primes in JavaScript][33]
 
 ## Fun Facts
 
@@ -81,3 +82,4 @@ Welcome to Sample Programs in JavaScript!
 [30]: https://github.com/TheRenegadeCoder/sample-programs/issues/2245
 [31]: https://github.com/TheRenegadeCoder/sample-programs/issues/2287
 [32]: https://github.com/TheRenegadeCoder/sample-programs/issues/2313
+[33]: https://github.com/TheRenegadeCoder/sample-programs/issues/2314
