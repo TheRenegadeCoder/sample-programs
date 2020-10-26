@@ -27,8 +27,6 @@ func longestPalSubstr(str string) string {
 		for j := 0; j < len(str)-i; j++ {
 			possiblePal := strings.ToLower(str[j : j+i+1])
 
-			fmt.Println(possiblePal)
-
 			if possiblePal == reverse(possiblePal) && len(possiblePal) > len(result) {
 				result = possiblePal
 			}
