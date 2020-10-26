@@ -6,7 +6,7 @@ Welcome to Sample Programs in C!
 
 - [Baklava in C][10]
   - Solution borrowed from @toturkmen and @ahmeturganci via the [baklava repo][1]
-- [Removing extra whiteSpaces][26]  
+- [Removing extra whiteSpaces][26]
 - [Bubble Sort][14]
 - [Capitalize in C][15]
 - [Convex Hull in C][12]
