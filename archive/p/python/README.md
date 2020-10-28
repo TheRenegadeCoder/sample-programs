@@ -32,6 +32,7 @@ code in this repo, look [here][trc-python-docs].
 - [ROT-13 in Python][38]
 - [Selection Sort in Python][39]
 - [Sleep sort in Python][45]
+- [Heap sort in Python][61]
 
 ## Fun Facts
 
@@ -169,3 +170,4 @@ code in this repo, look [here][trc-python-docs].
 [58]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/longest_palindrome_substring.py#L17
 [59]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/prime_number.py#L7
 [60]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/rot_13.py#L7
+[61]: https://www.geeksforgeeks.org/python-program-for-heap-sort/
