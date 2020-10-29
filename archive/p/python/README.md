@@ -14,7 +14,7 @@ to an existing article which provides further documentation.
   - Solution borrowed from @erayak via the [baklava repo][baklava-repo]
 - :white_check_mark: [Binary Search][binary-search-article]
 - :white_check_mark: [Bubble Sort in Python][bubble-sort-article]
-- Capitalize in Python
+- :warning: [Capitalize in Python][capitalize-article-issue]
 - [Convex Hull in Python][44]
 - :white_check_mark: [Even Odd in Python][even-odd-article]
 - :white_check_mark: [Factorial in Python][factorial-article]
@@ -33,7 +33,7 @@ to an existing article which provides further documentation.
 - :white_check_mark: [Quick Sort in Python][quick-sort-article]
 - :warning: [Quine in Python][quine-article-issue]
 - :white_check_mark: [Reverse a String in Python][reverse-a-string-article]
-- :warning: [Roman Numeral Conversion in Python][roman-numeral-article-issue]
+- :white_check_mark: [Roman Numeral Conversion in Python][roman-numeral-article]
 - :warning: [ROT-13 in Python][rot-13-article-issue]
 - :white_check_mark: [Selection Sort in Python][selection-sort-article-issue]
 - [Sleep Sort in Python][45]
@@ -71,13 +71,14 @@ to an existing article which provides further documentation.
 [prime-number-article]: https://sample-programs.therenegadecoder.com/projects/prime-number/python/
 [quick-sort-article]: https://sample-programs.therenegadecoder.com/projects/quick-sort/python/
 [reverse-a-string-article]: https://therenegadecoder.com/code/reverse-a-string-in-python/
+[roman-numeral-article]: https://sample-programs.therenegadecoder.com/projects/roman-numeral-conversion/python/
 [trc-python-docs]: https://sample-programs.therenegadecoder.com/languages/python/
 
 [baklava-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/190
+[capitalize-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/390
 [game-of-life-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/237
 [job-sequencing-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/70
 [lcs-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/90
 [quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/223
-[roman-numeral-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/171
 [rot-13-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/305
 [selection-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/110
