@@ -71,10 +71,10 @@ to an existing article which provides further documentation.
 [quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/223
 [roman-numeral-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/171
 
-[26]: https://github.com/TheRenegadeCoder/sample-programs/issues/570
-[31]: https://github.com/TheRenegadeCoder/sample-programs/issues/811
-[32]: https://github.com/TheRenegadeCoder/sample-programs/issues/849
-[33]: https://github.com/TheRenegadeCoder/sample-programs/issues/852
+[26]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/90
+[31]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/125
+[32]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/389
+[33]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/115
 [34]: https://github.com/TheRenegadeCoder/sample-programs/issues/855
 [35]: https://github.com/TheRenegadeCoder/sample-programs/issues/858
 [36]: https://github.com/TheRenegadeCoder/sample-programs/issues/861
