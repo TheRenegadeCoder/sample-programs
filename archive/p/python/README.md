@@ -34,8 +34,8 @@ to an existing article which provides further documentation.
 - :warning: [Quine in Python][quine-article-issue]
 - :white_check_mark: [Reverse a String in Python][reverse-a-string-article]
 - :warning: [Roman Numeral Conversion in Python][roman-numeral-article-issue]
-- [ROT-13 in Python][38]
-- [Selection Sort in Python][39]
+- [ROT-13 in Python][rot-13-article-issue]
+- [Selection Sort in Python][selection-sort-article-issue]
 - [Sleep Sort in Python][45]
 
 ## Fun Facts
@@ -80,8 +80,8 @@ to an existing article which provides further documentation.
 [quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/223
 [roman-numeral-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/171
 [rot-13-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/305
+[selection-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/110
 
-[39]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/110
 [42]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/longest_palindrome_substring.py
 [43]: https://github.com/TheRenegadeCoder/sample-programs/issues/1536
 [44]: https://github.com/TheRenegadeCoder/sample-programs/issues/1535
