@@ -6,6 +6,9 @@ Welcome to Sample Programs in Fortran!
 
 - [Baklava in Fortran][baklava-article-issue]
   - Solution borrowed from @toturkmen via the [baklava repo][baklava-repo]
+- [Capitalize in Fortran](https://github.com/TheRenegadeCoder/sample-programs/issues/2329)
+- [Even-Odd in Fortran](https://github.com/TheRenegadeCoder/sample-programs/issues/2333)
+- [Factorial in Fortran](https://github.com/TheRenegadeCoder/sample-programs/issues/2337)
 - [Hello World in Fortran][hello-world-article-issue]
 - [Reverse String in Fortran][reverse-string-article-issue]
 
