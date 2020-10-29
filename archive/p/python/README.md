@@ -29,7 +29,7 @@ to an existing article which provides further documentation.
 - [Longest Palindromic Subsequence][42]
 - [Merge Sort in Python][merge-sort-article-issue]
 - [Minimum Spanning Tree][43]
-- [Prime Number in Python][36]
+- [Prime Number in Python][prime-number-article-issue]
 - [Quick Sort in Python][37]
 - :warning: [Quine in Python][quine-article-issue]
 - :white_check_mark: [Reverse a String in Python][reverse-a-string-article]
@@ -75,10 +75,10 @@ to an existing article which provides further documentation.
 [job-sequencing-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/70
 [lcs-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/90
 [merge-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/113
+[prime-number-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/112
 [quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/223
 [roman-numeral-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/171
 
-[36]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/112
 [37]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/111
 [38]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/305
 [39]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/110
