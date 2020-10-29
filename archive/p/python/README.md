@@ -36,7 +36,7 @@ to an existing article which provides further documentation.
 - :white_check_mark: [Roman Numeral Conversion in Python][roman-numeral-article]
 - :warning: [ROT-13 in Python][rot-13-article-issue]
 - :white_check_mark: [Selection Sort in Python][selection-sort-article-issue]
-- [Sleep Sort in Python][45]
+- :warning: [Sleep Sort in Python][sleep-sort-article-issue]
 
 ## Fun Facts
 
@@ -85,3 +85,4 @@ to an existing article which provides further documentation.
 [quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/223
 [rot-13-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/305
 [selection-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/110
+[sleep-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/394
