@@ -17,7 +17,7 @@ to an existing article which provides further documentation.
 - Capitalize in Python
 - [Convex Hull in Python][44]
 - :warning: [Even Odd in Python][even-odd-article-issue]
-- [Factorial in Python][33]
+- :warning: [Factorial in Python][factorial-article-issue]
 - :warning: [Fibonacci in Python][fibonacci-article-issue]
 - :white_check_mark: [File IO in Python][file-io-article]
 - :white_check_mark: [Fizz Buzz in Python][fizz-buzz-article]
@@ -68,6 +68,7 @@ to an existing article which provides further documentation.
 [baklava-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/190
 [bubble-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/125
 [even-odd-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/389
+[factorial-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/115
 [fibonacci-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/173
 [game-of-life-article-issue]: https://github.com/jrg94/sample-programs/issues/111
 [job-sequencing-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/70
@@ -75,7 +76,6 @@ to an existing article which provides further documentation.
 [quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/223
 [roman-numeral-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/171
 
-[33]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/115
 [34]: https://github.com/TheRenegadeCoder/sample-programs/issues/855
 [35]: https://github.com/TheRenegadeCoder/sample-programs/issues/858
 [36]: https://github.com/TheRenegadeCoder/sample-programs/issues/861
