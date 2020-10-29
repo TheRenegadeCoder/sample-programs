@@ -28,7 +28,7 @@ to an existing article which provides further documentation.
 - :warning: [Longest Common Subsequence][lcs-article-issue]
 - :warning: [Longest Palindromic Subsequence][lps-article-issue]
 - :white_check_mark: [Merge Sort in Python][merge-sort-article]
-- [Minimum Spanning Tree][43]
+- :warning: [Minimum Spanning Tree][minimum-spanning-tree-article-issue]
 - :white_check_mark: [Prime Number in Python][prime-number-article]
 - :white_check_mark: [Quick Sort in Python][quick-sort-article]
 - :warning: [Quine in Python][quine-article-issue]
@@ -81,6 +81,7 @@ to an existing article which provides further documentation.
 [job-sequencing-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/70
 [lcs-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/90
 [lps-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/392
+[minimum-spanning-tree-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/393
 [quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/223
 [rot-13-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/305
 [selection-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/110
