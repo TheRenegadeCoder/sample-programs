@@ -10,7 +10,7 @@ Code snippets preceded by :warning: link to an article request
 issue while code snippets preceded by :white_check_mark: link
 to an existing article which provides further documentation.
 
-- [Baklava in Python][baklava-article-issue]
+- :warning: [Baklava in Python][baklava-article-issue]
   - Solution borrowed from @erayak via the [baklava repo][baklava-repo]
 - [Binary Search][31]
 - [Bubble Sort in Python][31]
@@ -18,7 +18,7 @@ to an existing article which provides further documentation.
 - [Convex Hull in Python][44]
 - [Even Odd in Python][32]
 - [Factorial in Python][33]
-- [Fibonacci in Python][fibonacci-article-issue]
+- :warning: [Fibonacci in Python][fibonacci-article-issue]
 - :white_check_mark: [File IO in Python][file-io-article]
 - :white_check_mark: [Fizz Buzz in Python][fizz-buzz-article]
 - :warning: [Game of Life in Python][game-of-life-article-issue]
@@ -33,7 +33,7 @@ to an existing article which provides further documentation.
 - [Quick Sort in Python][37]
 - :warning: [Quine in Python][quine-article-issue]
 - :white_check_mark: [Reverse a String in Python][reverse-a-string-article]
-- [Roman Numeral Conversion in Python][roman-numeral-article-issue]
+- :warning: [Roman Numeral Conversion in Python][roman-numeral-article-issue]
 - [ROT-13 in Python][38]
 - [Selection Sort in Python][39]
 - [Sleep Sort in Python][45]
