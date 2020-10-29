@@ -4,13 +4,18 @@ Welcome to Sample Programs in Fortran!
 
 ## Sample Programs
 
-- [Baklava in Fortran][baklava-article-issue]
+Below, you'll find a list of code snippets in this collection.
+Code snippets preceded by :warning: link to an article request 
+issue while code snippets preceded by :white_check_mark: link
+to an existing article.
+
+- :warning: [Baklava in Fortran][baklava-article-issue]
   - Solution borrowed from @toturkmen via the [baklava repo][baklava-repo]
-- [Capitalize in Fortran][capitalize-article-issue]
-- [Even-Odd in Fortran][even-odd-article-issue]
-- [Factorial in Fortran][factorial-article-issue]
-- [Hello World in Fortran][hello-world-article-issue]
-- [Reverse String in Fortran][reverse-string-article-issue]
+- :warning: [Capitalize in Fortran][capitalize-article-issue]
+- :warning: [Even-Odd in Fortran][even-odd-article-issue]
+- :warning: [Factorial in Fortran][factorial-article-issue]
+- :warning: [Hello World in Fortran][hello-world-article-issue]
+- :warning: [Reverse String in Fortran][reverse-string-article-issue]
 
 ## Fun Facts
 
