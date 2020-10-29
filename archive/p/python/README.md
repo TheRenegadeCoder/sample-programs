@@ -23,7 +23,7 @@ to an existing article which provides further documentation.
 - :white_check_mark: [Fizz Buzz in Python][fizz-buzz-article]
 - :warning: [Game of Life in Python][game-of-life-article-issue]
 - :white_check_mark: [Hello World in Python][hello-world-article]
-- [Insertion Sort in Python][34]
+- :warning: [Insertion Sort in Python][insertion-sort-article-issue]
 - :warning: [Job Sequencing with Deadlines in Python][job-sequencing-article-issue]
 - :warning: [Longest Common Subsequence][lcs-article-issue]
 - [Longest Palindromic Subsequence][42]
@@ -71,17 +71,17 @@ to an existing article which provides further documentation.
 [factorial-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/115
 [fibonacci-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/173
 [game-of-life-article-issue]: https://github.com/jrg94/sample-programs/issues/111
+[insertion-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/114
 [job-sequencing-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/70
 [lcs-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/90
 [quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/223
 [roman-numeral-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/171
 
-[34]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/114
 [35]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/113
 [36]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/112
 [37]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/111
-[38]: https://github.com/TheRenegadeCoder/sample-programs/issues/867
-[39]: https://github.com/TheRenegadeCoder/sample-programs/issues/870
+[38]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/305
+[39]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/110
 [42]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/longest_palindrome_substring.py
 [43]: https://github.com/TheRenegadeCoder/sample-programs/issues/1536
 [44]: https://github.com/TheRenegadeCoder/sample-programs/issues/1535
