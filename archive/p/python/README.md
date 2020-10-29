@@ -5,6 +5,11 @@ code in this repo, look [here][trc-python-docs].
 
 ## Sample Programs
 
+Below, you'll find a list of code snippets in this collection.
+Code snippets preceded by :warning: link to an article request 
+issue while code snippets preceded by :white_check_mark: link
+to an existing article which provides further documentation.
+
 - [Baklava in Python][22]
   - Solution borrowed from @erayak via the [baklava repo][baklava-repo]
 - [Binary Search][31]
@@ -14,10 +19,10 @@ code in this repo, look [here][trc-python-docs].
 - [Even Odd in Python][32]
 - [Factorial in Python][33]
 - [Fibonacci Sequence in Python][24]
-- [File IO in Python][file-io-article]
-- [Fizz Buzz in Python][fizz-buzz-article]
+- :white_check_mark: [File IO in Python][file-io-article]
+- :white_check_mark: [Fizz Buzz in Python][fizz-buzz-article]
 - [Game of Life in Python][game-of-life-article-issue]
-- [Hello World in Python][hello-world-article]
+- :white_check_mark: [Hello World in Python][hello-world-article]
 - [Insertion Sort in Python][34]
 - [Job Sequencing with Deadlines in Python][job-sequencing-article-issue]
 - [Longest Common Subsequence][26]
@@ -27,7 +32,7 @@ code in this repo, look [here][trc-python-docs].
 - [Prime Number in Python][36]
 - [Quick Sort in Python][37]
 - [Quine in Python][quine-article-issue]
-- [Reverse a String in Python][reverse-a-string-article]
+- :white_check_mark: [Reverse a String in Python][reverse-a-string-article]
 - [Roman Numberal Conversion in Python][25]
 - [ROT-13 in Python][38]
 - [Selection Sort in Python][39]
