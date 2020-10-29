@@ -76,11 +76,11 @@ to an existing article which provides further documentation.
 [lcs-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/90
 [merge-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/113
 [prime-number-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/112
+[quick-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/111
 [quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/223
 [roman-numeral-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/171
+[rot-13-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/305
 
-[37]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/111
-[38]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/305
 [39]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/110
 [42]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/longest_palindrome_substring.py
 [43]: https://github.com/TheRenegadeCoder/sample-programs/issues/1536
