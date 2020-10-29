@@ -18,7 +18,7 @@ to an existing article which provides further documentation.
 - [Convex Hull in Python][44]
 - [Even Odd in Python][32]
 - [Factorial in Python][33]
-- [Fibonacci Sequence in Python][24]
+- [Fibonacci in Python][fibonacci-article-issue]
 - :white_check_mark: [File IO in Python][file-io-article]
 - :white_check_mark: [Fizz Buzz in Python][fizz-buzz-article]
 - :warning: [Game of Life in Python][game-of-life-article-issue]
@@ -33,7 +33,7 @@ to an existing article which provides further documentation.
 - [Quick Sort in Python][37]
 - :warning: [Quine in Python][quine-article-issue]
 - :white_check_mark: [Reverse a String in Python][reverse-a-string-article]
-- [Roman Numberal Conversion in Python][25]
+- [Roman Numeral Conversion in Python][roman-numeral-article-issue]
 - [ROT-13 in Python][38]
 - [Selection Sort in Python][39]
 - [Sleep Sort in Python][45]
@@ -65,12 +65,12 @@ to an existing article which provides further documentation.
 [trc-python-docs]: https://sample-programs.therenegadecoder.com/languages/python/
 
 [baklava-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/190
+[fibonacci-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/173
 [game-of-life-article-issue]: https://github.com/jrg94/sample-programs/issues/111
 [job-sequencing-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/70
 [quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/223
+[roman-numeral-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/171
 
-[24]: https://github.com/TheRenegadeCoder/sample-programs/issues/492
-[25]: https://github.com/TheRenegadeCoder/sample-programs/issues/499
 [26]: https://github.com/TheRenegadeCoder/sample-programs/issues/570
 [31]: https://github.com/TheRenegadeCoder/sample-programs/issues/811
 [32]: https://github.com/TheRenegadeCoder/sample-programs/issues/849
