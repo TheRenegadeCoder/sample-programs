@@ -13,7 +13,7 @@ to an existing article which provides further documentation.
 - :warning: [Baklava in Python][baklava-article-issue]
   - Solution borrowed from @erayak via the [baklava repo][baklava-repo]
 - [Binary Search][31]
-- [Bubble Sort in Python][31]
+- [Bubble Sort in Python][bubble-sort-article-issue]
 - Capitalize in Python
 - [Convex Hull in Python][44]
 - [Even Odd in Python][32]
@@ -25,7 +25,7 @@ to an existing article which provides further documentation.
 - :white_check_mark: [Hello World in Python][hello-world-article]
 - [Insertion Sort in Python][34]
 - :warning: [Job Sequencing with Deadlines in Python][job-sequencing-article-issue]
-- [Longest Common Subsequence][26]
+- [Longest Common Subsequence][lcs-article-issue]
 - [Longest Palindromic Subsequence][42]
 - [Merge Sort in Python][35]
 - [Minimum Spanning Tree][43]
@@ -65,14 +65,14 @@ to an existing article which provides further documentation.
 [trc-python-docs]: https://sample-programs.therenegadecoder.com/languages/python/
 
 [baklava-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/190
+[bubble-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/125
 [fibonacci-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/173
 [game-of-life-article-issue]: https://github.com/jrg94/sample-programs/issues/111
 [job-sequencing-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/70
+[lcs-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/90
 [quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/223
 [roman-numeral-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/171
 
-[26]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/90
-[31]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/125
 [32]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/389
 [33]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/115
 [34]: https://github.com/TheRenegadeCoder/sample-programs/issues/855
