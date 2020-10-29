@@ -12,11 +12,11 @@ to an existing article which provides further documentation.
 
 - :warning: [Baklava in Python][baklava-article-issue]
   - Solution borrowed from @erayak via the [baklava repo][baklava-repo]
-- [Binary Search][31]
-- [Bubble Sort in Python][bubble-sort-article-issue]
+- :white_check_mark: [Binary Search][binary-search-article]
+- :warning: [Bubble Sort in Python][bubble-sort-article-issue]
 - Capitalize in Python
 - [Convex Hull in Python][44]
-- [Even Odd in Python][32]
+- :warning: [Even Odd in Python][even-odd-article-issue]
 - [Factorial in Python][33]
 - :warning: [Fibonacci in Python][fibonacci-article-issue]
 - :white_check_mark: [File IO in Python][file-io-article]
@@ -25,7 +25,7 @@ to an existing article which provides further documentation.
 - :white_check_mark: [Hello World in Python][hello-world-article]
 - [Insertion Sort in Python][34]
 - :warning: [Job Sequencing with Deadlines in Python][job-sequencing-article-issue]
-- [Longest Common Subsequence][lcs-article-issue]
+- :warning: [Longest Common Subsequence][lcs-article-issue]
 - [Longest Palindromic Subsequence][42]
 - [Merge Sort in Python][35]
 - [Minimum Spanning Tree][43]
@@ -58,6 +58,7 @@ to an existing article which provides further documentation.
 [python-wiki]: https://en.wikipedia.org/wiki/Python_(programming_language)
 [zen-of-python]: https://www.python.org/dev/peps/pep-0020/
 
+[binary-search-article]: https://sample-programs.therenegadecoder.com/projects/binary-search/python/
 [file-io-article]: https://therenegadecoder.com/code/file-io-in-python/
 [fizz-buzz-article]: https://therenegadecoder.com/code/fizz-buzz-in-python/
 [hello-world-article]: https://therenegadecoder.com/code/hello-world-in-python/
@@ -66,6 +67,7 @@ to an existing article which provides further documentation.
 
 [baklava-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/190
 [bubble-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/125
+[even-odd-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/389
 [fibonacci-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/173
 [game-of-life-article-issue]: https://github.com/jrg94/sample-programs/issues/111
 [job-sequencing-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/70
@@ -73,7 +75,6 @@ to an existing article which provides further documentation.
 [quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/223
 [roman-numeral-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/171
 
-[32]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/389
 [33]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/115
 [34]: https://github.com/TheRenegadeCoder/sample-programs/issues/855
 [35]: https://github.com/TheRenegadeCoder/sample-programs/issues/858
