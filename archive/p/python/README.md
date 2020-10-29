@@ -10,7 +10,7 @@ Code snippets preceded by :warning: link to an article request
 issue while code snippets preceded by :white_check_mark: link
 to an existing article which provides further documentation.
 
-- [Baklava in Python][22]
+- [Baklava in Python][baklava-article-issue]
   - Solution borrowed from @erayak via the [baklava repo][baklava-repo]
 - [Binary Search][31]
 - [Bubble Sort in Python][31]
@@ -53,20 +53,22 @@ to an existing article which provides further documentation.
 - [Python REPL][python-online-repl]
 
 [baklava-repo]: https://github.com/toturkmen/baklava
-[file-io-article]: https://therenegadecoder.com/code/file-io-in-python/
-[fizz-buzz-article]: https://therenegadecoder.com/code/fizz-buzz-in-python/
-[game-of-life-article-issue]: https://github.com/jrg94/sample-programs/issues/111
-[hello-world-article]: https://therenegadecoder.com/code/hello-world-in-python/
-[job-sequencing-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/70
 [python-online-repl]: https://repl.it/languages/python3
 [python-website]: https://www.python.org/
 [python-wiki]: https://en.wikipedia.org/wiki/Python_(programming_language)
-[reverse-a-string-article]: https://therenegadecoder.com/code/reverse-a-string-in-python/
-[trc-python-docs]: https://sample-programs.therenegadecoder.com/languages/python/
-[quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/223
 [zen-of-python]: https://www.python.org/dev/peps/pep-0020/
 
-[22]: https://github.com/TheRenegadeCoder/sample-programs/issues/432
+[file-io-article]: https://therenegadecoder.com/code/file-io-in-python/
+[fizz-buzz-article]: https://therenegadecoder.com/code/fizz-buzz-in-python/
+[hello-world-article]: https://therenegadecoder.com/code/hello-world-in-python/
+[reverse-a-string-article]: https://therenegadecoder.com/code/reverse-a-string-in-python/
+[trc-python-docs]: https://sample-programs.therenegadecoder.com/languages/python/
+
+[baklava-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/190
+[game-of-life-article-issue]: https://github.com/jrg94/sample-programs/issues/111
+[job-sequencing-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/70
+[quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/223
+
 [24]: https://github.com/TheRenegadeCoder/sample-programs/issues/492
 [25]: https://github.com/TheRenegadeCoder/sample-programs/issues/499
 [26]: https://github.com/TheRenegadeCoder/sample-programs/issues/570
