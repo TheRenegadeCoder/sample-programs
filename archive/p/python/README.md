@@ -15,7 +15,7 @@ to an existing article which provides further documentation.
 - :white_check_mark: [Binary Search][binary-search-article]
 - :white_check_mark: [Bubble Sort in Python][bubble-sort-article]
 - :warning: [Capitalize in Python][capitalize-article-issue]
-- [Convex Hull in Python][44]
+- :warning: [Convex Hull in Python][convex-hull-article-issue]
 - :white_check_mark: [Even Odd in Python][even-odd-article]
 - :white_check_mark: [Factorial in Python][factorial-article]
 - :white_check_mark: [Fibonacci in Python][fibonacci-article]
@@ -76,6 +76,7 @@ to an existing article which provides further documentation.
 
 [baklava-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/190
 [capitalize-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/390
+[convex-hull-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/391
 [game-of-life-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/237
 [job-sequencing-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/70
 [lcs-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/90
