@@ -27,9 +27,9 @@ to an existing article which provides further documentation.
 - :warning: [Job Sequencing with Deadlines in Python][job-sequencing-article-issue]
 - :warning: [Longest Common Subsequence][lcs-article-issue]
 - [Longest Palindromic Subsequence][42]
-- :warning: [Merge Sort in Python][merge-sort-article]
+- :white_check_mark: [Merge Sort in Python][merge-sort-article]
 - [Minimum Spanning Tree][43]
-- :warning: [Prime Number in Python][prime-number-article-issue]
+- :white_check_mark: [Prime Number in Python][prime-number-article]
 - :warning: [Quick Sort in Python][quick-sort-article-issue]
 - :warning: [Quine in Python][quine-article-issue]
 - :white_check_mark: [Reverse a String in Python][reverse-a-string-article]
@@ -67,6 +67,7 @@ to an existing article which provides further documentation.
 [hello-world-article]: https://therenegadecoder.com/code/hello-world-in-python/
 [insertion-sort-article]: https://sample-programs.therenegadecoder.com/projects/insertion-sort/python/
 [merge-sort-article]: https://sample-programs.therenegadecoder.com/projects/merge-sort/python/
+[prime-number-article]: https://sample-programs.therenegadecoder.com/projects/prime-number/python/
 [reverse-a-string-article]: https://therenegadecoder.com/code/reverse-a-string-in-python/
 [trc-python-docs]: https://sample-programs.therenegadecoder.com/languages/python/
 
@@ -75,7 +76,6 @@ to an existing article which provides further documentation.
 [game-of-life-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/237
 [job-sequencing-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/70
 [lcs-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/90
-[prime-number-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/112
 [quick-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/111
 [quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/223
 [roman-numeral-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/171
