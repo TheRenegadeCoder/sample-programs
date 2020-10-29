@@ -23,7 +23,7 @@ to an existing article which provides further documentation.
 - :white_check_mark: [Fizz Buzz in Python][fizz-buzz-article]
 - :warning: [Game of Life in Python][game-of-life-article-issue]
 - :white_check_mark: [Hello World in Python][hello-world-article]
-- :warning: [Insertion Sort in Python][insertion-sort-article-issue]
+- :warning: [Insertion Sort in Python][insertion-sort-article]
 - :warning: [Job Sequencing with Deadlines in Python][job-sequencing-article-issue]
 - :warning: [Longest Common Subsequence][lcs-article-issue]
 - [Longest Palindromic Subsequence][42]
@@ -65,13 +65,13 @@ to an existing article which provides further documentation.
 [file-io-article]: https://therenegadecoder.com/code/file-io-in-python/
 [fizz-buzz-article]: https://therenegadecoder.com/code/fizz-buzz-in-python/
 [hello-world-article]: https://therenegadecoder.com/code/hello-world-in-python/
+[insertion-sort-article]: https://sample-programs.therenegadecoder.com/projects/insertion-sort/python/
 [reverse-a-string-article]: https://therenegadecoder.com/code/reverse-a-string-in-python/
 [trc-python-docs]: https://sample-programs.therenegadecoder.com/languages/python/
 
 [baklava-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/190
 [even-odd-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/389
 [game-of-life-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/237
-[insertion-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/114
 [job-sequencing-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/70
 [lcs-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/90
 [merge-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/113
