@@ -76,10 +76,10 @@ to an existing article which provides further documentation.
 [quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/223
 [roman-numeral-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/171
 
-[34]: https://github.com/TheRenegadeCoder/sample-programs/issues/855
-[35]: https://github.com/TheRenegadeCoder/sample-programs/issues/858
-[36]: https://github.com/TheRenegadeCoder/sample-programs/issues/861
-[37]: https://github.com/TheRenegadeCoder/sample-programs/issues/864
+[34]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/114
+[35]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/113
+[36]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/112
+[37]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/111
 [38]: https://github.com/TheRenegadeCoder/sample-programs/issues/867
 [39]: https://github.com/TheRenegadeCoder/sample-programs/issues/870
 [42]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/longest_palindrome_substring.py
