@@ -30,7 +30,7 @@ to an existing article which provides further documentation.
 - :white_check_mark: [Merge Sort in Python][merge-sort-article]
 - [Minimum Spanning Tree][43]
 - :white_check_mark: [Prime Number in Python][prime-number-article]
-- :warning: [Quick Sort in Python][quick-sort-article-issue]
+- :white_check_mark: [Quick Sort in Python][quick-sort-article]
 - :warning: [Quine in Python][quine-article-issue]
 - :white_check_mark: [Reverse a String in Python][reverse-a-string-article]
 - :warning: [Roman Numeral Conversion in Python][roman-numeral-article-issue]
@@ -69,6 +69,7 @@ to an existing article which provides further documentation.
 [insertion-sort-article]: https://sample-programs.therenegadecoder.com/projects/insertion-sort/python/
 [merge-sort-article]: https://sample-programs.therenegadecoder.com/projects/merge-sort/python/
 [prime-number-article]: https://sample-programs.therenegadecoder.com/projects/prime-number/python/
+[quick-sort-article]: https://sample-programs.therenegadecoder.com/projects/quick-sort/python/
 [reverse-a-string-article]: https://therenegadecoder.com/code/reverse-a-string-in-python/
 [trc-python-docs]: https://sample-programs.therenegadecoder.com/languages/python/
 
@@ -76,7 +77,6 @@ to an existing article which provides further documentation.
 [game-of-life-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/237
 [job-sequencing-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/70
 [lcs-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/90
-[quick-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/111
 [quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/223
 [roman-numeral-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/171
 [rot-13-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/305
