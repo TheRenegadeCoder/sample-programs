@@ -6,7 +6,7 @@ Character(26) :: cap = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 integer :: number, check_capital_letters, check_small_letters, remainder 
 ! Anything not equal to single argument, Print Error
 IF(COMMAND_ARGUMENT_COUNT().NE.1)THEN
-  write(*,'(g0.8)')"Usage: please provide a string"
+  write(*,'(g0.8)')"Usage: please input a number"
   STOP
 ENDIF
 
