@@ -16,7 +16,7 @@ to an existing article which provides further documentation.
 - :white_check_mark: [Bubble Sort in Python][bubble-sort-article]
 - Capitalize in Python
 - [Convex Hull in Python][44]
-- :warning: [Even Odd in Python][even-odd-article-issue]
+- :white_check_mark: [Even Odd in Python][even-odd-article]
 - :white_check_mark: [Factorial in Python][factorial-article]
 - :white_check_mark: [Fibonacci in Python][fibonacci-article]
 - :white_check_mark: [File IO in Python][file-io-article]
@@ -60,6 +60,7 @@ to an existing article which provides further documentation.
 
 [binary-search-article]: https://sample-programs.therenegadecoder.com/projects/binary-search/python/
 [bubble-sort-article]: https://sample-programs.therenegadecoder.com/projects/bubble-sort/python/
+[even-odd-article]: https://sample-programs.therenegadecoder.com/projects/even-odd/python/
 [factorial-article]: https://sample-programs.therenegadecoder.com/projects/factorial/python/
 [fibonacci-article]: https://sample-programs.therenegadecoder.com/projects/fibonacci/python/
 [file-io-article]: https://therenegadecoder.com/code/file-io-in-python/
@@ -72,7 +73,6 @@ to an existing article which provides further documentation.
 [trc-python-docs]: https://sample-programs.therenegadecoder.com/languages/python/
 
 [baklava-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/190
-[even-odd-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/389
 [game-of-life-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/237
 [job-sequencing-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/70
 [lcs-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/90
