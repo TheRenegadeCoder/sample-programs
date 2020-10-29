@@ -26,7 +26,7 @@ to an existing article which provides further documentation.
 - :white_check_mark: [Insertion Sort in Python][insertion-sort-article]
 - :warning: [Job Sequencing with Deadlines in Python][job-sequencing-article-issue]
 - :warning: [Longest Common Subsequence][lcs-article-issue]
-- [Longest Palindromic Subsequence][42]
+- :warning: [Longest Palindromic Subsequence][lps-article-issue]
 - :white_check_mark: [Merge Sort in Python][merge-sort-article]
 - [Minimum Spanning Tree][43]
 - :white_check_mark: [Prime Number in Python][prime-number-article]
@@ -80,6 +80,7 @@ to an existing article which provides further documentation.
 [game-of-life-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/237
 [job-sequencing-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/70
 [lcs-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/90
+[lps-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/392
 [quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/223
 [rot-13-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/305
 [selection-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/110
