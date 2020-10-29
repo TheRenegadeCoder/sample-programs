@@ -13,7 +13,7 @@ to an existing article which provides further documentation.
 - :warning: [Baklava in Python][baklava-article-issue]
   - Solution borrowed from @erayak via the [baklava repo][baklava-repo]
 - :white_check_mark: [Binary Search][binary-search-article]
-- :warning: [Bubble Sort in Python][bubble-sort-article-issue]
+- :white_check_mark: [Bubble Sort in Python][bubble-sort-article-issue]
 - Capitalize in Python
 - [Convex Hull in Python][44]
 - :warning: [Even Odd in Python][even-odd-article-issue]
@@ -59,6 +59,7 @@ to an existing article which provides further documentation.
 [zen-of-python]: https://www.python.org/dev/peps/pep-0020/
 
 [binary-search-article]: https://sample-programs.therenegadecoder.com/projects/binary-search/python/
+[bubble-sort-article]: https://sample-programs.therenegadecoder.com/projects/bubble-sort/python/
 [file-io-article]: https://therenegadecoder.com/code/file-io-in-python/
 [fizz-buzz-article]: https://therenegadecoder.com/code/fizz-buzz-in-python/
 [hello-world-article]: https://therenegadecoder.com/code/hello-world-in-python/
@@ -66,7 +67,6 @@ to an existing article which provides further documentation.
 [trc-python-docs]: https://sample-programs.therenegadecoder.com/languages/python/
 
 [baklava-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/190
-[bubble-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/125
 [even-odd-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/389
 [factorial-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/115
 [fibonacci-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/173
@@ -81,8 +81,3 @@ to an existing article which provides further documentation.
 [roman-numeral-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/171
 [rot-13-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/305
 [selection-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/110
-
-[42]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/p/python/longest_palindrome_substring.py
-[43]: https://github.com/TheRenegadeCoder/sample-programs/issues/1536
-[44]: https://github.com/TheRenegadeCoder/sample-programs/issues/1535
-[45]: https://github.com/TheRenegadeCoder/sample-programs/issues/1988
