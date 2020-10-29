@@ -23,7 +23,7 @@ to an existing article which provides further documentation.
 - :white_check_mark: [Fizz Buzz in Python][fizz-buzz-article]
 - :warning: [Game of Life in Python][game-of-life-article-issue]
 - :white_check_mark: [Hello World in Python][hello-world-article]
-- :warning: [Insertion Sort in Python][insertion-sort-article]
+- :white_check_mark: [Insertion Sort in Python][insertion-sort-article]
 - :warning: [Job Sequencing with Deadlines in Python][job-sequencing-article-issue]
 - :warning: [Longest Common Subsequence][lcs-article-issue]
 - [Longest Palindromic Subsequence][42]
@@ -35,7 +35,7 @@ to an existing article which provides further documentation.
 - :white_check_mark: [Reverse a String in Python][reverse-a-string-article]
 - :warning: [Roman Numeral Conversion in Python][roman-numeral-article-issue]
 - :warning: [ROT-13 in Python][rot-13-article-issue]
-- :warning: [Selection Sort in Python][selection-sort-article-issue]
+- :white_check_mark: [Selection Sort in Python][selection-sort-article-issue]
 - [Sleep Sort in Python][45]
 
 ## Fun Facts
