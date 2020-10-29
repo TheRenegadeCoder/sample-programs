@@ -27,7 +27,7 @@ to an existing article which provides further documentation.
 - :warning: [Job Sequencing with Deadlines in Python][job-sequencing-article-issue]
 - :warning: [Longest Common Subsequence][lcs-article-issue]
 - [Longest Palindromic Subsequence][42]
-- :warning: [Merge Sort in Python][merge-sort-article-issue]
+- :warning: [Merge Sort in Python][merge-sort-article]
 - [Minimum Spanning Tree][43]
 - :warning: [Prime Number in Python][prime-number-article-issue]
 - :warning: [Quick Sort in Python][quick-sort-article-issue]
@@ -66,6 +66,7 @@ to an existing article which provides further documentation.
 [fizz-buzz-article]: https://therenegadecoder.com/code/fizz-buzz-in-python/
 [hello-world-article]: https://therenegadecoder.com/code/hello-world-in-python/
 [insertion-sort-article]: https://sample-programs.therenegadecoder.com/projects/insertion-sort/python/
+[merge-sort-article]: https://sample-programs.therenegadecoder.com/projects/merge-sort/python/
 [reverse-a-string-article]: https://therenegadecoder.com/code/reverse-a-string-in-python/
 [trc-python-docs]: https://sample-programs.therenegadecoder.com/languages/python/
 
@@ -74,7 +75,6 @@ to an existing article which provides further documentation.
 [game-of-life-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/237
 [job-sequencing-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/70
 [lcs-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/90
-[merge-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/113
 [prime-number-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/112
 [quick-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/111
 [quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/223
