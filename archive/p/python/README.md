@@ -13,11 +13,11 @@ to an existing article which provides further documentation.
 - :warning: [Baklava in Python][baklava-article-issue]
   - Solution borrowed from @erayak via the [baklava repo][baklava-repo]
 - :white_check_mark: [Binary Search][binary-search-article]
-- :white_check_mark: [Bubble Sort in Python][bubble-sort-article-issue]
+- :white_check_mark: [Bubble Sort in Python][bubble-sort-article]
 - Capitalize in Python
 - [Convex Hull in Python][44]
 - :warning: [Even Odd in Python][even-odd-article-issue]
-- :warning: [Factorial in Python][factorial-article-issue]
+- :warning: [Factorial in Python][factorial-article]
 - :warning: [Fibonacci in Python][fibonacci-article-issue]
 - :white_check_mark: [File IO in Python][file-io-article]
 - :white_check_mark: [Fizz Buzz in Python][fizz-buzz-article]
@@ -60,6 +60,7 @@ to an existing article which provides further documentation.
 
 [binary-search-article]: https://sample-programs.therenegadecoder.com/projects/binary-search/python/
 [bubble-sort-article]: https://sample-programs.therenegadecoder.com/projects/bubble-sort/python/
+[factorial-article]: https://sample-programs.therenegadecoder.com/projects/factorial/python/
 [file-io-article]: https://therenegadecoder.com/code/file-io-in-python/
 [fizz-buzz-article]: https://therenegadecoder.com/code/fizz-buzz-in-python/
 [hello-world-article]: https://therenegadecoder.com/code/hello-world-in-python/
@@ -68,9 +69,8 @@ to an existing article which provides further documentation.
 
 [baklava-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/190
 [even-odd-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/389
-[factorial-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/115
 [fibonacci-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/173
-[game-of-life-article-issue]: https://github.com/jrg94/sample-programs/issues/111
+[game-of-life-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/237
 [insertion-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/114
 [job-sequencing-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/70
 [lcs-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/90
