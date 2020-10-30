@@ -219,6 +219,11 @@ Welcome to Sample Programs in [Insert Language Here]!
 
 ## Sample Programs
 
+Below, you'll find a list of code snippets in this collection.
+Code snippets preceded by :warning: link to an article request 
+issue while code snippets preceded by :white_check_mark: link
+to an existing article which provides further documentation.
+
 - [Insert List of Sample Program Additions Here]
 
 ## Fun Facts
@@ -228,12 +233,14 @@ Welcome to Sample Programs in [Insert Language Here]!
 ## References
 
 - [Insert Language References Here]
+
+[example-article-link]: example.com
 ```
 
 In the section labeled `[Insert List of Sample Program Additions Here]`, please
 add the name of the sample program you've added. Ideally, you would link to the
-article here. At this point, however, the article doesn't exist. Instead, create 
-an issue for the article and link the issue here.
+article here. At this point, however, the article doesn't exist. Instead, [create 
+an issue for the article][sample-programs-website-issues] and link the issue here.
 
 In addition, in the section labeled `[Insert List of Fun Facts Here]`, please
 add fun information like when the language debuted, who develops the language,
@@ -245,10 +252,8 @@ Wikipedia pages, style guides, official websites, online editors, and GitHub pag
 This helps us determine if the language actually exists, and it helps users who
 are browsing the repository.
 
-If you're feeling adventurous, we're interested in adding a syntax section to each
-README. Every time a unique language syntax appears in the repo for a particular
-language, we track it in its README with links. Check out the [Python README][python-readme]
-for an example.
+Make sure all links in the README leverage the linking scheme in the template.
+Feel free to look at the raw version of this contributing doc for an example.
 
 #### Add `testinfo.yml`
 
@@ -412,6 +417,7 @@ These rules help grow and cultivate the community in a positive manner.
 [glotter-directory-config]: https://github.com/auroq/glotter/wiki/Directory-Level-Configuration
 [sample-programs-website]: https://github.com/TheRenegadeCoder/sample-programs-website
 [sample-programs-website-contributing]: https://github.com/TheRenegadeCoder/sample-programs-website
+[sample-programs-website-issues]: https://github.com/TheRenegadeCoder/sample-programs-website/issues
 
 [project-glotter-yml]: ../.glotter.yml
 [test-projectes-folder]: ../test/projects
