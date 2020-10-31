@@ -15,6 +15,7 @@ to an existing article which provides further documentation.
 - :warning: [Even-Odd in Fortran][even-odd-article-issue]
 - :warning: [Factorial in Fortran][factorial-article-issue]
 - :warning: [Hello World in Fortran][hello-world-article-issue]
+- :warning: [Prime in Fortran][prime-number-article-issue]
 - :warning: [Reverse String in Fortran][reverse-string-article-issue]
 
 ## Fun Facts
@@ -26,11 +27,13 @@ to an existing article which provides further documentation.
 
 - [Fortran Wiki][fortan-wiki]
 
-[baklava-article-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/427
 [baklava-repo]: https://github.com/toturkmen/baklava
+[fortran-wiki]: https://en.wikipedia.org/wiki/Fortran
+
+[baklava-article-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/427
 [capitalize-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/386
 [even-odd-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/388
 [factorial-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/387
-[fortran-wiki]: https://en.wikipedia.org/wiki/Fortran
 [hello-world-article-issue]: https://github.com/jrg94/sample-programs/issues/73
+[prime-number-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/397
 [reverse-string-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/383
