@@ -32,6 +32,7 @@ Welcome to Sample Programs in JavaScript!
 -   [Roman Numeral Conversion in JavaScript][17]
 -   [ROT-13 in JavaScript][21]
 -   [Selection Sort in JavaSciprt][19]
+-   [Duplicate Character Counting in JavaScript][32]
 
 ## Fun Facts
 
@@ -79,3 +80,4 @@ Welcome to Sample Programs in JavaScript!
 [29]: https://github.com/TheRenegadeCoder/sample-programs/pull/2163
 [30]: https://github.com/TheRenegadeCoder/sample-programs/issues/2245
 [31]: https://github.com/TheRenegadeCoder/sample-programs/issues/2287
+[32]: https://sample-programs.therenegadecoder.com/projects/duplicate-char-counter/
