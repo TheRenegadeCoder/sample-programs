@@ -15,6 +15,7 @@ Welcome to Sample Programs in C!
 - [Fizz Buzz in C][4]
 - [Game of Life in C][6]
 - [Hello World in C][2]
+- [Import/Export in C][26]
 - [Insertion Sort in C][19]
 - [Least Common Subsequence in C][21]
 - [Merge Sort in C][18]
@@ -65,3 +66,4 @@ Welcome to Sample Programs in C!
 [23]: https://sample-programs.therenegadecoder.com/projects/roman-numeral-conversion/
 [24]: https://sample-programs.therenegadecoder.com/projects/quick-sort/
 [25]: https://github.com/TheRenegadeCoder/sample-programs/issues/1272
+[26]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/395
