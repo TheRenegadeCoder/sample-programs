@@ -1,1 +1,1 @@
-int var1 = 0, var2 = 100;
+char str[] = "Sample Programs"
