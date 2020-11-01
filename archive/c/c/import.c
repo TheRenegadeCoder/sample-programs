@@ -1,9 +1,8 @@
-/*Call the varian;es defined in external file and print them*/
 #include <stdio.h>
 #include "export.c"
 
-extern int var1, var2;
+extern char str;
 void main()
 {
-    printf ("%d, %d", var1, var);
+    printf (str);
 }
