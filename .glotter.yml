@@ -72,6 +72,12 @@ projects:
     acronyms:
       - "lcs"
     requires_parameters: true
+  lps:
+    words:
+      - "lps"
+    acronyms:
+      - "lps"
+    requires_parameters: true
   linearsearch:
     words:
       - "linear"

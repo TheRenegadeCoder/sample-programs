@@ -1,0 +1,1 @@
+def main(): String = "Hello World!"

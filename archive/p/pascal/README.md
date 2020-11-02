@@ -4,13 +4,12 @@ Welcome to Sample Programs in Pascal!
 
 ## Sample Programs
 
-- [Fizz Buzz in Pascal][1]
-- [Hello World in Pascal][2]
-- [Baklava in Pascal](https://github.com/TheRenegadeCoder/sample-programs/issues/2214)
-- [Factorial in Pascal](https://github.com/TheRenegadeCoder/sample-programs/issues/2219)
-- [Reverse String in Pascal](https://github.com/TheRenegadeCoder/sample-programs/issues/2221)
-- [Capitalize First Letter in Pascal](https://github.com/TheRenegadeCoder/sample-programs/issues/2248)
-
+- [Capitalize in Pascal][capitalize-article-issue]
+- [Even Odd in Pascal][even-odd-article-issue]
+- [Fizz Buzz in Pascal][fizz-buzz-article-issue]
+- [Hello World in Pascal][hello-world-article]
+- [Prime Number in Pascal][prime-number-article-issue]
+- [Reverse String in Pascal][reverse-string-article-issue]
 
 ## Fun Facts
 
@@ -19,12 +18,19 @@ Welcome to Sample Programs in Pascal!
 
 ## References
 
-- [Pascal Wiki][3]
-- [Pascal Docs][4]
-- [Online Pascal Compiler][5]
+- [Pascal Wiki][wiki]
+- [Pascal Docs][docs]
+- [Online Pascal Compiler][compiler]
 
-[1]: https://github.com/TheRenegadeCoder/sample-programs/issues/548
-[2]: https://therenegadecoder.com/code/hello-world-in-pascal/
-[3]: https://en.wikipedia.org/wiki/Pascal_(programming_language)
-[4]: https://www.freepascal.org/docs.var
-[5]: https://www.jdoodle.com/execute-pascal-online
+
+[wiki]: https://en.wikipedia.org/wiki/Pascal_(programming_language)
+[docs]: https://www.freepascal.org/docs.var
+[compiler]: https://www.jdoodle.com/execute-pascal-online
+
+[hello-world-article]: https://therenegadecoder.com/code/hello-world-in-pascal/
+
+[capitalize-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/367
+[even-odd-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/368
+[fizz-buzz-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/162
+[prime-number-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/369
+[reverse-string-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/370

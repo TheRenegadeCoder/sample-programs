@@ -17,6 +17,7 @@ Welcome to Sample Programs in Lua!
 - [Prime Number in Lua][11]
 - [Reverse a String in Lua][5]
 - [ROT-13 in Lua][10]
+  - Solution based on [Yonaba's Caesar Cipher solution][yonaba-solution]
 - [Roman Numeral Conversion][12]
 
 ## Fun Facts
@@ -29,6 +30,8 @@ Welcome to Sample Programs in Lua!
 
 - [Lua Wiki][3]
 - [Lua Docs][4]
+
+[yonaba-solution]: https://github.com/kennyledet/Algorithm-Implementations/blob/master/ROT13_Cipher/Lua/Yonaba/rot13.lua
 
 [1]: https://github.com/TheRenegadeCoder/sample-programs/issues/444
 [2]: https://therenegadecoder.com/code/hello-world-in-lua/
