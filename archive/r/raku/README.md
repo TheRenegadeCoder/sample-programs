@@ -1,6 +1,6 @@
-# Sample Programs in [Insert Language Here]
+# Sample Programs in Raku
 
-Welcome to Sample Programs in [Insert Language Here]!
+Welcome to Sample Programs in Raku!
 
 ## Sample Programs
 
@@ -9,14 +9,15 @@ Code snippets preceded by :warning: link to an article request
 issue while code snippets preceded by :white_check_mark: link
 to an existing article which provides further documentation.
 
-- [Insert List of Sample Program Additions Here]
+- :warning: Hello World in Raku
 
 ## Fun Facts
 
-- [Insert List of Fun Facts Here]
+- Debut: 2015
+- Language Family: Perl (Originally Perl 6)
 
 ## References
 
-- [Insert Language References Here]
+- [Raku Website][raku-website]
 
-[example-article-link]: example.com
+[raku-website]: example.com
