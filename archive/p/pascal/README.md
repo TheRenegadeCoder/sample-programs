@@ -1,6 +1,7 @@
 # Sample Programs in Pascal
 
-Welcome to Sample Programs in Pascal!
+Welcome to Sample Programs in Pascal! To learn more about this language,
+check out [the official documentation][sample-programs-pascal].
 
 ## Sample Programs
 
@@ -31,6 +32,7 @@ to an existing article which provides further documentation.
 [wiki]: https://en.wikipedia.org/wiki/Pascal_(programming_language)
 [docs]: https://www.freepascal.org/docs.var
 [compiler]: https://www.jdoodle.com/execute-pascal-online
+[sample-programs-pascal]: https://sample-programs.therenegadecoder.com/languages/pascal/
 
 [hello-world-article]: https://therenegadecoder.com/code/hello-world-in-pascal/
 
