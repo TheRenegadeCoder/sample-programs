@@ -9,7 +9,7 @@ Code snippets preceded by :warning: link to an article request
 issue while code snippets preceded by :white_check_mark: link
 to an existing article which provides further documentation.
 
-- :warning: Hello World in Raku
+- :warning: [Hello World in Raku][hello-world-article-issue]
 
 ## Fun Facts
 
@@ -20,4 +20,6 @@ to an existing article which provides further documentation.
 
 - [Raku Website][raku-website]
 
-[raku-website]: example.com
+[raku-website]: https://raku.org/
+
+[hello-world-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/399
