@@ -4,12 +4,17 @@ Welcome to Sample Programs in Pascal!
 
 ## Sample Programs
 
-- [Capitalize in Pascal][capitalize]
-- [Even Odd in Pascal][even-odd]
-- [Fizz Buzz in Pascal][fizz-buzz]
-- [Hello World in Pascal][hello-world]
-- [Prime Number in Pascal][prime-number]
-- [Reverse String in Pascal][reverse-string]
+Below, you'll find a list of code snippets in this collection.
+Code snippets preceded by :warning: link to an article request 
+issue while code snippets preceded by :white_check_mark: link
+to an existing article which provides further documentation.
+
+- :warning: [Capitalize in Pascal][capitalize-article-issue]
+- :warning: [Even Odd in Pascal][even-odd-article-issue]
+- :warning: [Fizz Buzz in Pascal][fizz-buzz-article-issue]
+- :white_check_mark: [Hello World in Pascal][hello-world-article]
+- :warning: [Prime Number in Pascal][prime-number-article-issue]
+- :warning: [Reverse String in Pascal][reverse-string-article-issue]
 
 ## Fun Facts
 
@@ -27,10 +32,10 @@ Welcome to Sample Programs in Pascal!
 [docs]: https://www.freepascal.org/docs.var
 [compiler]: https://www.jdoodle.com/execute-pascal-online
 
+[hello-world-article]: https://therenegadecoder.com/code/hello-world-in-pascal/
 
-[capitalize]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/367
-[even-odd]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/368
-[fizz-buzz]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/162
-[hello-world]: https://therenegadecoder.com/code/hello-world-in-pascal/
-[prime-number]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/369
-[reverse-string]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/370
+[capitalize-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/367
+[even-odd-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/368
+[fizz-buzz-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/162
+[prime-number-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/369
+[reverse-string-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/370
