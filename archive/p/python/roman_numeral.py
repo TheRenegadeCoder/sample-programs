@@ -1,10 +1,7 @@
-# Python program to convert Roman Numerals 
-# to Numbers
-
 import sys
 
 
-# This function returns value of each Roman symbol 
+# This function returns value of each Roman symbol
 def value(r):
     return {
         'I': 1,
@@ -20,34 +17,34 @@ def value(r):
 def roman_to_decimal(string):
     res = 0
     i = 0
-  
+
     while i < len(string):
-  
-        # Getting value of symbol s[i] 
+
+        # Getting value of symbol s[i]
         s1 = value(string[i])
-  
+
         if i+1 < len(string):
-  
-            # Getting value of symbol s[i+1] 
+
+            # Getting value of symbol s[i+1]
             s2 = value(string[i + 1])
-  
-            # Comparing both values 
+
+            # Comparing both values
             if s1 >= s2:
-  
-                # Value of current symbol is greater 
-                # or equal to the next symbol 
-                res += s1 
+
+                # Value of current symbol is greater
+                # or equal to the next symbol
+                res += s1
                 i += 1
-            else: 
-  
-                # Value of current symbol is less than 
-                # to the next symbol 
-                res = res + s2 - s1 
+            else:
+
+                # Value of current symbol is less than
+                # to the next symbol
+                res = res + s2 - s1
                 i += 2
-        else: 
-            res += s1 
+        else:
+            res += s1
             i += 1
-  
+
     return res
 
 

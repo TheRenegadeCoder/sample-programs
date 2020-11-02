@@ -17,6 +17,7 @@ class ProjectType(Enum):
     InsertionSort = auto()
     JobSequencing = auto()
     LCS = auto()
+    LPS = auto()
     LinearSearch = auto()
     MergeSort = auto()
     MST = auto()

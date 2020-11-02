@@ -6,6 +6,7 @@ Welcome to Sample Programs in JavaScript!
 
 -   [Baklava in JavaScript][8]
     -   Solution borrowed from @toturkmen via the [baklava repo][1]
+-   [Binary Search in JavaScript][31]
 -   [Bubblesort in Javascript][18]
 -   [Capitalize in JavaScript][12]
 -   [Convex Hull in Javascript][18]
@@ -21,6 +22,7 @@ Welcome to Sample Programs in JavaScript!
 -   [Insertion Sort in JavaScript][16]
 -   [Job Sequencing with Deadlines in JavaScript][29]
 -   [LCS in JavaScript][28]
+-   [Longest Palindrome Substring in JavaScript][30]
 -   [Linear Search in JavaScript][27]
 -	[Merge Sort in JavaScript][23]
 -   [Prime Number in JavaScript][14]
@@ -75,3 +77,5 @@ Welcome to Sample Programs in JavaScript!
 [27]:https://github.com/TheRenegadeCoder/sample-programs/blob/master/archive/j/javascript/linear-search.js
 [28]: https://github.com/TheRenegadeCoder/sample-programs/issues/1381
 [29]: https://github.com/TheRenegadeCoder/sample-programs/pull/2163
+[30]: https://github.com/TheRenegadeCoder/sample-programs/issues/2245
+[31]: https://github.com/TheRenegadeCoder/sample-programs/issues/2287

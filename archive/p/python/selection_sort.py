@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 import sys
 
 
@@ -27,10 +26,9 @@ def main(args):
         if len(xs) <= 1:
             exit_with_error()
         print(selection_sort(xs))
-    except (IndexError,ValueError):
+    except (IndexError, ValueError):
         exit_with_error()
 
 
 if __name__ == "__main__":
     main(sys.argv[1:])
-

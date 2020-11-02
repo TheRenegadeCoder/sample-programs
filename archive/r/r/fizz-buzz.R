@@ -12,7 +12,7 @@ fizz_buzz <- function(){
     if (mod5){
       out=paste0(out,'Buzz')
     }
-    print(out)
+    cat(out, "\n")
   }
 }
 
