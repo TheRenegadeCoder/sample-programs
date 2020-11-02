@@ -4,12 +4,12 @@ Welcome to Sample Programs in Pascal!
 
 ## Sample Programs
 
-- [Capitalize in Pascal][capitalize-article-issue]
-- [Even Odd in Pascal][even-odd-article-issue]
-- [Fizz Buzz in Pascal][fizz-buzz-article-issue]
-- [Hello World in Pascal][hello-world-article]
-- [Prime Number in Pascal][prime-number-article-issue]
-- [Reverse String in Pascal][reverse-string-article-issue]
+- :warning: [Capitalize in Pascal][capitalize-article-issue]
+- :warning: [Even Odd in Pascal][even-odd-article-issue]
+- :warning: [Fizz Buzz in Pascal][fizz-buzz-article-issue]
+- :white_check_mark: [Hello World in Pascal][hello-world-article]
+- :warning: [Prime Number in Pascal][prime-number-article-issue]
+- :warning: [Reverse String in Pascal][reverse-string-article-issue]
 
 ## Fun Facts
 
