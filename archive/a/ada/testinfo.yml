@@ -3,7 +3,7 @@ folder:
   naming: "hyphen"
 
 container:
-  image: "gcc"
-  tag: "8.3" 
+  image: "tomekw/ada-gnat"
+  tag: "latest" 
   build: "gnatmake {{ source.name }}{{ source.extension }}"
-  cmd: "{{ source.name }}"
+  cmd: "./{{ source.name }}"
