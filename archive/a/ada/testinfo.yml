@@ -1,0 +1,9 @@
+folder:
+  extension: ".adb"
+  naming: "hyphen"
+
+container:
+  image: "tomekw/ada-gnat"
+  tag: "latest" 
+  build: "gnatmake {{ source.name }}{{ source.extension }}"
+  cmd: "./{{ source.name }}"
