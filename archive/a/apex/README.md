@@ -11,7 +11,7 @@ to an existing article which provides further documentation.
 
 - :warning: [Hello World in Apex][hello-world-article-issue]
   - Inspired from [SendGrid Blog][send-grid-hello-world]
-- :warning: Reverse a String in Apex
+- :warning: [Reverse a String in Apex][reverse-string-article-issue]
 
 ## Fun Facts
 
@@ -27,4 +27,5 @@ to an existing article which provides further documentation.
 [apex-wiki]: https://en.wikipedia.org/wiki/Salesforce.com#Apex
 [send-grid-hello-world]: https://sendgrid.com/blog/hello-world-apex/
 
-[hello-world-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/158
+[hello-world-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/400
+[reverse-string-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/401
