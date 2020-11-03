@@ -4,9 +4,14 @@ Welcome to Sample Programs in Apex!
 
 ## Sample Programs
 
-- [Hello World in Apex](https://github.com/TheRenegadeCoder/sample-programs/issues/585)
-  - Inspired from [SendGrid Blog](https://sendgrid.com/blog/hello-world-apex/)
-- Reverse a String in Apex
+Below, you'll find a list of code snippets in this collection.
+Code snippets preceded by :warning: link to an article request 
+issue while code snippets preceded by :white_check_mark: link
+to an existing article which provides further documentation.
+
+- :warning: [Hello World in Apex][hello-world-article-issue]
+  - Inspired from [SendGrid Blog][send-grid-hello-world]
+- :warning: Reverse a String in Apex
 
 ## Fun Facts
 
@@ -15,5 +20,11 @@ Welcome to Sample Programs in Apex!
 
 ## References
 
-- [Apex Wiki](https://en.wikipedia.org/wiki/Salesforce.com#Apex)
-- [Apex Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_dev_guide.htm)
+- [Apex Wiki][apex-wiki]
+- [Apex Developer Guide][apex-dev-guide]
+
+[apex-dev-guide]: https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_dev_guide.htm
+[apex-wiki]: https://en.wikipedia.org/wiki/Salesforce.com#Apex
+[send-grid-hello-world]: https://sendgrid.com/blog/hello-world-apex/
+
+[hello-world-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/158
