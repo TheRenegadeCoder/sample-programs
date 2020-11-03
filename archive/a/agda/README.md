@@ -17,7 +17,10 @@ to an existing article which provides further documentation.
 
 ## References
 
-- [Agda GitHub](https://github.com/agda/agda)
-- [Agda Docs](http://agda.readthedocs.io/en/v2.5.3/)
+- [Agda Docs][agda-docs]
+- [Agda GitHub][agda-github]
+
+[agda-docs]: http://agda.readthedocs.io/en/v2.5.3/
+[agda-github]: https://github.com/agda/agda
 
 [hello-world-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/251
