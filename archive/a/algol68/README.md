@@ -20,11 +20,15 @@ to an existing article which provides further documentation.
 
 ## References
 
-- [ALGOL 68 Wiki](https://en.wikipedia.org/wiki/ALGOL_68)
-- [Software Preservation Group](http://www.softwarepreservation.org/projects/ALGOL/algol68impl)
-- [ALGOL 68 Interpreter](http://progopedia.com/implementation/algol68g/)
-- [Online Interpreter](http://www.compileonline.com/execute_algol_online.php)
+- [ALGOL 68 Interpreter][algol-68-interpreter]
+- [ALGOL 68 Online Editor][algol-68-online-editor]
+- [ALGOL 68 Software Preservation Group][algo-68-software-group]
+- [ALGOL 68 Wiki][algol-68-wiki]
 
+[algol-68-interpreter]: http://progopedia.com/implementation/algol68g/
 [algol-68-language]: https://sample-programs.therenegadecoder.com/languages/algol68/
+[algol-68-online-editor]: http://www.compileonline.com/execute_algol_online.php
+[algo-68-software-group]: http://www.softwarepreservation.org/projects/ALGOL/algol68impl
+[algol-68-wiki]: https://en.wikipedia.org/wiki/ALGOL_68
 
 [hello-world-article]: https://therenegadecoder.com/code/hello-world-in-algol-68/
