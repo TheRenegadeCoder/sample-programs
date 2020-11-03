@@ -29,6 +29,7 @@ class ProjectType(Enum):
     RomanNumeral = auto()
     SelectionSort = auto()
     SleepSort = auto()
+    RemovingAllSpaces = auto()
 
     @property
     def key(self):

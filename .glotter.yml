@@ -132,3 +132,8 @@ projects:
       - "sleep"
       - "sort"
     requires_parameters: true
+  removingallspaces:
+    words:
+      - "remove"
+      - "space"
+    requires_parameters: true
