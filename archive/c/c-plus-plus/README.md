@@ -9,7 +9,7 @@ Code snippets preceded by :warning: link to an article request
 issue while code snippets preceded by :white_check_mark: link
 to an existing article which provides further documentation.
 
-- [Baklava in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1233)
+- :warning: [Baklava in C++][baklava-article-issue]
 - [Binary Search in C++](https://github.com/TheRenegadeCoder/sample-programs/tree/master/archive/c/c-plus-plus)
 - [Bubble Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1135)
 - [Capitalize in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1234)
@@ -28,7 +28,7 @@ to an existing article which provides further documentation.
 - [Merge Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/tree/master/archive/c/c-plus-plus)
 - Prime Number in C++
 - [Quick Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1848)
-- :warning: [Reverse String in C++][reverse-string-article]
+- :warning: [Reverse String in C++][reverse-string-article-issue]
 - [Roman Numeral Conversion in C++](https://github.com/TheRenegadeCoder/sample-programs/tree/master/archive/c/c-plus-plus)
 - [Selection Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1683)
 
@@ -54,12 +54,12 @@ to an existing article which provides further documentation.
 
 [file-io-article]: https://therenegadecoder.com/code/file-io-in-c-plus-plus/
 [hello-world-article]: https://therenegadecoder.com/code/hello-world-in-c-plus-plus/
-[reverse-string-article]: https://github.com/TheRenegadeCoder/sample-programs/issues/419
 
+[baklava-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/405
 [fibonacci-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/172
 [import-export-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/396
+[reverse-string-article-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/419
 
-[baklava-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1233
 [bubble-sort-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1135
 [capitalize-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1234
 [dijkstra-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1796
