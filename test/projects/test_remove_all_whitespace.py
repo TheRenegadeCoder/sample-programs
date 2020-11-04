@@ -53,24 +53,24 @@ valid_permutations = (
 )
 
 
-@project_fixture(ProjectType.RemovingAllSpaces.key)
-def removing_all_spaces(request):
+@project_fixture(ProjectType.RemoveAllWhitespace.key)
+def remove_all_whitespace(request):
     request.param.build()
     yield request.param
     request.param.cleanup()
 
 
-@project_test(ProjectType.RemovingAllSpaces.key)
+@project_test(ProjectType.RemoveAllWhitespace.key)
 @pytest.mark.parametrize(valid_permutations[0], valid_permutations[1],
                          ids=[p[0] for p in valid_permutations[1]])
-def test_removing_all_spaces_valid(description, in_params, expected, removing_all_spaces):
-    actual = removing_all_spaces.run(params=in_params)
+def test_remove_all_whitespace_valid(description, in_params, expected, remove_all_whitespace):
+    actual = remove_all_whitespace.run(params=in_params)
     assert actual.strip().lower() == expected
 
 
-@project_test(ProjectType.RemovingAllSpaces.key)
+@project_test(ProjectType.RemoveAllWhitespace.key)
 @pytest.mark.parametrize(invalid_permutations[0], invalid_permutations[1],
                          ids=[p[0] for p in invalid_permutations[1]])
-def test_removing_all_spaces_invalid(description, in_params, expected, removing_all_spaces):
-    actual = removing_all_spaces.run(params=in_params)
+def test_remove_all_whitespace_invalid(description, in_params, expected, remove_all_whitespace):
+    actual = remove_all_whitespace.run(params=in_params)
     assert actual.strip() == expected
