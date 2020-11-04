@@ -28,10 +28,10 @@ to an existing article which provides further documentation.
 - :warning: [Longest Common Subsequence in C++][lcs-article-issue]
 - :warning: [Merge Sort in C++]
 - :warning: [Prime Number in C++]
-- :warning: [Quick Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1848)
+- :warning: [Quick Sort in C++][quick-sort-article-issue]
 - :warning: [Reverse String in C++][reverse-string-article-issue]
 - :warning: [Roman Numeral Conversion in C++]
-- :warning: [Selection Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1683)
+- :warning: [Selection Sort in C++][selection-sort-article-issue]
 
 ## Fun Facts
 
@@ -71,7 +71,6 @@ to an existing article which provides further documentation.
 [game-of-life-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/413
 [import-export-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/396
 [lcs-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/414
+[quick-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/415
 [reverse-string-article-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/419
-
-[quick-sort-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1848
-[selection-sort-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1683
+[selection-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/416
