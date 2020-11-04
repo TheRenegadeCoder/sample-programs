@@ -17,7 +17,7 @@ to an existing article which provides further documentation.
 - [Even Odd in C++](https://sample-programs.therenegadecoder.com/projects/even-odd/)
 - [Factorial in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1237)
 - :warning: [Fibonacci Sequence in C++][fibonacci-article-issue]
-- [File Input/Output in C++](https://therenegadecoder.com/code/file-io-in-c-plus-plus/)
+- :white_check_mark: [File IO in C++][file-io-article]
 - [Fizz Buzz in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1238)
 - [Fractions in c++](https://github.com/TheRenegadeCoder/sample-programs/tree/master/archive/c/c-plus-plus/)
 - [Game of Life in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1239)
@@ -51,6 +51,8 @@ to an existing article which provides further documentation.
 [c-plus-plus-wiki]: https://en.wikipedia.org/wiki/C%2B%2B
 [c-plus-plus-docs]: http://www.cplusplus.com/
 [c-plus-plus-reference]: https://en.cppreference.com/w/
+
+[file-io-article]: https://therenegadecoder.com/code/file-io-in-c-plus-plus/
 
 [fibonacci-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/172
 
