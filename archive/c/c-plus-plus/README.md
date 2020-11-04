@@ -13,7 +13,7 @@ to an existing article which provides further documentation.
 - :warning: [Binary Search in C++][binary-search-article-issue]
 - :warning: [Bubble Sort in C++][bubble-sort-article-issue]
 - :warning: [Capitalize in C++][capitalize-article-issue]
-- :warning: [Dijkstra in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1796)
+- :warning: [Dijkstra in C++][dijkstra-article-issue]
 - :warning: [Even Odd in C++](https://sample-programs.therenegadecoder.com/projects/even-odd/)
 - :warning: [Factorial in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1237)
 - :warning: [Fibonacci in C++][fibonacci-article-issue]
@@ -59,11 +59,11 @@ to an existing article which provides further documentation.
 [binary-search-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/407
 [bubble-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/406
 [capitalize-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/408
+[dijkstra-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/409
 [fibonacci-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/172
 [import-export-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/396
 [reverse-string-article-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/419
 
-[dijkstra-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1796
 [factorial-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1237
 [fizz-buzz-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1238
 [game-of-life-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1239
