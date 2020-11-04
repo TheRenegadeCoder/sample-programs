@@ -40,10 +40,14 @@ to an existing article which provides further documentation.
 
 ## References
 
-- [C++ Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
-- [C++ Wiki](https://en.wikipedia.org/wiki/C%2B%2B)
-- [CPlusPlus Docs for the C++ language and standard library](http://www.cplusplus.com/)
-- [Cppreference C++ Docs](https://en.cppreference.com/w/cpp)
-- [C++ Online Compiler](http://cpp.sh/)
-- [Game of life wiki](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
-- [Mario Talevski project](https://github.com/MarioTalevski/game-of-life)
+- [C++ Core Guidelines][c-plus-plus-guidelines]
+- [C++ Online Compiler][c-plus-plus-online-editor]
+- [C++ Wiki][c-plus-plus-wiki]
+- [C++ Docs][c-plus-plus-docs]
+- [C++ Reference][c-plus-plus-reference]
+
+[c-plus-plus-guidelines]: http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines
+[c-plus-plus-online-editor]: http://cpp.sh/
+[c-plus-plus-wiki]: https://en.wikipedia.org/wiki/C%2B%2B
+[c-plus-plus-docs]: http://www.cplusplus.com/
+[c-plus-plus-reference]: https://en.cppreference.com/w/
