@@ -1,6 +1,6 @@
-# Sample Programs in [Insert Language Here]
+# Sample Programs in AutoHotKey
 
-Welcome to Sample Programs in [Insert Language Here]!
+Welcome to Sample Programs in AutoHotKey!
 
 ## Sample Programs
 
@@ -17,7 +17,9 @@ to an existing article which provides further documentation.
 
 ## References
 
-- [Insert Language References Here]
+- [AutoHotKey GitHub][[autohotkey-github]
+- [AutoHotKey Official Website][autohotkey-website]
+- [AutoHotKey Wikipedia][autohotkey-wiki]
 
 [autohotkey-github]: https://github.com/Lexikos/AutoHotkey_L
 [autohotkey-website]: https://www.autohotkey.com/
