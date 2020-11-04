@@ -12,7 +12,6 @@ in c programming language
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <conio.h>
 #include <string.h>
 
 /* I Create this function to avoid the unsafe input
@@ -50,7 +49,6 @@ int main(void)
   printf("\n\n\n\n\n\n\n\n               ----------------------------------------------------------\n");
   printf("\n              |    Mind Hackers ! - Removing extra whiteSpaces  .   ^,^    |");
   printf("\n\n               ----------------------------------------------------------\n\n");
-  getch();
   system("PAUSE");
   return 0;
 }
