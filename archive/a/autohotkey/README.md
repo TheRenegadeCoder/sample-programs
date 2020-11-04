@@ -19,4 +19,4 @@ to an existing article which provides further documentation.
 
 - [Insert Language References Here]
 
-[example-article-link]: example.com
+[autohotkey-website]: https://www.autohotkey.com/
