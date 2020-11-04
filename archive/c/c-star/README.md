@@ -1,6 +1,7 @@
 # Sample Programs in C*
 
-Welcome to Sample Programs in C*
+Welcome to Sample Programs in C*! To find documentation related to the C++ code in this 
+repo, look [here][trc-c-star-docs].
 
 ## Sample Programs
 
@@ -23,5 +24,6 @@ to an existing article which provides further documentation.
 
 [c-star-wiki]: https://en.wikipedia.org/wiki/C*
 [c-star-user-guide]: http://people.csail.mit.edu/bradley/cm5docs/CM-5CStarUsersGuide.pdf
+[trc-c-star-docs]: https://sample-programs.therenegadecoder.com/languages/c-star/
 
 [hello-world-article]: https://therenegadecoder.com/code/hello-world-in-c-star/
