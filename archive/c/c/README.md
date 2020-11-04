@@ -6,8 +6,8 @@ Welcome to Sample Programs in C!
 
 - [Baklava in C][10]
   - Solution borrowed from @toturkmen and @ahmeturganci via the [baklava repo][1]
-- [Removing All WhiteSpaces][26]
-- [Bubble Sort][14]
+- [Removing All WhiteSpace in C][26]
+- [Bubble Sort in C][14]
 - [Capitalize in C][15]
 - [Convex Hull in C][12]
 - [Factorial in C][13]
@@ -17,16 +17,16 @@ Welcome to Sample Programs in C!
 - [Game of Life in C][6]
 - [Hello World in C][2]
 - [Insertion Sort in C][19]
-- [Least Common Subsequence in C][21]
+- [Longest Common Subsequence in C][21]
 - [Merge Sort in C][18]
-- [Minimum Spanning Tree][21]
+- [Minimum Spanning Tree in C][21]
 - [Prime Numbers in C][17]
 - [Quick Sort in C][24]
 - [Quine in C][20]
 - [Reverse String in C][3]
 - [Roman Numeral Conversion in C][21]
 - [ROT-13 in C][16]
-- [Selection sory in C][25]
+- [Selection Sort in C][25]
 
 ## Fun Facts
 
