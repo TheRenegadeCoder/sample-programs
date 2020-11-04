@@ -25,7 +25,7 @@ to an existing article which provides further documentation.
 - :white_check_mark: [Hello World in C++][hello-world-article]
 - :warning: [Import/Export in C++][import-export-article-issue]
 - :warning: [Insertion Sort in C++][insertion-sort-article]
-- :warning: [Longest Common Subsequence in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1262)
+- :warning: [Longest Common Subsequence in C++][lcs-article-issue]
 - :warning: [Merge Sort in C++]
 - :warning: [Prime Number in C++]
 - :warning: [Quick Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1848)
@@ -70,9 +70,8 @@ to an existing article which provides further documentation.
 [fizz-buzz-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/412
 [game-of-life-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/413
 [import-export-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/396
+[lcs-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/414
 [reverse-string-article-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/419
 
-[insertion-sort-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1240
-[lcs-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1262
 [quick-sort-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1848
 [selection-sort-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1683
