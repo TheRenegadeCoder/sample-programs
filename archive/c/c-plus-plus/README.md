@@ -10,7 +10,7 @@ issue while code snippets preceded by :white_check_mark: link
 to an existing article which provides further documentation.
 
 - :warning: [Baklava in C++][baklava-article-issue]
-- :warning: [Binary Search in C++]
+- :warning: [Binary Search in C++][binary-search-article-issue]
 - :warning: [Bubble Sort in C++][bubble-sort-article-issue]
 - :warning: [Capitalize in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1234)
 - :warning: [Dijkstra in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1796)
@@ -56,6 +56,7 @@ to an existing article which provides further documentation.
 [hello-world-article]: https://therenegadecoder.com/code/hello-world-in-c-plus-plus/
 
 [baklava-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/405
+[binary-search-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/407
 [bubble-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/406
 [fibonacci-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/172
 [import-export-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/396
