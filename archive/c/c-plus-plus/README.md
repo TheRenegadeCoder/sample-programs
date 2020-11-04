@@ -11,7 +11,7 @@ to an existing article which provides further documentation.
 
 - :warning: [Baklava in C++][baklava-article-issue]
 - [Binary Search in C++](https://github.com/TheRenegadeCoder/sample-programs/tree/master/archive/c/c-plus-plus)
-- [Bubble Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1135)
+- :warning: [Bubble Sort in C++][bubble-sort-article-issue]
 - [Capitalize in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1234)
 - [Dijkstra in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1796)
 - [Even Odd in C++](https://sample-programs.therenegadecoder.com/projects/even-odd/)
@@ -56,11 +56,11 @@ to an existing article which provides further documentation.
 [hello-world-article]: https://therenegadecoder.com/code/hello-world-in-c-plus-plus/
 
 [baklava-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/405
+[bubble-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/406
 [fibonacci-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/172
 [import-export-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/396
 [reverse-string-article-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/419
 
-[bubble-sort-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1135
 [capitalize-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1234
 [dijkstra-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1796
 [factorial-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1237
