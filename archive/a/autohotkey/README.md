@@ -13,7 +13,10 @@ to an existing article which provides further documentation.
 
 ## Fun Facts
 
-- [Insert List of Fun Facts Here]
+- Debut: 2003
+- Developers: Chris Mallett & Steve Gray
+- License: GPL
+- Platform: Windows
 
 ## References
 
