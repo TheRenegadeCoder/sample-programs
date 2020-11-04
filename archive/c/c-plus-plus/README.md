@@ -51,3 +51,8 @@ to an existing article which provides further documentation.
 [c-plus-plus-wiki]: https://en.wikipedia.org/wiki/C%2B%2B
 [c-plus-plus-docs]: http://www.cplusplus.com/
 [c-plus-plus-reference]: https://en.cppreference.com/w/
+
+[baklava-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1233
+[bubble-sort-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1135
+[capitalize-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1234
+[dijkstra-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1796
