@@ -9,7 +9,7 @@ Code snippets preceded by :warning: link to an article request
 issue while code snippets preceded by :white_check_mark: link
 to an existing article which provides further documentation.
 
-- [Hello World in AutoHotKey][hello-world-article-issue]
+- :warning: [Hello World in AutoHotKey][hello-world-article-issue]
 
 ## Fun Facts
 
