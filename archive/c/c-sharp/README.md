@@ -44,12 +44,14 @@ to an existing article which provides further documentation.
 - [Online C# Compiler][7]
 
 [1]: https://github.com/toturkmen/baklava
-[2]: https://therenegadecoder.com/code/hello-world-in-c-sharp/
-[3]: https://github.com/jrg94/sample-programs/issues/80
-[4]: https://github.com/TheRenegadeCoder/sample-programs/issues/351
 [5]: https://en.wikipedia.org/wiki/C_Sharp_(programming_language)
 [6]: https://docs.microsoft.com/en-us/dotnet/csharp/
 [7]: https://www.jdoodle.com/compile-c-sharp-online
+[20]: https://rosettacode.org/wiki/Quine#C.23
+
+[2]: https://therenegadecoder.com/code/hello-world-in-c-sharp/
+[3]: https://github.com/jrg94/sample-programs/issues/80
+[4]: https://github.com/TheRenegadeCoder/sample-programs/issues/351
 [8]: https://github.com/TheRenegadeCoder/sample-programs/issues/423
 [9]: https://github.com/TheRenegadeCoder/sample-programs/issues/593
 [10]: https://github.com/TheRenegadeCoder/sample-programs/issues/642
@@ -62,7 +64,6 @@ to an existing article which provides further documentation.
 [17]: https://github.com/TheRenegadeCoder/sample-programs/issues/905
 [18]: https://github.com/TheRenegadeCoder/sample-programs/issues/908
 [19]: https://github.com/TheRenegadeCoder/sample-programs/issues/911
-[20]: https://rosettacode.org/wiki/Quine#C.23
 [21]: https://github.com/TheRenegadeCoder/sample-programs/issues/914
 [22]: https://github.com/TheRenegadeCoder/sample-programs/issues/917
 [23]: https://github.com/TheRenegadeCoder/sample-programs/issues/1280
