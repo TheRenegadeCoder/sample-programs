@@ -21,7 +21,7 @@ to an existing article which provides further documentation.
 - :white_check_mark: [File IO in C++][file-io-article]
 - :warning: [Fizz Buzz in C++][fizz-buzz-article-issue]
 - :warning: [Fractions in C++][fractions-article]
-- :warning: [Game of Life in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1239)
+- :warning: [Game of Life in C++][game-of-life-article-issue]
 - :white_check_mark: [Hello World in C++][hello-world-article]
 - :warning: [Import/Export in C++][import-export-article-issue]
 - :warning: [Insertion Sort in C++][insertion-sort-article]
@@ -68,10 +68,10 @@ to an existing article which provides further documentation.
 [factorial-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/411
 [fibonacci-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/172
 [fizz-buzz-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/412
+[game-of-life-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/413
 [import-export-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/396
 [reverse-string-article-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/419
 
-[game-of-life-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1239
 [insertion-sort-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1240
 [lcs-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1262
 [quick-sort-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1848
