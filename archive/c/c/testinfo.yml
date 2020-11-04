@@ -4,6 +4,6 @@ folder:
 
 container:
   image: "gcc"
-  tag: "8.3" 
+  tag: "8.3"
   build: "gcc -o {{ source.name }} {{ source.name }}{{ source.extension }}"
-  cmd: "./{{ source.name }}"
+  cmd: "{{ source.name }}"
