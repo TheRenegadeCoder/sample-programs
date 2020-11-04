@@ -24,7 +24,7 @@ to an existing article which provides further documentation.
 - :warning: [Game of Life in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1239)
 - :white_check_mark: [Hello World in C++][hello-world-article]
 - :warning: [Import/Export in C++][import-export-article-issue]
-- :warning: [Insertion Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1240)
+- :warning: [Insertion Sort in C++][insertion-sort-article]
 - :warning: [Longest Common Subsequence in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1262)
 - :warning: [Merge Sort in C++]
 - :warning: [Prime Number in C++]
@@ -56,6 +56,7 @@ to an existing article which provides further documentation.
 
 [file-io-article]: https://therenegadecoder.com/code/file-io-in-c-plus-plus/
 [hello-world-article]: https://therenegadecoder.com/code/hello-world-in-c-plus-plus/
+[insertion-sort-article]: https://sample-programs.therenegadecoder.com/projects/insertion-sort/c-plus-plus/
 
 [baklava-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/405
 [binary-search-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/407
