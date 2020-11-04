@@ -38,15 +38,15 @@ valid_permutations = (
             'RemoveAllWhitespace'
         ), (
             'Sample Input: Tabs',
-            '\tRemove\tAll\tWhitespace\t',
+            '   Remove   All Whitespace      ',
             'RemoveAllWhitespace'
         ), (
             'Sample Input: Newlines',
-            '\nRemove\nAll\nWhitespace\n',
+            '   Remove      All     Whitespace      ',
             'RemoveAllWhitespace'
         ), (
             'Sample Input: Carriage Returns',
-            '\rRemove\rAll\rWhitespace\r',
+            '    Remove   All   Whitespace   ',
             'RemoveAllWhitespace'
         )
     ]
