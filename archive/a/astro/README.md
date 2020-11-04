@@ -17,6 +17,8 @@ to an existing article which provides further documentation.
 
 ## References
 
-- [Insert Language References Here]
+- [ArkScript Github][arkscript-github]
+
+[arkscript-github]: https://github.com/astrolang/astro
 
 [hello-world-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/403
