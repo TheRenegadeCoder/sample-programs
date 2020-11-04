@@ -22,7 +22,7 @@ to an existing article which provides further documentation.
 - [Fractions in c++](https://github.com/TheRenegadeCoder/sample-programs/tree/master/archive/c/c-plus-plus/)
 - [Game of Life in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1239)
 - :white_check_mark: [Hello World in C++][hello-world-article]
-- [Import/Export in C++](https://github.com/TheRenegadeCoder/sample-programs-website/issues/396)
+- :warning: [Import/Export in C++][import-export-article-issue]
 - [Insertion Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1240)
 - [Longest Common Sub-sequence in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1262)
 - [Merge Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/tree/master/archive/c/c-plus-plus)
@@ -56,6 +56,7 @@ to an existing article which provides further documentation.
 [hello-world-article]: https://therenegadecoder.com/code/hello-world-in-c-plus-plus/
 
 [fibonacci-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/172
+[import-export-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/396
 
 [baklava-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1233
 [bubble-sort-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1135
