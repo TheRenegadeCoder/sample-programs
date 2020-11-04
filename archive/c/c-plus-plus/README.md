@@ -20,7 +20,7 @@ to an existing article which provides further documentation.
 - :warning: [Fibonacci in C++][fibonacci-article-issue]
 - :white_check_mark: [File IO in C++][file-io-article]
 - :warning: [Fizz Buzz in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1238)
-- :warning: [Fractions in C++]
+- :warning: [Fractions in C++][fractions-article]
 - :warning: [Game of Life in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1239)
 - :white_check_mark: [Hello World in C++][hello-world-article]
 - :warning: [Import/Export in C++][import-export-article-issue]
@@ -55,6 +55,7 @@ to an existing article which provides further documentation.
 [trc-c-plus-plus-docs]: https://sample-programs.therenegadecoder.com/languages/c-plus-plus/
 
 [file-io-article]: https://therenegadecoder.com/code/file-io-in-c-plus-plus/
+[fractions-article]: https://sample-programs.therenegadecoder.com/projects/fractions/c-plus-plus/
 [hello-world-article]: https://therenegadecoder.com/code/hello-world-in-c-plus-plus/
 [insertion-sort-article]: https://sample-programs.therenegadecoder.com/projects/insertion-sort/c-plus-plus/
 
