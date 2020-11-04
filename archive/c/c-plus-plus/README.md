@@ -14,7 +14,7 @@ to an existing article which provides further documentation.
 - :warning: [Bubble Sort in C++][bubble-sort-article-issue]
 - :warning: [Capitalize in C++][capitalize-article-issue]
 - :warning: [Dijkstra in C++][dijkstra-article-issue]
-- :warning: [Even Odd in C++](https://sample-programs.therenegadecoder.com/projects/even-odd/)
+- :warning: [Even Odd in C++][even-odd-article-issue]
 - :warning: [Factorial in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1237)
 - :warning: [Fibonacci in C++][fibonacci-article-issue]
 - :white_check_mark: [File IO in C++][file-io-article]
@@ -60,6 +60,7 @@ to an existing article which provides further documentation.
 [bubble-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/406
 [capitalize-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/408
 [dijkstra-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/409
+[even-odd-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/410
 [fibonacci-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/172
 [import-export-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/396
 [reverse-string-article-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/419
