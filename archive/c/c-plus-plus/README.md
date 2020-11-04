@@ -28,7 +28,7 @@ to an existing article which provides further documentation.
 - [Merge Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/tree/master/archive/c/c-plus-plus)
 - Prime Number in C++
 - [Quick Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1848)
-- [Reverse String in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/419)
+- :warning: [Reverse String in C++][reverse-string-article]
 - [Roman Numeral Conversion in C++](https://github.com/TheRenegadeCoder/sample-programs/tree/master/archive/c/c-plus-plus)
 - [Selection Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1683)
 
@@ -54,6 +54,7 @@ to an existing article which provides further documentation.
 
 [file-io-article]: https://therenegadecoder.com/code/file-io-in-c-plus-plus/
 [hello-world-article]: https://therenegadecoder.com/code/hello-world-in-c-plus-plus/
+[reverse-string-article]: https://github.com/TheRenegadeCoder/sample-programs/issues/419
 
 [fibonacci-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/172
 [import-export-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/396
@@ -65,3 +66,7 @@ to an existing article which provides further documentation.
 [factorial-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1237
 [fizz-buzz-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1238
 [game-of-life-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1239
+[insertion-sort-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1240
+[lcs-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1262
+[quick-sort-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1848
+[selection-sort-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1683
