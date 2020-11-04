@@ -13,7 +13,7 @@ to an existing article which provides further documentation.
 
 ## Fun Facts
 
-- [Insert List of Fun Facts Here]
+- License: Apache 2.0
 
 ## References
 
