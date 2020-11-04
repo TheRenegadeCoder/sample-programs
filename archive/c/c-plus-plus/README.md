@@ -10,27 +10,27 @@ issue while code snippets preceded by :white_check_mark: link
 to an existing article which provides further documentation.
 
 - :warning: [Baklava in C++][baklava-article-issue]
-- [Binary Search in C++](https://github.com/TheRenegadeCoder/sample-programs/tree/master/archive/c/c-plus-plus)
+- :warning: [Binary Search in C++]
 - :warning: [Bubble Sort in C++][bubble-sort-article-issue]
-- [Capitalize in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1234)
-- [Dijkstra in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1796)
-- [Even Odd in C++](https://sample-programs.therenegadecoder.com/projects/even-odd/)
-- [Factorial in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1237)
+- :warning: [Capitalize in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1234)
+- :warning: [Dijkstra in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1796)
+- :warning: [Even Odd in C++](https://sample-programs.therenegadecoder.com/projects/even-odd/)
+- :warning: [Factorial in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1237)
 - :warning: [Fibonacci in C++][fibonacci-article-issue]
 - :white_check_mark: [File IO in C++][file-io-article]
-- [Fizz Buzz in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1238)
-- [Fractions in c++](https://github.com/TheRenegadeCoder/sample-programs/tree/master/archive/c/c-plus-plus/)
-- [Game of Life in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1239)
+- :warning: [Fizz Buzz in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1238)
+- :warning: [Fractions in c++]
+- :warning: [Game of Life in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1239)
 - :white_check_mark: [Hello World in C++][hello-world-article]
 - :warning: [Import/Export in C++][import-export-article-issue]
-- [Insertion Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1240)
-- [Longest Common Sub-sequence in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1262)
-- [Merge Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/tree/master/archive/c/c-plus-plus)
-- Prime Number in C++
-- [Quick Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1848)
+- :warning: [Insertion Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1240)
+- :warning: [Longest Common Subsequence in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1262)
+- :warning: [Merge Sort in C++]
+- :warning: [Prime Number in C++]
+- :warning: [Quick Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1848)
 - :warning: [Reverse String in C++][reverse-string-article-issue]
-- [Roman Numeral Conversion in C++](https://github.com/TheRenegadeCoder/sample-programs/tree/master/archive/c/c-plus-plus)
-- [Selection Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1683)
+- :warning: [Roman Numeral Conversion in C++]
+- :warning: [Selection Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1683)
 
 ## Fun Facts
 
