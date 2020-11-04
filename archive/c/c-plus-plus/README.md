@@ -26,7 +26,7 @@ to an existing article which provides further documentation.
 - :warning: [Import/Export in C++][import-export-article-issue]
 - :warning: [Insertion Sort in C++][insertion-sort-article]
 - :warning: [Longest Common Subsequence in C++][lcs-article-issue]
-- :warning: [Merge Sort in C++]
+- :warning: [Merge Sort in C++][merge-sort-article-issue]
 - :warning: [Prime Number in C++]
 - :warning: [Quick Sort in C++][quick-sort-article-issue]
 - :warning: [Reverse String in C++][reverse-string-article-issue]
@@ -71,6 +71,7 @@ to an existing article which provides further documentation.
 [game-of-life-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/413
 [import-export-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/396
 [lcs-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/414
+[merge-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/417
 [quick-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/415
 [reverse-string-article-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/419
 [selection-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/416
