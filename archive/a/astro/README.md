@@ -17,8 +17,10 @@ to an existing article which provides further documentation.
 
 ## References
 
-- [ArkScript Github][arkscript-github]
+- [Astro Github][astro-github]
+- [Astro Official Website][astro-website]
 
-[arkscript-github]: https://github.com/astrolang/astro
+[astro-github]: https://github.com/astrolang/astro
+[astro-website]: https://astrolang.org/
 
 [hello-world-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/403
