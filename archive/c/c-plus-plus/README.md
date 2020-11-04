@@ -16,12 +16,12 @@ to an existing article which provides further documentation.
 - [Dijkstra in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1796)
 - [Even Odd in C++](https://sample-programs.therenegadecoder.com/projects/even-odd/)
 - [Factorial in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1237)
-- :warning: [Fibonacci Sequence in C++][fibonacci-article-issue]
+- :warning: [Fibonacci in C++][fibonacci-article-issue]
 - :white_check_mark: [File IO in C++][file-io-article]
 - [Fizz Buzz in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1238)
 - [Fractions in c++](https://github.com/TheRenegadeCoder/sample-programs/tree/master/archive/c/c-plus-plus/)
 - [Game of Life in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1239)
-- [Hello World in C++](https://therenegadecoder.com/code/hello-world-in-c-plus-plus/)
+- :white_check_mark: [Hello World in C++][hello-world-article]
 - [Import/Export in C++](https://github.com/TheRenegadeCoder/sample-programs-website/issues/396)
 - [Insertion Sort in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1240)
 - [Longest Common Sub-sequence in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1262)
@@ -53,6 +53,7 @@ to an existing article which provides further documentation.
 [c-plus-plus-reference]: https://en.cppreference.com/w/
 
 [file-io-article]: https://therenegadecoder.com/code/file-io-in-c-plus-plus/
+[hello-world-article]: https://therenegadecoder.com/code/hello-world-in-c-plus-plus/
 
 [fibonacci-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/172
 
@@ -61,3 +62,5 @@ to an existing article which provides further documentation.
 [capitalize-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1234
 [dijkstra-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1796
 [factorial-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1237
+[fizz-buzz-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1238
+[game-of-life-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1239
