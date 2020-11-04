@@ -16,7 +16,7 @@ to an existing article which provides further documentation.
 - [Dijkstra in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1796)
 - [Even Odd in C++](https://sample-programs.therenegadecoder.com/projects/even-odd/)
 - [Factorial in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1237)
-- [Fibonacci Sequence in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/496)
+- :warning: [Fibonacci Sequence in C++][fibonacci-article-issue]
 - [File Input/Output in C++](https://therenegadecoder.com/code/file-io-in-c-plus-plus/)
 - [Fizz Buzz in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/1238)
 - [Fractions in c++](https://github.com/TheRenegadeCoder/sample-programs/tree/master/archive/c/c-plus-plus/)
@@ -52,7 +52,10 @@ to an existing article which provides further documentation.
 [c-plus-plus-docs]: http://www.cplusplus.com/
 [c-plus-plus-reference]: https://en.cppreference.com/w/
 
+[fibonacci-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/172
+
 [baklava-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1233
 [bubble-sort-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1135
 [capitalize-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1234
 [dijkstra-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1796
+[factorial-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/1237
