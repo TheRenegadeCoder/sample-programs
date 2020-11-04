@@ -1,6 +1,7 @@
 # Sample Programs in C++
 
-Welcome to Sample Programs in C++!
+Welcome to Sample Programs in C++! To find documentation related to the C++ code in this 
+repo, look [here][trc-c-plus-plus-docs].
 
 ## Sample Programs
 
@@ -51,6 +52,7 @@ to an existing article which provides further documentation.
 [c-plus-plus-wiki]: https://en.wikipedia.org/wiki/C%2B%2B
 [c-plus-plus-docs]: http://www.cplusplus.com/
 [c-plus-plus-reference]: https://en.cppreference.com/w/
+[trc-c-plus-plus-docs]: https://sample-programs.therenegadecoder.com/languages/c-plus-plus/
 
 [file-io-article]: https://therenegadecoder.com/code/file-io-in-c-plus-plus/
 [hello-world-article]: https://therenegadecoder.com/code/hello-world-in-c-plus-plus/
