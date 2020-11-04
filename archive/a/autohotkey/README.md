@@ -19,4 +19,6 @@ to an existing article which provides further documentation.
 
 - [Insert Language References Here]
 
+[autohotkey-github]: https://github.com/Lexikos/AutoHotkey_L
 [autohotkey-website]: https://www.autohotkey.com/
+[autohotkey-wiki]: https://en.wikipedia.org/wiki/AutoHotkey
