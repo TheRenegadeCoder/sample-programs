@@ -53,12 +53,12 @@ to an existing article which provides further documentation.
 
 [baklava-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/199
 [bubble-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/56
+[even-odd-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/55
 [fizz-buzz-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/218
 [lcs-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/75
 [reverse-string-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/259
 [roman-numeral-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/87
 
-[12]: https://github.com/TheRenegadeCoder/sample-programs/issues/889
 [13]: https://github.com/TheRenegadeCoder/sample-programs/issues/893
 [14]: https://github.com/TheRenegadeCoder/sample-programs/issues/896
 [15]: https://github.com/TheRenegadeCoder/sample-programs/issues/899
