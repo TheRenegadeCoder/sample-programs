@@ -57,12 +57,12 @@ to an existing article which provides further documentation.
 [factorial-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/54
 [file-io-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/53
 [fizz-buzz-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/218
+[insertion-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/52
 [lcs-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/75
+[merge-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/51
 [reverse-string-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/259
 [roman-numeral-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/87
 
-[15]: https://github.com/TheRenegadeCoder/sample-programs/issues/899
-[16]: https://github.com/TheRenegadeCoder/sample-programs/issues/902
 [17]: https://github.com/TheRenegadeCoder/sample-programs/issues/905
 [18]: https://github.com/TheRenegadeCoder/sample-programs/issues/908
 [19]: https://github.com/TheRenegadeCoder/sample-programs/issues/911
