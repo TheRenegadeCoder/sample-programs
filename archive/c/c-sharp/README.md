@@ -60,12 +60,12 @@ to an existing article which provides further documentation.
 [insertion-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/52
 [lcs-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/75
 [merge-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/51
+[prime-number-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/50
+[quick-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/49
+[quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/48
 [reverse-string-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/259
 [roman-numeral-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/87
 
-[17]: https://github.com/TheRenegadeCoder/sample-programs/issues/905
-[18]: https://github.com/TheRenegadeCoder/sample-programs/issues/908
-[19]: https://github.com/TheRenegadeCoder/sample-programs/issues/911
 [21]: https://github.com/TheRenegadeCoder/sample-programs/issues/914
 [22]: https://github.com/TheRenegadeCoder/sample-programs/issues/917
 [23]: https://github.com/TheRenegadeCoder/sample-programs/issues/1280
