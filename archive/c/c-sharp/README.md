@@ -12,12 +12,12 @@ to an existing article which provides further documentation.
 - [Baklava in C#][baklava-article-issue]
   - Solution borrowed from @toturkmen via the [baklava repo][baklava-repo]
 - [Bubble Sort in C#][bubble-sort-article-issue]
-- [Capitalize in C#][23]
+- [Capitalize in C#][capitalize-article-issue]
 - [Even Odd in C#][even-odd-article-issue]
 - [Factorial in C#][factorial-article-issue]
 - [File IO in C#][file-io-article-issue]
 - [Fizz Buzz in C#][fizz-buzz-article-issue]
-- [Game of Life in C#][24]
+- [Game of Life in C#][game-of-life-article-issue]
 - [Hello World in C#][hello-world-article]
 - [Insertion Sort in C#][insertion-sort-article-issue]
 - [Longest Common Subsequence in C#][lcs-article-issue]
@@ -53,10 +53,12 @@ to an existing article which provides further documentation.
 
 [baklava-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/199
 [bubble-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/56
+[capitalize-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/421
 [even-odd-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/55
 [factorial-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/54
 [file-io-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/53
 [fizz-buzz-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/218
+[game-of-life-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/420
 [insertion-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/52
 [lcs-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/75
 [merge-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/51
@@ -67,6 +69,3 @@ to an existing article which provides further documentation.
 [roman-numeral-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/87
 [rot-13-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/47
 [selection-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/46
-
-[23]: https://github.com/TheRenegadeCoder/sample-programs/issues/1280
-[24]: https://github.com/TheRenegadeCoder/sample-programs/issues/1278
