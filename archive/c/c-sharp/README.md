@@ -65,8 +65,8 @@ to an existing article which provides further documentation.
 [quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/48
 [reverse-string-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/259
 [roman-numeral-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/87
+[rot-13-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/47
+[selection-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/46
 
-[21]: https://github.com/TheRenegadeCoder/sample-programs/issues/914
-[22]: https://github.com/TheRenegadeCoder/sample-programs/issues/917
 [23]: https://github.com/TheRenegadeCoder/sample-programs/issues/1280
 [24]: https://github.com/TheRenegadeCoder/sample-programs/issues/1278
