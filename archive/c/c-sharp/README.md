@@ -9,14 +9,14 @@ Code snippets preceded by :warning: link to an article request
 issue while code snippets preceded by :white_check_mark: link
 to an existing article which provides further documentation.
 
-- [Baklava in C#][8]
+- [Baklava in C#][baklava-article-issue]
   - Solution borrowed from @toturkmen via the [baklava repo][baklava-repo]
 - [Bubble Sort in C#][11]
 - [Capitalize in C#][23]
 - [Even Odd in C#][12]
 - [Factorial in C#][13]
 - [File IO in C#][14]
-- [Fizz Buzz in C#][4]
+- [Fizz Buzz in C#][fizz-buzz-article-issue]
 - [Game of Life in C#][24]
 - [Hello World in C#][hello-world-article]
 - [Insertion Sort in C#][15]
@@ -27,7 +27,7 @@ to an existing article which provides further documentation.
 - [Quine in C#][19]
   - Solution borrowed from [Rosetta Code][rosetta-code-quine]
 - [Reverse a String in C#][reverse-string-article-issue]
-- [Roman Numeral Conversion in C#][9]
+- [Roman Numeral Conversion in C#][roman-numeral-article-issue]
 - [ROT 13 in C#][21]
 - [Selection Sort in C#][22]
 
@@ -52,12 +52,12 @@ to an existing article which provides further documentation.
 [hello-world-article]: https://therenegadecoder.com/code/hello-world-in-c-sharp/
 
 [baklava-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/199
+[bubble-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/56
 [fizz-buzz-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/218
+[lcs-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/75
 [reverse-string-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/259
 [roman-numeral-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/87
 
-[10]: https://github.com/TheRenegadeCoder/sample-programs/issues/642
-[11]: https://github.com/TheRenegadeCoder/sample-programs/issues/886
 [12]: https://github.com/TheRenegadeCoder/sample-programs/issues/889
 [13]: https://github.com/TheRenegadeCoder/sample-programs/issues/893
 [14]: https://github.com/TheRenegadeCoder/sample-programs/issues/896
