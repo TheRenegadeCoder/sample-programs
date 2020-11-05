@@ -10,7 +10,7 @@ issue while code snippets preceded by :white_check_mark: link
 to an existing article which provides further documentation.
 
 - [Baklava in C#][8]
-  - Solution borrowed from @toturkmen via the [baklava repo][1]
+  - Solution borrowed from @toturkmen via the [baklava repo][baklava-repo]
 - [Bubble Sort in C#][11]
 - [Capitalize in C#][23]
 - [Even Odd in C#][12]
@@ -25,7 +25,7 @@ to an existing article which provides further documentation.
 - [Prime Number in C#][17]
 - [Quick Sort in C#][18]
 - [Quine in C#][19]
-  - Solution borrowed from [Rosetta Code][20]
+  - Solution borrowed from [Rosetta Code][rosetta-code-quine]
 - [Reverse a String in C#][3]
 - [Roman Numeral Conversion in C#][9]
 - [ROT 13 in C#][21]
@@ -39,15 +39,15 @@ to an existing article which provides further documentation.
 
 ## References
 
-- [C# Wiki][5]
-- [C# Guide][6]
-- [Online C# Compiler][7]
+- [C# Wiki][c-sharp-wiki]
+- [C# Guide][c-sharp-website]
+- [Online C# Compiler][c-sharp-online-editor]
 
-[1]: https://github.com/toturkmen/baklava
-[5]: https://en.wikipedia.org/wiki/C_Sharp_(programming_language)
-[6]: https://docs.microsoft.com/en-us/dotnet/csharp/
-[7]: https://www.jdoodle.com/compile-c-sharp-online
-[20]: https://rosettacode.org/wiki/Quine#C.23
+[baklava-repo]: https://github.com/toturkmen/baklava
+[c-sharp-wiki]: https://en.wikipedia.org/wiki/C_Sharp_(programming_language)
+[c-sharp-website]: https://docs.microsoft.com/en-us/dotnet/csharp/
+[c-sharp-online-editor]: https://www.jdoodle.com/compile-c-sharp-online
+[rosetta-code-quine]: https://rosettacode.org/wiki/Quine#C.23
 
 [2]: https://therenegadecoder.com/code/hello-world-in-c-sharp/
 [3]: https://github.com/jrg94/sample-programs/issues/80
