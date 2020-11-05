@@ -1,6 +1,7 @@
 # Sample Programs in C#
 
-Welcome to Sample Programs in C#!
+Welcome to Sample Programs in C#! To find documentation related to the C# code in 
+this repo, look [here][trc-c-sharp-docs].
 
 ## Sample Programs
 
@@ -48,6 +49,7 @@ to an existing article which provides further documentation.
 [c-sharp-website]: https://docs.microsoft.com/en-us/dotnet/csharp/
 [c-sharp-online-editor]: https://www.jdoodle.com/compile-c-sharp-online
 [rosetta-code-quine]: https://rosettacode.org/wiki/Quine#C.23
+[trc-c-sharp-docs]: https://sample-programs.therenegadecoder.com/languages/c-sharp/
 
 [hello-world-article]: https://therenegadecoder.com/code/hello-world-in-c-sharp/
 
