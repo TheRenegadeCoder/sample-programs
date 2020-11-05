@@ -51,11 +51,11 @@ to an existing article which provides further documentation.
 
 [hello-world-article]: https://therenegadecoder.com/code/hello-world-in-c-sharp/
 
-[reverse-string-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/259
+[baklava-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/199
 [fizz-buzz-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/218
+[reverse-string-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/259
+[roman-numeral-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/87
 
-[8]: https://github.com/TheRenegadeCoder/sample-programs/issues/423
-[9]: https://github.com/TheRenegadeCoder/sample-programs/issues/593
 [10]: https://github.com/TheRenegadeCoder/sample-programs/issues/642
 [11]: https://github.com/TheRenegadeCoder/sample-programs/issues/886
 [12]: https://github.com/TheRenegadeCoder/sample-programs/issues/889
