@@ -18,7 +18,7 @@ to an existing article which provides further documentation.
 - [File IO in C#][14]
 - [Fizz Buzz in C#][4]
 - [Game of Life in C#][24]
-- [Hello World in C#][2]
+- [Hello World in C#][hello-world-article]
 - [Insertion Sort in C#][15]
 - [Longest Common Subsequence in C#][10]
 - [Merge Sort in C#][16]
@@ -26,7 +26,7 @@ to an existing article which provides further documentation.
 - [Quick Sort in C#][18]
 - [Quine in C#][19]
   - Solution borrowed from [Rosetta Code][rosetta-code-quine]
-- [Reverse a String in C#][3]
+- [Reverse a String in C#][reverse-string-article-issue]
 - [Roman Numeral Conversion in C#][9]
 - [ROT 13 in C#][21]
 - [Selection Sort in C#][22]
@@ -49,9 +49,11 @@ to an existing article which provides further documentation.
 [c-sharp-online-editor]: https://www.jdoodle.com/compile-c-sharp-online
 [rosetta-code-quine]: https://rosettacode.org/wiki/Quine#C.23
 
-[2]: https://therenegadecoder.com/code/hello-world-in-c-sharp/
-[3]: https://github.com/jrg94/sample-programs/issues/80
-[4]: https://github.com/TheRenegadeCoder/sample-programs/issues/351
+[hello-world-article]: https://therenegadecoder.com/code/hello-world-in-c-sharp/
+
+[reverse-string-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/259
+[fizz-buzz-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/218
+
 [8]: https://github.com/TheRenegadeCoder/sample-programs/issues/423
 [9]: https://github.com/TheRenegadeCoder/sample-programs/issues/593
 [10]: https://github.com/TheRenegadeCoder/sample-programs/issues/642
