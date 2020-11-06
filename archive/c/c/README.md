@@ -5,7 +5,7 @@ Welcome to Sample Programs in C!
 ## Sample Programs
 
 - [Baklava in C][10]
-  - Solution borrowed from @toturkmen and @ahmeturganci via the [baklava repo][1]
+  - Solution borrowed from @toturkmen and @ahmeturganci via the [baklava repo][baklava-repo]
 - [Bubble Sort][14]
 - [Capitalize in C][15]
 - [Convex Hull in C][12]
@@ -14,7 +14,7 @@ Welcome to Sample Programs in C!
 - [File Input/Ouput in C][5]
 - [Fizz Buzz in C][4]
 - [Game of Life in C][6]
-- [Hello World in C][2]
+- [Hello World in C][hello-world-article]
 - [Insertion Sort in C][19]
 - [Least Common Subsequence in C][21]
 - [Merge Sort in C][18]
@@ -35,22 +35,23 @@ Welcome to Sample Programs in C!
 
 ## References
 
-- [C Wiki][7]
-- [GNU C Reference Manual][8]
-- [Online C Compiler][9]
+- [C Wiki][c-wiki]
+- [C Reference Manual][c-manual]
+- [C Online Compiler][c-online-manual]
 
 [baklava-repo]: https://github.com/toturkmen/baklava
-[c-wiki]: https://en.wikipedia.org/wiki/C_(programming_language)
 [c-manual]: https://www.gnu.org/software/gnu-c-manual/
 [c-online-manual]: https://www.onlinegdb.com/online_c_compiler
+[c-wiki]: https://en.wikipedia.org/wiki/C_(programming_language)
 
 [hello-world-article]: https://therenegadecoder.com/code/hello-world-in-c/
 
-[3]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/226
-[4]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/217
-[5]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/203
-[6]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/211
-[10]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/198
+[baklava-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/198
+[file-io-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/203
+[fizz-buzz-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/217
+[game-of-life-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/211
+[reverse-string-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/226
+
 [11]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/176
 [13]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/77
 [12]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/78
