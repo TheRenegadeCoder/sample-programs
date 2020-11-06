@@ -58,11 +58,11 @@ Welcome to Sample Programs in C!
 [insertion-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/425
 [merge-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/424
 [prime-numbers-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/423
+[quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/426
 [reverse-string-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/226
+[selection-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/427
 
-[20]: https://github.com/TheRenegadeCoder/sample-programs/issues/1274
 [21]: https://sample-programs.therenegadecoder.com/projects/longest-common-subsequence/
 [22]: https://sample-programs.therenegadecoder.com/projects/minimum-spanning-tree/
 [23]: https://sample-programs.therenegadecoder.com/projects/roman-numeral-conversion/
 [24]: https://sample-programs.therenegadecoder.com/projects/quick-sort/
-[25]: https://github.com/TheRenegadeCoder/sample-programs/issues/1272
