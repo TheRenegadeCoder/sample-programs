@@ -38,15 +38,13 @@ Welcome to Sample Programs in C!
 - [C Wiki][7]
 - [GNU C Reference Manual][8]
 - [Online C Compiler][9]
-- [ROT13 Wiki][16]
 
-[1]: https://github.com/toturkmen/baklava
-[7]: https://en.wikipedia.org/wiki/C_(programming_language)
-[8]: https://www.gnu.org/software/gnu-c-manual/
-[9]: https://www.onlinegdb.com/online_c_compiler
-[16]: https://en.wikipedia.org/wiki/ROT13
+[baklava-repo]: https://github.com/toturkmen/baklava
+[c-wiki]: https://en.wikipedia.org/wiki/C_(programming_language)
+[c-manual]: https://www.gnu.org/software/gnu-c-manual/
+[c-online-manual]: https://www.onlinegdb.com/online_c_compiler
 
-[2]: https://therenegadecoder.com/code/hello-world-in-c/
+[hello-world-article]: https://therenegadecoder.com/code/hello-world-in-c/
 
 [3]: https://github.com/jrg94/sample-programs/issues/288
 [4]: https://github.com/TheRenegadeCoder/sample-programs/issues/354
