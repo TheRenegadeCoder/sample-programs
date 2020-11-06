@@ -19,7 +19,7 @@ Welcome to Sample Programs in C!
 - [Least Common Subsequence in C][21]
 - [Merge Sort in C][18]
 - [Minimum Spanning Tree][21]
-- [Prime Numbers in C][17]
+- [Prime Numbers in C][prime-numbers-article-issue]
 - [Quick Sort in C][24]
 - [Quine in C][20]
 - [Reverse String in C][reverse-string-article-issue]
@@ -55,9 +55,9 @@ Welcome to Sample Programs in C!
 [file-io-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/203
 [fizz-buzz-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/217
 [game-of-life-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/211
+[prime-numbers-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/423
 [reverse-string-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/226
 
-[17]: https://github.com/TheRenegadeCoder/sample-programs/issues/1277
 [18]: https://github.com/TheRenegadeCoder/sample-programs/issues/1267
 [19]: https://github.com/TheRenegadeCoder/sample-programs/issues/1266
 [20]: https://github.com/TheRenegadeCoder/sample-programs/issues/1274
