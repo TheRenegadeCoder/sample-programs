@@ -7,7 +7,7 @@ Welcome to Sample Programs in C!
 - [Baklava in C][baklava-article-issue]
   - Solution borrowed from @toturkmen and @ahmeturganci via the [baklava repo][baklava-repo]
 - [Bubble Sort][bubble-sort-article-issue]
-- [Capitalize in C][15]
+- [Capitalize in C][capitalize-article-issue]
 - [Convex Hull in C][convex-hull-article-issue]
 - [Factorial in C][factorial-article-issue]
 - [Fibonacci in C][fibonacci-article-issue]
@@ -48,6 +48,7 @@ Welcome to Sample Programs in C!
 
 [baklava-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/198
 [bubble-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/37
+[capitalize-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/422
 [convex-hull-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/78
 [factorial-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/77
 [fibonacci-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/176
@@ -56,7 +57,6 @@ Welcome to Sample Programs in C!
 [game-of-life-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/211
 [reverse-string-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/226
 
-[15]: https://github.com/TheRenegadeCoder/sample-programs/issues/1273
 [17]: https://github.com/TheRenegadeCoder/sample-programs/issues/1277
 [18]: https://github.com/TheRenegadeCoder/sample-programs/issues/1267
 [19]: https://github.com/TheRenegadeCoder/sample-programs/issues/1266
