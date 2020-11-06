@@ -4,16 +4,16 @@ Welcome to Sample Programs in C!
 
 ## Sample Programs
 
-- [Baklava in C][10]
+- [Baklava in C][baklava-article-issue]
   - Solution borrowed from @toturkmen and @ahmeturganci via the [baklava repo][baklava-repo]
-- [Bubble Sort][14]
+- [Bubble Sort][bubble-sort-article-issue]
 - [Capitalize in C][15]
-- [Convex Hull in C][12]
-- [Factorial in C][13]
-- [Fibonacci in C][11]
-- [File Input/Ouput in C][5]
-- [Fizz Buzz in C][4]
-- [Game of Life in C][6]
+- [Convex Hull in C][convex-hull-article-issue]
+- [Factorial in C][factorial-article-issue]
+- [Fibonacci in C][fibonacci-article-issue]
+- [File IO in C][file-io-article-issue]
+- [Fizz Buzz in C][fizz-buzz-article-issue]
+- [Game of Life in C][game-of-life-article-issue]
 - [Hello World in C][hello-world-article]
 - [Insertion Sort in C][19]
 - [Least Common Subsequence in C][21]
@@ -22,7 +22,7 @@ Welcome to Sample Programs in C!
 - [Prime Numbers in C][17]
 - [Quick Sort in C][24]
 - [Quine in C][20]
-- [Reverse String in C][3]
+- [Reverse String in C][reverse-string-article-issue]
 - [Roman Numeral Conversion in C][21]
 - [ROT-13 in C][16]
 - [Selection sory in C][25]
@@ -47,15 +47,14 @@ Welcome to Sample Programs in C!
 [hello-world-article]: https://therenegadecoder.com/code/hello-world-in-c/
 
 [baklava-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/198
+[bubble-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/37
+[convex-hull-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/78
+[factorial-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/77
+[fibonacci-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/176
 [file-io-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/203
 [fizz-buzz-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/217
 [game-of-life-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/211
 [reverse-string-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/226
-
-[11]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/176
-[13]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/77
-[12]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/78
-[14]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/37
 
 [15]: https://github.com/TheRenegadeCoder/sample-programs/issues/1273
 [17]: https://github.com/TheRenegadeCoder/sample-programs/issues/1277
