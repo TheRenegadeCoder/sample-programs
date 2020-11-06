@@ -46,15 +46,16 @@ Welcome to Sample Programs in C!
 
 [hello-world-article]: https://therenegadecoder.com/code/hello-world-in-c/
 
-[3]: https://github.com/jrg94/sample-programs/issues/288
-[4]: https://github.com/TheRenegadeCoder/sample-programs/issues/354
-[5]: https://github.com/TheRenegadeCoder/sample-programs/issues/408
-[6]: https://github.com/TheRenegadeCoder/sample-programs/issues/371
-[10]: https://github.com/TheRenegadeCoder/sample-programs/issues/424
-[11]: https://github.com/TheRenegadeCoder/sample-programs/issues/486
-[13]: https://github.com/TheRenegadeCoder/sample-programs/issues/631
-[12]: https://github.com/TheRenegadeCoder/sample-programs/issues/628
-[14]: https://github.com/TheRenegadeCoder/sample-programs/issues/942
+[3]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/226
+[4]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/217
+[5]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/203
+[6]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/211
+[10]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/198
+[11]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/176
+[13]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/77
+[12]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/78
+[14]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/37
+
 [15]: https://github.com/TheRenegadeCoder/sample-programs/issues/1273
 [17]: https://github.com/TheRenegadeCoder/sample-programs/issues/1277
 [18]: https://github.com/TheRenegadeCoder/sample-programs/issues/1267
