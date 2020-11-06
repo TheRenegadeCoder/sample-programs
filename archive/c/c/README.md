@@ -55,11 +55,11 @@ Welcome to Sample Programs in C!
 [file-io-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/203
 [fizz-buzz-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/217
 [game-of-life-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/211
+[insertion-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/425
+[merge-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/424
 [prime-numbers-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/423
 [reverse-string-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/226
 
-[18]: https://github.com/TheRenegadeCoder/sample-programs/issues/1267
-[19]: https://github.com/TheRenegadeCoder/sample-programs/issues/1266
 [20]: https://github.com/TheRenegadeCoder/sample-programs/issues/1274
 [21]: https://sample-programs.therenegadecoder.com/projects/longest-common-subsequence/
 [22]: https://sample-programs.therenegadecoder.com/projects/minimum-spanning-tree/
