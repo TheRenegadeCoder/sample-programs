@@ -61,8 +61,3 @@ Welcome to Sample Programs in C!
 [quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/426
 [reverse-string-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/226
 [selection-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/427
-
-[21]: https://sample-programs.therenegadecoder.com/projects/longest-common-subsequence/
-[22]: https://sample-programs.therenegadecoder.com/projects/minimum-spanning-tree/
-[23]: https://sample-programs.therenegadecoder.com/projects/roman-numeral-conversion/
-[24]: https://sample-programs.therenegadecoder.com/projects/quick-sort/
