@@ -17,15 +17,15 @@ Welcome to Sample Programs in C!
 - [Hello World in C][hello-world-article]
 - [Insertion Sort in C][insertion-sort-article-issue]
 - [Least Common Subsequence in C][lcs-article-issue]
-- [Merge Sort in C][18]
+- [Merge Sort in C][merge-sort-article-issue]
 - [Minimum Spanning Tree][21]
 - [Prime Numbers in C][prime-numbers-article-issue]
 - [Quick Sort in C][24]
-- [Quine in C][20]
+- [Quine in C][quine-article-issue]
 - [Reverse String in C][reverse-string-article-issue]
 - [Roman Numeral Conversion in C][21]
 - [ROT-13 in C][16]
-- [Selection sory in C][25]
+- [Selection Sort in C][selection-sort-article-issue]
 
 ## Fun Facts
 
