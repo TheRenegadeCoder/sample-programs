@@ -18,7 +18,7 @@ Welcome to Sample Programs in C!
 - [Insertion Sort in C][insertion-sort-article-issue]
 - [Least Common Subsequence in C][lcs-article-issue]
 - [Merge Sort in C][merge-sort-article-issue]
-- [Minimum Spanning Tree][21]
+- [Minimum Spanning Tree][minimum-spanning-tree-article-issue]
 - [Prime Numbers in C][prime-numbers-article-issue]
 - [Quick Sort in C][24]
 - [Quine in C][quine-article-issue]
@@ -58,6 +58,7 @@ Welcome to Sample Programs in C!
 [insertion-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/425
 [lcs-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/428
 [merge-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/424
+[minimum-spanning-tree-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/429
 [prime-numbers-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/423
 [quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/426
 [reverse-string-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/226
