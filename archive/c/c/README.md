@@ -15,8 +15,8 @@ Welcome to Sample Programs in C!
 - [Fizz Buzz in C][fizz-buzz-article-issue]
 - [Game of Life in C][game-of-life-article-issue]
 - [Hello World in C][hello-world-article]
-- [Insertion Sort in C][19]
-- [Least Common Subsequence in C][21]
+- [Insertion Sort in C][insertion-sort-article-issue]
+- [Least Common Subsequence in C][lcs-article-issue]
 - [Merge Sort in C][18]
 - [Minimum Spanning Tree][21]
 - [Prime Numbers in C][prime-numbers-article-issue]
@@ -56,6 +56,7 @@ Welcome to Sample Programs in C!
 [fizz-buzz-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/217
 [game-of-life-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/211
 [insertion-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/425
+[lcs-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/428
 [merge-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/424
 [prime-numbers-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/423
 [quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/426
