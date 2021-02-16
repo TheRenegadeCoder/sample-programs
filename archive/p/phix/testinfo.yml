@@ -1,0 +1,9 @@
+folder:
+  extension: ".exw"
+  naming: "hyphen"
+
+container:
+  image: "phix"
+  tag: "1.12-alpine"
+  build: "p -c {{ source.name}}{{ source.extension }}"
+  cmd: "./{{ source.name }}"
