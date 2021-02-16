@@ -4,7 +4,7 @@ Welcome to Sample Programs in Phix!
 
 ## Sample Programs
 
-- [Baklava in Phix]
+- [Baklava in Phix][3]
 
 ## Fun Facts
 
@@ -24,3 +24,4 @@ Welcome to Sample Programs in Phix!
 
 [1]: https://rosettacode.org/wiki/Rosetta_Code/Count_examples/Full_list
 [2]: http://phix.x10.mx/
+[3]: https://github.com/TheRenegadeCoder/sample-programs/pull/2382
