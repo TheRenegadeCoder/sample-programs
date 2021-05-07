@@ -28,8 +28,8 @@ further documentation.
 - ⚠️ [Quick Sort in C][quick-sort-article-issue]
 - ⚠️ [Quine in C][quine-article-issue]
 - ✅ [Reverse String in C][reverse-string-article]
-- ⚠️ [Roman Numeral Conversion in C][21]
-- ⚠️ [ROT-13 in C][16]
+- ⚠️ [Roman Numeral Conversion in C][roman-numeral-article-issue]
+- ⚠️ [ROT-13 in C][rot-13-article-issue]
 - ⚠️ [Selection Sort in C][selection-sort-article-issue]
 
 ## Fun Facts
@@ -69,4 +69,6 @@ further documentation.
 [prime-numbers-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/423
 [quick-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/431
 [quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/426
+[roman-numeral-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/432
+[rot-13-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/433
 [selection-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/427
