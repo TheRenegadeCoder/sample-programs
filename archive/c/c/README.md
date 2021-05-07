@@ -48,7 +48,11 @@ further documentation.
 [c-online-manual]: https://www.onlinegdb.com/online_c_compiler
 [c-wiki]: https://en.wikipedia.org/wiki/C_(programming_language)
 
-[hello-world-article]: https://therenegadecoder.com/code/hello-world-in-c/
+[baklava-article]: https://sample-programs.therenegadecoder.com/projects/baklava/c/
+[even-odd-article]: https://sample-programs.therenegadecoder.com/projects/even-odd/c/
+[fizz-buzz-article]: https://sample-programs.therenegadecoder.com/projects/fizz-buzz/c/
+[hello-world-article]: https://sample-programs.therenegadecoder.com/projects/hello-world/c/
+[reverse-string-article]: https://sample-programs.therenegadecoder.com/projects/reverse-a-string/c/
 
 [baklava-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/198
 [bubble-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/37
