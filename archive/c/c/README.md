@@ -8,17 +8,18 @@ Below, you'll find a list of code snippets in this collection. Code snippets pre
 article request issue while code snippets preceded by ✅ link to an existing article which provides 
 further documentation.
 
-- ⚠️ [Baklava in C][baklava-article-issue]
+- ✅ [Baklava in C][baklava-article]
   - Solution borrowed from @toturkmen and @ahmeturganci via the [baklava repo][baklava-repo]
 - ⚠️ [Bubble Sort][bubble-sort-article-issue]
 - ⚠️ [Capitalize in C][capitalize-article-issue]
 - ⚠️ [Convex Hull in C][convex-hull-article-issue]
+- ✅ [Even Odd in C][even-odd-article]
 - ⚠️ [Factorial in C][factorial-article-issue]
 - ⚠️ [Fibonacci in C][fibonacci-article-issue]
 - ⚠️ [File IO in C][file-io-article-issue]
-- ⚠️ [Fizz Buzz in C][fizz-buzz-article-issue]
+- ✅ [Fizz Buzz in C][fizz-buzz-article]
 - ⚠️ [Game of Life in C][game-of-life-article-issue]
-- [Hello World in C][hello-world-article]
+- ✅ [Hello World in C][hello-world-article]
 - ⚠️ [Insertion Sort in C][insertion-sort-article-issue]
 - ⚠️ [Least Common Subsequence in C][lcs-article-issue]
 - ⚠️ [Merge Sort in C][merge-sort-article-issue]
@@ -26,7 +27,7 @@ further documentation.
 - ⚠️ [Prime Numbers in C][prime-numbers-article-issue]
 - [Quick Sort in C][24]
 - ⚠️ [Quine in C][quine-article-issue]
-- ⚠️ [Reverse String in C][reverse-string-article-issue]
+- ✅ [Reverse String in C][reverse-string-article]
 - [Roman Numeral Conversion in C][21]
 - [ROT-13 in C][16]
 - ⚠️ [Selection Sort in C][selection-sort-article-issue]
@@ -54,14 +55,12 @@ further documentation.
 [hello-world-article]: https://sample-programs.therenegadecoder.com/projects/hello-world/c/
 [reverse-string-article]: https://sample-programs.therenegadecoder.com/projects/reverse-a-string/c/
 
-[baklava-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/198
 [bubble-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/37
 [capitalize-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/422
 [convex-hull-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/78
 [factorial-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/77
 [fibonacci-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/176
 [file-io-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/203
-[fizz-buzz-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/217
 [game-of-life-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/211
 [insertion-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/425
 [lcs-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/428
@@ -69,5 +68,4 @@ further documentation.
 [minimum-spanning-tree-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/429
 [prime-numbers-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/423
 [quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/426
-[reverse-string-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/226
 [selection-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/427
