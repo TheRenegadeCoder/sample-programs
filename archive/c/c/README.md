@@ -4,28 +4,32 @@ Welcome to Sample Programs in C!
 
 ## Sample Programs
 
-- [Baklava in C][baklava-article-issue]
+Below, you'll find a list of code snippets in this collection. Code snippets preceded by ⚠️ link to an 
+article request issue while code snippets preceded by ✅ link to an existing article which provides 
+further documentation.
+
+- ⚠️ [Baklava in C][baklava-article-issue]
   - Solution borrowed from @toturkmen and @ahmeturganci via the [baklava repo][baklava-repo]
-- [Bubble Sort][bubble-sort-article-issue]
-- [Capitalize in C][capitalize-article-issue]
-- [Convex Hull in C][convex-hull-article-issue]
-- [Factorial in C][factorial-article-issue]
-- [Fibonacci in C][fibonacci-article-issue]
-- [File IO in C][file-io-article-issue]
-- [Fizz Buzz in C][fizz-buzz-article-issue]
-- [Game of Life in C][game-of-life-article-issue]
+- ⚠️ [Bubble Sort][bubble-sort-article-issue]
+- ⚠️ [Capitalize in C][capitalize-article-issue]
+- ⚠️ [Convex Hull in C][convex-hull-article-issue]
+- ⚠️ [Factorial in C][factorial-article-issue]
+- ⚠️ [Fibonacci in C][fibonacci-article-issue]
+- ⚠️ [File IO in C][file-io-article-issue]
+- ⚠️ [Fizz Buzz in C][fizz-buzz-article-issue]
+- ⚠️ [Game of Life in C][game-of-life-article-issue]
 - [Hello World in C][hello-world-article]
-- [Insertion Sort in C][insertion-sort-article-issue]
-- [Least Common Subsequence in C][lcs-article-issue]
-- [Merge Sort in C][merge-sort-article-issue]
-- [Minimum Spanning Tree][minimum-spanning-tree-article-issue]
-- [Prime Numbers in C][prime-numbers-article-issue]
+- ⚠️ [Insertion Sort in C][insertion-sort-article-issue]
+- ⚠️ [Least Common Subsequence in C][lcs-article-issue]
+- ⚠️ [Merge Sort in C][merge-sort-article-issue]
+- ⚠️ [Minimum Spanning Tree][minimum-spanning-tree-article-issue]
+- ⚠️ [Prime Numbers in C][prime-numbers-article-issue]
 - [Quick Sort in C][24]
-- [Quine in C][quine-article-issue]
-- [Reverse String in C][reverse-string-article-issue]
+- ⚠️ [Quine in C][quine-article-issue]
+- ⚠️ [Reverse String in C][reverse-string-article-issue]
 - [Roman Numeral Conversion in C][21]
 - [ROT-13 in C][16]
-- [Selection Sort in C][selection-sort-article-issue]
+- ⚠️ [Selection Sort in C][selection-sort-article-issue]
 
 ## Fun Facts
 
