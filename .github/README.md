@@ -1,6 +1,6 @@
 # Sample Programs in Every Language
 
-[![Build Status](https://travis-ci.com/TheRenegadeCoder/sample-programs.svg?branch=master)](https://travis-ci.com/TheRenegadeCoder/sample-programs)
+[![Build Status](https://github.com/TheRenegadeCoder/sample-programs/actions/workflows/test-suite.yml/badge.svg?branch=main)](https://github.com/TheRenegadeCoder/sample-programs/actions/workflows/test-suite.yml)
 [![Discord](https://img.shields.io/discord/612072397545275424)](https://discord.gg/Jhmtj7Z)  
 
 
