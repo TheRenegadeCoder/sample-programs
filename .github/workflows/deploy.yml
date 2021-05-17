@@ -38,3 +38,11 @@ jobs:
         tree
         wikig main/archive
         tree
+
+    - name: Commit wiki
+      working-directory: ./wiki
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        git commit -m "Update wiki"
