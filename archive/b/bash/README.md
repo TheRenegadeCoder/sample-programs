@@ -16,8 +16,8 @@ to an existing article which provides further documentation.
 - [Even Odd in Bash][17]
 - [Factorial in Bash][13]
   - Solution borrowed from [Log2Base2][12]
-- [Fibonacci in Bash][7]
-- [File IO in Bash][8]
+- :warning: [Fibonacci in Bash][fibonacci-article-issue]
+- :warning: [File IO in Bash][file-io-article-issue]
 - [Fizz Buzz in Bash][4]
 - [Game of Life in Bash][16]
 - [Hello World in Bash][2]
@@ -44,8 +44,6 @@ to an existing article which provides further documentation.
 [4]: https://github.com/jrg94/sample-programs/issues/384
 [5]: https://en.wikipedia.org/wiki/Bash_(Unix_shell)
 
-[7]: https://github.com/TheRenegadeCoder/sample-programs/issues/623
-[8]: https://github.com/TheRenegadeCoder/sample-programs/issues/638
 [9]: https://github.com/TheRenegadeCoder/sample-programs/issues/1134
 [10]: https://github.com/TheRenegadeCoder/sample-programs/issues/1216
 [11]: https://github.com/TheRenegadeCoder/sample-programs/issues/1231
@@ -60,3 +58,6 @@ to an existing article which provides further documentation.
 [20]: https://github.com/TheRenegadeCoder/sample-programs/issues/1229
 
 [baklava-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/200
+[fibonacci-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/79
+[file-io-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/76
+
