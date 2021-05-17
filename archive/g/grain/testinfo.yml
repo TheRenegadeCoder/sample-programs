@@ -1,6 +1,6 @@
 folder:
   extension: ".gr"
-  naming: "lower"
+  naming: "hyphen"
 
 container:
   image: "grainlang/grain"
