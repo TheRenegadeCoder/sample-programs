@@ -3,6 +3,8 @@ name: Deploy
 on:
   push:
     branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 jobs:
   build:
@@ -21,8 +23,16 @@ jobs:
         repository: ${{github.repository}}.wiki
         path: wiki
         
-    - uses: actions/checkout@v2
     - name: Set up Python 3.9
       uses: actions/setup-python@v2
       with:
         python-version: 3.9
+        
+    - name: Download wiki generator
+      run: |
+        pip install --no-cache-dir generate_wiki
+        pip show generate_wiki
+        
+    - name: Generate wiki
+      run: |
+        wikig sample-programs/archive
