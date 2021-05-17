@@ -10,11 +10,35 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout repo 
+      uses: actions/checkout@v2
+      with:
+        path: main
+
+    - name: Checkout wiki
+      uses: actions/checkout@v2
+      with:
+        repository: ${{github.repository}}.wiki
+        path: wiki
+        
     - name: Set up Python 3.9
       uses: actions/setup-python@v2
       with:
         python-version: 3.9
-    - name: Deploy GitHub Wiki
+        
+    - name: Download wiki generator
       run: |
-        bash -x deploy.sh
+        pip install --no-cache-dir generate_wiki
+        pip show generate_wiki
+        
+    - name: Generate wiki
+      run: |
+        wikig main/archive
+
+    - name: Commit wiki
+      working-directory: ./wiki
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        git commit -m "Update wiki" && git push
