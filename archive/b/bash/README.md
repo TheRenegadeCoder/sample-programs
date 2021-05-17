@@ -26,7 +26,7 @@ to an existing article which provides further documentation.
 - [Quine in Bash][20]
 - [Reverse String in Bash][3]
 - :warning: [ROT-13 in Bash][rot-13-article-issue]
-- [Selection Sort in Bash][18]
+- :warning: [Selection Sort in Bash][selection-sort-article-issue]
   - Solution borrowed from [technicalworldforyou][19]
 
 ## Fun Facts
@@ -46,8 +46,6 @@ to an existing article which provides further documentation.
 [12]: https://www.log2base2.com/shell-script-examples/loop/shell-script-to-find-factorial-of-a-number.html
 [19]: http://technicalworldforyou.blogspot.com/2012/08/selection-sort-using-shell-script.html
 
-
-[18]: https://github.com/TheRenegadeCoder/sample-programs/issues/1232
 [20]: https://github.com/TheRenegadeCoder/sample-programs/issues/1229
 
 [baklava-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/200
@@ -61,3 +59,4 @@ to an existing article which provides further documentation.
 [prime-number-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/440
 [quick-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/439
 [rot-13-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/437
+[selection-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/443
