@@ -35,9 +35,7 @@ jobs:
         
     - name: Generate wiki
       run: |
-        tree
         wikig main/archive
-        tree
 
     - name: Commit wiki
       working-directory: ./wiki
@@ -46,3 +44,9 @@ jobs:
         git config --local user.name "GitHub Action"
         git add .
         git commit -m "Update wiki"
+
+    - name: Push changes to wiki repo
+      uses: ad-m/github-push-action@master
+      with:
+        repository: ${{github.repository}}.wiki    
+        github_token: ${{ secrets.GITHUB_TOKEN }}
