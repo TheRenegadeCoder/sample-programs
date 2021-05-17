@@ -36,4 +36,5 @@ jobs:
     - name: Generate wiki
       run: |
         tree
-        wikig main/sample-programs/archive
+        wikig main/archive
+        tree
