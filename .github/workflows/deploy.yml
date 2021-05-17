@@ -36,6 +36,7 @@ jobs:
         wikig main/archive
 
     - name: Commit wiki
+      continue-on-error: true
       working-directory: ./wiki
       run: |
         git config --local user.email "action@github.com"
