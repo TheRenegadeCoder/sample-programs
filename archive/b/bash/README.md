@@ -4,7 +4,12 @@ Welcome to Sample Programs in Bash!
 
 ## Sample Programs
 
-- [Baklava in Bash][6] 
+Below, you'll find a list of code snippets in this collection.
+Code snippets preceded by :warning: link to an article request 
+issue while code snippets preceded by :white_check_mark: link
+to an existing article which provides further documentation.
+
+- :warning: [Baklava in Bash][baklava-article-issue]
   - Solution borrowed from @toturkman via the [baklava repo][1]
 - [Bubble Sort in Bash][9]
 - [Capitalize in Bash][10]
@@ -38,7 +43,7 @@ Welcome to Sample Programs in Bash!
 [3]: https://github.com/jrg94/sample-programs/issues/159
 [4]: https://github.com/jrg94/sample-programs/issues/384
 [5]: https://en.wikipedia.org/wiki/Bash_(Unix_shell)
-[6]: https://github.com/TheRenegadeCoder/sample-programs/issues/422
+
 [7]: https://github.com/TheRenegadeCoder/sample-programs/issues/623
 [8]: https://github.com/TheRenegadeCoder/sample-programs/issues/638
 [9]: https://github.com/TheRenegadeCoder/sample-programs/issues/1134
@@ -53,3 +58,5 @@ Welcome to Sample Programs in Bash!
 [18]: https://github.com/TheRenegadeCoder/sample-programs/issues/1232
 [19]: http://technicalworldforyou.blogspot.com/2012/08/selection-sort-using-shell-script.html
 [20]: https://github.com/TheRenegadeCoder/sample-programs/issues/1229
+
+[baklava-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/200
