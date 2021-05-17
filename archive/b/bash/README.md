@@ -11,8 +11,8 @@ to an existing article which provides further documentation.
 
 - :warning: [Baklava in Bash][baklava-article-issue]
   - Solution borrowed from @toturkman via the [baklava repo][1]
-- [Bubble Sort in Bash][9]
-- [Capitalize in Bash][10]
+- :warning: [Bubble Sort in Bash][bubble-sort-article-issue]
+- :warning: [Capitalize in Bash][capitalize-article-issue]
 - [Even Odd in Bash][17]
 - [Factorial in Bash][13]
   - Solution borrowed from [Log2Base2][12]
@@ -44,8 +44,6 @@ to an existing article which provides further documentation.
 [4]: https://github.com/jrg94/sample-programs/issues/384
 [5]: https://en.wikipedia.org/wiki/Bash_(Unix_shell)
 
-[9]: https://github.com/TheRenegadeCoder/sample-programs/issues/1134
-[10]: https://github.com/TheRenegadeCoder/sample-programs/issues/1216
 [11]: https://github.com/TheRenegadeCoder/sample-programs/issues/1231
 [12]: https://www.log2base2.com/shell-script-examples/loop/shell-script-to-find-factorial-of-a-number.html
 [13]: https://github.com/TheRenegadeCoder/sample-programs/issues/1219
@@ -58,6 +56,8 @@ to an existing article which provides further documentation.
 [20]: https://github.com/TheRenegadeCoder/sample-programs/issues/1229
 
 [baklava-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/200
+[bubble-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/435
+[capitalize-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/436
 [fibonacci-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/79
 [file-io-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/76
 
