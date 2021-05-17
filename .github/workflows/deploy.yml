@@ -35,4 +35,5 @@ jobs:
         
     - name: Generate wiki
       run: |
+        ls
         wikig sample-programs/archive
