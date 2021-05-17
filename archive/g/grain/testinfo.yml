@@ -4,5 +4,5 @@ folder:
 
 container:
   image: "grainlang/grain"
-  tag: "latest"
+  tag: "main"
   cmd: "grain {{ source.name }}{{ source.extension }}"
