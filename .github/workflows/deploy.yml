@@ -10,11 +10,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Checkout repo 
+      uses: actions/checkout@v2
+      with:
+        path: main
+
+    - name: Checkout wiki
+      uses: actions/checkout@v2
+      with:
+        repository: ${{github.repository}}.wiki
+        path: wiki
+        
     - uses: actions/checkout@v2
     - name: Set up Python 3.9
       uses: actions/setup-python@v2
       with:
         python-version: 3.9
-    - name: Deploy GitHub Wiki
-      run: |
-        bash -x deploy.sh
