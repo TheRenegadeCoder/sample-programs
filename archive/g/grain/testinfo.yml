@@ -1,8 +1,0 @@
-folder:
-  extension: ".gr"
-  naming: "hyphen"
-
-container:
-  image: "grainlang/grain"
-  tag: "main"
-  cmd: "grain {{ source.name }}{{ source.extension }}"
