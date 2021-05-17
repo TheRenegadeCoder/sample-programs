@@ -21,13 +21,13 @@ to an existing article which provides further documentation.
 - [Fizz Buzz in Bash][4]
 - [Game of Life in Bash][16]
 - [Hello World in Bash][2]
-- [Prime Number][15]
-- [Quick Sort in Bash][14]
+- :warning: [Prime Number][prime-number-article-issue]
+- :warning: [Quick Sort in Bash][quick-sort-article-issue]
+- [Quine in Bash][20]
 - [Reverse String in Bash][3]
 - :warning: [ROT-13 in Bash][rot-13-article-issue]
 - [Selection Sort in Bash][18]
   - Solution borrowed from [technicalworldforyou][19]
-- [Quine in Bash][20]
 
 ## Fun Facts
 
@@ -45,8 +45,7 @@ to an existing article which provides further documentation.
 [5]: https://en.wikipedia.org/wiki/Bash_(Unix_shell)
 [12]: https://www.log2base2.com/shell-script-examples/loop/shell-script-to-find-factorial-of-a-number.html
 
-[14]: https://github.com/TheRenegadeCoder/sample-programs/issues/1228
-[15]: https://github.com/TheRenegadeCoder/sample-programs/issues/1227
+
 [16]: https://github.com/TheRenegadeCoder/sample-programs/issues/1220
 [17]: https://github.com/TheRenegadeCoder/sample-programs/issues/1218
 [18]: https://github.com/TheRenegadeCoder/sample-programs/issues/1232
@@ -59,4 +58,6 @@ to an existing article which provides further documentation.
 [factorial-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/438
 [fibonacci-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/79
 [file-io-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/76
+[prime-number-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/440
+[quick-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/439
 [rot-13-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/437
