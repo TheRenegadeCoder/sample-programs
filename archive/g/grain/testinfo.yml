@@ -1,8 +1,0 @@
-folder:
-  extension: ".gr"
-  naming: "lower"
-
-container:
-  image: "grainlang/grain"
-  tag: "latest"
-  cmd: "grain {{ source.name }}{{ source.extension }}"
