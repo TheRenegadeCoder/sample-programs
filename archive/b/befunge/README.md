@@ -12,7 +12,7 @@ to an existing article which provides further documentation.
 - :warning: [Baklava in Befunge][baklava-article-issue]
 - :white_check_mark: [Fizz Buzz in Befunge][fizz-buzz-article]
 - :white_check_mark: [Hello World in Befunge][hello-world-article]
-- Quine in Befunge
+- :warning: [Quine in Befunge][quine-article-issue]
 
 ## Fun Facts
 
@@ -25,6 +25,7 @@ to an existing article which provides further documentation.
 - [Befunge Online Interpreter](https://www.bedroomlan.org/tools/befunge-playground#prog=hello,mode=run)
 
 [baklava-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/362
+[quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/446
 
 [fizz-buzz-article]: https://sample-programs.therenegadecoder.com/projects/fizz-buzz/befunge/
 [hello-world-article]: https://therenegadecoder.com/code/hello-world-in-befunge/
