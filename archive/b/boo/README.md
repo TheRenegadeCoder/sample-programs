@@ -4,9 +4,13 @@ Welcome to Sample Programs in Boo!
 
 ## Sample Programs
 
-- [Hello World in Boo][1]
-- [Fibonacci][2]
+Below, you'll find a list of code snippets in this collection.
+Code snippets preceded by :warning: link to an article request 
+issue while code snippets preceded by :white_check_mark: link
+to an existing article which provides further documentation.
 
+- [Hello World in Boo][1]
+- [Fibonacci in Boo][2]
 
 ## Fun Facts
 
