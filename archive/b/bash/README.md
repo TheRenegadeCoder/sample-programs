@@ -23,7 +23,7 @@ to an existing article which provides further documentation.
 - [Hello World in Bash][2]
 - :warning: [Prime Number][prime-number-article-issue]
 - :warning: [Quick Sort in Bash][quick-sort-article-issue]
-- [Quine in Bash][20]
+- :warning: [Quine in Bash][quine-article-issue]
 - [Reverse String in Bash][3]
 - :warning: [ROT-13 in Bash][rot-13-article-issue]
 - :warning: [Selection Sort in Bash][selection-sort-article-issue]
@@ -46,8 +46,6 @@ to an existing article which provides further documentation.
 [12]: https://www.log2base2.com/shell-script-examples/loop/shell-script-to-find-factorial-of-a-number.html
 [19]: http://technicalworldforyou.blogspot.com/2012/08/selection-sort-using-shell-script.html
 
-[20]: https://github.com/TheRenegadeCoder/sample-programs/issues/1229
-
 [baklava-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/200
 [bubble-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/435
 [capitalize-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/436
@@ -58,5 +56,6 @@ to an existing article which provides further documentation.
 [game-of-life-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/441
 [prime-number-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/440
 [quick-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/439
+[quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/444
 [rot-13-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/437
 [selection-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/443
