@@ -18,13 +18,13 @@ to an existing article which provides further documentation.
   - Solution borrowed from [Log2Base2][12]
 - :warning: [Fibonacci in Bash][fibonacci-article-issue]
 - :warning: [File IO in Bash][file-io-article-issue]
-- [Fizz Buzz in Bash][4]
+- :white_check_mark: [Fizz Buzz in Bash][fizz-buzz-article-issue]
 - :warning: [Game of Life in Bash][game-of-life-article-issue]
-- [Hello World in Bash][2]
+- :white_check_mark: [Hello World in Bash][hello-world-article]
 - :warning: [Prime Number][prime-number-article-issue]
 - :warning: [Quick Sort in Bash][quick-sort-article-issue]
 - :warning: [Quine in Bash][quine-article-issue]
-- [Reverse String in Bash][3]
+- :white_check_mark: [Reverse String in Bash][reverse-string-article-issue]
 - :warning: [ROT-13 in Bash][rot-13-article-issue]
 - :warning: [Selection Sort in Bash][selection-sort-article-issue]
   - Solution borrowed from [technicalworldforyou][19]
@@ -39,12 +39,11 @@ to an existing article which provides further documentation.
 - [Log2Base2][12]
 
 [1]: https://github.com/toturkmen/baklava
-[2]: https://therenegadecoder.com/code/hello-world-in-bash/
-[3]: https://github.com/jrg94/sample-programs/issues/159
-[4]: https://github.com/jrg94/sample-programs/issues/384
 [5]: https://en.wikipedia.org/wiki/Bash_(Unix_shell)
 [12]: https://www.log2base2.com/shell-script-examples/loop/shell-script-to-find-factorial-of-a-number.html
 [19]: http://technicalworldforyou.blogspot.com/2012/08/selection-sort-using-shell-script.html
+
+[hello-world-article]: https://therenegadecoder.com/code/hello-world-in-bash/
 
 [baklava-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/200
 [bubble-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/435
@@ -53,9 +52,11 @@ to an existing article which provides further documentation.
 [factorial-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/438
 [fibonacci-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/79
 [file-io-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/76
+[fizz-buzz-article-issue]: https://github.com/jrg94/sample-programs/issues/384
 [game-of-life-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/441
 [prime-number-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/440
 [quick-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/439
 [quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/444
+[reverse-string-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/245
 [rot-13-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/437
 [selection-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/443
