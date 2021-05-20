@@ -38,6 +38,14 @@ a part of my website, [The Renegade Coder][10]. If you're looking to support The
 
 Thanks for your support! :relaxed:
 
+## Special Thanks
+
+Many of the solutions in this repo we created in collaboration with folks
+trying to accomplish similar things. Special thanks to the following folks
+for sharing their work with our repo:
+
+- [@toturkmen][toturkmen-profile] for their [Baklava Repo][baklava-repo]
+
 [1]: http://www.100daysofcode.com/
 [2]: https://therenegadecoder.com/code/hello-world-in-every-language/
 [3]: https://therenegadecoder.com/code/reverse-a-string-in-every-language/
@@ -59,5 +67,7 @@ Thanks for your support! :relaxed:
 [19]: https://therenegadecoder.com/code/python-code-snippets-for-everyday-problems/
 [20]: https://sample-programs.therenegadecoder.com/projects/
 
+[baklava-repo]: https://github.com/toturkmen/baklava
 [sample-programs-news-series]: https://therenegadecoder.com/series/sample-programs-repo-news/
 [sample-programs-on-the-renegade-coder]: https://therenegadecoder.com/code/sample-programs-in-every-language/
+[toturkmen-profile]: https://github.com/toturkmen
