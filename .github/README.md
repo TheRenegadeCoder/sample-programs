@@ -4,14 +4,12 @@
 [![Discord](https://img.shields.io/discord/612072397545275424)](https://discord.gg/Jhmtj7Z)  
 
 
-Welcome to the [Sample Programs in Every Language][0] repository! What began
-as a simple [100 Days of Code][1] challenge has expanded into a fun project.
-Within this repository, you'll find a growing collection of sample programs
+Welcome to the [Sample Programs in Every Language][sample-programs-on-the-renegade-coder] 
+repository! What began as a simple [100 Days of Code][1] challenge has expanded into a 
+fun project. Within this repository, you'll find a growing collection of sample programs
 in just about every programming language to date.
 
 ## Learn More
-
-[![](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/images/0)](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/links/0)[![](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/images/1)](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/links/1)[![](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/images/2)](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/links/2)[![](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/images/3)](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/links/3)[![](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/images/4)](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/links/4)[![](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/images/5)](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/links/5)[![](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/images/6)](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/links/6)[![](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/images/7)](https://sourcerer.io/fame/jrg94/TheRenegadeCoder/sample-programs/links/7)
 
 To get up to speed quickly, check out the [contributing doc][6]. Otherwise, 
 here are some helpful links:
@@ -21,6 +19,7 @@ here are some helpful links:
 - [Discord][15]: an invite to our community discord
 - [Code of Conduct][8]: a copy of the Contributor Convenant
 - [License][9]: a copy of the MIT license document
+- [News][sample-programs-news-series]: a series of articles about what's happening in the repo
 
 ## Support
 
@@ -33,13 +32,12 @@ a part of my website, [The Renegade Coder][10]. If you're looking to support The
   - [Newsletter][17]
 - [Support via PayPal][12]
 - [Turn off AdBlock When Using The Renegade Coder][13]
-- [Comment & Share Articles][0]
+- [Comment & Share Articles][sample-programs-on-the-renegade-coder]
 - [Follow Me on Twitter][14]
 - [Join the Community on Discord][15]
 
 Thanks for your support! :relaxed:
 
-[0]: https://therenegadecoder.com/code/sample-programs-in-every-language/
 [1]: http://www.100daysofcode.com/
 [2]: https://therenegadecoder.com/code/hello-world-in-every-language/
 [3]: https://therenegadecoder.com/code/reverse-a-string-in-every-language/
@@ -60,3 +58,6 @@ Thanks for your support! :relaxed:
 [18]: https://therenegadecoder.com/code/fizz-buzz-in-every-language/
 [19]: https://therenegadecoder.com/code/python-code-snippets-for-everyday-problems/
 [20]: https://sample-programs.therenegadecoder.com/projects/
+
+[sample-programs-news-series]: https://therenegadecoder.com/series/sample-programs-repo-news/
+[sample-programs-on-the-renegade-coder]: https://therenegadecoder.com/code/sample-programs-in-every-language/
