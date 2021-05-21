@@ -45,6 +45,7 @@ trying to accomplish similar goals. Special thanks to the following folks
 for sharing their work with our repo:
 
 - [@toturkmen][toturkmen-profile] for their [Baklava Repo][baklava-repo]
+- [@auroq][auroq-profile] for their development of [Glotter][glotter-repo]
 
 [1]: http://www.100daysofcode.com/
 [2]: https://therenegadecoder.com/code/hello-world-in-every-language/
@@ -67,7 +68,9 @@ for sharing their work with our repo:
 [19]: https://therenegadecoder.com/code/python-code-snippets-for-everyday-problems/
 [20]: https://sample-programs.therenegadecoder.com/projects/
 
+[auroq-profile]: https://github.com/auroq
 [baklava-repo]: https://github.com/toturkmen/baklava
+[glotter-repo]: https://github.com/auroq/glotter
 [sample-programs-news-series]: https://therenegadecoder.com/series/sample-programs-repo-news/
 [sample-programs-on-the-renegade-coder]: https://therenegadecoder.com/code/sample-programs-in-every-language/
 [toturkmen-profile]: https://github.com/toturkmen
