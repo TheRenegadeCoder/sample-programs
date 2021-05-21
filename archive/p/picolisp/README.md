@@ -9,5 +9,5 @@ Welcome to Sample Programs in Picolisp! To find documentation related to the Pic
     by :white_check_mark: link to an existing article which provides further documentation.
     
 
-- :warning: [Reverse String in Picolisp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+picolisp)
 - :white_check_mark: [Hello World in Picolisp](https://sample-programs.therenegadecoder.com/projects/hello-world/picolisp)
+- :warning: [Reverse String in Picolisp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+picolisp)

@@ -9,12 +9,12 @@ Welcome to Sample Programs in Scala! To find documentation related to the Scala
     by :white_check_mark: link to an existing article which provides further documentation.
     
 
-- :warning: [Fibonacci in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+scala)
+- :warning: [Bubble Sort in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+scala)
 - :warning: [Factorial in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+scala)
+- :warning: [Fibonacci in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+scala)
+- :white_check_mark: [File Io in Scala](https://sample-programs.therenegadecoder.com/projects/file-io/scala)
+- :warning: [Fizz Buzz in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+scala)
+- :warning: [Game Of Life in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+game+of+life+scala)
+- :white_check_mark: [Hello World in Scala](https://sample-programs.therenegadecoder.com/projects/hello-world/scala)
 - :warning: [Quick Sort in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+scala)
 - :warning: [Reverse String in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+scala)
-- :white_check_mark: [Hello World in Scala](https://sample-programs.therenegadecoder.com/projects/hello-world/scala)
-- :white_check_mark: [File Io in Scala](https://sample-programs.therenegadecoder.com/projects/file-io/scala)
-- :warning: [Game Of Life in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+game+of+life+scala)
-- :warning: [Bubble Sort in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+scala)
-- :warning: [Fizz Buzz in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+scala)

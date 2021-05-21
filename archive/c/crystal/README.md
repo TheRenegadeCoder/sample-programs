@@ -10,5 +10,5 @@ Welcome to Sample Programs in Crystal! To find documentation related to the Crys
     
 
 - :warning: [Baklava in Crystal](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+crystal)
-- :white_check_mark: [Hello World in Crystal](https://sample-programs.therenegadecoder.com/projects/hello-world/crystal)
 - :warning: [Fizz Buzz in Crystal](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+crystal)
+- :white_check_mark: [Hello World in Crystal](https://sample-programs.therenegadecoder.com/projects/hello-world/crystal)

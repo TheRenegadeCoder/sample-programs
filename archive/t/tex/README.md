@@ -7,5 +7,5 @@ Welcome to Sample Programs in Tex! Below, you'll find a list of code snippets in
     by :white_check_mark: link to an existing article which provides further documentation.
     
 
-- :white_check_mark: [Hello World in Tex](https://sample-programs.therenegadecoder.com/projects/hello-world/tex)
 - :warning: [Fizz Buzz in Tex](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+tex)
+- :white_check_mark: [Hello World in Tex](https://sample-programs.therenegadecoder.com/projects/hello-world/tex)

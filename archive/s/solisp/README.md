@@ -8,6 +8,6 @@ Welcome to Sample Programs in Solisp! Below, you'll find a list of code snippets
     
 
 - :warning: [Baklava in Solisp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+solisp)
-- :warning: [Reverse in Solisp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+solisp)
 - :warning: [Fizz Buzz in Solisp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+solisp)
 - :warning: [Hello in Solisp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+solisp)
+- :warning: [Reverse in Solisp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+solisp)

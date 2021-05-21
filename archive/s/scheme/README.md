@@ -9,6 +9,6 @@ Welcome to Sample Programs in Scheme! To find documentation related to the Schem
     by :white_check_mark: link to an existing article which provides further documentation.
     
 
-- :warning: [Reverse String in Scheme](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+scheme)
 - :warning: [Fibonacci in Scheme](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+scheme)
 - :white_check_mark: [Hello World in Scheme](https://sample-programs.therenegadecoder.com/projects/hello-world/scheme)
+- :warning: [Reverse String in Scheme](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+scheme)

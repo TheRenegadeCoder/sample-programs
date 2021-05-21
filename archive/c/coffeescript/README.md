@@ -7,10 +7,10 @@ Welcome to Sample Programs in Coffeescript! Below, you'll find a list of code sn
     by :white_check_mark: link to an existing article which provides further documentation.
     
 
-- :warning: [Factorial in Coffeescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+coffeescript)
 - :warning: [Baklava in Coffeescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+coffeescript)
 - :warning: [Capitalize First Letter in Coffeescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+first+letter+coffeescript)
-- :warning: [Hello World in Coffeescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+coffeescript)
 - :warning: [Even Odd in Coffeescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+coffeescript)
-- :warning: [Quine in Coffeescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+coffeescript)
+- :warning: [Factorial in Coffeescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+coffeescript)
 - :warning: [Fizzbuzz in Coffeescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizzbuzz+coffeescript)
+- :warning: [Hello World in Coffeescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+coffeescript)
+- :warning: [Quine in Coffeescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+coffeescript)

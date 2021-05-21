@@ -7,9 +7,9 @@ Welcome to Sample Programs in Erlang! Below, you'll find a list of code snippets
     by :white_check_mark: link to an existing article which provides further documentation.
     
 
-- :warning: [Reverse String in Erlang](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+erlang)
-- :warning: [Factorial in Erlang](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+erlang)
-- :warning: [Bubble Sort in Erlang](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+erlang)
-- :white_check_mark: [Hello World in Erlang](https://sample-programs.therenegadecoder.com/projects/hello-world/erlang)
 - :warning: [Baklava in Erlang](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+erlang)
+- :warning: [Bubble Sort in Erlang](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+erlang)
+- :warning: [Factorial in Erlang](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+erlang)
 - :warning: [Fizz Buzz in Erlang](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+erlang)
+- :white_check_mark: [Hello World in Erlang](https://sample-programs.therenegadecoder.com/projects/hello-world/erlang)
+- :warning: [Reverse String in Erlang](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+erlang)

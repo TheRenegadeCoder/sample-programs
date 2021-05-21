@@ -10,5 +10,5 @@ Welcome to Sample Programs in D! To find documentation related to the D
     
 
 - :warning: [Baklava in D](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+d)
-- :white_check_mark: [Hello World in D](https://sample-programs.therenegadecoder.com/projects/hello-world/d)
 - :warning: [Factorial in D](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+d)
+- :white_check_mark: [Hello World in D](https://sample-programs.therenegadecoder.com/projects/hello-world/d)

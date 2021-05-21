@@ -7,6 +7,6 @@ Welcome to Sample Programs in Nim! Below, you'll find a list of code snippets in
     by :white_check_mark: link to an existing article which provides further documentation.
     
 
-- :warning: [Reverse String in Nim](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+nim)
 - :warning: [Fibonacci in Nim](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+nim)
 - :warning: [Hello World in Nim](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+nim)
+- :warning: [Reverse String in Nim](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+nim)
