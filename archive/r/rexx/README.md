@@ -7,6 +7,6 @@ Welcome to Sample Programs in Rexx! Below, you'll find a list of code snippets i
     by :white_check_mark: link to an existing article which provides further documentation.
     
 
-- :warning: [Prime Number in Rexx](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+rexx)
 - :warning: [Even Odd in Rexx](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+rexx)
 - :warning: [Hello World in Rexx](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+rexx)
+- :warning: [Prime Number in Rexx](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+rexx)

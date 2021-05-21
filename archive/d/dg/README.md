@@ -7,8 +7,8 @@ Welcome to Sample Programs in Dg! Below, you'll find a list of code snippets in 
     by :white_check_mark: link to an existing article which provides further documentation.
     
 
-- :warning: [Hello World in Dg](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+dg)
-- :warning: [Reverse String in Dg](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+dg)
-- :warning: [Quine in Dg](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+dg)
-- :warning: [Fizz Buzz in Dg](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+dg)
 - :warning: [File Io in Dg](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+io+dg)
+- :warning: [Fizz Buzz in Dg](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+dg)
+- :warning: [Hello World in Dg](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+dg)
+- :warning: [Quine in Dg](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+dg)
+- :warning: [Reverse String in Dg](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+dg)

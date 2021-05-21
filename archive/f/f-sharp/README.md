@@ -7,5 +7,5 @@ Welcome to Sample Programs in F#! Below, you'll find a list of code snippets in 
     by :white_check_mark: link to an existing article which provides further documentation.
     
 
-- :warning: [Hello World in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+f-sharp)
 - :warning: [Baklava in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+f-sharp)
+- :warning: [Hello World in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+f-sharp)

@@ -9,7 +9,7 @@ Welcome to Sample Programs in Befunge! To find documentation related to the Befu
     by :white_check_mark: link to an existing article which provides further documentation.
     
 
-- :warning: [Quine in Befunge](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+befunge)
+- :warning: [Baklava in Befunge](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+befunge)
 - :white_check_mark: [Fizz Buzz in Befunge](https://sample-programs.therenegadecoder.com/projects/fizz-buzz/befunge)
 - :white_check_mark: [Hello World in Befunge](https://sample-programs.therenegadecoder.com/projects/hello-world/befunge)
-- :warning: [Baklava in Befunge](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+befunge)
+- :warning: [Quine in Befunge](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+befunge)

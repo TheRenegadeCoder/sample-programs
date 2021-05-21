@@ -9,7 +9,7 @@ Welcome to Sample Programs in Racket! To find documentation related to the Racke
     by :white_check_mark: link to an existing article which provides further documentation.
     
 
-- :warning: [Fizzbuzz in Racket](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizzbuzz+racket)
-- :warning: [Fibonacci in Racket](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+racket)
-- :white_check_mark: [Hello World in Racket](https://sample-programs.therenegadecoder.com/projects/hello-world/racket)
 - :warning: [Factorial in Racket](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+racket)
+- :warning: [Fibonacci in Racket](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+racket)
+- :warning: [Fizzbuzz in Racket](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizzbuzz+racket)
+- :white_check_mark: [Hello World in Racket](https://sample-programs.therenegadecoder.com/projects/hello-world/racket)

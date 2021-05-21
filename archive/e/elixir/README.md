@@ -10,10 +10,10 @@ Welcome to Sample Programs in Elixir! To find documentation related to the Elixi
     
 
 - :warning: [Baklava in Elixir](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+elixir)
-- :warning: [Factorial in Elixir](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+elixir)
-- :warning: [Lcs in Elixir](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+lcs+elixir)
-- :warning: [Even Odd in Elixir](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+elixir)
+- :warning: [Bubble Sort in Elixir](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+elixir)
 - :warning: [Capitalize in Elixir](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+elixir)
+- :warning: [Even Odd in Elixir](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+elixir)
+- :warning: [Factorial in Elixir](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+elixir)
 - :warning: [Fizz Buzz in Elixir](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+elixir)
 - :white_check_mark: [Hello World in Elixir](https://sample-programs.therenegadecoder.com/projects/hello-world/elixir)
-- :warning: [Bubble Sort in Elixir](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+elixir)
+- :warning: [Lcs in Elixir](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+lcs+elixir)
