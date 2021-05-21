@@ -7,3 +7,4 @@ Welcome to Sample Programs in Ti-basic! Below, you'll find a list of code snippe
     by :white_check_mark: link to an existing article which provides further documentation.
     
 
+- :warning: [Hello World in Ti-basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+ti-basic)
