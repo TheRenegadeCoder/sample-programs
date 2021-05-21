@@ -44,8 +44,9 @@ Many of the solutions in this repo we created in collaboration with folks
 trying to accomplish similar goals. Special thanks to the following folks
 for sharing their work with our repo:
 
-- [@toturkmen][toturkmen-profile] for their [Baklava Repo][baklava-repo]
 - [@auroq][auroq-profile] for their development of [Glotter][glotter-repo]
+- [@joesephwegner][joesephwegner-profile] for their [ineverylang Repo][ineverylang-repo]
+- [@toturkmen][toturkmen-profile] for their [Baklava Repo][baklava-repo]
 
 [1]: http://www.100daysofcode.com/
 [2]: https://therenegadecoder.com/code/hello-world-in-every-language/
@@ -71,6 +72,8 @@ for sharing their work with our repo:
 [auroq-profile]: https://github.com/auroq
 [baklava-repo]: https://github.com/toturkmen/baklava
 [glotter-repo]: https://github.com/auroq/glotter
+[ineverylang-repo]: https://github.com/josephwegner/ineverylang
+[joesephwegner-profile]: https://github.com/josephwegner
 [sample-programs-news-series]: https://therenegadecoder.com/series/sample-programs-repo-news/
 [sample-programs-on-the-renegade-coder]: https://therenegadecoder.com/code/sample-programs-in-every-language/
 [toturkmen-profile]: https://github.com/toturkmen
