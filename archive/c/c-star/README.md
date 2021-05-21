@@ -1,6 +1,6 @@
-# Sample Programs in C-star
+# Sample Programs in C\*
 
-Welcome to Sample Programs in C-star! To find documentation related to the C-star 
+Welcome to Sample Programs in C\*! To find documentation related to the C\* 
     code in this repo, look [here](https://sample-programs.therenegadecoder.com/languages/c-star).
      Otherwise, below you'll find a list of code snippets in this collection. 
     Code snippets preceded by :warning: link to a GitHub 
@@ -9,4 +9,4 @@ Welcome to Sample Programs in C-star! To find documentation related to the C-sta
     by :white_check_mark: link to an existing article which provides further documentation.
     
 
-- :white_check_mark: [Hello World in C-star](https://sample-programs.therenegadecoder.com/projects/hello-world/c-star)
+- :white_check_mark: [Hello World in C\*](https://sample-programs.therenegadecoder.com/projects/hello-world/c-star)
