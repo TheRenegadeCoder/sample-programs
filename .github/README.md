@@ -41,7 +41,7 @@ Thanks for your support! :relaxed:
 ## Special Thanks
 
 Many of the solutions in this repo we created in collaboration with folks
-trying to accomplish similar things. Special thanks to the following folks
+trying to accomplish similar goals. Special thanks to the following folks
 for sharing their work with our repo:
 
 - [@toturkmen][toturkmen-profile] for their [Baklava Repo][baklava-repo]
