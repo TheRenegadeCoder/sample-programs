@@ -40,7 +40,7 @@ Thanks for your support! :relaxed:
 
 ## Special Thanks
 
-Many of the solutions in this repo we created in collaboration with folks
+Many of the solutions in this repo were created in collaboration with folks
 trying to accomplish similar goals. Special thanks to the following folks
 for sharing their work with our repo:
 
