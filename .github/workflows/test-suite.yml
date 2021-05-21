@@ -29,3 +29,8 @@ jobs:
     - name: Test
       run: |
         python runner.py test
+    - name: Generate READMEs
+      run: |
+        pip install generate_docs
+        ls
+        wikir archive/
