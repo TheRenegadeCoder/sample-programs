@@ -1,43 +1,32 @@
 # Sample Programs in Haskell
 
-Welcome to Sample Programs in Haskell!
+Welcome to Sample Programs in Haskell! To find documentation related to the Haskell 
+    code in this repo, look [here](https://sample-programs.therenegadecoder.com/languages/haskell).
+     Otherwise, below you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Samples Programs
-
-- [Baklava in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/575)
-- [Bubble Sort in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/800)
-- [Even Odd in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/743)
-- [Capitalize in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/1356)
-- [Factorial in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/746)
-- [Fibonacci in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/543)
-  - Solution borrowed from [Haskell wiki](https://wiki.haskell.org/The_Fibonacci_sequence#Canonical_zipWith_implementation)
-- [File IO in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/597)
-- [Fizz Buzz in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/349)
-- [Game of Life in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/835)
-- [Hello World in Haskell](https://therenegadecoder.com/code/hello-world-in-haskell/)
-- [Insertion Sort in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/833)
-- [Job Sequencing with Deadlines in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/770)
-- [Longest Common Subsequence in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/577)
-- [Merge Sort in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/807)
-- [Prime Number in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/757)
-- [Quick Sort Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/814)
-  - Quick sort is so fundamental in haskell that it can be found on the [Introduction page of the Haskell Wiki](https://wiki.haskell.org/Introduction#Quicksort_in_Haskell)
-  - Solution also influenced by [Learn You a Haskell for Great Good](http://learnyouahaskell.com/recursion)
-- [Quine in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/773)
-  - Solution borrowed from [Rosetta Code](https://rosettacode.org/wiki/Quine#Haskell)
-- [Reverse a String in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/559)
-- [Roman Numeral Conversion in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/581)
-- [ROT-13 in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/777)
-- [Selection Sort in Haskell](https://github.com/TheRenegadeCoder/sample-programs/issues/804)
-
-## Fun Facts
-
-- Debut: 1990
-- Typing: Static
-
-## References
-
-- [Haskell Docs](https://www.haskell.org/)
-- [Haskell Wiki](https://wiki.haskell.org/Haskell)
-- [Haskell on Wikipedia](https://en.wikipedia.org/wiki/Haskell_(programming_language))
-- [Haskell REPL](https://repl.it/languages/haskell)
+- :warning: [Selection Sort in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+haskell)
+- :white_check_mark: [Hello World in Haskell](https://sample-programs.therenegadecoder.com/projects/hello-world/haskell)
+- :warning: [Quine in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+haskell)
+- :warning: [Rot 13 in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot+13+haskell)
+- :warning: [Reverse String in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+haskell)
+- :warning: [Roman Numeral in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+haskell)
+- :warning: [Quick Sort in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+haskell)
+- :warning: [Bubble Sort in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+haskell)
+- :warning: [Game Of Life in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+game+of+life+haskell)
+- :warning: [Even Odd in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+haskell)
+- :warning: [Factorial in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+haskell)
+- :warning: [Fibonacci in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+haskell)
+- :warning: [Fizz Buzz in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+haskell)
+- :warning: [Job Sequencing in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+job+sequencing+haskell)
+- :warning: [Prime Number in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+haskell)
+- :warning: [Capitalize in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+haskell)
+- :warning: [Insertion Sort in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+haskell)
+- :warning: [Baklava in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+haskell)
+- :warning: [Lcs in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+lcs+haskell)
+- :warning: [File Io in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+io+haskell)
+- :warning: [Merge Sort in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+haskell)

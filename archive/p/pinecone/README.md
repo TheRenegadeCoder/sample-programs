@@ -1,21 +1,10 @@
 # Sample Programs in Pinecone
 
-Welcome to Sample Programs in Pinecone!
+Welcome to Sample Programs in Pinecone! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in Pinecone][1]
-
-## Fun Facts
-
-- Debut: 2016 
-- Developer: wmww
-- Typing: Dynamic
-- License: MIT License
-- It's currerntly unmaintained
-
-
-## References
-
-[Pinecone GitHub](https://github.com/wmww/Pinecone)
-[1]: https://github.com/TheRenegadeCoder/sample-programs/issues/182
+- :warning: [Hello World in Pinecone](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+pinecone)

@@ -1,29 +1,12 @@
-# Sample Programs in C*
+# Sample Programs in C-star
 
-Welcome to Sample Programs in C*! To find documentation related to the C++ code in this 
-repo, look [here][trc-c-star-docs].
+Welcome to Sample Programs in C-star! To find documentation related to the C-star 
+    code in this repo, look [here](https://sample-programs.therenegadecoder.com/languages/c-star).
+     Otherwise, below you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-Below, you'll find a list of code snippets in this collection.
-Code snippets preceded by :warning: link to an article request 
-issue while code snippets preceded by :white_check_mark: link
-to an existing article which provides further documentation.
-
-- :white_check_mark: [Hello World in C*][hello-world-article]
-
-## Fun Facts
-
-- Debut: 1987
-- Typing: Static
-
-## References
-
-- [C* Wiki][c-star-wiki]
-- [C* User Guide][c-star-user-guide]
-
-[c-star-wiki]: https://en.wikipedia.org/wiki/C*
-[c-star-user-guide]: http://people.csail.mit.edu/bradley/cm5docs/CM-5CStarUsersGuide.pdf
-[trc-c-star-docs]: https://sample-programs.therenegadecoder.com/languages/c-star/
-
-[hello-world-article]: https://therenegadecoder.com/code/hello-world-in-c-star/
+- :white_check_mark: [Hello World in C-star](https://sample-programs.therenegadecoder.com/projects/hello-world/c-star)

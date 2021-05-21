@@ -1,18 +1,10 @@
-# Sample Programs in PureScript
+# Sample Programs in Purescript
 
-Welcome to Sample Programs in PureScript!
+Welcome to Sample Programs in Purescript! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Samples Programs
-
-- [Hello World in PureScript](https://github.com/TheRenegadeCoder/sample-programs/issues/846)
-
-## Fun Facts
-
-- Debut: 2013
-- Typing: Static
-
-## References
-
-- [PureScript Docs](http://www.purescript.org/)
-- [PureScript Source](https://github.com/purescript/purescript)
-- [Try PureScript](http://try.purescript.org/)
+- :warning: [Hello World in Purescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+purescript)

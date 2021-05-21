@@ -1,28 +1,10 @@
 # Sample Programs in Lucee
 
-Welcome to Sample Programs in Lucee!
+Welcome to Sample Programs in Lucee! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in Lucee][1]
-
-## Fun Facts
-
-- Debut: 2015
-- Developer: Lucee Association Switzerland
-- Typing: Dynammic
-- License: LGPL v2.1
-
-## References
-
-- [Lucee Wiki][2]
-- [Lucee Docs][3]
-- [Lucee GitHub][4]
-- [Lucee Official Site][5]
-
-
-[1]: #
-[2]: https://en.wikipedia.org/wiki/Lucee
-[3]: https://docs.lucee.org/index.html
-[4]: https://github.com/lucee/Lucee
-[5]: https://lucee.org/
+- :warning: [Hello World in Lucee](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+lucee)

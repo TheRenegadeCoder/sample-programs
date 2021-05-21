@@ -1,73 +1,31 @@
 # Sample Programs in Go
 
-Welcome to Sample Programs in Go!
+Welcome to Sample Programs in Go! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Baklava in Go][7]
-  - Solution borrowed from @toturkmen via the [baklava repo][1]
-- [Binary Search in Go][28]
-- [Bubble Sort in Go][16]
-- [Capitalize in Go][27]
-- [Even Odd in Go][11]
-- [Factorial in Go][12]
-- [Fibonacci in Go][14]
-  - Solution borrowed from ["A Tour of Go"][15]
-- [Fizz Buzz in Go][3]
-- [File IO in Go][17]
-- [Hello World in Go][2]
-- [Insertion Sort in Go][18]
-- [Job Sequencing in Go][19]
-- [Longest Common Subsequence in Go][20]
-- [Merge Sort in Go][21]
-- [Prime Number in Go][9]
-- [Quick Sort in Go][22]
-- [Quine in Go][23]
-  - Solution borrowed from [Rosetta Code][24]
-- [ROT 13 Number in Go][25]
-- [Selection Sort in Go][26]
-- [String Reverse in Go][8]
-- [Longest Palindromic Substring in Go][29]
-
-
-## Fun Facts
-
-- Debut: 2009
-- Developer: Google
-- Typing: Static
-
-## References
-
-- [Go Wiki][4]
-- [Go Docs][5]
-- [Go Github][6]
-- [A Tour of Go (Official)][13]
-
-[1]: https://github.com/toturkmen/baklava
-[2]: https://therenegadecoder.com/code/hello-world-in-go/
-[3]: https://github.com/TheRenegadeCoder/sample-programs/issues/347
-[4]: https://en.wikipedia.org/wiki/Go_(programming_language)
-[5]: https://golang.org/
-[6]: https://github.com/golang/go
-[7]: https://github.com/TheRenegadeCoder/sample-programs/issues/428
-[8]: https://github.com/TheRenegadeCoder/sample-programs/issues/545
-[9]: https://github.com/TheRenegadeCoder/sample-programs/issues/610
-[11]: https://github.com/TheRenegadeCoder/sample-programs/issues/618
-[12]: https://github.com/TheRenegadeCoder/sample-programs/issues/974
-[13]: https://tour.golang.org/
-[14]: https://github.com/TheRenegadeCoder/sample-programs/issues/977
-[15]: https://tour.golang.org/concurrency/4
-[16]: https://github.com/TheRenegadeCoder/sample-programs/issues/987
-[17]: https://github.com/TheRenegadeCoder/sample-programs/issues/990
-[18]: https://github.com/TheRenegadeCoder/sample-programs/issues/993
-[19]: https://github.com/TheRenegadeCoder/sample-programs/issues/996
-[20]: https://github.com/TheRenegadeCoder/sample-programs/issues/999
-[21]: https://github.com/TheRenegadeCoder/sample-programs/issues/1002
-[22]: https://github.com/TheRenegadeCoder/sample-programs/issues/1005
-[23]: https://github.com/TheRenegadeCoder/sample-programs/issues/1008
-[24]: http://rosettacode.org/wiki/Quine#Go
-[25]: https://github.com/TheRenegadeCoder/sample-programs/issues/1011
-[26]: https://github.com/TheRenegadeCoder/sample-programs/issues/1014
-[27]: https://github.com/TheRenegadeCoder/sample-programs/issues/1331
-[28]: https://github.com/TheRenegadeCoder/sample-programs/issues/1761
-[29]: https://github.com/TheRenegadeCoder/sample-programs/issues/1994
+- :warning: [Roman Numeral in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+go)
+- :warning: [Quick Sort in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+go)
+- :warning: [Lcs in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+lcs+go)
+- :warning: [String Reverse in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+string+reverse+go)
+- :warning: [Selection Sort in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+go)
+- :warning: [Hello World in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+go)
+- :warning: [Binary Search in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+binary+search+go)
+- :warning: [File Io in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+io+go)
+- :warning: [Merge Sort in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+go)
+- :warning: [Factorial in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+go)
+- :warning: [Insertion Sort in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+go)
+- :warning: [Prime Number in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+go)
+- :warning: [Job Sequencing in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+job+sequencing+go)
+- :warning: [Baklava in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+go)
+- :warning: [Fibonacci in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+go)
+- :warning: [Lps in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+lps+go)
+- :warning: [Quine in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+go)
+- :warning: [Rot 13 in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot+13+go)
+- :warning: [Capitalize in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+go)
+- :white_check_mark: [Bubble Sort in Go](https://sample-programs.therenegadecoder.com/projects/bubble-sort/go)
+- :warning: [Even Odd in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+go)
+- :warning: [Fizz Buzz in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+go)

@@ -1,22 +1,10 @@
 # Sample Programs in Idris
 
-Welcome to Sample Programs in Idris!
+Welcome to Sample Programs in Idris! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in Idris][1]
-
-## Fun Facts
-
-- Debut: 2017
-- Paradigm: Functional
-- Developer: Edwin Brady
-
-## References
-
-- [Idris GitHub][2]
-- [Idris Website][3]
-
-[1]: https://github.com/TheRenegadeCoder/sample-programs/issues/779
-[2]: https://github.com/idris-lang/Idris-dev
-[3]: https://www.idris-lang.org/
+- :warning: [Hello World in Idris](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+idris)

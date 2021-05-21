@@ -1,20 +1,15 @@
 # Sample Programs in Racket
 
-Welcome to Sample Programs in Racket!
+Welcome to Sample Programs in Racket! To find documentation related to the Racket 
+    code in this repo, look [here](https://sample-programs.therenegadecoder.com/languages/racket).
+     Otherwise, below you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in Racket](https://therenegadecoder.com/code/hello-world-in-racket/)
-- [Fibonacci in Racket](https://github.com/TheRenegadeCoder/sample-programs/issues/1852)
-- [Factorial in Racket](https://github.com/TheRenegadeCoder/sample-programs/issues/1853)
-- [FizzBuzz in Racket]
-## Fun Facts
-
-- Debut: 1994
-- Developer: PLT Inc.
-- License: LGPL
-
-## References
-
-- [Racket Wiki](https://en.wikipedia.org/wiki/Racket_(programming_language))
-- [Racket Docs](https://racket-lang.org/)
+- :warning: [Fizzbuzz in Racket](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizzbuzz+racket)
+- :warning: [Fibonacci in Racket](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+racket)
+- :white_check_mark: [Hello World in Racket](https://sample-programs.therenegadecoder.com/projects/hello-world/racket)
+- :warning: [Factorial in Racket](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+racket)

@@ -1,47 +1,20 @@
 # Sample Programs in Ruby
 
-Welcome to Sample Programs in Ruby!
+Welcome to Sample Programs in Ruby! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Baklava in Ruby][10]
-    - Solution borrowed from @erayak via the [baklava repo][1]
-- [Bubble Sort in Ruby][13]
-- [Capitalize in Ruby][15]
-- [Fibonacci in Ruby][12]
-- [File IO in Ruby][5]
-- [Fizz Buzz in Ruby][3]
-- [Hello World in Ruby][2]
-- [Quine in Ruby][4]
-- [Reverse String in Ruby][11]
-- Even Odd in Ruby
-- [Roman Numeral Conversion][14]
-
-## Fun Facts
-
-- Debut: 1995
-- Developer: Yukihiro Matsumoto
-- Typing: Dynamic
-
-## References
-
-- [Ruby Wiki][6]
-- [Ruby Docs][7]
-- [Ruby GitHub][8]
-- [Ruby REPL][9]
-
-[1]: https://github.com/toturkmen/baklava
-[2]: https://therenegadecoder.com/code/hello-world-in-ruby/
-[3]: https://github.com/TheRenegadeCoder/sample-programs/issues/336
-[4]: https://github.com/TheRenegadeCoder/sample-programs/issues/338
-[5]: https://therenegadecoder.com/code/file-io-in-ruby/
-[6]: https://en.wikipedia.org/wiki/Ruby_(programming_language)
-[7]: https://www.ruby-lang.org/en/
-[8]: https://github.com/ruby/ruby
-[9]: https://repl.it/languages/ruby
-[10]: https://github.com/TheRenegadeCoder/sample-programs/issues/433
-[11]: https://therenegadecoder.com/code/reverse-a-string-in-ruby/
-[12]: https://github.com/TheRenegadeCoder/sample-programs/issues/542
-[13]: https://github.com/TheRenegadeCoder/sample-programs/issues/1023
-[14]: https://github.com/TheRenegadeCoder/sample-programs/issues/1532
-[15]: https://sample-programs.therenegadecoder.com/projects/capitalize/
+- :warning: [Even Odd in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+ruby)
+- :warning: [Fibonacci in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+ruby)
+- :warning: [Capitalize in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+ruby)
+- :warning: [Quine in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+ruby)
+- :white_check_mark: [File Io in Ruby](https://sample-programs.therenegadecoder.com/projects/file-io/ruby)
+- :warning: [Fizz Buzz in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+ruby)
+- :warning: [Hello World in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+ruby)
+- :warning: [Roman Numeral in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+ruby)
+- :warning: [Baklava in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+ruby)
+- :warning: [Reverse String in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+ruby)
+- :warning: [Bubble Sort in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+ruby)

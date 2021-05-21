@@ -1,21 +1,14 @@
 # Sample Programs in Scheme
 
-Welcome to Sample Programs in Scheme!
+Welcome to Sample Programs in Scheme! To find documentation related to the Scheme 
+    code in this repo, look [here](https://sample-programs.therenegadecoder.com/languages/scheme).
+     Otherwise, below you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in Scheme](https://therenegadecoder.com/code/hello-world-in-scheme/)
-- [Reverse a String in Scheme](https://therenegadecoder.com/code/reverse-a-string-in-scheme/)
-- [Fibonacci in Scheme](https://sample-programs.therenegadecoder.com/projects/fibonacci/)
-
-## Fun Facts
-
-- Debut: 1970
-- Typing: Dynamic
-
-## References
-
-- [Scheme Wiki](https://en.wikipedia.org/wiki/Scheme_(programming_language))
-- [Scheme Docs](http://www.schemers.org/)
-- [Scheme REPL](https://repl.it/languages/scheme)
-- [CHICKEN Scheme Compiler](http://www.call-cc.org/)
+- :warning: [Reverse String in Scheme](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+scheme)
+- :warning: [Fibonacci in Scheme](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+scheme)
+- :white_check_mark: [Hello World in Scheme](https://sample-programs.therenegadecoder.com/projects/hello-world/scheme)

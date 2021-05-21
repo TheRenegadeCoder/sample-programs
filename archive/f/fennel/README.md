@@ -1,18 +1,10 @@
 # Sample Programs in Fennel
 
-Welcome to Sample Programs in Fennel!
+Welcome to Sample Programs in Fennel! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in Fennel][1]
-
-## Fun Facts
-
-- Debut: 2016
-
-## References
-
-- [Fennel GitHub](https://github.com/bakpakin/Fennel)
-- [Fennel Docs](https://fennel-lang.org/)
-
-[1]: https://github.com/TheRenegadeCoder/sample-programs/issues/921
+- :warning: [Hello World in Fennel](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+fennel)

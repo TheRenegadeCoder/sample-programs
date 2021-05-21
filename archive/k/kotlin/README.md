@@ -1,47 +1,30 @@
 # Sample Programs in Kotlin
 
-Welcome to Sample Programs in Kotlin!
+Welcome to Sample Programs in Kotlin! To find documentation related to the Kotlin 
+    code in this repo, look [here](https://sample-programs.therenegadecoder.com/languages/kotlin).
+     Otherwise, below you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Baklava in Kotlin][6]
-  - Solution borrowed from @toturkmen via the [baklava repo][baklava-repo]
-- [Capitalize in Kotlin][10]
-- [Factorial in Kotlin][14]
-- [Fibonacci Sequence in Kotlin][8]
-- [FileIO in Kotlin][11]
-- [Fizz Buzz in Kotlin][7]
-- [Hello World in Kotlin][hello-world-article]
-- [Job Sequencing with Deadlines in Kotlin][13]
-- [Quine in Kotlin][12]
-- [Reverse String in Kotlin][9]
-- [ROT-13 in Kotlin][1407]
-
-## Fun Facts
-
-- Debut: 2011
-- Developer: JetBrains
-- Typing: Static
-- License: Apache 2
-
-## References
-
-- [Kotlin Wiki][kotlin-wiki]
-- [Kotlin Docs][kotlin-docs]
-- [Kotlin GitHub][kotlin-source]
-
-[baklava-repo]: https://github.com/toturkmen/baklava
-[hello-world-article]: https://therenegadecoder.com/code/hello-world-in-kotlin/
-[kotlin-docs]: https://kotlinlang.org/
-[kotlin-wiki]: https://en.wikipedia.org/wiki/Kotlin_(programming_language)
-[kotlin-source]: https://github.com/JetBrains/kotlin
-
-[6]: https://github.com/TheRenegadeCoder/sample-programs/issues/430
-[7]: https://github.com/TheRenegadeCoder/sample-programs/issues/511
-[8]: https://github.com/TheRenegadeCoder/sample-programs/issues/566
-[9]: https://github.com/TheRenegadeCoder/sample-programs/issues/587
-[10]: https://github.com/TheRenegadeCoder/sample-programs/issues/1393
-[11]: https://github.com/TheRenegadeCoder/sample-programs/issues/1398
-[12]: https://github.com/TheRenegadeCoder/sample-programs/issues/1712
-[13]: https://github.com/TheRenegadeCoder/sample-programs/issues/1409
-[14]: https://github.com/TheRenegadeCoder/sample-programs/issues/1399
+- :warning: [Prime Number in Kotlin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+kotlin)
+- :warning: [File I O in Kotlin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+i+o+kotlin)
+- :warning: [Quine in Kotlin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+kotlin)
+- :warning: [Even Odd in Kotlin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+kotlin)
+- :warning: [Palindromic Number in Kotlin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+kotlin)
+- :warning: [Rot13 in Kotlin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+kotlin)
+- :white_check_mark: [Baklava in Kotlin](https://sample-programs.therenegadecoder.com/projects/baklava/kotlin)
+- :warning: [Capitalize in Kotlin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+kotlin)
+- :warning: [Fibonacci in Kotlin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+kotlin)
+- :warning: [Bubble Sort in Kotlin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+kotlin)
+- :warning: [Factorial in Kotlin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+kotlin)
+- :warning: [Quick Sort in Kotlin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+kotlin)
+- :white_check_mark: [Hello World in Kotlin](https://sample-programs.therenegadecoder.com/projects/hello-world/kotlin)
+- :warning: [Reverse String in Kotlin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+kotlin)
+- :white_check_mark: [Fizz Buzz in Kotlin](https://sample-programs.therenegadecoder.com/projects/fizz-buzz/kotlin)
+- :warning: [Merge Sort in Kotlin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+kotlin)
+- :warning: [Lcs in Kotlin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+lcs+kotlin)
+- :warning: [Job Sequencing in Kotlin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+job+sequencing+kotlin)
+- :warning: [Game Of Life in Kotlin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+game+of+life+kotlin)

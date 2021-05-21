@@ -1,20 +1,10 @@
 # Sample Programs in Gerbil
 
-Welcome to Sample Programs in Gerbil!
+Welcome to Sample Programs in Gerbil! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in Gerbil](https://github.com/TheRenegadeCoder/sample-programs/issues/1854)
-
-## Fun Facts
-
-- Debut: 2007
-- Developer: Dimitris Vyzovitis 
-- Typing: Dynamic
-- License: Gerbil is Free Software, distributed under the GNU LGPLv2.1 or later and the Apache 2.0 license.
-
-## References
-
-- [Gerbil Github](https://github.com/vyzo/gerbil)
-- [Gerbil Guide](https://cons.io/)
-- [Gerbil Tutorials](https://cons.io/tutorials/)
+- :warning: [Hello World in Gerbil](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+gerbil)

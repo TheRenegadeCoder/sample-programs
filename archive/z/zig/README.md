@@ -1,21 +1,10 @@
 # Sample Programs in Zig
 
-Welcome to Sample Programs in Zig!
+Welcome to Sample Programs in Zig! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in Zig](https://github.com/TheRenegadeCoder/sample-programs/issues/2172)
-
-## Fun Facts
-
-- Debut: 2015
-- Preview Release: 13 April 2020
-- Designed by: Andrew Kelley
-- Zig is a general-purpose programming language and toolchain for maintaining robust, optimal, and reusable software. 
-- Typing discipline: Static, Strong, Inferred, Structural, Generic
-
-## References
-
-- [Official Language Website](https://github.com/ziglang/zig)
-- [Documentation](https://ziglang.org/documentation/master/)
-- [Zig wikipedia page](https://en.wikipedia.org/wiki/Zig_(programming_language))
+- :warning: [Hello World in Zig](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+zig)

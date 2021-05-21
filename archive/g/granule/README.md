@@ -1,16 +1,10 @@
 # Sample Programs in Granule
 
-Welcome to Sample Programs in Granule!
+Welcome to Sample Programs in Granule! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in Granule](https://github.com/shivamkchoudhary/sample-programs/blob/master/archive/g/granule/hello-world.gr)
-
-## Fun Facts
-
-- Debut: 2019
-
-## References
-
-- [Granule Wiki](https://granule-project.github.io/)
-- [Granule Github](https://github.com/granule-project/granule)
+- :warning: [Hello World in Granule](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+granule)

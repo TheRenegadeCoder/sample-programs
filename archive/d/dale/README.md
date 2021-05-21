@@ -1,20 +1,10 @@
 # Sample Programs in Dale
 
-Welcome to Sample Programs in Dale!
+Welcome to Sample Programs in Dale! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in Dale][1]
-
-## Fun Facts
-
-- Developer: Tom Harrison
-- Typing: Lisp-flavoured C
-- Filename extension: .dt
-
-## References
-
-- [Dale github][2]
-
-[1]: https://github.com/TheRenegadeCoder/sample-programs/issues/449
-[2]: https://github.com/tomhrr/dale
+- :warning: [Hello World in Dale](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+dale)

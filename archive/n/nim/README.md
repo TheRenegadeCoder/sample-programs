@@ -1,21 +1,12 @@
 # Sample Programs in Nim
 
-Welcome to Sample Programs in Nim!
+Welcome to Sample Programs in Nim! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in Nim](https://github.com/jrg94/sample-programs/issues/68)
-- [Fibonacci in Nim](https://github.com/TheRenegadeCoder/sample-programs/issues/1669)
-- [Reverse String in Nim](https://github.com/TheRenegadeCoder/sample-programs/issues/1739)
-
-## Fun Facts
-
-- Debut: 2008
-- Typing: Static
-- License: MIT
-
-## References
-
-- [Nim Wiki](https://en.wikipedia.org/wiki/Nim_(programming_language))
-- [Nim Official Website](https://nim-lang.org/)
-- [Nim GitHub](https://github.com/nim-lang/Nim)
+- :warning: [Reverse String in Nim](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+nim)
+- :warning: [Fibonacci in Nim](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+nim)
+- :warning: [Hello World in Nim](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+nim)

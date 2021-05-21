@@ -1,43 +1,17 @@
 # Sample Programs in Pascal
 
-Welcome to Sample Programs in Pascal! To learn more about this language,
-check out [the official documentation][sample-programs-pascal].
+Welcome to Sample Programs in Pascal! To find documentation related to the Pascal 
+    code in this repo, look [here](https://sample-programs.therenegadecoder.com/languages/pascal).
+     Otherwise, below you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-Below, you'll find a list of code snippets in this collection.
-Code snippets preceded by :warning: link to an article request 
-issue while code snippets preceded by :white_check_mark: link
-to an existing article which provides further documentation.
-
-- :warning: [Capitalize in Pascal][capitalize-article-issue]
-- :warning: [Even Odd in Pascal][even-odd-article-issue]
-- :warning: [Fizz Buzz in Pascal][fizz-buzz-article-issue]
-- :white_check_mark: [Hello World in Pascal][hello-world-article]
-- :warning: [Prime Number in Pascal][prime-number-article-issue]
-- :warning: [Reverse String in Pascal][reverse-string-article-issue]
-
-## Fun Facts
-
-- Debut: 1970
-- Typing: Static
-
-## References
-
-- [Pascal Wiki][wiki]
-- [Pascal Docs][docs]
-- [Online Pascal Compiler][compiler]
-
-
-[wiki]: https://en.wikipedia.org/wiki/Pascal_(programming_language)
-[docs]: https://www.freepascal.org/docs.var
-[compiler]: https://www.jdoodle.com/execute-pascal-online
-[sample-programs-pascal]: https://sample-programs.therenegadecoder.com/languages/pascal/
-
-[hello-world-article]: https://therenegadecoder.com/code/hello-world-in-pascal/
-
-[capitalize-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/367
-[even-odd-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/368
-[fizz-buzz-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/162
-[prime-number-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/369
-[reverse-string-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/370
+- :warning: [Even Odd in Pascal](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+pascal)
+- :warning: [Fizz Buzz in Pascal](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+pascal)
+- :white_check_mark: [Hello World in Pascal](https://sample-programs.therenegadecoder.com/projects/hello-world/pascal)
+- :warning: [Prime Number in Pascal](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+pascal)
+- :warning: [Capitalize in Pascal](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+pascal)
+- :warning: [Reverse String in Pascal](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+pascal)

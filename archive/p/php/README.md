@@ -1,72 +1,31 @@
-# Sample Programs in PHP
+# Sample Programs in Php
 
-Welcome to Sample Programs in PHP!
+Welcome to Sample Programs in Php! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Baklava in PHP][8]
-  - Solution borrowed from @toturkmen and @erayak via the [baklava repo][1]
-- [Bubble Sort in PHP][12]
-- [Capitalize in PHP][16]
-- [Convex Hull in PHP][23]
-- [Even/Odd in PHP][22]
-- [Factorial in PHP][13]
-- [Fibonacci in PHP][9]
-- [File IO in PHP][19]
-- [Fizz Buzz in PHP][3]
-- [Game of Life in PHP][21]
-- [Hello World in PHP][2]
-- [Insertion Sort in PHP][17]
-- [Job Sequencing][26]
-- [Merge Sort in PHP][14]
-- [Palindrome Word in PHP][11]
-- [Prime Number in PHP][20]
-- [Quine in PHP][25]
-- [Roman Numeral Conversion in PHP][18]
-- [ROT13 in PHP][15]
-- [Selection Sort in PHP][24]
-- [String Reverse in PHP][10]
-- [Quick Sort in PHP][26]
-
-## Fun Facts
-
-- Debut: 1995
-- Developer: Zend Technologies
-- Typing: Dynamic
-- License: PHP License
-
-## References
-
-- [PHP Wiki][4]
-- [PHP Docs][5]
-- [PHP GitHub][6]
-- [Online PHP Interpreter][7]
-
-[1]: https://github.com/toturkmen/baklava
-[2]: https://therenegadecoder.com/code/hello-world-in-php/
-[3]: https://github.com/TheRenegadeCoder/sample-programs/issues/402
-[4]: https://en.wikipedia.org/wiki/PHP
-[5]: http://www.php.net/
-[6]: https://github.com/php/php-src
-[7]: http://www.runphponline.com/
-[8]: https://github.com/TheRenegadeCoder/sample-programs/issues/431
-[9]: https://github.com/TheRenegadeCoder/sample-programs/issues/941
-[10]: https://github.com/TheRenegadeCoder/sample-programs/issues/1117
-[11]: https://github.com/TheRenegadeCoder/sample-programs/issues/1121
-[12]: https://github.com/TheRenegadeCoder/sample-programs/issues/1175
-[13]: https://github.com/TheRenegadeCoder/sample-programs/issues/1520
-[14]: https://www.w3resource.com/php-exercises/searching-and-sorting-algorithm/searching-and-sorting-algorithm-exercise-17.php
-[15]: https://github.com/TheRenegadeCoder/sample-programs/issues/1530
-[16]: https://github.com/TheRenegadeCoder/sample-programs/issues/1533
-[17]: https://github.com/TheRenegadeCoder/sample-programs/issues/1524
-[18]: https://github.com/TheRenegadeCoder/sample-programs/issues/1532
-[19]: https://github.com/TheRenegadeCoder/sample-programs/issues/1528
-[20]: https://github.com/TheRenegadeCoder/sample-programs/issues/1522
-[24]: https://github.com/TheRenegadeCoder/sample-programs/issues/1638
-[21]: https://github.com/TheRenegadeCoder/sample-programs/issues/1518
-[26]: https://github.com/TheRenegadeCoder/sample-programs/issues/1636
-[22]: https://github.com/TheRenegadeCoder/sample-programs/issues/1523
-[23]: https://github.com/TheRenegadeCoder/sample-programs/issues/1534
-[25]: https://github.com/TheRenegadeCoder/sample-programs/issues/1529
-[26]: https://github.com/TheRenegadeCoder/sample-programs/issues/1525
-
+- :warning: [Prime Number in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+php)
+- :warning: [Quick Sort in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+php)
+- :warning: [Game Of Life in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+game+of+life+php)
+- :warning: [Factorial in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+php)
+- :warning: [Merge Sort in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+php)
+- :warning: [Even Odd in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+php)
+- :warning: [File Io in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+io+php)
+- :warning: [Roman Numeral in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+php)
+- :warning: [Baklava in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+php)
+- :warning: [Quine in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+php)
+- :warning: [Convex Hull in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+convex+hull+php)
+- :warning: [Rot 13 in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot+13+php)
+- :warning: [Fizz Buzz in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+php)
+- :warning: [Palindromes in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromes+php)
+- :warning: [Fibonacci in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+php)
+- :warning: [Hello World in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+php)
+- :warning: [Bubble Sort in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+php)
+- :warning: [Reverse String in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+php)
+- :warning: [Selection Sort in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+php)
+- :warning: [Job Sequencing in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+job+sequencing+php)
+- :warning: [Capitalize in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+php)
+- :warning: [Insertion Sort in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+php)

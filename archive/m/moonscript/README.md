@@ -1,25 +1,12 @@
-# Sample Programs in MoonScript
+# Sample Programs in Moonscript
 
-Welcome to Sample Programs in MoonScript!
+Welcome to Sample Programs in Moonscript! To find documentation related to the Moonscript 
+    code in this repo, look [here](https://sample-programs.therenegadecoder.com/languages/moonscript).
+     Otherwise, below you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in MoonScript][1]
-
-## Fun Facts
-
-- Typing: Dynamic
-- License: MIT
-- Version: 0.5.0
-- Compiles Into: Lua
-
-## References
-
-- [MoonScript Wiki][2]
-- [MoonScript Getting Started][3]
-- [MoonScript Online Compiler][4]
-
-[1]: https://therenegadecoder.com/code/hello-world-in-moonscript/
-[2]: https://moonscript.org/
-[3]: http://leafo.net/posts/getting_started_with_moonscript.html
-[4]: http://moonscript.org/compiler/
+- :white_check_mark: [Hello World in Moonscript](https://sample-programs.therenegadecoder.com/projects/hello-world/moonscript)

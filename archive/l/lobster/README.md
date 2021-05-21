@@ -1,6 +1,10 @@
-# Hello world sample in lobster
+# Sample Programs in Lobster
 
-- Use this guide to install the [lobster][1]
-- This program has dependency of the lobster compiler and sample fonts. They are included with the language setup.
+Welcome to Sample Programs in Lobster! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-[1]: http://aardappel.github.io/lobster/getting_started.html
+- :warning: [Helloworld in Lobster](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+helloworld+lobster)

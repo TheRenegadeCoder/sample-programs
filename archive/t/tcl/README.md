@@ -1,19 +1,10 @@
 # Sample Programs in Tcl
 
-Welcome to Sample Programs in Tcl!
+Welcome to Sample Programs in Tcl! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in Tcl](https://github.com/jrg94/sample-programs/issues/34)
-
-## Fun Facts
-
-- Debut: 1988
-- Developer: Tcl Core Team
-- Typing: Dynamic
-- License: BSD
-
-## References
-
-- [Tcl Wiki](https://en.wikipedia.org/wiki/Tcl)
-- [Tcl Docs](https://www.tcl.tk/)
+- :warning: [Hello World in Tcl](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+tcl)

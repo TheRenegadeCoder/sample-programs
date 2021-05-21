@@ -1,38 +1,26 @@
 # Sample Programs in Rust
 
-Welcome to Sample Programs in Rust!
+Welcome to Sample Programs in Rust! To find documentation related to the Rust 
+    code in this repo, look [here](https://sample-programs.therenegadecoder.com/languages/rust).
+     Otherwise, below you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in Rust](https://therenegadecoder.com/code/hello-world-in-rust/)
-- [Fibonacci in Rust](https://github.com/TheRenegadeCoder/sample-programs/issues/490)
-- [File IO in Rust](https://github.com/TheRenegadeCoder/sample-programs/issues/413)
-- [Fizz Buzz in Rust](https://github.com/TheRenegadeCoder/sample-programs/issues/453)
-- [Reverse a String in Rust](https://github.com/jrg94/sample-programs/issues/261)
-- [Roman Numeral Conversion in Rust](https://github.com/TheRenegadeCoder/sample-programs/issues/536)
-- [ROT-13 in Rust](https://github.com/TheRenegadeCoder/sample-programs/issues/1118)
-- [Capitalize in Rust](https://github.com/TheRenegadeCoder/sample-programs/pull/1802)
-- [Even/Odd Number in Rust](https://github.com/TheRenegadeCoder/sample-programs/pull/1829)
-- [Factorial in Rust](https://github.com/TheRenegadeCoder/sample-programs/pull/1831)
-- [Prime Number in Rust](https://github.com/TheRenegadeCoder/sample-programs/pull/1832)
-- [Binary Search in Rust](https://github.com/TheRenegadeCoder/sample-programs/pull/2085)
-- [Merge Sort in Rust](https://github.com/TheRenegadeCoder/sample-programs/pull/2107)
-- [Insertion Sort in Rust](https://github.com/TheRenegadeCoder/sample-programs/pull/2103)
-- [Bubble Sort in Rust](https://github.com/TheRenegadeCoder/sample-programs/pull/2113)
-
-## Fun Facts
-
-- Debut: 2010
-- Developer: Rust Project Developers
-- Typing: Static
-- Rust Compiler cautions Developers about Unused Variables
-- Rust nearly has no Null Pointer Exceptions(NPE), which is it's key bragging point.
-- 70% of Code Vulnerabilities and Errors(CVE's) in Windows Operating System are due to memory Safety, which is Prime advantage of using Rust.
-- 
-
-## References
-
-- [Rust Wiki](https://en.wikipedia.org/wiki/Rust_(programming_language))
-- [Rust Docs](https://www.rust-lang.org/en-US/)
-- [Rust GitHub](https://github.com/rust-lang/rust)
-- [Online Rust Editor](https://play.rust-lang.org/)
+- :warning: [Reverse String in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+rust)
+- :warning: [Factorial in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+rust)
+- :warning: [File Io in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+io+rust)
+- :warning: [Rot 13 in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot+13+rust)
+- :warning: [Binary Search in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+binary+search+rust)
+- :warning: [Roman Numeral Conversion in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+conversion+rust)
+- :warning: [Fizz Buzz in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+rust)
+- :white_check_mark: [Hello World in Rust](https://sample-programs.therenegadecoder.com/projects/hello-world/rust)
+- :warning: [Prime Number in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+rust)
+- :warning: [Fibonacci in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+rust)
+- :warning: [Even Odd in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+rust)
+- :warning: [Bubble Sort in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+rust)
+- :warning: [Capitalize in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+rust)
+- :warning: [Insertion Sort in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+rust)
+- :warning: [Merge Sort in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+rust)

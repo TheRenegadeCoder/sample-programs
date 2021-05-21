@@ -1,20 +1,12 @@
 # Sample Programs in Hack
 
-Welcome to Sample Programs in Hack!
+Welcome to Sample Programs in Hack! To find documentation related to the Hack 
+    code in this repo, look [here](https://sample-programs.therenegadecoder.com/languages/hack).
+     Otherwise, below you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in Hack](https://therenegadecoder.com/code/hello-world-in-hack/)
-
-## Fun Facts
-
-- Debut: 2014
-- Developer: Facebook
-- Typing: Gradual
-
-## References
-
-- [Hack Wiki](https://en.wikipedia.org/wiki/Hack_(programming_language))
-- [Hack Docs](http://hacklang.org/)
-- [HHVM GitHub](https://github.com/facebook/hhvm)
-- [Online Hack Compiler](https://www.jdoodle.com/execute-hack-online)
+- :white_check_mark: [Hello World in Hack](https://sample-programs.therenegadecoder.com/projects/hello-world/hack)

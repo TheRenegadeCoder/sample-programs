@@ -1,34 +1,14 @@
 # Sample Programs in Crystal
 
-Welcome to Sample Programs in Crystal!
+Welcome to Sample Programs in Crystal! To find documentation related to the Crystal 
+    code in this repo, look [here](https://sample-programs.therenegadecoder.com/languages/crystal).
+     Otherwise, below you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in Crystal][2]
-- [Fizz Buzz in Crystal][9]
-- [Baklava in Crystal][8]
-  - Solution borrowed from @turkerdotpy via [baklava repo][1]
-
-## Fun Facts
-
-- Debut: 2014
-- Developer: Manas Technology Solutions
-- Typing: Static
-
-## References
-
-- [Crystal Wiki][3]
-- [Crystal Official Website][4]
-- [Crystal Docs][5]
-- [Crystal GitHub][6]
-- [Crystal Online Editor][7]
-
-[1]: https://github.com/toturkmen/baklava
-[2]: https://therenegadecoder.com/code/hello-world-in-crystal/
-[3]: https://en.wikipedia.org/wiki/Crystal_(programming_language)
-[4]: https://crystal-lang.org/
-[5]: https://crystal-lang.org/docs/
-[6]: https://github.com/crystal-lang/crystal
-[7]: https://play.crystal-lang.org/
-[8]: https://github.com/TheRenegadeCoder/sample-programs/issues/425
-[9]: https://github.com/TheRenegadeCoder/sample-programs/issues/457
+- :warning: [Baklava in Crystal](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+crystal)
+- :white_check_mark: [Hello World in Crystal](https://sample-programs.therenegadecoder.com/projects/hello-world/crystal)
+- :warning: [Fizz Buzz in Crystal](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+crystal)

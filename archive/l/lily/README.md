@@ -1,18 +1,10 @@
 # Sample Programs in Lily
 
-Welcome to Sample Programs in Lily!
+Welcome to Sample Programs in Lily! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in Lily](https://github.com/jrg94/sample-programs/issues/55)
-
-## Fun Facts
-
-- Debut: 2014
-- License: MIT
-
-## References
-
-- [Lily Docs](https://fascinatedbox.github.io/lily/index.html)
-- [Lily GitHub](https://github.com/FascinatedBox/lily)
-- [Lily Online Editor](http://fascinatedbox.github.io/lily/intro-sandbox.html)
+- :warning: [Hello World in Lily](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+lily)

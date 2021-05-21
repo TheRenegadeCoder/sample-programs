@@ -1,17 +1,12 @@
 # Sample Programs in Solidity
 
-Welcome to Sample Programs in Solidity!
+Welcome to Sample Programs in Solidity! To find documentation related to the Solidity 
+    code in this repo, look [here](https://sample-programs.therenegadecoder.com/languages/solidity).
+     Otherwise, below you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in Solidity](https://therenegadecoder.com/blog/hello-world-in-solidity/)
-
-## Fun Facts
-
-- Debut: 2014
-
-## References
-
-- [Solidity Wiki](https://en.wikipedia.org/wiki/Solidity)
-- [Solidity Docs](http://solidity.readthedocs.io/en/v0.4.24/)
-- [Remix - Solidity IDE Compiler](http://remix.ethereum.org/)
+- :white_check_mark: [Hello World in Solidity](https://sample-programs.therenegadecoder.com/projects/hello-world/solidity)

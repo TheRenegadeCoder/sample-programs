@@ -1,25 +1,11 @@
 # Sample Programs in P4
 
-Welcome to Sample Programs in P4!
+Welcome to Sample Programs in P4! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in P4][0]
-- [Even Odd in P4][3]
-
-## Fun Facts
-
-- Debut: 2013
-- Developer: The P4 Language Consortium
-- License: Apache-style
-- Programming language for controlling packet forwarding planes in networking devices
-
-## References
-
-- [P4 Website][1]
-- [P4 GitHub][2]
-
-[0]: https://github.com/TheRenegadeCoder/sample-programs/issues/2117
-[1]: https://p4.org/code/
-[2]: https://github.com/p4lang/p4c
-[3]: https://github.com/TheRenegadeCoder/sample-programs/issues/2125
+- :warning: [Helloworld in P4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+helloworld+p4)
+- :warning: [Evenodd in P4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+evenodd+p4)

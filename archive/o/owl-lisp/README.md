@@ -1,16 +1,10 @@
-# Sample Programs in Owl Lisp
+# Sample Programs in Owl-lisp
 
-Welcome to Sample Programs in Owl Lisp!
+Welcome to Sample Programs in Owl-lisp! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in Owl Lisp](https://github.com/jrg94/sample-programs/issues/250)
-
-## Fun Facts
-
-- Debut: 2013
-
-## References
-
-- [Owl Lisp GitHub](https://github.com/aoh/owl-lisp)
-- [Owl Lisp GitLab](https://gitlab.com/owl-lisp/owl)
+- :warning: [Hello World in Owl-lisp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+owl-lisp)

@@ -1,18 +1,12 @@
 # Sample Programs in Elm
 
-Welcome to Sample Programs in Elm!
+Welcome to Sample Programs in Elm! To find documentation related to the Elm 
+    code in this repo, look [here](https://sample-programs.therenegadecoder.com/languages/elm).
+     Otherwise, below you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in Elm](https://therenegadecoder.com/code/hello-world-in-elm/)
-
-## Fun Facts
-
-- Debut: 2012
-- Typing: Static
-
-## References
-
-- [Elm Wiki](https://en.wikipedia.org/wiki/Elm_(programming_language))
-- [Elm Docs](http://elm-lang.org/)
-- [Elm Online Editor](http://elm-lang.org/try)
+- :white_check_mark: [Hello World in Elm](https://sample-programs.therenegadecoder.com/projects/hello-world/elm)

@@ -1,21 +1,10 @@
 # Sample Programs in Janet
 
-Welcome to Sample Programs in Janet!
+Welcome to Sample Programs in Janet! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in Janet][1]
-
-## Fun Facts
-
-- Debut: 2017
-- Typing: Dynamic
-
-## References
-
-- [Janet GitHub Project][2]
-- [Janet Docs][3]
-
-[1]: https://github.com/TheRenegadeCoder/sample-programs/issues/947
-[2]: https://github.com/janet-lang/janet
-[3]: https://janet-lang.org/docs/index.html
+- :warning: [Helloworld in Janet](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+helloworld+janet)

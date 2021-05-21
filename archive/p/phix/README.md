@@ -1,27 +1,10 @@
 # Sample Programs in Phix
 
-Welcome to Sample Programs in Phix!
+Welcome to Sample Programs in Phix! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Baklava in Phix][3]
-
-## Fun Facts
-
-- Debut: 2006
-- Developer: Pete Lomax
-- Entirely self-hosted
-- Interpreted and compiled
-- Just five core data types
-- Mutable strings
-- Human readable error messages
-- 500 bundled demos, second highest number of completed tasks on [rosettacode][1]
-- Garbage collection: reference counting
-
-## References
-
-- [Official website][2]
-
-[1]: https://rosettacode.org/wiki/Rosetta_Code/Count_examples/Full_list
-[2]: http://phix.x10.mx/
-[3]: https://github.com/TheRenegadeCoder/sample-programs/pull/2382
+- :warning: [Baklava in Phix](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+phix)

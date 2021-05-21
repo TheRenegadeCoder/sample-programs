@@ -1,21 +1,11 @@
 # Sample Programs in Never
 
-Welcome to Sample Programs in Never!
+Welcome to Sample Programs in Never! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in Never](https://github.com/TheRenegadeCoder/sample-programs/issues/450)
-- [Reverse an Array in Never](https://github.com/TheRenegadeCoder/sample-programs/issues/451)
-  - Note: Never currently does not support strings
-
-## Fun Facts
-
-- Debut: 2018
-- Typing: Static
-- License: MIT
-
-## References
-
-- [Never Official Website](https://never-lang.github.io/never/)
-- [Never GitHub](https://github.com/never-lang/never/)
-
+- :warning: [Hello World in Never](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+never)
+- :warning: [Reverse in Never](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+never)

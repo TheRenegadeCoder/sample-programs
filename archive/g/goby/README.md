@@ -1,16 +1,12 @@
 # Sample Programs in Goby
 
-Welcome to Sample Programs in Goby!
+Welcome to Sample Programs in Goby! To find documentation related to the Goby 
+    code in this repo, look [here](https://sample-programs.therenegadecoder.com/languages/goby).
+     Otherwise, below you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in Goby](https://github.com/jrg94/sample-programs/issues/31)
-
-## Fun Facts
-
-- Debut: 2017
-
-## References
-
-- [Goby Docs](https://goby-lang.org/)
-- [Goby GitHub](https://github.com/goby-lang/goby)
+- :white_check_mark: [Hello World in Goby](https://sample-programs.therenegadecoder.com/projects/hello-world/goby)

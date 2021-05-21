@@ -1,18 +1,10 @@
-# Sample Programs in ELENA
+# Sample Programs in Elena
 
-Welcome to Sample Programs in ELENA!
+Welcome to Sample Programs in Elena! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in ELENA](https://github.com/jrg94/sample-programs/issues/127)
-
-## Fun Facts
-
-- Debut: 2013
-- License: MIT
-
-## References
-
-- [ELENA Official Website](http://elenalang.sourceforge.net/)
-- [ELENA GitHub](https://github.com/ELENA-LANG/elena-lang)
-- [ELENA Twitter](https://twitter.com/elena_language)
+- :warning: [Hello World in Elena](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+elena)

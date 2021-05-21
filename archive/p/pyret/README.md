@@ -1,18 +1,10 @@
 # Sample Programs in Pyret
 
-Welcome to Sample Programs in Pyret!
+Welcome to Sample Programs in Pyret! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in Pyret](https://github.com/jrg94/sample-programs/issues/62)
-
-## Fun Facts
-
-- Debut: 2012
-- License: Apache 2
-
-## References
-
-- [Pyret Docs](http://pyret.org/)
-- [Pyret GitHub](https://github.com/brownplt/pyret-lang)
-- [Pyret Online Editor](https://code.pyret.org/editor)
+- :warning: [Hello World in Pyret](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+pyret)

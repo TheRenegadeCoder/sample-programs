@@ -1,20 +1,10 @@
 # Sample Programs in Chapel
 
-Welcome to Sample Programs in Chapel!
+Welcome to Sample Programs in Chapel! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in Chapel][1]
-
-## Fun Facts
-
-- Debut: 2009
-
-## References
-
-- [Chapel GitHub][2]
-- [Chapel Website][3]
-
-[1]: https://github.com/TheRenegadeCoder/sample-programs/issues/782
-[2]: https://github.com/chapel-lang/chapel
-[3]: https://chapel-lang.org/
+- :warning: [Hello World in Chapel](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+chapel)

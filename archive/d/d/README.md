@@ -1,30 +1,14 @@
 # Sample Programs in D
 
-Welcome to Sample Programs in D!
+Welcome to Sample Programs in D! To find documentation related to the D 
+    code in this repo, look [here](https://sample-programs.therenegadecoder.com/languages/d).
+     Otherwise, below you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in D][2]
-- [Baklava in D][6]
-  - Solution borrowed from @toturkmen via the [baklava repo][1]
- - [Factorial in d][7]
-
-## Fun Facts
-
-- Debut: 2001
-- Developer: D Language Foundation
-- Typing: Strong, Static, Inferred
-
-## References
-
-- [D Wiki][3]
-- [D Language Specification][4]
-- [D Compiler][5]
-
-[1]: https://github.com/toturkmen/baklava
-[2]: https://therenegadecoder.com/code/hello-world-in-d/
-[3]: https://en.wikipedia.org/wiki/D_(programming_language)
-[4]: https://dlang.org/spec/spec.html
-[5]: https://github.com/dlang/dmd
-[6]: https://github.com/TheRenegadeCoder/sample-programs/issues/426
-[7]: https://github.com/TheRenegadeCoder/sample-programs/pull/2149
+- :warning: [Baklava in D](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+d)
+- :white_check_mark: [Hello World in D](https://sample-programs.therenegadecoder.com/projects/hello-world/d)
+- :warning: [Factorial in D](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+d)

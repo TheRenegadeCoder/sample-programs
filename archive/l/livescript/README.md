@@ -1,19 +1,10 @@
-# Sample Programs in LiveScript
+# Sample Programs in Livescript
 
-Welcome to Sample Programs in LiveScript!
+Welcome to Sample Programs in Livescript! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in LiveScript][1]
-
-## Fun Facts
-
-- Debut: 2011
-- Typing: Dynamic, weak
-
-## References
-
-- [LiveScript Wiki][2]
-
-[1]: https://github.com/TheRenegadeCoder/sample-programs/issues/732
-[2]: https://en.wikipedia.org/wiki/LiveScript
+- :warning: [Hello World in Livescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+livescript)
