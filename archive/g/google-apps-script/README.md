@@ -10,3 +10,6 @@ Welcome to Sample Programs in Google Apps Script! To find documentation related 
     
 
 - :white_check_mark: [Hello World in Google Apps Script](https://sample-programs.therenegadecoder.com/projects/hello-world/google-apps-script)
+
+This page was generated automatically by the Sample Programs Docs Generator. 
+    Find out how to support this project [here](https://github.com/TheRenegadeCoder/sample-programs-docs-generator).

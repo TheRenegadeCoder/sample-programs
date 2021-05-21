@@ -9,3 +9,6 @@ Welcome to Sample Programs in Boo! Below, you'll find a list of code snippets in
 
 - :warning: [Fibonacci in Boo](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+boo)
 - :warning: [Helloworld in Boo](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+helloworld+boo)
+
+This page was generated automatically by the Sample Programs Docs Generator. 
+    Find out how to support this project [here](https://github.com/TheRenegadeCoder/sample-programs-docs-generator).

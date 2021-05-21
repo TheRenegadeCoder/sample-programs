@@ -15,3 +15,6 @@ Welcome to Sample Programs in Pascal! To find documentation related to the Pasca
 - :white_check_mark: [Hello World in Pascal](https://sample-programs.therenegadecoder.com/projects/hello-world/pascal)
 - :warning: [Prime Number in Pascal](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+pascal)
 - :warning: [Reverse String in Pascal](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+pascal)
+
+This page was generated automatically by the Sample Programs Docs Generator. 
+    Find out how to support this project [here](https://github.com/TheRenegadeCoder/sample-programs-docs-generator).

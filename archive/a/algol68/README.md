@@ -10,3 +10,6 @@ Welcome to Sample Programs in Algol68! To find documentation related to the Algo
     
 
 - :white_check_mark: [Hello World in Algol68](https://sample-programs.therenegadecoder.com/projects/hello-world/algol68)
+
+This page was generated automatically by the Sample Programs Docs Generator. 
+    Find out how to support this project [here](https://github.com/TheRenegadeCoder/sample-programs-docs-generator).

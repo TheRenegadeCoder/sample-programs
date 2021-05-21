@@ -10,3 +10,6 @@ Welcome to Sample Programs in Hack! To find documentation related to the Hack
     
 
 - :white_check_mark: [Hello World in Hack](https://sample-programs.therenegadecoder.com/projects/hello-world/hack)
+
+This page was generated automatically by the Sample Programs Docs Generator. 
+    Find out how to support this project [here](https://github.com/TheRenegadeCoder/sample-programs-docs-generator).

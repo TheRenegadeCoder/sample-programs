@@ -19,6 +19,9 @@ Welcome to Sample Programs in Lua! To find documentation related to the Lua
 - :warning: [Fizz Buzz in Lua](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+lua)
 - :white_check_mark: [Hello World in Lua](https://sample-programs.therenegadecoder.com/projects/hello-world/lua)
 - :warning: [Prime Number in Lua](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+lua)
-- :warning: [Reverse String in Lua](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+lua)
+- :white_check_mark: [Reverse String in Lua](https://sample-programs.therenegadecoder.com/projects/reverse-string/lua)
 - :warning: [Roman Numeral in Lua](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+lua)
 - :warning: [Rot 13 in Lua](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot+13+lua)
+
+This page was generated automatically by the Sample Programs Docs Generator. 
+    Find out how to support this project [here](https://github.com/TheRenegadeCoder/sample-programs-docs-generator).

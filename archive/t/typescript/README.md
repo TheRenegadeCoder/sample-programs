@@ -16,3 +16,6 @@ Welcome to Sample Programs in Typescript! Below, you'll find a list of code snip
 - :white_check_mark: [Hello World in Typescript](https://sample-programs.therenegadecoder.com/projects/hello-world/typescript)
 - :warning: [Import in Typescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+import+typescript)
 - :warning: [Reversing A String in Typescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reversing+a+string+typescript)
+
+This page was generated automatically by the Sample Programs Docs Generator. 
+    Find out how to support this project [here](https://github.com/TheRenegadeCoder/sample-programs-docs-generator).

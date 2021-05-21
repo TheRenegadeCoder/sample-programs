@@ -14,3 +14,6 @@ Welcome to Sample Programs in Coffeescript! Below, you'll find a list of code sn
 - :warning: [Fizzbuzz in Coffeescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizzbuzz+coffeescript)
 - :warning: [Hello World in Coffeescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+coffeescript)
 - :warning: [Quine in Coffeescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+coffeescript)
+
+This page was generated automatically by the Sample Programs Docs Generator. 
+    Find out how to support this project [here](https://github.com/TheRenegadeCoder/sample-programs-docs-generator).

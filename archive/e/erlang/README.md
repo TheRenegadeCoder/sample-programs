@@ -13,3 +13,6 @@ Welcome to Sample Programs in Erlang! Below, you'll find a list of code snippets
 - :warning: [Fizz Buzz in Erlang](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+erlang)
 - :white_check_mark: [Hello World in Erlang](https://sample-programs.therenegadecoder.com/projects/hello-world/erlang)
 - :warning: [Reverse String in Erlang](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+erlang)
+
+This page was generated automatically by the Sample Programs Docs Generator. 
+    Find out how to support this project [here](https://github.com/TheRenegadeCoder/sample-programs-docs-generator).

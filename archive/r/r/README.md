@@ -16,3 +16,6 @@ Welcome to Sample Programs in R! To find documentation related to the R
 - :white_check_mark: [Hello World in R](https://sample-programs.therenegadecoder.com/projects/hello-world/r)
 - :warning: [Prime Number in R](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+r)
 - :warning: [Reverse String in R](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+r)
+
+This page was generated automatically by the Sample Programs Docs Generator. 
+    Find out how to support this project [here](https://github.com/TheRenegadeCoder/sample-programs-docs-generator).

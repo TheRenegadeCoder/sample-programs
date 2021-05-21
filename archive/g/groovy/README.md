@@ -15,3 +15,6 @@ Welcome to Sample Programs in Groovy! Below, you'll find a list of code snippets
 - :warning: [Hello World in Groovy](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+groovy)
 - :warning: [Merge Sort in Groovy](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+groovy)
 - :warning: [Reverse A String in Groovy](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+a+string+groovy)
+
+This page was generated automatically by the Sample Programs Docs Generator. 
+    Find out how to support this project [here](https://github.com/TheRenegadeCoder/sample-programs-docs-generator).

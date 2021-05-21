@@ -9,3 +9,6 @@ Welcome to Sample Programs in Quack! Below, you'll find a list of code snippets 
 
 - :warning: [Fibonacci in Quack](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+quack)
 - :warning: [Hello World in Quack](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+quack)
+
+This page was generated automatically by the Sample Programs Docs Generator. 
+    Find out how to support this project [here](https://github.com/TheRenegadeCoder/sample-programs-docs-generator).

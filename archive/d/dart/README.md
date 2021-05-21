@@ -19,7 +19,10 @@ Welcome to Sample Programs in Dart! To find documentation related to the Dart
 - :warning: [Game Of Life in Dart](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+game+of+life+dart)
 - :white_check_mark: [Hello World in Dart](https://sample-programs.therenegadecoder.com/projects/hello-world/dart)
 - :warning: [Quick Sort in Dart](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+dart)
-- :warning: [Reverse String in Dart](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+dart)
+- :white_check_mark: [Reverse String in Dart](https://sample-programs.therenegadecoder.com/projects/reverse-string/dart)
 - :warning: [Roman Numeral in Dart](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+dart)
 - :warning: [Rot 13 in Dart](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot+13+dart)
 - :warning: [Sleep Sort in Dart](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sleep+sort+dart)
+
+This page was generated automatically by the Sample Programs Docs Generator. 
+    Find out how to support this project [here](https://github.com/TheRenegadeCoder/sample-programs-docs-generator).

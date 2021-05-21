@@ -10,3 +10,6 @@ Welcome to Sample Programs in Red! To find documentation related to the Red
     
 
 - :white_check_mark: [Hello World in Red](https://sample-programs.therenegadecoder.com/projects/hello-world/red)
+
+This page was generated automatically by the Sample Programs Docs Generator. 
+    Find out how to support this project [here](https://github.com/TheRenegadeCoder/sample-programs-docs-generator).

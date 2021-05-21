@@ -8,3 +8,6 @@ Welcome to Sample Programs in Ferret! Below, you'll find a list of code snippets
     
 
 - :warning: [Hello World in Ferret](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+ferret)
+
+This page was generated automatically by the Sample Programs Docs Generator. 
+    Find out how to support this project [here](https://github.com/TheRenegadeCoder/sample-programs-docs-generator).

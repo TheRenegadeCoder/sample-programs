@@ -10,3 +10,6 @@ Welcome to Sample Programs in Goby! To find documentation related to the Goby
     
 
 - :white_check_mark: [Hello World in Goby](https://sample-programs.therenegadecoder.com/projects/hello-world/goby)
+
+This page was generated automatically by the Sample Programs Docs Generator. 
+    Find out how to support this project [here](https://github.com/TheRenegadeCoder/sample-programs-docs-generator).
