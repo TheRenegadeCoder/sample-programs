@@ -33,8 +33,11 @@ Welcome to Sample Programs in Python! To find documentation related to the Pytho
 - :white_check_mark: [Prime Number in Python](https://sample-programs.therenegadecoder.com/projects/prime-number/python)
 - :white_check_mark: [Quick Sort in Python](https://sample-programs.therenegadecoder.com/projects/quick-sort/python)
 - :warning: [Quine in Python](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+python)
-- :warning: [Reverse String in Python](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+python)
-- :warning: [Roman Numeral in Python](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+python)
+- :white_check_mark: [Reverse String in Python](https://sample-programs.therenegadecoder.com/projects/reverse-string/python)
+- :white_check_mark: [Roman Numeral in Python](https://sample-programs.therenegadecoder.com/projects/roman-numeral/python)
 - :warning: [Rot 13 in Python](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot+13+python)
 - :white_check_mark: [Selection Sort in Python](https://sample-programs.therenegadecoder.com/projects/selection-sort/python)
 - :warning: [Sleep Sort in Python](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sleep+sort+python)
+
+This page was generated automatically by the Sample Programs Docs Generator. 
+    Find out how to support this project [here](https://github.com/TheRenegadeCoder/sample-programs-docs-generator).

@@ -12,3 +12,6 @@ Welcome to Sample Programs in Dg! Below, you'll find a list of code snippets in 
 - :warning: [Hello World in Dg](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+dg)
 - :warning: [Quine in Dg](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+dg)
 - :warning: [Reverse String in Dg](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+dg)
+
+This page was generated automatically by the Sample Programs Docs Generator. 
+    Find out how to support this project [here](https://github.com/TheRenegadeCoder/sample-programs-docs-generator).

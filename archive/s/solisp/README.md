@@ -11,3 +11,6 @@ Welcome to Sample Programs in Solisp! Below, you'll find a list of code snippets
 - :warning: [Fizz Buzz in Solisp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+solisp)
 - :warning: [Hello in Solisp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+solisp)
 - :warning: [Reverse in Solisp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+solisp)
+
+This page was generated automatically by the Sample Programs Docs Generator. 
+    Find out how to support this project [here](https://github.com/TheRenegadeCoder/sample-programs-docs-generator).

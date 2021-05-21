@@ -9,3 +9,6 @@ Welcome to Sample Programs in Never! Below, you'll find a list of code snippets 
 
 - :warning: [Hello World in Never](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+never)
 - :warning: [Reverse in Never](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+never)
+
+This page was generated automatically by the Sample Programs Docs Generator. 
+    Find out how to support this project [here](https://github.com/TheRenegadeCoder/sample-programs-docs-generator).

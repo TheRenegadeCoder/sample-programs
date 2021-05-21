@@ -29,3 +29,6 @@ Welcome to Sample Programs in Php! Below, you'll find a list of code snippets in
 - :warning: [Roman Numeral in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+php)
 - :warning: [Rot 13 in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot+13+php)
 - :warning: [Selection Sort in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+php)
+
+This page was generated automatically by the Sample Programs Docs Generator. 
+    Find out how to support this project [here](https://github.com/TheRenegadeCoder/sample-programs-docs-generator).

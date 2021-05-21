@@ -12,3 +12,6 @@ Welcome to Sample Programs in Brainfuck! To find documentation related to the Br
 - :warning: [Fizz Buzz in Brainfuck](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+brainfuck)
 - :white_check_mark: [Hello World in Brainfuck](https://sample-programs.therenegadecoder.com/projects/hello-world/brainfuck)
 - :warning: [Reverse String in Brainfuck](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+brainfuck)
+
+This page was generated automatically by the Sample Programs Docs Generator. 
+    Find out how to support this project [here](https://github.com/TheRenegadeCoder/sample-programs-docs-generator).

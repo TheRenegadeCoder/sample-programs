@@ -8,3 +8,6 @@ Welcome to Sample Programs in Modula2! Below, you'll find a list of code snippet
     
 
 - :warning: [Hello World in Modula2](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+modula2)
+
+This page was generated automatically by the Sample Programs Docs Generator. 
+    Find out how to support this project [here](https://github.com/TheRenegadeCoder/sample-programs-docs-generator).

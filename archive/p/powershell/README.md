@@ -12,3 +12,6 @@ Welcome to Sample Programs in Powershell! To find documentation related to the P
 - :white_check_mark: [Fizz Buzz in Powershell](https://sample-programs.therenegadecoder.com/projects/fizz-buzz/powershell)
 - :warning: [Hello World in Powershell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+Hello+World+powershell)
 - :warning: [Reverse String in Powershell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+Reverse+String+powershell)
+
+This page was generated automatically by the Sample Programs Docs Generator. 
+    Find out how to support this project [here](https://github.com/TheRenegadeCoder/sample-programs-docs-generator).

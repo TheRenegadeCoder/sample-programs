@@ -30,7 +30,10 @@ Welcome to Sample Programs in Javascript! Below, you'll find a list of code snip
 - :warning: [Prime Number in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+javascript)
 - :warning: [Quick Sort in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+javascript)
 - :warning: [Quine in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+javascript)
-- :warning: [Reverse String in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+javascript)
+- :white_check_mark: [Reverse String in Javascript](https://sample-programs.therenegadecoder.com/projects/reverse-string/javascript)
 - :warning: [Roman Numeral in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+javascript)
 - :warning: [Rot 13 in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot+13+javascript)
 - :warning: [Selection Sort in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+javascript)
+
+This page was generated automatically by the Sample Programs Docs Generator. 
+    Find out how to support this project [here](https://github.com/TheRenegadeCoder/sample-programs-docs-generator).

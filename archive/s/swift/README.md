@@ -13,4 +13,7 @@ Welcome to Sample Programs in Swift! Below, you'll find a list of code snippets 
 - :white_check_mark: [Fizz Buzz in Swift](https://sample-programs.therenegadecoder.com/projects/fizz-buzz/swift)
 - :warning: [Fractions in Swift](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fractions+swift)
 - :warning: [Hello World in Swift](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+swift)
-- :warning: [Reverse String in Swift](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+swift)
+- :white_check_mark: [Reverse String in Swift](https://sample-programs.therenegadecoder.com/projects/reverse-string/swift)
+
+This page was generated automatically by the Sample Programs Docs Generator. 
+    Find out how to support this project [here](https://github.com/TheRenegadeCoder/sample-programs-docs-generator).

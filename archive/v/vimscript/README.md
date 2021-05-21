@@ -10,3 +10,6 @@ Welcome to Sample Programs in Vimscript! Below, you'll find a list of code snipp
 - :warning: [Fizz Buzz in Vimscript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+vimscript)
 - :warning: [Hello World in Vimscript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+vimscript)
 - :warning: [Reverse String in Vimscript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+vimscript)
+
+This page was generated automatically by the Sample Programs Docs Generator. 
+    Find out how to support this project [here](https://github.com/TheRenegadeCoder/sample-programs-docs-generator).

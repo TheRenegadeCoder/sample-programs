@@ -16,5 +16,8 @@ Welcome to Sample Programs in Ruby! Below, you'll find a list of code snippets i
 - :warning: [Fizz Buzz in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+ruby)
 - :warning: [Hello World in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+ruby)
 - :warning: [Quine in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+ruby)
-- :warning: [Reverse String in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+ruby)
+- :white_check_mark: [Reverse String in Ruby](https://sample-programs.therenegadecoder.com/projects/reverse-string/ruby)
 - :warning: [Roman Numeral in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+ruby)
+
+This page was generated automatically by the Sample Programs Docs Generator. 
+    Find out how to support this project [here](https://github.com/TheRenegadeCoder/sample-programs-docs-generator).
