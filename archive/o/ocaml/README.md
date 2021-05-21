@@ -1,16 +1,10 @@
-# Sample Programs in Scheme
+# Sample Programs in Ocaml
 
-Welcome to Sample Programs in Ocaml!
+Welcome to Sample Programs in Ocaml! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in Ocaml](https://github.com/TheRenegadeCoder/sample-programs/issues/565)
-
-## Fun Facts
-
-- Debut: 1996
-
-## References
-
-- [Ocaml wiki](https://en.wikipedia.org/wiki/OCaml)
-- [Ocaml Docs](https://ocaml.org/docs/)
+- :warning: [Hello World in Ocaml](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+ocaml)

@@ -1,20 +1,11 @@
-# Sample Programs in TeX
+# Sample Programs in Tex
 
-Welcome to Sample Programs in TeX!
+Welcome to Sample Programs in Tex! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in TeX](https://github.com/jrg94/sample-programs/issues/379)
-- [Fizz Buzz in TeX](https://github.com/TheRenegadeCoder/sample-programs/issues/393)
-
-## Fun Facts
-
-- Debut: 1978
-- Developer: Donald Knuth
-- Mainly a typesetting (formatting) language, although it is Turing complete
-
-## References
-
-- [TeX Wiki](https://en.wikipedia.org/wiki/TeX)
-- [TeX Offial Site (TeX Users Group)](https://tug.org)
-- [Online TeX editor](https://www.tutorialspoint.com/online_latex_editor.php)
+- :white_check_mark: [Hello World in Tex](https://sample-programs.therenegadecoder.com/projects/hello-world/tex)
+- :warning: [Fizz Buzz in Tex](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+tex)

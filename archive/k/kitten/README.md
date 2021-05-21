@@ -1,19 +1,10 @@
 # Sample Programs in Kitten
 
-Welcome to Sample Programs in Kitten!
+Welcome to Sample Programs in Kitten! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in Kitten](https://github.com/jrg94/sample-programs/issues/123)
-
-## Fun Facts
-
-- Debut: 2011
-- License: MIT
-- Typing: Static
-
-## References
-
-- [Kitten Official Website](http://kittenlang.org/)
-- [Kitten GitHub](https://github.com/evincarofautumn/kitten)
-- [Kitten Docs](http://kittenlang.org/documentation/)
+- :warning: [Hello World in Kitten](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+kitten)

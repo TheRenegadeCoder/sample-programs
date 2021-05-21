@@ -1,73 +1,33 @@
-# Sample Programs in C#
+# Sample Programs in C-sharp
 
-Welcome to Sample Programs in C#! To find documentation related to the C# code in 
-this repo, look [here][trc-c-sharp-docs].
+Welcome to Sample Programs in C-sharp! To find documentation related to the C-sharp 
+    code in this repo, look [here](https://sample-programs.therenegadecoder.com/languages/c-sharp).
+     Otherwise, below you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-Below, you'll find a list of code snippets in this collection.
-Code snippets preceded by :warning: link to an article request 
-issue while code snippets preceded by :white_check_mark: link
-to an existing article which provides further documentation.
-
-- :warning: [Baklava in C#][baklava-article-issue]
-  - Solution borrowed from @toturkmen via the [baklava repo][baklava-repo]
-- :warning: [Bubble Sort in C#][bubble-sort-article-issue]
-- :warning: [Capitalize in C#][capitalize-article-issue]
-- :warning: [Even Odd in C#][even-odd-article-issue]
-- :warning: [Factorial in C#][factorial-article-issue]
-- :warning: [File IO in C#][file-io-article-issue]
-- :warning: [Fizz Buzz in C#][fizz-buzz-article-issue]
-- :warning: [Game of Life in C#][game-of-life-article-issue]
-- :white_check_mark: [Hello World in C#][hello-world-article]
-- :warning: [Insertion Sort in C#][insertion-sort-article-issue]
-- :warning: [Longest Common Subsequence in C#][lcs-article-issue]
-- :warning: [Merge Sort in C#][merge-sort-article-issue]
-- :warning: [Prime Number in C#][prime-number-article-issue]
-- :warning: [Quick Sort in C#][quick-sort-article-issue]
-- :warning: [Quine in C#][quine-article-issue]
-  - Solution borrowed from [Rosetta Code][rosetta-code-quine]
-- :warning: [Reverse a String in C#][reverse-string-article-issue]
-- :warning: [Roman Numeral Conversion in C#][roman-numeral-article-issue]
-- :warning: [ROT 13 in C#][rot-13-article-issue]
-- :warning: [Selection Sort in C#][selection-sort-article-issue]
-
-## Fun Facts
-
-- Debut: 2000
-- Developer: Microsoft
-- Typing: Static
-
-## References
-
-- [C# Wiki][c-sharp-wiki]
-- [C# Guide][c-sharp-website]
-- [Online C# Compiler][c-sharp-online-editor]
-
-[baklava-repo]: https://github.com/toturkmen/baklava
-[c-sharp-wiki]: https://en.wikipedia.org/wiki/C_Sharp_(programming_language)
-[c-sharp-website]: https://docs.microsoft.com/en-us/dotnet/csharp/
-[c-sharp-online-editor]: https://www.jdoodle.com/compile-c-sharp-online
-[rosetta-code-quine]: https://rosettacode.org/wiki/Quine#C.23
-[trc-c-sharp-docs]: https://sample-programs.therenegadecoder.com/languages/c-sharp/
-
-[hello-world-article]: https://therenegadecoder.com/code/hello-world-in-c-sharp/
-
-[baklava-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/199
-[bubble-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/56
-[capitalize-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/421
-[even-odd-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/55
-[factorial-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/54
-[file-io-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/53
-[fizz-buzz-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/218
-[game-of-life-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/420
-[insertion-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/52
-[lcs-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/75
-[merge-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/51
-[prime-number-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/50
-[quick-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/49
-[quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/48
-[reverse-string-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/259
-[roman-numeral-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/87
-[rot-13-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/47
-[selection-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/46
+- :warning: [Quick Sort in C-sharp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+c-sharp)
+- :warning: [Factorial in C-sharp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+c-sharp)
+- :warning: [Fizz Buzz in C-sharp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+c-sharp)
+- :warning: [Game Of Life in C-sharp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+game+of+life+c-sharp)
+- :warning: [Fibonacci in C-sharp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+c-sharp)
+- :white_check_mark: [Hello World in C-sharp](https://sample-programs.therenegadecoder.com/projects/hello-world/c-sharp)
+- :warning: [Capitalize in C-sharp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+c-sharp)
+- :warning: [Selection Sort in C-sharp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+c-sharp)
+- :warning: [Quine in C-sharp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+c-sharp)
+- :warning: [Bubble Sort in C-sharp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+c-sharp)
+- :warning: [Merge Sort in C-sharp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+c-sharp)
+- :warning: [Reverse String in C-sharp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+c-sharp)
+- :warning: [Roman Numeral in C-sharp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+c-sharp)
+- :warning: [File I O in C-sharp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+i+o+c-sharp)
+- :warning: [Even Odd in C-sharp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+c-sharp)
+- :warning: [Convex Hull in C-sharp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+convex+hull+c-sharp)
+- :warning: [Prime Number in C-sharp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+c-sharp)
+- :warning: [Insertion Sort in C-sharp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+c-sharp)
+- :warning: [Rot13 in C-sharp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+c-sharp)
+- :warning: [Sleep Sort in C-sharp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sleep+sort+c-sharp)
+- :warning: [Baklava in C-sharp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+c-sharp)
+- :warning: [Lcs in C-sharp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+lcs+c-sharp)

@@ -1,79 +1,34 @@
-# Sample Programs in C++
+# Sample Programs in C-plus-plus
 
-Welcome to Sample Programs in C++! To find documentation related to the C++ code in this 
-repo, look [here][trc-c-plus-plus-docs].
+Welcome to Sample Programs in C-plus-plus! To find documentation related to the C-plus-plus 
+    code in this repo, look [here](https://sample-programs.therenegadecoder.com/languages/c-plus-plus).
+     Otherwise, below you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-Below, you'll find a list of code snippets in this collection.
-Code snippets preceded by :warning: link to an article request 
-issue while code snippets preceded by :white_check_mark: link
-to an existing article which provides further documentation.
-
-- :warning: [Baklava in C++][baklava-article-issue]
-- :warning: [Binary Search in C++][binary-search-article-issue]
-- :warning: [Bubble Sort in C++][bubble-sort-article-issue]
-- :warning: [Capitalize in C++][capitalize-article-issue]
-- :warning: [Dijkstra in C++][dijkstra-article-issue]
-- :warning: [Even Odd in C++][even-odd-article-issue]
-- :warning: [Factorial in C++][factorial-article-issue]
-- :warning: [Fibonacci in C++][fibonacci-article-issue]
-- :white_check_mark: [File IO in C++][file-io-article]
-- :warning: [Fizz Buzz in C++][fizz-buzz-article-issue]
-- :white_check_mark: [Fractions in C++][fractions-article]
-- :warning: [Game of Life in C++][game-of-life-article-issue]
-- :white_check_mark: [Hello World in C++][hello-world-article]
-- :warning: [Import/Export in C++][import-export-article-issue]
-- :white_check_mark: [Insertion Sort in C++][insertion-sort-article]
-- :warning: [Longest Common Subsequence in C++][lcs-article-issue]
-- :warning: [Merge Sort in C++][merge-sort-article-issue]
-- :warning: [Prime Number in C++][prime-number-article-issue]
-- :warning: [Quick Sort in C++][quick-sort-article-issue]
-- :warning: [Reverse String in C++][reverse-string-article-issue]
-- :warning: [Roman Numeral Conversion in C++][roman-numeral-conversion-article-issue]
-- :warning: [Selection Sort in C++][selection-sort-article-issue]
-
-## Fun Facts
-
-- Debut: 1985
-- Typing: Static
-- Developer: Bjarne Strotrup
-
-## References
-
-- [C++ Core Guidelines][c-plus-plus-guidelines]
-- [C++ Online Compiler][c-plus-plus-online-editor]
-- [C++ Wiki][c-plus-plus-wiki]
-- [C++ Docs][c-plus-plus-docs]
-- [C++ Reference][c-plus-plus-reference]
-
-[c-plus-plus-guidelines]: http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines
-[c-plus-plus-online-editor]: http://cpp.sh/
-[c-plus-plus-wiki]: https://en.wikipedia.org/wiki/C%2B%2B
-[c-plus-plus-docs]: http://www.cplusplus.com/
-[c-plus-plus-reference]: https://en.cppreference.com/w/
-[trc-c-plus-plus-docs]: https://sample-programs.therenegadecoder.com/languages/c-plus-plus/
-
-[file-io-article]: https://therenegadecoder.com/code/file-io-in-c-plus-plus/
-[fractions-article]: https://sample-programs.therenegadecoder.com/projects/fractions/c-plus-plus/
-[hello-world-article]: https://therenegadecoder.com/code/hello-world-in-c-plus-plus/
-[insertion-sort-article]: https://sample-programs.therenegadecoder.com/projects/insertion-sort/c-plus-plus/
-
-[baklava-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/405
-[binary-search-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/407
-[bubble-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/406
-[capitalize-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/408
-[dijkstra-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/409
-[even-odd-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/410
-[factorial-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/411
-[fibonacci-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/172
-[fizz-buzz-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/412
-[game-of-life-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/413
-[import-export-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/396
-[lcs-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/414
-[merge-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/417
-[prime-number-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/418
-[quick-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/415
-[reverse-string-article-issue]: https://github.com/TheRenegadeCoder/sample-programs/issues/419
-[roman-numeral-conversion-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/419
-[selection-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/416
+- :white_check_mark: [Fractions in C-plus-plus](https://sample-programs.therenegadecoder.com/projects/fractions/c-plus-plus)
+- :white_check_mark: [Hello World in C-plus-plus](https://sample-programs.therenegadecoder.com/projects/hello-world/c-plus-plus)
+- :warning: [Lcs in C-plus-plus](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+lcs+c-plus-plus)
+- :warning: [Bubble Sort in C-plus-plus](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+c-plus-plus)
+- :warning: [Import in C-plus-plus](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+import+c-plus-plus)
+- :warning: [Fizz Buzz in C-plus-plus](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+c-plus-plus)
+- :warning: [Merge Sort in C-plus-plus](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+c-plus-plus)
+- :warning: [Even Odd in C-plus-plus](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+c-plus-plus)
+- :warning: [Binary Search in C-plus-plus](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+binary+search+c-plus-plus)
+- :warning: [Dijkstra in C-plus-plus](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+dijkstra+c-plus-plus)
+- :warning: [Roman Numeral in C-plus-plus](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+c-plus-plus)
+- :warning: [Prime Number in C-plus-plus](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+c-plus-plus)
+- :warning: [Capitalize in C-plus-plus](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+c-plus-plus)
+- :warning: [Quick Sort in C-plus-plus](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+c-plus-plus)
+- :warning: [Fibonacci in C-plus-plus](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+c-plus-plus)
+- :white_check_mark: [File Io in C-plus-plus](https://sample-programs.therenegadecoder.com/projects/file-io/c-plus-plus)
+- :warning: [Factorial in C-plus-plus](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+c-plus-plus)
+- :white_check_mark: [Insertion Sort in C-plus-plus](https://sample-programs.therenegadecoder.com/projects/insertion-sort/c-plus-plus)
+- :warning: [Export in C-plus-plus](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+export+c-plus-plus)
+- :warning: [Reverse String in C-plus-plus](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+c-plus-plus)
+- :warning: [Baklava in C-plus-plus](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+c-plus-plus)
+- :warning: [Selection Sort in C-plus-plus](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+c-plus-plus)
+- :warning: [Game Of Life in C-plus-plus](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+game+of+life+c-plus-plus)

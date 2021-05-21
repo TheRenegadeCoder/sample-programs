@@ -1,22 +1,15 @@
-# Sample Programs in Visual Basic .NET (VB.NET)
+# Sample Programs in Visual-basic
 
-Welcome to Sample Programs in Visual Basic .NET
+Welcome to Sample Programs in Visual-basic! To find documentation related to the Visual-basic 
+    code in this repo, look [here](https://sample-programs.therenegadecoder.com/languages/visual-basic).
+     Otherwise, below you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Bubble Sort integers in Visual Basic .NET](https://github.com/jrg94/sample-programs/issues/1974)
-- [Hello World in Visual Basic .NET](https://therenegadecoder.com/code/hello-world-in-visual-basic-net)
-- [FizzBuzz in Visual Basic .NET](https://github.com/jrg94/sample-programs/issues/1986)
-- [Reverse String in Visual Basic .NET (No Emoji Support)](https://github.com/jrg94/sample-programs/issues/132)
-
-## Fun Facts
-
-- Debut: 2001
-- Developer: Microsoft
-- Typing: Static (both strong and weak, both safe and unsafe)
-
-## References
-
-- [Visual Basic .NET Wiki](https://en.wikipedia.org/wiki/Visual_Basic_.NET)
-- [Visual Basic Guide](https://docs.microsoft.com/en-us/dotnet/visual-basic/programming-guide/)
-- [Online Visual Basic .NET Compiler](https://dotnetfiddle.net/)
+- :warning: [Fizz Buzz in Visual-basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+visual-basic)
+- :warning: [Bubble Sort in Visual-basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+visual-basic)
+- :warning: [Reverse String in Visual-basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+visual-basic)
+- :white_check_mark: [Hello World in Visual-basic](https://sample-programs.therenegadecoder.com/projects/hello-world/visual-basic)

@@ -1,34 +1,20 @@
 # Sample Programs in Scala
 
-Welcome to Sample Programs in Scala!
+Welcome to Sample Programs in Scala! To find documentation related to the Scala 
+    code in this repo, look [here](https://sample-programs.therenegadecoder.com/languages/scala).
+     Otherwise, below you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Bubble Sort in Scala](https://github.com/TheRenegadeCoder/sample-programs/issues/1033)
-- [Hello World in Scala][1]
-- Fibonacci in Scala
-- [File IO in Scala](https://github.com/TheRenegadeCoder/sample-programs/issues/1031)
-- [Fizz Buzz in Scala][2]
-- [Game of Life in Scala](https://github.com/TheRenegadeCoder/sample-programs/issues/1035)
-- [Quicksort in Scala](https://github.com/TheRenegadeCoder/sample-programs/issues/1034)
-- [Reverse String in Scala](https://github.com/TheRenegadeCoder/sample-programs/issues/1032)
-- [Factorial in Scala](https://github.com/TheRenegadeCoder/sample-programs-website/issues/332)
-## Fun Facts
-
-- Debut: 2004
-- Typing: Static
-- License: BSD 3-Clause
-
-## References
-
-- [Scala Wiki][3]
-- [Scala Docs][4]
-- [Scala GitHub][5]
-- [Online Scala Editor][6]
-
-[1]: https://therenegadecoder.com/code/hello-world-in-scala
-[2]: https://github.com/TheRenegadeCoder/sample-programs/issues/521
-[3]: https://en.wikipedia.org/wiki/Scala_(programming_language)
-[4]: https://www.scala-lang.org
-[5]: https://github.com/scala/scala
-[6]: https://scastie.scala-lang.org
+- :warning: [Fibonacci in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+scala)
+- :warning: [Factorial in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+scala)
+- :warning: [Quick Sort in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+scala)
+- :warning: [Reverse String in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+scala)
+- :white_check_mark: [Hello World in Scala](https://sample-programs.therenegadecoder.com/projects/hello-world/scala)
+- :white_check_mark: [File Io in Scala](https://sample-programs.therenegadecoder.com/projects/file-io/scala)
+- :warning: [Game Of Life in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+game+of+life+scala)
+- :warning: [Bubble Sort in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+scala)
+- :warning: [Fizz Buzz in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+scala)

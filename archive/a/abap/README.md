@@ -1,25 +1,10 @@
-# Sample Programs in ABAP
+# Sample Programs in Abap
 
-Welcome to Sample Programs in ABAP!
+Welcome to Sample Programs in Abap! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-Below, you'll find a list of code snippets in this collection.
-Code snippets preceded by :warning: link to an article request 
-issue while code snippets preceded by :white_check_mark: link
-to an existing article which provides further documentation.
-
-- :warning: [Hello World in ABAP][hello-world-article-issue]
-  - Borrowed from [Wikipedia](https://en.wikipedia.org/wiki/ABAP#Hello_world)
-
-## Fun Facts
-
-- Debut: 1983
-- Influenced by: Objective-C, COBOL and SQL
-
-## References
-
-- [ABAP Wiki](https://en.wikipedia.org/wiki/ABAP)
-- [ABAP Official Website](https://www.sap.com/community/topics/abap.html)
-
-[hello-world-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/158
+- :warning: [Hello World in Abap](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+abap)

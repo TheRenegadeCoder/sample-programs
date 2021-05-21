@@ -1,31 +1,14 @@
 # Sample Programs in Brainfuck
 
-Welcome to Sample Programs in Brainfuck!
+Welcome to Sample Programs in Brainfuck! To find documentation related to the Brainfuck 
+    code in this repo, look [here](https://sample-programs.therenegadecoder.com/languages/brainfuck).
+     Otherwise, below you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in Brainfuck][1]
-- [Reverse a String in Brainfuck][2]
-- [Fizz Buzz in Brainfuck][3]
-    * [Brainfuck Text Generator][4] was used to generate the "Fizz" and "Buzz" strings
-    * The [Modulus Algorithm][5] from [esolangs.org][6] was used
-    * Procedure for printing a number by [StackOverflow user itchyny][7]
-
-## Fun Facts
-
-- Debut: 1993
-
-## References
-
-- [Brainfuck Wiki][8]
-- [Brainfuck Online Editor][9]
-
-[1]: https://therenegadecoder.com/code/hello-world-in-brainfuck/
-[2]: https://github.com/TheRenegadeCoder/sample-programs/issues/362
-[3]: https://github.com/TheRenegadeCoder/sample-programs/issues/365
-[4]: http://copy.sh/brainfuck/text.html
-[5]: https://esolangs.org/wiki/Brainfuck_algorithms#Modulus_algorithm
-[6]: https://esolangs.org
-[7]: https://stackoverflow.com/a/13946554
-[8]: https://en.wikipedia.org/wiki/Brainfuck
-[9]: https://tio.run/#brainfuck
+- :warning: [Fizz Buzz in Brainfuck](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+brainfuck)
+- :white_check_mark: [Hello World in Brainfuck](https://sample-programs.therenegadecoder.com/projects/hello-world/brainfuck)
+- :warning: [Reverse String in Brainfuck](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+brainfuck)

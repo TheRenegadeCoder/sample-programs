@@ -1,19 +1,10 @@
 # Sample Programs in Wu
 
-Welcome to Sample Programs in Wu!
+Welcome to Sample Programs in Wu! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in Wu](https://github.com/jrg94/sample-programs/issues/294)
-
-## Fun Facts
-
-- Debut: 2018
-- Developer: nilq, fuzzylitchi, evolbug
-- Typing: Static
-- License: MIT License
-
-## References
-
-- [Wu Docs](https://wu-lang.gitbook.io/guide/)
-- [Wu GitHub](https://github.com/wu-lang/wu)
+- :warning: [Hello World in Wu](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+wu)

@@ -1,74 +1,36 @@
 # Sample Programs in C
 
-Welcome to Sample Programs in C!
+Welcome to Sample Programs in C! To find documentation related to the C 
+    code in this repo, look [here](https://sample-programs.therenegadecoder.com/languages/c).
+     Otherwise, below you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-Below, you'll find a list of code snippets in this collection. Code snippets preceded by ⚠️ link to an 
-article request issue while code snippets preceded by ✅ link to an existing article which provides 
-further documentation.
-
-- ✅ [Baklava in C][baklava-article]
-  - Solution borrowed from @toturkmen and @ahmeturganci via the [baklava repo][baklava-repo]
-- ⚠️ [Bubble Sort][bubble-sort-article-issue]
-- ⚠️ [Capitalize in C][capitalize-article-issue]
-- ⚠️ [Convex Hull in C][convex-hull-article-issue]
-- ✅ [Even Odd in C][even-odd-article]
-- ⚠️ [Factorial in C][factorial-article-issue]
-- ⚠️ [Fibonacci in C][fibonacci-article-issue]
-- ⚠️ [File IO in C][file-io-article-issue]
-- ✅ [Fizz Buzz in C][fizz-buzz-article]
-- ⚠️ [Game of Life in C][game-of-life-article-issue]
-- ✅ [Hello World in C][hello-world-article]
-- ⚠️ [Insertion Sort in C][insertion-sort-article-issue]
-- ⚠️ [Least Common Subsequence in C][lcs-article-issue]
-- ⚠️ [Merge Sort in C][merge-sort-article-issue]
-- ⚠️ [Minimum Spanning Tree][minimum-spanning-tree-article-issue]
-- ⚠️ [Prime Numbers in C][prime-numbers-article-issue]
-- ⚠️ [Quick Sort in C][quick-sort-article-issue]
-- ⚠️ [Quine in C][quine-article-issue]
-- ✅ [Reverse String in C][reverse-string-article]
-- ⚠️ [Roman Numeral Conversion in C][roman-numeral-article-issue]
-- ⚠️ [ROT-13 in C][rot-13-article-issue]
-- ⚠️ [Selection Sort in C][selection-sort-article-issue]
-
-## Fun Facts
-
-- Debut: 1972
-- Developer: Bell Labs
-- Typing: Static
-
-## References
-
-- [C Wiki][c-wiki]
-- [C Reference Manual][c-manual]
-- [C Online Compiler][c-online-manual]
-
-[baklava-repo]: https://github.com/toturkmen/baklava
-[c-manual]: https://www.gnu.org/software/gnu-c-manual/
-[c-online-manual]: https://www.onlinegdb.com/online_c_compiler
-[c-wiki]: https://en.wikipedia.org/wiki/C_(programming_language)
-
-[baklava-article]: https://sample-programs.therenegadecoder.com/projects/baklava/c/
-[even-odd-article]: https://sample-programs.therenegadecoder.com/projects/even-odd/c/
-[fizz-buzz-article]: https://sample-programs.therenegadecoder.com/projects/fizz-buzz/c/
-[hello-world-article]: https://sample-programs.therenegadecoder.com/projects/hello-world/c/
-[reverse-string-article]: https://sample-programs.therenegadecoder.com/projects/reverse-a-string/c/
-
-[bubble-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/37
-[capitalize-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/422
-[convex-hull-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/78
-[factorial-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/77
-[fibonacci-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/176
-[file-io-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/203
-[game-of-life-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/211
-[insertion-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/425
-[lcs-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/428
-[merge-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/424
-[minimum-spanning-tree-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/429
-[prime-numbers-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/423
-[quick-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/431
-[quine-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/426
-[roman-numeral-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/432
-[rot-13-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/433
-[selection-sort-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/427
+- :warning: [File Io in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+io+c)
+- :warning: [Export in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+export+c)
+- :warning: [Selection Sort in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+c)
+- :white_check_mark: [Hello World in C](https://sample-programs.therenegadecoder.com/projects/hello-world/c)
+- :warning: [Reverse String in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+c)
+- :warning: [Convex Hull in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+convex+hull+c)
+- :warning: [Insertion Sort in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+c)
+- :warning: [Fibonacci in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+c)
+- :white_check_mark: [Baklava in C](https://sample-programs.therenegadecoder.com/projects/baklava/c)
+- :warning: [Roman Numeral in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+c)
+- :warning: [Capitalize in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+c)
+- :warning: [Game Of Life in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+game+of+life+c)
+- :warning: [Factorial in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+c)
+- :white_check_mark: [Fizz Buzz in C](https://sample-programs.therenegadecoder.com/projects/fizz-buzz/c)
+- :warning: [Minimum Spanning Tree in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+minimum+spanning+tree+c)
+- :white_check_mark: [Even Odd in C](https://sample-programs.therenegadecoder.com/projects/even-odd/c)
+- :warning: [Quick Sort in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+c)
+- :warning: [Bubble Sort in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+c)
+- :warning: [Lcs in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+lcs+c)
+- :warning: [Prime Number in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+c)
+- :warning: [Quine in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+c)
+- :warning: [Import in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+import+c)
+- :warning: [Prime Num in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+num+c)
+- :warning: [Rot 13 in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot+13+c)
+- :warning: [Merge Sort in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+c)

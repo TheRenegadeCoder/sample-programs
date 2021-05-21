@@ -1,25 +1,16 @@
-# Sample Programs in CoffeeScript
+# Sample Programs in Coffeescript
 
-Welcome to Sample Programs in CoffeeScript!
+Welcome to Sample Programs in Coffeescript! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Capitalize First Letter in CoffeeScript](https://github.com/TheRenegadeCoder/sample-programs/issues/1325)
-- [Factorial in CoffeeScript](https://github.com/TheRenegadeCoder/sample-programs/issues/1316)
-- [File IO in CoffeeScript](https://github.com/TheRenegadeCoder/sample-programs/issues/1317)
-- [FizzBuzz in CoffeeScript](https://github.com/TheRenegadeCoder/sample-programs/issues/1313)
-- [Hello World in CoffeeScript](https://github.com/TheRenegadeCoder/sample-programs/issues/924)
-- [Quine in CoffeeScript](https://github.com/TheRenegadeCoder/sample-programs/issues/1309)
-- [Baklava in CoffeeScript](https://github.com/TheRenegadeCoder/sample-programs/pull/2184)
-- [Even Odd in CoffeeScript](https://github.com/TheRenegadeCoder/sample-programs/pull/2193)
-
-## Fun Facts
-
-- Debut: 2009
-
-## References
-
-- [CoffeeScript Wiki](https://en.wikipedia.org/wiki/CoffeeScript)
-- [CoffeeScript GitHub](https://github.com/jashkenas/coffeescript/)
-- [CoffeeScript Online Editor](https://www.jdoodle.com/compile-coffeescript-online)
-- [CoffeeScript Documentation](https://coffeescript.org/)
+- :warning: [Factorial in Coffeescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+coffeescript)
+- :warning: [Baklava in Coffeescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+coffeescript)
+- :warning: [Capitalize First Letter in Coffeescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+first+letter+coffeescript)
+- :warning: [Hello World in Coffeescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+coffeescript)
+- :warning: [Even Odd in Coffeescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+coffeescript)
+- :warning: [Quine in Coffeescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+coffeescript)
+- :warning: [Fizzbuzz in Coffeescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizzbuzz+coffeescript)

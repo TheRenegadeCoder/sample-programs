@@ -1,18 +1,12 @@
 # Sample Programs in Red
 
-Welcome to Sample Programs in Red!
+Welcome to Sample Programs in Red! To find documentation related to the Red 
+    code in this repo, look [here](https://sample-programs.therenegadecoder.com/languages/red).
+     Otherwise, below you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in Red](https://therenegadecoder.com/code/hello-world-in-red/)
-
-## Fun Facts
-
-- Debut: 2011
-- Developer: Nenad Rakocevic
-
-## References
-
-- [Red Wiki](https://en.wikipedia.org/wiki/Red_(programming_language))
-- [Red Docs](https://www.red-lang.org/)
-- [Red GitHub](https://github.com/red/red)
+- :white_check_mark: [Hello World in Red](https://sample-programs.therenegadecoder.com/projects/hello-world/red)

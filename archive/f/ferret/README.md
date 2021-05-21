@@ -1,25 +1,10 @@
 # Sample Programs in Ferret
 
-Welcome to Sample Programs in Ferret!
+Welcome to Sample Programs in Ferret! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-Ferret takes in Clojure files and compiles them to C++.
-
-## Sample Programs
-
-- [Hello World in Ferret](https://github.com/TheRenegadeCoder/sample-programs/issues/504)
-
-## Running instructions
-
-```bash
-$ ./ferret -i hello-world.clj
-$ g++ -std=c++11 -pthread hello-world.cpp -o hello-world
-$ ./hello-world
-Hello, World!
-```
-## Fun Facts
-
-- License: BSD 2 Clause License
-
-## References
-
-- [Ferret](https://ferret-lang.org/)
+- :warning: [Hello World in Ferret](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+ferret)

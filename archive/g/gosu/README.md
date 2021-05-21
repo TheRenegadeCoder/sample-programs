@@ -1,17 +1,10 @@
 # Sample Programs in Gosu
 
-Welcome to Sample Programs in Gosu!
+Welcome to Sample Programs in Gosu! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in Gosu](https://github.com/TheRenegadeCoder/sample-programs/issues/196)
-
-## Fun Facts
-
-- Debut: 2010
-
-## References
-
-- [Gosu Docs](https://gosu-lang.github.io/docs.html)
-- [Gosu Wiki](https://en.wikipedia.org/wiki/Gosu_(programming_language))
-- [Gosu GitHub](https://github.com/gosu-lang/gosu-lang)
+- :warning: [Hello World in Gosu](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+gosu)

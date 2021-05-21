@@ -1,18 +1,12 @@
 # Sample Programs in Wren
 
-Welcome to Sample Programs in Wren!
+Welcome to Sample Programs in Wren! To find documentation related to the Wren 
+    code in this repo, look [here](https://sample-programs.therenegadecoder.com/languages/wren).
+     Otherwise, below you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in Wren](https://therenegadecoder.com/code/hello-world-in-wren/)
-
-## Fun Facts
-
-- Debut: 2013
-- License: MIT
-
-## References
-
-- [Wren Docs](http://wren.io/)
-- [Wren GitHub](https://github.com/munificent/wren)
-- [Wren Online Editor](http://ppvk.github.io/wren-nest/)
+- :white_check_mark: [Hello World in Wren](https://sample-programs.therenegadecoder.com/projects/hello-world/wren)

@@ -1,17 +1,10 @@
 # Sample Programs in Emojicode
 
-Welcome to Sample Programs in Emojicode!
+Welcome to Sample Programs in Emojicode! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in Emojicode](https://github.com/jrg94/sample-programs/issues/134)
-
-## Fun Facts
-
-- Debut: 2015
-- License: Artistic 2.0
-
-## References
-
-- [Emojicode Official Website](https://www.emojicode.org/)
-- [Emojicode GitHub](https://github.com/emojicode/emojicode)
+- :white_check_mark: [Hello World in Emojicode](https://sample-programs.therenegadecoder.com/projects/hello-world/emojicode)

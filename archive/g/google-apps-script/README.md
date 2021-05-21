@@ -1,17 +1,12 @@
-# Sample Programs in Google Apps Script
+# Sample Programs in Google-apps-script
 
-Welcome to Sample Programs in Google Apps Script!
+Welcome to Sample Programs in Google-apps-script! To find documentation related to the Google-apps-script 
+    code in this repo, look [here](https://sample-programs.therenegadecoder.com/languages/google-apps-script).
+     Otherwise, below you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in Google Apps Script](https://therenegadecoder.com/code/hello-world-in-google-apps-script/)
-
-## Fun Facts
-
-- Debut: 2009
-- Developer: Google
-
-## References
-
-- [Google Apps Script Wiki](https://en.wikipedia.org/wiki/Google_Apps_Script)
-- [Google Apps Script Official Website](https://developers.google.com/apps-script/)
+- :white_check_mark: [Hello World in Google-apps-script](https://sample-programs.therenegadecoder.com/projects/hello-world/google-apps-script)

@@ -1,16 +1,10 @@
 # Sample Programs in Charm
 
-Welcome to Sample Programs in Charm!
+Welcome to Sample Programs in Charm! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in Charm](https://github.com/shivamkchoudhary/sample-programs/blob/master/archive/c/charm/hello-world.charm)
-
-## Fun Facts
-
-- Debut: 2017
-
-## References
-
-- [Charm Wiki](https://esolangs.org/wiki/Charm)
-- [Charm Github](https://github.com/DataKinds/charm)
+- :warning: [Hello World in Charm](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+charm)

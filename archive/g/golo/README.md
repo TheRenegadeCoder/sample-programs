@@ -1,19 +1,10 @@
 # Sample Programs in Golo
 
-Welcome to Sample Programs in Golo!
+Welcome to Sample Programs in Golo! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-- [Hello World in Golo](https://github.com/jrg94/sample-programs/issues/219)
-
-## Fun Facts
-
-- Debut: 2012
-- Typing: Dynamic
-- License: Eclipse Public 1.0
-
-## References
-
-- [Golo Official Website](http://golo-lang.org/)
-- [Golo Wiki](https://en.wikipedia.org/wiki/Golo_(programming_language))
-- [Golo GitHub](https://github.com/eclipse/golo-lang)
+- :warning: [Hello World in Golo](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+golo)

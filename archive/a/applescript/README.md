@@ -1,28 +1,10 @@
-# Sample Programs in AppleScript
+# Sample Programs in Applescript
 
-Welcome to Sample Programs in AppleScript!
+Welcome to Sample Programs in Applescript! Below, you'll find a list of code snippets in this collection. 
+    Code snippets preceded by :warning: link to a GitHub 
+    issue query featuring a possible article request issue. If an article request issue 
+    doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded 
+    by :white_check_mark: link to an existing article which provides further documentation.
+    
 
-## Sample Programs
-
-Below, you'll find a list of code snippets in this collection.
-Code snippets preceded by :warning: link to an article request 
-issue while code snippets preceded by :white_check_mark: link
-to an existing article which provides further documentation.
-
-- :warning: [Hello World in AppleScript][hello-world-article-issue]
-
-## Fun Facts
-
-- Debut: 1993
-- Typing: Dynamic
-- License: Proprietary
-
-## References
-
-- [AppleScript Docs][applescript-docs]
-- [AppleScript Wiki][applescript-wiki]
-
-[applescript-docs]: https://developer.apple.com/library/content/documentation/AppleScript/Conceptual/AppleScriptLangGuide/introduction/ASLR_intro.html
-[applescript-wiki]: https://en.wikipedia.org/wiki/AppleScript
-
-[hello-world-article-issue]: https://github.com/TheRenegadeCoder/sample-programs-website/issues/256
+- :warning: [Hello World in Applescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+applescript)
