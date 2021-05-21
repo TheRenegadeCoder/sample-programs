@@ -38,6 +38,16 @@ a part of my website, [The Renegade Coder][10]. If you're looking to support The
 
 Thanks for your support! :relaxed:
 
+## Special Thanks
+
+Many of the solutions in this repo were created in collaboration with folks
+trying to accomplish similar goals. Special thanks to the following folks
+for sharing their work with our repo:
+
+- [@auroq][auroq-profile] for their development of [Glotter][glotter-repo]
+- [@joesephwegner][joesephwegner-profile] for their [ineverylang Repo][ineverylang-repo]
+- [@toturkmen][toturkmen-profile] for their [Baklava Repo][baklava-repo]
+
 [1]: http://www.100daysofcode.com/
 [2]: https://therenegadecoder.com/code/hello-world-in-every-language/
 [3]: https://therenegadecoder.com/code/reverse-a-string-in-every-language/
@@ -59,5 +69,11 @@ Thanks for your support! :relaxed:
 [19]: https://therenegadecoder.com/code/python-code-snippets-for-everyday-problems/
 [20]: https://sample-programs.therenegadecoder.com/projects/
 
+[auroq-profile]: https://github.com/auroq
+[baklava-repo]: https://github.com/toturkmen/baklava
+[glotter-repo]: https://github.com/auroq/glotter
+[ineverylang-repo]: https://github.com/josephwegner/ineverylang
+[joesephwegner-profile]: https://github.com/josephwegner
 [sample-programs-news-series]: https://therenegadecoder.com/series/sample-programs-repo-news/
 [sample-programs-on-the-renegade-coder]: https://therenegadecoder.com/code/sample-programs-in-every-language/
+[toturkmen-profile]: https://github.com/toturkmen
