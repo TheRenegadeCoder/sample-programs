@@ -36,7 +36,6 @@ jobs:
         
     - name: Generate READMEs
       run: |
-        pip install generate_docs==2.2.0
         wikir archive/
         
     - name: Commit READMEs
