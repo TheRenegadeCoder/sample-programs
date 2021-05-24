@@ -10,12 +10,7 @@ For more information please refer to our [contributing documentation][contributi
 
 - [ ] I fixed #your-issue-number-here
 - [ ] I named the pull request using `Add {PROJECT} in {LANGUAGE}` format
-- [ ] I created/updated the language README (see [contributing documentation][contributing-readme])
-  - [ ] I added the sample program name to the README
-  - [ ] I added fun facts (i.e. debut developer, typing, etc.)
-  - [ ] I added reference link(s) to the README
-  - [ ] I added solution citations when necessary (see [plagiarism][contributing-plagiarism])
-
+  
   
 ## I Am Adding a New Code Snippet in a New Language
 
@@ -23,11 +18,6 @@ For more information please refer to our [contributing documentation][contributi
 - [ ] I named the pull request using `Add {PROJECT} in {LANGUAGE}` format
 - [ ] I added a `testinfo.yml` files (see [contributing documentation][contributing-new-language])
   - [ ] I used an officially supported docker image or one that I personally trust
-- [ ] I created/updated the language README (see [contributing documentation][contributing-readme])
-  - [ ] I added the sample program name to the README
-  - [ ] I added fun facts (i.e. debut developer, typing, etc.)
-  - [ ] I added reference link(s) to the README
-  - [ ] I added solution citations when necessary (see [plagiarism][contributing-plagiarism])
   
 
 ## I Am Adding New Tests for a Project
