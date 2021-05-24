@@ -1,0 +1,44 @@
+# This workflow generates READMEs for all languages
+
+name: README Generation
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+        
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install generate_docs==2.2.0
+        
+    - name: Generate READMEs
+      run: |
+        wikir archive/
+        
+    - name: Commit READMEs
+      uses: EndBug/add-and-commit@v5 
+      with:
+        message: |
+          Generated READMEs from sources
+          
+          
+          on-behalf-of: @TheRenegadeCoder <jeremy.grifski@therenegadecoder.com>
+        author_name: Jeremy Grifski
+        author_email: jeremy.grifski@therenegadecoder.com
+        
+      env:
+        # This is necessary in order to push a commit to the repo
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged

@@ -1,4 +1,4 @@
-# This workflow will install Python dependencies, build READMEs, download Docker images, and test every script in the repo
+# This workflow will install Python dependencies, download Docker images, and test every script in the repo
 
 name: Test Suite
 
@@ -33,23 +33,3 @@ jobs:
     - name: Test All Sample Programs
       run: |
         python runner.py test
-        
-    - name: Generate READMEs
-      run: |
-        pip install generate_docs==2.2.0
-        wikir archive/
-        
-    - name: Commit READMEs
-      uses: EndBug/add-and-commit@v5 
-      with:
-        message: |
-          Generated READMEs from sources [skip ci]
-          
-          
-          on-behalf-of: @TheRenegadeCoder <jeremy.grifski@therenegadecoder.com>
-        author_name: Jeremy Grifski
-        author_email: jeremy.grifski@therenegadecoder.com
-        
-      env:
-        # This is necessary in order to push a commit to the repo
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
