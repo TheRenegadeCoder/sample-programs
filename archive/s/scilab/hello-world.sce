@@ -1,0 +1,2 @@
+clc
+disp('Hello, World!')
