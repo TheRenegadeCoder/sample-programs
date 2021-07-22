@@ -6,10 +6,10 @@ Welcome to Sample Programs in Racket! To find documentation related to the Racke
 
 Below, you'll find a list of code snippets in this collection. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation.
 
-- :warning: [Factorial in Racket](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+racket) | [Requirements](https://sample-programs.therenegadecoder.com/projects/factorial)
-- :warning: [Fibonacci in Racket](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+racket) | [Requirements](https://sample-programs.therenegadecoder.com/projects/fibonacci)
-- :warning: [Fizz Buzz in Racket](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+racket) | [Requirements](https://sample-programs.therenegadecoder.com/projects/fizz-buzz)
-- :white_check_mark: [Hello World in Racket](https://sample-programs.therenegadecoder.com/projects/hello-world/racket) | [Requirements](https://sample-programs.therenegadecoder.com/projects/hello-world)
+- :white_check_mark: [Factorial in Racket](https://sample-programs.therenegadecoder.com/projects/factorial/racket) [[Requirements](https://sample-programs.therenegadecoder.com/projects/factorial)]
+- :white_check_mark: [Fibonacci in Racket](https://sample-programs.therenegadecoder.com/projects/fibonacci/racket) [[Requirements](https://sample-programs.therenegadecoder.com/projects/fibonacci)]
+- :white_check_mark: [Fizz Buzz in Racket](https://sample-programs.therenegadecoder.com/projects/fizz-buzz/racket) [[Requirements](https://sample-programs.therenegadecoder.com/projects/fizz-buzz)]
+- :warning: [Hello World in Racket](https://sample-programs.therenegadecoder.com/projects/hello-world/racket) [[Requirements](https://sample-programs.therenegadecoder.com/projects/hello-world)]
 
 ## Testing
 
@@ -17,13 +17,13 @@ This language currently does not feature testing. If you'd like to help in the e
 
 ```yml
 folder:
-	extension:
-	naming:
+  extension:
+  naming:
 
 container:
-	image:
-	tag:
-	cmd:
+  image:
+  tag:
+  cmd:
 ```
 
 See the [Glotter project](https://github.com/auroq/glotter) for more information on how to create a testinfo file.

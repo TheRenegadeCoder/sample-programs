@@ -6,12 +6,12 @@ Welcome to Sample Programs in Coffeescript!
 
 Below, you'll find a list of code snippets in this collection. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation.
 
-- :warning: [Baklava in Coffeescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+coffeescript) | [Requirements](https://sample-programs.therenegadecoder.com/projects/baklava)
-- :warning: [Even Odd in Coffeescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+coffeescript) | [Requirements](https://sample-programs.therenegadecoder.com/projects/even-odd)
-- :warning: [Factorial in Coffeescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+coffeescript) | [Requirements](https://sample-programs.therenegadecoder.com/projects/factorial)
-- :warning: [Fizz Buzz in Coffeescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+coffeescript) | [Requirements](https://sample-programs.therenegadecoder.com/projects/fizz-buzz)
-- :warning: [Hello World in Coffeescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+coffeescript) | [Requirements](https://sample-programs.therenegadecoder.com/projects/hello-world)
-- :warning: [Quine in Coffeescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+coffeescript) | [Requirements](https://sample-programs.therenegadecoder.com/projects/quine)
+- :white_check_mark: [Baklava in Coffeescript](https://sample-programs.therenegadecoder.com/projects/baklava/coffeescript) [[Requirements](https://sample-programs.therenegadecoder.com/projects/baklava)]
+- :white_check_mark: [Even Odd in Coffeescript](https://sample-programs.therenegadecoder.com/projects/even-odd/coffeescript) [[Requirements](https://sample-programs.therenegadecoder.com/projects/even-odd)]
+- :white_check_mark: [Factorial in Coffeescript](https://sample-programs.therenegadecoder.com/projects/factorial/coffeescript) [[Requirements](https://sample-programs.therenegadecoder.com/projects/factorial)]
+- :white_check_mark: [Fizz Buzz in Coffeescript](https://sample-programs.therenegadecoder.com/projects/fizz-buzz/coffeescript) [[Requirements](https://sample-programs.therenegadecoder.com/projects/fizz-buzz)]
+- :white_check_mark: [Hello World in Coffeescript](https://sample-programs.therenegadecoder.com/projects/hello-world/coffeescript) [[Requirements](https://sample-programs.therenegadecoder.com/projects/hello-world)]
+- :white_check_mark: [Quine in Coffeescript](https://sample-programs.therenegadecoder.com/projects/quine/coffeescript) [[Requirements](https://sample-programs.therenegadecoder.com/projects/quine)]
 
 ## Testing
 
