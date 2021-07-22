@@ -6,7 +6,7 @@ Welcome to Sample Programs in Wren! To find documentation related to the Wren co
 
 Below, you'll find a list of code snippets in this collection. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation.
 
-- :white_check_mark: [Hello World in Wren](https://sample-programs.therenegadecoder.com/projects/hello-world/wren) | [Requirements](https://sample-programs.therenegadecoder.com/projects/hello-world)
+- :white_check_mark: [Hello World in Wren](https://sample-programs.therenegadecoder.com/projects/hello-world/wren) [[Requirements](https://sample-programs.therenegadecoder.com/projects/hello-world)]
 
 ## Testing
 
@@ -14,13 +14,13 @@ This language currently does not feature testing. If you'd like to help in the e
 
 ```yml
 folder:
-	extension:
-	naming:
+  extension:
+  naming:
 
 container:
-	image:
-	tag:
-	cmd:
+  image:
+  tag:
+  cmd:
 ```
 
 See the [Glotter project](https://github.com/auroq/glotter) for more information on how to create a testinfo file.
