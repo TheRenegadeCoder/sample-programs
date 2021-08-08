@@ -22,11 +22,10 @@ jobs:
     - name: Install Dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install generate_docs==2.5.2
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
         
     - name: Generate READMEs
-      run: |
-        wikir archive/
+      run: ronbun archive/ --log=DEBUG
         
     - name: Commit READMEs
       uses: EndBug/add-and-commit@v5 
