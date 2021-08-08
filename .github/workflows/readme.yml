@@ -31,7 +31,7 @@ jobs:
       uses: EndBug/add-and-commit@v5 
       with:
         message: |
-          Generated READMEs from sources
+          Generated READMEs from sources using Ronbun
           
           
           on-behalf-of: @TheRenegadeCoder <jeremy.grifski@therenegadecoder.com>
