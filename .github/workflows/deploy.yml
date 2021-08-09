@@ -32,7 +32,7 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
         
     - name: Generate wiki
-      run: jisho main/archive
+      run: jisho main/archive --log=DEBUG
 
     - name: Commit wiki
       continue-on-error: true
