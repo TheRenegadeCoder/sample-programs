@@ -13,7 +13,6 @@ Below, you'll find a list of code snippets in this collection. Code snippets pre
 - :warning: [Fibonacci in Dart](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+dart) [[Requirements](https://sample-programs.therenegadecoder.com/projects/fibonacci)]
 - :warning: [Fizz Buzz in Dart](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+dart) [[Requirements](https://sample-programs.therenegadecoder.com/projects/fizz-buzz)]
 - :warning: [Game Of Life in Dart](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+game+of+life+dart) [[Requirements](https://sample-programs.therenegadecoder.com/projects/game-of-life)]
-- :warning: [Game Of Life in Dart](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+game+of+life+dart) [[Requirements](https://sample-programs.therenegadecoder.com/projects/game-of-life)]
 - :white_check_mark: [Hello World in Dart](https://sample-programs.therenegadecoder.com/projects/hello-world/dart) [[Requirements](https://sample-programs.therenegadecoder.com/projects/hello-world)]
 - :warning: [Quick Sort in Dart](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+dart) [[Requirements](https://sample-programs.therenegadecoder.com/projects/quick-sort)]
 - :white_check_mark: [Reverse String in Dart](https://sample-programs.therenegadecoder.com/projects/reverse-string/dart) [[Requirements](https://sample-programs.therenegadecoder.com/projects/reverse-string)]
@@ -32,4 +31,4 @@ See the [Glotter project](https://github.com/auroq/glotter) for more information
 
 ---
 
-This page was generated automatically by the Sample Programs Docs Generator. Find out how to support [this project](https://github.com/TheRenegadeCoder/sample-programs-docs-generator) on Github.
+This page was generated automatically by the Sample Programs READMEs tool. Find out how to support [this project](https://github.com/TheRenegadeCoder/sample-programs-readmes) on Github.

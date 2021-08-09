@@ -40,4 +40,4 @@ See the [Glotter project](https://github.com/auroq/glotter) for more information
 
 ---
 
-This page was generated automatically by the Sample Programs Docs Generator. Find out how to support [this project](https://github.com/TheRenegadeCoder/sample-programs-docs-generator) on Github.
+This page was generated automatically by the Sample Programs READMEs tool. Find out how to support [this project](https://github.com/TheRenegadeCoder/sample-programs-readmes) on Github.

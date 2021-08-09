@@ -6,8 +6,8 @@ Welcome to Sample Programs in Visual Basic! To find documentation related to the
 
 Below, you'll find a list of code snippets in this collection. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation.
 
-- :warning: [Bubble Sort in Visual Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+visual-basic) [[Requirements](https://sample-programs.therenegadecoder.com/projects/bubble-sort)]
-- :warning: [Fizz Buzz in Visual Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+visual-basic) [[Requirements](https://sample-programs.therenegadecoder.com/projects/fizz-buzz)]
+- :warning: [Bubble Sort in Visual Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+visual+basic) [[Requirements](https://sample-programs.therenegadecoder.com/projects/bubble-sort)]
+- :warning: [Fizz Buzz in Visual Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+visual+basic) [[Requirements](https://sample-programs.therenegadecoder.com/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Visual Basic](https://sample-programs.therenegadecoder.com/projects/hello-world/visual-basic) [[Requirements](https://sample-programs.therenegadecoder.com/projects/hello-world)]
 - :white_check_mark: [Reverse String in Visual Basic](https://sample-programs.therenegadecoder.com/projects/reverse-string/visual-basic) [[Requirements](https://sample-programs.therenegadecoder.com/projects/reverse-string)]
 
@@ -30,4 +30,4 @@ See the [Glotter project](https://github.com/auroq/glotter) for more information
 
 ---
 
-This page was generated automatically by the Sample Programs Docs Generator. Find out how to support [this project](https://github.com/TheRenegadeCoder/sample-programs-docs-generator) on Github.
+This page was generated automatically by the Sample Programs READMEs tool. Find out how to support [this project](https://github.com/TheRenegadeCoder/sample-programs-readmes) on Github.
