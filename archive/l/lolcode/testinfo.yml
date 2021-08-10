@@ -1,0 +1,8 @@
+folder:
+  extension: ".lol"
+  naming: "hyphen"
+
+container:
+  image: "esolang/lolcode"
+  tag: "latest"
+  cmd: "lolcode {{ source.name }}{{ source.extension }}"
