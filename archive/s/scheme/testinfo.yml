@@ -3,6 +3,6 @@ folder:
   naming: "hyphen"
 
 container:
-  image: "schemers/gambit"
-  tag: "4"
-  cmd: "gsi {{ source.name }}{{ source.extension }}"
+  image: "schemers/gauche"
+  tag: "0"
+  cmd: "gosh {{ source.name }}{{ source.extension }}"
