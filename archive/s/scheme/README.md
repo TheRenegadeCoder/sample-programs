@@ -14,8 +14,8 @@ Below, you'll find a list of code snippets in this collection. Code snippets pre
 
 The following list shares details about what we're using to test all Sample Programs in Scheme.
 
-- Docker Image: schemers/gambit
-- Docker Tag: 4
+- Docker Image: schemers/gauche
+- Docker Tag: 0
 
 See the [Glotter project](https://github.com/auroq/glotter) for more information on how to create a testinfo file.
 
