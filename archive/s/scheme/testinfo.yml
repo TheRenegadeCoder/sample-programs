@@ -1,0 +1,8 @@
+folder:
+  extension: ".scm"
+  naming: "hyphen"
+
+container:
+  image: "schemers/gambit"
+  tag: "4"
+  cmd: "gsi {{ source.name }}{{ source.extension }}"
