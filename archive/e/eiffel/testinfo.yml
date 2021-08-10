@@ -5,4 +5,5 @@ folder:
 container:
   image: "eiffel/eiffel"
   tag: "20.11"
-  cmd: "eiffel {{ source.name }}{{ source.extension }}"
+  build: "ec {{ source.name }}{{ source.extension }}
+  cmd: "./{{ source.name }}"
