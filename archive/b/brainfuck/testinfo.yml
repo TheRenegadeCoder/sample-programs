@@ -1,0 +1,8 @@
+folder:
+  extension: ".bf"
+  naming: "hyphen"
+
+container:
+  image: "esolang/brainfuck-esotope"
+  tag: "latest"
+  cmd: "brainfuck-esotope {{ source.name }}{{ source.extension }}"
