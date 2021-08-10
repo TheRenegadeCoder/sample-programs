@@ -1,0 +1,8 @@
+folder:
+  extension: ".e"
+  naming: "hyphen"
+
+container:
+  image: "eiffel/eiffel"
+  tag: "20.11"
+  cmd: "eiffel {{ source.name }}{{ source.extension }}"
