@@ -5,5 +5,5 @@ folder:
 container:
   image: "ocaml/ocaml"
   tag: "latest"
-  build: "ocaml -o {{ source.name }} {{ source.name }}{{ source.extension }}"
+  build: "ocamlc -o {{ source.name }} {{ source.name }}{{ source.extension }}"
   cmd: "./{{ source.name }}"
