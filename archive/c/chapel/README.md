@@ -10,18 +10,10 @@ Below, you'll find a list of code snippets in this collection. Code snippets pre
 
 ## Testing
 
-This language currently does not feature testing. If you'd like to help in the efforts to test all of the code in this repo, consider creating a testinfo.yml file with the following information:
+The following list shares details about what we're using to test all Sample Programs in Chapel.
 
-```yml
-folder:
-  extension:
-  naming:
-
-container:
-  image:
-  tag:
-  cmd:
-```
+- Docker Image: chapel/chapel
+- Docker Tag: 1.24.1
 
 See the [Glotter project](https://github.com/auroq/glotter) for more information on how to create a testinfo file.
 
