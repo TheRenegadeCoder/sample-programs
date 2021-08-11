@@ -5,4 +5,4 @@ folder:
 container:
   image: "cromo/moonscript"
   tag: "latest"
-  cmd: "moon {{ source.name }}{ source.extension }}"
+  cmd: "moon {{ source.name }}{{ source.extension }}"
