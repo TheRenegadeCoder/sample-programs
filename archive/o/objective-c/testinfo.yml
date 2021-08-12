@@ -5,5 +5,5 @@ folder:
 container:
   image: "codesignal/objective-c"
   tag: "v9.4.0"
-  build: "gcc -o {{ source.name }} -l objc {{ source.name }}{{ source.extension }}"
+  build: "clang -o {{ source.name }} {{ source.name }}{{ source.extension }}"
   cmd: "./{{ source.name }}"
