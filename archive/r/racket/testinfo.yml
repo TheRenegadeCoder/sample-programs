@@ -3,6 +3,6 @@ folder:
   naming: "hyphen"
 
 container:
-  image: "racket/racket-ci"
-  tag: "latest"
+  image: "racket/racket"
+  tag: "8.2"
   cmd: "racket {{ source.name }}{{ source.extension }}"
