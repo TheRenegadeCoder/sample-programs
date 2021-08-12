@@ -3,7 +3,7 @@ folder:
   naming: "hyphen"
 
 container:
-  image: "gcc"
-  tag: "11.2"
+  image: "codesignal/objective-c"
+  tag: "v9.4.0"
   build: "gcc -o {{ source.name }} -l objc {{ source.name }}{{ source.extension }}"
   cmd: "./{{ source.name }}"
