@@ -5,4 +5,5 @@ folder:
 container:
   image: "haxe"
   tag: "4.2"
-  cmd: "haxe --main HelloWorld --interp"
+  build: "haxe --main {{ source.name }} --python {{ source.name }}.py"
+  cmd: "python {{ source.name }}.py"
