@@ -1,0 +1,8 @@
+folder:
+  extension: ".hx"
+  naming: "pascal"
+
+container:
+  image: "haxe"
+  tag: "4.2"
+  cmd: "haxe --main HelloWorld --interp"
