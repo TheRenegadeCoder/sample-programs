@@ -20,6 +20,7 @@ here are some helpful links:
 - [Code of Conduct][8]: a copy of the Contributor Convenant
 - [License][9]: a copy of the MIT license document
 - [News][sample-programs-news-series]: a series of articles about what's happening in the repo
+- [Template][sample-programs-template]: a template repo, so you can create your own collection
 
 ## Support
 
@@ -77,3 +78,4 @@ for sharing their work with our repo:
 [sample-programs-news-series]: https://therenegadecoder.com/series/sample-programs-repo-news/
 [sample-programs-on-the-renegade-coder]: https://therenegadecoder.com/code/sample-programs-in-every-language/
 [toturkmen-profile]: https://github.com/toturkmen
+[sample-programs-template]: https://github.com/TheRenegadeCoder/sample-programs-template
