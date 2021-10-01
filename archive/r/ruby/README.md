@@ -1,6 +1,6 @@
 # Sample Programs in Ruby
 
-Welcome to Sample Programs in Ruby!
+Welcome to Sample Programs in Ruby! To find documentation related to the Ruby code in this repo, look [here.](https://sample-programs.therenegadecoder.com/languages/ruby)
 
 ## Sample Programs List
 
