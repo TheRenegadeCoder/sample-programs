@@ -14,6 +14,10 @@ invalid_permutations = (
             '""',
             'Usage: please input a number'
         ), (
+            'invalid input: invalid number',
+            '"23a2"',
+            'Usage: please input a number'
+        ), (
             'invalid input: not a number',
             '"a"',
             'Usage: please input a number'
