@@ -28,7 +28,7 @@ jobs:
       run: ronbun archive/ --log=DEBUG
         
     - name: Commit READMEs
-      uses: EndBug/add-and-commit@v5 
+      uses: EndBug/add-and-commit@v7 
       with:
         message: |
           Generated READMEs from sources using Ronbun
