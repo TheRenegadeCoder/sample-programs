@@ -1,3 +1,4 @@
+open System
 let sleepSort (values: seq<int>) =
     values
     |> Seq.map (fun x -> async {
@@ -11,3 +12,4 @@ let sleepSort (values: seq<int>) =
 [<EntryPoint>]
 let main argv =
     sleepSort [10; 33; 80; 32]
+    0
