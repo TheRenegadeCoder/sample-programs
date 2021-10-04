@@ -2,9 +2,7 @@
 
 name: README Generation
 
-on:
-  pull_request:
-    branches: [ main ]
+on: push
 
 jobs:
   build:
