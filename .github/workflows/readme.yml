@@ -2,7 +2,11 @@
 
 name: README Generation
 
-on: push
+on: 
+  push:
+    branches:
+      - '**'
+      - '!main'
 
 jobs:
   build:
