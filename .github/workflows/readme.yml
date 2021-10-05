@@ -3,8 +3,8 @@
 name: README Generation
 
 on: 
-  push:
-    branches-ignore:
+  pull_request_target:
+    branches:
       - 'main'
 
 jobs:
