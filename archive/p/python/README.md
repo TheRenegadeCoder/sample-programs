@@ -35,6 +35,7 @@ Below, you'll find a list of code snippets in this collection. Code snippets pre
 - :warning: [Rot 13 in Python](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot+13+python) [[Requirements](https://sample-programs.therenegadecoder.com/projects/rot-13)]
 - :white_check_mark: [Selection Sort in Python](https://sample-programs.therenegadecoder.com/projects/selection-sort/python) [[Requirements](https://sample-programs.therenegadecoder.com/projects/selection-sort)]
 - :warning: [Sleep Sort in Python](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sleep+sort+python) [[Requirements](https://sample-programs.therenegadecoder.com/projects/sleep-sort)]
+- :warning: [Maximum Array Rotation in Python](https://github.com/TheRenegadeCoder/sample-programs/issues/2456) [[Requirements](https://sample-programs.therenegadecoder.com/projects/maximum-array-rotation/)]
 
 ## Testing
 
