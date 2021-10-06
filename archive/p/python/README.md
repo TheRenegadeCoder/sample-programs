@@ -24,6 +24,7 @@ Below, you'll find a list of code snippets in this collection. Code snippets pre
 - :warning: [Lcs in Python](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+lcs+python) [[Requirements](https://sample-programs.therenegadecoder.com/projects/lcs)]
 - :white_check_mark: [Linear Search in Python](https://sample-programs.therenegadecoder.com/projects/linear-search/python) [[Requirements](https://sample-programs.therenegadecoder.com/projects/linear-search)]
 - :warning: [Lps in Python](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+lps+python) [[Requirements](https://sample-programs.therenegadecoder.com/projects/lps)]
+- :warning: [Maximum Array Rotation in Python](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+maximum+array+rotation+python) [[Requirements](https://sample-programs.therenegadecoder.com/projects/maximum-array-rotation)]
 - :white_check_mark: [Maximum Subarray in Python](https://sample-programs.therenegadecoder.com/projects/maximum-subarray/python) [[Requirements](https://sample-programs.therenegadecoder.com/projects/maximum-subarray)]
 - :white_check_mark: [Merge Sort in Python](https://sample-programs.therenegadecoder.com/projects/merge-sort/python) [[Requirements](https://sample-programs.therenegadecoder.com/projects/merge-sort)]
 - :warning: [Mst in Python](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+mst+python) [[Requirements](https://sample-programs.therenegadecoder.com/projects/mst)]
@@ -35,8 +36,6 @@ Below, you'll find a list of code snippets in this collection. Code snippets pre
 - :warning: [Rot 13 in Python](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot+13+python) [[Requirements](https://sample-programs.therenegadecoder.com/projects/rot-13)]
 - :white_check_mark: [Selection Sort in Python](https://sample-programs.therenegadecoder.com/projects/selection-sort/python) [[Requirements](https://sample-programs.therenegadecoder.com/projects/selection-sort)]
 - :warning: [Sleep Sort in Python](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sleep+sort+python) [[Requirements](https://sample-programs.therenegadecoder.com/projects/sleep-sort)]
-- :white_check_mark: [Add Dijkstra in Python](https://sample-programs.therenegadecoder.com/projects/dijkstra/python) [[Requirements](https://sample-programs.therenegadecoder.com/projects/dijkstra/python)]
-- :warning: [Maximum Array Rotation in Python](https://github.com/TheRenegadeCoder/sample-programs/issues/2456) [[Requirements](https://sample-programs.therenegadecoder.com/projects/maximum-array-rotation/)]
 
 ## Testing
 
