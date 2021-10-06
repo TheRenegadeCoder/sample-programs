@@ -1,0 +1,21 @@
+
+const sampleArray = ['a', 'a', 'b', 'c','b','b'];
+var freqArr = [sampleArray.length]
+
+for(var i=0; i<sampleArray.length; i++){
+    freqArr[i] = 1;
+}
+for(var i=0; i<sampleArray.length; i++){
+    for(var j=0; j<sampleArray.length; j++){
+        if(i!=j && sampleArray[i]==sampleArray[j]){
+            freqArr[i]++;
+            sampleArray[j]='';
+        }
+    }
+}
+
+for(var i =0; i<sampleArray.length; i++){
+    if(sampleArray[i]!=''){
+        console.log("Frequency of "+sampleArray[i]+" is "+ freqArr[i])
+    }
+}
