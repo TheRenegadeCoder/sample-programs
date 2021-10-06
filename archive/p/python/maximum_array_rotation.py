@@ -17,5 +17,3 @@ try:
 
 except:
     print("Usage: please provide a list of integers (e.g. “8, 3, 1, 2”)")
-
-    
