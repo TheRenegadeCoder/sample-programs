@@ -66,6 +66,11 @@ projects:
       - "job"
       - "sequencing"
     requires_parameters: true
+  josephusproble:
+    words:
+      - "job"
+      - "sequencing"
+    requires_parameters: true
   lcs:
     words:
       - "lcs"
