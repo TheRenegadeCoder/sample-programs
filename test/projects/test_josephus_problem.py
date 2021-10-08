@@ -62,6 +62,6 @@ def test_josephus_problem_valid(description, in_params, expected, josephus_probl
 @project_test(ProjectType.JosephusProblem.key)
 @pytest.mark.parametrize(invalid_permutations[0], invalid_permutations[1],
                          ids=[p[0] for p in invalid_permutations[1]])
-def test_even_odd_invalid(description, in_params, expected, josephus_problem):
+def test_josephus_problem_invalid(description, in_params, expected, josephus_problem):
     actual = josephus_problem.run(params=in_params)
     assert actual.strip() == expected
