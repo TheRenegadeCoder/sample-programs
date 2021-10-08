@@ -45,7 +45,7 @@ valid_permutations = (
 
 
 @project_fixture(ProjectType.JosephusProblem.key)
-def josepus_problem(request):
+def josephus_problem(request):
     request.param.build()
     yield request.param
     request.param.cleanup()
