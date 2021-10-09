@@ -16,6 +16,7 @@ class ProjectType(Enum):
     HelloWorld = auto()
     InsertionSort = auto()
     JobSequencing = auto()
+    JosephusProblem = auto()
     LCS = auto()
     LPS = auto()
     LinearSearch = auto()
