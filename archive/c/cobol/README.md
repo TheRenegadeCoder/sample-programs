@@ -8,6 +8,7 @@ Below, you'll find a list of code snippets in this collection. Code snippets pre
 
 - :warning: [Even Odd in Cobol](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+cobol) [[Requirements](https://sample-programs.therenegadecoder.com/projects/even-odd)]
 - :white_check_mark: [Hello World in Cobol](https://sample-programs.therenegadecoder.com/projects/hello-world/cobol) [[Requirements](https://sample-programs.therenegadecoder.com/projects/hello-world)]
+- :warning: [Prime Number in Cobol](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+cobol) [[Requirements](https://sample-programs.therenegadecoder.com/projects/prime-number)]
 
 ## Testing
 
