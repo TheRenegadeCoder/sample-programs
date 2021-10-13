@@ -9,8 +9,8 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
-
+  testing:
+    name: "Test Suite"
     runs-on: ubuntu-latest
 
     steps:
