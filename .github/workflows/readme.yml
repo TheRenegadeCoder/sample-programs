@@ -38,7 +38,3 @@ jobs:
           on-behalf-of: @TheRenegadeCoder <jeremy.grifski@therenegadecoder.com>
         author_name: Jeremy Grifski
         author_email: jeremy.grifski@therenegadecoder.com
-        
-      env:
-        # This is necessary in order to push a commit to the repo
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
