@@ -1,6 +1,6 @@
 # This workflow generates READMEs for all languages
 
-name: README Generation
+name: Ronbun
 
 on: 
   push:
@@ -8,8 +8,8 @@ on:
       - 'main'
 
 jobs:
-  build:
-
+  readme:
+    name: "README Generation"
     runs-on: ubuntu-latest
 
     steps:
@@ -38,7 +38,3 @@ jobs:
           on-behalf-of: @TheRenegadeCoder <jeremy.grifski@therenegadecoder.com>
         author_name: Jeremy Grifski
         author_email: jeremy.grifski@therenegadecoder.com
-        
-      env:
-        # This is necessary in order to push a commit to the repo
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
