@@ -1,6 +1,6 @@
 # This workflow generates READMEs for all languages
 
-name: README Generation
+name: Ronbun
 
 on: 
   push:
@@ -9,7 +9,7 @@ on:
 
 jobs:
   build:
-
+    name: "README Generation"
     runs-on: ubuntu-latest
 
     steps:
