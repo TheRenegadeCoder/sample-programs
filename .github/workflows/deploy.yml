@@ -1,12 +1,12 @@
-name: Deploy
+name: Jisho
 
 on:
   push:
     branches: [ main ]
 
 jobs:
-  build:
-
+  wiki:
+    name: "Wiki Generation"
     runs-on: ubuntu-latest
 
     steps:
