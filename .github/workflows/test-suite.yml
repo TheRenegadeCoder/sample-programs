@@ -1,6 +1,6 @@
 # This workflow will install Python dependencies, download Docker images, and test every script in the repo
 
-name: Test Suite
+name: Glotter
 
 on:
   push:
