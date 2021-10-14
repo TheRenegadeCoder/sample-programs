@@ -42,7 +42,7 @@ Below, you'll find a list of code snippets in this collection. Code snippets pre
 The following list shares details about what we're using to test all Sample Programs in Python.
 
 - Docker Image: python
-- Docker Tag: 3.7-alpine
+- Docker Tag: 3.7-alpine   
 
 See the [Glotter project](https://github.com/auroq/glotter) for more information on how to create a testinfo file.
 
