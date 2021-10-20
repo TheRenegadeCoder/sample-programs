@@ -4,8 +4,8 @@ if (!is.numeric(number)) {
   cat("Usage: please input a number")
 }else {
   if (number %% 2 == 0) {
-    cat("even")
+    cat("Even")
   }else {
-    cat("odd")
+    cat("Odd")
   }
 }
