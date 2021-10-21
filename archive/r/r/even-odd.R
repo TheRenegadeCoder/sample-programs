@@ -1,8 +1,7 @@
 args<-commandArgs(TRUE)
 number = args[1]
-numbers_only <- function(a) !grepl("\\D", number)
 
-if (length(args) < 1 || numbers_only(number) == FALSE) {
+if (length(args) < 1 || !suppressWarnings(!is.na(as.numeric(number)))) {
   cat("Usage: please input a number")
 }else {
   number = as.numeric(number)
