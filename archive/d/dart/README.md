@@ -8,7 +8,7 @@ Below, you'll find a list of code snippets in this collection. Code snippets pre
 
 - :warning: [Baklava in Dart](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+dart) [[Requirements](https://sample-programs.therenegadecoder.com/projects/baklava)]
 - :warning: [Bubble Sort in Dart](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+dart) [[Requirements](https://sample-programs.therenegadecoder.com/projects/bubble-sort)]
-- :warning: [Capitalize in Dart](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+dart) [[Requirements](https://sample-programs.therenegadecoder.com/projects/capitalize)]
+- :white_check_mark: [Capitalize in Dart](https://sample-programs.therenegadecoder.com/projects/capitalize/dart) [[Requirements](https://sample-programs.therenegadecoder.com/projects/capitalize)]
 - :warning: [Even Odd in Dart](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+dart) [[Requirements](https://sample-programs.therenegadecoder.com/projects/even-odd)]
 - :warning: [Fibonacci in Dart](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+dart) [[Requirements](https://sample-programs.therenegadecoder.com/projects/fibonacci)]
 - :warning: [Fizz Buzz in Dart](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+dart) [[Requirements](https://sample-programs.therenegadecoder.com/projects/fizz-buzz)]
