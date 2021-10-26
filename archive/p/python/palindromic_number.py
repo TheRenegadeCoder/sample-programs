@@ -32,7 +32,7 @@ def main(args):
         # palindromic_number(int(args[1]))
         palindromic_number(int(sys.argv[1]))
     except (IndexError, ValueError):
-        print("Usage: please input a number")
+        print("Usage: please input a number with at least two digits")
         sys.exit(1)
 
 
