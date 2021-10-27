@@ -8,7 +8,7 @@ Below, you'll find a list of code snippets in this collection. Code snippets pre
 
 - :white_check_mark: [Baklava in C](https://sample-programs.therenegadecoder.com/projects/baklava/c) [[Requirements](https://sample-programs.therenegadecoder.com/projects/baklava)]
 - :warning: [Bubble Sort in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+c) [[Requirements](https://sample-programs.therenegadecoder.com/projects/bubble-sort)]
-- :warning: [Capitalize in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+c) [[Requirements](https://sample-programs.therenegadecoder.com/projects/capitalize)]
+- :white_check_mark: [Capitalize in C](https://sample-programs.therenegadecoder.com/projects/capitalize/c) [[Requirements](https://sample-programs.therenegadecoder.com/projects/capitalize)]
 - :warning: [Convex Hull in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+convex+hull+c) [[Requirements](https://sample-programs.therenegadecoder.com/projects/convex-hull)]
 - :white_check_mark: [Even Odd in C](https://sample-programs.therenegadecoder.com/projects/even-odd/c) [[Requirements](https://sample-programs.therenegadecoder.com/projects/even-odd)]
 - :warning: [Export in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+export+c) [[Requirements](https://sample-programs.therenegadecoder.com/projects/import-export)]
@@ -23,7 +23,7 @@ Below, you'll find a list of code snippets in this collection. Code snippets pre
 - :warning: [Lcs in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+lcs+c) [[Requirements](https://sample-programs.therenegadecoder.com/projects/lcs)]
 - :warning: [Merge Sort in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+c) [[Requirements](https://sample-programs.therenegadecoder.com/projects/merge-sort)]
 - :warning: [Mst in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+mst+c) [[Requirements](https://sample-programs.therenegadecoder.com/projects/mst)]
-- :warning: [Prime Number in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+c) [[Requirements](https://sample-programs.therenegadecoder.com/projects/prime-number)]
+- :white_check_mark: [Prime Number in C](https://sample-programs.therenegadecoder.com/projects/prime-number/c) [[Requirements](https://sample-programs.therenegadecoder.com/projects/prime-number)]
 - :warning: [Quick Sort in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+c) [[Requirements](https://sample-programs.therenegadecoder.com/projects/quick-sort)]
 - :warning: [Quine in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+c) [[Requirements](https://sample-programs.therenegadecoder.com/projects/quine)]
 - :white_check_mark: [Reverse String in C](https://sample-programs.therenegadecoder.com/projects/reverse-string/c) [[Requirements](https://sample-programs.therenegadecoder.com/projects/reverse-string)]

@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Python! To find documentation related to the Python code in this repo, look [here.](https://sample-programs.therenegadecoder.com/languages/python)
 
-## Sample Programs List — 30/40 :smile:
+## Sample Programs List — 31/40 :smile:
 
 Below, you'll find a list of code snippets in this collection. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation.
 
@@ -28,6 +28,7 @@ Below, you'll find a list of code snippets in this collection. Code snippets pre
 - :white_check_mark: [Maximum Subarray in Python](https://sample-programs.therenegadecoder.com/projects/maximum-subarray/python) [[Requirements](https://sample-programs.therenegadecoder.com/projects/maximum-subarray)]
 - :white_check_mark: [Merge Sort in Python](https://sample-programs.therenegadecoder.com/projects/merge-sort/python) [[Requirements](https://sample-programs.therenegadecoder.com/projects/merge-sort)]
 - :warning: [Mst in Python](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+mst+python) [[Requirements](https://sample-programs.therenegadecoder.com/projects/mst)]
+- :warning: [Palindromic Number in Python](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+python) [[Requirements](https://sample-programs.therenegadecoder.com/projects/palindromic-number)]
 - :white_check_mark: [Prime Number in Python](https://sample-programs.therenegadecoder.com/projects/prime-number/python) [[Requirements](https://sample-programs.therenegadecoder.com/projects/prime-number)]
 - :white_check_mark: [Quick Sort in Python](https://sample-programs.therenegadecoder.com/projects/quick-sort/python) [[Requirements](https://sample-programs.therenegadecoder.com/projects/quick-sort)]
 - :warning: [Quine in Python](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+python) [[Requirements](https://sample-programs.therenegadecoder.com/projects/quine)]
