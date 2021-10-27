@@ -22,7 +22,7 @@ begin
     if (check <> 0)
     then
     begin
-      writeln('Usage: please input a number');
+      writeln('please input a number with at least two digits');
     end
     else
     begin
