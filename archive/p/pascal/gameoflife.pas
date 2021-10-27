@@ -1,0 +1,3 @@
+program gameoflife
+begin
+end.
