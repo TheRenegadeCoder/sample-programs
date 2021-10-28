@@ -27,7 +27,7 @@ Below, you'll find a list of code snippets in this collection. Code snippets pre
 - :warning: [Quick Sort in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+c) [[Requirements](https://sample-programs.therenegadecoder.com/projects/quick-sort)]
 - :warning: [Quine in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+c) [[Requirements](https://sample-programs.therenegadecoder.com/projects/quine)]
 - :white_check_mark: [Reverse String in C](https://sample-programs.therenegadecoder.com/projects/reverse-string/c) [[Requirements](https://sample-programs.therenegadecoder.com/projects/reverse-string)]
-- :warning: [Roman Numeral in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+c) [[Requirements](https://sample-programs.therenegadecoder.com/projects/roman-numeral)]
+- :white_check_mark: [Roman Numeral in C](https://sample-programs.therenegadecoder.com/projects/roman-numeral/c) [[Requirements](https://sample-programs.therenegadecoder.com/projects/roman-numeral)]
 - :warning: [Rot 13 in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot+13+c) [[Requirements](https://sample-programs.therenegadecoder.com/projects/rot-13)]
 - :warning: [Selection Sort in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+c) [[Requirements](https://sample-programs.therenegadecoder.com/projects/selection-sort)]
 

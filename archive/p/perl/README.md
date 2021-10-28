@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Perl! To find documentation related to the Perl code in this repo, look [here.](https://sample-programs.therenegadecoder.com/languages/perl)
 
-## Sample Programs List — 14/40 :thinking:
+## Sample Programs List — 15/40 :thinking:
 
 Below, you'll find a list of code snippets in this collection. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation.
 
@@ -16,6 +16,7 @@ Below, you'll find a list of code snippets in this collection. Code snippets pre
 - :warning: [Fizz Buzz in Perl](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+perl) [[Requirements](https://sample-programs.therenegadecoder.com/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Perl](https://sample-programs.therenegadecoder.com/projects/hello-world/perl) [[Requirements](https://sample-programs.therenegadecoder.com/projects/hello-world)]
 - :warning: [Insertion Sort in Perl](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+perl) [[Requirements](https://sample-programs.therenegadecoder.com/projects/insertion-sort)]
+- :warning: [Palindromic Number in Perl](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+perl) [[Requirements](https://sample-programs.therenegadecoder.com/projects/palindromic-number)]
 - :warning: [Prime Number in Perl](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+perl) [[Requirements](https://sample-programs.therenegadecoder.com/projects/prime-number)]
 - :warning: [Quine in Perl](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+perl) [[Requirements](https://sample-programs.therenegadecoder.com/projects/quine)]
 - :warning: [Reverse String in Perl](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+perl) [[Requirements](https://sample-programs.therenegadecoder.com/projects/reverse-string)]
