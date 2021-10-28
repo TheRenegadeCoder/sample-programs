@@ -46,6 +46,6 @@ else{
 }
 
 sub usage {
-	print "Usage: please input a non-negative integer\n";
+	print "Usage: please input a number with at least two digits";
 	exit;
 }
