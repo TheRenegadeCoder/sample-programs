@@ -1,4 +1,11 @@
 (*
+Description 	Input 	Output
+no input 	None 	Usage: please input a number
+empty input 	”” 	Usage: please input a number
+invalid input: not a number 	a 	Usage: please input a number
+sample input: palindrome 	232 	true
+sample input: not palindrome 	521 	false
+
 Count the no. of digits
 compare the left most with rightmost no & keep moving nearer to midpoint
 If any one comparison fails, type false
@@ -6,13 +13,14 @@ If all comparison succeeds, type true
 *)
 
 program Palindromic_number_check(input, output, stdErr);
-(*Read count of fibonnacnoofdigits numbers into a string *)
+(*Read count of fibonnacnoofdigits numbers into a string
+
+*)
 var
    buf: String;
-   loop_counter, noofdigits, flag, fromright, i : integer;
-   check, number : Cardinal;
-   quotient : real;
-   num_array : array [1..25] of integer;
+   noofdigits : integer;
+   check, number, reversed_number : Cardinal;
+
 begin
    (*Variable initialisation must be inside begin-end block*)
   (*Accept Number, check no. of digits in it, ...*)
@@ -29,39 +37,25 @@ begin
    //  writeln('number = ', number);
     check := number;
     noofdigits := 0;
-    flag := 1;
+    reversed_number := 0;
     repeat
     begin
-
-       (*round(quotient) will round off to next number, trunc will give only the number
-              // writeln('Quotient = ', quotient, 'Number =', number, 'check1 = ', check) *)
+    (* Count no. of digits, build the number backwards *)
        noofdigits := noofdigits + 1;
-       quotient := check / 10;
-       num_array[noofdigits] := check mod 10;
-       check := trunc(quotient);
+       (*quotient := check mod 10 ;*)
+       reversed_number := (reversed_number * 10) + (check mod 10);
+       check := trunc(check div 10);
        end;
     until check = 0;
 
-    (* Run the loop till the no. of digits / 2*)
-    if ( (noofdigits mod 2) = 1 ) then
-       loop_counter := trunc((noofdigits +1 )/ 2)
-   else
-   loop_counter := trunc(noofdigits / 2);
-      fromright := noofdigits    ;
-   for i := 1 to loop_counter do
-    begin
-      fromright := noofdigits - (i -1 ); 
-      if (num_array[i] <> num_array[fromright]) then
-      begin
-         flag := 0;
-         break;  
-      end;
-         
-    end;
-   if flag = 0 then
-      writeln('false')
-   else
-      writeln('true');
+    if noofdigits >= 2 then
+      if (reversed_number = number) then
+         writeln('true')
+      else
       
-    end (* Begin Reading NUmber*)
+         writeln('false')
+   
+    else
+      writeln('Usage: please input a number with at least two digits')
+    end; (* Begin Reading NUmber*)
 end.  (* Begin Program Block*)
