@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in C++! To find documentation related to the C++ code in this repo, look [here.](https://sample-programs.therenegadecoder.com/languages/c-plus-plus)
 
-## Sample Programs List - 23/40 :relaxed:
+## Sample Programs List - 24/40 :relaxed:
 
 In this section, we feature a list of completed and missing programs in C++. See above for the current amount of completed programs in C++. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -28,6 +28,7 @@ Below, you'll find a list of completed code snippets in C++. Code snippets prece
 - :white_check_mark: [Insertion Sort in C++](https://sample-programs.therenegadecoder.com/projects/insertion-sort/c-plus-plus) [[Requirements](https://sample-programs.therenegadecoder.com/projects/insertion-sort)]
 - :warning: [Lcs in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+lcs+c++) [[Requirements](https://sample-programs.therenegadecoder.com/projects/lcs)]
 - :warning: [Merge Sort in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+c++) [[Requirements](https://sample-programs.therenegadecoder.com/projects/merge-sort)]
+- :warning: [Palindromic Number in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+c++) [[Requirements](https://sample-programs.therenegadecoder.com/projects/palindromic-number)]
 - :warning: [Prime Number in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+c++) [[Requirements](https://sample-programs.therenegadecoder.com/projects/prime-number)]
 - :warning: [Quick Sort in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+c++) [[Requirements](https://sample-programs.therenegadecoder.com/projects/quick-sort)]
 - :warning: [Reverse String in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+c++) [[Requirements](https://sample-programs.therenegadecoder.com/projects/reverse-string)]
@@ -51,7 +52,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+C++) [[Requirements](https://sample-programs.therenegadecoder.com/projects/maximum-array-rotation)]
 - :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+C++) [[Requirements](https://sample-programs.therenegadecoder.com/projects/maximum-subarray)]
 - :x: [Mst](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Mst+in+C++) [[Requirements](https://sample-programs.therenegadecoder.com/projects/mst)]
-- :x: [Palindromic Number](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Palindromic+Number+in+C++) [[Requirements](https://sample-programs.therenegadecoder.com/projects/palindromic-number)]
 - :x: [Quine](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Quine+in+C++) [[Requirements](https://sample-programs.therenegadecoder.com/projects/quine)]
 - :x: [Remove All Whitespace](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Remove+All+Whitespace+in+C++) [[Requirements](https://sample-programs.therenegadecoder.com/projects/remove-all-whitespace)]
 - :x: [Rot 13](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Rot+13+in+C++) [[Requirements](https://sample-programs.therenegadecoder.com/projects/rot-13)]
