@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Julia! To find documentation related to the Julia code in this repo, look [here.](https://sample-programs.therenegadecoder.com/languages/julia)
 
-## Sample Programs List - 7/40 :disappointed:
+## Sample Programs List - 8/40 :disappointed:
 
 In this section, we feature a list of completed and missing programs in Julia. See above for the current amount of completed programs in Julia. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -12,6 +12,7 @@ Below, you'll find a list of completed code snippets in Julia. Code snippets pre
 
 - :warning: [Baklava in Julia](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+julia) [[Requirements](https://sample-programs.therenegadecoder.com/projects/baklava)]
 - :warning: [Bubble Sort in Julia](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+julia) [[Requirements](https://sample-programs.therenegadecoder.com/projects/bubble-sort)]
+- :warning: [Even Odd in Julia](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+julia) [[Requirements](https://sample-programs.therenegadecoder.com/projects/even-odd)]
 - :warning: [Factorial in Julia](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+julia) [[Requirements](https://sample-programs.therenegadecoder.com/projects/factorial)]
 - :warning: [Fibonacci in Julia](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+julia) [[Requirements](https://sample-programs.therenegadecoder.com/projects/fibonacci)]
 - :warning: [Fizz Buzz in Julia](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+julia) [[Requirements](https://sample-programs.therenegadecoder.com/projects/fizz-buzz)]
@@ -28,7 +29,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Depth First Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Depth+First+Search+in+Julia) [[Requirements](https://sample-programs.therenegadecoder.com/projects/depth-first-search)]
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Dijkstra+in+Julia) [[Requirements](https://sample-programs.therenegadecoder.com/projects/dijkstra)]
 - :x: [Duplicate Char Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Duplicate+Char+Counter+in+Julia) [[Requirements](https://sample-programs.therenegadecoder.com/projects/duplicate-char-counter)]
-- :x: [Even Odd](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Even+Odd+in+Julia) [[Requirements](https://sample-programs.therenegadecoder.com/projects/even-odd)]
 - :x: [File Io](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+File+Io+in+Julia) [[Requirements](https://sample-programs.therenegadecoder.com/projects/file-io)]
 - :x: [Fractions](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fractions+in+Julia) [[Requirements](https://sample-programs.therenegadecoder.com/projects/fractions)]
 - :x: [Game Of Life](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Game+Of+Life+in+Julia) [[Requirements](https://sample-programs.therenegadecoder.com/projects/game-of-life)]
