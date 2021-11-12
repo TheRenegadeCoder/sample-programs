@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Python! To find documentation related to the Python code in this repo, look [here.](https://sample-programs.therenegadecoder.com/languages/python)
 
-## Sample Programs List - 31/40 :smile:
+## Sample Programs List - 32/40 :smile:
 
 In this section, we feature a list of completed and missing programs in Python. See above for the current amount of completed programs in Python. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -15,6 +15,7 @@ Below, you'll find a list of completed code snippets in Python. Code snippets pr
 - :white_check_mark: [Bubble Sort in Python](https://sample-programs.therenegadecoder.com/projects/bubble-sort/python) [[Requirements](https://sample-programs.therenegadecoder.com/projects/bubble-sort)]
 - :white_check_mark: [Capitalize in Python](https://sample-programs.therenegadecoder.com/projects/capitalize/python) [[Requirements](https://sample-programs.therenegadecoder.com/projects/capitalize)]
 - :warning: [Convex Hull in Python](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+convex+hull+python) [[Requirements](https://sample-programs.therenegadecoder.com/projects/convex-hull)]
+- :warning: [Depth First Search in Python](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+depth+first+search+python) [[Requirements](https://sample-programs.therenegadecoder.com/projects/depth-first-search)]
 - :white_check_mark: [Even Odd in Python](https://sample-programs.therenegadecoder.com/projects/even-odd/python) [[Requirements](https://sample-programs.therenegadecoder.com/projects/even-odd)]
 - :white_check_mark: [Factorial in Python](https://sample-programs.therenegadecoder.com/projects/factorial/python) [[Requirements](https://sample-programs.therenegadecoder.com/projects/factorial)]
 - :white_check_mark: [Fibonacci in Python](https://sample-programs.therenegadecoder.com/projects/fibonacci/python) [[Requirements](https://sample-programs.therenegadecoder.com/projects/fibonacci)]
@@ -46,7 +47,6 @@ Below, you'll find a list of completed code snippets in Python. Code snippets pr
 
 The following list contains all of the approved programs that are not currently implemented in Python. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
-- :x: [Depth First Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Depth+First+Search+in+Python) [[Requirements](https://sample-programs.therenegadecoder.com/projects/depth-first-search)]
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Dijkstra+in+Python) [[Requirements](https://sample-programs.therenegadecoder.com/projects/dijkstra)]
 - :x: [Duplicate Char Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Duplicate+Char+Counter+in+Python) [[Requirements](https://sample-programs.therenegadecoder.com/projects/duplicate-char-counter)]
 - :x: [Import Export](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Import+Export+in+Python) [[Requirements](https://sample-programs.therenegadecoder.com/projects/import-export)]
