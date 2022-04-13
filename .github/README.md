@@ -68,7 +68,7 @@ for sharing their work with our repo:
 [17]: https://newsletter.therenegadecoder.com/
 [18]: https://therenegadecoder.com/code/fizz-buzz-in-every-language/
 [19]: https://therenegadecoder.com/code/python-code-snippets-for-everyday-problems/
-[20]: https://sample-programs.therenegadecoder.com/projects/
+[20]: https://sampleprograms.io/projects/
 
 [auroq-profile]: https://github.com/auroq
 [baklava-repo]: https://github.com/toturkmen/baklava
