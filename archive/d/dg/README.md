@@ -1,6 +1,6 @@
 # Sample Programs in Dg
 
-Welcome to Sample Programs in Dg!
+Welcome to Sample Programs in Dg! To find documentation related to the Dg code in this repo, look [here.](https://sampleprograms.io/languages/dg)
 
 ## Sample Programs List - 5/40 :disappointed:
 
@@ -10,11 +10,11 @@ In this section, we feature a list of completed and missing programs in Dg. See 
 
 Below, you'll find a list of completed code snippets in Dg. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :warning: [File Io in Dg](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+io+dg) [[Requirements](https://sampleprograms.io/projects/file-io)]
-- :warning: [Fizz Buzz in Dg](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+dg) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
-- :warning: [Hello World in Dg](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+dg) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :warning: [Quine in Dg](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+dg) [[Requirements](https://sampleprograms.io/projects/quine)]
-- :warning: [Reverse String in Dg](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+dg) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
+- :white_check_mark: [File Io in Dg](https://sampleprograms.io/projects/file-io/dg) [[Requirements](https://sampleprograms.io/projects/file-io)]
+- :white_check_mark: [Fizz Buzz in Dg](https://sampleprograms.io/projects/fizz-buzz/dg) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
+- :white_check_mark: [Hello World in Dg](https://sampleprograms.io/projects/hello-world/dg) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :white_check_mark: [Quine in Dg](https://sampleprograms.io/projects/quine/dg) [[Requirements](https://sampleprograms.io/projects/quine)]
+- :white_check_mark: [Reverse String in Dg](https://sampleprograms.io/projects/reverse-string/dg) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 
 ### Missing Programs
 

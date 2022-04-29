@@ -1,6 +1,6 @@
 # Sample Programs in Javascript
 
-Welcome to Sample Programs in Javascript!
+Welcome to Sample Programs in Javascript! To find documentation related to the Javascript code in this repo, look [here.](https://sampleprograms.io/languages/javascript)
 
 ## Sample Programs List - 31/40 :smile:
 
@@ -10,37 +10,37 @@ In this section, we feature a list of completed and missing programs in Javascri
 
 Below, you'll find a list of completed code snippets in Javascript. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :warning: [Baklava in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+javascript) [[Requirements](https://sampleprograms.io/projects/baklava)]
-- :warning: [Binary Search in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+binary+search+javascript) [[Requirements](https://sampleprograms.io/projects/binary-search)]
-- :warning: [Bubble Sort in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+javascript) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
-- :warning: [Capitalize in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+javascript) [[Requirements](https://sampleprograms.io/projects/capitalize)]
-- :warning: [Convex Hull in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+convex+hull+javascript) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
-- :warning: [Dijkstra in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+dijkstra+javascript) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
-- :warning: [Duplicate Char Counter in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+char+counter+javascript) [[Requirements](https://sampleprograms.io/projects/duplicate-char-counter)]
-- :warning: [Even Odd in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+javascript) [[Requirements](https://sampleprograms.io/projects/even-odd)]
-- :white_check_mark: [Export in Javascript](https://sampleprograms.io/projects/import-export/javascript) [[Requirements](https://sampleprograms.io/projects/import-export)]
-- :warning: [Factorial in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+javascript) [[Requirements](https://sampleprograms.io/projects/factorial)]
+- :white_check_mark: [Baklava in Javascript](https://sampleprograms.io/projects/baklava/javascript) [[Requirements](https://sampleprograms.io/projects/baklava)]
+- :white_check_mark: [Binary Search in Javascript](https://sampleprograms.io/projects/binary-search/javascript) [[Requirements](https://sampleprograms.io/projects/binary-search)]
+- :white_check_mark: [Bubble Sort in Javascript](https://sampleprograms.io/projects/bubble-sort/javascript) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
+- :white_check_mark: [Capitalize in Javascript](https://sampleprograms.io/projects/capitalize/javascript) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :white_check_mark: [Convex Hull in Javascript](https://sampleprograms.io/projects/convex-hull/javascript) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
+- :white_check_mark: [Dijkstra in Javascript](https://sampleprograms.io/projects/dijkstra/javascript) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
+- :white_check_mark: [Duplicate Char Counter in Javascript](https://sampleprograms.io/projects/duplicate-char-counter/javascript) [[Requirements](https://sampleprograms.io/projects/duplicate-char-counter)]
+- :white_check_mark: [Even Odd in Javascript](https://sampleprograms.io/projects/even-odd/javascript) [[Requirements](https://sampleprograms.io/projects/even-odd)]
+- :warning: [Export in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+export+javascript) [[Requirements](https://sampleprograms.io/projects/import-export)]
+- :white_check_mark: [Factorial in Javascript](https://sampleprograms.io/projects/factorial/javascript) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :white_check_mark: [Fibonacci in Javascript](https://sampleprograms.io/projects/fibonacci/javascript) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
-- :warning: [File Io in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+io+javascript) [[Requirements](https://sampleprograms.io/projects/file-io)]
+- :white_check_mark: [File Io in Javascript](https://sampleprograms.io/projects/file-io/javascript) [[Requirements](https://sampleprograms.io/projects/file-io)]
 - :white_check_mark: [Fizz Buzz in Javascript](https://sampleprograms.io/projects/fizz-buzz/javascript) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
-- :warning: [Game Of Life in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+game+of+life+javascript) [[Requirements](https://sampleprograms.io/projects/game-of-life)]
-- :warning: [Hello World in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+javascript) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :white_check_mark: [Import in Javascript](https://sampleprograms.io/projects/import-export/javascript) [[Requirements](https://sampleprograms.io/projects/import-export)]
-- :warning: [Insertion Sort in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+javascript) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
-- :warning: [Job Sequencing in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+job+sequencing+javascript) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
-- :warning: [Josephus Problem in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+josephus+problem+javascript) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
-- :warning: [Lcs in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+lcs+javascript) [[Requirements](https://sampleprograms.io/projects/lcs)]
-- :warning: [Linear Search in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+linear+search+javascript) [[Requirements](https://sampleprograms.io/projects/linear-search)]
-- :warning: [Lps in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+lps+javascript) [[Requirements](https://sampleprograms.io/projects/lps)]
-- :warning: [Merge Sort in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+javascript) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
-- :warning: [Palindromic Number in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+javascript) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
-- :warning: [Prime Number in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+javascript) [[Requirements](https://sampleprograms.io/projects/prime-number)]
-- :warning: [Quick Sort in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+javascript) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
-- :warning: [Quine in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+javascript) [[Requirements](https://sampleprograms.io/projects/quine)]
+- :white_check_mark: [Game Of Life in Javascript](https://sampleprograms.io/projects/game-of-life/javascript) [[Requirements](https://sampleprograms.io/projects/game-of-life)]
+- :white_check_mark: [Hello World in Javascript](https://sampleprograms.io/projects/hello-world/javascript) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :warning: [Import in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+import+javascript) [[Requirements](https://sampleprograms.io/projects/import-export)]
+- :white_check_mark: [Insertion Sort in Javascript](https://sampleprograms.io/projects/insertion-sort/javascript) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
+- :white_check_mark: [Job Sequencing in Javascript](https://sampleprograms.io/projects/job-sequencing/javascript) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
+- :white_check_mark: [Josephus Problem in Javascript](https://sampleprograms.io/projects/josephus-problem/javascript) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
+- :white_check_mark: [Lcs in Javascript](https://sampleprograms.io/projects/lcs/javascript) [[Requirements](https://sampleprograms.io/projects/lcs)]
+- :white_check_mark: [Linear Search in Javascript](https://sampleprograms.io/projects/linear-search/javascript) [[Requirements](https://sampleprograms.io/projects/linear-search)]
+- :white_check_mark: [Lps in Javascript](https://sampleprograms.io/projects/lps/javascript) [[Requirements](https://sampleprograms.io/projects/lps)]
+- :white_check_mark: [Merge Sort in Javascript](https://sampleprograms.io/projects/merge-sort/javascript) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
+- :white_check_mark: [Palindromic Number in Javascript](https://sampleprograms.io/projects/palindromic-number/javascript) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
+- :white_check_mark: [Prime Number in Javascript](https://sampleprograms.io/projects/prime-number/javascript) [[Requirements](https://sampleprograms.io/projects/prime-number)]
+- :white_check_mark: [Quick Sort in Javascript](https://sampleprograms.io/projects/quick-sort/javascript) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
+- :white_check_mark: [Quine in Javascript](https://sampleprograms.io/projects/quine/javascript) [[Requirements](https://sampleprograms.io/projects/quine)]
 - :white_check_mark: [Reverse String in Javascript](https://sampleprograms.io/projects/reverse-string/javascript) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
-- :warning: [Roman Numeral in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+javascript) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
-- :warning: [Rot 13 in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot+13+javascript) [[Requirements](https://sampleprograms.io/projects/rot-13)]
-- :warning: [Selection Sort in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+javascript) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
+- :white_check_mark: [Roman Numeral in Javascript](https://sampleprograms.io/projects/roman-numeral/javascript) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
+- :white_check_mark: [Rot 13 in Javascript](https://sampleprograms.io/projects/rot-13/javascript) [[Requirements](https://sampleprograms.io/projects/rot-13)]
+- :white_check_mark: [Selection Sort in Javascript](https://sampleprograms.io/projects/selection-sort/javascript) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 
 ### Missing Programs
 

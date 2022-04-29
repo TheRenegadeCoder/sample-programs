@@ -1,6 +1,6 @@
 # Sample Programs in Clojure
 
-Welcome to Sample Programs in Clojure!
+Welcome to Sample Programs in Clojure! To find documentation related to the Clojure code in this repo, look [here.](https://sampleprograms.io/languages/clojure)
 
 ## Sample Programs List - 5/40 :disappointed:
 
@@ -10,11 +10,11 @@ In this section, we feature a list of completed and missing programs in Clojure.
 
 Below, you'll find a list of completed code snippets in Clojure. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :warning: [Bubble Sort in Clojure](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+clojure) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
-- :warning: [Capitalize in Clojure](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+clojure) [[Requirements](https://sampleprograms.io/projects/capitalize)]
-- :warning: [Fizz Buzz in Clojure](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+clojure) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
-- :warning: [Hello World in Clojure](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+clojure) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :warning: [Reverse String in Clojure](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+clojure) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
+- :white_check_mark: [Bubble Sort in Clojure](https://sampleprograms.io/projects/bubble-sort/clojure) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
+- :white_check_mark: [Capitalize in Clojure](https://sampleprograms.io/projects/capitalize/clojure) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :white_check_mark: [Fizz Buzz in Clojure](https://sampleprograms.io/projects/fizz-buzz/clojure) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
+- :white_check_mark: [Hello World in Clojure](https://sampleprograms.io/projects/hello-world/clojure) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :white_check_mark: [Reverse String in Clojure](https://sampleprograms.io/projects/reverse-string/clojure) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 
 ### Missing Programs
 

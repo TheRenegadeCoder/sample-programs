@@ -10,14 +10,14 @@ In this section, we feature a list of completed and missing programs in R. See a
 
 Below, you'll find a list of completed code snippets in R. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :warning: [Capitalize in R](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+r) [[Requirements](https://sampleprograms.io/projects/capitalize)]
-- :warning: [Even Odd in R](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+r) [[Requirements](https://sampleprograms.io/projects/even-odd)]
-- :warning: [Factorial in R](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+r) [[Requirements](https://sampleprograms.io/projects/factorial)]
-- :warning: [File Io in R](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+io+r) [[Requirements](https://sampleprograms.io/projects/file-io)]
-- :warning: [Fizz Buzz in R](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+r) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
+- :white_check_mark: [Capitalize in R](https://sampleprograms.io/projects/capitalize/r) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :white_check_mark: [Even Odd in R](https://sampleprograms.io/projects/even-odd/r) [[Requirements](https://sampleprograms.io/projects/even-odd)]
+- :white_check_mark: [Factorial in R](https://sampleprograms.io/projects/factorial/r) [[Requirements](https://sampleprograms.io/projects/factorial)]
+- :white_check_mark: [File Io in R](https://sampleprograms.io/projects/file-io/r) [[Requirements](https://sampleprograms.io/projects/file-io)]
+- :white_check_mark: [Fizz Buzz in R](https://sampleprograms.io/projects/fizz-buzz/r) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in R](https://sampleprograms.io/projects/hello-world/r) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :warning: [Prime Number in R](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+r) [[Requirements](https://sampleprograms.io/projects/prime-number)]
-- :warning: [Reverse String in R](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+r) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
+- :white_check_mark: [Prime Number in R](https://sampleprograms.io/projects/prime-number/r) [[Requirements](https://sampleprograms.io/projects/prime-number)]
+- :white_check_mark: [Reverse String in R](https://sampleprograms.io/projects/reverse-string/r) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 
 ### Missing Programs
 

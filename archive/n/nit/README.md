@@ -1,6 +1,6 @@
 # Sample Programs in Nit
 
-Welcome to Sample Programs in Nit!
+Welcome to Sample Programs in Nit! To find documentation related to the Nit code in this repo, look [here.](https://sampleprograms.io/languages/nit)
 
 ## Sample Programs List - 1/40 :disappointed:
 
@@ -10,7 +10,7 @@ In this section, we feature a list of completed and missing programs in Nit. See
 
 Below, you'll find a list of completed code snippets in Nit. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :warning: [Hello World in Nit](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+nit) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :white_check_mark: [Hello World in Nit](https://sampleprograms.io/projects/hello-world/nit) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 
 ### Missing Programs
 

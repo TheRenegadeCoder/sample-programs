@@ -1,6 +1,6 @@
 # Sample Programs in Cobol
 
-Welcome to Sample Programs in Cobol!
+Welcome to Sample Programs in Cobol! To find documentation related to the Cobol code in this repo, look [here.](https://sampleprograms.io/languages/cobol)
 
 ## Sample Programs List - 4/40 :disappointed:
 
@@ -11,9 +11,9 @@ In this section, we feature a list of completed and missing programs in Cobol. S
 Below, you'll find a list of completed code snippets in Cobol. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
 - :white_check_mark: [Even Odd in Cobol](https://sampleprograms.io/projects/even-odd/cobol) [[Requirements](https://sampleprograms.io/projects/even-odd)]
-- :warning: [Factorial in Cobol](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+cobol) [[Requirements](https://sampleprograms.io/projects/factorial)]
+- :white_check_mark: [Factorial in Cobol](https://sampleprograms.io/projects/factorial/cobol) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :white_check_mark: [Hello World in Cobol](https://sampleprograms.io/projects/hello-world/cobol) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :warning: [Prime Number in Cobol](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+cobol) [[Requirements](https://sampleprograms.io/projects/prime-number)]
+- :white_check_mark: [Prime Number in Cobol](https://sampleprograms.io/projects/prime-number/cobol) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 
 ### Missing Programs
 
