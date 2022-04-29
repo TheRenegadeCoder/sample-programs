@@ -1,6 +1,6 @@
 # Sample Programs in Never
 
-Welcome to Sample Programs in Never!
+Welcome to Sample Programs in Never! To find documentation related to the Never code in this repo, look [here.](https://sampleprograms.io/languages/never)
 
 ## Sample Programs List - 2/40 :disappointed:
 
@@ -10,8 +10,8 @@ In this section, we feature a list of completed and missing programs in Never. S
 
 Below, you'll find a list of completed code snippets in Never. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :warning: [Hello World in Never](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+never) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :warning: [Reverse String in Never](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+never) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
+- :white_check_mark: [Hello World in Never](https://sampleprograms.io/projects/hello-world/never) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :white_check_mark: [Reverse String in Never](https://sampleprograms.io/projects/reverse-string/never) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 
 ### Missing Programs
 

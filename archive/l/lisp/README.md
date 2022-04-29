@@ -10,16 +10,16 @@ In this section, we feature a list of completed and missing programs in Lisp. Se
 
 Below, you'll find a list of completed code snippets in Lisp. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :warning: [Baklava in Lisp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+lisp) [[Requirements](https://sampleprograms.io/projects/baklava)]
-- :warning: [Capitalize in Lisp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+lisp) [[Requirements](https://sampleprograms.io/projects/capitalize)]
-- :warning: [Even Odd in Lisp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+lisp) [[Requirements](https://sampleprograms.io/projects/even-odd)]
-- :warning: [Factorial in Lisp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+lisp) [[Requirements](https://sampleprograms.io/projects/factorial)]
-- :warning: [Fibonacci in Lisp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+lisp) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
+- :white_check_mark: [Baklava in Lisp](https://sampleprograms.io/projects/baklava/lisp) [[Requirements](https://sampleprograms.io/projects/baklava)]
+- :white_check_mark: [Capitalize in Lisp](https://sampleprograms.io/projects/capitalize/lisp) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :white_check_mark: [Even Odd in Lisp](https://sampleprograms.io/projects/even-odd/lisp) [[Requirements](https://sampleprograms.io/projects/even-odd)]
+- :white_check_mark: [Factorial in Lisp](https://sampleprograms.io/projects/factorial/lisp) [[Requirements](https://sampleprograms.io/projects/factorial)]
+- :white_check_mark: [Fibonacci in Lisp](https://sampleprograms.io/projects/fibonacci/lisp) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :white_check_mark: [Fizz Buzz in Lisp](https://sampleprograms.io/projects/fizz-buzz/lisp) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Lisp](https://sampleprograms.io/projects/hello-world/lisp) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :warning: [Prime Number in Lisp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+lisp) [[Requirements](https://sampleprograms.io/projects/prime-number)]
-- :warning: [Quick Sort in Lisp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+lisp) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
-- :warning: [Reverse String in Lisp](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+lisp) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
+- :white_check_mark: [Prime Number in Lisp](https://sampleprograms.io/projects/prime-number/lisp) [[Requirements](https://sampleprograms.io/projects/prime-number)]
+- :white_check_mark: [Quick Sort in Lisp](https://sampleprograms.io/projects/quick-sort/lisp) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
+- :white_check_mark: [Reverse String in Lisp](https://sampleprograms.io/projects/reverse-string/lisp) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 
 ### Missing Programs
 

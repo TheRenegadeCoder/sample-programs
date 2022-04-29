@@ -1,6 +1,6 @@
 # Sample Programs in Emojicode
 
-Welcome to Sample Programs in Emojicode!
+Welcome to Sample Programs in Emojicode! To find documentation related to the Emojicode code in this repo, look [here.](https://sampleprograms.io/languages/emojicode)
 
 ## Sample Programs List - 1/40 :disappointed:
 

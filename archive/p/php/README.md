@@ -1,6 +1,6 @@
 # Sample Programs in Php
 
-Welcome to Sample Programs in Php!
+Welcome to Sample Programs in Php! To find documentation related to the Php code in this repo, look [here.](https://sampleprograms.io/languages/php)
 
 ## Sample Programs List - 21/40 :relaxed:
 
@@ -10,27 +10,27 @@ In this section, we feature a list of completed and missing programs in Php. See
 
 Below, you'll find a list of completed code snippets in Php. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :warning: [Baklava in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+php) [[Requirements](https://sampleprograms.io/projects/baklava)]
-- :warning: [Bubble Sort in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+php) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
-- :warning: [Capitalize in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+php) [[Requirements](https://sampleprograms.io/projects/capitalize)]
-- :warning: [Convex Hull in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+convex+hull+php) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
-- :warning: [Even Odd in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+php) [[Requirements](https://sampleprograms.io/projects/even-odd)]
-- :warning: [Factorial in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+php) [[Requirements](https://sampleprograms.io/projects/factorial)]
-- :warning: [Fibonacci in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+php) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
-- :warning: [File Io in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+io+php) [[Requirements](https://sampleprograms.io/projects/file-io)]
-- :warning: [Fizz Buzz in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+php) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
-- :warning: [Game Of Life in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+game+of+life+php) [[Requirements](https://sampleprograms.io/projects/game-of-life)]
-- :warning: [Hello World in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+php) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :warning: [Insertion Sort in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+php) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
-- :warning: [Job Sequencing in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+job+sequencing+php) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
-- :warning: [Merge Sort in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+php) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
-- :warning: [Prime Number in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+php) [[Requirements](https://sampleprograms.io/projects/prime-number)]
-- :warning: [Quick Sort in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+php) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
-- :warning: [Quine in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+php) [[Requirements](https://sampleprograms.io/projects/quine)]
-- :warning: [Reverse String in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+php) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
-- :warning: [Roman Numeral in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+php) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
-- :warning: [Rot 13 in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot+13+php) [[Requirements](https://sampleprograms.io/projects/rot-13)]
-- :warning: [Selection Sort in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+php) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
+- :white_check_mark: [Baklava in Php](https://sampleprograms.io/projects/baklava/php) [[Requirements](https://sampleprograms.io/projects/baklava)]
+- :white_check_mark: [Bubble Sort in Php](https://sampleprograms.io/projects/bubble-sort/php) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
+- :white_check_mark: [Capitalize in Php](https://sampleprograms.io/projects/capitalize/php) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :white_check_mark: [Convex Hull in Php](https://sampleprograms.io/projects/convex-hull/php) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
+- :white_check_mark: [Even Odd in Php](https://sampleprograms.io/projects/even-odd/php) [[Requirements](https://sampleprograms.io/projects/even-odd)]
+- :white_check_mark: [Factorial in Php](https://sampleprograms.io/projects/factorial/php) [[Requirements](https://sampleprograms.io/projects/factorial)]
+- :white_check_mark: [Fibonacci in Php](https://sampleprograms.io/projects/fibonacci/php) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
+- :white_check_mark: [File Io in Php](https://sampleprograms.io/projects/file-io/php) [[Requirements](https://sampleprograms.io/projects/file-io)]
+- :white_check_mark: [Fizz Buzz in Php](https://sampleprograms.io/projects/fizz-buzz/php) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
+- :white_check_mark: [Game Of Life in Php](https://sampleprograms.io/projects/game-of-life/php) [[Requirements](https://sampleprograms.io/projects/game-of-life)]
+- :white_check_mark: [Hello World in Php](https://sampleprograms.io/projects/hello-world/php) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :white_check_mark: [Insertion Sort in Php](https://sampleprograms.io/projects/insertion-sort/php) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
+- :white_check_mark: [Job Sequencing in Php](https://sampleprograms.io/projects/job-sequencing/php) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
+- :white_check_mark: [Merge Sort in Php](https://sampleprograms.io/projects/merge-sort/php) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
+- :white_check_mark: [Prime Number in Php](https://sampleprograms.io/projects/prime-number/php) [[Requirements](https://sampleprograms.io/projects/prime-number)]
+- :white_check_mark: [Quick Sort in Php](https://sampleprograms.io/projects/quick-sort/php) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
+- :white_check_mark: [Quine in Php](https://sampleprograms.io/projects/quine/php) [[Requirements](https://sampleprograms.io/projects/quine)]
+- :white_check_mark: [Reverse String in Php](https://sampleprograms.io/projects/reverse-string/php) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
+- :white_check_mark: [Roman Numeral in Php](https://sampleprograms.io/projects/roman-numeral/php) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
+- :white_check_mark: [Rot 13 in Php](https://sampleprograms.io/projects/rot-13/php) [[Requirements](https://sampleprograms.io/projects/rot-13)]
+- :white_check_mark: [Selection Sort in Php](https://sampleprograms.io/projects/selection-sort/php) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 
 ### Missing Programs
 

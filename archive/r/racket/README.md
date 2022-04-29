@@ -10,9 +10,9 @@ In this section, we feature a list of completed and missing programs in Racket. 
 
 Below, you'll find a list of completed code snippets in Racket. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :warning: [Factorial in Racket](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+racket) [[Requirements](https://sampleprograms.io/projects/factorial)]
-- :warning: [Fibonacci in Racket](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+racket) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
-- :warning: [Fizz Buzz in Racket](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+racket) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
+- :white_check_mark: [Factorial in Racket](https://sampleprograms.io/projects/factorial/racket) [[Requirements](https://sampleprograms.io/projects/factorial)]
+- :white_check_mark: [Fibonacci in Racket](https://sampleprograms.io/projects/fibonacci/racket) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
+- :white_check_mark: [Fizz Buzz in Racket](https://sampleprograms.io/projects/fizz-buzz/racket) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Racket](https://sampleprograms.io/projects/hello-world/racket) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 
 ### Missing Programs

@@ -10,19 +10,19 @@ In this section, we feature a list of completed and missing programs in Dart. Se
 
 Below, you'll find a list of completed code snippets in Dart. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :warning: [Baklava in Dart](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+dart) [[Requirements](https://sampleprograms.io/projects/baklava)]
-- :warning: [Bubble Sort in Dart](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+dart) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
+- :white_check_mark: [Baklava in Dart](https://sampleprograms.io/projects/baklava/dart) [[Requirements](https://sampleprograms.io/projects/baklava)]
+- :white_check_mark: [Bubble Sort in Dart](https://sampleprograms.io/projects/bubble-sort/dart) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :white_check_mark: [Capitalize in Dart](https://sampleprograms.io/projects/capitalize/dart) [[Requirements](https://sampleprograms.io/projects/capitalize)]
-- :warning: [Even Odd in Dart](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+dart) [[Requirements](https://sampleprograms.io/projects/even-odd)]
-- :warning: [Fibonacci in Dart](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+dart) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
-- :warning: [Fizz Buzz in Dart](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+dart) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
-- :warning: [Game Of Life in Dart](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+game+of+life+dart) [[Requirements](https://sampleprograms.io/projects/game-of-life)]
+- :white_check_mark: [Even Odd in Dart](https://sampleprograms.io/projects/even-odd/dart) [[Requirements](https://sampleprograms.io/projects/even-odd)]
+- :white_check_mark: [Fibonacci in Dart](https://sampleprograms.io/projects/fibonacci/dart) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
+- :white_check_mark: [Fizz Buzz in Dart](https://sampleprograms.io/projects/fizz-buzz/dart) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
+- :white_check_mark: [Game Of Life in Dart](https://sampleprograms.io/projects/game-of-life/dart) [[Requirements](https://sampleprograms.io/projects/game-of-life)]
 - :white_check_mark: [Hello World in Dart](https://sampleprograms.io/projects/hello-world/dart) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :warning: [Quick Sort in Dart](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+dart) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
+- :white_check_mark: [Quick Sort in Dart](https://sampleprograms.io/projects/quick-sort/dart) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
 - :white_check_mark: [Reverse String in Dart](https://sampleprograms.io/projects/reverse-string/dart) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
-- :warning: [Roman Numeral in Dart](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+dart) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
-- :warning: [Rot 13 in Dart](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot+13+dart) [[Requirements](https://sampleprograms.io/projects/rot-13)]
-- :warning: [Sleep Sort in Dart](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sleep+sort+dart) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
+- :white_check_mark: [Roman Numeral in Dart](https://sampleprograms.io/projects/roman-numeral/dart) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
+- :white_check_mark: [Rot 13 in Dart](https://sampleprograms.io/projects/rot-13/dart) [[Requirements](https://sampleprograms.io/projects/rot-13)]
+- :white_check_mark: [Sleep Sort in Dart](https://sampleprograms.io/projects/sleep-sort/dart) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 
 ### Missing Programs
 

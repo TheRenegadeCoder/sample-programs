@@ -1,6 +1,6 @@
 # Sample Programs in Elena
 
-Welcome to Sample Programs in Elena!
+Welcome to Sample Programs in Elena! To find documentation related to the Elena code in this repo, look [here.](https://sampleprograms.io/languages/elena)
 
 ## Sample Programs List - 1/40 :disappointed:
 
@@ -10,7 +10,7 @@ In this section, we feature a list of completed and missing programs in Elena. S
 
 Below, you'll find a list of completed code snippets in Elena. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :warning: [Hello World in Elena](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+elena) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :white_check_mark: [Hello World in Elena](https://sampleprograms.io/projects/hello-world/elena) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 
 ### Missing Programs
 

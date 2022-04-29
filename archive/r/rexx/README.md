@@ -1,6 +1,6 @@
 # Sample Programs in Rexx
 
-Welcome to Sample Programs in Rexx!
+Welcome to Sample Programs in Rexx! To find documentation related to the Rexx code in this repo, look [here.](https://sampleprograms.io/languages/rexx)
 
 ## Sample Programs List - 3/40 :disappointed:
 
@@ -10,9 +10,9 @@ In this section, we feature a list of completed and missing programs in Rexx. Se
 
 Below, you'll find a list of completed code snippets in Rexx. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :warning: [Even Odd in Rexx](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+rexx) [[Requirements](https://sampleprograms.io/projects/even-odd)]
+- :white_check_mark: [Even Odd in Rexx](https://sampleprograms.io/projects/even-odd/rexx) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :white_check_mark: [Hello World in Rexx](https://sampleprograms.io/projects/hello-world/rexx) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :warning: [Prime Number in Rexx](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+rexx) [[Requirements](https://sampleprograms.io/projects/prime-number)]
+- :white_check_mark: [Prime Number in Rexx](https://sampleprograms.io/projects/prime-number/rexx) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 
 ### Missing Programs
 

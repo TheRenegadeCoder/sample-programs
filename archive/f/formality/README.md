@@ -1,6 +1,6 @@
 # Sample Programs in Formality
 
-Welcome to Sample Programs in Formality!
+Welcome to Sample Programs in Formality! To find documentation related to the Formality code in this repo, look [here.](https://sampleprograms.io/languages/formality)
 
 ## Sample Programs List - 1/40 :disappointed:
 
@@ -10,7 +10,7 @@ In this section, we feature a list of completed and missing programs in Formalit
 
 Below, you'll find a list of completed code snippets in Formality. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :warning: [Hello World in Formality](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+formality) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :white_check_mark: [Hello World in Formality](https://sampleprograms.io/projects/hello-world/formality) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 
 ### Missing Programs
 

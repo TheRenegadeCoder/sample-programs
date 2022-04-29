@@ -1,6 +1,6 @@
 # Sample Programs in Objective C
 
-Welcome to Sample Programs in Objective C!
+Welcome to Sample Programs in Objective C! To find documentation related to the Objective C code in this repo, look [here.](https://sampleprograms.io/languages/objective-c)
 
 ## Sample Programs List - 10/40 :thinking:
 
@@ -10,16 +10,16 @@ In this section, we feature a list of completed and missing programs in Objectiv
 
 Below, you'll find a list of completed code snippets in Objective C. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :warning: [Capitalize in Objective C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+objective+c) [[Requirements](https://sampleprograms.io/projects/capitalize)]
-- :warning: [Even Odd in Objective C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+objective+c) [[Requirements](https://sampleprograms.io/projects/even-odd)]
-- :warning: [Factorial in Objective C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+objective+c) [[Requirements](https://sampleprograms.io/projects/factorial)]
-- :warning: [Fibonacci in Objective C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+objective+c) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
-- :warning: [File Io in Objective C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+io+objective+c) [[Requirements](https://sampleprograms.io/projects/file-io)]
-- :warning: [Fizz Buzz in Objective C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+objective+c) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
-- :warning: [Hello World in Objective C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+objective+c) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :warning: [Merge Sort in Objective C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+objective+c) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
-- :warning: [Quick Sort in Objective C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+objective+c) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
-- :warning: [Reverse String in Objective C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+objective+c) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
+- :white_check_mark: [Capitalize in Objective C](https://sampleprograms.io/projects/capitalize/objective-c) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :white_check_mark: [Even Odd in Objective C](https://sampleprograms.io/projects/even-odd/objective-c) [[Requirements](https://sampleprograms.io/projects/even-odd)]
+- :white_check_mark: [Factorial in Objective C](https://sampleprograms.io/projects/factorial/objective-c) [[Requirements](https://sampleprograms.io/projects/factorial)]
+- :white_check_mark: [Fibonacci in Objective C](https://sampleprograms.io/projects/fibonacci/objective-c) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
+- :white_check_mark: [File Io in Objective C](https://sampleprograms.io/projects/file-io/objective-c) [[Requirements](https://sampleprograms.io/projects/file-io)]
+- :white_check_mark: [Fizz Buzz in Objective C](https://sampleprograms.io/projects/fizz-buzz/objective-c) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
+- :white_check_mark: [Hello World in Objective C](https://sampleprograms.io/projects/hello-world/objective-c) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :white_check_mark: [Merge Sort in Objective C](https://sampleprograms.io/projects/merge-sort/objective-c) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
+- :white_check_mark: [Quick Sort in Objective C](https://sampleprograms.io/projects/quick-sort/objective-c) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
+- :white_check_mark: [Reverse String in Objective C](https://sampleprograms.io/projects/reverse-string/objective-c) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 
 ### Missing Programs
 

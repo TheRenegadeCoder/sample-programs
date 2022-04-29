@@ -1,6 +1,6 @@
 # Sample Programs in Groovy
 
-Welcome to Sample Programs in Groovy!
+Welcome to Sample Programs in Groovy! To find documentation related to the Groovy code in this repo, look [here.](https://sampleprograms.io/languages/groovy)
 
 ## Sample Programs List - 8/40 :disappointed:
 
@@ -10,14 +10,14 @@ In this section, we feature a list of completed and missing programs in Groovy. 
 
 Below, you'll find a list of completed code snippets in Groovy. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :warning: [Baklava in Groovy](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+groovy) [[Requirements](https://sampleprograms.io/projects/baklava)]
-- :warning: [Capitalize in Groovy](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+groovy) [[Requirements](https://sampleprograms.io/projects/capitalize)]
-- :warning: [Even Odd in Groovy](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+groovy) [[Requirements](https://sampleprograms.io/projects/even-odd)]
-- :warning: [Factorial in Groovy](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+groovy) [[Requirements](https://sampleprograms.io/projects/factorial)]
-- :warning: [Fibonacci in Groovy](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+groovy) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
-- :warning: [Hello World in Groovy](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+groovy) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :warning: [Merge Sort in Groovy](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+groovy) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
-- :warning: [Reverse String in Groovy](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+groovy) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
+- :white_check_mark: [Baklava in Groovy](https://sampleprograms.io/projects/baklava/groovy) [[Requirements](https://sampleprograms.io/projects/baklava)]
+- :white_check_mark: [Capitalize in Groovy](https://sampleprograms.io/projects/capitalize/groovy) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :white_check_mark: [Even Odd in Groovy](https://sampleprograms.io/projects/even-odd/groovy) [[Requirements](https://sampleprograms.io/projects/even-odd)]
+- :white_check_mark: [Factorial in Groovy](https://sampleprograms.io/projects/factorial/groovy) [[Requirements](https://sampleprograms.io/projects/factorial)]
+- :white_check_mark: [Fibonacci in Groovy](https://sampleprograms.io/projects/fibonacci/groovy) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
+- :white_check_mark: [Hello World in Groovy](https://sampleprograms.io/projects/hello-world/groovy) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :white_check_mark: [Merge Sort in Groovy](https://sampleprograms.io/projects/merge-sort/groovy) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
+- :white_check_mark: [Reverse String in Groovy](https://sampleprograms.io/projects/reverse-string/groovy) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 
 ### Missing Programs
 

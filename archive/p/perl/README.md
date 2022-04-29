@@ -10,21 +10,21 @@ In this section, we feature a list of completed and missing programs in Perl. Se
 
 Below, you'll find a list of completed code snippets in Perl. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :warning: [Baklava in Perl](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+perl) [[Requirements](https://sampleprograms.io/projects/baklava)]
-- :warning: [Bubble Sort in Perl](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+perl) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
-- :warning: [Capitalize in Perl](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+perl) [[Requirements](https://sampleprograms.io/projects/capitalize)]
-- :warning: [Even Odd in Perl](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+perl) [[Requirements](https://sampleprograms.io/projects/even-odd)]
-- :warning: [Factorial in Perl](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+perl) [[Requirements](https://sampleprograms.io/projects/factorial)]
-- :warning: [Fibonacci in Perl](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+perl) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
-- :warning: [File Io in Perl](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+io+perl) [[Requirements](https://sampleprograms.io/projects/file-io)]
-- :warning: [Fizz Buzz in Perl](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+perl) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
+- :white_check_mark: [Baklava in Perl](https://sampleprograms.io/projects/baklava/perl) [[Requirements](https://sampleprograms.io/projects/baklava)]
+- :white_check_mark: [Bubble Sort in Perl](https://sampleprograms.io/projects/bubble-sort/perl) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
+- :white_check_mark: [Capitalize in Perl](https://sampleprograms.io/projects/capitalize/perl) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :white_check_mark: [Even Odd in Perl](https://sampleprograms.io/projects/even-odd/perl) [[Requirements](https://sampleprograms.io/projects/even-odd)]
+- :white_check_mark: [Factorial in Perl](https://sampleprograms.io/projects/factorial/perl) [[Requirements](https://sampleprograms.io/projects/factorial)]
+- :white_check_mark: [Fibonacci in Perl](https://sampleprograms.io/projects/fibonacci/perl) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
+- :white_check_mark: [File Io in Perl](https://sampleprograms.io/projects/file-io/perl) [[Requirements](https://sampleprograms.io/projects/file-io)]
+- :white_check_mark: [Fizz Buzz in Perl](https://sampleprograms.io/projects/fizz-buzz/perl) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Perl](https://sampleprograms.io/projects/hello-world/perl) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :warning: [Insertion Sort in Perl](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+perl) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
-- :warning: [Palindromic Number in Perl](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+perl) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
-- :warning: [Prime Number in Perl](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+perl) [[Requirements](https://sampleprograms.io/projects/prime-number)]
-- :warning: [Quine in Perl](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+perl) [[Requirements](https://sampleprograms.io/projects/quine)]
-- :warning: [Reverse String in Perl](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+perl) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
-- :warning: [Rot 13 in Perl](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot+13+perl) [[Requirements](https://sampleprograms.io/projects/rot-13)]
+- :white_check_mark: [Insertion Sort in Perl](https://sampleprograms.io/projects/insertion-sort/perl) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
+- :white_check_mark: [Palindromic Number in Perl](https://sampleprograms.io/projects/palindromic-number/perl) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
+- :white_check_mark: [Prime Number in Perl](https://sampleprograms.io/projects/prime-number/perl) [[Requirements](https://sampleprograms.io/projects/prime-number)]
+- :white_check_mark: [Quine in Perl](https://sampleprograms.io/projects/quine/perl) [[Requirements](https://sampleprograms.io/projects/quine)]
+- :white_check_mark: [Reverse String in Perl](https://sampleprograms.io/projects/reverse-string/perl) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
+- :white_check_mark: [Rot 13 in Perl](https://sampleprograms.io/projects/rot-13/perl) [[Requirements](https://sampleprograms.io/projects/rot-13)]
 
 ### Missing Programs
 

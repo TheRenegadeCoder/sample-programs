@@ -12,7 +12,7 @@ Below, you'll find a list of completed code snippets in Powershell. Code snippet
 
 - :white_check_mark: [Fizz Buzz in Powershell](https://sampleprograms.io/projects/fizz-buzz/powershell) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Powershell](https://sampleprograms.io/projects/hello-world/powershell) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :warning: [Reverse String in Powershell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+powershell) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
+- :white_check_mark: [Reverse String in Powershell](https://sampleprograms.io/projects/reverse-string/powershell) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 
 ### Missing Programs
 

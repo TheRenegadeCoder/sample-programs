@@ -10,14 +10,14 @@ In this section, we feature a list of completed and missing programs in Elixir. 
 
 Below, you'll find a list of completed code snippets in Elixir. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :warning: [Baklava in Elixir](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+elixir) [[Requirements](https://sampleprograms.io/projects/baklava)]
-- :warning: [Bubble Sort in Elixir](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+elixir) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
-- :warning: [Capitalize in Elixir](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+elixir) [[Requirements](https://sampleprograms.io/projects/capitalize)]
-- :warning: [Even Odd in Elixir](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+elixir) [[Requirements](https://sampleprograms.io/projects/even-odd)]
-- :warning: [Factorial in Elixir](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+elixir) [[Requirements](https://sampleprograms.io/projects/factorial)]
-- :warning: [Fizz Buzz in Elixir](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+elixir) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
+- :white_check_mark: [Baklava in Elixir](https://sampleprograms.io/projects/baklava/elixir) [[Requirements](https://sampleprograms.io/projects/baklava)]
+- :white_check_mark: [Bubble Sort in Elixir](https://sampleprograms.io/projects/bubble-sort/elixir) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
+- :white_check_mark: [Capitalize in Elixir](https://sampleprograms.io/projects/capitalize/elixir) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :white_check_mark: [Even Odd in Elixir](https://sampleprograms.io/projects/even-odd/elixir) [[Requirements](https://sampleprograms.io/projects/even-odd)]
+- :white_check_mark: [Factorial in Elixir](https://sampleprograms.io/projects/factorial/elixir) [[Requirements](https://sampleprograms.io/projects/factorial)]
+- :white_check_mark: [Fizz Buzz in Elixir](https://sampleprograms.io/projects/fizz-buzz/elixir) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Elixir](https://sampleprograms.io/projects/hello-world/elixir) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :warning: [Lcs in Elixir](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+lcs+elixir) [[Requirements](https://sampleprograms.io/projects/lcs)]
+- :white_check_mark: [Lcs in Elixir](https://sampleprograms.io/projects/lcs/elixir) [[Requirements](https://sampleprograms.io/projects/lcs)]
 
 ### Missing Programs
 

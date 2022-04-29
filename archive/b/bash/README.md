@@ -10,21 +10,21 @@ In this section, we feature a list of completed and missing programs in Bash. Se
 
 Below, you'll find a list of completed code snippets in Bash. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :warning: [Baklava in Bash](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+bash) [[Requirements](https://sampleprograms.io/projects/baklava)]
-- :warning: [Bubble Sort in Bash](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+bash) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
-- :warning: [Capitalize in Bash](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+bash) [[Requirements](https://sampleprograms.io/projects/capitalize)]
-- :warning: [Even Odd in Bash](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+bash) [[Requirements](https://sampleprograms.io/projects/even-odd)]
-- :warning: [Factorial in Bash](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+bash) [[Requirements](https://sampleprograms.io/projects/factorial)]
-- :warning: [Fibonacci in Bash](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+bash) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
-- :warning: [File Io in Bash](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+io+bash) [[Requirements](https://sampleprograms.io/projects/file-io)]
-- :warning: [Fizz Buzz in Bash](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+bash) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
-- :warning: [Game Of Life in Bash](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+game+of+life+bash) [[Requirements](https://sampleprograms.io/projects/game-of-life)]
+- :white_check_mark: [Baklava in Bash](https://sampleprograms.io/projects/baklava/bash) [[Requirements](https://sampleprograms.io/projects/baklava)]
+- :white_check_mark: [Bubble Sort in Bash](https://sampleprograms.io/projects/bubble-sort/bash) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
+- :white_check_mark: [Capitalize in Bash](https://sampleprograms.io/projects/capitalize/bash) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :white_check_mark: [Even Odd in Bash](https://sampleprograms.io/projects/even-odd/bash) [[Requirements](https://sampleprograms.io/projects/even-odd)]
+- :white_check_mark: [Factorial in Bash](https://sampleprograms.io/projects/factorial/bash) [[Requirements](https://sampleprograms.io/projects/factorial)]
+- :white_check_mark: [Fibonacci in Bash](https://sampleprograms.io/projects/fibonacci/bash) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
+- :white_check_mark: [File Io in Bash](https://sampleprograms.io/projects/file-io/bash) [[Requirements](https://sampleprograms.io/projects/file-io)]
+- :white_check_mark: [Fizz Buzz in Bash](https://sampleprograms.io/projects/fizz-buzz/bash) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
+- :white_check_mark: [Game Of Life in Bash](https://sampleprograms.io/projects/game-of-life/bash) [[Requirements](https://sampleprograms.io/projects/game-of-life)]
 - :white_check_mark: [Hello World in Bash](https://sampleprograms.io/projects/hello-world/bash) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :warning: [Prime Number in Bash](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+bash) [[Requirements](https://sampleprograms.io/projects/prime-number)]
-- :warning: [Quick Sort in Bash](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+bash) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
-- :warning: [Quine in Bash](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+bash) [[Requirements](https://sampleprograms.io/projects/quine)]
-- :warning: [Reverse String in Bash](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+bash) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
-- :warning: [Selection Sort in Bash](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+bash) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
+- :white_check_mark: [Prime Number in Bash](https://sampleprograms.io/projects/prime-number/bash) [[Requirements](https://sampleprograms.io/projects/prime-number)]
+- :white_check_mark: [Quick Sort in Bash](https://sampleprograms.io/projects/quick-sort/bash) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
+- :white_check_mark: [Quine in Bash](https://sampleprograms.io/projects/quine/bash) [[Requirements](https://sampleprograms.io/projects/quine)]
+- :white_check_mark: [Reverse String in Bash](https://sampleprograms.io/projects/reverse-string/bash) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
+- :white_check_mark: [Selection Sort in Bash](https://sampleprograms.io/projects/selection-sort/bash) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 
 ### Missing Programs
 

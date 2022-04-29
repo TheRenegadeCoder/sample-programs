@@ -1,6 +1,6 @@
 # Sample Programs in Applescript
 
-Welcome to Sample Programs in Applescript!
+Welcome to Sample Programs in Applescript! To find documentation related to the Applescript code in this repo, look [here.](https://sampleprograms.io/languages/applescript)
 
 ## Sample Programs List - 1/40 :disappointed:
 
@@ -10,7 +10,7 @@ In this section, we feature a list of completed and missing programs in Applescr
 
 Below, you'll find a list of completed code snippets in Applescript. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :warning: [Hello World in Applescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+applescript) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :white_check_mark: [Hello World in Applescript](https://sampleprograms.io/projects/hello-world/applescript) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 
 ### Missing Programs
 
