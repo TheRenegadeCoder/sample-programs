@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Typescript! To find documentation related to the Typescript code in this repo, look [here.](https://sampleprograms.io/languages/typescript)
 
-## Sample Programs List - 9/40 :disappointed:
+## Sample Programs List - 8/40 :disappointed:
 
 In this section, we feature a list of completed and missing programs in Typescript. See above for the current amount of completed programs in Typescript. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -12,12 +12,11 @@ Below, you'll find a list of completed code snippets in Typescript. Code snippet
 
 - :white_check_mark: [Baklava in Typescript](https://sampleprograms.io/projects/baklava/typescript) [[Requirements](https://sampleprograms.io/projects/baklava)]
 - :white_check_mark: [Capitalize in Typescript](https://sampleprograms.io/projects/capitalize/typescript) [[Requirements](https://sampleprograms.io/projects/capitalize)]
-- :warning: [Export in Typescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+export+typescript) [[Requirements](https://sampleprograms.io/projects/import-export)]
 - :white_check_mark: [Fibonacci in Typescript](https://sampleprograms.io/projects/fibonacci/typescript) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :white_check_mark: [Fizz Buzz in Typescript](https://sampleprograms.io/projects/fizz-buzz/typescript) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Game Of Life in Typescript](https://sampleprograms.io/projects/game-of-life/typescript) [[Requirements](https://sampleprograms.io/projects/game-of-life)]
 - :white_check_mark: [Hello World in Typescript](https://sampleprograms.io/projects/hello-world/typescript) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :warning: [Import in Typescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+import+typescript) [[Requirements](https://sampleprograms.io/projects/import-export)]
+- :white_check_mark: [Import Export in Typescript](https://sampleprograms.io/projects/import-export/typescript) [[Requirements](https://sampleprograms.io/projects/import-export)]
 - :white_check_mark: [Reverse String in Typescript](https://sampleprograms.io/projects/reverse-string/typescript) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 
 ### Missing Programs
@@ -34,19 +33,18 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Factorial](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Factorial+in+Typescript) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :x: [File Io](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+File+Io+in+Typescript) [[Requirements](https://sampleprograms.io/projects/file-io)]
 - :x: [Fractions](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fractions+in+Typescript) [[Requirements](https://sampleprograms.io/projects/fractions)]
-- :x: [Import Export](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Import+Export+in+Typescript) [[Requirements](https://sampleprograms.io/projects/import-export)]
 - :x: [Insertion Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Insertion+Sort+in+Typescript) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Job+Sequencing+in+Typescript) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Josephus+Problem+in+Typescript) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :x: [Jump Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Jump+Search+in+Typescript) [[Requirements](https://sampleprograms.io/projects/jump-search)]
-- :x: [Lcs](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Lcs+in+Typescript) [[Requirements](https://sampleprograms.io/projects/lcs)]
+- :x: [LCS](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+LCS+in+Typescript) [[Requirements](https://sampleprograms.io/projects/lcs)]
+- :x: [LPS](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+LPS+in+Typescript) [[Requirements](https://sampleprograms.io/projects/lps)]
 - :x: [Linear Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Linear+Search+in+Typescript) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :x: [Longest Word](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Longest+Word+in+Typescript) [[Requirements](https://sampleprograms.io/projects/longest-word)]
-- :x: [Lps](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Lps+in+Typescript) [[Requirements](https://sampleprograms.io/projects/lps)]
+- :x: [MST](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+MST+in+Typescript) [[Requirements](https://sampleprograms.io/projects/mst)]
 - :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+Typescript) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+Typescript) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :x: [Merge Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Merge+Sort+in+Typescript) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
-- :x: [Mst](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Mst+in+Typescript) [[Requirements](https://sampleprograms.io/projects/mst)]
 - :x: [Palindromic Number](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Palindromic+Number+in+Typescript) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :x: [Prime Number](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Prime+Number+in+Typescript) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :x: [Quick Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Quick+Sort+in+Typescript) [[Requirements](https://sampleprograms.io/projects/quick-sort)]

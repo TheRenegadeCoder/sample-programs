@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in C! To find documentation related to the C code in this repo, look [here.](https://sampleprograms.io/languages/c)
 
-## Sample Programs List - 25/40 :relaxed:
+## Sample Programs List - 24/40 :relaxed:
 
 In this section, we feature a list of completed and missing programs in C. See above for the current amount of completed programs in C. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -15,18 +15,17 @@ Below, you'll find a list of completed code snippets in C. Code snippets precede
 - :white_check_mark: [Capitalize in C](https://sampleprograms.io/projects/capitalize/c) [[Requirements](https://sampleprograms.io/projects/capitalize)]
 - :white_check_mark: [Convex Hull in C](https://sampleprograms.io/projects/convex-hull/c) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :white_check_mark: [Even Odd in C](https://sampleprograms.io/projects/even-odd/c) [[Requirements](https://sampleprograms.io/projects/even-odd)]
-- :warning: [Export in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+export+c) [[Requirements](https://sampleprograms.io/projects/import-export)]
 - :white_check_mark: [Factorial in C](https://sampleprograms.io/projects/factorial/c) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :white_check_mark: [Fibonacci in C](https://sampleprograms.io/projects/fibonacci/c) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :white_check_mark: [File Io in C](https://sampleprograms.io/projects/file-io/c) [[Requirements](https://sampleprograms.io/projects/file-io)]
 - :white_check_mark: [Fizz Buzz in C](https://sampleprograms.io/projects/fizz-buzz/c) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Game Of Life in C](https://sampleprograms.io/projects/game-of-life/c) [[Requirements](https://sampleprograms.io/projects/game-of-life)]
 - :white_check_mark: [Hello World in C](https://sampleprograms.io/projects/hello-world/c) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :warning: [Import in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+import+c) [[Requirements](https://sampleprograms.io/projects/import-export)]
+- :white_check_mark: [Import Export in C](https://sampleprograms.io/projects/import-export/c) [[Requirements](https://sampleprograms.io/projects/import-export)]
 - :white_check_mark: [Insertion Sort in C](https://sampleprograms.io/projects/insertion-sort/c) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
-- :white_check_mark: [Lcs in C](https://sampleprograms.io/projects/lcs/c) [[Requirements](https://sampleprograms.io/projects/lcs)]
+- :white_check_mark: [LCS in C](https://sampleprograms.io/projects/lcs/c) [[Requirements](https://sampleprograms.io/projects/lcs)]
+- :white_check_mark: [MST in C](https://sampleprograms.io/projects/mst/c) [[Requirements](https://sampleprograms.io/projects/mst)]
 - :white_check_mark: [Merge Sort in C](https://sampleprograms.io/projects/merge-sort/c) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
-- :white_check_mark: [Mst in C](https://sampleprograms.io/projects/mst/c) [[Requirements](https://sampleprograms.io/projects/mst)]
 - :white_check_mark: [Palindromic Number in C](https://sampleprograms.io/projects/palindromic-number/c) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :white_check_mark: [Prime Number in C](https://sampleprograms.io/projects/prime-number/c) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :white_check_mark: [Quick Sort in C](https://sampleprograms.io/projects/quick-sort/c) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
@@ -45,13 +44,12 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Dijkstra+in+C) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :x: [Duplicate Char Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Duplicate+Char+Counter+in+C) [[Requirements](https://sampleprograms.io/projects/duplicate-char-counter)]
 - :x: [Fractions](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fractions+in+C) [[Requirements](https://sampleprograms.io/projects/fractions)]
-- :x: [Import Export](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Import+Export+in+C) [[Requirements](https://sampleprograms.io/projects/import-export)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Job+Sequencing+in+C) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Josephus+Problem+in+C) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :x: [Jump Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Jump+Search+in+C) [[Requirements](https://sampleprograms.io/projects/jump-search)]
+- :x: [LPS](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+LPS+in+C) [[Requirements](https://sampleprograms.io/projects/lps)]
 - :x: [Linear Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Linear+Search+in+C) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :x: [Longest Word](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Longest+Word+in+C) [[Requirements](https://sampleprograms.io/projects/longest-word)]
-- :x: [Lps](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Lps+in+C) [[Requirements](https://sampleprograms.io/projects/lps)]
 - :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+C) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+C) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :x: [Remove All Whitespace](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Remove+All+Whitespace+in+C) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]

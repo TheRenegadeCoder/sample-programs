@@ -17,7 +17,7 @@ Below, you'll find a list of completed code snippets in Elixir. Code snippets pr
 - :white_check_mark: [Factorial in Elixir](https://sampleprograms.io/projects/factorial/elixir) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :white_check_mark: [Fizz Buzz in Elixir](https://sampleprograms.io/projects/fizz-buzz/elixir) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Elixir](https://sampleprograms.io/projects/hello-world/elixir) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :white_check_mark: [Lcs in Elixir](https://sampleprograms.io/projects/lcs/elixir) [[Requirements](https://sampleprograms.io/projects/lcs)]
+- :white_check_mark: [LCS in Elixir](https://sampleprograms.io/projects/lcs/elixir) [[Requirements](https://sampleprograms.io/projects/lcs)]
 
 ### Missing Programs
 
@@ -37,13 +37,13 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Job+Sequencing+in+Elixir) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Josephus+Problem+in+Elixir) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :x: [Jump Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Jump+Search+in+Elixir) [[Requirements](https://sampleprograms.io/projects/jump-search)]
+- :x: [LPS](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+LPS+in+Elixir) [[Requirements](https://sampleprograms.io/projects/lps)]
 - :x: [Linear Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Linear+Search+in+Elixir) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :x: [Longest Word](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Longest+Word+in+Elixir) [[Requirements](https://sampleprograms.io/projects/longest-word)]
-- :x: [Lps](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Lps+in+Elixir) [[Requirements](https://sampleprograms.io/projects/lps)]
+- :x: [MST](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+MST+in+Elixir) [[Requirements](https://sampleprograms.io/projects/mst)]
 - :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+Elixir) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+Elixir) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :x: [Merge Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Merge+Sort+in+Elixir) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
-- :x: [Mst](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Mst+in+Elixir) [[Requirements](https://sampleprograms.io/projects/mst)]
 - :x: [Palindromic Number](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Palindromic+Number+in+Elixir) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :x: [Prime Number](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Prime+Number+in+Elixir) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :x: [Quick Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Quick+Sort+in+Elixir) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
