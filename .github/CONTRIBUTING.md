@@ -253,8 +253,8 @@ The same general principal applies to tests as it does to code snippets.
 That said, tests are not the final product of this repository as the code snippets are.
 Please explain in detail why a change needs to be made to tests.
 We will likely be less strict about such requests
-but still recommend waiting for approval from the core team (`@TheRenegadeCoder/core`) for beginning work that will become a pull requset.
-
+but still recommend waiting for approval from the core team (`@TheRenegadeCoder/core`) 
+for beginning work that will become a pull requset.
 
 ## Tests in Detail
 
@@ -361,10 +361,11 @@ These rules help grow and cultivate the community in a positive manner.
 
 [sample-programs-issues]: https://github.com/TheRenegadeCoder/sample-programs/issues
 
-[project-list]: https://sample-programs.therenegadecoder.com/projects/
+[project-list]: https://sampleprograms.io/projects/
 [glotter]: https://github.com/auroq/glotter
 [glotter-wiki]: https://github.com/auroq/glotter/wiki
 [glotter-directory-config]: https://github.com/auroq/glotter/wiki/Directory-Level-Configuration
+[sample-program-issues]: https://github.com/TheRenegadeCoder/sample-programs/issues
 [sample-programs-website]: https://github.com/TheRenegadeCoder/sample-programs-website
 [sample-programs-website-contributing]: https://github.com/TheRenegadeCoder/sample-programs-website
 [sample-programs-website-issues]: https://github.com/TheRenegadeCoder/sample-programs-website/issues
