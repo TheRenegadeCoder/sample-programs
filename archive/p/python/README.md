@@ -47,14 +47,14 @@ Below, you'll find a list of completed code snippets in Python. Code snippets pr
 
 The following list contains all of the approved programs that are not currently implemented in Python. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
-- :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Dijkstra+in+Python) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
-- :x: [Duplicate Char Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Duplicate+Char+Counter+in+Python) [[Requirements](https://sampleprograms.io/projects/duplicate-char-counter)]
-- :x: [Import Export](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Import+Export+in+Python) [[Requirements](https://sampleprograms.io/projects/import-export)]
-- :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Josephus+Problem+in+Python) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
-- :x: [Jump Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Jump+Search+in+Python) [[Requirements](https://sampleprograms.io/projects/jump-search)]
-- :x: [Longest Word](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Longest+Word+in+Python) [[Requirements](https://sampleprograms.io/projects/longest-word)]
-- :x: [Remove All Whitespace](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Remove+All+Whitespace+in+Python) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
-- :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+Python) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
+- :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Dijkstra+in+python) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
+- :x: [Duplicate Char Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Duplicate+Char+Counter+in+python) [[Requirements](https://sampleprograms.io/projects/duplicate-char-counter)]
+- :x: [Import Export](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Import+Export+in+python) [[Requirements](https://sampleprograms.io/projects/import-export)]
+- :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Josephus+Problem+in+python) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
+- :x: [Jump Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Jump+Search+in+python) [[Requirements](https://sampleprograms.io/projects/jump-search)]
+- :x: [Longest Word](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Longest+Word+in+python) [[Requirements](https://sampleprograms.io/projects/longest-word)]
+- :x: [Remove All Whitespace](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Remove+All+Whitespace+in+python) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
+- :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+python) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
 ## Testing
 
