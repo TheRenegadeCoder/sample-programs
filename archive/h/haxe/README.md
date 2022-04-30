@@ -61,7 +61,7 @@ The following list contains all of the approved programs that are not currently 
 The following list shares details about what we're using to test all Sample Programs in Haxe.
 
 - Docker Image: haxe
-- Docker Tag: 4.2
+- Docker Tag: 4.2-alpine
 
 See the [Glotter project](https://github.com/auroq/glotter) for more information on how to create a testinfo file.
 
