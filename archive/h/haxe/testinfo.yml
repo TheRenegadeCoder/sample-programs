@@ -6,4 +6,4 @@ container:
   image: "haxe"
   tag: "4.2-alpine"
   build: "haxe --main {{ source.name }} --python {{ source.name }}.py"
-  cmd: "python {{ source.name }}.py"
+  cmd: "py {{ source.name }}.py"
