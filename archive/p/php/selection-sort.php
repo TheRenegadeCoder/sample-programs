@@ -4,7 +4,8 @@ $numbers = array_map('intval', explode(',', $argv[1]));
 $array_size = count($numbers);
 if ($array_size <= 1)
 {
-    exit('Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"');
+    echo('Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"\n')
+    exit(1);
 }
 
 
