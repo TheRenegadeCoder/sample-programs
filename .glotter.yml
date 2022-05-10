@@ -26,6 +26,12 @@ projects:
             - "convex"
             - "hull"
         requires_parameters: true
+    depthfirstsearch:
+        words:
+            - "depth"
+            - "first"
+            - "search"
+        requires_parameters: true
     evenodd:
         words:
             - "even"
