@@ -20,6 +20,7 @@ here are some helpful links:
 - [Code of Conduct][8]: a copy of the Contributor Convenant
 - [License][9]: a copy of the MIT license document
 - [News][sample-programs-news-series]: a series of articles about what's happening in the repo
+- [Template][sample-programs-template]: a template repo, so you can create your own collection
 
 ## Support
 
@@ -29,7 +30,7 @@ a part of my website, [The Renegade Coder][10]. If you're looking to support The
 
 - Subscribe to the The Renegade Coder
   - [Patreon][7]
-  - [Newsletter][17]
+  - [Newsletter][renegade-coder-newsletter]
 - [Support via PayPal][12]
 - [Turn off AdBlock When Using The Renegade Coder][13]
 - [Comment & Share Articles][sample-programs-on-the-renegade-coder]
@@ -64,16 +65,17 @@ for sharing their work with our repo:
 [14]: https://twitter.com/RenegadeCoder94
 [15]: https://discord.gg/Jhmtj7Z
 [16]: https://therenegadecoder.com/code/longest-palindrome-substring-in-every-language/
-[17]: https://newsletter.therenegadecoder.com/
 [18]: https://therenegadecoder.com/code/fizz-buzz-in-every-language/
 [19]: https://therenegadecoder.com/code/python-code-snippets-for-everyday-problems/
-[20]: https://sample-programs.therenegadecoder.com/projects/
+[20]: https://sampleprograms.io/projects/
 
 [auroq-profile]: https://github.com/auroq
 [baklava-repo]: https://github.com/toturkmen/baklava
 [glotter-repo]: https://github.com/auroq/glotter
 [ineverylang-repo]: https://github.com/josephwegner/ineverylang
 [joesephwegner-profile]: https://github.com/josephwegner
+[renegade-coder-newsletter]: https://therenegadecoder.com/about/newsletter/
 [sample-programs-news-series]: https://therenegadecoder.com/series/sample-programs-repo-news/
 [sample-programs-on-the-renegade-coder]: https://therenegadecoder.com/code/sample-programs-in-every-language/
 [toturkmen-profile]: https://github.com/toturkmen
+[sample-programs-template]: https://github.com/TheRenegadeCoder/sample-programs-template

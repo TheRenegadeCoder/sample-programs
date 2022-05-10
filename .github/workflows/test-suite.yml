@@ -1,6 +1,6 @@
 # This workflow will install Python dependencies, download Docker images, and test every script in the repo
 
-name: Test Suite
+name: Glotter
 
 on:
   push:
@@ -9,8 +9,8 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
-
+  testing:
+    name: "Test Suite"
     runs-on: ubuntu-latest
 
     steps:
