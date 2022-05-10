@@ -116,7 +116,7 @@ projects:
             - "palindromic"
             - "number"
         requires_parameters: true
-    prime:
+    primenumber:
         words:
             - "prime"
             - "number"
