@@ -1,24 +1,31 @@
 # This workflow generates READMEs for all languages
 
-name: README Generation
+name: Ronbun
 
 on: 
   push:
     branches:
       - 'main'
+  schedule:
+    - cron: 0 0 * * 0
 
 jobs:
-  build:
-
+  readme:
+    name: "README Generation"
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
+      with:
+        submodules: recursive
     
     - name: Set up Python 3.9
       uses: actions/setup-python@v2
       with:
         python-version: 3.9
+
+    - name: Update Submodules
+      run: git submodule update --remote
         
     - name: Install Dependencies
       run: |
@@ -38,7 +45,3 @@ jobs:
           on-behalf-of: @TheRenegadeCoder <jeremy.grifski@therenegadecoder.com>
         author_name: Jeremy Grifski
         author_email: jeremy.grifski@therenegadecoder.com
-        
-      env:
-        # This is necessary in order to push a commit to the repo
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
