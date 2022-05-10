@@ -25,7 +25,7 @@ class ProjectType(Enum):
     MergeSort = auto()
     MST = auto()
     PalindromicNumber = auto()
-    Prime = auto()
+    PrimeNumber = auto()
     QuickSort = auto()
     Quine = auto()
     ROT13 = auto()
