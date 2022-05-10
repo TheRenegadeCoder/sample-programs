@@ -1,6 +1,8 @@
+from __future__ import absolute_import
+
 import operator
 import sys
-from fractions import Fraction
+import fractions
 
 d = {
     "+": operator.add,
@@ -18,15 +20,15 @@ d = {
 
 def main(args):
     if len(args) != 3:
-        print("Usage: python fraction.py operand1 operator operand2")
+        print("Usage: python ./fractions operand1 operator operand2")
         sys.exit(1)
     else:
         try:
-            o1 = Fraction(args[0])
+            o1 = fractions.Fraction(args[0])
         except ValueError:
             print(f"Invalid operand: {args[0]}")
         try:
-            o2 = Fraction(args[2])
+            o2 = fractions.Fraction(args[2])
         except ValueError:
             print(f"Invalid operand: {args[2]}")
         try:
