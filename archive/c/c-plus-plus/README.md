@@ -20,7 +20,7 @@ Below, you'll find a list of completed code snippets in C++. Code snippets prece
 - :white_check_mark: [Fibonacci in C++](https://sampleprograms.io/projects/fibonacci/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :white_check_mark: [File Io in C++](https://sampleprograms.io/projects/file-io/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/file-io)]
 - :white_check_mark: [Fizz Buzz in C++](https://sampleprograms.io/projects/fizz-buzz/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
-- :white_check_mark: [Fractions in C++](https://sampleprograms.io/projects/fractions/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/fractions)]
+- :white_check_mark: [Fraction Math in C++](https://sampleprograms.io/projects/fraction-math/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :white_check_mark: [Game Of Life in C++](https://sampleprograms.io/projects/game-of-life/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/game-of-life)]
 - :white_check_mark: [Hello World in C++](https://sampleprograms.io/projects/hello-world/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :white_check_mark: [Import Export in C++](https://sampleprograms.io/projects/import-export/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/import-export)]

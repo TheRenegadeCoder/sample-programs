@@ -21,7 +21,7 @@ Below, you'll find a list of completed code snippets in Python. Code snippets pr
 - :white_check_mark: [Fibonacci in Python](https://sampleprograms.io/projects/fibonacci/python) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :white_check_mark: [File Io in Python](https://sampleprograms.io/projects/file-io/python) [[Requirements](https://sampleprograms.io/projects/file-io)]
 - :white_check_mark: [Fizz Buzz in Python](https://sampleprograms.io/projects/fizz-buzz/python) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
-- :white_check_mark: [Fractions in Python](https://sampleprograms.io/projects/fractions/python) [[Requirements](https://sampleprograms.io/projects/fractions)]
+- :white_check_mark: [Fraction Math in Python](https://sampleprograms.io/projects/fraction-math/python) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :white_check_mark: [Game Of Life in Python](https://sampleprograms.io/projects/game-of-life/python) [[Requirements](https://sampleprograms.io/projects/game-of-life)]
 - :white_check_mark: [Hello World in Python](https://sampleprograms.io/projects/hello-world/python) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :white_check_mark: [Insertion Sort in Python](https://sampleprograms.io/projects/insertion-sort/python) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]

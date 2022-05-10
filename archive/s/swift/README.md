@@ -14,7 +14,7 @@ Below, you'll find a list of completed code snippets in Swift. Code snippets pre
 - :white_check_mark: [Even Odd in Swift](https://sampleprograms.io/projects/even-odd/swift) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :white_check_mark: [Fibonacci in Swift](https://sampleprograms.io/projects/fibonacci/swift) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :white_check_mark: [Fizz Buzz in Swift](https://sampleprograms.io/projects/fizz-buzz/swift) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
-- :white_check_mark: [Fractions in Swift](https://sampleprograms.io/projects/fractions/swift) [[Requirements](https://sampleprograms.io/projects/fractions)]
+- :white_check_mark: [Fraction Math in Swift](https://sampleprograms.io/projects/fraction-math/swift) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :white_check_mark: [Hello World in Swift](https://sampleprograms.io/projects/hello-world/swift) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :white_check_mark: [Reverse String in Swift](https://sampleprograms.io/projects/reverse-string/swift) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 
