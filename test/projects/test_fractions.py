@@ -9,11 +9,11 @@ invalid_permutations = (
         (
             'no input',
             None,
-            'Usage: ./fractions operand1 operator operand2'
+            'Usage: ./fraction-math operand1 operator operand2'
         ), (
             'empty input',
             '""',
-            'Usage: ./fractions operand1 operator operand2'
+            'Usage: ./fractions-math operand1 operator operand2'
         )
     ]
 )
@@ -75,7 +75,7 @@ def capitalize(request):
 @project_test(ProjectType.FractionMath.key)
 @pytest.mark.parametrize(valid_permutations[0], valid_permutations[1],
                          ids=[p[0] for p in valid_permutations[1]])
-def test_capitalize_valid(description, in_params, expected, capitalize):
+def test_fractions_valid(description, in_params, expected, capitalize):
     actual = capitalize.run(params=in_params)
     assert actual.strip() == expected
 
@@ -83,6 +83,6 @@ def test_capitalize_valid(description, in_params, expected, capitalize):
 @project_test(ProjectType.FractionMath.key)
 @pytest.mark.parametrize(invalid_permutations[0], invalid_permutations[1],
                          ids=[p[0] for p in invalid_permutations[1]])
-def test_capitalize_invalid(description, in_params, expected, capitalize):
+def test_fractions_invalid(description, in_params, expected, capitalize):
     actual = capitalize.run(params=in_params)
     assert actual.strip() == expected
