@@ -14,7 +14,7 @@ class ProjectType(Enum):
     Fibonacci = auto()
     FileIO = auto()
     FizzBuzz = auto()
-    Fractions = auto()
+    FractionMath = auto()
     HelloWorld = auto()
     InsertionSort = auto()
     JobSequencing = auto()

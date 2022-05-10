@@ -65,14 +65,14 @@ valid_permutations = (
 )
 
 
-@project_fixture(ProjectType.Fractions.key)
+@project_fixture(ProjectType.FractionMath.key)
 def capitalize(request):
     request.param.build()
     yield request.param
     request.param.cleanup()
 
 
-@project_test(ProjectType.Fractions.key)
+@project_test(ProjectType.FractionMath.key)
 @pytest.mark.parametrize(valid_permutations[0], valid_permutations[1],
                          ids=[p[0] for p in valid_permutations[1]])
 def test_capitalize_valid(description, in_params, expected, capitalize):
@@ -80,7 +80,7 @@ def test_capitalize_valid(description, in_params, expected, capitalize):
     assert actual.strip() == expected
 
 
-@project_test(ProjectType.Fractions.key)
+@project_test(ProjectType.FractionMath.key)
 @pytest.mark.parametrize(invalid_permutations[0], invalid_permutations[1],
                          ids=[p[0] for p in invalid_permutations[1]])
 def test_capitalize_invalid(description, in_params, expected, capitalize):

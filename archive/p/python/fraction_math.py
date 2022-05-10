@@ -1,8 +1,6 @@
-from __future__ import absolute_import
-
 import operator
 import sys
-import fractions
+from fractions import Fraction
 
 d = {
     "+": operator.add,
@@ -24,11 +22,11 @@ def main(args):
         sys.exit(1)
     else:
         try:
-            o1 = fractions.Fraction(args[0])
+            o1 = Fraction(args[0])
         except ValueError:
             print(f"Invalid operand: {args[0]}")
         try:
-            o2 = fractions.Fraction(args[2])
+            o2 = Fraction(args[2])
         except ValueError:
             print(f"Invalid operand: {args[2]}")
         try:

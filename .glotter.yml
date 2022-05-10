@@ -57,9 +57,10 @@ projects:
             - "fizz"
             - "buzz"
         requires_parameters: false
-    fractions:
+    fractionmath:
         words:
-            - "fractions"
+            - "fraction"
+            - "math"
         requires_parameters: true
     helloworld:
         words:
