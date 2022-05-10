@@ -45,3 +45,4 @@ jobs:
           on-behalf-of: @TheRenegadeCoder <jeremy.grifski@therenegadecoder.com>
         author_name: Jeremy Grifski
         author_email: jeremy.grifski@therenegadecoder.com
+        push: origin HEAD:${{ github.head_ref }}
