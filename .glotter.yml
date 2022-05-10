@@ -88,6 +88,12 @@ projects:
             - "linear"
             - "search"
         requires_parameters: true
+    maximumarrayrotation:
+        words:
+            - "maximum"
+            - "array"
+            - "rotation"
+        requires_parameters: true
     mergesort:
         words:
             - "merge"
