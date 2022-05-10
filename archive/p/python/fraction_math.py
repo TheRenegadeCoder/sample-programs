@@ -18,7 +18,7 @@ d = {
 
 def main(args):
     if len(args) != 3:
-        print("Usage: ./fractions operand1 operator operand2")
+        print("Usage: ./fraction-math operand1 operator operand2")
         sys.exit(1)
     else:
         try:
