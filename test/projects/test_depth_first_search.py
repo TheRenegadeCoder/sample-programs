@@ -37,6 +37,22 @@ valid_permutations = (
             'sample input: last true',
             '"0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0" "1, 3, 5, 2, 4" "4"',
             'true'
+        ), (
+            'sample input: middle true',
+            '"0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0" "1, 3, 5, 2, 4" "5"',
+            'true'
+        ), (
+            'sample input: one true',
+            '"0" "1" "1"',
+            'true'
+        ), (
+            'sample input: one false',
+            '"0" "1" "6"',
+            'false'
+        ), (
+            'sample input: many false',
+            '"0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0" "1, 3, 5, 2, 4" "7"',
+            'false'
         )
     ]
 )
