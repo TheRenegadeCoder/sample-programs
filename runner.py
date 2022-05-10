@@ -8,6 +8,7 @@ class ProjectType(Enum):
     BubbleSort = auto()
     Capitalize = auto()
     ConvexHull = auto()
+    DepthFirstSearch = auto()
     EvenOdd = auto()
     Factorial = auto()
     Fibonacci = auto()
