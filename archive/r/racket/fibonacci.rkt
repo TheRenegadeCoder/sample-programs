@@ -20,4 +20,4 @@
      ]))
     
   
-(fibonacci (string->number (read-line)))
+(fibonacci (string->number (vector-ref (current-command-line-arguments) 0)))
