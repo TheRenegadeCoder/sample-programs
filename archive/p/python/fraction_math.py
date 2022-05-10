@@ -7,12 +7,12 @@ d = {
     "-": operator.sub,
     "*": operator.mul,
     "/": operator.truediv,
-    "==": operator.eq,
-    "<": operator.lt,
-    ">": operator.gt,
-    "<=": operator.le,
-    ">=": operator.ge,
-    "!=": operator.ne,
+    "==": lambda x, y: int(operator.eq(x, y)),
+    "<": lambda x, y: int(operator.lt(x, y)),
+    ">": lambda x, y: int(operator.gt(x, y)),
+    "<=": lambda x, y: int(operator.le(x, y)),
+    ">=": lambda x, y: int(operator.ge(x, y)),
+    "!=": lambda x, y: int(operator.ne(x, y)),
 }
 
 
