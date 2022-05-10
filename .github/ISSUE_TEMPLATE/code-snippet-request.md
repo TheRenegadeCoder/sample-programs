@@ -9,7 +9,7 @@ assignees: ''
 To request a new code snippet, please fill out the following:
 
 Project name: 
-Project link: https://sample-programs.therenegadecoder.com/projects/my-project-name
+Project link: https://sampleprograms.io/projects/my-project-name
 Language: 
 
 If this code snippet will also be the first in a new language, please fill out the following:
@@ -23,4 +23,4 @@ Official Language Docker Image: https://hub.docker.com/r/repository/image
 > please first make a pull request to the [Sample Programs Website][sample-programs-website].
 
 [sample-programs-website]: https://github.com/TheRenegadeCoder/sample-programs-website
-[sample-programs-project-list]: https://sample-programs.therenegadecoder.com/projects/
+[sample-programs-project-list]: https://sampleprograms.io/projects/
