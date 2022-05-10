@@ -36,12 +36,9 @@ jobs:
       run: ronbun archive/ --log=DEBUG
         
     - name: Commit READMEs
-      uses: EndBug/add-and-commit@v9 
-      with:
-        message: |
-          Generated READMEs from sources using Ronbun
-          
-          
-          on-behalf-of: @TheRenegadeCoder <jeremy.grifski@therenegadecoder.com>
-        author_name: Jeremy Grifski
-        author_email: jeremy.grifski@therenegadecoder.com
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        git commit -m "Updated READMEs & Submodules"
+        git push
