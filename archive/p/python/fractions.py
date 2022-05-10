@@ -20,7 +20,7 @@ d = {
 
 def main(args):
     if len(args) != 3:
-        print("Usage: python ./fractions operand1 operator operand2")
+        print("Usage: ./fractions operand1 operator operand2")
         sys.exit(1)
     else:
         try:
