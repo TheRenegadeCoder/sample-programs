@@ -1,0 +1,8 @@
+folder:
+  extension: ".scm"
+  naming: "hyphen"
+
+container:
+  image: "schemers/gauche"
+  tag: "0"
+  cmd: "gosh {{ source.name }}{{ source.extension }}"

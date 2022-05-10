@@ -41,8 +41,6 @@ You will find more detail about each guideline throughout the rest of this docum
 - Pull requests for code snippets _must_ match an existing project. [More info...][requirements-for-a-new-project]
 - Pull requests for code snippets in a **new language** must _must_ include a `testinfo.yml` file
   in order to test snippets in the new language. [More info...][add-testinfoyml]
-- Pull requests for code snippets in a **new language** _must_ include a `README.md`
-  containing information about the language. [More info...][create-readmes]
 
 ### Issues
 
@@ -74,8 +72,7 @@ Within each language folder, you'll find the following:
 
 Now, each program file maps to an ongoing project that you can find in the Docs directory.
 As for the README, it contains a list of the project files that
-links to existing articles in the documentation. In addition, the README contains
-links to language references and a list of fun facts.
+links to existing articles in the documentation. 
 The `testinfo.yml` provides information about the projects in the folder
 to our testing library.
 
@@ -164,8 +161,7 @@ For instance, let's say you find that the Python collection is missing both
 Hello World and Fibonacci, and you'd like to add them both. It would be to
 your advantage to then fork the repo and make a branch for each program.
 
-On your Hello World branch, add your sample program and update the
-Python README to reflect the change. Then make a pull request.
+On your Hello World branch, add your sample program. Then make a pull request.
 Because you've made a branch, you won't have to wait for us to approve the change.
 You can quickly jump back to master and create a new branch for your next
 program.
@@ -206,58 +202,13 @@ See [Tests in Detail][tests-in-detail] below for more information.
 ### Requirements for a New Language
 
 Occasionally, there will be times when you may want to add a new language to the repo.
-When adding new languages, make sure you include a README and setup the language for testing.
-
-#### Create READMEs
-
-Language READMEs should use the following format:
-
-```markdown
-# Sample Programs in [Insert Language Here]
-
-Welcome to Sample Programs in [Insert Language Here]!
-
-## Sample Programs
-
-Below, you'll find a list of code snippets in this collection.
-Code snippets preceded by :warning: link to an article request 
-issue while code snippets preceded by :white_check_mark: link
-to an existing article which provides further documentation.
-
-- [Insert List of Sample Program Additions Here]
-
-## Fun Facts
-
-- [Insert List of Fun Facts Here]
-
-## References
-
-- [Insert Language References Here]
-
-[example-article-link]: example.com
-```
-
-In the section labeled `[Insert List of Sample Program Additions Here]`, please
-add the name of the sample program you've added. Ideally, you would link to the
-article here. At this point, however, the article doesn't exist. Instead, [create 
-an issue for the article][sample-programs-website-issues] and link the issue here.
-
-In addition, in the section labeled `[Insert List of Fun Facts Here]`, please
-add fun information like when the language debuted, who develops the language,
-and what type system the language uses.
-
-Finally, in the section labeled `[Insert Language References Here]`, please add
-language references to the language's README. Acceptable references include
-Wikipedia pages, style guides, official websites, online editors, and GitHub pages.
-This helps us determine if the language actually exists, and it helps users who
-are browsing the repository.
-
-Make sure all links in the README leverage the linking scheme in the template.
-Feel free to look at the raw version of this contributing doc for an example.
+When adding new languages, make sure to setup the language for testing. Do not
+worry about adding a README file. These are generated automatically during the
+pull request process. 
 
 #### Add `testinfo.yml`
 
-In addition to the README, all new languages must be setup for testing.
+All new languages must be setup for testing.
 To do so, add a file called `testinfo.yml` to the new language directory.
 
 Refer to the [Glotter Wiki][glotter-directory-config] and the [Tests in Detail section][tests-in-detail] below
@@ -302,8 +253,8 @@ The same general principal applies to tests as it does to code snippets.
 That said, tests are not the final product of this repository as the code snippets are.
 Please explain in detail why a change needs to be made to tests.
 We will likely be less strict about such requests
-but still recommend waiting for approval from the core team (`@TheRenegadeCoder/core`) for beginning work that will become a pull requset.
-
+but still recommend waiting for approval from the core team (`@TheRenegadeCoder/core`) 
+for beginning work that will become a pull requset.
 
 ## Tests in Detail
 
@@ -373,8 +324,8 @@ If no docker image exists for the language at all, please reach out to the core 
 
 **Please** do not submit work that is copied from another source. If work is found to be
 plagiarized, the issue must be remedied ASAP. The quickest solution is to cite the source—a citation
-in the README would suffice. After that, the solution should be adapted as needed. If necessary, the
-solution will be removed at the author's request.
+comment in the source code would suffice. After that, the solution should be adapted as needed. 
+If necessary, the solution will be removed at the author's request.
 
 Whenever possible, **please** request the original author to share their solution with this repo. This
 keeps the repo tidy by eliminating the need for citations.
@@ -398,7 +349,6 @@ These rules help grow and cultivate the community in a positive manner.
 [add-project-to-sample-programs-website]: #add-project-to-sample-programs-website
 [add-test-for-project]: #add-test-for-project
 [requirements-for-a-new-language]: #requirements-for-a-new-language
-[create-readmes]: #create-readmes
 [add-testinfoyml]: #add-testinfoyml
 [issues-in-detail]: #issues-in-detail
 [modifying-existing-code-snippets]: #modifying-existing-code-snippets
@@ -411,17 +361,17 @@ These rules help grow and cultivate the community in a positive manner.
 
 [sample-programs-issues]: https://github.com/TheRenegadeCoder/sample-programs/issues
 
-[project-list]: https://sample-programs.therenegadecoder.com/projects/
+[project-list]: https://sampleprograms.io/projects/
 [glotter]: https://github.com/auroq/glotter
 [glotter-wiki]: https://github.com/auroq/glotter/wiki
 [glotter-directory-config]: https://github.com/auroq/glotter/wiki/Directory-Level-Configuration
+[sample-program-issues]: https://github.com/TheRenegadeCoder/sample-programs/issues
 [sample-programs-website]: https://github.com/TheRenegadeCoder/sample-programs-website
 [sample-programs-website-contributing]: https://github.com/TheRenegadeCoder/sample-programs-website
 [sample-programs-website-issues]: https://github.com/TheRenegadeCoder/sample-programs-website/issues
 
 [project-glotter-yml]: ../.glotter.yml
 [test-projectes-folder]: ../test/projects
-[python-readme]: https://github.com/jrg94/sample-programs/blob/master/archive/p/python/README.md
 
 [fork-a-repo]: https://help.github.com/articles/fork-a-repo
 [draft-pull-request]: https://github.blog/2019-02-14-introducing-draft-pull-requests/
