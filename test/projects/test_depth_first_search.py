@@ -68,7 +68,7 @@ def job_sequencing(request):
 @project_test(ProjectType.DepthFirstSearch.key)
 @pytest.mark.parametrize(valid_permutations[0], valid_permutations[1],
                          ids=[p[0] for p in valid_permutations[1]])
-def test_job_sequencing_valid(description, in_params, expected, job_sequencing):
+def test_depth_first_search_valid(description, in_params, expected, job_sequencing):
     actual = job_sequencing.run(params=in_params)
     assert actual.strip() == expected
 
@@ -76,6 +76,6 @@ def test_job_sequencing_valid(description, in_params, expected, job_sequencing):
 @project_test(ProjectType.DepthFirstSearch.key)
 @pytest.mark.parametrize(invalid_permutations[0], invalid_permutations[1],
                          ids=[p[0] for p in invalid_permutations[1]])
-def test_job_sequencing_invalid(description, in_params, expected, job_sequencing):
+def test_depth_first_search_invalid(description, in_params, expected, job_sequencing):
     actual = job_sequencing.run(params=in_params)
     assert actual.strip() == expected
