@@ -1,4 +1,4 @@
-(define(reverse-string x)
+(define (reverse-string x)
   (list->string (reverse (string->list x))))
 
-(display (reverse-string (read-line)))
+(display (reverse-string (list-ref (command-line) 1)))
