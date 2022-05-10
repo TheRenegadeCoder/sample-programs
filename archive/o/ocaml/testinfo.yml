@@ -1,0 +1,9 @@
+folder:
+  extension: ".ml"
+  naming: "hyphen"
+
+container:
+  image: "ocaml/ocaml"
+  tag: "latest"
+  build: "ocamlc -o {{ source.name }} {{ source.name }}{{ source.extension }}"
+  cmd: "./{{ source.name }}"

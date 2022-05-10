@@ -1,18 +1,26 @@
 # This workflow generates READMEs for all languages
 
-name: README Generation
+name: Ronbun
 
-on:
-  pull_request:
-    branches: [ main ]
+on: 
+  push:
+    branches:
+      - 'main'
+  schedule:
+    - cron: 0 0 * * 0
 
 jobs:
-  build:
-
+  readme:
+    name: "README Generation"
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
+      with:
+        submodules: recursive
+    
+    - name: Update Submodules
+      run: git submodule update --remote
     
     - name: Set up Python 3.9
       uses: actions/setup-python@v2
@@ -28,7 +36,7 @@ jobs:
       run: ronbun archive/ --log=DEBUG
         
     - name: Commit READMEs
-      uses: EndBug/add-and-commit@v5 
+      uses: EndBug/add-and-commit@v9 
       with:
         message: |
           Generated READMEs from sources using Ronbun
@@ -37,7 +45,4 @@ jobs:
           on-behalf-of: @TheRenegadeCoder <jeremy.grifski@therenegadecoder.com>
         author_name: Jeremy Grifski
         author_email: jeremy.grifski@therenegadecoder.com
-        
-      env:
-        # This is necessary in order to push a commit to the repo
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
+        push: origin HEAD:${{ github.head_ref }}
