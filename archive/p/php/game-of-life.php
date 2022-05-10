@@ -8,14 +8,15 @@
  * @param float spawn_rate Spawn rate (% living vs dead between 0.0 to 1.0)
  * @return array Array of array width x height
  */
-function build_grid($width, $height, $spawn_rate=0) {
-    $grid = array_fill(0, $height, array_fill(0, $width, FALSE));
+function build_grid($width, $height, $spawn_rate = 0)
+{
+    $grid = array_fill(0, $height, array_fill(0, $width, false));
 
     $spawn_rate *= 100;
     for ($y = 0; $y < $height; ++$y) {
         for ($x = 0; $x < $width; ++$x) {
             if (random_int(1, 100) <= $spawn_rate) {
-                $grid[$y][$x] = TRUE;
+                $grid[$y][$x] = true;
             }
         }
     }
@@ -31,15 +32,26 @@ function build_grid($width, $height, $spawn_rate=0) {
  * @param int y Y coordinate
  * @return TRUE if cell found, false otherwise
  */
-function contains_cell($grid, $x, $y) {
+function contains_cell($grid, $x, $y)
+{
     $width = count($grid[0]);
     $height = count($grid);
 
-    while ($x < 0) $x += $width;
-    while ($y < 0) $y += $height;
+    while ($x < 0) {
+        $x += $width;
+    }
 
-    while ($x >= $width) $x -= $width;
-    while ($y >= $height) $y -= $height;
+    while ($y < 0) {
+        $y += $height;
+    }
+
+    while ($x >= $width) {
+        $x -= $width;
+    }
+
+    while ($y >= $height) {
+        $y -= $height;
+    }
 
     return $grid[$y][$x];
 }
@@ -52,16 +64,41 @@ function contains_cell($grid, $x, $y) {
  * @param int y Y coordinate
  * @return number of neighbors
  */
-function neighbor_count($grid, $x, $y) {
+function neighbor_count($grid, $x, $y)
+{
     $count = 0;
-    if (contains_cell($grid, $x - 1, $y - 1))   ++$count;
-    if (contains_cell($grid, $x,     $y - 1))   ++$count;
-    if (contains_cell($grid, $x + 1, $y - 1))   ++$count;
-    if (contains_cell($grid, $x - 1, $y))       ++$count;
-    if (contains_cell($grid, $x + 1, $y))       ++$count;
-    if (contains_cell($grid, $x - 1, $y + 1))   ++$count;
-    if (contains_cell($grid, $x,     $y + 1))   ++$count;
-    if (contains_cell($grid, $x + 1, $y + 1))   ++$count;
+    if (contains_cell($grid, $x - 1, $y - 1)) {
+        ++$count;
+    }
+
+    if (contains_cell($grid, $x, $y - 1)) {
+        ++$count;
+    }
+
+    if (contains_cell($grid, $x + 1, $y - 1)) {
+        ++$count;
+    }
+
+    if (contains_cell($grid, $x - 1, $y)) {
+        ++$count;
+    }
+
+    if (contains_cell($grid, $x + 1, $y)) {
+        ++$count;
+    }
+
+    if (contains_cell($grid, $x - 1, $y + 1)) {
+        ++$count;
+    }
+
+    if (contains_cell($grid, $x, $y + 1)) {
+        ++$count;
+    }
+
+    if (contains_cell($grid, $x + 1, $y + 1)) {
+        ++$count;
+    }
+
     return $count;
 }
 
@@ -71,7 +108,8 @@ function neighbor_count($grid, $x, $y) {
  * @return array Two element array, first element count of total live cells,
  *      second element is the newly generated grid.
  */
-function next_generation($current_generation) {
+function next_generation($current_generation)
+{
     $width = count($current_generation[0]);
     $height = count($current_generation);
 
@@ -84,14 +122,14 @@ function next_generation($current_generation) {
             // If alive and 2 or 3 neighbors, keep alive
             if (contains_cell($current_generation, $x, $y)) {
                 if ($neighbors == 2 || $neighbors == 3) {
-                    $next_generation[$y][$x] = TRUE;
+                    $next_generation[$y][$x] = true;
                     ++$cell_count;
                 }
 
-            // If dead and exactly 3 neighbors, birth it.
+                // If dead and exactly 3 neighbors, birth it.
             } else {
                 if ($neighbors == 3) {
-                    $next_generation[$y][$x] = TRUE;
+                    $next_generation[$y][$x] = true;
                     ++$cell_count;
                 }
             }
@@ -106,7 +144,8 @@ function next_generation($current_generation) {
  * @param int generation The generation number
  * @param array grid The grid
  */
-function print_grid($generation, $grid) {
+function print_grid($generation, $grid)
+{
     $width = count($grid[0]);
     $height = count($grid);
 
@@ -131,7 +170,8 @@ function print_grid($generation, $grid) {
  * @param int exit_code Exit code
  * @param string error_message Error message to display.
  */
-function usage($exit_code=0, $error_message=FALSE) {
+function usage($exit_code = 0, $error_message = false)
+{
     echo "Usage: [--width WIDTH] [--frame-rate RATE] [--spawn-rate RATE] [-h | --help] [--total-frames FRAMES]\n\n";
     echo "\t--width WIDTH          with of the grid\n";
     echo "\t--frame-rate RATE      frames per second to display\n";
@@ -149,7 +189,8 @@ function usage($exit_code=0, $error_message=FALSE) {
  * Parse command line arguments.
  * @return array with arguments and values.
  */
-function parse_args() {
+function parse_args()
+{
     global $argc;
 
     if ($argc == 1) {
@@ -200,7 +241,6 @@ function parse_args() {
     return $options;
 }
 
-
 // Parse and print options
 $options = parse_args();
 foreach ($options as $op => $val) {
@@ -226,5 +266,3 @@ for ($i = 1; $i < $options['total-frames']; ++$i) {
 }
 
 exit(0);
-
-?>

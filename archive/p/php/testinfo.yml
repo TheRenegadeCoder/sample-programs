@@ -4,5 +4,5 @@ folder:
 
 container:
   image: "php"
-  tag: "zts-alpine"
+  tag: "8.0-zts-alpine"
   cmd: "php {{ source.name }}{{ source.extension }}"

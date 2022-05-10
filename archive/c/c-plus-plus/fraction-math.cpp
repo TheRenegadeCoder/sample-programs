@@ -225,7 +225,7 @@ Fraction fromstr(string s){
 int main(int argc, char const *argv[]){
     // Testing above class methods
     if(argc != 4){
-        cout<<"Usage: "<< argv[0]<<"operand1 operator operand2";
+        cout << "Usage: " << argv[0] << " operand1 operator operand2";
         exit(1);
     }
     string s1(argv[1]);
