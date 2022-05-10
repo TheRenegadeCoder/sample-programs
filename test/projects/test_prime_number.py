@@ -65,14 +65,14 @@ valid_permutations = (
 )
 
 
-@project_fixture(ProjectType.Prime.key)
+@project_fixture(ProjectType.PrimeNumber.key)
 def prime(request):
     request.param.build()
     yield request.param
     request.param.cleanup()
 
 
-@project_test(ProjectType.Prime.key)
+@project_test(ProjectType.PrimeNumber.key)
 @pytest.mark.parametrize(valid_permutations[0], valid_permutations[1],
                          ids=[p[0] for p in valid_permutations[1]])
 def test_prime_valid(description, in_params, expected, prime):
@@ -80,7 +80,7 @@ def test_prime_valid(description, in_params, expected, prime):
     assert actual.strip().lower() == expected
 
 
-@project_test(ProjectType.Prime.key)
+@project_test(ProjectType.PrimeNumber.key)
 @pytest.mark.parametrize(invalid_permutations[0], invalid_permutations[1],
                          ids=[p[0] for p in invalid_permutations[1]])
 def test_prime_invalid(description, in_params, expected, prime):
