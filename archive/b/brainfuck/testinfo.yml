@@ -3,6 +3,6 @@ folder:
   naming: "hyphen"
 
 container:
-  image: "esolang/brainfuck-bfi"
+  image: "antwxne/brainfuck-interpretor"
   tag: "latest"
-  cmd: "brainfuck-bfi {{ source.name }}{{ source.extension }}"
+  cmd: "interpetor {{ source.name }}{{ source.extension }}"
