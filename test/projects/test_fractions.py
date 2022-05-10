@@ -22,24 +22,44 @@ valid_permutations = (
     'description,in_params,expected', [
         (
             'sample input: addition',
-            '"2/3 + 4/5"',
+            '2/3 + 4/5',
             '22/15'
         ), (
             'sample input: multiplication',
-            '"2/3 * 4/5"',
+            '2/3 * 4/5',
             '8/15'
         ), (
             'sample input: subtraction',
-            '"2/3 - 4/5"',
+            '2/3 - 4/5',
             '-2/15'
         ), (
             'sample input: division',
-            '"2/3 / 4/5"',
+            '2/3 / 4/5',
             '5/6'
         ), (
             'sample input: equals',
-            '"2/3 == 4/5"',
+            '2/3 == 4/5',
             '0'
+        ), (
+            'sample input: greater than',
+            '2/3 > 4/5	',
+            '0'
+        ), (
+            'sample input: less than',
+            '2/3 < 4/5',
+            '1'
+        ), (
+            'sample input: greater than equals',
+            '2/3 >= 4/5',
+            '0'
+        ), (
+            'sample input: less than equals',
+            '2/3 <= 4/5',
+            '1'
+        ), (
+            'sample input: not equals',
+            '2/3 != 4/5',
+            '1'
         )
     ]
 )
