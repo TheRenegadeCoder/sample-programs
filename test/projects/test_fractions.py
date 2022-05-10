@@ -13,7 +13,7 @@ invalid_permutations = (
         ), (
             'empty input',
             '""',
-            'Usage: ./fractions-math operand1 operator operand2'
+            'Usage: ./fraction-math operand1 operator operand2'
         )
     ]
 )
