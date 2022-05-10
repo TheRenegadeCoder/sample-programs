@@ -20,7 +20,7 @@ $max_deadline = max($deadlines);
 
 $jobsToDo = array_fill(0, $profits_count, 0);
 
-for ($i = 0; $i <= $profits_count; $i++) {
+for ($i = 0; $i < $profits_count; $i++) {
     $job_index = $deadlines[$i] - 1;
     while ($job_index >= 0 && $job_index < $profits_count) {
         if ($jobsToDo[$job_index] == 0) {
