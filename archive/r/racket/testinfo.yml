@@ -1,0 +1,8 @@
+folder:
+  extension: ".rkt"
+  naming: "hyphen"
+
+container:
+  image: "racket/racket"
+  tag: "8.2"
+  cmd: "racket {{ source.name }}{{ source.extension }}"

@@ -58,18 +58,10 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-This language currently does not feature testing. If you'd like to help in the efforts to test all of the code in this repo, consider creating a testinfo.yml file with the following information:
+The following list shares details about what we're using to test all Sample Programs in Racket.
 
-```yml
-folder:
-  extension:
-  naming:
-
-container:
-  image:
-  tag:
-  cmd:
-```
+- Docker Image: racket/racket
+- Docker Tag: 8.2
 
 See the [Glotter project](https://github.com/auroq/glotter) for more information on how to create a testinfo file.
 
