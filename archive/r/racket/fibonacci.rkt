@@ -12,7 +12,7 @@
   
 (define (fibonacci n)
   (cond
-    [(or (not n) (< n 0) ) "Usage: please input the count of fibonacci numbers to output"]
+    [(or (not n) (< n 0)) (display "Usage: please input the count of fibonacci numbers to output")]
     
     [else
      (for ([i (in-range 1 (add1 n))]) 
@@ -20,4 +20,11 @@
      ]))
     
   
-(fibonacci (string->number (vector-ref (current-command-line-arguments) 0)))
+(fibonacci 
+  (string->number 
+    (cond
+      [(vector-empty? (current-command-line-arguments)) ""] 
+      [else (vector-ref (current-command-line-arguments) 0)]
+    )
+  )
+)
