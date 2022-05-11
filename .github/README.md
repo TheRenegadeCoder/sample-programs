@@ -24,7 +24,7 @@ here are some helpful links:
 
 ## Support
 
-Sample Programs in Every Language is a project run by myself, Jeremy Grifski, as
+Sample Programs in Every Language is a project run by myself, Jeremy Grifski, as 
 a part of my website, [The Renegade Coder][10]. If you're looking to support The Renegade Coder, check out my
 [list of ways you can grow the site][11]. To summarize, here are a few links you can use to support this project:
 
