@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Racket! To find documentation related to the Racket code in this repo, look [here.](https://sampleprograms.io/languages/racket)
 
-## Sample Programs List - 4/40 :disappointed:
+## Sample Programs List - 3/40 :disappointed:
 
 In this section, we feature a list of completed and missing programs in Racket. See above for the current amount of completed programs in Racket. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -10,7 +10,6 @@ In this section, we feature a list of completed and missing programs in Racket. 
 
 Below, you'll find a list of completed code snippets in Racket. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :white_check_mark: [Factorial in Racket](https://sampleprograms.io/projects/factorial/racket) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :white_check_mark: [Fibonacci in Racket](https://sampleprograms.io/projects/fibonacci/racket) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :white_check_mark: [Fizz Buzz in Racket](https://sampleprograms.io/projects/fizz-buzz/racket) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Racket](https://sampleprograms.io/projects/hello-world/racket) [[Requirements](https://sampleprograms.io/projects/hello-world)]
@@ -28,6 +27,7 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Dijkstra+in+racket) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :x: [Duplicate Char Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Duplicate+Char+Counter+in+racket) [[Requirements](https://sampleprograms.io/projects/duplicate-char-counter)]
 - :x: [Even Odd](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Even+Odd+in+racket) [[Requirements](https://sampleprograms.io/projects/even-odd)]
+- :x: [Factorial](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Factorial+in+racket) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :x: [File Io](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+File+Io+in+racket) [[Requirements](https://sampleprograms.io/projects/file-io)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fraction+Math+in+racket) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :x: [Game Of Life](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Game+Of+Life+in+racket) [[Requirements](https://sampleprograms.io/projects/game-of-life)]
