@@ -14,7 +14,6 @@ in just about every programming language to date.
 To get up to speed quickly, check out the [contributing doc][6]. Otherwise, 
 here are some helpful links:
 
-- [Wiki][5]: a set of dynamic tables that track every language and snippet in the repo
 - [Projects][20]: a list of projects currently accepting code snippets
 - [Discord][15]: an invite to our community discord
 - [Code of Conduct][8]: a copy of the Contributor Convenant
@@ -53,7 +52,6 @@ for sharing their work with our repo:
 [2]: https://therenegadecoder.com/code/hello-world-in-every-language/
 [3]: https://therenegadecoder.com/code/reverse-a-string-in-every-language/
 [4]: https://therenegadecoder.com/blog/the-coolest-programming-language-features/
-[5]: https://github.com/jrg94/sample-programs/wiki
 [6]: https://github.com/jrg94/sample-programs/blob/master/.github/CONTRIBUTING.md
 [7]: https://www.patreon.com/TheRenegadeCoder
 [8]: https://github.com/jrg94/sample-programs/blob/master/.github/CODE_OF_CONDUCT.md
