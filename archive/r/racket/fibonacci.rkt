@@ -16,7 +16,7 @@
     
     [else
      (for ([i (in-range 1 (add1 n))]) 
-       (println (string-append (number->string i) ": " (number->string (fib i)))))
+       (displayln (string-append (number->string i) ": " (number->string (fib i)))))
      ]))
     
   
