@@ -36,6 +36,7 @@ jobs:
       run: ronbun archive/ --log=DEBUG
         
     - name: Commit READMEs
+      continue-on-error: true
       run: |
         git fetch --unshallow origin
         git config --local user.email "action@github.com"
