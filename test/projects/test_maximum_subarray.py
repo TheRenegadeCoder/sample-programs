@@ -32,6 +32,10 @@ valid_permutations = (
             'sample input: many negative values',
             '"-1, -2, -3"',
             '-1'
+        ), (
+            'sample input: many positive and negative values',
+            '"-2, -1, 3, 4, 5"',
+            '12'
         )
     ]
 )
