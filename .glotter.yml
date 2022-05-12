@@ -105,6 +105,11 @@ projects:
             - "array"
             - "rotation"
         requires_parameters: true
+    maximumsubarray:
+        words:
+            - "maximum"
+            - "subarray"
+        requires_parameters: true
     mergesort:
         words:
             - "merge"
