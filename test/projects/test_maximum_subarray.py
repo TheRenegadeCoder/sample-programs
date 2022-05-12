@@ -33,9 +33,13 @@ valid_permutations = (
             '"-1, -2, -3"',
             '-1'
         ), (
-            'sample input: many positive and negative values',
+            'sample input: many negative followed by positive values',
             '"-2, -1, 3, 4, 5"',
             '12'
+        ), (
+            'sample input: many alternating positive and negative values',
+            '"-1, -4, 2, 3, -3, -4, 9"',
+            '9'
         )
     ]
 )

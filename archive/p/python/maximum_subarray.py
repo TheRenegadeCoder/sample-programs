@@ -1,26 +1,28 @@
 import sys
+from typing import List
 
 
-def maximum_subarray():
-    # takes care of both empty input and no input
-    str_input = (','.join(i for i in sys.argv[1:])).strip()
+def error_handling(argv: List) -> List[int]:
+    str_input = (','.join(i for i in argv[1:])).strip()
     if str_input == "":
         print('Usage: Please provide a list of at least two integers to sort in the format: "1, 2, 3, 4, 5"')
-        return
+        sys.exit(1)
+    nums = [int(num) for num in str_input.split(',')]
+    return nums
 
-    # split comma separated input string into list of integers
-    arr = [int(num) for num in str_input.split(',')]
-    ans = 0
-    curr_sum = 0
-    for i in range(len(arr)):
-        if (curr_sum + arr[i] > 0):
-            curr_sum += arr[i]
-        else:
-            curr_sum = 0
-        ans = max(ans, curr_sum)
-    print(ans)
-    return
+
+def maximum_subarray(nums: List[int]) -> int:
+    local_max = 0
+    global_max = nums[0]
+    for num in nums:
+        local_max += num
+        if (local_max < 0):
+            local_max = 0
+        elif global_max < local_max:
+            global_max = local_max
+    return global_max
 
 
 if __name__ == "__main__":
-    maximum_subarray()  # call function to carry out kadane's algorithm
+    nums = error_handling(sys.argv)
+    print(maximum_subarray(nums))
