@@ -9,11 +9,11 @@ invalid_permutations = (
         (
             'no input',
             None,
-            'Usage: please provide a list of integers (e.g. "8, 3, 1, 2")'
+            'Usage: Please provide a list of at least two integers to sort in the format: "1, 2, 3, 4, 5"'
         ), (
             'empty input',
             '""',
-            'Usage: please provide a list of integers (e.g. "8, 3, 1, 2")'
+            'Usage: Please provide a list of at least two integers to sort in the format: "1, 2, 3, 4, 5"'
         )
     ]
 )
@@ -21,23 +21,23 @@ invalid_permutations = (
 valid_permutations = (
     'description,in_params,expected', [
         (
-            'sample input no rotation',
-            '"3, 1, 2, 8"',
-            '29'
+            'sample input: one element',
+            '"1"',
+            '1'
         ), (
-            'sample input one rotation',
-            '"1, 2, 8, 3"',
-            '29'
+            'sample input: many positive values',
+            '"1, 2, 3"',
+            '6'
         ), (
-            'sample input many rotations',
-            '"8, 3, 1, 2"',
-            '29'
+            'sample input: many negative values',
+            '"-1, -2, -3"',
+            '-1'
         )
     ]
 )
 
 
-@project_fixture(ProjectType.MaximumArrayRotation.key)
+@project_fixture(ProjectType.MaximumSubarray.key)
 def linear_search(request):
     request.param.build()
     yield request.param
