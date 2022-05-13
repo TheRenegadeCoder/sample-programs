@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Python! To find documentation related to the Python code in this repo, look [here.](https://sampleprograms.io/languages/python)
 
-## Sample Programs List - 34/39 :smile:
+## Sample Programs List - 35/39 :smile:
 
 In this section, we feature a list of completed and missing programs in Python. See above for the current amount of completed programs in Python. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -44,6 +44,7 @@ Below, you'll find a list of completed code snippets in Python. Code snippets pr
 - :white_check_mark: [Rot 13 in Python](https://sampleprograms.io/projects/rot-13/python) [[Requirements](https://sampleprograms.io/projects/rot-13)]
 - :white_check_mark: [Selection Sort in Python](https://sampleprograms.io/projects/selection-sort/python) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 - :white_check_mark: [Sleep Sort in Python](https://sampleprograms.io/projects/sleep-sort/python) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
+- :warning: [Transpose Matrix in Python](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+python) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
 ### Missing Programs
 
@@ -53,7 +54,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Duplicate Char Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Duplicate+Char+Counter+in+python) [[Requirements](https://sampleprograms.io/projects/duplicate-char-counter)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Josephus+Problem+in+python) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :x: [Jump Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Jump+Search+in+python) [[Requirements](https://sampleprograms.io/projects/jump-search)]
-- :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+python) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
 ## Testing
 
