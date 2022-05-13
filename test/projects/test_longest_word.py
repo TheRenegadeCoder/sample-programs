@@ -31,7 +31,7 @@ valid_permutations = (
         ), (
             'sample input: multiline',
             '"Hi,\nMy name is Paul!"',
-            '4'
+            '5'
         )
     ]
 )
