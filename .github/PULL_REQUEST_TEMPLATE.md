@@ -57,5 +57,5 @@ Add notes here...
 [contributing-readme]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#create-readmes
 [contributing-tests-in-detail]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#tests-in-detail
 [contributing]: ../CONTRIBUTING.md
-[sample-programs-project-list]: https://sample-programs.therenegadecoder.com/projects/
+[sample-programs-project-list]: https://sampleprograms.io/projects/
 [contributing-modifications]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#modifying-existing-code-snippets
