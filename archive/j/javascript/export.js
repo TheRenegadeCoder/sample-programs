@@ -1,1 +1,0 @@
-exports.myGreeting = "Hello World";
