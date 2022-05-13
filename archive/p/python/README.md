@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Python! To find documentation related to the Python code in this repo, look [here.](https://sampleprograms.io/languages/python)
 
-## Sample Programs List - 32/40 :smile:
+## Sample Programs List - 33/40 :smile:
 
 In this section, we feature a list of completed and missing programs in Python. See above for the current amount of completed programs in Python. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -37,6 +37,7 @@ Below, you'll find a list of completed code snippets in Python. Code snippets pr
 - :white_check_mark: [Prime Number in Python](https://sampleprograms.io/projects/prime-number/python) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :white_check_mark: [Quick Sort in Python](https://sampleprograms.io/projects/quick-sort/python) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
 - :white_check_mark: [Quine in Python](https://sampleprograms.io/projects/quine/python) [[Requirements](https://sampleprograms.io/projects/quine)]
+- :warning: [Remove All Whitespace in Python](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+remove+all+whitespace+python) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :white_check_mark: [Reverse String in Python](https://sampleprograms.io/projects/reverse-string/python) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :white_check_mark: [Roman Numeral in Python](https://sampleprograms.io/projects/roman-numeral/python) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :white_check_mark: [Rot 13 in Python](https://sampleprograms.io/projects/rot-13/python) [[Requirements](https://sampleprograms.io/projects/rot-13)]
@@ -53,7 +54,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Josephus+Problem+in+python) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :x: [Jump Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Jump+Search+in+python) [[Requirements](https://sampleprograms.io/projects/jump-search)]
 - :x: [Longest Word](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Longest+Word+in+python) [[Requirements](https://sampleprograms.io/projects/longest-word)]
-- :x: [Remove All Whitespace](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Remove+All+Whitespace+in+python) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+python) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
 ## Testing
