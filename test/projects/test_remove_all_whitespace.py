@@ -67,14 +67,14 @@ def remove_all_whitespace(request):
 @project_test(ProjectType.RemoveAllWhiteSpace.key)
 @pytest.mark.parametrize(valid_permutations[0], valid_permutations[1],
                          ids=[p[0] for p in valid_permutations[1]])
-def test_remove_all_whitespace_valid(description, in_params, expected, capitalize):
-    actual = capitalize.run(params=in_params)
+def test_remove_all_whitespace_valid(description, in_params, expected, remove_all_whitespace):
+    actual = remove_all_whitespace.run(params=in_params)
     assert actual.strip() == expected
 
 
 @project_test(ProjectType.RemoveAllWhiteSpace.key)
 @pytest.mark.parametrize(invalid_permutations[0], invalid_permutations[1],
                          ids=[p[0] for p in invalid_permutations[1]])
-def test_remove_all_whitespace_invalid(description, in_params, expected, capitalize):
-    actual = capitalize.run(params=in_params)
+def test_remove_all_whitespace_invalid(description, in_params, expected, remove_all_whitespace):
+    actual = remove_all_whitespace.run(params=in_params)
     assert actual.strip() == expected
