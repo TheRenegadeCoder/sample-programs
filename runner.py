@@ -23,6 +23,7 @@ class ProjectType(Enum):
     LPS = auto()
     LinearSearch = auto()
     MaximumArrayRotation = auto()
+    MaximumSubarray = auto()
     MergeSort = auto()
     MST = auto()
     PalindromicNumber = auto()

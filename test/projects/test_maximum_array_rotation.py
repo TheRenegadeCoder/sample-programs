@@ -47,7 +47,7 @@ def linear_search(request):
 @project_test(ProjectType.MaximumArrayRotation.key)
 @pytest.mark.parametrize(valid_permutations[0], valid_permutations[1],
                          ids=[p[0] for p in valid_permutations[1]])
-def test_linear_search_valid(description, in_params, expected, linear_search):
+def test_maximimum_array_rotation_valid(description, in_params, expected, linear_search):
     actual = linear_search.run(params=in_params)
     assert actual.strip().lower() == expected
 
@@ -55,6 +55,6 @@ def test_linear_search_valid(description, in_params, expected, linear_search):
 @project_test(ProjectType.MaximumArrayRotation.key)
 @pytest.mark.parametrize(invalid_permutations[0], invalid_permutations[1],
                          ids=[p[0] for p in invalid_permutations[1]])
-def test_linear_search_invalid(description, in_params, expected, linear_search):
+def test_maximimum_array_rotation_invalid(description, in_params, expected, linear_search):
     actual = linear_search.run(params=in_params)
     assert actual.strip() == expected
