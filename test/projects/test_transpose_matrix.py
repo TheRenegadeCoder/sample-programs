@@ -35,7 +35,7 @@ valid_permutations = (
 
 
 @project_fixture(ProjectType.TranposeMatrix.key)
-def job_sequencing(request):
+def transpose_matrix(request):
     request.param.build()
     yield request.param
     request.param.cleanup()
