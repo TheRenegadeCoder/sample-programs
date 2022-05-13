@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Python! To find documentation related to the Python code in this repo, look [here.](https://sampleprograms.io/languages/python)
 
-## Sample Programs List - 33/39 :smile:
+## Sample Programs List - 34/39 :smile:
 
 In this section, we feature a list of completed and missing programs in Python. See above for the current amount of completed programs in Python. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -29,6 +29,7 @@ Below, you'll find a list of completed code snippets in Python. Code snippets pr
 - :white_check_mark: [LCS in Python](https://sampleprograms.io/projects/lcs/python) [[Requirements](https://sampleprograms.io/projects/lcs)]
 - :white_check_mark: [LPS in Python](https://sampleprograms.io/projects/lps/python) [[Requirements](https://sampleprograms.io/projects/lps)]
 - :white_check_mark: [Linear Search in Python](https://sampleprograms.io/projects/linear-search/python) [[Requirements](https://sampleprograms.io/projects/linear-search)]
+- :warning: [Longest Word in Python](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+python) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :white_check_mark: [MST in Python](https://sampleprograms.io/projects/mst/python) [[Requirements](https://sampleprograms.io/projects/mst)]
 - :white_check_mark: [Maximum Array Rotation in Python](https://sampleprograms.io/projects/maximum-array-rotation/python) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :white_check_mark: [Maximum Subarray in Python](https://sampleprograms.io/projects/maximum-subarray/python) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
@@ -52,7 +53,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Duplicate Char Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Duplicate+Char+Counter+in+python) [[Requirements](https://sampleprograms.io/projects/duplicate-char-counter)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Josephus+Problem+in+python) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :x: [Jump Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Jump+Search+in+python) [[Requirements](https://sampleprograms.io/projects/jump-search)]
-- :x: [Longest Word](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Longest+Word+in+python) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+python) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
 ## Testing
