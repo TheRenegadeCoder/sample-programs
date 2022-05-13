@@ -2,6 +2,7 @@ import pytest
 
 from runner import ProjectType
 from glotter import project_test, project_fixture
+from test.utilities import clean_list
 
 usage = 'Usage: please enter the dimension of the matrix and the serialized matrix'
 
@@ -46,7 +47,7 @@ def transpose_matrix(request):
                          ids=[p[0] for p in valid_permutations[1]])
 def test_transpose_matrix_valid(description, in_params, expected, transpose_matrix):
     actual = transpose_matrix.run(params=in_params)
-    assert actual.strip() == expected
+    assert clean_list(actual) == expected
 
 
 @project_test(ProjectType.TransposeMatrix.key)
