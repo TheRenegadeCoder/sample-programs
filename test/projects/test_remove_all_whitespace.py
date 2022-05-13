@@ -22,10 +22,6 @@ valid_permutations = (
     'description,in_params,expected', [
         (
             'sample input: no spaces',
-            '"hello"',
-            'Hello'
-        ), (
-            'sample input: uppercase string',
             '"RemoveAllWhitespace"',
             'RemoveAllWhitespace'
         ), (
