@@ -31,6 +31,7 @@ class ProjectType(Enum):
     QuickSort = auto()
     Quine = auto()
     ROT13 = auto()
+    RemoveAllWhiteSpace = auto()
     ReverseString = auto()
     RomanNumeral = auto()
     SelectionSort = auto()
