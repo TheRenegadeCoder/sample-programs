@@ -20,6 +20,7 @@ class ProjectType(Enum):
     JobSequencing = auto()
     JosephusProblem = auto()
     LCS = auto()
+    LongestWord = auto()
     LPS = auto()
     LinearSearch = auto()
     MaximumArrayRotation = auto()
