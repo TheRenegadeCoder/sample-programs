@@ -38,6 +38,7 @@ class ProjectType(Enum):
     SelectionSort = auto()
     SleepSort = auto()
     TranposeMatrix = auto()
+    
 
     @property
     def key(self):
