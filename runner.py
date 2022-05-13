@@ -37,7 +37,7 @@ class ProjectType(Enum):
     RomanNumeral = auto()
     SelectionSort = auto()
     SleepSort = auto()
-    TranposeMatrix = auto()
+    TransposeMatrix = auto()
     
 
     @property
