@@ -15,3 +15,5 @@ __pycache__/
 *.beam
 
 .DS_Store
+
+venv/

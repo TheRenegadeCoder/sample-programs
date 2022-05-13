@@ -145,6 +145,12 @@ projects:
             - "rot"
             - "13"
         requires_parameters: true
+    removeallwhitespace:
+        words:
+            - "remove"
+            - "all"
+            - "whitespace"
+        requires_parameters: true
     reversestring:
         words:
             - "reverse"
