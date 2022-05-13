@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Php! To find documentation related to the Php code in this repo, look [here.](https://sampleprograms.io/languages/php)
 
-## Sample Programs List - 21/40 :relaxed:
+## Sample Programs List - 21/39 :relaxed:
 
 In this section, we feature a list of completed and missing programs in Php. See above for the current amount of completed programs in Php. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -41,7 +41,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Dijkstra+in+php) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :x: [Duplicate Char Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Duplicate+Char+Counter+in+php) [[Requirements](https://sampleprograms.io/projects/duplicate-char-counter)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fraction+Math+in+php) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
-- :x: [Import Export](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Import+Export+in+php) [[Requirements](https://sampleprograms.io/projects/import-export)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Josephus+Problem+in+php) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :x: [Jump Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Jump+Search+in+php) [[Requirements](https://sampleprograms.io/projects/jump-search)]
 - :x: [LCS](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+LCS+in+php) [[Requirements](https://sampleprograms.io/projects/lcs)]

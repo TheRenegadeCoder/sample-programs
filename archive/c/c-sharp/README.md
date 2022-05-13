@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in C#! To find documentation related to the C# code in this repo, look [here.](https://sampleprograms.io/languages/c-sharp)
 
-## Sample Programs List - 22/40 :relaxed:
+## Sample Programs List - 22/39 :relaxed:
 
 In this section, we feature a list of completed and missing programs in C#. See above for the current amount of completed programs in C#. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -42,7 +42,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Dijkstra+in+c-sharp) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :x: [Duplicate Char Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Duplicate+Char+Counter+in+c-sharp) [[Requirements](https://sampleprograms.io/projects/duplicate-char-counter)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fraction+Math+in+c-sharp) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
-- :x: [Import Export](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Import+Export+in+c-sharp) [[Requirements](https://sampleprograms.io/projects/import-export)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Job+Sequencing+in+c-sharp) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Josephus+Problem+in+c-sharp) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :x: [Jump Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Jump+Search+in+c-sharp) [[Requirements](https://sampleprograms.io/projects/jump-search)]

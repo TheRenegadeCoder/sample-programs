@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Typescript! To find documentation related to the Typescript code in this repo, look [here.](https://sampleprograms.io/languages/typescript)
 
-## Sample Programs List - 8/40 :disappointed:
+## Sample Programs List - 7/39 :disappointed:
 
 In this section, we feature a list of completed and missing programs in Typescript. See above for the current amount of completed programs in Typescript. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -16,7 +16,6 @@ Below, you'll find a list of completed code snippets in Typescript. Code snippet
 - :white_check_mark: [Fizz Buzz in Typescript](https://sampleprograms.io/projects/fizz-buzz/typescript) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Game Of Life in Typescript](https://sampleprograms.io/projects/game-of-life/typescript) [[Requirements](https://sampleprograms.io/projects/game-of-life)]
 - :white_check_mark: [Hello World in Typescript](https://sampleprograms.io/projects/hello-world/typescript) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :white_check_mark: [Import Export in Typescript](https://sampleprograms.io/projects/import-export/typescript) [[Requirements](https://sampleprograms.io/projects/import-export)]
 - :white_check_mark: [Reverse String in Typescript](https://sampleprograms.io/projects/reverse-string/typescript) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 
 ### Missing Programs

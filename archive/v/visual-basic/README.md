@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Visual Basic! To find documentation related to the Visual Basic code in this repo, look [here.](https://sampleprograms.io/languages/visual-basic)
 
-## Sample Programs List - 4/40 :disappointed:
+## Sample Programs List - 4/39 :disappointed:
 
 In this section, we feature a list of completed and missing programs in Visual Basic. See above for the current amount of completed programs in Visual Basic. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -32,7 +32,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [File Io](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+File+Io+in+visual-basic) [[Requirements](https://sampleprograms.io/projects/file-io)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fraction+Math+in+visual-basic) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :x: [Game Of Life](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Game+Of+Life+in+visual-basic) [[Requirements](https://sampleprograms.io/projects/game-of-life)]
-- :x: [Import Export](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Import+Export+in+visual-basic) [[Requirements](https://sampleprograms.io/projects/import-export)]
 - :x: [Insertion Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Insertion+Sort+in+visual-basic) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Job+Sequencing+in+visual-basic) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Josephus+Problem+in+visual-basic) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]

@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Pinecone! To find documentation related to the Pinecone code in this repo, look [here.](https://sampleprograms.io/languages/pinecone)
 
-## Sample Programs List - 1/40 :disappointed:
+## Sample Programs List - 1/39 :disappointed:
 
 In this section, we feature a list of completed and missing programs in Pinecone. See above for the current amount of completed programs in Pinecone. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -31,7 +31,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Fizz Buzz](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fizz+Buzz+in+pinecone) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fraction+Math+in+pinecone) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :x: [Game Of Life](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Game+Of+Life+in+pinecone) [[Requirements](https://sampleprograms.io/projects/game-of-life)]
-- :x: [Import Export](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Import+Export+in+pinecone) [[Requirements](https://sampleprograms.io/projects/import-export)]
 - :x: [Insertion Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Insertion+Sort+in+pinecone) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Job+Sequencing+in+pinecone) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Josephus+Problem+in+pinecone) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]

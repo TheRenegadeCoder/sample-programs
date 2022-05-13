@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Go! To find documentation related to the Go code in this repo, look [here.](https://sampleprograms.io/languages/go)
 
-## Sample Programs List - 22/40 :relaxed:
+## Sample Programs List - 22/39 :relaxed:
 
 In this section, we feature a list of completed and missing programs in Go. See above for the current amount of completed programs in Go. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -43,7 +43,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Duplicate Char Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Duplicate+Char+Counter+in+go) [[Requirements](https://sampleprograms.io/projects/duplicate-char-counter)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fraction+Math+in+go) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :x: [Game Of Life](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Game+Of+Life+in+go) [[Requirements](https://sampleprograms.io/projects/game-of-life)]
-- :x: [Import Export](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Import+Export+in+go) [[Requirements](https://sampleprograms.io/projects/import-export)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Josephus+Problem+in+go) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :x: [Jump Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Jump+Search+in+go) [[Requirements](https://sampleprograms.io/projects/jump-search)]
 - :x: [Linear Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Linear+Search+in+go) [[Requirements](https://sampleprograms.io/projects/linear-search)]

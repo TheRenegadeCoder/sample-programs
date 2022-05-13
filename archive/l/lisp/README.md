@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Lisp! To find documentation related to the Lisp code in this repo, look [here.](https://sampleprograms.io/languages/lisp)
 
-## Sample Programs List - 10/40 :thinking:
+## Sample Programs List - 10/39 :thinking:
 
 In this section, we feature a list of completed and missing programs in Lisp. See above for the current amount of completed programs in Lisp. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -34,7 +34,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [File Io](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+File+Io+in+lisp) [[Requirements](https://sampleprograms.io/projects/file-io)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fraction+Math+in+lisp) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :x: [Game Of Life](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Game+Of+Life+in+lisp) [[Requirements](https://sampleprograms.io/projects/game-of-life)]
-- :x: [Import Export](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Import+Export+in+lisp) [[Requirements](https://sampleprograms.io/projects/import-export)]
 - :x: [Insertion Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Insertion+Sort+in+lisp) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Job+Sequencing+in+lisp) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Josephus+Problem+in+lisp) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]

@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Java! To find documentation related to the Java code in this repo, look [here.](https://sampleprograms.io/languages/java)
 
-## Sample Programs List - 23/40 :relaxed:
+## Sample Programs List - 23/39 :relaxed:
 
 In this section, we feature a list of completed and missing programs in Java. See above for the current amount of completed programs in Java. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -43,7 +43,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Dijkstra+in+java) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :x: [Duplicate Char Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Duplicate+Char+Counter+in+java) [[Requirements](https://sampleprograms.io/projects/duplicate-char-counter)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fraction+Math+in+java) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
-- :x: [Import Export](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Import+Export+in+java) [[Requirements](https://sampleprograms.io/projects/import-export)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Josephus+Problem+in+java) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :x: [Jump Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Jump+Search+in+java) [[Requirements](https://sampleprograms.io/projects/jump-search)]
 - :x: [LPS](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+LPS+in+java) [[Requirements](https://sampleprograms.io/projects/lps)]

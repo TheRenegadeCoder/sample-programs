@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in C! To find documentation related to the C code in this repo, look [here.](https://sampleprograms.io/languages/c)
 
-## Sample Programs List - 24/40 :relaxed:
+## Sample Programs List - 23/39 :relaxed:
 
 In this section, we feature a list of completed and missing programs in C. See above for the current amount of completed programs in C. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -21,7 +21,6 @@ Below, you'll find a list of completed code snippets in C. Code snippets precede
 - :white_check_mark: [Fizz Buzz in C](https://sampleprograms.io/projects/fizz-buzz/c) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Game Of Life in C](https://sampleprograms.io/projects/game-of-life/c) [[Requirements](https://sampleprograms.io/projects/game-of-life)]
 - :white_check_mark: [Hello World in C](https://sampleprograms.io/projects/hello-world/c) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :white_check_mark: [Import Export in C](https://sampleprograms.io/projects/import-export/c) [[Requirements](https://sampleprograms.io/projects/import-export)]
 - :white_check_mark: [Insertion Sort in C](https://sampleprograms.io/projects/insertion-sort/c) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :white_check_mark: [LCS in C](https://sampleprograms.io/projects/lcs/c) [[Requirements](https://sampleprograms.io/projects/lcs)]
 - :white_check_mark: [MST in C](https://sampleprograms.io/projects/mst/c) [[Requirements](https://sampleprograms.io/projects/mst)]

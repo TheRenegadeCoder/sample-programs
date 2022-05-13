@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in C++! To find documentation related to the C++ code in this repo, look [here.](https://sampleprograms.io/languages/c-plus-plus)
 
-## Sample Programs List - 23/40 :relaxed:
+## Sample Programs List - 22/39 :relaxed:
 
 In this section, we feature a list of completed and missing programs in C++. See above for the current amount of completed programs in C++. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -23,7 +23,6 @@ Below, you'll find a list of completed code snippets in C++. Code snippets prece
 - :white_check_mark: [Fraction Math in C++](https://sampleprograms.io/projects/fraction-math/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :white_check_mark: [Game Of Life in C++](https://sampleprograms.io/projects/game-of-life/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/game-of-life)]
 - :white_check_mark: [Hello World in C++](https://sampleprograms.io/projects/hello-world/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :white_check_mark: [Import Export in C++](https://sampleprograms.io/projects/import-export/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/import-export)]
 - :white_check_mark: [Insertion Sort in C++](https://sampleprograms.io/projects/insertion-sort/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :white_check_mark: [LCS in C++](https://sampleprograms.io/projects/lcs/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/lcs)]
 - :white_check_mark: [Merge Sort in C++](https://sampleprograms.io/projects/merge-sort/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/merge-sort)]

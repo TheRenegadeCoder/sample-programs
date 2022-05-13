@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Pikelet! To find documentation related to the Pikelet code in this repo, look [here.](https://sampleprograms.io/languages/pikelet)
 
-## Sample Programs List - 1/40 :disappointed:
+## Sample Programs List - 1/39 :disappointed:
 
 In this section, we feature a list of completed and missing programs in Pikelet. See above for the current amount of completed programs in Pikelet. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -31,7 +31,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Fizz Buzz](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fizz+Buzz+in+pikelet) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fraction+Math+in+pikelet) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :x: [Game Of Life](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Game+Of+Life+in+pikelet) [[Requirements](https://sampleprograms.io/projects/game-of-life)]
-- :x: [Import Export](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Import+Export+in+pikelet) [[Requirements](https://sampleprograms.io/projects/import-export)]
 - :x: [Insertion Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Insertion+Sort+in+pikelet) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Job+Sequencing+in+pikelet) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Josephus+Problem+in+pikelet) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
