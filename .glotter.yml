@@ -176,3 +176,8 @@ projects:
             - "sleep"
             - "sort"
         requires_parameters: true
+    transposematrix:
+        words:
+            - "transpose"
+            - "matrix"
+        requires_parameters: true
