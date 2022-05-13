@@ -34,14 +34,14 @@ valid_permutations = (
 )
 
 
-@project_fixture(ProjectType.TranposeMatrix.key)
+@project_fixture(ProjectType.TransposeMatrix.key)
 def transpose_matrix(request):
     request.param.build()
     yield request.param
     request.param.cleanup()
 
 
-@project_test(ProjectType.TranposeMatrix.key)
+@project_test(ProjectType.TransposeMatrix.key)
 @pytest.mark.parametrize(valid_permutations[0], valid_permutations[1],
                          ids=[p[0] for p in valid_permutations[1]])
 def test_transpose_matrix_valid(description, in_params, expected, transpose_matrix):
@@ -49,7 +49,7 @@ def test_transpose_matrix_valid(description, in_params, expected, transpose_matr
     assert actual.strip() == expected
 
 
-@project_test(ProjectType.TranposeMatrix.key)
+@project_test(ProjectType.TransposeMatrix.key)
 @pytest.mark.parametrize(invalid_permutations[0], invalid_permutations[1],
                          ids=[p[0] for p in invalid_permutations[1]])
 def test_transpose_matrix_invalid(description, in_params, expected, transpose_matrix):
