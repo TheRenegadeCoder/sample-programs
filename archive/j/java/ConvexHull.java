@@ -10,16 +10,21 @@ public class ConvexHull {
          String yInput = args[1];
          String[] tempX = xInput.split(", ");
          String[] tempY = yInput.split(", ");
-         if (tempX.length != tempY.length) {
+         if (tempX.length != tempY.length || tempX.length < 3) {
             System.out.println(
                   "Usage: please provide at least 3 x and y coordinates as separate lists (e.g. \"100, 440, 210\")");
             return;
          }
          Point[] points = new Point[tempX.length];
-         double minX = Double.MAX_VALUE;
+         int minX = Integer.MAX_VALUE;
          int mindex = 0;
          for (int a = 0; a < tempX.length; a++) {
-            points[a] = new Point(Double.parseDouble(tempX[a]), Double.parseDouble(tempY[a]));
+            if (!tempX[a].matches("-?\\d+") || !tempY[a].matches("-?\\d+")) {
+               System.out.println(
+                     "Usage: please provide at least 3 x and y coordinates as separate lists (e.g. \"100, 440, 210\")");
+               return;
+            }
+            points[a] = new Point(Integer.parseInt(tempX[a]), Integer.parseInt(tempY[a]));
             if (points[a].x <= minX) {
                minX = points[a].x;
                mindex = a;
@@ -49,10 +54,10 @@ public class ConvexHull {
 }
 
 class Point {
-   public double x;
-   public double y;
+   public int x;
+   public int y;
 
-   public Point(double a, double b) {
+   public Point(int a, int b) {
       x = a;
       y = b;
    }

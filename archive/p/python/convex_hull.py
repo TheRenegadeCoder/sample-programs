@@ -2,7 +2,7 @@ from math import sqrt
 import sys
 
 usage = 'Usage: please provide at least 3 x and y coordinates as separate lists (e.g. "100, 440, 210")'
-    
+
 
 def dist(point1, point2):
     x1, y1 = point1
