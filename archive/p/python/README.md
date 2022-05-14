@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Python! To find documentation related to the Python code in this repo, look [here.](https://sampleprograms.io/languages/python)
 
-## Sample Programs List - 35/39 :smile:
+## Sample Programs List - 36/39 :smile:
 
 In this section, we feature a list of completed and missing programs in Python. See above for the current amount of completed programs in Python. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -16,6 +16,7 @@ Below, you'll find a list of completed code snippets in Python. Code snippets pr
 - :white_check_mark: [Capitalize in Python](https://sampleprograms.io/projects/capitalize/python) [[Requirements](https://sampleprograms.io/projects/capitalize)]
 - :white_check_mark: [Convex Hull in Python](https://sampleprograms.io/projects/convex-hull/python) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :white_check_mark: [Depth First Search in Python](https://sampleprograms.io/projects/depth-first-search/python) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
+- :warning: [Duplicate Character Counter in Python](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+python) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :white_check_mark: [Even Odd in Python](https://sampleprograms.io/projects/even-odd/python) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :white_check_mark: [Factorial in Python](https://sampleprograms.io/projects/factorial/python) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :white_check_mark: [Fibonacci in Python](https://sampleprograms.io/projects/fibonacci/python) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
@@ -29,7 +30,7 @@ Below, you'll find a list of completed code snippets in Python. Code snippets pr
 - :white_check_mark: [LCS in Python](https://sampleprograms.io/projects/lcs/python) [[Requirements](https://sampleprograms.io/projects/lcs)]
 - :white_check_mark: [LPS in Python](https://sampleprograms.io/projects/lps/python) [[Requirements](https://sampleprograms.io/projects/lps)]
 - :white_check_mark: [Linear Search in Python](https://sampleprograms.io/projects/linear-search/python) [[Requirements](https://sampleprograms.io/projects/linear-search)]
-- :warning: [Longest Word in Python](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+python) [[Requirements](https://sampleprograms.io/projects/longest-word)]
+- :white_check_mark: [Longest Word in Python](https://sampleprograms.io/projects/longest-word/python) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :white_check_mark: [MST in Python](https://sampleprograms.io/projects/mst/python) [[Requirements](https://sampleprograms.io/projects/mst)]
 - :white_check_mark: [Maximum Array Rotation in Python](https://sampleprograms.io/projects/maximum-array-rotation/python) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :white_check_mark: [Maximum Subarray in Python](https://sampleprograms.io/projects/maximum-subarray/python) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
@@ -44,14 +45,13 @@ Below, you'll find a list of completed code snippets in Python. Code snippets pr
 - :white_check_mark: [Rot 13 in Python](https://sampleprograms.io/projects/rot-13/python) [[Requirements](https://sampleprograms.io/projects/rot-13)]
 - :white_check_mark: [Selection Sort in Python](https://sampleprograms.io/projects/selection-sort/python) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 - :white_check_mark: [Sleep Sort in Python](https://sampleprograms.io/projects/sleep-sort/python) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
-- :warning: [Transpose Matrix in Python](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+python) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
+- :white_check_mark: [Transpose Matrix in Python](https://sampleprograms.io/projects/transpose-matrix/python) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
 ### Missing Programs
 
 The following list contains all of the approved programs that are not currently implemented in Python. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Dijkstra+in+python) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
-- :x: [Duplicate Char Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Duplicate+Char+Counter+in+python) [[Requirements](https://sampleprograms.io/projects/duplicate-char-counter)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Josephus+Problem+in+python) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :x: [Jump Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Jump+Search+in+python) [[Requirements](https://sampleprograms.io/projects/jump-search)]
 
