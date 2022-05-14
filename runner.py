@@ -9,6 +9,7 @@ class ProjectType(Enum):
     Capitalize = auto()
     ConvexHull = auto()
     DepthFirstSearch = auto()
+    DuplicateCharacterCounter = auto()
     EvenOdd = auto()
     Factorial = auto()
     Fibonacci = auto()

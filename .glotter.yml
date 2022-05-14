@@ -32,6 +32,12 @@ projects:
             - "first"
             - "search"
         requires_parameters: true
+    duplicatecharactercounter:
+        words:
+            - "duplicate"
+            - "character"
+            - "counter"
+        requires_parameters: true
     evenodd:
         words:
             - "even"
