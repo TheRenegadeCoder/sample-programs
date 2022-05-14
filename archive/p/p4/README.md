@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in P4! To find documentation related to the P4 code in this repo, look [here.](https://sampleprograms.io/languages/p4)
 
-## Sample Programs List - 2/39 :disappointed:
+## Sample Programs List - 2/38 :disappointed:
 
 In this section, we feature a list of completed and missing programs in P4. See above for the current amount of completed programs in P4. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -34,7 +34,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Insertion Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Insertion+Sort+in+p4) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Job+Sequencing+in+p4) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Josephus+Problem+in+p4) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
-- :x: [Jump Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Jump+Search+in+p4) [[Requirements](https://sampleprograms.io/projects/jump-search)]
 - :x: [LCS](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+LCS+in+p4) [[Requirements](https://sampleprograms.io/projects/lcs)]
 - :x: [LPS](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+LPS+in+p4) [[Requirements](https://sampleprograms.io/projects/lps)]
 - :x: [Linear Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Linear+Search+in+p4) [[Requirements](https://sampleprograms.io/projects/linear-search)]
