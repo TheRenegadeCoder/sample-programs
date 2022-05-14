@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Javascript! To find documentation related to the Javascript code in this repo, look [here.](https://sampleprograms.io/languages/javascript)
 
-## Sample Programs List - 29/39 :relaxed:
+## Sample Programs List - 28/39 :relaxed:
 
 In this section, we feature a list of completed and missing programs in Javascript. See above for the current amount of completed programs in Javascript. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -14,7 +14,6 @@ Below, you'll find a list of completed code snippets in Javascript. Code snippet
 - :white_check_mark: [Binary Search in Javascript](https://sampleprograms.io/projects/binary-search/javascript) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :white_check_mark: [Bubble Sort in Javascript](https://sampleprograms.io/projects/bubble-sort/javascript) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :white_check_mark: [Capitalize in Javascript](https://sampleprograms.io/projects/capitalize/javascript) [[Requirements](https://sampleprograms.io/projects/capitalize)]
-- :white_check_mark: [Convex Hull in Javascript](https://sampleprograms.io/projects/convex-hull/javascript) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :white_check_mark: [Dijkstra in Javascript](https://sampleprograms.io/projects/dijkstra/javascript) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :white_check_mark: [Duplicate Char Counter in Javascript](https://sampleprograms.io/projects/duplicate-char-counter/javascript) [[Requirements](https://sampleprograms.io/projects/duplicate-char-counter)]
 - :white_check_mark: [Even Odd in Javascript](https://sampleprograms.io/projects/even-odd/javascript) [[Requirements](https://sampleprograms.io/projects/even-odd)]
@@ -44,6 +43,7 @@ Below, you'll find a list of completed code snippets in Javascript. Code snippet
 
 The following list contains all of the approved programs that are not currently implemented in Javascript. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
+- :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Convex+Hull+in+javascript) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :x: [Depth First Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Depth+First+Search+in+javascript) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fraction+Math+in+javascript) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :x: [Jump Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Jump+Search+in+javascript) [[Requirements](https://sampleprograms.io/projects/jump-search)]

@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in C! To find documentation related to the C code in this repo, look [here.](https://sampleprograms.io/languages/c)
 
-## Sample Programs List - 23/39 :relaxed:
+## Sample Programs List - 22/39 :relaxed:
 
 In this section, we feature a list of completed and missing programs in C. See above for the current amount of completed programs in C. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -13,7 +13,6 @@ Below, you'll find a list of completed code snippets in C. Code snippets precede
 - :white_check_mark: [Baklava in C](https://sampleprograms.io/projects/baklava/c) [[Requirements](https://sampleprograms.io/projects/baklava)]
 - :white_check_mark: [Bubble Sort in C](https://sampleprograms.io/projects/bubble-sort/c) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :white_check_mark: [Capitalize in C](https://sampleprograms.io/projects/capitalize/c) [[Requirements](https://sampleprograms.io/projects/capitalize)]
-- :white_check_mark: [Convex Hull in C](https://sampleprograms.io/projects/convex-hull/c) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :white_check_mark: [Even Odd in C](https://sampleprograms.io/projects/even-odd/c) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :white_check_mark: [Factorial in C](https://sampleprograms.io/projects/factorial/c) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :white_check_mark: [Fibonacci in C](https://sampleprograms.io/projects/fibonacci/c) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
@@ -39,6 +38,7 @@ Below, you'll find a list of completed code snippets in C. Code snippets precede
 The following list contains all of the approved programs that are not currently implemented in C. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
 - :x: [Binary Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Binary+Search+in+c) [[Requirements](https://sampleprograms.io/projects/binary-search)]
+- :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Convex+Hull+in+c) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :x: [Depth First Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Depth+First+Search+in+c) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Dijkstra+in+c) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :x: [Duplicate Char Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Duplicate+Char+Counter+in+c) [[Requirements](https://sampleprograms.io/projects/duplicate-char-counter)]
