@@ -1,16 +1,8 @@
 from math import sqrt
 import sys
 
-
-X = [int(i.strip()) for i in sys.argv[1].split(',') if i]
-Y = [int(i.strip()) for i in sys.argv[2].split(',') if i]
-
-assert len(X) == len(Y), 'Wrong Input'
-
-Z = list(set((zip(X, Y))))
-X = [i for i, _ in Z]
-Y = [j for _, j in Z]
-
+usage = 'Usage: please provide at least 3 x and y coordinates as separate lists (e.g. "100, 440, 210")'
+    
 
 def dist(point1, point2):
     x1, y1 = point1
@@ -70,5 +62,21 @@ def foo(z):
 
 
 if __name__ == '__main__':
+    if len(sys.argv) != 3:
+        print(usage)
+        sys.exit()
+
+    X = [i.strip() for i in sys.argv[1].split(',') if i]
+    Y = [i.strip() for i in sys.argv[2].split(',') if i]
+
+    if len(X) != len(Y) or len(X) < 3 or not all(x.isdigit() for x in X) or not all(y.isdigit() for y in Y):
+        print(usage)
+        sys.exit()
+
+    X = [int(i) for i in X]
+    Y = [int(i) for i in Y]
+    Z = list(set((zip(X, Y))))
+
     convex_polygon_coords = foo(Z)
-    print(convex_polygon_coords)
+    for coord in convex_polygon_coords:
+        print(coord)

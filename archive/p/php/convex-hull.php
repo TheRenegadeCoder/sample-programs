@@ -163,7 +163,7 @@ function parsePoints($xs, $ys)
  */
 function usage($exitCode = 0, $errorMessage = false)
 {
-    echo "Usage: input points in the form of: \"x1, x2, x3, ...\" \"y1, y2, y3, ...\"\n";
+    echo "Usage: please provide at least 3 x and y coordinates as separate lists (e.g. \"100, 440, 210\")";
     if ($errorMessage) {
         echo "\nError: ", $errorMessage, "\n";
     }
