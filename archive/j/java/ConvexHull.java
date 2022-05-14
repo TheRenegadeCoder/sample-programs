@@ -4,14 +4,14 @@ public class ConvexHull
    public static void main(String[] args)
    {
       if(args.length<2)
-         System.out.println("Usage: please provide two strings of x-coordinates and y-coordinates");
+         System.out.println("Usage: please provide at least 3 x and y coordinates as separate lists (e.g. \"100, 440, 210\")");
       else {
          String xInput = args[0];
          String yInput = args[1];
          String[] tempX = xInput.split(", ");
          String[] tempY = yInput.split(", ");
          if(tempX.length!=tempY.length) {
-            System.out.println("Error: please provide two equal length sets of x-coordinates and y-coordinates");
+            System.out.println("Usage: please provide at least 3 x and y coordinates as separate lists (e.g. \"100, 440, 210\")");
             return;
          }
          Point[] points = new Point[tempX.length];

@@ -114,6 +114,6 @@ long getlongorexit (char *s)
 
 void usageandexit (char *name, int code)
 {
-	printf("Usage: %s x1 x2 x3 ... xN y1 y2 y3 ... yN\n", name);
+	printf("Usage: please provide at least 3 x and y coordinates as separate lists (e.g. \"100, 440, 210\")");
 	exit(code);
 }

@@ -1,7 +1,10 @@
+from typing import List, Tuple
 import pytest
 
 from runner import ProjectType
 from glotter import project_fixture, project_test
+
+from test.utilities import clean_list
 
 usage = 'Usage: please provide at least 3 x and y coordinates as separate lists (e.g. "100, 440, 210")'
 
@@ -49,6 +52,11 @@ valid_permutations = (
     ]
 )
 
+def parse_list(in_params) -> List[Tuple[int]]:
+    points = clean_list(in_params)
+    points = points.replace("(", "").replace(")", "").replace(" ", "").split()
+    points = [tuple(map(int, point.split(","))) for point in points]
+    return points
 
 @project_fixture(ProjectType.ConvexHull.key)
 def convex_hull(request):
@@ -62,7 +70,7 @@ def convex_hull(request):
                          ids=[p[0] for p in valid_permutations[1]])
 def test_convex_hull_valid(description, in_params, expected, convex_hull):
     actual = convex_hull.run(params=in_params)
-    assert actual.strip() == expected
+    assert set(parse_list(actual)) == set(parse_list(expected))
 
 
 @project_test(ProjectType.ConvexHull.key)

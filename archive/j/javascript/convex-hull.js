@@ -58,7 +58,7 @@ const array_x = input_x.split(' ').map(x => parseInt(x, 10));
 const array_y = input_y.split(' ').map(y => parseInt(y, 10));
 
 if (array_x.length !== array_y.length) {
-  console.log('Usage:\nnode convex-hull.js "x1 x2 x3 ... xN" "y1 y2 y3 ... yN"');
+  console.log('Usage: please provide at least 3 x and y coordinates as separate lists (e.g. "100, 440, 210")');
   return;
 }
 
@@ -68,4 +68,3 @@ const convexHull = convex_hull(points);
 convexHull.forEach(p => {
   console.log(`(${p[0]}, ${p[1]})`);
 });
-return;
