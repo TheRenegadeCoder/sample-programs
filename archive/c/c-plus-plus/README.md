@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in C++! To find documentation related to the C++ code in this repo, look [here.](https://sampleprograms.io/languages/c-plus-plus)
 
-## Sample Programs List - 22/38 :relaxed:
+## Sample Programs List - 21/38 :relaxed:
 
 In this section, we feature a list of completed and missing programs in C++. See above for the current amount of completed programs in C++. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -14,7 +14,6 @@ Below, you'll find a list of completed code snippets in C++. Code snippets prece
 - :white_check_mark: [Binary Search in C++](https://sampleprograms.io/projects/binary-search/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :white_check_mark: [Bubble Sort in C++](https://sampleprograms.io/projects/bubble-sort/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :white_check_mark: [Capitalize in C++](https://sampleprograms.io/projects/capitalize/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/capitalize)]
-- :white_check_mark: [Dijkstra in C++](https://sampleprograms.io/projects/dijkstra/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :white_check_mark: [Even Odd in C++](https://sampleprograms.io/projects/even-odd/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :white_check_mark: [Factorial in C++](https://sampleprograms.io/projects/factorial/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :white_check_mark: [Fibonacci in C++](https://sampleprograms.io/projects/fibonacci/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
@@ -39,6 +38,7 @@ The following list contains all of the approved programs that are not currently 
 
 - :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Convex+Hull+in+c-plus-plus) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :x: [Depth First Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Depth+First+Search+in+c-plus-plus) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
+- :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Dijkstra+in+c-plus-plus) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :x: [Duplicate Character Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Duplicate+Character+Counter+in+c-plus-plus) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Job+Sequencing+in+c-plus-plus) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Josephus+Problem+in+c-plus-plus) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
