@@ -4,7 +4,7 @@ from runner import ProjectType
 from glotter import project_test, project_fixture
 from test.utilities import clean_list
 
-usage = 'Usage: please provide a comma-separated list of integers'
+usage = 'Usage: please provide three inputs: a serialized matrix, a source node and a destination node'
 
 invalid_permutations = (
     'description,in_params,expected', [
@@ -23,7 +23,7 @@ invalid_permutations = (
             usage
         ), (
             'no destination',
-            '"0, 2, 0, 6, 0, 2, 0, 3, 8, 5, 0, 3, 0, 0, 7, 6, 8, 0, 0, 9, 0, 5, 7, 9, 0" "3" "0" ""',
+            '"0, 2, 0, 6, 0, 2, 0, 3, 8, 5, 0, 3, 0, 0, 7, 6, 8, 0, 0, 9, 0, 5, 7, 9, 0" "0" ""',
             usage
         ), (
             'no source or destination',
@@ -56,14 +56,14 @@ valid_permutations = (
 )
 
 
-@project_fixture(ProjectType.TransposeMatrix.key)
+@project_fixture(ProjectType.Dijkstra.key)
 def dijkstra(request):
     request.param.build()
     yield request.param
     request.param.cleanup()
 
 
-@project_test(ProjectType.TransposeMatrix.key)
+@project_test(ProjectType.Dijkstra.key)
 @pytest.mark.parametrize(valid_permutations[0], valid_permutations[1],
                          ids=[p[0] for p in valid_permutations[1]])
 def test_dijkstra_valid(description, in_params, expected, dijkstra):
@@ -71,7 +71,7 @@ def test_dijkstra_valid(description, in_params, expected, dijkstra):
     assert clean_list(actual) == expected
 
 
-@project_test(ProjectType.TransposeMatrix.key)
+@project_test(ProjectType.Dijkstra.key)
 @pytest.mark.parametrize(invalid_permutations[0], invalid_permutations[1],
                          ids=[p[0] for p in invalid_permutations[1]])
 def test_dijkstra_invalid(description, in_params, expected, dijkstra):
