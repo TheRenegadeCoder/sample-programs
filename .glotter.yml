@@ -32,6 +32,10 @@ projects:
             - "first"
             - "search"
         requires_parameters: true
+    dijkstra:
+        words:
+            - "dijkstra"
+        requires_parameters: true
     duplicatecharactercounter:
         words:
             - "duplicate"
