@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Elena! To find documentation related to the Elena code in this repo, look [here.](https://sampleprograms.io/languages/elena)
 
-## Sample Programs List - 1/38 :disappointed:
+## Sample Programs List - 1/37 :disappointed:
 
 In this section, we feature a list of completed and missing programs in Elena. See above for the current amount of completed programs in Elena. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -30,7 +30,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [File Io](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+File+Io+in+elena) [[Requirements](https://sampleprograms.io/projects/file-io)]
 - :x: [Fizz Buzz](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fizz+Buzz+in+elena) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fraction+Math+in+elena) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
-- :x: [Game Of Life](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Game+Of+Life+in+elena) [[Requirements](https://sampleprograms.io/projects/game-of-life)]
 - :x: [Insertion Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Insertion+Sort+in+elena) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Job+Sequencing+in+elena) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Josephus+Problem+in+elena) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]

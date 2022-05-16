@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Racket! To find documentation related to the Racket code in this repo, look [here.](https://sampleprograms.io/languages/racket)
 
-## Sample Programs List - 3/38 :disappointed:
+## Sample Programs List - 3/37 :disappointed:
 
 In this section, we feature a list of completed and missing programs in Racket. See above for the current amount of completed programs in Racket. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -30,7 +30,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Factorial](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Factorial+in+racket) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :x: [File Io](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+File+Io+in+racket) [[Requirements](https://sampleprograms.io/projects/file-io)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fraction+Math+in+racket) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
-- :x: [Game Of Life](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Game+Of+Life+in+racket) [[Requirements](https://sampleprograms.io/projects/game-of-life)]
 - :x: [Insertion Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Insertion+Sort+in+racket) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Job+Sequencing+in+racket) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Josephus+Problem+in+racket) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
