@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Kotlin! To find documentation related to the Kotlin code in this repo, look [here.](https://sampleprograms.io/languages/kotlin)
 
-## Sample Programs List - 19/38 :relaxed:
+## Sample Programs List - 18/38 :thinking:
 
 In this section, we feature a list of completed and missing programs in Kotlin. See above for the current amount of completed programs in Kotlin. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -18,7 +18,6 @@ Below, you'll find a list of completed code snippets in Kotlin. Code snippets pr
 - :white_check_mark: [Fibonacci in Kotlin](https://sampleprograms.io/projects/fibonacci/kotlin) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :white_check_mark: [File Io in Kotlin](https://sampleprograms.io/projects/file-io/kotlin) [[Requirements](https://sampleprograms.io/projects/file-io)]
 - :white_check_mark: [Fizz Buzz in Kotlin](https://sampleprograms.io/projects/fizz-buzz/kotlin) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
-- :white_check_mark: [Game Of Life in Kotlin](https://sampleprograms.io/projects/game-of-life/kotlin) [[Requirements](https://sampleprograms.io/projects/game-of-life)]
 - :white_check_mark: [Hello World in Kotlin](https://sampleprograms.io/projects/hello-world/kotlin) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :white_check_mark: [Job Sequencing in Kotlin](https://sampleprograms.io/projects/job-sequencing/kotlin) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :white_check_mark: [LCS in Kotlin](https://sampleprograms.io/projects/lcs/kotlin) [[Requirements](https://sampleprograms.io/projects/lcs)]
@@ -40,6 +39,7 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Dijkstra+in+kotlin) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :x: [Duplicate Character Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Duplicate+Character+Counter+in+kotlin) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fraction+Math+in+kotlin) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
+- :x: [Game Of Life](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Game+Of+Life+in+kotlin) [[Requirements](https://sampleprograms.io/projects/game-of-life)]
 - :x: [Insertion Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Insertion+Sort+in+kotlin) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Josephus+Problem+in+kotlin) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :x: [LPS](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+LPS+in+kotlin) [[Requirements](https://sampleprograms.io/projects/lps)]

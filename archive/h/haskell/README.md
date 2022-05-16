@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Haskell! To find documentation related to the Haskell code in this repo, look [here.](https://sampleprograms.io/languages/haskell)
 
-## Sample Programs List - 21/38 :relaxed:
+## Sample Programs List - 20/38 :relaxed:
 
 In this section, we feature a list of completed and missing programs in Haskell. See above for the current amount of completed programs in Haskell. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -18,7 +18,6 @@ Below, you'll find a list of completed code snippets in Haskell. Code snippets p
 - :white_check_mark: [Fibonacci in Haskell](https://sampleprograms.io/projects/fibonacci/haskell) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :white_check_mark: [File Io in Haskell](https://sampleprograms.io/projects/file-io/haskell) [[Requirements](https://sampleprograms.io/projects/file-io)]
 - :white_check_mark: [Fizz Buzz in Haskell](https://sampleprograms.io/projects/fizz-buzz/haskell) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
-- :white_check_mark: [Game Of Life in Haskell](https://sampleprograms.io/projects/game-of-life/haskell) [[Requirements](https://sampleprograms.io/projects/game-of-life)]
 - :white_check_mark: [Hello World in Haskell](https://sampleprograms.io/projects/hello-world/haskell) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :white_check_mark: [Insertion Sort in Haskell](https://sampleprograms.io/projects/insertion-sort/haskell) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :white_check_mark: [Job Sequencing in Haskell](https://sampleprograms.io/projects/job-sequencing/haskell) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
@@ -42,6 +41,7 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Dijkstra+in+haskell) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :x: [Duplicate Character Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Duplicate+Character+Counter+in+haskell) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fraction+Math+in+haskell) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
+- :x: [Game Of Life](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Game+Of+Life+in+haskell) [[Requirements](https://sampleprograms.io/projects/game-of-life)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Josephus+Problem+in+haskell) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :x: [LPS](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+LPS+in+haskell) [[Requirements](https://sampleprograms.io/projects/lps)]
 - :x: [Linear Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Linear+Search+in+haskell) [[Requirements](https://sampleprograms.io/projects/linear-search)]

@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Bash! To find documentation related to the Bash code in this repo, look [here.](https://sampleprograms.io/languages/bash)
 
-## Sample Programs List - 15/38 :thinking:
+## Sample Programs List - 14/38 :thinking:
 
 In this section, we feature a list of completed and missing programs in Bash. See above for the current amount of completed programs in Bash. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -18,7 +18,6 @@ Below, you'll find a list of completed code snippets in Bash. Code snippets prec
 - :white_check_mark: [Fibonacci in Bash](https://sampleprograms.io/projects/fibonacci/bash) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :white_check_mark: [File Io in Bash](https://sampleprograms.io/projects/file-io/bash) [[Requirements](https://sampleprograms.io/projects/file-io)]
 - :white_check_mark: [Fizz Buzz in Bash](https://sampleprograms.io/projects/fizz-buzz/bash) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
-- :white_check_mark: [Game Of Life in Bash](https://sampleprograms.io/projects/game-of-life/bash) [[Requirements](https://sampleprograms.io/projects/game-of-life)]
 - :white_check_mark: [Hello World in Bash](https://sampleprograms.io/projects/hello-world/bash) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :white_check_mark: [Prime Number in Bash](https://sampleprograms.io/projects/prime-number/bash) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :white_check_mark: [Quick Sort in Bash](https://sampleprograms.io/projects/quick-sort/bash) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
@@ -36,6 +35,7 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Dijkstra+in+bash) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :x: [Duplicate Character Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Duplicate+Character+Counter+in+bash) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fraction+Math+in+bash) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
+- :x: [Game Of Life](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Game+Of+Life+in+bash) [[Requirements](https://sampleprograms.io/projects/game-of-life)]
 - :x: [Insertion Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Insertion+Sort+in+bash) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Job+Sequencing+in+bash) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Josephus+Problem+in+bash) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]

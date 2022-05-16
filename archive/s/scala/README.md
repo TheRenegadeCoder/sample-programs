@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Scala! To find documentation related to the Scala code in this repo, look [here.](https://sampleprograms.io/languages/scala)
 
-## Sample Programs List - 9/38 :disappointed:
+## Sample Programs List - 8/38 :disappointed:
 
 In this section, we feature a list of completed and missing programs in Scala. See above for the current amount of completed programs in Scala. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -15,7 +15,6 @@ Below, you'll find a list of completed code snippets in Scala. Code snippets pre
 - :white_check_mark: [Fibonacci in Scala](https://sampleprograms.io/projects/fibonacci/scala) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :white_check_mark: [File Io in Scala](https://sampleprograms.io/projects/file-io/scala) [[Requirements](https://sampleprograms.io/projects/file-io)]
 - :white_check_mark: [Fizz Buzz in Scala](https://sampleprograms.io/projects/fizz-buzz/scala) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
-- :white_check_mark: [Game Of Life in Scala](https://sampleprograms.io/projects/game-of-life/scala) [[Requirements](https://sampleprograms.io/projects/game-of-life)]
 - :white_check_mark: [Hello World in Scala](https://sampleprograms.io/projects/hello-world/scala) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :white_check_mark: [Quick Sort in Scala](https://sampleprograms.io/projects/quick-sort/scala) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
 - :white_check_mark: [Reverse String in Scala](https://sampleprograms.io/projects/reverse-string/scala) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
@@ -33,6 +32,7 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Duplicate Character Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Duplicate+Character+Counter+in+scala) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :x: [Even Odd](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Even+Odd+in+scala) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fraction+Math+in+scala) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
+- :x: [Game Of Life](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Game+Of+Life+in+scala) [[Requirements](https://sampleprograms.io/projects/game-of-life)]
 - :x: [Insertion Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Insertion+Sort+in+scala) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Job+Sequencing+in+scala) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Josephus+Problem+in+scala) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]

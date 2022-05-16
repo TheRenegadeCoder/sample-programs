@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Java! To find documentation related to the Java code in this repo, look [here.](https://sampleprograms.io/languages/java)
 
-## Sample Programs List - 23/38 :relaxed:
+## Sample Programs List - 22/38 :relaxed:
 
 In this section, we feature a list of completed and missing programs in Java. See above for the current amount of completed programs in Java. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -19,7 +19,6 @@ Below, you'll find a list of completed code snippets in Java. Code snippets prec
 - :white_check_mark: [Fibonacci in Java](https://sampleprograms.io/projects/fibonacci/java) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :white_check_mark: [File Io in Java](https://sampleprograms.io/projects/file-io/java) [[Requirements](https://sampleprograms.io/projects/file-io)]
 - :white_check_mark: [Fizz Buzz in Java](https://sampleprograms.io/projects/fizz-buzz/java) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
-- :white_check_mark: [Game Of Life in Java](https://sampleprograms.io/projects/game-of-life/java) [[Requirements](https://sampleprograms.io/projects/game-of-life)]
 - :white_check_mark: [Hello World in Java](https://sampleprograms.io/projects/hello-world/java) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :white_check_mark: [Insertion Sort in Java](https://sampleprograms.io/projects/insertion-sort/java) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :white_check_mark: [Job Sequencing in Java](https://sampleprograms.io/projects/job-sequencing/java) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
@@ -43,6 +42,7 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Dijkstra+in+java) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :x: [Duplicate Character Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Duplicate+Character+Counter+in+java) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fraction+Math+in+java) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
+- :x: [Game Of Life](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Game+Of+Life+in+java) [[Requirements](https://sampleprograms.io/projects/game-of-life)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Josephus+Problem+in+java) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :x: [LPS](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+LPS+in+java) [[Requirements](https://sampleprograms.io/projects/lps)]
 - :x: [Longest Word](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Longest+Word+in+java) [[Requirements](https://sampleprograms.io/projects/longest-word)]
