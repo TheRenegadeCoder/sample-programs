@@ -16,7 +16,7 @@ Below, you'll find a list of completed code snippets in Rust. Code snippets prec
 - :white_check_mark: [Even Odd in Rust](https://sampleprograms.io/projects/even-odd/rust) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :white_check_mark: [Factorial in Rust](https://sampleprograms.io/projects/factorial/rust) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :white_check_mark: [Fibonacci in Rust](https://sampleprograms.io/projects/fibonacci/rust) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
-- :warning: [File Input Output in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+rust) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
+- :white_check_mark: [File Input Output in Rust](https://sampleprograms.io/projects/file-input-output/rust) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :white_check_mark: [Fizz Buzz in Rust](https://sampleprograms.io/projects/fizz-buzz/rust) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Rust](https://sampleprograms.io/projects/hello-world/rust) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :white_check_mark: [Insertion Sort in Rust](https://sampleprograms.io/projects/insertion-sort/rust) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
@@ -24,7 +24,7 @@ Below, you'll find a list of completed code snippets in Rust. Code snippets prec
 - :white_check_mark: [Prime Number in Rust](https://sampleprograms.io/projects/prime-number/rust) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :white_check_mark: [Reverse String in Rust](https://sampleprograms.io/projects/reverse-string/rust) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :white_check_mark: [Roman Numeral in Rust](https://sampleprograms.io/projects/roman-numeral/rust) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
-- :warning: [Rot13 in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+rust) [[Requirements](https://sampleprograms.io/projects/rot13)]
+- :white_check_mark: [Rot13 in Rust](https://sampleprograms.io/projects/rot13/rust) [[Requirements](https://sampleprograms.io/projects/rot13)]
 
 ### Missing Programs
 

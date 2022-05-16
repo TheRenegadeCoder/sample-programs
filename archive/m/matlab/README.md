@@ -15,7 +15,7 @@ Below, you'll find a list of completed code snippets in Matlab. Code snippets pr
 - :white_check_mark: [Even Odd in Matlab](https://sampleprograms.io/projects/even-odd/matlab) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :white_check_mark: [Factorial in Matlab](https://sampleprograms.io/projects/factorial/matlab) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :white_check_mark: [Fibonacci in Matlab](https://sampleprograms.io/projects/fibonacci/matlab) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
-- :warning: [File Input Output in Matlab](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+matlab) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
+- :white_check_mark: [File Input Output in Matlab](https://sampleprograms.io/projects/file-input-output/matlab) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :white_check_mark: [Fizz Buzz in Matlab](https://sampleprograms.io/projects/fizz-buzz/matlab) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Matlab](https://sampleprograms.io/projects/hello-world/matlab) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :white_check_mark: [Insertion Sort in Matlab](https://sampleprograms.io/projects/insertion-sort/matlab) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]

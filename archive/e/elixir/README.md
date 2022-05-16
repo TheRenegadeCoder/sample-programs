@@ -17,7 +17,7 @@ Below, you'll find a list of completed code snippets in Elixir. Code snippets pr
 - :white_check_mark: [Factorial in Elixir](https://sampleprograms.io/projects/factorial/elixir) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :white_check_mark: [Fizz Buzz in Elixir](https://sampleprograms.io/projects/fizz-buzz/elixir) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Elixir](https://sampleprograms.io/projects/hello-world/elixir) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :warning: [Longest Common Subsequence in Elixir](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+common+subsequence+elixir) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
+- :white_check_mark: [Longest Common Subsequence in Elixir](https://sampleprograms.io/projects/longest-common-subsequence/elixir) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
 
 ### Missing Programs
 

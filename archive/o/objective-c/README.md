@@ -14,7 +14,7 @@ Below, you'll find a list of completed code snippets in Objective C. Code snippe
 - :white_check_mark: [Even Odd in Objective C](https://sampleprograms.io/projects/even-odd/objective-c) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :white_check_mark: [Factorial in Objective C](https://sampleprograms.io/projects/factorial/objective-c) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :white_check_mark: [Fibonacci in Objective C](https://sampleprograms.io/projects/fibonacci/objective-c) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
-- :warning: [File Input Output in Objective C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+objective+c) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
+- :white_check_mark: [File Input Output in Objective C](https://sampleprograms.io/projects/file-input-output/objective-c) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :white_check_mark: [Fizz Buzz in Objective C](https://sampleprograms.io/projects/fizz-buzz/objective-c) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Objective C](https://sampleprograms.io/projects/hello-world/objective-c) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :white_check_mark: [Merge Sort in Objective C](https://sampleprograms.io/projects/merge-sort/objective-c) [[Requirements](https://sampleprograms.io/projects/merge-sort)]

@@ -15,7 +15,7 @@ Below, you'll find a list of completed code snippets in Ruby. Code snippets prec
 - :white_check_mark: [Capitalize in Ruby](https://sampleprograms.io/projects/capitalize/ruby) [[Requirements](https://sampleprograms.io/projects/capitalize)]
 - :white_check_mark: [Even Odd in Ruby](https://sampleprograms.io/projects/even-odd/ruby) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :white_check_mark: [Fibonacci in Ruby](https://sampleprograms.io/projects/fibonacci/ruby) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
-- :warning: [File Input Output in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+ruby) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
+- :white_check_mark: [File Input Output in Ruby](https://sampleprograms.io/projects/file-input-output/ruby) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :white_check_mark: [Fizz Buzz in Ruby](https://sampleprograms.io/projects/fizz-buzz/ruby) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Ruby](https://sampleprograms.io/projects/hello-world/ruby) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :white_check_mark: [Quine in Ruby](https://sampleprograms.io/projects/quine/ruby) [[Requirements](https://sampleprograms.io/projects/quine)]

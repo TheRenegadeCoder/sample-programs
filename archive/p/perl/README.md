@@ -16,7 +16,7 @@ Below, you'll find a list of completed code snippets in Perl. Code snippets prec
 - :white_check_mark: [Even Odd in Perl](https://sampleprograms.io/projects/even-odd/perl) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :white_check_mark: [Factorial in Perl](https://sampleprograms.io/projects/factorial/perl) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :white_check_mark: [Fibonacci in Perl](https://sampleprograms.io/projects/fibonacci/perl) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
-- :warning: [File Input Output in Perl](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+perl) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
+- :white_check_mark: [File Input Output in Perl](https://sampleprograms.io/projects/file-input-output/perl) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :white_check_mark: [Fizz Buzz in Perl](https://sampleprograms.io/projects/fizz-buzz/perl) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Perl](https://sampleprograms.io/projects/hello-world/perl) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :white_check_mark: [Insertion Sort in Perl](https://sampleprograms.io/projects/insertion-sort/perl) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
@@ -24,7 +24,7 @@ Below, you'll find a list of completed code snippets in Perl. Code snippets prec
 - :white_check_mark: [Prime Number in Perl](https://sampleprograms.io/projects/prime-number/perl) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :white_check_mark: [Quine in Perl](https://sampleprograms.io/projects/quine/perl) [[Requirements](https://sampleprograms.io/projects/quine)]
 - :white_check_mark: [Reverse String in Perl](https://sampleprograms.io/projects/reverse-string/perl) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
-- :warning: [Rot13 in Perl](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+perl) [[Requirements](https://sampleprograms.io/projects/rot13)]
+- :white_check_mark: [Rot13 in Perl](https://sampleprograms.io/projects/rot13/perl) [[Requirements](https://sampleprograms.io/projects/rot13)]
 
 ### Missing Programs
 

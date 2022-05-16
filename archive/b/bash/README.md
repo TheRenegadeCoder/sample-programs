@@ -16,7 +16,7 @@ Below, you'll find a list of completed code snippets in Bash. Code snippets prec
 - :white_check_mark: [Even Odd in Bash](https://sampleprograms.io/projects/even-odd/bash) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :white_check_mark: [Factorial in Bash](https://sampleprograms.io/projects/factorial/bash) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :white_check_mark: [Fibonacci in Bash](https://sampleprograms.io/projects/fibonacci/bash) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
-- :warning: [File Input Output in Bash](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+bash) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
+- :white_check_mark: [File Input Output in Bash](https://sampleprograms.io/projects/file-input-output/bash) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :white_check_mark: [Fizz Buzz in Bash](https://sampleprograms.io/projects/fizz-buzz/bash) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Bash](https://sampleprograms.io/projects/hello-world/bash) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :white_check_mark: [Prime Number in Bash](https://sampleprograms.io/projects/prime-number/bash) [[Requirements](https://sampleprograms.io/projects/prime-number)]

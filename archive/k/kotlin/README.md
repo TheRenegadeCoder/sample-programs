@@ -16,18 +16,18 @@ Below, you'll find a list of completed code snippets in Kotlin. Code snippets pr
 - :white_check_mark: [Even Odd in Kotlin](https://sampleprograms.io/projects/even-odd/kotlin) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :white_check_mark: [Factorial in Kotlin](https://sampleprograms.io/projects/factorial/kotlin) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :white_check_mark: [Fibonacci in Kotlin](https://sampleprograms.io/projects/fibonacci/kotlin) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
-- :warning: [File Input Output in Kotlin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+kotlin) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
+- :white_check_mark: [File Input Output in Kotlin](https://sampleprograms.io/projects/file-input-output/kotlin) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :white_check_mark: [Fizz Buzz in Kotlin](https://sampleprograms.io/projects/fizz-buzz/kotlin) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Kotlin](https://sampleprograms.io/projects/hello-world/kotlin) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :white_check_mark: [Job Sequencing in Kotlin](https://sampleprograms.io/projects/job-sequencing/kotlin) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
-- :warning: [Longest Common Subsequence in Kotlin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+common+subsequence+kotlin) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
+- :white_check_mark: [Longest Common Subsequence in Kotlin](https://sampleprograms.io/projects/longest-common-subsequence/kotlin) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
 - :white_check_mark: [Merge Sort in Kotlin](https://sampleprograms.io/projects/merge-sort/kotlin) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
 - :white_check_mark: [Palindromic Number in Kotlin](https://sampleprograms.io/projects/palindromic-number/kotlin) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :white_check_mark: [Prime Number in Kotlin](https://sampleprograms.io/projects/prime-number/kotlin) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :white_check_mark: [Quick Sort in Kotlin](https://sampleprograms.io/projects/quick-sort/kotlin) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
 - :white_check_mark: [Quine in Kotlin](https://sampleprograms.io/projects/quine/kotlin) [[Requirements](https://sampleprograms.io/projects/quine)]
 - :white_check_mark: [Reverse String in Kotlin](https://sampleprograms.io/projects/reverse-string/kotlin) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
-- :warning: [Rot13 in Kotlin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+kotlin) [[Requirements](https://sampleprograms.io/projects/rot13)]
+- :white_check_mark: [Rot13 in Kotlin](https://sampleprograms.io/projects/rot13/kotlin) [[Requirements](https://sampleprograms.io/projects/rot13)]
 
 ### Missing Programs
 

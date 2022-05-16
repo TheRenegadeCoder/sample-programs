@@ -16,13 +16,13 @@ Below, you'll find a list of completed code snippets in Lua. Code snippets prece
 - :white_check_mark: [Even Odd in Lua](https://sampleprograms.io/projects/even-odd/lua) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :white_check_mark: [Factorial in Lua](https://sampleprograms.io/projects/factorial/lua) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :white_check_mark: [Fibonacci in Lua](https://sampleprograms.io/projects/fibonacci/lua) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
-- :warning: [File Input Output in Lua](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+lua) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
+- :white_check_mark: [File Input Output in Lua](https://sampleprograms.io/projects/file-input-output/lua) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :white_check_mark: [Fizz Buzz in Lua](https://sampleprograms.io/projects/fizz-buzz/lua) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Lua](https://sampleprograms.io/projects/hello-world/lua) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :white_check_mark: [Prime Number in Lua](https://sampleprograms.io/projects/prime-number/lua) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :white_check_mark: [Reverse String in Lua](https://sampleprograms.io/projects/reverse-string/lua) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :white_check_mark: [Roman Numeral in Lua](https://sampleprograms.io/projects/roman-numeral/lua) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
-- :warning: [Rot13 in Lua](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+lua) [[Requirements](https://sampleprograms.io/projects/rot13)]
+- :white_check_mark: [Rot13 in Lua](https://sampleprograms.io/projects/rot13/lua) [[Requirements](https://sampleprograms.io/projects/rot13)]
 
 ### Missing Programs
 

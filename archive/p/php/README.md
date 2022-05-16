@@ -16,7 +16,7 @@ Below, you'll find a list of completed code snippets in Php. Code snippets prece
 - :white_check_mark: [Even Odd in Php](https://sampleprograms.io/projects/even-odd/php) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :white_check_mark: [Factorial in Php](https://sampleprograms.io/projects/factorial/php) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :white_check_mark: [Fibonacci in Php](https://sampleprograms.io/projects/fibonacci/php) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
-- :warning: [File Input Output in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+php) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
+- :white_check_mark: [File Input Output in Php](https://sampleprograms.io/projects/file-input-output/php) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :white_check_mark: [Fizz Buzz in Php](https://sampleprograms.io/projects/fizz-buzz/php) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Php](https://sampleprograms.io/projects/hello-world/php) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :white_check_mark: [Insertion Sort in Php](https://sampleprograms.io/projects/insertion-sort/php) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
@@ -27,7 +27,7 @@ Below, you'll find a list of completed code snippets in Php. Code snippets prece
 - :white_check_mark: [Quine in Php](https://sampleprograms.io/projects/quine/php) [[Requirements](https://sampleprograms.io/projects/quine)]
 - :white_check_mark: [Reverse String in Php](https://sampleprograms.io/projects/reverse-string/php) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :white_check_mark: [Roman Numeral in Php](https://sampleprograms.io/projects/roman-numeral/php) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
-- :warning: [Rot13 in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+php) [[Requirements](https://sampleprograms.io/projects/rot13)]
+- :white_check_mark: [Rot13 in Php](https://sampleprograms.io/projects/rot13/php) [[Requirements](https://sampleprograms.io/projects/rot13)]
 - :white_check_mark: [Selection Sort in Php](https://sampleprograms.io/projects/selection-sort/php) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 
 ### Missing Programs

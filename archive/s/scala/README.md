@@ -13,7 +13,7 @@ Below, you'll find a list of completed code snippets in Scala. Code snippets pre
 - :white_check_mark: [Bubble Sort in Scala](https://sampleprograms.io/projects/bubble-sort/scala) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :white_check_mark: [Factorial in Scala](https://sampleprograms.io/projects/factorial/scala) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :white_check_mark: [Fibonacci in Scala](https://sampleprograms.io/projects/fibonacci/scala) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
-- :warning: [File Input Output in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+scala) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
+- :white_check_mark: [File Input Output in Scala](https://sampleprograms.io/projects/file-input-output/scala) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :white_check_mark: [Fizz Buzz in Scala](https://sampleprograms.io/projects/fizz-buzz/scala) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Scala](https://sampleprograms.io/projects/hello-world/scala) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :white_check_mark: [Quick Sort in Scala](https://sampleprograms.io/projects/quick-sort/scala) [[Requirements](https://sampleprograms.io/projects/quick-sort)]

@@ -13,7 +13,7 @@ Below, you'll find a list of completed code snippets in R. Code snippets precede
 - :white_check_mark: [Capitalize in R](https://sampleprograms.io/projects/capitalize/r) [[Requirements](https://sampleprograms.io/projects/capitalize)]
 - :white_check_mark: [Even Odd in R](https://sampleprograms.io/projects/even-odd/r) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :white_check_mark: [Factorial in R](https://sampleprograms.io/projects/factorial/r) [[Requirements](https://sampleprograms.io/projects/factorial)]
-- :warning: [File Input Output in R](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+r) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
+- :white_check_mark: [File Input Output in R](https://sampleprograms.io/projects/file-input-output/r) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :white_check_mark: [Fizz Buzz in R](https://sampleprograms.io/projects/fizz-buzz/r) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in R](https://sampleprograms.io/projects/hello-world/r) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :white_check_mark: [Prime Number in R](https://sampleprograms.io/projects/prime-number/r) [[Requirements](https://sampleprograms.io/projects/prime-number)]

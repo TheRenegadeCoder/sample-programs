@@ -20,7 +20,7 @@ Below, you'll find a list of completed code snippets in Dart. Code snippets prec
 - :white_check_mark: [Quick Sort in Dart](https://sampleprograms.io/projects/quick-sort/dart) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
 - :white_check_mark: [Reverse String in Dart](https://sampleprograms.io/projects/reverse-string/dart) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :white_check_mark: [Roman Numeral in Dart](https://sampleprograms.io/projects/roman-numeral/dart) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
-- :warning: [Rot13 in Dart](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+dart) [[Requirements](https://sampleprograms.io/projects/rot13)]
+- :white_check_mark: [Rot13 in Dart](https://sampleprograms.io/projects/rot13/dart) [[Requirements](https://sampleprograms.io/projects/rot13)]
 - :white_check_mark: [Sleep Sort in Dart](https://sampleprograms.io/projects/sleep-sort/dart) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 
 ### Missing Programs
