@@ -97,11 +97,11 @@ projects:
             - "common"
             - "subsequence"
         requires_parameters: true
-    longestpalindromicsubsequence:
+    longestpalindromicsubstring:
         words:
             - "longest"
             - "palindromic"
-            - "subsequence"
+            - "substring"
         requires_parameters: true
     longestword:
         words:
