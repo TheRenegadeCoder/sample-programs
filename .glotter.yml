@@ -55,13 +55,12 @@ projects:
         words:
             - "fibonacci"
         requires_parameters: true
-    fileio:
+    fileinputoutput:
         words:
             - "file"
-            - "io"
+            - "input"
+            - "output"
         requires_parameters: false
-        acronyms:
-            - "io"
     fizzbuzz:
         words:
             - "fizz"
@@ -92,22 +91,22 @@ projects:
             - "josephus"
             - "problem"
         requires_parameters: true
-    lcs:
+    longestcommonsubsequence:
         words:
-            - "lcs"
-        acronyms:
-            - "lcs"
+            - "longest"
+            - "common"
+            - "subsequence"
+        requires_parameters: true
+    longestpalindromicsubsequence:
+        words:
+            - "longest"
+            - "palindromic"
+            - "subsequence"
         requires_parameters: true
     longestword:
         words:
             - "longest"
             - "word"
-        requires_parameters: true
-    lps:
-        words:
-            - "lps"
-        acronyms:
-            - "lps"
         requires_parameters: true
     linearsearch:
         words:
@@ -130,11 +129,11 @@ projects:
             - "merge"
             - "sort"
         requires_parameters: true
-    mst:
+    minimumspanningtree:
         words:
-            - "mst"
-        acronyms:
-            - "mst"
+            - "minimum"
+            - "spanning"
+            - "tree"
         requires_parameters: true
     palindromicnumber:
         words:
@@ -157,8 +156,7 @@ projects:
         requires_parameters: false
     rot13:
         words:
-            - "rot"
-            - "13"
+            - "rot13"
         requires_parameters: true
     removeallwhitespace:
         words:
