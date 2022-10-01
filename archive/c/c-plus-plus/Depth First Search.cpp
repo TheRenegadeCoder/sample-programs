@@ -25,7 +25,8 @@ vector<int> g[N]; // Adjacency list for representing graph
 void dfs(int root)
 {
     // Marking the current node as visited and printing it
-    vis[root]=1; cout<<root<<" ";
+    // cout<<root<<" ";
+    vis[root]=1;
     
     // Recur for all the vertices adjacent to this vertex
     for(auto child:g[root])
