@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main{  
+public class binarySearch{  
  public static void binarySearch(ArrayList<Integer> arr, int first, int last, int key){  
    int mid = (first + last)/2;  
    while( first <= last ){  
