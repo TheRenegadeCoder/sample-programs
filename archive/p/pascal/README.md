@@ -58,7 +58,7 @@ The following list contains all of the approved programs that are not currently 
 The following list shares details about what we're using to test all Sample Programs in Pascal.
 
 - Docker Image: cyberdojofoundation/freepascal
-- Docker Tag: latest
+- Docker Tag: 5550730
 
 See the [Glotter project](https://github.com/auroq/glotter) for more information on how to create a testinfo file.
 
