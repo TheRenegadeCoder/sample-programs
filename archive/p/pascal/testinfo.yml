@@ -4,6 +4,6 @@ folder:
 
 container:
   image: "cyberdojofoundation/freepascal"
-  tag: "latest"
+  tag: "5550730"
   build: "fpc {{ source.name }}{{ source.extension }}"
   cmd: "./{{ source.name }}"
