@@ -91,7 +91,7 @@ int main(int argc,char* argv[]){
 		int mid=(start+end)/2;
 
 		if(num<v[mid]){
-			end=mid-1;
+			end=mid;
 		}else if(v[mid]<num){
 			start=mid+1;
 		}else if(v[mid]==num){
