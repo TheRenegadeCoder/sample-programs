@@ -32,12 +32,12 @@ Below, you'll find a list of completed code snippets in Java. Code snippets prec
 - :white_check_mark: [Reverse String in Java](https://sampleprograms.io/projects/reverse-string/java) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :white_check_mark: [Rot13 in Java](https://sampleprograms.io/projects/rot13/java) [[Requirements](https://sampleprograms.io/projects/rot13)]
 - :white_check_mark: [Selection Sort in Java](https://sampleprograms.io/projects/selection-sort/java) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
+- :white_check_mark: [Binary Search in Java](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Binary+Search+in+java) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 
 ### Missing Programs
 
 The following list contains all of the approved programs that are not currently implemented in Java. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
-- :x: [Binary Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Binary+Search+in+java) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :x: [Depth First Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Depth+First+Search+in+java) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Dijkstra+in+java) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :x: [Duplicate Character Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Duplicate+Character+Counter+in+java) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
