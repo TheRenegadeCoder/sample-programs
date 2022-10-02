@@ -1,9 +1,11 @@
-#include<bits/stdc++.h>
+#include<iostream>
+#include<string>
+#include <unordered_map>
 using namespace std;
 
-int main(){
-    string inputStr;
-    cin>>inputStr;
+int main(int argc, char *argv[]){
+    string inputStr(argv[1]);
+
     unordered_map<char,int> m1;
 
     for(auto x : inputStr)
