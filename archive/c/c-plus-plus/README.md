@@ -30,7 +30,7 @@ Below, you'll find a list of completed code snippets in C++. Code snippets prece
 - :white_check_mark: [Reverse String in C++](https://sampleprograms.io/projects/reverse-string/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :white_check_mark: [Roman Numeral in C++](https://sampleprograms.io/projects/roman-numeral/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :white_check_mark: [Selection Sort in C++](https://sampleprograms.io/projects/selection-sort/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
-- :white_check_mark: [Linear Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Linear+Search+in+c-plus-plus) [[Requirements](https://sampleprograms.io/projects/linear-search)]
+- :white_check_mark: [Linear Search in C++](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Linear+Search+in+c-plus-plus) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 
 ### Missing Programs
 
