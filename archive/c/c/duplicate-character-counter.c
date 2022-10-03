@@ -5,7 +5,7 @@
 // Function to handle errors
 int handle_error()
 {
-    printf("Usage: please provide string\n");
+    printf("Usage: please provide a string\n");
     exit(0);
 }
 
@@ -16,6 +16,12 @@ int main(int argc, char *argv[])
     */
     if (argc !=2 )
     {
+        handle_error();
+    }
+    /*
+        Condition to check for No String as Input
+    */
+    if(strlen(argv[1]) == 0){
         handle_error();
     }
     int counter[256]={0};
