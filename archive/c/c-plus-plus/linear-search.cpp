@@ -5,7 +5,7 @@
 using namespace std;
 
 int main(int argc, char *argv[]){
-    string error = "Usage: please provide a list of integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")";
+    string error = "Usage: please provide a list of sorted integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")";
 
     // if input and search key is not given
     if(argc != 3){
