@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in C++! To find documentation related to the C++ code in this repo, look [here.](https://sampleprograms.io/languages/c-plus-plus)
 
-## Sample Programs List - 21/37 :relaxed:
+## Sample Programs List - 23/37 :relaxed:
 
 In this section, we feature a list of completed and missing programs in C++. See above for the current amount of completed programs in C++. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -14,6 +14,7 @@ Below, you'll find a list of completed code snippets in C++. Code snippets prece
 - :white_check_mark: [Binary Search in C++](https://sampleprograms.io/projects/binary-search/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :white_check_mark: [Bubble Sort in C++](https://sampleprograms.io/projects/bubble-sort/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :white_check_mark: [Capitalize in C++](https://sampleprograms.io/projects/capitalize/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :warning: [Depth First Search in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+depth+first+search+c++) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :white_check_mark: [Even Odd in C++](https://sampleprograms.io/projects/even-odd/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :white_check_mark: [Factorial in C++](https://sampleprograms.io/projects/factorial/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :white_check_mark: [Fibonacci in C++](https://sampleprograms.io/projects/fibonacci/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
@@ -22,6 +23,7 @@ Below, you'll find a list of completed code snippets in C++. Code snippets prece
 - :white_check_mark: [Fraction Math in C++](https://sampleprograms.io/projects/fraction-math/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :white_check_mark: [Hello World in C++](https://sampleprograms.io/projects/hello-world/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :white_check_mark: [Insertion Sort in C++](https://sampleprograms.io/projects/insertion-sort/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
+- :warning: [Linear Search in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+linear+search+c++) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :white_check_mark: [Longest Common Subsequence in C++](https://sampleprograms.io/projects/longest-common-subsequence/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
 - :warning: [Longest Word in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+c++) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :white_check_mark: [Merge Sort in C++](https://sampleprograms.io/projects/merge-sort/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
@@ -37,11 +39,9 @@ Below, you'll find a list of completed code snippets in C++. Code snippets prece
 The following list contains all of the approved programs that are not currently implemented in C++. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
 - :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Convex+Hull+in+c-plus-plus) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
-- :x: [Depth First Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Depth+First+Search+in+c-plus-plus) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Dijkstra+in+c-plus-plus) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Job+Sequencing+in+c-plus-plus) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Josephus+Problem+in+c-plus-plus) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
-
 - :x: [Longest Palindromic Substring](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Longest+Palindromic+Substring+in+c-plus-plus) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
 - :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+c-plus-plus) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+c-plus-plus) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
