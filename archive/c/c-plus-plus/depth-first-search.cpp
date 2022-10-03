@@ -15,11 +15,75 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+
 /* Declaring variables globally. So that we are not required to pass them in functions as parameters */
 const int N=3e5+10;
 bool vis[N];
 vector<int> g[N]; // Adjacency list for representing graph
 
+void handle_error()
+{
+    cout<<"Usage: please provide a tree in an adjacency matrix form (\"0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0\") together with a list of vertex values (\"1, 3, 5, 2, 4\") and the integer to find (\"4\")\n";
+    exit(0);
+}
+
+//Function to check whether inputs satisfy given constraints
+int check(string s){
+    int x1=0,x2=(int)s.size()-1;
+
+    //x1 gives first index position where integer occurs
+    for(int i=0;i<s.size();i++){
+        if(s[i]!=' '){
+            x1=i;
+            break;
+        }
+    }
+
+    //x2 gives last index position where integer occurs
+    for(int i=(int)s.size()-1;i>=x1;i--){
+        if(s[i]!=' '){
+            x2=i;
+            break;
+        }
+    }
+    
+    //if any space occurs between this substring then throw error
+    for(int i=x1;i<=x2;i++){
+        if(s[i]==' '){
+            handle_error();
+        }
+    }
+
+    return stoi(s);
+}
+
+
+//Function for converting string input into integer vector
+vector<int> convert(string s){
+    /*
+        Loop to convert numbers in string to integers
+    */
+    if(s.size()==0){
+        handle_error();
+    }
+    vector<int> v;
+    string num="";
+    for(int i=0;i<s.size();i++){
+        if(((int)s[i]>=48 && (int)s[i]<=57) || s[i]==' '){
+            num+=s[i];
+        }else if(s[i]==','){
+            v.push_back(check(num));
+            num="";
+        }
+    }
+
+
+    if(num.size()>0){
+        v.push_back(check(num));
+    }
+    
+    return v;
+}
 
 /* DFS Function */
 void dfs(int root)
@@ -43,7 +107,7 @@ void dfs(int root)
 }
 
 // Main Function
-int main()
+int main(int argc, char *argv[])
 {
     /*
      
@@ -67,16 +131,38 @@ int main()
      4      5-------6------7
      
      */
-    int v = 7 , e = 6 ;
-    g[1].push_back(2); g[2].push_back(1);
-    g[2].push_back(3); g[3].push_back(2);
-    g[4].push_back(1); g[1].push_back(4);
-    g[5].push_back(2); g[2].push_back(5);
-    g[5].push_back(6); g[6].push_back(5);
-    g[6].push_back(7); g[7].push_back(6);
+
+    if(argc<=1) handle_error();
+
+    vector<int> bin = convert(argv[1]) , nodes = convert(argv[2]) , t = convert(argv[3]) ;
+    if(bin.size() == 0 || nodes.size() ==0 || t.size()==0) handle_error();
+
+    int sz = (int) nodes.size();
+    int k=0;
+    int f = sqrt(bin.size());
+    if(sz!=f) handle_error();
+    for(int i=0;i<bin.size();i+=sz)
+    {
+        for(int j=i;j<i+sz;j++)
+        {
+            if(bin[j]==1)
+            {
+                g[nodes[j-sz*k]].push_back(nodes[k]);
+                g[nodes[k]].push_back(nodes[j-sz*k]);
+            }
+        }
+        k++;
+    }
     
+    int src = nodes[0];
+    dfs(src);
+    if(vis[t[0]]) cout<<"true"<<"\n";
+    else cout<<"false"<<"\n";
+    
+
+
     // Calling DFS considering 1 as the source (starting point)
-    dfs(1);
+    
     
     
     // How DFS traversed ?
