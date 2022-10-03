@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
         char c = argv[1][i];
         if(counter[c-1]>1){
             flag = 0;
-            printf("%c:%d\n",c,counter[c-1]);
+            printf("%c: %d\n",c,counter[c-1]);
             counter[c-1]=0;
         }
     }
