@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in C++! To find documentation related to the C++ code in this repo, look [here.](https://sampleprograms.io/languages/c-plus-plus)
 
-## Sample Programs List - 23/37 :relaxed:
+## Sample Programs List - 24/37 :relaxed:
 
 In this section, we feature a list of completed and missing programs in C++. See above for the current amount of completed programs in C++. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -15,6 +15,7 @@ Below, you'll find a list of completed code snippets in C++. Code snippets prece
 - :white_check_mark: [Bubble Sort in C++](https://sampleprograms.io/projects/bubble-sort/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :white_check_mark: [Capitalize in C++](https://sampleprograms.io/projects/capitalize/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/capitalize)]
 - :warning: [Depth First Search in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+depth+first+search+c++) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
+- :warning: [Duplicate Character Counter in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+c++) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :white_check_mark: [Even Odd in C++](https://sampleprograms.io/projects/even-odd/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :white_check_mark: [Factorial in C++](https://sampleprograms.io/projects/factorial/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :white_check_mark: [Fibonacci in C++](https://sampleprograms.io/projects/fibonacci/c-plus-plus) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
