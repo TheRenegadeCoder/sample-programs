@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Java! To find documentation related to the Java code in this repo, look [here.](https://sampleprograms.io/languages/java)
 
-## Sample Programs List - 23/37 :relaxed:
+## Sample Programs List - 24/37 :relaxed:
 
 In this section, we feature a list of completed and missing programs in Java. See above for the current amount of completed programs in Java. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -15,6 +15,7 @@ Below, you'll find a list of completed code snippets in Java. Code snippets prec
 - :white_check_mark: [Bubble Sort in Java](https://sampleprograms.io/projects/bubble-sort/java) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :white_check_mark: [Capitalize in Java](https://sampleprograms.io/projects/capitalize/java) [[Requirements](https://sampleprograms.io/projects/capitalize)]
 - :white_check_mark: [Convex Hull in Java](https://sampleprograms.io/projects/convex-hull/java) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
+- :warning: [Duplicate Character Counter in Java](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+java) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :white_check_mark: [Even Odd in Java](https://sampleprograms.io/projects/even-odd/java) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :white_check_mark: [Factorial in Java](https://sampleprograms.io/projects/factorial/java) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :white_check_mark: [Fibonacci in Java](https://sampleprograms.io/projects/fibonacci/java) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
@@ -40,7 +41,6 @@ The following list contains all of the approved programs that are not currently 
 
 - :x: [Depth First Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Depth+First+Search+in+java) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Dijkstra+in+java) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
-- :x: [Duplicate Character Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Duplicate+Character+Counter+in+java) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fraction+Math+in+java) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Josephus+Problem+in+java) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :x: [Longest Palindromic Substring](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Longest+Palindromic+Substring+in+java) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
