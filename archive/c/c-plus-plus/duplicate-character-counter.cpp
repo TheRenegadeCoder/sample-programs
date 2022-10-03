@@ -3,8 +3,21 @@
 #include <unordered_map>
 using namespace std;
 
+int handle_error(){
+    cout<<"Usage: please provide a string\n";
+    exit(0);
+}
 int main(int argc, char *argv[]){
+
+
+    if(argc!=2){
+        handle_error();
+    }
     string inputStr(argv[1]);
+
+    if(inputStr.size()==0){
+        handle_error();
+    }
 
     unordered_map<char,int> m1;
 
@@ -25,7 +38,7 @@ int main(int argc, char *argv[]){
            if(m1[inputStr[i]]>1)
             {
                 flag = 0;
-                cout<<inputStr[i]<<":"<<m1[inputStr[i]]<<"\n";
+                cout<<inputStr[i]<<": "<<m1[inputStr[i]]<<"\n";
                 m1[inputStr[i]]=0;
             }
             
