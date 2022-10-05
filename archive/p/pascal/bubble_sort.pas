@@ -6,7 +6,7 @@ type
   // data type
   TItemBubbleSort=integer;
 
-procedure BubbleSort( var a: array of TItemBubbleSort );
+procedure BubbleSort( var a: array of TItemBubbleSort ); 
 
 
 implementation
