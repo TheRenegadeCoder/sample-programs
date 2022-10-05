@@ -1,7 +1,7 @@
 #!/usr/bin/julia
 function err() 
   println("Usage: please input a number")
-end
+end 
 
 function palindrome_check(n)
   new_num = 0
