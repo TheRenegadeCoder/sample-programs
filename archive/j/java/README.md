@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Java! To find documentation related to the Java code in this repo, look [here.](https://sampleprograms.io/languages/java)
 
-## Sample Programs List - 24/37 :relaxed:
+## Sample Programs List - 25/37 :relaxed:
 
 In this section, we feature a list of completed and missing programs in Java. See above for the current amount of completed programs in Java. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -24,8 +24,9 @@ Below, you'll find a list of completed code snippets in Java. Code snippets prec
 - :white_check_mark: [Hello World in Java](https://sampleprograms.io/projects/hello-world/java) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :white_check_mark: [Insertion Sort in Java](https://sampleprograms.io/projects/insertion-sort/java) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :white_check_mark: [Job Sequencing in Java](https://sampleprograms.io/projects/job-sequencing/java) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
-- :white_check_mark: [Linear Search in Java](https://sampleprograms.io/projects/linear-search/java) [[Requirements](https://sampleprograms.io/projects/linear-search)]
+- :warning: [Linear Search in Java](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+linear+search+java) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :white_check_mark: [Longest Common Subsequence in Java](https://sampleprograms.io/projects/longest-common-subsequence/java) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
+- :warning: [Longest Word in Java](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+java) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :white_check_mark: [Merge Sort in Java](https://sampleprograms.io/projects/merge-sort/java) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
 - :white_check_mark: [Palindromic Number in Java](https://sampleprograms.io/projects/palindromic-number/java) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :white_check_mark: [Prime Number in Java](https://sampleprograms.io/projects/prime-number/java) [[Requirements](https://sampleprograms.io/projects/prime-number)]
@@ -44,7 +45,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fraction+Math+in+java) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Josephus+Problem+in+java) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :x: [Longest Palindromic Substring](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Longest+Palindromic+Substring+in+java) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
-- :x: [Longest Word](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Longest+Word+in+java) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+java) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+java) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+java) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
