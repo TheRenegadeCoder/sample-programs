@@ -24,7 +24,7 @@ Below, you'll find a list of completed code snippets in Java. Code snippets prec
 - :white_check_mark: [Hello World in Java](https://sampleprograms.io/projects/hello-world/java) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :white_check_mark: [Insertion Sort in Java](https://sampleprograms.io/projects/insertion-sort/java) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :white_check_mark: [Job Sequencing in Java](https://sampleprograms.io/projects/job-sequencing/java) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
-- :warning: [Linear Search in Java](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+linear+search+java) [[Requirements](https://sampleprograms.io/projects/linear-search)]
+- :white_check_mark: [Linear Search in Java](https://sampleprograms.io/projects/linear-search/java) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :white_check_mark: [Longest Common Subsequence in Java](https://sampleprograms.io/projects/longest-common-subsequence/java) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
 - :warning: [Longest Word in Java](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+java) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :white_check_mark: [Merge Sort in Java](https://sampleprograms.io/projects/merge-sort/java) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
