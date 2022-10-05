@@ -39,11 +39,11 @@ Below, you'll find a list of completed code snippets in Python. Code snippets pr
 - :white_check_mark: [Quick Sort in Python](https://sampleprograms.io/projects/quick-sort/python) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
 - :white_check_mark: [Quine in Python](https://sampleprograms.io/projects/quine/python) [[Requirements](https://sampleprograms.io/projects/quine)]
 - :white_check_mark: [Remove All Whitespace in Python](https://sampleprograms.io/projects/remove-all-whitespace/python) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
-- :white_check_mark: [Reverse String in Python](https://sampleprograms.io/projects/reverse-string/python) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
+- :warning: [Reverse String in Python](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+python) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :white_check_mark: [Roman Numeral in Python](https://sampleprograms.io/projects/roman-numeral/python) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :white_check_mark: [Rot13 in Python](https://sampleprograms.io/projects/rot13/python) [[Requirements](https://sampleprograms.io/projects/rot13)]
 - :white_check_mark: [Selection Sort in Python](https://sampleprograms.io/projects/selection-sort/python) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
-- :white_check_mark: [Sleep Sort in Python](https://sampleprograms.io/projects/sleep-sort/python) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
+- :warning: [Sleep Sort in Python](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sleep+sort+python) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :white_check_mark: [Transpose Matrix in Python](https://sampleprograms.io/projects/transpose-matrix/python) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
 ### Missing Programs
