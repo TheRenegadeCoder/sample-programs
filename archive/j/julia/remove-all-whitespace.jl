@@ -1,21 +1,23 @@
-#!/usr/bin/julia
-# Remove four types of characters: spaces (" "), tabs ("\t"), newlines ("\n"), and carriage returns ("\r").
+using Core: print
 function err()
   println("Usage: please provide a string")
 end
 
 function remove_all_whitespaces(n)
-  println("length of", n, length(n))
   if (length(n) in [0,1])
     err()
   else
-    compliments = Dict(" " => "", "\t" => "", "\n" => "", "\r" => "")
-    println(join([compliments[c] for c in n]))
+    n_nospace = (filter(x -> !isspace(x), n))
+    n_notab = replace(n_nospace,  "\t" => "")
+    n_nonewline = replace(n_notab,  "\n" => "")
+    n_nonewline = replace(n_notab,  "\r" => "")
+    println(n_nonewline)
   end
 end
 
 try
-  remove_all_whitespaces(parse(ARGS[1]))
+  # remove_all_whitespaces(parse(ARGS[1]))
+  remove_all_whitespaces(ARGS[1])
 catch e
   err()
 end
