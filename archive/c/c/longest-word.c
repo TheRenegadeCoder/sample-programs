@@ -15,13 +15,13 @@ int main(int argc, char *argv[])
         error();
     }
     int max = -1;
-    char* word = strtok(argv[1], " ");
+    char* word = strtok(argv[1], " ,\n\t");
     while (word != NULL) {
         int len = strlen(word);
         if(len>max){
             max = len;
         }
-        word = strtok(NULL, " ");
+        word = strtok(NULL, " ,\n\t");
     }
 
     printf("%d",max);
