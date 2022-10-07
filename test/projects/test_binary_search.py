@@ -52,6 +52,9 @@ valid_permutations = (
             'sample input many false',
             '"1, 3, 5, 6" "7"',
             'false'
+        ), ('sample input middle true',
+            '"1, 2, 3, 4, 5, 6, 7" "3"',
+            'true'
         )
     ]
 )
