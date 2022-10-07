@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in C! To find documentation related to the C code in this repo, look [here.](https://sampleprograms.io/languages/c)
 
-## Sample Programs List - 22/37 :relaxed:
+## Sample Programs List - 23/37 :relaxed:
 
 In this section, we feature a list of completed and missing programs in C. See above for the current amount of completed programs in C. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -22,6 +22,7 @@ Below, you'll find a list of completed code snippets in C. Code snippets precede
 - :white_check_mark: [Hello World in C](https://sampleprograms.io/projects/hello-world/c) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :white_check_mark: [Insertion Sort in C](https://sampleprograms.io/projects/insertion-sort/c) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :white_check_mark: [Longest Common Subsequence in C](https://sampleprograms.io/projects/longest-common-subsequence/c) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
+- :warning: [Longest Word in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+c) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :white_check_mark: [Merge Sort in C](https://sampleprograms.io/projects/merge-sort/c) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
 - :white_check_mark: [Minimum Spanning Tree in C](https://sampleprograms.io/projects/minimum-spanning-tree/c) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
 - :white_check_mark: [Palindromic Number in C](https://sampleprograms.io/projects/palindromic-number/c) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
@@ -46,7 +47,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Josephus+Problem+in+c) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :x: [Linear Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Linear+Search+in+c) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :x: [Longest Palindromic Substring](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Longest+Palindromic+Substring+in+c) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
-- :x: [Longest Word](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Longest+Word+in+c) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+c) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+c) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :x: [Remove All Whitespace](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Remove+All+Whitespace+in+c) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
