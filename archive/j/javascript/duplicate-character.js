@@ -5,22 +5,25 @@ const error = () => {
 const args = process.argv;
 
 try {
-    const map = new Map();
-    const inputStr = args[2];
+  let flag = false;
+  const map = new Map();
+  const inputStr = args[2];
+  if (inputStr !== undefined) {
     for (const char of inputStr) {
-        const value = map.has(char) === true ? map.get(char):0;
-        map.set(char,value+1);
+      const value = map.has(char) === true ? map.get(char) : 0;
+      map.set(char, value + 1);
     }
-    let flag = false;
     for (const m of map) {
-        if(m[1]>1){
-            flag=true;
-            console.log(`${m[0]}: ${m[1]}`);
-        }
+      if (m[1] > 1) {
+        flag = true;
+        console.log(`${m[0]}: ${m[1]}`);
+      }
     }
-    if(flag === false){
-        console.log("No duplicate characters");
-    }
+  }
+  if (flag === false) {
+    console.log("No duplicate characters");
+  }
 } catch (_error) {
-    error()
+    console.log(_error);
+  error();
 }
