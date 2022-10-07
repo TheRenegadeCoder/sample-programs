@@ -17,8 +17,9 @@ int main(int argc, char *argv[])
     int max = -1;
     char* word = strtok(argv[1], " ");
     while (word != NULL) {
-        if(strlen(word)>1){
-            max = strlen(word);
+        int len = strlen(word);
+        if(len>max){
+            max = len;
         }
         word = strtok(NULL, " ");
     }
