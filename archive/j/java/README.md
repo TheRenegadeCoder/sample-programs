@@ -11,11 +11,11 @@ In this section, we feature a list of completed and missing programs in Java. Se
 Below, you'll find a list of completed code snippets in Java. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
 - :white_check_mark: [Baklava in Java](https://sampleprograms.io/projects/baklava/java) [[Requirements](https://sampleprograms.io/projects/baklava)]
-- :warning: [Binary Search in Java](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+binary+search+java) [[Requirements](https://sampleprograms.io/projects/binary-search)]
+- :white_check_mark: [Binary Search in Java](https://sampleprograms.io/projects/binary-search/java) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :white_check_mark: [Bubble Sort in Java](https://sampleprograms.io/projects/bubble-sort/java) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :white_check_mark: [Capitalize in Java](https://sampleprograms.io/projects/capitalize/java) [[Requirements](https://sampleprograms.io/projects/capitalize)]
 - :white_check_mark: [Convex Hull in Java](https://sampleprograms.io/projects/convex-hull/java) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
-- :warning: [Duplicate Character Counter in Java](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+java) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
+- :white_check_mark: [Duplicate Character Counter in Java](https://sampleprograms.io/projects/duplicate-character-counter/java) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :white_check_mark: [Even Odd in Java](https://sampleprograms.io/projects/even-odd/java) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :white_check_mark: [Factorial in Java](https://sampleprograms.io/projects/factorial/java) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :white_check_mark: [Fibonacci in Java](https://sampleprograms.io/projects/fibonacci/java) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
@@ -26,7 +26,7 @@ Below, you'll find a list of completed code snippets in Java. Code snippets prec
 - :white_check_mark: [Job Sequencing in Java](https://sampleprograms.io/projects/job-sequencing/java) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :white_check_mark: [Linear Search in Java](https://sampleprograms.io/projects/linear-search/java) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :white_check_mark: [Longest Common Subsequence in Java](https://sampleprograms.io/projects/longest-common-subsequence/java) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
-- :warning: [Longest Word in Java](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+java) [[Requirements](https://sampleprograms.io/projects/longest-word)]
+- :white_check_mark: [Longest Word in Java](https://sampleprograms.io/projects/longest-word/java) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :white_check_mark: [Merge Sort in Java](https://sampleprograms.io/projects/merge-sort/java) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
 - :white_check_mark: [Palindromic Number in Java](https://sampleprograms.io/projects/palindromic-number/java) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :white_check_mark: [Prime Number in Java](https://sampleprograms.io/projects/prime-number/java) [[Requirements](https://sampleprograms.io/projects/prime-number)]

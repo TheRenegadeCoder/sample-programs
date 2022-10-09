@@ -12,14 +12,14 @@ Below, you'll find a list of completed code snippets in Julia. Code snippets pre
 
 - :white_check_mark: [Baklava in Julia](https://sampleprograms.io/projects/baklava/julia) [[Requirements](https://sampleprograms.io/projects/baklava)]
 - :white_check_mark: [Bubble Sort in Julia](https://sampleprograms.io/projects/bubble-sort/julia) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
-- :warning: [Capitalize in Julia](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+julia) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :white_check_mark: [Capitalize in Julia](https://sampleprograms.io/projects/capitalize/julia) [[Requirements](https://sampleprograms.io/projects/capitalize)]
 - :white_check_mark: [Even Odd in Julia](https://sampleprograms.io/projects/even-odd/julia) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :white_check_mark: [Factorial in Julia](https://sampleprograms.io/projects/factorial/julia) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :white_check_mark: [Fibonacci in Julia](https://sampleprograms.io/projects/fibonacci/julia) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :white_check_mark: [Fizz Buzz in Julia](https://sampleprograms.io/projects/fizz-buzz/julia) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Julia](https://sampleprograms.io/projects/hello-world/julia) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :warning: [Remove All Whitespace in Julia](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+remove+all+whitespace+julia) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
-- :warning: [Reverse String in Julia](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+julia) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
+- :white_check_mark: [Remove All Whitespace in Julia](https://sampleprograms.io/projects/remove-all-whitespace/julia) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
+- :white_check_mark: [Reverse String in Julia](https://sampleprograms.io/projects/reverse-string/julia) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :white_check_mark: [Selection Sort in Julia](https://sampleprograms.io/projects/selection-sort/julia) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 
 ### Missing Programs

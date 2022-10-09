@@ -22,7 +22,7 @@ Below, you'll find a list of completed code snippets in Rust. Code snippets prec
 - :white_check_mark: [Insertion Sort in Rust](https://sampleprograms.io/projects/insertion-sort/rust) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :white_check_mark: [Merge Sort in Rust](https://sampleprograms.io/projects/merge-sort/rust) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
 - :white_check_mark: [Prime Number in Rust](https://sampleprograms.io/projects/prime-number/rust) [[Requirements](https://sampleprograms.io/projects/prime-number)]
-- :warning: [Quick Sort in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+rust) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
+- :white_check_mark: [Quick Sort in Rust](https://sampleprograms.io/projects/quick-sort/rust) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
 - :white_check_mark: [Reverse String in Rust](https://sampleprograms.io/projects/reverse-string/rust) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :white_check_mark: [Roman Numeral in Rust](https://sampleprograms.io/projects/roman-numeral/rust) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :white_check_mark: [Rot13 in Rust](https://sampleprograms.io/projects/rot13/rust) [[Requirements](https://sampleprograms.io/projects/rot13)]
