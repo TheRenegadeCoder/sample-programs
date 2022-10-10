@@ -3,19 +3,16 @@
 
 using namespace std;
 
-// Function to handle errors
 void handle_error()
 {
     cout << "Usage: please provide a list of sorted integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")" << endl;
     exit(0);
 }
 
-// Function to check whether inputs satisfy given constraints
 int check(string s)
 {
     int x1 = 0, x2 = s.size() - 1;
 
-    // x1 gives first index position where integer occurs
     for (int i = 0; i < s.size(); i++)
     {
         if (s[i] != ' ')
@@ -25,7 +22,6 @@ int check(string s)
         }
     }
 
-    // x2 gives last index position where integer occurs
     for (int i = s.size() - 1; i >= x1; i--)
     {
         if (s[i] != ' ')
@@ -35,7 +31,6 @@ int check(string s)
         }
     }
 
-    // if any space occurs between this substring then throw error
     for (int i = x1; i <= x2; i++)
     {
         if (s[i] == ' ')
@@ -47,12 +42,8 @@ int check(string s)
     return stoi(s);
 }
 
-// Function for converting string input into integer vector
 vector<int> convert(string s)
 {
-    /*
-        Loop to convert numbers in string to integers
-    */
     if (s.size() == 0)
     {
         handle_error();
@@ -86,9 +77,6 @@ vector<int> convert(string s)
 
 int main(int argc, char *argv[])
 {
-    /*
-        Condition to check for No String as Input
-    */
     if (argc < 3)
     {
         handle_error();
