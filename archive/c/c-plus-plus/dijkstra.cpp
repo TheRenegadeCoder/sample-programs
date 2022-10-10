@@ -1,13 +1,10 @@
-
 #include <bits/stdc++.h>
 #define pii pair<int, int>
 using namespace std;
 
-/* Declaring variables globally. So that we are not required to pass them in functions as parameters */
-// const int N=3e5+10;
 const int N = 7;
 bool vis[N];
-vector<pii> g[N]; // Adjacency list for representing graph
+vector<pii> g[N];
 vector<int> dis(N, INT_MAX);
 
 void handle_error()
@@ -16,12 +13,10 @@ void handle_error()
     exit(0);
 }
 
-// Function to check whether inputs satisfy given constraints
 int check(string s)
 {
     int x1 = 0, x2 = (int)s.size() - 1;
 
-    // x1 gives first index position where integer occurs
     for (int i = 0; i < s.size(); i++)
     {
         if (s[i] != ' ')
@@ -31,7 +26,6 @@ int check(string s)
         }
     }
 
-    // x2 gives last index position where integer occurs
     for (int i = (int)s.size() - 1; i >= x1; i--)
     {
         if (s[i] != ' ')
@@ -41,7 +35,6 @@ int check(string s)
         }
     }
 
-    // if any space occurs between this substring then throw error
     for (int i = x1; i <= x2; i++)
     {
         if (s[i] == ' ')
@@ -53,12 +46,9 @@ int check(string s)
     return stoi(s);
 }
 
-// Function for converting string input into integer vector
 vector<int> convert(string s)
 {
-    /*
-        Loop to convert numbers in string to integers
-    */
+
     if (s.size() == 0)
     {
         handle_error();
@@ -84,7 +74,6 @@ vector<int> convert(string s)
     if (num.size() > 0)
     {
         int x = check(num);
-        //        cout<<num<<" -> "<<x<<"\n";
         if (x < 0)
             handle_error();
         v.push_back(x);
@@ -93,7 +82,6 @@ vector<int> convert(string s)
     return v;
 }
 
-/* Dijkstra Function */
 vector<int> dijkstra(int src)
 {
     set<pii> s;
@@ -120,7 +108,6 @@ vector<int> dijkstra(int src)
     return dis;
 }
 
-// Main Function
 int main(int argc, char *argv[])
 {
 
