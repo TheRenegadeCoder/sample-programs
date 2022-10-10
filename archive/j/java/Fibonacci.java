@@ -12,8 +12,7 @@ public class Fibonacci {
                 second = result;
                 System.out.println(i + ": " + first);
             }
-        }
-        catch(Exception e) {
+        } catch (Exception e) {
             System.out.println("Usage: please input the count of fibonacci numbers to output");
             System.exit(1);
         }

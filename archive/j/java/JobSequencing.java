@@ -1,7 +1,7 @@
 import java.util.*;
 
-/** Invalid input exception to handle errors. */
-class InvalidInputException extends Exception {}
+class InvalidInputException extends Exception {
+}
 
 public class JobSequencing {
 
@@ -17,7 +17,7 @@ public class JobSequencing {
 
     private static List<Job> createJobList(List<Integer> deadlines, List<Integer> profits) {
         List<Job> jobs = new ArrayList<>();
-        for (int i = 0; i < deadlines.size() ; i++ ) {
+        for (int i = 0; i < deadlines.size(); i++) {
             jobs.add(new Job(profits.get(i), deadlines.get(i)));
         }
 
@@ -27,8 +27,8 @@ public class JobSequencing {
     public static class Sorted implements Comparator {
 
         public int compare(Object o1, Object o2) {
-            Job j1 = (Job)o1;
-            Job j2 = (Job)o2;
+            Job j1 = (Job) o1;
+            Job j2 = (Job) o2;
 
             if (j1.profit != j2.profit) {
                 return j2.profit - j1.profit;
@@ -73,15 +73,13 @@ public class JobSequencing {
     public static void main(String[] args) {
 
         try {
-            //Check for no input and empty input and missing input
-            if(args.length < 2 || "".equals(args[0]) || "".equals(args[1])) {
+            if (args.length < 2 || "".equals(args[0]) || "".equals(args[1])) {
                 throw new InvalidInputException();
             }
 
             List<Integer> profits = converStringToList(args[0]);
             List<Integer> deadlines = converStringToList(args[1]);
 
-            //Check if two lists are different Lengths
             if (profits.size() != deadlines.size()) {
                 throw new InvalidInputException();
             }
