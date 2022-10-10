@@ -1,16 +1,8 @@
-/** Prime number exception to handle errors. */
-class PrimeNumberException extends Exception {}
+class PrimeNumberException extends Exception {
+}
 
-/**
- * Prime number program.
- */
 public class PrimeNumber {
 
-    /**
-     * Determine if an integer is a prime number.
-     * @param number Non negative integer to check.
-     * @return true if the number is prime, false otherwise.
-     */
     public static boolean isPrime(int number) {
         if ((number % 2 == 0 && number != 2) || number == 1) {
             return false;
@@ -26,19 +18,13 @@ public class PrimeNumber {
         return !foundFactor;
     }
 
-    /**
-     * Main.
-     * @param args command line arguments.
-     */
     public static void main(String[] args) {
         try {
 
-            // Check argument
             if (args.length < 1 || args[0].indexOf('-') != -1) {
                 throw new PrimeNumberException();
             }
 
-            // Convert to int and check
             if (isPrime(Integer.valueOf(args[0]))) {
                 System.out.println("Prime");
 
