@@ -1,0 +1,8 @@
+folder:
+  extension: ".groovy"
+  naming: "pascal"
+
+container:
+  image: "groovy"
+  tag: "jdk17-alpine"
+  cmd: "groovy {{ source.name }}{{ source.extension }}"
