@@ -6,7 +6,7 @@ void write_file()
 {
     std::fstream out("output.txt", std::ios::out);
 
-    if(!out.is_open())
+    if (!out.is_open())
     {
         std::cout << "Could not open file!\n";
         return;
@@ -26,14 +26,14 @@ void read_file()
 
     in.open("output.txt", std::ios::in);
 
-    if(!in.is_open())
+    if (!in.is_open())
     {
         std::cout << "Could not open file!\n";
         return;
     }
 
     std::string line;
-    while(std::getline(in, line))
+    while (std::getline(in, line))
     {
         std::cout << line << "\n";
     }
