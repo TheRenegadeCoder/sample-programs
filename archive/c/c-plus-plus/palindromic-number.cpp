@@ -1,22 +1,22 @@
 #include <iostream>
 #include <string.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 using namespace std;
 
 void palindromic_number(int number)
 {
-    int temp = number, no_of_digits = 0, reversed_number = 0;
+    int temp = number, reversed_number = 0;
 
     while (temp > 0)
     {
         reversed_number = (reversed_number * 10) + (temp % 10);
         temp = (int)(temp / 10);
-        no_of_digits++;
     }
-    if (no_of_digits < 2)
+    if (number < 0)
     {
-        cout << "Usage: please input a number with at least two digits";
+        cout << "Usage: please input a non-negative integer";
         exit(1);
     }
     else
@@ -32,23 +32,27 @@ void palindromic_number(int number)
     }
 }
 
-int is_int(char *number_string)
+int is_int(char **argv)
 {
-    if (number_string[0] > '9' || number_string[0] < '0')
-        return (0);
-    for (int counter = 0; number_string[counter]; counter++)
+    int j = 0;
+    while (isdigit(argv[1][j]))
+        ++j;
+
+    if (strlen(argv[1]) != j)
     {
-        if (number_string[0] > '9' || number_string[0] < '0')
-            return (0);
+        return 1;
     }
-    return (1);
+    else
+    {
+        return 0;
+    }
 }
 
 int main(int argc, char **argv)
 {
-    if (argc != 2 || is_int(argv[1]) != 1)
+    if (argc != 2 || is_int(argv))
     {
-        cout << "Usage: please input a number with at least two digits";
+        cout << "Usage: please input a non-negative integer";
         return (1);
     }
     palindromic_number(atoi(argv[1]));

@@ -8,8 +8,8 @@ public class PalindromicNumber {
             num = null;
         }
 
-        if (num == null || num.toString().length() < 2) {
-            System.out.println("Usage: please input a number with at least two digits");
+        if (num == null || num < 0) {
+            System.out.println("Usage: please input a non-negative integer");
         } else {
             System.out.println(isPalindromic(num));
         }

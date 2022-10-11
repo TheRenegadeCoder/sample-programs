@@ -7,7 +7,7 @@ fun main(args: Array<String>) {
     try {
         num = args[0].toInt()
 
-        if (num.toString().length > 1){
+        if (num >= 0){
             n = num
 
             do {
@@ -22,11 +22,11 @@ fun main(args: Array<String>) {
                 println(false)
             }
         }else{
-            println("Usage: please input a number with at least two digits")
+            println("Usage: please input a non-negative integer")
         }
 
 
     }catch(e: Exception){
-        println("Usage: please input a number with at least two digits")
+        println("Usage: please input a non-negative integer")
     }
 }

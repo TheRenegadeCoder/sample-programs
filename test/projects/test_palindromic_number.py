@@ -2,27 +2,29 @@ import pytest
 
 from runner import ProjectType
 from glotter import project_test, project_fixture
-from test.utilities import clean_list
 
 invalid_permutations = (
     'description,in_params,expected', [
         (
             'no input',
             None,
-            'Usage: please input a number with at least two digits'
+            'Usage: please input a non-negative integer'
         ), (
             'empty input',
             "",
-            'Usage: please input a number with at least two digits'
+            'Usage: please input a non-negative integer'
         ), (
             'invalid input: not a number',
             "a",
-            'Usage: please input a number with at least two digits'
-        ),
-        (
-            'invalid input: not enough digits',
-            "7",
-            'Usage: please input a number with at least two digits'
+            'Usage: please input a non-negative integer'
+        ), (
+            'invalid input: negative integer',
+            "-7",
+            'Usage: please input a non-negative integer'
+        ), (
+            'invalid input: float',
+            "5.41",
+            'Usage: please input a non-negative integer'
         )
     ]
 )
@@ -30,11 +32,23 @@ invalid_permutations = (
 valid_permutations = (
     'description,in_params,expected', [
         (
-            'sample input: palindrome',
+            'sample input: one digit',
+            '7',
+            'true'
+        ), (
+            'sample input: even digits',
+            '2442',
+            'true'
+        ), (
+            'sample input: odd digits',
             '232',
             'true'
         ), (
-            'sample input: not palindrome',
+            'sample input: even digits not palindrome',
+            '5215',
+            'false'
+        ), (
+            'sample input: odd digits not palindrome',
             '521',
             'false'
         ),

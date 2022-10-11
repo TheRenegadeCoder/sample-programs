@@ -30,25 +30,22 @@ begin
     if (check <> 0)
     then
     begin
-      writeln('Usage: please input a number with at least two digits');
+      writeln('Usage: please input a non-negative integer');
     end
     else
     begin
    //  writeln('number = ', number);
     check := number;
-    noofdigits := 0;
     reversed_number := 0;
     repeat
     begin
-    (* Count no. of digits, build the number backwards *)
-       noofdigits := noofdigits + 1;
        (*quotient := check mod 10 ;*)
        reversed_number := (reversed_number * 10) + (check mod 10);
        check := trunc(check div 10);
        end;
     until check = 0;
 
-    if noofdigits >= 2 then
+    if number >= 0 then
       if (reversed_number = number) then
          writeln('true')
       else
@@ -56,6 +53,6 @@ begin
          writeln('false')
    
     else
-      writeln('Usage: please input a number with at least two digits')
+      writeln('Usage: please input a non-negative integer')
     end; (* Begin Reading NUmber*)
 end.  (* Begin Program Block*)
