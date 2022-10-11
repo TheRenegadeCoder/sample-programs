@@ -22,11 +22,11 @@ fun main(args: Array<String>) {
                 println(false)
             }
         }else{
-            println("Usage: please input a number with at least two digits")
+            println("Usage: please input a non-negative integer")
         }
 
 
     }catch(e: Exception){
-        println("Usage: please input a number with at least two digits")
+        println("Usage: please input a non-negative integer")
     }
 }

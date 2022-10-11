@@ -25,14 +25,14 @@ def palindromic_number(x):
         print("false")
 
     else:
-      print("Usage: please input a number with at least two digits")
+      print("Usage: please input a non-negative integer")
     
 def main(args):
     try:
         # palindromic_number(int(args[1]))
         palindromic_number(int(sys.argv[1]))
     except (IndexError, ValueError):
-        print("Usage: please input a number with at least two digits")
+        print("Usage: please input a non-negative integer")
         sys.exit(1)
 
 

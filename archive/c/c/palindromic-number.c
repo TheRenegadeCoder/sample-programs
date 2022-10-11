@@ -16,7 +16,7 @@ void palindromic_number(int number){
   } /*end of building reverse number*/
   
   if (no_of_digits < 2){
-    printf("Usage: please input a number with at least two digits");
+    printf("Usage: please input a non-negative integer");
     exit(1);  
   }
   else{
@@ -46,7 +46,7 @@ int is_int(char *number_string){
 int main(int argc, char **argv){
   /*Read command line arg*/
   if (argc != 2 || is_int(argv[1]) != 1){
-    printf("Usage: please input a number with at least two digits");    
+    printf("Usage: please input a non-negative integer");    
     return(1);  
   }
    palindromic_number(atoi(argv[1]));

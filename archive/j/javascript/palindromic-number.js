@@ -12,7 +12,7 @@ Tested using node
 
 const isPalindromic = (number) => {
     if(number <= 1){
-    console.log("Usage: please input a number with at least two digits");
+    console.log("Usage: please input a non-negative integer");
       process.exit(1);
     }  
 
@@ -24,7 +24,7 @@ const isPalindromic = (number) => {
       temp = Math.floor(temp / 10);
     }
     if (no_of_digits < 2){
-      console.log("Usage: please input a number with at least two digits");
+      console.log("Usage: please input a non-negative integer");
       process.exit(1);
     }  
     else
@@ -41,5 +41,5 @@ const isPalindromic = (number) => {
   if (input !== '' && Number.isInteger(number) && number >= 0) {
     isPalindromic(input) ? console.log("true") : console.log("false");
   } else {
-    console.log("Usage: please input a number with at least two digits")
+    console.log("Usage: please input a non-negative integer")
   }

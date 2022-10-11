@@ -9,7 +9,7 @@ public class PalindromicNumber {
         }
 
         if (num == null || num.toString().length() < 2) {
-            System.out.println("Usage: please input a number with at least two digits");
+            System.out.println("Usage: please input a non-negative integer");
         } else {
             System.out.println(isPalindromic(num));
         }
