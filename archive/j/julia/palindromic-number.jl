@@ -1,5 +1,5 @@
 function err() 
-  println("Usage: please input a number")
+  println("Usage: please input a non-negative integer")
 end
 
 function palindrome_check(n)
@@ -19,7 +19,12 @@ function palindrome_check(n)
 end
 
 try
-   println(palindrome_check(parse(Int, ARGS[1])))
+   n = parse(Int, ARGS[1])
+   if (n >= 0)
+     println(palindrome_check(n))
+   else
+     err()
+   end
 catch e
    err()
 end
