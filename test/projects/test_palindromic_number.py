@@ -32,6 +32,10 @@ invalid_permutations = (
 valid_permutations = (
     'description,in_params,expected', [
         (
+            'sample input: one digit',
+            '7',
+            'true'
+        ), (
             'sample input: palindrome',
             '232',
             'true'
