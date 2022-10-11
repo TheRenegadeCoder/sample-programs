@@ -36,11 +36,19 @@ valid_permutations = (
             '7',
             'true'
         ), (
-            'sample input: palindrome',
+            'sample input: even digits',
+            '2442',
+            'true'
+        ), (
+            'sample input: odd digits',
             '232',
             'true'
         ), (
-            'sample input: not palindrome',
+            'sample input: even digits not palindrome',
+            '5215',
+            'false'
+        ), (
+            'sample input: odd digits not palindrome',
             '521',
             'false'
         ),
