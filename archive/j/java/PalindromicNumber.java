@@ -8,7 +8,7 @@ public class PalindromicNumber {
             num = null;
         }
 
-        if (num == null || num.toString().length() < 2) {
+        if (num == null || num < 0) {
             System.out.println("Usage: please input a non-negative integer");
         } else {
             System.out.println(isPalindromic(num));

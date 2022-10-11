@@ -7,7 +7,7 @@ fun main(args: Array<String>) {
     try {
         num = args[0].toInt()
 
-        if (num.toString().length > 1){
+        if (num >= 0){
             n = num
 
             do {
