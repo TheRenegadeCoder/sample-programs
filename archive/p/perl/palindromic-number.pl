@@ -31,7 +31,7 @@ while ($temp > 0){
   $noofdigits += 1;
 }
 
-if ($noofdigits < 2){
+if ($number < 0){
   print("Usage: please input a non-negative integer")
 }
 
