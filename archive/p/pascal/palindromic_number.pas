@@ -30,7 +30,7 @@ begin
     if (check <> 0)
     then
     begin
-      writeln('Usage: please input a number with at least two digits');
+      writeln('Usage: please input a non-negative integer');
     end
     else
     begin
@@ -56,6 +56,6 @@ begin
          writeln('false')
    
     else
-      writeln('Usage: please input a number with at least two digits')
+      writeln('Usage: please input a non-negative integer')
     end; (* Begin Reading NUmber*)
 end.  (* Begin Program Block*)

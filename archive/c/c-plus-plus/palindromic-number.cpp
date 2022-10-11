@@ -16,7 +16,7 @@ void palindromic_number(int number)
     }
     if (no_of_digits < 2)
     {
-        cout << "Usage: please input a number with at least two digits";
+        cout << "Usage: please input a non-negative integer";
         exit(1);
     }
     else
@@ -48,7 +48,7 @@ int main(int argc, char **argv)
 {
     if (argc != 2 || is_int(argv[1]) != 1)
     {
-        cout << "Usage: please input a number with at least two digits";
+        cout << "Usage: please input a non-negative integer";
         return (1);
     }
     palindromic_number(atoi(argv[1]));
