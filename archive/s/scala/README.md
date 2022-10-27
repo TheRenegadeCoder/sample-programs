@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Scala! To find documentation related to the Scala code in this repo, look [here.](https://sampleprograms.io/languages/scala)
 
-## Sample Programs List - 8/37 :disappointed:
+## Sample Programs List - 9/37 :disappointed:
 
 In this section, we feature a list of completed and missing programs in Scala. See above for the current amount of completed programs in Scala. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -11,6 +11,7 @@ In this section, we feature a list of completed and missing programs in Scala. S
 Below, you'll find a list of completed code snippets in Scala. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
 - :white_check_mark: [Bubble Sort in Scala](https://sampleprograms.io/projects/bubble-sort/scala) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
+- :warning: [Even Odd in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+scala) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :white_check_mark: [Factorial in Scala](https://sampleprograms.io/projects/factorial/scala) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :white_check_mark: [Fibonacci in Scala](https://sampleprograms.io/projects/fibonacci/scala) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :white_check_mark: [File Input Output in Scala](https://sampleprograms.io/projects/file-input-output/scala) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
@@ -30,7 +31,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Depth First Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Depth+First+Search+in+scala) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Dijkstra+in+scala) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :x: [Duplicate Character Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Duplicate+Character+Counter+in+scala) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
-- :x: [Even Odd](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Even+Odd+in+scala) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fraction+Math+in+scala) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :x: [Insertion Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Insertion+Sort+in+scala) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Job+Sequencing+in+scala) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
