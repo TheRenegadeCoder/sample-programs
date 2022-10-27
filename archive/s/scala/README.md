@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Scala! To find documentation related to the Scala code in this repo, look [here.](https://sampleprograms.io/languages/scala)
 
-## Sample Programs List - 9/37 :disappointed:
+## Sample Programs List - 10/37 :thinking:
 
 In this section, we feature a list of completed and missing programs in Scala. See above for the current amount of completed programs in Scala. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -11,6 +11,7 @@ In this section, we feature a list of completed and missing programs in Scala. S
 Below, you'll find a list of completed code snippets in Scala. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
 - :white_check_mark: [Bubble Sort in Scala](https://sampleprograms.io/projects/bubble-sort/scala) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
+- :warning: [Capitalize in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+scala) [[Requirements](https://sampleprograms.io/projects/capitalize)]
 - :warning: [Even Odd in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+scala) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :white_check_mark: [Factorial in Scala](https://sampleprograms.io/projects/factorial/scala) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :white_check_mark: [Fibonacci in Scala](https://sampleprograms.io/projects/fibonacci/scala) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
@@ -26,7 +27,6 @@ The following list contains all of the approved programs that are not currently 
 
 - :x: [Baklava](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Baklava+in+scala) [[Requirements](https://sampleprograms.io/projects/baklava)]
 - :x: [Binary Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Binary+Search+in+scala) [[Requirements](https://sampleprograms.io/projects/binary-search)]
-- :x: [Capitalize](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Capitalize+in+scala) [[Requirements](https://sampleprograms.io/projects/capitalize)]
 - :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Convex+Hull+in+scala) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :x: [Depth First Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Depth+First+Search+in+scala) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Dijkstra+in+scala) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
