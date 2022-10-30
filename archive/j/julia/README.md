@@ -18,7 +18,7 @@ Below, you'll find a list of completed code snippets in Julia. Code snippets pre
 - :white_check_mark: [Fibonacci in Julia](https://sampleprograms.io/projects/fibonacci/julia) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :white_check_mark: [Fizz Buzz in Julia](https://sampleprograms.io/projects/fizz-buzz/julia) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Julia](https://sampleprograms.io/projects/hello-world/julia) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :warning: [Palindromic Number in Julia](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+julia) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
+- :white_check_mark: [Palindromic Number in Julia](https://sampleprograms.io/projects/palindromic-number/julia) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :white_check_mark: [Remove All Whitespace in Julia](https://sampleprograms.io/projects/remove-all-whitespace/julia) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :white_check_mark: [Reverse String in Julia](https://sampleprograms.io/projects/reverse-string/julia) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :white_check_mark: [Selection Sort in Julia](https://sampleprograms.io/projects/selection-sort/julia) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
