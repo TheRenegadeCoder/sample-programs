@@ -11,8 +11,8 @@ In this section, we feature a list of completed and missing programs in Scala. S
 Below, you'll find a list of completed code snippets in Scala. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
 - :white_check_mark: [Bubble Sort in Scala](https://sampleprograms.io/projects/bubble-sort/scala) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
-- :warning: [Capitalize in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+scala) [[Requirements](https://sampleprograms.io/projects/capitalize)]
-- :warning: [Even Odd in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+scala) [[Requirements](https://sampleprograms.io/projects/even-odd)]
+- :white_check_mark: [Capitalize in Scala](https://sampleprograms.io/projects/capitalize/scala) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :white_check_mark: [Even Odd in Scala](https://sampleprograms.io/projects/even-odd/scala) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :white_check_mark: [Factorial in Scala](https://sampleprograms.io/projects/factorial/scala) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :white_check_mark: [Fibonacci in Scala](https://sampleprograms.io/projects/fibonacci/scala) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :white_check_mark: [File Input Output in Scala](https://sampleprograms.io/projects/file-input-output/scala) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
