@@ -26,7 +26,7 @@ Below, you'll find a list of completed code snippets in Rust. Code snippets prec
 - :white_check_mark: [Reverse String in Rust](https://sampleprograms.io/projects/reverse-string/rust) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :white_check_mark: [Roman Numeral in Rust](https://sampleprograms.io/projects/roman-numeral/rust) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :white_check_mark: [Rot13 in Rust](https://sampleprograms.io/projects/rot13/rust) [[Requirements](https://sampleprograms.io/projects/rot13)]
-- :warning: [Sleep Sort in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sleep+sort+rust) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
+- :white_check_mark: [Sleep Sort in Rust](https://sampleprograms.io/projects/sleep-sort/rust) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 
 ### Missing Programs
 
