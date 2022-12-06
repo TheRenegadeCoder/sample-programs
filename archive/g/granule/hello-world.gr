@@ -1,2 +1,2 @@
-main : String
-main = "Hello, World!"
+main : () <{Stdout}>
+main = toStdout "Hello, World!"
