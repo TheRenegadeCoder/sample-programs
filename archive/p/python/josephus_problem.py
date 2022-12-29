@@ -20,4 +20,4 @@ if (n <= k):
     print("Usage: please input the total number of people and number of people to skip.")
     exit(1)
 
-print("Safe place: ", josephus(n, k))
+print(josephus(n, k))
