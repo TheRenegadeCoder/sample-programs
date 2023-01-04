@@ -26,7 +26,7 @@ Below, you'll find a list of completed code snippets in Python. Code snippets pr
 - :white_check_mark: [Hello World in Python](https://sampleprograms.io/projects/hello-world/python) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :white_check_mark: [Insertion Sort in Python](https://sampleprograms.io/projects/insertion-sort/python) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :white_check_mark: [Job Sequencing in Python](https://sampleprograms.io/projects/job-sequencing/python) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
-- :warning: [Josephus Problem in Python](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+josephus+problem+python) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
+- :white_check_mark: [Josephus Problem in Python](https://sampleprograms.io/projects/josephus-problem/python) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :white_check_mark: [Linear Search in Python](https://sampleprograms.io/projects/linear-search/python) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :white_check_mark: [Longest Common Subsequence in Python](https://sampleprograms.io/projects/longest-common-subsequence/python) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
 - :white_check_mark: [Longest Palindromic Substring in Python](https://sampleprograms.io/projects/longest-palindromic-substring/python) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
