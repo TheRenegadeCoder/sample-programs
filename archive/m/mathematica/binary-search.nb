@@ -6,40 +6,31 @@ return Null in case the element is not found: *)
 Needs["Combinatorica`"]
 
 binarySearch1 = If[IntegerQ[#], #, Null] & @*
-   Combinatorica`BinarySearch;
+Combinatorica`BinarySearch;
 
 (* If that is considered cheating, then option binarySearch2 implements it
 using 'primitives': *)
 
 binarySearch2 = Function[{l, n},
    NestWhile[ (* keep subdividing the search interval *)
-    Apply[(* convert the single two-
-     element list argument to two arguments *)
-     Function[{i, j},(* 
-      subdivide the given interval into a smaller one containing the \
-item sought *)
-      Module[{m = Floor[(i + j)/2], me},(* 
-       use some definite element as the midpoint to test *)
+    Apply[(* convert the single two-element list argument to two arguments *)
+     Function[{i, j},(* subdivide the given interval into a smaller one containing the item sought *)
+      Module[{m = Floor[(i + j)/2], me},(* use some definite element as the midpoint to test *)
        me = l[[m]];
        Which[
         (* Did we find the element we're searching for? *)
         me == n, m,
-        (* Element is before the midpoint?  
-        Then either keep searching, or give up *)
+        (* Element is before the midpoint?  Then either keep searching, or give up *)
         n < me, If[i < m, {i, m - 1}, Null],
-        (* Element is after the midpoint?  
-        Then either keep searching, or give up *)
+        (* Element is after the midpoint?  Then either keep searching, or give up *)
         n > me, If[m < j, {m + 1, j}, Null]]]]],
-    {1, Length[l]} (* 
-    begin by considering the entire list to search within *),
+    {1, Length[l]} (* begin by considering the entire list to search within *),
     ListQ (* while we are still searching *)]];
 
 (* The outer function does the string parsing: *)
 
 binarySearchMain = Function[{l, i},
-   Module[{e = 
-      "Usage: please provide a list of sorted integers (\"1, 4, 5, \
-11, 12\") and the integer to find (\"11\")"},
+   Module[{e = "Usage: please provide a list of sorted integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")"},
     Catch[
      If[
       (* convert position to "true" or Null to "false" *)
@@ -48,8 +39,7 @@ binarySearchMain = Function[{l, i},
          s \[Function] If[StringMatchQ[s, DigitCharacter ..],
            FromDigits[s],
            Throw[e]],
-         (* construct two arguments to binary search: 
-         list of search array, item to search; as strings *)
+         (* construct two arguments to binary search: list of search array, item to search; as strings *)
          {StringSplit[If[StringLength[l] > 0, l, Throw[e]], ", "], i},
          {-1} (* at each leaf *)]],
       "true", "false"]]]];
