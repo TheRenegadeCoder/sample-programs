@@ -1,0 +1,30 @@
+(* Code *)
+
+(* The actual capitalization operating on Mathematica strings: *)
+
+capitalize = StringReplace[
+   StartOfString ~~ l : LetterCharacter  -> ToUpperCase[l]];
+
+(* The outer function provides the 'user interface': *)
+
+capitalizeMain = s \[Function]
+   Catch[
+    capitalize[
+     If[
+      StringQ[s] \[And] \[Not] StringMatchQ[s, ""],
+      s,
+      Throw["Usage: please provide a string"]]]];
+
+
+(* Valid Tests *)
+Print /@ capitalizeMain /@ {
+    "hello",
+    "Hello",
+    "hello world",
+    "heLLo World",
+    "12345"
+    };
+
+
+(* Invalid Tests *)
+capitalizeMain[""]
