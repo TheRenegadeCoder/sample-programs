@@ -20,8 +20,7 @@ bubbleSort = Function[{l},
 
 bubbleSortMain = l \[Function]
    Module[{e = 
-      "Usage: please provide a list of at least two integers to sort \
-in the format \"1, 2, 3, 4, 5\""},
+      "Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\""},
     Catch[
      StringRiffle[
       bubbleSort@
