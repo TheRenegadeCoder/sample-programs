@@ -23,8 +23,7 @@ depthFirstSearch2 = Function[{ag, p, v},
 (* The outer function does the string parsing: *)
 
 depthFirstSearchMain = Function[{am, vs, v},
-   Module[{e = 
-      "Usage: please provide a tree in an adjacency matrix form (\"0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, \
+   Module[{e = "Usage: please provide a tree in an adjacency matrix form (\"0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, \
 0\") together with a list of vertex values (\"1, 3, 5, 2, 4\") and the integer to find (\"4\")"},
     Catch[
      depthFirstSearch2 @@
@@ -34,8 +33,7 @@ depthFirstSearchMain = Function[{am, vs, v},
          FromDigits[s],
          Throw[e]],
        (* construct arguments to depth-first search *) {
-        If[Length[#] > 0, Partition[#, Sqrt[Length[#]]], Throw[e]] &[
-         StringSplit[am, ", "]],
+        If[Length[#] > 0, Partition[#, Sqrt[Length[#]]], Throw[e]] &[StringSplit[am, ", "]],
         If[Length[#] > 0, #, Throw[e]] &[StringSplit[vs, ", "]],
         If[StringLength[v] > 0, v, Throw[e]]},
        {-1} (* at each leaf *)]]]];
