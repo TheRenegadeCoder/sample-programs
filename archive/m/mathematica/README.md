@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Mathematica! To find documentation related to the Mathematica code in this repo, look [here.](https://sampleprograms.io/languages/mathematica)
 
-## Sample Programs List - 11/37 :thinking:
+## Sample Programs List - 12/37 :thinking:
 
 In this section, we feature a list of completed and missing programs in Mathematica. See above for the current amount of completed programs in Mathematica. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -14,6 +14,7 @@ Below, you'll find a list of completed code snippets in Mathematica. Code snippe
 - :warning: [Capitalize in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+mathematica) [[Requirements](https://sampleprograms.io/projects/capitalize)]
 - :white_check_mark: [Hello World in Mathematica](https://sampleprograms.io/projects/hello-world/mathematica) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :warning: [Longest Word in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+mathematica) [[Requirements](https://sampleprograms.io/projects/longest-word)]
+- :warning: [Palindromic Number in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+mathematica) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :warning: [Prime Number in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+mathematica) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :warning: [Quine in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+mathematica) [[Requirements](https://sampleprograms.io/projects/quine)]
 - :warning: [Remove All Whitespace in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+remove+all+whitespace+mathematica) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
@@ -48,7 +49,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+mathematica) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :x: [Merge Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Merge+Sort+in+mathematica) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+mathematica) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
-- :x: [Palindromic Number](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Palindromic+Number+in+mathematica) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :x: [Quick Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Quick+Sort+in+mathematica) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
 - :x: [Selection Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Selection+Sort+in+mathematica) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 - :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Sleep+Sort+in+mathematica) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
