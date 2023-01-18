@@ -1,0 +1,36 @@
+(* Code *)
+
+(* The actual Roman numeral converter operating on Mathematica strings: *)
+
+romanNumerals = s \[Function] Fold[
+    (* conversion operating on pairs of subsequent values*)
+    Function[{a, ii}, If[GreaterEqual @@ ii, a + First[ii], a - First[ii]]],
+    0,
+    Partition[(* pairs of subsequent values*)
+     Append[ (* append zero so the last value still forms a pair *)
+      ReplaceAll[Characters[s], (* convert to list of decimal values *)
+       {"I" -> 1, "V" -> 5, "X" -> 10, "L" -> 50, "C" -> 100, "D" -> 500, "M" -> 1000}],
+      0],
+     2, 1]];
+
+(* The outer function provides the 'user interface': *)
+
+romanNumeralsMain = s \[Function]
+   Catch[
+    romanNumerals[
+     If[
+      StringQ[s] \[And] StringMatchQ[s, ("I" | "V" | "X" | "L" | "C" | "D" | "M") ...],
+      s,
+      Throw["Error: invalid string of roman numerals"]]]];
+
+
+(* Valid Tests *)
+
+Print /@ romanNumeralsMain /@ {
+    "", "I", "V", "X", "L", "C", "D", "M", "XXV", "XIV"
+    };
+
+
+(* Invalid Tests *)
+
+romanNumeralsMain["XT"]
