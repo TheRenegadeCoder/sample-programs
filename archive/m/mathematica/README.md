@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Mathematica! To find documentation related to the Mathematica code in this repo, look [here.](https://sampleprograms.io/languages/mathematica)
 
-## Sample Programs List - 15/37 :thinking:
+## Sample Programs List - 16/37 :thinking:
 
 In this section, we feature a list of completed and missing programs in Mathematica. See above for the current amount of completed programs in Mathematica. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -14,6 +14,7 @@ Below, you'll find a list of completed code snippets in Mathematica. Code snippe
 - :warning: [Capitalize in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+mathematica) [[Requirements](https://sampleprograms.io/projects/capitalize)]
 - :warning: [Convex Hull in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+convex+hull+mathematica) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :white_check_mark: [Hello World in Mathematica](https://sampleprograms.io/projects/hello-world/mathematica) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :warning: [Linear Search in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+linear+search+mathematica) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :warning: [Longest Palindromic Substring in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+palindromic+substring+mathematica) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
 - :warning: [Longest Word in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+mathematica) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :warning: [Minimum Spanning Tree in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+minimum+spanning+tree+mathematica) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
@@ -44,7 +45,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Insertion Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Insertion+Sort+in+mathematica) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Job+Sequencing+in+mathematica) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Josephus+Problem+in+mathematica) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
-- :x: [Linear Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Linear+Search+in+mathematica) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :x: [Longest Common Subsequence](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Longest+Common+Subsequence+in+mathematica) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
 - :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+mathematica) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+mathematica) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
