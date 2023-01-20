@@ -1,0 +1,5 @@
+(* Code *)
+
+(* Credit to https://mathematica.stackexchange.com/a/6110/61814 for this answer: *)
+
+Print[ToString[#0][]] &[]
