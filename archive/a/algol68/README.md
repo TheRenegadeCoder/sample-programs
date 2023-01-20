@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Algol68! To find documentation related to the Algol68 code in this repo, look [here.](https://sampleprograms.io/languages/algol68)
 
-## Sample Programs List - 2/37 :disappointed:
+## Sample Programs List - 4/37 :disappointed:
 
 In this section, we feature a list of completed and missing programs in Algol68. See above for the current amount of completed programs in Algol68. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -11,7 +11,9 @@ In this section, we feature a list of completed and missing programs in Algol68.
 Below, you'll find a list of completed code snippets in Algol68. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
 - :warning: [Baklava in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+algol68) [[Requirements](https://sampleprograms.io/projects/baklava)]
+- :warning: [Fizz Buzz in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+algol68) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Algol68](https://sampleprograms.io/projects/hello-world/algol68) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :warning: [Quine in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+algol68) [[Requirements](https://sampleprograms.io/projects/quine)]
 
 ### Missing Programs
 
@@ -28,7 +30,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Factorial](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Factorial+in+algol68) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :x: [Fibonacci](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fibonacci+in+algol68) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :x: [File Input Output](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+File+Input+Output+in+algol68) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
-- :x: [Fizz Buzz](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fizz+Buzz+in+algol68) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fraction+Math+in+algol68) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :x: [Insertion Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Insertion+Sort+in+algol68) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Job+Sequencing+in+algol68) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
@@ -44,7 +45,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Palindromic Number](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Palindromic+Number+in+algol68) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :x: [Prime Number](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Prime+Number+in+algol68) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :x: [Quick Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Quick+Sort+in+algol68) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
-- :x: [Quine](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Quine+in+algol68) [[Requirements](https://sampleprograms.io/projects/quine)]
 - :x: [Remove All Whitespace](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Remove+All+Whitespace+in+algol68) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :x: [Reverse String](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Reverse+String+in+algol68) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :x: [Roman Numeral](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Roman+Numeral+in+algol68) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
