@@ -9,7 +9,7 @@ PROC write file = (STRING file name) INT:
         put(f, ("Hello from Algol 68!", new line));
         put(f, ("Here is a line", new line));
         put(f, ("Here is another line", new line));
-        put(f, ("Good bye!", new line));
+        put(f, ("Goodbye!", new line));
         close(f)
     FI;
 
@@ -26,7 +26,7 @@ PROC read file = (STRING file name) INT:
     ELSE
         on logical file end(f, (REF FILE inf) BOOL:
             (
-                close (inf);
+                close(inf);
                 stop 
             )
         );
