@@ -1,0 +1,27 @@
+(* Code *)
+
+(* Trivial: *)
+
+longestWord = s \[Function] Max @@ StringLength /@ StringSplit[s];
+
+(* The outer function provides the 'user interface' (e.g., the string parsing): *)
+
+longestWordMain = Function[{s},
+   Module[{e = "Usage: please provide a string"},
+    Catch[
+     longestWord @
+      If[StringLength[s] > 0, s, Throw[e]]]]];
+
+
+(* Valid Tests *)
+
+Print /@ longestWord /@ {
+    "May the force be with you",
+    "Floccinaucinihilipilification",
+    "Hi,\nMy name is Paul!"
+    };
+
+
+(* Invalid Tests *)
+
+longestWordMain[""]
