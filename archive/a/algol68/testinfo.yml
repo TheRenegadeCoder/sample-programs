@@ -5,4 +5,4 @@ folder:
 container:
   image: "nacyot/algol-algol68g"
   tag: "apt"
-  cmd: "a68g {{ source.name }}{{ source.extension }}"
+  cmd: "a68g {{ source.name }}{{ source.extension }} -"
