@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Mathematica! To find documentation related to the Mathematica code in this repo, look [here.](https://sampleprograms.io/languages/mathematica)
 
-## Sample Programs List - 21/37 :relaxed:
+## Sample Programs List - 22/37 :relaxed:
 
 In this section, we feature a list of completed and missing programs in Mathematica. See above for the current amount of completed programs in Mathematica. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -13,6 +13,7 @@ Below, you'll find a list of completed code snippets in Mathematica. Code snippe
 - :warning: [Baklava in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+mathematica) [[Requirements](https://sampleprograms.io/projects/baklava)]
 - :warning: [Capitalize in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+mathematica) [[Requirements](https://sampleprograms.io/projects/capitalize)]
 - :warning: [Convex Hull in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+convex+hull+mathematica) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
+- :warning: [Fibonacci in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+mathematica) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :white_check_mark: [Hello World in Mathematica](https://sampleprograms.io/projects/hello-world/mathematica) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :warning: [Linear Search in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+linear+search+mathematica) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :warning: [Longest Common Subsequence in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+common+subsequence+mathematica) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
@@ -43,7 +44,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Duplicate Character Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Duplicate+Character+Counter+in+mathematica) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :x: [Even Odd](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Even+Odd+in+mathematica) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :x: [Factorial](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Factorial+in+mathematica) [[Requirements](https://sampleprograms.io/projects/factorial)]
-- :x: [Fibonacci](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fibonacci+in+mathematica) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :x: [File Input Output](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+File+Input+Output+in+mathematica) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :x: [Fizz Buzz](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fizz+Buzz+in+mathematica) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fraction+Math+in+mathematica) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
