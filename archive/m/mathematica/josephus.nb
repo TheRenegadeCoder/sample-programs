@@ -1,0 +1,35 @@
+(* Code *)
+
+(* The code is trivial: *)
+
+josephus[1, _] := 1
+josephus[n_Integer, k_Integer] := Mod[josephus[n - 1, k] + (k - 1), n] + 1
+
+(* The outer function provides the 'user interface': *)
+
+josephusMain = Function[{people, skip},
+   Catch[
+    Module[{e = "Usage: please input the total number of people and number of people to skip."},
+     josephus @@ Map[
+       (* convert string to integer, or throw *)
+       s \[Function] If[StringMatchQ[s, DigitCharacter ..],
+         Module[{v = FromDigits[s]},
+          If[Positive[v], v, Throw[e]]],(* make sure both numbers are positive *)
+         Throw[e]],
+       {people, skip}]]]];
+
+
+(* Valid Tests *)
+
+Print /@ Apply[josephusMain] /@ {
+    {"5", "2"},
+    {"7", "3"},
+    {"41", "4"}
+    };
+
+
+(* Invalid Tests *)
+
+josephusMain["", ""]
+josephusMain["word", "word"]
+josephusMain["0", "1"]
