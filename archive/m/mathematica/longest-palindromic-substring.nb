@@ -1,0 +1,34 @@
+(* Code *)
+
+(* Brute force approach of generating all substrings and testing: *)
+
+longestPalindromicSubstring = word \[Function] First @ MaximalBy[
+     Select[PalindromeQ][
+      Flatten[Table[
+        StringTake[word, {i, j}],
+        {i, 1, StringLength[word]}, {j, i + 1, StringLength[word]}],
+       1]],
+     StringLength,
+     UpTo[1]];
+
+(* The outer function provides the 'user interface' (e.g., the string parsing): *)
+
+longestPalindromicSubstringMain = Function[{s},
+   Module[{e = "Usage: please provide a string that contains at least one palindrome"},
+    Catch[
+     longestPalindromicSubstring @
+      If[StringLength[s] > 0, s, Throw[e]]]]];
+
+
+(* Valid Tests *)
+
+Print /@ longestPalindromicSubstringMain /@ {
+    "racecar",
+    "kayak mom",
+    "step on no pets"
+    };
+
+
+(* Invalid Tests *)
+
+longestPalindromicSubstringMain[""]
