@@ -1,0 +1,35 @@
+(* Code *)
+
+(* This is provided by a Mathematica built-in PrimeQ.  Only a function to provide the 'user interface' is needed: *)
+
+primeNumberMain = s \[Function] Module[
+    {e = "Usage: please input a non-negative integer"},
+    Catch[
+     Replace[
+      PrimeQ@
+       (* convert string to integer, or throw *)
+       If[StringMatchQ[s, DigitCharacter ..],
+        FromDigits[s],
+        Throw[e]],
+      {False -> "Composite", True -> "Prime"}]]];
+
+
+(* Valid Tests *)
+
+Print /@ primeNumberMain /@ {
+    "0",
+    "1",
+    "2",
+    "4",
+    "7",
+    "4011",
+    "3727"
+    };
+
+
+(* Invalid Tests *)
+
+primeNumberMain[""]
+primeNumberMain["a"]
+palindromicNumberMain["6.7"]
+palindromicNumberMain["-7"]
