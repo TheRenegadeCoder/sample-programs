@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Mathematica! To find documentation related to the Mathematica code in this repo, look [here.](https://sampleprograms.io/languages/mathematica)
 
-## Sample Programs List - 16/37 :thinking:
+## Sample Programs List - 20/37 :relaxed:
 
 In this section, we feature a list of completed and missing programs in Mathematica. See above for the current amount of completed programs in Mathematica. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -17,14 +17,18 @@ Below, you'll find a list of completed code snippets in Mathematica. Code snippe
 - :warning: [Linear Search in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+linear+search+mathematica) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :warning: [Longest Palindromic Substring in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+palindromic+substring+mathematica) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
 - :warning: [Longest Word in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+mathematica) [[Requirements](https://sampleprograms.io/projects/longest-word)]
+- :warning: [Maximum Array Rotation in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+maximum+array+rotation+mathematica) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
+- :warning: [Merge Sort in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+mathematica) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
 - :warning: [Minimum Spanning Tree in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+minimum+spanning+tree+mathematica) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
 - :warning: [Palindromic Number in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+mathematica) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :warning: [Prime Number in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+mathematica) [[Requirements](https://sampleprograms.io/projects/prime-number)]
+- :warning: [Quick Sort in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+mathematica) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
 - :warning: [Quine in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+mathematica) [[Requirements](https://sampleprograms.io/projects/quine)]
 - :warning: [Remove All Whitespace in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+remove+all+whitespace+mathematica) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :warning: [Reverse String in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+mathematica) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :warning: [Roman Numeral in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+mathematica) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :warning: [Rot13 in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+mathematica) [[Requirements](https://sampleprograms.io/projects/rot13)]
+- :warning: [Selection Sort in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+mathematica) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 - :warning: [Transpose Matrix in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+mathematica) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
 ### Missing Programs
@@ -46,11 +50,7 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Job+Sequencing+in+mathematica) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Josephus+Problem+in+mathematica) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :x: [Longest Common Subsequence](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Longest+Common+Subsequence+in+mathematica) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
-- :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+mathematica) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+mathematica) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
-- :x: [Merge Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Merge+Sort+in+mathematica) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
-- :x: [Quick Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Quick+Sort+in+mathematica) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
-- :x: [Selection Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Selection+Sort+in+mathematica) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 - :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Sleep+Sort+in+mathematica) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 
 ## Testing
