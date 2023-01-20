@@ -6,8 +6,8 @@ on:
   push:
     branches:
       - 'main'
-  schedule:
-    - cron: 0 0 * * 0
+    paths:
+      - 'archive/**'
 
 jobs:
   readme:
@@ -23,7 +23,7 @@ jobs:
       run: git submodule update --remote
     
     - name: Set up Python 3.9
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
         python-version: 3.9
         
@@ -42,5 +42,5 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add .
-        git commit -m "Updated READMEs & Submodules"
-        git push
+        git commit --amend --no-edit
+        git push --force-with-lease
