@@ -10,13 +10,13 @@ In this section, we feature a list of completed and missing programs in Algol68.
 
 Below, you'll find a list of completed code snippets in Algol68. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :warning: [Baklava in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+algol68) [[Requirements](https://sampleprograms.io/projects/baklava)]
-- :warning: [Even Odd in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+algol68) [[Requirements](https://sampleprograms.io/projects/even-odd)]
-- :warning: [File Input Output in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+algol68) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
-- :warning: [Fizz Buzz in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+algol68) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
+- :white_check_mark: [Baklava in Algol68](https://sampleprograms.io/projects/baklava/algol68) [[Requirements](https://sampleprograms.io/projects/baklava)]
+- :white_check_mark: [Even Odd in Algol68](https://sampleprograms.io/projects/even-odd/algol68) [[Requirements](https://sampleprograms.io/projects/even-odd)]
+- :white_check_mark: [File Input Output in Algol68](https://sampleprograms.io/projects/file-input-output/algol68) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
+- :white_check_mark: [Fizz Buzz in Algol68](https://sampleprograms.io/projects/fizz-buzz/algol68) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Algol68](https://sampleprograms.io/projects/hello-world/algol68) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :warning: [Prime Number in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+algol68) [[Requirements](https://sampleprograms.io/projects/prime-number)]
-- :warning: [Quine in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+algol68) [[Requirements](https://sampleprograms.io/projects/quine)]
+- :white_check_mark: [Prime Number in Algol68](https://sampleprograms.io/projects/prime-number/algol68) [[Requirements](https://sampleprograms.io/projects/prime-number)]
+- :white_check_mark: [Quine in Algol68](https://sampleprograms.io/projects/quine/algol68) [[Requirements](https://sampleprograms.io/projects/quine)]
 
 ### Missing Programs
 
