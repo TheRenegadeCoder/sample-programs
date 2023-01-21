@@ -1,0 +1,8 @@
+folder:
+  extension: ".alg"
+  naming: "hyphen"
+
+container:
+  image: "nacyot/algol-algol68g"
+  tag: "apt"
+  cmd: "a68g {{ source.name }}{{ source.extension }} -"

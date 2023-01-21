@@ -1,0 +1,53 @@
+(* Code *)
+
+(* Longest Common Subsequence option longestCommonSubsequence1 is just a Mathematica built-in
+   (note that Mathematica LongestCommonSubsequence searches only for contiguous subsequences): *)
+
+longestCommonSubsequence1 = LongestCommonSequence;
+
+(* If that is considered cheating, then option longestCommonSubsequence2 implements it directly: *)
+
+longestCommonSubsequence2 = Function[{l, r},
+   (* if either list is empty, the LCS is also empty *)
+   If[Length[l] == 0 \[Or] Length[r] == 0, {},
+    (* if first element of both lists match, recurse after removing that element *)
+    If[First[l] == First[r],
+     Prepend[longestCommonSubsequence2[Rest[l], Rest[r]], First[l]],
+     (* recurse by computing LCS of removing either first element from the left or from the right list *)
+     Module[{ll = longestCommonSubsequence2[Rest[l], r], rr = longestCommonSubsequence2[l, Rest[r]]},
+      (* pick whichever produces the longest LCS *)
+      If[Length[ll] > Length[rr], ll, rr]]]]];
+
+(* The outer function provides the 'user interface' (e.g., the string parsing): *)
+
+longestCommonSubsequenceMain = Function[{left, right},
+   Module[{e = "Usage: please provide two lists in the format \"1,2,3,4,5\""},
+    Catch[
+     StringRiffle[
+      longestCommonSubsequence2 @@
+       Map[
+        (* convert string to integer, or throw *)
+        s \[Function] If[StringMatchQ[s, DigitCharacter ..],
+          FromDigits[s],
+          Throw[e]],
+        (* construct two arguments to longestCommonSubsequence: left list, right list *)
+        {
+         If[StringLength[left] > 0, StringSplit[left, ", "], Throw[e]],
+         If[StringLength[right] > 0, StringSplit[right, ", "], 
+          Throw[e]]
+         },
+        {-1} (* at each leaf *)],
+       ", "]]]];
+
+
+(* Valid Tests *)
+
+Print /@ Apply[longestCommonSubsequenceMain] /@ {
+    {"1, 4, 5, 3, 15, 6", "1, 7, 4, 5, 11, 6"},
+    {"1, 4, 8, 6, 9, 3, 15, 11, 6", "1, 7, 4, 5, 8, 11, 6"}
+    };
+
+
+(* Invalid Tests *)
+
+longestCommonSubsequenceMain["3", ""]

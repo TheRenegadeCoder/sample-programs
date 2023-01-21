@@ -1,0 +1,25 @@
+(* Code *)
+
+(* The inner function does the work, returning the output as a Mathematica list: *)
+
+duplicateCharacterCounter = Function[{s},
+   Select[
+    {First[#], Length[#]} & /@ Gather[Characters[s]],
+    #[[2]] > 1 &]];
+
+(* The outer function performs the output text formatting: *)
+
+duplicateCharacterCounterMain = s \[Function]
+   Print[#[[1]], ": ", #[[2]]] & /@ duplicateCharacterCounter[s];
+
+
+(* Valid Tests *)
+
+duplicateCharacterCounterMain /@ {
+   "goodbyeblues",
+   "abba",
+   "aAbB"
+   };
+
+
+(* Invalid Tests *)
