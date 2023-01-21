@@ -1,5 +1,4 @@
 MODE PARSEINT_RESULT = STRUCT(BOOL valid, INT value, STRING leftover);
-CHAR tab := REPR 9;
 INT zero := ABS "0";
 
 PROC find non blank = (STRING s, INT start) INT:
@@ -59,15 +58,12 @@ PROC parse int = (STRING s) PARSEINT_RESULT:
     PARSEINT_RESULT(valid, n, s[pos:])
 );
 
-PROC usage = (STRING dummy) VOID:
-(
-    printf(($gl$, "Usage: please input a number"))
-);
+PROC usage = VOID: printf(($gl$, "Usage: please input a number"));
 
 # Command-line arguments start at 4. If too few, exit #
 IF argc < 4
 THEN
-    usage("");
+    usage;
     stop
 FI;
 
@@ -79,7 +75,7 @@ PARSEINT_RESULT result := parse int(s);
 INT n := value OF result;
 IF NOT (valid OF result) OR (leftover OF result) /= ""
 THEN
-    usage("");
+    usage;
     stop
 FI;
 
