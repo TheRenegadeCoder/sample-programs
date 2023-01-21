@@ -1,0 +1,45 @@
+(* Code *)
+
+(* Most the required behavior is already provided by the ToExpression built-in.
+   It would be easy to simply print these out in a loop; however, in the spirit of
+   keeping the mathematical operation separate from its presentation I opted to
+   return the result as a list explicitly: *)
+
+fractionMath = Function[{l, o, r},
+   ToExpression[(* simply evaluate the string as Mathematica input *)
+    (* format the three arguments as a single string, parenthesizing the operands for precedence *)
+    StringTemplate["(``) `` (``)"][l, o, r]]];
+
+(* The outer function provides the 'user interface': *)
+
+fractionMathMain = l \[Function]
+   Catch[
+    Replace[{(* output formatting according to literal requirement *)
+        (* False/True to be shown as 0/1 *)
+        False -> 0, True -> 1,
+        (* fractions to be displayed in-line *)
+        x_Rational :> StringTemplate["``/``"][Numerator[x], Denominator[x]]
+        }]@*
+      fractionMath @@
+     (* check input has no empty strings *)
+     (If[# != "", #, Throw["Usage: ./fraction-math operand1 operator operand2"]] & /@ l)];
+
+
+(* Valid Tests *)
+
+Print /@ fractionMathMain /@ {
+    {"2/3", "+", "4/5"},
+    {"2/3", "*", "4/5"},
+    {"2/3", "-", "4/5"},
+    {"2/3", "/", "4/5"},
+    {"2/3", "==", "4/5"},
+    {"2/3", ">", "4/5"},
+    {"2/3", "<", "4/5"},
+    {"2/3", ">=", "4/5"},
+    {"2/3", "<=", "4/5"},
+    {"2/3", "!=", "4/5"}};
+
+
+(* Invalid Tests *)
+
+fractionMathMain[{"", "+", "4/5"}]
