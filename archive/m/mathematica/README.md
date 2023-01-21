@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Mathematica! To find documentation related to the Mathematica code in this repo, look [here.](https://sampleprograms.io/languages/mathematica)
 
-## Sample Programs List - 29/37 :smile:
+## Sample Programs List - 30/37 :smile:
 
 In this section, we feature a list of completed and missing programs in Mathematica. See above for the current amount of completed programs in Mathematica. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -18,6 +18,7 @@ Below, you'll find a list of completed code snippets in Mathematica. Code snippe
 - :warning: [Depth First Search in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+depth+first+search+mathematica) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :warning: [Dijkstra in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+dijkstra+mathematica) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :warning: [Duplicate Character Counter in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+mathematica) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
+- :warning: [Even Odd in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+mathematica) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :warning: [Fibonacci in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+mathematica) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :white_check_mark: [Hello World in Mathematica](https://sampleprograms.io/projects/hello-world/mathematica) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :warning: [Josephus Problem in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+josephus+problem+mathematica) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
@@ -44,7 +45,6 @@ Below, you'll find a list of completed code snippets in Mathematica. Code snippe
 
 The following list contains all of the approved programs that are not currently implemented in Mathematica. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
-- :x: [Even Odd](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Even+Odd+in+mathematica) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :x: [Factorial](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Factorial+in+mathematica) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :x: [File Input Output](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+File+Input+Output+in+mathematica) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :x: [Fizz Buzz](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fizz+Buzz+in+mathematica) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
