@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Algol68! To find documentation related to the Algol68 code in this repo, look [here.](https://sampleprograms.io/languages/algol68)
 
-## Sample Programs List - 10/37 :thinking:
+## Sample Programs List - 11/37 :thinking:
 
 In this section, we feature a list of completed and missing programs in Algol68. See above for the current amount of completed programs in Algol68. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -11,7 +11,8 @@ In this section, we feature a list of completed and missing programs in Algol68.
 Below, you'll find a list of completed code snippets in Algol68. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
 - :white_check_mark: [Baklava in Algol68](https://sampleprograms.io/projects/baklava/algol68) [[Requirements](https://sampleprograms.io/projects/baklava)]
-- :warning: [Duplicate Character Counter in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+algol68) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
+- :warning: [Capitalize in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+algol68) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :white_check_mark: [Duplicate Character Counter in Algol68](https://sampleprograms.io/projects/duplicate-character-counter/algol68) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :white_check_mark: [Even Odd in Algol68](https://sampleprograms.io/projects/even-odd/algol68) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :white_check_mark: [Factorial in Algol68](https://sampleprograms.io/projects/factorial/algol68) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :white_check_mark: [Fibonacci in Algol68](https://sampleprograms.io/projects/fibonacci/algol68) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
@@ -27,7 +28,6 @@ The following list contains all of the approved programs that are not currently 
 
 - :x: [Binary Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Binary+Search+in+algol68) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :x: [Bubble Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Bubble+Sort+in+algol68) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
-- :x: [Capitalize](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Capitalize+in+algol68) [[Requirements](https://sampleprograms.io/projects/capitalize)]
 - :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Convex+Hull+in+algol68) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :x: [Depth First Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Depth+First+Search+in+algol68) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Dijkstra+in+algol68) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
