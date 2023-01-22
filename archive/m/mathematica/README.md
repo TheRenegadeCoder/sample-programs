@@ -22,7 +22,7 @@ Below, you'll find a list of completed code snippets in Mathematica. Code snippe
 - :white_check_mark: [Factorial in Mathematica](https://sampleprograms.io/projects/factorial/mathematica) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :white_check_mark: [Fibonacci in Mathematica](https://sampleprograms.io/projects/fibonacci/mathematica) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :white_check_mark: [File Input Output in Mathematica](https://sampleprograms.io/projects/file-input-output/mathematica) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
-- :warning: [Fizz Buzz in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+mathematica) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
+- :white_check_mark: [Fizz Buzz in Mathematica](https://sampleprograms.io/projects/fizz-buzz/mathematica) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Fraction Math in Mathematica](https://sampleprograms.io/projects/fraction-math/mathematica) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :white_check_mark: [Hello World in Mathematica](https://sampleprograms.io/projects/hello-world/mathematica) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :white_check_mark: [Insertion Sort in Mathematica](https://sampleprograms.io/projects/insertion-sort/mathematica) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
