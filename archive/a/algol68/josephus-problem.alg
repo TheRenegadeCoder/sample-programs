@@ -89,7 +89,7 @@ Reference: https://en.wikipedia.org/wiki/Josephus_problem#The_general_case
 Use zero-based index algorithm:
 
     g(1, k) = 0
-    g(m, k) = g(m-1, k) MOD m, for m = 1, 2, ..., n
+    g(m + 1, k) = g(m, k) MOD m, for m = 1, 2, ..., n - 1
 
 Final answer is g(n, k) + 1 to get back to one-based index
 COMMENT
