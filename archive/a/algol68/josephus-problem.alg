@@ -60,11 +60,6 @@ PROC parse int = (STRING s) PARSEINT_RESULT:
 
 PROC usage = VOID: printf(($gl$, "Usage: please input the total number of people and number of people to skip."));
 
-MODE FIBSTATE = STRUCT(INT prev, INT result);
-PROC init fib = FIBSTATE: FIBSTATE(0, 1);
-OP FIB = (FIBSTATE state) FIBSTATE: (result OF state, prev OF state + result OF state);
-OP FIBRESULT = (FIBSTATE state) INT: prev OF state;
-
 # Command-line arguments start at 4. Expecting 2 arguments. If too few, exit #
 IF argc < 5
 THEN
