@@ -99,7 +99,7 @@ INT k := values[2];
 INT g := 0;
 FOR m TO n
 DO
-    g := (g + k) MOD m  # g(m, k) = [g(m - 1) + k] mod m #
+    g := (g + k) MOD m
 OD;
 
 printf(($gl$, whole(g + 1, 0)))
