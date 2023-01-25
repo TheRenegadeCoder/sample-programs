@@ -80,14 +80,42 @@ PROC parse int list = (REF STRING s) PARSEINTLIST_RESULT:
     PARSEINTLIST_RESULT(valid, values)
 );
 
+PROC usage = VOID: (
+    printf(($gl$, "Usage: please provide a list of sorted integers (""1, 4, 5, 11, 12"") and the integer to find (""11"")"))
+);
+
+PROC linear search = (INT target, REF []INT values) BOOL:
+(
+    BOOL found := FALSE;
+    FOR k TO UPB values
+    WHILE NOT found
+    DO
+        found := (values[k] = target)
+    OD;
+
+    found
+);
+
 # Parse 1st command-line argument #
 STRING s := argv(4);
-PARSEINTLIST_RESULT result := parse int list(s);
-printf(($"valid="gl$, valid OF result));
+PARSEINTLIST_RESULT list result := parse int list(s);
+REF []INT values := values OF list result;
+IF NOT valid OF list result
+THEN
+    usage;
+    stop
+FI;
 
-REF []INT values := values OF result;
-FOR k TO UPB values
-DO
-    printf(($g": "gl$, whole(k, 0), whole(values[k], 0)))
-OD
+# Parse 2nd command-line argument #
+s := argv(5);
+PARSEINT_RESULT result := parse int(s);
+INT target := value OF result;
+IF NOT valid OF result OR leftover OF result /= ""
+THEN
+    usage;
+    stop
+FI;
 
+# Do linear search and show results #
+BOOL found = linear search(target, values);
+printf(($gl$, (found | "true" | "false")))
