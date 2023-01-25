@@ -40,41 +40,51 @@ done:
     PARSEINT_RESULT(valid, n, leftover)
 );
 
+PROC count list items = (STRING s) INT:
+(
+    INT count := 1;
+    FOR k TO UPB s
+    DO
+        IF s[k] = ","
+        THEN
+            count +:= 1
+        FI
+    OD;
+
+    count
+);
+
 PROC parse int list = (REF STRING s) PARSEINTLIST_RESULT:
 (
     BOOL valid := FALSE;
     STRING leftover := s;
-    FLEX [1:0]INT values;
+    INT num list items = count list items(s);
+    HEAP [num list items]INT values;
 
-    # Repeat until invalid value or end of string #
+    # Repeat while valid value #
+    FOR k TO num list items
     DO
         # Get next integer value and update leftover string #
         PARSEINT_RESULT result = parse int(leftover);
         valid := valid OF result;
         leftover := leftover OF result;
 
-        IF valid
-        THEN
-            # Append the integer value #
-            [UPB values + 1]INT temp values;
-            temp values[:UPB values] := values;
-            temp values[UPB values + 1] := value OF result;
-            values := temp values;
+        # Append the integer value to list #
+        values[k] := value OF result;
 
-            # Do nothing if end of string #
-            IF leftover = ""
-            THEN
-                SKIP
-            # Skip comma if leftover string starts with comma and is not just a comma #
-            ELIF leftover[1] = "," AND leftover /= ","
-            THEN
-                leftover := leftover[2:]
-            # Otherwise indicate invalid #
-            ELSE
-                valid := FALSE
-            FI
+        # Do nothing if end of string #
+        IF leftover = ""
+        THEN
+            SKIP
+        # Skip comma if leftover string starts with comma and is not just a comma #
+        ELIF leftover[1] = "," AND leftover /= ","
+        THEN
+            leftover := leftover[2:]
+        # Otherwise indicate invalid #
+        ELSE
+            valid := FALSE
         FI
-    UNTIL NOT valid OR leftover = ""
+    UNTIL NOT valid
     OD;
 
     PARSEINTLIST_RESULT(valid, values)
