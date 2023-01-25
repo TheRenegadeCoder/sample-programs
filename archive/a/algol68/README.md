@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Algol68! To find documentation related to the Algol68 code in this repo, look [here.](https://sampleprograms.io/languages/algol68)
 
-## Sample Programs List - 15/37 :thinking:
+## Sample Programs List - 16/37 :thinking:
 
 In this section, we feature a list of completed and missing programs in Algol68. See above for the current amount of completed programs in Algol68. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -24,6 +24,7 @@ Below, you'll find a list of completed code snippets in Algol68. Code snippets p
 - :warning: [Palindromic Number in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+algol68) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :white_check_mark: [Prime Number in Algol68](https://sampleprograms.io/projects/prime-number/algol68) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :white_check_mark: [Quine in Algol68](https://sampleprograms.io/projects/quine/algol68) [[Requirements](https://sampleprograms.io/projects/quine)]
+- :warning: [Reverse String in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+algol68) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :white_check_mark: [Rot13 in Algol68](https://sampleprograms.io/projects/rot13/algol68) [[Requirements](https://sampleprograms.io/projects/rot13)]
 
 ### Missing Programs
@@ -47,7 +48,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+algol68) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
 - :x: [Quick Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Quick+Sort+in+algol68) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
 - :x: [Remove All Whitespace](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Remove+All+Whitespace+in+algol68) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
-- :x: [Reverse String](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Reverse+String+in+algol68) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :x: [Roman Numeral](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Roman+Numeral+in+algol68) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :x: [Selection Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Selection+Sort+in+algol68) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 - :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Sleep+Sort+in+algol68) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
