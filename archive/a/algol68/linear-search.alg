@@ -84,13 +84,16 @@ PROC usage = VOID: (
     printf(($gl$, "Usage: please provide a list of sorted integers (""1, 4, 5, 11, 12"") and the integer to find (""11"")"))
 );
 
-PROC linear search = (INT target, REF []INT values) BOOL:
+PROC linear search = (INT target, REF []INT values) INT:
 (
-    BOOL found := FALSE;
+    INT found := 0;
     FOR k TO UPB values
-    WHILE NOT found
+    WHILE found = 0
     DO
-        found := (values[k] = target)
+        IF values[k] = target
+        THEN
+            found := k
+        FI        
     OD;
 
     found
@@ -117,5 +120,5 @@ THEN
 FI;
 
 # Do linear search and show results #
-BOOL found = linear search(target, values);
-printf(($gl$, (found | "true" | "false")))
+INT index = linear search(target, values);
+printf(($gl$, (index > 0 | "true" | "false")))
