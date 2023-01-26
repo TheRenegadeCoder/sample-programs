@@ -76,8 +76,8 @@ PROC parse int list = (REF STRING s) PARSEINTLIST_RESULT:
         IF leftover = ""
         THEN
             SKIP
-        # Skip comma if leftover string starts with comma and is not just a comma #
-        ELIF leftover[1] = "," AND leftover /= ","
+        # Skip comma if leftover string starts with comma #
+        ELIF leftover[1] = ","
         THEN
             leftover := leftover[2:]
         # Otherwise indicate invalid #
