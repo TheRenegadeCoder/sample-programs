@@ -96,19 +96,27 @@ PROC usage = VOID: (
 
 PROC bubble sort = (REF []INT values) VOID:
 (
+    COMMENT
+    Source: https://en.wikipedia.org/wiki/Bubble_sort#Optimizing_bubble_sort
+    COMMENT
+
     INT n := UPB values;
+    INT new n;
     INT temp;
-    FOR i TO n - 1
     DO
-        FOR j FROM i + 1 TO n
+        new n := 1;
+        FOR i FROM 2 TO n
         DO
-            IF values[i] > values[j]
+            IF values[i - 1] > values[i]
             THEN
-                temp := values[i];
-                values[i] := values[j];
-                values[j] := temp
+                temp := values[i - 1];
+                values[i - 1] := values[i];
+                values[i] := temp;
+                new n := i
             FI
-        OD
+        OD;
+        n := new n
+    UNTIL n <= 2
     OD
 );
 
@@ -135,7 +143,7 @@ PROC show list values = (REF []INT values) VOID:
 STRING s := argv(4);
 PARSEINTLIST_RESULT list result := parse int list(s);
 REF []INT values := values OF list result;
-IF NOT valid OF list result
+IF NOT valid OF list result OR UPB values < 2
 THEN
     usage;
     stop
