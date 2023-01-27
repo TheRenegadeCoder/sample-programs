@@ -22,7 +22,7 @@ sanitizeArray = (list) => {
  }
 
 const exit = () => {
-     const usage = 'Usage: please provide a list of sorted integers ("1, 4, 5, 11, 12") and the integer to find ("11")';
+     const usage = 'Usage: please provide a list of integers ("1, 4, 5, 11, 12") and the integer to find ("11")';
      console.log(usage)
      process.exit();
  }
