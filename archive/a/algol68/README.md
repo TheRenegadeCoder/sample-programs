@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Algol68! To find documentation related to the Algol68 code in this repo, look [here.](https://sampleprograms.io/languages/algol68)
 
-## Sample Programs List - 17/37 :thinking:
+## Sample Programs List - 18/37 :thinking:
 
 In this section, we feature a list of completed and missing programs in Algol68. See above for the current amount of completed programs in Algol68. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -11,6 +11,7 @@ In this section, we feature a list of completed and missing programs in Algol68.
 Below, you'll find a list of completed code snippets in Algol68. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
 - :white_check_mark: [Baklava in Algol68](https://sampleprograms.io/projects/baklava/algol68) [[Requirements](https://sampleprograms.io/projects/baklava)]
+- :warning: [Binary Search in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+binary+search+algol68) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :white_check_mark: [Capitalize in Algol68](https://sampleprograms.io/projects/capitalize/algol68) [[Requirements](https://sampleprograms.io/projects/capitalize)]
 - :white_check_mark: [Duplicate Character Counter in Algol68](https://sampleprograms.io/projects/duplicate-character-counter/algol68) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :white_check_mark: [Even Odd in Algol68](https://sampleprograms.io/projects/even-odd/algol68) [[Requirements](https://sampleprograms.io/projects/even-odd)]
@@ -19,20 +20,19 @@ Below, you'll find a list of completed code snippets in Algol68. Code snippets p
 - :white_check_mark: [File Input Output in Algol68](https://sampleprograms.io/projects/file-input-output/algol68) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :white_check_mark: [Fizz Buzz in Algol68](https://sampleprograms.io/projects/fizz-buzz/algol68) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Algol68](https://sampleprograms.io/projects/hello-world/algol68) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :warning: [Josephus Problem in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+josephus+problem+algol68) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
+- :white_check_mark: [Josephus Problem in Algol68](https://sampleprograms.io/projects/josephus-problem/algol68) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :white_check_mark: [Longest Word in Algol68](https://sampleprograms.io/projects/longest-word/algol68) [[Requirements](https://sampleprograms.io/projects/longest-word)]
-- :warning: [Palindromic Number in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+algol68) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
+- :white_check_mark: [Palindromic Number in Algol68](https://sampleprograms.io/projects/palindromic-number/algol68) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :white_check_mark: [Prime Number in Algol68](https://sampleprograms.io/projects/prime-number/algol68) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :white_check_mark: [Quine in Algol68](https://sampleprograms.io/projects/quine/algol68) [[Requirements](https://sampleprograms.io/projects/quine)]
-- :warning: [Remove All Whitespace in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+remove+all+whitespace+algol68) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
-- :warning: [Reverse String in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+algol68) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
+- :white_check_mark: [Remove All Whitespace in Algol68](https://sampleprograms.io/projects/remove-all-whitespace/algol68) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
+- :white_check_mark: [Reverse String in Algol68](https://sampleprograms.io/projects/reverse-string/algol68) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :white_check_mark: [Rot13 in Algol68](https://sampleprograms.io/projects/rot13/algol68) [[Requirements](https://sampleprograms.io/projects/rot13)]
 
 ### Missing Programs
 
 The following list contains all of the approved programs that are not currently implemented in Algol68. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
-- :x: [Binary Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Binary+Search+in+algol68) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :x: [Bubble Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Bubble+Sort+in+algol68) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Convex+Hull+in+algol68) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :x: [Depth First Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Depth+First+Search+in+algol68) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
