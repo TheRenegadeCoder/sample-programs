@@ -27,7 +27,7 @@ PROC read file = (STRING file name) INT:
         on logical file end(f, (REF FILE inf) BOOL:
             (
                 close(inf);
-                stop 
+                done
             )
         );
 
@@ -38,6 +38,7 @@ PROC read file = (STRING file name) INT:
         OD
     FI;
 
+done:
     status
 );
 
