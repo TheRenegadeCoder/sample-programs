@@ -199,7 +199,7 @@ PROC create tree = (REF []INT adjacency matrix, REF []INT vertex values) TREE:
     INT num vertices := UPB vertex values;
     INT num adjacencies := UPB adjacency matrix;
 
-    # Add vertical values to hash table #
+    # Add vertex values to hash table #
     [num vertices]NODEREF nodes;
     FOR row TO num vertices
     DO
