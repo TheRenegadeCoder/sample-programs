@@ -1,71 +1,68 @@
 MODE PARSEINT_RESULT = STRUCT(BOOL valid, INT value, STRING leftover);
-INT zero := ABS "0";
+MODE PARSEINTLIST_RESULT = STRUCT(BOOL valid, REF []INT values);
 
-PROC find non blank = (STRING s, INT start) INT:
-(
-    INT pos := start;
-    FOR k FROM pos TO UPB(s)
-    WHILE isspace(s[k])
-    DO
-        pos +:= 1
-    OD;
-
-    pos
-);
-
-PROC parse int = (STRING s) PARSEINT_RESULT:
+PROC parse int = (REF STRING s) PARSEINT_RESULT:
 (
     BOOL valid := FALSE;
-    INT sign := 1;
     REAL r := 0.0;
     INT n := 0;
+    STRING leftover;
 
-    # Skip blanks #
-    INT pos := find non blank(s, 1);
+    # Associate string with a file #
+    FILE f;
+    associate(f, s);
 
-    # Handle sign #
-    INT len := UPB(s);
-    FROM pos TO len
-    WHILE s[pos] = "+" OR s[pos] = "-"
-    DO
-        IF s[pos] = "-"
-        THEN
-            sign := -sign
-        FI;
+    # On end of input, exit if valid number not seen. Otherwise ignore it #
+    on logical file end(f, (REF FILE dummy) BOOL:
+        (
+            IF NOT valid THEN done FI;
+            TRUE
+        )
+    );
 
-        pos +:= 1
-    OD;
+    # Exit if value error #
+    on value error(f, (REF FILE dummy) BOOL: done);
 
-    # Convert the string to an integer until end-of-string or non-digit #
-    FROM pos TO len
-    WHILE isdigit(s[pos])
-    DO
-        valid := TRUE;
-        r := r * 10.0 + (ABS s[pos]) - zero;
-        pos +:= 1
-    OD;
+    # Convert string to real number #
+    get(f, r);
 
-    # Make sure value is in range #
-    r *:= sign;
-    IF r < -(max int + 1.0) OR r > max int
+    # If real number is in range of an integer, convert to integer. Indicate integer is valid if same as real #
+    IF ABS r <= max int
     THEN
-        valid := FALSE
-    ELSE
-        n := ENTIER(r)
+        n := ENTIER(r);
+        valid := (n = r)
     FI;
 
-    pos := find non blank(s, pos);
-    PARSEINT_RESULT(valid, n, s[pos:])
+    # Get leftover string #
+    get(f, leftover);
+
+done:
+    close(f);
+    PARSEINT_RESULT(valid, n, leftover)
 );
 
 PROC usage = VOID: printf(($gl$, "Usage: please input the total number of people and number of people to skip."));
 
-# Command-line arguments start at 4. Expecting 2 arguments. If too few, exit #
-IF argc < 5
-THEN
-    usage;
-    stop
-FI;
+COMMENT
+Reference: https://en.wikipedia.org/wiki/Josephus_problem#The_general_case
+
+Use zero-based index algorithm:
+
+    g(1, k) = 0
+    g(m, k) = [g(m - 1, k) + k] MOD m, for m = 2, 3, ..., n
+
+Final answer is g(n, k) + 1 to get back to one-based index
+COMMENT
+PROC josephus = (INT n, INT k) INT:
+(
+    INT g := 0;
+    FOR m FROM 2 TO n
+    DO
+        g := (g + k) MOD m
+    OD;
+
+    g + 1
+);
 
 # Parse 1st and 2nd command-line arguments #
 [2]INT values;
@@ -83,23 +80,7 @@ DO
     FI
 OD;
 
-COMMENT
-Reference: https://en.wikipedia.org/wiki/Josephus_problem#The_general_case
-
-Use zero-based index algorithm:
-
-    g(1, k) = 0
-    g(m, k) = [g(m - 1, k) + k] MOD m, for m = 2, 3, ..., n
-
-Final answer is g(n, k) + 1 to get back to one-based index
-COMMENT
-
 INT n := values[1];
 INT k := values[2];
-INT g := 0;
-FOR m FROM 2 TO n
-DO
-    g := (g + k) MOD m
-OD;
-
-printf(($gl$, whole(g + 1, 0)))
+INT g := josephus(n, k);
+printf(($gl$, whole(g, 0)))
