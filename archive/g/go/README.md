@@ -24,7 +24,7 @@ Below, you'll find a list of completed code snippets in Go. Code snippets preced
 - :white_check_mark: [Job Sequencing in Go](https://sampleprograms.io/projects/job-sequencing/go) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :white_check_mark: [Longest Common Subsequence in Go](https://sampleprograms.io/projects/longest-common-subsequence/go) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
 - :white_check_mark: [Longest Palindromic Substring in Go](https://sampleprograms.io/projects/longest-palindromic-substring/go) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
-- :white_check_mark: [Merge Sort in Go](https://sampleprograms.io/projects/merge-sort/go) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
+- :warning: [Merge Sort in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+go) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
 - :white_check_mark: [Prime Number in Go](https://sampleprograms.io/projects/prime-number/go) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :white_check_mark: [Quick Sort in Go](https://sampleprograms.io/projects/quick-sort/go) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
 - :white_check_mark: [Quine in Go](https://sampleprograms.io/projects/quine/go) [[Requirements](https://sampleprograms.io/projects/quine)]
