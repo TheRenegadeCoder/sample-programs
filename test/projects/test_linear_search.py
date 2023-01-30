@@ -9,15 +9,15 @@ invalid_permutations = (
         (
             'no input',
             None,
-            'Usage: please provide a list of sorted integers ("1, 4, 5, 11, 12") and the integer to find ("11")'
+            'Usage: please provide a list of integers ("1, 4, 5, 11, 12") and the integer to find ("11")'
         ), (
             'missing input: target',
             '"1, 2, 3, 4"',
-            'Usage: please provide a list of sorted integers ("1, 4, 5, 11, 12") and the integer to find ("11")'
+            'Usage: please provide a list of integers ("1, 4, 5, 11, 12") and the integer to find ("11")'
         ), (
             'missing input: list',
             '"" "5"',
-            'Usage: please provide a list of sorted integers ("1, 4, 5, 11, 12") and the integer to find ("11")'
+            'Usage: please provide a list of integers ("1, 4, 5, 11, 12") and the integer to find ("11")'
         )
     ]
 )

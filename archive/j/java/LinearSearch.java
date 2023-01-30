@@ -16,11 +16,11 @@ public class LinearSearch {
                 System.out.println(searched);
             } else {
                 System.out.println(
-                        "Usage: please provide a list of sorted integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")");
+                        "Usage: please provide a list of integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")");
             }
         } catch (Exception e) {
             System.out.println(
-                    "Usage: please provide a list of sorted integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")");
+                    "Usage: please provide a list of integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")");
         }
     }
 
