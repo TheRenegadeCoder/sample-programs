@@ -8,12 +8,13 @@ PROC rot13 = (STRING s) STRING:
     DO
         # If A-M or a-m, convert to N-Z or n-z by adding 13 to ASCII code #
         # Else, convert to A-M or a-m by subtracting 13 from ASCII code #
+        code := ABS s[n];
         IF isalpha(s[n])
         THEN
-            code := ABS s[n];
-            code +:= (tolower(s[n]) <= "m" | 13 | -13);
-            t +:= REPR code
-        FI
+            code +:= (tolower(s[n]) <= "m" | 13 | -13)
+        FI;
+
+        t +:= REPR code
     OD;
 
     t
