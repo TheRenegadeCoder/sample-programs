@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Algol68! To find documentation related to the Algol68 code in this repo, look [here.](https://sampleprograms.io/languages/algol68)
 
-## Sample Programs List - 19/37 :relaxed:
+## Sample Programs List - 20/37 :relaxed:
 
 In this section, we feature a list of completed and missing programs in Algol68. See above for the current amount of completed programs in Algol68. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -11,8 +11,8 @@ In this section, we feature a list of completed and missing programs in Algol68.
 Below, you'll find a list of completed code snippets in Algol68. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
 - :white_check_mark: [Baklava in Algol68](https://sampleprograms.io/projects/baklava/algol68) [[Requirements](https://sampleprograms.io/projects/baklava)]
-- :warning: [Binary Search in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+binary+search+algol68) [[Requirements](https://sampleprograms.io/projects/binary-search)]
-- :warning: [Bubble Sort in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+algol68) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
+- :white_check_mark: [Binary Search in Algol68](https://sampleprograms.io/projects/binary-search/algol68) [[Requirements](https://sampleprograms.io/projects/binary-search)]
+- :white_check_mark: [Bubble Sort in Algol68](https://sampleprograms.io/projects/bubble-sort/algol68) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :white_check_mark: [Capitalize in Algol68](https://sampleprograms.io/projects/capitalize/algol68) [[Requirements](https://sampleprograms.io/projects/capitalize)]
 - :white_check_mark: [Duplicate Character Counter in Algol68](https://sampleprograms.io/projects/duplicate-character-counter/algol68) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :white_check_mark: [Even Odd in Algol68](https://sampleprograms.io/projects/even-odd/algol68) [[Requirements](https://sampleprograms.io/projects/even-odd)]
@@ -21,6 +21,7 @@ Below, you'll find a list of completed code snippets in Algol68. Code snippets p
 - :white_check_mark: [File Input Output in Algol68](https://sampleprograms.io/projects/file-input-output/algol68) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :white_check_mark: [Fizz Buzz in Algol68](https://sampleprograms.io/projects/fizz-buzz/algol68) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Algol68](https://sampleprograms.io/projects/hello-world/algol68) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :warning: [Insertion Sort in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+algol68) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :white_check_mark: [Josephus Problem in Algol68](https://sampleprograms.io/projects/josephus-problem/algol68) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :white_check_mark: [Longest Word in Algol68](https://sampleprograms.io/projects/longest-word/algol68) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :white_check_mark: [Palindromic Number in Algol68](https://sampleprograms.io/projects/palindromic-number/algol68) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
@@ -38,7 +39,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Depth First Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Depth+First+Search+in+algol68) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Dijkstra+in+algol68) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fraction+Math+in+algol68) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
-- :x: [Insertion Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Insertion+Sort+in+algol68) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Job+Sequencing+in+algol68) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :x: [Linear Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Linear+Search+in+algol68) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :x: [Longest Common Subsequence](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Longest+Common+Subsequence+in+algol68) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
