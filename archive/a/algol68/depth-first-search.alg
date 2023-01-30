@@ -109,11 +109,12 @@ like this:
 - ...
 - 257: NIL
 COMMENT
-MODE NODE = STRUCT(INT key, REF []INT values);
-REF []INT empty values = NIL;
-OP ISEMPTY = (REF []INT values) BOOL: values IS empty values;
-REF NODE empty node = NIL;
-OP ISEMPTY = (REF NODE node) BOOL: node IS empty node;
+MODE NODE = STRUCT(INT key, REF []NODEREF children),
+    NODEREF = REF NODE;
+REF []NODEREF empty children = NIL;
+OP ISEMPTY = (REF []NODEREF children) BOOL: children IS empty children;
+NODEREF empty node = NIL;
+OP ISEMPTY = (NODEREF node) BOOL: node IS empty node;
 
 INT hash table size := 257;
 MODE HASHTABLE_ELEM = STRUCT(NODE node, HASHTABLE_ELEMREF next),
@@ -136,17 +137,17 @@ PROC create hash table = REF HASHTABLE:
     hash table
 );
 
-PROC add hash table entry = (REF HASHTABLE hash table, INT key, REF []INT values) REF NODE:
+PROC add hash table entry = (REF HASHTABLE hash table, INT key) NODEREF:
 (
     # Find key in hash table #
     HASHTABLE_FIND find info := find hash table entry(hash table, key);
     HASHTABLE_ELEMREF last entry := found entry OF find info;
-    REF NODE node := NIL;
+    NODEREF node := NIL;
 
     IF NOT (found OF find info)
     THEN
         # Create new hash table entry #
-        HEAP HASHTABLE_ELEM entry := HASHTABLE_ELEM(NODE(key, values), NIL);
+        HEAP HASHTABLE_ELEM entry := HASHTABLE_ELEM(NODE(key, NIL), NIL);
         node := node OF entry;
 
         # If not found and hash table entry is empty, add it to hash table #
@@ -189,7 +190,7 @@ PROC find hash table entry = (REF HASHTABLE hash table, INT key) HASHTABLE_FIND:
 );
 
 # Create tree based on adjacency matrix and vertex values #
-MODE TREE = STRUCT(REF HASHTABLE hashtable, REF NODE root);
+MODE TREE = STRUCT(REF HASHTABLE hashtable, NODEREF root);
 PROC create tree = (REF []INT adjacency matrix, REF []INT vertex values) TREE:
 (
     # Create hash table #
@@ -198,89 +199,85 @@ PROC create tree = (REF []INT adjacency matrix, REF []INT vertex values) TREE:
     INT num vertices := UPB vertex values;
     INT num adjacencies := UPB adjacency matrix;
 
+    # Add vertical values to hash table #
+    [num vertices]NODEREF nodes;
+    FOR row TO num vertices
+    DO
+        nodes[row] := add hash table entry(hash table, vertex values[row])
+    OD;
 
     INT k := 1;
-    REF NODE root := NIL;
-    REF NODE node;
-    INT num connections;
-    [num vertices]INT temp connections;
+    NODEREF node;
+    INT num children;
+    [num vertices]NODEREF children;
     FOR row TO num vertices
     DO
         # Get this vertex value #
         INT key := vertex values[row];
 
-        # Get connections for this vertex value based on non-zero values of adjacency matrix #
-        INT num connections := 0;
+        # Get children for this vertex value based on non-zero values of adjacency matrix #
+        num children := 0;
         FOR col TO num vertices
         WHILE k <= num adjacencies
         DO
             IF adjacency matrix[k] /= 0
             THEN
-                num connections +:= 1;
-                temp connections[num connections] := vertex values[col]
+                num children +:= 1;
+                children[num children] := nodes[col]
             FI;
 
             k +:= 1
         OD;
 
-        REF []INT values := NIL;
-        IF num connections > 0
+        # If any connections, store children for this node #
+        IF num children > 0
         THEN
-            values := HEAP [num connections] INT := temp connections[:num connections]
-        FI;
-
-        # Add node to tree #
-        node := add hash table entry(hash table, key, values);
-
-        # If no root, set root to this node #
-        IF ISEMPTY root
-        THEN
-            root := node
+            children OF nodes[row] := HEAP [num children]NODEREF := children[:num children]
         FI
     OD;
 
-    TREE(hash table, root)
+    TREE(hash table, nodes[1])
 );
 
-PROC depth first search = (TREE tree, INT target) REF NODE:
+PROC depth first search = (TREE tree, INT target) NODEREF:
 (
     # Initialize visit nodes #
     REF HASHTABLE visited = create hash table;
 
     # Perform depth first recursively starting at root of tree #
-    REF NODE found := NIL;
+    NODEREF found := NIL;
     depth first search rec(hash table OF tree, root OF tree, target, visited, found)
 );
 
 PROC depth first search rec = (
-    REF HASHTABLE hash table, REF NODE node, INT target, REF HASHTABLE visited, REF REF NODE found
-) REF NODE:
+    REF HASHTABLE hash table, NODEREF node, INT target, REF HASHTABLE visited, REF NODEREF found
+) NODEREF:
 (
-    # If entry not found, #
-    IF ISEMPTY found
+    # If entry not found and node is not empty, #
+    IF ISEMPTY found AND NOT ISEMPTY node
     THEN
         INT key := key OF node;
-        REF []INT values := values OF node;
+        REF []NODEREF children := children OF node;
 
         # Indicate this node is visited #
-        add hash table entry(visited, key, NIL);
+        add hash table entry(visited, key);
 
         # If key of this node matches target, indicate found #
         # Else, perform depth first search on each unvisited child of this node (if any) #
         IF key = target
         THEN
             found := node
-        ELIF NOT ISEMPTY values
+        ELIF NOT ISEMPTY children
         THEN
-            FOR k TO UPB values
+            FOR k TO UPB children
             WHILE ISEMPTY found
             DO
-                key := values[k];
+                node := children[k];
+                key := key OF node;
                 IF NOT (found OF find hash table entry(visited, key))
                 THEN
-                    node := node OF found entry OF find hash table entry(hash table, key);
-                    found := depth first search rec(hash table, node, target, visited, found);
-                    add hash table entry(visited, key, NIL)
+                    found := depth first search rec(hash table, children[k], target, visited, found);
+                    add hash table entry(visited, key)
                 FI
             OD
         FI
@@ -323,5 +320,5 @@ FI;
 TREE tree := create tree(adjacency matrix, vertex values);
 
 # Run depth first search and indicate if value is found #
-REF NODE node := depth first search(tree, value);
+NODEREF node := depth first search(tree, value);
 printf(($gl$, (ISEMPTY node | "false" | "true")))
