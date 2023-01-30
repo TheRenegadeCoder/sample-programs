@@ -229,7 +229,7 @@ PROC create tree = (REF []INT adjacency matrix, REF []INT vertex values) TREE:
             k +:= 1
         OD;
 
-        # If any connections, store children for this node #
+        # If any children, store children for this node #
         IF num children > 0
         THEN
             children OF nodes[row] := HEAP [num children]NODEREF := children[:num children]
