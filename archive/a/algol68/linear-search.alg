@@ -37,6 +37,7 @@ PROC parse int = (REF STRING s) PARSEINT_RESULT:
     get(f, leftover);
 
 done:
+    close(f);
     PARSEINT_RESULT(valid, n, leftover)
 );
 
@@ -91,7 +92,7 @@ PROC parse int list = (REF STRING s) PARSEINTLIST_RESULT:
 );
 
 PROC usage = VOID: (
-    printf(($gl$, "Usage: please provide a list of sorted integers (""1, 4, 5, 11, 12"") and the integer to find (""11"")"))
+    printf(($gl$, "Usage: please provide a list of integers (""1, 4, 5, 11, 12"") and the integer to find (""11"")"))
 );
 
 PROC linear search = (INT target, REF []INT values) INT:
