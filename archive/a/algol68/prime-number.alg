@@ -36,17 +36,35 @@ PROC parse int = (REF STRING s) PARSEINT_RESULT:
     get(f, leftover);
 
 done:
+    close(f);
     PARSEINT_RESULT(valid, n, leftover)
 );
 
 PROC usage = VOID: printf(($gl$, "Usage: please input a non-negative integer"));
 
-# Command-line arguments start at 4. If too few, exit #
-IF argc < 4
-THEN
-    usage;
-    stop
-FI;
+PROC is prime = (INT n) BOOL:
+(
+    # If less than 2 or (not 2 and even), composite #
+    # Else, check if prime by checking divisibility by odd numbers from 3 to sqrt(n) #
+    BOOL prime := TRUE;
+    IF n < 2 OR (n /= 2 AND n MOD 2 = 0)
+    THEN
+        prime := FALSE
+    ELSE
+        INT q := ENTIER(sqrt(n));
+        INT k = 3;
+        FOR k FROM 3 BY 2 TO q
+        WHILE prime
+        DO
+            IF n MOD k = 0
+            THEN
+                prime := FALSE
+            FI
+        OD
+    FI;
+
+    prime
+);
 
 # Parse 1st command-line argument #
 STRING s := argv(4);
@@ -60,23 +78,5 @@ THEN
     stop
 FI;
 
-# If less than 2 or (not 2 and even), composite #
-# Else, check if prime by checking divisibility by odd numbers from 3 to sqrt(n) #
-BOOL is prime := TRUE;
-IF n < 2 OR (n /= 2 AND n MOD 2 = 0)
-THEN
-    is prime := FALSE
-ELSE
-    INT q := ENTIER(sqrt(n));
-    INT k = 3;
-    FOR k FROM 3 BY 2 TO q
-    WHILE is prime
-    DO
-        IF n MOD k = 0
-        THEN
-            is prime := FALSE
-        FI
-    OD
-FI;
-
-printf(($gl$, (is prime | "Prime" | "Composite")))
+# Indicate if prime #
+printf(($gl$, (is prime(n) | "Prime" | "Composite")))
