@@ -22,18 +22,18 @@ Below, you'll find a list of completed code snippets in Algol68. Code snippets p
 - :white_check_mark: [File Input Output in Algol68](https://sampleprograms.io/projects/file-input-output/algol68) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :white_check_mark: [Fizz Buzz in Algol68](https://sampleprograms.io/projects/fizz-buzz/algol68) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Algol68](https://sampleprograms.io/projects/hello-world/algol68) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :warning: [Insertion Sort in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+algol68) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
+- :white_check_mark: [Insertion Sort in Algol68](https://sampleprograms.io/projects/insertion-sort/algol68) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :white_check_mark: [Josephus Problem in Algol68](https://sampleprograms.io/projects/josephus-problem/algol68) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :white_check_mark: [Longest Word in Algol68](https://sampleprograms.io/projects/longest-word/algol68) [[Requirements](https://sampleprograms.io/projects/longest-word)]
-- :warning: [Merge Sort in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+algol68) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
+- :white_check_mark: [Merge Sort in Algol68](https://sampleprograms.io/projects/merge-sort/algol68) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
 - :white_check_mark: [Palindromic Number in Algol68](https://sampleprograms.io/projects/palindromic-number/algol68) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :white_check_mark: [Prime Number in Algol68](https://sampleprograms.io/projects/prime-number/algol68) [[Requirements](https://sampleprograms.io/projects/prime-number)]
-- :warning: [Quick Sort in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+algol68) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
+- :white_check_mark: [Quick Sort in Algol68](https://sampleprograms.io/projects/quick-sort/algol68) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
 - :white_check_mark: [Quine in Algol68](https://sampleprograms.io/projects/quine/algol68) [[Requirements](https://sampleprograms.io/projects/quine)]
 - :white_check_mark: [Remove All Whitespace in Algol68](https://sampleprograms.io/projects/remove-all-whitespace/algol68) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :white_check_mark: [Reverse String in Algol68](https://sampleprograms.io/projects/reverse-string/algol68) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :white_check_mark: [Rot13 in Algol68](https://sampleprograms.io/projects/rot13/algol68) [[Requirements](https://sampleprograms.io/projects/rot13)]
-- :warning: [Selection Sort in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+algol68) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
+- :white_check_mark: [Selection Sort in Algol68](https://sampleprograms.io/projects/selection-sort/algol68) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 
 ### Missing Programs
 
