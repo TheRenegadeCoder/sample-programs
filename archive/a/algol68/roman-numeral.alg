@@ -81,5 +81,3 @@ THEN
 ELSE
     error
 FI
-
-
