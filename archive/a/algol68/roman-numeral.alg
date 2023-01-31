@@ -33,7 +33,6 @@ PROC get roman = (CHAR letter) INT:
 PROC roman number = (STRING s) INT:
 (
     INT total := 0;
-    INT max value := 1000;
     INT prev value := -1; # No previous value #
     FOR k TO UPB s
     WHILE total >= 0
