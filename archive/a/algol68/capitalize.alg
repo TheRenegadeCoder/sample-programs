@@ -2,8 +2,8 @@ PROC usage = VOID: printf(($gl$, "Usage: please provide a string"));
 
 PROC capitalize = (STRING s) STRING:
 (
-    # If first letter is lowercase, capitalize it #
-    (islower(s[1]) | toupper(s[1]) | s[1]) + s[2:]
+    # Capitalize first letter if lowercase #
+    toupper(s[1]) + s[2:]
 );
 
 # Get 1st command-line argument. Exit if empty #
