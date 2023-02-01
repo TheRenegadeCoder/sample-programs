@@ -187,10 +187,10 @@ PROC show fraction result = (FRACTIONRESULT result) VOID:
 # Parse 1st and 3rd command-line argument #
 [2]FRACTION fractions;
 STRING s;
-INT arg num := 4;
+[]INT arg nums := (4, 6);
 FOR k TO 2
 DO
-    s := argv(arg num);
+    s := argv(arg nums[k]);
     PARSEFRACTION_RESULT result := parse fraction(s);
     fractions[k] := value OF result;
 
