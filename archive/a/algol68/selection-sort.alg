@@ -37,6 +37,7 @@ PROC parse int = (REF STRING s) PARSEINT_RESULT:
     get(f, leftover);
 
 done:
+    close(f);
     PARSEINT_RESULT(valid, n, leftover)
 );
 
