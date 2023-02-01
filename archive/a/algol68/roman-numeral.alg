@@ -49,10 +49,12 @@ PROC roman number = (STRING s) INT:
             # If there is a previous value and value is greater than previous value, #
             # subtract two times previous value from total to compensate for addition of #
             # previous value -- e.g., if previous value was 100 (C) and current value is #
-            # 1000 (M), the total currently equals 1100, but we want it to be 900 (1100 - 2*100) #
+            # 1000 (M), the total currently equals 1100, but we want it to be 900 (1100 - 2*100). #
+            # Also, reset the current value so that there is no previous value #
             IF prev value > 0 AND value > prev value
             THEN
-                total -:= 2 * prev value
+                total -:= 2 * prev value;
+                value := -1
             FI;
 
             # Store current value to previous value #
