@@ -1,82 +1,77 @@
 MODE PARSEINT_RESULT = STRUCT(BOOL valid, INT value, STRING leftover);
-INT zero := ABS "0";
+MODE PARSEINTLIST_RESULT = STRUCT(BOOL valid, REF []INT values);
 
-PROC find non blank = (STRING s, INT start) INT:
-(
-    INT pos := start;
-    FOR k FROM pos TO UPB(s)
-    WHILE isspace(s[k])
-    DO
-        pos +:= 1
-    OD;
-
-    pos
-);
-
-PROC parse int = (STRING s) PARSEINT_RESULT:
+PROC parse int = (REF STRING s) PARSEINT_RESULT:
 (
     BOOL valid := FALSE;
-    INT sign := 1;
     REAL r := 0.0;
     INT n := 0;
+    STRING leftover;
 
-    # Skip blanks #
-    INT pos := find non blank(s, 1);
+    # Associate string with a file #
+    FILE f;
+    associate(f, s);
 
-    # Handle sign #
-    INT len := UPB(s);
-    FROM pos TO len
-    WHILE s[pos] = "+" OR s[pos] = "-"
-    DO
-        IF s[pos] = "-"
-        THEN
-            sign := -sign
-        FI;
+    # On end of input, exit if valid number not seen. Otherwise ignore it #
+    on logical file end(f, (REF FILE dummy) BOOL:
+        (
+            IF NOT valid THEN done FI;
+            TRUE
+        )
+    );
 
-        pos +:= 1
-    OD;
+    # Exit if value error #
+    on value error(f, (REF FILE dummy) BOOL: done);
 
-    # Convert the string to an integer until end-of-string or non-digit #
-    FROM pos TO len
-    WHILE isdigit(s[pos])
-    DO
-        valid := TRUE;
-        r := r * 10.0 + (ABS s[pos]) - zero;
-        pos +:= 1
-    OD;
+    # Convert string to real number #
+    get(f, r);
 
-    # Make sure value is in range #
-    r *:= sign;
-    IF r < -(max int + 1.0) OR r > max int
+    # If real number is in range of an integer, convert to integer. Indicate integer is valid if same as real #
+    IF ABS r <= max int
     THEN
-        valid := FALSE
-    ELSE
-        n := ENTIER(r)
+        n := ENTIER(r);
+        valid := (n = r)
     FI;
 
-    pos := find non blank(s, pos);
-    PARSEINT_RESULT(valid, n, s[pos:])
+    # Get leftover string #
+    get(f, leftover);
+
+done:
+    close(f);
+    PARSEINT_RESULT(valid, n, leftover)
 );
 
 PROC usage = VOID: printf(($gl$, "Usage: please input the count of fibonacci numbers to output"));
 
+COMMENT
+fib(n) = fib(n - 1) + fib(n - 2)
+where:
+- fib(0) = 0
+- fib(1) = 1
+COMMENT
 MODE FIBSTATE = STRUCT(INT prev, INT result);
 PROC init fib = FIBSTATE: FIBSTATE(0, 1);
 OP FIB = (FIBSTATE state) FIBSTATE: (result OF state, prev OF state + result OF state);
 OP FIBRESULT = (FIBSTATE state) INT: prev OF state;
 
-# Command-line arguments start at 4. If too few, exit #
-IF argc < 4
-THEN
-    usage;
-    stop
-FI;
+PROC show fibonacci values = (INT n) VOID:
+(
+    # Initialize Fibonacci state #
+    FIBSTATE state := init fib;
+
+    # Update Fibonacci state and show results for requested number of values #
+    FOR k TO n
+    DO
+        state := FIB state;
+        printf(($g": "gl$, whole(k, 0), whole(FIBRESULT state, 0)))
+    OD
+);
 
 # Parse 1st command-line argument #
 STRING s := argv(4);
 PARSEINT_RESULT result := parse int(s);
 
-# If invalid, extra characters, exit #
+# If invalid or extra characters, exit #
 INT n := value OF result;
 IF NOT (valid OF result) OR (leftover OF result) /= ""
 THEN
@@ -84,9 +79,5 @@ THEN
     stop
 FI;
 
-FIBSTATE state := init fib;
-FOR k TO n
-DO
-    state := FIB state;
-    print((whole(k, 0), ": ", whole(FIBRESULT state, 0), newline))
-OD
+# Show requested number of Fibonacci values #
+show fibonacci values(n)
