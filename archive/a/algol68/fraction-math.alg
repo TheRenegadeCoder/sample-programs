@@ -187,7 +187,7 @@ PROC show fraction result = (FRACTIONRESULT result) VOID:
 # Parse 1st and 3rd command-line argument #
 [2]FRACTION fractions;
 STRING s;
-[]INT arg nums := (4, 6);
+[2]INT arg nums := (4, 6);
 FOR k TO 2
 DO
     s := argv(arg nums[k]);
@@ -199,9 +199,7 @@ DO
     THEN
         usage;
         stop
-    FI;
-
-    arg num +:= 2
+    FI
 OD;
 
 # Get 2nd command-line argument. If empty, exit #
