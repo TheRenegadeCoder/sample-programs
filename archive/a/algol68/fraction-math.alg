@@ -210,6 +210,6 @@ THEN
     stop
 FI;
 
-# DO fraction math  and show result #
+# DO fraction math and show result #
 FRACTIONRESULT fraction result := fraction math(fractions[1], op, fractions[2]);
 show fraction result(fraction result)
