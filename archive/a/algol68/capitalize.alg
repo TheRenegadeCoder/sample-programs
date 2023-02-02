@@ -1,11 +1,10 @@
 PROC usage = VOID: printf(($gl$, "Usage: please provide a string"));
 
-# Command-line arguments start at 4. If too few, exit #
-IF argc < 4
-THEN
-    usage;
-    stop
-FI;
+PROC capitalize = (STRING s) STRING:
+(
+    # Capitalize first letter if lowercase #
+    toupper(s[1]) + s[2:]
+);
 
 # Get 1st command-line argument. Exit if empty #
 STRING s := argv(4);
@@ -15,9 +14,6 @@ THEN
     stop
 FI;
 
-IF islower(s[1])
-THEN
-    s[1] := toupper(s[1])
-FI;
-
+# Capitalize string and show it #
+s := capitalize(s);
 printf(($gl$, s))

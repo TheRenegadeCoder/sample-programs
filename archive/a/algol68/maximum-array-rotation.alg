@@ -92,67 +92,89 @@ PROC parse int list = (REF STRING s) PARSEINTLIST_RESULT:
 );
 
 PROC usage = VOID: (
-    printf(($gl$, "Usage: please provide a list of at least two integers to sort in the format ""1, 2, 3, 4, 5"""))
+    printf(($gl$, "Usage: please provide a list of integers (e.g. ""8, 3, 1, 2"")"))
 );
 
-PROC selection sort = (REF []INT values) VOID:
+COMMENT
+Find maximum array rotation, max{W(k), k=0..N-1}, where:
+
+    W(k) = sum{i*a[i+k mod N], i=0..N-1}
+
+The value of W(k) can be calculated from W(k-1) as follows:
+
+    W(k) = W(k-1) - S + N*a[k-1]
+
+where:
+
+    S = sum{a[i], i=0..N-1} = sum{a[i+x mod N], i=0..N-1}
+
+where: x is any arbitary value
+
+Proof:
+
+- Set up initial assumption for W(k):
+
+    W(k-1) - S + N*a[k-1] = sum{i*a[i+k-1 mod N], i=0..N-1} - sum{a[i+k-1 mod N}, i=0..N-1} + N*a[k-1]
+
+- Combine the two sums:
+
+    = sum{(i-1)*a[i+k-1 mod N], i=0..N-1} + N*a[k-1]
+
+- Pull out the i=0 term:
+    = -a[k-1] + sum{(i-1)*a[i+k-1 mod N], i=1..N-1} + N*a[k-1]
+
+- Combine the a[k-1] terms:
+
+    = sum{(i-1}*a[i+k-1 mod N], i=1..N-1) + (N-1)*a[k-1]
+
+- Change indexing from i=1..N-1 to 0..N-2:
+
+    = sum{i*a[i+k mod N], i=0..N-2} + (N-1)*a[k-1]
+
+- Bring the i=N-1 term back into the sum since N-1+k mod N equals k-1:
+
+    = sum{i*a[i+k mod N], i=0..N-1}
+
+- The above equals W(k)
+COMMENT
+PROC maximum array rotation = (REF []INT values) INT:
 (
-    COMMENT
-    Source: https://en.wikipedia.org/wiki/Selection_sort#Implementations
-    COMMENT
-
-    INT n = UPB values;    
-    INT temp;
-    INT min pos;
-    FOR i TO n - 1
-    DO
-        min pos := i;
-        FOR j FROM i + 1 TO n
-        DO
-            IF values[j] < values[min pos]
-            THEN
-                min pos := j
-            FI
-        OD;
-
-        IF min pos /= i
-        THEN
-            temp := values[i];
-            values[i] := values[min pos];
-            values[min pos] := temp
-        FI
-    OD
-);
-
-PROC show list values = (REF []INT values) VOID:
-(
+    # Calculate sum and initial array rotation #
+    INT s := 0;
+    INT w := 0;
     INT n = UPB values;
-    FOR k TO n
+    FOR i TO n
     DO
-        IF k > 1
-        THEN
-            print(", ")
-        FI;
-
-        print(whole(values[k], 0))
+        s +:= values[i];
+        w +:= (i - 1) * values[i]
     OD;
 
-    IF n > 0
-    THEN
-        print(newline)
-    FI
+    # Initialize maximum array rotation #
+    INT wmax := w;
+
+    # Adjust array rotation and update maximum #
+    FOR i TO n - 1
+    DO
+        w +:= n * values[i] - s;
+        IF w > wmax
+        THEN
+            wmax := w
+        FI
+    OD;
+
+    wmax
 );
 
 # Parse 1st command-line argument #
 STRING s := argv(4);
 PARSEINTLIST_RESULT list result := parse int list(s);
 REF []INT values := values OF list result;
-IF NOT valid OF list result OR UPB values < 2
+IF NOT valid OF list result
 THEN
     usage;
     stop
 FI;
 
-# Do selection sort and show results #
-selection sort(values);
-show list values(values)
+# Find maximum array rotation and display result #
+INT value = maximum array rotation(values);
+printf(($gl$, whole(value, 0)))

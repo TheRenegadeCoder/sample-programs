@@ -92,67 +92,44 @@ PROC parse int list = (REF STRING s) PARSEINTLIST_RESULT:
 );
 
 PROC usage = VOID: (
-    printf(($gl$, "Usage: please provide a list of at least two integers to sort in the format ""1, 2, 3, 4, 5"""))
+    printf(($gl$, "Usage: please provide a list of integers (""1, 4, 5, 11, 12"") and the integer to find (""11"")"))
 );
 
-PROC selection sort = (REF []INT values) VOID:
+PROC linear search = (INT target, REF []INT values) INT:
 (
-    COMMENT
-    Source: https://en.wikipedia.org/wiki/Selection_sort#Implementations
-    COMMENT
-
-    INT n = UPB values;    
-    INT temp;
-    INT min pos;
-    FOR i TO n - 1
+    INT found := 0;
+    FOR k TO UPB values
+    WHILE found = 0
     DO
-        min pos := i;
-        FOR j FROM i + 1 TO n
-        DO
-            IF values[j] < values[min pos]
-            THEN
-                min pos := j
-            FI
-        OD;
-
-        IF min pos /= i
+        IF values[k] = target
         THEN
-            temp := values[i];
-            values[i] := values[min pos];
-            values[min pos] := temp
-        FI
-    OD
-);
-
-PROC show list values = (REF []INT values) VOID:
-(
-    INT n = UPB values;
-    FOR k TO n
-    DO
-        IF k > 1
-        THEN
-            print(", ")
-        FI;
-
-        print(whole(values[k], 0))
+            found := k
+        FI        
     OD;
 
-    IF n > 0
-    THEN
-        print(newline)
-    FI
+    found
 );
 
 # Parse 1st command-line argument #
 STRING s := argv(4);
 PARSEINTLIST_RESULT list result := parse int list(s);
 REF []INT values := values OF list result;
-IF NOT valid OF list result OR UPB values < 2
+IF NOT valid OF list result
 THEN
     usage;
     stop
 FI;
 
-# Do selection sort and show results #
-selection sort(values);
-show list values(values)
+# Parse 2nd command-line argument #
+s := argv(5);
+PARSEINT_RESULT result := parse int(s);
+INT target := value OF result;
+IF NOT valid OF result OR leftover OF result /= ""
+THEN
+    usage;
+    stop
+FI;
+
+# Do linear search and show results #
+INT index = linear search(target, values);
+printf(($gl$, (index > 0 | "true" | "false")))
