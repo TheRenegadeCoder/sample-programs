@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Algol68! To find documentation related to the Algol68 code in this repo, look [here.](https://sampleprograms.io/languages/algol68)
 
-## Sample Programs List - 26/37 :relaxed:
+## Sample Programs List - 27/37 :relaxed:
 
 In this section, we feature a list of completed and missing programs in Algol68. See above for the current amount of completed programs in Algol68. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -34,6 +34,7 @@ Below, you'll find a list of completed code snippets in Algol68. Code snippets p
 - :white_check_mark: [Quine in Algol68](https://sampleprograms.io/projects/quine/algol68) [[Requirements](https://sampleprograms.io/projects/quine)]
 - :white_check_mark: [Remove All Whitespace in Algol68](https://sampleprograms.io/projects/remove-all-whitespace/algol68) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :white_check_mark: [Reverse String in Algol68](https://sampleprograms.io/projects/reverse-string/algol68) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
+- :warning: [Roman Numeral in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+algol68) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :white_check_mark: [Rot13 in Algol68](https://sampleprograms.io/projects/rot13/algol68) [[Requirements](https://sampleprograms.io/projects/rot13)]
 - :white_check_mark: [Selection Sort in Algol68](https://sampleprograms.io/projects/selection-sort/algol68) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 
@@ -49,7 +50,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+algol68) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+algol68) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+algol68) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
-- :x: [Roman Numeral](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Roman+Numeral+in+algol68) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Sleep+Sort+in+algol68) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+algol68) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
