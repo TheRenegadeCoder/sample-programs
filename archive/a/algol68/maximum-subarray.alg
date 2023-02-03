@@ -92,7 +92,7 @@ PROC parse int list = (REF STRING s) PARSEINTLIST_RESULT:
 );
 
 PROC usage = VOID: (
-    printf(($gl$, "Usage: please provide a list of at least two integers to sort in the format ""1, 2, 3, 4, 5"""))
+    printf(($gl$, "Usage: Please provide a list of at least two integers to sort in the format: ""1, 2, 3, 4, 5"""))
 );
 
 OP MAX = (INT a, INT b) INT: (a > b | a | b);
