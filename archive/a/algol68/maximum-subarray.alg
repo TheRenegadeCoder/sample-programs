@@ -95,8 +95,7 @@ PROC usage = VOID: (
     printf(($gl$, "Usage: Please provide a list of at least two integers to sort in the format: ""1, 2, 3, 4, 5"""))
 );
 
-OP MAX = (INT a, INT b) INT: (a > b | a | b);
-PRIO MAX = 8;
+PROC max = (INT a, INT b) INT: (a > b | a | b);
 
 COMMENT
 Find maximum subarray using Kadane's algorithm.
@@ -108,8 +107,8 @@ PROC maximum subarray = (REF []INT values) INT:
     INT current sum := 0;
     FOR k TO UPB values
     DO
-        current sum := values[k] MAX (current sum + values[k]);
-        best sum := best sum MAX current sum
+        current sum := values[k] + max(0, current sum);
+        best sum := max(best sum, current sum)
     OD;
 
     best sum
