@@ -146,7 +146,7 @@ PROC prim mst = (REF [][]INT graph, INT num vertices) REF []MST:
         # Add picked vertex to MST set #
         mst set[u] := TRUE;
 
-        # Update key values and parent indices of picked adjancent #
+        # Update key values and parent indices of picked adjacent #
         # vertices. Only consider vertices not yet in MST #
         FOR v TO num vertices
         DO
