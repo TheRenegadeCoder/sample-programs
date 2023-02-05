@@ -113,17 +113,8 @@ PROC convert to matrix = (REF []INT values, INT num rows, INT num cols) REF [, ]
 # Return a transposed version of a matrix #
 PROC transpose matrix = (REF [, ]INT matrix) REF [, ]INT:
 (
-    INT num rows = 1 UPB matrix;
-    INT num cols = 2 UPB matrix;
-    HEAP [num cols, num rows]INT matrix t;
-
-    # Transpose matrix one row at a time #
-    FOR i TO num rows
-    DO
-        matrix t[:, i] := matrix[i, :]
-    OD;
-
-    matrix t
+    # Use built-in transpose operator #
+    TRNSP matrix
 );
 
 # Show matrix as a list of comma-separated values #
