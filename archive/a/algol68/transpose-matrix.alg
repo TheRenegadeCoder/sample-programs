@@ -94,16 +94,16 @@ PROC parse int list = (REF STRING s) PARSEINTLIST_RESULT:
 PROC usage = VOID: printf(($gl$, "Usage: please enter the dimension of the matrix and the serialized matrix"));
 
 # Convert list of values to a matrix #
-PROC convert to matrix = (REF []INT values, INT num rows, INT num cols) REF [][]INT:
+PROC convert to matrix = (REF []INT values, INT num rows, INT num cols) REF [, ]INT:
 (
-    HEAP [num rows][num cols]INT matrix;
+    HEAP [num rows, num cols]INT matrix;
     INT count := 0;
     FOR i TO num rows
     DO
         FOR j TO num cols
         DO
             count +:= 1;
-            matrix[i][j] := values[count]
+            matrix[i, j] := values[count]
         OD
     OD;
 
@@ -111,28 +111,26 @@ PROC convert to matrix = (REF []INT values, INT num rows, INT num cols) REF [][]
 );
 
 # Return a transposed version of a matrix #
-PROC transpose matrix = (REF [][]INT matrix) REF [][]INT:
+PROC transpose matrix = (REF [, ]INT matrix) REF [, ]INT:
 (
-    INT num rows = UPB matrix;
-    INT num cols = UPB matrix[1];
-    HEAP [num cols][num rows]INT matrix t;
+    INT num rows = 1 UPB matrix;
+    INT num cols = 2 UPB matrix;
+    HEAP [num cols, num rows]INT matrix t;
 
+    # Transpose matrix one row at a time #
     FOR i TO num rows
     DO
-        FOR j TO num cols
-        DO
-            matrix t[j][i] := matrix[i][j]
-        OD
+        matrix t[:, i] := matrix[i, :]
     OD;
 
     matrix t
 );
 
 # Show matrix as a list of comma-separated values #
-PROC show matrix as list = (REF [][]INT matrix) VOID:
+PROC show matrix as list = (REF [, ]INT matrix) VOID:
 (
-    INT num rows = UPB matrix;
-    INT num cols = UPB matrix[1];
+    INT num rows = 1 UPB matrix;
+    INT num cols = 2 UPB matrix;
     FOR i TO num rows
     DO
         FOR j TO num cols
@@ -142,7 +140,7 @@ PROC show matrix as list = (REF [][]INT matrix) VOID:
                 print(", ")
             FI;
 
-            print(whole(matrix[i][j], 0))
+            print(whole(matrix[i, j], 0))
         OD
     OD;
 
@@ -182,10 +180,10 @@ THEN
 FI;
 
 # Convert values to matrix #
-REF [][]INT matrix := convert to matrix(values, num rows, num cols);
+REF [, ]INT matrix := convert to matrix(values, num rows, num cols);
 
 # Transpose matrix #
-REF [][]INT matrix t := transpose matrix(matrix);
+REF [, ]INT matrix t := transpose matrix(matrix);
 
 # Show transposed matrix as a list #
 show matrix as list(matrix t)
