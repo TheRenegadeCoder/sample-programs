@@ -117,7 +117,7 @@ COMMENT
 MODE MST = STRUCT(INT vertex1, INT vertex2, INT weight);
 PROC prim mst = (REF [][]INT graph) REF []MST:
 (
-    INT num vertices := 1 UPB graph;
+    INT num vertices := UPB graph;
 
     # Array to store constructed MST #
     [num vertices]INT parents;
