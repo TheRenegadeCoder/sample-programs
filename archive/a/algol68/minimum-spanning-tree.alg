@@ -115,8 +115,10 @@ Prim's Minimum Spanning Tree (MST) Algorithm based on C implementation of
 https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/
 COMMENT
 MODE MST = STRUCT(INT vertex1, INT vertex2, INT weight);
-PROC prim mst = (REF [][]INT graph, INT num vertices) REF []MST:
+PROC prim mst = (REF [][]INT graph) REF []MST:
 (
+    INT num vertices := 1 UPB graph;
+
     # Array to store constructed MST #
     [num vertices]INT parents;
 
@@ -216,7 +218,7 @@ FI;
 REF [][]INT graph := convert to matrix(values, sqrt num values, sqrt num values);
 
 # Get MST using Prim's algorithm #
-REF []MST mst := prim mst(graph, sqrt num values);
+REF []MST mst := prim mst(graph);
 
 # Calculate total weight of MST and display #
 INT total weight := get total mst weight(mst);
