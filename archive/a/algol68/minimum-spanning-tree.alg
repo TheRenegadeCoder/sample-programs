@@ -94,16 +94,16 @@ PROC parse int list = (REF STRING s) PARSEINTLIST_RESULT:
 PROC usage = VOID: printf(($gl$, "Usage: please provide a comma-separated list of integers"));
 
 # Convert list of values to a matrix #
-PROC convert to matrix = (REF []INT values, INT num rows, INT num cols) REF [][]INT:
+PROC convert to matrix = (REF []INT values, INT num rows, INT num cols) REF [, ]INT:
 (
-    HEAP [num rows][num cols]INT matrix;
+    HEAP [num rows, num cols]INT matrix;
     INT count := 0;
     FOR i TO num rows
     DO
         FOR j TO num cols
         DO
             count +:= 1;
-            matrix[i][j] := values[count]
+            matrix[i, j] := values[count]
         OD
     OD;
 
@@ -115,7 +115,7 @@ Prim's Minimum Spanning Tree (MST) Algorithm based on C implementation of
 https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/
 COMMENT
 MODE MST = STRUCT(INT vertex1, INT vertex2, INT weight);
-PROC prim mst = (REF [][]INT graph) REF []MST:
+PROC prim mst = (REF [, ]INT graph) REF []MST:
 (
     INT num vertices := UPB graph;
 
@@ -152,7 +152,7 @@ PROC prim mst = (REF [][]INT graph) REF []MST:
         # vertices. Only consider vertices not yet in MST #
         FOR v TO num vertices
         DO
-            INT graph value := graph[u][v];
+            INT graph value := graph[u, v];
             IF NOT mst set[v] AND graph value > 0 AND graph value < keys[v]
             THEN
                 parents[v] := u;
@@ -167,7 +167,7 @@ PROC prim mst = (REF [][]INT graph) REF []MST:
     # Skip over root and adjust vertex numbers to account for 1-based indexing #
     FOR k FROM 2 TO num vertices
     DO
-        mst[k - 1] := MST(parents[k] - 1, k - 1, graph[k][parents[k]])
+        mst[k - 1] := MST(parents[k] - 1, k - 1, graph[k, parents[k]])
     OD;
 
     mst
@@ -215,7 +215,7 @@ THEN
 FI;
 
 # Convert values to matrix #
-REF [][]INT graph := convert to matrix(values, sqrt num values, sqrt num values);
+REF [, ]INT graph := convert to matrix(values, sqrt num values, sqrt num values);
 
 # Get MST using Prim's algorithm #
 REF []MST mst := prim mst(graph);
