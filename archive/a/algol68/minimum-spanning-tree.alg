@@ -100,7 +100,7 @@ PROC convert to matrix = (REF []INT values, INT num rows, INT num cols) REF [][]
     INT count := 0;
     FOR i TO num rows
     DO
-        FOR j TO num rows
+        FOR j TO num cols
         DO
             count +:= 1;
             matrix[i][j] := values[count]
