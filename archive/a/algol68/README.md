@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Algol68! To find documentation related to the Algol68 code in this repo, look [here.](https://sampleprograms.io/languages/algol68)
 
-## Sample Programs List - 28/37 :smile:
+## Sample Programs List - 29/37 :smile:
 
 In this section, we feature a list of completed and missing programs in Algol68. See above for the current amount of completed programs in Algol68. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -28,6 +28,7 @@ Below, you'll find a list of completed code snippets in Algol68. Code snippets p
 - :white_check_mark: [Linear Search in Algol68](https://sampleprograms.io/projects/linear-search/algol68) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :white_check_mark: [Longest Word in Algol68](https://sampleprograms.io/projects/longest-word/algol68) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :white_check_mark: [Maximum Array Rotation in Algol68](https://sampleprograms.io/projects/maximum-array-rotation/algol68) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
+- :warning: [Maximum Subarray in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+maximum+subarray+algol68) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :white_check_mark: [Merge Sort in Algol68](https://sampleprograms.io/projects/merge-sort/algol68) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
 - :white_check_mark: [Palindromic Number in Algol68](https://sampleprograms.io/projects/palindromic-number/algol68) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :white_check_mark: [Prime Number in Algol68](https://sampleprograms.io/projects/prime-number/algol68) [[Requirements](https://sampleprograms.io/projects/prime-number)]
@@ -48,7 +49,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Job+Sequencing+in+algol68) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :x: [Longest Common Subsequence](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Longest+Common+Subsequence+in+algol68) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
 - :x: [Longest Palindromic Substring](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Longest+Palindromic+Substring+in+algol68) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
-- :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+algol68) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+algol68) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
 - :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Sleep+Sort+in+algol68) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+algol68) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
