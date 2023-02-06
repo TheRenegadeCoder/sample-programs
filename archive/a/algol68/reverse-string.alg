@@ -1,11 +1,15 @@
 PROC usage = VOID: printf(($gl$, "Usage: please provide a string"));
 
-# Command-line arguments start at 4. If too few, exit #
-IF argc < 4
-THEN
-    usage;
-    stop
-FI;
+PROC reverse string = (STRING s) STRING:
+(
+    STRING t;
+    FOR n FROM UPB s DOWNTO 1
+    DO
+        t +:= s[n]
+    OD;
+
+    t
+);
 
 # Get 1st command-line argument. Exit if empty #
 STRING s := argv(4);
@@ -15,13 +19,6 @@ THEN
     stop
 FI;
 
-CHAR temp;
-INT len := UPB s;
-FOR n TO len OVER 2
-DO
-    temp := s[len + 1 - n];
-    s[len + 1 - n] := s[n];
-    s[n] := temp
-OD;
-
+# Reverse string and show result #
+s := reverse string(s);
 printf(($gl$, s))
