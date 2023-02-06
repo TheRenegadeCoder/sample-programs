@@ -9,11 +9,11 @@ invalid_permutations = (
         (
             'no input',
             None,
-            'Usage: Please provide a list of at least two integers to sort in the format: "1, 2, 3, 4, 5"'
+            'Usage: Please provide a list of integers in the format: "1, 2, 3, 4, 5"'
         ), (
             'empty input',
             '""',
-            'Usage: Please provide a list of at least two integers to sort in the format: "1, 2, 3, 4, 5"'
+            'Usage: Please provide a list of integers in the format: "1, 2, 3, 4, 5"'
         )
     ]
 )
