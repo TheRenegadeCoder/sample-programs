@@ -16,11 +16,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-      with:
-        submodules: recursive
-    
-    - name: Update Submodules
-      run: git submodule update --remote
     
     - name: Set up Python 3.9
       uses: actions/setup-python@v4
@@ -33,7 +28,7 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
         
     - name: Generate READMEs
-      run: ronbun archive/ --log=DEBUG
+      run: ronbun . --log=DEBUG
         
     - name: Commit READMEs
       continue-on-error: true

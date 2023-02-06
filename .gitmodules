@@ -1,4 +1,0 @@
-[submodule "docs"]
-	path = docs
-	url = https://github.com/TheRenegadeCoder/sample-programs-website.git
-	branch = main
