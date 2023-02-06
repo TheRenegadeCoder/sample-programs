@@ -10,18 +10,18 @@ In this section, we feature a list of completed and missing programs in Julia. S
 
 Below, you'll find a list of completed code snippets in Julia. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :white_check_mark: [Baklava in Julia](https://sampleprograms.io/projects/baklava/julia) [[Requirements](https://sampleprograms.io/projects/baklava)]
-- :white_check_mark: [Bubble Sort in Julia](https://sampleprograms.io/projects/bubble-sort/julia) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
-- :white_check_mark: [Capitalize in Julia](https://sampleprograms.io/projects/capitalize/julia) [[Requirements](https://sampleprograms.io/projects/capitalize)]
-- :white_check_mark: [Even Odd in Julia](https://sampleprograms.io/projects/even-odd/julia) [[Requirements](https://sampleprograms.io/projects/even-odd)]
-- :white_check_mark: [Factorial in Julia](https://sampleprograms.io/projects/factorial/julia) [[Requirements](https://sampleprograms.io/projects/factorial)]
-- :white_check_mark: [Fibonacci in Julia](https://sampleprograms.io/projects/fibonacci/julia) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
-- :white_check_mark: [Fizz Buzz in Julia](https://sampleprograms.io/projects/fizz-buzz/julia) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
+- :warning: [Baklava in Julia](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+julia) [[Requirements](https://sampleprograms.io/projects/baklava)]
+- :warning: [Bubble Sort in Julia](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+julia) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
+- :warning: [Capitalize in Julia](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+julia) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :warning: [Even Odd in Julia](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+julia) [[Requirements](https://sampleprograms.io/projects/even-odd)]
+- :warning: [Factorial in Julia](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+julia) [[Requirements](https://sampleprograms.io/projects/factorial)]
+- :warning: [Fibonacci in Julia](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+julia) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
+- :warning: [Fizz Buzz in Julia](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+julia) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Julia](https://sampleprograms.io/projects/hello-world/julia) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :white_check_mark: [Palindromic Number in Julia](https://sampleprograms.io/projects/palindromic-number/julia) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
-- :white_check_mark: [Remove All Whitespace in Julia](https://sampleprograms.io/projects/remove-all-whitespace/julia) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
-- :white_check_mark: [Reverse String in Julia](https://sampleprograms.io/projects/reverse-string/julia) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
-- :white_check_mark: [Selection Sort in Julia](https://sampleprograms.io/projects/selection-sort/julia) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
+- :warning: [Palindromic Number in Julia](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+julia) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
+- :warning: [Remove All Whitespace in Julia](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+remove+all+whitespace+julia) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
+- :warning: [Reverse String in Julia](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+julia) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
+- :warning: [Selection Sort in Julia](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+julia) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 
 ### Missing Programs
 

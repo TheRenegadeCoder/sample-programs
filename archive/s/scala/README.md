@@ -10,16 +10,16 @@ In this section, we feature a list of completed and missing programs in Scala. S
 
 Below, you'll find a list of completed code snippets in Scala. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :white_check_mark: [Bubble Sort in Scala](https://sampleprograms.io/projects/bubble-sort/scala) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
-- :white_check_mark: [Capitalize in Scala](https://sampleprograms.io/projects/capitalize/scala) [[Requirements](https://sampleprograms.io/projects/capitalize)]
-- :white_check_mark: [Even Odd in Scala](https://sampleprograms.io/projects/even-odd/scala) [[Requirements](https://sampleprograms.io/projects/even-odd)]
-- :white_check_mark: [Factorial in Scala](https://sampleprograms.io/projects/factorial/scala) [[Requirements](https://sampleprograms.io/projects/factorial)]
-- :white_check_mark: [Fibonacci in Scala](https://sampleprograms.io/projects/fibonacci/scala) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
+- :warning: [Bubble Sort in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+scala) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
+- :warning: [Capitalize in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+scala) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :warning: [Even Odd in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+scala) [[Requirements](https://sampleprograms.io/projects/even-odd)]
+- :warning: [Factorial in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+scala) [[Requirements](https://sampleprograms.io/projects/factorial)]
+- :warning: [Fibonacci in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+scala) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :white_check_mark: [File Input Output in Scala](https://sampleprograms.io/projects/file-input-output/scala) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
-- :white_check_mark: [Fizz Buzz in Scala](https://sampleprograms.io/projects/fizz-buzz/scala) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
+- :warning: [Fizz Buzz in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+scala) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Scala](https://sampleprograms.io/projects/hello-world/scala) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :white_check_mark: [Quick Sort in Scala](https://sampleprograms.io/projects/quick-sort/scala) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
-- :white_check_mark: [Reverse String in Scala](https://sampleprograms.io/projects/reverse-string/scala) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
+- :warning: [Quick Sort in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+scala) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
+- :warning: [Reverse String in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+scala) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 
 ### Missing Programs
 

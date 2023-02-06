@@ -10,23 +10,23 @@ In this section, we feature a list of completed and missing programs in Rust. Se
 
 Below, you'll find a list of completed code snippets in Rust. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :white_check_mark: [Binary Search in Rust](https://sampleprograms.io/projects/binary-search/rust) [[Requirements](https://sampleprograms.io/projects/binary-search)]
-- :white_check_mark: [Bubble Sort in Rust](https://sampleprograms.io/projects/bubble-sort/rust) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
-- :white_check_mark: [Capitalize in Rust](https://sampleprograms.io/projects/capitalize/rust) [[Requirements](https://sampleprograms.io/projects/capitalize)]
-- :white_check_mark: [Even Odd in Rust](https://sampleprograms.io/projects/even-odd/rust) [[Requirements](https://sampleprograms.io/projects/even-odd)]
-- :white_check_mark: [Factorial in Rust](https://sampleprograms.io/projects/factorial/rust) [[Requirements](https://sampleprograms.io/projects/factorial)]
-- :white_check_mark: [Fibonacci in Rust](https://sampleprograms.io/projects/fibonacci/rust) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
-- :white_check_mark: [File Input Output in Rust](https://sampleprograms.io/projects/file-input-output/rust) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
+- :warning: [Binary Search in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+binary+search+rust) [[Requirements](https://sampleprograms.io/projects/binary-search)]
+- :warning: [Bubble Sort in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+rust) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
+- :warning: [Capitalize in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+rust) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :warning: [Even Odd in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+rust) [[Requirements](https://sampleprograms.io/projects/even-odd)]
+- :warning: [Factorial in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+rust) [[Requirements](https://sampleprograms.io/projects/factorial)]
+- :warning: [Fibonacci in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+rust) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
+- :warning: [File Input Output in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+rust) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :white_check_mark: [Fizz Buzz in Rust](https://sampleprograms.io/projects/fizz-buzz/rust) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Rust](https://sampleprograms.io/projects/hello-world/rust) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :white_check_mark: [Insertion Sort in Rust](https://sampleprograms.io/projects/insertion-sort/rust) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
-- :white_check_mark: [Merge Sort in Rust](https://sampleprograms.io/projects/merge-sort/rust) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
-- :white_check_mark: [Prime Number in Rust](https://sampleprograms.io/projects/prime-number/rust) [[Requirements](https://sampleprograms.io/projects/prime-number)]
-- :white_check_mark: [Quick Sort in Rust](https://sampleprograms.io/projects/quick-sort/rust) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
-- :white_check_mark: [Reverse String in Rust](https://sampleprograms.io/projects/reverse-string/rust) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
-- :white_check_mark: [Roman Numeral in Rust](https://sampleprograms.io/projects/roman-numeral/rust) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
-- :white_check_mark: [Rot13 in Rust](https://sampleprograms.io/projects/rot13/rust) [[Requirements](https://sampleprograms.io/projects/rot13)]
-- :white_check_mark: [Sleep Sort in Rust](https://sampleprograms.io/projects/sleep-sort/rust) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
+- :warning: [Insertion Sort in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+rust) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
+- :warning: [Merge Sort in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+rust) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
+- :warning: [Prime Number in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+rust) [[Requirements](https://sampleprograms.io/projects/prime-number)]
+- :warning: [Quick Sort in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+rust) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
+- :warning: [Reverse String in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+rust) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
+- :warning: [Roman Numeral in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+rust) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
+- :warning: [Rot13 in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+rust) [[Requirements](https://sampleprograms.io/projects/rot13)]
+- :warning: [Sleep Sort in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sleep+sort+rust) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 
 ### Missing Programs
 

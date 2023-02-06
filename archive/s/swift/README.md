@@ -10,12 +10,12 @@ In this section, we feature a list of completed and missing programs in Swift. S
 
 Below, you'll find a list of completed code snippets in Swift. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :white_check_mark: [Baklava in Swift](https://sampleprograms.io/projects/baklava/swift) [[Requirements](https://sampleprograms.io/projects/baklava)]
-- :white_check_mark: [Even Odd in Swift](https://sampleprograms.io/projects/even-odd/swift) [[Requirements](https://sampleprograms.io/projects/even-odd)]
-- :white_check_mark: [Fibonacci in Swift](https://sampleprograms.io/projects/fibonacci/swift) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
+- :warning: [Baklava in Swift](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+swift) [[Requirements](https://sampleprograms.io/projects/baklava)]
+- :warning: [Even Odd in Swift](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+swift) [[Requirements](https://sampleprograms.io/projects/even-odd)]
+- :warning: [Fibonacci in Swift](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+swift) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :white_check_mark: [Fizz Buzz in Swift](https://sampleprograms.io/projects/fizz-buzz/swift) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
-- :white_check_mark: [Fraction Math in Swift](https://sampleprograms.io/projects/fraction-math/swift) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
-- :white_check_mark: [Hello World in Swift](https://sampleprograms.io/projects/hello-world/swift) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :warning: [Fraction Math in Swift](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fraction+math+swift) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
+- :warning: [Hello World in Swift](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+swift) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :white_check_mark: [Reverse String in Swift](https://sampleprograms.io/projects/reverse-string/swift) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 
 ### Missing Programs

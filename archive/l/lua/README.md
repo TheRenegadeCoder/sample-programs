@@ -10,19 +10,19 @@ In this section, we feature a list of completed and missing programs in Lua. See
 
 Below, you'll find a list of completed code snippets in Lua. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :white_check_mark: [Baklava in Lua](https://sampleprograms.io/projects/baklava/lua) [[Requirements](https://sampleprograms.io/projects/baklava)]
-- :white_check_mark: [Bubble Sort in Lua](https://sampleprograms.io/projects/bubble-sort/lua) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
-- :white_check_mark: [Capitalize in Lua](https://sampleprograms.io/projects/capitalize/lua) [[Requirements](https://sampleprograms.io/projects/capitalize)]
-- :white_check_mark: [Even Odd in Lua](https://sampleprograms.io/projects/even-odd/lua) [[Requirements](https://sampleprograms.io/projects/even-odd)]
-- :white_check_mark: [Factorial in Lua](https://sampleprograms.io/projects/factorial/lua) [[Requirements](https://sampleprograms.io/projects/factorial)]
-- :white_check_mark: [Fibonacci in Lua](https://sampleprograms.io/projects/fibonacci/lua) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
-- :white_check_mark: [File Input Output in Lua](https://sampleprograms.io/projects/file-input-output/lua) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
-- :white_check_mark: [Fizz Buzz in Lua](https://sampleprograms.io/projects/fizz-buzz/lua) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
+- :warning: [Baklava in Lua](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+lua) [[Requirements](https://sampleprograms.io/projects/baklava)]
+- :warning: [Bubble Sort in Lua](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+lua) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
+- :warning: [Capitalize in Lua](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+lua) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :warning: [Even Odd in Lua](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+lua) [[Requirements](https://sampleprograms.io/projects/even-odd)]
+- :warning: [Factorial in Lua](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+lua) [[Requirements](https://sampleprograms.io/projects/factorial)]
+- :warning: [Fibonacci in Lua](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+lua) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
+- :warning: [File Input Output in Lua](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+lua) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
+- :warning: [Fizz Buzz in Lua](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+lua) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Lua](https://sampleprograms.io/projects/hello-world/lua) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :white_check_mark: [Prime Number in Lua](https://sampleprograms.io/projects/prime-number/lua) [[Requirements](https://sampleprograms.io/projects/prime-number)]
+- :warning: [Prime Number in Lua](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+lua) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :white_check_mark: [Reverse String in Lua](https://sampleprograms.io/projects/reverse-string/lua) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
-- :white_check_mark: [Roman Numeral in Lua](https://sampleprograms.io/projects/roman-numeral/lua) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
-- :white_check_mark: [Rot13 in Lua](https://sampleprograms.io/projects/rot13/lua) [[Requirements](https://sampleprograms.io/projects/rot13)]
+- :warning: [Roman Numeral in Lua](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+lua) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
+- :warning: [Rot13 in Lua](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+lua) [[Requirements](https://sampleprograms.io/projects/rot13)]
 
 ### Missing Programs
 

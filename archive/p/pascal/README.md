@@ -10,14 +10,14 @@ In this section, we feature a list of completed and missing programs in Pascal. 
 
 Below, you'll find a list of completed code snippets in Pascal. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :white_check_mark: [Capitalize in Pascal](https://sampleprograms.io/projects/capitalize/pascal) [[Requirements](https://sampleprograms.io/projects/capitalize)]
-- :white_check_mark: [Even Odd in Pascal](https://sampleprograms.io/projects/even-odd/pascal) [[Requirements](https://sampleprograms.io/projects/even-odd)]
-- :white_check_mark: [Fibonacci in Pascal](https://sampleprograms.io/projects/fibonacci/pascal) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
-- :white_check_mark: [Fizz Buzz in Pascal](https://sampleprograms.io/projects/fizz-buzz/pascal) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
+- :warning: [Capitalize in Pascal](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+pascal) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :warning: [Even Odd in Pascal](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+pascal) [[Requirements](https://sampleprograms.io/projects/even-odd)]
+- :warning: [Fibonacci in Pascal](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+pascal) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
+- :warning: [Fizz Buzz in Pascal](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+pascal) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Pascal](https://sampleprograms.io/projects/hello-world/pascal) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :white_check_mark: [Palindromic Number in Pascal](https://sampleprograms.io/projects/palindromic-number/pascal) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
-- :white_check_mark: [Prime Number in Pascal](https://sampleprograms.io/projects/prime-number/pascal) [[Requirements](https://sampleprograms.io/projects/prime-number)]
-- :white_check_mark: [Reverse String in Pascal](https://sampleprograms.io/projects/reverse-string/pascal) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
+- :warning: [Palindromic Number in Pascal](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+pascal) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
+- :warning: [Prime Number in Pascal](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+pascal) [[Requirements](https://sampleprograms.io/projects/prime-number)]
+- :warning: [Reverse String in Pascal](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+pascal) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 
 ### Missing Programs
 
