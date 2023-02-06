@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Algol68! To find documentation related to the Algol68 code in this repo, look [here.](https://sampleprograms.io/languages/algol68)
 
-## Sample Programs List - 31/37 :smile:
+## Sample Programs List - 32/37 :smile:
 
 In this section, we feature a list of completed and missing programs in Algol68. See above for the current amount of completed programs in Algol68. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -41,6 +41,7 @@ Below, you'll find a list of completed code snippets in Algol68. Code snippets p
 - :white_check_mark: [Roman Numeral in Algol68](https://sampleprograms.io/projects/roman-numeral/algol68) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :white_check_mark: [Rot13 in Algol68](https://sampleprograms.io/projects/rot13/algol68) [[Requirements](https://sampleprograms.io/projects/rot13)]
 - :white_check_mark: [Selection Sort in Algol68](https://sampleprograms.io/projects/selection-sort/algol68) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
+- :warning: [Transpose Matrix in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+algol68) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
 ### Missing Programs
 
@@ -51,7 +52,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Longest Common Subsequence](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Longest+Common+Subsequence+in+algol68) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
 - :x: [Longest Palindromic Substring](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Longest+Palindromic+Substring+in+algol68) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
 - :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Sleep+Sort+in+algol68) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
-- :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+algol68) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
 ## Testing
 
