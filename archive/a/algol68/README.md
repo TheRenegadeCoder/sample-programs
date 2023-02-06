@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Algol68! To find documentation related to the Algol68 code in this repo, look [here.](https://sampleprograms.io/languages/algol68)
 
-## Sample Programs List - 29/37 :smile:
+## Sample Programs List - 30/37 :smile:
 
 In this section, we feature a list of completed and missing programs in Algol68. See above for the current amount of completed programs in Algol68. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -24,6 +24,7 @@ Below, you'll find a list of completed code snippets in Algol68. Code snippets p
 - :white_check_mark: [Fraction Math in Algol68](https://sampleprograms.io/projects/fraction-math/algol68) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :white_check_mark: [Hello World in Algol68](https://sampleprograms.io/projects/hello-world/algol68) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :white_check_mark: [Insertion Sort in Algol68](https://sampleprograms.io/projects/insertion-sort/algol68) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
+- :warning: [Job Sequencing in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+job+sequencing+algol68) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :white_check_mark: [Josephus Problem in Algol68](https://sampleprograms.io/projects/josephus-problem/algol68) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :white_check_mark: [Linear Search in Algol68](https://sampleprograms.io/projects/linear-search/algol68) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :white_check_mark: [Longest Word in Algol68](https://sampleprograms.io/projects/longest-word/algol68) [[Requirements](https://sampleprograms.io/projects/longest-word)]
@@ -46,7 +47,6 @@ The following list contains all of the approved programs that are not currently 
 
 - :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Convex+Hull+in+algol68) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Dijkstra+in+algol68) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
-- :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Job+Sequencing+in+algol68) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :x: [Longest Common Subsequence](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Longest+Common+Subsequence+in+algol68) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
 - :x: [Longest Palindromic Substring](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Longest+Palindromic+Substring+in+algol68) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+algol68) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
