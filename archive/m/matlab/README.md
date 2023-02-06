@@ -10,19 +10,19 @@ In this section, we feature a list of completed and missing programs in Matlab. 
 
 Below, you'll find a list of completed code snippets in Matlab. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :white_check_mark: [Bubble Sort in Matlab](https://sampleprograms.io/projects/bubble-sort/matlab) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
-- :white_check_mark: [Capitalize in Matlab](https://sampleprograms.io/projects/capitalize/matlab) [[Requirements](https://sampleprograms.io/projects/capitalize)]
-- :white_check_mark: [Even Odd in Matlab](https://sampleprograms.io/projects/even-odd/matlab) [[Requirements](https://sampleprograms.io/projects/even-odd)]
-- :white_check_mark: [Factorial in Matlab](https://sampleprograms.io/projects/factorial/matlab) [[Requirements](https://sampleprograms.io/projects/factorial)]
-- :white_check_mark: [Fibonacci in Matlab](https://sampleprograms.io/projects/fibonacci/matlab) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
-- :white_check_mark: [File Input Output in Matlab](https://sampleprograms.io/projects/file-input-output/matlab) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
-- :white_check_mark: [Fizz Buzz in Matlab](https://sampleprograms.io/projects/fizz-buzz/matlab) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
+- :warning: [Bubble Sort in Matlab](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+matlab) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
+- :warning: [Capitalize in Matlab](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+matlab) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :warning: [Even Odd in Matlab](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+matlab) [[Requirements](https://sampleprograms.io/projects/even-odd)]
+- :warning: [Factorial in Matlab](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+matlab) [[Requirements](https://sampleprograms.io/projects/factorial)]
+- :warning: [Fibonacci in Matlab](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+matlab) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
+- :warning: [File Input Output in Matlab](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+matlab) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
+- :warning: [Fizz Buzz in Matlab](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+matlab) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Matlab](https://sampleprograms.io/projects/hello-world/matlab) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :white_check_mark: [Insertion Sort in Matlab](https://sampleprograms.io/projects/insertion-sort/matlab) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
-- :white_check_mark: [Merge Sort in Matlab](https://sampleprograms.io/projects/merge-sort/matlab) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
-- :white_check_mark: [Prime Number in Matlab](https://sampleprograms.io/projects/prime-number/matlab) [[Requirements](https://sampleprograms.io/projects/prime-number)]
-- :white_check_mark: [Reverse String in Matlab](https://sampleprograms.io/projects/reverse-string/matlab) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
-- :white_check_mark: [Selection Sort in Matlab](https://sampleprograms.io/projects/selection-sort/matlab) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
+- :warning: [Insertion Sort in Matlab](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+matlab) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
+- :warning: [Merge Sort in Matlab](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+matlab) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
+- :warning: [Prime Number in Matlab](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+matlab) [[Requirements](https://sampleprograms.io/projects/prime-number)]
+- :warning: [Reverse String in Matlab](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+matlab) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
+- :warning: [Selection Sort in Matlab](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+matlab) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 
 ### Missing Programs
 

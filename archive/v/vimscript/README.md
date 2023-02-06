@@ -10,9 +10,9 @@ In this section, we feature a list of completed and missing programs in Vimscrip
 
 Below, you'll find a list of completed code snippets in Vimscript. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :white_check_mark: [Fizz Buzz in Vimscript](https://sampleprograms.io/projects/fizz-buzz/vimscript) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
-- :white_check_mark: [Hello World in Vimscript](https://sampleprograms.io/projects/hello-world/vimscript) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :white_check_mark: [Reverse String in Vimscript](https://sampleprograms.io/projects/reverse-string/vimscript) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
+- :warning: [Fizz Buzz in Vimscript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+vimscript) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
+- :warning: [Hello World in Vimscript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+vimscript) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :warning: [Reverse String in Vimscript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+vimscript) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 
 ### Missing Programs
 

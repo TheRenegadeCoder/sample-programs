@@ -10,12 +10,12 @@ In this section, we feature a list of completed and missing programs in Erlang. 
 
 Below, you'll find a list of completed code snippets in Erlang. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :white_check_mark: [Baklava in Erlang](https://sampleprograms.io/projects/baklava/erlang) [[Requirements](https://sampleprograms.io/projects/baklava)]
-- :white_check_mark: [Bubble Sort in Erlang](https://sampleprograms.io/projects/bubble-sort/erlang) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
-- :white_check_mark: [Factorial in Erlang](https://sampleprograms.io/projects/factorial/erlang) [[Requirements](https://sampleprograms.io/projects/factorial)]
-- :white_check_mark: [Fizz Buzz in Erlang](https://sampleprograms.io/projects/fizz-buzz/erlang) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
+- :warning: [Baklava in Erlang](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+erlang) [[Requirements](https://sampleprograms.io/projects/baklava)]
+- :warning: [Bubble Sort in Erlang](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+erlang) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
+- :warning: [Factorial in Erlang](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+erlang) [[Requirements](https://sampleprograms.io/projects/factorial)]
+- :warning: [Fizz Buzz in Erlang](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+erlang) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Erlang](https://sampleprograms.io/projects/hello-world/erlang) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :white_check_mark: [Reverse String in Erlang](https://sampleprograms.io/projects/reverse-string/erlang) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
+- :warning: [Reverse String in Erlang](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+erlang) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 
 ### Missing Programs
 

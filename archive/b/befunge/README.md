@@ -10,10 +10,10 @@ In this section, we feature a list of completed and missing programs in Befunge.
 
 Below, you'll find a list of completed code snippets in Befunge. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :white_check_mark: [Baklava in Befunge](https://sampleprograms.io/projects/baklava/befunge) [[Requirements](https://sampleprograms.io/projects/baklava)]
+- :warning: [Baklava in Befunge](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+befunge) [[Requirements](https://sampleprograms.io/projects/baklava)]
 - :white_check_mark: [Fizz Buzz in Befunge](https://sampleprograms.io/projects/fizz-buzz/befunge) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Befunge](https://sampleprograms.io/projects/hello-world/befunge) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :white_check_mark: [Quine in Befunge](https://sampleprograms.io/projects/quine/befunge) [[Requirements](https://sampleprograms.io/projects/quine)]
+- :warning: [Quine in Befunge](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+befunge) [[Requirements](https://sampleprograms.io/projects/quine)]
 
 ### Missing Programs
 

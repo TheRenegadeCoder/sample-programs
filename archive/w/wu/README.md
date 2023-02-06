@@ -10,7 +10,7 @@ In this section, we feature a list of completed and missing programs in Wu. See 
 
 Below, you'll find a list of completed code snippets in Wu. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :white_check_mark: [Hello World in Wu](https://sampleprograms.io/projects/hello-world/wu) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :warning: [Hello World in Wu](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+wu) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 
 ### Missing Programs
 

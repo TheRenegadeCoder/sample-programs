@@ -10,9 +10,9 @@ In this section, we feature a list of completed and missing programs in Nim. See
 
 Below, you'll find a list of completed code snippets in Nim. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :white_check_mark: [Fibonacci in Nim](https://sampleprograms.io/projects/fibonacci/nim) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
-- :white_check_mark: [Hello World in Nim](https://sampleprograms.io/projects/hello-world/nim) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :white_check_mark: [Reverse String in Nim](https://sampleprograms.io/projects/reverse-string/nim) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
+- :warning: [Fibonacci in Nim](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+nim) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
+- :warning: [Hello World in Nim](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+nim) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :warning: [Reverse String in Nim](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+nim) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 
 ### Missing Programs
 
