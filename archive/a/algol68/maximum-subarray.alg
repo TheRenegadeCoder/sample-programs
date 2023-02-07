@@ -91,9 +91,7 @@ PROC parse int list = (REF STRING s) PARSEINTLIST_RESULT:
     PARSEINTLIST_RESULT(valid, values)
 );
 
-PROC usage = VOID: (
-    printf(($gl$, "Usage: Please provide a list of at least two integers to sort in the format: ""1, 2, 3, 4, 5"""))
-);
+PROC usage = VOID: printf(($gl$, "Usage: Please provide a list of integers in the format: ""1, 2, 3, 4, 5"""));
 
 PROC max = (INT a, INT b) INT: (a > b | a | b);
 
