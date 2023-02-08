@@ -47,20 +47,21 @@ def create_graph(num_vertices, weights):
 
     return graph
 
-def dijkstra(graph):
+def dijkstra(graph, src):
     # Source: https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm#Pseudocode
 
     # Initialize distances to infinite and previous vertices to undefined
-    # Set first vertex distange to 0
-    dists = [0] + [sys.maxsize] * (graph.num_vertices - 1)
+    # Set source vertex distance to 0
+    dists = [sys.maxsize] * graph.num_vertices
     prevs = [-1] * (graph.num_vertices)
+    dists[src] = 0
 
     # Initialize unvisited nodes
     q = set(range(graph.num_vertices))
 
     # While any unvisited nodes
     while q:
-        # Pick a vertex u in Q with minimum weight
+        # Pick a vertex u in Q with minimum distance
         _, u = min(
             (dist, vertex) for vertex, dist in enumerate(dists) if vertex in q
         )
@@ -103,7 +104,7 @@ def main():
     graph = create_graph(num_vertices, weights)
 
     # Run Dijkstra's algorithm on graph and show distance to destination
-    dists, _ = dijkstra(graph)
+    dists, _ = dijkstra(graph, src)
     print(dists[dest])
 
 if __name__ == "__main__":
