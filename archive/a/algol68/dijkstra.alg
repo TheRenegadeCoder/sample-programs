@@ -251,6 +251,7 @@ PROC min distance = (REF []INT dists, REF []INT q) INT:
 
     min index
 );
+
 # Parse 1st command-line argument #
 STRING s := argv(4);
 PARSEINTLIST_RESULT list result := parse int list(s);
