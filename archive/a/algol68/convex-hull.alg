@@ -197,18 +197,8 @@ PROC show points = (REF []POINT points) VOID:
     INT n := UPB points;
     FOR k TO n
     DO
-        IF k > 1
-        THEN
-            print(", ")
-        FI;
-
-        print(("(", whole(x OF points[k], 0), ", ", whole(y OF points[k], 0), ")"))
-    OD;
-
-    IF n > 0
-    THEN
-        print(newline)
-    FI
+        printf(($"("g", "g")"l$, whole(x OF points[k], 0), whole(y OF points[k], 0)))
+    OD
 );
 
 # Parse 1st and 2nd command-line arguments #
