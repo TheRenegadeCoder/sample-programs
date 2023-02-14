@@ -26,7 +26,7 @@ function rot13(sequence s)
 end function
 
 procedure usage()
-    printf(STDOUT, "Usage: please provide a string to encrypt")
+    puts(STDOUT, "Usage: please provide a string to encrypt\n")
     abort(0)
 end procedure
 
