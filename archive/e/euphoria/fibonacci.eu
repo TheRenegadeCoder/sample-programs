@@ -50,12 +50,12 @@ procedure show_fibonacci_values(integer value)
     -- Update Fibonacci state and show results for requested number of values
     for n = 1 to value
     do
-        printf(STDOUT, "%d: %d\n", {n, b})
-
         -- fib(n) = fib(n - 1) + fib(n - 2)
-        t = b
-        b += a
-        a = t
+        t = a + b
+        a = b
+        b = t
+
+        printf(STDOUT, "%d: %d\n", {n, a})
     end for
 end procedure
 
