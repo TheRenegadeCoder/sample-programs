@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Algol68! To find documentation related to the Algol68 code in this repo, look [here.](https://sampleprograms.io/languages/algol68)
 
-## Sample Programs List - 33/37 :smile:
+## Sample Programs List - 36/37 :smile:
 
 In this section, we feature a list of completed and missing programs in Algol68. See above for the current amount of completed programs in Algol68. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -14,6 +14,7 @@ Below, you'll find a list of completed code snippets in Algol68. Code snippets p
 - :warning: [Binary Search in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+binary+search+algol68) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :warning: [Bubble Sort in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+algol68) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :warning: [Capitalize in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+algol68) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :warning: [Convex Hull in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+convex+hull+algol68) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :warning: [Depth First Search in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+depth+first+search+algol68) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :warning: [Dijkstra in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+dijkstra+algol68) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :warning: [Duplicate Character Counter in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+algol68) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
@@ -28,6 +29,8 @@ Below, you'll find a list of completed code snippets in Algol68. Code snippets p
 - :warning: [Job Sequencing in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+job+sequencing+algol68) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :warning: [Josephus Problem in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+josephus+problem+algol68) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :warning: [Linear Search in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+linear+search+algol68) [[Requirements](https://sampleprograms.io/projects/linear-search)]
+- :warning: [Longest Common Subsequence in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+common+subsequence+algol68) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
+- :warning: [Longest Palindromic Substring in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+palindromic+substring+algol68) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
 - :warning: [Longest Word in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+algol68) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :warning: [Maximum Array Rotation in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+maximum+array+rotation+algol68) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :warning: [Maximum Subarray in Algol68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+maximum+subarray+algol68) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
@@ -48,9 +51,6 @@ Below, you'll find a list of completed code snippets in Algol68. Code snippets p
 
 The following list contains all of the approved programs that are not currently implemented in Algol68. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
-- :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Convex+Hull+in+algol68) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
-- :x: [Longest Common Subsequence](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Longest+Common+Subsequence+in+algol68) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
-- :x: [Longest Palindromic Substring](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Longest+Palindromic+Substring+in+algol68) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
 - :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Sleep+Sort+in+algol68) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 
 ## Testing
