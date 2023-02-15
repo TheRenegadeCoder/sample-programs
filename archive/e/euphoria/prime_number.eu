@@ -1,0 +1,82 @@
+include std/io.e
+include std/text.e
+include std/get.e as stdget
+include std/math.e
+
+constant true = 1
+constant false = 0
+
+-- Indices for value() return value
+enum VALUE_ERROR_CODE, VALUE_VALUE, VALUE_NUM_CHARS_READ
+
+-- Indices for parse_int() return value
+enum PARSE_INT_VALID, PARSE_INT_VALUE
+
+function parse_int(sequence s)
+    -- Trim off whitespace and parse string
+    s = trim(s)
+    sequence result = stdget:value(s,, GET_LONG_ANSWER)
+
+    -- Error if any errors, value is not an integer, or any leftover characters
+    integer valid = (
+        result[VALUE_ERROR_CODE] = GET_SUCCESS
+        and integer(result[VALUE_VALUE])
+        and result[VALUE_NUM_CHARS_READ] = length(s)
+    )
+
+    -- Get value if invalid
+    integer value = 0
+    if valid
+    then
+        value = result[VALUE_VALUE]
+    end if
+
+    return {valid, value}
+end function
+
+procedure usage()
+    puts(STDOUT, "Usage: please input a non-negative integer\n")
+    abort(0)
+end procedure
+
+function is_prime(integer value)
+    -- If less than 2 or (not 2 and even), composite
+    if value < 2 or (value != 2 and is_even(value))
+    then
+        return false
+    end if
+
+    integer q = floor(sqrt(value))
+    for n = 3 to q by 2
+    do
+        if mod(value, n) = 0
+        then
+            return false
+        end if
+    end for
+
+    return true
+end function
+
+-- Check 1st command-line argument
+sequence argv = command_line()
+if length(argv) < 4 or length(argv[4]) = 0
+then
+    usage()
+end if
+
+-- Parse 1st command-line argument
+sequence result = parse_int(argv[4])
+integer value = result[PARSE_INT_VALUE]
+if not result[PARSE_INT_VALID] or value < 0
+then
+    usage()
+end if
+
+-- Indicate whether prime or composite
+if is_prime(value)
+then
+    puts(STDOUT, "Prime\n")
+else
+    puts(STDOUT, "Composite\n")
+end if
