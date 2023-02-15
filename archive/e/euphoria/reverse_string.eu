@@ -1,0 +1,14 @@
+include std/io.e
+include std/sequence.e
+
+-- Parse 1st command-line argument
+sequence argv = command_line()
+sequence s = ""
+if length(argv) >= 4
+then
+  s = argv[4]
+end if
+
+-- Show reversed string
+sequence t = reverse(s)
+printf(STDOUT, "%s\n", {t})
