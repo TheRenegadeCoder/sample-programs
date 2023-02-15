@@ -1,7 +1,6 @@
 include std/io.e
 include std/text.e
 include std/get.e as stdget
-include std/math.e
 
 constant true = 1
 constant false = 0
