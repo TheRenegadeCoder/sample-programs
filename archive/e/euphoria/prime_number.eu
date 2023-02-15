@@ -41,6 +41,7 @@ end procedure
 
 function is_prime(integer value)
     -- If less than 2 or (not 2 and even), composite
+    -- Else, check if prime by checking divisibility by odd numbers from 3 to sqrt(value)
     if value < 2 or (value != 2 and is_even(value))
     then
         return false
