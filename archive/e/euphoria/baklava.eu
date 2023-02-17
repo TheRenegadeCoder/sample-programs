@@ -1,0 +1,9 @@
+include std/io.e
+include std/math.e
+
+for n = -10 to 10
+do
+    integer num_spaces = abs(n)
+    integer num_stars = 21 - 2 * num_spaces
+    printf(STDOUT, "%s%s\n", {repeat(' ', num_spaces), repeat('*', num_stars)})
+end for
