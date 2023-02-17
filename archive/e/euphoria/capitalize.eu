@@ -1,0 +1,23 @@
+include std/io.e
+include std/text.e
+
+procedure usage()
+    puts(STDOUT, "Usage: please provide a string\n")
+    abort(0)
+end procedure
+
+function capitalize(sequence s)
+    return upper(s[1]) & s[2..$]
+end function
+
+-- Parse 1st command-line argument
+sequence argv = command_line()
+if length(argv) < 4 or length(argv[4]) = 0
+then
+    usage()
+end if
+
+-- Capitalize string and show it
+sequence s = argv[4]
+s = capitalize(s)
+printf(STDOUT, "%s\n", {s})
