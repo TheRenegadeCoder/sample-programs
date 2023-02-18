@@ -1,11 +1,9 @@
 include std/io.e
+include std/types.e
 include std/text.e
 include std/get.e as stdget
 include std/sequence.e
 include std/os.e
-
-constant true = 1
-constant false = 0
 
 -- Indices for value() return value
 enum VALUE_ERROR_CODE, VALUE_VALUE, VALUE_NUM_CHARS_READ
@@ -19,7 +17,7 @@ function parse_int(sequence s)
     sequence result = stdget:value(s,, GET_LONG_ANSWER)
 
     -- Error if any errors, value is not an integer, or any leftover characters
-    integer valid = (
+    boolean valid = (
         result[VALUE_ERROR_CODE] = GET_SUCCESS
         and integer(result[VALUE_VALUE])
         and result[VALUE_NUM_CHARS_READ] = length(s)
@@ -43,7 +41,7 @@ function parse_int_list(sequence s)
     sequence list = split(s, ",")
 
     -- Parse each item
-    integer valid = false
+    integer valid = FALSE
     sequence values = {}
     for n = 1 to length(list)
     do
@@ -92,7 +90,7 @@ function sleep_sort(sequence sleep_times)
     -- Initialize values
     integer n = length(sleep_times)
     sequence values = {}
-    sequence done = repeat(false, n)
+    sequence done = repeat(FALSE, n)
 
     -- Wait for all sleep times are complete
     atom start = time()
@@ -105,7 +103,7 @@ function sleep_sort(sequence sleep_times)
         do
             if not done[k] and (current - start) >= sleep_times[k]
             then
-                done[k] = true
+                done[k] = TRUE
                 values &= sleep_times[k]
             end if
         end for
