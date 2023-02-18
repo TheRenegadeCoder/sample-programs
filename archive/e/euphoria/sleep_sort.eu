@@ -92,7 +92,7 @@ function sleep_sort(sequence sleep_times)
 
     -- Wait for all sleep times are complete
     atom start = time()
-    loop
+    while TRUE
     do
         -- For each sleep time that is not complete, when sleep time expires, append the
         -- sleep time to the list of values and remove the sleep time from the list
@@ -109,9 +109,14 @@ function sleep_sort(sequence sleep_times)
         end for
 
         sleep_times = new_sleep_times
+        integer n = length(sleep_times)
+        if n < 1
+        then
+            exit
+        end if
+
         sleep(0.5)
-    until length(sleep_times) < 1
-    end loop
+    end while
 
     return values
 end function
