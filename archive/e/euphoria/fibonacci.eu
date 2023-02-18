@@ -1,9 +1,7 @@
 include std/io.e
+include std/types.e
 include std/text.e
 include std/get.e as stdget
-
-constant true = 1
-constant false = 0
 
 -- Indices for value() return value
 enum VALUE_ERROR_CODE, VALUE_VALUE, VALUE_NUM_CHARS_READ
@@ -17,7 +15,7 @@ function parse_int(sequence s)
     sequence result = stdget:value(s,, GET_LONG_ANSWER)
 
     -- Error if any errors, value is not an integer, or any leftover characters
-    integer valid = (
+    boolean valid = (
         result[VALUE_ERROR_CODE] = GET_SUCCESS
         and integer(result[VALUE_VALUE])
         and result[VALUE_NUM_CHARS_READ] = length(s)
