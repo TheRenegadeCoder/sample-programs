@@ -83,9 +83,6 @@ procedure show_list_values(sequence values)
     end if
 end procedure
 
--- Indices for partition result
-enum PARTITION_LEFT, PARTITION_MID, PARTITION_RIGHT
-
 function quick_sort(sequence values)
     -- Source: https://en.wikipedia.org/wiki/Quicksort#Lomuto_partition_scheme
 
@@ -96,20 +93,6 @@ function quick_sort(sequence values)
         return values
     end if
 
-    -- Partition array
-    sequence result = partition(values)
-
-    -- Sort left side of partition
-    sequence left = quick_sort(result[PARTITION_LEFT])
-
-    -- Sort right side of partition
-    sequence right = quick_sort(result[PARTITION_RIGHT])
-
-    -- Combine left, middle, and right values
-    return left & result[PARTITION_MID] & right
-end function
-
-function partition(sequence values)
     -- Choose last value as pivot
     integer pivot = values[$]
 
@@ -117,7 +100,6 @@ function partition(sequence values)
     integer i = 0
 
     -- Swap elements less than or equal to pivot, and increment temporary index
-    integer n = length(values)
     integer temp
     for j = 1 to n - 1
     do
@@ -135,8 +117,8 @@ function partition(sequence values)
     values[$] = values[i]
     values[i] = pivot
 
-    -- Return left values, middle value, and right values
-    return {values[1..i - 1], values[i], values[i + 1..$]}
+    -- Combine sorted left side, partition value, and sorted right side
+    return quick_sort(values[1..i - 1]) & values[i] & quick_sort(values[i + 1..$])
 end function
 
 -- Check 1st command-line argument
