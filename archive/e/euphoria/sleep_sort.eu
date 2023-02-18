@@ -109,8 +109,7 @@ function sleep_sort(sequence sleep_times)
         end for
 
         sleep_times = new_sleep_times
-        integer n = length(sleep_times)
-        if n < 1
+        if length(sleep_times) < 1
         then
             exit
         end if
