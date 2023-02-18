@@ -88,28 +88,29 @@ end procedure
 -- and store values as each sleep time elapses
 function sleep_sort(sequence sleep_times)
     -- Initialize values
-    integer n = length(sleep_times)
     sequence values = {}
-    sequence done = repeat(FALSE, n)
 
     -- Wait for all sleep times are complete
     atom start = time()
     loop
     do
         -- For each sleep time that is not complete, when sleep time expires, append the
-        -- sleep time to the list of values
+        -- sleep time to the list of values and remove the sleep time from the list
         atom current = time()
-        for k = 1 to n
+        sequence new_sleep_times = {}
+        for k = 1 to length(sleep_times)
         do
-            if not done[k] and (current - start) >= sleep_times[k]
+            if (current - start) >= sleep_times[k]
             then
-                done[k] = TRUE
                 values &= sleep_times[k]
+            else
+                new_sleep_times &= sleep_times[k]
             end if
         end for
 
-        sleep(0.01)
-    until length(values) >= n
+        sleep_times = new_sleep_times
+        sleep(0.5)
+    until length(sleep_times) < 1
     end loop
 
     return values
