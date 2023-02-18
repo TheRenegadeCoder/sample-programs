@@ -1,7 +1,5 @@
 include std/io.e
-
-constant true = 1
-constant false = 0
+include std/types.e
 
 function duplicate_character_counter(sequence s)
     -- Initialize character counter
@@ -17,7 +15,7 @@ function duplicate_character_counter(sequence s)
 end function
 
 procedure show_duplicate_character_counts(sequence s, sequence char_counter)
-    integer has_dupes = false
+    boolean has_dupes = FALSE
 
     for n = 1 to length(s)
     do
@@ -26,7 +24,7 @@ procedure show_duplicate_character_counts(sequence s, sequence char_counter)
         then
             printf(STDOUT, "%s: %d\n", {s[n], char_counter[index]})
             char_counter[index] = 0
-            has_dupes = true
+            has_dupes = TRUE
         end if
     end for
 
