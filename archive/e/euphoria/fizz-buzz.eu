@@ -1,0 +1,23 @@
+include std/io.e
+include std/math.e
+
+for n = 1 to 100
+do
+    sequence s = ""
+    if mod(n, 3) = 0
+    then
+        s &= "Fizz"
+    end if
+
+    if mod(n, 5) = 0
+    then
+        s &= "Buzz"
+    end if
+
+    if length(s) = 0
+    then
+        s &= sprintf("%d", n)
+    end if
+
+    printf(STDOUT, "%s\n", {s})
+end for
