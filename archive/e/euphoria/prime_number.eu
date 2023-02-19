@@ -3,6 +3,7 @@ include std/types.e
 include std/text.e
 include std/get.e as stdget
 include std/math.e
+include std/utils.e
 
 -- Indices for value() return value
 enum VALUE_ERROR_CODE, VALUE_VALUE, VALUE_NUM_CHARS_READ
@@ -73,9 +74,4 @@ then
 end if
 
 -- Indicate whether prime or composite
-if is_prime(value)
-then
-    puts(STDOUT, "Prime\n")
-else
-    puts(STDOUT, "Composite\n")
-end if
+puts(STDOUT, iif(is_prime(value), "Prime\n", "Composite\n"))
