@@ -4,6 +4,7 @@ include std/text.e
 include std/get.e as stdget
 include std/sequence.e
 include std/search.e
+include std/utils.e
 
 -- Indices for value() return value
 enum VALUE_ERROR_CODE, VALUE_VALUE, VALUE_NUM_CHARS_READ
@@ -108,9 +109,4 @@ end if
 
 -- Use built-in binary search and show results
 integer index = binary_search(target, values)
-if index > 0
-then
-    puts(STDOUT, "true\n")
-else
-    puts(STDOUT, "false\n")
-end if
+puts(STDOUT, iif(index > 0, "true\n", "false\n"))
