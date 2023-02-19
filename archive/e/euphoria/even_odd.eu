@@ -3,6 +3,7 @@ include std/types.e
 include std/text.e
 include std/get.e as stdget
 include std/math.e
+include std/utils.e
 
 -- Indices for value() return value
 enum VALUE_ERROR_CODE, VALUE_VALUE, VALUE_NUM_CHARS_READ
@@ -53,9 +54,4 @@ then
 end if
 
 -- Indicate whether even or odd
-if is_even(value)
-then
-    puts(STDOUT, "Even\n")
-else
-    puts(STDOUT, "Odd\n")
-end if
+puts(STDOUT, iif(is_even(value), "Even\n", "Odd\n"))
