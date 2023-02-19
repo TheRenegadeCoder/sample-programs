@@ -3,6 +3,7 @@ include std/types.e
 include std/text.e
 include std/get.e as stdget
 include std/sequence.e
+include std/utils.e
 
 -- Indices for value() return value
 enum VALUE_ERROR_CODE, VALUE_VALUE, VALUE_NUM_CHARS_READ
@@ -189,9 +190,4 @@ sequence tree = create_tree(adjacency_matrix, vertex_values)
 
 -- Run depth first search and indicate if value is found
 sequence node = depth_first_search(tree, target)
-if length(node) > 0
-then
-    puts(STDOUT, "true\n")
-else
-    puts(STDOUT, "false\n")
-end if
+puts(STDOUT, iif(length(node) > 0, "true\n", "false\n"))
