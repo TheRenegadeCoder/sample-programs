@@ -3,6 +3,7 @@ include std/types.e
 include std/text.e
 include std/get.e as stdget
 include std/math.e
+include std/utils.e
 
 -- Indices for value() return value
 enum VALUE_ERROR_CODE, VALUE_VALUE, VALUE_NUM_CHARS_READ
@@ -70,9 +71,4 @@ then
 end if
 
 -- Indicate whether palindromic number or not
-if is_palindromic_number(value)
-then
-    puts(STDOUT, "true\n")
-else
-    puts(STDOUT, "false\n")
-end if
+puts(STDOUT, iif(is_palindromic_number(value), "true\n", "false\n"))
