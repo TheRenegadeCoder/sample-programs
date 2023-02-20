@@ -143,6 +143,10 @@ function depth_first_search_rec(sequence tree, integer target, integer node_inde
         then
             dfs_result = depth_first_search_rec(tree, target, child_index, dfs_result)
             dfs_result[DFS_VISITED][child_index] = TRUE
+            if length(dfs_result[DFS_FOUND]) > 0
+            then
+                return dfs_result
+            end if
         end if
     end for
 
