@@ -196,7 +196,7 @@ PROC depth first search rec = (
                 IF NOT visited[child index]
                 THEN
                     index := depth first search rec(tree, target, child index, visited, index);
-                    visited[children[k]] := TRUE
+                    visited[child index] := TRUE
                 FI
             OD
         FI
