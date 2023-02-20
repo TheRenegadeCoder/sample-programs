@@ -1,0 +1,29 @@
+include std/io.e
+include std/regex.e as re
+include std/sequence.e
+include std/text.e
+
+function remove_all_whitespace(sequence s)
+    -- Trim off leading and trailing whitespace, then split into words
+    sequence words = re:split(re:new(`\s+`), trim(s))
+
+    -- Join words together without spaces
+    return join(words, "")
+end function
+
+procedure usage()
+    printf(STDOUT, "Usage: please provide a string")
+    abort(0)
+end procedure
+
+-- Parse 1st command-line argument
+sequence argv = command_line()
+if length(argv) < 4 or length(argv[4]) = 0
+then
+    usage()
+end if
+
+-- Remove all whitespace and show result
+sequence s = argv[4]
+sequence t = remove_all_whitespace(s)
+printf(STDOUT, "%s\n", {t})
