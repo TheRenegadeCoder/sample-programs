@@ -97,101 +97,39 @@ PROC usage = VOID: (
 
 COMMENT
 Algol68 does not have any type of mechanism to sleep for a specified time,
-nor do threads seems to work reliably. Therefore, this is a non-portable
-solution (*nix systems only) that uses processes to sleep for a specified
-time and to append the sleep time to a common file that is read out and
-decoded at the end
+nor do threads seems to work reliably. Instead, just monitor the clock
+and store values as each sleep time elapses
 COMMENT
 PROC sleep sort = (REF []INT sleep times) REF []INT:
 (
     INT n := UPB sleep times;
-    REF []INT values;
+    HEAP [n]INT working sleep times := sleep times;
+    HEAP [n]INT values;
+    INT num values := 0;
 
-    # Get maximum sleep time #
-    INT max sleep time := 0;
-    FOR k TO n
-    DO
-        IF sleep times[k] > max sleep time
-        THEN
-            max sleep time := sleep times[k]
-        FI
-    OD;
-
-    # Remove the results file #
-    STRING filename = "output.txt";
-    remove(filename);
-
-    # Start sleep processes for each sleep time #
-    FOR k TO n
-    DO
-        sleep proc(sleep times[k], filename)
-    OD;
-
-    # Wait until all processes are finished or timeout #
-    # (maximum sleep time plus 5 sec) #
+    # For each sleep time that is not complete, when sleep time expires, append the #
+    # sleep time to the list of values and remove the sleep time from the list #
     REAL start := seconds;
-    BOOL done := FALSE;
     DO
-        values := read values(filename);
-        done := (UPB values >= n)
-    UNTIL done OR seconds - start >= (max sleep time + 5)
-    OD;
-
-    # If not done, indicate timeout #
-    IF NOT done
-    THEN
-        printf(($gl$, "Timeout error!"))
-    FI;
-
-    # Remove the results file #
-    remove(filename);
-
-    values
-);
-
-# Start process to sleep for specified time and append results to file #
-PROC sleep proc = (INT sleep time, STRING filename) VOID:
-(
-    STRING s = whole(sleep time, 0);
-    STRING cmd := "(sleep " + s + "; echo '" + s + "' >>" + filename + ") &";
-    system(cmd)
-);
-
-# Remove a file in a non-portable way. This only works for *nix systems #
-PROC remove = (STRING filename) VOID:
-(
-    STRING cmd := "rm -f " + filename;
-    system(cmd)
-);
-
-PROC read values = (STRING filename) REF []INT:
-(
-    FILE f;
-    STRING s;
-    INT status := open(f, file name, stand in channel);
-    IF status = 0
-    THEN
-        on logical file end(f, (REF FILE inf) BOOL: done);
-
-        STRING line;
-        INT n := 0;
+        REAL current := seconds;
+        INT num sleep times := 0;
+        FOR k TO n
         DO
-            get(f, (line, new line));
-            n +:= 1;
-            IF n > 1
+            IF (current - start) >= working sleep times[k]
             THEN
-                s +:= ","
-            FI;
-
-            s +:= line
+                num values +:= 1;
+                values[num values] := working sleep times[k]
+            ELSE
+                num sleep times +:= 1;
+                working sleep times[num sleep times] := working sleep times[k]
+            FI
         OD;
 
-done:
-        close(f)
-    FI;
+        n := num sleep times
+    UNTIL num sleep times < 1
+    OD;
 
-    PARSEINTLIST_RESULT result := parse int list(s);
-    (valid OF result | values OF result | HEAP [0]INT)
+    values
 );
 
 PROC show list values = (REF []INT values) VOID:
