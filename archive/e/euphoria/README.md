@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Euphoria! To find documentation related to the Euphoria code in this repo, look [here.](https://sampleprograms.io/languages/euphoria)
 
-## Sample Programs List - 17/37 :thinking:
+## Sample Programs List - 18/37 :thinking:
 
 In this section, we feature a list of completed and missing programs in Euphoria. See above for the current amount of completed programs in Euphoria. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -27,6 +27,7 @@ Below, you'll find a list of completed code snippets in Euphoria. Code snippets 
 - :warning: [Remove All Whitespace in Euphoria](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+remove+all+whitespace+euphoria) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :warning: [Reverse String in Euphoria](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+euphoria) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :warning: [Rot13 in Euphoria](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+euphoria) [[Requirements](https://sampleprograms.io/projects/rot13)]
+- :warning: [Selection Sort in Euphoria](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+euphoria) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 
 ### Missing Programs
 
@@ -49,7 +50,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Palindromic Number](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Palindromic+Number+in+euphoria) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :x: [Prime Number](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Prime+Number+in+euphoria) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :x: [Roman Numeral](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Roman+Numeral+in+euphoria) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
-- :x: [Selection Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Selection+Sort+in+euphoria) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 - :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Sleep+Sort+in+euphoria) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+euphoria) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
