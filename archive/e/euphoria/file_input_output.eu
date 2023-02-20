@@ -1,13 +1,12 @@
 include std/io.e
-constant false = 0
-constant true = 1
+include std/types.e
 
 function write_file(sequence filename)
     integer fn = open(filename, "w")
     if fn < 0
     then
         printf(STDERR, "Cannot open %s for write\n", {filename})
-        return false
+        return FALSE
     end if
 
     puts(fn, "Hello from Euphoria!\n")
@@ -15,7 +14,7 @@ function write_file(sequence filename)
     puts(fn, "This is another line\n")
     puts(fn, "Goodbye!\n")
     close(fn)
-    return true
+    return TRUE
 end function
 
 function read_file(sequence filename)
@@ -23,7 +22,7 @@ function read_file(sequence filename)
     if fn < 0
         then
         printf(STDERR, "Cannot open %s for read\n", {filename})
-        return false
+        return FALSE
     end if
 
     object line
@@ -39,7 +38,7 @@ function read_file(sequence filename)
     end while
 
     close(fn)
-    return true
+    return TRUE
 end function
 
 constant filename = "output.txt"
