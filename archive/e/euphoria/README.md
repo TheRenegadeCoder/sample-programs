@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Euphoria! To find documentation related to the Euphoria code in this repo, look [here.](https://sampleprograms.io/languages/euphoria)
 
-## Sample Programs List - 10/37 :thinking:
+## Sample Programs List - 11/37 :thinking:
 
 In this section, we feature a list of completed and missing programs in Euphoria. See above for the current amount of completed programs in Euphoria. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -12,6 +12,7 @@ Below, you'll find a list of completed code snippets in Euphoria. Code snippets 
 
 - :warning: [Baklava in Euphoria](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+euphoria) [[Requirements](https://sampleprograms.io/projects/baklava)]
 - :warning: [Capitalize in Euphoria](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+euphoria) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :warning: [Duplicate Character Counter in Euphoria](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+euphoria) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :warning: [File Input Output in Euphoria](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+euphoria) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :warning: [Fizz Buzz in Euphoria](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+euphoria) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Euphoria](https://sampleprograms.io/projects/hello-world/euphoria) [[Requirements](https://sampleprograms.io/projects/hello-world)]
@@ -30,7 +31,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Convex+Hull+in+euphoria) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :x: [Depth First Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Depth+First+Search+in+euphoria) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Dijkstra+in+euphoria) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
-- :x: [Duplicate Character Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Duplicate+Character+Counter+in+euphoria) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :x: [Even Odd](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Even+Odd+in+euphoria) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :x: [Factorial](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Factorial+in+euphoria) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :x: [Fibonacci](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fibonacci+in+euphoria) [[Requirements](https://sampleprograms.io/projects/fibonacci)]

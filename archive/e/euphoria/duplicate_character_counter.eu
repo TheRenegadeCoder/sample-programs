@@ -1,0 +1,54 @@
+include std/io.e
+include std/types.e
+
+function duplicate_character_counter(sequence s)
+    -- Initialize character counter
+    sequence char_counter = repeat(0, 256)
+
+    -- Count number of occurances of each character
+    for n = 1 to length(s)
+    do
+        char_counter[s[n] + 1] += 1
+    end for
+
+    return char_counter
+end function
+
+procedure show_duplicate_character_counts(sequence s, sequence char_counter)
+    boolean has_dupes = FALSE
+
+    for n = 1 to length(s)
+    do
+        integer index = s[n] + 1
+        if char_counter[index] > 1
+        then
+            printf(STDOUT, "%s: %d\n", {s[n], char_counter[index]})
+            char_counter[index] = 0
+            has_dupes = TRUE
+        end if
+    end for
+
+    if not has_dupes
+    then
+        puts(STDOUT, "No duplicate characters\n")
+    end if
+end procedure
+
+procedure usage()
+    printf(STDOUT, "Usage: please provide a string")
+    abort(0)
+end procedure
+
+-- Parse 1st command-line argument
+sequence argv = command_line()
+if length(argv) < 4 or length(argv[4]) = 0
+then
+    usage()
+end if
+
+-- Count duplicate characters
+sequence s = argv[4]
+sequence char_counter = duplicate_character_counter(s)
+
+-- Show all duplicate character counts in order in which they occurred in string (if any)
+show_duplicate_character_counts(s, char_counter)
