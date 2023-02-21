@@ -153,4 +153,3 @@ sequence matrix_t = transpose_matrix(matrix)
 
 -- Show transposed matrix as a list
 show_matrix_as_list(matrix_t)
-
