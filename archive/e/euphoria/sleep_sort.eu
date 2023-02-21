@@ -66,11 +66,20 @@ procedure usage()
 end procedure
 
 procedure show_list_values(sequence values)
-    sequence format = repeat_pattern("%d, ", length(values))
-    sequence s = sprintf(format[1..$-2], values)
-    if length(s) > 0
+    integer n = length(values)
+    for k = 1 to n
+    do
+        if k > 1
+        then
+            puts(STDOUT, ", ")
+        end if
+
+        printf(STDOUT, "%d", {values[k]})
+    end for
+
+    if n > 0
     then
-        printf(STDOUT, "%s\n", {s})
+        puts(STDOUT, "\n")
     end if
 end procedure
 
