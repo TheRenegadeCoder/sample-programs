@@ -65,9 +65,10 @@ end procedure
 -- Longest Common Sequence
 -- Source: https://en.wikipedia.org/wiki/Longest_common_subsequence#Example_in_C#
 --
--- However, instead of storing lengths, and subsequence index is stored.
--- The indices used on the "c" array are offset by 1 due to the fact that
--- one-based indexing instead of zero-based indexing must be used
+-- However, instead of storing lengths, a subsequence index is stored.
+-- Subsequences are stored in a separate array. The indices used for the
+-- "c" array in the above source are offset by 1 due to the fact that
+-- one-based instead of zero-based indexing must be used
 function longest_common_subsequence(sequence list1, sequence list2)
     -- Initialize all subsequences to an empty sequence
     integer m = length(list1)
