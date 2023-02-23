@@ -94,16 +94,16 @@ end function
 procedure show_matrix_as_list(sequence matrix)
     integer num_rows = length(matrix)
     integer num_cols = length(matrix[1])
-    sequence format = repeat_pattern("%d, ", num_cols)
-    sequence s = ""
-    for i = 1 to num_rows
-    do
-        s &= sprintf(format, matrix[i])
-    end for
-
-    s = s[1..$-2]
-    if length(s) > 0
+    if num_rows > 0 and num_cols > 0
     then
+        sequence format = repeat_pattern("%d, ", num_cols)
+        sequence s = ""
+        for i = 1 to num_rows
+        do
+            s &= sprintf(format, matrix[i])
+        end for
+
+        s = s[1..$-2]
         printf(STDOUT, "%s\n", {s})
     end if
 end procedure
