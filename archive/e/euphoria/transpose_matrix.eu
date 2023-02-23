@@ -79,12 +79,9 @@ function transpose_matrix(sequence matrix)
     integer num_rows = length(matrix)
     integer num_cols = length(matrix[1])
     sequence matrix_t = repeat(repeat(0, num_rows), num_cols)
-    for i = 1 to num_rows
+    for j = 1 to num_cols
     do
-        for j = 1 to num_cols
-        do
-            matrix_t[j][i] = matrix[i][j]
-        end for
+        matrix_t[j] = vslice(matrix, j)
     end for
 
     return matrix_t
