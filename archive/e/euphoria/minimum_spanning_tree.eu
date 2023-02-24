@@ -79,7 +79,7 @@ function create_graph(sequence weights, integer num_vertices)
     integer index = 0
     for row = 1 to num_vertices
     do
-        -- Add neighbor node indices and weight to this node
+        -- Add neighbor node indices and weights to this node
         for col = 1 to num_vertices
         do
             index += 1
