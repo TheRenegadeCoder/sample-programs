@@ -115,13 +115,7 @@ function compare_jobs(sequence job1, sequence job2)
 end function
 
 function get_total_profit(sequence jobs)
-    integer total = 0
-    for k = 1 to length(jobs)
-    do
-        total += jobs[k][JOB_PROFIT]
-    end for
-
-    return total
+    return sum(vslice(jobs, JOB_PROFIT))
 end function
 
 -- Check 1st and 2nd command-line argument
