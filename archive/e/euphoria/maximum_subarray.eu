@@ -4,6 +4,7 @@ include std/text.e
 include std/get.e as stdget
 include std/sequence.e
 include std/math.e
+include std/mathcons.e
 
 -- Indices for value() return value
 enum VALUE_ERROR_CODE, VALUE_VALUE, VALUE_NUM_CHARS_READ
@@ -65,7 +66,7 @@ end procedure
 -- Find maximum subarray using Kadane's algorithm.
 -- Source: https://en.wikipedia.org/wiki/Maximum_subarray_problem#No_empty_subarrays_admitted
 function maximum_subarray(sequence values)
-    integer best_sum = min(values)
+    atom best_sum = MINF
     integer current_sum = 0
     for k = 1 to length(values)
     do
