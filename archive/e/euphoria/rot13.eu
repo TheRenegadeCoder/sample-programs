@@ -1,6 +1,7 @@
 include std/io.e
 include std/types.e
 include std/text.e
+include std/utils.e
 
 function rot13(sequence s)
     sequence t = ""
@@ -11,12 +12,7 @@ function rot13(sequence s)
         integer offset = 0
         if t_alpha(s[n])
         then
-            if lower(s[n]) <= 'm'
-            then
-                offset = 13
-            else
-                offset = -13
-            end if
+            offset = iif(lower(s[n]) <= 'm', 13, -13)
         end if
 
         t &= s[n] + offset
