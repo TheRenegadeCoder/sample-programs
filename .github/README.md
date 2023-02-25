@@ -45,6 +45,7 @@ for sharing their work with our repo:
 
 - [@auroq][auroq-profile] for their development of [Glotter][glotter-repo]
 - [@joesephwegner][joesephwegner-profile] for their [ineverylang Repo][ineverylang-repo]
+- [@rzuckerm][rzuckerm-profile] for their development of [Glotter2][glotter2-repo] based on [Glotter][glotter-repo]
 - [@toturkmen][toturkmen-profile] for their [Baklava Repo][baklava-repo]
 
 [1]: http://www.100daysofcode.com/
@@ -69,9 +70,11 @@ for sharing their work with our repo:
 [auroq-profile]: https://github.com/auroq
 [baklava-repo]: https://github.com/toturkmen/baklava
 [glotter-repo]: https://github.com/auroq/glotter
+[glotter2-repo]: https://github.com/rzuckerm/glotter2
 [ineverylang-repo]: https://github.com/josephwegner/ineverylang
 [joesephwegner-profile]: https://github.com/josephwegner
 [renegade-coder-newsletter]: https://therenegadecoder.com/about/newsletter/
+[rzuckerm-profile]: https://github.com/rzuckerm
 [sample-programs-news-series]: https://therenegadecoder.com/series/sample-programs-repo-news/
 [sample-programs-on-the-renegade-coder]: https://therenegadecoder.com/code/sample-programs-in-every-language/
 [toturkmen-profile]: https://github.com/toturkmen
