@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Euphoria! To find documentation related to the Euphoria code in this repo, look [here.](https://sampleprograms.io/languages/euphoria)
 
-## Sample Programs List - 36/37 :smile:
+## Sample Programs List - 37/37 :partying_face:
 
 In this section, we feature a list of completed and missing programs in Euphoria. See above for the current amount of completed programs in Euphoria. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -16,6 +16,7 @@ Below, you'll find a list of completed code snippets in Euphoria. Code snippets 
 - :warning: [Capitalize in Euphoria](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+euphoria) [[Requirements](https://sampleprograms.io/projects/capitalize)]
 - :warning: [Convex Hull in Euphoria](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+convex+hull+euphoria) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :warning: [Depth First Search in Euphoria](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+depth+first+search+euphoria) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
+- :warning: [Dijkstra in Euphoria](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+dijkstra+euphoria) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :warning: [Duplicate Character Counter in Euphoria](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+euphoria) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :warning: [Even Odd in Euphoria](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+euphoria) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :warning: [Factorial in Euphoria](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+euphoria) [[Requirements](https://sampleprograms.io/projects/factorial)]
@@ -51,7 +52,7 @@ Below, you'll find a list of completed code snippets in Euphoria. Code snippets 
 
 The following list contains all of the approved programs that are not currently implemented in Euphoria. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
-- :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Dijkstra+in+euphoria) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
+
 
 ## Testing
 
