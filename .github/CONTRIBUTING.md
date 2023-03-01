@@ -287,7 +287,7 @@ To run the tests locally, **you will need the following dependencies**:
 - Docker
   - As there are so many languages in this project, we use docker to automatically generate
     consistent, stable build/test environments.
-- Python 3.7+
+- Python 3.8+
   - We use glotter as our testing library. Make sure you have python installed.
     Then use `pip install -r requirements.txt` (preferably in a virtual environment) to install glotter and its dependencies.
 
