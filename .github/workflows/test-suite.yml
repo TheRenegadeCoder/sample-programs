@@ -36,8 +36,8 @@ jobs:
         
     - name: Download Docker images
       run: |
-        python runner.py download
+        python runner.py download --parallel
         
     - name: Test All Sample Programs
       run: |
-        python runner.py test
+        python runner.py test --parallel
