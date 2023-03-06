@@ -674,7 +674,7 @@ projects:
         tests:
             josephus_problem_valid:
                 -   name: "sample input 5, 2"
-                    input: '"5" "2'"
+                    input: '"5" "2"'
                     expected: "3"
                 -   name: "sample input 7 3"
                     input: '"7" "3"'
