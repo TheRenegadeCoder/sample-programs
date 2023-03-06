@@ -168,8 +168,8 @@ projects:
                     input: '"100, 140, 320, 480, 280" "240, 60, 40, 200, 300"'
                     expected:
                         - "(100, 240)"
-                        - "(140, 60)",
-                        - "(320, 40)",
+                        - "(140, 60)"
+                        - "(320, 40)"
                         - "(480, 200)"
                         - "(280, 300)"
                 -   name: "sample input: cluster"
@@ -659,7 +659,7 @@ projects:
                     input: '"25 15 10 5"'
                     expected: "Usage: please provide a list of profits and a list of deadlines"
                 -   name: "lists different lengths"
-                    input: '"1, 2, 3, 4", "1, 2, 3, 4, 5"'
+                    input: '"1, 2, 3, 4" "1, 2, 3, 4, 5"'
                     expected: "Usage: please provide a list of profits and a list of deadlines"
         test_output_fiters:
             sequencing_valid:
