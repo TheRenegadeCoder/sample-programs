@@ -7,185 +7,1214 @@ projects:
         words:
             - "baklava"
         requires_parameters: false
+        tests:
+            -   bakalava:
+                - expected:
+                    - "          *"
+                    - "         ***"
+                    - "        *****"
+                    - "       *******"
+                    - "      *********"
+                    - "     ***********"
+                    - "    *************"
+                    - "   ***************"
+                    - "  *****************"
+                    - " *******************"
+                    - "*********************"
+                    - " *******************"
+                    - "  *****************"
+                    - "   ***************"
+                    - "    *************"
+                    - "     ***********"
+                    - "      *********"
+                    - "       *******"
+                    - "        *****"
+                    - "         ***"
+                    - "          *"
     binarysearch:
         words:
             - "binary"
             - "search"
         requires_parameters: true
+        tests:
+            binary_search_valid:
+                -   name: "sample input first true"
+                    input: '"1, 3, 5, 7" "1"'
+                    expected: "true"
+                -   name: "sample input last true"
+                    input: '"1, 3, 5, 7" "7"'
+                    expected: "true"
+                -   name: "sample input middle true"
+                    input: '"1, 3, 5, 7" "5"'
+                    expected: "true"
+                -   name: "sample input one true"
+                    input: '"5" "5"'
+                    expected: "true"
+                -   name: "sample input one false"
+                    input: '"5" "7"'
+                    expected: "false"
+                -   name: "sample input many false"
+                    input: '"1, 3, 5, 6" "7"'
+                    expected: "false"
+                -   name: "sample input middle true"
+                    input: '"1, 2, 3, 4, 5, 6, 7" "3"'
+                    expected: "true"
+            binary_search_invalid:
+                -   name: "no input"
+                    input: null
+                    expected: 'Usage: please provide a list of sorted integers ("1, 4, 5, 11, 12") and the integer to find ("11")'
+                -   name: "missing input: target"
+                    input: '"1, 2, 3, 4"'
+                    expected: 'Usage: please provide a list of sorted integers ("1, 4, 5, 11, 12") and the integer to find ("11")'
+                -   name: "missing input: list"
+                    input: '"" "5"'
+                    expected: 'Usage: please provide a list of sorted integers ("1, 4, 5, 11, 12") and the integer to find ("11")'
+                -   name: "out of order input"
+                    input: '"3, 5, 1, 2" "3"'
+                    expected: 'Usage: please provide a list of sorted integers ("1, 4, 5, 11, 12") and the integer to find ("11")'
+        test_output_filters:
+            binary_search_valid:
+                - "strip"
+                - "lower"
+            binary_search_invalid:
+                - "strip"
     bubblesort:
         words:
             - "bubble"
             - "sort"
         requires_parameters: true
+        tests:
+            bubble_sort_valid:
+                -   name: "sample input"
+                    input: '"4, 5, 3, 1, 2"'
+                    expected: "1, 2, 3, 4, 5"
+                -   name: "sample input: with duplicate"
+                    input: '"4, 5, 3, 1, 4, 2"'
+                    expected: "1, 2, 3, 4, 4, 5"
+                -   name: "sample input: already sorted"
+                    input: '"1, 2, 3, 4, 5"'
+                    expected: "1, 2, 3, 4, 5"
+                -   name: "sample input: reverse sorted"
+                    input: '"9, 8, 7, 6, 5, 4, 3, 2, 1"'
+                    expected: "1, 2, 3, 4, 5, 6, 7, 8, 9"
+            bubble_sort_valid:
+                -   name: "no input"
+                    input: null
+                    expected: 'Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"'
+                -   name: "empty input"
+                    input: ""
+                    expected: 'Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"'
+                -   name: "invalid input: not a list"
+                    input: "1"
+                    expected: 'Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"'
+                -   name: "invalid input: wrong format"
+                    input: '"4 5 3"'
+                    expected: 'Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"'
+        test_output_filters:
+            bubble_sort_valid:
+                -   remove:
+                    - "["
+                    - "]"
+                -   "strip"
+            bubble_sort_invalid:
+                -   "strip"
     capitalize:
         words:
             - "capitalize"
         requires_parameters: true
+        tests:
+            capitalize_valid:
+                -   name: "sample input: lowercase string"
+                    input: '"hello"'
+                    expected: "Hello"
+                -   name: "sample input: uppercase string"
+                    input: '"Hello"'
+                    expected: "Hello"
+                -   name: "sample input: long string"
+                    input: '"hello world"'
+                    expected: "Hello world"
+                -   name: "sample input: mixed casing"
+                    input: '"heLLo World"'
+                    expected: "HeLLo World"
+                -   name: "sample input: symbols"
+                    input: '"12345"'
+                    expected: "12345"
+            capitalize_invalid:
+                -   name: "no input"
+                    input: null
+                    expected: "Usage: please provide a string"
+                -   name: "empty input"
+                    input: ""
+                    expected: "Usage: please provide a string"
+        test_output_filters:
+            capitalize_valid:
+                - "strip"
+            capitalize_invalid:
+                - "strip"
     convexhull:
         words:
             - "convex"
             - "hull"
         requires_parameters: true
+        tests:
+            convex_hull_valid:
+                -   name: "sample input: triangle"
+                    input: '"100, 180, 240" "220, 120, 20"'
+                    expected:
+                        - "(100, 220)"
+                        - "(240, 20)"
+                        - "(180, 120)"
+                -   name: "sample input: pentagon"
+                    input: '"100, 140, 320, 480, 280" "240, 60, 40, 200, 300"'
+                    expected:
+                        - "(100, 240)"
+                        - "(140, 60)",
+                        - "(320, 40)",
+                        - "(480, 200)"
+                        - "(280, 300)"
+                -   name: "sample input: cluster"
+                    input: '"260, 280, 300, 320, 600, 360, 20, 240" "160, 100, 180, 140, 160, 320, 200, 0"'
+                    expected:
+                        - "(20, 200)"
+                        - "(240, 0)"
+                        - "(600, 160)"
+                        - "(360, 320)"
+            convex_hull_invalid:
+                -   name: "no input"
+                    input: null
+                    expected: 'Usage: please provide at least 3 x and y coordinates as separate lists (e.g. "100, 440, 210")'
+                -   name: "missing y"
+                    input: '"100, 180, 240"'
+                    expected: 'Usage: please provide at least 3 x and y coordinates as separate lists (e.g. "100, 440, 210")'
+                -   name: "invalid shape"
+                    input: '"100, 180" "240, 300"'
+                    expected: 'Usage: please provide at least 3 x and y coordinates as separate lists (e.g. "100, 440, 210")'
+                -   name: "different cardinality"
+                    input: '"100, 180, 240" "240, 60, 40, 200, 300"'
+                    expected: 'Usage: please provide at least 3 x and y coordinates as separate lists (e.g. "100, 440, 210")'
+                -   name: "invalid integers"
+                    input: '"100, 1A0, 240" "220, 120, 20"'
+                    expected: 'Usage: please provide at least 3 x and y coordinates as separate lists (e.g. "100, 440, 210")'
+        test_output_filters:
+            convex_hull_valid:
+                -   "strip"
+                -   "any_order"
+            convex_hull_invalid:
+                -   "strip"
     depthfirstsearch:
         words:
             - "depth"
             - "first"
             - "search"
         requires_parameters: true
+        tests:
+            -   depth_first_search_valid:
+                -   name: "sample input: first true"
+                    input: '"0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0" "1, 3, 5, 2, 4" "1"'
+                    expected: "true"
+                -   name: "sample input: last true"
+                    input: '"0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0" "1, 3, 5, 2, 4" "4"'
+                    expected: "true"
+                -   name: "sample input: middle true"
+                    input: '"0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0" "1, 3, 5, 2, 4" "5"'
+                    expected: "true"
+                -   name: "sample input: one true"
+                    input: '"0" "1" "1"'
+                    expected: "true"
+                -   name: "sample input: one false"
+                    input: '"0" "1" "6"'
+                    expected: "false"
+                -   name: "sample input: many false"
+                    input: '"0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0" "1, 3, 5, 2, 4" "7"'
+                    expected: "false"
+            -   depth_first_search_invalid:
+                -   name: "no input"
+                    input: null
+                    expected: 'Usage: please provide a tree in an adjacency matrix form ("0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0") together with a list of vertex values ("1, 3, 5, 2, 4") and the integer to find ("4")'
+                -   name: "missing input: tree"
+                    input: '"" "1, 3, 5, 2, 4" "4"'
+                    expected: 'Usage: please provide a tree in an adjacency matrix form ("0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0") together with a list of vertex values ("1, 3, 5, 2, 4") and the integer to find ("4")'
+                -   name: "missing input: vertex values"
+                    input: '"0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0" "" "1"'
+                    expected: 'Usage: please provide a tree in an adjacency matrix form ("0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0") together with a list of vertex values ("1, 3, 5, 2, 4") and the integer to find ("4")'
+                -   name: "missing input: target"
+                    input: '"0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0" "1, 3, 5, 2, 4" ""'
+                    expected: 'Usage: please provide a tree in an adjacency matrix form ("0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0") together with a list of vertex values ("1, 3, 5, 2, 4") and the integer to find ("4")'
+        test_output_filters:
+            depth_first_search_valid:
+                - "strip"
+                - "lower"
+            depth_first_search_invalid:
+                - "strip"
     dijkstra:
         words:
             - "dijkstra"
         requires_parameters: true
+        tests:
+            dijkstra_valid:
+                -   name: "sample input: routine"
+                    input: '"0, 2, 0, 6, 0, 2, 0, 3, 8, 5, 0, 3, 0, 0, 7, 6, 8, 0, 0, 9, 0, 5, 7, 9, 0" "0" "1"'
+                    expected: "2"
+            dijkstra_invalid:
+                -   name: "no input"
+                    input: null
+                    expected: "Usage: please provide three inputs: a serialized matrix, a source node and a destination node"
+                -   name: "empty input"
+                    input: '"" "" ""'
+                    expected: "Usage: please provide three inputs: a serialized matrix, a source node and a destination node"
+                -   name: "non-square input"
+                    input: '"1, 0, 3, 0, 5, 1" "1" "2"'
+                    expected: "Usage: please provide three inputs: a serialized matrix, a source node and a destination node"
+                -   name: "no destination"
+                    input: '"0, 2, 0, 6, 0, 2, 0, 3, 8, 5, 0, 3, 0, 0, 7, 6, 8, 0, 0, 9, 0, 5, 7, 9, 0" "0" ""'
+                    expected: "Usage: please provide three inputs: a serialized matrix, a source node and a destination node"
+                -   name: "no source or destination"
+                    input: '"0, 2, 0, 6, 0, 2, 0, 3, 8, 5, 0, 3, 0, 0, 7, 6, 8, 0, 0, 9, 0, 5, 7, 9, 0" "3" "" ""'
+                    expected: "Usage: please provide three inputs: a serialized matrix, a source node and a destination node"
+                -   name: "source or destination < 0"
+                    input: '"0, 2, 0, 6, 0, 2, 0, 3, 8, 5, 0, 3, 0, 0, 7, 6, 8, 0, 0, 9, 0, 5, 7, 9, 0" "3" "-1" "2"'
+                    expected: "Usage: please provide three inputs: a serialized matrix, a source node and a destination node"
+                -   name: "weight < 0"
+                    input: '"0, 2, 0, -6, 0, 2, 0, 3, 8, 5, 0, 3, 0, 0, 7, -6, 8, 0, 0, 9, 0, 5, 7, 9, 0" "3" "1" "2"'
+                    expected: "Usage: please provide three inputs: a serialized matrix, a source node and a destination node"
+                -   name: "source or destination > number of vertices"
+                    input: '"0, 2, 0, -6, 0, 2, 0, 3, 8, 5, 0, 3, 0, 0, 7, -6, 8, 0, 0, 9, 0, 5, 7, 9, 0" "3" "1" "10"'
+                    expected: "Usage: please provide three inputs: a serialized matrix, a source node and a destination node"
+        test_output_filters:
+            dijkstra_valid:
+                - remove:
+                    - "["
+                    - "]"
+                - "strip"
+            dijkstra_invalid:
+                - "strip"
     duplicatecharactercounter:
         words:
             - "duplicate"
             - "character"
             - "counter"
         requires_parameters: true
+        tests:
+            duplicate_character_counter_valid:
+                -   name: "sample input: no duplicates"
+                    input: '"hola"'
+                    expected: "No duplicate characters"
+                -   name: "sample input: routine"
+                    input: '"goodbyeblues"'
+                    expected:
+                        - "o: 2"
+                        - "b: 2"
+                        - "e: 2"
+            duplicate_character_counter_invalid:
+                -   name: "no input"
+                    input: null
+                    expected: "Usage: please provide a string"
+                -   name: "empty input"
+                    input: '""'
+                    expected: "Usage: please provide a string"
+        test_output_filters:
+            duplicate_character_counter_valid:
+                - "strip"
+            duplicate_character_counter_invalid:
+                - "strip"
     evenodd:
         words:
             - "even"
             - "odd"
         requires_parameters: true
+        tests:
+            even_odd_valid:
+                -   name: "sample input: even"
+                    input: "2"
+                    expected: "Even"
+                -   name: "sample input: odd"
+                    input: "5"
+                    expected: "Odd"
+                -   name: "sample input: negative even"
+                    input: "-14"
+                    expected: "Even"
+                -   name: "sample input: negative odd"
+                    input: "-27"
+                    expected: "Odd"
+            even_odd_invalid:
+                -   name: "no input"
+                    input: null
+                    expected: "Usage: please input a number"
+                -   name: "empty input"
+                    input: '""'
+                    expected: "Usage: please input a number"
+                -   name: "invalid input: not a number"
+                    input: '"a"'
+                    expected: "Usage: please input a number"
+        test_output_filters:
+            even_odd_valid:
+                - "strip"
+            even_odd_invalid:
+                - "strip"
     factorial:
         words:
             - "factorial"
         requires_parameters: true
+        tests:
+            factorial_valid:
+                -   name: "sample input: zero"
+                    input: '"0"'
+                    expected: "1"
+                -   name: "sample input: one"
+                    input: '"1"'
+                    expected: "1"
+                -   name: "sample input: four"
+                    input: '"4"'
+                    expected: "120"
+                -   name: "sample input: eight"
+                    input: '"8"'
+                    expected: "40320"
+                -   name: "sample input: ten"
+                    input: '"10"'
+                    expected: "3628800"
+            factorial_invalid:
+                -   name: "no input"
+                    input: null
+                    expected: "Usage: please input a non-negative integer"
+                -   name: "empty input"
+                    input: '""'
+                    expected: "Usage: please input a non-negative integer"
+                -   name: "invalid input: not a number"
+                    input: '"asdf"'
+                    expected: "Usage: please input a non-negative integer"
+                -   name: "invalid input: negative"
+                    input: '"-1"'
+                    expected: "Usage: please input a non-negative integer"
+        test_output_filter:
+            test_factorial_valid:
+                - "strip"
+            test_factorial_invalid:
+                - "strip"
     fibonacci:
         words:
             - "fibonacci"
         requires_parameters: true
+        tests:
+            fibonacci_valid:
+                -   name: "sample input 0"
+                    input: '"0"'
+                    expected: ""
+                -   name: "sample input 1"
+                    input: '"1"'
+                    expected:
+                        - "1: 1"
+                -   name: "sample input 2"
+                    input: '"2"'
+                    expected:
+                        - "1: 1"
+                        - "2: 1"
+                -   name: "sample input 5"
+                    input: '"5"'
+                    expected:
+                        - "1: 1"
+                        - "2: 1"
+                        - "3: 2"
+                        - "4: 3"
+                        - "5: 5"
+                -   name: "sample input 10"
+                    input: '"10"'
+                    expected:
+                        - "1: 1"
+                        - "2: 1"
+                        - "3: 2"
+                        - "4: 3"
+                        - "5: 5"
+                        - "6: 8"
+                        - "7: 13"
+                        - "8: 21"
+                        - "9: 34"
+                        - "10: 55"
+            fibonacci_invalid:
+                -   name: "no input"
+                    input: null
+                    expected: "Usage: please input the count of fibonacci numbers to output"
+                -   name: "empty input"
+                    input: '""'
+                    expected: "Usage: please input the count of fibonacci numbers to output"
+                -   name: "invalid input: not a number"
+                    input: '"a"'
+                    expected: "Usage: please input the count of fibonacci numbers to output"
+        test_output_filters:
+            fibonacci_valid:
+                - "strip"
+            fibonacci_invalid:
+                - "strip"
     fileinputoutput:
         words:
             - "file"
             - "input"
             - "output"
         requires_parameters: false
+        tests:
+            file_io:
+                - expected:
+                    exec: "cat output.txt"
+        test_output_filters:
+            file_io:
+                - "strip"
     fizzbuzz:
         words:
             - "fizz"
             - "buzz"
         requires_parameters: false
+        tests:
+            fizz_buzz:
+                - expected:
+                    - "1"
+                    - "2"
+                    - "Fizz"
+                    - "4"
+                    - "Buzz"
+                    - "Fizz"
+                    - "7"
+                    - "8"
+                    - "Fizz"
+                    - "Buzz"
+                    - "11"
+                    - "Fizz"
+                    - "13"
+                    - "14"
+                    - "FizzBuzz"
+                    - "16"
+                    - "17"
+                    - "Fizz"
+                    - "19"
+                    - "Buzz"
+                    - "Fizz"
+                    - "22"
+                    - "23"
+                    - "Fizz"
+                    - "Buzz"
+                    - "26"
+                    - "Fizz"
+                    - "28"
+                    - "29"
+                    - "FizzBuzz"
+                    - "31"
+                    - "32"
+                    - "Fizz"
+                    - "34"
+                    - "Buzz"
+                    - "Fizz"
+                    - "37"
+                    - "38"
+                    - "Fizz"
+                    - "Buzz"
+                    - "41"
+                    - "Fizz"
+                    - "43"
+                    - "44"
+                    - "FizzBuzz"
+                    - "46"
+                    - "47"
+                    - "Fizz"
+                    - "49"
+                    - "Buzz"
+                    - "Fizz"
+                    - "52"
+                    - "53"
+                    - "Fizz"
+                    - "Buzz"
+                    - "56"
+                    - "Fizz"
+                    - "58"
+                    - "59"
+                    - "FizzBuzz"
+                    - "61"
+                    - "62"
+                    - "Fizz"
+                    - "64"
+                    - "Buzz"
+                    - "Fizz"
+                    - "67"
+                    - "68"
+                    - "Fizz"
+                    - "Buzz"
+                    - "71"
+                    - "Fizz"
+                    - "73"
+                    - "74"
+                    - "FizzBuzz"
+                    - "76"
+                    - "77"
+                    - "Fizz"
+                    - "79"
+                    - "Buzz"
+                    - "Fizz"
+                    - "82"
+                    - "83"
+                    - "Fizz"
+                    - "Buzz"
+                    - "86"
+                    - "Fizz"
+                    - "88"
+                    - "89"
+                    - "FizzBuzz"
+                    - "91"
+                    - "92"
+                    - "Fizz"
+                    - "94"
+                    - "Buzz"
+                    - "Fizz"
+                    - "97"
+                    - "98"
+                    - "Fizz"
+                    - "Buzz"
     fractionmath:
         words:
             - "fraction"
             - "math"
         requires_parameters: true
+        tests:
+            fractions_valid:
+                -   name: "sample input: addition"
+                    input: '"2/3" "+" "4/5"'
+                    expected: "22/15"
+                -   name: "sample input: multiplication"
+                    input: '"2/3" "*" "4/5"'
+                    expected: "8/15"
+                -   name: "sample input: subtraction"
+                    input: '"2/3" "-" "4/5"'
+                    expected: "-2/15"
+                -   name: "sample input: division"
+                    input: '"2/3" "/" "4/5"'
+                    expected: "5/6"
+                -   name: "sample input: equals"
+                    input: '"2/3" "==" "4/5"'
+                    expected: "0"
+                -   name: "sample input: greater than"
+                    input: '"2/3" ">" "4/5"'
+                    expected: "0"                
+                -   name: "sample input: less than"
+                    input: '"2/3" "<" "4/5"'
+                    expected: "1"
+                -   name: "sample input: greater than equals"
+                    input: '"2/3" ">=" "4/5"'
+                    expected: "0"
+                -   name: "sample input: less than equals"
+                    input: '"2/3" "<=" "4/5"'
+                    expected: "1"
+                -   name: "sample input: not equals"
+                    input: '"2/3" "!=" "4/5"'
+                    expected: "1"
+            fractions_invalid:
+                -   name: "no input"
+                    input: null
+                    expected: "Usage: ./fraction-math operand1 operator operand2"
+                -   name: "empty input"
+                    input: '""'
+                    expected: "Usage: ./fraction-math operand1 operator operand2"
+        test_output_filters:
+            fractions_valid:
+                - "strip"
+            fractions_invalid:
+                - "strip"
     helloworld:
         words:
             - "hello"
             - "world"
         requires_parameters: false
+        tests:
+            hello_world:
+                - expected: "Hello, World!"
+        test_output_filters:
+            - "strip"
+            - strip:
+                - '"'
     insertionsort:
         words:
             - "insertion"
             - "sort"
         requires_parameters: true
+        use_tests:
+            name: "bubblesort"
+            search: "bubble_sort"
+            replace: "insertion_sort"
     jobsequencing:
         words:
             - "job"
             - "sequencing"
         requires_parameters: true
+        tests:
+            sequencing_valid:
+                -   name: "sample input one"
+                    input: '"25, 15, 10, 5" "3, 1, 2, 2"'
+                    expected: "50"
+                -   name: "sample input two"
+                    input: '"20, 15, 10, 5, 1" "2, 2, 1, 3, 3"'
+                    expected: "40"
+            sequencing_invalid:
+                -   name: "no input"
+                    input: null
+                    expected: "Usage: please provide a list of profits and a list of deadlines"
+                -   name: "empty input"
+                    input: '""'
+                    expected: "Usage: please provide a list of profits and a list of deadlines"
+                -   name: "missing input"
+                    input: '"25 15 10 5"'
+                    expected: "Usage: please provide a list of profits and a list of deadlines"
+                -   name: "lists different lengths"
+                    input: '"1, 2, 3, 4", "1, 2, 3, 4, 5"'
+                    expected: "Usage: please provide a list of profits and a list of deadlines"
+        test_output_fiters:
+            sequencing_valid:
+                - "strip"
+            sequencing_invalid:
+                - "strip"
     josephusproblem:
         words:
             - "josephus"
             - "problem"
         requires_parameters: true
+        tests:
+            josephus_problem_valid:
+                -   name: "sample input 5, 2"
+                    input: '"5" "2'"
+                    expected: "3"
+                -   name: "sample input 7 3"
+                    input: '"7" "3"'
+                    expected: "4"
+                -   name: "sample input 41 4"
+                    input: '"41" "4"'
+                    expected: "11"
+            josephus_problem_invalid:
+                -   name: "no input"
+                    input: null
+                    expected: "Usage: please input the total number of people and number of people to skip."
+                -   name: "empty input"
+                    input: '""'
+                    expected: "Usage: please input the total number of people and number of people to skip."
+                -   name: "invalid input: not a number"
+                    input: '"a"'
+                    expected: "Usage: please input the total number of people and number of people to skip."
+                -   name: "invalid input: no k"
+                    input: '"1"'
+                    expected: "Usage: please input the total number of people and number of people to skip."
+        test_output_filters:
+            josephus_problem_valid:
+                - "strip"
+            josephus_problem_invalid:
+                - "strip"
     longestcommonsubsequence:
         words:
             - "longest"
             - "common"
             - "subsequence"
         requires_parameters: true
+        tests:
+            lcs_valid:
+                -   name: "sample input same length"
+                    input: '"1, 4, 5, 3, 15, 6" "1, 7, 4, 5, 11, 6"'
+                    expected: "1, 4, 5, 6"
+                -   name: "sample input different length"
+                    input: '"1, 4, 8, 6, 9, 3, 15, 11, 6" "1, 7, 4, 5, 8, 11, 6"'
+                    expected: "1, 4, 8, 11, 6"
+            lcs_invalid:
+                -   name: "no input"
+                    input: null
+                    expected: 'Usage: please provide two lists in the format "1, 2, 3, 4, 5"'
+                -   name: "empty input"
+                    input: '""'
+                    expected: 'Usage: please provide two lists in the format "1, 2, 3, 4, 5"'
+                -   name: "missing input"
+                    input: '"25 15 10 5"'
+                    expected: 'Usage: please provide two lists in the format "1, 2, 3, 4, 5"'
+        test_output_filters:
+            lcs_valid:
+                -   remove:
+                    - "["
+                    - "]"
+                -   "strip"
+            lcs_invalid:
+                -   "strip"
     longestpalindromicsubstring:
         words:
             - "longest"
             - "palindromic"
             - "substring"
         requires_parameters: true
+        tests:
+            lps_valid:
+                -   name: "sample input: one palindrome"
+                    input: "racecar"
+                    expected: "racecar"
+                -   name: "sample input: two palindrome"
+                    input: "kayak mom"
+                    expected: "kayak"
+                -   name: "sample input: complex palindrome"
+                    input: '"step on no pets"'
+                    expected: "step on no pets"
+            lps_invalid:
+                -   name: "no input"
+                    input: null
+                    expected: "Usage: please provide a string that contains at least one palindrome"
+                -   name: "empty input"
+                    input: '""'
+                    expected: "Usage: please provide a string that contains at least one palindrome"
+                -   name: "invalid input: no palindromes"
+                    input: "polip"
+                    expected: "Usage: please provide a string that contains at least one palindrome"
+        test_output_filters:
+            lps_valid:
+                - "strip"
+                - "lower"
+            lps_invalid:
+                - "strip"
     longestword:
         words:
             - "longest"
             - "word"
         requires_parameters: true
+        tests:
+            longest_word_valid:
+                -   name: "sample input: many words"
+                    input: '"May the force be with you"'
+                    expected: "5"
+                -   name: "sample input: single word"
+                    input: '"Floccinaucinihilipilification"'
+                    expected: "29"
+                -   name: "sample input: multiline"
+                    input: '"Hi,\nMy name is Paul!"'
+                    expected: "5"
+            longest_word_invalid:
+                -   name: "no input"
+                    input: null
+                    expected: "Usage: please provide a string"
+                -   name: "empty input"
+                    input: '""'
+                    expected: "Usage: please provide a string"
+        test_output_filters:
+            longest_word_valid:
+            - "strip"
+            longest_word_invalid:
+            - "strip"
     linearsearch:
         words:
             - "linear"
             - "search"
         requires_parameters: true
+        tests:
+            linear_search_valid:
+                -   name: "sample input first true"
+                    input: '"1, 3, 5, 7" "1"'
+                    expected: "true"
+                -   name: "sample input last true"
+                    input: '"1, 3, 5, 7" "7"'
+                    expected: "true"
+                -   name: "sample input middle true"
+                    input: '"1, 3, 5, 7" "5"'
+                    expected: "true"
+                -   name: "sample input one true"
+                    input: '"5" "5"'
+                    expected: "true"
+                -   name: "sample input one false"
+                    input: '"5" "7"'
+                    expected: "false"
+                -   name: "sample input many false"
+                    input: '"1, 3, 5, 6" "7"'
+                    expected: "false"
+            linear_search_invalid:
+                -   name: "no input"
+                    input: null
+                    expected: 'Usage: please provide a list of integers ("1, 4, 5, 11, 12") and the integer to find ("11")'
+                -   name: "missing input: target"
+                    input: '"1, 2, 3, 4"'
+                    expected: 'Usage: please provide a list of integers ("1, 4, 5, 11, 12") and the integer to find ("11")'
+                -   name: "missing input: list"
+                    input: '"" "5"'
+                    expected: 'Usage: please provide a list of integers ("1, 4, 5, 11, 12") and the integer to find ("11")'
+        test_output_filters:
+            linear_search_valid:
+                - "strip"
+                - "lower"
+            linear_search_invalid:
+                - "strip"
     maximumarrayrotation:
         words:
             - "maximum"
             - "array"
             - "rotation"
         requires_parameters: true
+        tests:
+            maximimum_array_rotation_valid:
+                -   name: "sample input no rotation"
+                    input: '"3, 1, 2, 8"'
+                    expected: "29"
+                -   name: "sample input one rotation"
+                    input: '"1, 2, 8, 3"'
+                    expected: "29"
+                -   name: "sample input many rotations"
+                    input: '"8, 3, 1, 2"'
+                    expected: "29"
+            maximimum_array_rotation_invalid:
+                -   name: "no input"
+                    input: null
+                    expected: 'Usage: please provide a list of integers (e.g. "8, 3, 1, 2")'
+                -   name: "empty input"
+                    input: '""'
+                    expected: 'Usage: please provide a list of integers (e.g. "8, 3, 1, 2")'
+        test_output_filters:
+            maximimum_array_rotation_valid:
+                - "strip"
+            maximimum_array_rotation_invalid:
+                - "strip"
     maximumsubarray:
         words:
             - "maximum"
             - "subarray"
         requires_parameters: true
+        tests:
+            maximum_subarray_valid:
+                -   name: "sample input: one element"
+                    input: '"1"'
+                    expected: "1"
+                -   name: "sample input: many positive values"
+                    input: '"1, 2, 3"'
+                    expected: "6"
+                -   name: "sample input: many negative values"
+                    input: '"-1, -2, -3"'
+                    expected: "-1"
+                -   name: "sample input: many negative followed by positive values"
+                    input: '"-2, -1, 3, 4, 5"'
+                    expected: "12"
+                -   name: "sample input: many alternating positive and negative values"
+                    input: '"-1, -4, 2, 3, -3, -4, 9"'
+                    expected: "9"
+            maximum_subarray_invalid:
+                -   name: "no input"
+                    input: null
+                    expected: 'Usage: Please provide a list of integers in the format: "1, 2, 3, 4, 5"'
+                -   name: "empty input"
+                    input: '""'
+                    expected: 'Usage: Please provide a list of integers in the format: "1, 2, 3, 4, 5"'
+        test_output_filters:
+            maximum_subarray_valid:
+                - "strip"
+            maximum_subarray_invalid:
+                - "strip"
     mergesort:
         words:
             - "merge"
             - "sort"
         requires_parameters: true
+        use_tests:
+            name: "bubblesort"
+            search: "bubble_sort"
+            replace: "merge_sort"
     minimumspanningtree:
         words:
             - "minimum"
             - "spanning"
             - "tree"
         requires_parameters: true
+        tests:
+            minimum_spanning_tree_valid:
+                -   name: "sample input: routine"
+                    input: '"0, 2, 0, 6, 0, 2, 0, 3, 8, 5, 0, 3, 0, 0, 7, 6, 8, 0, 0, 9, 0, 5, 7, 9, 0"'
+                    expected: "16"
+            minimum_spanning_tree_invalid:
+                -   name: "no input"
+                    input: null
+                    expected: "Usage: please provide a comma-separated list of integers"
+                -   name: "empty input"
+                    input: '""'
+                    expected: "Usage: please provide a comma-separated list of integers"
+                -   name: "non-square input"
+                    input: '"1, 0, 3, 0, 5, 1"'
+                    expected: "Usage: please provide a comma-separated list of integers"
+        test_output_filters:
+            minimum_spanning_tree_valid:
+                - "strip"
+            minimum_spanning_tree_invalid:
+                - "strip"
     palindromicnumber:
         words:
             - "palindromic"
             - "number"
         requires_parameters: true
+        tests:
+            palindromic_number_valid:
+                -   name: "sample input: one digit"
+                    input: "7"
+                    expected: "true"
+                -   name: "sample input: even digits"
+                    input: "2442"
+                    expected: "true"
+                -   name: "sample input: odd digits"
+                    input: "232"
+                    expected: "true"
+                -   name: "sample input: even digits not palindrome"
+                    input: "5215"
+                    expected: "false"
+                -   name: "sample input: odd digits not palindrome"
+                    input: "521"
+                    expected: "false"
+            palindromic_number_invalid:
+                -   name: "no input"
+                    input: null
+                    expected: "Usage: please input a non-negative integer"
+                -   name: "empty input"
+                    input: '""'
+                    expected: "Usage: please input a non-negative integer"
+                -   name: "invalid input: not a number"
+                    input: "a"
+                    expected: "Usage: please input a non-negative integer"
+                -   name: "invalid input: negative integer"
+                    input: "-7"
+                    expected: "Usage: please input a non-negative integer"
+                -   name: "invalid input: float"
+                    input: "5.41"
+                    expected: "Usage: please input a non-negative integer"
+        test_output_filters:
+            palindromic_number_valid:
+                - "strip"
+                - "lower"
+            palindromic_number_invalid:
+                - "strip"
     primenumber:
         words:
             - "prime"
             - "number"
         requires_parameters: true
+        tests:
+            prime_valid:
+                -   name: "sample input 0"
+                    input: "'0'"
+                    expected: "composite"
+                -   name: "sample input 1"
+                    input: "'1'"
+                    expected: "composite"
+                -   name: "sample input 2"
+                    input: "'2'"
+                    expected: "prime"
+                -   name: "sample input small composite"
+                    input: "'4'"
+                    expected: "composite"
+                -   name: "sample input small prime"
+                    input: "'7'"
+                    expected: "prime"
+                -   name: "sample input large composite"
+                    input: "'4011'"
+                    expected: "composite"
+                -   name: "sample input large prime"
+                    input: '"3727"'
+                    expected: "prime"
+            prime_invalid:
+                -   name: "no input"
+                    input: null
+                    expected: "Usage: please input a non-negative integer"
+                -   name: "empty input"
+                    input: '""'
+                    expected: "Usage: please input a non-negative integer"
+                -   name: "invalid input: not a number"
+                    input: '"a"'
+                    expected: "Usage: please input a non-negative integer"
+                -   name: "invalid input: not an integer"
+                    input: '"6.7"'
+                    expected: "Usage: please input a non-negative integer"
+                -   name: "invalid input: negative"
+                    input: '"-7"'
+                    expected: "Usage: please input a non-negative integer"
+        test_output_filters:
+            prime_valid:
+                - "strip"
+                - "lower"
+            prime_invalid:
+                - "strip"
     quicksort:
         words:
             - "quick"
             - "sort"
         requires_parameters: true
+        use_tests:
+            name: "bubblesort"
+            search: "bubble_sort"
+            replace: "quick_sort"
     quine:
         words:
             - "quine"
         requires_parameters: false
+        tests:
+            - quine:
+                - expected:
+                    self: ""
     rot13:
         words:
             - "rot13"
         requires_parameters: true
+        tests:
+            rot13_valid:
+                -   name: "sample input lower case"
+                    input: '"the quick brown fox jumped over the lazy dog"'
+                    expected: "gur dhvpx oebja sbk whzcrq bire gur ynml qbt"
+                -   name: "sample input upper case"
+                    input: '"THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG"'
+                    expected: "GUR DHVPX OEBJA SBK WHZCRQ BIRE GUR YNML QBT"
+                -   name: "sample input punctuation"
+                    input: '"The quick brown fox jumped. Was it over the lazy dog?"'
+                    expeccted: "Gur dhvpx oebja sbk whzcrq. Jnf vg bire gur ynml qbt?"
+            rot13_invalid:
+                -   name: "no input"
+                    input: null
+                    expected: "Usage: please provide a string to encrypt"
+                -   name: "empty input"
+                    input: '""'
+                    expected: "Usage: please provide a string to encrypt"
+        test_output_filters:
+            rot13_valid:
+                - "strip"
+            rot13_invalid:
+                - "strip"
     removeallwhitespace:
         words:
             - "remove"
             - "all"
             - "whitespace"
         requires_parameters: true
+        tests:
+            remove_all_whitespace_valid:
+                -   name: "sample input: no spaces"
+                    input: '"RemoveAllWhitespace"'
+                    expected: "RemoveAllWhitespace"
+                -   name: "sample input: leading spaces"
+                    input: '"    RemoveAllWhitespace"'
+                    expected: "RemoveAllWhitespace"
+                -   name: "sample input: trailing spaces"
+                    input: '"RemoveAllWhitespace    "'
+                    expected: "RemoveAllWhitespace"
+                -   name: "sample input: inner spaces"
+                    input: '"Remove All Whitespace"'
+                    expected: "RemoveAllWhitespace"
+                -   name: "sample input: tabs"
+                    input: '"\tRemove\tAll\tWhitespace\t"'
+                    expected: "RemoveAllWhitespace"
+                -   name: "sample input: newlines"
+                    input: '"\nRemove\nAll\nWhitespace\n"'
+                    expected: "RemoveAllWhitespace"
+                -   name: "sample input: carriage returns"
+                    input: '"\rRemove\rAll\rWhitespace\r"'
+                    expected: "RemoveAllWhitespace"
+            remove_all_whitespace_invalid:
+                -   name: "no input"
+                    input: null
+                    expected: "Usage: please provide a string"
+                -   name: "empty input"
+                    input: '""'
+                    expected: "Usage: please provide a string"
+        test_output_filters:
+            remove_all_whitespace_valid:
+                - "strip"
+            remove_all_whitespace_invalid:
+                - "strip"
     reversestring:
         words:
             - "reverse"
             - "string"
         requires_parameters: true
+        tests:
+            reverse_string:
+                -   input: '"Hello, World"'
+                    expected: "dlroW ,olleH"
+        test_output_filters:
+            reverse_string:
+                - "strip"
     romannumeral:
         words:
             - "roman"
             - "numeral"
         requires_parameters: true
+        tests:
+            roman_numeral_valid:
+                -   name: "empty input"
+                    input: '""'
+                    expected: "0"
+                -   name: "single I"
+                    input: '"I"'
+                    expected: "1"
+                -   name: "single V"
+                    input: '"V"'
+                    expected: "5"
+                -   name: "single X"
+                    input: '"X"'
+                    expected: "10"
+                -   name: "single L"
+                    input: '"L"'
+                    expected: "50"
+                -   name: "single C"
+                    input: '"C"'
+                    expected: "100"
+                -   name: "single D"
+                    input: '"D"'
+                    expected: "500"
+                -   name: "single M"
+                    input: '"M"'
+                    expected: "1000"
+                -   name: "addition"
+                    input: '"XXV"'
+                    expected: "25"
+                -   name: "subtraction"
+                    input: '"XIV"'
+                    expected: "14"
+            roman_numeral_invalid:
+                -   name: "no input"
+                    input: null
+                    expected: "Usage: please provide a string of roman numerals"
+                -   name: "invalid input"
+                    input: '"XT"'
+                    expected: "Error: invalid string of roman numerals"
+        test_output_filter:
+            roman_numeral_valid:
+                - "strip"
+            roman_numeral_invalid:
+                - "strip"
     selectionsort:
         words:
             - "selection"
             - "sort"
         requires_parameters: true
+        use_tests:
+            name: "bubblesort"
+            search: "bubble_sort"
+            replace: "selection_sort"
     sleepsort:
         words:
             - "sleep"
             - "sort"
         requires_parameters: true
+        use_tests:
+            name: "bubblesort"
+            search: "bubble_sort"
+            replace: "sleep_sort"
     transposematrix:
         words:
             - "transpose"
             - "matrix"
         requires_parameters: true
+        tests:
+            transpose_matrix_valid:
+                -   name: "sample input: routine"
+                    input: '"3" "2" "1, 2, 3, 4, 5, 6"'
+                    expected: "1, 4, 2, 5, 3, 6"
+            transpose_matrix_invalid:
+                -   name: "no input"
+                    input: null
+                    expected: "Usage: please enter the dimension of the matrix and the serialized matrix"
+                -   name: "missing input: no columns or rows"
+                    input: '"" "" "1, 2, 3, 4, 5, 6"'
+                    expected: "Usage: please enter the dimension of the matrix and the serialized matrix"
+                -   name: "missing input: no matrix"
+                    input: '"3" "3" ""'
+                    expected: "Usage: please enter the dimension of the matrix and the serialized matrix"
+        test_output_filters:
+            transpose_matrix_valid:
+                - remove:
+                    - "["
+                    - "]"
+                - "strip"
+            transpose_matrix_invalid:
+                - "strip"
