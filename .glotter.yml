@@ -398,7 +398,7 @@ projects:
             fibonacci_valid:
                 -   name: "sample input 0"
                     input: '"0"'
-                    expected: ""
+                    expected: []
                 -   name: "sample input 1"
                     input: '"1"'
                     expected:
