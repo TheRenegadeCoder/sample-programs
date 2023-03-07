@@ -1,2 +1,2 @@
 #!/bin/bash
-exec python runner.py $@
+exec python runner.py "$@"
