@@ -82,7 +82,7 @@ follow this repository structure.
 ### Test
 
 Meanwhile, the test folder contains all the testing related files. Tests are
-organized by project and administered through [Glotter][glotter]. This toolkit allows us
+organized by project and administered through [Glotter2][glotter2]. This toolkit allows us
 to write black-box tests in Python for any programming language. 
 
 To see what projects are already covered, take a peek in the [projects folder][test-projects-folder]. 
@@ -133,7 +133,7 @@ for each naming convention:
 | pascal     | EvenOdd.sh  |
 | underscore | even_odd.sh |
 
-Naming conventions are important as they help our testing engine, [Glotter][glotter], parse file names.
+Naming conventions are important as they help our testing engine, [Glotter2][glotter2], parse file names.
 
 ## Pull Requests in Detail
 
@@ -211,7 +211,7 @@ pull request process.
 All new languages must be setup for testing.
 To do so, add a file called `testinfo.yml` to the new language directory.
 
-Refer to the [Glotter Wiki][glotter-directory-config] and the [Tests in Detail section][tests-in-detail] below
+Refer to the [Glotter2 documentation][glotter2-directory-config] and the [Tests in Detail section][tests-in-detail] below
 for more information about the contents of that file.
 
 ## Issues in Detail
@@ -308,11 +308,19 @@ Some common cases for testing are outlined below.
 | Run all language tests for a given project | `./samplerunner.sh test -p {PROJECT_KEY}` | `./samplerunner.sh test -p evenodd` |
 | Run all tests for a specific program | `./samplerunner.sh test -s {NAME_OF_PROJECT}.{EXTENSION}` | `./samplerunner.sh -s Fibonacci.java` |
 
+The `-l`, `-p`, and `-s` options can be used together in the event that multiple languages
+have the same filename and extension. For example, suppose that there are two programs
+called `hello_world.e`, one in Eiffel and one in Euphoria. If you want to force the
+the Eiffel one to be used, you would do one of the following options:
+
+- `-l eiffel -p helloworld`
+- `-l eiffel -s hello_world.e`
+
 ### Adding a testsinfo.yml
 
 Each project directory should contain a file called `testinfo.yml`.
 This file contains information that tell the testing framework how to identify, build, and execute source files in this language.
-Refer to the [Glotter Wiki][glotter-directory-config] for detailed information about the structure of the `testinfo.yml` file.
+Refer to the [Glotter Documentation][glotter2-directory-config] for detailed information about the structure of the `testinfo.yml` file.
 
 For the container section of the file, we prefer to use [official language images][docker-official-images].
 If no official image is available, please try to use one that commonly used by developers in the language
@@ -362,9 +370,8 @@ These rules help grow and cultivate the community in a positive manner.
 [sample-programs-issues]: https://github.com/TheRenegadeCoder/sample-programs/issues
 
 [project-list]: https://sampleprograms.io/projects/
-[glotter]: https://github.com/auroq/glotter
-[glotter-wiki]: https://github.com/auroq/glotter/wiki
-[glotter-directory-config]: https://github.com/auroq/glotter/wiki/Directory-Level-Configuration
+[glotter2]: https://github.com/rzuckerm/glotter2
+[glotter2-directory-config]: https://rzuckerm.github.io/glotter2/directory-level-configuration.html
 [sample-program-issues]: https://github.com/TheRenegadeCoder/sample-programs/issues
 [sample-programs-website]: https://github.com/TheRenegadeCoder/sample-programs-website
 [sample-programs-website-contributing]: https://github.com/TheRenegadeCoder/sample-programs-website
