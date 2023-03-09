@@ -9,7 +9,7 @@ projects:
         requires_parameters: false
         tests:
             bakalava:
-                cases:
+                params:
                     - expected:
                         - "          *"
                         - "         ***"
@@ -41,7 +41,7 @@ projects:
         requires_parameters: true
         tests:
             binary_search_valid:
-                cases:
+                params:
                     -   name: "sample input first true"
                         input: '"1, 3, 5, 7" "1"'
                         expected: "true"
@@ -67,7 +67,7 @@ projects:
                     - "strip"
                     - "lower"
             binary_search_invalid:
-                cases:
+                params:
                     -   name: "no input"
                         input: null
                         expected: 'Usage: please provide a list of sorted integers ("1, 4, 5, 11, 12") and the integer to find ("11")'
@@ -89,7 +89,7 @@ projects:
         requires_parameters: true
         tests:
             bubble_sort_valid:
-                cases:
+                params:
                     -   name: "sample input"
                         input: '"4, 5, 3, 1, 2"'
                         expected: "1, 2, 3, 4, 5"
@@ -108,7 +108,7 @@ projects:
                         - "]"
                     -   "strip"
             bubble_sort_invalid:
-                cases:
+                params:
                     -   name: "no input"
                         input: null
                         expected: 'Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"'
@@ -129,7 +129,7 @@ projects:
         requires_parameters: true
         tests:
             capitalize_valid:
-                cases:
+                params:
                     -   name: "sample input: lowercase string"
                         input: '"hello"'
                         expected: "Hello"
@@ -148,7 +148,7 @@ projects:
                 transformations:
                     - "strip"
             capitalize_invalid:
-                cases:
+                params:
                     -   name: "no input"
                         input: null
                         expected: "Usage: please provide a string"
@@ -164,7 +164,7 @@ projects:
         requires_parameters: true
         tests:
             convex_hull_valid:
-                cases:
+                params:
                     -   name: "sample input: triangle"
                         input: '"100, 180, 240" "220, 120, 20"'
                         expected:
@@ -191,7 +191,7 @@ projects:
                     -   "splitlines"
                     -   "any_order"
             convex_hull_invalid:
-                cases:
+                params:
                     -   name: "no input"
                         input: null
                         expected: 'Usage: please provide at least 3 x and y coordinates as separate lists (e.g. "100, 440, 210")'
@@ -217,7 +217,7 @@ projects:
         requires_parameters: true
         tests:
             depth_first_search_valid:
-                cases:
+                params:
                     -   name: "sample input: first true"
                         input: '"0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0" "1, 3, 5, 2, 4" "1"'
                         expected: "true"
@@ -239,7 +239,7 @@ projects:
                 transformations:
                     - "strip"
             depth_first_search_invalid:
-                cases:
+                params:
                     -   name: "no input"
                         input: null
                         expected: 'Usage: please provide a tree in an adjacency matrix form ("0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0") together with a list of vertex values ("1, 3, 5, 2, 4") and the integer to find ("4")'
@@ -260,7 +260,7 @@ projects:
         requires_parameters: true
         tests:
             dijkstra_valid:
-                cases:
+                params:
                     -   name: "sample input: routine"
                         input: '"0, 2, 0, 6, 0, 2, 0, 3, 8, 5, 0, 3, 0, 0, 7, 6, 8, 0, 0, 9, 0, 5, 7, 9, 0" "0" "1"'
                         expected: "2"
@@ -270,7 +270,7 @@ projects:
                         - "]"
                     - "strip"
             dijkstra_invalid:
-                cases:
+                params:
                     -   name: "no input"
                         input: null
                         expected: "Usage: please provide three inputs: a serialized matrix, a source node and a destination node"
@@ -305,7 +305,7 @@ projects:
         requires_parameters: true
         tests:
             duplicate_character_counter_valid:
-                cases:
+                params:
                     -   name: "sample input: no duplicates"
                         input: '"hola"'
                         expected: "No duplicate characters"
@@ -319,7 +319,7 @@ projects:
                     - "strip"
                     - "splitlines"
             duplicate_character_counter_invalid:
-                cases:
+                params:
                     -   name: "no input"
                         input: null
                         expected: "Usage: please provide a string"
@@ -335,7 +335,7 @@ projects:
         requires_parameters: true
         tests:
             even_odd_valid:
-                cases:
+                params:
                     -   name: "sample input: even"
                         input: "2"
                         expected: "Even"
@@ -351,7 +351,7 @@ projects:
                 transformations:
                     - "strip"
             even_odd_invalid:
-                cases:
+                params:
                     -   name: "no input"
                         input: null
                         expected: "Usage: please input a number"
@@ -369,7 +369,7 @@ projects:
         requires_parameters: true
         tests:
             factorial_valid:
-                cases:
+                params:
                     -   name: "sample input: zero"
                         input: '"0"'
                         expected: "1"
@@ -388,7 +388,7 @@ projects:
                 transformations:
                     - "strip"
             factorial_invalid:
-                cases:
+                params:
                     -   name: "no input"
                         input: null
                         expected: "Usage: please input a non-negative integer"
@@ -409,7 +409,7 @@ projects:
         requires_parameters: true
         tests:
             fibonacci_valid:
-                cases:
+                params:
                     -   name: "sample input 0"
                         input: '"0"'
                         expected: []
@@ -447,7 +447,7 @@ projects:
                     - "strip"
                     - "splitlines"
             fibonacci_invalid:
-                cases:
+                params:
                     -   name: "no input"
                         input: null
                         expected: "Usage: please input the count of fibonacci numbers to output"
@@ -467,7 +467,7 @@ projects:
         requires_parameters: false
         tests:
             file_io:
-                cases:
+                params:
                     - expected:
                         exec: "cat output.txt"
                 transformations:
@@ -480,7 +480,7 @@ projects:
         requires_parameters: false
         tests:
             fizz_buzz:
-                cases:
+                params:
                     - expected:
                         - "1"
                         - "2"
@@ -591,7 +591,7 @@ projects:
         requires_parameters: true
         tests:
             fractions_valid:
-                cases:
+                params:
                     -   name: "sample input: addition"
                         input: '"2/3" "+" "4/5"'
                         expected: "22/15"
@@ -625,7 +625,7 @@ projects:
                 transformations:
                     - "strip"
             fractions_invalid:
-                cases:
+                params:
                     -   name: "no input"
                         input: null
                         expected: "Usage: ./fraction-math operand1 operator operand2"
@@ -641,7 +641,7 @@ projects:
         requires_parameters: false
         tests:
             hello_world:
-                cases:
+                params:
                     - expected: "Hello, World!"
                 transformations:
                     - "strip"
@@ -663,7 +663,7 @@ projects:
         requires_parameters: true
         tests:
             sequencing_valid:
-                cases:
+                params:
                     -   name: "sample input one"
                         input: '"25, 15, 10, 5" "3, 1, 2, 2"'
                         expected: "50"
@@ -673,7 +673,7 @@ projects:
                 transformations:
                     - "strip"
             sequencing_invalid:
-                cases:
+                params:
                     -   name: "no input"
                         input: null
                         expected: "Usage: please provide a list of profits and a list of deadlines"
@@ -695,7 +695,7 @@ projects:
         requires_parameters: true
         tests:
             josephus_problem_valid:
-                cases:
+                params:
                     -   name: "sample input 5, 2"
                         input: '"5" "2"'
                         expected: "3"
@@ -708,7 +708,7 @@ projects:
                 transformations:
                     - "strip"
             josephus_problem_invalid:
-                cases:
+                params:
                     -   name: "no input"
                         input: null
                         expected: "Usage: please input the total number of people and number of people to skip."
@@ -731,7 +731,7 @@ projects:
         requires_parameters: true
         tests:
             lcs_valid:
-                cases:
+                params:
                     -   name: "sample input same length"
                         input: '"1, 4, 5, 3, 15, 6" "1, 7, 4, 5, 11, 6"'
                         expected: "1, 4, 5, 6"
@@ -744,7 +744,7 @@ projects:
                         - "]"
                     -   "strip"
             lcs_invalid:
-                cases:
+                params:
                     -   name: "no input"
                         input: null
                         expected: 'Usage: please provide two lists in the format "1, 2, 3, 4, 5"'
@@ -764,7 +764,7 @@ projects:
         requires_parameters: true
         tests:
             lps_valid:
-                cases:
+                params:
                     -   name: "sample input: one palindrome"
                         input: "racecar"
                         expected: "racecar"
@@ -778,7 +778,7 @@ projects:
                     - "strip"
                     - "lower"
             lps_invalid:
-                cases:
+                params:
                     -   name: "no input"
                         input: null
                         expected: "Usage: please provide a string that contains at least one palindrome"
@@ -797,7 +797,7 @@ projects:
         requires_parameters: true
         tests:
             longest_word_valid:
-                cases:
+                params:
                     -   name: "sample input: many words"
                         input: '"May the force be with you"'
                         expected: "5"
@@ -810,7 +810,7 @@ projects:
                 transformations:
                 - "strip"
             longest_word_invalid:
-                cases:
+                params:
                     -   name: "no input"
                         input: null
                         expected: "Usage: please provide a string"
@@ -826,7 +826,7 @@ projects:
         requires_parameters: true
         tests:
             linear_search_valid:
-                cases:
+                params:
                     -   name: "sample input first true"
                         input: '"1, 3, 5, 7" "1"'
                         expected: "true"
@@ -849,7 +849,7 @@ projects:
                     - "strip"
                     - "lower"
             linear_search_invalid:
-                cases:
+                params:
                     -   name: "no input"
                         input: null
                         expected: 'Usage: please provide a list of integers ("1, 4, 5, 11, 12") and the integer to find ("11")'
@@ -869,7 +869,7 @@ projects:
         requires_parameters: true
         tests:
             maximimum_array_rotation_valid:
-                cases:
+                params:
                     -   name: "sample input no rotation"
                         input: '"3, 1, 2, 8"'
                         expected: "29"
@@ -882,7 +882,7 @@ projects:
                 transformations:
                     - "strip"
             maximimum_array_rotation_invalid:
-                cases:
+                params:
                     -   name: "no input"
                         input: null
                         expected: 'Usage: please provide a list of integers (e.g. "8, 3, 1, 2")'
@@ -898,7 +898,7 @@ projects:
         requires_parameters: true
         tests:
             maximum_subarray_valid:
-                cases:
+                params:
                     -   name: "sample input: one element"
                         input: '"1"'
                         expected: "1"
@@ -943,14 +943,14 @@ projects:
         requires_parameters: true
         tests:
             minimum_spanning_tree_valid:
-                cases:
+                params:
                     -   name: "sample input: routine"
                         input: '"0, 2, 0, 6, 0, 2, 0, 3, 8, 5, 0, 3, 0, 0, 7, 6, 8, 0, 0, 9, 0, 5, 7, 9, 0"'
                         expected: "16"
                 transformations:
                     - "strip"
             minimum_spanning_tree_invalid:
-                cases:
+                params:
                     -   name: "no input"
                         input: null
                         expected: "Usage: please provide a comma-separated list of integers"
@@ -969,7 +969,7 @@ projects:
         requires_parameters: true
         tests:
             palindromic_number_valid:
-                cases:
+                params:
                     -   name: "sample input: one digit"
                         input: "7"
                         expected: "true"
@@ -988,7 +988,7 @@ projects:
                 transformations:
                     - "strip"
             palindromic_number_invalid:
-                cases:
+                params:
                     -   name: "no input"
                         input: null
                         expected: "Usage: please input a non-negative integer"
@@ -1013,7 +1013,7 @@ projects:
         requires_parameters: true
         tests:
             prime_valid:
-                cases:
+                params:
                     -   name: "sample input 0"
                         input: "'0'"
                         expected: "composite"
@@ -1039,7 +1039,7 @@ projects:
                     - "strip"
                     - "lower"
             prime_invalid:
-                cases:
+                params:
                     -   name: "no input"
                         input: null
                         expected: "Usage: please input a non-negative integer"
@@ -1072,7 +1072,7 @@ projects:
         requires_parameters: false
         tests:
             quine:
-                cases:
+                params:
                     - expected:
                         self: ""
                 transformations:
@@ -1084,7 +1084,7 @@ projects:
         requires_parameters: true
         tests:
             rot13_valid:
-                cases:
+                params:
                     -   name: "sample input lower case"
                         input: '"the quick brown fox jumped over the lazy dog"'
                         expected: "gur dhvpx oebja sbk whzcrq bire gur ynml qbt"
@@ -1097,7 +1097,7 @@ projects:
                 transformations:
                     - "strip"
             rot13_invalid:
-                cases:
+                params:
                     -   name: "no input"
                         input: null
                         expected: "Usage: please provide a string to encrypt"
@@ -1114,7 +1114,7 @@ projects:
         requires_parameters: true
         tests:
             remove_all_whitespace_valid:
-                cases:
+                params:
                     -   name: "sample input: no spaces"
                         input: '"RemoveAllWhitespace"'
                         expected: "RemoveAllWhitespace"
@@ -1139,7 +1139,7 @@ projects:
                 transformations:
                     - "strip"
             remove_all_whitespace_invalid:
-                cases:
+                params:
                     -   name: "no input"
                         input: null
                         expected: "Usage: please provide a string"
@@ -1155,7 +1155,7 @@ projects:
         requires_parameters: true
         tests:
             reverse_string:
-                cases:
+                params:
                     -   input: '"Hello, World"'
                         expected: "dlroW ,olleH"
                 transformations:
@@ -1167,7 +1167,7 @@ projects:
         requires_parameters: true
         tests:
             roman_numeral_valid:
-                cases:
+                params:
                     -   name: "empty input"
                         input: '""'
                         expected: "0"
@@ -1201,7 +1201,7 @@ projects:
                 transformations:
                     - "strip"
             roman_numeral_invalid:
-                cases:
+                params:
                     -   name: "no input"
                         input: null
                         expected: "Usage: please provide a string of roman numerals"
@@ -1235,7 +1235,7 @@ projects:
         requires_parameters: true
         tests:
             transpose_matrix_valid:
-                cases:
+                params:
                     -   name: "sample input: routine"
                         input: '"3" "2" "1, 2, 3, 4, 5, 6"'
                         expected: "1, 4, 2, 5, 3, 6"
@@ -1245,7 +1245,7 @@ projects:
                         - "]"
                     - "strip"
             transpose_matrix_invalid:
-                cases:
+                params:
                     -   name: "no input"
                         input: null
                         expected: "Usage: please enter the dimension of the matrix and the serialized matrix"
