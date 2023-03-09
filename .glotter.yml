@@ -308,7 +308,8 @@ projects:
                 params:
                     -   name: "sample input: no duplicates"
                         input: '"hola"'
-                        expected: "No duplicate characters"
+                        expected:
+                            - "No duplicate characters"
                     -   name: "sample input: routine"
                         input: '"goodbyeblues"'
                         expected:
@@ -378,7 +379,7 @@ projects:
                         expected: "1"
                     -   name: "sample input: four"
                         input: '"4"'
-                        expected: "120"
+                        expected: "24"
                     -   name: "sample input: eight"
                         input: '"8"'
                         expected: "40320"
@@ -583,6 +584,8 @@ projects:
                         - "Fizz"
                         - "Buzz"
                 transformations:
+                    - "remove":
+                        - " "
                     - "splitlines"
     fractionmath:
         words:
@@ -684,7 +687,7 @@ projects:
                         input: '"25 15 10 5"'
                         expected: "Usage: please provide a list of profits and a list of deadlines"
                     -   name: "lists different lengths"
-                        input: '"1, 2, 3, 4" "1, 2, 3, 4, 5"'
+                        input: '"1, 2, 3, 4", "1, 2, 3, 4, 5"'
                         expected: "Usage: please provide a list of profits and a list of deadlines"
                 transformations:
                     - "strip"
@@ -993,7 +996,7 @@ projects:
                         input: null
                         expected: "Usage: please input a non-negative integer"
                     -   name: "empty input"
-                        input: '""'
+                        input: ""
                         expected: "Usage: please input a non-negative integer"
                     -   name: "invalid input: not a number"
                         input: "a"
@@ -1093,7 +1096,7 @@ projects:
                         expected: "GUR DHVPX OEBJA SBK WHZCRQ BIRE GUR YNML QBT"
                     -   name: "sample input punctuation"
                         input: '"The quick brown fox jumped. Was it over the lazy dog?"'
-                        expeccted: "Gur dhvpx oebja sbk whzcrq. Jnf vg bire gur ynml qbt?"
+                        expected: "Gur dhvpx oebja sbk whzcrq. Jnf vg bire gur ynml qbt?"
                 transformations:
                     - "strip"
             rot13_invalid:
