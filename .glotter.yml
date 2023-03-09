@@ -1071,7 +1071,7 @@ projects:
             - "quine"
         requires_parameters: false
         tests:
-            - quine:
+            quine:
                 cases:
                     - expected:
                         self: ""
