@@ -1,4 +1,3 @@
 ronbun>=0.6.0, <0.7.0
-glotter2>=0.4.4,<0.5.0
+glotter2==0.5.0a1
 #-e ../../rzuckerm/glotter2
-
