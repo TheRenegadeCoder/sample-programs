@@ -40,8 +40,8 @@ jobs:
       shell: bash
 
     - name: Install Docker on MacOS
-      uses: docker-practice/actions-setup-docker@v1
-      if: ${{ matrix.os }} != 'macos-latest'
+      run: brew install docker
+      if: ${{ matrix.os != 'macos-latest' }}
 
     - name: Download Docker images
       run: |
