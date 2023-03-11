@@ -40,7 +40,9 @@ jobs:
       shell: bash
 
     - name: Install Docker on MacOS
-      run: brew install docker
+      run: |
+        brew install docker
+        colima start
       if: ${{ matrix.os == 'macos-latest' }}
 
     - name: Download Docker images
