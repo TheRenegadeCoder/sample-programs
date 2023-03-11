@@ -41,7 +41,7 @@ jobs:
 
     - name: Install Docker on MacOS
       run: brew install docker
-      if: ${{ matrix.os != 'macos-latest' }}
+      if: ${{ matrix.os == 'macos-latest' }}
 
     - name: Download Docker images
       run: |
