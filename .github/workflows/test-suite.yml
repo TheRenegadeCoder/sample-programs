@@ -37,6 +37,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      shell: bash
 
     - name: Install Docker
       uses: docker-practice/actions-setup-docker@v1
