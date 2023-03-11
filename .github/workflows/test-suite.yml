@@ -41,7 +41,7 @@ jobs:
 
     - name: Install Docker
       uses: docker-practice/actions-setup-docker@v1
-      if: "${{ matrix.os }} != 'ubuntu-latest'"
+      if: ${{ matrix.os }} != 'ubuntu-latest'
 
     - name: Download Docker images
       run: |
