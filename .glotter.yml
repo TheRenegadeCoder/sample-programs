@@ -1,5 +1,4 @@
 settings:
-    acronym_scheme: "two_letter_limit"
     source_root: "./archive"
 
 projects:
