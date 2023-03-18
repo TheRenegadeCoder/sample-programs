@@ -653,7 +653,6 @@ projects:
         words:
             - "insertion"
             - "sort"
-        requires_parameters: true
         use_tests:
             name: "bubblesort"
             search: "bubble_sort"
@@ -932,7 +931,6 @@ projects:
         words:
             - "merge"
             - "sort"
-        requires_parameters: true
         use_tests:
             name: "bubblesort"
             search: "bubble_sort"
@@ -1063,7 +1061,6 @@ projects:
         words:
             - "quick"
             - "sort"
-        requires_parameters: true
         use_tests:
             name: "bubblesort"
             search: "bubble_sort"
@@ -1217,7 +1214,6 @@ projects:
         words:
             - "selection"
             - "sort"
-        requires_parameters: true
         use_tests:
             name: "bubblesort"
             search: "bubble_sort"
@@ -1226,7 +1222,6 @@ projects:
         words:
             - "sleep"
             - "sort"
-        requires_parameters: true
         use_tests:
             name: "bubblesort"
             search: "bubble_sort"

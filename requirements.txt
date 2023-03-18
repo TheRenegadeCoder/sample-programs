@@ -1,2 +1,2 @@
 ronbun>=0.6.0, <0.7.0
-glotter2==0.5.0a8
+glotter2==0.5.0a9
