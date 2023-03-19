@@ -1,7 +1,9 @@
 (ns reverse-string
 	(:gen-class))
 
-(defn main [s]
-  (println(clojure.string/reverse s)))
+(defn main [args]
+  (if (not= (count args) 0)
+    (println(clojure.string/reverse (first args)))
+  ))
 
-(main (first *command-line-args*))
+(main *command-line-args*)

@@ -2,7 +2,7 @@ fun main(args: Array<String>){
   // Get input, or use default value
   val targetValue = when (args.size > 0 && !args[0].isNullOrBlank()) {
     true -> args[0]
-    false -> throw Error("No String Provided. Nothing to Reverse")
+    false -> ""
   }  
   
   // Kotlin provides a simple `reversed()` function in the standard

@@ -1,8 +1,6 @@
 
 my ($str) = @ARGV;
 
-if (not defined $str) {
-    die "Please supply a string as the first parameter\n";
+if (defined $str) {
+    print scalar reverse $str;
 }
-
-print scalar reverse $str;

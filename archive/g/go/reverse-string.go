@@ -20,7 +20,5 @@ func main() {
 	if argslen == 2 {
 		input := os.Args[1]
 		fmt.Printf("%v\n", reverse_string(input))
-	} else { //No or more than two command line args exist
-		fmt.Println("Input one string as command line arg")
 	}
 }

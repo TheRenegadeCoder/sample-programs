@@ -1,2 +1,5 @@
 (defparameter input (cadr *posix-argv*))
-(write-line (reverse input))
+(cond
+  ((null input) ())
+  (t (write-line (reverse input)))
+)
