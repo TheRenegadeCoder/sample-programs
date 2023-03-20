@@ -57,7 +57,7 @@ You will find more detail about each guideline throughout the rest of this docum
 ## Repository Structure
 
 At the root of the repository, there are several housekeeping files that shouldn't matter
-much to the average user. The only item that matter is the archives folder.
+much to the average user. The only item that matters is the archives folder.
 
 ### Archives
 
