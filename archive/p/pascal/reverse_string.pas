@@ -4,10 +4,7 @@ var
   i, j: Integer;
    buf, result: String;
 begin
-buf := paramStr(1);
-  if buf = '' then
-    writeln('Usage: please provide a string')
-  else;
+  buf := paramStr(1);
   setlength(result,length(buf));
   i:=1; 
   j:=length(buf);

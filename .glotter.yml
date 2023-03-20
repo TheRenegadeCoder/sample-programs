@@ -1155,6 +1155,12 @@ projects:
         tests:
             reverse_string:
                 params:
+                    -   name: "No input"
+                        input: null
+                        expected: ""
+                    -   name: "Empty input"
+                        input: '""'
+                        expected: ""
                     -   name: "Ascii String"
                         input: '"Hello, World"'
                         expected: "dlroW ,olleH"
