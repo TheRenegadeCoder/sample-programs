@@ -1,5 +1,3 @@
-PROC usage = VOID: printf(($gl$, "Usage: please provide a string"));
-
 PROC reverse string = (STRING s) STRING:
 (
     STRING t;
@@ -11,13 +9,8 @@ PROC reverse string = (STRING s) STRING:
     t
 );
 
-# Get 1st command-line argument. Exit if empty #
+# Get 1st command-line argument #
 STRING s := argv(4);
-IF UPB s = 0
-THEN
-    usage;
-    stop
-FI;
 
 # Reverse string and show result #
 s := reverse string(s);

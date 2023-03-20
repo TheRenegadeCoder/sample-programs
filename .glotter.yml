@@ -682,10 +682,10 @@ projects:
                         input: '""'
                         expected: "Usage: please provide a list of profits and a list of deadlines"
                     -   name: "missing input"
-                        input: '"25 15 10 5"'
+                        input: '"25, 15, 10, 5"'
                         expected: "Usage: please provide a list of profits and a list of deadlines"
                     -   name: "lists different lengths"
-                        input: '"1, 2, 3, 4", "1, 2, 3, 4, 5"'
+                        input: '"1, 2, 3, 4" "1, 2, 3, 4, 5"'
                         expected: "Usage: please provide a list of profits and a list of deadlines"
                 transformations:
                     - "strip"
@@ -1155,6 +1155,12 @@ projects:
         tests:
             reverse_string:
                 params:
+                    -   name: "No input"
+                        input: null
+                        expected: ""
+                    -   name: "Empty input"
+                        input: '""'
+                        expected: ""
                     -   name: "Ascii String"
                         input: '"Hello, World"'
                         expected: "dlroW ,olleH"

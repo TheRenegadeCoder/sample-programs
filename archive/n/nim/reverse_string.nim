@@ -6,8 +6,7 @@ var text: string
 try:
     text = paramStr(1)
 except IndexError:
-    echo "Usage: please input a string to reverse"
-    quit(1)
+    quit(0)
 
 var reversed_text: string
 for i in countdown(len(text)-1, 0):

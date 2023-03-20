@@ -46,6 +46,9 @@ def main(args):
     try:
         profits = input_list(args[0])
         deadlines = input_list(args[1])
+        if len(profits) != len(deadlines):
+            exit_with_error()
+
         jobs = [Job(p, d) for p, d in zip(profits, deadlines)]
         print(max_profit(jobs))
     except (IndexError, ValueError):

@@ -6,6 +6,6 @@ main :: IO ()
 main = do
   args <- getArgs
   if null args then
-    error "You need to provide us with a string in order to reverse it"
+    putStrLn ""
   else
     putStrLn $ reverse $ head args
