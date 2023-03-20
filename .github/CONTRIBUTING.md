@@ -203,7 +203,7 @@ sections of the [Glotter2 documentation][glotter2-doc]:
 You should be able to use the auto-generated test feature of [Glotter2][glotter2] for your
 new project. However, if that does not meet your needs, you can always create one manually in the
 [test folder][test-folder]. Make sure to add a new project key to [\_\_init\_\_.py][test-folder-init].
-Alternatively, if you test can be automated, feel free to contribute to the
+Alternatively, if your test can be automated, feel free to contribute to the
 [Glotter2][glotter2] repository. Please read the [Glotter2 Contributing Guide][glotter2-contrib]
 before logging an issue and making a pull request.
 
