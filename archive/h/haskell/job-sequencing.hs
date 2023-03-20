@@ -65,7 +65,9 @@ main = do
   let profit = headMaybe args >>= stringToListMaybe
   let deadline = tailMaybe args >>= headMaybe >>= stringToListMaybe
   let groups = zip <$> profit <*> deadline
-  let jobs = fmap (jobSequence) groups
+  let jobs = if (maybe 0 length profit) == (maybe 0 length deadline)
+             then fmap (jobSequence) groups
+             else Nothing
   case jobs of
     Nothing -> putStrLn "Usage: please provide a list of profits and a list of deadlines"
     Just n  -> putStrLn $ show $ maxProfit $ iterateJobs n
