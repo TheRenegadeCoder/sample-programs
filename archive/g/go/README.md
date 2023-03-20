@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Go! To find documentation related to the Go code in this repo, look [here.](https://sampleprograms.io/languages/go)
 
-## Sample Programs List - 22/37 :relaxed:
+## Sample Programs List - 23/37 :relaxed:
 
 In this section, we feature a list of completed and missing programs in Go. See above for the current amount of completed programs in Go. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -24,6 +24,7 @@ Below, you'll find a list of completed code snippets in Go. Code snippets preced
 - :warning: [Job Sequencing in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+job+sequencing+go) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :warning: [Longest Common Subsequence in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+common+subsequence+go) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
 - :warning: [Longest Palindromic Substring in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+palindromic+substring+go) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
+- :warning: [Longest Word in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+go) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :warning: [Merge Sort in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+go) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
 - :warning: [Prime Number in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+go) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :warning: [Quick Sort in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+go) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
@@ -44,7 +45,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fraction+Math+in+go) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Josephus+Problem+in+go) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :x: [Linear Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Linear+Search+in+go) [[Requirements](https://sampleprograms.io/projects/linear-search)]
-- :x: [Longest Word](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Longest+Word+in+go) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+go) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+go) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+go) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
