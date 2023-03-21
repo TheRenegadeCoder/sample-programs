@@ -15,7 +15,7 @@ function parse_int($str_value)
         return FALSE;
     }
 
-    // Make valid integer
+    // Make sure valid integer
     if (
         filter_var(
             $str_value,
@@ -40,7 +40,7 @@ function parse_int_array($str_values)
 {
     $str_array = explode(",", $str_values);
     $values = array();
-    foreach ($str_array as &$str_value)
+    foreach ($str_array as $str_value)
     {
         $value = parse_int($str_value);
         if ($value === FALSE)
