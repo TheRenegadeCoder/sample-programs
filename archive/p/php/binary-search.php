@@ -7,7 +7,7 @@ function usage()
 function parse_int($str_value)
 {
     // Remove leading and trailing spaces
-    $value = trim($str_value);
+    $str_value = trim($str_value);
 
     // Make sure all digits
     if (preg_match("/^\d+$/", $str_value) === FALSE)
