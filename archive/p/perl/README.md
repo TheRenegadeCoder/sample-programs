@@ -60,7 +60,7 @@ The following list shares details about what we're using to test all Sample Prog
 - Docker Image: perl
 - Docker Tag: 5.28-slim
 
-See the [Glotter project](https://github.com/auroq/glotter) for more information on how to create a testinfo file.
+See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 
 ---
 
