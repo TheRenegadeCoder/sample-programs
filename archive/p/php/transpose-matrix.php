@@ -67,7 +67,7 @@ function transpose_matrix($matrix)
     // If 1, use 'array_chunk' to output each value in the row to its own row.
     // Otherwise, use 'array_map' with no function and the "splat" operator to
     // output one value in each column and append it to each row
-    return count($matrix) ? array_chunk($matrix[0], 1) : array_map(NULL, ...$matrix);
+    return (count($matrix) == 1) ? array_chunk($matrix[0], 1) : array_map(NULL, ...$matrix);
 }
 
 // Show matrix as a list
