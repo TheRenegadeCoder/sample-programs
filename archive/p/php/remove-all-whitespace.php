@@ -6,8 +6,7 @@ function usage()
 
 function remove_all_whitespace($str)
 {
-    // Split on whitespace, join back together
-    return implode("", preg_split("/\s+/", $str));
+    return preg_replace("/\s+/", "", $str);
 }
 
 // Exit if too few arguments or 1st argument is empty
