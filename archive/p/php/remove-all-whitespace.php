@@ -11,7 +11,7 @@ function remove_all_whitespace($str)
 }
 
 // Exit if too few arguments or 1st argument is empty
-if (count($argv) < 2 || strlen($argv[1]) < 1)
+if (count($argv) < 2 || empty($argv[1]))
 {
     usage();
 }
