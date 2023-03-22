@@ -15,7 +15,7 @@ function parse_int($str_value)
     $str_value = trim($str_value);
 
     // Make sure all digits
-    if (preg_match("/^\d+$/", $str_value) === FALSE)
+    if (preg_match("/^[+-]?\d+$/", $str_value) === FALSE)
     {
         return FALSE;
     }
@@ -105,37 +105,33 @@ function depth_first_search($tree, $target)
     $visited = array();
 
     // Perform depth first recursively starting at root of tree
-    $found = NULL;
-    return depth_first_search_rec($tree[0], $target, $visited, $found);
+    return depth_first_search_rec($tree[0], $target, $visited);
 }
 
-function depth_first_search_rec(&$node, $target, &$visited, &$found)
+function &depth_first_search_rec(&$node, $target, &$visited)
 {
-    // If entry not found and node is valid,
-    if (is_null($found) && !is_null($node))
+    $found = NULL;
+
+    // If node is invalid or value of this node matches target, return this node
+    if (is_null($node) || $node->id == $target)
     {
-        // Indicate this node is visited
-        $visited[$node->id] = TRUE;
+        return $node;
+    }
 
-        // If value of this node matches target, indicate found and exit
-        if ($node->id == $target)
-        {
-            $found = $node;
-            return $found;
-        }
+    // Indicate this node is visited
+    $visited[$node->id] = TRUE;
 
-        // Perform depth first search on each unvisited child of this node (if any)
-        foreach ($node->children as $child)
+    // Perform depth first search on each unvisited child of this node (if any).
+    // Stop when match is found
+    foreach ($node->children as $child)
+    {
+        if (!array_key_exists($child->id, $visited))
         {
+            $found = depth_first_search_rec($child, $target, $visited, $found);
+            $visited[$child->id] = TRUE;
             if (!is_null($found))
             {
-                return $found;
-            }
-
-            if (!array_key_exists($child->id, $visited))
-            {
-                $found = depth_first_search_rec($child, $target, $visited, $found);
-                $visited[$child->id] = TRUE;
+                break;
             }
         }
     }
