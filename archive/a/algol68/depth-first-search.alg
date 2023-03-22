@@ -163,46 +163,41 @@ PROC depth first search = (REF []NODE tree, INT target) REF NODE:
     OD;
 
     # Perform depth first recursively starting at root of tree #
-    INT found index := depth first search rec(tree, target, 1, visited, 0);
+    INT found index := depth first search rec(tree, target, 1, visited);
     (found index > 0 | tree[found index] | NIL)
 );
 
 PROC depth first search rec = (
-    REF []NODE tree, INT target, INT node index, REF []BOOL visited, INT found index
+    REF []NODE tree, INT target, INT node index, REF []BOOL visited
 ) INT:
 (
-    # If entry not found and node is valid, #
-    INT index := found index;
-    IF index = 0 AND node index > 0
-    THEN
-        NODE node := tree[node index];
-        INT value := value OF node;
-        REF []INT children := children OF node;
+    INT found index := 0;
 
+    # If node is invalid or value of this node matches target, return this node index #
+    IF node index = 0 OREL value OF tree[node index] = target
+    THEN
+        found index := node index
+    ELSE
         # Indicate this node is visited #
         visited[node index] := TRUE;
 
-        # If value of this node matches target, indicate found #
-        # Else, perform depth first search on each unvisited child of this node (if any) #
-        IF value = target
-        THEN
-            index := node index
-        ELSE
-            INT child index;
-            FOR k TO UPB children
-            WHILE index = 0
-            DO
-                child index := children[k];
-                IF NOT visited[child index]
-                THEN
-                    index := depth first search rec(tree, target, child index, visited, index);
-                    visited[child index] := TRUE
-                FI
-            OD
-        FI
+        # Perform depth first search on each unvisited child of this node (if any). #
+        # Stop when match found #
+        INT child index;
+        REF []INT children := children OF tree[node index];
+        FOR k TO UPB children
+        WHILE found index = 0
+        DO
+            child index := children[k];
+            IF NOT visited[child index]
+            THEN
+                found index := depth first search rec(tree, target, child index, visited);
+                visited[child index] := TRUE
+            FI
+        OD
     FI;
 
-    index
+    found index
 );
 
 # Parse 1st command-line argument #
