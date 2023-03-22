@@ -18,7 +18,7 @@ if (count($argv) < 2)
 
 // Exit if 1st command-line argument is empty
 $str = $argv[1];
-if (strlen($str) < 1)
+if (empty($str))
 {
     usage();
 }
