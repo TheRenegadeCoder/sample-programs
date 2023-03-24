@@ -72,7 +72,7 @@ function binary_search($target, $values)
     $high = count($values);
     while ($low < $high)
     {
-        $mid = ($low + $high) / 2;
+        $mid = intdiv($low + $high, 2);
 
         // If found it, return index
         if ($values[$mid] == $target)
