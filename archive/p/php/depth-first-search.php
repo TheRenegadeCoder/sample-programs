@@ -61,6 +61,9 @@ function parse_int_array($str_values)
 
 class Node
 {
+    public $id;
+    public $children;
+
     public function __construct($id)
     {
         $this->id = $id;
