@@ -134,7 +134,7 @@ function find_leftmost_point(sequence points)
         if x < min_x or (x = min_x and y > max_y)
         then
             min_x = x
-            max_y = Y
+            max_y = y
             min_index = k
         end if
     end for
