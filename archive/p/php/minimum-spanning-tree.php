@@ -171,6 +171,7 @@ class MSTItem
         $this->weight = $weight;
     }
 }
+
 // Find vertex with minimum key values not already in MST
 function find_min_key($keys, $mst_set)
 {
