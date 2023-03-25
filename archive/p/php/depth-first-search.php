@@ -130,7 +130,7 @@ function &depth_first_search_rec(&$node, $target, &$visited)
     {
         if (!array_key_exists($child->id, $visited))
         {
-            $found = depth_first_search_rec($child, $target, $visited, $found);
+            $found = depth_first_search_rec($child, $target, $visited);
             $visited[$child->id] = TRUE;
             if (!is_null($found))
             {
