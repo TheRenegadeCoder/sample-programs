@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Php! To find documentation related to the Php code in this repo, look [here.](https://sampleprograms.io/languages/php)
 
-## Sample Programs List - 27/37 :relaxed:
+## Sample Programs List - 28/37 :smile:
 
 In this section, we feature a list of completed and missing programs in Php. See above for the current amount of completed programs in Php. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -28,6 +28,7 @@ Below, you'll find a list of completed code snippets in Php. Code snippets prece
 - :warning: [Linear Search in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+linear+search+php) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :warning: [Longest Word in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+php) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :warning: [Merge Sort in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+php) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
+- :warning: [Palindromic Number in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+php) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :warning: [Prime Number in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+php) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :warning: [Quick Sort in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+php) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
 - :warning: [Quine in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+php) [[Requirements](https://sampleprograms.io/projects/quine)]
@@ -50,7 +51,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+php) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+php) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+php) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
-- :x: [Palindromic Number](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Palindromic+Number+in+php) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+php) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
 ## Testing
