@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Php! To find documentation related to the Php code in this repo, look [here.](https://sampleprograms.io/languages/php)
 
-## Sample Programs List - 31/37 :smile:
+## Sample Programs List - 32/37 :smile:
 
 In this section, we feature a list of completed and missing programs in Php. See above for the current amount of completed programs in Php. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -21,6 +21,7 @@ Below, you'll find a list of completed code snippets in Php. Code snippets prece
 - :warning: [Fibonacci in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+php) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :warning: [File Input Output in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+php) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :warning: [Fizz Buzz in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+php) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
+- :warning: [Fraction Math in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fraction+math+php) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :warning: [Hello World in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+php) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :warning: [Insertion Sort in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+php) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :warning: [Job Sequencing in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+job+sequencing+php) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
@@ -48,7 +49,6 @@ The following list contains all of the approved programs that are not currently 
 
 - :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Convex+Hull+in+php) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Dijkstra+in+php) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
-- :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Fraction+Math+in+php) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :x: [Longest Common Subsequence](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Longest+Common+Subsequence+in+php) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
 - :x: [Longest Palindromic Substring](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Longest+Palindromic+Substring+in+php) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+php) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
