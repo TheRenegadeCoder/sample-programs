@@ -168,10 +168,10 @@ projects:
             - "hull"
         requires_parameters: true
         tests:
-            inputs:
-                - "Input X"
-                - "Input Y"
             convex_hull_valid:
+                inputs:
+                    - "Input X"
+                    - "Input Y"
                 params:
                     -   name: "sample input: triangle"
                         input: '"100, 180, 240" "220, 120, 20"'
