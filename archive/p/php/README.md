@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Php! To find documentation related to the Php code in this repo, look [here.](https://sampleprograms.io/languages/php)
 
-## Sample Programs List - 36/37 :smile:
+## Sample Programs List - 37/37 :partying_face:
 
 In this section, we feature a list of completed and missing programs in Php. See above for the current amount of completed programs in Php. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -14,6 +14,7 @@ Below, you'll find a list of completed code snippets in Php. Code snippets prece
 - :warning: [Binary Search in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+binary+search+php) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :warning: [Bubble Sort in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+php) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :warning: [Capitalize in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+php) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :warning: [Convex Hull in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+convex+hull+php) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :warning: [Depth First Search in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+depth+first+search+php) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :warning: [Dijkstra in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+dijkstra+php) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :warning: [Duplicate Character Counter in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+php) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
@@ -51,7 +52,7 @@ Below, you'll find a list of completed code snippets in Php. Code snippets prece
 
 The following list contains all of the approved programs that are not currently implemented in Php. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
-- :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Convex+Hull+in+php) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
+
 
 ## Testing
 
