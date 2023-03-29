@@ -27,7 +27,12 @@ function main() {
     // Weight < 0
     if (matList.some(weight => weight < 0)) {
         return console.log(usage);
-    } 
+    }
+
+    // Not any weight > 0
+    if (!matList.some(weight => weight > 0)) {
+        return console.log(usage);
+    }
 
     // The Source or The Destination > SquareRootOfMatrix - 1
     if (src > n - 1 || des > n - 1) {
