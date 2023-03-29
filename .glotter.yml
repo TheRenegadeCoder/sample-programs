@@ -311,16 +311,19 @@ projects:
                         input: '"0, 2, 0, 6, 0, 2, 0, 3, 8, 5, 0, 3, 0, 0, 7, 6, 8, 0, 0, 9, 0, 5, 7, 9, 0" "0" ""'
                         expected: "Usage: please provide three inputs: a serialized matrix, a source node and a destination node"
                     -   name: "no source or destination"
-                        input: '"0, 2, 0, 6, 0, 2, 0, 3, 8, 5, 0, 3, 0, 0, 7, 6, 8, 0, 0, 9, 0, 5, 7, 9, 0" "3" "" ""'
+                        input: '"0, 2, 0, 6, 0, 2, 0, 3, 8, 5, 0, 3, 0, 0, 7, 6, 8, 0, 0, 9, 0, 5, 7, 9, 0" "" ""'
                         expected: "Usage: please provide three inputs: a serialized matrix, a source node and a destination node"
                     -   name: "source or destination < 0"
-                        input: '"0, 2, 0, 6, 0, 2, 0, 3, 8, 5, 0, 3, 0, 0, 7, 6, 8, 0, 0, 9, 0, 5, 7, 9, 0" "3" "-1" "2"'
+                        input: '"0, 2, 0, 6, 0, 2, 0, 3, 8, 5, 0, 3, 0, 0, 7, 6, 8, 0, 0, 9, 0, 5, 7, 9, 0" "-1" "2"'
                         expected: "Usage: please provide three inputs: a serialized matrix, a source node and a destination node"
                     -   name: "weight < 0"
-                        input: '"0, 2, 0, -6, 0, 2, 0, 3, 8, 5, 0, 3, 0, 0, 7, -6, 8, 0, 0, 9, 0, 5, 7, 9, 0" "3" "1" "2"'
+                        input: '"0, 2, 0, -6, 0, 2, 0, 3, 8, 5, 0, 3, 0, 0, 7, -6, 8, 0, 0, 9, 0, 5, 7, 9, 0" "1" "2"'
                         expected: "Usage: please provide three inputs: a serialized matrix, a source node and a destination node"
                     -   name: "source or destination > number of vertices"
-                        input: '"0, 2, 0, -6, 0, 2, 0, 3, 8, 5, 0, 3, 0, 0, 7, -6, 8, 0, 0, 9, 0, 5, 7, 9, 0" "3" "1" "10"'
+                        input: '"0, 2, 0, -6, 0, 2, 0, 3, 8, 5, 0, 3, 0, 0, 7, -6, 8, 0, 0, 9, 0, 5, 7, 9, 0" "1" "10"'
+                        expected: "Usage: please provide three inputs: a serialized matrix, a source node and a destination node"
+                    -   name: "no way"
+                        input: '"0, 0, 0, 0" "0" "1"'
                         expected: "Usage: please provide three inputs: a serialized matrix, a source node and a destination node"
                 transformations:
                     - "strip"
@@ -814,7 +817,7 @@ projects:
                         input: "racecar"
                         expected: "racecar"
                     -   name: "sample input: two palindrome"
-                        input: "kayak mom"
+                        input: '"kayak mom"'
                         expected: "kayak"
                     -   name: "sample input: complex palindrome"
                         input: '"step on no pets"'
@@ -1043,7 +1046,7 @@ projects:
                         input: null
                         expected: "Usage: please input a non-negative integer"
                     -   name: "empty input"
-                        input: ""
+                        input: '""'
                         expected: "Usage: please input a non-negative integer"
                     -   name: "invalid input: not a number"
                         input: "a"
