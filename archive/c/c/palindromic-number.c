@@ -37,7 +37,7 @@ int is_int(char **argv)
     while (isdigit(argv[1][j]))
         ++j;
 
-    if (strlen(argv[1]) != j)
+    if (strlen(argv[1]) != j || j == 0)
     {
         return 1;
     }

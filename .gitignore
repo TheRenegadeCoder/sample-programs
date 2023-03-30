@@ -19,3 +19,4 @@ __pycache__/
 venv/
 generated/
 /requirements-dev.txt
+/docs
