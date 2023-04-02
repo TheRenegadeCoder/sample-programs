@@ -118,7 +118,7 @@ projects:
                         input: null
                         expected: 'Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"'
                     -   name: "empty input"
-                        input: ""
+                        input: '""'
                         expected: 'Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"'
                     -   name: "invalid input: not a list"
                         input: "1"
@@ -158,7 +158,7 @@ projects:
                         input: null
                         expected: "Usage: please provide a string"
                     -   name: "empty input"
-                        input: ""
+                        input: '""'
                         expected: "Usage: please provide a string"
                 transformations:
                     - "strip"
