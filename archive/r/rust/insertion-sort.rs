@@ -36,12 +36,9 @@ fn insertion_sort(arr: &mut Vec<i32>) {
 }
 
 fn main() {
-    let mut args = args();
-    args.next(); // Skip command name
-
     // Convert 1st command-line argument to list of integers
     let mut arr: Vec<i32> = parse_int_list(
-        args.next()
+        args().nth(1)
         .unwrap_or_else(|| usage())
     );
 

@@ -32,12 +32,9 @@ fn fibonacci(terms: i32) {
 }
 
 fn main() {
-    let mut args = args();
-    args.next(); // Skip command name
-
     // Exit if 1st command-line argument not an integer
     let mut input_value: Result<i32, ParseIntError> = parse_int(
-        args.next().unwrap_or_else(|| usage())
+        args().nth(1).unwrap_or_else(|| usage())
     );
     if input_value.is_err() {
         usage();
