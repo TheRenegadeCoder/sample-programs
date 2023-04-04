@@ -1,0 +1,9 @@
+folder:
+  extension: ".rs"
+  naming: "hyphen"
+
+container:
+  image: "rust"
+  tag: "1.68.2-alpine3.17"
+  build: "rustc {{ source.name }}{{ source.extension }}" 
+  cmd: "./{{ source.name }}"
