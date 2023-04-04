@@ -37,7 +37,7 @@ fn main() {
         println!("Composite");
         exit(0);
     }
-    while n * n < value {
+    while n * n <= value {
         if value % n == 0 {
             println!("Composite");
             exit(0);
