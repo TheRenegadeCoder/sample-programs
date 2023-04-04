@@ -1,30 +1,27 @@
-use std::env;
-use std::process;
+use std::env::args;
+use std::process::exit;
+use std::num::ParseIntError;
 
-fn usage() {
+fn usage() -> ! {
     println!("Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"");
-    process::exit(0);
+    exit(0);
 }
 
-fn parse_int(s: &String) -> Option<i32> {
-    match s.trim().parse::<i32>() {
-        Ok(n) => Some(n),
-        Err(e) => None,
-    }
+fn parse_int(s: String) -> Result<i32, ParseIntError> {
+    s.trim().parse::<i32>()
 }
 
-fn parse_int_list(s_list: &String) -> Vec<i32> {
-    let results: Vec<Option<i32>> = s_list.split(",")
-        .map(|s| parse_int(&s.to_string()))
+fn parse_int_list(s_list: String) -> Vec<i32> {
+    let results: Vec<Result<i32, ParseIntError>> = s_list.split(",")
+        .map(|s| parse_int(s.to_string()))
         .collect();
-    if results.iter().any(|s| s.is_none()) {
-        vec![]
-    }
-    else {
-        results.iter().map(|result| result.unwrap()).collect()
+    match results.iter().any(|s| s.is_err()) {
+        true => vec![],
+        false => results.iter()
+            .map(|result| result.clone().unwrap())
+            .collect()
     }
 }
-
 
 fn insertion_sort(arr: &mut Vec<i32>) {
     for i in 0..arr.len() {
@@ -39,14 +36,14 @@ fn insertion_sort(arr: &mut Vec<i32>) {
 }
 
 fn main() {
-    // Exit if not enough command-line arguments
-    let args: Vec<String> = env::args().collect();
-    if args.len() < 2 {
-        usage();
-    }
+    let mut args = args();
+    args.next(); // Skip command name
 
     // Convert 1st command-line argument to list of integers
-    let mut arr: Vec<i32> = parse_int_list(&args[1]);
+    let mut arr: Vec<i32> = parse_int_list(
+        args.next()
+        .unwrap_or_else(|| usage())
+    );
 
     // Exit if list too small
     if arr.len() < 2 {

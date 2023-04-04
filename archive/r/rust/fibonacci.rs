@@ -1,18 +1,16 @@
-use std::env;
-use std::process;
+use std::env::args;
+use std::process::exit;
+use std::num::ParseIntError;
 
 const LIMIT: i32 = 93;
 
-fn usage() {
+fn usage() -> ! {
     println!("Usage: please input the count of fibonacci numbers to output");
-    process::exit(0);
+    exit(0);
 }
 
-fn parse_int(s: &String) -> Option<i32> {
-    match s.trim().parse::<i32>() {
-        Ok(n) => Some(n),
-        Err(e) => None,
-    }
+fn parse_int(s: String) -> Result<i32, ParseIntError> {
+    s.trim().parse::<i32>()
 }
 
 fn fibonacci(terms: i32) {
@@ -20,35 +18,33 @@ fn fibonacci(terms: i32) {
         println!("The number of terms you want to calculate is too big!");
         println!("The limit is {}.", LIMIT);
     } else {
-        let mut i = 0i32;
         let mut a = 0u64;
         let mut b = 1u64;
         let mut c = 0u64;
-        while i < terms {
+        for i in 1..(terms + 1) {
             c = a + b;
             b = a;
             a = c;
-            
-            i += 1;
-            println!("{}: {}", i, c);
+
+            println!("{i}: {c}");
         }
     }
 }
 
 fn main() {
-    // Exit if not enough command-line arguments
-    let args: Vec<String> = env::args().collect();
-    if args.len() < 2 {
-        usage();
-    }
+    let mut args = args();
+    args.next(); // Skip command name
 
     // Exit if 1st command-line argument not an integer
-    let mut input_value: Option<i32> = parse_int(&args[1]);
-    if input_value.is_none() {
+    let mut input_value: Result<i32, ParseIntError> = parse_int(
+        args.next().unwrap_or_else(|| usage())
+    );
+    if input_value.is_err() {
         usage();
     }
 
     let input_num: i32 = input_value.unwrap();
 
+    // Show request number of Fibonacci numbers
     fibonacci(input_num);
 }

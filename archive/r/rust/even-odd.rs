@@ -1,30 +1,28 @@
 // Requirement is in https://sample-programs.therenegadecoder.com/projects/even-odd/
 // Program to accept an integer on the command line and outputs if the integer is Even or Odd.
 
-use std::env;
+use std::env::args;
+use std::process::exit;
+use std::num::ParseIntError;
 
-fn usage() {
+fn usage() -> ! {
     println!("Usage: please input a number");
-    std::process::exit(0);
+    exit(0);
 }
 
-fn parse_int(s: &String) -> Option<i32> {
-    match s.trim().parse::<i32>() {
-        Ok(n) => Some(n),
-        Err(e) => None,
-    }
+fn parse_int(s: String) -> Result<i32, ParseIntError> {
+    s.trim().parse::<i32>()
 }
 
 fn main() {
-    // Exit if not enough command-line arguments
-    let args: Vec<String> = env::args().collect();
-    if args.len() < 2 {
-        usage();
-    }
+    let mut args = args();
+    args.next(); // Skip command name
 
     // Exit if 1st command-line argument not an integer
-    let mut input_value: Option<i32> = parse_int(&args[1]);
-    if input_value.is_none() {
+    let mut input_value: Result<i32, ParseIntError> = parse_int(
+        args.next().unwrap_or_else(|| usage())
+    );
+    if input_value.is_err() {
         usage();
     }
 
