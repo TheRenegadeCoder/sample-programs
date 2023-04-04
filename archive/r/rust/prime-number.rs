@@ -2,33 +2,47 @@
 // Accept a number on command line and print if it is Composite or Prime 
 // Works till  39 digits, ...
 
-use std::process;
+use std::env::args;
+use std::process::exit;
+use std::num::ParseIntError;
+
+fn usage() -> ! {
+    println!("Usage: please input a non-negative integer");
+    exit(0);
+}
+
+fn parse_int(s: String) -> Result<i128, ParseIntError> {
+    s.trim().parse::<i128>()
+}
+
 fn main() {
-    //confirm integer is passed as commandline argument
-    let mut input_value = std::env::args().nth(1).expect("please input a non-negative integer");
-    // Trim the trailing newline
-    input_value = input_value.trim_end().to_string();
-    //String to Int
-    let input_num: u128 = input_value
-        .trim()
-        .parse()
-        .expect("please input a non-negative integer");
+    // Exit if 1st command-line argument not an integer
+    let mut input_value: Result<i128, ParseIntError> = parse_int(
+        args().nth(1).unwrap_or_else(|| usage())
+    );
+    if input_value.is_err() {
+        usage();
+    }
+
+    // Exit if negative integer
+    let input_num: i128 = input_value.unwrap();
+    if input_num < 0 {
+        usage();
+    }
 
     let mut n = 3 as u128;
-    let divisor = input_num /2 as u128;
+    let value = input_num as u128;
 
-    if input_num % 2 == 0 {
+    if value < 2 || (value != 2 && value % 2 == 0) {
         println!("Composite");
-        process::exit(1);
-    }    
-    while n < divisor {  
-        if input_num % n == 0 {
-        println!("Composite");
-        process::exit(1);        
+        exit(0);
+    }
+    while n * n <= value {
+        if value % n == 0 {
+            println!("Composite");
+            exit(0);
         }
         n = n + 2;
     }
-    if n >= divisor {
     println!("Prime");
-    }
 }

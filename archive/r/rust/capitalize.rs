@@ -4,7 +4,12 @@
 // Best part of Rust compiler issues warning to remove unused variables, functions, ...
 fn main() {
     //confirm string is passed as commandline argument
-    let mut input_value = std::env::args().nth(1).expect("Kindly pass the string as Command line Argument");
+    let mut input_value = std::env::args().nth(1).unwrap_or_else(|| "".to_string());
+    if input_value.len() < 1 {
+        println!("Usage: please provide a string");
+        std::process::exit(0);
+    }
+
     // Trim the trailing newline
     input_value = input_value.trim_end().to_string();
     // convert to vector
@@ -15,4 +20,4 @@ fn main() {
     let buff_hold: String = buff.into_iter().collect();
     // {} will print string without double quotes {:?} will print string with double quotes
     println!("{}", buff_hold);
-    }
+}

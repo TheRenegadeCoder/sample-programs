@@ -1,37 +1,47 @@
-const LIMIT: u64 = 93;
+use std::env::args;
+use std::process::exit;
+use std::num::ParseIntError;
 
-fn fibonacci(terms: u64) {
+const LIMIT: i32 = 93;
+
+fn usage() -> ! {
+    println!("Usage: please input the count of fibonacci numbers to output");
+    exit(0);
+}
+
+fn parse_int(s: String) -> Result<i32, ParseIntError> {
+    s.trim().parse::<i32>()
+}
+
+fn fibonacci(terms: i32) {
     if terms > LIMIT {
         println!("The number of terms you want to calculate is too big!");
         println!("The limit is {}.", LIMIT);
     } else {
-        println!("\n");
-        let mut i = 0u64;
         let mut a = 0u64;
         let mut b = 1u64;
         let mut c = 0u64;
-        while i < terms {
-            println!("{}", c);
-
+        for i in 1..(terms + 1) {
             c = a + b;
             b = a;
             a = c;
-            
-            i += 1;
+
+            println!("{i}: {c}");
         }
     }
 }
 
 fn main() {
-    let mut terms = String::new();
-    let mut terms_n: u64 = 0;
-
-    if std::io::stdin().read_line(&mut terms).is_err() {
-        println!("Could not read from keyboard!");
-    } else {
-        terms.pop();
-        terms_n = terms.parse().unwrap();
+    // Exit if 1st command-line argument not an integer
+    let mut input_value: Result<i32, ParseIntError> = parse_int(
+        args().nth(1).unwrap_or_else(|| usage())
+    );
+    if input_value.is_err() {
+        usage();
     }
 
-    fibonacci(terms_n);
+    let input_num: i32 = input_value.unwrap();
+
+    // Show request number of Fibonacci numbers
+    fibonacci(input_num);
 }
