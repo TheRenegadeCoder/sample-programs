@@ -38,11 +38,11 @@ fn is_sorted(arr: &Vec<i32>) -> bool {
 }
 
 fn binary_search(search_arr: &Vec<i32>, target: &i32) -> Option<usize> {
-    let mut low: i8 = 0;
-    let mut high: i8 = search_arr.len() as i8 - 1;
+    let mut low: usize = 0;
+    let mut high: usize = search_arr.len() - 1;
 
     while low <= high {
-        let mid = (((high - low) / 2) + low) as usize;
+        let mid = (((high - low) / 2) + low);
         let val = &search_arr[mid];
 
         if val == target {
@@ -51,12 +51,12 @@ fn binary_search(search_arr: &Vec<i32>, target: &i32) -> Option<usize> {
 
         // If value is < target then search between mid + 1 and high
         if val < target {
-            low = mid as i8 + 1;
+            low = mid + 1;
         }
 
         // If value is > target then search between low and mid - 1
         if val > target {
-            high = mid as i8 - 1;
+            high = mid - 1;
         }
     }
 
@@ -76,15 +76,11 @@ fn main() {
     }
 
     // Convert 2nd command-line argument to integer
-    let target_result : Result<i32, ParseIntError>  = parse_int(
+    let target: i32 = parse_int(
         args().nth(2)
         .unwrap_or_else(|| usage())
-    );
-    if target_result.is_err() {
-        usage();
-    }
+    ).unwrap_or_else(|_| usage());
 
-    let target: i32 = target_result.unwrap();
     match binary_search(&arr, &target) {
         Some(_) => println!("true"),
         None => println!("false"),
