@@ -21,7 +21,7 @@ fn parse_int_list(s_list: String) -> Option<Vec<i32>> {
             results.iter()
             .map(|result| result.clone().unwrap())
             .collect()
-        )
+        ),
     }
 }
 
