@@ -9,7 +9,7 @@ on:
     paths:
       - 'archive/**'
       - 'requirements.txt'
-      - '.github/readme.yml'
+      - '.github/workflows/readme.yml'
 
 jobs:
   readme:

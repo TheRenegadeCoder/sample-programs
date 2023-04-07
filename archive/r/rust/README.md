@@ -24,7 +24,7 @@ Below, you'll find a list of completed code snippets in Rust. Code snippets prec
 - :warning: [Merge Sort in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+rust) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
 - :warning: [Prime Number in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+rust) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :warning: [Quick Sort in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+rust) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
-- :warning: [Quine in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+rust) [[Requirements](https://sampleprograms.io/projects/quine)]
+- :white_check_mark: [Quine in Rust](https://sampleprograms.io/projects/quine/rust) [[Requirements](https://sampleprograms.io/projects/quine)]
 - :warning: [Reverse String in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+rust) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :warning: [Roman Numeral in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+rust) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :warning: [Rot13 in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+rust) [[Requirements](https://sampleprograms.io/projects/rot13)]
@@ -62,6 +62,6 @@ The following list shares details about what we're using to test all Sample Prog
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 
----
+***
 
 This page was generated automatically by the Sample Programs READMEs tool. Find out how to support [this project](https://github.com/TheRenegadeCoder/sample-programs-readmes) on Github.

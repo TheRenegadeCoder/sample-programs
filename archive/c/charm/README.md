@@ -70,6 +70,6 @@ container:
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 
----
+***
 
 This page was generated automatically by the Sample Programs READMEs tool. Find out how to support [this project](https://github.com/TheRenegadeCoder/sample-programs-readmes) on Github.
