@@ -8,6 +8,8 @@ on:
       - 'main'
     paths:
       - 'archive/**'
+      - 'requirements.txt'
+      - '.github/workflows/readme.yml'
 
 jobs:
   readme:
@@ -36,6 +38,5 @@ jobs:
         git fetch --unshallow origin
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add .
-        git commit --amend --no-edit
+        git add . && git diff --staged --quiet || git commit --amend --no-edit        
         git push --force-with-lease
