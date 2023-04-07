@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
   A simple script for reversing a String.
 
