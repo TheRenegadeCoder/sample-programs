@@ -47,6 +47,6 @@ fn main() {
     }
 
     // Count duplicate characters and show results
-    let counts: HashMap<char, usize> = duplicate_character_counter(&s).clone();
-    show_duplicate_character_counts(&s, &counts);
+    let counts: &HashMap<char, usize> = &duplicate_character_counter(&s);
+    show_duplicate_character_counts(&s, counts);
 }
