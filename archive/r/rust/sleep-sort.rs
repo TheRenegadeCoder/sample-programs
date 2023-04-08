@@ -14,15 +14,17 @@ fn parse_int(s: String) -> Result<i32, ParseIntError> {
     s.trim().parse::<i32>()
 }
 
-fn parse_int_list(s_list: String) -> Vec<i32> {
+fn parse_int_list(s_list: String) -> Option<Vec<i32>> {
     let results: Vec<Result<i32, ParseIntError>> = s_list.split(",")
         .map(|s| parse_int(s.to_string()))
         .collect();
     match results.iter().any(|s| s.is_err()) {
-        true => vec![],
-        false => results.iter()
+        true => None,
+        false => Some(
+            results.iter()
             .map(|result| result.clone().unwrap())
             .collect()
+        ),
     }
 }
 
@@ -36,7 +38,7 @@ fn sleep_sort(arr: &mut Vec<i32>) {
         threads.push(
             thread::spawn(move || {
                 thread::sleep(Duration::from_secs(value as u64));
-                 result_mutex_clone.lock().unwrap().push(value);
+                result_mutex_clone.lock().unwrap().push(value);
             })
         )
     }
@@ -55,7 +57,7 @@ fn main() {
     let mut arr: Vec<i32> = parse_int_list(
         args().nth(1)
         .unwrap_or_else(|| usage())
-    );
+    ).unwrap_or_else(|| usage());
 
     // Exit if list too small
     if arr.len() < 2 {
