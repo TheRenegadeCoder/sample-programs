@@ -33,14 +33,9 @@ fn fibonacci(terms: i32) {
 
 fn main() {
     // Exit if 1st command-line argument not an integer
-    let mut input_value: Result<i32, ParseIntError> = parse_int(
+    let mut input_num: i32 = parse_int(
         args().nth(1).unwrap_or_else(|| usage())
-    );
-    if input_value.is_err() {
-        usage();
-    }
-
-    let input_num: i32 = input_value.unwrap();
+    ).unwrap_or_else(|_| usage());
 
     // Show request number of Fibonacci numbers
     fibonacci(input_num);
