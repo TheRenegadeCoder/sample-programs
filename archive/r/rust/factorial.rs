@@ -16,17 +16,13 @@ fn parse_int(s: String) -> Result<i32, ParseIntError> {
 
 fn main() {
     // confirm integer is passed as commandline argument
-    let mut input_value: Result<i32, ParseIntError> = parse_int(
+    let mut input_num: i32 = parse_int(
         args().nth(1).unwrap_or_else(|| usage())
-    );
-    if input_value.is_err() {
-        usage();
-    }
+    ).unwrap_or_else(|_| usage());
 
-    // confirm non-negative integer
-    let input_num: i32 = input_value.unwrap();
+    // Make sure non-negative
     if input_num < 0 {
-        usage();
+        usage()
     }
 
     let mut n = input_num as u128;
