@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Rust! To find documentation related to the Rust code in this repo, look [here.](https://sampleprograms.io/languages/rust)
 
-## Sample Programs List - 23/37 :relaxed:
+## Sample Programs List - 24/37 :relaxed:
 
 In this section, we feature a list of completed and missing programs in Rust. See above for the current amount of completed programs in Rust. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -22,6 +22,7 @@ Below, you'll find a list of completed code snippets in Rust. Code snippets prec
 - :white_check_mark: [Hello World in Rust](https://sampleprograms.io/projects/hello-world/rust) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :warning: [Insertion Sort in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+rust) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :warning: [Longest Word in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+rust) [[Requirements](https://sampleprograms.io/projects/longest-word)]
+- :warning: [Maximum Subarray in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+maximum+subarray+rust) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :warning: [Merge Sort in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+rust) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
 - :warning: [Palindromic Number in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+rust) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :warning: [Prime Number in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+rust) [[Requirements](https://sampleprograms.io/projects/prime-number)]
@@ -49,7 +50,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Longest Common Subsequence](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+common+subsequence&template=code-snippet-request.md&title=Add+Longest+Common+Subsequence+in+Rust) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
 - :x: [Longest Palindromic Substring](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+palindromic+substring&template=code-snippet-request.md&title=Add+Longest+Palindromic+Substring+in+Rust) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
 - :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+array+rotation&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+Rust) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
-- :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+subarray&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+Rust) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+Rust) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
 - :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,transpose+matrix&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+Rust) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
