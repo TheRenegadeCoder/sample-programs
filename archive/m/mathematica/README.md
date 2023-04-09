@@ -51,7 +51,7 @@ Below, you'll find a list of completed code snippets in Mathematica. Code snippe
 
 The following list contains all of the approved programs that are not currently implemented in Mathematica. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
-- :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement&template=code-snippet-request.md&title=Add+Sleep+Sort+in+mathematica) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
+- :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+Mathematica) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 
 ## Testing
 
