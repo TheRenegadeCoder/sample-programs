@@ -80,16 +80,13 @@ impl Graph {
 fn create_graph(adjacency_matrix: &Vec<i32>, vertices: &Vec<i32>) -> Graph {
     // Add child nodes to each node based on non-zero values of adjacency matrix
     let mut graph = Graph::new(vertices[0]);
-    let num_adjacencies = adjacency_matrix.len();
-    let mut index = 0;
+    let mut adjacency_iter = adjacency_matrix.iter();
     for row_vertex in vertices {
         graph.add_vertex(*row_vertex);
         for col_vertex in vertices {
-            if index < num_adjacencies && adjacency_matrix[index] != 0 {
+            if *adjacency_iter.next().unwrap_or_else(|| &0) != 0 {
                 graph.add_edge(*row_vertex, *col_vertex);
             }
-
-            index += 1;
         }
     }
 
