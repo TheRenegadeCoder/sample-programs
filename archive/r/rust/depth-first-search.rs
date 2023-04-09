@@ -59,14 +59,11 @@ impl Graph {
     }
 
     fn get_root(self) -> Option<Node> {
-        self.clone().find(self.root_id)
+        self.tree.get(&self.root_id).cloned()
     }
 
     fn find(self, id: i32) -> Option<Node> {
-        match self.tree.get(&id) {
-            Some(n) => Some(n.clone()),
-            None => None,
-        }
+        self.tree.get(&id).cloned()
     }
 
     fn add_vertex(&mut self, vertex_id: i32) {
@@ -108,10 +105,7 @@ fn depth_first_search(graph: &Graph, target: i32) -> Option<Node> {
     let mut visited: HashSet<i32> = HashSet::<i32>::new();
 
     // Perform depth first recursively starting at root of tree
-    let root: Option<Node> = graph.clone()
-        .get_root()
-        .clone();
-    depth_first_search_rec(graph, root, target, &mut visited)
+    depth_first_search_rec(graph, graph.clone().get_root(), target, &mut visited)
 }
 
 fn depth_first_search_rec(
@@ -123,9 +117,7 @@ fn depth_first_search_rec(
     }
 
     // If target found, return it
-    let unwrapped_node: Node = node.clone()
-        .unwrap()
-        .clone();
+    let unwrapped_node: Node = node.clone().unwrap();
     if unwrapped_node.id == target {
         return node
     }
