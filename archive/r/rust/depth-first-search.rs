@@ -1,7 +1,6 @@
 use std::env::args;
 use std::process::exit;
 use std::num::ParseIntError;
-use std::collections::{HashMap, HashSet};
 
 fn usage() -> ! {
     println!(
@@ -34,98 +33,74 @@ fn parse_int_list(s_list: String) -> Option<Vec<i32>> {
 #[derive(Debug, Clone)]
 struct Node {
     id: i32,
-    children: Vec<i32>,
+    children_indices: Vec<usize>,
 }
 
 impl Node {
     fn new(id: i32) -> Node {
-        Node {id: id, children: Vec::<i32>::new()}
+        Node {id: id, children_indices: vec![]}
     }
 
-    fn add_child(&mut self, child_id: i32) {
-        self.children.push(child_id)
-    }
-}
-
-#[derive(Debug, Clone)]
-struct Graph {
-    root_id: i32,
-    tree: HashMap<i32, Node>,
-}
-
-impl Graph {
-    fn new(root_id: i32) -> Graph {
-        Graph {root_id: root_id, tree: HashMap::<i32, Node>::new()}
-    }
-
-    fn get_root(self) -> Option<Node> {
-        self.tree.get(&self.root_id).cloned()
-    }
-
-    fn find(self, id: i32) -> Option<Node> {
-        self.tree.get(&id).cloned()
-    }
-
-    fn add_vertex(&mut self, vertex_id: i32) {
-        self.tree.insert(vertex_id, Node::new(vertex_id));
-    }
-
-    fn add_edge(&mut self, from_id: i32, to_id: i32) {
-        self.tree.get_mut(&from_id)
-            .unwrap()
-            .add_child(to_id);
+    fn add_child(&mut self, child_index: usize) {
+        self.children_indices.push(child_index);
     }
 }
 
-fn create_graph(adjacency_matrix: &Vec<i32>, vertices: &Vec<i32>) -> Graph {
+fn create_tree(adjacency_matrix: &Vec<i32>, vertices: &Vec<i32>) -> Vec<Node> {
+    // Create nodes
+    let mut nodes: Vec<Node> = vertices.iter()
+        .map(|id| Node::new(*id))
+        .collect();
+
     // Add child nodes to each node based on non-zero values of adjacency matrix
-    let mut graph = Graph::new(vertices[0]);
     let mut adjacency_iter = adjacency_matrix.iter();
-    for row_vertex in vertices {
-        graph.add_vertex(*row_vertex);
-        for col_vertex in vertices {
+    let num_vertices = vertices.len();
+    for row in 0..num_vertices {
+        for col in 0..num_vertices {
             if *adjacency_iter.next().unwrap_or_else(|| &0) != 0 {
-                graph.add_edge(*row_vertex, *col_vertex);
+                nodes[row].add_child(col)
             }
         }
     }
 
-    graph
+    nodes
 }
 
-fn depth_first_search(graph: &Graph, target: i32) -> Option<Node> {
+fn depth_first_search(tree: &Vec<Node>, target: i32) -> Option<usize> {
     // Indicate no nodes visited
-    let mut visited: HashSet<i32> = HashSet::<i32>::new();
+    let mut visited: Vec<bool> = (0..tree.len())
+        .map(|_| false)
+        .collect();
 
     // Perform depth first recursively starting at root of tree
-    depth_first_search_rec(graph, graph.clone().get_root(), target, &mut visited)
+    depth_first_search_rec(tree, Some(0), target, &mut visited)
 }
 
 fn depth_first_search_rec(
-    graph: &Graph, node: Option<Node>, target: i32, visited: &mut HashSet<i32>
-) -> Option<Node> {
-    // If invalid node, return it
-    if node.is_none() {
-        return node
+    tree: &Vec<Node>, node_index: Option<usize>, target: i32, visited: &mut Vec<bool>
+) -> Option<usize> {
+    // If invalid node index, return it
+    if node_index.is_none() {
+        return node_index;
     }
 
     // If target found, return it
-    let unwrapped_node: Node = node.clone().unwrap();
-    if unwrapped_node.id == target {
-        return node
+    let unwrapped_node_index: usize = node_index.unwrap();
+    let node: Node = tree[unwrapped_node_index].clone();
+    if node.id == target {
+        return node_index
     }
 
     // Indicate this node is visited
-    visited.insert(unwrapped_node.id);
+    visited[unwrapped_node_index] = true;
 
     // Perform depth first search on each unvisited child of this node (if any).
     // Stop when match is found
-    let mut found: Option<Node> = None;
-    for child_id in unwrapped_node.children {
-        if !visited.contains(&child_id) {
-            let child: Option<Node> = graph.clone().find(child_id);
-            visited.insert(child_id);
-            found = depth_first_search_rec(graph, child, target, visited);
+    let mut found: Option<usize> = None;
+    for child_index in node.children_indices {
+        if !visited[child_index] {
+            visited[child_index] = true;
+            found = depth_first_search_rec(tree, Some(child_index), target, visited);
             if !found.is_none() {
                 break;
             }
@@ -154,11 +129,11 @@ fn main() {
         .unwrap_or_else(|| usage())
     ).unwrap_or_else(|_| usage());
 
-    // Create graph
-    let graph = &create_graph(&adjacency_matrix, &vertices);
+    // Create tree
+    let tree = &create_tree(&adjacency_matrix, &vertices);
 
     // Run depth first search and indicate if value is found
-    match depth_first_search(&graph, target) {
+    match depth_first_search(&tree, target) {
         Some(_) => println!("true"),
         None => println!("false"),
     }
