@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Rust! To find documentation related to the Rust code in this repo, look [here.](https://sampleprograms.io/languages/rust)
 
-## Sample Programs List - 28/37 :smile:
+## Sample Programs List - 29/37 :smile:
 
 In this section, we feature a list of completed and missing programs in Rust. See above for the current amount of completed programs in Rust. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -14,6 +14,7 @@ Below, you'll find a list of completed code snippets in Rust. Code snippets prec
 - :warning: [Binary Search in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+binary+search+rust) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :warning: [Bubble Sort in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+rust) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :warning: [Capitalize in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+rust) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :warning: [Depth First Search in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+depth+first+search+rust) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :warning: [Duplicate Character Counter in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+rust) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :warning: [Even Odd in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+rust) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :warning: [Factorial in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+rust) [[Requirements](https://sampleprograms.io/projects/factorial)]
@@ -44,7 +45,6 @@ Below, you'll find a list of completed code snippets in Rust. Code snippets prec
 The following list contains all of the approved programs that are not currently implemented in Rust. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
 - :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,convex+hull&template=code-snippet-request.md&title=Add+Convex+Hull+in+Rust) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
-- :x: [Depth First Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,depth+first+search&template=code-snippet-request.md&title=Add+Depth+First+Search+in+Rust) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,dijkstra&template=code-snippet-request.md&title=Add+Dijkstra+in+Rust) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fraction+math&template=code-snippet-request.md&title=Add+Fraction+Math+in+Rust) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,job+sequencing&template=code-snippet-request.md&title=Add+Job+Sequencing+in+Rust) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
