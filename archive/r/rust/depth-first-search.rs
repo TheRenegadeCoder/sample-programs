@@ -74,8 +74,8 @@ fn create_tree(adjacency_matrix: &Vec<i32>, vertices: &Vec<i32>) -> Tree {
     // Create tree and add nodes
     let mut tree: Tree = Tree::new(vertices[0]);
     let mut nodes: Vec<Node> = vertices.iter()
-    .map(|id| Node::new(*id))
-    .collect();
+        .map(|id| Node::new(*id))
+        .collect();
 
     // Add child nodes to each node based on non-zero values of adjacency matrix
     let mut adjacency_iter = adjacency_matrix.iter();
