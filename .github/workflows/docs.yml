@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'archive/**'
+      - 'test/**'
+      - '.glotter.yml'
+      - '.github/docs.yml'
 
 jobs:
   trigger_workflow:
