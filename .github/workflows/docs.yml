@@ -17,7 +17,7 @@ jobs:
       - name: Workflow Trigger
         uses: actions/github-script@v6
         with:
-          github-token: ${{ secrets.GHA_WORKFLOW_TRIGGER }}
+          github-token: ${{ secrets.PAT }}
           script: |
             const result = await github.rest.actions.createWorkflowDispatch({
               owner: 'TheRenegadeCoder',
