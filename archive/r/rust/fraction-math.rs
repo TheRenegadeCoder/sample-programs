@@ -151,53 +151,17 @@ fn gcd(a: i32, b: i32) -> i32 {
 }
 
 // Fraction result
-union FractionResultData {
-    f: Fraction,
-    b: bool,
-}
-
-enum FractionResultKind {
-    Fraction,
-    Boolean,
-}
-
-struct FractionResult {
-    kind: FractionResultKind,
-    result: FractionResultData,
-}
-
-impl FractionResult {
-    // Create new fraction
-    fn new_fraction(fraction: Fraction) -> Self {
-        FractionResult {
-            kind: FractionResultKind::Fraction,
-            result: FractionResultData {f: fraction}
-        }
-    }
-
-    // Create new boolean
-    fn new_boolean(boolean: bool) -> Self {
-        FractionResult {
-            kind: FractionResultKind::Boolean,
-            result: FractionResultData {b: boolean}
-        }
-    }
+enum FractionResult {
+    Frac(Fraction),
+    Bool(bool),
 }
 
 impl fmt::Debug for FractionResult {
-    // Show fraction result
+    // Show fraction or boolean
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-        unsafe {
-            match self {
-                FractionResult {
-                    kind: FractionResultKind::Fraction,
-                    result: FractionResultData {f: frac}
-                } => write!(f, "{frac:?}"),
-                FractionResult {
-                    kind: FractionResultKind::Boolean,
-                    result: FractionResultData {b: boolean}
-                } => write!(f, "{}", *boolean as u8),
-            }
+        match self {
+            Self::Frac(fraction) => write!(f, "{fraction:?}"),
+            Self::Bool(boolean) => write!(f, "{}", *boolean as u8),
         }
     }
 }
@@ -206,16 +170,16 @@ impl fmt::Debug for FractionResult {
 fn fraction_math(f1: Fraction, f2: Fraction, op: String) -> FractionResult {
     let op: &str = &op[..];
     match op {
-        "+" => FractionResult::new_fraction(f1 + f2),
-        "-" => FractionResult::new_fraction(f1 - f2),
-        "*" => FractionResult::new_fraction(f1 * f2),
-        "/" => FractionResult::new_fraction(f1 / f2),
-        ">" => FractionResult::new_boolean(f1 > f2),
-        ">=" => FractionResult::new_boolean(f1 >= f2),
-        "<" => FractionResult::new_boolean(f1 < f2),
-        "<=" => FractionResult::new_boolean(f1 <= f2),
-        "==" => FractionResult::new_boolean(f1 == f2),
-        "!=" => FractionResult::new_boolean(f1 != f2),
+        "+" => FractionResult::Frac(f1 + f2),
+        "-" => FractionResult::Frac(f1 - f2),
+        "*" => FractionResult::Frac(f1 * f2),
+        "/" => FractionResult::Frac(f1 / f2),
+        ">" => FractionResult::Bool(f1 > f2),
+        ">=" => FractionResult::Bool(f1 >= f2),
+        "<" => FractionResult::Bool(f1 < f2),
+        "<=" => FractionResult::Bool(f1 <= f2),
+        "==" => FractionResult::Bool(f1 == f2),
+        "!=" => FractionResult::Bool(f1 != f2),
         _ => panic!("Invalid operation {op}")
     }
 }
