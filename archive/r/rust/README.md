@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Rust! To find documentation related to the Rust code in this repo, look [here.](https://sampleprograms.io/languages/rust)
 
-## Sample Programs List - 30/37 :smile:
+## Sample Programs List - 31/37 :smile:
 
 In this section, we feature a list of completed and missing programs in Rust. See above for the current amount of completed programs in Rust. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -24,6 +24,7 @@ Below, you'll find a list of completed code snippets in Rust. Code snippets prec
 - :warning: [Fraction Math in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fraction+math+rust) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :white_check_mark: [Hello World in Rust](https://sampleprograms.io/projects/hello-world/rust) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :warning: [Insertion Sort in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+rust) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
+- :warning: [Job Sequencing in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+job+sequencing+rust) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :warning: [Josephus Problem in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+josephus+problem+rust) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :warning: [Linear Search in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+linear+search+rust) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :warning: [Longest Word in Rust](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+rust) [[Requirements](https://sampleprograms.io/projects/longest-word)]
@@ -47,7 +48,6 @@ The following list contains all of the approved programs that are not currently 
 
 - :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,convex+hull&template=code-snippet-request.md&title=Add+Convex+Hull+in+Rust) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,dijkstra&template=code-snippet-request.md&title=Add+Dijkstra+in+Rust) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
-- :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,job+sequencing&template=code-snippet-request.md&title=Add+Job+Sequencing+in+Rust) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :x: [Longest Common Subsequence](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+common+subsequence&template=code-snippet-request.md&title=Add+Longest+Common+Subsequence+in+Rust) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
 - :x: [Longest Palindromic Substring](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+palindromic+substring&template=code-snippet-request.md&title=Add+Longest+Palindromic+Substring+in+Rust) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+Rust) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
