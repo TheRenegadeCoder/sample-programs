@@ -1,0 +1,28 @@
+name: Documentation
+
+on:
+  push:
+    branches:
+      - main
+  pull_request: # To be removed before merge
+    branches:
+      -main
+
+jobs:
+  trigger_workflow:
+    name: Docs Generation & Deployment
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Workflow Trigger
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GHA_WORKFLOW_TRIGGER }}
+          script: |
+            const result = await github.rest.actions.createWorkflowDispatch({
+              owner: 'TheRenegadeCoder',
+              repo: 'sample-programs-website',
+              workflow_id: 'main.yml',
+              ref: 'main'
+            })
+            console.log(result)
