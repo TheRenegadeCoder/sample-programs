@@ -6,7 +6,7 @@ on:
       - main
   pull_request: # To be removed before merge
     branches:
-      -main
+      - main
 
 jobs:
   trigger_workflow:
