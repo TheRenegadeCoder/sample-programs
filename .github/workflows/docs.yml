@@ -1,0 +1,30 @@
+name: Documentation
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'archive/**'
+      - 'test/**'
+      - '.glotter.yml'
+      - '.github/workflows/docs.yml'
+
+jobs:
+  trigger_workflow:
+    name: Docs Generation & Deployment
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Workflow Trigger
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.PAT }}
+          script: |
+            const result = await github.rest.actions.createWorkflowDispatch({
+              owner: 'TheRenegadeCoder',
+              repo: 'sample-programs-website',
+              workflow_id: 'main.yml',
+              ref: 'main'
+            })
+            console.log(result)
