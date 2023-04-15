@@ -41,6 +41,8 @@ impl JobInfo {
 
 impl PartialOrd for JobInfo {
     fn partial_cmp(&self, other: &Self) -> Option<Ordering> {
+        // Reverse order of compare so that it is in descending order by profit
+        // then deadline
         match self.profit != other.profit {
             true => Some(other.profit.cmp(&self.profit)),
             false => Some(other.deadline.cmp(&self.deadline)),
