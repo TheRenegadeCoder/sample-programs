@@ -1,6 +1,7 @@
 use std::env::args;
 use std::process::exit;
 use std::num::ParseIntError;
+use std::collections::{HashMap, HashSet};
 
 fn usage() -> ! {
     println!(
@@ -33,21 +34,45 @@ fn parse_int_list(s_list: String) -> Option<Vec<i32>> {
 #[derive(Debug, Clone)]
 struct Node {
     id: i32,
-    children_indices: Vec<usize>,
+    children: HashSet<i32>,
 }
 
 impl Node {
     fn new(id: i32) -> Node {
-        Node {id: id, children_indices: vec![]}
+        Node {id: id, children: HashSet::<i32>::new()}
     }
 
-    fn add_child(&mut self, child_index: usize) {
-        self.children_indices.push(child_index);
+    fn add_child(&mut self, id: i32) {
+        self.children.insert(id);
     }
 }
 
-fn create_tree(adjacency_matrix: &Vec<i32>, vertices: &Vec<i32>) -> Vec<Node> {
-    // Create nodes
+#[derive(Debug, Clone)]
+struct Tree {
+    root_id: i32,
+    tree: HashMap<i32, Node>,
+}
+
+impl Tree {
+    fn new(root_id: i32) -> Tree {
+        Tree {root_id: root_id, tree: HashMap::<i32, Node>::new()}
+    }
+
+    fn add_node(&mut self, from_id: i32, node: Node) {
+        self.tree.insert(from_id, node);
+    }
+
+    fn get_node(&self, node_id: Option<i32>) -> Option<Node> {
+        match node_id {
+            None=> None,
+            Some(id) => self.tree.get(&id).cloned(),
+        }
+    }
+}
+
+fn create_tree(adjacency_matrix: &Vec<i32>, vertices: &Vec<i32>) -> Tree {
+    // Create tree and add nodes
+    let mut tree: Tree = Tree::new(vertices[0]);
     let mut nodes: Vec<Node> = vertices.iter()
         .map(|id| Node::new(*id))
         .collect();
@@ -58,49 +83,52 @@ fn create_tree(adjacency_matrix: &Vec<i32>, vertices: &Vec<i32>) -> Vec<Node> {
     for row in 0..num_vertices {
         for col in 0..num_vertices {
             if *adjacency_iter.next().unwrap_or_else(|| &0) != 0 {
-                nodes[row].add_child(col)
+                nodes[row].add_child(vertices[col]);
             }
         }
+
+        tree.add_node(vertices[row], nodes[row].clone());
     }
 
-    nodes
+    tree
 }
 
-fn depth_first_search(tree: &Vec<Node>, target: i32) -> Option<usize> {
+fn depth_first_search(tree: &Tree, target: i32) -> Option<Node> {
     // Indicate no nodes visited
-    let mut visited: Vec<bool> = (0..tree.len())
-        .map(|_| false)
-        .collect();
+    let mut visited: HashSet<i32> = HashSet::<i32>::new();
 
     // Perform depth first recursively starting at root of tree
-    depth_first_search_rec(tree, Some(0), target, &mut visited)
+    depth_first_search_rec(
+        tree, tree.get_node(Some(tree.root_id)), target, &mut visited
+    )
 }
 
 fn depth_first_search_rec(
-    tree: &Vec<Node>, node_index: Option<usize>, target: i32, visited: &mut Vec<bool>
-) -> Option<usize> {
-    // If invalid node index, return it
-    if node_index.is_none() {
-        return node_index;
+    tree: &Tree, node: Option<Node>, target: i32, visited: &mut HashSet<i32>
+) -> Option<Node> {
+    // If invalid node, return it
+    if node.is_none() {
+        return node;
     }
 
     // If target found, return it
-    let unwrapped_node_index: usize = node_index.unwrap();
-    let node: Node = tree[unwrapped_node_index].clone();
-    if node.id == target {
-        return node_index
+    let unwrapped_node: Node = node.clone().unwrap();
+    if unwrapped_node.id == target {
+        return node;
     }
 
     // Indicate this node is visited
-    visited[unwrapped_node_index] = true;
+    visited.insert(unwrapped_node.id);
 
     // Perform depth first search on each unvisited child of this node (if any).
     // Stop when match is found
-    let mut found: Option<usize> = None;
-    for child_index in node.children_indices {
-        if !visited[child_index] {
-            visited[child_index] = true;
-            found = depth_first_search_rec(tree, Some(child_index), target, visited);
+    let mut found: Option<Node> = None;
+    for child_id in unwrapped_node.children {
+        if !visited.contains(&child_id) {
+            visited.insert(child_id);
+            found = depth_first_search_rec(
+                tree, tree.get_node(Some(child_id)), target, visited
+            );
             if !found.is_none() {
                 break;
             }
