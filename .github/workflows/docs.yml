@@ -8,7 +8,7 @@ on:
       - 'archive/**'
       - 'test/**'
       - '.glotter.yml'
-      - '.github/docs.yml'
+      - '.github/workflows/docs.yml'
 
 jobs:
   trigger_workflow:
