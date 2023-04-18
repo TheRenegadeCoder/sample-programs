@@ -6,7 +6,7 @@ fn usage() -> ! {
     exit(0);
 }
 
-type BoolMatrix = Vec<Vec<bool>>;
+type Matrix<T> = Vec<Vec<T>>;
 
 // Find longest palindromic string using matching array
 // Source: https://www.geeksforgeeks.org/longest-palindromic-substring-using-dynamic-programming/
@@ -14,7 +14,7 @@ fn longest_palindromic_substring(s: String) -> String {
     // Initialize array indicating whether there is a character match
     // between two characters to indicate that nothing matches
     let n = s.len();
-    let mut matches: BoolMatrix = vec![vec![false; n]; n];
+    let mut matches: Matrix<bool> = vec![vec![false; n]; n];
 
     // Indicate all length 1 strings match
     for i in 0..n {
