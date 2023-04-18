@@ -30,7 +30,7 @@ type Matrix<T> = Vec<Vec<T>>;
 // Longest Common Sequence
 // Source: https://en.wikipedia.org/wiki/Longest_common_subsequence#Example_in_C#
 //
-// However, instead of storing lengths, and index to the subsequence is stored
+// However, instead of storing lengths, an index to the subsequence is stored
 fn longest_common_subsequence(list1: Vec<i32>, list2: Vec<i32>) -> Vec<i32> {
     // Initialize all subsequences to an empty sequence
     let m = list1.len();
