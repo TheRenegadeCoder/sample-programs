@@ -10,6 +10,8 @@ RUN useradd -ms /bin/bash -G sudo opauser && \
 USER opauser
 WORKDIR /home/opauser
 
+RUN sudo echo
+
 RUN opam init --auto-setup && \
     opam switch 4.02.1 && \
     opam install -y ocamlbuild ulex camlzip ocamlgraph camlp4 && \
