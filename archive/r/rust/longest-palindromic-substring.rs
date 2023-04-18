@@ -55,6 +55,7 @@ fn longest_palindromic_substring(s: String) -> String {
             }
         }
     }
+
     chars[start..start + max_len]
         .iter()
         .collect()
