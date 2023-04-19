@@ -1,8 +1,0 @@
-folder:
-  extension: ".php"
-  naming: "hyphen"
-
-container:
-  image: "php"
-  tag: "8.0-zts-alpine"
-  cmd: "php {{ source.name }}{{ source.extension }}"
