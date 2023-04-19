@@ -20,3 +20,5 @@ venv/
 generated/
 /requirements-dev.txt
 /docs
+
+*.iml
