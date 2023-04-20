@@ -99,8 +99,8 @@ fn prim_mst(tree: &Tree) -> Vec<MstResult> {
     while mst_set.len() < num_vertices {
         // Pick index of the minimum key value not already in MST
         let u: usize = (0..num_vertices)
-            .filter(|id| !mst_set.contains(id))
-            .map(|id| (keys[id], id))
+            .filter(|index| !mst_set.contains(index))
+            .map(|index| (keys[index], index))
             .min()
             .unwrap()
             .1;
