@@ -225,11 +225,11 @@ for more information about the contents of that file.
 ## Issues in Detail
 
 Any issues for code or tests must reference the relevant project.
-To do so go to the [Projects List page][projects-list] on the Sample Programs website.
+To do so go to the [Projects List page][project-list] on the Sample Programs website.
 Find the project page from the list of projects there and paste a link to that page into the issue.
 
 For simplicity, we ask that you **only make one issue for one language and one project at a time.**
-This and the project link help is tagging and maintaining issues and pull requests.
+This and the project link helps us tag and maintain issues and pull requests.
 (See [the pull request section above][add-one-and-only-one-snippet-at-a-time] for the pull request side of this flow)
 
 As such please name the issue in the format "{Add/modify} {project name} in {language}."
@@ -387,7 +387,7 @@ These rules help grow and cultivate the community in a positive manner.
 [glotter2-writing-tests]: https://rzuckerm.github.io/glotter2/writing-tests.html
 
 [sample-program-issues]: https://github.com/TheRenegadeCoder/sample-programs/issues
-[sample-programs-glotter-github-action]: https://github.com/TheRenegadeCoder/sample-programs/actions/workflows/test-suite.yml
+[sample-programs-glotter-github-actions]: https://github.com/TheRenegadeCoder/sample-programs/actions/workflows/test-suite.yml
 
 [sample-programs-website]: https://github.com/TheRenegadeCoder/sample-programs-website
 [sample-programs-website-contributing]: https://github.com/TheRenegadeCoder/sample-programs-website
