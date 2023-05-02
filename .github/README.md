@@ -3,7 +3,7 @@
 [![Build Status](https://github.com/TheRenegadeCoder/sample-programs/actions/workflows/test-suite.yml/badge.svg?branch=main)](https://github.com/TheRenegadeCoder/sample-programs/actions/workflows/test-suite.yml)
 [![Discord](https://img.shields.io/discord/612072397545275424)](https://discord.gg/Jhmtj7Z)  
 
-Welcome to the [Sample Programs in Every Language][sample-programs-on-the-renegade-coder] 
+Welcome to the [Sample Programs in Every Language][sample-programs-on-github] 
 repository! What began as a simple [100 Days of Code][1] challenge has expanded into a 
 fun project. Within this repository, you'll find a growing collection of sample programs
 in just about every programming language to date.
@@ -49,22 +49,16 @@ for sharing their work with our repo:
 - [@toturkmen][toturkmen-profile] for their [Baklava Repo][baklava-repo]
 
 [1]: http://www.100daysofcode.com/
-[2]: https://therenegadecoder.com/code/hello-world-in-every-language/
-[3]: https://therenegadecoder.com/code/reverse-a-string-in-every-language/
-[4]: https://therenegadecoder.com/blog/the-coolest-programming-language-features/
-[6]: https://github.com/jrg94/sample-programs/blob/master/.github/CONTRIBUTING.md
+[6]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md
 [7]: https://www.patreon.com/TheRenegadeCoder
-[8]: https://github.com/jrg94/sample-programs/blob/master/.github/CODE_OF_CONDUCT.md
-[9]: https://github.com/jrg94/sample-programs/blob/master/LICENSE
+[8]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CODE_OF_CONDUCT.md
+[9]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/LICENSE
 [10]: https://therenegadecoder.com/
 [11]: https://therenegadecoder.com/blog/ways-you-can-help-grow-the-renegade-coder/
 [12]: https://www.paypal.me/therenegadecoder
 [13]: https://help.getadblock.com/support/solutions/articles/6000163989-how-do-i-pause-or-disable-adblock-
 [14]: https://twitter.com/RenegadeCoder94
 [15]: https://discord.gg/Jhmtj7Z
-[16]: https://therenegadecoder.com/code/longest-palindrome-substring-in-every-language/
-[18]: https://therenegadecoder.com/code/fizz-buzz-in-every-language/
-[19]: https://therenegadecoder.com/code/python-code-snippets-for-everyday-problems/
 [20]: https://sampleprograms.io/projects/
 
 [auroq-profile]: https://github.com/auroq
@@ -79,3 +73,4 @@ for sharing their work with our repo:
 [sample-programs-on-the-renegade-coder]: https://therenegadecoder.com/code/sample-programs-in-every-language/
 [toturkmen-profile]: https://github.com/toturkmen
 [sample-programs-template]: https://github.com/TheRenegadeCoder/sample-programs-template
+[sample-programs-on-github]: https://github.com/TheRenegadeCoder/sample-programs
