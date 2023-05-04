@@ -57,6 +57,7 @@ print_num:
         cmp rax, 0
         jne div_loop
 
+    inc r8
     mov rax, 1
     mov rdi, 1
     lea rsi, [digits + r8]
