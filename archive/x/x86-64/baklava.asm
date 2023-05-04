@@ -32,64 +32,64 @@ outer_loop:
     mov rbx, 10
     sub rbx, rax ; Pad with 10 - outer_i spaces
 
-space_loop:
-    cmp rbx, 0
-    je end_space ; Exit the loop if we've done the required number of loops
-    
-    push rbx ; Save inner counter
+    space_loop:
+        cmp rbx, 0
+        je end_space ; Exit the loop if we've done the required number of loops
+        
+        push rbx ; Save inner counter
 
-    ; print space
-    mov rax, 1
-    mov rdi, 1
-    mov rsi, space
-    mov rdx, 1
-    syscall
+        ; print space
+        mov rax, 1
+        mov rdi, 1
+        mov rsi, space
+        mov rdx, 1
+        syscall
 
-    pop rbx
-    dec rbx 
-    jmp space_loop ; Decrement inner counter and keep looping
+        pop rbx
+        dec rbx 
+        jmp space_loop ; Decrement inner counter and keep looping
 
-end_space:
-    pop rbx
-    push rbx ; Peek at the outer counter
+    end_space:
+        pop rbx
+        push rbx ; Peek at the outer counter
 
-    shl rbx, 1
-    inc rbx ; Loop 2 * outer_i + 1 times
+        shl rbx, 1
+        inc rbx ; Loop 2 * outer_i + 1 times
 
-star_loop:
-    cmp rbx, 0
-    je end_star ; Exit the loop if we've done the required number of loops
-    
-    push rbx ; Save inner counter
+    star_loop:
+        cmp rbx, 0
+        je end_star ; Exit the loop if we've done the required number of loops
+        
+        push rbx ; Save inner counter
 
-    ; print star
-    mov rax, 1
-    mov rdi, 1
-    mov rsi, star
-    mov rdx, 1
-    syscall
+        ; print star
+        mov rax, 1
+        mov rdi, 1
+        mov rsi, star
+        mov rdx, 1
+        syscall
 
-    pop rbx
-    dec rbx
-    jmp star_loop ; Decrement inner counter and keep looping
+        pop rbx
+        dec rbx
+        jmp star_loop ; Decrement inner counter and keep looping
 
-end_star:
-    ; print newline
-    mov rax, 1
-    mov rdi, 1
-    mov rsi, newline
-    mov rdx, 1
-    syscall
+    end_star:
+        ; print newline
+        mov rax, 1
+        mov rdi, 1
+        mov rsi, newline
+        mov rdx, 1
+        syscall
 
-    
-    pop rax ; outer_i
-    pop rdx ; target
-    pop rdi ; incrementor
-    push rdi
-    push rdx ; put target and incrmenetor back on stack in the same place
+        
+        pop rax ; outer_i
+        pop rdx ; target
+        pop rdi ; incrementor
+        push rdi
+        push rdx ; put target and incremenetor back on stack in the same place
 
-    add rax, rdi ; increment in the current direction
-    jmp outer_loop ; keep looping
+        add rax, rdi ; increment in the current direction
+        jmp outer_loop ; keep looping
 
 end_outer:
     pop rdx
