@@ -15,5 +15,5 @@ _start:
 
     ; exit program with 0
     mov rax, 60 ; 60 is the system call number for exit
-    xor rdi, rdi ; the exit status is stored in edi. Use xor to zero it out
+    xor rdi, rdi ; the exit status is stored in rdi. Use xor to zero it out
     syscall ; invoke the system call
