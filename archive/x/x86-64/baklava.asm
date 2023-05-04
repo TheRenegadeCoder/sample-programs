@@ -9,18 +9,25 @@ section .text
 _start:
     mov rax, 1
     push rax
-    mov rax, 10
+    mov rax, 11
     push rax
     xor rax, rax
 
 outer_loop:
     ; save outer counter
+    pop rdx
+    push rdx
+    cmp rax, rdx
+    je newstuff
+
     push rax
 
     mov rbx, 10
     sub rbx, rax
 
 space_loop:
+    cmp rbx, 0
+    je end_space
     push rbx
 
     ; print space
@@ -32,15 +39,18 @@ space_loop:
 
     pop rbx
     dec rbx
-    jnz space_loop
+    jmp space_loop
 
-
+end_space:
     pop rbx
     push rbx
 
     shl rbx, 1
     inc rbx
+
 star_loop:
+    cmp rbx, 0
+    je end_star
     push rbx
 
     ; print star
@@ -52,8 +62,9 @@ star_loop:
 
     pop rbx
     dec rbx
-    jnz star_loop
+    jmp star_loop
 
+end_star:
     ; print newline
     mov rax, 1
     mov rdi, 1
@@ -69,26 +80,24 @@ star_loop:
     push rdx
 
     add rax, rdi
-    cmp rax, rdx
     ; keep looping until target
-    jne outer_loop
+    jmp outer_loop
 
 newstuff:
     pop rdx
-    cmp rdx, 0
+    cmp rdx, -1
     je end
 
     pop rax
     mov rax, -1
     push rax
-    mov rax, 0
+    mov rax, -1
     push rax
 
-    mov rax, 8
+    mov rax, 9
     jmp outer_loop
 
 end:
     mov rax, 60
     xor rdi, rdi
     syscall
-
