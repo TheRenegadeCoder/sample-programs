@@ -7,7 +7,7 @@ section .data
 
 section .bss
     ; Used to hold the ascii digits for printing
-    ; Sufficient size to hold any 64 bit number
+    ; Sufficient size to hold any positive 64 bit number
     digits resb 21 
 
 section .text
@@ -60,7 +60,10 @@ print_num:
         cmp rax, 0
         jne div_loop
 
+    ; Move r8 offest to start of string
     inc r8
+
+    ; Print the string
     mov rax, 1
     mov rdi, 1
     lea rsi, [digits + r8]
