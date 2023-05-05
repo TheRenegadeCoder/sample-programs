@@ -24,7 +24,7 @@ maintainers = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.11"
 ronbun = "^0.7"
 glotter2 = "^0.6"
 urllib3 = "<2"
