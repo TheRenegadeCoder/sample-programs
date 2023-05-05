@@ -2,20 +2,14 @@
 .idea/
 *.class
 *.java~
-wiki/
-_site/
-*.lock
 .vscode/
 .history/
 *.swp
 .pytest_cache/
 __pycache__/
 .scratch
-# erlang
 *.beam
-
 .DS_Store
-
 venv/
 generated/
 /requirements-dev.txt
