@@ -44,9 +44,7 @@ jobs:
       run: poetry install
         
     - name: Download Docker images
-      run: |
-        glotter download --parallel
+      run: poetry run glotter download --parallel
         
     - name: Test All Sample Programs
-      run: |
-        glotter test --parallel
+      run: poetry run glotter test --parallel
