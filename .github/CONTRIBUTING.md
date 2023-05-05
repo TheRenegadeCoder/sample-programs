@@ -5,28 +5,36 @@ for as many languages as possible.
 
 ## Table of Contents
 
--   [Overview][overview]
-    -   [Pull Requests][pull-requests]
-    -   [Issues][issues]
--   [Repository Structure][repository-structure]
-    -   [Archives][archives]
-    -   [Test][test]
--   [File Naming Conventions][file-naming-conventions]
-    -   [Directories][directories]
-    -   [Source Files][source-files]
--   [Pull Requests in Detail][pull-requests-in-detail]
-    -   [Claiming an Issue][claiming-an-issue] 
-    -   [Add One and Only One Snippet at a Time][add-one-and-only-one-snippet-at-a-time] 
-    -   [Requirements for a New Project][requirements-for-a-new-project] 
-    -   [Requirements for a New Language][requirements-for-a-new-language] 
--   [Issues in Detail][issues-in-detail]
-    -   [Modifying Existing Code Snippets][modifying-existing-code-snippets]
-    -   [Modifying Existing Tests][modifying-existing-tests]
--   [Tests in Detail][tests-in-detail]
-    -   [Writing Testable Code][writing-testable-code]
-    -   [Running Tests Locally][running-tests-locally]
-    -   [Adding a testsinfo.yml][adding-a-testinfoyml]
--   [Plagiarism][plagiarism]
+- [Contribute](#contribute)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+    - [Pull Requests](#pull-requests)
+    - [Issues](#issues)
+      - [Code Snippets](#code-snippets)
+      - [Tests](#tests)
+  - [Repository Structure](#repository-structure)
+    - [Archives](#archives)
+    - [Test](#test)
+  - [File Naming Conventions](#file-naming-conventions)
+    - [Directories](#directories)
+    - [Source Files](#source-files)
+  - [Pull Requests in Detail](#pull-requests-in-detail)
+    - [Claiming an Issue](#claiming-an-issue)
+    - [Add One and Only One Snippet at a Time](#add-one-and-only-one-snippet-at-a-time)
+    - [All Tests Must Pass](#all-tests-must-pass)
+    - [Requirements for a New Project](#requirements-for-a-new-project)
+      - [Add project to Sample Programs Website](#add-project-to-sample-programs-website)
+      - [Add test for project](#add-test-for-project)
+    - [Requirements for a New Language](#requirements-for-a-new-language)
+      - [Add `testinfo.yml`](#add-testinfoyml)
+  - [Issues in Detail](#issues-in-detail)
+    - [Modifying Existing Code Snippets](#modifying-existing-code-snippets)
+    - [Modifying Existing Tests](#modifying-existing-tests)
+  - [Tests in Detail](#tests-in-detail)
+    - [Writing Testable Code](#writing-testable-code)
+    - [Running Tests Locally](#running-tests-locally)
+    - [Adding a testsinfo.yml](#adding-a-testsinfoyml)
+  - [Plagiarism](#plagiarism)
 
 ## Overview
 
@@ -293,29 +301,35 @@ list in the [.glotter.yml][project-glotter-yml] and to the `testinfo.yml` file i
 
 To run the tests locally, **you will need the following dependencies**:
 
-- Docker
-  - As there are so many languages in this project, we use docker to automatically generate
-    consistent, stable build/test environments.
-- Python 3.8+
-  - We use glotter as our testing library. Make sure you have python installed.
-    Then use `pip install -r requirements.txt` (preferably in a virtual environment) to install glotter and its dependencies.
+- **Docker**: as there are so many languages in this project, we use docker to 
+  automatically generate consistent, stable build/test environments.
+- **Python 3.8+**: our build system is constructed with Python given that
+  testing is built with glotter, a Python testing library that leverages docker. 
+- **Poetry**: our build system is managed and versioned using Poetry.
 
-After that, running the tests is a matter of using the following commands:
+With all three installed, the remaining dependencies can be installed using `poetry install`. 
+After that, running the tests is a matter of running glotter directly as follows:
 
-Starting a test run is done by using python to call `runner.py`.
-For windows, this can be done by calling `samplerunner.bat`
-On systems with bash installed, just call `./samplerunner.sh`
+```sh
+glotter
+```
 
-Running Glotter with no arguments will just print out a help menu.
+If you find the above command gives you issues, the following should work:
+
+```sh
+poetry run glotter
+```
+
+Running glotter with no arguments will just print out a help menu.
 
 Some common cases for testing are outlined below.
 
-| Purpose | Command | Example |
-| --- | --- | --- |
-| Run all tests | `./samplerunner.sh test` | `./samplerunner.sh test` |
-| Run all project tests for a given language | `./samplerunner.sh test -l {LANGUAGE_NAME}` | `./samplerunner.sh test -l c-sharp` |
-| Run all language tests for a given project | `./samplerunner.sh test -p {PROJECT_KEY}` | `./samplerunner.sh test -p evenodd` |
-| Run all tests for a specific program | `./samplerunner.sh test -s {NAME_OF_PROJECT}.{EXTENSION}` | `./samplerunner.sh -s Fibonacci.java` |
+| Purpose                                    | Command                                         | Example                     |
+| ------------------------------------------ | ----------------------------------------------- | --------------------------- |
+| Run all tests                              | `glotter test`                                  | `glotter run glotter test`  |
+| Run all project tests for a given language | `glotter test -l {LANGUAGE_NAME}`               | `glotter test -l c-sharp`   |
+| Run all language tests for a given project | `glotter test -p {PROJECT_KEY}`                 | `glotter test -p evenodd`   |
+| Run all tests for a specific program       | `glotter test -s {NAME_OF_PROJECT}.{EXTENSION}` | `glotter -s Fibonacci.java` |
 
 The `-l`, `-p`, and `-s` options can be used together in the event that multiple languages
 have the same filename and extension. For example, suppose that there are two programs

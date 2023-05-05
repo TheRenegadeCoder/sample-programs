@@ -1,2 +1,0 @@
-ronbun~=0.7
-glotter2~=0.5
