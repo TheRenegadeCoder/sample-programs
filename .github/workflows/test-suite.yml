@@ -11,8 +11,6 @@ on:
       - 'archive/**'
       - 'test/**'
       - '.glotter.yml'
-      - 'runner.py'
-      - 'samplerunner.*'
       - '.github/workflows/test-suite.yml'
 
 jobs:
