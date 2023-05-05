@@ -3,6 +3,7 @@ name = "sample-programs"
 version = "2023.05.04"
 description = "Sample Programs in Every Programming Language"
 readme = "README.md"
+license = "MIT"
 
 # Initiator of the collection
 authors = [
@@ -26,3 +27,6 @@ maintainers = [
 python = "^3.8"
 ronbun = "^0.7"
 glotter2 = "^0.5"
+
+[tool.pytest.ini_options]
+console_output_style = "count"
