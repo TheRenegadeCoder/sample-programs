@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "sample-programs"
+version = "2023.05.04"
+description = "Sample Programs in Every Programming Language"
+readme = "README.md"
+
+# Initiator of the collection
+authors = [
+    "Jeremy Grifski <jeremy.grifski@therenegadecoder.com>"
+]
+
+# Major contributors along the way
+maintainers = [
+    "auroq",
+    "rzuckerm",
+    "stuin",
+    "noah11012",
+    "heksterb",
+    "msj2",
+    "chrboe",
+    "2Clutch",
+    "alope107"
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+ronbun = "^0.7"
+glotter2 = "^0.5"
