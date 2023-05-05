@@ -12,5 +12,3 @@ __pycache__/
 .DS_Store
 venv/
 generated/
-/requirements-dev.txt
-/docs
