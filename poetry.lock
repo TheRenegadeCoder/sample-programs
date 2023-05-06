@@ -41,6 +41,8 @@ mypy-extensions = ">=0.4.3"
 packaging = ">=22.0"
 pathspec = ">=0.9.0"
 platformdirs = ">=2"
+tomli = {version = ">=1.1.0", markers = "python_version < \"3.11\""}
+typing-extensions = {version = ">=3.10.0.0", markers = "python_version < \"3.10\""}
 
 [package.extras]
 colorama = ["colorama (>=0.4.3)"]
@@ -193,6 +195,21 @@ websocket-client = ">=0.32.0"
 
 [package.extras]
 ssh = ["paramiko (>=2.4.3)"]
+
+[[package]]
+name = "exceptiongroup"
+version = "1.1.1"
+description = "Backport of PEP 654 (exception groups)"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "exceptiongroup-1.1.1-py3-none-any.whl", hash = "sha256:232c37c63e4f682982c8b6459f33a8981039e5fb8756b2074364e5055c498c9e"},
+    {file = "exceptiongroup-1.1.1.tar.gz", hash = "sha256:d484c3090ba2889ae2928419117447a14daf3c1231d5e30d0aae34f354f01785"},
+]
+
+[package.extras]
+test = ["pytest (>=6)"]
 
 [[package]]
 name = "execnet"
@@ -497,9 +514,11 @@ files = [
 
 [package.dependencies]
 colorama = {version = "*", markers = "sys_platform == \"win32\""}
+exceptiongroup = {version = ">=1.0.0rc8", markers = "python_version < \"3.11\""}
 iniconfig = "*"
 packaging = "*"
 pluggy = ">=0.12,<2.0"
+tomli = {version = ">=1.0.0", markers = "python_version < \"3.11\""}
 
 [package.extras]
 testing = ["argcomplete", "attrs (>=19.2.0)", "hypothesis (>=3.56)", "mock", "nose", "pygments (>=2.7.2)", "requests", "xmlschema"]
@@ -623,14 +642,14 @@ use-chardet-on-py3 = ["chardet (>=3.0.2,<6)"]
 
 [[package]]
 name = "ronbun"
-version = "0.7.3"
+version = "0.7.4"
 description = "The Sample Programs README Automation Tool"
 category = "main"
 optional = false
-python-versions = ">=3.11,<4.0"
+python-versions = ">=3.8,<4.0"
 files = [
-    {file = "ronbun-0.7.3-py3-none-any.whl", hash = "sha256:bd3e3fbc27f4d6d68eff856cd4e2cec437a2daad170a60ba3a31e087bd1993e3"},
-    {file = "ronbun-0.7.3.tar.gz", hash = "sha256:71d793ee7cdc6ba71915cb060925b06e5ea38bbf87904918432ece669d48151e"},
+    {file = "ronbun-0.7.4-py3-none-any.whl", hash = "sha256:a4c078ec74cf79af70222cab33d80c267822f236fd155e1726cad48f00bffd8e"},
+    {file = "ronbun-0.7.4.tar.gz", hash = "sha256:aba2b244bda7d190e130e9d1eebefedef1662f1c9d3636e538a29d59eb054368"},
 ]
 
 [package.dependencies]
@@ -676,6 +695,18 @@ files = [
 [package.dependencies]
 GitPython = ">=3"
 PyYAML = ">=5"
+
+[[package]]
+name = "tomli"
+version = "2.0.1"
+description = "A lil' TOML parser"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "tomli-2.0.1-py3-none-any.whl", hash = "sha256:939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc"},
+    {file = "tomli-2.0.1.tar.gz", hash = "sha256:de526c12914f0c550d15924c62d72abc48d6fe7364aa87328337a31007fe8a4f"},
+]
 
 [[package]]
 name = "typing-extensions"
@@ -726,5 +757,5 @@ test = ["websockets"]
 
 [metadata]
 lock-version = "2.0"
-python-versions = "^3.11"
-content-hash = "635eba4fc8cff0ae589c759dc882973ce463dfbc42715b803507a5b8aa5bc29c"
+python-versions = "^3.8"
+content-hash = "f038f30f8cba0c853b115b7fe3634a51b7cfce1f3a17679ca5328e70f33c0dc1"
