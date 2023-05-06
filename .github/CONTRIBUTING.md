@@ -303,7 +303,7 @@ To run the tests locally, **you will need the following dependencies**:
 
 - **Docker**: as there are so many languages in this project, we use docker to 
   automatically generate consistent, stable build/test environments.
-- **Python 3.11+**: our build system is constructed with Python given that
+- **Python 3.8+**: our build system is constructed with Python given that
   testing is built with glotter, a Python testing library that leverages docker. 
 - **Poetry**: our build system is managed and versioned using Poetry.
 
