@@ -1,6 +1,6 @@
 use std::env::args;
+use std::str::FromStr;
 use std::process::exit;
-use std::num::ParseIntError;
 use std::cmp::Ordering;
 
 fn usage() -> ! {
@@ -8,22 +8,14 @@ fn usage() -> ! {
     exit(0);
 }
 
-fn parse_int(s: String) -> Result<i32, ParseIntError> {
-    s.trim().parse::<i32>()
+fn parse_int<T: FromStr>(s: &str) -> Result<T, <T as FromStr>::Err> {
+    s.trim().parse::<T>()
 }
 
-fn parse_int_list(s_list: String) -> Option<Vec<i32>> {
-    let results: Vec<Result<i32, ParseIntError>> = s_list.split(",")
-        .map(|s| parse_int(s.to_string()))
-        .collect();
-    match results.iter().any(|s| s.is_err()) {
-        true => None,
-        false => Some(
-            results.iter()
-            .map(|result| result.clone().unwrap())
-            .collect()
-        ),
-    }
+fn parse_int_list<T: FromStr>(s: &str) -> Result<Vec<T>, <T as FromStr>::Err> {
+    s.split(',')
+        .map(parse_int)
+        .collect::<Result<Vec<T>, <T as FromStr>::Err>>()
 }
 
 #[derive(Debug, Ord, Eq)]
@@ -34,8 +26,8 @@ struct JobInfo {
 }
 
 impl JobInfo {
-    fn new(job_id: usize, profit: i32, deadline: usize) -> JobInfo {
-        JobInfo {job_id: job_id, profit: profit, deadline: deadline}
+    fn new(job_id: usize, profit: i32, deadline: usize) -> Self {
+        Self {job_id: job_id, profit: profit, deadline: deadline}
     }
 }
 
@@ -58,7 +50,7 @@ impl PartialEq for JobInfo {
 
 // Job sequencing with deadlines
 // Source: https://www.techiedelight.com/job-sequencing-problem-deadlines/
-fn job_sequencing(profits: Vec<i32>, deadlines: Vec<i32>) -> Vec<JobInfo> {
+fn job_sequencing(profits: &Vec<i32>, deadlines: &Vec<i32>) -> Vec<JobInfo> {
     // Set up job details
     let mut jobs: Vec<JobInfo> = profits.iter()
         .zip(deadlines.iter())
@@ -93,24 +85,26 @@ fn job_sequencing(profits: Vec<i32>, deadlines: Vec<i32>) -> Vec<JobInfo> {
     slots
 }
 
-fn get_total_profit(jobs: Vec<JobInfo>) -> i32 {
+fn get_total_profit(jobs: &Vec<JobInfo>) -> i32 {
     jobs.iter()
         .map(|x| x.profit)
         .sum()
 }
 
 fn main() {
+    let mut args = args().skip(1);
+
     // Convert 1st command-line argument to list of integers
-    let mut profits: Vec<i32> = parse_int_list(
-        args().nth(1)
-        .unwrap_or_else(|| usage())
-    ).unwrap_or_else(|| usage());
+    let mut profits: Vec<i32> = args
+        .next()
+        .and_then(|s| parse_int_list(&s).ok())
+        .unwrap_or_else(|| usage());
 
     // Convert 2nd command-line argument to list of integers
-    let mut deadlines: Vec<i32> = parse_int_list(
-        args().nth(2)
-        .unwrap_or_else(|| usage())
-    ).unwrap_or_else(|| usage());
+    let mut deadlines: Vec<i32> = args
+        .next()
+        .and_then(|s| parse_int_list(&s).ok())
+        .unwrap_or_else(|| usage());
 
     // Exit if profits not same length as deadlines
     if profits.len() != deadlines.len() {
@@ -118,8 +112,8 @@ fn main() {
     }
 
     // Get job sequence
-    let jobs = job_sequencing(profits, deadlines);
+    let jobs = job_sequencing(&profits, &deadlines);
 
     // Get total profit and display
-    println!("{}", get_total_profit(jobs));
+    println!("{}", get_total_profit(&jobs));
 }
