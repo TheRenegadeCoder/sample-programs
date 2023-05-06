@@ -83,7 +83,7 @@ fn main() {
     let mut args = args().skip(1);
 
     // Convert 1st command-line argument to list of integers
-    let mut arr: Vec<i32> = args
+    let arr: Vec<i32> = args
         .next()
         .and_then(|s| parse_int_list(&s).ok())
         .unwrap_or_else(|| usage());
