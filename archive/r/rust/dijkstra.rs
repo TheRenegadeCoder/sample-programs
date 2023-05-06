@@ -1,6 +1,6 @@
 use std::env::args;
+use std::str::FromStr;
 use std::process::exit;
-use std::num::ParseIntError;
 use std::collections::{HashMap, HashSet};
 
 fn usage() -> ! {
@@ -11,43 +11,35 @@ fn usage() -> ! {
     exit(0);
 }
 
-fn parse_int(s: String) -> Result<i32, ParseIntError> {
-    s.trim().parse::<i32>()
+fn parse_int<T: FromStr>(s: &str) -> Result<T, <T as FromStr>::Err> {
+    s.trim().parse::<T>()
 }
 
-fn parse_int_list(s_list: String) -> Option<Vec<i32>> {
-    let results: Vec<Result<i32, ParseIntError>> = s_list.split(",")
-        .map(|s| parse_int(s.to_string()))
-        .collect();
-    match results.iter().any(|s| s.is_err()) {
-        true => None,
-        false => Some(
-            results.iter()
-            .map(|result| result.clone().unwrap())
-            .collect()
-        )
-    }
+fn parse_int_list<T: FromStr>(s: &str) -> Result<Vec<T>, <T as FromStr>::Err> {
+    s.split(',')
+        .map(parse_int)
+        .collect::<Result<Vec<T>, <T as FromStr>::Err>>()
 }
 
 #[derive(Debug, Clone)]
 struct Node {
     index: usize,
-    children: HashMap<usize, i32>,
+    children: HashMap<usize, u32>,
 }
 
 impl Node {
-    fn new(index: usize) -> Node {
-        Node {index: index, children: HashMap::<usize, i32>::new()}
+    fn new(index: usize) -> Self {
+        Self {index: index, children: HashMap::<usize, u32>::new()}
     }
 
-    fn add_child(&mut self, index: usize, weight: i32) {
+    fn add_child(&mut self, index: usize, weight: u32) {
         self.children.insert(index, weight);
     }
 }
 
 type Tree = Vec<Node>;
 
-fn create_tree(weights: &Vec<i32>, num_vertices: usize) -> Tree {
+fn create_tree(weights: &Vec<u32>, num_vertices: usize) -> Tree {
     // Create nodes
     let mut nodes: Vec<Node> = (0..num_vertices)
         .map(|index| Node::new(index))
@@ -69,44 +61,37 @@ fn create_tree(weights: &Vec<i32>, num_vertices: usize) -> Tree {
 }
 
 fn validate_inputs(
-    weights: &Vec<i32>, num_vertices: usize, src: i32, dest: i32
+    weights: &Vec<u32>, num_vertices: usize, src: usize, dest: usize
 ) -> bool {
     // Verify the following:
     // - Number of weights is a square
-    // - Weights greater than equal to zero
     // - Any non-zero weights
     // - Source and destination are in range
-    let num_vertices_i32: i32 = num_vertices as i32;
-    (
-        weights.len() == num_vertices * num_vertices
-        && *weights.iter().min().unwrap() >= 0
-        && *weights.iter().max().unwrap() > 0
-        && src >= 0 && src < num_vertices_i32
-        && dest >= 0 && dest < num_vertices_i32
-    )
+    weights.len() == num_vertices * num_vertices
+    && *weights.iter().max().unwrap() > 0
+    && src < num_vertices
+    && dest < num_vertices
 }
 
 #[derive(Debug, Clone)]
 struct DijkstraItem {
     prev: usize,
-    dist: i32,
+    dist: u32,
 }
 
 impl DijkstraItem {
-    fn new(prev: usize, dist: i32) -> DijkstraItem {
+    fn new(prev: usize, dist: u32) -> DijkstraItem {
         DijkstraItem {prev: prev, dist: dist}
     }
 }
 
 // Source: https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm#Pseudocode
-fn dijkstra(tree: &Tree, src: i32) -> Vec<DijkstraItem> {
-    let src: usize = src as usize;
-
+fn dijkstra(tree: &Tree, src: usize) -> Vec<DijkstraItem> {
     // Initialize distances to infinite and previous vertices to undefined
     // Set source vertex distance to 0
     // Indicate all nodes unvisited
     let num_vertices = tree.len();
-    let mut results: Vec<DijkstraItem> = vec![DijkstraItem::new(0, i32::MAX); num_vertices];
+    let mut results: Vec<DijkstraItem> = vec![DijkstraItem::new(0, u32::MAX); num_vertices];
     results[src].dist = 0;
     let mut visited: HashSet<usize> = HashSet::<usize>::new();
 
@@ -124,15 +109,15 @@ fn dijkstra(tree: &Tree, src: i32) -> Vec<DijkstraItem> {
         visited.insert(u);
 
         // For each unvisited neighbor v of vertex u
-        for (v, weight) in tree[u].children.iter() {
-            if !visited.contains(v) {
+        for (&v, &weight) in tree[u].children.iter() {
+            if !visited.contains(&v) {
                 // Get trial distance
-                let alt = results[u].dist + *weight;
+                let alt = results[u].dist + weight;
 
                 // If trial distance is smaller than distance v, update distance to v and
-                if alt < results[*v].dist {
-                    results[*v].dist = alt;
-                    results[*v].prev = u;
+                if alt < results[v].dist {
+                    results[v].dist = alt;
+                    results[v].prev = u;
                 }
             }
         }
@@ -142,21 +127,25 @@ fn dijkstra(tree: &Tree, src: i32) -> Vec<DijkstraItem> {
 }
 
 fn main() {
+    let mut args = args().skip(1);
+
     // Convert 1st command-line argument to list of integers
-    let weights: Vec<i32> = parse_int_list(
-        args().nth(1)
-        .unwrap_or_else(|| usage())
-    ).unwrap_or_else(|| usage());
+    let weights: Vec<u32> = args
+        .next()
+        .and_then(|s| parse_int_list(&s).ok())
+        .unwrap_or_else(|| usage());
 
     // Convert 2nd command-line argument to integer
-    let src: i32 = parse_int(
-        args().nth(2).unwrap_or_else(|| usage())
-    ).unwrap_or_else(|_| usage());
+    let src: usize = args
+        .next()
+        .and_then(|s| parse_int(&s).ok())
+        .unwrap_or_else(|| usage());
 
     // Convert 3rd command-line argument to integer
-    let dest: i32 = parse_int(
-        args().nth(3).unwrap_or_else(|| usage())
-    ).unwrap_or_else(|_| usage());
+    let dest: usize = args
+        .next()
+        .and_then(|s| parse_int(&s).ok())
+        .unwrap_or_else(|| usage());
 
     // Exit if invalid inputs
     let num_weights = weights.len();
@@ -166,9 +155,9 @@ fn main() {
     }
 
     // Create tree
-    let tree = &create_tree(&weights, num_vertices);
+    let tree = create_tree(&weights, num_vertices);
 
     // Run Dijkstra's algorithm on graph and show distance to destination
-    let results = &dijkstra(&tree, src);
-    println!("{}", results[dest as usize].dist);
+    let results = dijkstra(&tree, src);
+    println!("{}", results[dest].dist);
 }
