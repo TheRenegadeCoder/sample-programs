@@ -18,13 +18,8 @@ fn parse_int_list<T: FromStr>(s: &str) -> Result<Vec<T>, <T as FromStr>::Err> {
 }
 
 fn is_sorted<T: PartialOrd>(arr: &Vec<T>) -> bool {
-    for i in 0..(arr.len() - 1) {
-        if arr[i] > arr[i + 1] {
-            return false;
-        }
-    }
-
-    return true;
+    (0..(arr.len() - 1))
+        .all(|x| arr[x] <= arr[x + 1])
 }
 
 fn binary_search<T: PartialOrd + PartialEq>(search_arr: &Vec<T>, target: T) -> Option<usize> {
