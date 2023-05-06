@@ -241,19 +241,19 @@ gitdb = ">=4.0.1,<5"
 
 [[package]]
 name = "glotter2"
-version = "0.6.0"
+version = "0.6.1"
 description = "An execution library for scripts written in any language. This is a fork of https://github.com/auroq/glotter"
 category = "main"
 optional = false
 python-versions = ">=3.8,<4.0"
 files = [
-    {file = "glotter2-0.6.0-py3-none-any.whl", hash = "sha256:565b51d9bb637105d2bdbf91701898f00d6a121c82320527e6be241c5bada376"},
-    {file = "glotter2-0.6.0.tar.gz", hash = "sha256:6a266a0cf49e266fe727dcfc4fa8b7a509a2caa6410c8d7b5d2be161a0054134"},
+    {file = "glotter2-0.6.1-py3-none-any.whl", hash = "sha256:64b9fa3625e7277509fd417cab5d73d22fd53556f2476829afb15f4af83589af"},
+    {file = "glotter2-0.6.1.tar.gz", hash = "sha256:bede8b6f306014333aae1f190268fc26c21a7cb95c0f4f094de5d70bac6a6b59"},
 ]
 
 [package.dependencies]
 black = ">=23.1.0,<24.0.0"
-docker = ">=6.0.1,<7.0.0"
+docker = ">=6.1.0,<7.0.0"
 jinja2 = ">=3.1.2,<4.0.0"
 pydantic = ">=1.10.6,<2.0.0"
 pytest = ">=7.2.1,<8.0.0"
@@ -727,4 +727,4 @@ test = ["websockets"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "76679b445b688a3d78b489e1e4d94b6ce41faedc20d0c72a67067fa0a59ef5cc"
+content-hash = "635eba4fc8cff0ae589c759dc882973ce463dfbc42715b803507a5b8aa5bc29c"

@@ -12,6 +12,8 @@ on:
       - 'test/**'
       - '.glotter.yml'
       - '.github/workflows/test-suite.yml'
+      - 'pyproject.toml'
+      - 'poetry.lock'
 
 jobs:
   testing:
