@@ -30,8 +30,8 @@ struct Node {
 }
 
 impl Node {
-    fn new(id: i32) -> Node {
-        Node {id: id, children: HashSet::<i32>::new()}
+    fn new(id: i32) -> Self {
+        Self {id: id, children: HashSet::<i32>::new()}
     }
 
     fn add_child(&mut self, id: i32) {
@@ -46,12 +46,12 @@ struct Tree {
 }
 
 impl Tree {
-    fn new(root_id: i32) -> Tree {
-        Tree {root_id: root_id, tree: HashMap::<i32, Node>::new()}
+    fn new(root_id: i32) -> Self {
+        Self {root_id: root_id, tree: HashMap::<i32, Node>::new()}
     }
 
-    fn add_node(&mut self, from_id: i32, node: Node) {
-        self.tree.insert(from_id, node);
+    fn add_node(&mut self, from_id: i32, node: &Node) {
+        self.tree.insert(from_id, node.clone());
     }
 
     fn get_node(&self, node_id: Option<i32>) -> Option<Node> {
@@ -79,7 +79,7 @@ fn create_tree(adjacency_matrix: &Vec<i32>, vertices: &Vec<i32>) -> Tree {
             }
         }
 
-        tree.add_node(vertices[row], nodes[row].clone());
+        tree.add_node(vertices[row], &nodes[row]);
     }
 
     tree
