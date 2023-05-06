@@ -23,12 +23,15 @@ type Matrix<T> = Vec<Vec<T>>;
 // Source: https://en.wikipedia.org/wiki/Longest_common_subsequence#Example_in_C#
 //
 // However, instead of storing lengths, an index to the subsequence is stored
-fn longest_common_subsequence(list1: &Vec<i32>, list2: &Vec<i32>) -> Vec<i32> {
+fn longest_common_subsequence<T>(list1: &Vec<T>, list2: &Vec<T>) -> Vec<T> 
+where
+    T: Copy + Clone + PartialEq
+{
     // Initialize all subsequences to an empty sequence
     let m = list1.len();
     let n = list2.len();
     let mut c: Matrix<usize> = vec![vec![0; n + 1]; m + 1];
-    let mut subsequences: Matrix<i32> = vec![vec![]];
+    let mut subsequences: Matrix<T> = vec![vec![]];
 
     // Find the longest common subsequence using prior subsequences
     for i in 1..=m {
@@ -62,18 +65,18 @@ fn main() {
     let mut args = args().skip(1);
 
     // Convert 1st command-line argument to list of integers
-    let mut list1: Vec<i32> = args
+    let list1: Vec<i32> = args
         .next()
         .and_then(|s| parse_int_list(&s).ok())
         .unwrap_or_else(|| usage());
 
     // Convert 2nd command-line argument to list of integers
-    let mut list2: Vec<i32> = args
+    let list2: Vec<i32> = args
         .next()
         .and_then(|s| parse_int_list(&s).ok())
         .unwrap_or_else(|| usage());
 
     // Get longest common subsequence and display it
-    let result = longest_common_subsequence(&list1, &list2);
+    let result: Vec<i32> = longest_common_subsequence::<i32>(&list1, &list2);
     println!("{result:?}");
 }
