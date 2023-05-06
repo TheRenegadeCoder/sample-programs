@@ -48,5 +48,5 @@ fn main() {
 
     // Perform bubble sort and show results
     bubble_sort(&mut arr);
-    println!("{:?}", arr);
+    println!("{arr:?}");
 }
