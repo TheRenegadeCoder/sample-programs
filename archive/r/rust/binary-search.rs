@@ -22,7 +22,7 @@ fn is_sorted<T: PartialOrd>(arr: &Vec<T>) -> bool {
         .all(|x| arr[x] <= arr[x + 1])
 }
 
-fn binary_search<T: PartialOrd + PartialEq>(search_arr: &Vec<T>, target: T) -> Option<usize> {
+fn binary_search<T: PartialOrd + PartialEq>(search_arr: &Vec<T>, target: &T) -> Option<usize> {
     let mut low: usize = 0;
     let mut high: usize = search_arr.len() - 1;
 
@@ -30,17 +30,17 @@ fn binary_search<T: PartialOrd + PartialEq>(search_arr: &Vec<T>, target: T) -> O
         let mid = ((high - low) / 2) + low;
         let val = &search_arr[mid];
 
-        if val == &target {
+        if val == target {
             return Some(mid);
         }
 
         // If value is < target then search between mid + 1 and high
-        if val < &target {
+        if val < target {
             low = mid + 1;
         }
 
         // If value is > target then search between low and mid - 1
-        if val > &target {
+        if val > target {
             high = mid - 1;
         }
     }
@@ -68,7 +68,7 @@ fn main() {
         .and_then(|s| parse_int(&s).ok())
         .unwrap_or_else(|| usage());
 
-    match binary_search::<i32>(&arr, target) {
+    match binary_search::<i32>(&arr, &target) {
         Some(_) => println!("true"),
         None => println!("false"),
     }
