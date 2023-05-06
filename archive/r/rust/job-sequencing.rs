@@ -55,7 +55,7 @@ fn job_sequencing(profits: &Vec<i32>, deadlines: &Vec<i32>) -> Vec<JobInfo> {
     let mut jobs: Vec<JobInfo> = profits.iter()
         .zip(deadlines.iter())
         .enumerate()
-        .map(|(n, (p, d))| JobInfo::new(n + 1, *p, *d as usize))
+        .map(|(n, (&p, &d))| JobInfo::new(n + 1, p, d as usize))
         .collect();
 
     // Get longest deadline
