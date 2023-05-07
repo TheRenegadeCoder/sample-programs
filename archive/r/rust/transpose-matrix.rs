@@ -17,23 +17,23 @@ fn parse_int_list<T: FromStr>(s: &str) -> Result<Vec<T>, <T as FromStr>::Err> {
         .collect::<Result<Vec<T>, <T as FromStr>::Err>>()
 }
 
-type Matrix = Vec<Vec<i32>>;
+type Matrix<T> = Vec<Vec<T>>;
 
-fn convert_array_to_matrix(
-    arr: Vec<i32>, num_rows: usize, num_cols: usize
-) -> Matrix {
+fn convert_array_to_matrix<T: Copy>(
+    arr: Vec<T>, num_rows: usize, num_cols: usize
+) -> Matrix<T> {
     // Combine 'num_rows' vectors of 'num_cols' items from array
     let mut arr_iter = arr.iter();
     (0..num_rows)
     .map(|_|
         (0..num_cols)
         .map(|_| *arr_iter.next().unwrap())
-        .collect::<Vec<i32>>()
+        .collect::<Vec<T>>()
     )
-    .collect::<Matrix>()
+    .collect::<Matrix<T>>()
 }
 
-fn transpose_matrix(matrix: Matrix) -> Matrix {
+fn transpose_matrix<T: Copy>(matrix: Matrix<T>) -> Matrix<T> {
     let num_rows = matrix.len();
     let num_cols = matrix[0].len();
 
@@ -43,13 +43,13 @@ fn transpose_matrix(matrix: Matrix) -> Matrix {
         .map(|col|
             (0..num_rows)
                 .map(|row| matrix[row][col])
-                .collect::<Vec<i32>>()
+                .collect::<Vec<T>>()
         )
-        .collect::<Matrix>()
+        .collect::<Matrix<T>>()
 }
 
-fn convert_matrix_to_array(matrix: Matrix) -> Vec<i32> {
-    let mut arr: Vec<i32> = vec![];
+fn convert_matrix_to_array<T: Copy>(matrix: Matrix<T>) -> Vec<T> {
+    let mut arr: Vec<T> = vec![];
     for mut row in matrix {
         arr.append(&mut row);
     }
@@ -86,12 +86,12 @@ fn main() {
     }
 
     // Convert array to matrix
-    let matrix: Matrix = convert_array_to_matrix(arr, num_rows, num_cols);
+    let matrix: Matrix<i32> = convert_array_to_matrix::<i32>(arr, num_rows, num_cols);
 
     // Transpose matrix
-    let matrix_t = transpose_matrix(matrix);
+    let matrix_t = transpose_matrix::<i32>(matrix);
 
     // Show transposed matrix as an array
-    let arr_t = convert_matrix_to_array(matrix_t);
+    let arr_t = convert_matrix_to_array::<i32>(matrix_t);
     println!("{arr_t:?}");
 }
