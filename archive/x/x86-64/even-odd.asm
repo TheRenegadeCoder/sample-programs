@@ -13,38 +13,28 @@ section .text
     global _start
 
 _start:
-    mov rdi, [rsp]
-    lea rsi, [rsp + 8]
-    mov r8, [rsi + 8]
-
     ; Need to have at least 2 args (program name & number)
+    mov rdi, [rsp]
     cmp rdi, 2
     jl error
 
+    ; Store pointer to second arg in r8
+    lea rsi, [rsp + 8]
+    mov r8, [rsi + 8]
+
     xor r12, r12 ; r12 will hold whether we've looked at at least one byte
     read_loop:
+        ; Read one byte of the string
         mov byte al, [r8]
 
+        ; Stop reading once we reach the null terminator
         cmp al, 0
         je end_loop
 
-        ; mov byte [buff], al
-        ; mov rax, 1
-        ; mov rdi, 1
-        ; mov rsi, buff
-        ; mov rdx, 1
-        ; syscall
-
-
-        ; ; Finish loop when reading reads 0 bytes or encountering a newline
-        ; cmp r13, 0
-        ; ;cmp rax, 0
-        ; je end_loop
-        ; mov rax, [input]
-        ; cmp al, 10
-        ; je end_loop
-
+        ; Keep the last character read in bl so it doesn't get overwritten once the null is eventually read
         mov bl, al
+
+        ; Check for minus
         cmp bl, "-"
         jne non_minus
 
@@ -99,8 +89,6 @@ _start:
             mov rdx, odd_len
             syscall
             jmp cleanup
-
-
 
     error:
         ; Print error message
