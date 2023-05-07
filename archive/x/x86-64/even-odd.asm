@@ -7,28 +7,44 @@ section .data
     odd_len equ $-odd_msg
 
 section .bss
-    input resb 1
+    buff resb 1
 
 section .text
     global _start
 
 _start:
+    mov rdi, [rsp]
+    lea rsi, [rsp + 8]
+    mov r8, [rsi + 8]
+
+    ; Need to have at least 2 args (program name & number)
+    cmp rdi, 2
+    jl error
+
     xor r12, r12 ; r12 will hold whether we've looked at at least one byte
     read_loop:
-        mov rax, 0
-        mov rdi, 0
-        mov rsi, input
-        mov rdx, 1
-        syscall
+        mov byte al, [r8]
 
-        ; Finish loop when reading reads 0 bytes or encountering a newline
-        cmp rax, 0
-        je end_loop
-        mov rax, [input]
-        cmp rax, 10
+        cmp al, 0
         je end_loop
 
-        mov rbx, [input]
+        ; mov byte [buff], al
+        ; mov rax, 1
+        ; mov rdi, 1
+        ; mov rsi, buff
+        ; mov rdx, 1
+        ; syscall
+
+
+        ; ; Finish loop when reading reads 0 bytes or encountering a newline
+        ; cmp r13, 0
+        ; ;cmp rax, 0
+        ; je end_loop
+        ; mov rax, [input]
+        ; cmp al, 10
+        ; je end_loop
+
+        mov bl, al
         cmp bl, "-"
         jne non_minus
 
@@ -48,6 +64,7 @@ _start:
 
         valid_char:
             mov r12, 1 ; Mark that at least one byte has been read
+            inc r8
             jmp read_loop
 
     end_loop:
