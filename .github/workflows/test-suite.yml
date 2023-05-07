@@ -12,6 +12,8 @@ on:
       - 'test/**'
       - '.glotter.yml'
       - '.github/workflows/test-suite.yml'
+      - 'pyproject.toml'
+      - 'poetry.lock'
 
 jobs:
   testing:
@@ -21,7 +23,7 @@ jobs:
       fail-fast: true
       matrix:
         python-version: ["3.11"]
-        poetry-version: ["1.4"]
+        poetry-version: ["1.4.2"]
         os: [ubuntu-latest]
 
     runs-on: ${{ matrix.os }}

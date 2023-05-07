@@ -24,10 +24,9 @@ maintainers = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.11"
-ronbun = "^0.7"
-glotter2 = "^0.6"
-urllib3 = "<2"
+python = "^3.8"
+ronbun = "^0.7.4"
+glotter2 = "^0.6.1"
 
 [tool.pytest.ini_options]
 console_output_style = "count"
