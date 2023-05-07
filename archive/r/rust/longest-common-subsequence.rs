@@ -1,6 +1,6 @@
 use std::env::args;
-use std::str::FromStr;
 use std::process::exit;
+use std::str::FromStr;
 
 fn usage() -> ! {
     println!("Usage: please provide two lists in the format \"1, 2, 3, 4, 5\"");

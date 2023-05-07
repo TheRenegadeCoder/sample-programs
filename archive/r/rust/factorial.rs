@@ -2,8 +2,8 @@
 // Accept a number on command line and print it's factorial
 // Works till factorial 34, which is 39 digits, ...
 use std::env::args;
-use std::str::FromStr;
 use std::process::exit;
+use std::str::FromStr;
 
 fn usage() -> ! {
     println!("Usage: please input a non-negative integer");

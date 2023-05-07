@@ -1,6 +1,6 @@
 use std::env::args;
-use std::str::FromStr;
 use std::process::exit;
+use std::str::FromStr;
 
 fn usage() -> ! {
     println!("Usage: please provide a list of sorted integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")");

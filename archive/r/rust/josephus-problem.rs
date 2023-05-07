@@ -1,6 +1,6 @@
 use std::env::args;
-use std::str::FromStr;
 use std::process::exit;
+use std::str::FromStr;
 
 fn usage() -> ! {
     println!("Usage: please input the total number of people and number of people to skip.");

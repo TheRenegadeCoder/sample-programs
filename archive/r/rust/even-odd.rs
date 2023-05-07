@@ -2,8 +2,8 @@
 // Program to accept an integer on the command line and outputs if the integer is Even or Odd.
 
 use std::env::args;
-use std::str::FromStr;
 use std::process::exit;
+use std::str::FromStr;
 
 fn usage() -> ! {
     println!("Usage: please input a number");

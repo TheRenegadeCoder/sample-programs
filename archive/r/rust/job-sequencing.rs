@@ -1,6 +1,6 @@
 use std::env::args;
-use std::str::FromStr;
 use std::process::exit;
+use std::str::FromStr;
 use std::cmp::Ordering;
 
 fn usage() -> ! {
