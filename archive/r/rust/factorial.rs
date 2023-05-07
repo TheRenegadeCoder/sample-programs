@@ -27,7 +27,7 @@ fn main() {
     let mut result = 1;
     while n > 0 {
         result *= n;
-        n = n - 1;
+        n -= 1;
     }
     println!("{result}");
 }

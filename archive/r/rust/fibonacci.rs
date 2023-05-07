@@ -20,13 +20,9 @@ fn fibonacci(terms: i32) {
     } else {
         let mut a = 0u64;
         let mut b = 1u64;
-        let mut c = 0u64;
         for i in 1..(terms + 1) {
-            c = a + b;
-            b = a;
-            a = c;
-
-            println!("{i}: {c}");
+            (a, b) = (b, a + b);
+            println!("{i}: {a}");
         }
     }
 }
