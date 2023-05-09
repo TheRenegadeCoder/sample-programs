@@ -10,7 +10,7 @@ type Matrix<T> = Vec<Vec<T>>;
 
 // Find longest palindromic string using matching array
 // Source: https://www.geeksforgeeks.org/longest-palindromic-substring-using-dynamic-programming/
-fn longest_palindromic_substring(s: String) -> String {
+fn longest_palindromic_substring(s: &str) -> String {
     // Initialize array indicating whether there is a character match
     // between two characters to indicate that nothing matches
     let n = s.len();
@@ -62,10 +62,12 @@ fn longest_palindromic_substring(s: String) -> String {
 }
 
 fn main() {
+    let mut args = args().skip(1);
+
     // Exit if 1st command-line argument is empty
-    let s: String = args()
-        .nth(1)
-        .unwrap_or_else(|| "".to_string());
+    let s: &str = &args
+        .next()
+        .unwrap_or_else(|| usage());
     if s.len() < 1 {
         usage();
     }

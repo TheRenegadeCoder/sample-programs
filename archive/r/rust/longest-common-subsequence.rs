@@ -1,28 +1,20 @@
 use std::env::args;
 use std::process::exit;
-use std::num::ParseIntError;
+use std::str::FromStr;
 
 fn usage() -> ! {
     println!("Usage: please provide two lists in the format \"1, 2, 3, 4, 5\"");
     exit(0);
 }
 
-fn parse_int(s: String) -> Result<i32, ParseIntError> {
-    s.trim().parse::<i32>()
+fn parse_int<T: FromStr>(s: &str) -> Result<T, <T as FromStr>::Err> {
+    s.trim().parse::<T>()
 }
 
-fn parse_int_list(s_list: String) -> Option<Vec<i32>> {
-    let results: Vec<Result<i32, ParseIntError>> = s_list.split(",")
-        .map(|s| parse_int(s.to_string()))
-        .collect();
-    match results.iter().any(|s| s.is_err()) {
-        true => None,
-        false => Some(
-            results.iter()
-            .map(|result| result.clone().unwrap())
-            .collect()
-        ),
-    }
+fn parse_int_list<T: FromStr>(s: &str) -> Result<Vec<T>, <T as FromStr>::Err> {
+    s.split(',')
+        .map(parse_int)
+        .collect::<Result<Vec<T>, <T as FromStr>::Err>>()
 }
 
 type Matrix<T> = Vec<Vec<T>>;
@@ -31,12 +23,15 @@ type Matrix<T> = Vec<Vec<T>>;
 // Source: https://en.wikipedia.org/wiki/Longest_common_subsequence#Example_in_C#
 //
 // However, instead of storing lengths, an index to the subsequence is stored
-fn longest_common_subsequence(list1: Vec<i32>, list2: Vec<i32>) -> Vec<i32> {
+fn longest_common_subsequence<T>(list1: &Vec<T>, list2: &Vec<T>) -> Vec<T> 
+where
+    T: Copy + Clone + PartialEq
+{
     // Initialize all subsequences to an empty sequence
     let m = list1.len();
     let n = list2.len();
     let mut c: Matrix<usize> = vec![vec![0; n + 1]; m + 1];
-    let mut subsequences: Matrix<i32> = vec![vec![]];
+    let mut subsequences: Matrix<T> = vec![vec![]];
 
     // Find the longest common subsequence using prior subsequences
     for i in 1..=m {
@@ -67,19 +62,21 @@ fn longest_common_subsequence(list1: Vec<i32>, list2: Vec<i32>) -> Vec<i32> {
 }
 
 fn main() {
+    let mut args = args().skip(1);
+
     // Convert 1st command-line argument to list of integers
-    let mut list1: Vec<i32> = parse_int_list(
-        args().nth(1)
-        .unwrap_or_else(|| usage())
-    ).unwrap_or_else(|| usage());
+    let list1: Vec<i32> = args
+        .next()
+        .and_then(|s| parse_int_list(&s).ok())
+        .unwrap_or_else(|| usage());
 
     // Convert 2nd command-line argument to list of integers
-    let mut list2: Vec<i32> = parse_int_list(
-        args().nth(2)
-        .unwrap_or_else(|| usage())
-    ).unwrap_or_else(|| usage());
+    let list2: Vec<i32> = args
+        .next()
+        .and_then(|s| parse_int_list(&s).ok())
+        .unwrap_or_else(|| usage());
 
     // Get longest common subsequence and display it
-    let result = longest_common_subsequence(list1, list2);
+    let result: Vec<i32> = longest_common_subsequence::<i32>(&list1, &list2);
     println!("{result:?}");
 }

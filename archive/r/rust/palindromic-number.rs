@@ -1,17 +1,18 @@
 use std::env::args;
 use std::process::exit;
-use std::num::ParseIntError;
+use std::str::FromStr;
+use std::fmt::Display;
 
 fn usage() -> ! {
     println!("Usage: please input a non-negative integer");
     exit(0);
 }
 
-fn parse_int(s: String) -> Result<i32, ParseIntError> {
-    s.trim().parse::<i32>()
+fn parse_int<T: FromStr>(s: &str) -> Result<T, <T as FromStr>::Err> {
+    s.trim().parse::<T>()
 }
 
-fn is_palindromic_number(n: i32) -> bool {
+fn is_palindromic_number<T: Display>(n: T) -> bool {
     // Source: https://stackoverflow.com/questions/24542115/how-to-index-a-string-in-rust
 
     // Convert number to string
@@ -23,17 +24,14 @@ fn is_palindromic_number(n: i32) -> bool {
 }
 
 fn main() {
-    // Convert 1st command-line argument to integer
-    let n: i32 = parse_int(
-        args().nth(1)
-        .unwrap_or_else(|| usage())
-    ).unwrap_or_else(|_| usage());
+    let mut args = args().skip(1);
 
-    // Check if negative
-    if n < 0 {
-        usage();
-    }
+    // Convert 1st command-line argument to integer
+    let n: u32 = args
+        .next()
+        .and_then(|s| parse_int(&s).ok())
+        .unwrap_or_else(|| usage());
 
     // Determine if palindromic number and display result
-    println!("{}", is_palindromic_number(n));
+    println!("{}", is_palindromic_number::<u32>(n));
 }

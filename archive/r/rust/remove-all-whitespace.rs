@@ -5,14 +5,16 @@ fn usage() -> ! {
     println!("Usage: please provide a string");
     exit(0);
 }
-fn remove__all_whitespaces(s: String) -> String {
+fn remove_all_whitespaces(s: String) -> String {
     s.chars().filter(|c| !c.is_whitespace()).collect()
 }
 
 fn main() {
+    let mut args = args().skip(1);
+
     // Get first command-line argument
-    let s: String = args()
-        .nth(1)
+    let s: String = args
+        .next()
         .unwrap_or_else(|| usage());
 
     // Make sure not empty
@@ -21,6 +23,6 @@ fn main() {
     }
 
     // Remove all whitespace and show results
-    let t: String = remove__all_whitespaces(s);
+    let t: String = remove_all_whitespaces(s);
     println!("{t}");
 }
