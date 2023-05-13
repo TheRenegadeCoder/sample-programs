@@ -1,0 +1,9 @@
+folder:
+  extension: ".kk"
+  naming: "underscore"
+
+container:
+  image: "kokalang/koka"
+  tag: "v2.0.16"
+  build: "koka -c {{ source.name }}{{ source.extension }} -o out"
+  cmd: "./out/gcc-debug/{{ source.name | replace('_', '__') }}"
