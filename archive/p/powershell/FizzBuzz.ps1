@@ -44,10 +44,10 @@ print "FizzBuzz"
 [CmdletBinding()]
 param (
   [Parameter(Mandatory = $false, Position = 0)]
-  $Min = 1,
+  [int]$Min = 1,
 
   [Parameter(Mandatory = $false, Position = 1)]
-  $Max = 100
+  [int]$Max = 100
 )
 
 for ($X = $Min; $X -le $Max; $X++) {
