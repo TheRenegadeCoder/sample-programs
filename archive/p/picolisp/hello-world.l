@@ -1,1 +1,2 @@
 (prinl "Hello, World!")
+(bye)
