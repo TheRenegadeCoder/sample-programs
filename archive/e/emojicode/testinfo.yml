@@ -1,0 +1,9 @@
+folder:
+  extension: ".emojic"
+  naming: "hyphen"
+
+container:
+  image: "esolang/emojicode"
+  tag: "latest"
+  build: "emojicodec {{ source.name }}{{ source.extension }}"
+  cmd: "./{{ source.name }}"
