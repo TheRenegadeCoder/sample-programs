@@ -1,6 +1,4 @@
-import scala.io.StdIn.readLine
-
-object ReverseStringSample {
+object ReverseString {
   // revese using recursive & pattern matching
   def reverseString(str: String): String = str.length match {
     case 0 => ""
