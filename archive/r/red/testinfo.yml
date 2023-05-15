@@ -1,0 +1,8 @@
+folder:
+  extension: ".red"
+  naming: "hyphen"
+
+container:
+  image: "rebolek/red"
+  tag: "latest"
+  cmd: "red {{ source.name }}{{ source.extension }}"
