@@ -1,0 +1,9 @@
+folder:
+  extension: ".scala"
+  naming: "pascal"
+
+container:
+  image: "sbtscala/scala-sbt"
+  tag: "eclipse-temurin-jammy-8u352-b08_1.8.3_2.13.10"
+  build: "scalac {{ source.name }}{{ source.extension }}" 
+  cmd: "scala {{ source.name }}"
