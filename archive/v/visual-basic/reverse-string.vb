@@ -5,15 +5,7 @@ Public Module ReverseString
       input = String.Join(" ", args)
     End If
 
-    If String.IsNullOrEmpty(input) Then
-      System.Console.Write("Please provide some text to reverse: ")
-      input = System.Console.ReadLine()
-    End If
-
-    System.Console.WriteLine($"Input: {input}")
-
-    Dim reversedString = ReverseString(input)
-    System.Console.WriteLine($"Reversed: {reversedString}")
+    System.Console.WriteLine(ReverseString(input))
   End Sub
 
     Public Function ReverseString(ByVal input As String) As String
