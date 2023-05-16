@@ -1,0 +1,9 @@
+folder:
+  extension: ".ts"
+  naming: "hyphen"
+
+container:
+  image: "sandrokeil/typescript"
+  tag: "latest"
+  build: "sh -c 'npm i --save-dev @types/node && tsc {{ source.name }}{{ source.extension }}'"
+  cmd: "node {{ source.name }}.js"
