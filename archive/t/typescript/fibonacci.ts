@@ -9,9 +9,16 @@ function fibonacci(num: number) {
     result = elementOne + elementTwo;
     elementOne = elementTwo;
     elementTwo = result;
-    console.log(`Index: ${i}: ${elementOne}`);
+    console.log(`${i}: ${elementOne}`);
   }
 
 }
 
-fibonacci(process.argv[2]);
+let num_str = (process.argv.length >= 3) ? process.argv[2] : ""
+let num: number = parseInt(num_str);
+if (isNaN(num)) {
+  console.log("Usage: please input the count of fibonacci numbers to output")
+  process.exit(0)
+}
+
+fibonacci(num);

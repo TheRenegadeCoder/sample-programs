@@ -1,14 +1,18 @@
-import scala.io.StdIn.readLine
 import scala.reflect.ClassTag
 
-object BubbleSortSample {
+object BubbleSort {
   def main(args: Array[String]) {
     // verify inputs are being provided
     parseInput(args) match {
       case None => println("Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"")
       case Some(inputArr) => {
-        val output = bubbleSort(inputArr).mkString(", ")
-        println(output)
+        if (inputArr.length < 2) {
+          println("Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"")
+        }
+        else {
+          val output = bubbleSort(inputArr).mkString(", ")
+          println(output)
+        }
       }
     }
   }
