@@ -1,18 +1,48 @@
 Public Module BubbleSort
     Public Sub Main(args As String())
-        Console.WriteLine("GetCommandLineArgs: {0}", String.Join(", ", args))
-        Dim listOfStringInputs = args.ToList
-        Dim sortArray = listOfStringInputs.ConvertAll(Function(inputs) Int32.Parse(inputs)).ToArray
+        Try
+            ' Convert string to array of integers
+            Dim listOfStringInputs As String() = args(0).Split(",")
+            Dim n as Integer = UBound(listOfStringInputs)
+            If n < 2
+                Usage()
+                Exit Sub
+            End If
+    
+            Dim sortArray(n) As Integer
+            For i As Integer = 0 To n
+                sortArray(i) = Integer.Parse(listOfStringInputs(i))
+            Next i
 
-        sortArray = BubbleSort(sortArray)
-        Dim outputSorted As String = String.Join(", ", sortArray)
-        System.Console.WriteLine($"Sorted: {outputSorted}")
+            ' Sort array
+            BubbleSort(sortArray)
+            
+            ' Display array
+            Dim first As Boolean = True
+            For i As Integer = 0 To n
+                If i <> 0
+                    System.Console.Write(", ")
+                End If
+                    
+                System.Console.Write(sortArray(i))
+            Next i
+            System.Console.WriteLine()
+        Catch e As FormatException
+            Usage()
+        Catch e As IndexOutOfRangeException
+            Usage()
+        End Try
     End Sub
 
-    Public Function BubbleSort(sortArray As Integer())
-        Dim holdInt
-        For i = 0 To UBound(sortArray)
-            For x = UBound(sortArray) To i + 1 Step -1
+    Public Sub Usage()
+        System.Console.WriteLine("Usage: please provide a list of at least two integers to sort in the format ""1, 2, 3, 4, 5""")
+    End Sub
+
+    Public Sub BubbleSort(ByRef sortArray As Integer())
+        Dim holdInt As Integer
+        Dim n As Integer = UBound(sortArray)
+        For i As Integer = 0 To n - 1
+            For x As Integer = i + 1 To n
                 If sortArray(x) < sortArray(i) Then
                     holdInt = sortArray(x)
                     sortArray(x) = sortArray(i)
@@ -20,6 +50,5 @@ Public Module BubbleSort
                 End If
             Next x
         Next i
-        Return sortArray
-    End Function
+    End Sub
 End Module
