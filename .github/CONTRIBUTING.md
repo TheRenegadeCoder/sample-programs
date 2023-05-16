@@ -324,12 +324,12 @@ Running glotter with no arguments will just print out a help menu.
 
 Some common cases for testing are outlined below.
 
-| Purpose                                    | Command                                         | Example                     |
-| ------------------------------------------ | ----------------------------------------------- | --------------------------- |
-| Run all tests                              | `glotter test`                                  | `glotter run glotter test`  |
-| Run all project tests for a given language | `glotter test -l {LANGUAGE_NAME}`               | `glotter test -l c-sharp`   |
-| Run all language tests for a given project | `glotter test -p {PROJECT_KEY}`                 | `glotter test -p evenodd`   |
-| Run all tests for a specific program       | `glotter test -s {NAME_OF_PROJECT}.{EXTENSION}` | `glotter -s Fibonacci.java` |
+| Purpose                                    | Command                                         | Example                          |
+| ------------------------------------------ | ----------------------------------------------- | -------------------------------- |
+| Run all tests                              | `glotter test`                                  | `glotter test`                   |
+| Run all project tests for a given language | `glotter test -l {LANGUAGE_NAME}`               | `glotter test -l c-sharp`        |
+| Run all language tests for a given project | `glotter test -p {PROJECT_KEY}`                 | `glotter test -p evenodd`        |
+| Run all tests for a specific program       | `glotter test -s {NAME_OF_PROJECT}.{EXTENSION}` | `glotter test -s Fibonacci.java` |
 
 The `-l`, `-p`, and `-s` options can be used together in the event that multiple languages
 have the same filename and extension. For example, suppose that there are two programs
