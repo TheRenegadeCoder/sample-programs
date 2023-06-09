@@ -58,7 +58,7 @@ The following list contains all of the approved programs that are not currently 
 The following list shares details about what we're using to test all Sample Programs in Ocaml.
 
 - Docker Image: ocaml/ocaml
-- Docker Tag: latest
+- Docker Tag: centos-7
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 
