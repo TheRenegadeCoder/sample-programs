@@ -4,6 +4,6 @@ folder:
 
 container:
   image: "tomekw/ada-gnat"
-  tag: "latest" 
+  tag: "12.2.0" 
   build: "gnatmake {{ source.name }}{{ source.extension }}"
   cmd: "./{{ source.name }}"

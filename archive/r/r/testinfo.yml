@@ -4,5 +4,5 @@ folder:
 
 container:
   image: "r-base"
-  tag: "latest"
+  tag: "4.3.0"
   cmd: "Rscript {{ source.name }}{{ source.extension }}"
