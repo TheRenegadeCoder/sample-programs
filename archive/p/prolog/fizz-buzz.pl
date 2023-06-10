@@ -1,3 +1,4 @@
+% Portions of this solution were derived through the assistance of ChatGPT.
 :- initialization(main).
 
 fizzbuzz(N) :-
