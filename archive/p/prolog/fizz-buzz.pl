@@ -1,5 +1,11 @@
+:- initialization(main).
+
 fizzbuzz(N) :-
-    between(1, N, X),
+    fizzbuzz_helper(1, N).
+
+fizzbuzz_helper(X, N) :-
+    X > N, !.
+fizzbuzz_helper(X, N) :-
     (X mod 15 =:= 0 ->
         write('FizzBuzz'), nl
     ; X mod 3 =:= 0 ->
@@ -10,7 +16,8 @@ fizzbuzz(N) :-
         write(X), nl
     ),
     X1 is X + 1,
-    fizzbuzz(X1).
+    fizzbuzz_helper(X1, N).
 
-% To test FizzBuzz up to a certain number, you can use:
-% ?- fizzbuzz(20).
+main() :-
+    fizzbuzz(100),
+    halt.
