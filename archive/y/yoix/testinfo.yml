@@ -1,0 +1,9 @@
+folder:
+  extension: ".yx"
+  naming: "underscore"
+
+container:
+  image: "rzuckerm/yoix"
+  tag: "2.3.1-1"
+  cmd: "java -jar /opt/yoix/yoix.jar {{ source.name }}{{ source.extension }}"
+  
