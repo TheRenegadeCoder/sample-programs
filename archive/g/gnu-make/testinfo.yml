@@ -1,0 +1,9 @@
+folder:
+  extension: ".mk"
+  naming: "hyphen"
+
+container:
+  image: "alpine/make"
+  tag: "4.2.1"
+  cmd: |
+    make -f {{ source.name }}{{ source.extension }} ARGS="$@"
