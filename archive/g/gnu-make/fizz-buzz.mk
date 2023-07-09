@@ -5,6 +5,7 @@ SPACE := $(EMPTY) $(EMPTY)
 # Numbers are represented as x's so that they can be manipulated with text functions.
 # This idea is based on how the GNU Make Standard Library (https://github.com/jgrahamc/gmsl)
 # handles numbers.
+ZERO :=
 ONE := x
 TWO := x x
 THREE := x x x
@@ -13,36 +14,27 @@ TEN := $(FIVE) $(FIVE)
 FIFTEEN := $(TEN) $(FIVE)
 HUNDRED := $(TEN) $(TEN) $(TEN) $(TEN) $(TEN) $(TEN) $(TEN) $(TEN) $(TEN) $(TEN)
 
-# Booleans
-TRUE := T
-FALSE :=
-
 # Join function
 # Arg 1: String
 # Return: String without spaces
 JOIN = $(subst $(SPACE),,$1)
 
-# Split function
-# Arg 1: String
-# Return: String with space between each character
-SPLIT = $(patsubst % ,%,$1)
-
 # Is divisible function
 # Arg 1: Number
 # Arg 2: Divisor
-# Return: $(TRUE) if divisible, $(FALSE) otherwise
-IS_DIVISIBLE = $(if $(call SPLIT,$(subst $(call JOIN,$2),,$(call JOIN,$1))),$(FALSE),$(TRUE))
+# Return: $(ONE) if divisible, $(ZERO) otherwise
+IS_DIVISIBLE = $(if $(subst $(call JOIN,$2),,$(call JOIN,$1)),$(ZERO),$(ONE))
 
 # Is less than function
 # Arg 1: Number 1
 # Arg 2: Number 2
-# Return: $(TRUE) if Number 1 < Number 2, $(FALSE) otherwise
-IS_LESS_THAN = $(if $(wordlist $(words $(call INCREMENT,$(1))),$(words $(2)),$(2)),$(TRUE),$(FALSE))
+# Return: $(ONE) if Number 1 < Number 2, $(ZERO) otherwise
+IS_LESS_THAN = $(if $(wordlist $(words $(call INC,$(1))),$(words $(2)),$(2)),$(ONE),$(ZERO))
 
 # Increment function
 # Arg 1: Number
 # Return: Number + 1
-INCREMENT = $(1) $(ONE)
+INC = $(1) $(ONE)
 
 # Fizz Buzz function
 # Arg 1: Number
@@ -67,7 +59,7 @@ FIZZ_BUZZ = $(strip \
 # Arg 2: Ending number
 define FIZZ_BUZZ_LOOP
 $(info $(call FIZZ_BUZZ,$(1)))
-$(if $(call IS_LESS_THAN,$(1),$(2)),$(call FIZZ_BUZZ_LOOP,$(call INCREMENT,$(1)),$(2)))
+$(if $(call IS_LESS_THAN,$(1),$(2)),$(call FIZZ_BUZZ_LOOP,$(call INC,$(1)),$(2)))
 endef
 
 # Run Fizz Buzz loop from 1 to 100
