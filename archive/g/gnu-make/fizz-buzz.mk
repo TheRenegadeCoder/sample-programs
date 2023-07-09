@@ -1,7 +1,3 @@
-# Constants
-EMPTY :=
-SPACE := $(EMPTY) $(EMPTY)
-
 # Numbers are represented as x's so that they can be manipulated with text functions.
 # This idea is based on how the GNU Make Standard Library (https://github.com/jgrahamc/gmsl)
 # handles numbers.
