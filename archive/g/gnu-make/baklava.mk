@@ -41,7 +41,7 @@ REPEAT = $(if $(2),$(1)$(call REPEAT,$(1),$(call DEC,$(2))))
 # Baklava line function
 # Arg 1: Number of spaces
 # Arg 2: Number of stars
-# Return: Spaces concatentate with spaces
+# Return: Specified number of spaces followed by specified number of stars
 BAKLAVA_LINE = $(call REPEAT,$(SPACE),$(1))$(call REPEAT,$(STAR),$(2))
 
 # Baklava upper loop
