@@ -6,16 +6,9 @@ STAR := *
 # Numbers are represented as x's so that they can be manipulated with text functions.
 # This idea is based on how the GNU Make Standard Library (https://github.com/jgrahamc/gmsl)
 # handles numbers.
-ZERO :=
 ONE := x
 TWO := x x
-NINE := x x x x x x x x x 
-TEN := $(NINE) $(ONE)
-NINETEEN := $(TEN) $(NINE)
-
-# Booleans
-TRUE := T
-FALSE :=
+TEN := $(TWO) $(TWO) $(TWO) $(TWO) $(TWO)
 
 # Increment function
 # Arg 1: Number
@@ -76,7 +69,7 @@ endef
 
 # Run Bakalava loops
 $(call UPPER_BAKLAVA_LOOP,$(TEN),$(ONE))
-$(call LOWER_BAKLAVA_LOOP,$(ONE),$(NINETEEN))
+$(call LOWER_BAKLAVA_LOOP,$(ONE),$(call DEC,$(call ADD,$(TEN),$(TEN))))
 
 .PHONY: all
 all: ;@:
