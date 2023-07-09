@@ -14,16 +14,11 @@ TEN := $(FIVE) $(FIVE)
 FIFTEEN := $(TEN) $(FIVE)
 HUNDRED := $(TEN) $(TEN) $(TEN) $(TEN) $(TEN) $(TEN) $(TEN) $(TEN) $(TEN) $(TEN)
 
-# Join function
-# Arg 1: String
-# Return: String without spaces
-JOIN = $(subst $(SPACE),,$1)
-
 # Is divisible function
 # Arg 1: Number
 # Arg 2: Divisor
 # Return: $(ONE) if divisible, $(ZERO) otherwise
-IS_DIVISIBLE = $(if $(subst $(call JOIN,$2),,$(call JOIN,$1)),$(ZERO),$(ONE))
+IS_DIVISIBLE = $(if $(strip $(subst $(2),,$(1))),$(ZERO),$(ONE))
 
 # Is less than function
 # Arg 1: Number 1
