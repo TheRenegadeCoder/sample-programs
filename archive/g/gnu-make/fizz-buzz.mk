@@ -48,7 +48,8 @@ FIZZ_BUZZ = $(strip \
 
 # Fizz Buzz loop
 #
-# Outputs result of Fizz Buzz function start a specified number and end at the ending number.
+# Outputs result of Fizz Buzz function starting at starting number and ending
+# at the ending number
 #
 # Arg 1: Starting number
 # Arg 2: Ending number
