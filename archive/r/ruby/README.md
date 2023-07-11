@@ -17,7 +17,7 @@ Below, you'll find a list of completed code snippets in Ruby. Code snippets prec
 - :warning: [Fibonacci in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+ruby) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :white_check_mark: [File Input Output in Ruby](https://sampleprograms.io/projects/file-input-output/ruby) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :warning: [Fizz Buzz in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+ruby) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
-- :warning: [Hello World in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+ruby) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :white_check_mark: [Hello World in Ruby](https://sampleprograms.io/projects/hello-world/ruby) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :warning: [Quine in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+ruby) [[Requirements](https://sampleprograms.io/projects/quine)]
 - :white_check_mark: [Reverse String in Ruby](https://sampleprograms.io/projects/reverse-string/ruby) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :warning: [Roman Numeral in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+ruby) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]

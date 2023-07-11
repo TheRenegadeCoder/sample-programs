@@ -1,0 +1,10 @@
+folder:
+  extension: ".mk"
+  naming: "hyphen"
+
+container:
+  image: "alpine/make"
+  tag: "4.2.1"
+  build: |
+    sh -c '(echo "#!/bin/sh";echo "export ARGS";echo "ARGS=\$@";echo "make -sf {{ source.name }}{{ source.extension }}") >{{ source.name }}'
+  cmd: sh {{ source.name }}
