@@ -15,7 +15,7 @@ Below, you'll find a list of completed code snippets in Swift. Code snippets pre
 - :warning: [Fibonacci in Swift](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+swift) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :white_check_mark: [Fizz Buzz in Swift](https://sampleprograms.io/projects/fizz-buzz/swift) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :warning: [Fraction Math in Swift](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fraction+math+swift) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
-- :warning: [Hello World in Swift](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+swift) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :white_check_mark: [Hello World in Swift](https://sampleprograms.io/projects/hello-world/swift) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :white_check_mark: [Reverse String in Swift](https://sampleprograms.io/projects/reverse-string/swift) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 
 ### Missing Programs
