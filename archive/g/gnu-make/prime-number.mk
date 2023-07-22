@@ -106,7 +106,7 @@ IS_PRIME = $(strip \
 )
 
 # Determine if number is prime using trial division while divisor squared is
-# less than or equal time number, trying successive odd divisors
+# less than or equal number, trying successive odd divisors
 #
 # Arg 1: Number to check encoded as x's
 # Arg 2: Divisor (must be odd) encoded as x's
