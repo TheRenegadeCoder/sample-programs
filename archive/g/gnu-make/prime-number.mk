@@ -23,11 +23,20 @@ NUMBERS := 0 1 2 3 4 5 6 7 8 9
 # Return: List with first word removed
 REST = $(wordlist 2,$(words $(1)),$(1))
 
+# Repeatedly apply a function
+# Arg 1: Name of function. This function must take two arguments:
+# - Function Arg1: Current value
+# - Function Arg2: New value
+# Arg 2: The list to repeated apply the function to
+# Arg 3: Initial value
+_REDUCE = $(if $(4),$(call _REDUCE,$(1),$(call $(1),$(2),$(3)),$(firstword $(4)),$(call REST,$(4))),$(call $(1),$(2),$(3)))
+REDUCE = $(call _REDUCE,$(1),$(3),$(firstword $(2)),$(call REST,$(2)))
+
 # Split number into individual digits
 # Arg 1: Number to split
 # Return: Number split into individual digits
-_SPLIT_NUMBER = $(if $(3),$(call _SPLIT_NUMBER,$(subst $(2), $(2),$(1)),$(firstword $(3)),$(call REST,$(3))),$(subst $(2), $(2),$(1)))
-SPLIT_NUMBER = $(strip $(call _SPLIT_NUMBER,$(strip $(1)),$(firstword $(NUMBERS)),$(call REST,$(NUMBERS))))
+_SUBST_SPACE = $(subst $(2), $(2),$(1))
+SPLIT_NUMBER = $(strip $(call REDUCE,_SUBST_SPACE,$(NUMBERS),$(1)))
 
 # Indicate if valid number
 # Arg 1: Number
@@ -55,13 +64,7 @@ MULT10_ADD_N = $(call ADD,$(call MULT,$(1),$(X10)),$(X$(2)))
 # Represent number as list of x's
 # Arg 1: Number
 # Return: Number encoded as x's
-CONVERT_NUMBER = $(strip \
-    $(eval _temp := $(X0)) \
-    $(foreach n,$(call SPLIT_NUMBER,$(1)), \
-        $(eval _temp := $(call MULT10_ADD_N,$(_temp),$(n))) \
-    )\
-    $(_temp)\
-)
+CONVERT_NUMBER = $(strip $(call REDUCE,MULT10_ADD_N,$(call SPLIT_NUMBER,$(1)),$(X0)))
 
 # Is divisible function
 # Arg 1: Number encoded as x's
