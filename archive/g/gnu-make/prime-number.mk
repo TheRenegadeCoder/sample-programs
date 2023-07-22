@@ -27,7 +27,7 @@ REST = $(wordlist 2,$(words $(1)),$(1))
 # Arg 1: Number to split
 # Return: Number split into individual digits
 _SPLIT_NUMBER = $(if $(3),$(call _SPLIT_NUMBER,$(subst $(2), $(2),$(1)),$(firstword $(3)),$(call REST,$(3))),$(subst $(2), $(2),$(1)))
-SPLIT_NUMBER = $(strip $(call _SPLIT_NUMBER,$(1),$(firstword $(NUMBERS)),$(call REST,$(NUMBERS))))
+SPLIT_NUMBER = $(strip $(call _SPLIT_NUMBER,$(strip $(1)),$(firstword $(NUMBERS)),$(call REST,$(NUMBERS))))
 
 # Indicate if valid number
 # Arg 1: Number
