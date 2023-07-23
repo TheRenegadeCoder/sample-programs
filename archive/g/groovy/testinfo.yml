@@ -6,5 +6,4 @@ container:
   image: "groovy"
   tag: "4.0.13-jdk11-jammy"
   #cmd: groovy {{ source.name }}{{ source.extension }}
-  build: chmod -R a+x .
   cmd: sh -c 'whoami && id'
