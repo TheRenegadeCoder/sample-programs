@@ -3,8 +3,8 @@ folder:
   naming: "pascal"
 
 container:
-  image: "amd64/groovy"
+  image: "groovy"
   tag: "4.0.13-jdk11-jammy"
   #cmd: groovy {{ source.name }}{{ source.extension }}
   build: chmod -R a+x .
-  cmd: sh -c 'pwd && ls -al'
+  cmd: sh -c 'whoami && id'
