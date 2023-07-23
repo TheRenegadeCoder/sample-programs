@@ -3,7 +3,7 @@ folder:
   naming: "pascal"
 
 container:
-  image: "groovy"
+  image: "amd64/groovy"
   tag: "4.0.13-jdk11-jammy"
   #cmd: groovy {{ source.name }}{{ source.extension }}
   cmd: sh -c 'pwd && ls -al'
