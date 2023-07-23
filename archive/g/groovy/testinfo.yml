@@ -5,5 +5,4 @@ folder:
 container:
   image: "groovy"
   tag: "4.0.13-jdk11-jammy"
-  #cmd: groovy {{ source.name }}{{ source.extension }}
-  cmd: sh -c 'whoami && id'
+  cmd: groovy {{ source.name }}{{ source.extension }}
