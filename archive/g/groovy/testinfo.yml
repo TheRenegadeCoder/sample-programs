@@ -4,5 +4,5 @@ folder:
 
 container:
   image: "groovy"
-  tag: "4.0.0-beta-1-jre11"
+  tag: "4.0.13-jdk11-alpine"
   cmd: groovy {{ source.name }}{{ source.extension }}

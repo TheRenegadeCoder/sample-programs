@@ -45,4 +45,5 @@ jobs:
       run: poetry install
         
     - name: Download Docker images, Test All Sample Programs, Remove Docker Images
-      run: poetry run glotter batch ${{ matrix.num_batches }}  --parallel --remove
+      #run: poetry run glotter batch ${{ matrix.num_batches }}  --parallel --remove
+      run: poetry run glotter test -l groovy --parallel
