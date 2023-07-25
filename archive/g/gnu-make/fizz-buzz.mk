@@ -25,7 +25,7 @@ IS_LESS_THAN = $(if $(wordlist $(words $(call INC,$(1))),$(words $(2)),$(2)),$(O
 # Increment function
 # Arg 1: Number encoded as x's
 # Return: Number + 1 encoded as x's
-INC = $(1) $(ONE)
+INC = $(strip $(1) $(ONE))
 
 # Fizz Buzz function
 # Arg 1: Number encoded as x's
