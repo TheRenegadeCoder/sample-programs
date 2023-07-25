@@ -248,13 +248,13 @@ gitdb = ">=4.0.1,<5"
 
 [[package]]
 name = "glotter2"
-version = "0.7.1"
+version = "0.7.2"
 description = "An execution library for scripts written in any language. This is a fork of https://github.com/auroq/glotter"
 optional = false
 python-versions = ">=3.8,<4.0"
 files = [
-    {file = "glotter2-0.7.1-py3-none-any.whl", hash = "sha256:8ebb63f4ad8d5e13e86b72959beed3ba43a822000b5f08549d454956fd2a3162"},
-    {file = "glotter2-0.7.1.tar.gz", hash = "sha256:12e27a6b6edd58faffa2b002351b4fda008df9521701e5a5d17fe1560dea5092"},
+    {file = "glotter2-0.7.2-py3-none-any.whl", hash = "sha256:9008bedc6d2fa886f8fe5b854585c7898858c8ba9e74441479e37384fcc4e6f2"},
+    {file = "glotter2-0.7.2.tar.gz", hash = "sha256:6a0e4e6ce457daae16777f4624031283699145e2dc231509fe3143687e0798ed"},
 ]
 
 [package.dependencies]
@@ -724,4 +724,4 @@ test = ["websockets"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8"
-content-hash = "f2fd3308a273b45f250168f8ededaa33e09d3214965b0acf2d19fb5725db28ad"
+content-hash = "85218da4bc1b9945aa62464d501c09b7253d623604def580d48971d82ed015ef"

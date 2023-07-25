@@ -9,14 +9,14 @@ class MergeSort {
 
         if (end > start) {
 
-            int middle = (int) ((start + end) / 2);
+            int middle = (int) ((start + end) / 2)
 
             // Sort the left and right sides separately.
-            sort(data, start, middle);
-            sort(data, middle + 1, end);
+            sort(data, start, middle)
+            sort(data, middle + 1, end)
 
             // Intertwine the data into one sorted list.
-            mergeLists(data, start, middle, end);
+            mergeLists(data, start, middle, end)
         }
 
     }
@@ -32,22 +32,35 @@ class MergeSort {
         int[] right = Arrays.copyOfRange(data, middle+1, end+1)
 
         // Now, merge the lists by repeatedly adding the biggest value, from whichever list has it.
-        int i = start, l = 0, r = 0; // l and r are indexes in left and right
+        int i = start, l = 0, r = 0 // l and r are indexes in left and right
         while (l < left.length && r < right.length)
             data[i++] = (left[l] <= right[r]) ? left[l++] : right[r++]
 
         // Add any leftovers on one side.
         while (l < left.length)
-            data[i++] = left[l++];
+            data[i++] = left[l++]
         while (r < right.length)
-            data[i++] = right[r++];
+            data[i++] = right[r++]
+    }
+
+    static int[] convert_to_ints(def args) {
+        int[] argsint = []
+        if (args?.size() >= 1) {
+            try {
+                argsint = args[0].split(",").collect { it.trim().toInteger() }
+            }
+            catch (NumberFormatException _) {
+            }
+        }
+
+        argsint
     }
 
     public static void main(def args) {
-        if (args.length < 2 || !args[0].isInteger()) {
-            println 'please provide an array of integers'
+        int[] argsint = convert_to_ints(args)
+        if (argsint.size() < 2) {
+            println 'Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"'
         } else {
-            def argsint = args.collect { it as int } as int[]
             sort(argsint) 
             println argsint
         }
