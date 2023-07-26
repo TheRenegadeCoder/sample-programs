@@ -23,7 +23,7 @@ jobs:
       fail-fast: true
       matrix:
         python-version: ["3.11"]
-        poetry-version: ["1.4.2"]
+        poetry-version: ["1.5.1"]
         os: [ubuntu-latest]
         num_batches: [3]
 
