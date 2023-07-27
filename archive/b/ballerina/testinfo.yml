@@ -1,0 +1,9 @@
+folder:
+  extension: ".bal"
+  naming: "hyphen"
+
+container:
+  image: "ballerina/ballerina"
+  tag: "2201.6.1"
+  build: "bal build {{ source.name }}{{ source.extension }}"
+  cmd: "bal run {{ source.name }}.jar"
