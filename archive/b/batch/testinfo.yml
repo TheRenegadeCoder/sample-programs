@@ -1,0 +1,8 @@
+folder:
+  extension: ".cmd"
+  naming: "pascal"
+
+container:
+  image: "esolang/cmd"
+  tag: "latest"
+  cmd: "sh -c 'cmd {{ source.name }}{{ source.extension }} 2>/dev/null'"
