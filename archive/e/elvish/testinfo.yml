@@ -6,4 +6,3 @@ container:
   image: "ngslang/ngs"
   tag: "v0.2.12"
   cmd: "ngs {{ source.name }}{{ source.extension }}"
-  
