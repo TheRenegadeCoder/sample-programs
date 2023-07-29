@@ -1,0 +1,8 @@
+folder:
+  extension: ".carp"
+  naming: "hyphen"
+
+container:
+  image: "carplang/carp"
+  tag: "2020-04-23"
+  cmd: "carp -x {{ source.name }}{{ source.extension }}"
