@@ -1,0 +1,12 @@
+folder:
+  extension: ".bf"
+  naming: "hyphen"
+
+container:
+  image: "redraiment/brainfuck"
+  tag: "latest"
+  build: |
+    sh -c '(echo "#!/bin/sh"; \
+    echo "echo \"\$@\" | brainfuck -s {{ source.name }}{{ source.extension }}" \
+    ) >{{ source.name }}'
+  cmd: sh {{ source.name }}

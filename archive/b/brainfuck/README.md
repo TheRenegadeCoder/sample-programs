@@ -55,18 +55,10 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-This language currently does not feature testing. If you'd like to help in the efforts to test all of the code in this repo, consider creating a testinfo.yml file with the following information:
+The following list shares details about what we're using to test all Sample Programs in Brainfuck.
 
-```yml
-folder:
-  extension:
-  naming:
-
-container:
-  image:
-  tag:
-  cmd:
-```
+- Docker Image: redraiment/brainfuck
+- Docker Tag: latest
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 
