@@ -1,0 +1,8 @@
+folder:
+  extension: ".fet"
+  naming: "hyphen"
+
+container:
+  image: "esolang/fetlang"
+  tag: "latest"
+  cmd: "fetlang {{ source.name }}{{ source.extension }}"
