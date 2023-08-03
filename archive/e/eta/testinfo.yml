@@ -1,0 +1,9 @@
+folder:
+  extension: ".hs"
+  naming: "pascal"
+
+container:
+  image: "typelead/eta"
+  tag: "c3d2cb6"
+  build: eta {{ source.name }}{{ source.extension }}
+  cmd: java -jar Run{{ source.name }}.jar
