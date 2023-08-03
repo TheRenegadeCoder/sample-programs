@@ -1,0 +1,9 @@
+folder:
+  extension: ".fr"
+  naming: "pascal"
+
+container:
+  image: "agocorona/frege"
+  tag: "alias"
+  build: "java -Xss1m -jar /root/frege3.24-7.100.jar -d . -target 1.7 {{ source.name }}{{ source.extension }}"
+  cmd: "java -Xss1m -cp .:/root/frege3.24-7.100.jar {{ source.name }}"
