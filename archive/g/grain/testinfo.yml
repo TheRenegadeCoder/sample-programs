@@ -1,0 +1,8 @@
+folder:
+  extension: ".gr"
+  naming: "hyphen"
+
+container:
+  image: "nickbreaton/grain"
+  tag: "latest"
+  cmd: "grain {{ source.name }}{{ source.extension }}"
