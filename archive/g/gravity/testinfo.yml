@@ -1,0 +1,8 @@
+folder:
+  extension: ".gravity"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/gravity"
+  tag: "0.8.5-1"
+  cmd: "gravity -q {{ source.name }}{{ source.extension }}"
