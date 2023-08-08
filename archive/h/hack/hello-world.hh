@@ -1,2 +1,4 @@
-<?hh
-echo "Hello, World!";
+<<__EntryPoint>>
+function main(): void {
+    echo "Hello, World!";
+}
