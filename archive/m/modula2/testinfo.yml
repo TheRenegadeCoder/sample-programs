@@ -1,6 +1,6 @@
 folder:
   extension: ".mod"
-  naming: "underscore"
+  naming: "pascal"
 
 container:
   image: "rzuckerm/modula2"

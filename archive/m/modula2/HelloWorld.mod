@@ -1,8 +1,8 @@
-MODULE hello_world;
+MODULE HelloWorld;
 
 FROM StrIO IMPORT WriteString, WriteLn;
 
 BEGIN
     WriteString('Hello, World!');
     WriteLn;
-END hello_world.
+END HelloWorld.
