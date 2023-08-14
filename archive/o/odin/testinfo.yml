@@ -1,0 +1,8 @@
+folder:
+  extension: ".odin"
+  naming: "hyphen"
+
+container:
+  image: "yeongjukang/odin"
+  tag: "alpine-dev-2022-08"
+  cmd: "odin run {{ source.name }}{{ source.extension }} -file"
