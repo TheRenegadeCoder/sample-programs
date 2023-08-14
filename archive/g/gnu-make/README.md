@@ -12,10 +12,10 @@ Below, you'll find a list of completed code snippets in Gnu Make. Code snippets 
 
 - :warning: [Baklava in Gnu Make](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+gnu+make) [[Requirements](https://sampleprograms.io/projects/baklava)]
 - :white_check_mark: [File Input Output in Gnu Make](https://sampleprograms.io/projects/file-input-output/gnu-make) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
-- :warning: [Fizz Buzz in Gnu Make](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+gnu+make) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
+- :white_check_mark: [Fizz Buzz in Gnu Make](https://sampleprograms.io/projects/fizz-buzz/gnu-make) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Gnu Make](https://sampleprograms.io/projects/hello-world/gnu-make) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :warning: [Prime Number in Gnu Make](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+gnu+make) [[Requirements](https://sampleprograms.io/projects/prime-number)]
-- :warning: [Quine in Gnu Make](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+gnu+make) [[Requirements](https://sampleprograms.io/projects/quine)]
+- :white_check_mark: [Quine in Gnu Make](https://sampleprograms.io/projects/quine/gnu-make) [[Requirements](https://sampleprograms.io/projects/quine)]
 
 ### Missing Programs
 
