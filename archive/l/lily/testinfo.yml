@@ -1,0 +1,8 @@
+folder:
+  extension: ".lily"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/lily"
+  tag: "2.0-1"
+  cmd: "lily {{ source.name }}{{ source.extension }}"
