@@ -1,0 +1,9 @@
+folder:
+  extension: ".idr"
+  naming: "pascal"
+
+container:
+  image: "snazzybucket/idris2"
+  tag: "v0.6.0-265-gbadf1e98c"
+  build: "idris2 {{ source.name }}{{ source.extension }} -o {{ source.name }}"
+  cmd: "./build/exec/{{ source.name }}"
