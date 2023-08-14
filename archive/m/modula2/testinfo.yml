@@ -1,0 +1,9 @@
+folder:
+  extension: ".mod"
+  naming: "pascal"
+
+container:
+  image: "rzuckerm/modula2"
+  tag: "11.4.0-1"
+  build: "gm2 -fiso {{ source.name }}{{ source.extension }} -o {{ source.name }}"
+  cmd: "./{{ source.name }}"
