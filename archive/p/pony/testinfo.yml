@@ -1,0 +1,9 @@
+folder:
+  extension: ".pony"
+  naming: "hyphen"
+
+container:
+  image: "ponylang/ponyc"
+  tag: "0.55.1-alpine"
+  build: "ponyc . --bin-name {{ source.name }}"
+  cmd: "./{{ source.name }}"
