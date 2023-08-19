@@ -1,2 +1,2 @@
-def ().main
-    'Hello, World!'.show
+def .main
+    "Hello, World!".show
