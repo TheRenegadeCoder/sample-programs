@@ -1,0 +1,8 @@
+folder:
+  extension: ".arr"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/pyret"
+  tag: "0.0.23-1"
+  cmd: "pyret -qk {{ source.name }}{{ source.extension }}"
