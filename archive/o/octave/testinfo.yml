@@ -1,0 +1,8 @@
+folder:
+  extension: ".m"
+  naming: "hyphen"
+
+container:
+  image: "gnuoctave/octave"
+  tag: "8.3.0"
+  cmd: "octave -q {{ source.name }}{{ source.extension }}"
