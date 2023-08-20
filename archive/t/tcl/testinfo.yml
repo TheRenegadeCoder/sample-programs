@@ -1,0 +1,8 @@
+folder:
+  extension: ".tcl"
+  naming: "hyphen"
+
+container:
+  image: "esolang/tcl"
+  tag: "latest"
+  cmd: "tclsh {{ source.name }}{{ source.extension }}"
