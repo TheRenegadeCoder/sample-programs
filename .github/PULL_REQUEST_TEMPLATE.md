@@ -23,7 +23,7 @@ For more information please refer to our [contributing documentation][contributi
 ## I Am Adding New Tests for a Project
 
 - [ ] I fixed #your-issue-number-here
-- [ ] I named the pull request using `Add {PROJECT} tests` format
+- [ ] I named the pull request using `Add {PROJECT} Tests` format
 - [ ] I verified the project exists on the [Sample Programs Project List][sample-programs-project-list]
 - [ ] I added tests for every test case in the Testing table of the project description for the given project. (See [contributing documentation][contributing-tests-in-detail])
 
@@ -31,7 +31,7 @@ For more information please refer to our [contributing documentation][contributi
 ## I Am Adding New Tests for a Language
 
 - [ ] I fixed #your-issue-number-here
-- [ ] I named the pull request using `Add {LANGUAGE} tests` format\
+- [ ] I named the pull request using `Add {LANGUAGE} Tests` format
 - [ ] I added a `testinfo.yml` files (see [contributing documentation][contributing-new-language])
   - [ ] I used an officially supported docker image or one that I personally trust
 - [ ] I verified all tests are passing
@@ -54,6 +54,7 @@ Add notes here...
 [renegade-coder]: https://therenegadecoder.com/
 [contributing-plagiarism]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#plagiarism
 [contributing-new-project]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#requirements-for-a-new-project
+[contributing-new-language]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#requirements-for-a-new-language
 [contributing-readme]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#create-readmes
 [contributing-tests-in-detail]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#tests-in-detail
 [contributing]: ../CONTRIBUTING.md
