@@ -1,0 +1,8 @@
+folder:
+  extension: ".cat"
+  naming: "hyphen"
+
+container:
+  image: "esolang/unicat"
+  tag: "latest"
+  cmd: "unicat {{ source.name }}{{ source.extension }}"
