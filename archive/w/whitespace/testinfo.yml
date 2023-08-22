@@ -1,8 +1,0 @@
-folder:
-  extension: ".ws"
-  naming: "hyphen"
-
-container:
-  image: "esolang/whitespace"
-  tag: "latest"
-  cmd: "whitespace {{ source.name }}{{ source.extension }}"
