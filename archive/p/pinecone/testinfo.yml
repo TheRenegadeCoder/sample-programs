@@ -1,0 +1,8 @@
+folder:
+  extension: ".pn"
+  naming: "underscore"
+
+container:
+  image: "rzuckerm/pinecone"
+  tag: "0.5.1-1"
+  cmd: "pinecone {{ source.name }}{{ source.extension }}"
