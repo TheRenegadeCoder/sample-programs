@@ -1,3 +1,1 @@
-print: extern def<T>(..T)
-
-print("Hello World")
+print("Hello, World!\n")
