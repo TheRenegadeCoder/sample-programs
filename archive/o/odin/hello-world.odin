@@ -1,4 +1,6 @@
-import "core:fmt.odin";
+package main;
+
+import "core:fmt";
 
 main :: proc() {
   fmt.println("Hello, World!");

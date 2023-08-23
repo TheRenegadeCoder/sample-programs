@@ -1,0 +1,9 @@
+folder:
+  extension: ".wu"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/wu"
+  tag: "0.1.0-1"
+  build: "wu {{ source.name }}{{ source.extension }}"
+  cmd: "lua {{ source.name }}.lua"

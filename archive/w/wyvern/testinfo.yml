@@ -1,0 +1,8 @@
+folder:
+  extension: ".wyv"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/wyvern"
+  tag: "20180325-1"
+  cmd: "wyvern {{ source.name }}{{ source.extension }}"
