@@ -10,7 +10,7 @@ In this section, we feature a list of completed and missing programs in Gnu Make
 
 Below, you'll find a list of completed code snippets in Gnu Make. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :warning: [Baklava in Gnu Make](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+gnu+make) [[Requirements](https://sampleprograms.io/projects/baklava)]
+- :white_check_mark: [Baklava in Gnu Make](https://sampleprograms.io/projects/baklava/gnu-make) [[Requirements](https://sampleprograms.io/projects/baklava)]
 - :white_check_mark: [File Input Output in Gnu Make](https://sampleprograms.io/projects/file-input-output/gnu-make) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :white_check_mark: [Fizz Buzz in Gnu Make](https://sampleprograms.io/projects/fizz-buzz/gnu-make) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Gnu Make](https://sampleprograms.io/projects/hello-world/gnu-make) [[Requirements](https://sampleprograms.io/projects/hello-world)]
