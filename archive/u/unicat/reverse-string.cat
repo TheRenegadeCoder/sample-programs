@@ -1,7 +1,3 @@
-# This program tests out the input instruction. It outputs the string in
-# reverse with a newline. For example, if "Hello\n" is input, "olleH\n"
-# is output
-
 # Find end of input by finding null-termination
 0o00 😺😼😹😺🙀🙀 Memory 10 (0o12) through N+11 = input (N characters), newline, null
 0o01 😻😹😸🙀🙀😹😺🙀🙀 Memory 0 = 0o12 (10 = '\n')
