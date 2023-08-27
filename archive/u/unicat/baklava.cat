@@ -1,5 +1,3 @@
-# This program outputs the Baklava pattern
-
 # Set up characters
 0o00 😻😹😸🙀🙀😼😸🙀🙀 Memory 0 = 0o40 (32 = ' ')
 0o01 😻😹😹🙀🙀😽😺🙀🙀 Memory 1 = 0o52 (42 = '*')
