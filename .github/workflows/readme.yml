@@ -41,11 +41,12 @@ jobs:
     - name: Generate READMEs
       run: poetry run ronbun . --log=DEBUG
         
-    - name: Commit READMEs
-      continue-on-error: true
-      run: |
-        git fetch --unshallow origin
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add . && git diff --staged --quiet || git commit --amend --no-edit        
-        git push --force-with-lease
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v5
+      with:
+        commit-message: Regenerated READMEs
+        committer: GitHub Actions <action@github.com>
+        branch: readme-generation
+        delete-branch: true
+        title: '[Automated Workflow] Add/Modify READMEs'
+        labels: enhancement
