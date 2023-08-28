@@ -5,4 +5,8 @@ folder:
 container:
   image: "esolang/unicat"
   tag: "latest"
-  cmd: "unicat {{ source.name }}{{ source.extension }}"
+  build: |
+    sh -c '(echo "#!/bin/sh"; \
+    echo "echo \"\$@\" | unicat {{ source.name }}{{ source.extension }}" \
+    ) >{{ source.name }}'
+  cmd: "sh {{ source.name }}"
