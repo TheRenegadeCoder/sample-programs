@@ -9,13 +9,13 @@ on:
     branches:
       - 'main'
     paths:
-      - '!**/README.md'
       - 'archive/**'
       - 'test/**'
       - '.glotter.yml'
       - '.github/workflows/test-suite.yml'
       - 'pyproject.toml'
       - 'poetry.lock'
+      - '!**/README.md'
 
 jobs:
   testing:

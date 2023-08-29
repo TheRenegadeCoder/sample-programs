@@ -18,8 +18,8 @@ on:
     branches: 
       - 'main'
     paths:
-      - '!**/README.md'
       - 'archive/**'
+      - '!**/README.md'
 
 jobs:
   analyze:
