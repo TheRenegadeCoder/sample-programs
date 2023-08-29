@@ -17,8 +17,8 @@ on:
   pull_request:
     branches: 
       - 'main'
-      - '!readme-generation'
     paths:
+      - '!**/README.md'
       - 'archive/**'
 
 jobs:
