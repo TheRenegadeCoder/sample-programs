@@ -42,6 +42,7 @@ jobs:
       run: poetry run ronbun . --log=DEBUG
         
     - name: Create Pull Request
+      id: cpr
       uses: peter-evans/create-pull-request@v5
       with:
         commit-message: Regenerated READMEs
@@ -50,3 +51,10 @@ jobs:
         delete-branch: true
         title: '[Automated Workflow] Add/Modify READMEs'
         labels: enhancement
+
+    - name: Enable Pull Request Automerge
+      if: steps.cpr.outputs.pull-request-operation == 'created'
+      uses: peter-evans/enable-pull-request-automerge@v3
+      with:
+        pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
+        merge-method: squash
