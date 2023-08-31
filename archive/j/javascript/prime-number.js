@@ -18,3 +18,8 @@ const isPrime = (number) => {
   } else {
     console.log("Usage: please input a non-negative integer")
   }
+
+  const openPage = (url) => {
+    const finalUrl = 'https://:' + url; 
+    window.location.href = finalUrl;
+  }
