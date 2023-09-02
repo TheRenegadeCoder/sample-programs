@@ -4,5 +4,5 @@ folder:
 
 container:
   image: "rzuckerm/never"
-  tag: "2.1.8a1-2"
-  cmd: "never -f {{ source.name }}{{ source.extension }} -- --args"
+  tag: "2.1.8a2-3"
+  cmd: "never -f {{ source.name }}{{ source.extension }}"
