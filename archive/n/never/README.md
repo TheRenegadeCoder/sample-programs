@@ -58,7 +58,7 @@ The following list contains all of the approved programs that are not currently 
 The following list shares details about what we're using to test all Sample Programs in Never.
 
 - Docker Image: rzuckerm/never
-- Docker Tag: 2.1.8a1-2
+- Docker Tag: 2.3.9-4
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 
