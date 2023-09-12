@@ -18,11 +18,13 @@
 140 PRINT "Usage: please input the total number of people and number of people to skip."
 150 END
 1000 REM Read input value
-1001 REM NR = number
-1002 REM V = 1 if valid number, 0 otherwise
-1003 REM C = 255 if end of input, 13 if end of value,
-1004 REM   ASCII code of last character otherwise
-1005 REM Initialize
+1001 REM This has to be done 1 character at a time due to the weird way that
+1002 REM Commodore-BASIC handles inputs
+1003 REM NR = number
+1004 REM V = 1 if valid number, 0 otherwise
+1005 REM C = 255 if end of input, 13 if end of value,
+1006 REM   ASCII code of last character otherwise
+1007 REM Initialize
 1010 NR = 0
 1020 V = 0
 1025 REM Loop while leading spaces
