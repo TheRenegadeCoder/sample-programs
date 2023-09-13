@@ -1,14 +1,13 @@
 5 REM Input N
 10 GOSUB 1000
-20 IF V = 0 OR C < 0 THEN GOTO 140: REM invalid or end character
+20 IF V = 0 OR C <> -1 THEN GOTO 140: REM invalid or not end of value
 30 N = NR
 35 REM Input K
 40 GOSUB 1000
 50 IF V = 0 OR C >= 0 THEN GOTO 140: REM invalid or not end character
 60 K = NR
-65 PRINT "N="; N; ", K="; K
 70 G = 0
-80 IF N < 2 THEN GOTO 140
+80 IF N < 2 THEN GOTO 120
 85 REM Calculate Josephus Problem using this:
 86 REM https://en.wikipedia.org/wiki/Josephus_problem#The_general_case
 90 FOR M = 2 TO N
@@ -31,26 +30,26 @@
 1035 REM Loop while leading spaces
 1040 GOSUB 1500
 1050 IF C = 43 OR C = 45 THEN GOTO 1100: REM + or -
-1060 IF C >= 48 OR C >= 57 THEN GOTO 1140: REM 0 to 9
+1060 IF C >= 48 AND C <= 57 THEN GOTO 1150: REM 0 to 9
 1070 IF C = 32 THEN GOTO 1040: REM whitespace
 1080 RETURN: REM other character
 1085 REM Loop while sign
 1090 GOSUB 1500
-1100 IF C = 45 THEN GOTO 1090: REM +
-1110 IF C >= 48 OR C <= 57 THEN GOTO 1140: REM 0 to 9
-1110 IF C <> 43 THEN RETURN: REM not -
-1120 S = -S
-1130 GOTO 1090
-1135 REM Set valid flag
-1140 V = 1
-1145 REM Loop while digits
-1150 NR = (ABS(NR) * 10 + C - 48) * S
-1160 GOSUB 1500
-1170 IF C >= 48 AND C <= 57 THEN GOTO 1150: REM 0 to 9
-1175 REM Loop while trailing spaces
-1180 IF C < 0 OR C <> 32 THEN RETURN: REM end character or not whitespace
-1190 GOSUB 1500
-1200 GOTO 1180
+1100 IF C = 43 THEN GOTO 1090: REM +
+1110 IF C >= 48 AND C <= 57 THEN GOTO 1150: REM 0 to 9
+1120 IF C <> 45 THEN RETURN: REM not -
+1130 S = -S
+1140 GOTO 1090
+1145 REM Set valid flag
+1150 V = 1
+1155 REM Loop while digits
+1160 NR = (ABS(NR) * 10 + C - 48) * S
+1170 GOSUB 1500
+1180 IF C >= 48 AND C <= 57 THEN GOTO 1160: REM 0 to 9
+1185 REM Loop while trailing spaces
+1190 IF C < 0 OR C <> 32 THEN RETURN: REM end character or not whitespace
+1200 GOSUB 1500
+1210 GOTO 1180
 1500 REM Get input character
 1501 REM A$ = input character
 1502 REM C = One of the following:
