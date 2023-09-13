@@ -1,0 +1,12 @@
+folder:
+  extension: ".bas"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/commodore-basic"
+  tag: "v2-1"
+  build: |
+    sh -c '(echo "#!/bin/sh"; \
+    echo "printf \"%s\\n\" \"\$@\" | cbmbasic {{ source.name }}{{ source.extension }}" \
+    ) >{{ source.name }}'
+  cmd: "sh ./{{ source.name }}"

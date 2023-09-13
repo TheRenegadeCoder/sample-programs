@@ -504,6 +504,8 @@ projects:
                 transformations:
                     - "strip"
                     - "strip_expected"
+                    - "splitlines"
+                    - "splitlines_expected"
     fizzbuzz:
         words:
             - "fizz"
