@@ -2,10 +2,9 @@
 10 GOSUB 1000
 20 IF S$ = "" OR S$ = CHR$(13) THEN GOTO 160
 25 REM Keep track of length of longest word
-30 L% = LEN(S$)
-40 LW% = 0: REM longest word length so far
-50 LC% = 0: REM current word length
-50 FOR K = 1 TO L%
+30 LW% = 0: REM longest word length so far
+40 LC% = 0: REM current word length
+50 FOR K = 1 TO LEN(S$)
 60     A$ = MID$(S$, K, 1)
 70     IF A$ = CHR$(9) OR A$ = CHR$(10) OR A$ = CHR$(13) THEN GOTO 120
 80     IF A$ = " " THEN GOTO 120: REM can't put on same line, too long
