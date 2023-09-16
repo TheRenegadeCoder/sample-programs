@@ -20,6 +20,6 @@
 1015 REM Append characters until end of input
 1020 GET A$
 1030 C = ASC(A$)
-1040 IF C = 255 THEN RETURN: REM end of value or input
+1040 IF C = 255 THEN RETURN: REM end of input
 1050 S$ = S$ + A$
 1060 GOTO 1020
