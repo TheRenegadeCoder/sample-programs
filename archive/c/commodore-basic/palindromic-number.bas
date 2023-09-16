@@ -17,8 +17,8 @@
 160 END
 170 PRINT "Usage: please input a non-negative integer"
 180 END
-1000 REM Read input value one character at a time
-1001 REM Commodore-BASIC handles inputs
+1000 REM Read input value one character at a time since Commodore BASIC
+1001 REM has trouble reading line from stdin properly
 1002 REM NR = number
 1003 REM V = 1 if valid number, 0 otherwise
 1004 REM C = -2 if end of input, -1 if end of value,
