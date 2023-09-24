@@ -1,9 +1,0 @@
-folder:
-  extension: ".ss"
-  naming: "underscore"
-
-container:
-  image: "gerbil/ubuntu"
-  tag: "amd64"
-  build: "gxc -static -exe -o {{ source.name }} {{ source.name }}{{ source.extension }}"
-  cmd: "./{{ source.name }}"
