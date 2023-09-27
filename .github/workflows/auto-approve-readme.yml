@@ -6,7 +6,7 @@ on:
       - 'main'
     paths:
       - 'archive/*/README.md'
-  
+
 jobs:
   auto-approve:
     runs-on: ubuntu-latest
