@@ -1,0 +1,8 @@
+folder:
+  extension: ".ark"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/arkscript"
+  tag: "3.4.0-2"
+  cmd: "arkscript {{ source.name }}{{ source.extension }}"
