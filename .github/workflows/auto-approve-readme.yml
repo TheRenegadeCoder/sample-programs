@@ -15,4 +15,4 @@ jobs:
     steps:
       - uses: hmarr/auto-approve-action@v3
         with:
-          review-message: "Auto approved automated PR"
+          review-message: "Auto-approved automated PR"
