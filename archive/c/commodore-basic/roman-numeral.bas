@@ -3,23 +3,24 @@
 20 IF S$ = "" AND C = 255 THEN GOTO 240: REM no input
 30 V = 0
 40 PD = 0
-50 IF S$ = "" THEN GOTO 220: REM empty imput
-60 FOR K = 1 TO LEN(S$)
-70     L$ = MID$(S$, K, 1)
-80     D = 0
-90     IF L$ = "M" THEN D = 1000
-100    IF L$ = "D" THEN D = 500
-110    IF L$ = "C" THEN D = 100
-120    IF L$ = "L" THEN D = 50
-130    IF L$ = "X" THEN D = 10
-140    IF L$ = "V" THEN D = 5
-150    IF L$ = "I" THEN D = 1
-160    IF D = 0 THEN GOTO 260: REM Invalid letter
-170    V = V + D
-180    REM Subtract if there is a previous digit valid and smaller
-190    IF PD > 0 AND PD < D THEN V = V - 2 * PD: D = 0
-200    PD = D
-210 NEXT K
+50 K = 1
+60 IF K > LEN(S$) THEN GOTO 220
+70 L$ = MID$(S$, K, 1)
+80 K = K + 1
+90 D = 0
+100 IF L$ = "M" THEN D = 1000
+110 IF L$ = "D" THEN D = 500
+120 IF L$ = "C" THEN D = 100
+130 IF L$ = "L" THEN D = 50
+140 IF L$ = "X" THEN D = 10
+150 IF L$ = "V" THEN D = 5
+160 IF L$ = "I" THEN D = 1
+170 IF D = 0 THEN GOTO 260: REM Invalid letter
+180 V = V + D
+185 REM Subtract if there is a previous digit valid and smaller
+190 IF PD > 0 AND PD < D THEN V = V - 2 * PD: D = 0
+200 PD = D
+210 GOTO 60
 220 PRINT MID$(STR$(V), 2)
 230 END
 240 PRINT "Usage: please provide a string of roman numerals"
