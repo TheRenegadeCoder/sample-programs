@@ -17,7 +17,7 @@
 160 IF L$ = "I" THEN D = 1
 170 IF D = 0 THEN GOTO 260: REM Invalid letter
 180 V = V + D
-185 REM Subtract if there is a previous digit valid and smaller
+185 REM Subtract if the previous digit valid and smaller
 190 IF PD > 0 AND PD < D THEN V = V - 2 * PD: D = 0
 200 PD = D
 210 GOTO 60
