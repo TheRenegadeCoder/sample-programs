@@ -12,9 +12,9 @@ if (process.argv.length !== 3) {
 
     if (!isNaN(numberToCheck) && Number.isInteger(numberToCheck) && numberToCheck >= 0) {
         if (isPalindrome(numberToCheck)) {
-            console.log(`${numberToCheck} is a palindrome.`);
+            console.log("true");
         } else {
-            console.log(`${numberToCheck} is not a palindrome.`);
+            console.log("false");
         }
     } else {
         console.log("Usage: please input a non-negative integer");
