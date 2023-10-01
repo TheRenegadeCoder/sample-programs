@@ -3,11 +3,11 @@ function isPalindrome(num: number): boolean {
     const reversedNumStr = numStr.split('').reverse().join('');
     return numStr === reversedNumStr;
 }
-const input = prompt("Enter a number:");
 
-if (input === null || input === "") {
+if (process.argv.length !== 3) {
     console.log("Usage: please input a non-negative integer");
 } else {
+    const input = process.argv[2];
     const numberToCheck = parseFloat(input);
 
     if (!isNaN(numberToCheck) && Number.isInteger(numberToCheck) && numberToCheck >= 0) {
