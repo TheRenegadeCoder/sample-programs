@@ -1,4 +1,4 @@
-const error_msg: string = "Usage: please input a string"
+const error_msg: string = "Usage: please provide a string"
 let str: string = (process.argv.length == 3) ? process.argv[2] : "";
 if (str.length == 0) {
     console.log(error_msg);
