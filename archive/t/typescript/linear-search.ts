@@ -3,13 +3,15 @@ if (process.argv.length != 4) {
     console.log(error_msg);
     process.exit(1);
 }
-let list: number[] = process.argv[2].split(",").map((x: string) => parseInt(x));
+
+let list_str: string = process.argv[2]
 let target: number = parseInt(process.argv[3]);
 
-if (isNaN(target) || list.length == 0) {
+if (isNaN(target) || list_str.length == 0) {
     console.log(error_msg);
     process.exit(1);
 }
+let list: number[] = list_str.split(",").map((x: string) => parseInt(x));
 let found: boolean = false;
 for (let i = 0; i < list.length; i++) {
     if (list[i] == target) {
@@ -18,5 +20,3 @@ for (let i = 0; i < list.length; i++) {
     }
 }
 console.log(found ? "true" : "false");
-
-
