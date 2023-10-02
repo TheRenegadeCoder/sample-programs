@@ -5,7 +5,6 @@ if (process.argv.length != 4) {
 }
 let list: number[] = process.argv[2].split(",").map((x: string) => parseInt(x));
 let target: number = parseInt(process.argv[3]);
-console.log(list);
 
 if (isNaN(target) || list.length == 0) {
     console.log(error_msg);
