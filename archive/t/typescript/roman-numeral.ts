@@ -29,7 +29,7 @@ function romanNumeralConversion(str?: string) {
   for (let i = 0; i < str.length; i++) {
     const char = str.charAt(i)
     if (char === undefined || validValues.indexOf(char) === -1) {
-      return "Error: is not a valid string of roman numerals";
+      return "Error: invalid string of roman numerals";
     }
   }
 
