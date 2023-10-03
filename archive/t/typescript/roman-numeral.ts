@@ -1,7 +1,5 @@
 // Roman Numeral Conversion
 
-declare const process: { argv: string[] };
-
 const romanNumeralValues = {
   "I": 1,
   "V": 5,
