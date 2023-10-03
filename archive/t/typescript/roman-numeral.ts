@@ -10,27 +10,26 @@ const romanNumeralValues = {
   "M": 1000
 };
 
-function romanNumeralConversion(romanNumeral?: string) {
+function romanNumeralConversion(str?: string) {
 
   // Check for blank input
-  if (romanNumeral === undefined) {
+  if (str === undefined) {
     return "Usage: please provide a string of roman numerals";
   }
 
   // Check for empty string
-  if (romanNumeral === "") {
+  if (str === "") {
     return 0;
   }
 
-  // Split the string
-  const romans = romanNumeral.split("");
   // Get valid characters
   const validValues = Object.keys(romanNumeralValues)
 
   // Check for invalid characters
-  for (const roman of romans) {
-    if (roman === undefined || validValues.indexOf(roman) === -1) {
-      return "Error: " + roman + " is not a valid string of roman numerals";
+  for (let i = 0; i < str.length; i++) {
+    const char = str.charAt(i)
+    if (char === undefined || validValues.indexOf(char) === -1) {
+      return "Error: is not a valid string of roman numerals";
     }
   }
 
@@ -44,9 +43,9 @@ function romanNumeralConversion(romanNumeral?: string) {
   // Roman Numerals like IIIIIIIIIX
 
   let answer = 0;
-  for (let i = 0; i < romans.length; i++) {
-    const curr = romanNumeralValues[romans[i]];
-    const next = romanNumeralValues[romans[i+1]];
+  for (let i = 0; i < str.length; i++) {
+    const curr = romanNumeralValues[str.charAt(i)];
+    const next = romanNumeralValues[str.charAt(i+1)];
     if (curr < next) {
       answer -= curr;
     } else {
@@ -58,18 +57,17 @@ function romanNumeralConversion(romanNumeral?: string) {
 }
 
 
-// CLI use needs to have node.js and tsc installed
+// CLI use needs to have node.js installed
 // Run like so:
-//   tsc roman-numeral.ts
-//   node roman-numeral.js I II III XXV XIV "" HI 700
+//   node roman-numeral.js IIIIIIXXVXIV
 
 
 // Process arguments from CLI
 const args = process.argv.slice(2);
 
 if (args.length < 1) {
-  console.log(romanNumeralConversion());
+  console.error("Usage: please provide a string of roman numerals");
 } else {
-  args.forEach(arg => console.log(romanNumeralConversion(arg)));
+  console.info(romanNumeralConversion(args[0]))
 }
 
