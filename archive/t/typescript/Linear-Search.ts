@@ -1,4 +1,3 @@
-import * as process from 'process';
 function isPrime(num: number): boolean {
   if (num < 2) {
     return false;
