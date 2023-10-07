@@ -5,11 +5,11 @@
 50 IF V = 0  OR C >= 0 THEN GOTO 200: REM invalid or not end of input/value
 55 REM Perform linear search
 60 T = NR
-60 GOSUB 3000
-70 R$ = "false"
-80 IF I > 0 THEN R$ = "true"
-90 PRINT R$
-100 END
+70 GOSUB 3000
+80 R$ = "false"
+90 IF I > 0 THEN R$ = "true"
+100 PRINT R$
+110 END
 200 Q$ = CHR$(34): REM quote
 210 PRINT "Usage: please provide a list of integers ";
 220 PRINT "("; Q$; "1, 4, 5, 11, 12"; Q$; ") and the integer to find ";
