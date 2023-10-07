@@ -23,5 +23,5 @@ for (var i = 0; i < cols; i++) {
         transpose[i].push(matrix[j][i]);
     }
 }
-console.log(transpose.map(function (x) { return x.join(","); }).join(","));
+console.log(transpose.map(function (x) { return x.join(", "); }).join(","));
 
