@@ -1,4 +1,4 @@
-const error_msg: string = "Usage: please provide a list of integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")";
+const error_msg: string = "Usage: please provide a list of sorted integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")";
 if (process.argv.length != 4) {
     console.log(error_msg);
     process.exit(1);
@@ -12,6 +12,13 @@ if (isNaN(target) || list_str.length == 0) {
     process.exit(1);
 }
 let list: number[] = list_str.split(",").map((x: string) => parseInt(x));
+// check if list is sorted
+for (let i: number = 1; i < list.length; i++) {
+    if (list[i] < list[i - 1]) {
+        console.log(error_msg);
+        process.exit(1);
+    }
+}
 let found: boolean = false;
 let low: number = 0;
 let high: number = list.length - 1;
