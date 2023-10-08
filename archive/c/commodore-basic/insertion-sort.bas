@@ -2,7 +2,7 @@
 20 GOSUB 2000: REM Get array
 25 REM Error if invalid, not end of input/value, or less that 2 items
 30 IF V = 0 OR C >= 0 OR NA < 2 THEN GOTO 200
-40 GOSUB 3000: REM Perform bubble sort
+40 GOSUB 3000: REM Perform insertion sort
 50 GOSUB 3500: REM Show array
 60 END
 200 Q$ = CHR$(34): REM quote
