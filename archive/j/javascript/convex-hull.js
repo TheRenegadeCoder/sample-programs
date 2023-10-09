@@ -1,62 +1,77 @@
-// Convex Hull Algorithm
-
-
-
-function orient(p, q, r) {
-	const val = (q[1] - p[1]) * (r[0] - q[0]) - (q[0] - p[0]) * (r[1] - q[1])
-	if (val === 0) {
-		return 0
+/**
+ * Calculate the Convex Hull of a set of 2D points using Graham's Scan algorithm.
+ *
+ * @param {Array} points - An array of 2D points represented as objects with x and y properties.
+ * @returns {Array} - An array of points on the convex hull in counter-clockwise order.
+ */
+function convexHull(points) {
+	function orientation(p, q, r) {
+		const val = (q.y - p.y) * (r.x - q.x) - (q.x - p.x) * (r.y - q.y)
+		if (val === 0) return 0
+		return val > 0 ? 1 : -1
 	}
-	return val > 0 ? 1 : 2
-}
 
-function grahamScan(points) {
 	const n = points.length
+	if (n < 3) return points
 
-	if (n < 3) {
-		return null
-	}
-
-	const pivot = points.reduce(
-		(min, point) =>
-			point[1] < min[1] || (point[1] === min[1] && point[0] < min[0])
-				? point
-				: min,
-		points[0]
-	)
-
-	const sortedPoints = points.slice().sort((a, b) => {
-		const angleA = Math.atan2(a[1] - pivot[1], a[0] - pivot[0])
-		const angleB = Math.atan2(b[1] - pivot[1], b[0] - pivot[0])
+	const sortedPoints = [...points].sort((a, b) => {
+		const angleA = Math.atan2(a.y - points[0].y, a.x - points[0].x)
+		const angleB = Math.atan2(b.y - points[0].y, b.x - points[0].x)
 		return angleA - angleB
 	})
 
-	const hull = [sortedPoints[0], sortedPoints[1]]
+	const convexHull = [sortedPoints[0], sortedPoints[1]]
 
 	for (let i = 2; i < n; i++) {
-		while ( hull.length > 1 && orient(hull[hull.length - 2],hull[hull.length - 1],sortedPoints[i]) !== 2) {
-			hull.pop()
+		while (
+			convexHull.length > 1 &&
+			orientation(
+				convexHull[convexHull.length - 2],
+				convexHull[convexHull.length - 1],
+				sortedPoints[i]
+			) !== -1
+		) {
+			convexHull.pop()
 		}
-		hull.push(sortedPoints[i])
+		convexHull.push(sortedPoints[i])
 	}
 
-	return hull
+	return convexHull
 }
 
-// Main funciton of the program
+/**
+ * Executable function for Convex Hull calculation with command-line input.
+ *
+ * @param {string} inputX - Comma-separated X coordinates as a string.
+ * @param {string} inputY - Comma-separated Y coordinates as a string.
+ */
+function main(inputX, inputY) {
+	if (inputX == undefined || inputY == undefined){
+		inputX = " "
+		inputY = " "
+	}
+	const xArray = inputX.split(",").map(Number)
+	const yArray = inputY.split(",").map(Number)
 
-function main(){
+	if (
+		xArray.length < 3 ||
+		yArray.length < 3 ||
+		xArray.length !== yArray.length ||
+		xArray.some(item => isNaN(item))|| yArray.some(item => isNaN(item))
+	) {
+		console.log(
+			"Usage: please provide at least 3 x and y coordinates as separate lists (e.g., '100,440,210')"
+		)
+		return
+	}
 
-// sample input
-	const points = [
-		[0, 0],
-		[1, 1],
-		[2, 2],
-		[2, 0],
-		[2, 3],
-		[3, 2],
-	]
-	const convexHull = grahamScan(points)
-	console.log(convexHull) //[ [ 0, 0 ], [ 2, 0 ], [ 3, 2 ], [ 2, 3 ] ]
+	const points = xArray.map((x, i) => ({ x, y: yArray[i] }))
+
+	const convexHullResult = convexHull(points)
+	convexHullResult.forEach((point) => console.log(`(${point.x}, ${point.y})`))
 }
-main();
+
+// Run the executable function with command-line arguments
+const inputX = process.argv[2]
+const inputY = process.argv[3]
+main(inputX, inputY)
