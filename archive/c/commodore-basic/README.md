@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Commodore Basic! To find documentation related to the Commodore Basic code in this repo, look [here.](https://sampleprograms.io/languages/commodore-basic)
 
-## Sample Programs List - 24/37 :relaxed:
+## Sample Programs List - 25/37 :relaxed:
 
 In this section, we feature a list of completed and missing programs in Commodore Basic. See above for the current amount of completed programs in Commodore Basic. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -27,6 +27,7 @@ Below, you'll find a list of completed code snippets in Commodore Basic. Code sn
 - :warning: [Longest Word in Commodore Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+commodore+basic) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :warning: [Palindromic Number in Commodore Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+commodore+basic) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :warning: [Prime Number in Commodore Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+commodore+basic) [[Requirements](https://sampleprograms.io/projects/prime-number)]
+- :warning: [Quick Sort in Commodore Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+commodore+basic) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
 - :warning: [Quine in Commodore Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+commodore+basic) [[Requirements](https://sampleprograms.io/projects/quine)]
 - :warning: [Remove All Whitespace in Commodore Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+remove+all+whitespace+commodore+basic) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :warning: [Reverse String in Commodore Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+commodore+basic) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
@@ -50,7 +51,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+subarray&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+Commodore%20Basic) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :x: [Merge Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,merge+sort&template=code-snippet-request.md&title=Add+Merge+Sort+in+Commodore%20Basic) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+Commodore%20Basic) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
-- :x: [Quick Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,quick+sort&template=code-snippet-request.md&title=Add+Quick+Sort+in+Commodore%20Basic) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
 - :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,transpose+matrix&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+Commodore%20Basic) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
 ## Testing
