@@ -72,7 +72,7 @@
 2080 V = 0
 2090 RETURN
 3000 REM Quick sort
-3001 REM Commodore Basic does not support really support recursion because
+3001 REM Commodore Basic does not really support recursion because
 3002 REM everything is a global variable. However, recursion can be simulated
 3003 REM a "stack". This "stack" is just an array, SK, and a stack index, SP.
 3004 REM Source:
