@@ -4,7 +4,7 @@
 20 GOSUB 2000: REM Get array
 25 REM Error if invalid, not end of input/value, or less that 2 items
 30 IF V = 0 OR C >= 0 OR NA < 2 THEN GOTO 200
-40 GOSUB 3000: REM Perform quick sort
+40 SP = 0: GOSUB 3000: REM Perform quick sort
 50 GOSUB 3500: REM Show array
 60 END
 200 Q$ = CHR$(34): REM quote
@@ -83,30 +83,29 @@
 3007 REM - A contains array to sort
 3008 REM - NA contains size of array
 3009 REM Outputs: A contains sorted array
-3010 SP = 0
-3020 LO = 1
-3030 HI = NA
-3040 REM Recursive portion of algorithm
-3041 REM Inputs:
-3042 REM - A contains array to sort
-3043 REM - LO contains low index
-3044 REM - HI contains high index
-3045 REM Outputs: A contains partially sorted array
-3050 IF LO >= HI OR LO < 1 THEN RETURN
-3060 GOSUB 3300: REM Parition array and get pivot index (P)
-3070 SP = SP + 1: SK(SP) = LO: REM Push LO
-3080 SP = SP + 1: SK(SP) = HI: REM Push HI
-3090 SP = SP + 1: SK(SP) = P: REM Push P
-3100 HI = P - 1: GOSUB 3040: REM Sort left side of partition
-3110 P = SK(SP): SP = SP - 1: REM Pop P
-3120 HI = SK(SP): SP = SP - 1: REM Pop HI
-3130 SP = SP + 1: SK(SP) = HI: REM Push HI
-3140 SP = SP + 1: SK(SP) = P: REM Push P
-3150 LO = P + 1: GOSUB 3040: REM Sort right side of partition
-3160 SP = SP - 1: REM Pop P (don't store)
-3170 HI = SK(SP): SP = SP - 1: REM Pop HI
-3180 LO = SK(SP): SP = SP - 1: REM Pop LO
-3190 RETURN
+3010 LO = 1
+3020 HI = NA
+3030 REM Recursive portion of algorithm
+3031 REM Inputs:
+3032 REM - A contains array to sort
+3033 REM - LO contains low index
+3034 REM - HI contains high index
+3035 REM Outputs: A contains partially sorted array
+3040 IF LO >= HI OR LO < 1 THEN RETURN
+3050 GOSUB 3300: REM Parition array and get pivot index (P)
+3060 SP = SP + 1: SK(SP) = LO: REM Push LO
+3070 SP = SP + 1: SK(SP) = HI: REM Push HI
+3080 SP = SP + 1: SK(SP) = P: REM Push P
+3090 HI = P - 1: GOSUB 3030: REM Sort left side of partition
+3100 P = SK(SP): SP = SP - 1: REM Pop P
+3110 HI = SK(SP): SP = SP - 1: REM Pop HI
+3120 SP = SP + 1: SK(SP) = HI: REM Push HI
+3130 SP = SP + 1: SK(SP) = P: REM Push P
+3140 LO = P + 1: GOSUB 3040: REM Sort right side of partition
+3150 SP = SP - 1: REM Pop P (don't store)
+3160 HI = SK(SP): SP = SP - 1: REM Pop HI
+3170 LO = SK(SP): SP = SP - 1: REM Pop LO
+3180 RETURN
 3300 REM Partition array
 3301 REM Inputs:
 3302 REM - A contains array to partition
