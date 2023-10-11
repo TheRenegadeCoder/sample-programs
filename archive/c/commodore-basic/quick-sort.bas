@@ -101,7 +101,7 @@
 3110 HI = SK(SP): SP = SP - 1: REM Pop HI
 3120 SP = SP + 1: SK(SP) = HI: REM Push HI
 3130 SP = SP + 1: SK(SP) = P: REM Push P
-3140 LO = P + 1: GOSUB 3040: REM Sort right side of partition
+3140 LO = P + 1: GOSUB 3030: REM Sort right side of partition
 3150 SP = SP - 1: REM Pop P (don't store)
 3160 HI = SK(SP): SP = SP - 1: REM Pop HI
 3170 LO = SK(SP): SP = SP - 1: REM Pop LO
