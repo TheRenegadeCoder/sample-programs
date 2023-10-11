@@ -1,4 +1,6 @@
+5 REM 
 10 DIM A(100)
+15 DIM SK(300): REM Need to potentially stack 3 values for each array element
 20 GOSUB 2000: REM Get array
 25 REM Error if invalid, not end of input/value, or less that 2 items
 30 IF V = 0 OR C >= 0 OR NA < 2 THEN GOTO 200
@@ -72,8 +74,8 @@
 2080 V = 0
 2090 RETURN
 3000 REM Quick sort
-3001 REM Commodore Basic does not really support recursion because
-3002 REM everything is a global variable. However, recursion can be simulated
+3001 REM Commodore Basic does not really support recursion because everything
+3002 REM is a global variable. However, recursion can be simulated with
 3003 REM a "stack". This "stack" is just an array, SK, and a stack index, SP.
 3004 REM Source:
 3005 REM https://en.wikipedia.org/wiki/Quicksort#Lomuto_partition_scheme
@@ -81,32 +83,30 @@
 3007 REM - A contains array to sort
 3008 REM - NA contains size of array
 3009 REM Outputs: A contains sorted array
-3010 REM Need to potentially stack 3 values for each array element
-3020 DIM SK(NA * 3)
-3030 SP = 0
-3040 LO = 1
-3050 HI = NA
-3060 REM Recursive portion of algorithm
-3061 REM Inputs:
-3062 REM - A contains array to sort
-3063 REM - LO contains low index
-3064 REM - HI contains high index
-3065 REM Outputs: A contains partially sorted array
-3070 IF LO >= HI OR LO < 1 THEN RETURN
-3080 GOSUB 3300: REM Parition array and get pivot index (P)
-3090 SP = SP + 1: SK(SP) = LO: REM Push LO
-3100 SP = SP + 1: SK(SP) = HI: REM Push HI
-3110 SP = SP + 1: SK(SP) = P: REM Push P
-3120 HI = P - 1: GOSUB 3060: REM Sort left side of partition
-3130 P = SK(SP): SP = SP - 1: REM Pop P
-3140 HI = SK(SP): SP = SP - 1: REM Pop HI
-3150 SP = SP + 1: SK(SP) = HI: REM Push HI
-3160 SP = SP + 1: SK(SP) = P: REM Push P
-3170 LO = P + 1: GOSUB 3060: REM Sort right side of partition
-3180 SP = SP - 1: REM Pop P (don't store)
-3190 HI = SK(SP): SP = SP - 1: REM Pop HI
-3200 LO = SK(SP): SP = SP - 1: REM Pop LO
-3210 RETURN
+3010 SP = 0
+3020 LO = 1
+3030 HI = NA
+3040 REM Recursive portion of algorithm
+3041 REM Inputs:
+3042 REM - A contains array to sort
+3043 REM - LO contains low index
+3044 REM - HI contains high index
+3045 REM Outputs: A contains partially sorted array
+3050 IF LO >= HI OR LO < 1 THEN RETURN
+3060 GOSUB 3300: REM Parition array and get pivot index (P)
+3070 SP = SP + 1: SK(SP) = LO: REM Push LO
+3080 SP = SP + 1: SK(SP) = HI: REM Push HI
+3090 SP = SP + 1: SK(SP) = P: REM Push P
+3100 HI = P - 1: GOSUB 3040: REM Sort left side of partition
+3110 P = SK(SP): SP = SP - 1: REM Pop P
+3120 HI = SK(SP): SP = SP - 1: REM Pop HI
+3130 SP = SP + 1: SK(SP) = HI: REM Push HI
+3140 SP = SP + 1: SK(SP) = P: REM Push P
+3150 LO = P + 1: GOSUB 3040: REM Sort right side of partition
+3160 SP = SP - 1: REM Pop P (don't store)
+3170 HI = SK(SP): SP = SP - 1: REM Pop HI
+3180 LO = SK(SP): SP = SP - 1: REM Pop LO
+3190 RETURN
 3300 REM Partition array
 3301 REM Inputs:
 3302 REM - A contains array to partition
