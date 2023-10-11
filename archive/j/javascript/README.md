@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Javascript! To find documentation related to the Javascript code in this repo, look [here.](https://sampleprograms.io/languages/javascript)
 
-## Sample Programs List - 26/37 :relaxed:
+## Sample Programs List - 27/37 :relaxed:
 
 In this section, we feature a list of completed and missing programs in Javascript. See above for the current amount of completed programs in Javascript. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -36,6 +36,7 @@ Below, you'll find a list of completed code snippets in Javascript. Code snippet
 - :warning: [Roman Numeral in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+javascript) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :warning: [Rot13 in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+javascript) [[Requirements](https://sampleprograms.io/projects/rot13)]
 - :warning: [Selection Sort in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+javascript) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
+- :warning: [Transpose Matrix in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+javascript) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
 ### Missing Programs
 
@@ -51,7 +52,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+Javascript) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
 - :x: [Remove All Whitespace](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,remove+all+whitespace&template=code-snippet-request.md&title=Add+Remove+All+Whitespace+in+Javascript) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+Javascript) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
-- :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,transpose+matrix&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+Javascript) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
 ## Testing
 

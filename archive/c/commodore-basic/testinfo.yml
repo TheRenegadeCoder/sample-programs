@@ -7,6 +7,11 @@ container:
   tag: "v2-1"
   build: |
     sh -c '(echo "#!/bin/sh"; \
-    echo "printf \"%s\\n\" \"\$@\" | cbmbasic {{ source.name }}{{ source.extension }}" \
+    echo "if [ \"\$#\" = 0 ];"; \
+    echo "then"; \
+    echo "    cbmbasic {{ source.name }}{{ source.extension }};"; \
+    echo "else"; \
+    echo "    printf \"%s\\n\" \"\$@\" | cbmbasic {{ source.name }}{{ source.extension }}"; \
+    echo "fi" \
     ) >{{ source.name }}'
   cmd: "sh ./{{ source.name }}"
