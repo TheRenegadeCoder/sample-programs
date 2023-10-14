@@ -1,4 +1,4 @@
-10 DIM A(100)
+10 DIM A(99)
 20 GOSUB 2000: REM Get array
 25 REM Error if invalid or not end of input/value
 30 IF V = 0 OR C >= 0 THEN GOTO 200
@@ -67,8 +67,8 @@
 2010 NA = 0
 2020 GOSUB 1000: REM Read input value
 2030 IF V = 0 THEN RETURN: REM invalid
-2040 NA = NA + 1
-2050 A(NA) = NR
+2040 A(NA) = NR
+2050 NA = NA + 1
 2060 IF C < 0 THEN RETURN: REM end of input or value
 2070 IF C = 44 THEN GOTO 2020: REM comma, get next value
 2080 V = 0
@@ -82,15 +82,15 @@
 3020 S = 0
 3030 W = 0
 3040 IF NA < 1 THEN GOTO 3090
-3050 FOR I = 1 TO NA
+3050 FOR I = 0 TO NA - 1
 3060     S = S + A(I)
-3070     W = W + (I - 1) * A(I)
+3070     W = W + I * A(I)
 3080 NEXT I
 3090 REM Initialize maximum array rotation
 3110 WM = W
 3120 IF NA < 2 THEN GOTO 3180
 3130 REM Adjust array rotation and update maximum
-3140 FOR I = 1 TO NA - 1
+3140 FOR I = 0 TO NA - 2
 3150     W = W + NA * A(I) - S
 3160     IF W > WM THEN WM = W
 3170 NEXT I
