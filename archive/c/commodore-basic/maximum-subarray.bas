@@ -1,4 +1,4 @@
-10 DIM A(100)
+10 DIM A(99)
 20 GOSUB 2000: REM Get array
 25 REM Error if invalid or not end of input/value
 30 IF V = 0 OR C >= 0 THEN GOTO 200
@@ -67,8 +67,8 @@
 2010 NA = 0
 2020 GOSUB 1000: REM Read input value
 2030 IF V = 0 THEN RETURN: REM invalid
-2040 NA = NA + 1
-2050 A(NA) = NR
+2040 A(NA) = NR
+2050 NA = NA + 1
 2060 IF C < 0 THEN RETURN: REM end of input or value
 2070 IF C = 44 THEN GOTO 2020: REM comma, get next value
 2080 V = 0
@@ -85,7 +85,7 @@
 3020 BS = -1.70141183E38: REM (smallest negative number)
 3030 CS = 0
 3040 IF NA < 1 THEN BS = 0: GOTO 3130
-3050 FOR I = 1 TO NA
+3050 FOR I = 0 TO NA - 1
 3060     REM If current sum < 0, set it to current value
 3070     REM Else, add current value to current sum
 3080     IF CS < 0 THEN CS = 0
