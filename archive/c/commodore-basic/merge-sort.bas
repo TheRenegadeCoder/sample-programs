@@ -1,5 +1,5 @@
-10 DIM A(100)
-15 DIM B(100): REM Work array
+10 DIM A(99)
+15 DIM B(99): REM Work array
 20 GOSUB 2000: REM Get array
 25 REM Error if invalid, not end of input/value, or less that 2 items
 30 IF V = 0 OR C >= 0 OR NA < 2 THEN GOTO 200
@@ -66,8 +66,8 @@
 2010 NA = 0
 2020 GOSUB 1000: REM Read input value
 2030 IF V = 0 THEN RETURN: REM invalid
-2040 NA = NA + 1
-2050 A(NA) = NR
+2040 A(NA) = NR
+2050 NA = NA + 1
 2060 IF C < 0 THEN RETURN: REM end of input or value
 2070 IF C = 44 THEN GOTO 2020: REM comma, get next value
 2080 V = 0
@@ -80,15 +80,15 @@
 3005 REM - NA contains size of array
 3006 REM Output: A contains sorted array
 3010 W = 1
-3020 IF W > NA THEN RETURN
-3030 FOR IL = 1 TO NA STEP W * 2
+3020 IF W >= NA THEN RETURN
+3030 FOR IL = 0 TO NA - 1 STEP W * 2
 3040     IR = IL + W
 3050     IE = IR + W
-3060     IF IR > (NA + 1) THEN IR = NA + 1
-3070     IF IE > (NA + 1) THEN IE = NA + 1
+3060     IF IR > NA THEN IR = NA
+3070     IF IE > NA THEN IE = NA
 3080     GOSUB 3200
 3090 NEXT IL
-3100 FOR I = 1 TO NA
+3100 FOR I = 0 TO NA - 1
 3110     A(I) = B(I)
 3120 NEXT I
 3130 W = W * 2
@@ -116,11 +116,11 @@
 3501 REM A contains array
 3502 REM NA contains size of array
 3510 IF NA < 1 THEN GOTO 3590
-3520 FOR I = 1 TO NA
+3520 FOR I = 0 TO NA - 1
 3530    S$ = STR$(A(I))
 3540    IF A(I) >= 0 THEN S$ = MID$(S$, 2): REM strip leading space
 3550    PRINT S$;
-3560    IF I < NA THEN PRINT ", ";
+3560    IF I < (NA - 1)THEN PRINT ", ";
 3570 NEXT I
 3580 PRINT
 3590 RETURN
