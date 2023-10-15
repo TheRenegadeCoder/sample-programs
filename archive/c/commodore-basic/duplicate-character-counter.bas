@@ -1,18 +1,18 @@
-10 DIM CC%(256): REM character counter
+10 DIM CC%(255): REM character counter
 15 REM Input string
 20 GOSUB 1000
 30 IF S$ = "" THEN GOTO 200
 35 REM Count characters
 40 L% = LEN(S$)
 50 FOR K = 1 TO L%
-60     CN% = ASC(MID$(S$, K, 1)) + 1
+60     CN% = ASC(MID$(S$, K, 1))
 70     CC%(CN%) = CC%(CN%) + 1
 80 NEXT K
 85 REM Show duplicate character counts
 90 DP% = 0
 100 FOR K = 1 TO L%
 110     A$ = MID$(S$, K, 1)
-120     CN% = ASC(A$) + 1
+120     CN% = ASC(A$)
 130     IF CC%(CN%) < 2 THEN GOTO 170
 140     PRINT A$; ": "; MID$(STR$(CC%(CN%)), 2)
 150     CC%(CN%) = 0: REM indicate character displayed
