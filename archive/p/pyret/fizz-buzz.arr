@@ -9,9 +9,9 @@ fun fizzbuzz(n :: Number):
       result := string-append(result, "Buzz")
     end
     when string-equal(result, ""):
-      result := n
+      result := tostring(n)
     end
-    print(result)
+    print(string-append(result, "\n"))
   end
 end
 
