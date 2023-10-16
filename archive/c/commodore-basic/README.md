@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Commodore Basic! To find documentation related to the Commodore Basic code in this repo, look [here.](https://sampleprograms.io/languages/commodore-basic)
 
-## Sample Programs List - 29/37 :smile:
+## Sample Programs List - 30/37 :smile:
 
 In this section, we feature a list of completed and missing programs in Commodore Basic. See above for the current amount of completed programs in Commodore Basic. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -14,6 +14,7 @@ Below, you'll find a list of completed code snippets in Commodore Basic. Code sn
 - :warning: [Binary Search in Commodore Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+binary+search+commodore+basic) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :warning: [Bubble Sort in Commodore Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+commodore+basic) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :warning: [Capitalize in Commodore Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+commodore+basic) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :warning: [Convex Hull in Commodore Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+convex+hull+commodore+basic) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :warning: [Duplicate Character Counter in Commodore Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+commodore+basic) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :warning: [Even Odd in Commodore Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+commodore+basic) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :warning: [Factorial in Commodore Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+commodore+basic) [[Requirements](https://sampleprograms.io/projects/factorial)]
@@ -44,7 +45,6 @@ Below, you'll find a list of completed code snippets in Commodore Basic. Code sn
 
 The following list contains all of the approved programs that are not currently implemented in Commodore Basic. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
-- :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,convex+hull&template=code-snippet-request.md&title=Add+Convex+Hull+in+Commodore%20Basic) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :x: [Depth First Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,depth+first+search&template=code-snippet-request.md&title=Add+Depth+First+Search+in+Commodore%20Basic) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,dijkstra&template=code-snippet-request.md&title=Add+Dijkstra+in+Commodore%20Basic) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fraction+math&template=code-snippet-request.md&title=Add+Fraction+Math+in+Commodore%20Basic) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
