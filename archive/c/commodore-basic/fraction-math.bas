@@ -178,7 +178,7 @@
 4000 REM Display fraction math result
 4001 REM Inputs:
 4002 REM   - B = 1
-4003 REM   - NB = non-zero if true, zero if false
+4003 REM   - NB = 1 if true, 0 if false
 4004 REM - Fraction:
 4005 REM   - B = 0
 4006 REM   - NR, DR = Fraction result
@@ -188,8 +188,7 @@
 4040 SD$ = STR$(DR)
 4050 IF DR >= 0 THEN SD$ = MID$(SD$, 2): REM remove leading space
 4060 S$ = SN$ + "/" + SD$
-4070 GOTO 4100
-4080 IF NB <> 0 THEN NB = 1
-4090 S$ = MID$(STR$(NB), 2)
-4100 PRINT S$
-4110 RETURN
+4070 GOTO 4090
+4080 S$ = MID$(STR$(NB), 2)
+4090 PRINT S$
+4100 RETURN
