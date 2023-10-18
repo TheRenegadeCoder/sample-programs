@@ -16,7 +16,7 @@ void rot13(string& str) {
 }
 
 int main(int argc, char* argv[]) {
-    if (argc == 2 && string(argv[1]).size() != 0 && !isdigit(argv[1][0])) {
+    if (argc == 2 && string(argv[1]).size() != 0) {
         string inputString(argv[1]);
         rot13(inputString);
         cout << inputString << endl;
