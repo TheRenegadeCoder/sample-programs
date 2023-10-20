@@ -16,7 +16,7 @@ function main() {
     return;
   }
 
-  const inputNum = parseInt(process.argv[2], 10);
+  const inputNum = parseFloat(process.argv[2]);
 
   if (isNaN(inputNum) || inputNum < 0 || inputNum % 1 !== 0) {
     console.log('Usage: please input a non-negative integer');
