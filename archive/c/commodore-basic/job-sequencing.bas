@@ -123,7 +123,7 @@
 2630 FOR I = 0 TO NJ - 1
 2640     J = JB(I, 2)
 2650     J = J - 1
-2660     IF J <= 0 THEN GOTO 2710: Skip over expired deadlines
+2660     IF J < 0 THEN GOTO 2710: Skip over expired deadlines
 2670     IF SL(J, 0) > 0 THEN GOTO 2650: Skip over occupied slots
 2680     FOR K = 0 TO 2
 2690         SL(J, K) = JB(I, K)
