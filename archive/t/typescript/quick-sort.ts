@@ -33,5 +33,9 @@ if (list_str.length == 0) {
   process.exit(1);
 }
 let list: number[] = list_str.split(",").map((x: string) => parseInt(x));
+if (list.length < 2) {
+  console.log(error_msg);
+  process.exit(1);
+}
 const sortedArray: number[] = quickSort(list);
 console.log(sortedArray.join(", "));
