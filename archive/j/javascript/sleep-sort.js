@@ -7,7 +7,7 @@ function sleepSort(arr) {
       if (sortedArray.length === arr.length) {
         console.log(sortedArray.join(", "));
       }
-    }, item);
+    }, item*1000);
   }
 
   arr.forEach((item) => {
