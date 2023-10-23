@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Commodore Basic! To find documentation related to the Commodore Basic code in this repo, look [here.](https://sampleprograms.io/languages/commodore-basic)
 
-## Sample Programs List - 33/37 :smile:
+## Sample Programs List - 34/37 :smile:
 
 In this section, we feature a list of completed and missing programs in Commodore Basic. See above for the current amount of completed programs in Commodore Basic. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -33,6 +33,7 @@ Below, you'll find a list of completed code snippets in Commodore Basic. Code sn
 - :warning: [Maximum Array Rotation in Commodore Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+maximum+array+rotation+commodore+basic) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :warning: [Maximum Subarray in Commodore Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+maximum+subarray+commodore+basic) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :warning: [Merge Sort in Commodore Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+commodore+basic) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
+- :warning: [Minimum Spanning Tree in Commodore Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+minimum+spanning+tree+commodore+basic) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
 - :warning: [Palindromic Number in Commodore Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+commodore+basic) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :warning: [Prime Number in Commodore Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+commodore+basic) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :warning: [Quick Sort in Commodore Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+commodore+basic) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
@@ -50,7 +51,6 @@ The following list contains all of the approved programs that are not currently 
 
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,dijkstra&template=code-snippet-request.md&title=Add+Dijkstra+in+Commodore%20Basic) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :x: [Longest Common Subsequence](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+common+subsequence&template=code-snippet-request.md&title=Add+Longest+Common+Subsequence+in+Commodore%20Basic) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
-- :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+Commodore%20Basic) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
 - :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,transpose+matrix&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+Commodore%20Basic) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
 ## Testing
