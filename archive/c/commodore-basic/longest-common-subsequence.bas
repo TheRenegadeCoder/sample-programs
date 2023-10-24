@@ -100,8 +100,8 @@
 3000 REM Longest common subsequence
 3001 REM Source:
 3002 REM https://en.wikipedia.org/wiki/Longest_common_subsequence#Example_in_C#
-3003 REM Instead of storing just lengths, a bitmap of indicating which indices
-3004 REM of first list is also stored
+3003 REM Instead of storing just lengths, a bitmap indicating the indices of
+3004 REM the first list is also stored
 3005 REM Inputs:
 3006 REM - L1 contains first list
 3007 REM - M contains length of first list
