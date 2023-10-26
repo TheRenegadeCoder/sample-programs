@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Commodore Basic! To find documentation related to the Commodore Basic code in this repo, look [here.](https://sampleprograms.io/languages/commodore-basic)
 
-## Sample Programs List - 36/37 :smile:
+## Sample Programs List - 37/37 :partying_face:
 
 In this section, we feature a list of completed and missing programs in Commodore Basic. See above for the current amount of completed programs in Commodore Basic. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -29,6 +29,7 @@ Below, you'll find a list of completed code snippets in Commodore Basic. Code sn
 - :warning: [Job Sequencing in Commodore Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+job+sequencing+commodore+basic) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :warning: [Josephus Problem in Commodore Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+josephus+problem+commodore+basic) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :warning: [Linear Search in Commodore Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+linear+search+commodore+basic) [[Requirements](https://sampleprograms.io/projects/linear-search)]
+- :warning: [Longest Common Subsequence in Commodore Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+common+subsequence+commodore+basic) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
 - :warning: [Longest Palindromic Substring in Commodore Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+palindromic+substring+commodore+basic) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
 - :warning: [Longest Word in Commodore Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+commodore+basic) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :warning: [Maximum Array Rotation in Commodore Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+maximum+array+rotation+commodore+basic) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
@@ -46,12 +47,6 @@ Below, you'll find a list of completed code snippets in Commodore Basic. Code sn
 - :warning: [Selection Sort in Commodore Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+commodore+basic) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 - :warning: [Sleep Sort in Commodore Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sleep+sort+commodore+basic) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :warning: [Transpose Matrix in Commodore Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+commodore+basic) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
-
-### Missing Programs
-
-The following list contains all of the approved programs that are not currently implemented in Commodore Basic. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
-
-- :x: [Longest Common Subsequence](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+common+subsequence&template=code-snippet-request.md&title=Add+Longest+Common+Subsequence+in+Commodore%20Basic) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
 
 ## Testing
 
