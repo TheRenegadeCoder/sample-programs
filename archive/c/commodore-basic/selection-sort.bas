@@ -1,4 +1,4 @@
-10 DIM A(100)
+10 DIM A(99)
 20 GOSUB 2000: REM Get array
 25 REM Error if invalid, not end of input/value, or less that 2 items
 30 IF V = 0 OR C >= 0 OR NA < 2 THEN GOTO 200
@@ -65,8 +65,8 @@
 2010 NA = 0
 2020 GOSUB 1000: REM Read input value
 2030 IF V = 0 THEN RETURN: REM invalid
-2040 NA = NA + 1
-2050 A(NA) = NR
+2040 A(NA) = NR
+2050 NA = NA + 1
 2060 IF C < 0 THEN RETURN: REM end of input or value
 2070 IF C = 44 THEN GOTO 2020: REM comma, get next value
 2080 V = 0
@@ -78,9 +78,9 @@
 3004 REM - NA contains size of array
 3005 REM Outputs: A contains sorted array
 3010 IF NA < 2 THEN GOTO 3120
-3020 FOR I = 1 TO NA - 1
+3020 FOR I = 0 TO NA - 2
 3030    MP = I: REM MP = min position
-3040    FOR J = I + 1 TO NA
+3040    FOR J = I + 1 TO NA - 1
 3050        IF A(J) < A(MP) THEN MP = J
 3060    NEXT J
 3070    IF MP = I THEN GOTO 3110
@@ -93,11 +93,11 @@
 3501 REM A contains array
 3502 REM NA contains size of array
 3510 IF NA < 1 THEN GOTO 3590
-3520 FOR I = 1 TO NA
+3520 FOR I = 0 TO NA - 1
 3530    S$ = STR$(A(I))
 3540    IF A(I) >= 0 THEN S$ = MID$(S$, 2): REM strip leading space
 3550    PRINT S$;
-3560    IF I < NA THEN PRINT ", ";
+3560    IF I < (NA - 1) THEN PRINT ", ";
 3570 NEXT I
 3580 PRINT
 3590 RETURN

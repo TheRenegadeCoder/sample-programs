@@ -1,4 +1,4 @@
-10 DIM A(100)
+10 DIM A(99)
 20 GOSUB 2000: REM Get array
 30 IF V = 0 OR C <> -1 THEN GOTO 200: REM invalid or end of input/value
 40 GOSUB 1000: REM Get target value
@@ -9,7 +9,7 @@
 80 T = NR
 90 GOSUB 3000
 100 R$ = "false"
-110 IF I > 0 THEN R$ = "true"
+110 IF I >= 0 THEN R$ = "true"
 120 PRINT R$
 130 END
 200 Q$ = CHR$(34): REM quote
@@ -73,8 +73,8 @@
 2010 NA = 0
 2020 GOSUB 1000: REM Read input value
 2030 IF V = 0 THEN RETURN: REM invalid
-2040 NA = NA + 1
-2050 A(NA) = NR
+2040 A(NA) = NR
+2050 NA = NA + 1
 2060 IF C < 0 THEN RETURN: REM end of input or value
 2070 IF C = 44 THEN GOTO 2020: REM comma, get next value
 2080 V = 0
@@ -82,12 +82,11 @@
 2500 REM Check if sorted
 2502 REM - A contains array to search
 2503 REM - NA contains size of array
-2504 REM - T contains item to find
-2505 REM Outputs: V = 1 if sorted, 0 otherwise
-2510 I = 0
+2504 REM Outputs: V = 1 if sorted, 0 otherwise
+2510 I = -1
 2520 V = 1
 2530 I = I + 1
-2540 IF I >= NA THEN RETURN
+2540 IF I >= (NA - 1) THEN RETURN
 2550 IF A(I) > A(I + 1) THEN V = 0: RETURN: REM Not sorted
 2560 GOTO 2530
 3000 REM Binary search
@@ -95,13 +94,13 @@
 3002 REM - A contains array to search
 3003 REM - NA contains size of array
 3004 REM - T contains item to find
-3005 REM Outputs: I contains index of array item found, 0 if not found
-3010 I = 0
-3020 LO = 1
-3030 HI = NA + 1
-3040 IF LO >= HI THEN I = 0: RETURN: REM Not found
+3005 REM Outputs: I contains index of array item found, -1 if not found
+3010 I = -1
+3020 LO = 0
+3030 HI = NA - 1
+3040 IF LO > HI THEN I = -1: RETURN: REM Not found
 3050 MD = INT((LO + HI) / 2)
 3060 IF A(MD) = T THEN I = MD: RETURN: REM Found
 3070 IF A(MD) < T THEN LO = MD + 1: REM Too low, move lower bound
-3080 IF A(MD) > T THEN HI = MD: REM Too high, move upper bound
+3080 IF A(MD) > T THEN HI = MD - 1: REM Too high, move upper bound
 3090 GOTO 3040

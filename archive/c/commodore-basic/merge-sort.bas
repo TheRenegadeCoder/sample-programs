@@ -1,10 +1,9 @@
-5 REM 
 10 DIM A(99)
-15 DIM SK(299): REM Need to potentially stack 3 values for each array element
+15 DIM B(99): REM Work array
 20 GOSUB 2000: REM Get array
 25 REM Error if invalid, not end of input/value, or less that 2 items
 30 IF V = 0 OR C >= 0 OR NA < 2 THEN GOTO 200
-40 SP = -1: GOSUB 3000: REM Perform quick sort
+40 GOSUB 3000: REM Perform merge sort
 50 GOSUB 3500: REM Show array
 60 END
 200 Q$ = CHR$(34): REM quote
@@ -73,63 +72,46 @@
 2070 IF C = 44 THEN GOTO 2020: REM comma, get next value
 2080 V = 0
 2090 RETURN
-3000 REM Quick sort
-3001 REM Commodore Basic does not really support recursion because everything
-3002 REM is a global variable. However, recursion can be simulated with
-3003 REM a "stack". This "stack" is just an array, SK, and a stack index, SP.
-3004 REM Source:
-3005 REM https://en.wikipedia.org/wiki/Quicksort#Lomuto_partition_scheme
-3006 REM Inputs:
-3007 REM - A contains array to sort
-3008 REM - NA contains size of array
-3009 REM Outputs: A contains sorted array
-3010 LO = 0
-3020 HI = NA - 1
-3030 REM Recursive portion of algorithm
-3031 REM Inputs:
-3032 REM - A contains array to sort
-3033 REM - LO contains low index
-3034 REM - HI contains high index
-3035 REM Outputs: A contains partially sorted array
-3040 IF LO >= HI OR LO < 0 THEN RETURN
-3050 GOSUB 3300: REM Parition array and get pivot index (P)
-3060 SP = SP + 1: SK(SP) = LO: REM Push LO
-3070 SP = SP + 1: SK(SP) = HI: REM Push HI
-3080 SP = SP + 1: SK(SP) = P: REM Push P
-3090 HI = P - 1: GOSUB 3030: REM Sort left side of partition
-3100 P = SK(SP): SP = SP - 1: REM Pop P
-3110 HI = SK(SP): SP = SP - 1: REM Pop HI
-3120 SP = SP + 1: SK(SP) = HI: REM Push HI
-3130 SP = SP + 1: SK(SP) = P: REM Push P
-3140 LO = P + 1: GOSUB 3030: REM Sort right side of partition
-3150 SP = SP - 1: REM Pop P (don't store)
-3160 HI = SK(SP): SP = SP - 1: REM Pop HI
-3170 LO = SK(SP): SP = SP - 1: REM Pop LO
-3180 RETURN
-3300 REM Partition array
-3301 REM Inputs:
-3302 REM - A contains array to partition
-3303 REM - LO contains low index
-3304 REM - HI contains high index
-3305 REM Outputs:
-3306 REM - A contains partitioned array
-3307 REM - P contains pivot index
-3310 PV = A(HI): REM Choose last value as pivot
-3320 P = LO - 1: REM Set temp pivot index
-3325 REM Swap elements less than or equal to pivot, and increment temp index
-3330 FOR J = LO TO HI - 1
-3340     IF A(J) > PV THEN GOTO 3390
-3350     P = P + 1
-3360     T = A(J)
-3370     A(J) = A(P)
-3380     A(P) = T
-3390 NEXT J
-3395 REM Move pivot to correct position
-3400 P = P + 1
-3410 T = A(HI)
-3420 A(HI) = A(P)
-3430 A(P) = T
-3440 RETURN
+3000 REM Merge sort
+3001 REM Source:
+3002 REM https://en.wikipedia.org/wiki/Merge_sort#Bottom-up_implementation
+3003 REM Inputs:
+3004 REM - A contains array to sort
+3005 REM - NA contains size of array
+3006 REM Output: A contains sorted array
+3010 W = 1
+3020 IF W >= NA THEN RETURN
+3030 FOR IL = 0 TO NA - 1 STEP W * 2
+3040     IR = IL + W
+3050     IE = IR + W
+3060     IF IR > NA THEN IR = NA
+3070     IF IE > NA THEN IE = NA
+3080     GOSUB 3200
+3090 NEXT IL
+3100 FOR I = 0 TO NA - 1
+3110     A(I) = B(I)
+3120 NEXT I
+3130 W = W * 2
+3140 GOTO 3020
+3200 REM Merge array and work array
+3201 REM Inputs:
+3202 REM - A contains array to sort
+3203 REM - NA contains size of array
+3204 REM - IL contains left index
+3205 REM - IR contains right index
+3206 REM - IE contains end index
+3207 REM Outputs: B contains sorted portion of work array
+3210 II = IL
+3220 JJ = IR
+3230 FOR K = IL TO IE - 1
+3240     IF II < IR AND (JJ >= IE OR A(II) <= A(JJ)) THEN GOTO 3280
+3250     B(K) = A(JJ)
+3260     JJ = JJ + 1
+3270     GOTO 3300
+3280     B(K) = A(II)
+3290     II = II + 1
+3300 NEXT K
+3310 RETURN
 3500 REM Display array
 3501 REM A contains array
 3502 REM NA contains size of array
@@ -138,7 +120,7 @@
 3530    S$ = STR$(A(I))
 3540    IF A(I) >= 0 THEN S$ = MID$(S$, 2): REM strip leading space
 3550    PRINT S$;
-3560    IF I < (NA - 1) THEN PRINT ", ";
+3560    IF I < (NA - 1)THEN PRINT ", ";
 3570 NEXT I
 3580 PRINT
 3590 RETURN

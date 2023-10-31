@@ -1,13 +1,15 @@
 10 DIM A(99)
 20 GOSUB 2000: REM Get array
-25 REM Error if invalid, not end of input/value, or less that 2 items
-30 IF V = 0 OR C >= 0 OR NA < 2 THEN GOTO 200
-40 GOSUB 3000: REM Perform bubble sort
-50 GOSUB 3500: REM Show array
-60 END
+25 REM Error if invalid or not end of input/value
+30 IF V = 0 OR C >= 0 THEN GOTO 200
+40 GOSUB 3000: REM Perform maximum array rotation
+50 S$ = STR$(WM)
+60 IF WM >= 0 THEN S$ = MID$(S$, 2)
+70 PRINT S$
+80 END
 200 Q$ = CHR$(34): REM quote
-210 PRINT "Usage: please provide a list of at least two integers to sort ";
-220 PRINT "in the format "; Q$; "1, 2, 3, 4, 5"; Q$
+210 PRINT "Usage: please provide a list of integers ";
+220 PRINT "(e.g. "; Q$; "8, 3, 1, 2"; Q$; ")"
 230 END
 1000 REM Read input value one character at a time since Commodore BASIC
 1001 REM has trouble reading line from stdin properly
@@ -71,33 +73,25 @@
 2070 IF C = 44 THEN GOTO 2020: REM comma, get next value
 2080 V = 0
 2090 RETURN
-3000 REM Bubble sort
+3000 REM Maximum array rotation
 3001 REM Inputs:
-3002 REM - A contains array to sort
+3002 REM - A contains array
 3003 REM - NA contains size of array
-3004 REM Outputs: A contains sorted array
-3010 I = -1
-3020 I = I + 1
-3030 IF I >= (NA - 1) THEN GOTO 3130
-3040 SW = 0: REM Indicate not swapped
-3050 FOR J = I + 1 TO NA - 1
-3060     IF A(I) <= A(J) THEN GOTO 3110
-3070     T = A(I)
-3080     A(I) = A(J)
-3090     A(J) = T
-3100     SW = 1: REM Indicate swapped
-3110 NEXT J
-3120 IF SW <> 0 THEN GOTO 3020
-3130 RETURN
-3500 REM Display array
-3501 REM A contains array
-3502 REM NA contains size of array
-3510 IF NA < 1 THEN GOTO 3590
-3520 FOR I = 0 TO NA - 1
-3530    S$ = STR$(A(I))
-3540    IF A(I) >= 0 THEN S$ = MID$(S$, 2): REM strip leading space
-3550    PRINT S$;
-3560    IF I < (NA - 1) THEN PRINT ", ";
-3570 NEXT I
-3580 PRINT
-3590 RETURN
+3004 REM Outputs: WM contains answer
+3010 REM Calculate initial sum and inital array rotation
+3020 S = 0
+3030 W = 0
+3040 IF NA < 1 THEN GOTO 3090
+3050 FOR I = 0 TO NA - 1
+3060     S = S + A(I)
+3070     W = W + I * A(I)
+3080 NEXT I
+3090 REM Initialize maximum array rotation
+3110 WM = W
+3120 IF NA < 2 THEN GOTO 3180
+3130 REM Adjust array rotation and update maximum
+3140 FOR I = 0 TO NA - 2
+3150     W = W + NA * A(I) - S
+3160     IF W > WM THEN WM = W
+3170 NEXT I
+3180 RETURN
