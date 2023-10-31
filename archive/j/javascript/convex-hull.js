@@ -14,9 +14,18 @@ function convexHull(points) {
 	const n = points.length
 	if (n < 3) return points
 
+	let minPointIndex = 0
+	for (let i = 0; i < n; i++) {
+		if (
+			(points[i].y < points[minPointIndex].y) ||
+			(points[i].y == points[minPointIndex].y && points[i].x < points[minPointIndex].x)
+		) {
+			minPointIndex = i
+		}
+	}
 	const sortedPoints = [...points].sort((a, b) => {
-		const angleA = Math.atan2(a.y - points[0].y, a.x - points[0].x)
-		const angleB = Math.atan2(b.y - points[0].y, b.x - points[0].x)
+		const angleA = Math.atan2(a.y - points[minPointIndex].y, a.x - points[minPointIndex].x)
+		const angleB = Math.atan2(b.y - points[minPointIndex].y, b.x - points[minPointIndex].x)
 		return angleA - angleB
 	})
 
@@ -60,7 +69,7 @@ function main(inputX, inputY) {
 		xArray.some(item => isNaN(item))|| yArray.some(item => isNaN(item))
 	) {
 		console.log(
-			"Usage: please provide at least 3 x and y coordinates as separate lists (e.g., '100,440,210')"
+			'Usage: please provide at least 3 x and y coordinates as separate lists (e.g. "100, 440, 210")'
 		)
 		return
 	}
