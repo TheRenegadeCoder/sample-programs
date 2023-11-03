@@ -36,7 +36,7 @@ jobs:
         poetry-version: ${{ matrix.poetry-version }}
         
     - name: Install Dependencies
-      run: poetry install
+      run: poetry install --no-root
         
     - name: Generate READMEs
       run: poetry run ronbun . --log=DEBUG
