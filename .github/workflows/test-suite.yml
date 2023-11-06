@@ -25,7 +25,7 @@ jobs:
       fail-fast: true
       matrix:
         python-version: ["3.11"]
-        poetry-version: ["1.6.1"]
+        poetry-version: ["1.7.0"]
         os: [ubuntu-latest]
         num_batches: [4]
 
@@ -44,7 +44,7 @@ jobs:
         poetry-version: ${{ matrix.poetry-version }}
         
     - name: Install Dependencies
-      run: poetry install
+      run: poetry install --no-root
         
     - name: Download Docker images, Test All Sample Programs, Remove Docker Images
       run: poetry run glotter batch ${{ matrix.num_batches }}  --parallel --remove
