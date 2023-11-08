@@ -1,0 +1,8 @@
+folder:
+  extension: ".rexx"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/rexx"
+  tag: "3.6-5.00-1"
+  cmd: "rexx ./{{ source.name }}{{ source.extension }}"
