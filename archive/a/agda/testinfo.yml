@@ -4,6 +4,6 @@ folder:
 
 container:
   image: "rzuckerm/agda"
-  tag: "2.6.2-dev"
+  tag: "2.6.2-1"
   build: "agda --compile {{ source.name }}{{ source.extension }}"
   cmd: "./{{ source.name }}"
