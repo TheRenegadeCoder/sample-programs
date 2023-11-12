@@ -1,0 +1,9 @@
+folder:
+  extension: ".dt"
+  naming: "hyphen"
+
+container:
+  image: "tomhrr/dale"
+  tag: "0.3"
+  build: "dalec -o {{ source.name }} {{ source.name }}{{ source.extension }}"
+  cmd: "./{{ source.name }}"
