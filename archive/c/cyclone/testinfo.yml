@@ -4,6 +4,6 @@ folder:
 
 container:
   image: "rzuckerm/cyclone"
-  tag: "1.0-dev"
+  tag: "1.0-1"
   build: "cyclone -o {{ source.name }} {{ source.name }}{{ source.extension }}"
   cmd: "./{{ source.name }}"
