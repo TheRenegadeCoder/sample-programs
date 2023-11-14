@@ -1,6 +1,3 @@
-# Command-line arguments are stored in input.txt, one argument per line.
-# Any sample program in Forth that needs command line arguments will
-# need to parse this file
 folder:
   extension: ".fth"
   naming: "hyphen"
@@ -8,12 +5,4 @@ folder:
 container:
   image: "mtrute/gforth-container"
   tag: "0.7.9_20190627"
-  build: |
-    sh -c '(echo "#!/bin/sh"; \
-    echo "if [ \"\$#\" != 0 ];"; \
-    echo "then"; \
-    echo "    printf \"%s\\n\" \"\$@\" >input.txt;"; \
-    echo "fi"; \
-    echo "gforth {{ source.name }}{{ source.extension }} -e bye;"; \
-    ) >{{ source.name }}'
-  cmd: "sh {{ source.name }}"
+  cmd: "gforth {{ source.name }}{{ source.extension }}"
