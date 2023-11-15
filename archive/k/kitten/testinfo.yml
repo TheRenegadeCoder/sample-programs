@@ -1,0 +1,8 @@
+folder:
+  extension: ".ktn"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/kitten"
+  tag: "0.1.0.0-1"
+  cmd: "kitten {{ source.name }}{{ source.extension }}"
