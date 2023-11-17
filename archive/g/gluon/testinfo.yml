@@ -1,0 +1,8 @@
+folder:
+  extension: ".glu"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/gluon"
+  tag: "0.18.2-1"
+  cmd: "gluon {{ source.name }}{{ source.extension }}"
