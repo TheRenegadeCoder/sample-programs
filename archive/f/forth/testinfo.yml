@@ -1,0 +1,8 @@
+folder:
+  extension: ".fth"
+  naming: "hyphen"
+
+container:
+  image: "mtrute/gforth-container"
+  tag: "0.7.9_20190627"
+  cmd: "gforth {{ source.name }}{{ source.extension }}"
