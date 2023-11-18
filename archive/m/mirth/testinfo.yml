@@ -1,0 +1,14 @@
+folder:
+  extension: ".mth"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/mirth"
+  tag: "2023.11.04-1"
+  build: |
+    sh -c 'mkdir bin src && \
+      cp -r /usr/local/src/* src/ && \
+      cp {{ source.name }}{{ source.extension }} src/ && \
+      mirth {{ source.name }}{{ source.extension }} && \
+      gcc -o {{ source.name }} bin/{{ source.name }}.c'
+  cmd: "./{{ source.name }}"
