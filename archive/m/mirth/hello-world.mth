@@ -1,2 +1,6 @@
-main : --
-main = "Hello world!" _prim_unsafe_print
+module(hello-world)
+import(prelude)
+import(platform.posix)
+
+target-c99("hello-world.c",
+    "Hello, World!" str-print-ln!)
