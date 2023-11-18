@@ -1,0 +1,8 @@
+folder:
+  extension: ".hob"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/hobbes"
+  tag: "2023.08.14-1"
+  cmd: "hi -s -x {{ source.name }}{{ source.extension }}"
