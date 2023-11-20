@@ -1,2 +1,1 @@
-clc
-disp('Hello, World!')
+mprintf('%s', 'Hello, World!')
