@@ -1,0 +1,9 @@
+folder:
+  extension: ".sa"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/sather"
+  tag: "1.2.3-1"
+  build: "sacomp -main {{ source.name | replace('-', '_') | upper }} -o {{ source.name }} {{ source.name }}{{ source.extension}}"
+  cmd: "./{{ source.name }}"
