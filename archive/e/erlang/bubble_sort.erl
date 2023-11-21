@@ -18,15 +18,12 @@ convert_list_to_integers(Str) ->
             {error, []}
     end.
 
-count_commas(Str) ->
-    count_commas(Str, 0).
-
-count_commas([], Count) ->
-    Count;
-count_commas([$, | Rest], Count) ->
-    count_commas(Rest, Count + 1);
-count_commas([_ | Rest], Count) ->
-    count_commas(Rest, Count).
+count_commas([]) ->
+    0;
+count_commas([$, | Rest]) ->
+    1 + count_commas(Rest);
+count_commas([_ | Rest]) ->
+    count_commas(Rest).
 
 convert_values([]) ->
     {ok, []};
