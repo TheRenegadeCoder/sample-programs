@@ -43,10 +43,7 @@ main(Args) ->
 %%--------------------------------------------------------------------
 %% Recursively multiply N times N-1 until N <= 1
 %%--------------------------------------------------------------------
+factorial(0) ->
+    1;
 factorial(N) ->
-    if
-        N =< 1 ->
-            1;
-        true ->
-            N * factorial(N-1)
-    end.
+    N * factorial(N-1).
