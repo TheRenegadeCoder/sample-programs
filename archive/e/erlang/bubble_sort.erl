@@ -46,7 +46,7 @@ convert_to_integer(Str) ->
         {Int, Rest} when Rest == "" ->
             {ok, Int};
         _ ->
-            {error, invalid_value}
+            {error, 0}
     end.
 
 bubble_sort(List) -> bubble_sort(List, [], false).
