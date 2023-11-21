@@ -41,4 +41,4 @@ factorial(N,Acc) ->
 
 usage() ->
     io:format("Usage: please input a non-negative integer~n"),
-    erlang:halt().
+    halt().
