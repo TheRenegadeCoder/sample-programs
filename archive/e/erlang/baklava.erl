@@ -1,10 +1,5 @@
 -module(baklava).
--export([start/1]).
-
--spec start(MaxWidth :: integer()) -> ok.
-start(MaxWidth) ->
-    baklava(MaxWidth, 0),
-    ok.
+-export([main/1]).
 
 -spec baklava(MaxWidth :: integer(),
               Incrementor :: integer()) -> ok.
@@ -37,6 +32,9 @@ reverse_baklava(MaxWidth, Decrementor) ->
 %%--------------------------------------------------------------------
 %% Recursively prints the specified Number of stars or spaces
 %%--------------------------------------------------------------------
+main(_) ->
+    baklava(10, 0).
+
 print(0,star) ->
     io:format("~n");
 print(0,_) ->
