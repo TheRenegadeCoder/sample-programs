@@ -1,7 +1,7 @@
 -module(fizz_buzz).
 -export([main/1]).
 
-% Run with: escript fizz_buzz
+% Run with: escript fizz_buzz.erl
 
 main(_) ->
     fizz_buzz(1, 100).

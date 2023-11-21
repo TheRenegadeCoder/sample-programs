@@ -12,17 +12,33 @@ convert_list_to_integers(Str) ->
     convert_values(Values).
 
 convert_values([]) ->
-    [];
+    {ok, []};
 convert_values([ValueStr | Rest]) ->
-    [convert_to_integer(ValueStr) | convert_values(Rest)].
+    Str = string:strip(ValueStr),
+    if
+        Str == "" ->
+            {error, []};
+        true ->
+            case convert_to_integer(ValueStr) of
+                {ok, Value} ->
+                    case convert_values(Rest) of
+                        {ok, RestValues} ->
+                            {ok, [Value | RestValues]};
+                        _ ->
+                            {error, []}
+                    end;
+                _ ->
+                    {error, []}
+            end
+    end.
 
 convert_to_integer(Str) ->
     Result = catch string:to_integer(string:strip(Str)),
     case Result of
         {Int, Rest} when Rest == "" ->
-            Int;
+            {ok, Int};
         _ ->
-            usage()
+            {error, invalid_value}
     end.
 
 bubble_sort(List) -> bubble_sort(List, [], false).
@@ -54,13 +70,19 @@ main(Args) ->
     end,
 
     StrValue = lists:nth(1, Args),
-    Result = convert_list_to_integers(StrValue),
+    Values = case convert_list_to_integers(StrValue) of
+        {ok, Result} ->
+            Result;
+        _ ->
+            usage()
+    end,
+
     if
-        length(Result) < 2 ->
+        length(Values) < 2 ->
             usage();
         true ->
             ok
     end,
 
-    SortedResult = bubble_sort(Result),
-    handle_output(SortedResult).
+    SortedValues = bubble_sort(Values),
+    handle_output(SortedValues).

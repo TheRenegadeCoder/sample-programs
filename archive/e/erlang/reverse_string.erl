@@ -1,11 +1,10 @@
 -module(reverse_string).
 -export([main/1]).
 
--spec start(String :: string()) -> string().
 %%--------------------------------------------------------------------
 %% Reverse a given string
 %%--------------------------------------------------------------------
-start(String) ->
+reverse_string(String) ->
    lists:reverse(String).
 
 main(Args) ->
@@ -16,5 +15,5 @@ main(Args) ->
             Str = ""
     end,
 
-   ReverseStr = start(Str),
+   ReverseStr = reverse_string(Str),
    io:format("~s~n", [ReverseStr]).
