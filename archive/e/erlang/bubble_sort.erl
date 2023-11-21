@@ -9,27 +9,38 @@ usage() ->
 
 convert_list_to_integers(Str) ->
     Values = string:tokens(Str, ","),
-    convert_values(Values).
+    NumCommas = count_commas(Str),
+    NumValues = length(Values),
+    if
+        (NumCommas + 1) == NumValues ->
+            convert_values(Values);
+        true ->
+            {error, []}
+    end.
+
+count_commas(Str) ->
+    count_commas(Str, 0).
+
+count_commas([], Count) ->
+    Count;
+count_commas([$, | Rest], Count) ->
+    count_commas(Rest, Count + 1);
+count_commas([_ | Rest], Count) ->
+    count_commas(Rest, Count).
 
 convert_values([]) ->
     {ok, []};
 convert_values([ValueStr | Rest]) ->
-    Str = string:strip(ValueStr),
-    if
-        Str == "" ->
-            {error, []};
-        true ->
-            case convert_to_integer(ValueStr) of
-                {ok, Value} ->
-                    case convert_values(Rest) of
-                        {ok, RestValues} ->
-                            {ok, [Value | RestValues]};
-                        _ ->
-                            {error, []}
-                    end;
+    case convert_to_integer(ValueStr) of
+        {ok, Value} ->
+            case convert_values(Rest) of
+                {ok, RestValues} ->
+                    {ok, [Value | RestValues]};
                 _ ->
                     {error, []}
-            end
+            end;
+        _ ->
+            {error, []}
     end.
 
 convert_to_integer(Str) ->
