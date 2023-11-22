@@ -4,6 +4,6 @@ folder:
 
 container:
   image: "rzuckerm/c-star"
-  tag: "2023.05.17-dev"
+  tag: "2023.05.17-1"
   build: "cx -o {{ source.name }} {{ source.name }}{{ source.extension }}"
   cmd: "./{{ source.name }}"
