@@ -1,0 +1,12 @@
+folder:
+  extension: ".ds"
+  naming: "pascal"
+
+container:
+  image: "rzuckerm/discus"
+  tag: "0.5.1-1"
+  build: |
+    sh -c 'cp {{ source.name }}{{ source.extension }} /opt/ddc/Main.ds && \
+      cd /opt/ddc && \
+      bin/ddc -make Main.ds'
+  cmd: "/opt/ddc/Main"
