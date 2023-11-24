@@ -1,0 +1,11 @@
+folder:
+  extension: ".asm"
+  naming: "hyphen"
+
+container:
+  image: "esolang/x86asm-nasm"
+  tag: "latest"
+  build: |
+    sh -c 'nasm -f elf64 -o {{ source.name }}.o {{ source.name }}{{ source.extension }} && \
+      gcc -o {{ source.name }} {{ source.name }}.o'
+  cmd: "./{{ source.name }}"
