@@ -1,4 +1,4 @@
-module Hello
+module HelloWorld
 
 open FStar.IO
 
