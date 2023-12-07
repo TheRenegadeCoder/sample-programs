@@ -1,4 +1,4 @@
-function [] = fizzBuzz(x)
+function fizz_buzz()
 
   % Loop from 1 to 100
   for i = 1:100
