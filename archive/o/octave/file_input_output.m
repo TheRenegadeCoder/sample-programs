@@ -7,7 +7,7 @@ if file == -1
     return;
 end
 fprintf(file, "Hello, World!\n");
-fprintf(file, "Goodbye!\n")
+fprintf(file, "Goodbye!\n");
 fclose(file);
 
 % Read content from file
