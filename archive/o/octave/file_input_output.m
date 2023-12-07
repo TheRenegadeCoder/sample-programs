@@ -4,7 +4,7 @@ path = "output.txt";
 file = fopen(path,'w');
 if file == -1
     fprintf(strcat(path, " does not exist\n"));
-    return
+    return;
 end
 fprintf(file, "Hello, World!\n");
 fprintf(file, "Goodbye!\n")
@@ -14,7 +14,7 @@ fclose(file);
 file = fopen(path,'r');
 if file == -1
     fprintf(strcat(path, " does not exist\n"));
-    return
+    return;
 end
 a = fgetl(file);
 while ischar(a)

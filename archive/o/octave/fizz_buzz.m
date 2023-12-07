@@ -16,10 +16,10 @@ function fizz_buzz()
     
     % If fizzbuzz variable is empty,print i
     if isempty(fizzbuzz)
-      disp(i)
+      disp(i);
     else
       % If fizzbuzz variable is not empty, print the variable
-      disp(fizzbuzz)
+      disp(fizzbuzz);
     end
   end
 end
