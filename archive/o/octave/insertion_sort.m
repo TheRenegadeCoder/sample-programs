@@ -1,4 +1,4 @@
-function bubble_sort()
+function insertion_sort()
     %input validation
     arg_list = argv();
     nargin = length(arg_list);
@@ -22,18 +22,14 @@ function bubble_sort()
         return;
     end
 
-    %to keep track of whether any changes have been made on each pass
-    flag = 1;
-
-    while flag == 1
-        flag = 0;
-        for i = 1:array_size-1
-            if array(i) > array(i+1)
-                temp = array(i+1);
-                array(i+1) = array(i);
-                array(i) = temp;
-                flag = 1;
-            end
+    %insertion sort in ascending order
+    for i = 2:array_size
+        d = i;
+        while d > 1 && array(d) < array(d-1)
+            temp = array(d);
+            array(d) = array(d-1);
+            array(d-1) = temp;
+            d = d - 1;
         end
     end
 
