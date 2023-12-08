@@ -1,0 +1,8 @@
+folder:
+  extension: ".ina"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/baik"
+  tag: "9.5.2-1"
+  cmd: "baik {{ source.name }}{{ source.extension }}"
