@@ -1,4 +1,4 @@
-function [] = fizzBuzz(x)
+function fizz_buzz()
 
   % Loop from 1 to 100
   for i = 1:100
@@ -16,10 +16,10 @@ function [] = fizzBuzz(x)
     
     % If fizzbuzz variable is empty,print i
     if isempty(fizzbuzz)
-      disp(i)
+      disp(i);
     else
       % If fizzbuzz variable is not empty, print the variable
-      disp(fizzbuzz)
+      disp(fizzbuzz);
     end
   end
 end
