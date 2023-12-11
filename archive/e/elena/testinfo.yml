@@ -1,0 +1,9 @@
+folder:
+  extension: ".l"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/elena"
+  tag: "6.0.6-1"
+  build: "elena-cli {{ source.name }}{{ source.extension }}"
+  cmd: "./{{ source.name }}"
