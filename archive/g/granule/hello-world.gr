@@ -1,2 +1,2 @@
 main : () <{Stdout}>
-main = toStdout "Hello, World!"
+main = toStdout "Hello, World!\n"
