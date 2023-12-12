@@ -1,5 +1,5 @@
 class 
-    HELLO
+    hello_world
 
 create
     make
