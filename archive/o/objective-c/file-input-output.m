@@ -7,14 +7,14 @@ NSString* readFileWith(NSString* path) {
       NSData* fileData  = [fileHandle availableData];
       return [[NSString alloc] initWithBytes:[fileData bytes] length:[fileData length] encoding:NSUTF8StringEncoding];
     } @catch (NSException *e) {
-      NSLog(@"Error reading file %@", e);
+      printf("Error reading file %s\n", [e UTF8String]);
       return nil;
     }
     @finally{
       [fileHandle closeFile];
     }
   }else{
-    NSLog(@"File to read not found %@", path);
+    printf("File to read not found %s\n", [path UTF8String]);
   }
   
 };
@@ -27,14 +27,14 @@ BOOL writeFileWith(NSString* path, NSString* content) {
       [fileHandle writeData:fileData];
       return YES;
     } @catch (NSException *e) {
-      NSLog(@"Error writing file %@", e);
+      printf("Error writing file %s\n", [e UTF8String]);
       return NO;
     }
     @finally{
       [fileHandle closeFile];
     }
   }else{
-    NSLog(@"File to write not found %@", path);
+    printf("File to write not found %s\n", [path UTF8String]);
   }
   
 };
@@ -44,23 +44,19 @@ BOOL createFileIfNotExistsAt(NSString* path) {
 };
 
 int main(int argc, const char * argv[]) {
-  @autoreleasepool {
-    
-    NSString* path = @"output.txt";
-    if(createFileIfNotExistsAt(path)){
-      BOOL result = writeFileWith(path, @"Hello!");
-      if (result) {
-        NSString* contents = readFileWith(path);
-        if (contents) {
-          NSLog(@"%@", contents);
-        }
+  NSAutoreleasePool *pool =[[NSAutoreleasePool alloc] init];
+  NSString* path = @"output.txt";
+  if(createFileIfNotExistsAt(path)){
+    BOOL result = writeFileWith(path, @"Hello!\nGoodbye!\n");
+    if (result) {
+      NSString* contents = readFileWith(path);
+      if (contents) {
+        printf("%s", [contents UTF8String]);
       }
-    }else{
-      NSLog(@"Unable to create file at %@", path);
     }
-    
-    return 0;
-    
+  }else{
+    NSLog(@"Unable to create file at %@", path);
   }
+  [pool drain];
   return 0;
 }
