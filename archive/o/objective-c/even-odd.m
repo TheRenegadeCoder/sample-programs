@@ -2,7 +2,6 @@
 
 // Function to convert and validate the input string
 // Source: ChatGPT
-// Function to convert and validate the input string
 NSInteger convertAndValidateInput(NSString *inputString) {
     NSScanner *scanner = [NSScanner scannerWithString:inputString];
     NSInteger integerValue = 0;
