@@ -5,5 +5,5 @@ folder:
 container:
   image: "rzuckerm/objective-c"
   tag: "11.4.0-dev"
-  build: gcc -o {{ source.name }} {{ source.name }}{{ source.extension }} -I /usr/include/GNUstep -lgnustep-base -lobjc -fconstant-string-class=NSConstantString -fobjc-exceptions
+  build: "gcc -o {{ source.name }} {{ source.name }}{{ source.extension }} -I /usr/include/GNUstep -lgnustep-base -lobjc -fconstant-string-class=NSConstantString -fobjc-exceptions"
   cmd: "./{{ source.name }}"
