@@ -55,7 +55,7 @@ int main(int argc, const char * argv[]) {
       }
     }
   }else{
-    NSLog(@"Unable to create file at %@", path);
+    printf("Unable to create file at %s\n", [path UTF8String]);
   }
   [pool drain];
   return 0;
