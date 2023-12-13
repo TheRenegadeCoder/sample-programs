@@ -1,0 +1,9 @@
+folder:
+  extension: ".m"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/objective-c"
+  tag: "11.4.0-dev"
+  build: "gcc -o {{ source.name }} {{ source.name }}{{ source.extension }} -I /usr/include/GNUstep -lgnustep-base -lobjc -fconstant-string-class=NSConstantString"
+  cmd: "./{{ source.name }}"
