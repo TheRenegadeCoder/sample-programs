@@ -51,7 +51,7 @@ int main(int argc, const char * argv[]) {
                 printf("%d\n", result);
             }
         }
-        @catch (NSException *e) {
+        @catch (NSException *) {
             printf("%s\n", [usage UTF8String]);
         }
     }
