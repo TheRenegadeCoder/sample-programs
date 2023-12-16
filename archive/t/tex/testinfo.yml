@@ -1,0 +1,24 @@
+folder:
+  extension: ".tex"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/tex"
+  tag: "2019.20200218-1-1"
+  # args.txt contains the command line arguments
+  build: |
+    sh -c '(echo "#!/bin/sh"; \
+      echo "if [ \"\$#\" = 0 ];"; \
+      echo "then"; \
+      echo "    touch args.txt"; \
+      echo "else"; \
+      echo "    printf \"%s\\n\" \"\$@\" >args.txt"; \
+      echo "fi"; \
+      echo "if ! pdftex -halt-on-error -interaction=batchmode {{ source.name }}{{ source.extension }} >/dev/null"; \
+      echo "then"; \
+      echo "    cat {{ source.name }}.log"; \
+      echo "else"; \
+      echo "  pdf2html {{ source.name }}.pdf >{{ source.name }}.html && html2txt {{ source.name }}.html"; \
+      echo "fi" \
+      ) >{{ source.name }}'
+  cmd: "sh ./{{ source.name }}"
