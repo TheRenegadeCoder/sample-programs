@@ -4,7 +4,7 @@ folder:
 
 container:
   image: "rzuckerm/tex"
-  tag: "2019.20200218-1-dev"
+  tag: "2019.20200218-1-1"
   # args.txt contains the command line arguments
   build: |
     sh -c '(echo "#!/bin/sh"; \
