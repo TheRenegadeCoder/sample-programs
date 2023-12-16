@@ -1,17 +1,17 @@
 folder:
-  extension: ".bas"
+  extension: ".tiprogram"
   naming: "hyphen"
 
 container:
   image: "rzuckerm/ti-basic"
-  tag: "2018.01.16-1"
+  tag: "2023.12.16-2"
   build: |
     sh -c '(echo "#!/bin/sh"; \
     echo "if [ \"\$#\" = 0 ]"; \
     echo "then"; \
-    echo "    printf \"\" | java -jar /opt/ti-basic-interpreter/TiBasicInterpreter.jar {{ source.name }}{{ source.extension }}"; \
+    echo "    printf \"\" | python2.7 /opt/pitybas/pb.py {{ source.name }}{{ source.extension }}"; \
     echo "else"; \
-    echo "    printf \"%s\\n\" \"\$@\" | java -jar /opt/ti-basic-interpreter/TiBasicInterpreter.jar {{ source.name }}{{ source.extension }}"; \
+    echo "    printf \"%s\\n\" \"\$@\" | python2.7 /opt/pitybas/pb.py {{ source.name }}{{ source.extension }}"; \
     echo "fi" \
     ) >{{ source.name }}'
   cmd: "sh ./{{ source.name }}"
