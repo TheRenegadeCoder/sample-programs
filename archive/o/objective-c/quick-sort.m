@@ -7,88 +7,107 @@
 
 #import <Foundation/Foundation.h>
 
-@interface QuickSort: NSObject
- 
-- (NSArray *)quickSort:(NSArray *)dataset;
-- (NSString *)getUserInput;
+// Function to convert and validate the input string
+// Source: ChatGPT
+NSInteger convertAndValidateInput(NSString *inputString) {
+    NSScanner *scanner = [NSScanner scannerWithString:inputString];
+    NSInteger integerValue = 0;
 
-@end
+    // Check if the scanner successfully scanned an integer
+    if ([scanner scanInteger:&integerValue] && [scanner isAtEnd]) {
+        return integerValue;
+    } else {
+        // Raise an exception for invalid input
+        @throw [NSException exceptionWithName:@"InvalidInputException"
+            reason:@"Input is not a valid integer"
+            userInfo:nil];
+    }
+}
 
-@implementation QuickSort
+// Function to convert a comma-separated string to an array of integers
+// Source: ChatGPT
+NSArray *convertStringToListOfIntegers(NSString *inputString) {
+    NSMutableArray *resultArray = [NSMutableArray array];
 
-- (NSArray *)quickSort:(NSArray *)dataset {
-    
+    // Separate the input string into components using the comma as a delimiter
+    NSArray *components = [inputString componentsSeparatedByString:@","];
+
+    // Convert each component to an integer using the previous function
+    for (NSString *component in components) {
+        NSNumber *numberValue = [NSNumber numberWithInteger:convertAndValidateInput(component)];
+        [resultArray addObject:numberValue];
+    }
+
+    return [resultArray copy];
+}
+
+// Display array of integers
+void displayListOfIntegers(NSArray *integerArray) {
+    NSString *displayString = [integerArray componentsJoinedByString:@", "];
+    printf("%s\n", [displayString UTF8String]);
+}
+
+NSArray *quickSort(NSArray *dataset) {
     int numberOfItems = (int)[dataset count];
     
     if (numberOfItems < 2) {
         return dataset;
     }
-    
+
     // Here, the pivot variable is the item in the  m i d d l e  of the array.
     // There are also other ways to find the pivot item.
-    int pivot = [[dataset objectAtIndex: (numberOfItems/2)] intValue];
-    
+    int pivotIndex = numberOfItems/2;
+    int pivot = [[dataset objectAtIndex: pivotIndex] intValue];
+
     NSMutableArray *less = [NSMutableArray array];
     NSMutableArray *greater = [NSMutableArray array];
     NSMutableArray *equal = [NSMutableArray array];
     
-    [equal addObject: @(pivot)];
-    
-    for (int i = 0; i < numberOfItems; i++) {
-        
+    int i = 0;
+    while (i < numberOfItems) {
         int item = [[dataset objectAtIndex: i] intValue];
-        
+
         if (item < pivot) {
-            [less addObject: @(item)];
+            [less addObject: [dataset objectAtIndex: i]];
         } else if (item > pivot) {
-            [greater addObject: @(item)];
-        } else if (i != (numberOfItems/2) && pivot == item) {
-            [equal addObject: @(item)];
+            [greater addObject: [dataset objectAtIndex: i]];
+        } else if (pivot == item) {
+            [equal addObject: [dataset objectAtIndex: i]];
         }
-        
+        i++;
     }
-    
+
     NSMutableArray *returnSortedArray = [NSMutableArray array];
-    [returnSortedArray addObjectsFromArray: [self quickSort: less]];
+    [returnSortedArray addObjectsFromArray: quickSort(less)];
     [returnSortedArray addObjectsFromArray: equal];
-    [returnSortedArray addObjectsFromArray: [self quickSort: greater]];
-     
+    [returnSortedArray addObjectsFromArray: quickSort(greater)];
+
     return returnSortedArray;
-    
 }
 
-- (NSString *)getUserInput {
-
-    NSFileHandle *handle = [NSFileHandle fileHandleWithStandardInput];
-    NSData *data = handle.availableData;
-    NSString *input = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
-    
-    NSCharacterSet *set = [NSCharacterSet newlineCharacterSet];
-    NSString *userInput = [input stringByTrimmingCharactersInSet:set];
-
-    return userInput;
-}
-
-int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        
-        QuickSort *quickSort = [[QuickSort alloc] init];
-        
-        // Hardcoded values
-        // NSArray *data = @[@33, @12, @104, @87, @12, @60, @93, @6, @18, @40, @52, @22, @43];
-        
-        // Command line input
-        NSLog(@"Enter comma separated values: ");
-        NSString* userInput = [quickSort getUserInput];
-        
-        NSArray *data = [userInput componentsSeparatedByString:@","];
-        
-        NSArray *sortedArray = [quickSort quickSort: (NSArray *)data];
-        
-        NSLog(@"%@", sortedArray);
-        
+int main(int argc, char *argv[]) {
+    NSAutoreleasePool *pool =[[NSAutoreleasePool alloc] init];
+    NSString *usage = @"Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"";
+    if (argc < 2) {
+        printf("%s\n", [usage UTF8String]);
     }
+    else {
+        NSString* inputStr = [NSString stringWithUTF8String:argv[1]];
+        @try {
+            NSArray *inputArray = convertStringToListOfIntegers(inputStr);
+            if ([inputArray count] < 2) {
+                printf("%s\n", [usage UTF8String]);
+            }
+            else {
+                NSArray *sortedArray = quickSort(inputArray);
+                displayListOfIntegers(sortedArray);
+            }
+        }
+        @catch (NSException *) {
+            printf("%s\n", [usage UTF8String]);
+        }
+    }
+
+    [pool drain];
     return 0;
 }
-
-@end

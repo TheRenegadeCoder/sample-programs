@@ -17,10 +17,10 @@ int main (int argc, const char *argv[]){
         }
 
         if ([fizzbuzz length] != 0) {
-            NSLog(fizzbuzz);
+            printf("%s\n", [fizzbuzz UTF8String]);
 
         } else {
-            NSLog(@"%d", i);
+            printf("%d\n", i);
         }
     }
 
