@@ -1,5 +1,3 @@
-func! Hello()
-    call append(0, "Hello, World!")
+func! Main()
+    echo "Hello, World!"
 endfunc
-
-au BufEnter,BufReadPost * call Hello()
