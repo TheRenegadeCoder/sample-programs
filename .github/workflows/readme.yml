@@ -18,7 +18,7 @@ jobs:
       fail-fast: true
       matrix:
         python-version: ["3.11"]
-        poetry-version: ["1.6.1"]
+        poetry-version: ["1.7.0"]
         os: [ubuntu-latest]
 
     runs-on: ${{ matrix.os }}
@@ -36,7 +36,7 @@ jobs:
         poetry-version: ${{ matrix.poetry-version }}
         
     - name: Install Dependencies
-      run: poetry install
+      run: poetry install --no-root
         
     - name: Generate READMEs
       run: poetry run ronbun . --log=DEBUG

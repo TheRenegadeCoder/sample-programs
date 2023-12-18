@@ -1,0 +1,8 @@
+folder:
+  extension: ".lt"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/latte"
+  tag: "0.0.10-1"
+  cmd: "latte -s {{ source.name }}{{ source.extension }}"

@@ -1,0 +1,9 @@
+folder:
+  extension: ".flx"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/felix"
+  tag: "2019.01.06-1"
+  build: "flx --static -o {{ source.name }} -c {{ source.name }}{{ source.extension }}"
+  cmd: "./{{ source.name }}"

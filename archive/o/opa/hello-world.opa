@@ -1,5 +1,5 @@
 function page() {
-	<h1>Hello, World!</h1>
+	<pre>Hello, World!</pre>
 }
 
 Server.start(

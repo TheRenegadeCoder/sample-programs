@@ -1,20 +1,49 @@
 -module(factorial).
--export([start/1]).
+-export([main/1]).
 
--spec start(Number :: integer()) -> integer().
-start(N) 
-    when N<0;
-         not is_integer(N) ->
-    io:format("Usage: please input a non-negative integer~n");
-start(0) ->
-    factorial(1,1);
-start(N) ->
-    factorial(N,N).
+usage() ->
+    io:format("Usage: please input a non-negative integer~n"),
+    halt().
+
+convert_to_integer(Str) ->
+    Result = catch string:to_integer(string:strip(Str)),
+    case Result of
+        {Int, Rest} when Rest == "" ->
+            {ok, Int};
+        _ ->
+            {error, 0}
+    end.
+
+main(Args) ->
+    if
+        length(Args) < 1 ->
+            usage();
+        true ->
+            ok
+    end,
+
+    StrValue = lists:nth(1, Args),
+    Value = case convert_to_integer(StrValue) of
+        {ok, Int} ->
+            Int;
+        _ ->
+            usage()
+    end,
+
+    if
+        Value < 0 ->
+            usage();
+        true ->
+            ok
+    end,
+
+    FValue = factorial(Value),
+    io:format("~w~n", [FValue]).
 
 %%--------------------------------------------------------------------
-%% Recursively multiply N times N-1 until N-1=1. Output Accumulator
+%% Recursively multiply N times N-1 until N <= 1
 %%--------------------------------------------------------------------
-factorial(1,Acc) ->
-    io:format("~w~n", [Acc]);
-factorial(N,Acc) ->
-    factorial(N-1, (N-1)*Acc).
+factorial(0) ->
+    1;
+factorial(N) ->
+    N * factorial(N-1).

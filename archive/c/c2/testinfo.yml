@@ -1,0 +1,9 @@
+folder:
+  extension: ".c2"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/c2"
+  tag: "2023.09.28-1"
+  build: "c2c -c -f {{ source.name }}{{ source.extension }}"
+  cmd: "output/dummy/dummy"

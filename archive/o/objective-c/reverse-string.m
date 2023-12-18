@@ -20,13 +20,12 @@
 
 int main (int argc, const char *argv[]){
     NSAutoreleasePool *pool =[[NSAutoreleasePool alloc] init];
-    char textInput[1000];
-    scanf ("%[^\n]%*c", textInput);
-    NSString *userInput =[NSString stringWithUTF8String:textInput];
-    if([userInput length] > 0){
-        NSLog(@"\n%@", userInput);
-        StringHelper* helper = [[StringHelper alloc] init];
-        NSLog(@"\n%@", [helper reverseString: userInput]);  
+    if (argc >= 2){
+        NSString *userInput =[NSString stringWithUTF8String:argv[1]];
+        if([userInput length] > 0){
+            StringHelper* helper = [[StringHelper alloc] init];
+            printf("%s\n", [[helper reverseString: userInput] UTF8String]);
+        }
     }
     [pool drain];
     return 0;

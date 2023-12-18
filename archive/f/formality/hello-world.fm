@@ -1,4 +1,4 @@
-import Base@0
-
-main : Output
-  print("Hello, world!")
+Main: IO(Unit)
+  do IO {
+    IO.print("Hello, World!")
+  }
