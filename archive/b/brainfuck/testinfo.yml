@@ -7,6 +7,6 @@ container:
   tag: "latest"
   build: |
     sh -c '(echo "#!/bin/sh"; \
-    echo "echo \"\$@\" | brainfuck -s {{ source.name }}{{ source.extension }}" \
+    echo "printf \"%s\0\" \"\$@\" | brainfuck -s {{ source.name }}{{ source.extension }}" \
     ) >{{ source.name }}'
   cmd: sh {{ source.name }}
