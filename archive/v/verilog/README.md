@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Verilog! To find documentation related to the Verilog code in this repo, look [here.](https://sampleprograms.io/languages/verilog)
 
-## Sample Programs List - 2/37 :disappointed:
+## Sample Programs List - 1/37 :disappointed:
 
 In this section, we feature a list of completed and missing programs in Verilog. See above for the current amount of completed programs in Verilog. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -10,7 +10,6 @@ In this section, we feature a list of completed and missing programs in Verilog.
 
 Below, you'll find a list of completed code snippets in Verilog. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :warning: [Fibonacci in Verilog](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+verilog) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :warning: [Hello World in Verilog](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+verilog) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 
 ### Missing Programs
@@ -27,6 +26,7 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Duplicate Character Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,duplicate+character+counter&template=code-snippet-request.md&title=Add+Duplicate+Character+Counter+in+Verilog) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :x: [Even Odd](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,even+odd&template=code-snippet-request.md&title=Add+Even+Odd+in+Verilog) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :x: [Factorial](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,factorial&template=code-snippet-request.md&title=Add+Factorial+in+Verilog) [[Requirements](https://sampleprograms.io/projects/factorial)]
+- :x: [Fibonacci](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fibonacci&template=code-snippet-request.md&title=Add+Fibonacci+in+Verilog) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :x: [File Input Output](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,file+input+output&template=code-snippet-request.md&title=Add+File+Input+Output+in+Verilog) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :x: [Fizz Buzz](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fizz+buzz&template=code-snippet-request.md&title=Add+Fizz+Buzz+in+Verilog) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fraction+math&template=code-snippet-request.md&title=Add+Fraction+Math+in+Verilog) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
@@ -55,18 +55,10 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-This language currently does not feature testing. If you'd like to help in the efforts to test all of the code in this repo, consider creating a testinfo.yml file with the following information:
+The following list shares details about what we're using to test all Sample Programs in Verilog.
 
-```yml
-folder:
-  extension:
-  naming:
-
-container:
-  image:
-  tag:
-  cmd:
-```
+- Docker Image: 0x01be/iverilog
+- Docker Tag: latest
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 
