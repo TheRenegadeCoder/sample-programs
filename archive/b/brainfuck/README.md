@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Brainfuck! To find documentation related to the Brainfuck code in this repo, look [here.](https://sampleprograms.io/languages/brainfuck)
 
-## Sample Programs List - 4/37 :disappointed:
+## Sample Programs List - 5/37 :disappointed:
 
 In this section, we feature a list of completed and missing programs in Brainfuck. See above for the current amount of completed programs in Brainfuck. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -14,6 +14,7 @@ Below, you'll find a list of completed code snippets in Brainfuck. Code snippets
 - :warning: [Fizz Buzz in Brainfuck](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+brainfuck) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Brainfuck](https://sampleprograms.io/projects/hello-world/brainfuck) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :warning: [Reverse String in Brainfuck](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+brainfuck) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
+- :warning: [Rot13 in Brainfuck](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+brainfuck) [[Requirements](https://sampleprograms.io/projects/rot13)]
 
 ### Missing Programs
 
@@ -48,7 +49,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Quine](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,quine&template=code-snippet-request.md&title=Add+Quine+in+Brainfuck) [[Requirements](https://sampleprograms.io/projects/quine)]
 - :x: [Remove All Whitespace](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,remove+all+whitespace&template=code-snippet-request.md&title=Add+Remove+All+Whitespace+in+Brainfuck) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :x: [Roman Numeral](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,roman+numeral&template=code-snippet-request.md&title=Add+Roman+Numeral+in+Brainfuck) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
-- :x: [Rot13](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,rot13&template=code-snippet-request.md&title=Add+Rot13+in+Brainfuck) [[Requirements](https://sampleprograms.io/projects/rot13)]
 - :x: [Selection Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,selection+sort&template=code-snippet-request.md&title=Add+Selection+Sort+in+Brainfuck) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 - :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+Brainfuck) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,transpose+matrix&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+Brainfuck) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
