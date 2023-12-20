@@ -2,6 +2,6 @@ module main;
   initial
     begin
       $display("Hello, World!");
-      $finish;
+      $finish(0);
     end
 endmodule

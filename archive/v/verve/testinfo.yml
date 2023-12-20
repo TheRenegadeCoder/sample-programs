@@ -1,0 +1,14 @@
+folder:
+  extension: ".vrv"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/verve"
+  tag: "2018.06.24-1"
+  # Every output line from verve is enclosed in double quotes. The final output line
+  # is "() : Void". The "fix_output" script cleans that up.
+  build: |
+    sh -c '(echo "#!/bin/sh"; \
+      echo "verve {{ source.name }}{{ source.extension }} \"\$@\" | fix_output" \
+      ) >{{ source.name }}'
+  cmd: "sh ./{{ source.name }}"
