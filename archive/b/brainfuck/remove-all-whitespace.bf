@@ -1,7 +1,6 @@
 [
     Source for error message text:
     https://copy.sh/brainfuck/text.html
-
 ]
 ; Mem 0 = 1 (indicate no input)
 +
