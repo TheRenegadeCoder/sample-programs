@@ -1,0 +1,20 @@
+fn abs(n: Int) -> Int {
+    if (n < 0) { -n } else { n }
+}
+
+let baklava_str = "          *********************"
+
+fn baklava_line(n: Int) -> String {
+    let num_spaces = abs(n)
+    let num_stars = 21 - 2 * num_spaces
+    substr(baklava_str, 10 - num_spaces, num_spaces + num_stars)
+}
+
+fn baklava(start: Int, end: Int) {
+    if not(start > end) {
+        print(baklava_line(start))
+        baklava(start + 1, end)
+    }
+}
+
+baklava(-10, 10)
