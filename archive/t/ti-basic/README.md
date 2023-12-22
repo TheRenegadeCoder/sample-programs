@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Ti Basic.
+The following list shares details about how we name all Sample Programs in Ti Basic:
+
+- Extension: .tiprogram
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.tiprogram
+
+The following list shares details about what we're using to test all Sample Programs in Ti Basic:
 
 - Docker Image: rzuckerm/ti-basic
 - Docker Tag: 2023.12.16-2

@@ -50,7 +50,16 @@ Below, you'll find a list of completed code snippets in Rust. Code snippets prec
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Rust.
+The following list shares details about how we name all Sample Programs in Rust:
+
+- Extension: .rs
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.rs
+
+The following list shares details about what we're using to test all Sample Programs in Rust:
 
 - Docker Image: rust
 - Docker Tag: 1.68.2-alpine3.17

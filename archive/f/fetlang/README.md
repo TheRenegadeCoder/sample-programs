@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Fetlang.
+The following list shares details about how we name all Sample Programs in Fetlang:
+
+- Extension: .fet
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.fet
+
+The following list shares details about what we're using to test all Sample Programs in Fetlang:
 
 - Docker Image: esolang/fetlang
 - Docker Tag: latest

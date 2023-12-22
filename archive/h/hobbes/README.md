@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Hobbes.
+The following list shares details about how we name all Sample Programs in Hobbes:
+
+- Extension: .hob
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.hob
+
+The following list shares details about what we're using to test all Sample Programs in Hobbes:
 
 - Docker Image: rzuckerm/hobbes
 - Docker Tag: 2023.08.14-1

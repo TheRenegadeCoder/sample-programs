@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Eiffel.
+The following list shares details about how we name all Sample Programs in Eiffel:
+
+- Extension: .e
+- Naming Convention: underscore
+
+For example, the "Hello World" sample would be named this:
+
+- hello_world.e
+
+The following list shares details about what we're using to test all Sample Programs in Eiffel:
 
 - Docker Image: rzuckerm/eiffel
 - Docker Tag: 13.11-1

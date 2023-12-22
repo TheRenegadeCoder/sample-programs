@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Phix.
+The following list shares details about how we name all Sample Programs in Phix:
+
+- Extension: .exw
+- Naming Convention: underscore
+
+For example, the "Hello World" sample would be named this:
+
+- hello_world.exw
+
+The following list shares details about what we're using to test all Sample Programs in Phix:
 
 - Docker Image: rzuckerm/phix
 - Docker Tag: 1.0.2-ubuntu22-1

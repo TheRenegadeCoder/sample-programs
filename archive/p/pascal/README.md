@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Pascal.
+The following list shares details about how we name all Sample Programs in Pascal:
+
+- Extension: .pas
+- Naming Convention: underscore
+
+For example, the "Hello World" sample would be named this:
+
+- hello_world.pas
+
+The following list shares details about what we're using to test all Sample Programs in Pascal:
 
 - Docker Image: cyberdojofoundation/freepascal
 - Docker Tag: 5550730

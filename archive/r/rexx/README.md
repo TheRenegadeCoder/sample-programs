@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Rexx.
+The following list shares details about how we name all Sample Programs in Rexx:
+
+- Extension: .rexx
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.rexx
+
+The following list shares details about what we're using to test all Sample Programs in Rexx:
 
 - Docker Image: rzuckerm/rexx
 - Docker Tag: 3.6-5.00-1

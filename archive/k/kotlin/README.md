@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Kotlin.
+The following list shares details about how we name all Sample Programs in Kotlin:
+
+- Extension: .kt
+- Naming Convention: pascal
+
+For example, the "Hello World" sample would be named this:
+
+- HelloWorld.kt
+
+The following list shares details about what we're using to test all Sample Programs in Kotlin:
 
 - Docker Image: zenika/kotlin
 - Docker Tag: 1.4.20

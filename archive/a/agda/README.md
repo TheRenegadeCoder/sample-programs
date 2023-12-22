@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Agda.
+The following list shares details about how we name all Sample Programs in Agda:
+
+- Extension: .agda
+- Naming Convention: pascal
+
+For example, the "Hello World" sample would be named this:
+
+- HelloWorld.agda
+
+The following list shares details about what we're using to test all Sample Programs in Agda:
 
 - Docker Image: rzuckerm/agda
 - Docker Tag: 2.6.2-1

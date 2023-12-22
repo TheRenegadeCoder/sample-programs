@@ -50,7 +50,16 @@ Below, you'll find a list of completed code snippets in Commodore Basic. Code sn
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Commodore Basic.
+The following list shares details about how we name all Sample Programs in Commodore Basic:
+
+- Extension: .bas
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.bas
+
+The following list shares details about what we're using to test all Sample Programs in Commodore Basic:
 
 - Docker Image: rzuckerm/commodore-basic
 - Docker Tag: v2-1

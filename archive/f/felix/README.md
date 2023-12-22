@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Felix.
+The following list shares details about how we name all Sample Programs in Felix:
+
+- Extension: .flx
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.flx
+
+The following list shares details about what we're using to test all Sample Programs in Felix:
 
 - Docker Image: rzuckerm/felix
 - Docker Tag: 2019.01.06-1

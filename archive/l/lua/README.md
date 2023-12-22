@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Lua.
+The following list shares details about how we name all Sample Programs in Lua:
+
+- Extension: .lua
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.lua
+
+The following list shares details about what we're using to test all Sample Programs in Lua:
 
 - Docker Image: nickblah/lua
 - Docker Tag: 5.4-alpine

@@ -21,7 +21,7 @@ Below, you'll find a list of completed code snippets in Java. Code snippets prec
 - :warning: [Fibonacci in Java](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+java) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :warning: [File Input Output in Java](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+java) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :white_check_mark: [Fizz Buzz in Java](https://sampleprograms.io/projects/fizz-buzz/java) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
-- :white_check_mark: [Hello World in Java](https://sampleprograms.io/projects/hello-world/java) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :warning: [Hello World in Java](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+java) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :warning: [Insertion Sort in Java](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+java) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :warning: [Job Sequencing in Java](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+job+sequencing+java) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :warning: [Linear Search in Java](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+linear+search+java) [[Requirements](https://sampleprograms.io/projects/linear-search)]
@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Java.
+The following list shares details about how we name all Sample Programs in Java:
+
+- Extension: .java
+- Naming Convention: pascal
+
+For example, the "Hello World" sample would be named this:
+
+- HelloWorld.java
+
+The following list shares details about what we're using to test all Sample Programs in Java:
 
 - Docker Image: openjdk
 - Docker Tag: 11-slim

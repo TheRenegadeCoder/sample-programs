@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Pinecone.
+The following list shares details about how we name all Sample Programs in Pinecone:
+
+- Extension: .pn
+- Naming Convention: underscore
+
+For example, the "Hello World" sample would be named this:
+
+- hello_world.pn
+
+The following list shares details about what we're using to test all Sample Programs in Pinecone:
 
 - Docker Image: rzuckerm/pinecone
 - Docker Tag: 0.5.1-1

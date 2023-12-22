@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Pony.
+The following list shares details about how we name all Sample Programs in Pony:
+
+- Extension: .pony
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.pony
+
+The following list shares details about what we're using to test all Sample Programs in Pony:
 
 - Docker Image: ponylang/ponyc
 - Docker Tag: 0.55.1-alpine

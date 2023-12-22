@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Golo.
+The following list shares details about how we name all Sample Programs in Golo:
+
+- Extension: .golo
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.golo
+
+The following list shares details about what we're using to test all Sample Programs in Golo:
 
 - Docker Image: jponge/golo-lang
 - Docker Tag: release_3.3.0

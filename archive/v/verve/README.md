@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Verve.
+The following list shares details about how we name all Sample Programs in Verve:
+
+- Extension: .vrv
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.vrv
+
+The following list shares details about what we're using to test all Sample Programs in Verve:
 
 - Docker Image: rzuckerm/verve
 - Docker Tag: 2018.06.24-1

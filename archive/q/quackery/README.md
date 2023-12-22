@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Quackery.
+The following list shares details about how we name all Sample Programs in Quackery:
+
+- Extension: .qky
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.qky
+
+The following list shares details about what we're using to test all Sample Programs in Quackery:
 
 - Docker Image: rzuckerm/quackery
 - Docker Tag: 2023.10.23-1

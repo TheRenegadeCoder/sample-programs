@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Pineapple.
+The following list shares details about how we name all Sample Programs in Pineapple:
+
+- Extension: .pine
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.pine
+
+The following list shares details about what we're using to test all Sample Programs in Pineapple:
 
 - Docker Image: rzuckerm/pineapple
 - Docker Tag: 0.0.7-1

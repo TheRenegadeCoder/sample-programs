@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Arkscript.
+The following list shares details about how we name all Sample Programs in Arkscript:
+
+- Extension: .ark
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.ark
+
+The following list shares details about what we're using to test all Sample Programs in Arkscript:
 
 - Docker Image: rzuckerm/arkscript
 - Docker Tag: 3.4.0-2

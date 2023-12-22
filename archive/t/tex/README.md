@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Tex.
+The following list shares details about how we name all Sample Programs in Tex:
+
+- Extension: .tex
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.tex
+
+The following list shares details about what we're using to test all Sample Programs in Tex:
 
 - Docker Image: rzuckerm/tex
 - Docker Tag: 2019.20200218-1-1

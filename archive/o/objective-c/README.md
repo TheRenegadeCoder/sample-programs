@@ -16,7 +16,7 @@ Below, you'll find a list of completed code snippets in Objective C. Code snippe
 - :warning: [Fibonacci in Objective C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+objective+c) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :warning: [File Input Output in Objective C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+objective+c) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :warning: [Fizz Buzz in Objective C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+objective+c) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
-- :white_check_mark: [Hello World in Objective C](https://sampleprograms.io/projects/hello-world/objective-c) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :warning: [Hello World in Objective C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+objective+c) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :warning: [Merge Sort in Objective C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+objective+c) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
 - :warning: [Quick Sort in Objective C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+objective+c) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
 - :warning: [Reverse String in Objective C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+objective+c) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Objective C.
+The following list shares details about how we name all Sample Programs in Objective C:
+
+- Extension: .m
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.m
+
+The following list shares details about what we're using to test all Sample Programs in Objective C:
 
 - Docker Image: rzuckerm/objective-c
 - Docker Tag: 11.4.0-1

@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Koka.
+The following list shares details about how we name all Sample Programs in Koka:
+
+- Extension: .kk
+- Naming Convention: underscore
+
+For example, the "Hello World" sample would be named this:
+
+- hello_world.kk
+
+The following list shares details about what we're using to test all Sample Programs in Koka:
 
 - Docker Image: kokalang/koka
 - Docker Tag: v2.0.16

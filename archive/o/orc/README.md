@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Orc.
+The following list shares details about how we name all Sample Programs in Orc:
+
+- Extension: .orc
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.orc
+
+The following list shares details about what we're using to test all Sample Programs in Orc:
 
 - Docker Image: rzuckerm/orc
 - Docker Tag: 2.1.2-1

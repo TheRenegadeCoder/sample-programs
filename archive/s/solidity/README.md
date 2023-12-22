@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Solidity.
+The following list shares details about how we name all Sample Programs in Solidity:
+
+- Extension: .sol
+- Naming Convention: pascal
+
+For example, the "Hello World" sample would be named this:
+
+- HelloWorld.sol
+
+The following list shares details about what we're using to test all Sample Programs in Solidity:
 
 - Docker Image: rzuckerm/solidity
 - Docker Tag: 0.8.21-1

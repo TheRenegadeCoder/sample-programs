@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Shen.
+The following list shares details about how we name all Sample Programs in Shen:
+
+- Extension: .shen
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.shen
+
+The following list shares details about what we're using to test all Sample Programs in Shen:
 
 - Docker Image: rzuckerm/shen
 - Docker Tag: 0.33-1

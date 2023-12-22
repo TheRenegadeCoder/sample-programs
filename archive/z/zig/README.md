@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Zig.
+The following list shares details about how we name all Sample Programs in Zig:
+
+- Extension: .zig
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.zig
+
+The following list shares details about what we're using to test all Sample Programs in Zig:
 
 - Docker Image: ziglang/static-base
 - Docker Tag: llvm13-x86_64-1

@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Boo.
+The following list shares details about how we name all Sample Programs in Boo:
+
+- Extension: .boo
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.boo
+
+The following list shares details about what we're using to test all Sample Programs in Boo:
 
 - Docker Image: rzuckerm/boo
 - Docker Tag: 0.9.7.0-1

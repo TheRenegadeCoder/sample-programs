@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Batch.
+The following list shares details about how we name all Sample Programs in Batch:
+
+- Extension: .cmd
+- Naming Convention: pascal
+
+For example, the "Hello World" sample would be named this:
+
+- HelloWorld.cmd
+
+The following list shares details about what we're using to test all Sample Programs in Batch:
 
 - Docker Image: esolang/cmd
 - Docker Tag: latest

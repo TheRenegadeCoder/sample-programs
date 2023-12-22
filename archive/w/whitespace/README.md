@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Whitespace.
+The following list shares details about how we name all Sample Programs in Whitespace:
+
+- Extension: .ws
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.ws
+
+The following list shares details about what we're using to test all Sample Programs in Whitespace:
 
 - Docker Image: esolang/whitespace
 - Docker Tag: latest

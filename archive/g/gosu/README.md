@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Gosu.
+The following list shares details about how we name all Sample Programs in Gosu:
+
+- Extension: .gsp
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.gsp
+
+The following list shares details about what we're using to test all Sample Programs in Gosu:
 
 - Docker Image: rzuckerm/gosu
 - Docker Tag: 1.17.4-1

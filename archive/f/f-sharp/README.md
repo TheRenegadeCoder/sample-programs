@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in F#.
+The following list shares details about how we name all Sample Programs in F#:
+
+- Extension: .fs
+- Naming Convention: pascal
+
+For example, the "Hello World" sample would be named this:
+
+- HelloWorld.fs
+
+The following list shares details about what we're using to test all Sample Programs in F#:
 
 - Docker Image: fsharp
 - Docker Tag: 10-netcore
