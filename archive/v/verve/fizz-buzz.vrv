@@ -1,0 +1,17 @@
+fn fizz_buzz_line(n: Int) -> String {
+    match [n % 3, n % 5] {
+        case [0, 0]: "FizzBuzz"
+        case [0, _]: "Fizz"
+        case [_, 0]: "Buzz"
+        case _: to_string(n)
+    }
+}
+
+fn fizz_buzz(start: Int, end: Int) {
+    if not(start > end) {
+        print(fizz_buzz_line(start))
+        fizz_buzz(start + 1, end)
+    }
+}
+
+fizz_buzz(1, 100)
