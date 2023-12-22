@@ -10,11 +10,10 @@ func! FizzBuzz()
             let l:str = l:i
         endif
 
-        call append(l:i-1, l:str)
+        echo l:str
     endfor
-
-    " go to top of buffer
-    normal gg
 endfunc
 
-au BufEnter,BufReadPost * call FizzBuzz()
+func! Main()
+    call FizzBuzz()
+endfunc

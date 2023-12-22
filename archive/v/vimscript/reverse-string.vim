@@ -1,4 +1,7 @@
 func! Reverse(str)
-    let l:r = join(reverse(split(a:str, '\zs')), '')
-    call append(0, l:r)
+    return join(reverse(split(a:str, '\zs')), '')
+endfunc
+
+func! Main(...)
+    echo Reverse(a:0 > 0 ? a:1 : '')
 endfunc
