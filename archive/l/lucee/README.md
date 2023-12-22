@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Lucee.
+The following list shares details about how we name all Sample Programs in Lucee:
+
+- Extension: .cfm
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.cfm
+
+The following list shares details about what we're using to test all Sample Programs in Lucee:
 
 - Docker Image: rzuckerm/lucee
 - Docker Tag: 5.4.4.38-1

@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Nim.
+The following list shares details about how we name all Sample Programs in Nim:
+
+- Extension: .nim
+- Naming Convention: underscore
+
+For example, the "Hello World" sample would be named this:
+
+- hello_world.nim
+
+The following list shares details about what we're using to test all Sample Programs in Nim:
 
 - Docker Image: nimlang/nim
 - Docker Tag: 1.0.0-alpine

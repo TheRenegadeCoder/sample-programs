@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Formality.
+The following list shares details about how we name all Sample Programs in Formality:
+
+- Extension: .fm
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.fm
+
+The following list shares details about what we're using to test all Sample Programs in Formality:
 
 - Docker Image: rzuckerm/formality
 - Docker Tag: 2021.02.19-1

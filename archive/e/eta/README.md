@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Eta.
+The following list shares details about how we name all Sample Programs in Eta:
+
+- Extension: .hs
+- Naming Convention: pascal
+
+For example, the "Hello World" sample would be named this:
+
+- HelloWorld.hs
+
+The following list shares details about what we're using to test all Sample Programs in Eta:
 
 - Docker Image: typelead/eta
 - Docker Tag: c3d2cb6

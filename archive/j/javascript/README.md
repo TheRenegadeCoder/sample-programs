@@ -21,7 +21,7 @@ Below, you'll find a list of completed code snippets in Javascript. Code snippet
 - :white_check_mark: [Fibonacci in Javascript](https://sampleprograms.io/projects/fibonacci/javascript) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :warning: [File Input Output in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+javascript) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :white_check_mark: [Fizz Buzz in Javascript](https://sampleprograms.io/projects/fizz-buzz/javascript) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
-- :white_check_mark: [Hello World in Javascript](https://sampleprograms.io/projects/hello-world/javascript) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :warning: [Hello World in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+javascript) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :warning: [Insertion Sort in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+javascript) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :warning: [Job Sequencing in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+job+sequencing+javascript) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :warning: [Josephus Problem in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+josephus+problem+javascript) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Javascript.
+The following list shares details about how we name all Sample Programs in Javascript:
+
+- Extension: .js
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.js
+
+The following list shares details about what we're using to test all Sample Programs in Javascript:
 
 - Docker Image: node
 - Docker Tag: 11-alpine

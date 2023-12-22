@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Io.
+The following list shares details about how we name all Sample Programs in Io:
+
+- Extension: .io
+- Naming Convention: pascal
+
+For example, the "Hello World" sample would be named this:
+
+- HelloWorld.io
+
+The following list shares details about what we're using to test all Sample Programs in Io:
 
 - Docker Image: kraftdorian/iolanguage
 - Docker Tag: 2015.11.11

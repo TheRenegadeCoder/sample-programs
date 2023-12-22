@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Dg.
+The following list shares details about how we name all Sample Programs in Dg:
+
+- Extension: .dg
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.dg
+
+The following list shares details about what we're using to test all Sample Programs in Dg:
 
 - Docker Image: rzuckerm/dg
 - Docker Tag: 1.1.0-1

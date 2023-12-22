@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in F\*.
+The following list shares details about how we name all Sample Programs in F\*:
+
+- Extension: .fst
+- Naming Convention: pascal
+
+For example, the "Hello World" sample would be named this:
+
+- HelloWorld.fst
+
+The following list shares details about what we're using to test all Sample Programs in F\*:
 
 - Docker Image: rzuckerm/f-star
 - Docker Tag: 2022.01.15-1

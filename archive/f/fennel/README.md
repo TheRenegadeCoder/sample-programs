@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Fennel.
+The following list shares details about how we name all Sample Programs in Fennel:
+
+- Extension: .fnl
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.fnl
+
+The following list shares details about what we're using to test all Sample Programs in Fennel:
 
 - Docker Image: rzuckerm/fennel
 - Docker Tag: 1.3.1-1

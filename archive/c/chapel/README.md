@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Chapel.
+The following list shares details about how we name all Sample Programs in Chapel:
+
+- Extension: .chpl
+- Naming Convention: pascal
+
+For example, the "Hello World" sample would be named this:
+
+- HelloWorld.chpl
+
+The following list shares details about what we're using to test all Sample Programs in Chapel:
 
 - Docker Image: chapel/chapel
 - Docker Tag: 1.24.1

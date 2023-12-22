@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Factor.
+The following list shares details about how we name all Sample Programs in Factor:
+
+- Extension: .factor
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.factor
+
+The following list shares details about what we're using to test all Sample Programs in Factor:
 
 - Docker Image: rzuckerm/factor
 - Docker Tag: 0.99-1

@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Scala.
+The following list shares details about how we name all Sample Programs in Scala:
+
+- Extension: .scala
+- Naming Convention: pascal
+
+For example, the "Hello World" sample would be named this:
+
+- HelloWorld.scala
+
+The following list shares details about what we're using to test all Sample Programs in Scala:
 
 - Docker Image: sbtscala/scala-sbt
 - Docker Tag: eclipse-temurin-jammy-8u352-b08_1.8.3_2.13.10

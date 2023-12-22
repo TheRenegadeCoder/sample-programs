@@ -19,7 +19,7 @@ Below, you'll find a list of completed code snippets in Go. Code snippets preced
 - :warning: [Fibonacci in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+go) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :warning: [File Input Output in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+go) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :warning: [Fizz Buzz in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+go) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
-- :white_check_mark: [Hello World in Go](https://sampleprograms.io/projects/hello-world/go) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :warning: [Hello World in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+go) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :warning: [Insertion Sort in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+go) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :warning: [Job Sequencing in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+job+sequencing+go) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :warning: [Longest Common Subsequence in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+common+subsequence+go) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Go.
+The following list shares details about how we name all Sample Programs in Go:
+
+- Extension: .go
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.go
+
+The following list shares details about what we're using to test all Sample Programs in Go:
 
 - Docker Image: golang
 - Docker Tag: 1.12-alpine

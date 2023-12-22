@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Ring.
+The following list shares details about how we name all Sample Programs in Ring:
+
+- Extension: .ring
+- Naming Convention: pascal
+
+For example, the "Hello World" sample would be named this:
+
+- HelloWorld.ring
+
+The following list shares details about what we're using to test all Sample Programs in Ring:
 
 - Docker Image: esolang/ring
 - Docker Tag: latest

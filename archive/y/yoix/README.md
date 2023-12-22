@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Yoix.
+The following list shares details about how we name all Sample Programs in Yoix:
+
+- Extension: .yx
+- Naming Convention: underscore
+
+For example, the "Hello World" sample would be named this:
+
+- hello_world.yx
+
+The following list shares details about what we're using to test all Sample Programs in Yoix:
 
 - Docker Image: rzuckerm/yoix
 - Docker Tag: 2.3.1-1

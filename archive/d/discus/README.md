@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Discus.
+The following list shares details about how we name all Sample Programs in Discus:
+
+- Extension: .ds
+- Naming Convention: pascal
+
+For example, the "Hello World" sample would be named this:
+
+- HelloWorld.ds
+
+The following list shares details about what we're using to test all Sample Programs in Discus:
 
 - Docker Image: rzuckerm/discus
 - Docker Tag: 0.5.1-1

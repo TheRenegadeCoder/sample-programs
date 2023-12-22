@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Haxe.
+The following list shares details about how we name all Sample Programs in Haxe:
+
+- Extension: .hx
+- Naming Convention: pascal
+
+For example, the "Hello World" sample would be named this:
+
+- HelloWorld.hx
+
+The following list shares details about what we're using to test all Sample Programs in Haxe:
 
 - Docker Image: haxe
 - Docker Tag: 4.2-buster

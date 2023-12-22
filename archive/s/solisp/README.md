@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Solisp.
+The following list shares details about how we name all Sample Programs in Solisp:
+
+- Extension: .solisp
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.solisp
+
+The following list shares details about what we're using to test all Sample Programs in Solisp:
 
 - Docker Image: rzuckerm/solisp
 - Docker Tag: 1.1.0-2

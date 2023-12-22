@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Forth.
+The following list shares details about how we name all Sample Programs in Forth:
+
+- Extension: .fth
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.fth
+
+The following list shares details about what we're using to test all Sample Programs in Forth:
 
 - Docker Image: mtrute/gforth-container
 - Docker Tag: 0.7.9_20190627

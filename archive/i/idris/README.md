@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Idris.
+The following list shares details about how we name all Sample Programs in Idris:
+
+- Extension: .idr
+- Naming Convention: pascal
+
+For example, the "Hello World" sample would be named this:
+
+- HelloWorld.idr
+
+The following list shares details about what we're using to test all Sample Programs in Idris:
 
 - Docker Image: snazzybucket/idris2
 - Docker Tag: v0.6.0-265-gbadf1e98c

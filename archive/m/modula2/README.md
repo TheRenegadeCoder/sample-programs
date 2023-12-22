@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Modula2.
+The following list shares details about how we name all Sample Programs in Modula2:
+
+- Extension: .mod
+- Naming Convention: pascal
+
+For example, the "Hello World" sample would be named this:
+
+- HelloWorld.mod
+
+The following list shares details about what we're using to test all Sample Programs in Modula2:
 
 - Docker Image: rzuckerm/modula2
 - Docker Tag: 11.4.0-1

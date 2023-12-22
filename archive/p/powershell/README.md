@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Powershell.
+The following list shares details about how we name all Sample Programs in Powershell:
+
+- Extension: .ps1
+- Naming Convention: pascal
+
+For example, the "Hello World" sample would be named this:
+
+- HelloWorld.ps1
+
+The following list shares details about what we're using to test all Sample Programs in Powershell:
 
 - Docker Image: mcr.microsoft.com/powershell
 - Docker Tag: lts-7.2-alpine-3.14

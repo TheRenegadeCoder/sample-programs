@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Wyvern.
+The following list shares details about how we name all Sample Programs in Wyvern:
+
+- Extension: .wyv
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.wyv
+
+The following list shares details about what we're using to test all Sample Programs in Wyvern:
 
 - Docker Image: rzuckerm/wyvern
 - Docker Tag: 20180325-1

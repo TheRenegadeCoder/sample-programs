@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Gerbil.
+The following list shares details about how we name all Sample Programs in Gerbil:
+
+- Extension: .ss
+- Naming Convention: underscore
+
+For example, the "Hello World" sample would be named this:
+
+- hello_world.ss
+
+The following list shares details about what we're using to test all Sample Programs in Gerbil:
 
 - Docker Image: gerbil/gerbil
 - Docker Tag: x86_64-v0.18

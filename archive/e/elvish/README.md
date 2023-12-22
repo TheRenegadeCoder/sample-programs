@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Elvish.
+The following list shares details about how we name all Sample Programs in Elvish:
+
+- Extension: .elv
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.elv
+
+The following list shares details about what we're using to test all Sample Programs in Elvish:
 
 - Docker Image: ngslang/ngs
 - Docker Tag: v0.2.12

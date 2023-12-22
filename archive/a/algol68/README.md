@@ -50,7 +50,16 @@ Below, you'll find a list of completed code snippets in Algol68. Code snippets p
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Algol68.
+The following list shares details about how we name all Sample Programs in Algol68:
+
+- Extension: .alg
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.alg
+
+The following list shares details about what we're using to test all Sample Programs in Algol68:
 
 - Docker Image: nacyot/algol-algol68g
 - Docker Tag: apt

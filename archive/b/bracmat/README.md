@@ -55,7 +55,16 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Bracmat.
+The following list shares details about how we name all Sample Programs in Bracmat:
+
+- Extension: .bra
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.bra
+
+The following list shares details about what we're using to test all Sample Programs in Bracmat:
 
 - Docker Image: rzuckerm/bracmat
 - Docker Tag: 6.19.2-1

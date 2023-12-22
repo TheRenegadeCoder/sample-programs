@@ -50,7 +50,16 @@ Below, you'll find a list of completed code snippets in Python. Code snippets pr
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Python.
+The following list shares details about how we name all Sample Programs in Python:
+
+- Extension: .py
+- Naming Convention: underscore
+
+For example, the "Hello World" sample would be named this:
+
+- hello_world.py
+
+The following list shares details about what we're using to test all Sample Programs in Python:
 
 - Docker Image: python
 - Docker Tag: 3.7-alpine

@@ -50,7 +50,16 @@ Below, you'll find a list of completed code snippets in Euphoria. Code snippets 
 
 ## Testing
 
-The following list shares details about what we're using to test all Sample Programs in Euphoria.
+The following list shares details about how we name all Sample Programs in Euphoria:
+
+- Extension: .eu
+- Naming Convention: underscore
+
+For example, the "Hello World" sample would be named this:
+
+- hello_world.eu
+
+The following list shares details about what we're using to test all Sample Programs in Euphoria:
 
 - Docker Image: openeuphoria/euphoria
 - Docker Tag: 4.1.0
