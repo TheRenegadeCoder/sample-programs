@@ -1,20 +1,22 @@
+import error as ERR
 import cmdline-lib as CL
 
-fun even_odd(n):
-    if num-modulo(n, 2) == 0:
-        "Even"
-    else:
-        "Odd"
-    end
+fun usage():
+  block:
+    print("Usage: please input a number\n")
+    raise(ERR.exit-quiet(0))
+  end
 end
 
-usage = "Usage: please input a number\n"
 args = CL.command-line-arguments()
-if args.length() < 2:
-    print(usage)
-else:
-    cases(Option) string-to-number(args.get(1)):
-        | none => print(usage)
-        | some(n) => print(even_odd(n) + "\n")
-    end
+when args.length() < 2:
+  usage()
+end
+
+cases(Option) string-to-number(args.get(1)):
+  | none => usage()
+  | some(n) =>
+      if num-modulo(n, 2) == 0: print("Even\n")
+      else: print("Odd\n")
+      end
 end
