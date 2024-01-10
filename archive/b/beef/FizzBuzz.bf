@@ -21,7 +21,7 @@ class Program
 
             if (line == "")
             {
-                line.Append(i);
+                i.ToString(line);
             }
 
             Console.WriteLine(line);
