@@ -4,12 +4,12 @@ namespace ReverseString;
 
 class Program
 {
-    public static void ReverseString(String str, ref String reversed)
+    public static void ReverseString(StringView str, ref String reversed)
     {
         reversed.Clear();
-        for (int i = String.StrLen(str) - 1; i >= 0; i--)
+        for (int i = str.Length - 1; i >= 0; i--)
         {
-            reversed += str.Substring(i, 1);
+            reversed += str[i];
         }
     }
 
