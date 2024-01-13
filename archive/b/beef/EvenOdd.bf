@@ -18,7 +18,7 @@ class Program
 
         // For some reason T.Parse does not treat a sign without a number is not an error.
         // Also, for some reason T.Parse does not treat a single quote as an invalid character.
-        if (str == "-" || str == "+" || str.Contains('\''))
+        if (trimmedStr == "-" || trimmedStr == "+" || trimmedStr.Contains('\''))
         {
             return .Err;
         }
