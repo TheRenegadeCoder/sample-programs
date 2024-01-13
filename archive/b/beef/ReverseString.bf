@@ -7,6 +7,7 @@ class Program
     public static void ReverseString(StringView str, ref String reversed)
     {
         reversed.Clear();
+        reversed.Reserve(str.Length);
         for (int i = str.Length - 1; i >= 0; i--)
         {
             reversed += str[i];
