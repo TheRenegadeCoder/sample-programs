@@ -10,55 +10,20 @@ class Program
         Environment.Exit(0);
     }
 
-    public static Result<int32> ParseInt(StringView str)
+    public static Result<T> ParseInt<T>(StringView str)
+    where T : IParseable<T>
     {
         StringView trimmedStr = scope String(str);
         trimmedStr.Trim();
 
-        // Do some initial validation to overcome some bugs in Beef's Parse function
-        bool valid = false;
-        for (int i < trimmedStr.Length)
-        {
-            if ((trimmedStr[i] == '-' || trimmedStr[i] == '+') && (i == 0))
-            {
-                continue;
-            }
-
-            if (trimmedStr[i] >= '0' && trimmedStr[i] <= '9')
-            {
-                valid = true;
-            }
-            else
-            {
-                valid = false;
-                break;
-            }
-        }
-
-        if (!valid)
+        // For some reason T.Parse does not treat a sign without a number is not an error.
+        // Also, for some reason T.Parse does not treat a single quote as an invalid character.
+        if (str == "-" || str == "+" || str.Contains('\''))
         {
             return .Err;
         }
 
-        switch (Int32.Parse(trimmedStr))
-        {
-            case .Ok(let val):
-                return .Ok(val);
-            case .Err:
-                return .Err;
-        }
-    }
-
-    public static String EvenOdd(int32 val)
-    {
-        if ((val % 2) == 0)
-        {
-            return "Even";
-        }
-        else
-        {
-            return "Odd";
-        }
+        return T.Parse(trimmedStr);
     }
 
     public static int Main(String[] args)
@@ -68,10 +33,10 @@ class Program
             Usage();
         }
 
-        switch (ParseInt(args[0]))
+        switch (ParseInt<int32>(args[0]))
         {
             case .Ok(let val):
-                Console.WriteLine(EvenOdd(val));
+                Console.WriteLine((val % 2 == 0) ? "Even" : "Odd");
             case .Err:
                 Usage();
         }
