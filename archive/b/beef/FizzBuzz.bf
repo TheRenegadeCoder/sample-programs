@@ -6,9 +6,9 @@ class Program
 {
     public static int Main(String[] args)
     {
-        for (var i in 1...100)
+        for (int i in 1...100)
         {
-            let line = scope String();
+            String line = scope String();
             if ((i % 3) == 0)
             {
                 line.Append("Fizz");
