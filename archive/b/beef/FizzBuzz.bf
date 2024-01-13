@@ -19,7 +19,7 @@ class Program
                 line.Append("Buzz");
             }
 
-            if (line == "")
+            if (line.Length == 0)
             {
                 i.ToString(line);
             }
