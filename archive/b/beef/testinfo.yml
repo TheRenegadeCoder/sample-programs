@@ -4,7 +4,7 @@ folder:
 
 container:
   image: "rzuckerm/beef"
-  tag: "0.43.4-2"
+  tag: "0.43.5a1-3"
   build: |
     sh -c "BeefBuild -new -workspace={{ source.name }} && \
       cp {{ source.name }}{{ source.extension }} {{ source.name }}/src/Program.bf && \
