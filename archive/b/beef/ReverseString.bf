@@ -8,9 +8,9 @@ class Program
     {
         reversed.Clear();
         reversed.Reserve(str.Length);
-        for (int i in (0..<str.Length).Reversed)
+        for (char8 ch in str.Reversed)
         {
-            reversed += str[i];
+            reversed += ch;
         }
     }
 
