@@ -31,19 +31,17 @@ class Program
         where float : operator explicit T
     {
         bool isPrime = false;
-        if (val == (.)2)
+        if (val == (T)2)
         {
             isPrime = true;
         }
-        else if (val >= (.)3 && (val % (.)2) != (.)0)
+        else if (val >= (T)3 && (val % (T)2) != (.)0)
         {
             isPrime = true;
-            T q = (.)Math.Sqrt((float)val);
-
-            // k += (.)2 causes the compiler to crash :(
-            for (T k = (.)3; k <= q; k = k + (.)2)
+            T q = (T)Math.Sqrt((float)val);
+            for (T k = (T)3; k <= q; k += (T)2)
             {
-                if ((val % k) == (.)0)
+                if ((val % k) == (T)0)
                 {
                     isPrime = false;
                     break;
