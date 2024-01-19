@@ -35,7 +35,7 @@ class Program
         {
             isPrime = true;
         }
-        if (val >= (.)3 && (val % (.)2) != (.)0)
+        else if (val >= (.)3 && (val % (.)2) != (.)0)
         {
             isPrime = true;
             T q = (.)Math.Sqrt((float)val);
