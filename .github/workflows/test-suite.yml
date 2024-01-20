@@ -27,7 +27,7 @@ jobs:
         python-version: ["3.11"]
         poetry-version: ["1.7.1"]
         os: [ubuntu-latest]
-        num_batches: [4]
+        num_batches: [6]
 
     runs-on: ${{ matrix.os }}
     steps:
