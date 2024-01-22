@@ -16,9 +16,8 @@ class Program
         StringView trimmedStr = scope String(str);
         trimmedStr.Trim();
 
-        // For some reason T.Parse does not treat a sign without a number as an error.
-        // Also, for some reason T.Parse does not treat a single quote as an invalid character.
-        if (trimmedStr == "-" || trimmedStr == "+" || trimmedStr.Contains('\''))
+        // T.Parse ignores single quotes since they are treat as digit separators -- e.g. 1'000
+        if (trimmedStr.Contains('\''))
         {
             return .Err;
         }
