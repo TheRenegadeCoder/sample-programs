@@ -76,18 +76,18 @@
 3002 REM - A contains array to sort
 3003 REM - NA contains size of array
 3004 REM Outputs: A contains sorted array
-3010 I = -1
-3020 I = I + 1
-3030 IF I >= (NA - 1) THEN GOTO 3130
-3040 SW = 0: REM Indicate not swapped
-3050 FOR J = I + 1 TO NA - 1
-3060     IF A(I) <= A(J) THEN GOTO 3110
-3070     T = A(I)
-3080     A(I) = A(J)
-3090     A(J) = T
-3100     SW = 1: REM Indicate swapped
-3110 NEXT J
-3120 IF SW <> 0 THEN GOTO 3020
+3010 I = NA
+3020 IF I < 1 THEN GOTO 3130
+3030 NI = 0
+3040 FOR J = 1 TO I - 1
+3050     IF A(J - 1) <= A(J) THEN GOTO 3100
+3060     T = A(J)
+3070     A(J) = A(J - 1)
+3080     A(J - 1) = T
+3090     NI = J
+3100 NEXT J
+3110 I = NI
+3120 GOTO 3020
 3130 RETURN
 3500 REM Display array
 3501 REM A contains array
