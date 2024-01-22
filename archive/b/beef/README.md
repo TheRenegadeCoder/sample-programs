@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Beef! To find documentation related to the Beef code in this repo, look [here.](https://sampleprograms.io/languages/beef)
 
-## Sample Programs List - 10/37 :thinking:
+## Sample Programs List - 18/37 :thinking:
 
 In this section, we feature a list of completed and missing programs in Beef. See above for the current amount of completed programs in Beef. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -14,12 +14,20 @@ Below, you'll find a list of completed code snippets in Beef. Code snippets prec
 - :warning: [Capitalize in Beef](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+beef) [[Requirements](https://sampleprograms.io/projects/capitalize)]
 - :warning: [Duplicate Character Counter in Beef](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+beef) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :warning: [Even Odd in Beef](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+beef) [[Requirements](https://sampleprograms.io/projects/even-odd)]
+- :warning: [Factorial in Beef](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+beef) [[Requirements](https://sampleprograms.io/projects/factorial)]
+- :warning: [Fibonacci in Beef](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+beef) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :warning: [File Input Output in Beef](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+beef) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :warning: [Fizz Buzz in Beef](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+beef) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :warning: [Hello World in Beef](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+beef) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :warning: [Josephus Problem in Beef](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+josephus+problem+beef) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
+- :warning: [Longest Word in Beef](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+beef) [[Requirements](https://sampleprograms.io/projects/longest-word)]
+- :warning: [Palindromic Number in Beef](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+beef) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
+- :warning: [Prime Number in Beef](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+beef) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :warning: [Quine in Beef](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+beef) [[Requirements](https://sampleprograms.io/projects/quine)]
 - :warning: [Remove All Whitespace in Beef](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+remove+all+whitespace+beef) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :warning: [Reverse String in Beef](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+beef) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
+- :warning: [Roman Numeral in Beef](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+beef) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
+- :warning: [Rot13 in Beef](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+beef) [[Requirements](https://sampleprograms.io/projects/rot13)]
 
 ### Missing Programs
 
@@ -30,25 +38,17 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,convex+hull&template=code-snippet-request.md&title=Add+Convex+Hull+in+Beef) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :x: [Depth First Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,depth+first+search&template=code-snippet-request.md&title=Add+Depth+First+Search+in+Beef) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,dijkstra&template=code-snippet-request.md&title=Add+Dijkstra+in+Beef) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
-- :x: [Factorial](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,factorial&template=code-snippet-request.md&title=Add+Factorial+in+Beef) [[Requirements](https://sampleprograms.io/projects/factorial)]
-- :x: [Fibonacci](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fibonacci&template=code-snippet-request.md&title=Add+Fibonacci+in+Beef) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fraction+math&template=code-snippet-request.md&title=Add+Fraction+Math+in+Beef) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :x: [Insertion Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,insertion+sort&template=code-snippet-request.md&title=Add+Insertion+Sort+in+Beef) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,job+sequencing&template=code-snippet-request.md&title=Add+Job+Sequencing+in+Beef) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
-- :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,josephus+problem&template=code-snippet-request.md&title=Add+Josephus+Problem+in+Beef) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :x: [Linear Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,linear+search&template=code-snippet-request.md&title=Add+Linear+Search+in+Beef) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :x: [Longest Common Subsequence](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+common+subsequence&template=code-snippet-request.md&title=Add+Longest+Common+Subsequence+in+Beef) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
 - :x: [Longest Palindromic Substring](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+palindromic+substring&template=code-snippet-request.md&title=Add+Longest+Palindromic+Substring+in+Beef) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
-- :x: [Longest Word](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+word&template=code-snippet-request.md&title=Add+Longest+Word+in+Beef) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+array+rotation&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+Beef) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+subarray&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+Beef) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :x: [Merge Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,merge+sort&template=code-snippet-request.md&title=Add+Merge+Sort+in+Beef) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+Beef) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
-- :x: [Palindromic Number](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,palindromic+number&template=code-snippet-request.md&title=Add+Palindromic+Number+in+Beef) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
-- :x: [Prime Number](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,prime+number&template=code-snippet-request.md&title=Add+Prime+Number+in+Beef) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :x: [Quick Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,quick+sort&template=code-snippet-request.md&title=Add+Quick+Sort+in+Beef) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
-- :x: [Roman Numeral](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,roman+numeral&template=code-snippet-request.md&title=Add+Roman+Numeral+in+Beef) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
-- :x: [Rot13](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,rot13&template=code-snippet-request.md&title=Add+Rot13+in+Beef) [[Requirements](https://sampleprograms.io/projects/rot13)]
 - :x: [Selection Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,selection+sort&template=code-snippet-request.md&title=Add+Selection+Sort+in+Beef) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 - :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+Beef) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,transpose+matrix&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+Beef) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
@@ -67,7 +67,7 @@ For example, the "Hello World" sample would be named this:
 The following list shares details about what we're using to test all Sample Programs in Beef:
 
 - Docker Image: rzuckerm/beef
-- Docker Tag: 0.43.5a2-4
+- Docker Tag: 0.43.5a4-6
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 
