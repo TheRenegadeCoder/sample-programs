@@ -4,9 +4,9 @@ folder:
 
 container:
   image: "rzuckerm/beef"
-  tag: "0.43.5a4-6"
+  tag: "0.43.5a5-7"
   build: |
     sh -c "BeefBuild -new -workspace={{ source.name }} && \
       cp {{ source.name }}{{ source.extension }} {{ source.name }}/src/Program.bf && \
-      BeefBuild -workspace={{ source.name }} -config=Release"
+      beef_build_workaround -- -workspace={{ source.name }} -config=Release"
   cmd: "{{ source.name }}/build/Release_Linux64/{{ source.name }}/{{ source.name }}"
