@@ -50,15 +50,6 @@ class Program
         return .Ok;
     }
 
-    public static void SleepThread(int32 sleepVal, List<int32> sleepArr, Monitor monitor)
-    {
-        Thread.Sleep(sleepVal * 1000);
-        using (monitor.Enter())
-        {
-            sleepArr.Add(sleepVal);
-        }
-    }
-
     public static void SleepSort(List<int32> arr)
     {
         // Initialize temporary array to hold sleep values
@@ -69,8 +60,12 @@ class Program
         List<Thread> threads = scope .();
         for (int32 sleepVal in arr)
         {
-            Thread thread = new .(new () => {
-                SleepThread(sleepVal, tempArr, monitor); 
+            Thread thread = new .(scope [=sleepVal, &tempArr, &monitor] () => {
+                Thread.Sleep(sleepVal * 1000);
+                using (monitor.Enter())
+                {
+                    tempArr.Add(sleepVal);
+                }
             });
             threads.Add(thread);
             thread.Start(false);
