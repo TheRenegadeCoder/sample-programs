@@ -21,13 +21,7 @@ class Node<T>
 
 class Graph<T>
 {
-    public List<Node<T>> mVertices = new .();
-
-    public ~this()
-    {
-        mVertices.ClearAndDeleteItems();
-        delete mVertices;
-    }
+    public List<Node<T>> mVertices = new .() ~ DeleteContainerAndItems!(_);
 
     public void AddNode(T id)
     {
