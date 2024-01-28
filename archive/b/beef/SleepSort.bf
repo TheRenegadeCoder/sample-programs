@@ -60,7 +60,7 @@ class Program
         List<Thread> threads = scope .();
         for (int32 sleepVal in arr)
         {
-            Thread thread = new .(scope [=sleepVal, &tempArr, &monitor] () => {
+            Thread thread = new .(new [=sleepVal, &tempArr, &monitor] () => {
                 Thread.Sleep(sleepVal * 1000);
                 using (monitor.Enter())
                 {
