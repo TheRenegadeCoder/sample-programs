@@ -54,7 +54,7 @@ class Program
     where int : operator T <=> T
     {
         int n = arr.Count;
-        for (int i = 1; i < n; i++)
+        for (int i in 1..< n)
         {
             T temp = arr[i];
             int j = i;
