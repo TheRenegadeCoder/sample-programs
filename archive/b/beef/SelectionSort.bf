@@ -57,7 +57,7 @@ class Program
         for (int i < nMinus1)
         {
             int jMin = i;
-            for (int j = i + 1; j <= nMinus1; j++)
+            for (int j in (i + 1)...nMinus1)
             {
                 if (arr[j] < arr[jMin])
                 {
