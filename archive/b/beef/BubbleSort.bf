@@ -57,7 +57,7 @@ class Program
         while (n > 0)
         {
             int newN = 0;
-            for (int i = 1; i < n; i++)
+            for (int i in 1..< n)
             {
                 if (arr[i - 1] > arr[i])
                 {
