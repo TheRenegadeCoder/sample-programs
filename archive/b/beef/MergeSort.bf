@@ -86,7 +86,7 @@ class Program
     {
         int i = iBegin;
         int j = iMid;
-        for (int k = iBegin; k < iEnd; k++)
+        for (int k in iBegin..< iEnd)
         {
             // If there are elements from the left side and there are still
             // elements on the right sight side or the left side element
