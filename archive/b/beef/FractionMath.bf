@@ -42,11 +42,6 @@ struct Fraction
         return a;
     }
 
-    public static operator Fraction(int32[2] arr)
-    {
-        return .(arr[0], arr[1]);
-    }
-
     public static Fraction operator +(Fraction lhs, Fraction rhs)
     {
         // n1/d1 + n2/d2 = (n1*d2 + n2*d1) / (d1*d2)
