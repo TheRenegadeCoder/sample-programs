@@ -3,7 +3,7 @@ using System.Collections;
 
 namespace FractionMath;
 
-struct Fraction
+struct Fraction : IParseable<Fraction>
 {
     int32 mNum;
     int32 mDen;
@@ -40,6 +40,34 @@ struct Fraction
         }
 
         return a;
+    }
+
+    public static Result<Fraction> Parse(StringView str)
+    {
+        int32[] arr = scope int32[2] (0, 1);
+        int index = 0;
+        for (StringView part in str.Split('/', 2))
+        {
+            StringView trimmedStr = scope String(part);
+            trimmedStr.Trim();
+
+            // T.Parse ignores single quotes since they are treat as digit separators -- e.g. 1'000
+            if (trimmedStr.Contains('\''))
+            {
+                return .Err;
+            }
+
+            switch (Int32.Parse(trimmedStr))
+            {
+                case .Ok(out arr[index]):
+                case .Err:
+                    return .Err;
+            }
+
+            index++;
+        }
+
+        return .Ok(Fraction(arr[0], arr[1]));
     }
 
     public static Fraction operator +(Fraction lhs, Fraction rhs)
@@ -87,40 +115,6 @@ class Program
         Environment.Exit(0);
     }
 
-    public static Result<T> ParseInt<T>(StringView str)
-    where T : IParseable<T>
-    {
-        StringView trimmedStr = scope String(str);
-        trimmedStr.Trim();
-
-        // T.Parse ignores single quotes since they are treat as digit separators -- e.g. 1'000
-        if (trimmedStr.Contains('\''))
-        {
-            return .Err;
-        }
-
-        return T.Parse(trimmedStr);
-    }
-
-    public static Result<Fraction> ParseFraction(StringView str)
-    {
-        int32[] arr = scope int32[2] (0, 1);
-        int index = 0;
-        for (StringView part in str.Split('/', 2))
-        {
-            switch (ParseInt<int32>(part))
-            {
-                case .Ok(out arr[index]):
-                case .Err:
-                    return .Err;
-            }
-
-            index++;
-        }
-
-        return .Ok(Fraction(arr[0], arr[1]));
-    }
-
     public enum FractionResult
     {
         case Frac(Fraction f);
@@ -165,7 +159,7 @@ class Program
         }
 
         Fraction f1 = ?;
-        switch (ParseFraction(args[0]))
+        switch (Fraction.Parse(args[0]))
         {
             case .Ok(out f1):
             case .Err:
@@ -175,7 +169,7 @@ class Program
         String op = scope String(args[1]);
 
         Fraction f2 = ?;
-        switch (ParseFraction(args[2]))
+        switch (Fraction.Parse(args[2]))
         {
             case .Ok(out f2):
             case .Err:
