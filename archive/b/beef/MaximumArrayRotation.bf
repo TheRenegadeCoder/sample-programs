@@ -90,7 +90,7 @@ class Program
     //
     // - The above equals W(k)
     public static T MaximumArrayRotation<T>(List<T> arr)
-    where T : IInteger, operator explicit int, operator T * T, operator T + T, operator T - T
+    where T : operator explicit int, operator T * T, operator T + T, operator T - T
     where int : operator T <=> T
     {
         T s = (T)0;
