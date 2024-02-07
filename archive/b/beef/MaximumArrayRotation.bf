@@ -106,7 +106,7 @@ class Program
         for (T val in arr[...^2])
         {
             w += (T)n * val - s;
-            wmax = (w > wmax) ? w : wmax;
+            wmax = Math.Max<T>(w, wmax);
         }
 
         return wmax;
