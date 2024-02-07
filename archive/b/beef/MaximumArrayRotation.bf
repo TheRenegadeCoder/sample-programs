@@ -93,8 +93,8 @@ class Program
     where T : operator explicit int, operator T * T, operator T + T, operator T - T
     where int : operator T <=> T
     {
-        T s = (T)0;
-        T w = (T)0;
+        T s = default(T);
+        T w = default(T);
         int n = arr.Count;
         for (int i < n)
         {
