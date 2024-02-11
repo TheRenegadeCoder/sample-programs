@@ -52,11 +52,11 @@ class Program
     // Find maximum subarray using Kadane's algorithm.
     // Source: https://en.wikipedia.org/wiki/Maximum_subarray_problem#No_empty_subarrays_admitted
     public static T MaximumSubarray<T>(List<T> arr)
-    where T : operator explicit int, operator T + T
+    where T : operator explicit int, operator T + T, IMinMaxValue<T>
     where int : operator T <=> T
     {
         bool firstVal = true;
-        T bestSum = ?;
+        T bestSum = T.MinValue;
         T currentSum = default(T);
         for (T val in arr)
         {
