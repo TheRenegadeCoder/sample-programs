@@ -49,7 +49,7 @@ class Program
         return .Ok;
     }
 
-    // Source: https://en.wikipedia.org/wiki/Longest_common_subsequence#Example_in_C#
+    // Source: https://en.wikipedia.org/wiki/Longest_common_subsequence#Computing_the_length_of_the_LCS
     //
     // However, instead of storing lengths, an index to the subsequence is stored
     public static void LongestCommonSubsequence<T>(List<T> arr1, List<T> arr2, List<T> result)
