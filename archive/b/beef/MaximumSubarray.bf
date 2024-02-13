@@ -55,14 +55,12 @@ class Program
     where T : operator explicit int, operator T + T, IMinMaxValue<T>
     where int : operator T <=> T
     {
-        bool firstVal = true;
         T bestSum = T.MinValue;
         T currentSum = default(T);
         for (T val in arr)
         {
             currentSum = val + Math.Max<T>(default(T), currentSum);
-            bestSum = (firstVal) ? currentSum : Math.Max<T>(currentSum, bestSum);
-            firstVal = false;
+            bestSum = Math.Max<T>(currentSum, bestSum);
         }
 
         return bestSum;
