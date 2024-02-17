@@ -129,7 +129,7 @@ class Program
         switch (ParseInt<int>(args[1]))
         {
             case .Ok(out rows):
-                if (cols < 1)
+                if (rows < 1)
                 {
                     Usage();
                 }
