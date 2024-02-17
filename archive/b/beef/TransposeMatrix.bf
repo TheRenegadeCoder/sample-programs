@@ -28,21 +28,22 @@ class Matrix<T>
     public void ShowMatrixAsList()
     {
         bool firstValue = true;
+        String line = scope .();
         for (int i < mRows)
         {
             for (int j < mCols)
             {
                 if (!firstValue)
                 {
-                    Console.Write(", ");
+                    line += ", ";
                 }
 
-                Console.Write(mMatrix[i, j]);
+                line.AppendF("{}", mMatrix[i, j]);
                 firstValue = false;
             }
         }
 
-        Console.WriteLine();
+        Console.WriteLine(line);
     }
 
     public void Transpose()
