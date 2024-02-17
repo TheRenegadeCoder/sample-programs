@@ -27,19 +27,17 @@ class Matrix<T>
 
     public void ShowMatrixAsList()
     {
-        bool firstValue = true;
         String line = scope .();
         for (int i < mRows)
         {
             for (int j < mCols)
             {
-                if (!firstValue)
+                if (!line.IsEmpty)
                 {
                     line += ", ";
                 }
 
                 line.AppendF("{}", mMatrix[i, j]);
-                firstValue = false;
             }
         }
 
