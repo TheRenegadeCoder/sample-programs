@@ -92,7 +92,7 @@ class Program
     // Find Convex Hull using Jarvis' algorithm
     // Source: https://www.geeksforgeeks.org/convex-hull-using-jarvis-algorithm-or-wrapping/
     public static void ConvexHull<T>(PointsList<T> points, PointsList<T> hullPoints)
-    where T : IMinMaxValue<T>, operator T - T, operator T * T
+    where T : operator T - T, operator T * T
     where int : operator T <=> T
     {
         int n = points.Count;
