@@ -40,6 +40,8 @@ where int : operator T <=> T
         mDeadline = deadline;
     }
 
+    public bool IsAvailable => mJobId < 1;
+
     static public int operator <=>(JobInfo<T> lhs, JobInfo<T> rhs)
     {
         // Reverse order of compare so that it is in descending order by profit
@@ -157,7 +159,7 @@ class Program
         {
             for (int j in (0..<job.mDeadline).Reversed)
             {
-                if (slots[j].mJobId < 1)
+                if (slots[j].IsAvailable)
                 {
                     slots[j] = job;
                     break;
