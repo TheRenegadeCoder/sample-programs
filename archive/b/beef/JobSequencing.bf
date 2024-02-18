@@ -26,7 +26,6 @@ namespace System.Collections
 namespace JobSequencing;
 
 struct JobInfo<T>
-where T : operator T + T
 where int : operator T <=> T
 {
     public int mJobId;
