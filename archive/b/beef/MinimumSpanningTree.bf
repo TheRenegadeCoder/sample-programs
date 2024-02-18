@@ -204,7 +204,7 @@ class Program
         List<int32> weights = scope .();
         int numWeights = ?;
         int numVertices = ?;
-        switch (ParseIntList(args[0], weights))
+        switch (ParseIntList<int32>(args[0], weights))
         {
             case .Ok:
                 numWeights = weights.Count;
