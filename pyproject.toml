@@ -4,6 +4,7 @@ version = "2023.05.04"
 description = "Sample Programs in Every Programming Language"
 readme = "README.md"
 license = "MIT"
+package-mode = false
 
 # Initiator of the collection
 authors = [

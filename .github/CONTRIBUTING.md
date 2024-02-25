@@ -305,10 +305,12 @@ To run the tests locally, **you will need the following dependencies**:
   automatically generate consistent, stable build/test environments.
 - **Python 3.8+**: our build system is constructed with Python given that
   testing is built with glotter, a Python testing library that leverages docker. 
-- **Poetry**: our build system is managed and versioned using Poetry.
+- **Poetry**: our build system is managed and versioned using Poetry. Make sure
+  to use version **1.8.0** or later. If you are using an older version, please
+  update to the latest.
 
 With all three installed, the remaining dependencies can be installed using
-`poetry install --no-root`. After that, running the tests is a matter of running
+`poetry install`. After that, running the tests is a matter of running
 glotter directly as follows:
 
 ```sh
