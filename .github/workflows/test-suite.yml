@@ -25,13 +25,13 @@ jobs:
       fail-fast: true
       matrix:
         python-version: ["3.11"]
-        poetry-version: ["1.7.1"]
+        poetry-version: ["1.8.0"]
         os: [ubuntu-latest]
         num_batches: [6]
 
     runs-on: ${{ matrix.os }}
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -39,12 +39,12 @@ jobs:
         python-version: ${{ matrix.python-version }}
 
     - name: Run Poetry Image
-      uses: abatilo/actions-poetry@v2
+      uses: abatilo/actions-poetry@v3
       with:
         poetry-version: ${{ matrix.poetry-version }}
         
     - name: Install Dependencies
-      run: poetry install --no-root
+      run: poetry install
         
     - name: Download Docker images, Test All Sample Programs, Remove Docker Images
       run: poetry run glotter batch ${{ matrix.num_batches }}  --parallel --remove
