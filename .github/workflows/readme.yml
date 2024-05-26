@@ -18,7 +18,7 @@ jobs:
       fail-fast: true
       matrix:
         python-version: ["3.11"]
-        poetry-version: ["1.8.2"]
+        poetry-version: ["1.8.3"]
         os: [ubuntu-latest]
 
     runs-on: ${{ matrix.os }}
