@@ -3,6 +3,6 @@ folder:
   naming: "hyphen"
 
 container:
-  image: "nacyot/algol-algol68g"
-  tag: "apt"
+  image: "rzuckerm/algol68"
+  tag: "2.8.4-1"
   cmd: "a68g {{ source.name }}{{ source.extension }} -"
