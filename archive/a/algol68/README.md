@@ -61,8 +61,8 @@ For example, the "Hello World" sample would be named this:
 
 The following list shares details about what we're using to test all Sample Programs in Algol68:
 
-- Docker Image: nacyot/algol-algol68g
-- Docker Tag: apt
+- Docker Image: rzuckerm/algol68
+- Docker Tag: 2.8.4-1
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 
