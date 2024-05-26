@@ -3,6 +3,6 @@ folder:
   naming: "hyphen"
 
 container:
-  image: "cromo/moonscript"
-  tag: "latest"
+  image: "adamfgreen/moonscript"
+  tag: "0.4"
   cmd: "moon {{ source.name }}{{ source.extension }}"
