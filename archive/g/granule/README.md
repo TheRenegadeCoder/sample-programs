@@ -67,7 +67,7 @@ For example, the "Hello World" sample would be named this:
 The following list shares details about what we're using to test all Sample Programs in Granule:
 
 - Docker Image: rzuckerm/granule
-- Docker Tag: 0.9.4.0-3
+- Docker Tag: 0.9.5.0-4
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 
