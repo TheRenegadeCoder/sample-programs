@@ -4,10 +4,5 @@ folder:
 
 container:
   image: "rzuckerm/granule"
-  tag: "0.9.4.0-3"
-  # Work-around for https://github.com/granule-project/granule/issues/230
-  build: |
-    sh -c '(echo "#!/bin/sh"; \
-      echo "gr --no-info {{ source.name }}{{ source.extension }} \"\$@\" | issue-230-workaround" \
-      ) >{{ source.name }}'
-  cmd: "sh ./{{ source.name }}"
+  tag: "0.9.5.0-4"
+  cmd: "gr --no-info --no-print-return-value {{ source.name }}{{ source.extension }}"
