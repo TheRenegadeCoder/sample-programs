@@ -3,8 +3,8 @@ folder:
   naming: "hyphen"
 
 container:
-  image: "huntprod/asm"
-  tag: "latest"
+  image: "cyberdojofoundation/nasm"
+  tag: "06f3b60"
   # We need to both assemble and link the code.
   # Using the sh command is necessary to run multiple commands,
   # as Docker will not do any parsing and will pass the && as an actual argument
