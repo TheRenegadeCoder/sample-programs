@@ -66,8 +66,8 @@ For example, the "Hello World" sample would be named this:
 
 The following list shares details about what we're using to test all Sample Programs in X86 64:
 
-- Docker Image: huntprod/asm
-- Docker Tag: latest
+- Docker Image: cyberdojofoundation/nasm
+- Docker Tag: 06f3b60
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 
