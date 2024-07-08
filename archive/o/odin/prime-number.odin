@@ -1,5 +1,6 @@
 package main
 
+
 import "core:fmt"
 import "core:math"
 import "core:os"
@@ -24,6 +25,7 @@ usage :: proc() {
 prime_numbers :: proc(args : []string) {
     n: i64
     ok: bool
+	// Get command line argument as string
 	args := os.args
 	if len(args) < 2 {
 		usage()
