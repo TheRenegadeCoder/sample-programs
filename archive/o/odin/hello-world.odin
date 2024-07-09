@@ -2,6 +2,6 @@ package main;
 
 import "core:fmt";
 
-helloworld :: proc() {
+main :: proc() {
   fmt.println("Hello, World!");
 }
