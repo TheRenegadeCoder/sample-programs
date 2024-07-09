@@ -46,7 +46,3 @@ prime_numbers :: proc(args : []string) {
 		fmt.println("composite")
 	}
 }
-// uncomment to run file locally
-// main :: proc() {
-//     prime_numbers(os.args)
-// }
