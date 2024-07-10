@@ -21,7 +21,6 @@ is_prime :: proc(n: i64) -> bool {
 	return true
 }
 
-
 usage :: proc() {
 	fmt.eprintln("Usage: please input a non-negative integer")
 }
@@ -50,7 +49,6 @@ prime_numbers :: proc(args : []string) {
 		fmt.println("composite")
 	}
 }
-
 
 main :: proc() {
     prime_numbers(os.args)
