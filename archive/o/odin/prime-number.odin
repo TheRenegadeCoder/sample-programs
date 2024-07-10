@@ -10,6 +10,9 @@ is_prime :: proc(n: i64) -> bool {
 	if n <= 1 {
 		return false
 	}
+	if n == 2 {
+		return true
+	}
 	for i in 2..=i64(math.sqrt(f32(n)) + 1) {
 		if n % i == 0 {
 			return false
