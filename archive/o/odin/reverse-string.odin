@@ -11,3 +11,11 @@ reverse_string :: proc(str : string) {
     }
     fmt.println(strings.to_string(sb))
 }
+
+main :: proc() {
+    if len(os.args) < 2 {
+        fmt.eprintln("Usage: please input a string")
+        return
+    }
+    reverse_string(os.args[1])
+}
