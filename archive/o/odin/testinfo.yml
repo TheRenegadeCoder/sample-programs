@@ -6,4 +6,4 @@ container:
   image: "yeongjukang/odin"
   tag: "alpine-dev-2022-08"
   build: "odin build {{ source.name }}{{ source.extension }} -file"
-  cmd: "./{{ source.name }}"
+  cmd: "./{{ source.name }}.exe"
