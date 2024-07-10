@@ -46,3 +46,7 @@ prime_numbers :: proc(args : []string) {
 		fmt.println("composite")
 	}
 }
+
+main :: proc() {
+    prime_numbers(os.args)
+}
