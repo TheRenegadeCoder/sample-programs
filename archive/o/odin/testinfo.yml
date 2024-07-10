@@ -4,6 +4,6 @@ folder:
 
 container:
   image: "yeongjukang/odin"
-  tag: "alpine-dev-2022-08"
+  tag: "dev-2024-05"
   build: "odin build {{ source.name }}{{ source.extension }} -file -out:{{ source.name }}"
   cmd: "./{{ source.name }}"
