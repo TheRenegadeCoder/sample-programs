@@ -26,11 +26,7 @@ write_file :: proc(filepath: string) {
 }
 
 main :: proc() {
-    if len(os.args) < 2 {
-        fmt.println("Usage: please input a filepath")
-        return
-    }
-    filepath := os.args[1]
-    write_file(filepath)
-    read_file(filepath)
+    
+    write_file("output.txt")
+    read_file("output.txt")
 }
