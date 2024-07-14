@@ -31,5 +31,5 @@ get_longest_word :: proc (word: string) -> int {
 }
 
 usage :: proc() {
-    fmt.eprintln("Usage: please input a string")
+    fmt.eprintln("Usage: please provide a string")
 }
