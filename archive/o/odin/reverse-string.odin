@@ -12,13 +12,8 @@ reverse_string :: proc(str : string) {
     fmt.println(strings.to_string(sb))
 }
 
-usage :: proc () {
-    fmt.eprintln("Usage: please input a string")
-}
-
 main :: proc() {
     if len(os.args) < 2 {
-        usage()
         return
     }
     reverse_string(os.args[1])
