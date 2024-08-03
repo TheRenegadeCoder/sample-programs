@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Odin! To find documentation related to the Odin code in this repo, look [here.](https://sampleprograms.io/languages/odin)
 
-## Sample Programs List - 5/37 :disappointed:
+## Sample Programs List - 6/37 :disappointed:
 
 In this section, we feature a list of completed and missing programs in Odin. See above for the current amount of completed programs in Odin. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -13,6 +13,7 @@ Below, you'll find a list of completed code snippets in Odin. Code snippets prec
 - :warning: [Even Odd in Odin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+odin) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :warning: [File Input Output in Odin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+odin) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :warning: [Hello World in Odin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+odin) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :warning: [Longest Word in Odin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+odin) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :warning: [Prime Number in Odin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+odin) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :warning: [Reverse String in Odin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+odin) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 
@@ -38,7 +39,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Linear Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,linear+search&template=code-snippet-request.md&title=Add+Linear+Search+in+Odin) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :x: [Longest Common Subsequence](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+common+subsequence&template=code-snippet-request.md&title=Add+Longest+Common+Subsequence+in+Odin) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
 - :x: [Longest Palindromic Substring](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+palindromic+substring&template=code-snippet-request.md&title=Add+Longest+Palindromic+Substring+in+Odin) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
-- :x: [Longest Word](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+word&template=code-snippet-request.md&title=Add+Longest+Word+in+Odin) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+array+rotation&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+Odin) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+subarray&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+Odin) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :x: [Merge Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,merge+sort&template=code-snippet-request.md&title=Add+Merge+Sort+in+Odin) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
