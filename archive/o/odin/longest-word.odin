@@ -13,17 +13,21 @@ main :: proc() {
     get_longest_word(text)
 }
 
-get_longest_word :: proc (word: string) -> int {
-    if len(strings.trim(word, "\t\r\n ")) == 0 {
+get_longest_word :: proc (words: string) -> int {
+    if len(words) == 0 {
         usage()
         return 0
     }
-    string_split := strings.split(word, " ", context.allocator)
+
+    cleaned, _ := strings.replace_all(words, "\t", " ")
+    cleaned, _ = strings.replace_all(cleaned, "\r", " ")
+    cleaned, _ = strings.replace_all(cleaned, "\n", " ")
+    string_split := strings.split(cleaned, " ")
 
     count := 0
     for word in string_split {
-        if len(strings.trim(word, "\t\r\n ")) > count {
-            count = len(strings.trim(word, "\t\r\n ")) 
+        if len(word) > count {
+            count = len(word)
         }
     }
     fmt.println(count)
