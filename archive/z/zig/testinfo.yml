@@ -3,7 +3,7 @@ folder:
   naming: "hyphen"
 
 container:
-  image: "ziglang/static-base"
-  tag: "llvm13-x86_64-1"
-  build: "/deps/local/bin/zig build-exe {{ source.name }}{{ source.extension }}"
+  image: "guilledk/zig"
+  tag: "0.13.0"
+  build: "zig build-exe {{ source.name }}{{ source.extension }}"
   cmd: "./{{ source.name }}"
