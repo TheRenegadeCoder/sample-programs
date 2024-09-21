@@ -3,7 +3,7 @@ folder:
   naming: "hyphen"
 
 container:
-  image: "gonz/odin"
-  tag: "dev-2024-06"
+  image: "rzuckerm/odin"
+  tag: "2024-09-dev"
   build: "odin build {{ source.name }}{{ source.extension }} -file -out:{{ source.name }}"
   cmd: "./{{ source.name }}"
