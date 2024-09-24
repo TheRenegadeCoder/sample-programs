@@ -4,5 +4,5 @@ folder:
 
 container:
   image: "rzuckerm/vimscript"
-  tag: "8.2-1"
+  tag: "8.2-2"
   cmd: "run_vim {{ source.name }}{{ source.extension }}"
