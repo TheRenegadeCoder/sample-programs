@@ -36,7 +36,7 @@ public class DepthFirstSearch {
         System.out.println("Usage: please provide a tree in an adjacency matrix form " +
                 "(\"0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, " +
                 "0\") together with a list of vertex values (\"1, 3, 5, 2, 4\") " +
-                "and the integer to find (\"4\")。");
+                "and the integer to find (\"4\")");
     }
 
     public static class DFSGraph {
