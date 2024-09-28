@@ -3,8 +3,6 @@ import java.util.List;
 import java.util.stream.Stream;
 
 public class DepthFirstSearch {
-    public static void depthFirstSearch(List<Integer> matrix, List<Integer> vertices, int search) {
-    }
 
     public static void main(String[] args) {
         if (args.length != 3 || args[0].isEmpty() || args[1].isEmpty() || args[2].isEmpty()) {
