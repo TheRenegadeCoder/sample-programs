@@ -1,23 +1,20 @@
-C = terralib.includecstring[[
-    #include <stdio.h>
-]]
+local function strRepeat(n, s)
+    local r = ""
+    for i = 1, n do
+        r = r .. s
+    end
 
-terra baklava()
-    for i = -10, 11 do
-        var numSpaces : int = i
+    return r
+end
+
+local function baklava()
+    for i = -10, 10 do
+        local numSpaces = i
         if i < 0 then
             numSpaces = -numSpaces
         end
 
-        outputStrRepeat(numSpaces, " ")
-        outputStrRepeat(21 - 2 * numSpaces, "*")
-        C.printf("\n")
-    end
-end
-
-terra outputStrRepeat(n : int, s : &int8)
-    for i = 0, n do
-        C.printf("%s", s)
+        print(strRepeat(numSpaces, " ") .. strRepeat(21 - 2 * numSpaces, "*"))
     end
 end
 
