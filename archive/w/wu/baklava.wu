@@ -1,0 +1,16 @@
+repeatString: fun(c: str, count: int) -> str {
+    s: str = ""
+    while count > 0 {
+        s ++= c
+        count -= 1
+    }
+
+    s
+}
+
+i: int = -10
+while i <= 10 {
+    numSpaces: int = if i >= 0 { i } else { -i }
+    print(repeatString(" ", numSpaces) ++ repeatString("*", 21 - 2 * numSpaces))
+    i += 1
+}
