@@ -1,4 +1,4 @@
-# return factorial of anon-negative number
+# return factorial of a non-negative number
 if ARGV.empty?
   puts "Usage: please input a non-negative integer"
   exit
@@ -10,10 +10,15 @@ else
     puts "Usage: please input a non-negative integer"
     exit
   end
+  if num < 0
+    puts "Usage: please input a non-negative integer"
+    exit    
+  end
   i = 1
   factorial = 1
   while i <= num
     factorial = factorial * i
+    i += 1
   end
   print(factorial)
 end  
