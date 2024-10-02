@@ -32,7 +32,6 @@ else
   i = 3
   is_prime = true
   while i <= Math.sqrt(num)
-    print(num, "%", i,"\n")
     if num % i == 0
       is_prime = false
     end
