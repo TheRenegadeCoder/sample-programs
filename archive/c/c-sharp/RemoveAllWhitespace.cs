@@ -1,6 +1,7 @@
 using System;
+using System.Linq;
 
-class RemoveAllWhitespace
+class CSharp
 {
 
     public static void ExitWithError()
@@ -12,7 +13,7 @@ class RemoveAllWhitespace
     public static void RemoveAllWhitespace(string str) {
         Console.WriteLine(
             new string(
-                args[0]
+                str
                 .Where(c => !Char.IsWhiteSpace(c))
                 .ToArray()
             )
@@ -21,11 +22,10 @@ class RemoveAllWhitespace
 
     static void Main (string[] args)
     {
-        var input = args[0]
-        if (string.IsNullOrEmpty(input)) {
+        if (!args.Any() || args[0] == "") {
             ExitWithError();
         }
-        RemoveAllWhitespace(input);
+        RemoveAllWhitespace(args[0]);
     }
 
 }
