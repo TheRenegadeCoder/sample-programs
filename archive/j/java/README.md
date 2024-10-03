@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Java! To find documentation related to the Java code in this repo, look [here.](https://sampleprograms.io/languages/java)
 
-## Sample Programs List - 25/37 :relaxed:
+## Sample Programs List - 26/37 :relaxed:
 
 In this section, we feature a list of completed and missing programs in Java. See above for the current amount of completed programs in Java. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -15,6 +15,7 @@ Below, you'll find a list of completed code snippets in Java. Code snippets prec
 - :warning: [Bubble Sort in Java](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+java) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :warning: [Capitalize in Java](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+java) [[Requirements](https://sampleprograms.io/projects/capitalize)]
 - :warning: [Convex Hull in Java](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+convex+hull+java) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
+- :warning: [Depth First Search in Java](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+depth+first+search+java) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :warning: [Duplicate Character Counter in Java](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+java) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :warning: [Even Odd in Java](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+java) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :warning: [Factorial in Java](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+java) [[Requirements](https://sampleprograms.io/projects/factorial)]
@@ -40,7 +41,6 @@ Below, you'll find a list of completed code snippets in Java. Code snippets prec
 
 The following list contains all of the approved programs that are not currently implemented in Java. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
-- :x: [Depth First Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,depth+first+search&template=code-snippet-request.md&title=Add+Depth+First+Search+in+Java) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,dijkstra&template=code-snippet-request.md&title=Add+Dijkstra+in+Java) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fraction+math&template=code-snippet-request.md&title=Add+Fraction+Math+in+Java) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,josephus+problem&template=code-snippet-request.md&title=Add+Josephus+Problem+in+Java) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
@@ -67,7 +67,7 @@ For example, the "Hello World" sample would be named this:
 The following list shares details about what we're using to test all Sample Programs in Java:
 
 - Docker Image: openjdk
-- Docker Tag: 11-slim
+- Docker Tag: 23-slim
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 

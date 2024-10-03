@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Sather! To find documentation related to the Sather code in this repo, look [here.](https://sampleprograms.io/languages/sather)
 
-## Sample Programs List - 1/37 :disappointed:
+## Sample Programs List - 2/37 :disappointed:
 
 In this section, we feature a list of completed and missing programs in Sather. See above for the current amount of completed programs in Sather. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -10,13 +10,13 @@ In this section, we feature a list of completed and missing programs in Sather. 
 
 Below, you'll find a list of completed code snippets in Sather. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
+- :warning: [Baklava in Sather](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+sather) [[Requirements](https://sampleprograms.io/projects/baklava)]
 - :warning: [Hello World in Sather](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+sather) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 
 ### Missing Programs
 
 The following list contains all of the approved programs that are not currently implemented in Sather. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
-- :x: [Baklava](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,baklava&template=code-snippet-request.md&title=Add+Baklava+in+Sather) [[Requirements](https://sampleprograms.io/projects/baklava)]
 - :x: [Binary Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,binary+search&template=code-snippet-request.md&title=Add+Binary+Search+in+Sather) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :x: [Bubble Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,bubble+sort&template=code-snippet-request.md&title=Add+Bubble+Sort+in+Sather) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :x: [Capitalize](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,capitalize&template=code-snippet-request.md&title=Add+Capitalize+in+Sather) [[Requirements](https://sampleprograms.io/projects/capitalize)]
