@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Go! To find documentation related to the Go code in this repo, look [here.](https://sampleprograms.io/languages/go)
 
-## Sample Programs List - 24/37 :relaxed:
+## Sample Programs List - 28/37 :smile:
 
 In this section, we feature a list of completed and missing programs in Go. See above for the current amount of completed programs in Go. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -14,6 +14,7 @@ Below, you'll find a list of completed code snippets in Go. Code snippets preced
 - :warning: [Binary Search in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+binary+search+go) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :white_check_mark: [Bubble Sort in Go](https://sampleprograms.io/projects/bubble-sort/go) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :warning: [Capitalize in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+go) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :warning: [Duplicate Character Counter in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+go) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :warning: [Even Odd in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+go) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :warning: [Factorial in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+go) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :warning: [Fibonacci in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+go) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
@@ -22,13 +23,16 @@ Below, you'll find a list of completed code snippets in Go. Code snippets preced
 - :warning: [Hello World in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+go) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :warning: [Insertion Sort in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+go) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :warning: [Job Sequencing in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+job+sequencing+go) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
+- :warning: [Linear Search in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+linear+search+go) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :warning: [Longest Common Subsequence in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+common+subsequence+go) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
 - :warning: [Longest Palindromic Substring in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+palindromic+substring+go) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
 - :warning: [Longest Word in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+go) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :warning: [Merge Sort in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+go) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
+- :warning: [Palindromic Number in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+go) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :warning: [Prime Number in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+go) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :warning: [Quick Sort in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+go) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
 - :warning: [Quine in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+go) [[Requirements](https://sampleprograms.io/projects/quine)]
+- :warning: [Remove All Whitespace in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+remove+all+whitespace+go) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :warning: [Reverse String in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+go) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :warning: [Roman Numeral in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+go) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :warning: [Rot13 in Go](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+go) [[Requirements](https://sampleprograms.io/projects/rot13)]
@@ -42,15 +46,11 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,convex+hull&template=code-snippet-request.md&title=Add+Convex+Hull+in+Go) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :x: [Depth First Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,depth+first+search&template=code-snippet-request.md&title=Add+Depth+First+Search+in+Go) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,dijkstra&template=code-snippet-request.md&title=Add+Dijkstra+in+Go) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
-- :x: [Duplicate Character Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,duplicate+character+counter&template=code-snippet-request.md&title=Add+Duplicate+Character+Counter+in+Go) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fraction+math&template=code-snippet-request.md&title=Add+Fraction+Math+in+Go) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,josephus+problem&template=code-snippet-request.md&title=Add+Josephus+Problem+in+Go) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
-- :x: [Linear Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,linear+search&template=code-snippet-request.md&title=Add+Linear+Search+in+Go) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+array+rotation&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+Go) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+subarray&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+Go) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+Go) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
-- :x: [Palindromic Number](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,palindromic+number&template=code-snippet-request.md&title=Add+Palindromic+Number+in+Go) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
-- :x: [Remove All Whitespace](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,remove+all+whitespace&template=code-snippet-request.md&title=Add+Remove+All+Whitespace+in+Go) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,transpose+matrix&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+Go) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
 ## Testing
