@@ -3,7 +3,8 @@ package main
 import (
 	"fmt"
 	"os"
-	"strconv strings"
+	"strconv"
+	"strings"
 )
 
 func linearSearch(list []int, keyToSearch int) bool {
