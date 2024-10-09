@@ -40,33 +40,20 @@ function Swap(array: number[], i: number, j: number): number {
 }
 
 /**
- * Compares two values from the given array
- * @param array the array with the values
- * @param i the left value to compare
- * @param j the right value to compare
- * @returns true if i < j else false
- */
-function Compare(array: number[], i: number, j: number) {
-    return array[j] < array[i];
-}
-
-/**
  * Sorts the given array using the Bubble Sort Algorithm
  * @param array the array to be sorted
  */
 function BubbleSort(array: number[]) {
-    const end = array.length;
-    var i = 0,
-        j = 1,
-        start = 0,
-        done = 0;
-    while (done < end) {
-        /* Swap returns 0 to signify that bubble sort should do another pass */
-        done = Compare(array, i, j) ? Swap(array, i, j) : done + 1;
-        /* left value index - cycles between 0 and length - 1 of the array. */
-        i = i < end - 1 ? (i + 1) % end : start;
-        /* right value index */
-        j = i + 1;
+    var end = array.length;
+    while (end > 1) {
+        var new_end = 0;
+        for (var i = 1; i < end; i++) {
+            if (array[i - 1] > array[i]) {
+                Swap(array, i - 1, i)
+                new_end = i
+            }
+        }
+        end = new_end
     }
 }
 
