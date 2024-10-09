@@ -21,7 +21,7 @@ function rot13(input: string): string {
 const args = process.argv.slice(2);
 
 if (args.length !== 1) {
-  console.log("Usage: please provide a single string to encrypt.");
+  console.log("Usage: please provide a string to encrypt");
   process.exit(1);
 } else {
   const input = args[0];
