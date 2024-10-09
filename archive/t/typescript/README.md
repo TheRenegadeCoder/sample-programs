@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Typescript! To find documentation related to the Typescript code in this repo, look [here.](https://sampleprograms.io/languages/typescript)
 
-## Sample Programs List - 19/37 :relaxed:
+## Sample Programs List - 21/37 :relaxed:
 
 In this section, we feature a list of completed and missing programs in Typescript. See above for the current amount of completed programs in Typescript. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -12,6 +12,7 @@ Below, you'll find a list of completed code snippets in Typescript. Code snippet
 
 - :warning: [Baklava in Typescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+typescript) [[Requirements](https://sampleprograms.io/projects/baklava)]
 - :warning: [Binary Search in Typescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+binary+search+typescript) [[Requirements](https://sampleprograms.io/projects/binary-search)]
+- :warning: [Bubble Sort in Typescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+typescript) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :warning: [Capitalize in Typescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+typescript) [[Requirements](https://sampleprograms.io/projects/capitalize)]
 - :warning: [Duplicate Character Counter in Typescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+typescript) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :warning: [Even Odd in Typescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+typescript) [[Requirements](https://sampleprograms.io/projects/even-odd)]
@@ -28,13 +29,13 @@ Below, you'll find a list of completed code snippets in Typescript. Code snippet
 - :warning: [Quick Sort in Typescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+typescript) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
 - :warning: [Reverse String in Typescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+typescript) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :warning: [Roman Numeral in Typescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+typescript) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
+- :warning: [Rot13 in Typescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+typescript) [[Requirements](https://sampleprograms.io/projects/rot13)]
 - :warning: [Transpose Matrix in Typescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+typescript) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
 ### Missing Programs
 
 The following list contains all of the approved programs that are not currently implemented in Typescript. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
-- :x: [Bubble Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,bubble+sort&template=code-snippet-request.md&title=Add+Bubble+Sort+in+Typescript) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,convex+hull&template=code-snippet-request.md&title=Add+Convex+Hull+in+Typescript) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :x: [Depth First Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,depth+first+search&template=code-snippet-request.md&title=Add+Depth+First+Search+in+Typescript) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,dijkstra&template=code-snippet-request.md&title=Add+Dijkstra+in+Typescript) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
@@ -49,7 +50,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+Typescript) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
 - :x: [Quine](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,quine&template=code-snippet-request.md&title=Add+Quine+in+Typescript) [[Requirements](https://sampleprograms.io/projects/quine)]
 - :x: [Remove All Whitespace](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,remove+all+whitespace&template=code-snippet-request.md&title=Add+Remove+All+Whitespace+in+Typescript) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
-- :x: [Rot13](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,rot13&template=code-snippet-request.md&title=Add+Rot13+in+Typescript) [[Requirements](https://sampleprograms.io/projects/rot13)]
 - :x: [Selection Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,selection+sort&template=code-snippet-request.md&title=Add+Selection+Sort+in+Typescript) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 - :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+Typescript) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 
