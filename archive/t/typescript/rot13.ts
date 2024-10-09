@@ -1,6 +1,6 @@
 function rot13(input: string): string {
   if (!input) {
-      return "Usage: please provide a string to encrypt.";
+      return "Usage: please provide a string to encrypt";
   }
 
   return input.split('').map(char => {
