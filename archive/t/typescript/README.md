@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Typescript! To find documentation related to the Typescript code in this repo, look [here.](https://sampleprograms.io/languages/typescript)
 
-## Sample Programs List - 21/37 :relaxed:
+## Sample Programs List - 22/37 :relaxed:
 
 In this section, we feature a list of completed and missing programs in Typescript. See above for the current amount of completed programs in Typescript. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -30,6 +30,7 @@ Below, you'll find a list of completed code snippets in Typescript. Code snippet
 - :warning: [Reverse String in Typescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+typescript) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :warning: [Roman Numeral in Typescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+typescript) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :warning: [Rot13 in Typescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+typescript) [[Requirements](https://sampleprograms.io/projects/rot13)]
+- :warning: [Selection Sort in Typescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+typescript) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 - :warning: [Transpose Matrix in Typescript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+typescript) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
 ### Missing Programs
@@ -50,7 +51,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+Typescript) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
 - :x: [Quine](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,quine&template=code-snippet-request.md&title=Add+Quine+in+Typescript) [[Requirements](https://sampleprograms.io/projects/quine)]
 - :x: [Remove All Whitespace](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,remove+all+whitespace&template=code-snippet-request.md&title=Add+Remove+All+Whitespace+in+Typescript) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
-- :x: [Selection Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,selection+sort&template=code-snippet-request.md&title=Add+Selection+Sort+in+Typescript) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 - :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+Typescript) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 
 ## Testing
