@@ -51,4 +51,4 @@ if (numbers.length < 2) {
 
 const sortedNumbers = selectionSort(numbers);
 
-console.log("Sorted numbers:", sortedNumbers.join(', '));
+console.log(sortedNumbers.join(', '));
