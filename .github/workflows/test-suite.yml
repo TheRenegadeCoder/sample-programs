@@ -47,11 +47,11 @@ jobs:
           pyproject.toml
           poetry.lock
 
-    - name: Show changed files
+    - name: Show changed code files
       env:
         ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
       run: |
-        echo "Changed files:"
+        echo "Changed code files:"
         for file in ${ALL_CHANGED_FILES}; do
           echo "- $file"
         done
