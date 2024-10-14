@@ -42,7 +42,7 @@ jobs:
           code:
             - 'archive/**'
             - 'test/**'
-            - ''.glotter.yml'
+            - '.glotter.yml'
             - '.github/workflows/test-suite.yml'
             - 'pyproject.toml'
             - 'poetry.lock'
