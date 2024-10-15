@@ -46,6 +46,7 @@ jobs:
           .github/workflows/test-suite.yml
           pyproject.toml
           poetry.lock
+          !**/README.md
 
     - name: Show changed code files
       env:
