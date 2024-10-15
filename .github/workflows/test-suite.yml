@@ -5,9 +5,6 @@ name: Glotter
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches:
-      - 'main'
     paths:
       - 'archive/**'
       - 'test/**'
@@ -16,6 +13,9 @@ on:
       - 'pyproject.toml'
       - 'poetry.lock'
       - '!**/README.md'
+  pull_request:
+    branches:
+      - 'main'
 
 jobs:
   testing:
@@ -32,22 +32,55 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v4
-    
+      with:
+        fetch-depth: ${{ github.event_name == 'pull_request' && 2 || 0 }}
+
+    - name: Get changed code files
+      id: changed-files
+      uses: tj-actions/changed-files@v45
+      with:
+        files: |
+          archive/**
+          test/**
+          .glotter.yml
+          .github/workflows/test-suite.yml
+          pyproject.toml
+          poetry.lock
+          !**/README.md
+
+    - name: Show changed code files
+      env:
+        ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+      run: |
+        echo "Changed code files:"
+        for file in ${ALL_CHANGED_FILES}; do
+          echo "- $file"
+        done
+
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
         python-version: ${{ matrix.python-version }}
+      if: steps.changed-files.outputs.any_changed == 'true'
 
     - name: Run Poetry Image
       uses: abatilo/actions-poetry@v3
       with:
         poetry-version: ${{ matrix.poetry-version }}
-        
+      if: steps.changed-files.outputs.any_changed == 'true'
+
     - name: Install Dependencies
       run: poetry install
+      if: steps.changed-files.outputs.any_changed == 'true'
 
     - name: Check for Bad Files
       run: poetry run glotter check
+      if: steps.changed-files.outputs.any_changed == 'true'
 
     - name: Download Docker images, Test All Sample Programs, Remove Docker Images
       run: poetry run glotter batch ${{ matrix.num_batches }}  --parallel --remove
+      if: steps.changed-files.outputs.any_changed == 'true'
+
+    - name: Do nothing if no code changes
+      run: echo "No code changes"
+      if: steps.changed-files.outputs.any_changed == 'false'
