@@ -5,14 +5,8 @@ name: Glotter
 on:
   push:
     branches: [ main ]
-    paths:
-      - 'archive/**'
-      - 'test/**'
-      - '.glotter.yml'
-      - '.github/workflows/test-suite.yml'
-      - 'pyproject.toml'
-      - 'poetry.lock'
-      - '!**/README.md'
+    paths-ignore:
+      - '**/*.md'
   pull_request:
     branches:
       - 'main'
