@@ -33,8 +33,18 @@ jobs:
       id: changed-files
       uses: tj-actions/changed-files@v45
       with:
+        since_last_remote_commit: true
         files_ignore: |
           **/*.md
+
+    - name: List all changed files markdown files
+      if: steps.changed-files.outputs.any_changed == 'true'
+      env:
+        ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+      run: |
+        for file in ${ALL_CHANGED_FILES}; do
+          echo "$file was changed"
+        done
 
   testing:
     name: "Test Suite"
