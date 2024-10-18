@@ -13,7 +13,7 @@ bubble xs = foldl (\acc _ -> pass acc) xs xs
           | x1 > x2   = x2:(pass (x1:xs))
           | otherwise = x1:(pass (x2:xs))
 
-
+ 
 headMaybe :: [a] -> Maybe a
 headMaybe []     = Nothing
 headMaybe (x:xs) = Just x
