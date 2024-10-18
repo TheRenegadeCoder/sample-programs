@@ -12,6 +12,8 @@ on:
       - 'main'
 
 jobs:
+
+  # We need this job to check if changed files should trigger testing
   changed-files:
     name: "Changed Files"
     runs-on: ubuntu-latest
@@ -40,6 +42,7 @@ jobs:
           echo "$file was changed"
         done
 
+  # We need this job to test all code in the codebase
   testing:
     name: "Test Suite"
     needs: changed-files
@@ -78,5 +81,18 @@ jobs:
     - name: Download Docker images, Test All Sample Programs, Remove Docker Images
       run: poetry run glotter batch ${{ matrix.num_batches }}  --parallel --remove
 
-    - name: Do nothing if no code changes
-      run: echo "No code changes"
+  # Because testing uses a matrix, we need this job for branch protections
+  test-results:
+    name: Test Results
+    needs: testing
+    runs-on: ubuntu-latest
+    if: ${{ always() }}
+
+    steps:
+      - run: |
+          result="${{ needs.testing.result }}"
+          if [[ $result == "success" || $result == "skipped" ]]; then
+            exit 0
+          else
+            exit 1
+          fi
