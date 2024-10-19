@@ -23,17 +23,19 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        fetch-depth: ${{ github.event_name == 'pull_request' && 2 || 0 }}
+        fetch-depth: ${{ github.event_name == 'push' && 2 || 0 }}
 
     - name: Get changed code files
       id: changed-files
       uses: tj-actions/changed-files@v45
       with:
-        since_last_remote_commit: true
+        files: |
+          archive/**
+          .github/workflow/test-suite.yml
         files_ignore: |
           **/*.md
 
-    - name: List all changed files markdown files
+    - name: List all relevant changed files
       if: steps.changed-files.outputs.any_changed == 'true'
       env:
         ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
@@ -60,7 +62,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        fetch-depth: ${{ github.event_name == 'pull_request' && 2 || 0 }}
+        fetch-depth: ${{ github.event_name == 'push' && 2 || 0 }}
 
     - name: Set up Python
       uses: actions/setup-python@v5
