@@ -5,8 +5,10 @@ name: Glotter
 on:
   push:
     branches: [ main ]
-    paths-ignore:
-      - '**/*.md'
+    paths:
+      - 'archive/**'
+      - '.github/workflow/test-suite.yml'
+      - '!**/*.md'
   pull_request:
     branches:
       - 'main'
