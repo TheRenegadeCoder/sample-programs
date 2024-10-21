@@ -5,4 +5,4 @@ folder:
 container:
   image: "codesignal/smalltalk"
   tag: "v9.4.0"
-  cmd: "gst {{ source.name }}{{ source.extension }}"
+  cmd: "gst --no-gc {{ source.name }}{{ source.extension }}"
