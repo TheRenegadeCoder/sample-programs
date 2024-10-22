@@ -4,5 +4,5 @@ folder:
 
 container:
   image: "rzuckerm/quackery"
-  tag: "2023.10.23-1"
-  cmd: "python3 /opt/quackery/quackery.py {{ source.name }}{{ source.extension }}"
+  tag: "2024.10.22-dev"
+  cmd: "run_quackery {{ source.name }}{{ source.extension }}"
