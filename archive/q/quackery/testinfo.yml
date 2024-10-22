@@ -4,5 +4,5 @@ folder:
 
 container:
   image: "rzuckerm/quackery"
-  tag: "2024.10.22-dev"
+  tag: "2024.10.22-2"
   cmd: "run_quackery {{ source.name }}{{ source.extension }}"
