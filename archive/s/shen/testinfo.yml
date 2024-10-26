@@ -4,5 +4,5 @@ folder:
 
 container:
   image: "rzuckerm/shen"
-  tag: "0.33-1"
+  tag: "0.39-2"
   cmd: "shen-scheme script {{ source.name }}{{ source.extension }}"
