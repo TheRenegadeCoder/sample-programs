@@ -14,12 +14,14 @@
   N -> (string-repeat (- 21 (* 2 (abs N))) "*")
 )
 
-(define baklava-line
-  N -> (cn (cn (spaces N) (stars N)) "~%")
-)
-
 (define baklava
-  N -> (if (<= N 10) (cn (baklava-line N) (baklava (+ 1 N))) "")
+  N -> (if (<= N 10)
+    (do
+      (output "~A~A~%" (spaces N) (stars N))
+      (baklava (+ 1 N))
+    )
+    (output "")
+  )
 )
 
-(output (baklava -10))
+(baklava -10)
