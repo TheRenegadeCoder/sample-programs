@@ -1,0 +1,6 @@
+21 times [
+  i^ 10 - abs dup 
+  times [ say " " ]
+  -2 * 21 + times [ say "*" ]
+  cr
+]
