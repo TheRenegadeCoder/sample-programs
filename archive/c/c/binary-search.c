@@ -1,21 +1,31 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 // Function prototypes
 int binarySearch(const int arr[], int size, int target);
 int compare(const void *a, const void *b);
-void getInputArray(int **arr, int *size);
+int parseInput(const char *input, int **arr);
 void freeMemory(int *arr);
 int isSorted(const int arr[], int size);
+int isValidNumber(const char *str);
 
-int main() {
+int main(int argc, char *argv[]) {
+    if (argc != 3) {
+        printf("Usage: %s <comma-separated integers> <target integer>\n", argv[0]);
+        return 1;
+    }
+
     int *arr = NULL;
     int size = 0;
 
-    getInputArray(&arr, &size);
-    if (arr == NULL) {
-        return 1; // Memory allocation failure handled in getInputArray
+    // Parse the input array from the first argument
+    if (parseInput(argv[1], &arr) != 0) {
+        return 1; // Exit if parsing fails
     }
+
+    // Update size
+    size = sizeof(arr) / sizeof(arr[0]);
 
     // Check if the array is sorted
     if (!isSorted(arr, size)) {
@@ -23,14 +33,14 @@ int main() {
         qsort(arr, size, sizeof(int), compare);
     }
 
-    // Get target value to search for
+    // Get target value from the second argument
     int target;
-    printf("Enter the target value to search: ");
-    if (scanf("%d", &target) != 1) {
-        printf("Invalid input. Exiting.\n");
+    if (!isValidNumber(argv[2])) {
+        printf("Invalid target input. Exiting.\n");
         freeMemory(arr);
         return 1;
     }
+    target = atoi(argv[2]);
 
     // Perform binary search
     int result = binarySearch(arr, size, target);
@@ -72,29 +82,41 @@ int compare(const void *a, const void *b) {
     return (*(int *)a - *(int *)b);
 }
 
-// Function to get user input for the array
-void getInputArray(int **arr, int *size) {
-    printf("Enter the number of elements in the array: ");
-    if (scanf("%d", size) != 1 || *size <= 0) {
-        printf("Invalid size. Exiting.\n");
-        return;
-    }
-
-    *arr = (int *)malloc(*size * sizeof(int));
+// Function to parse input string and populate the array
+int parseInput(const char *input, int **arr) {
+    char *token;
+    int size = 0;
+    int capacity = 10; // Initial capacity
+    *arr = malloc(capacity * sizeof(int));
     if (*arr == NULL) {
         printf("Memory allocation failed. Exiting.\n");
-        return;
+        return 1;
     }
 
-    printf("Enter %d elements (unsorted): ", *size);
-    for (int i = 0; i < *size; i++) {
-        if (scanf("%d", &(*arr)[i]) != 1) {
-            printf("Invalid input. Exiting.\n");
+    // Tokenize the input string based on commas
+    token = strtok((char *)input, ",");
+    while (token) {
+        if (!isValidNumber(token)) {
+            printf("Invalid number detected: '%s'. Exiting.\n", token);
             freeMemory(*arr);
-            *arr = NULL; // Set to NULL to avoid double free
-            return;
+            return 1; // Exit if a number is invalid
         }
+
+        if (size >= capacity) {
+            capacity *= 2;
+            *arr = realloc(*arr, capacity * sizeof(int));
+            if (*arr == NULL) {
+                printf("Memory reallocation failed. Exiting.\n");
+                return 1;
+            }
+        }
+        (*arr)[size++] = atoi(token);
+        token = strtok(NULL, ",");
     }
+
+    // Resize the array to the actual size
+    *arr = realloc(*arr, size * sizeof(int));
+    return 0; // Successful parsing
 }
 
 // Function to free allocated memory
@@ -112,4 +134,11 @@ int isSorted(const int arr[], int size) {
         }
     }
     return 1; // Array is sorted
+}
+
+// Function to check if a string is a valid number
+int isValidNumber(const char *str) {
+    char *end;
+    strtol(str, &end, 10); // Convert string to long
+    return (*end == '\0' || *end == '\n'); // Check if the entire string was valid
 }
