@@ -1,18 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 
 // Function prototypes
 int binarySearch(const int arr[], int size, int target);
 int compare(const void *a, const void *b);
-int parseInput(const char *input, int **arr);
+int parseInput(const char *input, int **arr, int *size);
 void freeMemory(int *arr);
 int isSorted(const int arr[], int size);
 int isValidNumber(const char *str);
+char* trimWhitespace(char *str);
 
 int main(int argc, char *argv[]) {
     if (argc != 3) {
-        printf("Usage: %s <comma-separated integers> <target integer>\n", argv[0]);
+        printf("Usage: please provide a list of sorted integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")\n");
         return 1;
     }
 
@@ -20,23 +22,21 @@ int main(int argc, char *argv[]) {
     int size = 0;
 
     // Parse the input array from the first argument
-    if (parseInput(argv[1], &arr) != 0) {
+    if (parseInput(argv[1], &arr, &size) != 0) {
         return 1; // Exit if parsing fails
     }
 
-    // Update size
-    size = sizeof(arr) / sizeof(arr[0]);
-
     // Check if the array is sorted
     if (!isSorted(arr, size)) {
-        printf("The array is not sorted. Sorting the array now...\n");
-        qsort(arr, size, sizeof(int), compare);
+        printf("Usage: please provide a list of sorted integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")\n");
+        freeMemory(arr);
+        return 1;
     }
 
     // Get target value from the second argument
     int target;
     if (!isValidNumber(argv[2])) {
-        printf("Invalid target input. Exiting.\n");
+        printf("Usage: please provide a list of sorted integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")\n");
         freeMemory(arr);
         return 1;
     }
@@ -45,9 +45,9 @@ int main(int argc, char *argv[]) {
     // Perform binary search
     int result = binarySearch(arr, size, target);
     if (result != -1) {
-        printf("Element found at index: %d\n", result);
+        printf("true\n");
     } else {
-        printf("Element not found.\n");
+        printf("false\n");
     }
 
     // Free allocated memory
@@ -83,9 +83,8 @@ int compare(const void *a, const void *b) {
 }
 
 // Function to parse input string and populate the array
-int parseInput(const char *input, int **arr) {
+int parseInput(const char *input, int **arr, int *size) {
     char *token;
-    int size = 0;
     int capacity = 10; // Initial capacity
     *arr = malloc(capacity * sizeof(int));
     if (*arr == NULL) {
@@ -94,28 +93,34 @@ int parseInput(const char *input, int **arr) {
     }
 
     // Tokenize the input string based on commas
-    token = strtok((char *)input, ",");
+    char *inputCopy = strdup(input);
+    token = strtok(inputCopy, ",");
+    *size = 0;
     while (token) {
+        trimWhitespace(token); // Trim whitespace around token
         if (!isValidNumber(token)) {
             printf("Invalid number detected: '%s'. Exiting.\n", token);
             freeMemory(*arr);
+            free(inputCopy);
             return 1; // Exit if a number is invalid
         }
 
-        if (size >= capacity) {
+        if (*size >= capacity) {
             capacity *= 2;
             *arr = realloc(*arr, capacity * sizeof(int));
             if (*arr == NULL) {
                 printf("Memory reallocation failed. Exiting.\n");
+                free(inputCopy);
                 return 1;
             }
         }
-        (*arr)[size++] = atoi(token);
+        (*arr)[(*size)++] = atoi(token);
         token = strtok(NULL, ",");
     }
 
     // Resize the array to the actual size
-    *arr = realloc(*arr, size * sizeof(int));
+    *arr = realloc(*arr, *size * sizeof(int));
+    free(inputCopy); // Free the input copy
     return 0; // Successful parsing
 }
 
@@ -141,4 +146,15 @@ int isValidNumber(const char *str) {
     char *end;
     strtol(str, &end, 10); // Convert string to long
     return (*end == '\0' || *end == '\n'); // Check if the entire string was valid
+}
+
+// Function to trim whitespace from a string
+char* trimWhitespace(char *str) {
+    // Trim leading whitespace
+    while (isspace((unsigned char)*str)) str++;
+    // Trim trailing whitespace
+    char *end = str + strlen(str) - 1;
+    while (end > str && isspace((unsigned char)*end)) end--;
+    *(end + 1) = '\0'; // Null terminate after the last non-space character
+    return str;
 }
