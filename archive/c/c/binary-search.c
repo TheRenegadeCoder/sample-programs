@@ -5,57 +5,36 @@
 
 // Function prototypes
 int binarySearch(const int arr[], int size, int target);
-int compare(const void *a, const void *b);
-int parseInput(const char *input, int **arr, int *size);
-void freeMemory(int *arr);
 int isSorted(const int arr[], int size);
 int isValidNumber(const char *str);
 char* trimWhitespace(char *str);
+int parseInput(const char *input, int **arr, int *size);
+void freeMemory(int *arr);
+void printErrorAndExit(const char *message, int *arr);
 
 int main(int argc, char *argv[]) {
     if (argc != 3) {
-        printf("Usage: please provide a list of sorted integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")\n");
-        return 1;
+        printErrorAndExit("Usage: please provide a list of sorted integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")\n", NULL);
     }
 
     int *arr = NULL;
     int size = 0;
 
     // Parse the input array from the first argument
-    if (parseInput(argv[1], &arr, &size) != 0) {
-        return 1; // Exit if parsing fails
-    }
-
-    // Check if the size of the array is at least 1
-    if (size < 1) {
-        printf("Usage: please provide a list of sorted integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")\n");
-        freeMemory(arr);
-        return 1;
-    }
-
-    // Check if the array is sorted
-    if (!isSorted(arr, size)) {
-        printf("Usage: please provide a list of sorted integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")\n");
-        freeMemory(arr);
-        return 1;
+    if (parseInput(argv[1], &arr, &size) != 0 || size < 1 || !isSorted(arr, size)) {
+        printErrorAndExit("Usage: please provide a list of sorted integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")\n", arr);
     }
 
     // Get target value from the second argument
-    int target;
     if (!isValidNumber(argv[2])) {
-        printf("Usage: please provide a list of sorted integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")\n");
-        freeMemory(arr);
-        return 1;
+        printErrorAndExit("Usage: please provide a list of sorted integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")\n", arr);
     }
-    target = atoi(argv[2]);
+
+    int target = atoi(argv[2]);
 
     // Perform binary search
     int result = binarySearch(arr, size, target);
-    if (result != -1) {
-        printf("true\n");
-    } else {
-        printf("false\n");
-    }
+    printf(result != -1 ? "true\n" : "false\n");
 
     // Free allocated memory
     freeMemory(arr);
@@ -82,11 +61,6 @@ int binarySearch(const int arr[], int size, int target) {
     }
 
     return -1; // Target not found
-}
-
-// Comparison function for qsort
-int compare(const void *a, const void *b) {
-    return (*(int *)a - *(int *)b);
 }
 
 // Function to parse input string and populate the array
@@ -133,9 +107,16 @@ int parseInput(const char *input, int **arr, int *size) {
 
 // Function to free allocated memory
 void freeMemory(int *arr) {
+    free(arr);
+}
+
+// Function to print error message and exit
+void printErrorAndExit(const char *message, int *arr) {
     if (arr != NULL) {
-        free(arr);
+        freeMemory(arr);
     }
+    printf("%s", message);
+    exit(1);
 }
 
 // Function to check if the array is sorted
