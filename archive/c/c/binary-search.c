@@ -26,6 +26,13 @@ int main(int argc, char *argv[]) {
         return 1; // Exit if parsing fails
     }
 
+    // Check if the size of the array is at least 1
+    if (size < 1) {
+        printf("Usage: please provide a list of sorted integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")\n");
+        freeMemory(arr);
+        return 1;
+    }
+
     // Check if the array is sorted
     if (!isSorted(arr, size)) {
         printf("Usage: please provide a list of sorted integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")\n");
