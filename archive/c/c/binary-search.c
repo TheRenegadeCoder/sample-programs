@@ -10,11 +10,11 @@ void freeMemory(int *arr);
 int isSorted(const int arr[], int size);
 int isValidNumber(const char *str);
 char* trimWhitespace(char *str);
-void handleError(const char *message);
+void handleError(const char *message, int usageMessage);
 
 int main(int argc, char *argv[]) {
     if (argc != 3) {
-        handleError("Usage: please provide a list of sorted integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")");
+        handleError("Usage: please provide a list of sorted integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")", 1);
     }
 
     int *arr = NULL;
@@ -22,12 +22,12 @@ int main(int argc, char *argv[]) {
 
     // Parse the input array from the first argument
     if (parseInput(argv[1], &arr, &size) != 0 || size < 1 || !isSorted(arr, size)) {
-        handleError("Invalid input: Please provide a valid list of sorted integers.");
+        handleError("Invalid input: Please provide a valid list of sorted integers.", 1);
     }
 
     // Get target value from the second argument
     if (!isValidNumber(argv[2])) {
-        handleError("Invalid number: Please provide a valid integer to find.");
+        handleError("Invalid number: Please provide a valid integer to find.", 1);
     }
     int target = atoi(argv[2]);
 
@@ -56,7 +56,7 @@ int parseInput(const char *input, int **arr, int *size) {
     char *token;
     int capacity = 10; // Initial capacity
     *arr = malloc(capacity * sizeof(int));
-    if (!*arr) handleError("Memory allocation failed.");
+    if (!*arr) handleError("Memory allocation failed.", 0);
 
     char *inputCopy = strdup(input);
     token = strtok(inputCopy, ",");
@@ -66,13 +66,13 @@ int parseInput(const char *input, int **arr, int *size) {
         trimWhitespace(token);
         if (!isValidNumber(token)) {
             free(inputCopy);
-            handleError("Invalid number detected.");
+            handleError("Invalid number detected.", 1);
         }
 
         if (*size >= capacity) {
             capacity *= 2;
             *arr = realloc(*arr, capacity * sizeof(int));
-            if (!*arr) handleError("Memory reallocation failed.");
+            if (!*arr) handleError("Memory reallocation failed.", 0);
         }
         (*arr)[(*size)++] = atoi(token);
         token = strtok(NULL, ",");
@@ -114,7 +114,10 @@ char* trimWhitespace(char *str) {
 }
 
 // Function to handle errors
-void handleError(const char *message) {
+void handleError(const char *message, int usageMessage) {
     fprintf(stderr, "%s\n", message);
+    if (usageMessage) {
+        fprintf(stderr, "Usage: please provide a list of sorted integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")\n");
+    }
     exit(1);
 }
