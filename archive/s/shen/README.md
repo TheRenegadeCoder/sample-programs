@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Shen! To find documentation related to the Shen code in this repo, look [here.](https://sampleprograms.io/languages/shen)
 
-## Sample Programs List - 1/37 :disappointed:
+## Sample Programs List - 2/37 :disappointed:
 
 In this section, we feature a list of completed and missing programs in Shen. See above for the current amount of completed programs in Shen. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -10,13 +10,13 @@ In this section, we feature a list of completed and missing programs in Shen. Se
 
 Below, you'll find a list of completed code snippets in Shen. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
+- :warning: [Baklava in Shen](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+shen) [[Requirements](https://sampleprograms.io/projects/baklava)]
 - :warning: [Hello World in Shen](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+shen) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 
 ### Missing Programs
 
 The following list contains all of the approved programs that are not currently implemented in Shen. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
-- :x: [Baklava](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,baklava&template=code-snippet-request.md&title=Add+Baklava+in+Shen) [[Requirements](https://sampleprograms.io/projects/baklava)]
 - :x: [Binary Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,binary+search&template=code-snippet-request.md&title=Add+Binary+Search+in+Shen) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :x: [Bubble Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,bubble+sort&template=code-snippet-request.md&title=Add+Bubble+Sort+in+Shen) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :x: [Capitalize](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,capitalize&template=code-snippet-request.md&title=Add+Capitalize+in+Shen) [[Requirements](https://sampleprograms.io/projects/capitalize)]
@@ -67,7 +67,7 @@ For example, the "Hello World" sample would be named this:
 The following list shares details about what we're using to test all Sample Programs in Shen:
 
 - Docker Image: rzuckerm/shen
-- Docker Tag: 0.33-1
+- Docker Tag: 0.39-2
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 
