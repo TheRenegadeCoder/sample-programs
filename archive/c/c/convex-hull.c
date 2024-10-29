@@ -29,8 +29,6 @@ int orientation(Point p, Point q, Point r) {
 }
 
 void convexHull(Point points[], int n) {
-    if (n < 3) return;
-
     Point hull[n];
 
     qsort(points, n, sizeof(Point), compare);
@@ -124,8 +122,7 @@ int main(int argc, char *argv[]) {
     char *inputY = argv[2];
 
     if (strlen(inputY) == 0) {
-        printf("Missing Y\n");
-        return 1;
+        printUsageAndExit();
     }
 
     parseCoordinates(inputX, inputY);
