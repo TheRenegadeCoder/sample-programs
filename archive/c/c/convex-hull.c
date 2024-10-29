@@ -71,6 +71,21 @@ void convexHull(Point points[], int n) {
 }
 
 bool isInteger(const char *s) {
+    // Check for an empty string
+    if (*s == '\0') {
+        return false;
+    }
+
+    // Allow a leading negative sign
+    if (*s == '-') {
+        s++; // Move to the next character
+        // If there's no digit after the negative sign, it's not a valid integer
+        if (*s == '\0') {
+            return false;
+        }
+    }
+
+    // Check that all remaining characters are digits
     while (*s) {
         if (*s < '0' || *s > '9') {
             return false;
