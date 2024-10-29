@@ -10,7 +10,7 @@ typedef struct {
 int orientation(Point p, Point q, Point r) {
     int val = (q.y - p.y) * (r.x - q.x) - (q.x - p.x) * (r.y - q.y);
     if (val == 0) return 0;  // Collinear
-    return (val > 0) ? 1 : 2; // Clock or counterclock wise
+    return (val > 0) ? 1 : 2; // Clockwise or counterclockwise
 }
 
 void convexHull(Point points[], int n) {
@@ -47,7 +47,7 @@ int isInteger(const char *s) {
     return 1;
 }
 
-void checkInputValidity(char *xStr, char *yStr) {
+void validateInputs(char *xStr, char *yStr) {
     if (strlen(xStr) == 0 || strlen(yStr) == 0) {
         printf("Usage: please provide at least 3 x and y coordinates as separate lists (e.g. \"100, 440, 210\")\n");
         exit(1);
@@ -88,8 +88,8 @@ int main(int argc, char *argv[]) {
     char *xStr = argv[1];
     char *yStr = argv[2];
 
-    // Check input validity for empty strings
-    checkInputValidity(xStr, yStr);
+    // Validate input for empty strings
+    validateInputs(xStr, yStr);
 
     Point *points = malloc(100 * sizeof(Point));  // Assume a maximum of 100 points for simplicity
     if (!points) {
