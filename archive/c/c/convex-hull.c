@@ -47,6 +47,13 @@ int isInteger(const char *s) {
     return 1;
 }
 
+void checkInputValidity(char *xStr, char *yStr) {
+    if (strlen(xStr) == 0 || strlen(yStr) == 0) {
+        printf("Usage: please provide at least 3 x and y coordinates as separate lists (e.g. \"100, 440, 210\")\n");
+        exit(1);
+    }
+}
+
 void parseCoordinates(char *xStr, char *yStr, Point **points, int *n) {
     char *xToken = strtok(xStr, ",");
     char *yToken = strtok(yStr, ",");
@@ -80,6 +87,9 @@ int main(int argc, char *argv[]) {
 
     char *xStr = argv[1];
     char *yStr = argv[2];
+
+    // Check input validity for empty strings
+    checkInputValidity(xStr, yStr);
 
     Point *points = malloc(100 * sizeof(Point));  // Assume a maximum of 100 points for simplicity
     if (!points) {
