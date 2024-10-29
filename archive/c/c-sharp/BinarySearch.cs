@@ -29,7 +29,7 @@ public class BinarySearch
 
     public static void ErrorAndExit()
     {
-        Console.WriteLine("Usage: please provide a list of integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")");
+        Console.WriteLine("Usage: please provide a list of sorted integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")");
         Environment.Exit(1);
     }
 
