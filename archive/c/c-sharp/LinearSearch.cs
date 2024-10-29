@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class LinearSearch
 {
-    public static boolean Search(List<int> list, int toFind)
+    public static bool Search(List<int> list, int toFind)
     {
         foreach (int value in list) 
         {
@@ -28,7 +28,7 @@ public class LinearSearch
         {
             var list = args[0].Split(',').Select(i => Int32.Parse(i.Trim())).ToList();
             var toFind = Int32.Parse(args[1]);
-            Console.WriteLine(Search((list, toFind)));
+            Console.WriteLine(Search(list, toFind));
         }
         catch
         {
