@@ -8,6 +8,11 @@ typedef struct {
     int y;
 } Point;
 
+void printUsageAndExit() {
+    printf("Usage: please provide at least 3 x and y coordinates as separate lists (e.g. \"100, 440, 210\")\n");
+    exit(1);
+}
+
 int compare(const void *p1, const void *p2) {
     Point *point1 = (Point *)p1;
     Point *point2 = (Point *)p2;
@@ -86,8 +91,7 @@ void parseCoordinates(char *inputX, char *inputY) {
 
     while (tokenX && tokenY) {
         if (!isInteger(tokenX) || !isInteger(tokenY)) {
-            printf("Invalid Integers\n");
-            return;
+            printUsageAndExit();
         }
 
         points = realloc(points, sizeof(Point) * (count + 1));
@@ -100,15 +104,11 @@ void parseCoordinates(char *inputX, char *inputY) {
     }
 
     if (tokenX || tokenY) {
-        printf("Different Cardinality\n");
-        free(points);
-        return;
+        printUsageAndExit();
     }
 
     if (count < 3) {
-        printf("Usage: please provide at least 3 x and y coordinates as separate lists (e.g. \"100, 440, 210\")\n");
-        free(points);
-        return;
+        printUsageAndExit();
     }
 
     convexHull(points, count);
@@ -117,8 +117,7 @@ void parseCoordinates(char *inputX, char *inputY) {
 
 int main(int argc, char *argv[]) {
     if (argc != 3) {
-        printf("Usage: please provide two coordinate lists (x, y)\n");
-        return 1;
+        printUsageAndExit();
     }
 
     char *inputX = argv[1];
