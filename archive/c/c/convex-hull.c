@@ -1,121 +1,134 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <ctype.h>
+#include <stdbool.h>
 
 typedef struct {
-    int x, y;
+    int x;
+    int y;
 } Point;
 
-// Function to determine the orientation of the triplet (p, q, r)
-int orientation(Point p, Point q, Point r) {
-    int val = (q.y - p.y) * (r.x - q.x) - (q.x - p.x) * (r.y - q.y);
-    if (val == 0) return 0;  // Collinear
-    return (val > 0) ? 1 : 2; // Clockwise or counterclockwise
+int compare(const void *p1, const void *p2) {
+    Point *point1 = (Point *)p1;
+    Point *point2 = (Point *)p2;
+
+    if (point1->x != point2->x) {
+        return point1->x - point2->x;
+    }
+    return point1->y - point2->y;
 }
 
-// Function to compute the convex hull using the Gift Wrapping algorithm
+int orientation(Point p, Point q, Point r) {
+    int val = (q.y - p.y) * (r.x - q.x) - (q.x - p.x) * (r.y - q.y);
+    return (val == 0) ? 0 : (val > 0) ? 1 : 2;
+}
+
 void convexHull(Point points[], int n) {
-    if (n < 3) {
-        printf("Convex hull not possible with less than 3 points.\n");
-        return;
-    }
+    if (n < 3) return;
 
-    int leftmost = 0;
-    for (int i = 1; i < n; i++) {
-        if (points[i].x < points[leftmost].x) {
-            leftmost = i;
-        }
-    }
+    Point hull[n];
 
-    int p = leftmost, q;
+    qsort(points, n, sizeof(Point), compare);
+
+    int l = 0;
+    for (int i = 1; i < n; i++)
+        if (points[i].x < points[l].x)
+            l = i;
+
+    int p = l, q;
     do {
-        printf("(%d, %d)\n", points[p].x, points[p].y);
+        hull[0] = points[p];
         q = (p + 1) % n;
+
         for (int i = 0; i < n; i++) {
             if (orientation(points[p], points[i], points[q]) == 2) {
                 q = i;
             }
         }
+
         p = q;
-    } while (p != leftmost);
+    } while (p != l);
+
+    for (int i = 0; i < n; i++) {
+        bool found = false;
+        for (int j = 0; j < n; j++) {
+            if (hull[j].x == points[i].x && hull[j].y == points[i].y) {
+                found = true;
+                break;
+            }
+        }
+        if (!found) {
+            hull[n++] = points[i];
+        }
+    }
+
+    for (int i = 0; i < n; i++) {
+        printf("(%d, %d)\n", hull[i].x, hull[i].y);
+    }
 }
 
-// Function to check if a string is a valid integer
-int isInteger(const char *s) {
-    if (*s == '-') s++; // Allow negative integers
-    if (*s == '\0') return 0; // Empty after optional '-'
-
+bool isInteger(const char *s) {
     while (*s) {
-        if (!isdigit(*s)) return 0;
+        if (*s < '0' || *s > '9') {
+            return false;
+        }
         s++;
     }
-    return 1;
+    return true;
 }
 
-// Function to validate inputs
-void validateInputs(char *xStr, char *yStr) {
-    if (strlen(xStr) == 0 || strlen(yStr) == 0) {
-        printf("Usage: please provide at least 3 x and y coordinates as separate lists (e.g. \"100, 440, 210\")\n");
-        exit(1);
-    }
-}
+void parseCoordinates(char *inputX, char *inputY) {
+    char *tokenX = strtok(inputX, ",");
+    char *tokenY = strtok(inputY, ",");
 
-// Function to parse coordinates from input strings
-void parseCoordinates(char *xStr, char *yStr, Point **points, int *n) {
-    char *xToken = strtok(xStr, ",");
-    char *yToken = strtok(yStr, ",");
+    Point *points = NULL;
     int count = 0;
 
-    while (xToken && yToken) {
-        if (!isInteger(xToken) || !isInteger(yToken)) {
+    while (tokenX && tokenY) {
+        if (!isInteger(tokenX) || !isInteger(tokenY)) {
             printf("Invalid Integers\n");
-            exit(1);
+            return;
         }
-        (*points)[count].x = atoi(xToken);
-        (*points)[count].y = atoi(yToken);
+
+        points = realloc(points, sizeof(Point) * (count + 1));
+        points[count].x = atoi(tokenX);
+        points[count].y = atoi(tokenY);
         count++;
-        xToken = strtok(NULL, ",");
-        yToken = strtok(NULL, ",");
+
+        tokenX = strtok(NULL, ",");
+        tokenY = strtok(NULL, ",");
     }
 
-    if (xToken || yToken) {
+    if (tokenX || tokenY) {
         printf("Different Cardinality\n");
-        exit(1);
+        free(points);
+        return;
     }
-
-    *n = count;
 
     if (count < 3) {
-        printf("Convex hull not possible with less than 3 points.\n");
-        exit(1);
+        printf("Usage: please provide at least 3 x and y coordinates as separate lists (e.g. \"100, 440, 210\")\n");
+        free(points);
+        return;
     }
+
+    convexHull(points, count);
+    free(points);
 }
 
 int main(int argc, char *argv[]) {
     if (argc != 3) {
-        printf("Usage: please provide at least 3 x and y coordinates as separate lists (e.g. \"100, 440, 210\")\n");
+        printf("Usage: please provide two coordinate lists (x, y)\n");
         return 1;
     }
 
-    char *xStr = argv[1];
-    char *yStr = argv[2];
+    char *inputX = argv[1];
+    char *inputY = argv[2];
 
-    // Validate input for empty strings
-    validateInputs(xStr, yStr);
-
-    Point *points = malloc(100 * sizeof(Point));  // Assume a maximum of 100 points
-    if (!points) {
-        printf("Memory allocation failed\n");
+    if (strlen(inputY) == 0) {
+        printf("Missing Y\n");
         return 1;
     }
 
-    int n = 0;
-    parseCoordinates(xStr, yStr, &points, &n);
-
-    printf("The points in the convex hull are:\n");
-    convexHull(points, n);
-
-    free(points);
+    parseCoordinates(inputX, inputY);
     return 0;
 }
