@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class BinarySearch
 {
     public static bool Search(List<int> list, int toFind)
-    {
+    {   
         int lowerBound = 0;
         int upperBound = list.Count - 1;
         while (lowerBound <= upperBound) 
@@ -39,6 +39,15 @@ public class BinarySearch
         {
             var list = args[0].Split(',').Select(i => Int32.Parse(i.Trim())).ToList();
             var toFind = Int32.Parse(args[1]);
+
+            for (int i = 0; i < list.Count - 1; i++)
+            {
+                if (list[i] > list[i + 1])
+                {
+                    ErrorAndExit();
+                }
+            }
+            
             Console.WriteLine(Search(list, toFind));
         }
         catch
