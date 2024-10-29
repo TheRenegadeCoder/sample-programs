@@ -43,8 +43,11 @@ void convexHull(Point points[], int n) {
 
 // Function to check if a string is a valid integer
 int isInteger(const char *s) {
+    if (*s == '-') s++; // Allow negative integers
+    if (*s == '\0') return 0; // Empty after optional '-'
+
     while (*s) {
-        if (!isdigit(*s) && *s != '-') return 0;
+        if (!isdigit(*s)) return 0;
         s++;
     }
     return 1;
