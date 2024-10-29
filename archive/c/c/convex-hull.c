@@ -28,7 +28,7 @@ void convexHull(Point points[], int n) {
 
     int p = leftmost, q;
     do {
-        printf("(%d, %d) ", points[p].x, points[p].y);
+        printf("(%d, %d)\n", points[p].x, points[p].y);
         q = (p + 1) % n;
         for (int i = 0; i < n; i++) {
             if (orientation(points[p], points[i], points[q]) == 2) {
@@ -37,8 +37,6 @@ void convexHull(Point points[], int n) {
         }
         p = q;
     } while (p != leftmost);
-
-    printf("\n");
 }
 
 int isInteger(const char *s) {
@@ -98,7 +96,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    printf("The points in the convex hull are: ");
+    printf("The points in the convex hull are:\n");
     convexHull(points, n);
 
     free(points);
