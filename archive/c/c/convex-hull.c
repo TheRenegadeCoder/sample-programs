@@ -30,6 +30,7 @@ int orientation(Point p, Point q, Point r) {
 
 void convexHull(Point points[], int n) {
     Point hull[n];
+    int hullCount = 0;
 
     qsort(points, n, sizeof(Point), compare);
 
@@ -40,7 +41,7 @@ void convexHull(Point points[], int n) {
 
     int p = l, q;
     do {
-        hull[0] = points[p];
+        hull[hullCount++] = points[p];
         q = (p + 1) % n;
 
         for (int i = 0; i < n; i++) {
@@ -52,20 +53,7 @@ void convexHull(Point points[], int n) {
         p = q;
     } while (p != l);
 
-    for (int i = 0; i < n; i++) {
-        bool found = false;
-        for (int j = 0; j < n; j++) {
-            if (hull[j].x == points[i].x && hull[j].y == points[i].y) {
-                found = true;
-                break;
-            }
-        }
-        if (!found) {
-            hull[n++] = points[i];
-        }
-    }
-
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < hullCount; i++) {
         printf("(%d, %d)\n", hull[i].x, hull[i].y);
     }
 }
