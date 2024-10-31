@@ -14,3 +14,4 @@ end
         puts "No duplicate characters"
     end 
 end
+# end
