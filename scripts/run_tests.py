@@ -6,7 +6,7 @@ from typing import Iterable, List, Set, NoReturn, Generator
 
 from glotter.batch import batch
 from glotter.download import download, remove_images
-from glotter.source import get_sources, filter_sources
+from glotter.source import get_sources
 from glotter.settings import Settings
 from glotter.test import test
 
@@ -135,7 +135,7 @@ def _do_batches(
         _display_batch("Downloading images", n, num_batches)
         containers = download(batch_args)
 
-        # Let tests be run
+        # Tell caller languages for this batch
         yield batch_args.language
 
         # If removing images, remove images for this batch
@@ -144,11 +144,11 @@ def _do_batches(
             remove_images(containers, parsed_args.parallel)
 
 
-def _display_batch(prefix, n, num_batches):
+def _display_batch(prefix, n, num_batches) -> None:
     print(f"\n*** {prefix} for batch {n + 1} of {num_batches} ***", flush=True)
 
 
-def main():
+def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--num-batches", type=int, help="number of glotter batches", required=True)
     parser.add_argument("--parallel", action="store_true", help="run glotter in parallel")
