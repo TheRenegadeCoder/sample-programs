@@ -2,7 +2,7 @@ import argparse
 import sys
 from collections import defaultdict
 from pathlib import Path
-from typing import Iterable, List, Set, NoReturn, Generator
+from typing import Iterable, List, Set, NoReturn, Generator, Optional
 
 from glotter.batch import batch
 from glotter.download import download, remove_images
@@ -23,8 +23,8 @@ def remove_non_existing_file_changes(files_changed: Iterable[str]) -> Set[Path]:
     return {Path(path) for path in files_changed if Path(path).exists()}
 
 
-def should_run_everything(paths_changed: Set[Path]) -> bool:
-    return bool(paths_changed & RUN_EVERYTHING_PATHS)
+def should_run_everything(event: Optional[str], paths_changed: Set[Path]) -> bool:
+    return event == "schedule" or bool(paths_changed & RUN_EVERYTHING_PATHS)
 
 
 def run_everything(parsed_args: argparse.Namespace) -> NoReturn:
@@ -150,6 +150,7 @@ def _display_batch(prefix, n, num_batches) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
+    parser.add_argument("--event", help="GitHub event")
     parser.add_argument("--num-batches", type=int, help="number of glotter batches", required=True)
     parser.add_argument("--parallel", action="store_true", help="run glotter in parallel")
     parser.add_argument(
@@ -159,7 +160,7 @@ def main() -> None:
     parsed_args = parser.parse_args()
 
     paths_changed = remove_non_existing_file_changes(parsed_args.files_changed)
-    if should_run_everything(paths_changed):
+    if should_run_everything(parsed_args.event, paths_changed):
         run_everything(parsed_args)
 
     if should_run_languages(paths_changed):

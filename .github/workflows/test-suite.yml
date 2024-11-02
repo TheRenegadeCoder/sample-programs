@@ -13,6 +13,9 @@ on:
   pull_request:
     branches:
       - 'main'
+  schedule:
+    # Run every Wednesday at 10:39 UTC (randomly chosen)
+    - cron: '39 10 * * 3'
 
 jobs:
 
@@ -53,7 +56,7 @@ jobs:
   testing:
     name: "Test Suite"
     needs: changed-files
-    if: needs.changed-files.outputs.status == 'true'
+    if: needs.changed-files.outputs.status == 'true' || ${{ github.event_name == 'schedule' }}
 
     strategy:
       fail-fast: true
@@ -86,8 +89,13 @@ jobs:
       run: poetry run glotter check
 
     - name: Download Docker images, Test Appropriate Sample Programs, Remove Docker Images
-      run: poetry run python scripts/run_tests.py --num-batches ${{ matrix.num_batches }}  --parallel --remove ${{ needs.changed-files.outputs.changed_files }}
-  
+      run: poetry run python scripts/run_tests.py \
+        --event ${{ github.event_name }}
+        --num-batches ${{ matrix.num_batches }} \
+        --parallel \
+        --remove \
+        ${{ needs.changed-files.outputs.changed_files }}
+
   # Because testing uses a matrix, we need this job for branch protections
   test-results:
     name: Test Results
