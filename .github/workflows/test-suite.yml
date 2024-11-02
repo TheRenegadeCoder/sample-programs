@@ -53,6 +53,8 @@ jobs:
     name: "Test Suite"
     needs: changed-files
     if: needs.changed-files.outputs.status == 'true'
+    env:
+      ALL_CHANGED_FILES: ${{ needs.changed-files.outputs.all_changed_files }}
 
     strategy:
       fail-fast: true
@@ -85,7 +87,7 @@ jobs:
       run: poetry run glotter check
 
     - name: Download Docker images, Test Appropriate Sample Programs, Remove Docker Images
-      run: poetry run python scripts/run_tests.py --num-batches ${{ matrix.num_batches }}  --parallel --remove ${{ needs.changed-files.outputs.all_changed_files }}
+      run: poetry run python scripts/run_tests.py --num-batches ${{ matrix.num_batches }}  --parallel --remove ${ALL_CHANGED_FILES}
 
   # Because testing uses a matrix, we need this job for branch protections
   test-results:
