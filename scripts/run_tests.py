@@ -12,6 +12,8 @@ from glotter.test import test
 
 RUN_EVERYTHING_PATHS = {
     Path(".glotter.yml"),
+    Path("pyproject.toml"),
+    Path("poetry.lock"),
     Path(".github/workflows/test-suite.yml"),
     Path("scripts/run_tests.py"),
 }
