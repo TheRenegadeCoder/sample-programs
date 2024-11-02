@@ -8,6 +8,7 @@ on:
     paths:
       - 'archive/**'
       - '.github/workflows/test-suite.yml'
+      - 'scripts/run_tests.py'
       - '!**/*.md'
   pull_request:
     branches:
@@ -34,6 +35,7 @@ jobs:
         files: |
           archive/**
           .github/workflows/test-suite.yml
+          scripts/run_tests.py
         files_ignore: |
           **/*.md
 
@@ -82,8 +84,8 @@ jobs:
     - name: Check for Bad Files
       run: poetry run glotter check
 
-    - name: Download Docker images, Test All Sample Programs, Remove Docker Images
-      run: poetry run glotter batch ${{ matrix.num_batches }}  --parallel --remove
+    - name: Download Docker images, Test Appropriate Sample Programs, Remove Docker Images
+      run: poetry run scripts/run_tests.py --num-batches ${{ matrix.num_batches }}  --parallel --remove ${ALL_CHANGED_FILES}
 
   # Because testing uses a matrix, we need this job for branch protections
   test-results:
