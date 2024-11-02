@@ -89,11 +89,11 @@ jobs:
       run: poetry run glotter check
 
     - name: Download Docker images, Test Appropriate Sample Programs, Remove Docker Images
-      run: poetry run python scripts/run_tests.py \
+      run: poetry run python scripts/run_tests.py
         --event ${{ github.event_name }}
-        --num-batches ${{ matrix.num_batches }} \
-        --parallel \
-        --remove \
+        --num-batches ${{ matrix.num_batches }}
+        --parallel
+        --remove
         ${{ needs.changed-files.outputs.changed_files }}
 
   # Because testing uses a matrix, we need this job for branch protections
