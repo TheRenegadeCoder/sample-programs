@@ -8,10 +8,14 @@ on:
     paths:
       - 'archive/**'
       - '.github/workflows/test-suite.yml'
+      - 'scripts/run_tests.py'
       - '!**/*.md'
   pull_request:
     branches:
       - 'main'
+  schedule:
+    # Run every Wednesday at 10:39 UTC (randomly chosen)
+    - cron: '39 10 * * 3'
 
 jobs:
 
@@ -22,6 +26,7 @@ jobs:
 
     outputs:
       status: ${{ steps.changed-files.outputs.any_changed }}
+      changed_files: ${{ steps.changed-files.outputs.all_changed_files }}
     steps:
     - uses: actions/checkout@v4
       with:
@@ -34,6 +39,7 @@ jobs:
         files: |
           archive/**
           .github/workflows/test-suite.yml
+          scripts/run_tests.py
         files_ignore: |
           **/*.md
 
@@ -50,7 +56,7 @@ jobs:
   testing:
     name: "Test Suite"
     needs: changed-files
-    if: needs.changed-files.outputs.status == 'true'
+    if: needs.changed-files.outputs.status == 'true' || ${{ github.event_name == 'schedule' }}
 
     strategy:
       fail-fast: true
@@ -82,8 +88,13 @@ jobs:
     - name: Check for Bad Files
       run: poetry run glotter check
 
-    - name: Download Docker images, Test All Sample Programs, Remove Docker Images
-      run: poetry run glotter batch ${{ matrix.num_batches }}  --parallel --remove
+    - name: Download Docker images, Test Appropriate Sample Programs, Remove Docker Images
+      run: poetry run python scripts/run_tests.py
+        --event ${{ github.event_name }}
+        --num-batches ${{ matrix.num_batches }}
+        --parallel
+        --remove
+        ${{ needs.changed-files.outputs.changed_files }}
 
   # Because testing uses a matrix, we need this job for branch protections
   test-results:
