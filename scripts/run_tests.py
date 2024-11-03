@@ -148,7 +148,7 @@ def _display_batch(prefix, n, num_batches) -> None:
     print(f"\n*** {prefix} for batch {n + 1} of {num_batches} ***", flush=True)
 
 
-def main() -> None:
+def main() -> NoReturn:
     parser = argparse.ArgumentParser()
     parser.add_argument("--event", help="GitHub event")
     parser.add_argument("--num-batches", type=int, help="number of glotter batches", required=True)
