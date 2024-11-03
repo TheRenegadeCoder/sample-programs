@@ -19,7 +19,7 @@ RUN_EVERYTHING_PATHS = {
 }
 
 
-def remove_non_existing_file_changes(files_changed: Iterable[str]) -> Set[Path]:
+def remove_deleted_file_changes(files_changed: Iterable[str]) -> Set[Path]:
     return {Path(path) for path in files_changed if Path(path).exists()}
 
 
@@ -159,7 +159,7 @@ def main() -> NoReturn:
     parser.add_argument("files_changed", nargs="*", help="files that have changed")
     parsed_args = parser.parse_args()
 
-    paths_changed = remove_non_existing_file_changes(parsed_args.files_changed)
+    paths_changed = remove_deleted_file_changes(parsed_args.files_changed)
     if should_run_everything(parsed_args.event, paths_changed):
         run_everything(parsed_args)
 
