@@ -7,7 +7,11 @@ int main() {
     std::string result;
 
     //add loop and iterate through the strings 
-        //add characters that aren't spaces
+    for(char c : str) {
+    //add characters that aren't spaces
+        
+    }
+        
             //print/update result
     
     //print out the result
