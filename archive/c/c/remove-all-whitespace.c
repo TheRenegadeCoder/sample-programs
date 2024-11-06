@@ -19,5 +19,9 @@ int main(int argc, char *argv[]) {
             output[j++] = input[i];
         }
     }
+
+    // null terminator 
+    output[j] = '\0';
+
     return 0;
 }
