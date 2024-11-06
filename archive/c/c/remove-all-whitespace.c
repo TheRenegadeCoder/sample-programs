@@ -3,8 +3,8 @@
 #include <ctype.h>
 
 int main(int argc, char *argv[]) {
-    // check whether the passed argument is a string
-    if (argc < 2) {
+    // check whether the passed argument is a string or empty
+    if (argc < 2 || argv[1][0] == '\0') {
         printf("Usage: please provide a string\n");
         return 1; 
     }
