@@ -4,10 +4,11 @@
 int main() {
     //added example string
     std::string noSpace = "RemoveAllWhiteSpace";
+    std::string leadSpace = " RemoveAllWhiteSpace";
     std::string result;
 
     //add loop and iterate through the strings 
-    for(char c : noSpace) {
+    for(char c : noSpace + leadSpace) {
     //add characters that aren't spaces
         if (c != ' ') {
     //print/update result
