@@ -8,6 +8,10 @@ int main(int argc, char *argv[]) {
         printf("Usage: please provide a string\n");
         return 1; 
     }
-    
+
+    char *input = argv[1]; 
+    char output = [1000];  
+    int j = 0; 
+
     return 0;
 }
