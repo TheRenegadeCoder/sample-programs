@@ -24,7 +24,7 @@ int main(int argc, char *argv[]) {
     output[j] = '\0';
 
     // print the output string with no spaces
-    printf("\"%s\"\n", output);
+    printf("%s\n", output);
 
     return 0;
 }
