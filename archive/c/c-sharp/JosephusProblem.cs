@@ -1,42 +1,40 @@
 using System;
-using System.Collections.Generic;
 
 namespace JosephusProblem
 {
     class Program
     {
+        const string Usage = "Usage: please input the total number of people and number of people to skip.";
+
         static void Main(string[] args)
         {
             if (args.Length < 2)
             {
+                Console.WriteLine(Usage);
                 return;
             }
 
             if (!int.TryParse(args[0], out int n) || !int.TryParse(args[1], out int k) || n <= 0 || k <= 0)
             {
+                Console.WriteLine(Usage);
                 return;
             }
 
             int survivor = FindJosephusPosition(n, k);
+
             Console.WriteLine(survivor);
         }
 
         static int FindJosephusPosition(int n, int k)
         {
-            List<int> people = new List<int>();
-            for (int i = 1; i <= n; i++)
+            int result = 0;
+
+            for (int m = 2; m <= n; m++)
             {
-                people.Add(i);
+                result = (result + k) % m;
             }
 
-            int currentIndex = 0;
-            while (people.Count > 1)
-            {
-                currentIndex = (currentIndex + k - 1) % people.Count;
-                people.RemoveAt(currentIndex);
-            }
-
-            return people[0];
+            return result + 1;
         }
     }
 }
