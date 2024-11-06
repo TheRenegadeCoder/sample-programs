@@ -1,14 +1,6 @@
 #include <iostream>
 #include <string>
 
-int main() {
-    //added example string
-    std::string noSpace = "RemoveAllWhiteSpace";
-    std::string leadSpace = " RemoveAllWhiteSpace";
-
-    return 0;
-} 
-
 void removeWhiteSpace(const std::string& input) {
     
     std::string result;
@@ -24,3 +16,14 @@ void removeWhiteSpace(const std::string& input) {
     //return 0;
     std::cout << result << std::endl;
 }
+
+int main() {
+    //added example string
+    std::string noSpace = "RemoveAllWhiteSpace";
+    std::string leadSpace = " RemoveAllWhiteSpace";
+
+    removeWhiteSpace(noSpace);
+    removeWhiteSpace(leadSpace);
+    
+    return 0;
+} 
