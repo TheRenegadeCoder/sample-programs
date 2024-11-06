@@ -3,7 +3,7 @@
 
 int main() {
     //added example string
-    std::string sentence = "This is a sentence with spaces.";
+    std::string sentence = "RemoveAllWhiteSpace";
     std::string result;
 
     //add loop and iterate through the strings 
@@ -17,6 +17,6 @@ int main() {
 
     //print out the result
     //return 0;
-    std::cout << "Result: " << result << std::endl;
+    std::cout << result << std::endl;
     return 0;
 }
