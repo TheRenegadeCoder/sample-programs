@@ -10,12 +10,13 @@ int main() {
     for(char c : sentence) {
     //add characters that aren't spaces
         if (c != ' ') {
+    //print/update result
             result += c;
         }
     }
-        
-            //print/update result
-    
+
     //print out the result
     //return 0;
+    std::cout << "Result: " << result << std::endl;
+    return 0;
 }
