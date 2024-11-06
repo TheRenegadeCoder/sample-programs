@@ -1,2 +1,12 @@
-// Testing
-// Hello
+using System;
+
+namespace DuplicateCharacterCounter 
+{
+    class Program 
+    {
+        static void Main(string[] args) 
+        {
+            Console.WriteLine("Hello, World!");
+        }
+    }
+}
