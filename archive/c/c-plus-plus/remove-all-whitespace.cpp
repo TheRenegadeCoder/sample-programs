@@ -21,9 +21,11 @@ int main() {
     //added example string
     std::string noSpace = "RemoveAllWhiteSpace";
     std::string leadSpace = " RemoveAllWhiteSpace";
+    std::string trailSpace = "RemoveAllWhiteSpace ";
+    std::string innerSpace = "Remove All White Space";
 
-    removeWhiteSpace(noSpace);
-    removeWhiteSpace(leadSpace);
+    removeWhiteSpace(noSpace); 
+    removeWhiteSpace(leadSpace); 
     
     return 0;
 } 
