@@ -20,7 +20,7 @@ int main(int argc, char *argv[]) {
         }
     }
 
-    // null terminator 
+    // null terminator to mark the end of a string
     output[j] = '\0';
 
     // print the output string with no spaces
