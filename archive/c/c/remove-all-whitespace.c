@@ -3,5 +3,11 @@
 #include <ctype.h>
 
 int main(int argc, char *argv[]) {
+    // check whether the passed argument is a string
+    if (argc < 2) {
+        printf("Usage: please provide a string\n");
+        return 1; 
+    }
+    
     return 0;
 }
