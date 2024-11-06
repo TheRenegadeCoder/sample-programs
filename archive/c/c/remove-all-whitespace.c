@@ -14,7 +14,10 @@ int main(int argc, char *argv[]) {
     int j = 0; 
 
     for (int i = 0; input[i] != '\0'; i++) {
-        
+        // check if current character is not a whitespace character
+        if (!isspace(input[i])) {
+            output[j++] = input[i];
+        }
     }
     return 0;
 }
