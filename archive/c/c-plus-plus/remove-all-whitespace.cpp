@@ -9,7 +9,9 @@ int main() {
     //add loop and iterate through the strings 
     for(char c : sentence) {
     //add characters that aren't spaces
-        if (c != ' ')
+        if (c != ' ') {
+            result += c;
+        }
     }
         
             //print/update result
