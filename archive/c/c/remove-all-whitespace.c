@@ -10,7 +10,7 @@ int main(int argc, char *argv[]) {
     }
 
     char *input = argv[1]; 
-    char output = [1000];  
+    char output[1000];  
     int j = 0; 
 
     for (int i = 0; input[i] != '\0'; i++) {
