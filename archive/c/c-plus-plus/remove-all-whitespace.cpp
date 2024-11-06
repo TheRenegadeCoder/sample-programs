@@ -26,6 +26,8 @@ int main() {
 
     removeWhiteSpace(noSpace); 
     removeWhiteSpace(leadSpace); 
+    removeWhiteSpace(trailSpace);
+    removeWhiteSpace(innerSpace);
     
     return 0;
 } 
