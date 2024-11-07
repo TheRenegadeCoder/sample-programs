@@ -11,10 +11,8 @@
 ;Process
 %DEFINE SYS_EXIT 60
 
-%DEFINE PROT_NONE 0x00
 %DEFINE PROT_READ 0x01
 %DEFINE PROT_WRITE 0x02
-%DEFINE PROT_EXEC 0x04
 
 ;FLAGS (R10)
 %DEFINE MAP_PRIVATE 0x02
@@ -55,15 +53,36 @@ strlen:
 
 global reverseString
 reverseString:
+    %DEFINE reverseString.STACK_INIT 8
+    PUSH RBP
+    MOV RBP, RSP
+    SUB RSP, reverseString.STACK_INIT ;Reserve space for string pointer, so we can use RAX (accumulator).
     ;RAX pointer of string to be reversed
+    ;RDI String length
+
+    MOV RAX, SYS_MMAP
+    MOV RSI, RDI ;Allocate the same amount of memory that the string takes.
+    MOV RDI, 0 ;Let the OS decide which address to use
+    MOV RDX, PROT_WRITE | PROT_READ ;We'll allow the memory to be read and written to.
+    MOV R10, MAP_PRIVATE | MAP_ANONYMOUS ;We won't allow other processes to touch this memory, and it will not be associated with a file.
+    MOV R8, 0 ;No file descriptor.
+    MOV R9, 0 ;No offset.
+    SYSCALL
+
+    MOV [RSP-8], RAX ;Move the memory pointer returned from SYS_MMAP into RSP-8
+
+    
+
+
+    ;Return: Pointer of reversed string.
 
 _start:
-    %DEFINE STACK_INIT 16 ;Defining this so we aren't placing a literal every time we need to empty the stack at the end.
+    %DEFINE _start.STACK_INIT 16 ;Defining this so we aren't placing a literal every time we need to empty the stack at the end.
     ;Setting up stack frame. Prolog.
     PUSH RBP
     MOV RBP, RSP
     ;Allocating space on the stack for variables
-    SUB RSP, STACK_INIT ;16 bytes allocated
+    SUB RSP, _start.STACK_INIT ;16 bytes allocated
     MOV [RBP-8], 0 ;Length of text, 8 bytes.
     MOV [RBP-16], 0 ;New String PTR, 8 bytes.
     
@@ -87,7 +106,7 @@ _start:
         SYSCALL
 
         ;Epilog
-        ADD RSP, STACK_INIT
+        ADD RSP, _start.STACK_INIT
         MOV RSP, RBP
         POP RBP
 
@@ -95,6 +114,15 @@ _start:
         MOV RAX, SYS_EXIT
         XOR RDI, RDI
         SYSCALL
+
+
+    input:
+        MOV RAX, [RBP+16] ;MOV arg1 to RAX
+        CALL strlen ;Call our string length function
+
+        MOV [RBP-8], RAX ;Move string length result into RSP-8
+
+
 
 
     
