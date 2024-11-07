@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in C++! To find documentation related to the C++ code in this repo, look [here.](https://sampleprograms.io/languages/c-plus-plus)
 
-## Sample Programs List - 26/37 :relaxed:
+## Sample Programs List - 27/37 :relaxed:
 
 In this section, we feature a list of completed and missing programs in C++. See above for the current amount of completed programs in C++. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -32,6 +32,7 @@ Below, you'll find a list of completed code snippets in C++. Code snippets prece
 - :warning: [Palindromic Number in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+c++) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :warning: [Prime Number in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+c++) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :warning: [Quick Sort in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+c++) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
+- :warning: [Remove All Whitespace in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+remove+all+whitespace+c++) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :warning: [Reverse String in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+c++) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :warning: [Roman Numeral in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+c++) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :warning: [Rot13 in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+c++) [[Requirements](https://sampleprograms.io/projects/rot13)]
@@ -49,7 +50,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+subarray&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+C%2B%2B) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+C%2B%2B) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
 - :x: [Quine](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,quine&template=code-snippet-request.md&title=Add+Quine+in+C%2B%2B) [[Requirements](https://sampleprograms.io/projects/quine)]
-- :x: [Remove All Whitespace](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,remove+all+whitespace&template=code-snippet-request.md&title=Add+Remove+All+Whitespace+in+C%2B%2B) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+C%2B%2B) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,transpose+matrix&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+C%2B%2B) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
