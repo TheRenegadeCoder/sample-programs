@@ -6,11 +6,13 @@
 int main(int argc, char* argv[]) {
 
     
-    if (input.empty()) {
+    if (argc < 2) {
         std::cout << "Usage: please provide a string" << std::endl;
-        return; 
+        return 1; // Return error code 
     }
 
+    std::string input = argv[1]; // Get the input string from the command-line argument
+                                // Argument Vector. An array of character pointers, where each points points to a string
     std::string result;
     //add loop and iterate through the strings 
     for(char c : input) {
