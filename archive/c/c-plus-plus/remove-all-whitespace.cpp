@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-void removeWhiteSpace(const std::string& input) {
+void removeWhitespace(const std::string& input) {
     
     std::string result;
     //add loop and iterate through the strings 
@@ -23,11 +23,17 @@ int main() {
     std::string leadSpace = " RemoveAllWhitespace";
     std::string trailSpace = "RemoveAllWhitespace ";
     std::string innerSpace = "Remove All Whitespace";
+    std::string tabs = "\tRemove\tAll\tWhitespace\t";
+    std::string newsLines = "\nRemove\nAll\nWhitespace\n";
+    std::string carriageReturns = "\rRemove\rAll\rWhitespace";
 
-    removeWhiteSpace(noSpace); 
-    removeWhiteSpace(leadSpace); 
-    removeWhiteSpace(trailSpace);
-    removeWhiteSpace(innerSpace);
+    removeWhitespace(noSpace); 
+    removeWhitespace(leadSpace); 
+    removeWhitespace(trailSpace);
+    removeWhitespace(innerSpace);
+    removeWhitespace(tabs);
+    removeWhitespace(newsLines);
+    removeWhitespace(carriageReturns);
     
     return 0;
 } 
