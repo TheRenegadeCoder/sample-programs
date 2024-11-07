@@ -3,6 +3,11 @@
 
 void removeWhitespace(const std::string& input) {
     
+    if (input.empty()) {
+        std::cout << "Usage: please provide a string" << std::endl;
+        return; 
+    }
+
     std::string result;
     //add loop and iterate through the strings 
     for(char c : input) {
