@@ -14,6 +14,13 @@ int main(int argc, char* argv[]) {
     std::string input = argv[1]; // Get the input string from the command-line argument
                                 // Argument Vector. An array of character pointers, where each points points to a string
     std::string result;
+
+    //check if input string is empty
+    if (input.empty()) {
+        std::cout << "Usage: please provide a string" << std::endl;
+        return 1; // Exit error code
+    } 
+
     //add loop and iterate through the strings 
     for(char c : input) {
     //add characters that aren't spaces
