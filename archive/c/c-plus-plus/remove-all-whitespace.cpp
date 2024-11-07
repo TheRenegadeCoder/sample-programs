@@ -3,7 +3,7 @@
 #include <cctype>  // for std::isspace
 
 
-int main(const std::int& input) {
+int main(int argc, char* argv[]) {
 
     
     if (input.empty()) {
