@@ -1,0 +1,1 @@
+const error_message: string = "Usage: please provide a string";
