@@ -19,10 +19,10 @@ void removeWhiteSpace(const std::string& input) {
 
 int main() {
     //added example string
-    std::string noSpace = "RemoveAllWhiteSpace";
-    std::string leadSpace = " RemoveAllWhiteSpace";
-    std::string trailSpace = "RemoveAllWhiteSpace ";
-    std::string innerSpace = "Remove All White Space";
+    std::string noSpace = "RemoveAllWhitespace";
+    std::string leadSpace = " RemoveAllWhitespace";
+    std::string trailSpace = "RemoveAllWhitespace ";
+    std::string innerSpace = "Remove All Whitespace";
 
     removeWhiteSpace(noSpace); 
     removeWhiteSpace(leadSpace); 
