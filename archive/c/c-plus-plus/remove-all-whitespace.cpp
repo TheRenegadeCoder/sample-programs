@@ -12,8 +12,8 @@ void removeWhitespace(const std::string& input) {
     //add loop and iterate through the strings 
     for(char c : input) {
     //add characters that aren't spaces
-        if (c != ' ') {
-    //print/update result
+    // If the character is not a whitespace character, add it to result
+        if (!std::isspace(static_cast<unsigned char>(c))) {
             result += c;
         }
     }
