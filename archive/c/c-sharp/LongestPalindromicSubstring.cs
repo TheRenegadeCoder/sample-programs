@@ -21,4 +21,14 @@ public class LongestPalindromicSubstring
         }
         return input.Substring(start, end - start + 1);
     }
+
+    private int ExpandAroundCenter(string input, int left, int right)
+    {
+        while (left >= 0 && right < input.length && input[left] == input[right])
+        {
+            left--;
+            right++;
+        }
+        return right - left - 1;
+    }
 }
