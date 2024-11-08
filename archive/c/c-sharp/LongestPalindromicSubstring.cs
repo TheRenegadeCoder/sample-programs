@@ -56,7 +56,9 @@ namespace SamplePrograms
                     return true;
                 }
             }
-            return false;
+            
+            string cleanedInput = input.Replace(" ", "");
+            return cleanedInput.Length > 1 && cleanedInput == Reverse(cleanedInput);
         }
 
         private static string Reverse(string input)
