@@ -11,7 +11,7 @@ public class LongestWord
             string[] words = sentence.Split(new[] {' ', '\t', '\n', '\r'});
 
             // sort array by length in descending order so longest string is first and returns is to array
-            words = words.OrderByDescending(word => word).ToArray();
+            words = words.OrderByDescending(word => word.Length).ToArray();
             console.WriteLine(words[0].Length);
         }
     }
