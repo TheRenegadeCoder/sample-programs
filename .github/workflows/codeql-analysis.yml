@@ -11,15 +11,15 @@
 #
 name: "CodeQL"
 
-# Can't get C/C++, C#, Java/Kotlin, and Swift to work. Comment out for now
+# Can't get C#, Java, Kotlin, and Swift to work. Comment out for now
 on:
   push:
     branches: [ main ]
     paths:
       - '.github/workflows/codeql-analysis.yml'
       - 'scripts/*.py'
-      #- 'archive/c/c/*.c'
-      #- 'archive/c/c-plus-plus/*.cpp'
+      - 'archive/c/c/*.c'
+      - 'archive/c/c-plus-plus/*.cpp'
       #- 'archive/c/c-sharp/*.cs'
       - 'archive/g/go/*.go'
       #- 'archive/j/java/*.java'
@@ -35,8 +35,8 @@ on:
     paths:
       - '.github/workflows/codeql-analysis.yml'
       - 'scripts/*.py'
-      #- 'archive/c/c/*.c'
-      #- 'archive/c/c-plus-plus/*.cpp'
+      - 'archive/c/c/*.c'
+      - 'archive/c/c-plus-plus/*.cpp'
       #- 'archive/c/c-sharp/*.cs'
       - 'archive/g/go/*.go'
       #- 'archive/j/java/*.java'
@@ -107,26 +107,7 @@ jobs:
       uses: github/codeql-action/init@v3
       with:
         languages: ${{ matrix.language }}
-        # If you wish to specify custom queries, you can do so here or in a config file.
-        # By default, queries listed here will override any specified in a config file.
-        # Prefix the list here with "+" to use these queries and those in the config file.
-        # queries: ./path/to/local/query, your-org/your-repo/queries@main
-
-    # Autobuild attempts to build any compiled languages  (C/C++, C#, Java/Kotlin, or Swift).
-    # If this step fails, then you should remove it and run the build manually (see below)
-    - name: Autobuild
-      uses: github/codeql-action/autobuild@v3
-
-    # ℹ️ Command-line programs to run using the OS shell.
-    # 📚 https://git.io/JvXDl
-
-    # ✏️ If the Autobuild fails above, remove it and uncomment the following three lines
-    #    and modify them (or add more) to build your code if your project
-    #    uses a compiled language
-
-    #- run: |
-    #   make bootstrap
-    #   make release
+        build-mode: none
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
