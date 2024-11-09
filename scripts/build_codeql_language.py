@@ -1,21 +1,19 @@
 import argparse
 import subprocess
-from dataclasses import dataclass
 from pathlib import Path
-from typing import Callable, List
+from typing import Callable, Dict, List
 
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("language", help="language to build")
-    parser.add_argument("files_changed", nargs="*", help="files changed")
+    parser.add_argument("glob", nargs="*", help="path glob to match")
     parsed_args = parser.parse_args()
-    language_entry = LANGUAGE_TABLE[parsed_args.language]
-    for changed_file in parsed_args.files_changed:
-        path = Path(changed_file)
-        if path.suffix == language_entry.extension:
+    command_func = COMMANDS[parsed_args.language]
+    for glob in parsed_args.glob:
+        for path in Path(".").glob(glob):
             print(f"Building {path}")
-            command = language_entry.func(path)
+            command = command_func(path)
             subprocess.run(command, cwd=path.parent, check=True)
 
 
@@ -43,19 +41,13 @@ def build_swift(path: Path) -> List[str]:
     return ["swiftc", "-o", path.stem, path.name]
 
 
-@dataclass
-class LanguageInfo:
-    extension: str
-    func: Callable[[Path], List[str]]
-
-
-LANGUAGE_TABLE = {
-    "c": LanguageInfo(extension=".c", func=build_c),
-    "cpp": LanguageInfo(extension=".cpp", func=build_cpp),
-    "c#": LanguageInfo(extension=".cs", func=build_c_sharp),
-    "java": LanguageInfo(extension=".java", func=build_java),
-    "kotlin": LanguageInfo(extension=".kt", func=build_kotlin),
-    "swift": LanguageInfo(extension=".swift", func=build_swift),
+COMMANDS: Dict[str, Callable[[Path], List[str]]] = {
+    "c": build_c,
+    "cpp": build_cpp,
+    "c#": build_c_sharp,
+    "java": build_java,
+    "kotlin": build_kotlin,
+    "swift": build_swift,
 }
 
 if __name__ == "__main__":

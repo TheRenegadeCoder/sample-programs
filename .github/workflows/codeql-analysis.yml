@@ -109,21 +109,8 @@ jobs:
         distribution: 'oracle'
         java-version: '23'
 
-    # Generate CodeQL config file
-    - name: General CodeQL config file
-      env:
-        PATHS: ${{ matrix.paths }}
-        PATHS_IGNORE: ${{ matrix.paths-ignore }}
-      run: |
-        echo "paths:" >codeql-config.yml
-        for path in ${PATHS}; do
-          echo "  - ${path}" >>codeql-config.yml
-        done
-        echo "paths-ignore:" >>codeql-config.yml
-        for path in ${PATHS_IGNORE}; do
-          echo "  - ${path}" >>codeql-config.yml
-        done
-        cat codeql-config.yml
+    - name: Remove ignored paths
+      run: rm -f ${{ matrix.paths-ignore }}
 
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
@@ -131,7 +118,6 @@ jobs:
       with:
         languages: ${{ matrix.language }}
         build-mode: ${{ matrix.build-mode }}
-        config-file: codeql-config.yml
 
     # Autobuild attempts to build any compiled languages  (C/C++, C#, or Java).
     # If this step fails, then you should remove it and run the build manually (see below)

@@ -45,24 +45,19 @@ def main():
     languages: Set[LanguageInfo] = set()
     language_paths: DefaultDict[str, Set[str]] = defaultdict(set)
     language_paths_ignore: DefaultDict[str, Set[str]] = defaultdict(set)
-    language_paths_include: DefaultDict[str, List[str]] = defaultdict(list)
     if set(parsed_args.files_changed) & ALL_CODEQL_LANGUAGES_FILES:
         for glob, language_info in CODEQL_LANGUAGES.items():
             languages.add(language_info)
-            language_paths[language_info.language].add(str(Path(glob).parent))
-            language_paths_include[language_info.language] = [
-                str(path) for path in Path(".").glob(glob)
-            ]
+            language_paths[language_info.language].add(glob)
     else:
         for changed_path in parsed_args.files_changed:
             for glob, language_info in CODEQL_LANGUAGES.items():
                 if fnmatch(changed_path, glob):
                     languages.add(language_info)
-                    language_paths[language_info.language].add(str(Path(glob).parent))
+                    language_paths[language_info.language].add(glob)
                     language_paths_ignore[language_info.language].update(
                         str(path) for path in Path(".").glob(glob) if str(path) != changed_path
                     )
-                    language_paths_include[language_info.language].append(changed_path)
                     break
 
     workflow_output = [
@@ -72,7 +67,6 @@ def main():
             "os": language_info.os,
             "paths": " ".join(sorted(language_paths[language_info.language])),
             "paths-ignore": " ".join(sorted(language_paths_ignore[language_info.language])),
-            "paths-include": " ".join(sorted(language_paths_include[language_info.language])),
         }
         for language_info in sorted(languages, key=lambda x: x.language)
     ]
