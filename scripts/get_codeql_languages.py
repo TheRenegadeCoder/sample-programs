@@ -7,7 +7,7 @@ CODEQL_LANGUAGES = {
     "scripts/*.py": "python",
     "archive/c/c/*.c": "c",
     "archive/c/c-plus-plus/*.cpp": "cpp",
-    # "archive/c/c-sharp/*.cs": "c#",
+    "archive/c/c-sharp/*.cs": "c#",
     "archive/g/go/*.go": "go",
     # "archive/j/java/*.java": "java",
     "archive/j/javascript/*.js": "javascript",
@@ -28,7 +28,7 @@ MACOS = "macos-latest"
 LANGUAGE_CONFIG = {
     "c": {"build-mode": "manual", "os": LINUX},
     "cpp": {"build-mode": "manual", "os": LINUX},
-    # "c#": {"build-mode": "none", "os": LINUX},
+    "c#": {"build-mode": "manual", "os": LINUX},
     "go": {"build-mode": "autobuild", "os": LINUX},
     # "java": {"build-mode": "none", "os": LINUX},
     # "kotlin": {"build-mode": "autobuild", "os": LINUX},
