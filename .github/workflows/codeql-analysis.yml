@@ -48,7 +48,7 @@ on:
       - 'archive/t/typescript/*.ts'
   
 jobs:
-  # We need this job to check if changed files should trigger testing
+  # We need this job to check if changed files should trigger analysis
   changed-files:
     name: "Changed Files"
     runs-on: ubuntu-latest
