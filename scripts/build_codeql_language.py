@@ -16,8 +16,13 @@ def build_c(path: Path):
     subprocess.run(["gcc", "-o", str(path.stem), str(path.name)], cwd=path.parent, check=True)
 
 
+def build_cpp(path: Path):
+    subprocess.run(["g++", "-o", str(path.stem), str(path.name)], cwd=path.parent, check=True)
+
+
 LANGUAGE_TABLE = {
     "c": {"dir_path": "archive/c/c", "extension": ".c", "func": build_c},
+    "cpp": {"dir_path": "archive/c/c-plus-plus", "extension": ".cpp", "func": build_cpp}
 }
 
 if __name__ == "__main__":
