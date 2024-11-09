@@ -49,8 +49,7 @@ jobs:
     runs-on: ubuntu-latest
 
     outputs:
-      status: ${{ steps.changed-files.outputs.any_changed }}
-      changed_files: ${{ steps.changed-files.outputs.all_changed_files }}
+      matrix: ${{ steps.codeql-languages.matrix }}
     steps:
     - uses: actions/checkout@v4
       with:
@@ -72,9 +71,9 @@ jobs:
     # Reference: https://stackoverflow.com/questions/65384420/how-do-i-make-a-github-action-matrix-element-conditional
     - name: Get CodeQL Languages
       id: codeql-languages
-      if: steps.changed-files.outputs.any_changed == 'true'
       run: |
         matrix=$(python scripts/get_codeql_languages.py ${{ steps.changed-files.outputs.all_changed_files }})
+        echo "${matrix}"
         echo "matrix={\"include\":$(echo $matrix)}" >> $GITHUB_OUTPUT
 
   analyze:
@@ -89,7 +88,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        language: ${{ fromJson(needs.changed-files.codeql-languages.outputs.codeql-languages.matrix) }}
+        language: ${{ fromJson(needs.changed-files.outputs.matrix) }}
         # Learn more:
         # https://docs.github.com/en/free-pro-team@latest/github/finding-security-vulnerabilities-and-errors-in-your-code/configuring-code-scanning#changing-the-languages-that-are-analyzed
 
@@ -108,7 +107,6 @@ jobs:
         # By default, queries listed here will override any specified in a config file.
         # Prefix the list here with "+" to use these queries and those in the config file.
         # queries: ./path/to/local/query, your-org/your-repo/queries@main
-      if: steps.changed-files.outputs.${{ matrix.language }}_any_changed == 'true'
 
     # Autobuild attempts to build any compiled languages  (C/C++, C#, or Java).
     # If this step fails, then you should remove it and run the build manually (see below)
