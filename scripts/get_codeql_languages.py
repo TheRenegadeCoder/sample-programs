@@ -31,7 +31,7 @@ LANGUAGE_CONFIG = {
     "c#": {"build-mode": "manual", "os": LINUX},
     "go": {"build-mode": "autobuild", "os": LINUX},
     "java": {"build-mode": "manual", "os": LINUX},
-    "kotlin": {"build-mode": "autobuild", "os": LINUX},
+    "kotlin": {"build-mode": "manual", "os": LINUX},
     "javascript": {"build-mode": "none", "os": LINUX},
     "python": {"build-mode": "none", "os": LINUX},
     "ruby": {"build-mode": "none", "os": LINUX},

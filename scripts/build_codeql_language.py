@@ -36,6 +36,7 @@ def build_java(path: Path) -> List[str]:
 def build_kotlin(path: Path) -> List[str]:
     return ["kotlinc", str(path.name), "-include-runtime", "-d", f"{path.stem}.jar"]
 
+
 @dataclass
 class LanguageInfo:
     dir_path: str
@@ -48,7 +49,7 @@ LANGUAGE_TABLE = {
     "cpp": LanguageInfo(dir_path="archive/c/c-plus-plus", extension=".cpp", func=build_cpp),
     "c#": LanguageInfo(dir_path="archive/c/c-sharp", extension=".cs", func=build_c_sharp),
     "java": LanguageInfo(dir_path="archive/j/java", extension=".java", func=build_java),
-    "kotlin": LanguageInfo(dir_path="archive/k/kotlin", extension=".kt", func=build_kotlin)
+    "kotlin": LanguageInfo(dir_path="archive/k/kotlin", extension=".kt", func=build_kotlin),
 }
 
 if __name__ == "__main__":
