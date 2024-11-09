@@ -1,4 +1,5 @@
 using Systems;
+using System.Linq;
 
 class Program
 {
@@ -18,6 +19,6 @@ class Program
 
     static string RemoveWhitespace(string input)
     {
-        return input.Replace(" ","");
+        return string.Concat(input.Where(char => !char.IsWhiteSpace(c)));
     }
 }
