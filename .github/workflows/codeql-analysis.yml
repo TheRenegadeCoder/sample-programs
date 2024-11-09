@@ -17,7 +17,7 @@ on:
     branches: [ main ]
     paths:
       - '.github/workflows/codeql-analysis.yml'
-      - 'scripts/get_codeql_languages.py'
+      - 'scripts/*.py'
       #- 'archive/c/c/*.c'
       #- 'archive/c/c-plus-plus/*.cpp'
       #- 'archive/c/c-sharp/*.cs'
@@ -34,7 +34,7 @@ on:
       - 'main'
     paths:
       - '.github/workflows/codeql-analysis.yml'
-      - 'scripts/get_codeql_languages.py'
+      - 'scripts/*.py'
       #- 'archive/c/c/*.c'
       #- 'archive/c/c-plus-plus/*.cpp'
       #- 'archive/c/c-sharp/*.cs'

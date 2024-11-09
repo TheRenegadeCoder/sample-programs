@@ -4,6 +4,7 @@ from fnmatch import fnmatch
 
 # Can't get C/C++, C#, Java/Kotlin, and Swift to work. Comment out for now
 CODEQL_LANGUAGES = {
+    "scripts/*.py": "python",
     # "archive/c/c/*.c": "c-cpp",
     # "archive/c/c-plus-plus/*.cpp": "c-cpp",
     #"archive/c/c-sharp/*.cs": "c#",
