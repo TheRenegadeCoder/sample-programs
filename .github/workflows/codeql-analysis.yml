@@ -112,8 +112,8 @@ jobs:
     # Autobuild attempts to build any compiled languages  (C/C++, C#, or Java).
     # If this step fails, then you should remove it and run the build manually (see below)
     - name: Autobuild
-      uses: github/codeql-action/autobuild@v3
       if: matrix.build-mode != 'manual'
+      uses: github/codeql-action/autobuild@v3
 
     # ℹ️ Command-line programs to run using the OS shell.
     # 📚 https://git.io/JvXDl
@@ -123,8 +123,8 @@ jobs:
     #    uses a compiled language
 
     - name: Manual build
-      run: python scripts/build_codeql_language.py ${{ matrix.language }}
       if: matrix.build-mode == 'manual'
+      run: python scripts/build_codeql_language.py ${{ matrix.language }}
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
