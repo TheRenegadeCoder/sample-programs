@@ -53,6 +53,7 @@ strlen:
 
 global reverseString
 reverseString:
+    ;Could be vectorized like strlen but will be simplified for others to read.
     %DEFINE reverseString.STACK_INIT 8
     PUSH RBP
     MOV RBP, RSP
@@ -89,7 +90,7 @@ reverseString:
         CMP RCX, RBX
         JL reverseString.loop ;Jump short if lower than RBX (string length)
 
-    POP RAX ;Equivlant to MOV RAX, [RBP-8] ADD RSP, 8
+    POP RAX ;Equivlant to MOV RAX, [RBP-8] (dependant on stack size) ADD RSP, 8
     ;Return: Pointer of reversed string.
     MOV RSP, RBP
     POP RBP
@@ -139,6 +140,35 @@ _start:
         CALL strlen ;Call our string length function
 
         MOV [RBP-8], RAX ;Move string length result into RSP-8
+
+        MOV RDI, RAX
+        MOV RAX, [RBP+16]
+        CALL reverseString
+        MOV [RBP-16], RAX ;Moving return pointer into RBP-16
+
+        MOV RAX, SYS_WRITE
+        MOV RDI, STDOUT
+        MOV RSI, [RBP-16] ;Moving string pointer into RSI
+        MOV RDX, [RBP-8] ;Moving string length into RDX
+        SYSCALL
+
+
+        ;Equivalent to *reversedString = NULL; in C
+        MOV RAX, SYS_MUNMAP
+        MOV RDI, [RBP-16] ;Move string pointer into RDI to be unmapped.
+        MOV RSI, [RBP-8] ;Move amount of memory to be unmapped in bytes.
+        SYSCALL
+
+        ;Epilog
+        ADD RSP, _start.STACK_INIT
+        MOV RSP, RBP
+        POP RBP
+
+        ;Exit
+        MOV RAX, SYS_EXIT
+        XOR RDI, RDI
+        SYSCALL
+        
 
 
 
