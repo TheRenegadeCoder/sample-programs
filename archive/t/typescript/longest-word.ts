@@ -3,7 +3,7 @@ if (process.argv.length < 3 || process.argv[2].length < 1) {
     process.exit(0)
 }
 
-let testString: string = process.argv[2];
+let testString: string = process.argv[2].replace(/\n|\t|\r/g, " ");
 
 const separatedWords: string[] = testString.split(' ');
 
