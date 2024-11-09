@@ -5,21 +5,16 @@ if (process.argv.length < 3 || process.argv[2].length < 1) {
 
 let testString: string = process.argv[2];
 
-//     const separatedWords: string[] = input.split(' ');
+const separatedWords: string[] = testString.split(' ');
 
-//     let longestWord: string = "";
-//     let wordLength: number = 0;
+let longestWord: string = "";
+let wordLength: number = 0;
 
-//     for (let word of separatedWords) {
-//         if (word.length > longestWord.length) {
-//             longestWord = word;
-//             wordLength = word.length;
-//         }
-//         else if (word == "") {
-//             console.log(error_message);
-//             process.exit(1);
-//         }
-//     }
+for (let word of separatedWords) {
+    if (word.length > longestWord.length) {
+        longestWord = word;
+        wordLength = word.length;
+    }
+}
 
-//     return wordLength;
-// }
+console.log(wordLength);
