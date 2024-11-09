@@ -7,14 +7,14 @@ from typing import Callable, Dict, List
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("language", help="language to build")
-    parser.add_argument("glob", nargs="*", help="path glob to match")
+    parser.add_argument("files_changed", nargs="*", help="files that have changed")
     parsed_args = parser.parse_args()
     command_func = COMMANDS[parsed_args.language]
-    for glob in parsed_args.glob:
-        for path in Path(".").glob(glob):
-            print(f"Building {path}")
-            command = command_func(path)
-            subprocess.run(command, cwd=path.parent, check=True)
+    for changed_file in parsed_args.files_changed:
+        path = Path(changed_file)
+        print(f"Building {path}")
+        command = command_func(path)
+        subprocess.run(command, cwd=path.parent, check=True)
 
 
 def build_c(path: Path) -> List[str]:
