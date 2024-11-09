@@ -4,6 +4,13 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Remove All Whitespace Program in C#");
+        string input = "Hello World";
+        string result = RemoveWhitespace(input);
+        Console.WriteLine(result);
+    }
+
+    static string RemoveWhitespace(string input)
+    {
+        return input.Replace(" ","");
     }
 }
