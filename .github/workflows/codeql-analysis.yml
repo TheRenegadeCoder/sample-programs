@@ -11,7 +11,7 @@
 #
 name: "CodeQL"
 
-# Can't get Java, Kotlin, and Swift to work. Comment out for now
+# Can't get Swift to work. Comment out for now
 on:
   push:
     branches: [ main ]
@@ -24,7 +24,7 @@ on:
       - 'archive/g/go/*.go'
       - 'archive/j/java/*.java'
       - 'archive/j/javascript/*.js'
-      #- 'archive/k/kotlin/*.kt'
+      - 'archive/k/kotlin/*.kt'
       - 'archive/p/python/*.py'
       - 'archive/r/ruby/*.rb'
       - 'archive/s/swift/*.swift'
@@ -41,7 +41,7 @@ on:
       - 'archive/g/go/*.go'
       - 'archive/j/java/*.java'
       - 'archive/j/javascript/*.js'
-      #- 'archive/k/kotlin/*.kt'
+      - 'archive/k/kotlin/*.kt'
       - 'archive/p/python/*.py'
       - 'archive/r/ruby/*.rb'
       #- 'archive/s/swift/*.swift'

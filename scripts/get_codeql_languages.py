@@ -2,7 +2,7 @@ import argparse
 import json
 from fnmatch import fnmatch
 
-# Can't get C#, Java, Kotlin, and Swift to work. Comment out for now
+# Can't get Swift to work. Comment out for now
 CODEQL_LANGUAGES = {
     "scripts/*.py": "python",
     "archive/c/c/*.c": "c",
@@ -11,7 +11,7 @@ CODEQL_LANGUAGES = {
     "archive/g/go/*.go": "go",
     "archive/j/java/*.java": "java",
     "archive/j/javascript/*.js": "javascript",
-    # "archive/k/kotlin/*.kt": "kotlin",
+    "archive/k/kotlin/*.kt": "kotlin",
     "archive/p/python/*.py": "python",
     "archive/r/ruby/*.rb": "ruby",
     # "archive/s/swift/*.swift": "swift",
@@ -31,7 +31,7 @@ LANGUAGE_CONFIG = {
     "c#": {"build-mode": "manual", "os": LINUX},
     "go": {"build-mode": "autobuild", "os": LINUX},
     "java": {"build-mode": "manual", "os": LINUX},
-    # "kotlin": {"build-mode": "autobuild", "os": LINUX},
+    "kotlin": {"build-mode": "autobuild", "os": LINUX},
     "javascript": {"build-mode": "none", "os": LINUX},
     "python": {"build-mode": "none", "os": LINUX},
     "ruby": {"build-mode": "none", "os": LINUX},
