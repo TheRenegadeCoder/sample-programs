@@ -12,11 +12,11 @@ def main():
     parsed_args = parser.parse_args()
     language_entry = LANGUAGE_TABLE[parsed_args.language]
     for changed_file in parsed_args.files_changed:
-        for path in Path(".").glob(changed_file):
-            if path.suffix == language_entry.extension:
-                print(f"Building {path}")
-                command = language_entry.func(path)
-                subprocess.run(command, cwd=path.parent, check=True)
+        path = Path(changed_file)
+        if path.suffix == language_entry.extension:
+            print(f"Building {path}")
+            command = language_entry.func(path)
+            subprocess.run(command, cwd=path.parent, check=True)
 
 
 def build_c(path: Path) -> List[str]:
