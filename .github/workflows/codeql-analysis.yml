@@ -78,6 +78,7 @@ jobs:
       run: |
         matrix=$(python scripts/get_codeql_languages.py ${{ steps.changed-files.outputs.all_changed_files }})
         echo "${matrix}"
+        cat temp/*.yml
         echo "matrix={\"include\": ${matrix}}" >> $GITHUB_OUTPUT
 
   analyze:
@@ -114,6 +115,7 @@ jobs:
       with:
         languages: ${{ matrix.language }}
         build-mode: ${{ matrix.build-mode }}
+        config-file: ${{ matrix.config-file }}
 
     # Autobuild attempts to build any compiled languages  (C/C++, C#, or Java).
     # If this step fails, then you should remove it and run the build manually (see below)
@@ -130,7 +132,7 @@ jobs:
 
     - name: Manual build
       if: ${{ matrix.build-mode == 'manual' }}
-      run: python scripts/build_codeql_language.py ${{ matrix.language }}
+      run: python scripts/build_codeql_language.py ${{ matrix.language }} ${{ matrix.config-file }}
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3

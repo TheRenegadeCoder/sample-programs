@@ -7,14 +7,19 @@ from typing import Callable, List
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("language", help="language_to_build")
+    parser.add_argument("language", help="language to build")
+    parser.add_argument("config_file", help="configuration file")
     parsed_args = parser.parse_args()
     language_entry = LANGUAGE_TABLE[parsed_args.language]
-    for path in Path(language_entry.dir_path).iterdir():
-        if path.suffix == language_entry.extension:
-            print(f"Building {path}")
-            command = language_entry.func(path)
-            subprocess.run(command, cwd=path.parent, check=True)
+    lines = Path(parsed_args.config_file).splitlines()[1:]
+    for line in lines:
+        line = line.strip()[1:].strip()
+        if line:
+            for path in Path.glob(line):
+                if path.suffix == language_entry.extension:
+                    print(f"Building {path}")
+                    command = language_entry.func(path)
+                    subprocess.run(command, cwd=path.parent, check=True)
 
 
 def build_c(path: Path) -> List[str]:
@@ -43,18 +48,17 @@ def build_swift(path: Path) -> List[str]:
 
 @dataclass
 class LanguageInfo:
-    dir_path: str
     extension: str
     func: Callable[[Path], List[str]]
 
 
 LANGUAGE_TABLE = {
-    "c": LanguageInfo(dir_path="archive/c/c", extension=".c", func=build_c),
-    "cpp": LanguageInfo(dir_path="archive/c/c-plus-plus", extension=".cpp", func=build_cpp),
-    "c#": LanguageInfo(dir_path="archive/c/c-sharp", extension=".cs", func=build_c_sharp),
-    "java": LanguageInfo(dir_path="archive/j/java", extension=".java", func=build_java),
-    "kotlin": LanguageInfo(dir_path="archive/k/kotlin", extension=".kt", func=build_kotlin),
-    "swift": LanguageInfo(dir_path="archive/s/swift", extension=".swift", func=build_swift),
+    "c": LanguageInfo(extension=".c", func=build_c),
+    "cpp": LanguageInfo(extension=".cpp", func=build_cpp),
+    "c#": LanguageInfo(extension=".cs", func=build_c_sharp),
+    "java": LanguageInfo(extension=".java", func=build_java),
+    "kotlin": LanguageInfo(extension=".kt", func=build_kotlin),
+    "swift": LanguageInfo(extension=".swift", func=build_swift),
 }
 
 if __name__ == "__main__":
