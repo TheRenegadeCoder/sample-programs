@@ -60,7 +60,7 @@ def main():
             "language": language_info.language,
             "build-mode": language_info.build_mode,
             "os": language_info.os,
-            "paths": language_paths[language_info.language],
+            "paths": " ".join(language_paths[language_info.language]),
         }
         for language_info in sorted(languages, key=lambda x: x.language)
     ]
