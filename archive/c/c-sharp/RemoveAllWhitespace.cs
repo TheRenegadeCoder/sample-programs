@@ -7,18 +7,18 @@ class Program
     {
         if (args.Length > 0)
         {
-           string input = "Hello World";
+           string input = args[0];
            string result = RemoveWhitespace(input);
            Console.WriteLine(result); 
         }
         else
         {
-            Console.WriteLine("Please provide a string input");
+            Console.WriteLine("Error: No input provided. Please enter a string as ana argument.");
         }
     }
 
     static string RemoveWhitespace(string input)
     {
-        return string.Concat(input.Where(char => !char.IsWhiteSpace(c)));
+        return string.Concat(input.Where(c => !char.IsWhiteSpace(c)));
     }
 }
