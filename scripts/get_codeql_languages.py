@@ -26,8 +26,8 @@ ALL_CODEQL_LANGUAGES_FILES = {
 LINUX = "ubuntu-latest"
 MACOS = "macos-latest"
 LANGUAGE_CONFIG = {
-    "c": {"build_mode": "autobuild", "os": LINUX},
-    # "cpp": {"build_mode": "autobuild", "os": LINUX},
+    "c": {"build_mode": "manual", "os": LINUX},
+    # "cpp": {"build_mode": "manual", "os": LINUX},
     # "c#": {"build_mode": "none", "os": LINUX},
     "go": {"build-mode": "autobuild", "os": LINUX},
     # "java": {"build-mode": "none", "os": LINUX},
