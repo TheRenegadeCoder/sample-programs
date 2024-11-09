@@ -12,4 +12,3 @@ __pycache__/
 .DS_Store
 venv/
 generated/
-temp/

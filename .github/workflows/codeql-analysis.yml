@@ -54,6 +54,7 @@ jobs:
 
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
+      changed-files: ${{ steps.changed-files.outputs.all_changed_files }}
     steps:
     - uses: actions/checkout@v4
       with:
@@ -109,13 +110,24 @@ jobs:
         distribution: 'oracle'
         java-version: '23'
 
+    # Generate CodeQL config file
+    - name: General CodeQL config file
+      env:
+        PATHS: ${{ matrix.paths }}
+      run: |
+        echo "paths:" >codeql-config.yml
+        for path in ${PATHS}; do
+          echo "  - ${path}" >>codeql-config.yml
+        done
+        cat codeql-config.yml
+
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v3
       with:
         languages: ${{ matrix.language }}
         build-mode: ${{ matrix.build-mode }}
-        config-file: ${{ matrix.config-file }}
+        config-file: codeql-config.yml
 
     # Autobuild attempts to build any compiled languages  (C/C++, C#, or Java).
     # If this step fails, then you should remove it and run the build manually (see below)
@@ -132,7 +144,7 @@ jobs:
 
     - name: Manual build
       if: ${{ matrix.build-mode == 'manual' }}
-      run: python scripts/build_codeql_language.py ${{ matrix.language }} ${{ matrix.config-file }}
+      run: python scripts/build_codeql_language.py ${{ matrix.language }} ${{ matrix.path }}
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3

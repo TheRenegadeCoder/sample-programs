@@ -8,18 +8,15 @@ from typing import Callable, List
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("language", help="language to build")
-    parser.add_argument("config_file", help="configuration file")
+    parser.add_argument("files_changed", nargs="*", help="files changed")
     parsed_args = parser.parse_args()
     language_entry = LANGUAGE_TABLE[parsed_args.language]
-    lines = Path(parsed_args.config_file).splitlines()[1:]
-    for line in lines:
-        line = line.strip()[1:].strip()
-        if line:
-            for path in Path.glob(line):
-                if path.suffix == language_entry.extension:
-                    print(f"Building {path}")
-                    command = language_entry.func(path)
-                    subprocess.run(command, cwd=path.parent, check=True)
+    for changed_file in parsed_args.files_changed:
+        for path in Path.glob(changed_file):
+            if path.suffix == language_entry.extension:
+                print(f"Building {path}")
+                command = language_entry.func(path)
+                subprocess.run(command, cwd=path.parent, check=True)
 
 
 def build_c(path: Path) -> List[str]:
