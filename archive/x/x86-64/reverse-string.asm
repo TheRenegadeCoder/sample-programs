@@ -60,6 +60,9 @@ reverseString:
     ;RAX pointer of string to be reversed
     ;RDI String length
 
+    ;Moving the string pointer input to the stack.
+    MOV [RBP-8], RAX
+
     MOV RAX, SYS_MMAP
     MOV RSI, RDI ;Allocate the same amount of memory that the string takes.
     MOV RDI, 0 ;Let the OS decide which address to use
@@ -68,13 +71,28 @@ reverseString:
     MOV R8, 0 ;No file descriptor.
     MOV R9, 0 ;No offset.
     SYSCALL
+    ;RDI will be the pointer to the new memory mapped string.
+    MOV RDI, RAX 
+    ;AL will be the character register.
+    MOV RAX, 0
+    ;RBX will be the pointer offset AND string length.
+    MOV RBX, RSI ;RBX now holds the string length.
+    ;RSI will hold the string address.
+    MOV RSI, [RBP-8]
+    LEA RSI, [RSI+RBX-1] ;Pointer arithmetic; points to the end of the string.
+    ;RCX will be our counter.
+    MOV RCX, 0
+    .loop:
+        MOV AL, [RSI-RCX] ;Move char from location pointed at RSI-RCX to AL
+        MOV [RDI+RCX], AL ;Move char from AL to location pointed at RDI+RCX
+        INC RCX ;Increase loop counter
+        CMP RCX, RBX
+        JL reverseString.loop ;Jump short if lower than RBX (string length)
 
-    MOV [RSP-8], RAX ;Move the memory pointer returned from SYS_MMAP into RSP-8
-
-    
-
-
+    POP RAX ;Equivlant to MOV RAX, [RBP-8] ADD RSP, 8
     ;Return: Pointer of reversed string.
+    MOV RSP, RBP
+    POP RBP
 
 _start:
     %DEFINE _start.STACK_INIT 16 ;Defining this so we aren't placing a literal every time we need to empty the stack at the end.
