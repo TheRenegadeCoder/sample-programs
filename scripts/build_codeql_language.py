@@ -31,7 +31,7 @@ def build_c_sharp(path: Path):
 LANGUAGE_TABLE = {
     "c": {"dir_path": "archive/c/c", "extension": ".c", "func": build_c},
     "cpp": {"dir_path": "archive/c/c-plus-plus", "extension": ".cpp", "func": build_cpp},
-    "c#": {"dir_path": "archive/c/c-sharp", "extension": ".cpp", "func": build_c_sharp},
+    "c#": {"dir_path": "archive/c/c-sharp", "extension": ".cs", "func": build_c_sharp},
 }
 
 if __name__ == "__main__":
