@@ -34,7 +34,8 @@ def main():
                     languages.add(language)
                     break
 
-    print(json.dumps(sorted(languages)))
+    workflow_output = [{"language": language} for language in sorted(languages)]
+    print(json.dumps(workflow_output))
 
 
 if __name__ == "__main__":

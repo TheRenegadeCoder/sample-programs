@@ -74,7 +74,7 @@ jobs:
       run: |
         matrix=$(python scripts/get_codeql_languages.py ${{ steps.changed-files.outputs.all_changed_files }})
         echo "${matrix}"
-        echo "matrix={\"include\": {\"language\": $(echo $matrix)}}" >> $GITHUB_OUTPUT
+        echo "matrix={\"include\": ${matrix}}" >> $GITHUB_OUTPUT
 
   analyze:
     name: Analyze
