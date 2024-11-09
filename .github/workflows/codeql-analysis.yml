@@ -11,15 +11,15 @@
 #
 name: "CodeQL"
 
-# Can't get C#, Java, Kotlin, and Swift to work. Comment out for now
+# Can't get C, C++, C#, Java, Kotlin, and Swift to work. Comment out for now
 on:
   push:
     branches: [ main ]
     paths:
       - '.github/workflows/codeql-analysis.yml'
       - 'scripts/*.py'
-      - 'archive/c/c/*.c'
-      - 'archive/c/c-plus-plus/*.cpp'
+      #- 'archive/c/c/*.c'
+      #- 'archive/c/c-plus-plus/*.cpp'
       #- 'archive/c/c-sharp/*.cs'
       - 'archive/g/go/*.go'
       #- 'archive/j/java/*.java'
@@ -35,8 +35,8 @@ on:
     paths:
       - '.github/workflows/codeql-analysis.yml'
       - 'scripts/*.py'
-      - 'archive/c/c/*.c'
-      - 'archive/c/c-plus-plus/*.cpp'
+      #- 'archive/c/c/*.c'
+      #- 'archive/c/c-plus-plus/*.cpp'
       #- 'archive/c/c-sharp/*.cs'
       - 'archive/g/go/*.go'
       #- 'archive/j/java/*.java'
@@ -84,7 +84,6 @@ jobs:
   analyze:
     name: Analyze
     needs: changed-files
-    runs-on: ubuntu-latest
     permissions:
       actions: read
       contents: read
@@ -96,6 +95,7 @@ jobs:
         # Learn more:
         # https://docs.github.com/en/free-pro-team@latest/github/finding-security-vulnerabilities-and-errors-in-your-code/configuring-code-scanning#changing-the-languages-that-are-analyzed
 
+    runs-on: ${{ matrix.os }}
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -107,7 +107,23 @@ jobs:
       uses: github/codeql-action/init@v3
       with:
         languages: ${{ matrix.language }}
-        build-mode: none
+        build-mode: ${{ matrix.build-mode }}
+
+    # Autobuild attempts to build any compiled languages  (C/C++, C#, or Java).
+    # If this step fails, then you should remove it and run the build manually (see below)
+    - name: Autobuild
+      uses: github/codeql-action/autobuild@v2
+
+    # ℹ️ Command-line programs to run using the OS shell.
+    # 📚 https://git.io/JvXDl
+
+    # ✏️ If the Autobuild fails above, remove it and uncomment the following three lines
+    #    and modify them (or add more) to build your code if your project
+    #    uses a compiled language
+
+    #- run: |
+    #   make bootstrap
+    #   make release
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
