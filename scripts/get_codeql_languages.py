@@ -5,6 +5,7 @@ from fnmatch import fnmatch
 CODEQL_LANGUAGES = {
     "archive/c/c/*.c": "c-cpp",
     "archive/c/c-plus-plus/*.cpp": "c-cpp",
+    "archive/g/go/*.go": "go",
     "archive/j/java/*.java": "java-kotlin",
     "archive/j/javascript/*.js": "javascript-typescript",
     "archive/k/kotlin/*.kt": "java-kotlin",
