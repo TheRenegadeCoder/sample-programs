@@ -27,7 +27,7 @@ LINUX = "ubuntu-latest"
 MACOS = "macos-latest"
 LANGUAGE_CONFIG = {
     "c": {"build-mode": "manual", "os": LINUX},
-    # "cpp": {"build-mode": "manual", "os": LINUX},
+    "cpp": {"build-mode": "manual", "os": LINUX},
     # "c#": {"build-mode": "none", "os": LINUX},
     "go": {"build-mode": "autobuild", "os": LINUX},
     # "java": {"build-mode": "none", "os": LINUX},
