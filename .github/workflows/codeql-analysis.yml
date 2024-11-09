@@ -11,7 +11,7 @@
 #
 name: "CodeQL"
 
-# Can't get C, C++, C#, Java, Kotlin, and Swift to work. Comment out for now
+# Can't get Java, Kotlin, and Swift to work. Comment out for now
 on:
   push:
     branches: [ main ]
@@ -22,7 +22,7 @@ on:
       - 'archive/c/c-plus-plus/*.cpp'
       - 'archive/c/c-sharp/*.cs'
       - 'archive/g/go/*.go'
-      #- 'archive/j/java/*.java'
+      - 'archive/j/java/*.java'
       - 'archive/j/javascript/*.js'
       #- 'archive/k/kotlin/*.kt'
       - 'archive/p/python/*.py'
@@ -39,7 +39,7 @@ on:
       - 'archive/c/c-plus-plus/*.cpp'
       - 'archive/c/c-sharp/*.cs'
       - 'archive/g/go/*.go'
-      #- 'archive/j/java/*.java'
+      - 'archive/j/java/*.java'
       - 'archive/j/javascript/*.js'
       #- 'archive/k/kotlin/*.kt'
       - 'archive/p/python/*.py'

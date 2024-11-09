@@ -1,6 +1,7 @@
 import argparse
 import subprocess
 from pathlib import Path
+from typing import List
 
 
 def main():
@@ -11,27 +12,31 @@ def main():
     for path in Path(language_entry["dir_path"]).iterdir():
         if path.suffix == language_entry["extension"]:
             print(f"Building {path}")
-            language_entry["func"](path)
+            command = language_entry["func"](path)
+            subprocess.run(command, cwd=str(path.parent), check=True)
 
 
-def build_c(path: Path):
-    subprocess.run(["gcc", "-o", str(path.stem), str(path.name)], cwd=path.parent, check=True)
+def build_c(path: Path) -> List[str]:
+    return ["gcc", "-o", str(path.stem), str(path.name)]
 
 
-def build_cpp(path: Path):
-    subprocess.run(["g++", "-o", str(path.stem), str(path.name)], cwd=path.parent, check=True)
+def build_cpp(path: Path) -> List[str]:
+    return ["g++", "-o", str(path.stem), str(path.name)]
 
 
-def build_c_sharp(path: Path):
-    subprocess.run(
-        ["mcs", "-reference:System.Numerics", str(path.name)], cwd=path.parent, check=True
-    )
+def build_c_sharp(path: Path) -> List[str]:
+    return ["mcs", "-reference:System.Numerics", str(path.name)]
+
+
+def build_java(path: Path) -> List[str]:
+    return ["javac", str(path.name)]
 
 
 LANGUAGE_TABLE = {
     "c": {"dir_path": "archive/c/c", "extension": ".c", "func": build_c},
     "cpp": {"dir_path": "archive/c/c-plus-plus", "extension": ".cpp", "func": build_cpp},
     "c#": {"dir_path": "archive/c/c-sharp", "extension": ".cs", "func": build_c_sharp},
+    "java": {"dir_path": "archive/j/java", "extension": ".java", "func": build_java},
 }
 
 if __name__ == "__main__":
