@@ -5,7 +5,7 @@ from fnmatch import fnmatch
 # Can't get C, C++, C#, Java, Kotlin, and Swift to work. Comment out for now
 CODEQL_LANGUAGES = {
     "scripts/*.py": "python",
-    # "archive/c/c/*.c": "c",
+    "archive/c/c/*.c": "c",
     # "archive/c/c-plus-plus/*.cpp": "cpp",
     # "archive/c/c-sharp/*.cs": "c#",
     "archive/g/go/*.go": "go",
@@ -21,11 +21,12 @@ ALL_CODEQL_LANGUAGES = set(CODEQL_LANGUAGES.values())
 ALL_CODEQL_LANGUAGES_FILES = {
     ".github/workflows/codeql-analysis.yml",
     "scripts/get_codeql_languages.py",
+    "scripts/build_codeql_language.py",
 }
 LINUX = "ubuntu-latest"
 MACOS = "macos-latest"
 LANGUAGE_CONFIG = {
-    # "c": {"build_mode": "autobuild", "os": LINUX},
+    "c": {"build_mode": "autobuild", "os": LINUX},
     # "cpp": {"build_mode": "autobuild", "os": LINUX},
     # "c#": {"build_mode": "none", "os": LINUX},
     "go": {"build-mode": "autobuild", "os": LINUX},

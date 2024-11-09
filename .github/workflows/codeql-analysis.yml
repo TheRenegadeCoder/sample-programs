@@ -18,7 +18,7 @@ on:
     paths:
       - '.github/workflows/codeql-analysis.yml'
       - 'scripts/*.py'
-      #- 'archive/c/c/*.c'
+      - 'archive/c/c/*.c'
       #- 'archive/c/c-plus-plus/*.cpp'
       #- 'archive/c/c-sharp/*.cs'
       - 'archive/g/go/*.go'
@@ -35,7 +35,7 @@ on:
     paths:
       - '.github/workflows/codeql-analysis.yml'
       - 'scripts/*.py'
-      #- 'archive/c/c/*.c'
+      - 'archive/c/c/*.c'
       #- 'archive/c/c-plus-plus/*.cpp'
       #- 'archive/c/c-sharp/*.cs'
       - 'archive/g/go/*.go'
@@ -112,7 +112,7 @@ jobs:
     # Autobuild attempts to build any compiled languages  (C/C++, C#, or Java).
     # If this step fails, then you should remove it and run the build manually (see below)
     - name: Autobuild
-      uses: github/codeql-action/autobuild@v2
+      uses: github/codeql-action/autobuild@v3
 
     # ℹ️ Command-line programs to run using the OS shell.
     # 📚 https://git.io/JvXDl
@@ -121,9 +121,9 @@ jobs:
     #    and modify them (or add more) to build your code if your project
     #    uses a compiled language
 
-    #- run: |
-    #   make bootstrap
-    #   make release
+    - name: Manual build
+      run: python scripts/build_codeql_language.py ${{ matrix.language }}
+      if: matrix.build-mode == 'manual'
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
