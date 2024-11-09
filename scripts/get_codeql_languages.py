@@ -2,16 +2,18 @@ import argparse
 import json
 from fnmatch import fnmatch
 
+# Can't get C/C++, Java/Kotlin, and Swift to work. Comment out for now
 CODEQL_LANGUAGES = {
-    "archive/c/c/*.c": "c-cpp",
-    "archive/c/c-plus-plus/*.cpp": "c-cpp",
+    # "archive/c/c/*.c": "c-cpp",
+    # "archive/c/c-plus-plus/*.cpp": "c-cpp",
+    "archive/c/c-sharp/*.cs": "c#",
     "archive/g/go/*.go": "go",
-    "archive/j/java/*.java": "java-kotlin",
+    # "archive/j/java/*.java": "java-kotlin",
     "archive/j/javascript/*.js": "javascript-typescript",
-    "archive/k/kotlin/*.kt": "java-kotlin",
+    # "archive/k/kotlin/*.kt": "java-kotlin",
     "archive/p/python/*.py": "python",
     "archive/r/ruby/*.rb": "ruby",
-    "archive/s/swift/*.swift": "swift",
+    # "archive/s/swift/*.swift": "swift",
     "archive/t/typescript/*.ts": "javascript-typescript",
 }
 ALL_CODEQL_LANGUAGES = set(CODEQL_LANGUAGES.values())
