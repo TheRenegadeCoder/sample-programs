@@ -1,8 +1,14 @@
 fun main(args: Array<String>) {
 
     fun longestWord(sentence: String) {
-        return 5;
+        var words = sentence.split(" ")
+        var longest = 0
+        for (word in words){
+            when {
+                word.length > longest -> longest = word.length
+            }
+        }
+        return longest
     }
 
-    println(longestWord("meow"));
 }
