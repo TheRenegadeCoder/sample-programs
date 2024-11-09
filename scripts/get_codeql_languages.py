@@ -2,7 +2,6 @@ import argparse
 import json
 from fnmatch import fnmatch
 
-# Can't get Swift to work. Comment out for now
 CODEQL_LANGUAGES = {
     "scripts/*.py": "python",
     "archive/c/c/*.c": "c",
@@ -14,7 +13,7 @@ CODEQL_LANGUAGES = {
     "archive/k/kotlin/*.kt": "kotlin",
     "archive/p/python/*.py": "python",
     "archive/r/ruby/*.rb": "ruby",
-    # "archive/s/swift/*.swift": "swift",
+    "archive/s/swift/*.swift": "swift",
     "archive/t/typescript/*.ts": "typescript",
 }
 ALL_CODEQL_LANGUAGES = set(CODEQL_LANGUAGES.values())
@@ -36,7 +35,7 @@ LANGUAGE_CONFIG = {
     "python": {"build-mode": "none", "os": LINUX},
     "ruby": {"build-mode": "none", "os": LINUX},
     "typescript": {"build-mode": "none", "os": LINUX},
-    # "swift": {"build-mode": "autobuild", "os": MACOS},
+    "swift": {"build-mode": "manual", "os": MACOS},
 }
 
 

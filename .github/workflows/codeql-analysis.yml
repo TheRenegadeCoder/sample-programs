@@ -11,7 +11,6 @@
 #
 name: "CodeQL"
 
-# Can't get Swift to work. Comment out for now
 on:
   push:
     branches: [ main ]
@@ -27,7 +26,7 @@ on:
       - 'archive/k/kotlin/*.kt'
       - 'archive/p/python/*.py'
       - 'archive/r/ruby/*.rb'
-      #- 'archive/s/swift/*.swift'
+      - 'archive/s/swift/*.swift'
       - 'archive/t/typescript/*.ts'
   pull_request:
     branches: 
@@ -44,7 +43,7 @@ on:
       - 'archive/k/kotlin/*.kt'
       - 'archive/p/python/*.py'
       - 'archive/r/ruby/*.rb'
-      #- 'archive/s/swift/*.swift'
+      - 'archive/s/swift/*.swift'
       - 'archive/t/typescript/*.ts'
   
 jobs:

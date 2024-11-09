@@ -30,11 +30,15 @@ def build_c_sharp(path: Path) -> List[str]:
 
 
 def build_java(path: Path) -> List[str]:
-    return ["javac", str(path.name)]
+    return ["javac", path.name]
 
 
 def build_kotlin(path: Path) -> List[str]:
-    return ["kotlinc", str(path.name), "-include-runtime", "-d", f"{path.stem}.jar"]
+    return ["kotlinc", path.name, "-include-runtime", "-d", f"{path.stem}.jar"]
+
+
+def build_swift(path: Path) -> List[str]:
+    return ["swiftc", "-o", path.stem, path.name]
 
 
 @dataclass
@@ -50,6 +54,7 @@ LANGUAGE_TABLE = {
     "c#": LanguageInfo(dir_path="archive/c/c-sharp", extension=".cs", func=build_c_sharp),
     "java": LanguageInfo(dir_path="archive/j/java", extension=".java", func=build_java),
     "kotlin": LanguageInfo(dir_path="archive/k/kotlin", extension=".kt", func=build_kotlin),
+    "swift": LanguageInfo(dir_path="archive/s/swift", extension=".swift", func=build_swift),
 }
 
 if __name__ == "__main__":
