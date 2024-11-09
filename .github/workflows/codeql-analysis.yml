@@ -27,8 +27,8 @@ on:
       - 'archive/k/kotlin/*.kt'
       - 'archive/p/python/*.py'
       - 'archive/r/ruby/*.rb'
-      - 'archive/s/swift/*.swift'
-      #- 'archive/t/typescript/*.ts'
+      #- 'archive/s/swift/*.swift'
+      - 'archive/t/typescript/*.ts'
   pull_request:
     branches: 
       - 'main'
