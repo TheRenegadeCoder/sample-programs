@@ -4,9 +4,16 @@ class Program
 {
     static void Main(string[] args)
     {
-        string input = "Hello World";
-        string result = RemoveWhitespace(input);
-        Console.WriteLine(result);
+        if (args.Length > 0)
+        {
+           string input = "Hello World";
+           string result = RemoveWhitespace(input);
+           Console.WriteLine(result); 
+        }
+        else
+        {
+            Console.WriteLine("Please provide a string input");
+        }
     }
 
     static string RemoveWhitespace(string input)
