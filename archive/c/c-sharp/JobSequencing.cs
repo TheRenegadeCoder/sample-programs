@@ -19,6 +19,10 @@ class JobSequencing
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Job Sequencing Program");
+        if (args.Length == 0)
+        {
+            Console.WriteLine("Usage: please provide job details in the format 'JobId, Deadline, Profit'");
+            return;
+        }
     }
 }
