@@ -5,7 +5,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        if (args.Length > 0)
+        if (args.Length > 0 && !string.IsNullOrWhiteSpace(args[0]))
         {
            string input = args[0];
            string result = RemoveWhitespace(input);
@@ -13,7 +13,7 @@ class Program
         }
         else
         {
-            Console.WriteLine("Error: No input provided. Please enter a string as ana argument.");
+            Console.WriteLine("Error: No input provided. Please enter a non-empty string as an argument.");
         }
     }
 
