@@ -39,6 +39,10 @@ class JobSequencing
             }
             jobs.Add(new Job(id, deadline, profit));
         }
+
+        var result = GetMaxProfitJobSequence(jobs);
+        Console.WriteLine("Job sequence for maximum profit:");
+        Console.WriteLine(string.Join(" -> ", result.Select(jobs => jobs.Id)));
     }
 
     public static List<Job> GetMaxProfitJobSequence(List<Job> jobs)
