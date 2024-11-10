@@ -4,15 +4,13 @@ using System.Linq;
 
 class Job 
 {
-    public char Id { get; set; }
+    public int Profit { get; set; }
     public int Deadline { get; set; }
-    public int Profit { get; set;}
 
-    public Job(char id, int deadline, int profit)
+    public Job(int profit, int deadline)
     {
-        Id = id;
-        Deadline = deadline;
         Profit = profit;
+        Deadline = deadline;
     }
 }
 
@@ -20,42 +18,36 @@ class JobSequencing
 {
     static void Main(string[] args)
     {
-        if (args.Length == 0)
+        if (args.Length < 2)
         {
-            Console.WriteLine("Usage: please provide job details in the format 'JobId, Deadline, Profit'");
+            Console.WriteLine("Usage: please provide a list of profits and a list of deadlines");
             return;
         }
 
-        var jobs = new List<Job>();
-        foreach (var jobInput in args)
+        var profitList = args[0].Split(',').Select(p => int.TryParse(p.Trim(), out int x) ? x : (int?)null).ToList();
+        var deadlineList = args[1].Split(',').Select(d => int.TryParse(d.Trim(), out int x) ? x : (int?)null).ToList();
+
+        if (profitList.Contains(null) || deadlineList.Contains(null) || profitList.Count != deadlineList.Count)
         {
-            var jobDetails = jobInput.Split(',');
-            if (jobDetails.Length != 3 ||
-                !char.TryParse(jobDetails[0], out char id) ||
-                !int.TryParse(jobDetails[1], out int deadline) ||
-                !int.TryParse(jobDetails[2], out int profit))
-            {
-                Console.WriteLine("Error:Invalid input format. Please provide jobs as 'JobID,DeadLine,Profit'.");
-                return;
-            }
-            jobs.Add(new Job(id, deadline, profit));
+            Console.WriteLine("Usage: please provide a list of profits and a list of deadlines");
+            return;
         }
 
+        var jobs = profitList.Zip(deadlineList, (p, d) => new Job(p.Value, d.Value)).ToList();
         var result = GetMaxProfitJobSequence(jobs);
-        Console.WriteLine("Job sequence for maximum profit:");
-        Console.WriteLine(string.Join(" -> ", result.select(job => job.Id)));
+        Console.WriteLine(result.Sum(job => job.Profit));
     }
 
     public static List<Job> GetMaxProfitJobSequence(List<Job> jobs)
     {
         jobs.Sort((a, b) => b.Profit.CompareTo(a.Profit));
-        int maxDeadline = jobs.Max(job => job.DeadLine);
+        int maxDeadline = jobs.Max(job => job.Deadline);
         var timeSlots = new bool[maxDeadline];
         var jobSequence = new List<Job>();
 
         foreach (var job in jobs)
         {
-            for (int i = job.DeadLine - 1; i >= 0; i--)
+            for (int i = job.Deadline - 1; i >= 0; i--)
             {
                 if (!timeSlots[i])
                 {
