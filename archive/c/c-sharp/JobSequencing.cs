@@ -24,5 +24,20 @@ class JobSequencing
             Console.WriteLine("Usage: please provide job details in the format 'JobId, Deadline, Profit'");
             return;
         }
+
+        var jobs = new List<Job>();
+        foreach (var jobInput in args)
+        {
+            var jobDetails = jobInput.Split(',');
+            if (jobDetails.Length != 2 ||
+                !char.TryParsel(jobDetails[0], out char id) ||
+                !int.TryParsel(jobDetails[1], out int deadline) ||
+                !int.TryParsel(jobDetails[2], out int profit))
+            {
+                Console.WriteLine("Error:Invalid input format. Please provide jobs as 'JobID,DeadLine,Profit'.");
+                return;
+            }
+            jobs.Add(new Job(id, deadline, profit));
+        }
     }
 }
