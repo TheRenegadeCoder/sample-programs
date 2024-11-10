@@ -40,4 +40,26 @@ class JobSequencing
             jobs.Add(new Job(id, deadline, profit));
         }
     }
+
+    public static List<Job> GetMaxProfitJobSequence(List<Job> jobs)
+    {
+        jobs.Sort((a, b) => b.Profit.CompareTo(a.Profit));
+        int maxDeadline = jobs.Max(jobs => jobs.DeadLine);
+        var timeSlots = new bool[maxDeadline];
+        var jobSequence = new List<Job>();
+
+        foreach (var job in jobs)
+        {
+            for (int i = job.DeadLine - 1; i >= 0; i--)
+            {
+                if (!timeSlots[i])
+                {
+                    timeSlots[i] = true;
+                    jobSequence.Add(job);
+                    break;
+                }
+            }
+        }
+    }
+    return jobSequence;
 }
