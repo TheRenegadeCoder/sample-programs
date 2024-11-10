@@ -14,8 +14,8 @@ class Program
         }
         else
         {
-            // if no valid input is provide, display an error message
-            Console.WriteLine("Error: No input provided. Please enter a non-empty string as an argument.");
+            // display a usage message if no valid input is provided.
+            Console.WriteLine("Usage: please provide a string");
         }
     }
     
