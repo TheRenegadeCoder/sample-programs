@@ -18,20 +18,7 @@
 %DEFINE SYS_EXIT 60
 
 section .data
-
-section .rodata
-
-    empty:
-        .txt db '\'', 0xA
-        .len equ $- .txt
-
-    quote db '\''
-
-    testing:
-        .txt db 'Test', 0xA
-        .len equ $- .txt
-    
-    
+ 
 section .text
 
 
@@ -126,7 +113,7 @@ _start:
     SUB RSP, _start.STACK_INIT ;16 bytes allocated
     MOV QWORD [RBP-8], 0 ;Length of text, 8 bytes.
     MOV QWORD [RBP-16], 0 ;New String PTR, 8 bytes.
-
+    ;Jump to sections based on argc
     CMP QWORD [RBP+8], 1
     JE noInput
     CMP QWORD [RBP+8], 2
@@ -144,11 +131,6 @@ _start:
         SYSCALL
         
     input:
-        ;Checking if input is empty; if it is empty, jump to noInput.
-        ;MOV AL, 0
-        ;MOV RBX, [RSP+24]
-        ;CMP [RBX], AL
-        ;JE noInput
         MOV RDI, [RBP+24] ;MOV arg1 to RDI.
         CALL strlen ;Call our string length function.
         MOV [RBP-8], RAX ;Move string length result into RSP-8.
