@@ -119,8 +119,7 @@ reverseString:
 global _start
 _start:
     %DEFINE _start.STACK_INIT 16 ;Defining this so we aren't placing a literal every time we need to empty the stack at the end.
-    ;Setting up stack frame. Prolog. Also move argc into RAX
-    MOV RAX, [RSP]
+    ;Setting up stack frame. Prolog.
     PUSH RBP
     MOV RBP, RSP
     ;Allocating space on the stack for variables
@@ -128,9 +127,9 @@ _start:
     MOV QWORD [RBP-8], 0 ;Length of text, 8 bytes.
     MOV QWORD [RBP-16], 0 ;New String PTR, 8 bytes.
 
-    CMP RAX, 1
+    CMP QWORD [RBP+8], 1
     JE noInput
-    CMP RAX, 2
+    CMP QWORD [RBP+8], 2
     JE input
     
     noInput:
