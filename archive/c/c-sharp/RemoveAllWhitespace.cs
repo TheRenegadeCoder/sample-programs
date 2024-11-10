@@ -7,9 +7,7 @@ class Program
     {
         if (args.Length > 0 && !string.IsNullOrWhiteSpace(args[0]))
         {
-           string input = args[0];
-           string result = RemoveWhitespace(input);
-           Console.WriteLine(result); 
+           Console.WriteLine(RemoveWhitespace(args[0]));
         }
         else
         {
