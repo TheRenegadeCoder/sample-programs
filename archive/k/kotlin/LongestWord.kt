@@ -24,10 +24,8 @@ fun main(args: Array<String>) {
     if (args.isNullOrEmpty()){
         println("Usage: please provide a string")
     } else {
-        // if console input is not null, then find longestWord of each string in the array
-        for (case in args){
-                println(longestWord(case))
-        }        
+        // if console input is not null, then find longestWord of input String
+        println(longestWord(args[0]))    
     }
     
 }
