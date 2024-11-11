@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Kotlin! To find documentation related to the Kotlin code in this repo, look [here.](https://sampleprograms.io/languages/kotlin)
 
-## Sample Programs List - 18/37 :thinking:
+## Sample Programs List - 19/37 :relaxed:
 
 In this section, we feature a list of completed and missing programs in Kotlin. See above for the current amount of completed programs in Kotlin. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -21,6 +21,7 @@ Below, you'll find a list of completed code snippets in Kotlin. Code snippets pr
 - :white_check_mark: [Hello World in Kotlin](https://sampleprograms.io/projects/hello-world/kotlin) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :warning: [Job Sequencing in Kotlin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+job+sequencing+kotlin) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :warning: [Longest Common Subsequence in Kotlin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+common+subsequence+kotlin) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
+- :warning: [Longest Word in Kotlin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+kotlin) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :warning: [Merge Sort in Kotlin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+kotlin) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
 - :white_check_mark: [Palindromic Number in Kotlin](https://sampleprograms.io/projects/palindromic-number/kotlin) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :warning: [Prime Number in Kotlin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+kotlin) [[Requirements](https://sampleprograms.io/projects/prime-number)]
@@ -43,7 +44,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,josephus+problem&template=code-snippet-request.md&title=Add+Josephus+Problem+in+Kotlin) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :x: [Linear Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,linear+search&template=code-snippet-request.md&title=Add+Linear+Search+in+Kotlin) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :x: [Longest Palindromic Substring](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+palindromic+substring&template=code-snippet-request.md&title=Add+Longest+Palindromic+Substring+in+Kotlin) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
-- :x: [Longest Word](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+word&template=code-snippet-request.md&title=Add+Longest+Word+in+Kotlin) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+array+rotation&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+Kotlin) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+subarray&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+Kotlin) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+Kotlin) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
