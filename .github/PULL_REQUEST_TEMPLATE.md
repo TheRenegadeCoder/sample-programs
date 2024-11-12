@@ -57,6 +57,6 @@ Add notes here...
 [contributing-new-language]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#requirements-for-a-new-language
 [contributing-readme]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#create-readmes
 [contributing-tests-in-detail]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#tests-in-detail
-[contributing]: ../CONTRIBUTING.md
+[contributing]: CONTRIBUTING.md
 [sample-programs-project-list]: https://sampleprograms.io/projects/
 [contributing-modifications]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#modifying-existing-code-snippets
