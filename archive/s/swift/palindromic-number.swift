@@ -1,7 +1,6 @@
 func isPalindrome(input: String) -> Bool {
-
     if input.isEmpty {
-        return false
+        return false  // No output for empty input
     }
 
     if let number = Int(input) {
@@ -9,15 +8,12 @@ func isPalindrome(input: String) -> Bool {
             print("Usage: please input a non-negative integer")
             return false
         }
-
+        
         if input.count == 1 {
             return true;
         }
-        
-    } else if Double(input) != nil {
-        print("Usage: please input a non-negative integer")
-        return false
     } else {
+        // Handles floats, letters, and other non-integer inputs
         print("Usage: please input a non-negative integer")
         return false
     }
@@ -25,20 +21,16 @@ func isPalindrome(input: String) -> Bool {
     let numStr = input
     let reversedStr = String(numStr.reversed())
 
-    if numStr == reversedStr {
-        return true
-    } else { 
-        return false
-    }
+    return numStr == reversedStr
 }
 
-print(isPalindrome(input: "7"))     
-print(isPalindrome(input: "2442"))  
-print(isPalindrome(input: "232"))   
-print(isPalindrome(input: "5215"))  
-
-print(isPalindrome(input: "521"))   
-print(isPalindrome(input: ""))      
-print(isPalindrome(input: "a"))     
-print(isPalindrome(input: "-7"))    
-print(isPalindrome(input: "5.41"))  
+// Test cases
+print(isPalindrome(input: "7"))      // returns true
+print(isPalindrome(input: "2442"))   // Returns true
+print(isPalindrome(input: "232"))    // Returns true
+print(isPalindrome(input: "5215"))   // Returns false
+print(isPalindrome(input: "521"))    // Returns false
+print(isPalindrome(input: ""))       // No output
+print(isPalindrome(input: "a"))      // Outputs usage message
+print(isPalindrome(input: "-7"))     // Outputs usage message
+print(isPalindrome(input: "5.41"))   // Outputs usage message
