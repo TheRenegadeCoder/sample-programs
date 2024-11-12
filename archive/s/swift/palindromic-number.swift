@@ -9,6 +9,10 @@ func isPalindrome(input: String) -> Bool {
             print("Usage: please input a non-negative integer")
             return false
         }
+
+        if input.count == 1 {
+            print("One Digit");
+        }
     } else if Double(input) != nil {
         print("Usage: please input a non-negative integer")
         return false
@@ -19,7 +23,7 @@ func isPalindrome(input: String) -> Bool {
 
     let numStr = input
     let reversedStr = String(numStr.reversed())
-    
+
     if numStr == reversedStr {
         return true
     } else { 
