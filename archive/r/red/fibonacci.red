@@ -7,13 +7,12 @@ if n <= 0 [return 0]
 if  n > 0 [
     a: 0
     b: 1
-    print [1":" b]
-    i: 2
-    loop n - 1 [
+    i: 1
+    loop n  [
     c: a + b
     a: b
     b: c
-    print [i":"b]
+    print [i":" a]
     i: i + 1
         ]
     ]
