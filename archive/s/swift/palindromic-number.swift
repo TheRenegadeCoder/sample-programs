@@ -1,6 +1,6 @@
 func isPalindrome(input: String) -> Bool {
+
     if input.isEmpty {
-        print("Usage: please input a non-negative integer")
         return false
     }
 
@@ -11,8 +11,9 @@ func isPalindrome(input: String) -> Bool {
         }
 
         if input.count == 1 {
-            print("One Digit");
+            return true;
         }
+        
     } else if Double(input) != nil {
         print("Usage: please input a non-negative integer")
         return false
