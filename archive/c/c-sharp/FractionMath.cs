@@ -7,7 +7,7 @@ namespace SamplePrograms
         private int numerator;
         private int denominator;
 
-        public FractionMath(int numerator = 0, int denominator = 0)
+        public FractionMath(int numerator = 0, int denominator = 1)
         {
             if (denominator == 0)
             {
@@ -16,24 +16,7 @@ namespace SamplePrograms
 
             this.numerator = numerator;
             this.denominator = denominator;
-
-            Simplify();
         }
-
-        // public override bool Equals(object obj)
-        // {
-        //     if (obj is FractionMath other)
-        //     {
-        //         return this == other;  // Use the overloaded `==` operator
-        //     }
-        //     return false;
-        // }
-
-        // public override int GetHashCode()
-        // {
-        //     return (numerator, denominator).GetHashCode();
-        // }
-
 
         private int GCD(int x, int y)
         {
@@ -59,9 +42,13 @@ namespace SamplePrograms
             }
         }
 
-        public override string ToString() => $"{numerator}/{denominator}";  // Fixed semicolon here
+        public override string ToString()
+        {
+            Simplify();
+            return $"{numerator}/{denominator}";
+        }
 
-        public static FractionMath Parse(string fractionString)  // Fixed Parse method
+        public static FractionMath Parse(string fractionString)
         {
             string[] numbers = fractionString.Split('/');
             if (numbers.Length != 2)
@@ -79,32 +66,28 @@ namespace SamplePrograms
         {
             int newNumerator = f1.numerator * f2.denominator + f2.numerator * f1.denominator;
             int newDenominator = f1.denominator * f2.denominator;
-            FractionMath result = new FractionMath(newNumerator, newDenominator);
-            result.Simplify();  // Only simplify after the operation
-            return result;
+            return new FractionMath(newNumerator, newDenominator);
         }
 
         public static FractionMath operator -(FractionMath f1, FractionMath f2)
         {
             int newNumerator = f1.numerator * f2.denominator - f2.numerator * f1.denominator;
             int newDenominator = f1.denominator * f2.denominator;
-            return new FractionMath(newNumerator, newDenominator);  // Fixed return
+            return new FractionMath(newNumerator, newDenominator);
         }
 
         public static FractionMath operator *(FractionMath f1, FractionMath f2)
         {
             int newNumerator = f1.numerator * f2.numerator;
             int newDenominator = f1.denominator * f2.denominator;
-            FractionMath result = new FractionMath(newNumerator, newDenominator);
-            result.Simplify();  // Only simplify after the operation
-            return result;
+            return new FractionMath(newNumerator, newDenominator);
         }
 
         public static FractionMath operator /(FractionMath f1, FractionMath f2)
         {
             int newNumerator = f1.numerator * f2.denominator;
             int newDenominator = f1.denominator * f2.numerator;
-            return new FractionMath(newNumerator, newDenominator);  // Fixed return
+            return new FractionMath(newNumerator, newDenominator);
         }
 
         public static bool operator ==(FractionMath f1, FractionMath f2)
