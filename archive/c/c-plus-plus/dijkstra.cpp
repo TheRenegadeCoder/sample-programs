@@ -122,7 +122,7 @@ int main(int argc, char *argv[])
         handle_error();
 
     int sz = sqrt((int)bin.size());
-    if (sz * sz != bin.size())
+    if ((size_t)sz * sz != bin.size())
         handle_error();
     int k = 0;
     for (int i = 0; i < bin.size(); i += sz)
