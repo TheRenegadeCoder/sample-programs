@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in C! To find documentation related to the C code in this repo, look [here.](https://sampleprograms.io/languages/c)
 
-## Sample Programs List - 24/37 :relaxed:
+## Sample Programs List - 25/37 :relaxed:
 
 In this section, we feature a list of completed and missing programs in C. See above for the current amount of completed programs in C. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -30,6 +30,7 @@ Below, you'll find a list of completed code snippets in C. Code snippets precede
 - :white_check_mark: [Prime Number in C](https://sampleprograms.io/projects/prime-number/c) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :warning: [Quick Sort in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+c) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
 - :warning: [Quine in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+c) [[Requirements](https://sampleprograms.io/projects/quine)]
+- :warning: [Remove All Whitespace in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+remove+all+whitespace+c) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :white_check_mark: [Reverse String in C](https://sampleprograms.io/projects/reverse-string/c) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :white_check_mark: [Roman Numeral in C](https://sampleprograms.io/projects/roman-numeral/c) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :warning: [Rot13 in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+c) [[Requirements](https://sampleprograms.io/projects/rot13)]
@@ -49,7 +50,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Longest Palindromic Substring](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+palindromic+substring&template=code-snippet-request.md&title=Add+Longest+Palindromic+Substring+in+C) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
 - :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+array+rotation&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+C) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+subarray&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+C) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
-- :x: [Remove All Whitespace](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,remove+all+whitespace&template=code-snippet-request.md&title=Add+Remove+All+Whitespace+in+C) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+C) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,transpose+matrix&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+C) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
