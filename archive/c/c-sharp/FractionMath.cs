@@ -1,3 +1,5 @@
+using System;
+
 namespace SamplePrograms
 {
     public class FractionMath
@@ -5,7 +7,7 @@ namespace SamplePrograms
         private int numerator;
         private int denominator;
 
-        public FractionMath(int numerator, int denominator)
+        public FractionMath(int numerator = 0, int denominator = 0)
         {
             if (denominator == 0)
             {
@@ -18,26 +20,35 @@ namespace SamplePrograms
             Simplify();
         }
 
-        // GCD method using the Euclidean algorithm in an iterative approach
-        // Orginal algorithm was found on GeeksforGeeks, modified for clarity:
-        // https://www.geeksforgeeks.org/program-to-find-gcd-or-hcf-of-two-numbers/#
+        // public override bool Equals(object obj)
+        // {
+        //     if (obj is FractionMath other)
+        //     {
+        //         return this == other;  // Use the overloaded `==` operator
+        //     }
+        //     return false;
+        // }
+
+        // public override int GetHashCode()
+        // {
+        //     return (numerator, denominator).GetHashCode();
+        // }
+
+
         private int GCD(int x, int y)
         {
-
             while (y != 0)
             {
                 int z = x;
                 x = y;
                 y %= z;
             }
-
             return x;
         }
 
         private void Simplify()
         {
             int gcd = GCD(numerator, denominator);
-
             numerator /= gcd;
             denominator /= gcd;
 
@@ -48,10 +59,11 @@ namespace SamplePrograms
             }
         }
 
-        public FractionMath StringToFraction(string fractionString)
+        public override string ToString() => $"{numerator}/{denominator}";  // Fixed semicolon here
+
+        public static FractionMath Parse(string fractionString)  // Fixed Parse method
         {
             string[] numbers = fractionString.Split('/');
-
             if (numbers.Length != 2)
             {
                 throw new FormatException("Invalid fraction. A format of 'numerator/denominator' is expected.");
@@ -60,116 +72,139 @@ namespace SamplePrograms
             int numerator = int.Parse(numbers[0]);
             int denominator = int.Parse(numbers[1]);
 
-            if (denominator == 0)
-            {
-                throw new ArgumentException("Denominator cannot be zero.");
-            }
-
-            return FractionMath(numerator, denominator);
+            return new FractionMath(numerator, denominator);
         }
 
-        public FractionMath Add(FractionMath f1, FractionMath f2)
+        public static FractionMath operator +(FractionMath f1, FractionMath f2)
         {
             int newNumerator = f1.numerator * f2.denominator + f2.numerator * f1.denominator;
             int newDenominator = f1.denominator * f2.denominator;
-            return FractionMath(newNumerator, newDenominator);
+            FractionMath result = new FractionMath(newNumerator, newDenominator);
+            result.Simplify();  // Only simplify after the operation
+            return result;
         }
 
-        public FractionMath Subtract(FractionMath f1, FractionMath f2)
+        public static FractionMath operator -(FractionMath f1, FractionMath f2)
         {
             int newNumerator = f1.numerator * f2.denominator - f2.numerator * f1.denominator;
             int newDenominator = f1.denominator * f2.denominator;
-            return FractionMath(newNumerator, newDenominator);
+            return new FractionMath(newNumerator, newDenominator);  // Fixed return
         }
 
-        public FractionMath Multiply(FractionMath f1, FractionMath f2)
+        public static FractionMath operator *(FractionMath f1, FractionMath f2)
         {
             int newNumerator = f1.numerator * f2.numerator;
             int newDenominator = f1.denominator * f2.denominator;
-            return FractionMath(newNumerator, newDenominator);
+            FractionMath result = new FractionMath(newNumerator, newDenominator);
+            result.Simplify();  // Only simplify after the operation
+            return result;
         }
 
-        public FractionMath Divide(FractionMath f1, FractionMath f2)
+        public static FractionMath operator /(FractionMath f1, FractionMath f2)
         {
             int newNumerator = f1.numerator * f2.denominator;
             int newDenominator = f1.denominator * f2.numerator;
-            return FractionMath(newNumerator, newDenominator);
+            return new FractionMath(newNumerator, newDenominator);  // Fixed return
         }
 
-        public int EqualsTo(FractionMath f1, FractionMath f2)
+        public static bool operator ==(FractionMath f1, FractionMath f2)
         {
-            if (f1.numerator * f2.denominator == f1.denominator * f2.numerator)
-            {
-                return 1;
-            }
-            else
-            {
-                return 0;
-            }
+            return f1.numerator * f2.denominator == f1.denominator * f2.numerator;
         }
 
-        public int GreaterThan(FractionMath f1, FractionMath f2)
+        public static bool operator !=(FractionMath f1, FractionMath f2)
         {
-            if (f1.numerator * f2.denominator > f1.denominator * f2.numerator)
-            {
-                return 1;
-            }
-            else
-            {
-                return 0;
-            }
+            return !(f1 == f2);
         }
 
-        public int LessThan(FractionMath f1, FractionMath f2)
+        public static bool operator >(FractionMath f1, FractionMath f2)
         {
-            if (f1.numerator * f2.denominator < f1.denominator * f2.numerator)
-            {
-                return 1;
-            }
-            else
-            {
-                return 0;
-            }
+            return f1.numerator * f2.denominator > f1.denominator * f2.numerator;
         }
 
-        public int GreaterThanEquals(FractionMath f1, FractionMath f2)
+        public static bool operator <(FractionMath f1, FractionMath f2)
         {
-            if (f1.numerator * f2.denominator >= f1.denominator * f2.numerator)
-            {
-                return 1;
-            }
-            else
-            {
-                return 0;
-            }
+            return f1.numerator * f2.denominator < f1.denominator * f2.numerator;
         }
 
-        public int LessThanEquals(FractionMath f1, FractionMath f2)
+        public static bool operator >=(FractionMath f1, FractionMath f2)
         {
-            if (f1.numerator * f2.denominator <= f1.denominator * f2.numerator)
-            {
-                return 1;
-            }
-            else
-            {
-                return 0;
-            }
+            return f1 > f2 || f1 == f2;
         }
 
-        public int NotEquals(FractionMath f1, FractionMath f2)
+        public static bool operator <=(FractionMath f1, FractionMath f2)
         {
-            if (f1.numerator * f2.denominator != f1.denominator * f2.numerator)
-            {
-                return 1;
-            }
-            else
-            {
-                return 0;
-            }
+            return f1 < f2 || f1 == f2;
         }
 
         public static void Main(string[] args)
         {
-            
+            if (args.Length != 3)
+            {
+                Console.WriteLine("Usage: ./fraction-math operand1 operator operand2");
+                return;
+            }
+
+            try
+            {
+                FractionMath operand1 = Parse(args[0]);
+                string operation = args[1];
+                FractionMath operand2 = Parse(args[2]);
+
+                FractionMath result;
+                bool comparisonResult;
+
+                switch (operation)
+                {
+                    case "+":
+                        result = operand1 + operand2;
+                        Console.WriteLine(result);
+                        break;
+                    case "-":
+                        result = operand1 - operand2;
+                        Console.WriteLine(result);
+                        break;
+                    case "*":
+                        result = operand1 * operand2;
+                        Console.WriteLine(result);
+                        break;
+                    case "/":
+                        result = operand1 / operand2;
+                        Console.WriteLine(result);
+                        break;
+                    case "==":
+                        comparisonResult = operand1 == operand2;
+                        Console.WriteLine(comparisonResult ? "1" : "0");
+                        break;
+                    case "!=":
+                        comparisonResult = operand1 != operand2;
+                        Console.WriteLine(comparisonResult ? "1" : "0");
+                        break;
+                    case ">":
+                        comparisonResult = operand1 > operand2;
+                        Console.WriteLine(comparisonResult ? "1" : "0");
+                        break;
+                    case "<":
+                        comparisonResult = operand1 < operand2;
+                        Console.WriteLine(comparisonResult ? "1" : "0");
+                        break;
+                    case ">=":
+                        comparisonResult = operand1 >= operand2;
+                        Console.WriteLine(comparisonResult ? "1" : "0");
+                        break;
+                    case "<=":
+                        comparisonResult = operand1 <= operand2;
+                        Console.WriteLine(comparisonResult ? "1" : "0");
+                        break;
+                    default:
+                        Console.WriteLine($"Error: Invalid operator '{operation}'");
+                        break;
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"Error: {e.Message}");
+            }
         }
     }
+}
