@@ -1,13 +1,16 @@
+-- Function to reverse a string
 reverse_string = (str) ->
-    if str == '' then
-        return ''
+    if str == '' then return ''
+    
     result = ''
     for i = #str, 1, -1
-        result ..= str\sub(i, i)
-    print result
+        result = result .. str\sub(i, i)
+    
+    return result
 
-print reverse_string('Hello, World')
-
-
-
-
+-- Main executable section
+if not arg or #arg == 0
+    print ''
+else
+    input_str = arg[1]  -- Get the first command-line argument
+    
