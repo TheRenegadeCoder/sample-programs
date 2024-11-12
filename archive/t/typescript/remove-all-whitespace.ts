@@ -6,7 +6,7 @@ function removeAllWhitespace(input: string): string {
 function main() {
     // check if there is an input provided, and if its not an empty string
     if (process.argv.length < 3 || process.argv[2].trim() === "") {
-        console.log("Usage: please provide a non-empty string");
+        console.log("Usage: please provide a string");
         return;
     }
 
@@ -14,15 +14,13 @@ function main() {
     
     // check if the input is only whitespace
     if (!/\S/.test(input)) {
-        console.log("Result: The input is whitespace only.");
+        console.log("RemoveAllWhitespace");
         return;
     }
 
     // remove all whitespace from the input
     const result = removeAllWhitespace(input);
-
-    // output for result.
-    console.log(`Result without whitespace: "${result}"`);
+    console.log(result);
 }
 
 // run the program
