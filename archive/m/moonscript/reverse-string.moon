@@ -13,4 +13,6 @@ if not arg or #arg == 0
     print ''
 else
     input_str = arg[1]  -- Get the first command-line argument
+    reversed_str = reverse_string(input_str)
+    print reversed_str
     
