@@ -6,6 +6,8 @@ reverse_string = (str) ->
         result ..= str\sub(i, i)
     print result
 
+print reverse_string('Hello, World')
+
 
 
 
