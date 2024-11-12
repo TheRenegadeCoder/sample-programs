@@ -110,6 +110,7 @@ jobs:
         java-version: '23'
 
     - name: Remove ignored paths
+      if: ${{ github.event == "pull-request" }}
       run: rm -f ${{ matrix.paths-ignore }}
 
     # Initializes the CodeQL tools for scanning.
