@@ -1,16 +1,17 @@
 using System;
+using System.Collections.Generic;
 
 public class DuplicateCharacterCounter
 {
-    public static void Main()
+    public static void Main(string[] args)
     {
-        string input = Console.ReadLine();
-
-        if (string.IsNullOrEmpty(input))
+        if (args.Length == 0 || string.IsNullOrEmpty(args[0]))
         {
             Console.WriteLine("Usage: please provide a string");
             return;
         }
+
+        string input = args[0];
 
         Dictionary<char, int> countMap = new Dictionary<char, int>();
 
