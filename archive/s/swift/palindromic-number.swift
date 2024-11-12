@@ -8,12 +8,14 @@ func isPalindromeNumber(input : Int) -> Bool {
     var numStr = String(number)
     var reversedStr = String(numStr.reversed())
     return numStr == reversedStr
-    
+
     } else {
         print("Error: Input is not a valid Number!")
         return false;
     }
 }
 
-print(isPalindromeNumber(number: 434))
-print(isPalindromeNumber(number: 322))
+print(isPalindromeNumber(input: "434"))
+print(isPalindromeNumber(input: "332"))
+print(isPalindromeNumber(input: "-554"))
+print(isPalindromeNumber(input: "cdcs"))
