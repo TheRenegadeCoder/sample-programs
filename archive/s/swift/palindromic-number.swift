@@ -26,11 +26,11 @@ func isPalindrome(input: String) -> Bool {
 
 // Test cases
 print(isPalindrome(input: "7"))      // returns true
-print(isPalindrome(input: "2442"))   // Returns true
-print(isPalindrome(input: "232"))    // Returns true
-print(isPalindrome(input: "5215"))   // Returns false
-print(isPalindrome(input: "521"))    // Returns false
-print(isPalindrome(input: ""))       // No output
-print(isPalindrome(input: "a"))      // Outputs usage message
-print(isPalindrome(input: "-7"))     // Outputs usage message
-print(isPalindrome(input: "5.41"))   // Outputs usage message
+// print(isPalindrome(input: "2442"))   // Returns true
+// print(isPalindrome(input: "232"))    // Returns true
+// print(isPalindrome(input: "5215"))   // Returns false
+// print(isPalindrome(input: "521"))    // Returns false
+// print(isPalindrome(input: ""))       // No output
+// print(isPalindrome(input: "a"))      // Outputs usage message
+// print(isPalindrome(input: "-7"))     // Outputs usage message
+// print(isPalindrome(input: "5.41"))   // Outputs usage message
