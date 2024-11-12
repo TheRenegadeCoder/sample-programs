@@ -1,4 +1,4 @@
-func isPalindromeNumber(input : Int) -> Bool {
+func isPalindromeNumber(input : String) -> Bool {
     if let number = Int(input) {
 
     if number < 0 {
