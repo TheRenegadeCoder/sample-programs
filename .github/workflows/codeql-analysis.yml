@@ -14,17 +14,76 @@ name: "CodeQL"
 on:
   push:
     branches: [ main ]
+    paths:
+      - '.github/workflows/codeql-analysis.yml'
+      - 'scripts/*.py'
+      - 'archive/c/c/*.c'
+      - 'archive/c/c-plus-plus/*.cpp'
+      - 'archive/c/c-sharp/*.cs'
+      - 'archive/g/go/*.go'
+      - 'archive/j/java/*.java'
+      - 'archive/j/javascript/*.js'
+      - 'archive/k/kotlin/*.kt'
+      - 'archive/p/python/*.py'
+      - 'archive/r/ruby/*.rb'
+      - 'archive/s/swift/*.swift'
+      - 'archive/t/typescript/*.ts'
   pull_request:
     branches: 
       - 'main'
     paths:
-      - 'archive/**'
-      - '!**/README.md'
-
+      - '.github/workflows/codeql-analysis.yml'
+      - 'scripts/*.py'
+      - 'archive/c/c/*.c'
+      - 'archive/c/c-plus-plus/*.cpp'
+      - 'archive/c/c-sharp/*.cs'
+      - 'archive/g/go/*.go'
+      - 'archive/j/java/*.java'
+      - 'archive/j/javascript/*.js'
+      - 'archive/k/kotlin/*.kt'
+      - 'archive/p/python/*.py'
+      - 'archive/r/ruby/*.rb'
+      - 'archive/s/swift/*.swift'
+      - 'archive/t/typescript/*.ts'
+  
 jobs:
+  # We need this job to check if changed files should trigger analysis
+  changed-files:
+    name: "Changed Files"
+    runs-on: ubuntu-latest
+
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+      changed-files: ${{ steps.changed-files.outputs.all_changed_files }}
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 2
+
+    - name: Get changed code files
+      id: changed-files
+      uses: tj-actions/changed-files@v45
+
+    - name: List all relevant changed files
+      if: steps.changed-files.outputs.any_changed == 'true'
+      env:
+        ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+      run: |
+        for file in ${ALL_CHANGED_FILES}; do
+          echo "$file was changed"
+        done
+
+    # Reference: https://stackoverflow.com/questions/65384420/how-do-i-make-a-github-action-matrix-element-conditional
+    - name: Get CodeQL Languages
+      id: set-matrix
+      run: |
+        matrix=$(python scripts/get_codeql_languages.py ${{ steps.changed-files.outputs.all_changed_files }})
+        echo "${matrix}"
+        echo "matrix={\"include\": ${matrix}}" >> $GITHUB_OUTPUT
+
   analyze:
     name: Analyze
-    runs-on: ubuntu-latest
+    needs: changed-files
     permissions:
       actions: read
       contents: read
@@ -32,30 +91,40 @@ jobs:
 
     strategy:
       fail-fast: false
-      matrix:
-        language: [ 'go', 'javascript', 'python' ]
-        # CodeQL supports [ 'cpp', 'csharp', 'go', 'java', 'javascript', 'python' ]
+      matrix: ${{ fromJson(needs.changed-files.outputs.matrix) }}
         # Learn more:
         # https://docs.github.com/en/free-pro-team@latest/github/finding-security-vulnerabilities-and-errors-in-your-code/configuring-code-scanning#changing-the-languages-that-are-analyzed
 
+    runs-on: ${{ matrix.os }}
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
+      with:
+        fetch-depth: 2
+
+    - name: Install Java 23
+      if: ${{ matrix.language == 'java' }}
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'oracle'
+        java-version: '23'
+
+    - name: Remove ignored paths
+      if: ${{ github.event_name == 'pull-request' }}
+      run: rm -f ${{ matrix.paths-ignore }}
 
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
-      uses: github/codeql-action/init@v2
+      uses: github/codeql-action/init@v3
       with:
         languages: ${{ matrix.language }}
-        # If you wish to specify custom queries, you can do so here or in a config file.
-        # By default, queries listed here will override any specified in a config file.
-        # Prefix the list here with "+" to use these queries and those in the config file.
-        # queries: ./path/to/local/query, your-org/your-repo/queries@main
+        build-mode: ${{ matrix.build-mode }}
 
     # Autobuild attempts to build any compiled languages  (C/C++, C#, or Java).
     # If this step fails, then you should remove it and run the build manually (see below)
     - name: Autobuild
-      uses: github/codeql-action/autobuild@v2
+      if: ${{ matrix.build-mode != 'manual' }}
+      uses: github/codeql-action/autobuild@v3
 
     # ℹ️ Command-line programs to run using the OS shell.
     # 📚 https://git.io/JvXDl
@@ -64,9 +133,9 @@ jobs:
     #    and modify them (or add more) to build your code if your project
     #    uses a compiled language
 
-    #- run: |
-    #   make bootstrap
-    #   make release
+    - name: Manual build
+      if: ${{ matrix.build-mode == 'manual' }}
+      run: python scripts/build_codeql_language.py ${{ matrix.language }} ${{ matrix.paths }}
 
     - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@v2
+      uses: github/codeql-action/analyze@v3
