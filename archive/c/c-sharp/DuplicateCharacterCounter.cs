@@ -6,10 +6,16 @@ public class DuplicateCharacterCounter
     {
         Console.WriteLine(FindDuplicateCharacters("hola"));
         Console.WriteLine(FindDuplicateCharacters("goodbyeblues"));
+        Console.WriteLine(FindDuplicateCharacters("abba"));
     }
 
     public static string FindDuplicateCharacters(string input)
     {
+        if (string.IsNullOrEmpty(input))
+        {
+            return "Usage: please provide a string";
+        }
+
         Dictionary<char, int> countMap = new Dictionary<char, int>();
 
         foreach (char c in input)
@@ -20,10 +26,17 @@ public class DuplicateCharacterCounter
                 countMap[c] = 1;
         }
 
-        foreach (KeyValuePair<char, int> entry in countMap)
+        string result = "";
+
+        foreach (char c in input)
         {
-            Console.WriteLine($"{entry.Key}: {entry.Value}");
+            if (countMap[c] > 1)
+            {
+                result += c + ": " + countMap[c] + " \n";
+                countMap[c] = 0;
+            }
         }
-        return "---";
+
+        return string.IsNullOrEmpty(result) ? "No duplicate characters" : result.Trim();
     }
 }
