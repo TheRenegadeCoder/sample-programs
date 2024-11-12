@@ -16,6 +16,7 @@ func isPalindromeNumber(input : Int) -> Bool {
 }
 
 print(isPalindromeNumber(input: "434"))
+print(isPalindromeNumber(input: "1"))
 print(isPalindromeNumber(input: "332"))
 print(isPalindromeNumber(input: "-554"))
 print(isPalindromeNumber(input: "cdcs"))
