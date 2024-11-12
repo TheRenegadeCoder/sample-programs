@@ -1,12 +1,29 @@
 using System;
 
-namespace DuplicateCharacterCounter 
+public class DuplicateCharacterCounter
 {
-    class Program 
+    public static void Main()
     {
-        static void Main(string[] args) 
+        Console.WriteLine(FindDuplicateCharacters("hola"));
+        Console.WriteLine(FindDuplicateCharacters("goodbyeblues"));
+    }
+
+    public static string FindDuplicateCharacters(string input)
+    {
+        Dictionary<char, int> countMap = new Dictionary<char, int>();
+
+        foreach (char c in input)
         {
-            Console.WriteLine("Hello, World!");
+            if (countMap.ContainsKey(c))
+                countMap[c]++;
+            else
+                countMap[c] = 1;
         }
+
+        foreach (KeyValuePair<char, int> entry in countMap)
+        {
+            Console.WriteLine($"{entry.Key}: {entry.Value}");
+        }
+        return "---";
     }
 }
