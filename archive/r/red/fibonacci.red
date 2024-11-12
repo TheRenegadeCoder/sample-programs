@@ -1,17 +1,23 @@
-Red [Title: "Fibonacci]
+Red [Title: "Fibonacci"]
 
-fibonacci: func[n][
-    num1: 0
-    num2: 1
-    loop i 1 to n - 1 [
+fibonacci: func[n] [
+
+if n == 0 [return 0]
+if n == "" [print "- Usage: please input the count of fibonacci numbers to output"]
+if not integer? n [print "- Usage: please input the count of fibonacci numbers to output"]
+
+if n > 0 [
+    a: 0
+    b: 1
     
-    num3: num1 + num2
-    num1: num2
-    num2: num3
+    loop i 1 to n [
+    c: a + b
+    a: b
+    b: c
+    print i": "b
+        ]
     ]
-
-    return num3
+    
 ]
-
 
     
