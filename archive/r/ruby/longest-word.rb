@@ -1,3 +1,5 @@
+# Source on Block Arguments: https://ruby-for-beginners.rubymonstas.org/blocks/arguments.html
+
 def longest_word_length(sentence)
     # Converts string into an array of words
     words = sentence.split(" ")
