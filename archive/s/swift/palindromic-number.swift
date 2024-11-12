@@ -25,7 +25,7 @@ func isPalindrome(input: String) -> Bool {
 }
 
 // Test cases
-print(isPalindrome(input: "7"))      // returns true
+print(isPalindrome(input: "5"))      // returns true
 // print(isPalindrome(input: "2442"))   // Returns true
 // print(isPalindrome(input: "232"))    // Returns true
 // print(isPalindrome(input: "5215"))   // Returns false
