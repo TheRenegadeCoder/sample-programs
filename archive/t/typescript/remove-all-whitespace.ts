@@ -13,7 +13,7 @@ function main() {
     // retrieve input and remove whitespace
     const input = process.argv[2];
     const result = removeAllWhitespace(input);
-    console.log(result);
+    console.log(`Result without whitespace: "${result}"`);
 }
 
 // run the program
