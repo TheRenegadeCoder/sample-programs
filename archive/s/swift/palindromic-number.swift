@@ -1,4 +1,4 @@
-func isPalindromeNumber(number : Int) -> bool {
+func isPalindromeNumber(number : Int) -> Bool {
     var numStr = String(number)
     var reversedStr = String(numStr.reversed())
     return numStr == reversedStr
