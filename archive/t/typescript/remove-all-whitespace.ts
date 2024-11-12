@@ -3,8 +3,8 @@ function removeAllWhitespace(input: string): string {
 }
 
 function main() {
-    if (process.argv.length < 3) {
-        console.log("Usage: please provide a string");
+    if (process.argv.length < 3 || process.argv[2].trim() === "") {
+        console.log("Usage: please provide a non-empty string");
         return;
     }
 
