@@ -20,17 +20,12 @@ func isPalindrome(input: String) -> Bool {
     let numStr = input
     let numDigits = numStr.count
     let isEvenDigits = numDigits % 2 == 0
-    
+
     let reversedStr = String(numStr.reversed())
 
     if numStr == reversedStr {
         return true
-    } else {
-        if isEvenDigits {
-            print("Usage: please input a non-negative integer")
-        } else {
-            print("Usage: please input a non-negative integer")
-        }
+    }
         return false
     }
 }
