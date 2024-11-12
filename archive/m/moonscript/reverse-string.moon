@@ -1,7 +1,7 @@
 reverse_string = (str) ->
-    if not str or str == '""' then
+    if str == '' then
         return ''
-    result = ""
+    result = ''
     for i = #str, 1, -1
         result ..= str\sub(i, i)
     print result
