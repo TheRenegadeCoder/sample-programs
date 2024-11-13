@@ -110,8 +110,12 @@ jobs:
         java-version: '23'
 
     - name: Remove ignored paths
-      if: ${{ github.event_name == 'pull-request' }}
+      if: ${{ github.event_name == 'pull_request' }}
       run: rm -f ${{ matrix.paths-ignore }}
+
+    - name: Remove Hack if C++
+      if: ${{ matrix.language == 'cpp' }}
+      run: rm -rf archive/h/hack
 
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
