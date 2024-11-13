@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in C#! To find documentation related to the C# code in this repo, look [here.](https://sampleprograms.io/languages/c-sharp)
 
-## Sample Programs List - 28/37 :smile:
+## Sample Programs List - 29/37 :smile:
 
 In this section, we feature a list of completed and missing programs in C#. See above for the current amount of completed programs in C#. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -20,6 +20,7 @@ Below, you'll find a list of completed code snippets in C#. Code snippets preced
 - :warning: [Fibonacci in C#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+c#) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :warning: [File Input Output in C#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+c#) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :warning: [Fizz Buzz in C#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+c#) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
+- :warning: [Fraction Math in C#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fraction+math+c#) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :white_check_mark: [Hello World in C#](https://sampleprograms.io/projects/hello-world/c-sharp) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :warning: [Insertion Sort in C#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+c#) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :warning: [Job Sequencing in C#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+job+sequencing+c#) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
@@ -46,7 +47,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,convex+hull&template=code-snippet-request.md&title=Add+Convex+Hull+in+C%23) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :x: [Depth First Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,depth+first+search&template=code-snippet-request.md&title=Add+Depth+First+Search+in+C%23) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,dijkstra&template=code-snippet-request.md&title=Add+Dijkstra+in+C%23) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
-- :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fraction+math&template=code-snippet-request.md&title=Add+Fraction+Math+in+C%23) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+array+rotation&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+C%23) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+subarray&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+C%23) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+C%23) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
