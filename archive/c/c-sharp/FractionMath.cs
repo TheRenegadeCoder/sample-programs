@@ -17,14 +17,17 @@ namespace SamplePrograms
             this.numerator = numerator;
             this.denominator = denominator;
         }
-
+        
+        // GCD method using the Euclidean algorithm in an iterative approach
+        // Orginal algorithm was found on GeeksforGeeks, modified for clarity:
+        // https://www.geeksforgeeks.org/program-to-find-gcd-or-hcf-of-two-numbers/#
         private int GCD(int x, int y)
         {
             while (y != 0)
             {
                 int z = x;
                 x = y;
-                y %= z;
+                y = z % y;
             }
             return x;
         }
