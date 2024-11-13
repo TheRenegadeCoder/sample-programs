@@ -6,17 +6,15 @@ let removeAllWhitespace (input: string) : string =
 [<EntryPoint>]
 let main argv : int = 
     let ret = ref 0
+
     if argv.Length > 0 then
         let input = argv.[0]
-        printfn "Input: %s" input
-        if  input = "" then
-            printfn "Usage: please provide a string" 
-            ret :=1
+        
+        if  input = "" then 
+            ret := 1
         else
             let result = removeAllWhitespace input      
-            printfn "Result: %s" result
-            
+            printfn "%s" result    
     else
-          printfn "Usage: please provide a string" 
-          ret :=1
+        ret := 1
     !ret
