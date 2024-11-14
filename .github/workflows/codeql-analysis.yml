@@ -141,5 +141,29 @@ jobs:
       if: ${{ matrix.build-mode == 'manual' }}
       run: python scripts/build_codeql_language.py ${{ matrix.language }} ${{ matrix.paths }}
 
-    - name: Perform CodeQL Analysis
+    - name: Perform CodeQL Analysis With Upload
+      if: ${{ matrix.language != 'cpp' || github.event_name == 'pull_request' }}
       uses: github/codeql-action/analyze@v3
+
+    - name: Perform CodeQL Analysis Without Upload
+      if: ${{ matrix.language == 'cpp' && github.event_name != 'pull_request' }}
+      uses: github/codeql-action/analyze@v3
+      with:
+        upload: false
+        output: sarif-results
+
+    - name: Filter Sarif
+      if: ${{ matrix.language == 'cpp' && github.event_name != 'pull_request' }}
+      uses: advanced-security/filter-sarif@v1
+      with:
+        patterns: |
+          +archive/c/c-plus-plus/*.cpp
+          -archive/h/hack/*.hh
+        input: sarif-results/${{ matrix.language }}.sarif
+        output: sarif-results/${{ matrix.language }}.sarif
+  
+    - name: Upload SARIF
+      if: ${{ matrix.language == 'cpp' && github.event_name != 'pull_request' }}
+      uses: github/codeql-action/upload-sarif@v2
+      with:
+        sarif_file: sarif-results/${{ matrix.language }}.sarif
