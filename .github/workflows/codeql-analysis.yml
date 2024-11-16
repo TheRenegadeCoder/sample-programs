@@ -127,7 +127,7 @@ jobs:
     - name: Look at CodeQL directories
       if: ${{ matrix.language == 'cpp' }}
       run: |
-        ls -al _*
+        ls -al
   
       # Autobuild attempts to build any compiled languages  (C/C++, C#, or Java).
     # If this step fails, then you should remove it and run the build manually (see below)
