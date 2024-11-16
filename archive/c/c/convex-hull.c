@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
+#include <ctype.h>
 
 typedef struct {
     int x;
@@ -58,59 +59,109 @@ void convexHull(Point points[], int n) {
     }
 }
 
+// Function to check if a string is a valid number
 bool isInteger(const char *s) {
-    // Check for an empty string
-    if (*s == '\0') {
+    char *end;
+    strtol(s, &end, 10); // Convert string to long
+    return (*end == '\0' || *end == '\n'); // Check if the entire string was valid
+}
+
+// Function to trim whitespace from a string
+char* trimWhitespace(char *str) {
+    // Trim leading whitespace
+    while (isspace((unsigned char)*str)) str++;
+    // Trim trailing whitespace
+    char *end = str + strlen(str) - 1;
+    while (end > str && isspace((unsigned char)*end)) end--;
+    *(end + 1) = '\0'; // Null terminate after the last non-space character
+    return str;
+}
+
+// Function to parse input string and populate the array
+int parseInput(const char *input, int **arr, int *size) {
+    char *token;
+    int capacity = 10; // Initial capacity
+    *arr = malloc(capacity * sizeof(int));
+    if (*arr == NULL) {
         return false;
     }
 
-    // Allow a leading negative sign
-    if (*s == '-') {
-        s++; // Move to the next character
-        // If there's no digit after the negative sign, it's not a valid integer
-        if (*s == '\0') {
-            return false;
-        }
+    // Tokenize the input string based on commas
+    char *inputCopy = strdup(input);
+    if (inputCopy == NULL) {
+        free(*arr);
+        *arr = NULL;
+        return false;
     }
 
-    // Check that all remaining characters are digits
-    while (*s) {
-        if (*s < '0' || *s > '9') {
-            return false;
+    token = strtok(inputCopy, ",");
+    *size = 0;
+    while (token) {
+        trimWhitespace(token); // Trim whitespace around token
+        if (!isInteger(token)) {
+            free(*arr);
+            free(inputCopy);
+            *arr = NULL;
+            return false; // Exit if a number is invalid
         }
-        s++;
+
+        if (*size >= capacity) {
+            capacity *= 2;
+            *arr = realloc(*arr, capacity * sizeof(int));
+            if (*arr == NULL) {
+                free(inputCopy);
+                return false;
+            }
+        }
+        (*arr)[(*size)++] = atoi(token);
+        token = strtok(NULL, ",");
     }
-    return true;
+
+    // Resize the array to the actual size
+    *arr = realloc(*arr, *size * sizeof(int));
+    free(inputCopy); // Free the input copy
+    if (*arr == NULL) {
+        return false;
+    }
+
+    return true; // Successful parsing
 }
 
 void parseCoordinates(char *inputX, char *inputY) {
-    char *tokenX = strtok(inputX, ",");
-    char *tokenY = strtok(inputY, ",");
-
-    Point *points = NULL;
-    int count = 0;
-
-    while (tokenX && tokenY) {
-        if (!isInteger(tokenX) || !isInteger(tokenY)) {
-            printUsageAndExit();
+    int *xCoords = NULL;
+    int *yCoords = NULL;
+    int xSize = 0;
+    int ySize = 0;
+    if (!parseInput(inputX, &xCoords, &xSize) ||
+        !parseInput(inputY, &yCoords, &ySize) ||
+        xSize != ySize ||
+        xSize < 3) {
+        if (xCoords != NULL) {
+            free(xCoords);
         }
 
-        points = realloc(points, sizeof(Point) * (count + 1));
-        points[count].x = atoi(tokenX);
-        points[count].y = atoi(tokenY);
-        count++;
+        if (yCoords != NULL) {
+            free(yCoords);
+        }
 
-        tokenX = strtok(NULL, ",");
-        tokenY = strtok(NULL, ",");
-    }
-
-    if (tokenX || tokenY) {
         printUsageAndExit();
     }
 
-    if (count < 3) {
+    int count = xSize;
+    Point *points = malloc(sizeof(Point) * count);
+    if (points == NULL) {
+        free(xCoords);
+        free(yCoords);
         printUsageAndExit();
     }
+
+    for (int i = 0; i < count; i++) {
+        points[i].x = xCoords[i];
+        points[i].y = yCoords[i];
+    }
+
+    free(xCoords);
+    free(yCoords);
 
     convexHull(points, count);
     free(points);
@@ -124,7 +175,7 @@ int main(int argc, char *argv[]) {
     char *inputX = argv[1];
     char *inputY = argv[2];
 
-    if (strlen(inputY) == 0) {
+    if (strlen(inputX) == 0 || strlen(inputY) == 0) {
         printUsageAndExit();
     }
 
