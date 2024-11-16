@@ -84,10 +84,7 @@ jobs:
   analyze:
     name: Analyze
     needs: changed-files
-    permissions:
-      actions: read
-      contents: write
-      security-events: write
+    permissions: write-all
 
     strategy:
       fail-fast: false
