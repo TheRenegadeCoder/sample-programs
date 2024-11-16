@@ -124,10 +124,10 @@ jobs:
         languages: ${{ matrix.language }}
         build-mode: ${{ matrix.build-mode }}
 
-    - name: List directory after init
+    - name: Show C++ database
       if: ${{ matrix.language == 'cpp' }}
       run: |
-        ls -alR ../../_temp/codeql_databases/cpp
+        cat ../../_temp/codeql_databases/cpp/codeql-database.yml
 
     # Autobuild attempts to build any compiled languages  (C/C++, C#, or Java).
     # If this step fails, then you should remove it and run the build manually (see below)
