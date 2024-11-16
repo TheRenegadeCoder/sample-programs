@@ -117,14 +117,6 @@ jobs:
       if: ${{ matrix.language == 'cpp' }}
       run: rm -rf archive/h/hack
 
-    - name: Get database in C++
-      if: ${{ matrix.language == 'cpp' }}
-      env:
-        TOKEN: ${{ github.token }}
-      run: |
-        env | sort
-        curl -f -L -H "Accept: application/vnd.github+json" -H "Authorization: Bearer ${TOKEN}" -H 'X-GitHub-Api-Version: 2022-11-28' -X DELETE https://api.github.com/repos/TheRenegadeCoder/sample-programs/code-scanning/codeql/databases/cpp
-
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v3
@@ -132,7 +124,12 @@ jobs:
         languages: ${{ matrix.language }}
         build-mode: ${{ matrix.build-mode }}
 
-    # Autobuild attempts to build any compiled languages  (C/C++, C#, or Java).
+    - name: Look at CodeQL directories
+      if: ${{ matrix.language == 'cpp' }}
+      run: |
+        ls -al _*
+  
+      # Autobuild attempts to build any compiled languages  (C/C++, C#, or Java).
     # If this step fails, then you should remove it and run the build manually (see below)
     - name: Autobuild
       if: ${{ matrix.build-mode != 'manual' }}
