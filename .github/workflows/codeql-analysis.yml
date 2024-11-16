@@ -124,12 +124,7 @@ jobs:
         languages: ${{ matrix.language }}
         build-mode: ${{ matrix.build-mode }}
 
-    - name: Look at CodeQL directories
-      if: ${{ matrix.language == 'cpp' }}
-      run: |
-        ls -al
-  
-      # Autobuild attempts to build any compiled languages  (C/C++, C#, or Java).
+    # Autobuild attempts to build any compiled languages  (C/C++, C#, or Java).
     # If this step fails, then you should remove it and run the build manually (see below)
     - name: Autobuild
       if: ${{ matrix.build-mode != 'manual' }}
@@ -148,3 +143,10 @@ jobs:
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
+      with:
+        upload: false
+
+    - name: List directory
+      if: ${{ matrix.language == 'cpp' }}
+      run: |
+        ls -al
