@@ -84,7 +84,10 @@ jobs:
   analyze:
     name: Analyze
     needs: changed-files
-    permissions: write-all
+    permissions:
+      actions: read
+      contents: write
+      security-events: write
 
     strategy:
       fail-fast: false
@@ -145,5 +148,3 @@ jobs:
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
-      with:
-        upload: true
