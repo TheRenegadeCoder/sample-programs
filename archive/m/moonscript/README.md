@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Moonscript! To find documentation related to the Moonscript code in this repo, look [here.](https://sampleprograms.io/languages/moonscript)
 
-## Sample Programs List - 2/37 :disappointed:
+## Sample Programs List - 3/37 :disappointed:
 
 In this section, we feature a list of completed and missing programs in Moonscript. See above for the current amount of completed programs in Moonscript. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -10,6 +10,7 @@ In this section, we feature a list of completed and missing programs in Moonscri
 
 Below, you'll find a list of completed code snippets in Moonscript. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
+- :warning: [Fizz Buzz in Moonscript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+moonscript) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Moonscript](https://sampleprograms.io/projects/hello-world/moonscript) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :warning: [Reverse String in Moonscript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+moonscript) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 
@@ -29,7 +30,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Factorial](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,factorial&template=code-snippet-request.md&title=Add+Factorial+in+Moonscript) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :x: [Fibonacci](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fibonacci&template=code-snippet-request.md&title=Add+Fibonacci+in+Moonscript) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :x: [File Input Output](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,file+input+output&template=code-snippet-request.md&title=Add+File+Input+Output+in+Moonscript) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
-- :x: [Fizz Buzz](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fizz+buzz&template=code-snippet-request.md&title=Add+Fizz+Buzz+in+Moonscript) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fraction+math&template=code-snippet-request.md&title=Add+Fraction+Math+in+Moonscript) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :x: [Insertion Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,insertion+sort&template=code-snippet-request.md&title=Add+Insertion+Sort+in+Moonscript) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,job+sequencing&template=code-snippet-request.md&title=Add+Job+Sequencing+in+Moonscript) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
