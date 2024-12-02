@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in F#! To find documentation related to the F# code in this repo, look [here.](https://sampleprograms.io/languages/f-sharp)
 
-## Sample Programs List - 2/37 :disappointed:
+## Sample Programs List - 3/37 :disappointed:
 
 In this section, we feature a list of completed and missing programs in F#. See above for the current amount of completed programs in F#. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -12,6 +12,7 @@ Below, you'll find a list of completed code snippets in F#. Code snippets preced
 
 - :warning: [Baklava in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+f#) [[Requirements](https://sampleprograms.io/projects/baklava)]
 - :warning: [Hello World in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+f#) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :warning: [Remove All Whitespace in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+remove+all+whitespace+f#) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 
 ### Missing Programs
 
@@ -45,7 +46,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Prime Number](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,prime+number&template=code-snippet-request.md&title=Add+Prime+Number+in+F%23) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :x: [Quick Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,quick+sort&template=code-snippet-request.md&title=Add+Quick+Sort+in+F%23) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
 - :x: [Quine](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,quine&template=code-snippet-request.md&title=Add+Quine+in+F%23) [[Requirements](https://sampleprograms.io/projects/quine)]
-- :x: [Remove All Whitespace](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,remove+all+whitespace&template=code-snippet-request.md&title=Add+Remove+All+Whitespace+in+F%23) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :x: [Reverse String](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,reverse+string&template=code-snippet-request.md&title=Add+Reverse+String+in+F%23) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :x: [Roman Numeral](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,roman+numeral&template=code-snippet-request.md&title=Add+Roman+Numeral+in+F%23) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :x: [Rot13](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,rot13&template=code-snippet-request.md&title=Add+Rot13+in+F%23) [[Requirements](https://sampleprograms.io/projects/rot13)]

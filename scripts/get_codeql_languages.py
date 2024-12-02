@@ -40,12 +40,16 @@ ALL_CODEQL_LANGUAGES_FILES = {
 
 def main():
     parser = argparse.ArgumentParser()
+    parser.add_argument("--event", help="GitHub event")
     parser.add_argument("files_changed", nargs="*", help="files that have changed")
     parsed_args = parser.parse_args()
     languages: Set[LanguageInfo] = set()
     language_paths: DefaultDict[str, Set[str]] = defaultdict(set)
     language_paths_ignore: DefaultDict[str, Set[str]] = defaultdict(set)
-    if set(parsed_args.files_changed) & ALL_CODEQL_LANGUAGES_FILES:
+    if (
+        parsed_args.event == "schedule"
+        or set(parsed_args.files_changed) & ALL_CODEQL_LANGUAGES_FILES
+    ):
         for glob, language_info in CODEQL_LANGUAGES.items():
             languages.add(language_info)
             language_paths[language_info.language].add(glob)
