@@ -61,21 +61,16 @@ SYSCALL
 %DEFINE CLONE_SETTLS 0x00080000
 
 %DEFINE SYS_EXIT 60
-%DEFINE SYS_KILL 62
-%DEFINE SIGTERM 0x15
 
 %DEFINE SYS_ARCH_PRCTL 158
 %DEFINE ARCH_SET_FS 0x1002
 %DEFINE ARCH_GET_FS 0x1003
 
-%DEFINE SYS_GETTID 186
 
 %DEFINE SYS_FUTEX 202
 %DEFINE FUTEX_WAIT 0
 %DEFINE FUTEX_WAKE 1
 
-%DEFINE SYS_KILL 62
-%DEFINE SYS_TGKILL 234
 
 
 ;_start function definitions
@@ -89,15 +84,13 @@ SYSCALL
 %DEFINE _start.threadLock 8
 %DEFINE _start.threadLock.MUTEX 0
 %DEFINE _start.threadCount 16
-%DEFINE _start.PID 24
 
 ;FSM function definitions
 %DEFINE FSM.STACK_INIT 40
 %DEFINE FSM.threadValue 8
 %DEFINE FSM.numPtr 16
 %DEFINE FSM.numLen 24
-%DEFINE FSM.threadTID 32
-%DEFINE FSM.threadTLSPtr 40
+%DEFINE FSM.threadTLSPtr 32
     
 %DEFINE threadTLS.size 56 ; Each 
 %DEFINE threadTLS.ptr 0
@@ -107,7 +100,6 @@ SYSCALL
 %DEFINE threadTLS.numLen 24
 %DEFINE threadTLS.numPtr 32
 %DEFINE threadTLS.sleepTime 40
-%DEFINE threadTLS.TID 48
 
 %DEFINE INT_MAX 2147483647
 %DEFINE THREAD_LIMIT 32 ;32 threads seems reasonable.
@@ -234,7 +226,7 @@ initializeTLS:
 ;   The FSM function calls this when wanting to create a thread, then stays here if the child, or RETs back when the parent thread, then uses nanosleep to wait n seconds to print.
 ;   FSM will unlock the FUTEX making the cloned threads sleep once all of the threads are created, synchronizing the nanosleep times.
 ;   Printing is locked through a spinlock when a thread is printing its value to avoid printing "race conditions". Uses TLS through the FS segment to address variables related to the spawned thread.
-;   Afterwards, it cleans up its own memory and runs SYS_KILL on itself.
+;   Afterwards, it cleans up its own memory and runs SYS_EXIT on itself.
 ; Parameters:
 ;   RDI - (void*)         Pointer to allocated TLS memory to set FS base to.
 ;   RSI - ()              Unused.
@@ -264,31 +256,22 @@ sleep_thread:
     ADD RSP, 8 ; Clear out stack frame for here.
     RET
     .thread:
-    
-        ;MOV R11, [parentStackBase] ; Move parent RBP to R11 here.
-        ;SFENCE
-        ;LOCK INC QWORD [R11 - _start.threadCount] ; Locking here just for safety, any race condition would deadlock _start.
-        ;MOV R13, [R11 - _start.threadCount]
         POP RDI
         MOV RAX, SYS_ARCH_PRCTL
         MOV RDI, ARCH_SET_FS
         MOV RSI, R13
         SYSCALL
         ;We can now dereference items in the TLS through [FS:n] now.
-        MOV RAX, SYS_GETTID
-        SYSCALL
-        MOV [FS:threadTLS.TID], RAX
         CALL incThreadCount
         ;Make thread wait on the lock at RBP[-_start.threadLock] in _start.
         MOV RAX, SYS_FUTEX
         MOV RDI, MUTEX
         MOV RSI, FUTEX_WAIT
-        MOV RDX, _start.threadLock.MUTEX ; Wake up when the X location in RDI dereferences to zero (WAKE)
+        MOV RDX, _start.threadLock.MUTEX ; Wake up when the mutex location in RDI dereferences to zero (WAKE)
         MOV R10, 0 ; No timeout.
         MOV R8, 0 ; No requeue
         MOV R9, 0 ; Unused for this.
         SYSCALL
-        block: ;Here for GDB purposes.
         ;Sleep for n seconds.
         MOV RAX, SYS_NANOWAIT
         MOV RDI, [FS:threadTLS.ptr]
@@ -342,7 +325,6 @@ sleep_thread:
             MOV R9, 0 ; Unused.
             SYSCALL
             
-            PUSH QWORD [FS:threadTLS.TID] ; Store TID
             MOV RAX, SYS_MUNMAP
             MOV RDI, [FS:threadTLS.ptr]
             MOV RSI, threadTLS.size
@@ -418,7 +400,6 @@ FSM:
     MOV QWORD [RBP - FSM.threadValue], 0 ; The sleep time, based on the command line argument.
     MOV QWORD [RBP - FSM.numPtr], 0 ; Pointer to the beginning of the number argument on the command line.
     MOV QWORD [RBP - FSM.numLen], 0 ; Length of the number.
-    MOV QWORD [RBP - FSM.threadTID], 0 ; TID to pass to the thread so it can run SYS_KILL on itself; number itself will be passed to thread.
     MOV QWORD [RBP - FSM.threadTLSPtr], 0 ; Pointer to the thread TLS.
     
     MOV RAX, 0 ; The accumulator register will hold any return value.
@@ -480,7 +461,6 @@ FSM:
         MOV QWORD [RBP - FSM.threadValue ], 0 ;The sleep time, based on the command line argument.
         MOV QWORD [RBP - FSM.numPtr ], 0 ;Pointer to the beginning of the number argument on the command line.
         MOV QWORD [RBP - FSM.numLen ], 0 ;Length of the number.
-        MOV QWORD [RBP - FSM.threadTID ], 0 ;TID to pass to the thread so it can run SYS_KILL on itself; number itself will be passed to thread.
         MOV QWORD [RBP - FSM.threadTLSPtr ], 0 ;Pointer to the thread TLS.
         SFENCE ;Allow all of these store operations to occur before others can happen.
         
@@ -535,7 +515,6 @@ FSM:
         MOV QWORD [RBP - FSM.threadValue ], 0 ;The sleep time, based on the command line argument.
         MOV QWORD [RBP - FSM.numPtr ], 0 ;Pointer to the beginning of the number argument on the command line.
         MOV QWORD [RBP - FSM.numLen ], 0 ;Length of the number.
-        MOV QWORD [RBP - FSM.threadTID ], 0 ;TID to pass to the thread so it can run SYS_KILL on itself; number itself will be passed to thread.
         MOV QWORD [RBP - FSM.threadTLSPtr ], 0 ;Pointer to the thread TLS.
         SFENCE ;Allow all of these store operations to occur before others can happen.
         
@@ -609,9 +588,8 @@ _start:
     MOV QWORD [RBP - _start.SEMAPHORE ], 0 ;Semaphore for when all of the threads are finished, and main can run once again; we'll just spinlock for main.
     MOV QWORD [RBP - _start.threadLock ], _start.threadLock.MUTEX ;Lock so we can wait to start all threads.
     MOV QWORD [RBP - _start.threadCount ], 0 ;Thread count.
-    MOV QWORD [RBP - _start.PID], 0 ; Main thread PID.
     
-    ;Allowing parent process to automatically reap children as SYS_KILL is executed in them.
+    ;Allowing parent process to automatically reap children as they exit.
     MOV RAX, SYS_RT_SIGACTION
     MOV RDI, SIGCHLD
     MOV RSI, main_sigAction
@@ -619,15 +597,10 @@ _start:
     MOV R10, 8 ; 8 bytes.
     SYSCALL
     
-    ; Find main PID.
-    MOV RAX, SYS_GETTID
-    SYSCALL
-    MOV [RBP - _start.PID], RAX
     
     CMP QWORD [RBP+_start.argc], 1
     JE .failure
     CALL FSM
-    ;Place INT3 after CALL FSM for debugging
     
     MOV RAX, SYS_EXIT
     XOR RDI, RDI
