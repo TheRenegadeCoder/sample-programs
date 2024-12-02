@@ -1,0 +1,20 @@
+def (this String).repeat(times Number) -> String
+    let i mutable = times
+    let s mutable = ""
+    while i > 0
+        s =  "$(s)$(this)"
+        i = i - 1
+
+    return s
+
+def .main
+    let i mutable = -10
+    while i <= 10
+        let numSpaces mutable = i
+        if numSpaces < 0
+            numSpaces = -numSpaces
+
+        let spaces = " ".repeat(numSpaces)
+        let stars = "*".repeat(21 - (2 * numSpaces))
+        "$(spaces)$(stars)".show
+        i = i + 1
