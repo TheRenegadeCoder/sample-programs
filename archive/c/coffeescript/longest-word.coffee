@@ -18,7 +18,7 @@ usage = () ->
 main = () ->
     args = process.argv
     return findLongestWord(args[2])
-    usage()
+    
 
 console.log main()
 
