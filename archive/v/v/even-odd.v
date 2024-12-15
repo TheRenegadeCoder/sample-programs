@@ -16,7 +16,7 @@ fn main() {
 
 	print(match num % 2 {
 		0 { 'Even' }
-		1 { 'Odd' }
+		1, -1 { 'Odd' }
 		else { 'Usage: please input a number' }
 	})
 }
