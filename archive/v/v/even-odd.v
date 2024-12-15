@@ -4,14 +4,13 @@ import os
 
 fn main() {
 	if os.args.len < 2 {
-		eprintln('usage: please put a number as an argument, eg')
-		eprintln('even-odd 95')
+		eprintln('Usage: please input a number')
 		exit(1)
 	}
 
-	print(match os.args[1].int() % 2 {
-		0 { 'Even' }
-		1 { 'Odd' }
-		else { 'Please enter an integer.' }
+	print(match os.args[1].i64() % 2 {
+		i64(0) { 'Even' }
+		i64(1) { 'Odd' }
+		else { 'Usage: please input a number' }
 	})
 }
