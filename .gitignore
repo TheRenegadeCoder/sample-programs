@@ -11,3 +11,20 @@ __pycache__/
 .DS_Store
 venv/
 generated/
+
+# Object directory
+obj/
+
+# Project files
+*.fsproj
+.*project
+.*proj
+.*targets
+
+# Node.js
+node_modules/
+package.json
+package-lock.json
+
+# F#
+Program.fs
