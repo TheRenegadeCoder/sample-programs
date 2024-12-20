@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in C#! To find documentation related to the C# code in this repo, look [here.](https://sampleprograms.io/languages/c-sharp)
 
-## Sample Programs List - 26/37 :relaxed:
+## Sample Programs List - 29/37 :smile:
 
 In this section, we feature a list of completed and missing programs in C#. See above for the current amount of completed programs in C#. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -14,13 +14,16 @@ Below, you'll find a list of completed code snippets in C#. Code snippets preced
 - :warning: [Binary Search in C#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+binary+search+c#) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :warning: [Bubble Sort in C#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+c#) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :warning: [Capitalize in C#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+c#) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :warning: [Duplicate Character Counter in C#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+c#) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :warning: [Even Odd in C#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+c#) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :warning: [Factorial in C#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+c#) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :warning: [Fibonacci in C#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+c#) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :warning: [File Input Output in C#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+c#) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :warning: [Fizz Buzz in C#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+c#) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
+- :warning: [Fraction Math in C#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fraction+math+c#) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :white_check_mark: [Hello World in C#](https://sampleprograms.io/projects/hello-world/c-sharp) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :warning: [Insertion Sort in C#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+c#) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
+- :warning: [Job Sequencing in C#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+job+sequencing+c#) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :warning: [Josephus Problem in C#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+josephus+problem+c#) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :warning: [Linear Search in C#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+linear+search+c#) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :warning: [Longest Common Subsequence in C#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+common+subsequence+c#) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
@@ -44,9 +47,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,convex+hull&template=code-snippet-request.md&title=Add+Convex+Hull+in+C%23) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :x: [Depth First Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,depth+first+search&template=code-snippet-request.md&title=Add+Depth+First+Search+in+C%23) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,dijkstra&template=code-snippet-request.md&title=Add+Dijkstra+in+C%23) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
-- :x: [Duplicate Character Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,duplicate+character+counter&template=code-snippet-request.md&title=Add+Duplicate+Character+Counter+in+C%23) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
-- :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fraction+math&template=code-snippet-request.md&title=Add+Fraction+Math+in+C%23) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
-- :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,job+sequencing&template=code-snippet-request.md&title=Add+Job+Sequencing+in+C%23) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+array+rotation&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+C%23) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+subarray&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+C%23) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+C%23) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
