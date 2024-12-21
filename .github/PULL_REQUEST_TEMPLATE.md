@@ -9,14 +9,14 @@ For more information please refer to our [contributing documentation][contributi
 ## I Am Adding a New Code Snippet in an Existing Language
 
 - [ ] I fixed #your-issue-number-here
-- [ ] I removed imported frameworks/libraries/packages or added them to .gitignore
+- [ ] I did not include any extra folders/libraries
 - [ ] I named the pull request using `Add {PROJECT} in {LANGUAGE}` format
   
   
 ## I Am Adding a New Code Snippet in a New Language
 
 - [ ] I fixed #your-issue-number-here
-- [ ] I removed imported frameworks/libraries/packages or added them to .gitignore
+- [ ] I did not include any extra folders/libraries
 - [ ] I named the pull request using `Add {PROJECT} in {LANGUAGE}` format
 - [ ] I added a `testinfo.yml` files (see [contributing documentation][contributing-new-language])
   - [ ] I used an officially supported docker image or one that I personally trust
@@ -25,7 +25,7 @@ For more information please refer to our [contributing documentation][contributi
 ## I Am Adding New Tests for a Project
 
 - [ ] I fixed #your-issue-number-here
-- [ ] I removed imported frameworks/libraries/packages or added them to .gitignore
+- [ ] I did not include any extra folders/libraries
 - [ ] I named the pull request using `Add {PROJECT} Tests` format
 - [ ] I verified the project exists on the [Sample Programs Project List][sample-programs-project-list]
 - [ ] I added tests for every test case in the Testing table of the project description for the given project. (See [contributing documentation][contributing-tests-in-detail])
@@ -34,7 +34,7 @@ For more information please refer to our [contributing documentation][contributi
 ## I Am Adding New Tests for a Language
 
 - [ ] I fixed #your-issue-number-here
-- [ ] I removed imported frameworks/libraries/packages or added them to .gitignore
+- [ ] I did not include any extra folders/libraries
 - [ ] I named the pull request using `Add {LANGUAGE} Tests` format
 - [ ] I added a `testinfo.yml` files (see [contributing documentation][contributing-new-language])
   - [ ] I used an officially supported docker image or one that I personally trust
@@ -44,7 +44,7 @@ For more information please refer to our [contributing documentation][contributi
 ## I Am Modifying an Existing Code Snippet or Existing Tests
 
 - [ ] I fixed #your-issue-number-here
-- [ ] I removed imported frameworks/libraries/packages or added them to .gitignore
+- [ ] I did not include any extra folders/libraries
 - [ ] I have read about modifying existing code snippets or tests in the [contributing documentation][contributing-modifications]
 - [ ] I have explained why this modification is _necessary_ either in the issue linked above or in the notes below
 - [ ] I named the pull request using `Modify {PROJECT} {tests} in {LANGUAGE}` format
