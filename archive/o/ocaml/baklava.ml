@@ -1,6 +1,6 @@
-(** https://stackoverflow.com/questions/46370362/recursive-function-to-repeat-string-in-ocaml **)
+(** https://rosettacode.org/wiki/Repeat_a_string#OCaml **)
 let rec string_repeat n s =
-  if n < 1 then "" else s ^ string_repeat (n - 1) s;;
+  String.concat "" (Array.to_list (Array.make n s));;
 
 for n = -10 to 10 do
   let num_spaces = abs n in
