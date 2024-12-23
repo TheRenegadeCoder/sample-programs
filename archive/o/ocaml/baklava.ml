@@ -1,5 +1,5 @@
 (** https://rosettacode.org/wiki/Repeat_a_string#OCaml **)
-let rec string_repeat n s =
+let string_repeat n s =
   String.concat "" (Array.to_list (Array.make n s));;
 
 for n = -10 to 10 do
