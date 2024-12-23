@@ -23,9 +23,11 @@ int main(int argc, const char * argv[]) {
     for (i = -10; i <= 10; i++) {
         int numSpaces = abs(i);
         int numStars = 21 - 2 * numSpaces;
-        printf("%s%s\n",
+        printf(
+            "%s%s\n",
             [[@" " repeatString: numSpaces] UTF8String],
-            [[@"*" repeatString: numStars] UTF8String]);
+            [[@"*" repeatString: numStars] UTF8String]
+        );
     }
 
     [pool drain];
