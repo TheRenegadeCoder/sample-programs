@@ -3,17 +3,15 @@
         <title>Baklava</title>
     </head>
     <body>
-    <!--
-    Algorithm:
-
-        for i = -10 to 10:
-            for j = 1 to abs(i):
-                output ' '
-            for j = 1 to 21-2*abs(i):
-                output '*'
-            output '\n'
-    -->
-        <pre><cfloop index="i" from="-10" to="10"><cfloop index="j" from="1" to="#abs(i)#"><cfoutput> </cfoutput></cfloop><cfloop index="j" from="1" to="#21-2*abs(i)#"><cfoutput>*</cfoutput></cfloop>
-</cfloop></pre>
+        <pre><cfscript>
+for (n = -10; n <= 10; n++) {
+    numSpaces = abs(n);
+    numStars = 21 - 2 * numSpaces;
+    spaces = repeatString(" ", numSpaces);
+    stars = repeatString("*", numStars);
+    writeOutput(spaces & stars & "
+");
+}
+        </cfscript></pre>
 	</body>
 </html>
