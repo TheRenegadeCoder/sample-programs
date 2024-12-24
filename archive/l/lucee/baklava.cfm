@@ -9,8 +9,7 @@ for (n = -10; n <= 10; n++) {
     numStars = 21 - 2 * numSpaces;
     spaces = repeatString(" ", numSpaces);
     stars = repeatString("*", numStars);
-    writeOutput(spaces & stars & "
-");
+    writeOutput(spaces & stars & "<br>");
 }
         </cfscript></pre>
 	</body>
