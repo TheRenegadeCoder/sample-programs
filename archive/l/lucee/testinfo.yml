@@ -4,5 +4,5 @@ folder:
 
 container:
   image: "rzuckerm/lucee"
-  tag: "5.4.4.38-1"
+  tag: "5.4.4.38-dev"
   cmd: "run_lucee {{ source.name }}{{ source.extension }}"
