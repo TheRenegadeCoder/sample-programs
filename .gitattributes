@@ -1,1 +1,3 @@
-archive/h/hack/*.hh linguist-language=Hack
+archive/h/hack/* linguist-language=Hack
+*.yml linguist-language=YAML
+*.md linguist-documentation
