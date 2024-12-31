@@ -4,7 +4,7 @@
 (export main)
 
 (def (string-repeat n str)
-    (foldl string-append "" (repeat str n))
+    (string-join (repeat str n) "")
 )
 
 (def (main . args)
