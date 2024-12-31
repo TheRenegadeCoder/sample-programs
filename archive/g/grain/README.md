@@ -66,8 +66,8 @@ For example, the "Hello World" sample would be named this:
 
 The following list shares details about what we're using to test all Sample Programs in Grain:
 
-- Docker Image: nickbreaton/grain
-- Docker Tag: latest
+- Docker Image: ghcr.io/grain-lang/grain
+- Docker Tag: 0.6.6-slim
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 
