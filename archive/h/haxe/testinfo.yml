@@ -4,6 +4,6 @@ folder:
 
 container:
   image: "haxe"
-  tag: "4.2-buster"
+  tag: "4.3-bookworm"
   build: "haxe --main {{ source.name }} --python {{ source.name }}.py"
-  cmd: "python {{ source.name }}.py"
+  cmd: "python3 {{ source.name }}.py"
