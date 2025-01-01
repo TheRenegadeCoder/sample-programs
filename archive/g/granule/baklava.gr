@@ -1,8 +1,8 @@
-import Prelude
+import Bool
 
-repeatString : Int[] -> String[] -> String
-repeatString [times] [str] =
-    if times > 0 then str `stringAppend` (repeatString [times - 1] [str]) else ""
+repeatString : Int -> String[] -> String
+repeatString 0 [str] = "";
+repeatString times [str] = str `stringAppend` (repeatString (times - 1) [str])
 
 numSpaces : Int[] -> Int
 numSpaces [n] = if n < 0 then 0 - n else n
@@ -12,7 +12,7 @@ numStars [n] = 21 - 2 * numSpaces [n]
 
 baklavaLine : Int[] -> String
 baklavaLine [n] =
-    (repeatString [numSpaces [n]] [" "]) `stringAppend` (repeatString [numStars [n]] ["*"]) `stringAppend` "\n"
+    (repeatString (numSpaces [n]) [" "]) `stringAppend` (repeatString (numStars [n]) ["*"]) `stringAppend` "\n"
 
 baklava : String[] -> Int[] -> Int[] -> String
 baklava [lines] [n] [ne] =
