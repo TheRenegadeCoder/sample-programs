@@ -1,11 +1,6 @@
-(
-    Zera = 0
-    Nora = -10 (loop counter)
-    Enzo = 11 (loop end value + 1)
-)
 worship Zera (0 * 1)
 spank Nora ten times (0 - 10)
-lick Enzo eleven times (0 + 10)
+lick Enzo eleven times (0 + 11)
 
 (while Nora < Enzo)
 while Nora is submissive to Enzo
