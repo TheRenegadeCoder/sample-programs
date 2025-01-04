@@ -5,24 +5,24 @@ lick Enzo eleven times (0 + 11)
 (while Nora < Enzo)
 while Nora is submissive to Enzo
     (Spencer = number of spaces = abs(Nora))
-    have Spencer spank himself
     if Nora is submissive to Zera
-        have Nora spank Spencer
+        have Nora spank Spencer (0 - Nora)
     otherwise
-        have Nora lick Spencer
+        have Nora lick Spencer (0 + Nora)
 
     (Starr = number of stars = 21 - 2 * Spencer)
-    have Starr spank herself
-    lick Starr twenty one times
-    have Spencer spank Starr
-    have Spencer spank Starr
+    lick Starr twenty one times (0 + 21)
+    have Spencer spank Starr (21 - Spencer)
+    have Spencer spank Starr (21 - 2 * Spencer)
 
-    (Output " " Spencer times)
+    (Output " " Spencer times
+     Note: Spencer will be zero when this loop exits)
     while Spencer is dominant towards Zera
         make slave moan " "
         spank Spencer
 
-    (Output "*" Starr times)
+    (Output "*" Starr times
+     Note: Starr will be zero when this loop exits)
     while Starr is dominant towards Zera
         make slave moan "*"
         spank Starr
