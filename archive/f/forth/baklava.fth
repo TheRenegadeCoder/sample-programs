@@ -5,7 +5,7 @@
     abs                     \ num-spaces = abs(counter)
     dup spaces              \ output num-spaces " "
     -2 * 21 +               \ num-stars = 21 - 2 * num-spaces
-    0 do [char] * emit loop \ for inner-counter = 0 to num-stars-1, output "*"
+    0 do [char] * emit loop \ for inner-counter = 0 to num-stars - 1, output "*"
                             \ Source: https://rosettacode.org/wiki/Loops/For#Forth
     cr
     loop ;
