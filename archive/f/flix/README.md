@@ -67,7 +67,7 @@ For example, the "Hello World" sample would be named this:
 The following list shares details about what we're using to test all Sample Programs in Flix:
 
 - Docker Image: rzuckerm/flix
-- Docker Tag: 0.41.0-1
+- Docker Tag: 0.55.0-2
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 
