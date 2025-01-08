@@ -7,7 +7,7 @@ def baklavaLine n :=
     (S.concat [(stringRepeat " " numSpaces), (stringRepeat "*" numStars), "\n"])
 
 def baklava n :=
-    (S.concat (map (\x -> baklavaLine x) [0..n]))
+    (S.concat (map baklavaLine [0..n]))
 
 def main args := do
     write (baklava 20)
