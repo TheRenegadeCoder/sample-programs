@@ -1,0 +1,13 @@
+def stringRepeat s n :=
+    (S.concat (take n (repeat1 s)))
+
+def baklavaLine n :=
+    let numSpaces := abs (n - 10)
+        numStars := 21 - 2 * numSpaces in
+    (S.concat [(stringRepeat " " numSpaces), (stringRepeat "*" numStars), "\n"])
+
+def baklava n :=
+    (S.concat (map baklavaLine [0..n]))
+
+def main args := do
+    write (baklava 20)
