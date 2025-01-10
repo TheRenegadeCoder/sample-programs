@@ -5,8 +5,8 @@
     🖍🆕 result 🔡
     🔤🔤 ➡️ 🖍 result
     💭 for i = 0 to count - 1:
-    💭  result += str
     🔂 i 🆕⏩ 0 count❗️ 🍇
+      💭 result += str
       🔤🧲result🧲🧲str🧲🔤 ➡️ 🖍 result
     🍉
     ↩️ result
