@@ -1,0 +1,17 @@
+def abs(n) : n < 0 { return -n; }
+def abs(n) : n >= 0 { return n; }
+
+def repeat_string(s, n) {
+    var result = "";
+    for (var i = 0; i < n; ++i) {
+        result += s;
+    }
+
+    return result;
+}
+
+for (var n = -10; n <= 10; ++n) {
+    var num_spaces = abs(n);
+    var num_stars = 21 - 2 * num_spaces;
+    print(repeat_string(" ", num_spaces) + repeat_string("*", num_stars));
+}
