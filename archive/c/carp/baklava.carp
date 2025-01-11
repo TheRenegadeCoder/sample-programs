@@ -1,0 +1,12 @@
+(defn main[]
+  (for [n -10 11]
+    (do
+      (let [
+        num-spaces (abs n)
+        num-stars (- 21 (* 2 num-spaces))
+      ]
+        (println* (String.repeat num-spaces " ") (String.repeat num-stars "*"))
+      )
+    )
+  )
+)
