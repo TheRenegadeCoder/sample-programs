@@ -1,8 +1,6 @@
 module Main
 import System.IO.Console
-import Class.Show
 import Data.List
-import Data.Numeric.Nat
 import Data.Text.List
 
 where
