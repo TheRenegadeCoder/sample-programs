@@ -8,5 +8,5 @@ if (process.argv.length != 3) {
 }
 
 process.argv[2].length > 0
-  ? console.log(process.argv[2].replaceAll(/\s/g, ''))
+  ? console.log(process.argv[2].replace(/\s/g, ''))
   : die();
