@@ -25,7 +25,9 @@
                 MOVE NUM-STARS-1 TO NUM-REPEATS
                 PERFORM DISPLAY-REPEAT-STRING
 
-      * Display "*" and newline
+      * Display "*" and newline. This was done because, for some reason, when
+      * I tried DISPLAY "", I got an extra space at the end of the line.
+      * No idea why
                 DISPLAY "*"
             END-PERFORM
             STOP RUN.
