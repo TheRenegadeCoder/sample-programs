@@ -6,7 +6,7 @@
             01  NUM-SPACES      PIC 9(2).
             01  NUM-STARS       PIC 9(2).
             01  BAKLAVA-SPACES  PIC X(10) VALUE SPACES.
-            01  BAKLAVA-STARS   PIC X(21) VALUE "*********************".
+            01  BAKLAVA-STARS   PIC X(21) VALUE ALL "*".
 
         PROCEDURE DIVISION.
             PERFORM VARYING NUM FROM 0 BY 1 UNTIL NUM > 20
