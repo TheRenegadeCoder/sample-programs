@@ -13,7 +13,7 @@
         PROCEDURE DIVISION.
             PERFORM VARYING NUM FROM 0 BY 1 UNTIL NUM > 20
                 COMPUTE NUM-SPACES = FUNCTION ABS(NUM - 10)
-                COMPUTE NUM-STARS = 21 - 2 * NUM-SPACES
+                COMPUTE NUM-STARS = 20 - 2 * NUM-SPACES
 
       * Display NUM-SPACES " "
                 MOVE " " TO REPEAT-CHAR
@@ -26,7 +26,7 @@
                 PERFORM DISPLAY-REPEAT-STRING
 
       * Display newline
-                DISPLAY ""
+                DISPLAY "*"
             END-PERFORM
             STOP RUN.
 
