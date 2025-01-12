@@ -7,5 +7,5 @@ if (process.argv.length != 3) {
   die();
 }
 
-if (process.argv[2].length > 0) console.log(process.argv[2].replace(/[\n\t\r ]+/g, ''));
+if (process.argv[2].length > 0) console.log(process.argv[2].replaceAll(/\s/g, ''));
 else die();
