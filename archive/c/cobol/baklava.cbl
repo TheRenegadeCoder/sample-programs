@@ -2,39 +2,21 @@
         PROGRAM-ID. BAKLAVA.
         DATA DIVISION.
         WORKING-STORAGE SECTION.
-            01  BAKLAVA-VARIABLES.
-                03  NUM             PIC S9(2).
-                03  NUM-SPACES      PIC S9(2).
-                03  NUM-STARS-1     PIC S9(2).
-            01  REPEAT-VARIABLES.
-                03  NUM-REPEATS     PIC S9(2).
-                03  REPEAT-CHAR     PIC X(1).
+            01  NUM             PIC 9(2).
+            01  NUM-SPACES      PIC 9(2).
+            01  NUM-STARS       PIC 9(2).
+            01  BAKLAVA-SPACES  PIC X(10) VALUE SPACES.
+            01  BAKLAVA-STARS   PIC X(21) VALUE "*********************".
 
         PROCEDURE DIVISION.
             PERFORM VARYING NUM FROM 0 BY 1 UNTIL NUM > 20
                 COMPUTE NUM-SPACES = FUNCTION ABS(NUM - 10)
-                COMPUTE NUM-STARS-1 = 20 - 2 * NUM-SPACES
+                COMPUTE NUM-STARS = 21 - 2 * NUM-SPACES
 
-      * Display NUM-SPACES " "
-                MOVE " " TO REPEAT-CHAR
-                MOVE NUM-SPACES TO NUM-REPEATS
-                PERFORM DISPLAY-REPEAT-STRING
+      * Display NUM-SPACES " " without newline
+                DISPLAY BAKLAVA-SPACES(1:NUM-SPACES) NO ADVANCING
 
-      * Display NUM-STARS-1 "*"
-                MOVE "*" TO REPEAT-CHAR
-                MOVE NUM-STARS-1 TO NUM-REPEATS
-                PERFORM DISPLAY-REPEAT-STRING
-
-      * Display "*" and newline. This was done because, for some reason, when
-      * I tried DISPLAY "", I got an extra space at the end of the line.
-      * No idea why
-                DISPLAY "*"
+      * Display NUM-STARS "*" with newline
+                DISPLAY BAKLAVA-STARS(1:NUM-STARS)
             END-PERFORM
             STOP RUN.
-
-        DISPLAY-REPEAT-STRING.
-            PERFORM UNTIL NUM-REPEATS <= 0
-                DISPLAY REPEAT-CHAR NO ADVANCING
-                SUBTRACT 1 FROM NUM-REPEATS
-            END-PERFORM
-            EXIT.
