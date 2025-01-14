@@ -1,0 +1,25 @@
+module hello_world;
+
+import stdio as io;
+import string;
+
+public fn i32 main(i32 argc, char** argv) {
+    char[22] line;
+    for (u32 n = 0; n <= 20; n++) {
+        u32 num_spaces = (n < 10) ? (10 - n) : (n - 10);
+        u32 num_stars = 21 - 2 * num_spaces;
+
+        // Fill line with num_spaces " "
+        string.memset(line, ' ', num_spaces);
+
+        // Append num_stars "*"
+        string.memset(&line[num_spaces], '*', num_stars);
+
+        // Null terminate line
+        line[num_spaces + num_stars] = '\0';
+
+        io.printf("%s\n", line);
+    }
+
+    return 0;
+}
