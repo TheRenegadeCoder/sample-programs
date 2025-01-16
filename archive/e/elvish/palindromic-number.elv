@@ -12,7 +12,7 @@ if (> 1 (count $args)) {
 var n = $args[0]
 
 # Check if the number contains a decimal point
-if (str:contains n .) {
+if (str:contains $n .) {
   die
 }
 
