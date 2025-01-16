@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Elvish! To find documentation related to the Elvish code in this repo, look [here.](https://sampleprograms.io/languages/elvish)
 
-## Sample Programs List - 10/37 :thinking:
+## Sample Programs List - 11/37 :thinking:
 
 In this section, we feature a list of completed and missing programs in Elvish. See above for the current amount of completed programs in Elvish. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -17,6 +17,7 @@ Below, you'll find a list of completed code snippets in Elvish. Code snippets pr
 - :warning: [Fizz Buzz in Elvish](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+elvish) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :warning: [Hello World in Elvish](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+elvish) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :warning: [Linear Search in Elvish](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+linear+search+elvish) [[Requirements](https://sampleprograms.io/projects/linear-search)]
+- :warning: [Palindromic Number in Elvish](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+elvish) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :warning: [Remove All Whitespace in Elvish](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+remove+all+whitespace+elvish) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :warning: [Reverse String in Elvish](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+elvish) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :warning: [Rot13 in Elvish](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+elvish) [[Requirements](https://sampleprograms.io/projects/rot13)]
@@ -44,7 +45,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+subarray&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+Elvish) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :x: [Merge Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,merge+sort&template=code-snippet-request.md&title=Add+Merge+Sort+in+Elvish) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+Elvish) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
-- :x: [Palindromic Number](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,palindromic+number&template=code-snippet-request.md&title=Add+Palindromic+Number+in+Elvish) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :x: [Prime Number](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,prime+number&template=code-snippet-request.md&title=Add+Prime+Number+in+Elvish) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :x: [Quick Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,quick+sort&template=code-snippet-request.md&title=Add+Quick+Sort+in+Elvish) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
 - :x: [Quine](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,quine&template=code-snippet-request.md&title=Add+Quine+in+Elvish) [[Requirements](https://sampleprograms.io/projects/quine)]
