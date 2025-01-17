@@ -26,7 +26,12 @@ if (> 2 $n) {
   exit 0
 }
 
-for i [(range 2 (+ 1 (exact-num (math:sqrt $n))))] {
+if (== $n 2) {
+  echo 'prime'
+  exit 0
+}
+
+for i [(range 2 (+ 1 (exact-num (math:ceil (math:sqrt $n)))))] {
   if (== 0 (% $n $i)) {
     echo 'composite'
     exit 0
