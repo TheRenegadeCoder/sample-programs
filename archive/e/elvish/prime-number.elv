@@ -1,4 +1,5 @@
 use str
+use math
 
 fn die {
   echo 'Usage: please input a non-negative integer'
@@ -25,7 +26,7 @@ if (> 2 $n) {
   exit 0
 }
 
-for i [(range 2 $n)] {
+for i [(range 2 (math:ceil (math:sqrt $n)))] {
   if (== 0 (% $n $i)) {
     echo 'composite'
     exit 0
