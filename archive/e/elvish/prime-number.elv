@@ -26,7 +26,7 @@ if (> 2 $n) {
   exit 0
 }
 
-for i [(range 2 (math:ceil (math:sqrt $n)))] {
+for i [(range 2 (+ 1 (exact-num (math:sqrt $n))))] {
   if (== 0 (% $n $i)) {
     echo 'composite'
     exit 0
