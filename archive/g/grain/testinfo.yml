@@ -3,6 +3,6 @@ folder:
   naming: "hyphen"
 
 container:
-  image: "nickbreaton/grain"
-  tag: "latest"
+  image: "ghcr.io/grain-lang/grain"
+  tag: "0.6.6-slim"
   cmd: "grain {{ source.name }}{{ source.extension }}"

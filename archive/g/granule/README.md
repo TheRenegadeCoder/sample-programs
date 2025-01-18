@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Granule! To find documentation related to the Granule code in this repo, look [here.](https://sampleprograms.io/languages/granule)
 
-## Sample Programs List - 1/37 :disappointed:
+## Sample Programs List - 2/37 :disappointed:
 
 In this section, we feature a list of completed and missing programs in Granule. See above for the current amount of completed programs in Granule. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -10,13 +10,13 @@ In this section, we feature a list of completed and missing programs in Granule.
 
 Below, you'll find a list of completed code snippets in Granule. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
+- :warning: [Baklava in Granule](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+granule) [[Requirements](https://sampleprograms.io/projects/baklava)]
 - :warning: [Hello World in Granule](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+granule) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 
 ### Missing Programs
 
 The following list contains all of the approved programs that are not currently implemented in Granule. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
-- :x: [Baklava](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,baklava&template=code-snippet-request.md&title=Add+Baklava+in+Granule) [[Requirements](https://sampleprograms.io/projects/baklava)]
 - :x: [Binary Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,binary+search&template=code-snippet-request.md&title=Add+Binary+Search+in+Granule) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :x: [Bubble Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,bubble+sort&template=code-snippet-request.md&title=Add+Bubble+Sort+in+Granule) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :x: [Capitalize](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,capitalize&template=code-snippet-request.md&title=Add+Capitalize+in+Granule) [[Requirements](https://sampleprograms.io/projects/capitalize)]
@@ -67,7 +67,7 @@ For example, the "Hello World" sample would be named this:
 The following list shares details about what we're using to test all Sample Programs in Granule:
 
 - Docker Image: rzuckerm/granule
-- Docker Tag: 0.9.5.0-4
+- Docker Tag: 0.9.6.0-6
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 

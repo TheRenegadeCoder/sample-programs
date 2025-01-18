@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Objective C! To find documentation related to the Objective C code in this repo, look [here.](https://sampleprograms.io/languages/objective-c)
 
-## Sample Programs List - 10/37 :thinking:
+## Sample Programs List - 11/37 :thinking:
 
 In this section, we feature a list of completed and missing programs in Objective C. See above for the current amount of completed programs in Objective C. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -10,6 +10,7 @@ In this section, we feature a list of completed and missing programs in Objectiv
 
 Below, you'll find a list of completed code snippets in Objective C. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
+- :warning: [Baklava in Objective C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+objective+c) [[Requirements](https://sampleprograms.io/projects/baklava)]
 - :warning: [Capitalize in Objective C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+objective+c) [[Requirements](https://sampleprograms.io/projects/capitalize)]
 - :warning: [Even Odd in Objective C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+objective+c) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :warning: [Factorial in Objective C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+objective+c) [[Requirements](https://sampleprograms.io/projects/factorial)]
@@ -25,7 +26,6 @@ Below, you'll find a list of completed code snippets in Objective C. Code snippe
 
 The following list contains all of the approved programs that are not currently implemented in Objective C. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
-- :x: [Baklava](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,baklava&template=code-snippet-request.md&title=Add+Baklava+in+Objective%20C) [[Requirements](https://sampleprograms.io/projects/baklava)]
 - :x: [Binary Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,binary+search&template=code-snippet-request.md&title=Add+Binary+Search+in+Objective%20C) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :x: [Bubble Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,bubble+sort&template=code-snippet-request.md&title=Add+Bubble+Sort+in+Objective%20C) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,convex+hull&template=code-snippet-request.md&title=Add+Convex+Hull+in+Objective%20C) [[Requirements](https://sampleprograms.io/projects/convex-hull)]

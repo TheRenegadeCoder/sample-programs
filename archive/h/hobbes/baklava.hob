@@ -1,0 +1,21 @@
+repeatString :: (string, int) -> string
+repeatString s n = if (n > 0) then s ++ repeatString(s, n - 1) else ""
+
+iabs :: int -> int
+iabs n = if (n < 0) then -n else n
+
+baklavaLine :: int -> string
+baklavaLine n =
+  let
+    numSpaces = iabs(n);
+    numStars = 21 - 2 * numSpaces
+  in
+    repeatString(" ", numSpaces) ++ repeatString("*", numStars)
+
+baklava :: (int, int) -> ()
+baklava n ne = if (n <= ne) then do {
+  putStrLn(baklavaLine(n));
+  baklava(n + 1, ne);
+} else ()
+
+baklava(-10, 10)

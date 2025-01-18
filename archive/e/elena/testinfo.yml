@@ -4,6 +4,6 @@ folder:
 
 container:
   image: "rzuckerm/elena"
-  tag: "6.0.6-1"
-  build: "elena-cli {{ source.name }}{{ source.extension }}"
+  tag: "6.3.0-2"
+  build: "elena64-cli {{ source.name }}{{ source.extension }}"
   cmd: "./{{ source.name }}"

@@ -4,5 +4,5 @@ folder:
 
 container:
   image: "rzuckerm/granule"
-  tag: "0.9.5.0-4"
-  cmd: "gr --no-info --no-print-return-value {{ source.name }}{{ source.extension }}"
+  tag: "0.9.6.0-6"
+  cmd: "gr --no-info --no-print-return-value --include-path=/usr/local/lib {{ source.name }}{{ source.extension }}"

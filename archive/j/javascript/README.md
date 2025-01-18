@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Javascript! To find documentation related to the Javascript code in this repo, look [here.](https://sampleprograms.io/languages/javascript)
 
-## Sample Programs List - 30/37 :smile:
+## Sample Programs List - 31/37 :smile:
 
 In this section, we feature a list of completed and missing programs in Javascript. See above for the current amount of completed programs in Javascript. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -34,6 +34,7 @@ Below, you'll find a list of completed code snippets in Javascript. Code snippet
 - :warning: [Prime Number in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+javascript) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :warning: [Quick Sort in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+javascript) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
 - :warning: [Quine in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+javascript) [[Requirements](https://sampleprograms.io/projects/quine)]
+- :warning: [Remove All Whitespace in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+remove+all+whitespace+javascript) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :white_check_mark: [Reverse String in Javascript](https://sampleprograms.io/projects/reverse-string/javascript) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :warning: [Roman Numeral in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+javascript) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :warning: [Rot13 in Javascript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+javascript) [[Requirements](https://sampleprograms.io/projects/rot13)]
@@ -51,7 +52,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+array+rotation&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+Javascript) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+subarray&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+Javascript) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+Javascript) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
-- :x: [Remove All Whitespace](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,remove+all+whitespace&template=code-snippet-request.md&title=Add+Remove+All+Whitespace+in+Javascript) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 
 ## Testing
 

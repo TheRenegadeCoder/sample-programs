@@ -1,0 +1,25 @@
+import Bool
+
+repeatString : Int -> String[] -> String
+repeatString 0 [str] = "";
+repeatString times [str] = str `stringAppend` (repeatString (times - 1) [str])
+
+numSpaces : Int[] -> Int
+numSpaces [n] = if n < 0 then 0 - n else n
+
+numStars : Int[] -> Int
+numStars [n] = 21 - 2 * numSpaces [n]
+
+baklavaLine : Int[] -> String
+baklavaLine [n] =
+    (repeatString (numSpaces [n]) [" "]) `stringAppend` (repeatString (numStars [n]) ["*"]) `stringAppend` "\n"
+
+baklava : String[] -> Int[] -> Int[] -> String
+baklava [lines] [n] [ne] =
+    if n <= ne then
+        lines `stringAppend` (baklavaLine [n]) `stringAppend` (baklava [lines] [n + 1] [ne])
+    else
+        lines
+
+main : () <{Stdout}>
+main = toStdout (baklava [""] [-10] [10])
