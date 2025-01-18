@@ -4,5 +4,5 @@ folder:
 
 container:
   image: "rzuckerm/batch"
-  tag: "9.0-20250112-1"
+  tag: "9.0-20250112-2"
   cmd: "wine {{ source.name }}{{ source.extension }}"
