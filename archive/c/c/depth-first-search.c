@@ -1,84 +1,81 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <math.h>
+#include <stdbool.h>
 
-#define MAX 100
+#define MAX_NODES 100
 
-// Structure for an adjacency list node
-typedef struct Node {
-    int vertex;
-    struct Node* next;
-} Node;
+int adjacency_matrix[MAX_NODES][MAX_NODES];
+int vertex_values[MAX_NODES];
+int num_nodes;
+bool visited[MAX_NODES];
 
-// Structure for the graph
-typedef struct Graph {
-    int numVertices;
-    Node* adjLists[MAX];
-    int visited[MAX];
-} Graph;
-
-// Function to create a node
-Node* createNode(int vertex) {
-    Node* newNode = (Node*)malloc(sizeof(Node));
-    newNode->vertex = vertex;
-    newNode->next = NULL;
-    return newNode;
-}
-
-// Function to create a graph
-Graph* createGraph(int vertices) {
-    Graph* graph = (Graph*)malloc(sizeof(Graph));
-    graph->numVertices = vertices;
-
-    for (int i = 0; i < vertices; i++) {
-        graph->adjLists[i] = NULL;
-        graph->visited[i] = 0;
+bool dfs(int node, int target) {
+    if (vertex_values[node] == target) {
+        return true;
     }
-
-    return graph;
-}
-
-// Function to add an edge to the graph
-void addEdge(Graph* graph, int src, int dest) {
-    Node* newNode = createNode(dest);
-    newNode->next = graph->adjLists[src];
-    graph->adjLists[src] = newNode;
-
-    // For undirected graph, add an edge from dest to src as well
-    newNode = createNode(src);
-    newNode->next = graph->adjLists[dest];
-    graph->adjLists[dest] = newNode;
-}
-
-// Recursive DFS function
-void DFS(Graph* graph, int vertex) {
-    graph->visited[vertex] = 1; // Mark the current node as visited
-    printf("%d ", vertex); // Print the visited node
-
-    Node* adjList = graph->adjLists[vertex];
-    Node* temp = adjList;
-
-    // Visit all the adjacent vertices
-    while (temp != NULL) {
-        int connectedVertex = temp->vertex;
-        if (graph->visited[connectedVertex] == 0) {
-            DFS(graph, connectedVertex);
+    visited[node] = true;
+    for (int i = 0; i < num_nodes; i++) {
+        if (adjacency_matrix[node][i] && !visited[i]) {
+            if (dfs(i, target)) {
+                return true;
+            }
         }
-        temp = temp->next;
+    }
+    return false;
+}
+
+bool depth_first_search(int target) {
+    memset(visited, 0, sizeof(visited));
+    for (int i = 0; i < num_nodes; i++) {
+        if (!visited[i] && dfs(i, target)) {
+            return true;
+        }
+    }
+    return false;
+}
+
+void parse_matrix(char* input) {
+    char* token = strtok(input, ", ");
+    int i = 0, j = 0;
+    while (token != NULL) {
+        adjacency_matrix[i][j] = atoi(token);
+        j++;
+        if (j == num_nodes) {
+            i++;
+            j = 0;
+        }
+        token = strtok(NULL, ", ");
     }
 }
 
-int main() {
-    Graph* graph = createGraph(5); // Create a graph with 5 vertices
+void parse_values(char* input) {
+    char* token = strtok(input, ", ");
+    int i = 0;
+    while (token != NULL) {
+        vertex_values[i++] = atoi(token);
+        token = strtok(NULL, ", ");
+    }
+}
 
-    // Add edges to the graph
-    addEdge(graph, 0, 1);
-    addEdge(graph, 0, 2);
-    addEdge(graph, 1, 3);
-    addEdge(graph, 1, 4);
-    addEdge(graph, 2, 4);
+int main(int argc, char* argv[]) {
+    if (argc != 4) {
+        printf("Usage: please provide a tree in an adjacency matrix form (\"0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0\") together with a list of vertex values (\"1, 3, 5, 2, 4\") and the integer to find (\"4\").\n");
+        return 1;
+    }
 
-    printf("Depth First Search starting from vertex 0:\n");
-    DFS(graph, 0); // Perform DFS starting from vertex 0
+    char* matrix_str = argv[1];
+    char* values_str = argv[2];
+    int target = atoi(argv[3]);
+
+    num_nodes = (int)sqrt(strlen(matrix_str) / 2 + 1);
+
+    parse_matrix(matrix_str);
+    parse_values(values_str);
+
+    bool result = depth_first_search(target);
+    printf(result ? "true\n" : "false\n");
 
     return 0;
 }
