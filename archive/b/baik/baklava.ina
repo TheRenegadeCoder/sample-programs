@@ -13,9 +13,6 @@
 
 # Main function
 # -------------------------------------------------
-h = huruf_no "program", 1
-tulis "h = ", h ,"\n"
-
 untuk (menangkal = 0; menangkal <= 20; menangkal++)
 ulang
     # number of spaces = abs(counter - 10)
