@@ -69,7 +69,17 @@ int main(int argc, char* argv[]) {
     char* values_str = argv[2];
     int target = atoi(argv[3]);
 
-    num_nodes = (int)sqrt(strlen(matrix_str) / 2 + 1);
+    // Count the number of commas to determine the total elements
+    int total_elements = 1;
+    for (char* p = matrix_str; *p; p++) {
+        if (*p == ',') total_elements++;
+    }
+
+    // Calculate num_nodes without using sqrt
+    num_nodes = 0;
+    while (num_nodes * num_nodes < total_elements) {
+        num_nodes++;
+    }
 
     parse_matrix(matrix_str);
     parse_values(values_str);
@@ -79,3 +89,4 @@ int main(int argc, char* argv[]) {
 
     return 0;
 }
+
