@@ -60,8 +60,8 @@ void parse_values(char* input) {
 }
 
 int main(int argc, char* argv[]) {
-    if (argc != 4 || !*argv[1] || !*argv[2] || !*argv[3]) {
-        printf("Usage: please provide a tree in an adjacency matrix form (\"0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0\") together with a list of vertex values (\"1, 3, 5, 2, 4\") and the integer to find (\"4\")");
+    if (argc != 4) {
+        printf("Usage: please provide a tree in an adjacency matrix form (\"0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0\") together with a list of vertex values (\"1, 3, 5, 2, 4\") and the integer to find (\"4\").\n");
         return 1;
     }
 
@@ -69,17 +69,7 @@ int main(int argc, char* argv[]) {
     char* values_str = argv[2];
     int target = atoi(argv[3]);
 
-    // Count the number of commas to determine the total elements
-    int total_elements = 1;
-    for (char* p = matrix_str; *p; p++) {
-        if (*p == ',') total_elements++;
-    }
-
-    // Calculate num_nodes without using sqrt
-    num_nodes = 0;
-    while (num_nodes * num_nodes < total_elements) {
-        num_nodes++;
-    }
+    num_nodes = (int)sqrt(strlen(matrix_str) / 2 + 1);
 
     parse_matrix(matrix_str);
     parse_values(values_str);
@@ -89,4 +79,3 @@ int main(int argc, char* argv[]) {
 
     return 0;
 }
-
