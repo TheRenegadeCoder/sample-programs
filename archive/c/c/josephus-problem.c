@@ -1,26 +1,34 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-// Function to find the position of the last person remaining
 int josephus(int n, int k) {
     if (n == 1)
-        return 0; // Base case: only one person remains
+        return 1;
     else
-        return (josephus(n - 1, k) + k) % n; // Recursive case
+        return (josephus(n - 1, k) + k - 1) % n + 1;
 }
 
-int main() {
-    int n, k;
+int main(int argc, char *argv[]) {
+    if (argc != 3) {
+        printf("Usage: please input the total number of people and number of people to skip.\n");
+        return 1;
+    }
 
-    // Input number of people and step count
-    printf("Enter the number of people: ");
-    scanf("%d", &n);
-    printf("Enter the step count (k): ");
-    scanf("%d", &k);
+    char *endptr;
+    int n = strtol(argv[1], &endptr, 10);
+    if (*endptr != '\0' || n <= 0) {
+        printf("Usage: please input the total number of people and number of people to skip.\n");
+        return 1;
+    }
 
-    // Get the position (0-based index) and convert to 1-based index
-    int result = josephus(n, k) + 1;
+    int k = strtol(argv[2], &endptr, 10);
+    if (*endptr != '\0' || k <= 0) {
+        printf("Usage: please input the total number of people and number of people to skip.\n");
+        return 1;
+    }
 
-    printf("The position of the last person remaining is: %d\n", result);
+    int result = josephus(n, k);
+    printf("%d\n", result);
 
     return 0;
 }
