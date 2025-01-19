@@ -4,7 +4,7 @@
 #include <limits.h>
 
 void print_usage() {
-    printf("Usage: Please provide a list of at least two integers to sort in the format: '1, 2, 3, 4, 5'\n");
+    printf("Usage: Please provide a list of integers in the format: \"1, 2, 3, 4, 5\"\n");
 }
 
 int max_subarray_sum(int* arr, int n) {
@@ -50,7 +50,10 @@ int main(int argc, char* argv[]) {
     }
 
     // If less than two integers were provided
-    if (count < 2) {
+    if (count == 1) {
+        printf("%d\n", arr[0]);
+        return 0;
+    } else if (count < 2) {
         print_usage();
         return 1;
     }
