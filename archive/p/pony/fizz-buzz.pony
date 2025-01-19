@@ -2,7 +2,7 @@ use "collections"
 
 actor Main
   new create(env: Env) =>
-    for i in Range[I32](1, 100) do
+    for i in Range[I32](1, 101) do
       env.out.print(fizzbuzz(i))
     end
 
