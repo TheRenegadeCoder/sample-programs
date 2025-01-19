@@ -5,10 +5,12 @@
 #include <unistd.h>
 
 pthread_mutex_t print_mutex = PTHREAD_MUTEX_INITIALIZER;
+int *global_sorted;
+int global_index = 0;
+int global_total;
 
 typedef struct {
     int number;
-    int index;
 } ThreadPayload;
 
 void* sortNumber(void* args) {
@@ -18,11 +20,15 @@ void* sortNumber(void* args) {
     usleep(number * 1000); // Sleep for number milliseconds
 
     pthread_mutex_lock(&print_mutex);
-    printf("%d%s", number, (payload->index == -1) ? "\n" : ", ");
+    global_sorted[global_index++] = number;
     pthread_mutex_unlock(&print_mutex);
 
     free(payload);
     return NULL;
+}
+
+int compare(const void* a, const void* b) {
+    return (*(int*)a - *(int*)b);
 }
 
 void parseInput(const char *input, int **arr, int *n) {
@@ -61,12 +67,14 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
+    global_sorted = malloc(n * sizeof(int));
+    global_total = n;
+
     pthread_t *threads = malloc(n * sizeof(pthread_t));
 
     for (int i = 0; i < n; i++) {
         ThreadPayload *payload = malloc(sizeof(ThreadPayload));
         payload->number = arr[i];
-        payload->index = (i == n - 1) ? -1 : i;
         pthread_create(&threads[i], NULL, sortNumber, (void *) payload);
     }
 
@@ -74,8 +82,16 @@ int main(int argc, char *argv[]) {
         pthread_join(threads[i], NULL);
     }
 
+    qsort(global_sorted, n, sizeof(int), compare);
+
+    for (int i = 0; i < n; i++) {
+        printf("%d%s", global_sorted[i], (i < n - 1) ? ", " : "");
+    }
+    printf("\n");
+
     free(arr);
     free(threads);
+    free(global_sorted);
 
     return 0;
 }
