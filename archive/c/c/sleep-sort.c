@@ -1,12 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <windows.h>
-#include <process.h>
+#include <unistd.h>
+#include <pthread.h>
 
-void sleepSort(int num) {
-    Sleep(num * 1000); // Sleep for num seconds
+void* sleepSort(void* arg) {
+    int num = *(int*)arg;
+    usleep(num * 1000000); // Sleep for num seconds
     printf("%d ", num); // Print the number after sleeping
+    return NULL;
 }
 
 void parseInput(const char *input, int **arr, int *n) {
@@ -45,13 +47,15 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    HANDLE *threads = malloc(n * sizeof(HANDLE));
+    pthread_t *threads = malloc(n * sizeof(pthread_t));
 
     for (int i = 0; i < n; i++) {
-        threads[i] = (HANDLE)_beginthread((void(*)(void*))sleepSort, 0, (void*)(intptr_t)arr[i]);
+        pthread_create(&threads[i], NULL, sleepSort, &arr[i]);
     }
 
-    WaitForMultipleObjects(n, threads, TRUE, INFINITE); // Wait for all threads to finish
+    for (int i = 0; i < n; i++) {
+        pthread_join(threads[i], NULL); // Wait for all threads to finish
+    }
 
     printf("\n");
 
