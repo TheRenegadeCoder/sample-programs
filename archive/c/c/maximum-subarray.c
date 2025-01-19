@@ -2,31 +2,12 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
+#include <pthread.h>
 
-void sleepSort(int *arr, int n) {
-    int max = arr[0];
-    for (int i = 1; i < n; i++) {
-        if (arr[i] > max) max = arr[i];
-    }
-
-    int *sorted = malloc(n * sizeof(int));
-    int sortedIndex = 0;
-
-    for (int i = 0; i <= max; i++) {
-        for (int j = 0; j < n; j++) {
-            if (arr[j] == i) {
-                sorted[sortedIndex++] = arr[j];
-            }
-        }
-    }
-
-    // Print with commas
-    for (int i = 0; i < n; i++) {
-        printf("%d%s", sorted[i], (i < n - 1) ? ", " : "");
-    }
-    printf("\n");
-
-    free(sorted);
+void* sleepSort(void* arg) {
+    int num = *(int*)arg;
+    usleep(num * 1000000); // Sleep for num seconds
+    return (void*)(intptr_t)num;
 }
 
 void parseInput(const char *input, int **arr, int *n) {
@@ -65,8 +46,28 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    sleepSort(arr, n);
+    pthread_t *threads = malloc(n * sizeof(pthread_t));
+    int *results = malloc(n * sizeof(int));
+
+    for (int i = 0; i < n; i++) {
+        pthread_create(&threads[i], NULL, sleepSort, &arr[i]);
+    }
+
+    for (int i = 0; i < n; i++) {
+        void* result;
+        pthread_join(threads[i], &result);
+        results[i] = (int)(intptr_t)result;
+    }
+
+    // Print with commas
+    for (int i = 0; i < n; i++) {
+        printf("%d%s", results[i], (i < n - 1) ? ", " : "");
+    }
+    printf("\n");
 
     free(arr);
+    free(threads);
+    free(results);
+
     return 0;
 }
