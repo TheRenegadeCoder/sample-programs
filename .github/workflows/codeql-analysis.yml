@@ -114,7 +114,7 @@ jobs:
 
     - name: Remove ignored paths
       if: ${{ github.event_name == 'pull_request' }}
-      run: rm -f ${{ matrix.paths-ignore }}
+      run: python scripts/remove_files.py ${{ matrix.paths-ignore }}
 
     - name: Set up Python
       uses: actions/setup-python@v5
