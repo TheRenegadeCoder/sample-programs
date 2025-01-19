@@ -8,6 +8,7 @@ from typing import DefaultDict, Dict, List, Set
 
 LINUX = "ubuntu-latest"
 MACOS = "macos-latest"
+WINDOWS = "windows-latest"
 
 
 @dataclass(frozen=True)
@@ -21,7 +22,7 @@ CODEQL_LANGUAGES: Dict[str, LanguageInfo] = {
     "scripts/*.py": LanguageInfo(language="python"),
     "archive/c/c/*.c": LanguageInfo(language="c", build_mode="manual"),
     "archive/c/c-plus-plus/*.cpp": LanguageInfo(language="cpp", build_mode="manual"),
-    "archive/c/c-sharp/*.cs": LanguageInfo(language="c#", build_mode="manual"),
+    "archive/c/c-sharp/*.cs": LanguageInfo(language="c#", build_mode="manual", os=WINDOWS),
     "archive/g/go/*.go": LanguageInfo(language="go", build_mode="autobuild"),
     "archive/j/java/*.java": LanguageInfo(language="java", build_mode="manual"),
     "archive/j/javascript/*.js": LanguageInfo(language="javascript"),
