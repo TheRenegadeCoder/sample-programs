@@ -1,67 +1,73 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <limits.h>
+#include <unistd.h>
+#include <pthread.h>
 
-void print_usage() {
-    printf("Usage: Please provide a list of integers in the format: \"1, 2, 3, 4, 5\"\n");
+void* sleepSort(void* arg) {
+    int num = *(int*)arg;
+    usleep(num * 1000000); // Sleep for num seconds
+    return (void*)(intptr_t)num;
 }
 
-int max_subarray_sum(int* arr, int n) {
-    int max_so_far = INT_MIN;
-    int max_ending_here = 0;
+void parseInput(const char *input, int **arr, int *n) {
+    char *token;
+    char *inputCopy = strdup(input);
+    token = strtok(inputCopy, ",");
 
-    for (int i = 0; i < n; i++) {
-        max_ending_here += arr[i];
-
-        if (max_so_far < max_ending_here) {
-            max_so_far = max_ending_here;
-        }
-
-        if (max_ending_here < 0) {
-            max_ending_here = 0;
-        }
-    }
-
-    return max_so_far;
-}
-
-int main(int argc, char* argv[]) {
-    if (argc < 2) {
-        print_usage();
-        return 1;
-    }
-
-    // Check if input is empty
-    if (strlen(argv[1]) == 0) {
-        print_usage();
-        return 1;
-    }
-
-    // Parse input string
-    char* token;
-    int arr[100]; // Assuming a maximum of 100 integers
-    int count = 0;
-
-    token = strtok(argv[1], ",");
     while (token != NULL) {
-        arr[count++] = atoi(token);
+        (*arr)[(*n)++] = atoi(token);
         token = strtok(NULL, ",");
     }
 
-    // If less than two integers were provided
-    if (count == 1) {
-        printf("%d\n", arr[0]);
-        return 0;
-    } else if (count < 2) {
-        print_usage();
+    free(inputCopy);
+}
+
+int main(int argc, char *argv[]) {
+    if (argc != 2) {
+        printf("Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"\n");
         return 1;
     }
 
-    // Calculate maximum subarray sum
-    int result = max_subarray_sum(arr, count);
+    const char *input = argv[1];
+    if (strlen(input) == 0 || input[0] == ' ') {
+        printf("Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"\n");
+        return 1;
+    }
 
-    printf("%d\n", result);
+    int *arr = malloc(100 * sizeof(int)); // Allocate memory for up to 100 integers
+    int n = 0;
+
+    parseInput(input, &arr, &n);
+
+    if (n < 2) {
+        printf("Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"\n");
+        free(arr);
+        return 1;
+    }
+
+    pthread_t *threads = malloc(n * sizeof(pthread_t));
+    int *results = malloc(n * sizeof(int));
+
+    for (int i = 0; i < n; i++) {
+        pthread_create(&threads[i], NULL, sleepSort, &arr[i]);
+    }
+
+    for (int i = 0; i < n; i++) {
+        void* result;
+        pthread_join(threads[i], &result);
+        results[i] = (int)(intptr_t)result;
+    }
+
+    // Print with commas
+    for (int i = 0; i < n; i++) {
+        printf("%d%s", results[i], (i < n - 1) ? ", " : "");
+    }
+    printf("\n");
+
+    free(arr);
+    free(threads);
+    free(results);
 
     return 0;
 }
