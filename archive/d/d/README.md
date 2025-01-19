@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in D! To find documentation related to the D code in this repo, look [here.](https://sampleprograms.io/languages/d)
 
-## Sample Programs List - 3/37 :disappointed:
+## Sample Programs List - 4/37 :disappointed:
 
 In this section, we feature a list of completed and missing programs in D. See above for the current amount of completed programs in D. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -12,6 +12,7 @@ Below, you'll find a list of completed code snippets in D. Code snippets precede
 
 - :warning: [Baklava in D](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+d) [[Requirements](https://sampleprograms.io/projects/baklava)]
 - :warning: [Factorial in D](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+d) [[Requirements](https://sampleprograms.io/projects/factorial)]
+- :warning: [Fizz Buzz in D](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+d) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in D](https://sampleprograms.io/projects/hello-world/d) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 
 ### Missing Programs
@@ -28,7 +29,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Even Odd](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,even+odd&template=code-snippet-request.md&title=Add+Even+Odd+in+D) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :x: [Fibonacci](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fibonacci&template=code-snippet-request.md&title=Add+Fibonacci+in+D) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :x: [File Input Output](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,file+input+output&template=code-snippet-request.md&title=Add+File+Input+Output+in+D) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
-- :x: [Fizz Buzz](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fizz+buzz&template=code-snippet-request.md&title=Add+Fizz+Buzz+in+D) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fraction+math&template=code-snippet-request.md&title=Add+Fraction+Math+in+D) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :x: [Insertion Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,insertion+sort&template=code-snippet-request.md&title=Add+Insertion+Sort+in+D) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,job+sequencing&template=code-snippet-request.md&title=Add+Job+Sequencing+in+D) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
