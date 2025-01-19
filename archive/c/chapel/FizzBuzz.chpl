@@ -1,4 +1,4 @@
-forall i in 1..100 do
+for i in 1..100 do
   if (i % 15 == 0) {
     writeln("FizzBuzz");
   } else if (i % 5 == 0) {
