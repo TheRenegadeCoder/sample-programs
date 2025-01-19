@@ -51,7 +51,7 @@ int main(int argc, char *argv[]) {
         if (matrix[i] == ',') n++;
     n = (int)sqrt(n + 1);
 
-    if (n * n != strlen(matrix) / 2 + 1) {
+    if (n * n != (strlen(matrix) - n + 1) / 2 + 1) {
         printf("Usage: please provide three inputs: a serialized matrix, a source node and a destination node\n");
         return 1;
     }
@@ -62,7 +62,7 @@ int main(int argc, char *argv[]) {
     }
 
     int graph[MAX_NODES][MAX_NODES] = {0};
-    char *token = strtok(matrix, ",");
+    char *token = strtok(matrix, ", ");
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
             if (!token) {
@@ -75,7 +75,7 @@ int main(int argc, char *argv[]) {
                 return 1;
             }
             graph[i][j] = weight;
-            token = strtok(NULL, ",");
+            token = strtok(NULL, ", ");
         }
     }
 
@@ -88,3 +88,4 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
+
