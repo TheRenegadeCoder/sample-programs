@@ -18,7 +18,7 @@ def main():
 
 
 def build_c(path: Path) -> List[str]:
-    return ["gcc", "-o", path.stem, path.name]
+    return ["gcc", "-o", path.stem, path.name, "-lm"]
 
 
 def build_cpp(path: Path) -> List[str]:
