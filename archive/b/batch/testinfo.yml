@@ -3,6 +3,6 @@ folder:
   naming: "pascal"
 
 container:
-  image: "esolang/cmd"
-  tag: "latest"
-  cmd: "sh -c 'cmd {{ source.name }}{{ source.extension }} 2>/dev/null'"
+  image: "rzuckerm/batch"
+  tag: "9.0-20250112-2"
+  cmd: "wine {{ source.name }}{{ source.extension }}"
