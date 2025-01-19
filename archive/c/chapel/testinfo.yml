@@ -4,6 +4,6 @@ folder:
 
 container:
   image: "chapel/chapel"
-  tag: "1.24.1"
+  tag: "2.3.0"
   build: "chpl -o {{ source.name }} {{ source.name }}{{ source.extension }}"
   cmd: "./{{ source.name }}"
