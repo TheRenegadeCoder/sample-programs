@@ -1,8 +1,9 @@
 import argparse
+import shlex
 import subprocess
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Dict
+from typing import Dict, List
 
 from glotter.source import Source
 
@@ -32,8 +33,9 @@ def main():
     for changed_file in parsed_args.files_changed:
         path = Path(changed_file)
         print(f"Building {path}")
+        breakpoint()
         command = get_build_command(testinfo_struct, path)
-        subprocess.run(command, cwd=path.parent, check=True, shell=True)
+        subprocess.run(command, cwd=path.parent, check=True)
 
 
 def get_test_info_struct(language: str) -> TestInfoStruct:
@@ -42,14 +44,15 @@ def get_test_info_struct(language: str) -> TestInfoStruct:
     return TestInfoStruct(path=path, language=language, test_info_str=testinfo_str)
 
 
-def get_build_command(testinfo_struct: TestInfoStruct, path: Path) -> str:
+def get_build_command(testinfo_struct: TestInfoStruct, path: Path) -> List[str]:
     source = Source(
         name=path.name,
         language=testinfo_struct.language,
         path=str(path),
         test_info_string=testinfo_struct.test_info_str,
     )
-    return source.test_info.container_info.build
+    build: str = source.test_info.container_info.build
+    return shlex.split(build)
 
 
 if __name__ == "__main__":
