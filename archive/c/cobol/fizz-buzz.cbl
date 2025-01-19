@@ -25,7 +25,10 @@
                         MOVE 0 TO SPACE-COUNT
                         INSPECT COUNTER TALLYING SPACE-COUNT
                             FOR LEADING ZEROS
-                        MOVE COUNTER (SPACE-COUNT + 1 : LENGTH OF COUNTER - SPACE-COUNT) TO RESULT-STRING
+                        MOVE COUNTER
+                            (SPACE-COUNT + 1 : 
+                                LENGTH OF COUNTER - SPACE-COUNT)
+                                    TO RESULT-STRING
                         DISPLAY RESULT-STRING
                     END-IF
                 END-IF
