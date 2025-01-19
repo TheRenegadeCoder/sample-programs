@@ -33,7 +33,6 @@ def main():
     for changed_file in parsed_args.files_changed:
         path = Path(changed_file)
         print(f"Building {path}")
-        breakpoint()
         command = get_build_command(testinfo_struct, path)
         subprocess.run(command, cwd=path.parent, check=True)
 
