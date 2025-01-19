@@ -3,6 +3,7 @@
 #include <string.h>
 #include <limits.h>
 #include <stdbool.h>
+#include <math.h>
 
 #define MAX_NODES 100
 
@@ -46,10 +47,11 @@ int main(int argc, char *argv[]) {
     int src = atoi(argv[2]);
     int dest = atoi(argv[3]);
 
-    int n = 0;
-    for (int i = 0; matrix[i]; i++)
+    long long n = 0;
+    for (size_t i = 0; matrix[i]; i++) {
         if (matrix[i] == ',') n++;
-    n = (int)sqrt(n + 1);
+    }
+    n = (long long)sqrt((double)n + 1);
 
     if (src < 0 || dest < 0 || src >= n || dest >= n) {
         printf("Usage: please provide three inputs: a serialized matrix, a source node and a destination node\n");
@@ -70,7 +72,7 @@ int main(int argc, char *argv[]) {
         }
     }
 
-    int result = dijkstra(graph, src, dest, n);
+    int result = dijkstra(graph, src, dest, (int)n);
     if (result == -1) {
         printf("Usage: please provide three inputs: a serialized matrix, a source node and a destination node\n");
     } else {
@@ -79,4 +81,3 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
-
