@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Cobol! To find documentation related to the Cobol code in this repo, look [here.](https://sampleprograms.io/languages/cobol)
 
-## Sample Programs List - 5/37 :disappointed:
+## Sample Programs List - 6/37 :disappointed:
 
 In this section, we feature a list of completed and missing programs in Cobol. See above for the current amount of completed programs in Cobol. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -13,6 +13,7 @@ Below, you'll find a list of completed code snippets in Cobol. Code snippets pre
 - :warning: [Baklava in Cobol](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+cobol) [[Requirements](https://sampleprograms.io/projects/baklava)]
 - :white_check_mark: [Even Odd in Cobol](https://sampleprograms.io/projects/even-odd/cobol) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :warning: [Factorial in Cobol](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+cobol) [[Requirements](https://sampleprograms.io/projects/factorial)]
+- :warning: [Fizz Buzz in Cobol](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+cobol) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Cobol](https://sampleprograms.io/projects/hello-world/cobol) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :warning: [Prime Number in Cobol](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+cobol) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 
@@ -29,7 +30,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Duplicate Character Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,duplicate+character+counter&template=code-snippet-request.md&title=Add+Duplicate+Character+Counter+in+Cobol) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :x: [Fibonacci](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fibonacci&template=code-snippet-request.md&title=Add+Fibonacci+in+Cobol) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :x: [File Input Output](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,file+input+output&template=code-snippet-request.md&title=Add+File+Input+Output+in+Cobol) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
-- :x: [Fizz Buzz](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fizz+buzz&template=code-snippet-request.md&title=Add+Fizz+Buzz+in+Cobol) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fraction+math&template=code-snippet-request.md&title=Add+Fraction+Math+in+Cobol) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :x: [Insertion Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,insertion+sort&template=code-snippet-request.md&title=Add+Insertion+Sort+in+Cobol) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,job+sequencing&template=code-snippet-request.md&title=Add+Job+Sequencing+in+Cobol) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
