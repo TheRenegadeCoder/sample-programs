@@ -151,7 +151,7 @@ jobs:
 
     - name: Manual build
       if: ${{ matrix.build-mode == 'manual' }}
-      run: poetry run scripts/build_codeql_language.py ${{ matrix.language }} ${{ matrix.paths }}
+      run: poetry run python scripts/build_codeql_language.py ${{ matrix.language }} ${{ matrix.paths }}
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
