@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in C! To find documentation related to the C code in this repo, look [here.](https://sampleprograms.io/languages/c)
 
-## Sample Programs List - 28/37 :smile:
+## Sample Programs List - 30/37 :smile:
 
 In this section, we feature a list of completed and missing programs in C. See above for the current amount of completed programs in C. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -15,6 +15,8 @@ Below, you'll find a list of completed code snippets in C. Code snippets precede
 - :warning: [Bubble Sort in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+c) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :white_check_mark: [Capitalize in C](https://sampleprograms.io/projects/capitalize/c) [[Requirements](https://sampleprograms.io/projects/capitalize)]
 - :warning: [Convex Hull in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+convex+hull+c) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
+- :warning: [Depth First Search in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+depth+first+search+c) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
+- :warning: [Dijkstra in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+dijkstra+c) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :warning: [Duplicate Character Counter in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+c) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :white_check_mark: [Even Odd in C](https://sampleprograms.io/projects/even-odd/c) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :warning: [Factorial in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+c) [[Requirements](https://sampleprograms.io/projects/factorial)]
@@ -43,8 +45,6 @@ Below, you'll find a list of completed code snippets in C. Code snippets precede
 
 The following list contains all of the approved programs that are not currently implemented in C. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
-- :x: [Depth First Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,depth+first+search&template=code-snippet-request.md&title=Add+Depth+First+Search+in+C) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
-- :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,dijkstra&template=code-snippet-request.md&title=Add+Dijkstra+in+C) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,josephus+problem&template=code-snippet-request.md&title=Add+Josephus+Problem+in+C) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :x: [Linear Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,linear+search&template=code-snippet-request.md&title=Add+Linear+Search+in+C) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :x: [Longest Palindromic Substring](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+palindromic+substring&template=code-snippet-request.md&title=Add+Longest+Palindromic+Substring+in+C) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
