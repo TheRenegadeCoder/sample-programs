@@ -8,6 +8,7 @@ from typing import DefaultDict, Dict, List, Set
 
 LINUX = "ubuntu-latest"
 MACOS = "macos-latest"
+WINDOWS = "windows-latest"
 
 
 @dataclass(frozen=True)
