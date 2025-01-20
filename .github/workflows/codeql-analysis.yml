@@ -114,9 +114,7 @@ jobs:
 
     - name: Install C# compiler
       if: ${{ matrix.language == 'c#' }}
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: '6.x'
+      run: sudo apt-get update && sudo apt-get install -y mono-mcs
 
     - name: Remove ignored paths
       if: ${{ github.event_name == 'pull_request' }}
