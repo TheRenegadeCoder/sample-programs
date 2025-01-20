@@ -112,9 +112,13 @@ jobs:
         distribution: 'oracle'
         java-version: '23'
 
+    - name: Install C# compiler
+      if: ${{ matrix.language == 'c#' }}
+      run: apt-get update && apt-get install mono-mcs
+
     - name: Remove ignored paths
       if: ${{ github.event_name == 'pull_request' }}
-      run: python scripts/remove_files.py ${{ matrix.paths-ignore }}
+      run: rm -f ${{ matrix.paths-ignore }}
 
     - name: Set up Python
       uses: actions/setup-python@v5

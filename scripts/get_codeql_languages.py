@@ -22,7 +22,7 @@ CODEQL_LANGUAGES: Dict[str, LanguageInfo] = {
     "scripts/*.py": LanguageInfo(language="python"),
     "archive/c/c/*.c": LanguageInfo(language="c", build_mode="manual"),
     "archive/c/c-plus-plus/*.cpp": LanguageInfo(language="cpp", build_mode="manual"),
-    "archive/c/c-sharp/*.cs": LanguageInfo(language="c#", build_mode="manual", os=MACOS),
+    "archive/c/c-sharp/*.cs": LanguageInfo(language="c#", build_mode="manual"),
     "archive/g/go/*.go": LanguageInfo(language="go", build_mode="autobuild"),
     "archive/j/java/*.java": LanguageInfo(language="java", build_mode="manual"),
     "archive/j/javascript/*.js": LanguageInfo(language="javascript"),
