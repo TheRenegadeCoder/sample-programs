@@ -1,7 +1,8 @@
 # Sample Programs in Every Language
 
 [![Build Status](https://github.com/TheRenegadeCoder/sample-programs/actions/workflows/test-suite.yml/badge.svg?branch=main)](https://github.com/TheRenegadeCoder/sample-programs/actions/workflows/test-suite.yml)
-[![Discord](https://img.shields.io/discord/612072397545275424)](https://discord.gg/Jhmtj7Z)  
+[![CodeQL](https://github.com/TheRenegadeCoder/sample-programs/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/TheRenegadeCoder/sample-programs/actions/workflows/codeql-analysis.yml)
+[![Discord](https://img.shields.io/discord/612072397545275424)](https://discord.gg/Jhmtj7Z)
 
 Welcome to the [Sample Programs in Every Language][sample-programs-on-github] 
 repository! What began as a simple [100 Days of Code][1] challenge has expanded into a 
