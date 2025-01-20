@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in C! To find documentation related to the C code in this repo, look [here.](https://sampleprograms.io/languages/c)
 
-## Sample Programs List - 34/37 :smile:
+## Sample Programs List - 35/37 :smile:
 
 In this section, we feature a list of completed and missing programs in C. See above for the current amount of completed programs in C. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -44,13 +44,13 @@ Below, you'll find a list of completed code snippets in C. Code snippets precede
 - :white_check_mark: [Roman Numeral in C](https://sampleprograms.io/projects/roman-numeral/c) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :warning: [Rot13 in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+c) [[Requirements](https://sampleprograms.io/projects/rot13)]
 - :warning: [Selection Sort in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+c) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
+- :warning: [Sleep Sort in C](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sleep+sort+c) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 
 ### Missing Programs
 
 The following list contains all of the approved programs that are not currently implemented in C. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
 - :x: [Linear Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,linear+search&template=code-snippet-request.md&title=Add+Linear+Search+in+C) [[Requirements](https://sampleprograms.io/projects/linear-search)]
-- :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+C) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,transpose+matrix&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+C) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
 ## Testing
