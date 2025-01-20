@@ -17,7 +17,7 @@ void* sortNumber(void* args) {
     ThreadPayload* payload = (ThreadPayload*) args;
     const int number = payload->number;
 
-    usleep(number * 1000); // Sleep for number milliseconds
+    sleep(number); // Sleep for number seconds
 
     pthread_mutex_lock(&print_mutex);
     global_sorted[global_index++] = number;
@@ -25,10 +25,6 @@ void* sortNumber(void* args) {
 
     free(payload);
     return NULL;
-}
-
-int compare(const void* a, const void* b) {
-    return (*(int*)a - *(int*)b);
 }
 
 void parseInput(const char *input, int **arr, int *n) {
@@ -81,8 +77,6 @@ int main(int argc, char *argv[]) {
     for (int i = 0; i < n; i++) {
         pthread_join(threads[i], NULL);
     }
-
-    qsort(global_sorted, n, sizeof(int), compare);
 
     for (int i = 0; i < n; i++) {
         printf("%d%s", global_sorted[i], (i < n - 1) ? ", " : "");
