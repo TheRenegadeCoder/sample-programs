@@ -6,7 +6,7 @@ folder:
 
 container:
   image: "rzuckerm/mirth"
-  tag: "2025.01.25-dev"
+  tag: "2025.01.25-2"
   build: |
     sh -c 'mkdir -p sample-programs/bin sample-programs/src && \
       ln -s /root/.mirth/lib sample-programs/lib && \
