@@ -67,7 +67,7 @@ For example, the "Hello World" sample would be named this:
 The following list shares details about what we're using to test all Sample Programs in Mirth:
 
 - Docker Image: rzuckerm/mirth
-- Docker Tag: 2023.11.04-1
+- Docker Tag: 2025.01.25-2
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 
