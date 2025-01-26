@@ -1,4 +1,4 @@
-%&pdftex
-
-Hello, World!
+\newwrite\out
+\immediate\openout\out=hello-world.txt
+\immediate\write\out{Hello, World!}
 \end
