@@ -67,7 +67,7 @@ For example, the "Hello World" sample would be named this:
 The following list shares details about what we're using to test all Sample Programs in Tex:
 
 - Docker Image: rzuckerm/tex
-- Docker Tag: 2019.20200218-1-1
+- Docker Tag: 2025.01.25-1.17.0-2
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 
