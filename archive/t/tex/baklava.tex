@@ -8,7 +8,7 @@
 % TeX doesn't seem to support nested loops; therefore, this needs to be
 % flattened out to a single loop that runs from 0 to 330, where 331
 % is the total number of characters if you add the length of all the
-% line together. This was determined by the following python code:
+% lines together. This was determined by the following python code:
 %
 % >>> lines = [" " * abs(n)+ "*" * (21 - 2 * abs(n)) for n in range(-10,11)]
 % >>> sum(len(line) for line in lines)
@@ -16,8 +16,8 @@
 %
 % The general algorithm is as follows (prototyped in python):
 %
-%   linecounter=-10
-%   linelen=0
+%   linecounter = -10
+%   linelen = 0
 %   for charcounter = 0 to 330:
 %       # If start of line, reset all variables
 %       if linelen < 1:
@@ -50,17 +50,17 @@
     \ifnum\linelen<1
         \def\line{}
         % numspaces = abs(linecounter)
-        \numspaces=\the\linecounter
+        \numspaces=\linecounter
         \ifnum\numspaces<0
             \multiply\numspaces -1
         \fi
         % numstars = 21 - 2 *numspaces
-        \numstars=\the\numspaces
+        \numstars=\numspaces
         \multiply\numstars -2
         \advance\numstars 21
         % linelen = \numspaces + \numstars
-        \linelen=\the\numspaces
-        \advance\linelen \the\numstars
+        \linelen=\numspaces
+        \advance\linelen \numstars
     \fi
     \ifnum\linelen>\numstars
         \addtomacro\line{ }
