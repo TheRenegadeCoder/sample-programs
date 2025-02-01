@@ -4,7 +4,7 @@ folder:
 
 container:
   image: "rzuckerm/ti-basic"
-  tag: "2025.02.01-3"
+  tag: "2025.02.01.1-4"
   build: |
     sh -c '(echo "#!/bin/sh"; \
     echo "if [ \"\$#\" = 0 ]"; \
