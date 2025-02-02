@@ -1,10 +1,10 @@
 folder:
-  extension: ".tiprogram"
+  extension: ".bas"
   naming: "hyphen"
 
 container:
   image: "rzuckerm/ti-basic"
-  tag: "2025.02.01.1-4"
+  tag: "2025.02.02-5"
   build: |
     sh -c '(echo "#!/bin/sh"; \
     echo "if [ \"\$#\" = 0 ]"; \
