@@ -1,17 +1,8 @@
 folder:
-  extension: ".tiprogram"
+  extension: ".bas"
   naming: "hyphen"
 
 container:
   image: "rzuckerm/ti-basic"
-  tag: "2025.02.01.1-4"
-  build: |
-    sh -c '(echo "#!/bin/sh"; \
-    echo "if [ \"\$#\" = 0 ]"; \
-    echo "then"; \
-    echo "    printf \"\\\"\\\"\" | python2.7 /opt/pitybas/pb.py {{ source.name }}{{ source.extension }}"; \
-    echo "else"; \
-    echo "    printf \"\\\"%s\\\"\\n\" \"\$@\" | python2.7 /opt/pitybas/pb.py {{ source.name }}{{ source.extension }}"; \
-    echo "fi" \
-    ) >{{ source.name }}'
-  cmd: "sh ./{{ source.name }}"
+  tag: "2025.02.02.1-6"
+  cmd: "ti-basic {{ source.name }}{{ source.extension }}"
