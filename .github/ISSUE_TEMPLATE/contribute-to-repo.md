@@ -1,10 +1,12 @@
-Congrats on taking the first step to contributing to the Sample Programs repository maintained by [The Renegade Coder][renegade-coder]! 
-For simplicity, please make sure that your pull request includes one and only one contribution.
+---
+name: Contribute to Repo
+about: Request to add or modify text within the repository
+title: Add {Issue #your-issue-number-here} to the repository
+labels: enhancement
+assignees: ''
+---
 
-Please fill _one_ of the sections below as applicable.
-Please also add any other relevant information to the Notes section at the bottom.
-You may delete or just ignore any other sections.
-For more information please refer to our [contributing documentation][contributing]
+To request modifying the repository, please fill out the following:
 
 ## There is a broken link I want to report
 
@@ -24,12 +26,3 @@ Add notes here...
 
 
 
-[renegade-coder]: https://therenegadecoder.com/
-[contributing-plagiarism]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#plagiarism
-[contributing-new-project]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#requirements-for-a-new-project
-[contributing-new-language]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#requirements-for-a-new-language
-[contributing-readme]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#create-readmes
-[contributing-tests-in-detail]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#tests-in-detail
-[contributing]: ../CONTRIBUTING.md
-[sample-programs-project-list]: https://sampleprograms.io/projects/
-[contributing-modifications]: https://github.com/TheRenegadeCoder/sample-programs/blob/master/.github/CONTRIBUTING.md#modifying-existing-code-snippets
