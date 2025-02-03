@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Pony! To find documentation related to the Pony code in this repo, look [here.](https://sampleprograms.io/languages/pony)
 
-## Sample Programs List - 1/37 :disappointed:
+## Sample Programs List - 3/37 :disappointed:
 
 In this section, we feature a list of completed and missing programs in Pony. See above for the current amount of completed programs in Pony. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -10,13 +10,14 @@ In this section, we feature a list of completed and missing programs in Pony. Se
 
 Below, you'll find a list of completed code snippets in Pony. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
+- :warning: [Baklava in Pony](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+pony) [[Requirements](https://sampleprograms.io/projects/baklava)]
+- :warning: [Fizz Buzz in Pony](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+pony) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :warning: [Hello World in Pony](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+pony) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 
 ### Missing Programs
 
 The following list contains all of the approved programs that are not currently implemented in Pony. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
-- :x: [Baklava](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,baklava&template=code-snippet-request.md&title=Add+Baklava+in+Pony) [[Requirements](https://sampleprograms.io/projects/baklava)]
 - :x: [Binary Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,binary+search&template=code-snippet-request.md&title=Add+Binary+Search+in+Pony) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :x: [Bubble Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,bubble+sort&template=code-snippet-request.md&title=Add+Bubble+Sort+in+Pony) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :x: [Capitalize](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,capitalize&template=code-snippet-request.md&title=Add+Capitalize+in+Pony) [[Requirements](https://sampleprograms.io/projects/capitalize)]
@@ -28,7 +29,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Factorial](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,factorial&template=code-snippet-request.md&title=Add+Factorial+in+Pony) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :x: [Fibonacci](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fibonacci&template=code-snippet-request.md&title=Add+Fibonacci+in+Pony) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :x: [File Input Output](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,file+input+output&template=code-snippet-request.md&title=Add+File+Input+Output+in+Pony) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
-- :x: [Fizz Buzz](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fizz+buzz&template=code-snippet-request.md&title=Add+Fizz+Buzz+in+Pony) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fraction+math&template=code-snippet-request.md&title=Add+Fraction+Math+in+Pony) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :x: [Insertion Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,insertion+sort&template=code-snippet-request.md&title=Add+Insertion+Sort+in+Pony) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,job+sequencing&template=code-snippet-request.md&title=Add+Job+Sequencing+in+Pony) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]

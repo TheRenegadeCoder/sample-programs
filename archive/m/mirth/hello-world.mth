@@ -1,6 +1,8 @@
-module(hello-world)
-import(prelude)
-import(platform.posix)
+module sample-programs.hello-world
 
-target-c99("hello-world.c",
-    "Hello, World!" str-print-ln!)
+import std.prelude
+import std.world
+
+def main {
+    "Hello, World!" print
+}

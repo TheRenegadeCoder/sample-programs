@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Odin! To find documentation related to the Odin code in this repo, look [here.](https://sampleprograms.io/languages/odin)
 
-## Sample Programs List - 6/37 :disappointed:
+## Sample Programs List - 8/37 :disappointed:
 
 In this section, we feature a list of completed and missing programs in Odin. See above for the current amount of completed programs in Odin. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -10,8 +10,10 @@ In this section, we feature a list of completed and missing programs in Odin. Se
 
 Below, you'll find a list of completed code snippets in Odin. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
+- :warning: [Baklava in Odin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+odin) [[Requirements](https://sampleprograms.io/projects/baklava)]
 - :warning: [Even Odd in Odin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+odin) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :warning: [File Input Output in Odin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+odin) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
+- :warning: [Fizz Buzz in Odin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+odin) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :warning: [Hello World in Odin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+odin) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :warning: [Longest Word in Odin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+odin) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :warning: [Prime Number in Odin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+odin) [[Requirements](https://sampleprograms.io/projects/prime-number)]
@@ -21,7 +23,6 @@ Below, you'll find a list of completed code snippets in Odin. Code snippets prec
 
 The following list contains all of the approved programs that are not currently implemented in Odin. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
-- :x: [Baklava](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,baklava&template=code-snippet-request.md&title=Add+Baklava+in+Odin) [[Requirements](https://sampleprograms.io/projects/baklava)]
 - :x: [Binary Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,binary+search&template=code-snippet-request.md&title=Add+Binary+Search+in+Odin) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :x: [Bubble Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,bubble+sort&template=code-snippet-request.md&title=Add+Bubble+Sort+in+Odin) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :x: [Capitalize](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,capitalize&template=code-snippet-request.md&title=Add+Capitalize+in+Odin) [[Requirements](https://sampleprograms.io/projects/capitalize)]
@@ -31,7 +32,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Duplicate Character Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,duplicate+character+counter&template=code-snippet-request.md&title=Add+Duplicate+Character+Counter+in+Odin) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :x: [Factorial](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,factorial&template=code-snippet-request.md&title=Add+Factorial+in+Odin) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :x: [Fibonacci](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fibonacci&template=code-snippet-request.md&title=Add+Fibonacci+in+Odin) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
-- :x: [Fizz Buzz](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fizz+buzz&template=code-snippet-request.md&title=Add+Fizz+Buzz+in+Odin) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fraction+math&template=code-snippet-request.md&title=Add+Fraction+Math+in+Odin) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :x: [Insertion Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,insertion+sort&template=code-snippet-request.md&title=Add+Insertion+Sort+in+Odin) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,job+sequencing&template=code-snippet-request.md&title=Add+Job+Sequencing+in+Odin) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]

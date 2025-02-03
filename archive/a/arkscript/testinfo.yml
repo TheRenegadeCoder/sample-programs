@@ -4,5 +4,5 @@ folder:
 
 container:
   image: "rzuckerm/arkscript"
-  tag: "3.4.0-2"
+  tag: "4.0.0-3"
   cmd: "arkscript {{ source.name }}{{ source.extension }}"

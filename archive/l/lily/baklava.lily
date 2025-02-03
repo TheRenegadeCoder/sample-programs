@@ -1,0 +1,19 @@
+import math
+
+define repeatString(s: String, n: Integer): String
+{
+    var result = ""
+    if n > 0: {
+        for i in 1...n: {
+            result = "{0}{1}".format(result, s)
+        }
+    }
+
+    return result
+}
+
+for n in -10...10: {
+    var num_spaces = math.abs(n)
+    var num_stars = 21 - 2 * num_spaces
+    print("{0}{1}".format(repeatString(" ", num_spaces), repeatString("*", num_stars)))
+}

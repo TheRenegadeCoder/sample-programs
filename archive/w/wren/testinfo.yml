@@ -3,6 +3,6 @@ folder:
   naming: "hyphen"
 
 container:
-  image: "esolang/wren"
-  tag: "latest"
-  cmd: "wren {{ source.name }}{{ source.extension }}"
+  image: "rzuckerm/wren"
+  tag: "0.4.0-1"
+  cmd: "wren_cli {{ source.name }}{{ source.extension }}"

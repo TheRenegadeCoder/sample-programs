@@ -1,0 +1,16 @@
+module Main
+import System.IO.Console
+import Data.List
+import Data.Text.List
+
+where
+
+baklavaLine (n: Nat): Text
+ = (textOfCharList (replicate num_spaces ' ')) % (textOfCharList (replicate num_stars '*'))
+    where
+        num_spaces = if n > 10 then n - 10 else 10 -n
+        num_stars = 21 - 2 * num_spaces
+
+main ()
+ =  forS (enumFromTo 0 20) $ λn
+ -> writel $ baklavaLine n

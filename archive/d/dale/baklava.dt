@@ -1,0 +1,29 @@
+(import cstdio)
+(import stdlib)
+(import cmath)
+(import cstring)
+
+(def main (fn extern-c int (void)
+  (def n (var auto int))
+  (def num-spaces (var auto int))
+  (def num-stars (var auto int))
+  (def line (var auto (array-of 22 char)))
+
+  (for (setv n -10) (<= n 10) (incv n)
+    (do
+      (setv num-spaces (abs n))
+      (setv num-stars (- 21 (* 2 num-spaces)))
+
+      ; Fill line with num-spaces " "
+      (memset (cast line (p void)) #\SPACE num-spaces)
+
+      ; Append num-stars "*" to line
+      (memset (cast ($ line num-spaces) (p void)) #\* num-stars)
+
+      ; Null terminate line
+      (setf ($ line (+ num-spaces num-stars)) #\NULL)
+
+      (printf "%s\n" line)
+    )
+  )
+))

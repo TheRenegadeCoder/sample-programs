@@ -1,0 +1,4 @@
+for n in range -10 11 =>
+    num_spaces = abs n
+    line = (" " * num_spaces) + ("*" * (21 - 2 * num_spaces))
+    print line

@@ -112,14 +112,27 @@ jobs:
         distribution: 'oracle'
         java-version: '23'
 
+    - name: Install C# compiler
+      if: ${{ matrix.language == 'c#' }}
+      run: sudo apt-get update && sudo apt-get install -y mono-mcs
+
     - name: Remove ignored paths
       if: ${{ github.event_name == 'pull_request' }}
       run: rm -f ${{ matrix.paths-ignore }}
 
-    - name: Remove Hack if C++
-      if: ${{ matrix.language == 'cpp' }}
-      run: rm -rf archive/h/hack
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.11"
 
+    - name: Run Poetry Image
+      uses: abatilo/actions-poetry@v3
+      with:
+        poetry-version: "1.8.5"
+        
+    - name: Install Dependencies
+      run: poetry install
+        
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v3
@@ -142,7 +155,7 @@ jobs:
 
     - name: Manual build
       if: ${{ matrix.build-mode == 'manual' }}
-      run: python scripts/build_codeql_language.py ${{ matrix.language }} ${{ matrix.paths }}
+      run: poetry run python scripts/build_codeql_language.py ${{ matrix.language }} ${{ matrix.paths }}
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3

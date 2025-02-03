@@ -4,6 +4,6 @@ folder:
 
 container:
   image: "rzuckerm/bracmat"
-  tag: "6.19.2-1"
+  tag: "6.26.2-2"
   cmd: |
     bracmat 'get$"{{ source.name }}{{ source.extension }}"'
