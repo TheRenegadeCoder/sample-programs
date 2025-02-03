@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Ti Basic! To find documentation related to the Ti Basic code in this repo, look [here.](https://sampleprograms.io/languages/ti-basic)
 
-## Sample Programs List - 11/37 :thinking:
+## Sample Programs List - 12/37 :thinking:
 
 In this section, we feature a list of completed and missing programs in Ti Basic. See above for the current amount of completed programs in Ti Basic. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -12,6 +12,7 @@ Below, you'll find a list of completed code snippets in Ti Basic. Code snippets 
 
 - :warning: [Baklava in Ti Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+ti+basic) [[Requirements](https://sampleprograms.io/projects/baklava)]
 - :warning: [Capitalize in Ti Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+ti+basic) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :warning: [Duplicate Character Counter in Ti Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+ti+basic) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :warning: [Even Odd in Ti Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+ti+basic) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :warning: [Factorial in Ti Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+ti+basic) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :warning: [Fibonacci in Ti Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+ti+basic) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
@@ -31,7 +32,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,convex+hull&template=code-snippet-request.md&title=Add+Convex+Hull+in+Ti%20Basic) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :x: [Depth First Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,depth+first+search&template=code-snippet-request.md&title=Add+Depth+First+Search+in+Ti%20Basic) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,dijkstra&template=code-snippet-request.md&title=Add+Dijkstra+in+Ti%20Basic) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
-- :x: [Duplicate Character Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,duplicate+character+counter&template=code-snippet-request.md&title=Add+Duplicate+Character+Counter+in+Ti%20Basic) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :x: [File Input Output](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,file+input+output&template=code-snippet-request.md&title=Add+File+Input+Output+in+Ti%20Basic) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fraction+math&template=code-snippet-request.md&title=Add+Fraction+Math+in+Ti%20Basic) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :x: [Insertion Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,insertion+sort&template=code-snippet-request.md&title=Add+Insertion+Sort+in+Ti%20Basic) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
