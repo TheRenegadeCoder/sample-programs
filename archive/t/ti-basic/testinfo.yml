@@ -4,5 +4,5 @@ folder:
 
 container:
   image: "rzuckerm/ti-basic"
-  tag: "2025.02.02.1-6"
+  tag: "2025.02.03-7"
   cmd: "ti-basic {{ source.name }}{{ source.extension }}"
