@@ -24,4 +24,4 @@ for(my $i = 0; $i < scalar(@trimmed_string); $i++)
     }
 }
 
-print $found_it ? "True" : "False";
+print $found_it ? "true" : "false";
