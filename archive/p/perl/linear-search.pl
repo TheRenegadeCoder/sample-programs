@@ -9,7 +9,7 @@ if($arguments_used < 2)
 my $input_string = shift @ARGV;
 my @input_array = @ARGV;
 my @trimmed_string = split(',', @input_array[0]);
-my $foundIt = 0;
+my $found_it = 0;
 
 if(scalar@trimmed_string < 2)
 {
@@ -20,8 +20,8 @@ for(my $i = 0; $i < scalar(@trimmed_string); $i++)
 {
     if($trimmed_string[i] == $input_string)
     {
-        $foundIt = 1;
+        $found_it = 1;
     }
 }
 
-print $foundIt ? "True" : "False";
+print $found_it ? "True" : "False";
