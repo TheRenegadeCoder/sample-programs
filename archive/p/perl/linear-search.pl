@@ -9,3 +9,8 @@ if($arguments_used < 2)
 my $input_string = shift @ARGV;
 my @input_array = @ARGV;
 my @trimmed_string = split(',', @input_array[0]);
+
+if(scalar@trimmed_string < 2)
+{
+    die "Usage: please provide atleast 2 elements to the lis e.g (\"1,2\")"
+}
