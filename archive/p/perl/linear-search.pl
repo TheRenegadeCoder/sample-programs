@@ -18,7 +18,7 @@ if(scalar@trimmed_string < 1)
 
 for(my $i = 0; $i < scalar(@trimmed_string); $i++)
 {
-    if($trimmed_string[$i] eq $input_string)
+    if($trimmed_string[$i] == $input_string)
     {
         $found_it = 1;
     }
