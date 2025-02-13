@@ -1,22 +1,26 @@
 function err() 
-    println("Usage: please input a non-negative integer")
+    return "Usage: please input a non-negative integer"
  end
  
 function isPrime(num)
-    if (num % 2 == 0 || num == 0 || num == 1) && (num != 2)
+    if num <= 1 
         return "composite"
-    else
-        return "prime"
+    end 
+    for i in 2:sqrt(num)
+        if (num % i == 0)
+            return "composite"
+        end
     end
+    return "prime"             
 end
 
 try
     n = parse(Int, ARGS[1])
-    if n<0
-        err()
+    if n < 0
+        println(err())
     else
         println(isPrime(n))
     end
 catch e
-    err()
+    println(err())
 end
