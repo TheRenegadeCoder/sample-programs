@@ -1,19 +1,3 @@
-/*
-
-Linear search is quite intuitive, it is basically searching an element in an array by traversing 
-the array from the beginning to the end and comparing each item in the array with the key. If a 
-particular array entry matches with the key the position is recorded and the loop is stopped. 
-The algorithm for this is:
-
-Define a flag (set it's value to 0) for checking if key is present in array or notation.
-Iterate through every element in array.
-In each iteration compare the key and the current element.
-If they match set the flag to 1, position to the current iteration and break from the loop.
-If entire loop is traversed and the element is not found the value of flag will be 0 and user can notified that key is not in array.
-
-*/
-
-
 fun main(args: Array<String>)  
 {
     // store usage message in variable
@@ -26,26 +10,19 @@ fun main(args: Array<String>)
         return
     } 
     
-    // convert list of numbers string input into an int array, invalid entries converted to null
-    val intArray = args[0].split(",").map { it.trim().toIntOrNull() }
-
-    // check if array contains null (invalid) elements
-    if(null in intArray)
-    {
-        println(message)
-        return
-    }
-    
-    // convert key string input into an int, invalid entries converted to null
+    // convert input number String into a List of integers, invalid characters are converted to null
+    val intList = args[0].split(",").map { it.trim().toIntOrNull() }
+ 
+    // convert input key String into an int, invalid characters are converted to null
     val key = args[1].toIntOrNull()
  
-    // check if key is null (invalid)
-    if(key == null)
+    // check if the List or the key contains null (invalid) elements
+    if(null in intList || key == null)
     {
         println(message)
         return
     }
 
-    // check if key is in the array and print returned boolean   
-    println(key in intArray)
+    // check if key is in the List and print returned boolean   
+    println(key in intList)
 }
