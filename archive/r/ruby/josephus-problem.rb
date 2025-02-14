@@ -16,8 +16,8 @@ def error()
 end
 
 # check for incorrect number of arguments
-# .any? loops over the elements of ARGV to check for letters or empty strings in each argument
-if ARGV.length != 2 || ARGV.any? { |arg| arg.match(/[a-zA-Z]/) || arg.empty? }
+# .any? loops over the elements of ARGV to check if the argument contains non-digit characters or empty strings
+if ARGV.length != 2 || ARGV.any? { |arg| arg.match(/[^0-9]/) || arg.empty? }
     error()
 else
     # convert the arguments to integers
