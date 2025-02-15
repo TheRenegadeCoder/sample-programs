@@ -11,7 +11,7 @@ begin
 
   input = input.not_nil!
 
-  if input >= 0 && input < 13
+  if input >= 0 && input <= 12
     puts factorial(input)
   elsif input > 12
     raise "#{input} is out of the reasonable bounds for calculation."
