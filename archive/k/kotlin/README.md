@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Kotlin! To find documentation related to the Kotlin code in this repo, look [here.](https://sampleprograms.io/languages/kotlin)
 
-## Sample Programs List - 19/37 :relaxed:
+## Sample Programs List - 20/37 :relaxed:
 
 In this section, we feature a list of completed and missing programs in Kotlin. See above for the current amount of completed programs in Kotlin. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -20,6 +20,7 @@ Below, you'll find a list of completed code snippets in Kotlin. Code snippets pr
 - :white_check_mark: [Fizz Buzz in Kotlin](https://sampleprograms.io/projects/fizz-buzz/kotlin) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Kotlin](https://sampleprograms.io/projects/hello-world/kotlin) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :warning: [Job Sequencing in Kotlin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+job+sequencing+kotlin) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
+- :warning: [Linear Search in Kotlin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+linear+search+kotlin) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :warning: [Longest Common Subsequence in Kotlin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+common+subsequence+kotlin) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
 - :warning: [Longest Word in Kotlin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+kotlin) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :warning: [Merge Sort in Kotlin](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+kotlin) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
@@ -42,7 +43,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fraction+math&template=code-snippet-request.md&title=Add+Fraction+Math+in+Kotlin) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :x: [Insertion Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,insertion+sort&template=code-snippet-request.md&title=Add+Insertion+Sort+in+Kotlin) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,josephus+problem&template=code-snippet-request.md&title=Add+Josephus+Problem+in+Kotlin) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
-- :x: [Linear Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,linear+search&template=code-snippet-request.md&title=Add+Linear+Search+in+Kotlin) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :x: [Longest Palindromic Substring](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+palindromic+substring&template=code-snippet-request.md&title=Add+Longest+Palindromic+Substring+in+Kotlin) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
 - :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+array+rotation&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+Kotlin) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+subarray&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+Kotlin) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
