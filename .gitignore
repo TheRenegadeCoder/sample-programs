@@ -28,3 +28,7 @@ package-lock.json
 
 # F#
 Program.fs
+
+# scala
+.metals
+.scala-build
