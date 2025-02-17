@@ -40,5 +40,5 @@ if (dupes) {
     }
   }
 } else {
-  System.print("No duplicate characters.")
+  System.print("No duplicate characters")
 }
