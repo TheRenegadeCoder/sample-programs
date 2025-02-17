@@ -7,12 +7,12 @@ object SleepSort {
   def main(args: Array[String]): Unit = {
     var result = invalidChecker(args)
       
-    if(!result){ // After going through checker, it will output result to procede with SleepSort or not.
+    if(!result){ // After going through checker, it will output result to procede with SleepSort or not
       // println(result)
       println("Error with Input")
     } else {
       val numbers = args.flatMap(_.split(",")).map(_.trim).filter(_.nonEmpty).map(_.toInt)
-      println(sleepSort(numbers))
+      println("Usage: please provide a list of at least two integers to sort in the format \"" + sleepSort(numbers)+"\"")
     }
   }
     
