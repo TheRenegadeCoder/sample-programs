@@ -6,8 +6,8 @@ fibonacci = (n) ->
         a, b = b, a + b
 
 -- main 
-if tonumber(arg)
-    fibonacci arg
+if arg[1] and tonumber(arg[1]) ~= nil and tonumber(arg[1]) >= 0
+    fibonacci tonumber(arg[1])
 else   
     print "Usage: please input the count of fibonacci numbers to output"
     
