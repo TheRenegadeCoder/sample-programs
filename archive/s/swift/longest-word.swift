@@ -1,12 +1,16 @@
-import foundation
+import Foundation
 
-let input = CommandLine.arguments
+var sentence = CommandLine.arguments
 
-func longestWord(input) -> any
+sentence = sentence.replacingOccurrences(of: "\n", with: "")    //removing the break line if it contains any
+
+longestWord(input : sentence)
+
+func longestWord(input : String) -> any
 {
     if(input == "")
     {
-        return "Usage: please provide a string"
+        return "Usage: please provide a string"    //checking for empty string
     }
 
     else 
@@ -18,7 +22,7 @@ func longestWord(input) -> any
         {
             if(words.count > longest)    
             {
-                longest = words.count
+                longest = words.count    //obtaining the longest count of words
             }
         }
     }
