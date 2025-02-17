@@ -7,8 +7,9 @@ object SleepSort {
   def main(args: Array[String]): Unit = {
     var result = invalidChecker(args)
       
-    if(!result.contains("true")){ // After going through checker, it will output result to procede with SleepSort or not
-      println(result)
+    if(!result){ // After going through checker, it will output result to procede with SleepSort or not.
+      // println(result)
+      println("Error with Input")
     } else {
       val numbers = args.flatMap(_.split(",")).map(_.trim).filter(_.nonEmpty).map(_.toInt)
       println(sleepSort(numbers))
@@ -17,18 +18,18 @@ object SleepSort {
     
 
   // Checking for formating, empty array, and Non-numeric values
-  def invalidChecker(args: Array[String]): String = args match {
-    case null | Array() => "No Input"
-    case arr if arr.forall(_.isEmpty) =>  "Empty Input"
-    case arr if arr.forall(_.length == 1) && arr.length == 1 => "Invalid Input: Not A List"
-    case arr if !arr.exists(_.contains(",")) => "Invalid Input: Wrong Format"
+  def invalidChecker(args: Array[String]): Boolean = args match {
+    case null | Array() => false  // "No Input"
+    case arr if arr.forall(_.isEmpty) =>  false //"Empty Input"
+    case arr if arr.forall(_.length == 1) && arr.length == 1 => false //"Invalid Input: Not A List"
+    case arr if !arr.exists(_.contains(",")) => false //"Invalid Input: Wrong Format"
     case _ => {
       val numbers = args.flatMap(_.split(",")).map(_.trim).filter(_.nonEmpty)
       
       if (numbers.forall(n => n.forall(_.isDigit))) {
-        "true" // <- passing true to procede with SleepSort
+        true  //"true" // <- passing true to procede with SleepSort
       } else {
-        "Invalid Input: Non-numeric Values"
+        false //"Invalid Input: Non-numeric Values"
       }
     }
   }
