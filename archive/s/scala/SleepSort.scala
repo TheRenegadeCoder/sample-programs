@@ -9,10 +9,10 @@ object SleepSort {
       
     if(!result){ // After going through checker, it will output result to procede with SleepSort or not
       // println(result)
-      println("Error with Input")
+      println("Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"")
     } else {
       val numbers = args.flatMap(_.split(",")).map(_.trim).filter(_.nonEmpty).map(_.toInt)
-      println("Usage: please provide a list of at least two integers to sort in the format \"" + sleepSort(numbers)+"\"")
+      println(sleepSort(numbers))
     }
   }
     
@@ -41,14 +41,14 @@ object SleepSort {
 
     val futures = args.map { num =>
       Future {
-        Thread.sleep(num * delayTimer)
+        Thread.sleep(num * delayTimer) // Delay execution
         synchronized { // Ensure thread safety
           outputArray += num.toString
         }
       }
     }
 
-    Await.result(Future.sequence(futures), Duration.Inf) // intializing the data into outputArray
+    Await.result(Future.sequence(futures), Duration.Inf) // Wait for all futures
     outputArray.mkString(", ")
   }
 }
