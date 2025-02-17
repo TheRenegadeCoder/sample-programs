@@ -15,7 +15,7 @@ object SleepSort {
     }else {
       // println("passes")
       val numbers = args.flatMap(_.split(",")).map(_.trim).filter(_.nonEmpty).map(_.toInt)
-      println(SleepSort(numbers))
+      println(sleepSort(numbers))
     }
   }
     
@@ -36,7 +36,7 @@ object SleepSort {
     }
   }
 
-  def SleepSort(args: Array[Int]): String = {
+  def sleepSort(args: Array[Int]): String = {
     val delayTimer: Long = 1000L
     val outputArray = ListBuffer[String]()
 
