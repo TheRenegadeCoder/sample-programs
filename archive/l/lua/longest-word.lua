@@ -4,3 +4,6 @@ if #arg < 1 then
 end
 
 local input = arg[1]
+
+function longest_word_length(str)
+    local max_length = 0
