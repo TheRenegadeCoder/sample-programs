@@ -7,6 +7,7 @@ function duplicateCharacterCounter(word)
   
   elseif (string.len(word) >= 1) then
     local myTable = {}                                -- will hold: keys{h, e, l, o} values{1, 1, 2, 1}
+    local duplicateList = {}
     
     for i=1, string.len(word) do                   -- while i is <= 5 (hello is 5 letters)
       --local occur = 1;                             -- it already occured once
@@ -20,18 +21,21 @@ function duplicateCharacterCounter(word)
       end
     end
     for key, value in pairs(myTable) do
-
       if (myTable[key] ~= 1) then
-        print(key .. ": " .. value .. "\n")
-        --return key .. ": " .. value .. "\n"
+        table.insert(duplicateList, key .. ": " .. value)
       end
+    end
+    table.sort(duplicateList)
+
+    for k=1, #duplicateList do
+      print(duplicateList[k])
     end
   
   end
 
   if not (hasDuplicates == true) then
     print("No duplicate characters")
-end
+  end
 end
 
 duplicateCharacterCounter(arg[1])
