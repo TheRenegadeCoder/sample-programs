@@ -1,15 +1,13 @@
 import Foundation
 
-var sentence = CommandLine.arguments[1]    //changing the array of string into a single string
-
-sentence = sentence.replacingOccurrences(of: "\n", with: "")    //removing the break line if it contains any
-if(CommandLine.arguments.count > 1)
-{
-    longestWord(input : sentence)
+if (CommandLine.arguments.count < 2) {
+    print("Usage: please provide a string")
 }
 else 
 {
-    print("Usage: please provide a string")
+    var sentence = CommandLine.arguments[1]   
+    sentence = sentence.replacingOccurrences(of: "\n", with: "")    //removing the break line if it contains any
+    longestWord(input : sentence)
 }
 
 func longestWord(input : String) -> Void
@@ -17,7 +15,7 @@ func longestWord(input : String) -> Void
     var longest = 0
     var testWord = ""
 
-    if(input == "" || input == nil)
+    if(input == "")
     {
          print("Usage: please provide a string")    //checking for empty string
     }
