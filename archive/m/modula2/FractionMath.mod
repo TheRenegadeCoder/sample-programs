@@ -56,18 +56,16 @@ TRACED CLASS Fraction;
 
 
 (* Proceedures Operators*)
-VAR fResult : Fraction;
-
-PROCEDURE [=] isEqual(f1, f2 : Fraction) : BOOL 
+PROCEDURE [=] isEqual(f1, f2 : Fraction) : BOOL; 
 BEGIN
     IF (f1.numerator * f2.denominator) = (f1.denominator * f2.numerator) THEN
         RETURN TRUE;
     ELSE
         RETURN FALSE;
     END;
-END;
+END isEqual;
 
-PROCEDURE [#] notEqual(f1, f2 : Fraction) : BOOL 
+PROCEDURE [#] notEqual(f1, f2 : Fraction) : BOOL;
 BEGIN 
     RETURN f1 = f2;
     (* IF (f1.numerator * f2.denominator) # (f2.numerator * f2.denominator) THEN
@@ -75,45 +73,46 @@ BEGIN
     ELSE
         RETURN TRUE;
     END; *)
-END;
+END notEqual;
 
-PROCEDURE [>] isGreater(f1, f2 : Fraction) : BOOL 
+PROCEDURE [>] isGreater(f1, f2 : Fraction) : BOOL; 
 BEGIN
     IF (f1.numerator * f2.denominator) > (f1.denominator * f2.numerator) THEN
         RETURN TRUE;
     ELSE
         RETURN FALSE;
     END;
-END; 
+END isGreater; 
 
-PROCEDURE [<] isLess(f1, f2 : Fraction) : BOOL 
+PROCEDURE [<] isLess(f1, f2 : Fraction) : BOOL;
 BEGIN
     IF (f1.numerator * f2.denominator) < (f1.denominator * f2.numerator) THEN
         RETURN TRUE;
     ELSE
         RETURN FALSE;
     END;
-END;
+END isLess;
 
-PROCEDURE [>=] greaterOrEqual(f1, f2 : Fraction) : BOOL 
+PROCEDURE [>=] greaterOrEqual(f1, f2 : Fraction) : BOOL; 
 BEGIN
     IF (f1.numerator * f2.denominator) >= (f1.denominator * f2.numerator) THEN
         RETURN TRUE;
     ELSE
         RETURN FALSE;
     END;
-END;
+END greaterOrEqual;
 
-PROCEDURE [<=] lessOrEqual(f1, f2 : Fraction) : BOOL 
+PROCEDURE [<=] lessOrEqual(f1, f2 : Fraction) : BOOL;
 BEGIN
     IF (f1.numerator * f2.denominator) <= (f1.denominator * f2.numerator) THEN
         RETURN TRUE;
     ELSE
         RETURN FALSE;
     END;
-END;
+END lessOrEqual;
 
-PROCEDURE [+] Add(f1, f2 : Fraction) : Fraction
+PROCEDURE [+] Add(f1, f2 : Fraction) : Fraction;
+VAR fResult : Fraction;
 BEGIN
     CREATE(fResult);
     IF f1.denominator = f2.denominator THEN
@@ -123,9 +122,10 @@ BEGIN
         gcd = GreatestCommonDivisor(fResult.numerator, fResult.denominator);
         fResult.SetFraction(fResult.numerator / gcd, fResult.denominator / gcd);
     END;
-END;
+END Add;
 
-PROCEDURE [-] Sub(f1, f2 : Fraction) : Fraction
+PROCEDURE [-] Sub(f1, f2 : Fraction) : Fraction;
+VAR fResult : Fraction;
 BEGIN
     CREATE(fResult);
     IF f1.denominator = f2.denominator THEN
@@ -135,29 +135,31 @@ BEGIN
         gcd = GreatestCommonDivisor(fResult.numerator, fResult.denominator);
         fResult.SetFraction(fResult.numerator / gcd, fResult.denominator / gcd);
     END;
-END;
+END Sub;
 
-PROCEDURE [*] Mult(f1, f2 : Fraction) :Fraction
+PROCEDURE [*] Mult(f1, f2 : Fraction) : Fraction;
+VAR fResult : Fraction;
 BEGIN
     CREATE(fResult);
     fResult.SetFraction(f1.numerator * f2.numerator, f1.denominator * f2.denominator);
     gcd = GreatestCommonDivisor(fResult.numerator, fResult.denominator);
     fResult.SetFraction(fResult.numerator / gcd, fResult.denominator / gcd);
-END;
+END Mult;
 
-PROCEDURE [/] Div(f1, f2 : Fraction) : Fraction
+PROCEDURE [/] Div(f1, f2 : Fraction) : Fraction;
+VAR fResult : Fraction;
 BEGIN
     CREATE(fResult);
     fResult.SetFraction(f1.numerator * f2.denominator, f1.denominator * f1.numerator);
     gcd = GreatestCommonDivisor(fResult.numerator, fResult.denominator);
     fResult.SetFraction(fResult.numerator / gcd, fResult.denominator / gcd);
-END;
+END Div;
+
 
 (* Vars and methods for main method *)
 VAR fracOne : Fraction;
     fracTwo : Fraction;
-    
-    
+      
 PROCEDURE result(f1 : INTEGER, op : STRING, f2 : INTEGER) : Fraction
 BEGIN
     IF op = "+" THEN 
@@ -183,7 +185,7 @@ BEGIN
     ELSE
         RETURN WriteString("Invalid operator");
     END;    
-END;
+END result;
 
 (* Main Method *)
 BEGIN 
