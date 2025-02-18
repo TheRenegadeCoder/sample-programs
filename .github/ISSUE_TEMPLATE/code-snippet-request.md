@@ -8,9 +8,9 @@ assignees: ''
 
 To request a new code snippet, please fill out the following:
 
-Project name: 
-Project link: https://sampleprograms.io/projects/my-project-name
-Language: 
+Project name: longest-word.rb
+Project link: https://sampleprograms.io/projects/longest-word/
+Language: Ruby 
 
 If this code snippet will also be the first in a new language, please fill out the following:
 
