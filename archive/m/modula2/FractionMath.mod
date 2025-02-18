@@ -1,11 +1,10 @@
 MODULE FractionMath;
 
-(* Imports *)
-FROM Terminal2 IMPORT WriteString, WriteLn, WriteInt;
+FROM StrIO IMPORT WriteString, WriteLn;
 
-(* Fraction Class *)
 TRACED CLASS Fraction;
-    REVEAL GreatestCommonDivisor, Reduce, SetFraction, ShowFraction; (* Making attributes and methods public*)
+    REVEAL GreatestCommonDivisor, Reduce, SetFraction, ShowFraction, [=], [>], [<], [>=], [<=],
+           [+], [-], [*], [/]; 
     VAR 
     numerator: INTEGER;
     denominator: INTEGER;
@@ -32,7 +31,7 @@ TRACED CLASS Fraction;
         END;
     
         RETURN n;
-    END;
+    END GreatestCommonDivisor;
 
     PROCEDURE Reduce(n, d : INTEGER);
     BEGIN 
@@ -44,18 +43,16 @@ TRACED CLASS Fraction;
             numerator := n / gcd;
             denominator := d / gcd;
         END;
-    END; 
+    END Reduce; 
     
     PROCEDURE ShowFraction(f : Fraction);
     BEGIN
-        WriteInt(f.numerator);
+        WriteString(f.numerator);
         WriteString("/");
-        WriteInt(f.denominator);
+        WriteString(f.denominator);
         WriteLn;
-    END;
+    END ShowFraction;
 
-
-(* Proceedures Operators*)
 PROCEDURE [=] isEqual(f1, f2 : Fraction) : BOOL; 
 BEGIN
     IF (f1.numerator * f2.denominator) = (f1.denominator * f2.numerator) THEN
@@ -155,8 +152,11 @@ BEGIN
     fResult.SetFraction(fResult.numerator / gcd, fResult.denominator / gcd);
 END Div;
 
+BEGIN 
+    SetFraction(1, 1);
+END Fraction;
 
-(* Vars and methods for main method *)
+
 VAR fracOne : Fraction;
     fracTwo : Fraction;
       
@@ -187,7 +187,6 @@ BEGIN
     END;    
 END result;
 
-(* Main Method *)
 BEGIN 
     CREATE(fracOne);
     CREATE(fracTwo);
@@ -210,5 +209,5 @@ BEGIN
     ELSE
         WriteString("Error");
     END;
-
 END FractionMath.
+
