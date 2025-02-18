@@ -56,75 +56,64 @@ TRACED CLASS Fraction;
 
 
 (* Proceedures Operators*)
-OPERATOR = (f1, f2 : Fraction) : BOOL 
-BEGIN
-    IF  THEN
-        WriteString("0");
-        WriteLn;
+VAR fResult : Fraction;
 
+PROCEDURE [=] isEqual(f1, f2 : Fraction) : BOOL 
+BEGIN
+    IF (f1.numerator * f2.denominator) = (f1.denominator * f2.numerator) THEN
+        RETURN TRUE;
     ELSE
-        WriteString("1 error");
-        WriteLn;
+        RETURN FALSE;
     END;
 END;
 
 PROCEDURE [#] notEqual(f1, f2 : Fraction) : BOOL 
-(* BEGIN    
-    IF fOne # fTwo THEN
-        WriteString("1");
-        WriteLn;
-
+BEGIN 
+    RETURN f1 = f2;
+    (* IF (f1.numerator * f2.denominator) # (f2.numerator * f2.denominator) THEN
+        RETURN FALSE;
     ELSE
-        WriteString("0 error");
-        WriteLn;
-    END;
-END; *)
+        RETURN TRUE;
+    END; *)
+END;
 
-PROCEDURE [>] GreaterThan(f1, f2 : Fraction) : BOOL 
+PROCEDURE [>] isGreater(f1, f2 : Fraction) : BOOL 
 BEGIN
-    IF fOne > fracTwo THEN
-        WriteString("0");
-        WriteLn;
+    IF (f1.numerator * f2.denominator) > (f1.denominator * f2.numerator) THEN
+        RETURN TRUE;
     ELSE
-        WriteString("1 error");
-        WriteLn;
+        RETURN FALSE;
     END;
 END; 
 
-PROCEDURE [<] LessThan(f1, f2 : Fraction) : BOOL 
-(* BEGIN
-    IF fOne < fracTwo THEN
-        WriteString("0");
-        WriteLn;
+PROCEDURE [<] isLess(f1, f2 : Fraction) : BOOL 
+BEGIN
+    IF (f1.numerator * f2.denominator) < (f1.denominator * f2.numerator) THEN
+        RETURN TRUE;
     ELSE
-        WriteString("1 error");
-        WriteLn;
+        RETURN FALSE;
     END;
-END; *)
+END;
 
-PROCEDURE [>=] GreaterThanEquals(f1, f2 : Fraction) : BOOL 
-(* BEGIN
-    IF fOne >= fracTwo THEN
-        WriteString("0");
-        WriteLn;
+PROCEDURE [>=] greaterOrEqual(f1, f2 : Fraction) : BOOL 
+BEGIN
+    IF (f1.numerator * f2.denominator) >= (f1.denominator * f2.numerator) THEN
+        RETURN TRUE;
     ELSE
-        WriteString("1 error");
-        WriteLn;
+        RETURN FALSE;
     END;
-END; *)
+END;
 
-PROCEDURE [<=] LessThanEquals(f1, f2 : Fraction) : BOOL 
-(* BEGIN
-    IF fOne <= fracTwo THEN
-        WriteString("0");
-        WriteLn;
+PROCEDURE [<=] lessOrEqual(f1, f2 : Fraction) : BOOL 
+BEGIN
+    IF (f1.numerator * f2.denominator) <= (f1.denominator * f2.numerator) THEN
+        RETURN TRUE;
     ELSE
-        WriteString("1 error");
-        WriteLn;
+        RETURN FALSE;
     END;
-END; *)
-VAR fResult : Fraction;
-PROCEDURE [+] Addition(f1, f2 : Fraction) : Fraction
+END;
+
+PROCEDURE [+] Add(f1, f2 : Fraction) : Fraction
 BEGIN
     CREATE(fResult);
     IF f1.denominator = f2.denominator THEN
@@ -136,7 +125,7 @@ BEGIN
     END;
 END;
 
-PROCEDURE [-] Subtraction(f1, f2 : Fraction) : Fraction
+PROCEDURE [-] Sub(f1, f2 : Fraction) : Fraction
 BEGIN
     CREATE(fResult);
     IF f1.denominator = f2.denominator THEN
@@ -148,7 +137,7 @@ BEGIN
     END;
 END;
 
-PROCEDURE [*] Multiplication(f1, f2 : Fraction) :Fraction
+PROCEDURE [*] Mult(f1, f2 : Fraction) :Fraction
 BEGIN
     CREATE(fResult);
     fResult.SetFraction(f1.numerator * f2.numerator, f1.denominator * f2.denominator);
@@ -156,7 +145,7 @@ BEGIN
     fResult.SetFraction(fResult.numerator / gcd, fResult.denominator / gcd);
 END;
 
-PROCEDURE [/] Division(f1, f2 : Fraction) : Fraction
+PROCEDURE [/] Div(f1, f2 : Fraction) : Fraction
 BEGIN
     CREATE(fResult);
     fResult.SetFraction(f1.numerator * f2.denominator, f1.denominator * f1.numerator);
