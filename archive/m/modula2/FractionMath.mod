@@ -48,9 +48,9 @@ TRACED CLASS Fraction;
     
     PROCEDURE ShowFraction(f : Fraction);
     BEGIN
-        WriteInt(numerator);
+        WriteInt(f.numerator);
         WriteString("/");
-        WriteInt(denominator);
+        WriteInt(f.denominator);
         WriteLn;
     END;
 
@@ -68,11 +68,11 @@ END isEqual;
 PROCEDURE [#] notEqual(f1, f2 : Fraction) : BOOL;
 BEGIN 
     RETURN f1 = f2;
-    (* IF (f1.numerator * f2.denominator) # (f2.numerator * f2.denominator) THEN
+    IF f1 = f2 THEN
         RETURN FALSE;
     ELSE
         RETURN TRUE;
-    END; *)
+    END;
 END notEqual;
 
 PROCEDURE [>] isGreater(f1, f2 : Fraction) : BOOL; 
@@ -191,10 +191,11 @@ END result;
 BEGIN 
     CREATE(fracOne);
     CREATE(fracTwo);
+    fracOne.SetFraction(2, 3);
+    fracTwo.SetFraction(4, 5);
+    
     IF fracOne # EMPTY AND fracTwo # EMPTY THEN
-        fracOne.SetFraction(2, 3);
-        fracTwo.SetFraction(4, 5);
-
+    
         ShowFraction(result(fracOne, "+", fracTwo));
         ShowFraction(result(fracOne, "-", fracTwo));        
         ShowFraction(result(fracOne, "*", fracTwo));        
