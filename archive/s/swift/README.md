@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Swift! To find documentation related to the Swift code in this repo, look [here.](https://sampleprograms.io/languages/swift)
 
-## Sample Programs List - 9/37 :disappointed:
+## Sample Programs List - 10/37 :thinking:
 
 In this section, we feature a list of completed and missing programs in Swift. See above for the current amount of completed programs in Swift. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -17,6 +17,7 @@ Below, you'll find a list of completed code snippets in Swift. Code snippets pre
 - :white_check_mark: [Fizz Buzz in Swift](https://sampleprograms.io/projects/fizz-buzz/swift) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :warning: [Fraction Math in Swift](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fraction+math+swift) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :warning: [Hello World in Swift](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+swift) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :warning: [Longest Word in Swift](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+swift) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :warning: [Palindromic Number in Swift](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+swift) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :white_check_mark: [Reverse String in Swift](https://sampleprograms.io/projects/reverse-string/swift) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 
@@ -38,7 +39,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Linear Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,linear+search&template=code-snippet-request.md&title=Add+Linear+Search+in+Swift) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :x: [Longest Common Subsequence](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+common+subsequence&template=code-snippet-request.md&title=Add+Longest+Common+Subsequence+in+Swift) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
 - :x: [Longest Palindromic Substring](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+palindromic+substring&template=code-snippet-request.md&title=Add+Longest+Palindromic+Substring+in+Swift) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
-- :x: [Longest Word](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+word&template=code-snippet-request.md&title=Add+Longest+Word+in+Swift) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+array+rotation&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+Swift) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+subarray&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+Swift) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :x: [Merge Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,merge+sort&template=code-snippet-request.md&title=Add+Merge+Sort+in+Swift) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
