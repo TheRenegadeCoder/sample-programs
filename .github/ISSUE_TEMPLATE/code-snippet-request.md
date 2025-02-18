@@ -1,16 +1,16 @@
 ---
 name: Code Snippet Request
 about: Request a code snippet (e.g. Hello World in Grain)
-title: Add {PROJECT} in {LANGUAGE}
+title: Add longest-word in lua
 labels: enhancement
 assignees: ''
 ---
 
 To request a new code snippet, please fill out the following:
 
-Project name: 
-Project link: https://sampleprograms.io/projects/my-project-name
-Language: 
+Project name: Longest Word
+Project link: https://sampleprograms.io/projects/longest-word/
+Language: lua
 
 If this code snippet will also be the first in a new language, please fill out the following:
 
