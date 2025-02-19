@@ -23,32 +23,33 @@ object SleepSort {
     case arr if arr.forall(_.isEmpty) =>  false //"Empty Input"
     case arr if arr.forall(_.length == 1) && arr.length == 1 => false //"Invalid Input: Not A List"
     case arr if !arr.exists(_.contains(",")) => false //"Invalid Input: Wrong Format"
-    case _ => {
-      val numbers = args.flatMap(_.split(",")).map(_.trim).filter(_.nonEmpty)
+    case _ =>  true
+    // case _ => {
+    //   val numbers = args.flatMap(_.split(",")).map(_.trim).filter(_.nonEmpty)
       
-      if (numbers.forall(n => n.forall(_.isDigit))) {
-        true  //"true" // <- passing true to procede with SleepSort
-      } else {
-        false //"Invalid Input: Non-numeric Values"
-      }
-    }
+    //   if (numbers.forall(n => n.forall(_.isDigit))) {
+    //     true  //"true" // <- passing true to procede with SleepSort
+    //   } else {
+    //     false //"Invalid Input: Non-numeric Values"
+    //   }
+    // }
   }
 
   // delaying time to add a value to list base on it weight
   def sleepSort(args: Array[Int]): String = {
-    val delayTimer: Long = 1000L
-    val outputArray = ListBuffer[String]()
+    val delayTimer: Long = 100L
+    val output = new ListBuffer[Int]()
 
     val futures = args.map { num =>
       Future {
         Thread.sleep(num * delayTimer) // Delay execution
-        synchronized { // Ensure thread safety
-          outputArray += num.toString
+        this.synchronized { // Ensure thread safety
+          output += num
         }
       }
-    }//.toList // Convert Array to List to fix type mismatch
+    }.toList // Convert Array to List to fix type mismatch
 
-    Await.result(Future.sequence(futures.toList), Duration.Inf) // Wait for all futures
-    outputArray.mkString(", ")
+    Await.result(Future.sequence(futures), Duration.Inf) // Wait for all futures
+    output.mkString(", ") // Format output correctly
   }
 }
