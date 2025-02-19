@@ -46,9 +46,9 @@ object SleepSort {
           outputArray += num.toString
         }
       }
-    }
+    }//.toList // Convert Array to List to fix type mismatch
 
-    Await.result(Future.sequence(futures), Duration.Inf) // Wait for all futures
+    Await.result(Future.sequence(futures.toList), Duration.Inf) // Wait for all futures
     outputArray.mkString(", ")
   }
 }
