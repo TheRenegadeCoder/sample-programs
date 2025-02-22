@@ -33,6 +33,35 @@ projects:
                         - "          *"
                 transformations:
                     - "splitlines"
+    base64:
+        words:
+            - "base64"
+        requires_parameters: true
+        tests:
+            base64_valid:
+                params:
+                    -   name: "sample input: lowercase string"
+                        input: '"hello world"'
+                        expected: "aGVsbG8gd29ybGQK"
+                    -   name: "sample input: long string"
+                        input: '"They swam along the boat at incredible speeds."'
+                        expected: "VGhleSBzd2FtIGFsb25nIHRoZSBib2F0IGF0IGluY3JlZGlibGUgc3BlZWRzLgo="
+                    -   name: "sample input: numbers"
+                        input: '"1234567890"'
+                        expected: "MTIzNDU2Nzg5MAo="
+                    -   name: "sample input: symbols"
+                        input: '123456789:;<=>?@[\]^_`{|}~!'
+                        expected: "MTIzNDU2Nzg5Ojs8PT4/QFtcXV5fYHt8fX4K"
+            base64_invalid:
+                params:
+                    -   name: "no input"
+                        input: null
+                        expected: "Usage: please provide a string to encode"
+                    -   name: "empty input"
+                        input: '""'
+                        expected: "Usage: please provide a string to encode"
+                transformations:
+                    - "strip"
     binarysearch:
         words:
             - "binary"
