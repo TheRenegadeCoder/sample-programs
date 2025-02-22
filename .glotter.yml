@@ -40,26 +40,53 @@ projects:
         tests:
             base64_valid:
                 params:
-                    -   name: "sample input: lowercase string"
-                        input: '"hello world"'
+                    -   name: "encode: lowercase string"
+                        input: '"encode" "hello world"'
                         expected: "aGVsbG8gd29ybGQK"
-                    -   name: "sample input: long string"
-                        input: '"They swam along the boat at incredible speeds."'
+                    -   name: "encode: long string"
+                        input: '"encode" "They swam along the boat at incredible speeds."'
                         expected: "VGhleSBzd2FtIGFsb25nIHRoZSBib2F0IGF0IGluY3JlZGlibGUgc3BlZWRzLgo="
-                    -   name: "sample input: numbers"
-                        input: '"1234567890"'
+                    -   name: "encode: numbers"
+                        input: '"encode" "1234567890"'
                         expected: "MTIzNDU2Nzg5MAo="
-                    -   name: "sample input: symbols"
-                        input: '123456789:;<=>?@[\]^_`{|}~!'
+                    -   name: "encode: symbols"
+                        input: '"encode" "123456789:;<=>?@[]^_`{|}~!""'
                         expected: "MTIzNDU2Nzg5Ojs8PT4/QFtcXV5fYHt8fX4K"
+                    -   name: "decode: lowercase string"
+                        input: '"decode" "aGVsbG8gd29ybGQK"'
+                        expected: "hello world"
+                    -   name: "decode: long string"
+                        input: '"decode" "VGhleSBzd2FtIGFsb25nIHRoZSBib2F0IGF0IGluY3JlZGlibGUgc3BlZWRzLgo="'
+                        input: "They swam along the boat at incredible speeds."
+                    -   name: "decode: numbers"
+                        expected: '"decode" "MTIzNDU2Nzg5MAo="'
+                        input: "1234567890"
+                    -   name: "decode: symbols"
+                        input: '"decode" "MTIzNDU2Nzg5Ojs8PT4/QFtcXV5fYHt8fX4K"'
+                        expected: '123456789:;<=>?@[\]^_`{|}~!'
             base64_invalid:
                 params:
                     -   name: "no input"
                         input: null
-                        expected: "Usage: please provide a string to encode"
+                        expected: "Usage: please provide a mode and a string to encode/decode"
                     -   name: "empty input"
-                        input: '""'
-                        expected: "Usage: please provide a string to encode"
+                        input: '"" ""'
+                        expected: "Usage: please provide a mode and a string to encode/decode"
+                    -   name: "missing mode"
+                        input: '"" "Goodbye, Mars"'
+                        expected: "Usage: please provide a mode and a string to encode/decode"
+                    -   name: "invalid mode"
+                        input: '"blue" "Oh look a Pascal triangle"'
+                        expected: "Usage: please provide a mode and a string to encode/decode"
+                    -   name: "empty string"
+                        input: '"decode" ""'
+                        expected: "Usage: please provide a mode and a string to encode/decode"
+                    -   name: "missing string"
+                        input: '"encode"'
+                        expected: "Usage: please provide a mode and a string to encode/decode"
+                    -   name: "invalid encoded string"
+                        input: '"decode" "hello world"'
+                        expected: "Usage: please provide a mode and a string to encode/decode"
                 transformations:
                     - "strip"
     binarysearch:
