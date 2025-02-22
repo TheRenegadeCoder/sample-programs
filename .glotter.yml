@@ -42,27 +42,27 @@ projects:
                 params:
                     -   name: "encode: lowercase string"
                         input: '"encode" "hello world"'
-                        expected: "aGVsbG8gd29ybGQK"
+                        expected: "aGVsbG8gd29ybGQ="
                     -   name: "encode: long string"
                         input: '"encode" "They swam along the boat at incredible speeds."'
-                        expected: "VGhleSBzd2FtIGFsb25nIHRoZSBib2F0IGF0IGluY3JlZGlibGUgc3BlZWRzLgo="
+                        expected: "VGhleSBzd2FtIGFsb25nIHRoZSBib2F0IGF0IGluY3JlZGlibGUgc3BlZWRzLg=="
                     -   name: "encode: numbers"
                         input: '"encode" "1234567890"'
-                        expected: "MTIzNDU2Nzg5MAo="
+                        expected: "MTIzNDU2Nzg5MA=="
                     -   name: "encode: symbols"
-                        input: '"encode" "123456789:;<=>?@[]^_`{|}~!""'
-                        expected: "MTIzNDU2Nzg5Ojs8PT4/QFtcXV5fYHt8fX4K"
+                        input: '"encode" "123456789:;<=>?@[]^_`{|}~!"'
+                        expected: "MTIzNDU2Nzg5Ojs8PT4/QFtdXl9ge3x9fiEi"
                     -   name: "decode: lowercase string"
-                        input: '"decode" "aGVsbG8gd29ybGQK"'
+                        input: '"decode" "aGVsbG8gd29ybGQ="'
                         expected: "hello world"
                     -   name: "decode: long string"
-                        input: '"decode" "VGhleSBzd2FtIGFsb25nIHRoZSBib2F0IGF0IGluY3JlZGlibGUgc3BlZWRzLgo="'
+                        input: '"decode" "VGhleSBzd2FtIGFsb25nIHRoZSBib2F0IGF0IGluY3JlZGlibGUgc3BlZWRzLg=="'
                         expected: "They swam along the boat at incredible speeds."
                     -   name: "decode: numbers"
-                        expected: '"decode" "MTIzNDU2Nzg5MAo="'
+                        expected: '"decode" "MTIzNDU2Nzg5MA=="'
                         input: "1234567890"
                     -   name: "decode: symbols"
-                        input: '"decode" "MTIzNDU2Nzg5Ojs8PT4/QFtcXV5fYHt8fX4K"'
+                        input: '"decode" "MTIzNDU2Nzg5Ojs8PT4/QFtdXl9ge3x9fiEi"'
                         expected: '123456789:;<=>?@[\]^_`{|}~!'
                 transformations:
                     - "strip"
