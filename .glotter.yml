@@ -57,7 +57,7 @@ projects:
                         expected: "hello world"
                     -   name: "decode: long string"
                         input: '"decode" "VGhleSBzd2FtIGFsb25nIHRoZSBib2F0IGF0IGluY3JlZGlibGUgc3BlZWRzLgo="'
-                        input: "They swam along the boat at incredible speeds."
+                        expected: "They swam along the boat at incredible speeds."
                     -   name: "decode: numbers"
                         expected: '"decode" "MTIzNDU2Nzg5MAo="'
                         input: "1234567890"
