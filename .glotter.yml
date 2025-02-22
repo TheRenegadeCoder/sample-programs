@@ -64,6 +64,8 @@ projects:
                     -   name: "decode: symbols"
                         input: '"decode" "MTIzNDU2Nzg5Ojs8PT4/QFtcXV5fYHt8fX4K"'
                         expected: '123456789:;<=>?@[\]^_`{|}~!'
+                transformations:
+                    - "strip"
             base64_invalid:
                 params:
                     -   name: "no input"
