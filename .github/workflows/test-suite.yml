@@ -7,6 +7,7 @@ on:
     branches: [ main ]
     paths:
       - 'archive/**'
+      - '.glotter.yml'
       - '.github/workflows/test-suite.yml'
       - 'scripts/run_tests.py'
       - '!**/*.md'
