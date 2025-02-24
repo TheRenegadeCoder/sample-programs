@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>f# 8.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="src/Merge.fs" />
+    <Compile Include="test/MergeTests.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Expecto" Version="12.8.403.0" />
+  </ItemGroup>
+</Project>
