@@ -67,7 +67,7 @@ For example, the "Hello World" sample would be named this:
 The following list shares details about what we're using to test all Sample Programs in Elena:
 
 - Docker Image: rzuckerm/elena
-- Docker Tag: 6.3.0-2
+- Docker Tag: 6.6.1-3
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 
