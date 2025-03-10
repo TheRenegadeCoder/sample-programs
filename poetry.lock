@@ -686,18 +686,18 @@ use-chardet-on-py3 = ["chardet (>=3.0.2,<6)"]
 
 [[package]]
 name = "ronbun"
-version = "0.8.0"
+version = "0.8.1"
 description = "The Sample Programs README Automation Tool"
 optional = false
-python-versions = ">=3.8,<4.0"
+python-versions = "<4.0,>=3.8"
 files = [
-    {file = "ronbun-0.8.0-py3-none-any.whl", hash = "sha256:f5819a0637c33d6e831e144c1e286a6e2bab18920b645ef94253af5fc725b537"},
-    {file = "ronbun-0.8.0.tar.gz", hash = "sha256:2167bc075eae641de0fba32bff583d981621dc2be45b58053613e9880408fd87"},
+    {file = "ronbun-0.8.1-py3-none-any.whl", hash = "sha256:2667d8c5ac090221d217989c2035172d6944b50a08f27520b417f0259025b958"},
+    {file = "ronbun-0.8.1.tar.gz", hash = "sha256:dbc8229a6ee0fe740b860ffe463714ae09db9d0b11e3dd5b19822e114d070b1f"},
 ]
 
 [package.dependencies]
 snakemd = ">=2.2.0,<3.0.0"
-subete = ">=0.18.0,<0.19.0"
+subete = ">=0.19.0,<0.20.0"
 
 [[package]]
 name = "smmap"
@@ -723,13 +723,13 @@ files = [
 
 [[package]]
 name = "subete"
-version = "0.18.1"
+version = "0.19.0"
 description = "The Sample Programs API in Python"
 optional = false
-python-versions = ">=3.7"
+python-versions = ">=3.8"
 files = [
-    {file = "subete-0.18.1-py3-none-any.whl", hash = "sha256:4f083a7c6f7d82a3d222cc9bc0bb5eccdf6be96b842df24dea44f01f988a70eb"},
-    {file = "subete-0.18.1.tar.gz", hash = "sha256:33384e912b539da67dcd0b62c29fa282d13a42cb7c2dc0e4959d3af9c444cc54"},
+    {file = "subete-0.19.0-py3-none-any.whl", hash = "sha256:a07953145e43642ee37563066d212d86b4b0f662d8e11d54ba00d87538c8cc56"},
+    {file = "subete-0.19.0.tar.gz", hash = "sha256:397cc90dcde8b10f9bafe7f64056e2ea2afa34e4489da7ac304937abd2001227"},
 ]
 
 [package.dependencies]
@@ -778,4 +778,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8"
-content-hash = "c5e03e0be51370f7976512daa1c13cb0aabb762bc232f2f7a21e0b7376ba33f6"
+content-hash = "82b1103ee4e704d05c2003431852761aad55a472caa7d1ed3567b50d209db0a4"
