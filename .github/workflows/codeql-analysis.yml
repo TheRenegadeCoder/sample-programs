@@ -132,7 +132,7 @@ jobs:
     - name: Run Poetry Image
       uses: abatilo/actions-poetry@v3
       with:
-        poetry-version: "1.8.5"
+        poetry-version: "2.1.1"
         
     - name: Install Dependencies
       run: poetry install
