@@ -9,6 +9,8 @@ on:
       - 'archive/**'
       - '.glotter.yml'
       - '.github/workflows/test-suite.yml'
+      - 'pyproject.toml'
+      - 'poetry.lock'
       - 'scripts/run_tests.py'
       - '!**/*.md'
   pull_request:
@@ -41,6 +43,8 @@ jobs:
           archive/**
           .glotter.yml
           .github/workflows/test-suite.yml
+          pyproject.toml
+          poetry.lock
           scripts/run_tests.py
         files_ignore: |
           **/*.md

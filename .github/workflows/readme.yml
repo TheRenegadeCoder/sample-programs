@@ -10,6 +10,8 @@ on:
       - 'archive/**'
       - '.glotter.yml'
       - '.github/workflows/readme.yml'
+      - 'pyproject.toml'
+      - 'poetry.lock'
 
 jobs:
   readme:
