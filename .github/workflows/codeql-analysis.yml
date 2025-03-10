@@ -17,6 +17,8 @@ on:
     paths:
       - '.github/workflows/codeql-analysis.yml'
       - 'scripts/*.py'
+      - 'pyproject.toml'
+      - 'poetry.lock'
       - 'archive/c/c/*.c'
       - 'archive/c/c-plus-plus/*.cpp'
       - 'archive/c/c-sharp/*.cs'
@@ -34,6 +36,8 @@ on:
     paths:
       - '.github/workflows/codeql-analysis.yml'
       - 'scripts/*.py'
+      - 'pyproject.toml'
+      - 'poetry.lock'
       - 'archive/c/c/*.c'
       - 'archive/c/c-plus-plus/*.cpp'
       - 'archive/c/c-sharp/*.cs'
