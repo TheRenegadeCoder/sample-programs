@@ -3,7 +3,7 @@ name = "sample-programs"
 version = "2025.03.10"
 description = "Sample Programs in Every Programming Language"
 readme = ".github/README.md"
-requires-python = ">=3.8,<4.0"
+requires-python = ">=3.9,<4.0"
 license = "MIT"
 
 dependencies = [
