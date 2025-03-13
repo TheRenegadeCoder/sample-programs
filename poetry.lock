@@ -279,24 +279,24 @@ test = ["coverage[toml]", "ddt (>=1.1.1,!=1.4.3)", "mock ; python_version < \"3.
 
 [[package]]
 name = "glotter2"
-version = "0.9.0"
+version = "0.10.0"
 description = "An execution library for scripts written in any language. This is a fork of https://github.com/auroq/glotter"
 optional = false
-python-versions = "<4.0,>=3.8"
+python-versions = "<4.0,>=3.9"
 groups = ["main"]
 files = [
-    {file = "glotter2-0.9.0-py3-none-any.whl", hash = "sha256:e13641e533d47d1cb01e1293b833f38770e12d1ecbf4a74cf205c1a20d507e38"},
-    {file = "glotter2-0.9.0.tar.gz", hash = "sha256:4540dcd67817270a104dc9058a3b5eaa3065947598b549233f490131dafbfaaa"},
+    {file = "glotter2-0.10.0-py3-none-any.whl", hash = "sha256:d19b3fa60ad7e85f66b4438deef5f55b39e465984dca7496b647b9af8dccaa27"},
+    {file = "glotter2-0.10.0.tar.gz", hash = "sha256:0774cef6a70fd0c4276019a34940eaafbfb9cc42e98c3d4c13d6314a5ca0d905"},
 ]
 
 [package.dependencies]
-black = ">=24.4.0,<25.0.0"
-docker = ">=7.1.0,<8.0.0"
-jinja2 = ">=3.1.2,<4.0.0"
-pydantic = ">=1.10.6,<2.0.0"
-pytest = ">=7.2.1,<8.0.0"
-pytest-xdist = ">=3.2.0,<4.0.0"
-pyyaml = ">=6.0,<7.0"
+black = ">=24.10.0,<25.0"
+docker = ">=7.1.0,<8.0"
+jinja2 = ">=3.1.2,<4.0"
+pydantic = ">=1.10.6,<2.0"
+pytest = ">=8.3.5,<9.0"
+pytest-xdist = ">=3.6.1,<4.0"
+pyyaml = ">6.0,<7.0"
 
 [[package]]
 name = "idna"
@@ -552,14 +552,14 @@ email = ["email-validator (>=1.0.3)"]
 
 [[package]]
 name = "pytest"
-version = "7.4.4"
+version = "8.3.5"
 description = "pytest: simple powerful testing with Python"
 optional = false
-python-versions = ">=3.7"
+python-versions = ">=3.8"
 groups = ["main"]
 files = [
-    {file = "pytest-7.4.4-py3-none-any.whl", hash = "sha256:b090cdf5ed60bf4c45261be03239c2c1c22df034fbffe691abe93cd80cea01d8"},
-    {file = "pytest-7.4.4.tar.gz", hash = "sha256:2cf0005922c6ace4a3e2ec8b4080eb0d9753fdc93107415332f50ce9e7994280"},
+    {file = "pytest-8.3.5-py3-none-any.whl", hash = "sha256:c69214aa47deac29fad6c2a4f590b9c4a9fdb16a403176fe154b79c0b4d4d820"},
+    {file = "pytest-8.3.5.tar.gz", hash = "sha256:f4efe70cc14e511565ac476b57c279e12a855b11f48f212af1080ef2263d3845"},
 ]
 
 [package.dependencies]
@@ -567,11 +567,11 @@ colorama = {version = "*", markers = "sys_platform == \"win32\""}
 exceptiongroup = {version = ">=1.0.0rc8", markers = "python_version < \"3.11\""}
 iniconfig = "*"
 packaging = "*"
-pluggy = ">=0.12,<2.0"
-tomli = {version = ">=1.0.0", markers = "python_version < \"3.11\""}
+pluggy = ">=1.5,<2"
+tomli = {version = ">=1", markers = "python_version < \"3.11\""}
 
 [package.extras]
-testing = ["argcomplete", "attrs (>=19.2.0)", "hypothesis (>=3.56)", "mock", "nose", "pygments (>=2.7.2)", "requests", "setuptools", "xmlschema"]
+dev = ["argcomplete", "attrs (>=19.2)", "hypothesis (>=3.56)", "mock", "pygments (>=2.7.2)", "requests", "setuptools", "xmlschema"]
 
 [[package]]
 name = "pytest-xdist"
@@ -838,4 +838,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.9,<4.0"
-content-hash = "961120fcfae31a688aba5ad2e74f60169c2f4d22bc3fb8b292f7d737eb4c4714"
+content-hash = "7061803b745649219820a002374d7ca7bd4557f4be416c58c4b34770a202f198"
