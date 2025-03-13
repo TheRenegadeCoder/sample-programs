@@ -8,7 +8,7 @@ license = "MIT"
 
 dependencies = [
     "ronbun (>=0.8.1,<0.9)",
-    "glotter2 (>=0.9,<0.10)"
+    "glotter2 (>=0.10,<0.11)"
 ]
 
 # Initiator of the collection
