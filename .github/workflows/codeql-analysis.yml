@@ -28,7 +28,6 @@ on:
       - 'archive/k/kotlin/*.kt'
       - 'archive/p/python/*.py'
       - 'archive/r/ruby/*.rb'
-      - 'archive/s/swift/*.swift'
       - 'archive/t/typescript/*.ts'
   pull_request:
     branches: 
@@ -47,7 +46,6 @@ on:
       - 'archive/k/kotlin/*.kt'
       - 'archive/p/python/*.py'
       - 'archive/r/ruby/*.rb'
-      - 'archive/s/swift/*.swift'
       - 'archive/t/typescript/*.ts'
   schedule:
     # Run every Thursday at 4:53 UTC (randomly chosen)
