@@ -13,7 +13,6 @@ TEST_INFO_DIR: Dict[str, str] = {
     "c#": "c-sharp",
     "java": "java",
     "kotlin": "kotlin",
-    "swift": "swift",
 }
 
 

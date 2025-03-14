@@ -28,7 +28,6 @@ on:
       - 'archive/k/kotlin/*.kt'
       - 'archive/p/python/*.py'
       - 'archive/r/ruby/*.rb'
-      - 'archive/s/swift/*.swift'
       - 'archive/t/typescript/*.ts'
   pull_request:
     branches: 
@@ -47,7 +46,6 @@ on:
       - 'archive/k/kotlin/*.kt'
       - 'archive/p/python/*.py'
       - 'archive/r/ruby/*.rb'
-      - 'archive/s/swift/*.swift'
       - 'archive/t/typescript/*.ts'
   schedule:
     # Run every Thursday at 4:53 UTC (randomly chosen)
@@ -132,7 +130,7 @@ jobs:
     - name: Run Poetry Image
       uses: abatilo/actions-poetry@v3
       with:
-        poetry-version: "1.8.5"
+        poetry-version: "2.1.1"
         
     - name: Install Dependencies
       run: poetry install
