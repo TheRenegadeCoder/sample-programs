@@ -66,8 +66,8 @@ For example, the "Hello World" sample would be named this:
 
 The following list shares details about what we're using to test all Sample Programs in Arkscript:
 
-- Docker Image: rzuckerm/arkscript
-- Docker Tag: 4.0.0-3
+- Docker Image: arkscript/stable
+- Docker Tag: sha-962de17
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 
