@@ -29,7 +29,6 @@ CODEQL_LANGUAGES: Dict[str, LanguageInfo] = {
     "archive/k/kotlin/*.kt": LanguageInfo(language="kotlin", build_mode="manual"),
     "archive/p/python/*.py": LanguageInfo(language="python"),
     "archive/r/ruby/*.rb": LanguageInfo(language="ruby"),
-    "archive/s/swift/*.swift": LanguageInfo(language="swift", build_mode="manual", os=MACOS),
     "archive/t/typescript/*.ts": LanguageInfo(language="typescript"),
 }
 ALL_CODEQL_LANGUAGES_FILES = {
