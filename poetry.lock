@@ -279,14 +279,14 @@ test = ["coverage[toml]", "ddt (>=1.1.1,!=1.4.3)", "mock ; python_version < \"3.
 
 [[package]]
 name = "glotter2"
-version = "0.10.0"
+version = "0.10.1"
 description = "An execution library for scripts written in any language. This is a fork of https://github.com/auroq/glotter"
 optional = false
 python-versions = "<4.0,>=3.9"
 groups = ["main"]
 files = [
-    {file = "glotter2-0.10.0-py3-none-any.whl", hash = "sha256:d19b3fa60ad7e85f66b4438deef5f55b39e465984dca7496b647b9af8dccaa27"},
-    {file = "glotter2-0.10.0.tar.gz", hash = "sha256:0774cef6a70fd0c4276019a34940eaafbfb9cc42e98c3d4c13d6314a5ca0d905"},
+    {file = "glotter2-0.10.1-py3-none-any.whl", hash = "sha256:c9e3e818b68ec558c2a971574a7910ae46e86d48e7251524e5cf1bf90d0126d3"},
+    {file = "glotter2-0.10.1.tar.gz", hash = "sha256:d9bd8ed341dceb77e4d995b9bcdbf8ded226916727d228bf8ad460d340f58900"},
 ]
 
 [package.dependencies]
@@ -838,4 +838,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.9,<4.0"
-content-hash = "7061803b745649219820a002374d7ca7bd4557f4be416c58c4b34770a202f198"
+content-hash = "d6a6e200756d0d22c9cfab7cc07bc4d3be78da8cc3bafe326682b4aa418a4030"
