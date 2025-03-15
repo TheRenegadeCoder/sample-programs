@@ -16,6 +16,7 @@ on:
     branches: [ main ]
     paths:
       - '.github/workflows/codeql-analysis.yml'
+      - 'repo-config.yml'
       - 'scripts/*.py'
       - 'pyproject.toml'
       - 'poetry.lock'
@@ -34,6 +35,7 @@ on:
       - 'main'
     paths:
       - '.github/workflows/codeql-analysis.yml'
+      - 'repo-config.yml'
       - 'scripts/*.py'
       - 'pyproject.toml'
       - 'poetry.lock'
@@ -59,7 +61,7 @@ jobs:
 
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
-      changed-files: ${{ steps.changed-files.outputs.all_changed_files }}
+      changed-files: ${{ steps.changed-files.outputs.files }}
     steps:
     - uses: actions/checkout@v4
       with:
@@ -67,12 +69,12 @@ jobs:
 
     - name: Get changed code files
       id: changed-files
-      uses: tj-actions/changed-files@v45
+      uses: yumemi-inc/changed-files@v3
 
     - name: List all relevant changed files
-      if: steps.changed-files.outputs.any_changed == 'true'
+      if: steps.changed-files.outputs.exists == 'true'
       env:
-        ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+        ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.files }}
       run: |
         for file in ${ALL_CHANGED_FILES}; do
           echo "$file was changed"
@@ -82,7 +84,7 @@ jobs:
     - name: Get CodeQL Languages
       id: set-matrix
       run: |
-        matrix=$(python scripts/get_codeql_languages.py --event ${{ github.event_name}} ${{ steps.changed-files.outputs.all_changed_files }})
+        matrix=$(python scripts/get_codeql_languages.py --event ${{ github.event_name}} ${{ steps.changed-files.outputs.files }})
         echo "${matrix}"
         echo "matrix={\"include\": ${matrix}}" >> $GITHUB_OUTPUT
 
@@ -122,15 +124,21 @@ jobs:
       if: ${{ github.event_name == 'pull_request' }}
       run: rm -f ${{ matrix.paths-ignore }}
 
+    - name: Read repo config
+      uses: pietrobolcato/action-read-yaml@1.1.0
+      id: repo-config
+      with:
+        config: repo-config.yml
+
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
-        python-version: "3.11"
+        python-version: "${{ steps.repo-config.outputs['python-version'] }}"
 
     - name: Run Poetry Image
       uses: abatilo/actions-poetry@v3
       with:
-        poetry-version: "2.1.1"
+        poetry-version: "${{ steps.repo-config.outputs['poetry-version'] }}"
         
     - name: Install Dependencies
       run: poetry install

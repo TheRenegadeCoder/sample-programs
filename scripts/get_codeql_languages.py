@@ -33,6 +33,7 @@ CODEQL_LANGUAGES: Dict[str, LanguageInfo] = {
 }
 ALL_CODEQL_LANGUAGES_FILES = {
     ".github/workflows/codeql-analysis.yml",
+    "repo-config.yml",
     "scripts/get_codeql_languages.py",
     "scripts/build_codeql_language.py",
     "pyproject.toml",
