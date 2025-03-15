@@ -72,7 +72,7 @@ jobs:
       uses: yumemi-inc/changed-files@v3
 
     - name: List all relevant changed files
-      if: steps.changed-files.outputs.files != ''
+      if: steps.changed-files.outputs.exists == 'true'
       env:
         ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.files }}
       run: |
