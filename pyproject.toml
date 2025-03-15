@@ -13,7 +13,7 @@ dependencies = [
 
 # Initiator of the collection
 authors = [
-    {name = "Jeremy Grifski", email = "jeremy.grifski@therenegadecoder.com>"}
+    {name = "Jeremy Grifski", email = "jeremy.grifski@therenegadecoder.com"}
 ]
 
 # Major contributors along the way
