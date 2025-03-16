@@ -708,19 +708,19 @@ use-chardet-on-py3 = ["chardet (>=3.0.2,<6)"]
 
 [[package]]
 name = "ronbun"
-version = "0.8.1"
+version = "0.9.0"
 description = "The Sample Programs README Automation Tool"
 optional = false
-python-versions = "<4.0,>=3.8"
+python-versions = "<4.0,>=3.9"
 groups = ["main"]
 files = [
-    {file = "ronbun-0.8.1-py3-none-any.whl", hash = "sha256:2667d8c5ac090221d217989c2035172d6944b50a08f27520b417f0259025b958"},
-    {file = "ronbun-0.8.1.tar.gz", hash = "sha256:dbc8229a6ee0fe740b860ffe463714ae09db9d0b11e3dd5b19822e114d070b1f"},
+    {file = "ronbun-0.9.0-py3-none-any.whl", hash = "sha256:822ddd43e0717a8620c054d2e05b952fbed80bb863841545ba70ffdd3a599cbf"},
+    {file = "ronbun-0.9.0.tar.gz", hash = "sha256:acfd26e37f1ca1a1d901987e56492d5ae9ce31b27f38f66e1839d58250b4da94"},
 ]
 
 [package.dependencies]
 snakemd = ">=2.2.0,<3.0.0"
-subete = ">=0.19.0,<0.20.0"
+subete = ">=0.20.0,<0.21.0"
 
 [[package]]
 name = "smmap"
@@ -748,19 +748,19 @@ files = [
 
 [[package]]
 name = "subete"
-version = "0.19.0"
+version = "0.20.0"
 description = "The Sample Programs API in Python"
 optional = false
-python-versions = ">=3.8"
+python-versions = "<4.0,>=3.9"
 groups = ["main"]
 files = [
-    {file = "subete-0.19.0-py3-none-any.whl", hash = "sha256:a07953145e43642ee37563066d212d86b4b0f662d8e11d54ba00d87538c8cc56"},
-    {file = "subete-0.19.0.tar.gz", hash = "sha256:397cc90dcde8b10f9bafe7f64056e2ea2afa34e4489da7ac304937abd2001227"},
+    {file = "subete-0.20.0-py3-none-any.whl", hash = "sha256:05c6351f0b7de5c400fc9cbc7f8e39b835fd8f5cb49f3b7063c235093919c9b8"},
+    {file = "subete-0.20.0.tar.gz", hash = "sha256:0745a62d67f9e1ef6057f099013dbce22532f9e97a67b825db199ceeac85eae5"},
 ]
 
 [package.dependencies]
-GitPython = ">=3,<4"
-PyYAML = ">=6,<7"
+gitpython = ">=3,<4"
+pyyaml = ">=6,<7"
 
 [[package]]
 name = "tomli"
@@ -838,4 +838,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.9,<4.0"
-content-hash = "d6a6e200756d0d22c9cfab7cc07bc4d3be78da8cc3bafe326682b4aa418a4030"
+content-hash = "c635f51c20ddff22b02366c66adaf986844134195fb660e32347cb48674194a1"
