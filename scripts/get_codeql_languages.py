@@ -3,8 +3,7 @@ import json
 from collections import defaultdict
 from dataclasses import dataclass
 from fnmatch import fnmatch
-from pathlib import Path
-from typing import DefaultDict, Dict, List, Set
+from typing import DefaultDict, Dict, Set
 
 LINUX = "ubuntu-latest"
 MACOS = "macos-latest"
@@ -62,9 +61,6 @@ def main():
                 if fnmatch(changed_path, glob):
                     languages.add(language_info)
                     language_paths[language_info.language].add(glob)
-                    language_paths_ignore[language_info.language].update(
-                        str(path) for path in Path(".").glob(glob) if str(path) != changed_path
-                    )
                     break
 
     workflow_output = [
@@ -73,7 +69,6 @@ def main():
             "build-mode": language_info.build_mode,
             "os": language_info.os,
             "paths": " ".join(sorted(language_paths[language_info.language])),
-            "paths-ignore": " ".join(sorted(language_paths_ignore[language_info.language])),
         }
         for language_info in sorted(languages, key=lambda x: x.language)
     ]
