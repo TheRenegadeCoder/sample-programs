@@ -10,7 +10,6 @@ from glotter.source import Source
 TEST_INFO_DIR: Dict[str, str] = {
     "c": "c",
     "cpp": "c-plus-plus",
-    "c#": "c-sharp",
     "java": "java",
     "kotlin": "kotlin",
 }

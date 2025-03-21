@@ -109,17 +109,6 @@ jobs:
       with:
         fetch-depth: 2
 
-    - name: Install Java 23
-      if: ${{ matrix.language == 'java' }}
-      uses: actions/setup-java@v4
-      with:
-        distribution: 'oracle'
-        java-version: '23'
-
-    # - name: Install C# compiler
-    #  if: ${{ matrix.language == 'c#' }}
-    #  run: sudo apt-get update && sudo apt-get install -y mono-mcs
-
     - name: Read repo config
       uses: pietrobolcato/action-read-yaml@1.1.0
       id: repo-config
