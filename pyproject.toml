@@ -1,33 +1,36 @@
-[tool.poetry]
+[project]
 name = "sample-programs"
-version = "2023.05.04"
+version = "2025.03.10"
 description = "Sample Programs in Every Programming Language"
-readme = "README.md"
+readme = ".github/README.md"
+requires-python = ">=3.9,<4.0"
 license = "MIT"
-package-mode = false
+
+dependencies = [
+    "ronbun (>=0.9.0,<0.10.0)",
+    "glotter2 (>=0.10.1,<0.11.0)"
+]
 
 # Initiator of the collection
 authors = [
-    "Jeremy Grifski <jeremy.grifski@therenegadecoder.com>"
+    {name = "Jeremy Grifski", email = "jeremy.grifski@therenegadecoder.com"}
 ]
 
 # Major contributors along the way
 maintainers = [
-    "auroq",
-    "rzuckerm",
-    "stuin",
-    "noah11012",
-    "heksterb",
-    "msj2",
-    "chrboe",
-    "2Clutch",
-    "alope107"
+    {name = "auroq"},
+    {name = "rzuckerm"},
+    {name = "stuin"},
+    {name = "noah11012"},
+    {name = "heksterb"},
+    {name = "msj2"},
+    {name = "chrboe"},
+    {name = "2Clutch"},
+    {name = "alope107"}
 ]
 
-[tool.poetry.dependencies]
-python = "^3.8"
-ronbun = "^0.8.0"
-glotter2 = "^0.9.0"
+[tool.poetry]
+package-mode = false
 
 [tool.pytest.ini_options]
 console_output_style = "count"

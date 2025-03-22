@@ -57,17 +57,17 @@ The following list contains all of the approved programs that are not currently 
 
 The following list shares details about how we name all Sample Programs in Ti Basic:
 
-- Extension: .bas
+- Extension: .8xp.txt
 - Naming Convention: hyphen
 
 For example, the "Hello World" sample would be named this:
 
-- hello-world.bas
+- hello-world.8xp.txt
 
 The following list shares details about what we're using to test all Sample Programs in Ti Basic:
 
 - Docker Image: rzuckerm/ti-basic
-- Docker Tag: 2025.02.03-7
+- Docker Tag: 2025.03.08.2-10
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 
