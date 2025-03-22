@@ -3,7 +3,10 @@ folder:
   naming: "pascal"
 
 container:
-  image: "mono"
-  tag: "5.18"  # Cannot use slim because it does not contain mcs for compilation
-  build: "mcs -reference:System.Numerics {{ source.name}}{{ source.extension }}"
-  cmd: "mono {{ source.name }}.exe"
+  image: "mcr.microsoft.com/dotnet/sdk"
+  tag: "9.0"
+  build: |
+    bash -c "dotnet new console --language 'C#' && \
+      mv {{ source.name }}{{ source.extension }} Program.cs && \
+      dotnet build --sc"
+  cmd: "dotnet run --sc --no-restore"
