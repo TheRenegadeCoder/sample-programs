@@ -35,6 +35,15 @@ ALL_CODEQL_LANGUAGES_FILES = {
     "repo-config.yml",
     "scripts/get_codeql_languages.py",
     "scripts/build_codeql_language.py",
+    "archive/c/c/testinfo.yml",
+    "archive/c/c-plus-plus/testinfo.yml",
+    "archive/c/c-sharp/testinfo.yml",
+    "archive/g/go/testinfo.yml",
+    "archive/j/java/testinfo.yml",
+    "archive/j/javascript/testinfo.yml",
+    "archive/k/kotlin/testinfo.yml",
+    "archive/r/ruby/testinfo.yml",
+    "archive/t/typescript/testinfo.yml",
     "pyproject.toml",
     "poetry.lock",
 }
@@ -47,7 +56,6 @@ def main():
     parsed_args = parser.parse_args()
     languages: Set[LanguageInfo] = set()
     language_paths: DefaultDict[str, Set[str]] = defaultdict(set)
-    language_paths_ignore: DefaultDict[str, Set[str]] = defaultdict(set)
     if (
         parsed_args.event == "schedule"
         or set(parsed_args.files_changed) & ALL_CODEQL_LANGUAGES_FILES
