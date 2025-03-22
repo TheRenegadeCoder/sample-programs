@@ -3,6 +3,7 @@ import json
 from collections import defaultdict
 from dataclasses import dataclass
 from fnmatch import fnmatch
+from pathlib import Path
 from typing import DefaultDict, Dict, Set
 
 LINUX = "ubuntu-latest"
@@ -35,15 +36,6 @@ ALL_CODEQL_LANGUAGES_FILES = {
     "repo-config.yml",
     "scripts/get_codeql_languages.py",
     "scripts/build_codeql_language.py",
-    "archive/c/c/testinfo.yml",
-    "archive/c/c-plus-plus/testinfo.yml",
-    "archive/c/c-sharp/testinfo.yml",
-    "archive/g/go/testinfo.yml",
-    "archive/j/java/testinfo.yml",
-    "archive/j/javascript/testinfo.yml",
-    "archive/k/kotlin/testinfo.yml",
-    "archive/r/ruby/testinfo.yml",
-    "archive/t/typescript/testinfo.yml",
     "pyproject.toml",
     "poetry.lock",
 }
@@ -66,7 +58,8 @@ def main():
     else:
         for changed_path in parsed_args.files_changed:
             for glob, language_info in CODEQL_LANGUAGES.items():
-                if fnmatch(changed_path, glob):
+                testinfo_path = str(Path(glob).parent / "testinfo.yml")
+                if fnmatch(changed_path, glob) or changed_path == testinfo_path:
                     languages.add(language_info)
                     language_paths[language_info.language].add(glob)
                     break
