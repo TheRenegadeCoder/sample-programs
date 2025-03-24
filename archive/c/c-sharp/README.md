@@ -66,8 +66,8 @@ For example, the "Hello World" sample would be named this:
 
 The following list shares details about what we're using to test all Sample Programs in C#:
 
-- Docker Image: mono
-- Docker Tag: 5.18
+- Docker Image: mcr.microsoft.com/dotnet/sdk
+- Docker Tag: 9.0
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 
