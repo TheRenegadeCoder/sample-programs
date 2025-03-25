@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Java! To find documentation related to the Java code in this repo, look [here.](https://sampleprograms.io/languages/java)
 
-## Sample Programs List - 26/37 :relaxed:
+## Sample Programs List - 26/38 :relaxed:
 
 In this section, we feature a list of completed and missing programs in Java. See above for the current amount of completed programs in Java. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -41,6 +41,7 @@ Below, you'll find a list of completed code snippets in Java. Code snippets prec
 
 The following list contains all of the approved programs that are not currently implemented in Java. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
+- :x: [Base64 Encode Decode](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,base64+encode+decode&template=code-snippet-request.md&title=Add+Base64+Encode+Decode+in+Java) [[Requirements](https://sampleprograms.io/projects/base64-encode-decode)]
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,dijkstra&template=code-snippet-request.md&title=Add+Dijkstra+in+Java) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fraction+math&template=code-snippet-request.md&title=Add+Fraction+Math+in+Java) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,josephus+problem&template=code-snippet-request.md&title=Add+Josephus+Problem+in+Java) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]

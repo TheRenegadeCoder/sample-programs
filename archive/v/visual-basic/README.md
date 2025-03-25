@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Visual Basic! To find documentation related to the Visual Basic code in this repo, look [here.](https://sampleprograms.io/languages/visual-basic)
 
-## Sample Programs List - 6/37 :disappointed:
+## Sample Programs List - 6/38 :disappointed:
 
 In this section, we feature a list of completed and missing programs in Visual Basic. See above for the current amount of completed programs in Visual Basic. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -21,6 +21,7 @@ Below, you'll find a list of completed code snippets in Visual Basic. Code snipp
 
 The following list contains all of the approved programs that are not currently implemented in Visual Basic. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
+- :x: [Base64 Encode Decode](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,base64+encode+decode&template=code-snippet-request.md&title=Add+Base64+Encode+Decode+in+Visual%20Basic) [[Requirements](https://sampleprograms.io/projects/base64-encode-decode)]
 - :x: [Binary Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,binary+search&template=code-snippet-request.md&title=Add+Binary+Search+in+Visual%20Basic) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :x: [Capitalize](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,capitalize&template=code-snippet-request.md&title=Add+Capitalize+in+Visual%20Basic) [[Requirements](https://sampleprograms.io/projects/capitalize)]
 - :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,convex+hull&template=code-snippet-request.md&title=Add+Convex+Hull+in+Visual%20Basic) [[Requirements](https://sampleprograms.io/projects/convex-hull)]

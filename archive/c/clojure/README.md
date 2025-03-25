@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Clojure! To find documentation related to the Clojure code in this repo, look [here.](https://sampleprograms.io/languages/clojure)
 
-## Sample Programs List - 6/37 :disappointed:
+## Sample Programs List - 6/38 :disappointed:
 
 In this section, we feature a list of completed and missing programs in Clojure. See above for the current amount of completed programs in Clojure. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -21,6 +21,7 @@ Below, you'll find a list of completed code snippets in Clojure. Code snippets p
 
 The following list contains all of the approved programs that are not currently implemented in Clojure. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
+- :x: [Base64 Encode Decode](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,base64+encode+decode&template=code-snippet-request.md&title=Add+Base64+Encode+Decode+in+Clojure) [[Requirements](https://sampleprograms.io/projects/base64-encode-decode)]
 - :x: [Binary Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,binary+search&template=code-snippet-request.md&title=Add+Binary+Search+in+Clojure) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,convex+hull&template=code-snippet-request.md&title=Add+Convex+Hull+in+Clojure) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :x: [Depth First Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,depth+first+search&template=code-snippet-request.md&title=Add+Depth+First+Search+in+Clojure) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
