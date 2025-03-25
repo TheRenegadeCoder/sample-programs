@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Julia! To find documentation related to the Julia code in this repo, look [here.](https://sampleprograms.io/languages/julia)
 
-## Sample Programs List - 15/37 :thinking:
+## Sample Programs List - 15/38 :thinking:
 
 In this section, we feature a list of completed and missing programs in Julia. See above for the current amount of completed programs in Julia. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -30,6 +30,7 @@ Below, you'll find a list of completed code snippets in Julia. Code snippets pre
 
 The following list contains all of the approved programs that are not currently implemented in Julia. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
+- :x: [Base64 Encode Decode](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,base64+encode+decode&template=code-snippet-request.md&title=Add+Base64+Encode+Decode+in+Julia) [[Requirements](https://sampleprograms.io/projects/base64-encode-decode)]
 - :x: [Binary Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,binary+search&template=code-snippet-request.md&title=Add+Binary+Search+in+Julia) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,convex+hull&template=code-snippet-request.md&title=Add+Convex+Hull+in+Julia) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :x: [Depth First Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,depth+first+search&template=code-snippet-request.md&title=Add+Depth+First+Search+in+Julia) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
