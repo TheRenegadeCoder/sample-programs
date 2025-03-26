@@ -72,7 +72,7 @@ projects:
                         expected: "1234567890"
                     -   name: "symbols"
                         input: '"decode" "eHl6ISMkJSYoKSorLC0uLzo7PD0+P0BbXF1eX2B7fH1+"'
-                        expected: "xyz!#$%&()*+,-./:;<=>?@[\\]^_`{|}~"
+                        expected: "xyz!#$%&()*+,-./:;<=>?@[\\\\]^_`{|}~"
                     -   name: "all base64 characters"
                         input: '"decode" "ISAgfWdnZ0lJVDU1O3FxcyEhR2pqYj8/PX5+MiQkKzs7aTo6eC4uNGtrLHBwbm9v"'
                         expected: "!  }gggIIT55;qqs!!Gjjb??=~~2$$+;;i::x..4kk,ppnoo"
