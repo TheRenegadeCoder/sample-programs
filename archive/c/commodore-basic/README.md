@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Commodore Basic! To find documentation related to the Commodore Basic code in this repo, look [here.](https://sampleprograms.io/languages/commodore-basic)
 
-## Sample Programs List - 37/37 :partying_face:
+## Sample Programs List - 37/38 :smile:
 
 In this section, we feature a list of completed and missing programs in Commodore Basic. See above for the current amount of completed programs in Commodore Basic. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -47,6 +47,12 @@ Below, you'll find a list of completed code snippets in Commodore Basic. Code sn
 - :warning: [Selection Sort in Commodore Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+commodore+basic) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 - :warning: [Sleep Sort in Commodore Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sleep+sort+commodore+basic) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :warning: [Transpose Matrix in Commodore Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+commodore+basic) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
+
+### Missing Programs
+
+The following list contains all of the approved programs that are not currently implemented in Commodore Basic. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
+
+- :x: [Base64 Encode Decode](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,base64+encode+decode&template=code-snippet-request.md&title=Add+Base64+Encode+Decode+in+Commodore%20Basic) [[Requirements](https://sampleprograms.io/projects/base64-encode-decode)]
 
 ## Testing
 

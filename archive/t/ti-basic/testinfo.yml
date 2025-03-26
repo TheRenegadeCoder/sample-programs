@@ -1,8 +1,8 @@
 folder:
-  extension: ".bas"
+  extension: ".8xp.txt"
   naming: "hyphen"
 
 container:
   image: "rzuckerm/ti-basic"
-  tag: "2025.02.03-7"
+  tag: "2025.03.08.2-10"
   cmd: "ti-basic {{ source.name }}{{ source.extension }}"

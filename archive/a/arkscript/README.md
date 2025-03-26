@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Arkscript! To find documentation related to the Arkscript code in this repo, look [here.](https://sampleprograms.io/languages/arkscript)
 
-## Sample Programs List - 3/37 :disappointed:
+## Sample Programs List - 3/38 :disappointed:
 
 In this section, we feature a list of completed and missing programs in Arkscript. See above for the current amount of completed programs in Arkscript. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -18,6 +18,7 @@ Below, you'll find a list of completed code snippets in Arkscript. Code snippets
 
 The following list contains all of the approved programs that are not currently implemented in Arkscript. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
+- :x: [Base64 Encode Decode](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,base64+encode+decode&template=code-snippet-request.md&title=Add+Base64+Encode+Decode+in+Arkscript) [[Requirements](https://sampleprograms.io/projects/base64-encode-decode)]
 - :x: [Binary Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,binary+search&template=code-snippet-request.md&title=Add+Binary+Search+in+Arkscript) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :x: [Bubble Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,bubble+sort&template=code-snippet-request.md&title=Add+Bubble+Sort+in+Arkscript) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :x: [Capitalize](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,capitalize&template=code-snippet-request.md&title=Add+Capitalize+in+Arkscript) [[Requirements](https://sampleprograms.io/projects/capitalize)]
@@ -66,8 +67,8 @@ For example, the "Hello World" sample would be named this:
 
 The following list shares details about what we're using to test all Sample Programs in Arkscript:
 
-- Docker Image: rzuckerm/arkscript
-- Docker Tag: 4.0.0-3
+- Docker Image: arkscript/stable
+- Docker Tag: sha-962de17
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 

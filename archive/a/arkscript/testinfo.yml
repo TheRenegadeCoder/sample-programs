@@ -3,6 +3,6 @@ folder:
   naming: "hyphen"
 
 container:
-  image: "rzuckerm/arkscript"
-  tag: "4.0.0-3"
+  image: "arkscript/stable"
+  tag: "sha-962de17"
   cmd: "arkscript {{ source.name }}{{ source.extension }}"

@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Beef! To find documentation related to the Beef code in this repo, look [here.](https://sampleprograms.io/languages/beef)
 
-## Sample Programs List - 37/37 :partying_face:
+## Sample Programs List - 37/38 :smile:
 
 In this section, we feature a list of completed and missing programs in Beef. See above for the current amount of completed programs in Beef. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -47,6 +47,12 @@ Below, you'll find a list of completed code snippets in Beef. Code snippets prec
 - :warning: [Selection Sort in Beef](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+beef) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 - :warning: [Sleep Sort in Beef](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sleep+sort+beef) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :warning: [Transpose Matrix in Beef](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+beef) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
+
+### Missing Programs
+
+The following list contains all of the approved programs that are not currently implemented in Beef. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
+
+- :x: [Base64 Encode Decode](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,base64+encode+decode&template=code-snippet-request.md&title=Add+Base64+Encode+Decode+in+Beef) [[Requirements](https://sampleprograms.io/projects/base64-encode-decode)]
 
 ## Testing
 
