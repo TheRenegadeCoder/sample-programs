@@ -8,32 +8,35 @@ on:
       - 'main'
     paths:
       - 'archive/**'
+      - '.glotter.yml'
+      - 'repo-config.yml'
       - '.github/workflows/readme.yml'
+      - 'pyproject.toml'
+      - 'poetry.lock'
 
 jobs:
   readme:
     name: "README Generation"
 
-    strategy:
-      fail-fast: true
-      matrix:
-        python-version: ["3.11"]
-        poetry-version: ["1.8.5"]
-        os: [ubuntu-latest]
-
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    
+
+    - name: Read repo config
+      uses: pietrobolcato/action-read-yaml@1.1.0
+      id: repo-config
+      with:
+        config: repo-config.yml
+
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
-        python-version: ${{ matrix.python-version }}
+        python-version: "${{ steps.repo-config.outputs['python-version'] }}"
 
     - name: Run Poetry Image
       uses: abatilo/actions-poetry@v3
       with:
-        poetry-version: ${{ matrix.poetry-version }}
+        poetry-version: "${{ steps.repo-config.outputs['poetry-version'] }}"
         
     - name: Install Dependencies
       run: poetry install

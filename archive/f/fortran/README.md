@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Fortran! To find documentation related to the Fortran code in this repo, look [here.](https://sampleprograms.io/languages/fortran)
 
-## Sample Programs List - 8/37 :disappointed:
+## Sample Programs List - 9/38 :disappointed:
 
 In this section, we feature a list of completed and missing programs in Fortran. See above for the current amount of completed programs in Fortran. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -14,6 +14,7 @@ Below, you'll find a list of completed code snippets in Fortran. Code snippets p
 - :warning: [Capitalize in Fortran](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+fortran) [[Requirements](https://sampleprograms.io/projects/capitalize)]
 - :warning: [Even Odd in Fortran](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+fortran) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :warning: [Factorial in Fortran](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+fortran) [[Requirements](https://sampleprograms.io/projects/factorial)]
+- :warning: [Fibonacci in Fortran](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+fortran) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :warning: [Fizz Buzz in Fortran](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+fortran) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :warning: [Hello World in Fortran](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+fortran) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :warning: [Prime Number in Fortran](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+fortran) [[Requirements](https://sampleprograms.io/projects/prime-number)]
@@ -23,13 +24,13 @@ Below, you'll find a list of completed code snippets in Fortran. Code snippets p
 
 The following list contains all of the approved programs that are not currently implemented in Fortran. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
+- :x: [Base64 Encode Decode](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,base64+encode+decode&template=code-snippet-request.md&title=Add+Base64+Encode+Decode+in+Fortran) [[Requirements](https://sampleprograms.io/projects/base64-encode-decode)]
 - :x: [Binary Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,binary+search&template=code-snippet-request.md&title=Add+Binary+Search+in+Fortran) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :x: [Bubble Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,bubble+sort&template=code-snippet-request.md&title=Add+Bubble+Sort+in+Fortran) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,convex+hull&template=code-snippet-request.md&title=Add+Convex+Hull+in+Fortran) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :x: [Depth First Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,depth+first+search&template=code-snippet-request.md&title=Add+Depth+First+Search+in+Fortran) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,dijkstra&template=code-snippet-request.md&title=Add+Dijkstra+in+Fortran) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :x: [Duplicate Character Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,duplicate+character+counter&template=code-snippet-request.md&title=Add+Duplicate+Character+Counter+in+Fortran) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
-- :x: [Fibonacci](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fibonacci&template=code-snippet-request.md&title=Add+Fibonacci+in+Fortran) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :x: [File Input Output](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,file+input+output&template=code-snippet-request.md&title=Add+File+Input+Output+in+Fortran) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fraction+math&template=code-snippet-request.md&title=Add+Fraction+Math+in+Fortran) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :x: [Insertion Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,insertion+sort&template=code-snippet-request.md&title=Add+Insertion+Sort+in+Fortran) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
