@@ -33,6 +33,93 @@ projects:
                         - "          *"
                 transformations:
                     - "splitlines"
+    base64_encode_decode:
+        words:
+            - "base64"
+            - "encode"
+            - "decode"
+        requires_parameters: true
+        tests:
+            base64_encode_valid:
+                params:
+                    -   name: "lowercase string"
+                        input: '"encode" "hello world"'
+                        expected: "aGVsbG8gd29ybGQ="
+                    -   name: "long string"
+                        input: '"encode" "They swam along the boat at incredible speeds."'
+                        expected: "VGhleSBzd2FtIGFsb25nIHRoZSBib2F0IGF0IGluY3JlZGlibGUgc3BlZWRzLg=="
+                    -   name: "numbers"
+                        input: '"encode" "1234567890"'
+                        expected: "MTIzNDU2Nzg5MA=="
+                    -   name: "symbols"
+                        input: '"encode" "xyz!#$%&()*+,-./:;<=>?@[\\]^_`{|}~"'
+                        expected: "eHl6ISMkJSYoKSorLC0uLzo7PD0+P0BbXF1eX2B7fH1+"
+                    -   name: "all base64 characters"
+                        input: '"encode" "!  }gggIIT55;qqs!!Gjjb??=~~2$$+;;i::x..4kk,ppnoo"'
+                        expected: "ISAgfWdnZ0lJVDU1O3FxcyEhR2pqYj8/PX5+MiQkKzs7aTo6eC4uNGtrLHBwbm9v"
+                transformations:
+                    - "strip"
+            base64_decode_valid:
+                params:
+                    -   name: "lowercase string"
+                        input: '"decode" "aGVsbG8gd29ybGQ="'
+                        expected: "hello world"
+                    -   name: "long string"
+                        input: '"decode" "VGhleSBzd2FtIGFsb25nIHRoZSBib2F0IGF0IGluY3JlZGlibGUgc3BlZWRzLg=="'
+                        expected: "They swam along the boat at incredible speeds."
+                    -   name: "numbers"
+                        input: '"decode" "MTIzNDU2Nzg5MA=="'
+                        expected: "1234567890"
+                    -   name: "symbols"
+                        input: '"decode" "eHl6ISMkJSYoKSorLC0uLzo7PD0+P0BbXF1eX2B7fH1+"'
+                        expected: "xyz!#$%&()*+,-./:;<=>?@[\\]^_`{|}~"
+                    -   name: "all base64 characters"
+                        input: '"decode" "ISAgfWdnZ0lJVDU1O3FxcyEhR2pqYj8/PX5+MiQkKzs7aTo6eC4uNGtrLHBwbm9v"'
+                        expected: "!  }gggIIT55;qqs!!Gjjb??=~~2$$+;;i::x..4kk,ppnoo"
+                transformations:
+                    - "strip"
+            base64_invalid_inputs:
+                params:
+                    -   name: "no input"
+                        input: null
+                        expected: "Usage: please provide a mode and a string to encode/decode"
+                    -   name: "invalid mode"
+                        input: '"blue" "Oh look a Pascal triangle"'
+                        expected: "Usage: please provide a mode and a string to encode/decode"
+                transformations:
+                    - "strip"
+            base64_invalid_encode:
+                params:
+                    -   name: "missing string"
+                        input: '"encode"'
+                        expected: "Usage: please provide a mode and a string to encode/decode"
+                    -   name: "empty string"
+                        input: '"encode" ""'
+                        expected: "Usage: please provide a mode and a string to encode/decode"
+                transformations:
+                    - "strip"
+            base64_invalid_decode:
+                params:
+                    -   name: "missing string"
+                        input: '"decode"'
+                        expected: "Usage: please provide a mode and a string to encode/decode"
+                    -   name: "empty string"
+                        input: '"decode" ""'
+                        expected: "Usage: please provide a mode and a string to encode/decode"
+                    -   name: "length number not multiple of 4"
+                        input: '"decode" "hello+world"'
+                        expected: "Usage: please provide a mode and a string to encode/decode"
+                    -   name: "invalid characters"
+                        input: '"decode" "hello world="'
+                        expected: "Usage: please provide a mode and a string to encode/decode"
+                    -   name: "too many pad characters at end"
+                        input: '"decode" "MTIzNDU2Nzg5M==="'
+                        expected: "Usage: please provide a mode and a string to encode/decode"
+                    -   name: "pad characters in middle"
+                        input: '"decode" "MTIzNDU2=Nzg5M=="'
+                        expected: "Usage: please provide a mode and a string to encode/decode"
+                transformations:
+                    - "strip"
     binarysearch:
         words:
             - "binary"

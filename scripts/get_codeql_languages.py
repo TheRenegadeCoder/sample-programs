@@ -4,7 +4,7 @@ from collections import defaultdict
 from dataclasses import dataclass
 from fnmatch import fnmatch
 from pathlib import Path
-from typing import DefaultDict, Dict, List, Set
+from typing import DefaultDict, Dict, Set
 
 LINUX = "ubuntu-latest"
 MACOS = "macos-latest"
@@ -22,20 +22,22 @@ CODEQL_LANGUAGES: Dict[str, LanguageInfo] = {
     "scripts/*.py": LanguageInfo(language="python"),
     "archive/c/c/*.c": LanguageInfo(language="c", build_mode="manual"),
     "archive/c/c-plus-plus/*.cpp": LanguageInfo(language="cpp", build_mode="manual"),
-    "archive/c/c-sharp/*.cs": LanguageInfo(language="c#", build_mode="manual"),
+    "archive/c/c-sharp/*.cs": LanguageInfo(language="c#"),
     "archive/g/go/*.go": LanguageInfo(language="go", build_mode="autobuild"),
     "archive/j/java/*.java": LanguageInfo(language="java", build_mode="manual"),
     "archive/j/javascript/*.js": LanguageInfo(language="javascript"),
     "archive/k/kotlin/*.kt": LanguageInfo(language="kotlin", build_mode="manual"),
     "archive/p/python/*.py": LanguageInfo(language="python"),
     "archive/r/ruby/*.rb": LanguageInfo(language="ruby"),
-    "archive/s/swift/*.swift": LanguageInfo(language="swift", build_mode="manual", os=MACOS),
     "archive/t/typescript/*.ts": LanguageInfo(language="typescript"),
 }
 ALL_CODEQL_LANGUAGES_FILES = {
     ".github/workflows/codeql-analysis.yml",
+    "repo-config.yml",
     "scripts/get_codeql_languages.py",
     "scripts/build_codeql_language.py",
+    "pyproject.toml",
+    "poetry.lock",
 }
 
 
@@ -46,7 +48,6 @@ def main():
     parsed_args = parser.parse_args()
     languages: Set[LanguageInfo] = set()
     language_paths: DefaultDict[str, Set[str]] = defaultdict(set)
-    language_paths_ignore: DefaultDict[str, Set[str]] = defaultdict(set)
     if (
         parsed_args.event == "schedule"
         or set(parsed_args.files_changed) & ALL_CODEQL_LANGUAGES_FILES
@@ -57,12 +58,10 @@ def main():
     else:
         for changed_path in parsed_args.files_changed:
             for glob, language_info in CODEQL_LANGUAGES.items():
-                if fnmatch(changed_path, glob):
+                testinfo_path = str(Path(glob).parent / "testinfo.yml")
+                if fnmatch(changed_path, glob) or changed_path == testinfo_path:
                     languages.add(language_info)
                     language_paths[language_info.language].add(glob)
-                    language_paths_ignore[language_info.language].update(
-                        str(path) for path in Path(".").glob(glob) if str(path) != changed_path
-                    )
                     break
 
     workflow_output = [
@@ -71,7 +70,6 @@ def main():
             "build-mode": language_info.build_mode,
             "os": language_info.os,
             "paths": " ".join(sorted(language_paths[language_info.language])),
-            "paths-ignore": " ".join(sorted(language_paths_ignore[language_info.language])),
         }
         for language_info in sorted(languages, key=lambda x: x.language)
     ]

@@ -7,7 +7,11 @@ on:
     branches: [ main ]
     paths:
       - 'archive/**'
+      - '.glotter.yml'
+      - 'repo-config.yml'
       - '.github/workflows/test-suite.yml'
+      - 'pyproject.toml'
+      - 'poetry.lock'
       - 'scripts/run_tests.py'
       - '!**/*.md'
   pull_request:
@@ -25,8 +29,8 @@ jobs:
     runs-on: ubuntu-latest
 
     outputs:
-      status: ${{ steps.changed-files.outputs.any_changed }}
-      changed_files: ${{ steps.changed-files.outputs.all_changed_files }}
+      status: ${{ steps.changed-files.outputs.exists }}
+      changed_files: ${{ steps.changed-files.outputs.files }}
     steps:
     - uses: actions/checkout@v4
       with:
@@ -34,19 +38,22 @@ jobs:
 
     - name: Get changed code files
       id: changed-files
-      uses: tj-actions/changed-files@v45
+      uses: yumemi-inc/changed-files@v3
       with:
-        files: |
+        patterns: |
           archive/**
+          .glotter.yml
+          repo-config.yml
           .github/workflows/test-suite.yml
+          pyproject.toml
+          poetry.lock
           scripts/run_tests.py
-        files_ignore: |
-          **/*.md
+          !**/*.md
 
     - name: List all relevant changed files
-      if: steps.changed-files.outputs.any_changed == 'true'
+      if: steps.changed-files.outputs.exists == 'true'
       env:
-        ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+        ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.files }}
       run: |
         for file in ${ALL_CHANGED_FILES}; do
           echo "$file was changed"
@@ -58,29 +65,27 @@ jobs:
     needs: changed-files
     if: needs.changed-files.outputs.status == 'true' || ${{ github.event_name == 'schedule' }}
 
-    strategy:
-      fail-fast: true
-      matrix:
-        python-version: ["3.11"]
-        poetry-version: ["1.8.5"]
-        os: [ubuntu-latest]
-        num_batches: [6]
-
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
       with:
         fetch-depth: 2
 
+    - name: Read repo config
+      uses: pietrobolcato/action-read-yaml@1.1.0
+      id: repo-config
+      with:
+        config: repo-config.yml
+  
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
-        python-version: ${{ matrix.python-version }}
+        python-version: "${{ steps.repo-config.outputs['python-version'] }}"
 
     - name: Run Poetry Image
       uses: abatilo/actions-poetry@v3
       with:
-        poetry-version: ${{ matrix.poetry-version }}
+        poetry-version: "${{ steps.repo-config.outputs['poetry-version'] }}"
 
     - name: Install Dependencies
       run: poetry install
@@ -91,7 +96,7 @@ jobs:
     - name: Download Docker images, Test Appropriate Sample Programs, Remove Docker Images
       run: poetry run python scripts/run_tests.py
         --event ${{ github.event_name }}
-        --num-batches ${{ matrix.num_batches }}
+        --num-batches ${{ steps.repo-config.outputs['num-batches'] }}
         --parallel
         --remove
         ${{ needs.changed-files.outputs.changed_files }}
