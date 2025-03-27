@@ -52,7 +52,7 @@ projects:
                         input: '"encode" "1234567890"'
                         expected: "MTIzNDU2Nzg5MA=="
                     -   name: "symbols"
-                        input: '"encode" "xyz!#$%&()*+,-./:;<=>?@[\\]^_`{|}~"'
+                        input: '"encode" "xyz!#$%&()*+,-./:;<=>?@[\\\\]^_`{|}~"'
                         expected: "eHl6ISMkJSYoKSorLC0uLzo7PD0+P0BbXF1eX2B7fH1+"
                     -   name: "all base64 characters"
                         input: '"encode" "!  }gggIIT55;qqs!!Gjjb??=~~2$$+;;i::x..4kk,ppnoo"'
