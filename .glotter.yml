@@ -33,7 +33,7 @@ projects:
                         - "          *"
                 transformations:
                     - "splitlines"
-    base64_encode_decode:
+    base64encodedecode:
         words:
             - "base64"
             - "encode"
