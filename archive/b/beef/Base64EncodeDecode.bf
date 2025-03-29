@@ -16,7 +16,8 @@ class Program
     {
         int len = str.Length;
         result.Clear();
-        result.Reserve(4 * (len + 2) / 3);
+        int numChunks = (len + 2) / 3;
+        result.Reserve(4 * numChunks);
         for (int n = 0; n < len; n += 3)
         {
             int n1 = (int)str[n];
@@ -38,7 +39,8 @@ class Program
         bool valid = len % 4 == 0 && padCount <= 2;
         if (valid)
         {
-            result.Reserve(3 * len / 4);
+            int numChunks = len / 4;
+            result.Reserve(3 * numChunks);
             len -= padCount;
             for (int n = 0; n < len && valid; n += 4)
             {
