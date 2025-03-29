@@ -40,7 +40,12 @@ pub fn main() !void {
         try stdout.writeAll(buffer);
         _ = try stdout.write("\n");
     } else if (std.mem.eql(u8, mode, "decode")) {
-        const buffer = try allocator.alloc(u8, try decoder.calcSizeForSlice(src));
+        errdefer {
+            die() catch unreachable;
+        }
+        const buflen = try decoder.calcSizeForSlice(src);
+
+        const buffer = try allocator.alloc(u8, buflen);
         defer allocator.free(buffer);
 
         decoder.decode(buffer, src) catch {
