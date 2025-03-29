@@ -9,20 +9,17 @@ PROC base64 encode = (STRING s) STRING:
 (
     STRING result := "";
     INT s len = UPB s;
-    BITS n1, n2, n3;
+    BITS n1, n2, n3, u;
     FOR n BY 3 TO s len
     DO
         n1 := BIN ABS s[n];
         n2 := BIN (n + 1 <= s len | ABS s[n + 1] | 0);
         n3 := BIN (n + 2 <= s len | ABS s[n + 2] | 0);
-        result +:= base64 chars[ABS (n1 SHR 2)];
-        result +:= base64 chars[ABS (((n1 SHL 4) OR (n2 SHR 4)) AND 16r3f)];
-        result +:= (
-            n + 1 <= s len |
-            base64 chars[ABS (((n2 SHL 2) OR (n3 SHR 6)) AND 16r3f)] |
-            "="
-        );
-        result +:= (n + 2 <= s len | base64 chars[ABS (n3 AND 16r3f)] | "=")
+        u := (n1 SHL 16) OR (n2 SHL 8) OR n3;
+        result +:= base64 chars[ABS (u SHR 18)];
+        result +:= base64 chars[ABS (u SHR 12 AND 16r3f)];
+        result +:= (n + 1 <= s len | base64 chars[ABS (u SHR 6 AND 16r3f)] | "=");
+        result +:= (n + 2 <= s len | base64 chars[ABS (u AND 16r3f)] | "=")
     OD;
 
     result
@@ -36,6 +33,7 @@ PROC base64 decode = (STRING s) DECODE_RESULTS:
     BOOL valid := s len MOD 4 = 0 AND pad count <= 2;
 
     INT n1, n2, n3, n4;
+    BITS u;
     s len -:= pad count;
     FOR n BY 4 TO s len
     WHILE valid
@@ -47,17 +45,10 @@ PROC base64 decode = (STRING s) DECODE_RESULTS:
         valid := n1 >= 0 AND n2 >= 0 AND n3 >= 0 AND n4 >= 0;
         IF valid
         THEN
-            result +:= REPR ABS ((BIN n1 SHL 2) OR (BIN n2 SHR 4));
-            result +:= (
-                n + 2 <= s len |
-                REPR ABS (((BIN n2 SHL 4) OR (BIN n3 SHR 2)) AND 16rff) |
-                ""
-            );
-            result +:= (
-                n + 3 <= s len |
-                REPR ABS (((BIN n3 SHL 6) OR BIN n4) AND 16rff) |
-                ""
-            )
+            u:= (BIN n1 SHL 18) OR (BIN n2 SHL 12) OR (BIN n3 SHL 6) OR BIN n4;
+            result +:= REPR ABS (u SHR 16);
+            result +:= (n + 2 <= s len | REPR ABS (u SHR 8 AND 16rff));
+            result +:= (n + 3 <= s len | REPR ABS (u AND 16rff) | "")
         FI
     OD;
 
