@@ -143,7 +143,7 @@
 3510 RETURN
 3600 REM Append Base64 decoded character to result
 3601 REM Inputs:
-3602 REM - U = 24-bit representation of 3 characters of input string
+3602 REM - U = 24-bit representation of 4 Base64 indices of input string
 3603 REM - N = current string index
 3604 REM - L = length of string to encode
 3605 REM - D = divisor (2 ** number of shifts)
