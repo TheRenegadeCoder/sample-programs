@@ -40,7 +40,7 @@ class Program
         if (valid)
         {
             int numChunks = len / 4;
-            result.Reserve(3 * numChunks);
+            result.Reserve(3 * numChunks - padCount);
             len -= padCount;
             for (int n = 0; n < len && valid; n += 4)
             {
