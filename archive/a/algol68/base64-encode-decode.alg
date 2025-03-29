@@ -49,12 +49,12 @@ PROC base64 decode = (STRING s) DECODE_RESULTS:
         THEN
             result +:= REPR ABS ((BIN n1 SHL 2) OR (BIN n2 SHR 4));
             result +:= (
-                n + 1 <= s len |
+                n + 2 <= s len |
                 REPR ABS (((BIN n2 SHL 4) OR (BIN n3 SHR 2)) AND 16rff) |
                 ""
             );
             result +:= (
-                n + 2 <= s len |
+                n + 3 <= s len |
                 REPR ABS (((BIN n3 SHL 6) OR BIN n4) AND 16rff) |
                 ""
             )
