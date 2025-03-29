@@ -16,11 +16,11 @@ PROC base64 encode = (STRING s) STRING:
         n2 := (n + 1 <= s len | ABS s[n + 1] | 0);
         n3 := (n + 2 <= s len | ABS s[n + 2] | 0);
         result +:= base64 chars[ABS (BIN n1 SHR 2)];
-        result +:= (base64 chars[ABS (((BIN n1 SHL 4) OR (BIN n2 SHR 4)) AND 16r3f)]);
+        result +:= base64 chars[ABS (((BIN n1 SHL 4) OR (BIN n2 SHR 4)) AND 16r3f)];
         result +:= (
             n + 1 <= s len | 
-            base64 chars[ABS (((BIN n2 SHL 2) OR (BIN n3 SHR 6)) AND 16r3f)]
-            | "="
+            base64 chars[ABS (((BIN n2 SHL 2) OR (BIN n3 SHR 6)) AND 16r3f)] |
+            "="
         );
         result +:= (n + 2 <= s len | base64 chars[ABS (BIN n3 AND 16r3f)] | "=")
     OD;
