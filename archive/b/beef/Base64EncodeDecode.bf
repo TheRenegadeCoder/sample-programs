@@ -38,8 +38,8 @@ class Program
         bool valid = len % 4 == 0 && padCount <= 2;
         if (valid)
         {
-            len -= padCount;
             result.Reserve(3 * len / 4);
+            len -= padCount;
             for (int n = 0; n < len && valid; n += 4)
             {
                 int n1 = base64Index(str[n]);
