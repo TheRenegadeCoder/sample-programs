@@ -29,7 +29,7 @@ pub fn main() !void {
     const src = src_opt.?;
 
     if (src.len == 0) {
-        die();
+        try die();
     }
 
     if (std.mem.eql(u8, mode, "encode")) {
