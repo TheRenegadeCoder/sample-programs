@@ -9,20 +9,20 @@ PROC base64 encode = (STRING s) STRING:
 (
     STRING result := "";
     INT s len = UPB s;
-    INT n1, n2, n3;
+    BITS n1, n2, n3;
     FOR n BY 3 TO s len
     DO
-        n1 := ABS s[n];
-        n2 := (n + 1 <= s len | ABS s[n + 1] | 0);
-        n3 := (n + 2 <= s len | ABS s[n + 2] | 0);
-        result +:= base64 chars[ABS (BIN n1 SHR 2)];
-        result +:= base64 chars[ABS (((BIN n1 SHL 4) OR (BIN n2 SHR 4)) AND 16r3f)];
+        n1 := BIN ABS s[n];
+        n2 := BIN (n + 1 <= s len | ABS s[n + 1] | 0);
+        n3 := BIN (n + 2 <= s len | ABS s[n + 2] | 0);
+        result +:= base64 chars[ABS (n1 SHR 2)];
+        result +:= base64 chars[ABS (((n1 SHL 4) OR (n2 SHR 4)) AND 16r3f)];
         result +:= (
-            n + 1 <= s len | 
-            base64 chars[ABS (((BIN n2 SHL 2) OR (BIN n3 SHR 6)) AND 16r3f)] |
+            n + 1 <= s len |
+            base64 chars[ABS (((n2 SHL 2) OR (n3 SHR 6)) AND 16r3f)] |
             "="
         );
-        result +:= (n + 2 <= s len | base64 chars[ABS (BIN n3 AND 16r3f)] | "=")
+        result +:= (n + 2 <= s len | base64 chars[ABS (n3 AND 16r3f)] | "=")
     OD;
 
     result
