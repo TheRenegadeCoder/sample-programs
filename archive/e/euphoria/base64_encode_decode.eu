@@ -16,7 +16,7 @@ constant re_not_base64_chars = re:new("[^A-Za-z0-9+/]")
 -- Base64 decode
 --
 -- Although the built-in Base64 decode is available, it does not do a very good
--- job of error checking the inputs other that make sure that the input length
+-- job of error checking the input other that making sure that the input length
 -- is a multiple of 4. The output of this function is -1 if the input string
 -- is invalid, the Base64 decoded string otherwise.
 function base64_decode(sequence str)
