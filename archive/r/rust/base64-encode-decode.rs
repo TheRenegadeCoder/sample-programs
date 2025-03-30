@@ -73,10 +73,8 @@ fn base64_decode_chunk(s: &[u8]) -> Option<String> {
     Some(
         BASE64_DECODE_TABLE
             .iter()
-            .filter_map(|(n, shifts)| match n < &s_len {
-                true => Some((((u >> shifts) & 0xff) as u8) as char),
-                false => None,
-            })
+            .filter(|(n, _)| n < &s_len)
+            .map(|(n, shifts)| (((u >> shifts) & 0xff) as u8) as char)
             .collect(),
     )
 }
