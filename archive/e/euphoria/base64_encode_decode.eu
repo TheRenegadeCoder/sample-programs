@@ -28,7 +28,7 @@ function base64_decode(sequence str)
         return -1
     end if
 
-    -- Remove tailing pad characters
+    -- Remove trailing pad characters
     str_length -= pad_length
 
     -- Error if invalid Base64 characters
