@@ -32,7 +32,7 @@ function base64_decode(sequence str)
     str_length -= pad_length
 
     -- Error if invalid Base64 characters
-    if sequence(re:find(re_not_base64_chars, str[1..str_length]))
+    if re:has_match(re_not_base64_chars, str[1..str_length])
     then
         return -1
     end if
