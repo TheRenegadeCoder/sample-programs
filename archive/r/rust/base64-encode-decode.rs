@@ -50,11 +50,7 @@ fn base64_decode(s: &str) -> Option<String> {
     // Base64 characters
     let mut result = String::from("");
     for chunk in s[..(s_len - pad_len)].as_bytes().chunks(4) {
-        if let Some(decoded_chunk) = base64_decode_chunk(chunk) {
-            result += decoded_chunk.as_str()
-        } else {
-            return None;
-        }
+        result += base64_decode_chunk(chunk)?.as_str();
     }
 
     Some(result)
