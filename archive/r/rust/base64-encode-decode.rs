@@ -30,12 +30,9 @@ fn base64_encode_chunk(s: &[u8]) -> String {
     let u = s.iter().fold(0u32, |acc, &c| (acc << 8) | (c as u32)) << (24 - 8 * s_len);
     BASE64_ENCODE_TABLE
         .iter()
-        .map(|(n, shifts)| {
-            if n < &s_len {
-                BASE64_CHARS[((u >> shifts) & 0x3f) as usize]
-            } else {
-                '='
-            }
+        .map(|(n, shifts)| match n < &s_len {
+            true => BASE64_CHARS[((u >> shifts) & 0x3f) as usize],
+            false => '=',
         })
         .collect()
 }
@@ -80,12 +77,9 @@ fn base64_decode_chunk(s: &[u8]) -> Option<String> {
     Some(
         BASE64_DECODE_TABLE
             .iter()
-            .filter_map(|(n, shifts)| {
-                if n < &s_len {
-                    Some((((u >> shifts) & 0xff) as u8) as char)
-                } else {
-                    None
-                }
+            .filter_map(|(n, shifts)| match n < &s_len {
+                true => Some((((u >> shifts) & 0xff) as u8) as char),
+                false => None,
             })
             .collect(),
     )
