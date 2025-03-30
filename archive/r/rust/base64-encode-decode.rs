@@ -9,6 +9,11 @@ const BASE64_CHARS: [char; 64] = [
     '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '+', '/', //
 ];
 
+// Each tuple contains string index and number of shifts
+const BASE64_ENCODE_TABLE: [(usize, u32); 4] =
+    [(0usize, 18), (0usize, 12), (1usize, 6), (2usize, 0)];
+const BASE64_DECODE_TABLE: [(usize, u32); 3] = [(0usize, 16), (2usize, 8), (3usize, 0)];
+
 fn usage() -> ! {
     println!("Usage: please provide a mode and a string to encode/decode");
     exit(0);
@@ -23,7 +28,7 @@ fn base64_encode_chunk(s: &[u8]) -> String {
     // Base64 encode a chunk of 3 bytes, pad with "=" if shorter than 3 bytes
     let s_len = s.len();
     let u = s.iter().fold(0u32, |acc, c| (acc << 8) | (*c as u32)) << (24 - 8 * s_len);
-    [(0usize, 18), (0usize, 12), (1usize, 6), (2usize, 0)]
+    BASE64_ENCODE_TABLE
         .iter()
         .map(|(n, shifts)| {
             if n < &s_len {
@@ -73,7 +78,7 @@ fn base64_decode_chunk(s: &[u8]) -> Option<String> {
         .fold(0u32, |acc, x| (acc << 6) | (x.unwrap() as u32))
         << (24 - 6 * s_len);
     Some(
-        [(0usize, 16), (2usize, 8), (3usize, 0)]
+        BASE64_DECODE_TABLE
             .iter()
             .filter_map(|(n, shifts)| {
                 if n < &s_len {
