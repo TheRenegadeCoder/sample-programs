@@ -27,7 +27,7 @@ fn base64_encode(s: &str) -> String {
 fn base64_encode_chunk(s: &[u8]) -> String {
     // Base64 encode a chunk of 3 bytes, pad with "=" if shorter than 3 bytes
     let s_len = s.len();
-    let u = s.iter().fold(0u32, |acc, c| (acc << 8) | (*c as u32)) << (24 - 8 * s_len);
+    let u = s.iter().fold(0u32, |acc, &c| (acc << 8) | (c as u32)) << (24 - 8 * s_len);
     BASE64_ENCODE_TABLE
         .iter()
         .map(|(n, shifts)| {
