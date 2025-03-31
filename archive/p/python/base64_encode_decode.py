@@ -14,7 +14,7 @@ def base64_encode(s: str) -> str:
 
 
 def base64_decode(s: str) -> str:
-    return base64.b64decode(s.encode("ascii")).decode("ascii")
+    return base64.b64decode(s.encode("ascii"), validate=True).decode("ascii")
 
 
 def main() -> None | NoReturn:
