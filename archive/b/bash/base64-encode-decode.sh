@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # References:
-#
 # - Convert character to ASCII code, and ASCII code to character:
 #   https://unix.stackexchange.com/questions/92447/bash-script-to-get-ascii-values-for-alphabet
 
@@ -26,13 +25,13 @@ function base64_encode() {
         local n1=$(ord "${1:${n}:1}")
         local n2=$(ord "${1:$((${n}+1)):1}")
         local n3=$(ord "${1:$((${n}+2)):1}")
-        local u=$((${n1}*65536+${n2}*256+$n3))
+        local u=$(( (${n1}<<16)|(${n2}<<8)|${n3} ))
 
         # Convert 24-bit value to 4 Base64 characters
-        c1="$(base64_encode_char ${u} 262144 ${n} 0 ${len})"
-        c2="$(base64_encode_char ${u} 4096 ${n} 0 ${len})"
-        c3="$(base64_encode_char ${u} 64 ${n} 1 ${len})"
-        c4="$(base64_encode_char ${u} 1 ${n} 2 ${len})"
+        c1="$(base64_encode_char ${u} 18 ${n} 0 ${len})"
+        c2="$(base64_encode_char ${u} 12 ${n} 0 ${len})"
+        c3="$(base64_encode_char ${u} 6 ${n} 1 ${len})"
+        c4="$(base64_encode_char ${u} 0 ${n} 2 ${len})"
         result="${result}${c1}${c2}${c3}${c4}"
     done
 
@@ -43,20 +42,20 @@ function base64_encode() {
 #
 # Inputs:
 # - $1 = 24-bit value
-# - $2 = divisor (1 << number of shifts)
+# - $2 = number of shifts
 # - $3 = string index
 # - $4 = string index offset (0 - 2)
 # - $5 = length of string
 # Output: Base64 encoded character
 function base64_encode_char() {
     local u=${1}
-    local d=${2}
+    local shifts=${2}
     local index=$((${3}+${4}))
     local len=${5}
     local result="="
     if [[ ${index} -lt ${len} ]]
     then
-        result="${BASE64_CHARS:$(( (${u}/${d})%64 )):1}"
+        result="${BASE64_CHARS:$(( (${u}>>${shifts})&0x3f )):1}"
     fi
 
     echo "${result}"
@@ -108,12 +107,12 @@ function base64_decode() {
         fi
 
         # Convert indices to 24-bit value
-        local u=$((${n1}*262144+${n2}*4096+${n3}*64+${n4}))
+        local u=$(( (${n1}<<18)|(${n2}<<12)|(${n3}<<6)|${n4} ))
 
         # Convert 24-bit value to Base64 decoded characters
-        c1="$(base64_decode_char ${u} 65536 ${n} 0 ${len})"
-        c2="$(base64_decode_char ${u} 256 ${n} 2 ${len})"
-        c3="$(base64_decode_char ${u} 1 ${n} 3 ${len})"
+        c1="$(base64_decode_char ${u} 16 ${n} 0 ${len})"
+        c2="$(base64_decode_char ${u} 8 ${n} 2 ${len})"
+        c3="$(base64_decode_char ${u} 0 ${n} 3 ${len})"
         result="${result}${c1}${c2}${c3}"
     done
 
@@ -163,20 +162,20 @@ function base64_decode_index() {
 #
 # Inputs:
 # - $1 = 24-bit value
-# - $2 = divisor (1 << number of shifts)
+# - $2 = number of shifts
 # - $3 = string index
 # - $4 = string index offset (0 - 3)
 # - $5 = length of string
 # Output: Base64 decoded character
 function base64_decode_char() {
     local u=${1}
-    local d=${2}
+    local shifts=${2}
     local index=$((${3}+${4}))
     local len=${5}
     local result=""
     if [[ ${index} -lt ${len} ]]
     then
-        result="$(chr $(( (${u}/${d})%256 )) )"
+        result="$(chr $(( (${u}>>${shifts})&0xff )) )"
     fi
 
     echo "${result}"
