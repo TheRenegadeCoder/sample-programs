@@ -5,7 +5,7 @@ function usage() {
 
 function str_to_number(s) {
     result = "ERROR"
-    if (s ~ /^[+-]*[0-9]+$/) {
+    if (s ~ /^\s*[+-]*[0-9]+\s*$/) {
         result = strtonum(s)
     }
 
