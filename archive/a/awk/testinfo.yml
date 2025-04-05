@@ -1,0 +1,8 @@
+folder:
+  extension: ".awk"
+  naming: "hyphen"
+
+container:
+  image: "bash"
+  tag: "5"
+  cmd: "awk -f {{ source.name }}{{ source.extension }} --"
