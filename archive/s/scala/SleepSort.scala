@@ -43,9 +43,7 @@ object SleepSort {
     val futures = args.map { num =>
       Future {
         Thread.sleep(num * delayTimer) // Delay execution
-        output.synchronized { // Ensure thread safety
-          output += num
-        }
+        output += num
       }
     }.toList // Convert Array to List to fix type mismatch
 
