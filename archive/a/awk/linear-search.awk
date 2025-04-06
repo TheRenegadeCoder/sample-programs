@@ -4,12 +4,7 @@ function usage() {
 }
 
 function str_to_number(s) {
-    result = "ERROR"
-    if (s ~ /^\s*[+-]*[0-9]+\s*$/) {
-        result = strtonum(s)
-    }
-
-    return result
+    return (s ~ /^\s*[+-]*[0-9]+\s*$/) ? s + 0 : "ERROR"
 }
 
 function str_to_array(s, arr) {
