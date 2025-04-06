@@ -4,12 +4,7 @@ function usage() {
 }
 
 function str_to_number(s) {
-    result = "ERROR"
-    if (s ~ /^\s*[+-]*[0-9]+\s*$/) {
-        result = strtonum(s)
-    }
-
-    return result
+    return (s ~ /^\s*[+-]*[0-9]+\s*$/) ? s + 0 : "ERROR"
 }
 
 function is_even(n) {
@@ -26,9 +21,5 @@ BEGIN {
         usage()
     }
 
-    if (is_even(result)) {
-        print "Even"
-    } else {
-        print "Odd"
-    }
+    print is_even(result) ? "Even" : "Odd"
 }
