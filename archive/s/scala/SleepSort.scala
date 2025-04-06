@@ -2,6 +2,7 @@ import scala.collection.mutable.ListBuffer
 import scala.concurrent._
 import ExecutionContext.Implicits.global
 import scala.concurrent.duration._
+import scala.concurrent.blocking
 
 object SleepSort {
   def main(args: Array[String]): Unit = {
@@ -43,7 +44,7 @@ object SleepSort {
     val futures = args.map { num =>
       Future {
         Thread.sleep(num * delayTimer) // Delay execution
-        this.synchronized { // Ensure thread safety
+        blocking { // Ensure thread safety
           output += num
         }
       }
