@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Zig! To find documentation related to the Zig code in this repo, look [here.](https://sampleprograms.io/languages/zig)
 
-## Sample Programs List - 3/38 :disappointed:
+## Sample Programs List - 4/38 :disappointed:
 
 In this section, we feature a list of completed and missing programs in Zig. See above for the current amount of completed programs in Zig. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -11,6 +11,7 @@ In this section, we feature a list of completed and missing programs in Zig. See
 Below, you'll find a list of completed code snippets in Zig. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
 - :warning: [Baklava in Zig](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+zig) [[Requirements](https://sampleprograms.io/projects/baklava)]
+- :warning: [Base64 Encode Decode in Zig](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+base64+encode+decode+zig) [[Requirements](https://sampleprograms.io/projects/base64-encode-decode)]
 - :warning: [Fizz Buzz in Zig](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+zig) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :warning: [Hello World in Zig](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+zig) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 
@@ -18,7 +19,6 @@ Below, you'll find a list of completed code snippets in Zig. Code snippets prece
 
 The following list contains all of the approved programs that are not currently implemented in Zig. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
-- :x: [Base64 Encode Decode](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,base64+encode+decode&template=code-snippet-request.md&title=Add+Base64+Encode+Decode+in+Zig) [[Requirements](https://sampleprograms.io/projects/base64-encode-decode)]
 - :x: [Binary Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,binary+search&template=code-snippet-request.md&title=Add+Binary+Search+in+Zig) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :x: [Bubble Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,bubble+sort&template=code-snippet-request.md&title=Add+Bubble+Sort+in+Zig) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :x: [Capitalize](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,capitalize&template=code-snippet-request.md&title=Add+Capitalize+in+Zig) [[Requirements](https://sampleprograms.io/projects/capitalize)]

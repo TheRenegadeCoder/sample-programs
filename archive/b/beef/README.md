@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Beef! To find documentation related to the Beef code in this repo, look [here.](https://sampleprograms.io/languages/beef)
 
-## Sample Programs List - 37/38 :smile:
+## Sample Programs List - 38/38 :partying_face:
 
 In this section, we feature a list of completed and missing programs in Beef. See above for the current amount of completed programs in Beef. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -11,6 +11,7 @@ In this section, we feature a list of completed and missing programs in Beef. Se
 Below, you'll find a list of completed code snippets in Beef. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
 - :warning: [Baklava in Beef](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+beef) [[Requirements](https://sampleprograms.io/projects/baklava)]
+- :warning: [Base64 Encode Decode in Beef](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+base64+encode+decode+beef) [[Requirements](https://sampleprograms.io/projects/base64-encode-decode)]
 - :warning: [Binary Search in Beef](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+binary+search+beef) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :warning: [Bubble Sort in Beef](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+beef) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :warning: [Capitalize in Beef](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+beef) [[Requirements](https://sampleprograms.io/projects/capitalize)]
@@ -47,12 +48,6 @@ Below, you'll find a list of completed code snippets in Beef. Code snippets prec
 - :warning: [Selection Sort in Beef](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+beef) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 - :warning: [Sleep Sort in Beef](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sleep+sort+beef) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :warning: [Transpose Matrix in Beef](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+beef) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
-
-### Missing Programs
-
-The following list contains all of the approved programs that are not currently implemented in Beef. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
-
-- :x: [Base64 Encode Decode](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,base64+encode+decode&template=code-snippet-request.md&title=Add+Base64+Encode+Decode+in+Beef) [[Requirements](https://sampleprograms.io/projects/base64-encode-decode)]
 
 ## Testing
 
