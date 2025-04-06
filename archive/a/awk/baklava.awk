@@ -1,7 +1,9 @@
-# Reference: https://stackoverflow.com/questions/68371275/how-to-generate-string-with-a-char-repeated-for-n-times
 function repeat_string(n, s) {
-    result = sprintf("%*s", n, "")
-    gsub(" ", s, result)
+    result = ""
+    for (k = 1; k <= n; k++) {
+        result = result s
+    }
+
     return result
 }
 
