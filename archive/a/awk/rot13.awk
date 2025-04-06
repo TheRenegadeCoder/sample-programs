@@ -13,7 +13,7 @@ function rot13(s) {
         if (idx > 0) {
             c = substr(output_table, idx, 1)
         }
-        
+
         result = result c
     }
 
