@@ -8,17 +8,10 @@ function str_to_number(s) {
 }
 
 function is_prime(n) {
-    result = 1
-    if (n < 2 || (n % 2 == 0 && n != 2)) {
-        result = 0
-    } else {
-        q = sqrt(n)
-        for (i = 3; i <= q; i += 2) {
-            if (n % i == 0) {
-                result = 0
-                break
-            }
-        }
+    result = (n == 2) || (n > 2 && n % 2 != 0)
+    q = sqrt(n)
+    for (i = 3; result && i <= q; i += 2) {
+        result = (n % i != 0)
     }
 
     return result
