@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Awk! To find documentation related to the Awk code in this repo, look [here.](https://sampleprograms.io/languages/awk)
 
-## Sample Programs List - 9/38 :disappointed:
+## Sample Programs List - 11/38 :thinking:
 
 In this section, we feature a list of completed and missing programs in Awk. See above for the current amount of completed programs in Awk. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -18,7 +18,9 @@ Below, you'll find a list of completed code snippets in Awk. Code snippets prece
 - :warning: [Fizz Buzz in Awk](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+awk) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :warning: [Hello World in Awk](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+awk) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :warning: [Linear Search in Awk](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+linear+search+awk) [[Requirements](https://sampleprograms.io/projects/linear-search)]
+- :warning: [Palindromic Number in Awk](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+awk) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :warning: [Quine in Awk](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+awk) [[Requirements](https://sampleprograms.io/projects/quine)]
+- :warning: [Rot13 in Awk](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+awk) [[Requirements](https://sampleprograms.io/projects/rot13)]
 
 ### Missing Programs
 
@@ -43,13 +45,11 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+subarray&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+Awk) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :x: [Merge Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,merge+sort&template=code-snippet-request.md&title=Add+Merge+Sort+in+Awk) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+Awk) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
-- :x: [Palindromic Number](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,palindromic+number&template=code-snippet-request.md&title=Add+Palindromic+Number+in+Awk) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :x: [Prime Number](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,prime+number&template=code-snippet-request.md&title=Add+Prime+Number+in+Awk) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :x: [Quick Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,quick+sort&template=code-snippet-request.md&title=Add+Quick+Sort+in+Awk) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
 - :x: [Remove All Whitespace](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,remove+all+whitespace&template=code-snippet-request.md&title=Add+Remove+All+Whitespace+in+Awk) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :x: [Reverse String](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,reverse+string&template=code-snippet-request.md&title=Add+Reverse+String+in+Awk) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :x: [Roman Numeral](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,roman+numeral&template=code-snippet-request.md&title=Add+Roman+Numeral+in+Awk) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
-- :x: [Rot13](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,rot13&template=code-snippet-request.md&title=Add+Rot13+in+Awk) [[Requirements](https://sampleprograms.io/projects/rot13)]
 - :x: [Selection Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,selection+sort&template=code-snippet-request.md&title=Add+Selection+Sort+in+Awk) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 - :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+Awk) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,transpose+matrix&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+Awk) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
