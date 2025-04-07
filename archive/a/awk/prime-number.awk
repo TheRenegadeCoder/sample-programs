@@ -16,6 +16,7 @@ function is_prime(n) {
         for (i = 3; i <= q; i += 2) {
             if (n % i == 0) {
                 result = 0
+                break
             }
         }
     }
