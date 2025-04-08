@@ -4,7 +4,7 @@ function usage() {
 }
 
 function longest_word(s) {
-    split(s, arr)
+    split(s, arr, /\s+/)
     max_len = 0
     for (k in arr) {
         len = length(arr[k])
