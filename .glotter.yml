@@ -1216,9 +1216,6 @@ projects:
                 params:
                     - expected:
                         self: ""
-                transformations:
-                    - "strip"
-                    - "strip_expected"
     rot13:
         words:
             - "rot13"

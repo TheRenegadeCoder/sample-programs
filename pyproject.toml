@@ -8,7 +8,7 @@ license = "MIT"
 
 dependencies = [
     "ronbun (>=0.9.0,<0.10.0)",
-    "glotter2 (>=0.10.3,<0.11.0)"
+    "glotter2 @ file:///home/rzuckerm/git/rzuckerm/glotter2/dist/glotter2-0.11.0.tar.gz"
 ]
 
 # Initiator of the collection
