@@ -11,7 +11,7 @@ container:
     echo "then"; \
     echo "    cbmbasic {{ source.name }}{{ source.extension }} | sed \"N;0s/^\\r\\n//\";"; \
     echo "else"; \
-    echo "    printf \"%s\\n\" \"\$@\" | cbmbasic {{ source.name }}{{ source.extension }} | sed \"N;0s/^\\r\\n//\""; \
+    echo "    printf \"%s\\n\" \"\$@\" | cbmbasic {{ source.name }}{{ source.extension }}"; \
     echo "fi" \
     ) >{{ source.name }}'
   cmd: "sh ./{{ source.name }}"
