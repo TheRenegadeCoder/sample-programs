@@ -9,7 +9,7 @@ container:
     sh -c '(echo "#!/bin/sh"; \
     echo "if [ \"\$#\" = 0 ];"; \
     echo "then"; \
-    echo "    cbmbasic {{ source.name }}{{ source.extension }};"; \
+    echo "    cbmbasic {{ source.name }}{{ source.extension }} | sed \"N;0s/^\\r\\n//\";"; \
     echo "else"; \
     echo "    printf \"%s\\n\" \"\$@\" | cbmbasic {{ source.name }}{{ source.extension }}"; \
     echo "fi" \
