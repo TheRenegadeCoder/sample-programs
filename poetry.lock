@@ -183,7 +183,7 @@ description = "Cross-platform colored terminal text."
 optional = false
 python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,>=2.7"
 groups = ["main"]
-markers = "platform_system == \"Windows\" or sys_platform == \"win32\""
+markers = "sys_platform == \"win32\" or platform_system == \"Windows\""
 files = [
     {file = "colorama-0.4.6-py2.py3-none-any.whl", hash = "sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6"},
     {file = "colorama-0.4.6.tar.gz", hash = "sha256:08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44"},
@@ -282,10 +282,11 @@ name = "glotter2"
 version = "0.11.0"
 description = "An execution library for scripts written in any language. This is a fork of https://github.com/auroq/glotter"
 optional = false
-python-versions = ">=3.9,<4.0"
+python-versions = "<4.0,>=3.9"
 groups = ["main"]
 files = [
-    {file = "glotter2-0.11.0.tar.gz", hash = "sha256:1e4435d1813c7900a79b69db77aca9c2d610a7b401548b648a9e5ef378961fcb"},
+    {file = "glotter2-0.11.0-py3-none-any.whl", hash = "sha256:56ee054bb3f7af4b40e5afd2508b7f39aaced6a0d73f29f14f3895fd78f061f9"},
+    {file = "glotter2-0.11.0.tar.gz", hash = "sha256:fd58659e185fb6d4d0ab6394104d7228ca1b45e4e06f4c33732bac52a4dbd31f"},
 ]
 
 [package.dependencies]
@@ -296,10 +297,6 @@ pydantic = ">=1.10.6,<2.0"
 pytest = ">=8.3.5,<9.0"
 pytest-xdist = ">=3.6.1,<4.0"
 pyyaml = ">6.0,<7.0"
-
-[package.source]
-type = "file"
-url = "../../rzuckerm/glotter2/dist/glotter2-0.11.0.tar.gz"
 
 [[package]]
 name = "idna"
@@ -841,4 +838,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.9,<4.0"
-content-hash = "312bf4fe9bcafe1bbdeadbd5e47dee0f7d01c62678e7cb7c6bbf470dbb0ebe86"
+content-hash = "edfa75fcc807b7f858a48de49a1dffe50dd3d1d8922c12286b07bf413460ae9c"
