@@ -7,7 +7,7 @@ function str_to_number(s) {
     return (s ~ /^\s*[+-]*[0-9]+\s*$/) ? s + 0 : "ERROR"
 }
 
-function fibonacci(n) {
+function fibonacci(n,  i, a, b, c) {
     a = 0
     b = 1
     for (i = 1; i <= n; i++) {

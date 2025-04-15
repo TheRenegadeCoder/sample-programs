@@ -7,7 +7,7 @@ function str_to_number(s) {
     return (s ~ /^\s*[+-]*[0-9]+\s*$/) ? s + 0 : "ERROR"
 }
 
-function str_to_array(s, arr) {
+function str_to_array(s, arr,  str_arr, idx, result) {
     split(s, str_arr, ",")
     for (idx in str_arr) {
         result = str_to_number(str_arr[idx])
@@ -21,7 +21,7 @@ function str_to_array(s, arr) {
     }
 }
 
-function is_sorted(arr, arr_len) {
+function is_sorted(arr, arr_len,  sorted, i) {
     sorted = 1
     for (i = 1; sorted && i < arr_len; i++) {
         sorted = (arr[i] <= arr[i + 1])
@@ -30,7 +30,7 @@ function is_sorted(arr, arr_len) {
     return sorted
 }
 
-function binary_search(arr, arr_len, target) {
+function binary_search(arr, arr_len, target,  found, low, mid, high, value) {
     found = 0
     low = 1
     high = arr_len + 1

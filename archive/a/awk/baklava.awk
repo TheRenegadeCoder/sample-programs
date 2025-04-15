@@ -1,4 +1,4 @@
-function repeat_string(n, s) {
+function repeat_string(n, s,  result, k) {
     result = ""
     for (k = 1; k <= n; k++) {
         result = result s

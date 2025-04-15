@@ -3,7 +3,7 @@ function usage() {
     exit(1)
 }
 
-function remove_whitespace(s) {
+function remove_whitespace(s,  result) {
     split(s, arr, /\s+/)
     result = ""
     for (k in arr) {

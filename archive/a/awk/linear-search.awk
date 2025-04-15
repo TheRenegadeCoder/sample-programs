@@ -7,7 +7,7 @@ function str_to_number(s) {
     return (s ~ /^\s*[+-]*[0-9]+\s*$/) ? s + 0 : "ERROR"
 }
 
-function str_to_array(s, arr) {
+function str_to_array(s, arr,  str_arr, idx, result) {
     split(s, str_arr, ",")
     for (idx in str_arr) {
         result = str_to_number(str_arr[idx])
@@ -21,7 +21,7 @@ function str_to_array(s, arr) {
     }
 }
 
-function linear_search(arr, target) {
+function linear_search(arr, target,  result, idx) {
     result = 0
     for (idx in arr) {
         if (arr[idx] == target) {

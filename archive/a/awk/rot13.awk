@@ -3,9 +3,7 @@ function usage() {
     exit(1)
 }
 
-function rot13(s) {
-    input_table  = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
-    output_table = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm"
+function rot13(s,  result, i, c, idx) {
     result = ""
     for (i = 1; i <= length(s); i++) {
         c = substr(s, i, 1)
@@ -25,5 +23,7 @@ BEGIN {
         usage()
     }
 
+    input_table  = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+    output_table = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm"
     print rot13(ARGV[1])
 }

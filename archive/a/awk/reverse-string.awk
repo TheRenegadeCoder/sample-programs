@@ -1,4 +1,4 @@
-function reverse_string(s) {
+function reverse_string(s,  result, i) {
     result = ""
     for (i = length(s); i > 0; i--) {
         result = result substr(s, i, 1)
