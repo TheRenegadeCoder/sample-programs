@@ -10,7 +10,7 @@ function str_to_number(s) {
     return (s ~ /^\s*[+-]*[0-9]+\s*$/) ? s + 0 : "ERROR"
 }
 
-function str_to_array(s, arr) {
+function str_to_array(s, arr,  str_arr, idx, result) {
     split(s, str_arr, ",")
     for (idx in str_arr) {
         result = str_to_number(str_arr[idx])
@@ -35,7 +35,8 @@ function str_to_array(s, arr) {
 #
 # The commas in the indices mean string concatenation so '1, "child", 2' turns into
 # an index of "1child2"
-function create_tree(nodes, adjacency_matrix, vertex_values, num_vertex_values) {
+function create_tree(nodes, adjacency_matrix, vertex_values, num_vertex_values, \
+    row, num_children, col) {
     idx = 1
     for (row = 1; row <= num_vertex_values; row++) {
         # Store child indices for this node based on non-zero values of adjacency matrix
@@ -57,15 +58,14 @@ function create_tree(nodes, adjacency_matrix, vertex_values, num_vertex_values) 
     }
 }
 
-function depth_first_search(nodes, target, num_vertex_values) {
+function depth_first_search(nodes, target, num_vertex_values, \
+    idx, visited, node_idx, sp, stack, found_idx, child_idx) {
     # Indicate all nodes are unvisited
     for (idx = 1; idx <= num_vertex_values; idx++) {
         visited[idx] = 0
     }
 
-    # AWK cannot do recursion since almost everything is a global variable (it's
-    # complicated!). Therefore, do depth first search iteratively using a stack
-    # of node indices to try
+    # Do depth first search iteratively using a stack of node indices to try
 
     # Push root index to stack
     node_idx = 1

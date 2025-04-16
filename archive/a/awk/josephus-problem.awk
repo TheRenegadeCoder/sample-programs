@@ -15,7 +15,7 @@ function str_to_number(s) {
 #     g(m, k) = [g(m - 1, k) + k] MOD m, for m = 2, 3, ..., n
 #
 # Final answer is g(n, k) + 1 to get back to one-based index
-function josephus_problem(n, k) {
+function josephus_problem(n, k,  g, m) {
     g = 0
     for (m = 2; m <= n; m++) {
         g = (g + k) % m
