@@ -63,5 +63,5 @@ BEGIN {
     }
 
     bubble_sort(arr, arr_len)
-    show_array(arr, arr_len)
+    show_array(arr)
 }
