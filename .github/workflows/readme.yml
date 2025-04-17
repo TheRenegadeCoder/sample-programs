@@ -2,10 +2,6 @@
 
 name: Ronbun
 
-permissions:
-  contents: write
-  pull-requests: write
-
 on: 
   push:
     branches:
@@ -53,11 +49,12 @@ jobs:
       uses: peter-evans/create-pull-request@v7
       with:
         commit-message: Regenerated READMEs
+        committer: GitHub Actions <action@github.com>
         branch: readme-generation
         delete-branch: true
         title: '[Automated Workflow] Add/Modify READMEs'
         labels: enhancement
-        # token: ${{ secrets.PAT }}
+        token: ${{ secrets.PAT }}
 
     - name: Enable Pull Request Automerge
       if: steps.cpr.outputs.pull-request-operation == 'created'
