@@ -56,7 +56,7 @@ function merge(arr_b, lo, mid, hi, arr_a,  i, j, k) {
     # While there are elements in the left or right
     for (k = lo; k < hi; k++) {
         # Copy the side that has the next largest value (or next available value if
-        # out of values) from the arr_a to the arr_b
+        # out of values) from the A into B
         if (i < mid && (j >= hi || arr_a[i] <= arr_a[j])) {
             arr_b[k] = arr_a[i]
             i++
