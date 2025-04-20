@@ -29,7 +29,7 @@ function merge_sort(arr_a, arr_a_len,  idx, arr_b) {
     }
 
     # Run the recursive merge sort
-    merge_sort_rec(arr_a, 1, arr_len + 1, arr_b)
+    merge_sort_rec(arr_a, 1, arr_a_len + 1, arr_b)
 }
 
 function merge_sort_rec(arr_b, lo, hi, arr_a,  mid) {
