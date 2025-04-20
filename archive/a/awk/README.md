@@ -67,8 +67,8 @@ For example, the "Hello World" sample would be named this:
 
 The following list shares details about what we're using to test all Sample Programs in Awk:
 
-- Docker Image: bash
-- Docker Tag: 5
+- Docker Image: cicirello/gnu-on-alpine
+- Docker Tag: 3.21.0
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 
