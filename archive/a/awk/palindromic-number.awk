@@ -10,8 +10,10 @@ function str_to_number(s) {
 function is_palindromic_number(n,  s, left, right, result) {
     result = 1
     s  = sprintf("%s", n)
-    for (left = 1, right = length(s); result && left < right; left++, right--) {
-        result = (substr(s, left, 1) == substr(s, right, 1))
+    left = 1
+    right = length(s)
+    while (result && left < right) {
+        result = (substr(s, left++, 1) == substr(s, right--, 1))
     }
 
     return result
