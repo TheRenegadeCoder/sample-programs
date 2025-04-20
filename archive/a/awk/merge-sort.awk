@@ -22,7 +22,7 @@ function str_to_array(s, arr,  str_arr, idx, result) {
 }
 
 # Source: https://en.wikipedia.org/wiki/Merge_sort#Top-down_implementation
-function merge_sort(arr_a, arr_a_len,  idx, temp_arr) {
+function merge_sort(arr_a, arr_a_len,  idx, arr_b) {
     # Create temporary work array and copy the values into it
     for (idx in arr_a) {
         arr_b[idx] = arr_a[idx]
