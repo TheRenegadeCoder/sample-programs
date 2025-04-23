@@ -142,7 +142,7 @@ function fraction_div(f1, f2, f) {
 }
 
 # Fraction comparison
-# n1/d1 - n2/d2 = n1*d2 - n2*d1
+# n1/d1 comp n2/d2 = n1*d2 comp n2*d1
 #
 # Returns:
 # - negative if n1/d1 < n2/d2
