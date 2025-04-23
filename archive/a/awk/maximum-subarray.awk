@@ -27,7 +27,7 @@ function max(a, b) {
 
 function maximum_subarray(arr, n,  i, best_sum, current_sum) {
     # Awk doesn't have minus infinity, so use large negative number
-    best_sum = -999999999999999999999999
+    best_sum = -1e999
     current_sum = 0
     for (i = 1; i <=n ; i++) {
         current_sum = arr[i] + max(0, current_sum)
