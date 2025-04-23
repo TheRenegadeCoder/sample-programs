@@ -25,6 +25,8 @@ function max(a, b) {
     return (a > b) ? a : b
 }
 
+# Find maximum subarray using Kadane's algorithm.
+# Source: https://en.wikipedia.org/wiki/Maximum_subarray_problem#No_empty_subarrays_admitted
 function maximum_subarray(arr, n,  i, best_sum, current_sum) {
     # Awk doesn't have minus infinity, so use large negative number
     best_sum = -1e999
