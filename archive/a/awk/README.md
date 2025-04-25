@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Awk! To find documentation related to the Awk code in this repo, look [here.](https://sampleprograms.io/languages/awk)
 
-## Sample Programs List - 29/38 :smile:
+## Sample Programs List - 31/38 :smile:
 
 In this section, we feature a list of completed and missing programs in Awk. See above for the current amount of completed programs in Awk. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -21,6 +21,7 @@ Below, you'll find a list of completed code snippets in Awk. Code snippets prece
 - :warning: [Fibonacci in Awk](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+awk) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :warning: [File Input Output in Awk](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+awk) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :warning: [Fizz Buzz in Awk](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+awk) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
+- :warning: [Fraction Math in Awk](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fraction+math+awk) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :warning: [Hello World in Awk](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+awk) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :warning: [Insertion Sort in Awk](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+awk) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :warning: [Josephus Problem in Awk](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+josephus+problem+awk) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
@@ -39,6 +40,7 @@ Below, you'll find a list of completed code snippets in Awk. Code snippets prece
 - :warning: [Rot13 in Awk](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+awk) [[Requirements](https://sampleprograms.io/projects/rot13)]
 - :warning: [Selection Sort in Awk](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+awk) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 - :warning: [Sleep Sort in Awk](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sleep+sort+awk) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
+- :warning: [Transpose Matrix in Awk](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+awk) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
 ### Missing Programs
 
@@ -47,12 +49,10 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Base64 Encode Decode](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,base64+encode+decode&template=code-snippet-request.md&title=Add+Base64+Encode+Decode+in+Awk) [[Requirements](https://sampleprograms.io/projects/base64-encode-decode)]
 - :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,convex+hull&template=code-snippet-request.md&title=Add+Convex+Hull+in+Awk) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,dijkstra&template=code-snippet-request.md&title=Add+Dijkstra+in+Awk) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
-- :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fraction+math&template=code-snippet-request.md&title=Add+Fraction+Math+in+Awk) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,job+sequencing&template=code-snippet-request.md&title=Add+Job+Sequencing+in+Awk) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :x: [Longest Common Subsequence](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+common+subsequence&template=code-snippet-request.md&title=Add+Longest+Common+Subsequence+in+Awk) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
 - :x: [Longest Palindromic Substring](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+palindromic+substring&template=code-snippet-request.md&title=Add+Longest+Palindromic+Substring+in+Awk) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+Awk) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
-- :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,transpose+matrix&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+Awk) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
 ## Testing
 
