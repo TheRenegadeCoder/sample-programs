@@ -34,7 +34,6 @@ function longest_common_subsequence(list1, m, list2, n, arr,  \
         c[0, j] = 0
     }
 
-    split("", subsequences[0], ",")
     num_subsequences = 0
 
     # Find the longest common subsequence using prior subsequences
