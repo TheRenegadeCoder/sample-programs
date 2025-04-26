@@ -44,7 +44,7 @@ function base64_encode_char(u, idx, len, shifts) {
     return (idx <= len) ? substr(base64_chars, 1 + and(rshift(u, shifts), 0x3f), 1) : "="
 }
 
-# Return Base-64 decoded string or 0 if invalid input
+# Return Base64 decoded string or 0 if invalid input
 function base64_decode(s,  len, result, num_pads, c, i, k) {
     len = length(s)
     if ((len % 4) != 0) {
@@ -79,7 +79,7 @@ function base64_decode(s,  len, result, num_pads, c, i, k) {
     return result
 }
 
-# Return Base-64 index if valid character, -1 otherwise
+# Return Base64 index if valid character, -1 otherwise
 function base64_decode_index(s, idx, len) {
     return (idx <= len) ? index(base64_chars, substr(s, idx, 1)) - 1 : 0
 }
