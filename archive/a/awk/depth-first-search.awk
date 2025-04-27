@@ -26,15 +26,6 @@ function str_to_array(s, arr,  str_arr, idx, result) {
 
 # Create tree from adjacency matrix and vertex values. The tree consists of a sequence
 # of nodes. Each node consists of a vertex value and sequence of child indices.
-#
-# AWK can't do multi-dimensional arrays or structures, so simulate this by
-# using the following indices:
-# - <x>, "child", <y> = index for node <x>, child <y>
-# - <x>, "num_children" = index for number of children for node <x>
-# - <x>, "value" = index for value of node <x>
-#
-# The commas in the indices mean string concatenation so '1, "child", 2' turns into
-# an index of "1child2"
 function create_tree(nodes, adjacency_matrix, vertex_values, num_vertex_values, \
     row, num_children, col) {
     idx = 1
@@ -43,18 +34,17 @@ function create_tree(nodes, adjacency_matrix, vertex_values, num_vertex_values, 
         num_children = 0
         for (col = 1; col <= num_vertex_values; col++) {
             if (adjacency_matrix[idx]) {
-                num_children++
-                nodes[row, "child", num_children] = col
+                nodes[row]["children"][++num_children] = col
             }
 
             idx++
         }
 
         # Store number of children for this node
-        nodes[row, "num_children"] = num_children
+        nodes[row]["num_children"] = num_children
 
         # Store vertex value for this node
-        nodes[row, "value"] = vertex_values[row]
+        nodes[row]["value"] = vertex_values[row]
     }
 }
 
@@ -80,7 +70,7 @@ function depth_first_search(nodes, target, num_vertex_values, \
         node_idx = stack[sp--]
 
         # If node is invalid or value of this node matches target, return this node index
-        if (node_idx == 0 || nodes[node_idx, "value"] == target) {
+        if (node_idx == 0 || nodes[node_idx]["value"] == target) {
             found_idx = node_idx
             break
         }
@@ -89,8 +79,8 @@ function depth_first_search(nodes, target, num_vertex_values, \
         visited[node_idx] = 1
 
         # Push all unvisited child indices to the stack
-        for (idx = 1; idx <= nodes[node_idx, "num_children"]; idx++) {
-            child_idx = nodes[node_idx, "child", idx]
+        for (idx = 1; idx <= nodes[node_idx]["num_children"]; idx++) {
+            child_idx = nodes[node_idx]["children"][idx]
             if (!visited[child_idx]) {
                 stack[++sp] = child_idx
             }
