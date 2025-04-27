@@ -29,7 +29,7 @@ function validate_inputs(weights, num_weights, num_vertices, src, dest,  i, any_
         return 0
     }
 
-    # Verify weights greater than equal to zero and at any non-zero weights
+    # Verify weights greater than equal to zero and any non-zero weights
     any_non_zero = 0
     for (i = 1; i <= num_weights; i++) {
         if (weights[i] < 0) {
