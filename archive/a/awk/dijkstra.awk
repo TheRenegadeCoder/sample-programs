@@ -77,7 +77,7 @@ function dijkstra(graph, src, dists, prevs,  u, v, q, alt) {
         # Remove vertex u from Q
         delete q[u]
 
-        # For each neighbor v of vertex u in still in Q
+        # For each neighbor v of vertex u still in Q
         for (v in graph[u]) {
             if (v in q) {
                 # Get trial distance
