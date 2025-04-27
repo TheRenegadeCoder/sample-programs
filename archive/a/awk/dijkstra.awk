@@ -59,7 +59,7 @@ function create_graph(weights, num_vertices, graph,  u, v, idx) {
 function dijkstra(graph, num_vertices, src, dists, prevs,  u, v, q, alt) {
     # Initialize distances to infinite and previous vertices to undefined
     # Initialize unvisited nodes
-    for (v = 0; v < num_vertices; v++) {
+    for (v in graph) {
         dists[v] = 1e999 # Awk doesn't have infinity, so use large integer
         prevs[v] = 0
         q[v] = 1
