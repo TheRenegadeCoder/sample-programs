@@ -23,11 +23,12 @@ function str_to_array(s, arr,  str_arr, idx, result) {
 
 # Source: https://www.techiedelight.com/job-sequencing-problem-deadlines/
 function job_sequencing(profits, deadlines, jobs, slots,  i, j, longest_deadline, temp_jobs) {
-    # Set up job details (index 1: job ID, index 2: profit, index 3: deadline)
-    # and longest deadline
+    # Set up job details and longest deadline
     longest_deadline = 0
     for (i in profits) {
-        split(i "," profits[i] "," deadlines[i], temp_jobs[i], ",")
+        temp_jobs[i]["id"] = i
+        temp_jobs[i]["profit"] = profits[i]
+        temp_jobs[i]["deadline"] = deadlines[i]
         if (deadlines[i] > longest_deadline) {
             longest_deadline = deadline[i]
         }
@@ -44,7 +45,7 @@ function job_sequencing(profits, deadlines, jobs, slots,  i, j, longest_deadline
     # For each job, see if there is available slot at or before the deadline
     # if so, store this job in that slot
     for (i in jobs) {
-        for (j = jobs[i][3]; j >= 1; j--) {
+        for (j = jobs[i]["deadline"]; j >= 1; j--) {
             if (!slots[j]) {
                 slots[j] = i
                 break
@@ -56,9 +57,9 @@ function job_sequencing(profits, deadlines, jobs, slots,  i, j, longest_deadline
 # Prioritize by profit, then deadline
 # Inputs:
 # - i1 = Index 1 (unused)
-# - v1 = Job 1: index 1: job ID 1, index 2: profit 1, index 3: deadline 1
+# - v1 = Job 1
 # - i2 = Index 2 (unused)
-# - v2 = Job 2: index 1: job ID 2, index 2: profit 2, index 3: deadline 2
+# - v2 = Job 2
 # Returns:
 # - negative if job 1 has higher profit or later deadline than job 2
 # - zero if job 1 has same profit and deadline as job 2
@@ -67,15 +68,15 @@ function compare_profits_and_deadlines(i1, v1, i2, v2,  diff) {
     # Compare profits in reverse order since we want higher profits to be first
     # If equal, compare deadlines in reverse order since we want later deadlines
     # to be first
-    diff = v2[2] - v1[2]
-    return (diff != 0) ? diff : v2[3] - v1[3]
+    diff = v2["profit"] - v1["profit"]
+    return (diff != 0) ? diff : v2["deadline"] - v1["deadline"]
 }
 
 function get_total_profit(profits, jobs, slots,  total, idx) {
     total = 0
     for (idx in slots) {
         if (slots[idx]) {
-            total += jobs[slots[idx]][2]
+            total += jobs[slots[idx]]["profit"]
         }
     }
 
