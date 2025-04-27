@@ -25,69 +25,63 @@ function str_to_array(s, arr,  str_arr, idx, result) {
 }
 
 # Create tree from adjacency matrix and vertex values. The tree consists of a sequence
-# of nodes. Each node consists of a vertex value and sequence of child indices.
-function create_tree(nodes, adjacency_matrix, vertex_values, num_vertex_values, \
-    row, num_children, col) {
-    idx = 1
-    for (row = 1; row <= num_vertex_values; row++) {
+# of nodes. Each node consists a node value and of child vertex values
+function create_tree(nodes, adjacency_matrix, vertex_values,  u, v, node_value) {
+    idx = 0
+    for (u in vertex_values) {
+        # Store node value
+        node_value = vertex_values[u]
+        nodes[node_value][node_value] = 1
+
         # Store child indices for this node based on non-zero values of adjacency matrix
         num_children = 0
-        for (col = 1; col <= num_vertex_values; col++) {
-            if (adjacency_matrix[idx]) {
-                nodes[row]["children"][++num_children] = col
+        for (v in vertex_values) {
+            if (adjacency_matrix[++idx]) {
+                nodes[node_value][vertex_values[v]] = 1
             }
-
-            idx++
         }
-
-        # Store number of children for this node
-        nodes[row]["num_children"] = num_children
-
-        # Store vertex value for this node
-        nodes[row]["value"] = vertex_values[row]
     }
 }
 
-function depth_first_search(nodes, target, num_vertex_values, \
-    idx, visited, node_idx, sp, stack, found_idx, child_idx) {
-    # Indicate all nodes are unvisited
-    for (idx = 1; idx <= num_vertex_values; idx++) {
-        visited[idx] = 0
+function depth_first_search(nodes, target, \
+    value, visited, node_value, sp, stack, found, child_value) {
+    # Get root node value
+    for (value in nodes) {
+        node_value = value
+        break
     }
 
-    # Do depth first search iteratively using a stack of node indices to try
+    # Do depth first search iteratively using a stack of node values to try
 
     # Push root index to stack
-    node_idx = 1
     sp = 0
-    stack[++sp] = node_idx
+    stack[++sp] = node_value
 
     # While stack is not empty
     while (sp > 0) {
-        found_idx = 0
+        found = 0
 
         # Pop node index from stack
-        node_idx = stack[sp--]
+        node_value = stack[sp--]
 
         # If node is invalid or value of this node matches target, return this node index
-        if (node_idx == 0 || nodes[node_idx]["value"] == target) {
-            found_idx = node_idx
+        if (node_value == target) {
+            found = 1
             break
         }
 
         # Indicate this node is visited
-        visited[node_idx] = 1
+        visited[node_value] = 1
 
         # Push all unvisited child indices to the stack
-        for (idx = 1; idx <= nodes[node_idx]["num_children"]; idx++) {
-            child_idx = nodes[node_idx]["children"][idx]
-            if (!visited[child_idx]) {
-                stack[++sp] = child_idx
+        for (child_value in nodes[node_value]) {
+            if (!(child_value in visited)) {
+                stack[++sp] = child_value
             }
         }
     }
 
-    return found_idx
+    return found
 }
 
 BEGIN {
@@ -104,8 +98,7 @@ BEGIN {
         usage()
     }
 
-    num_vertex_values = length(vertex_values)
-    create_tree(nodes, adjacency_matrix, vertex_values, num_vertex_values)
-    node_idx = depth_first_search(nodes, target, num_vertex_values)
-    print (node_idx > 0) ? "true" : "false"
+    create_tree(nodes, adjacency_matrix, vertex_values)
+    found = depth_first_search(nodes, target)
+    print (found) ? "true" : "false"
 }
