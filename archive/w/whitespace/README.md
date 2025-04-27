@@ -13,7 +13,7 @@ Below, you'll find a list of completed code snippets in Whitespace. Code snippet
 - :warning: [Baklava in Whitespace](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+whitespace) [[Requirements](https://sampleprograms.io/projects/baklava)]
 - :warning: [Fizz Buzz in Whitespace](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+whitespace) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :warning: [Hello World in Whitespace](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+whitespace) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :warning: [Quine in Whitespace](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+whitespace) [[Requirements](https://sampleprograms.io/projects/quine)]
+- :white_check_mark: [Quine in Whitespace](https://sampleprograms.io/projects/quine/whitespace) [[Requirements](https://sampleprograms.io/projects/quine)]
 
 ### Missing Programs
 
