@@ -44,21 +44,66 @@ function validate_inputs(weights, num_weights, num_vertices, src, dest,  i, any_
     return any_non_zero
 }
 
-function create_graph(weights, num_vertices, graph,  u, v, idx, num_edges) {
+function create_graph(weights, num_vertices, graph,  u, v, idx) {
     idx = 0
-    for (u = 1; u <= num_vertices; u++) {
-        num_edges = 0
-        for (v = 1; v <= num_vertices; v++) {
+    for (u = 0; u < num_vertices; u++) {
+        for (v = 0; v < num_vertices; v++) {
             idx++
             if (weights[idx] > 0) {
-                num_edges++
-                graph[u, num_edges]["vertex"] = v
-                graph[u, num_edges]["weight"] = weights[idx]
+                graph[u][v] = weights[idx]
             }
-
-            graph[u, "num_edges"] = num_edges
         }
     }
+}
+
+function dijkstra(graph, num_vertices, src, dists, prevs,  u, v, q, alt) {
+    # Initialize distances to infinite and previous vertices to undefined
+    # Initialize unvisited nodes
+    for (v = 0; v < num_vertices; v++) {
+        dists[v] = 1e999 # Awk doesn't have infinity, so use large integer
+        prevs[v] = 0
+        q[v] = 1
+    }
+
+    # Set first vertex distance to 0
+    dists[src] = 0
+
+    # While any unvisited nodes
+    while (length(q) > 0) {
+        # Pick a vertex u in Q with minimum distance
+        u = find_min_distance(dists, q)
+
+        # Remove vertex u from Q
+        delete q[u]
+
+        # For each neighbor v of vertex u in still in Q
+        for (v in graph[u]) {
+            if (v in q) {
+                # Get trial distance
+                alt = dists[u] + graph[u][v]
+
+                # If trial distance is smaller than distance v, update distance to v and
+                # previous vertex of v
+                if (alt < dists[v]) {
+                    dists[v] = alt
+                    prevs[v] = u
+                }
+            }
+        }
+    }
+}
+
+function find_min_distance(dists, q,  min_dist, min_index, v) {
+    min_dist = 1e999
+    min_index = -1
+    for (v in q) {
+        if (dists[v] < min_dist) {
+            min_dist = dists[v]
+            min_index = v
+        }
+    }
+
+    return min_index
 }
 
 BEGIN {
@@ -80,9 +125,6 @@ BEGIN {
     }
 
     create_graph(weights, num_vertices, graph)
-    for (u = 1; u <= num_vertices; u++) {
-        for (i = 1; i <= graph[u, "num_edges"]; i++) {
-            printf("%d -> %d (%d)\n", u - 1, graph[u, i]["vertex"] - 1, graph[u, i]["weight"])
-        }
-    }
+    dijkstra(graph, num_vertices, src, dists, prevs)
+    print dists[dest]
 }
