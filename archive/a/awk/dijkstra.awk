@@ -56,7 +56,8 @@ function create_graph(weights, num_vertices, graph,  u, v, idx) {
     }
 }
 
-function dijkstra(graph, num_vertices, src, dists, prevs,  u, v, q, alt) {
+# Source: https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm#Pseudocode
+function dijkstra(graph, src, dists, prevs,  u, v, q, alt) {
     # Initialize distances to infinite and previous vertices to undefined
     # Initialize unvisited nodes
     for (v in graph) {
@@ -125,6 +126,6 @@ BEGIN {
     }
 
     create_graph(weights, num_vertices, graph)
-    dijkstra(graph, num_vertices, src, dists, prevs)
+    dijkstra(graph, src, dists, prevs)
     print dists[dest]
 }
