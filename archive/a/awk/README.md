@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Awk! To find documentation related to the Awk code in this repo, look [here.](https://sampleprograms.io/languages/awk)
 
-## Sample Programs List - 36/38 :smile:
+## Sample Programs List - 37/38 :smile:
 
 In this section, we feature a list of completed and missing programs in Awk. See above for the current amount of completed programs in Awk. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -35,6 +35,7 @@ Below, you'll find a list of completed code snippets in Awk. Code snippets prece
 - :warning: [Maximum Array Rotation in Awk](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+maximum+array+rotation+awk) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :warning: [Maximum Subarray in Awk](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+maximum+subarray+awk) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :warning: [Merge Sort in Awk](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+awk) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
+- :warning: [Minimum Spanning Tree in Awk](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+minimum+spanning+tree+awk) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
 - :warning: [Palindromic Number in Awk](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+awk) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :warning: [Prime Number in Awk](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+awk) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :warning: [Quick Sort in Awk](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+awk) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
@@ -52,7 +53,6 @@ Below, you'll find a list of completed code snippets in Awk. Code snippets prece
 The following list contains all of the approved programs that are not currently implemented in Awk. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
 - :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,convex+hull&template=code-snippet-request.md&title=Add+Convex+Hull+in+Awk) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
-- :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+Awk) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
 
 ## Testing
 
