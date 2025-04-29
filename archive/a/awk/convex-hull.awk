@@ -30,7 +30,7 @@ function form_points(x_points, y_points, points,  idx) {
 
 # Find Convex Hull using Jarvis' algorithm
 # Source: https://www.geeksforgeeks.org/convex-hull-using-jarvis-algorithm-or-wrapping/
-function convex_hull(points, num_points, hull_points,  idx, i, j, l, p, q) {
+function convex_hull(points, num_points, hull_points,  i, j, l, p, q) {
     # The first point is the leftmost point with the highest y-coord in the
     # event of a tie
     l = find_leftmost_point(points)
