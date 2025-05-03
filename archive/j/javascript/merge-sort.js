@@ -37,7 +37,7 @@ const main = (input) => {
         });
         arr = arr.filter(n => n);
         arr=mergeSort(arr);
-        console.log(arr);
+        console.log(arr.join(", "));
     }
     else {
         console.log(usage);

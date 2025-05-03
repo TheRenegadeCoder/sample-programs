@@ -1,1 +1,1 @@
-(function(){console.log('('+arguments.callee.toString()+')()')})()
+(function(){console.log('('+arguments.callee.toString()+')();')})();

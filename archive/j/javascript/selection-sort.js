@@ -34,4 +34,4 @@ const main = (input) => {
     }
 }
 
-main(process.argv[2])
+main(process.argv[2]);

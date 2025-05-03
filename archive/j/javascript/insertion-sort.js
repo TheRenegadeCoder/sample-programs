@@ -28,7 +28,7 @@ sanitizeArray = (list) => {
 const main = (input) => {
     try {
         arr = sanitizeArray(input);
-        arr.length <= 1 ? exit() : console.log(insertionSort(arr));
+        arr.length <= 1 ? exit() : console.log(insertionSort(arr).join(", "));
     } catch(err) {
         exit();
     }

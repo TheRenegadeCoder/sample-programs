@@ -4,5 +4,5 @@ folder:
 
 container:
   image: "node"
-  tag: "11-alpine"
+  tag: "20-alpine"
   cmd: "node {{ source.name }}{{ source.extension }}"

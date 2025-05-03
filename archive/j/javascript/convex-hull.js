@@ -6,30 +6,30 @@
  */
 function convexHull(points) {
 	function orientation(p, q, r) {
-		const val = (q.y - p.y) * (r.x - q.x) - (q.x - p.x) * (r.y - q.y)
-		if (val === 0) return 0
-		return val > 0 ? 1 : -1
+		const val = (q.y - p.y) * (r.x - q.x) - (q.x - p.x) * (r.y - q.y);
+		if (val === 0) return 0;
+		return val > 0 ? 1 : -1;
 	}
 
 	const n = points.length
-	if (n < 3) return points
+	if (n < 3) return points;
 
-	let minPointIndex = 0
+	let minPointIndex = 0;
 	for (let i = 0; i < n; i++) {
 		if (
 			(points[i].y < points[minPointIndex].y) ||
 			(points[i].y == points[minPointIndex].y && points[i].x < points[minPointIndex].x)
 		) {
-			minPointIndex = i
+			minPointIndex = i;
 		}
 	}
 	const sortedPoints = [...points].sort((a, b) => {
-		const angleA = Math.atan2(a.y - points[minPointIndex].y, a.x - points[minPointIndex].x)
-		const angleB = Math.atan2(b.y - points[minPointIndex].y, b.x - points[minPointIndex].x)
-		return angleA - angleB
+		const angleA = Math.atan2(a.y - points[minPointIndex].y, a.x - points[minPointIndex].x);
+		const angleB = Math.atan2(b.y - points[minPointIndex].y, b.x - points[minPointIndex].x);
+		return angleA - angleB;
 	})
 
-	const convexHull = [sortedPoints[0], sortedPoints[1]]
+	const convexHull = [sortedPoints[0], sortedPoints[1]];
 
 	for (let i = 2; i < n; i++) {
 		while (
@@ -40,12 +40,12 @@ function convexHull(points) {
 				sortedPoints[i]
 			) !== -1
 		) {
-			convexHull.pop()
+			convexHull.pop();
 		}
-		convexHull.push(sortedPoints[i])
+		convexHull.push(sortedPoints[i]);
 	}
 
-	return convexHull
+	return convexHull;
 }
 
 /**
@@ -56,11 +56,11 @@ function convexHull(points) {
  */
 function main(inputX, inputY) {
 	if (inputX == undefined || inputY == undefined){
-		inputX = " "
-		inputY = " "
+		inputX = " ";
+		inputY = " ";
 	}
-	const xArray = inputX.split(",").map(Number)
-	const yArray = inputY.split(",").map(Number)
+	const xArray = inputX.split(",").map(Number);
+	const yArray = inputY.split(",").map(Number);
 
 	if (
 		xArray.length < 3 ||
@@ -70,17 +70,17 @@ function main(inputX, inputY) {
 	) {
 		console.log(
 			'Usage: please provide at least 3 x and y coordinates as separate lists (e.g. "100, 440, 210")'
-		)
-		return
+		);
+		return;
 	}
 
-	const points = xArray.map((x, i) => ({ x, y: yArray[i] }))
+	const points = xArray.map((x, i) => ({ x, y: yArray[i] }));
 
-	const convexHullResult = convexHull(points)
-	convexHullResult.forEach((point) => console.log(`(${point.x}, ${point.y})`))
+	const convexHullResult = convexHull(points);
+	convexHullResult.forEach((point) => console.log(`(${point.x}, ${point.y})`));
 }
 
 // Run the executable function with command-line arguments
-const inputX = process.argv[2]
-const inputY = process.argv[3]
-main(inputX, inputY)
+const inputX = process.argv[2];
+const inputY = process.argv[3];
+main(inputX, inputY);
