@@ -6,33 +6,33 @@
 
 const quickSort = (arr, start, end) => {
   if(start < end) {
-    let pivot = partition(arr, start, end)
-    quickSort(arr, start, pivot - 1)
-    quickSort(arr, pivot + 1, end)
+    let pivot = partition(arr, start, end);
+    quickSort(arr, start, pivot - 1);
+    quickSort(arr, pivot + 1, end);
   } 
 }
 
 const partition = (arr, start, end) => { 
-  let pivot = end
-  let i = start - 1
-  let j = start
+  let pivot = end;
+  let i = start - 1;
+  let j = start;
   while (j < pivot) {
     if (arr[j] > arr[pivot]) {
-      j++
+      j++;
     } else {
-      i++
-      swap(arr, j, i)
-      j++
+      i++;
+      swap(arr, j, i);
+      j++;
     }
   }
-  swap(arr, i + 1, pivot)
-  return i + 1
+  swap(arr, i + 1, pivot);
+  return i + 1;
 }
 
 const swap = (arr, first, second) => {
-  let temp = arr[first]
-  arr[first] = arr[second]
-  arr[second] = temp
+  let temp = arr[first];
+  arr[first] = arr[second];
+  arr[second] = temp;
 }
 
 const main = (input) => {
@@ -61,8 +61,8 @@ const main = (input) => {
         arr = arr.filter(n => n);
 
         // apply quicksort and output result
-        quickSort(arr, 0, arr.length - 1)
-        console.log(arr)
+        quickSort(arr, 0, arr.length - 1);
+        console.log(arr.join(", "));
     }
     else {
         // invalid input
@@ -79,5 +79,3 @@ if (process.argv.length > 2) {
 else {
     console.log(usage);
 }
-
-

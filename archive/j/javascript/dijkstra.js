@@ -84,4 +84,4 @@ function main() {
     console.log(dijkstra(src, des, n));
 }
 
-main()
+main();

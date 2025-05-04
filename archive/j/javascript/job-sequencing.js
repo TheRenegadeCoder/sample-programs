@@ -97,4 +97,4 @@ const main = (string1, string2) => {
   }
 }
 
-main(process.argv[2], process.argv[3])
+main(process.argv[2], process.argv[3]);
