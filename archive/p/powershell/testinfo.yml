@@ -4,5 +4,5 @@ folder:
 
 container:
   image: "mcr.microsoft.com/powershell"
-  tag: "lts-7.2-alpine-3.14"
+  tag: "7.5-alpine-3.20"
   cmd: "pwsh -file {{ source.name }}{{ source.extension }}"
