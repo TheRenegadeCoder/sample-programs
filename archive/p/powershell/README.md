@@ -68,7 +68,7 @@ For example, the "Hello World" sample would be named this:
 The following list shares details about what we're using to test all Sample Programs in Powershell:
 
 - Docker Image: mcr.microsoft.com/powershell
-- Docker Tag: lts-7.2-alpine-3.14
+- Docker Tag: 7.5-alpine-3.20
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 
