@@ -20,7 +20,9 @@ if ($args.Length -lt 2 -or -not $args[1]) {
 $Mode = $args[0]
 $Str = $args[1]
 switch ($Mode) {
-    "encode" { $Result = Encode-Base64($Str) }
+    "encode" {
+        $Result = Encode-Base64($Str)
+    }
     "decode" {
         try {
             $Result = Decode-Base64($Str)
@@ -28,7 +30,9 @@ switch ($Mode) {
             Usage
         }
     }
-    default { Usage }
+    default {
+        Usage 
+    }
 }
 
 Write-Host $Result
