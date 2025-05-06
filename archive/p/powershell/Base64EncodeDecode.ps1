@@ -3,12 +3,12 @@ function Show-Usage() {
     Exit 1
 }
 
-function Get-EncodeBase64([string]$Str) {
+function Get-Base64Encode([string]$Str) {
     $Bytes = [Text.Encoding]::Ascii.GetBytes($Str)
     [Convert]::ToBase64String($Bytes)
 }
 
-function Get-DecodeBase64([string]$Str) {
+function Get-Base64Decode([string]$Str) {
     $Bytes = [Convert]::FromBase64String($Str)
     [Text.Encoding]::Ascii.GetString($Bytes)
 }
@@ -21,11 +21,11 @@ $Mode = $args[0]
 $Str = $args[1]
 switch ($Mode) {
     "encode" {
-        $Result = Get-EncodeBase64($Str)
+        $Result = Get-Base64Encode($Str)
     }
     "decode" {
         try {
-            $Result = Get-DecodeBase64($Str)
+            $Result = Get-Base64Decode($Str)
         } catch [Management.Automation.MethodInvocationException] {
             Show-Usage
         }
