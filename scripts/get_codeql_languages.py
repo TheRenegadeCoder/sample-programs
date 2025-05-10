@@ -7,7 +7,7 @@ from pathlib import Path
 from typing import DefaultDict, Dict, Set
 
 LINUX = "ubuntu-latest"
-MACOS = "macos-latest"
+MACOS = "macos-14"
 WINDOWS = "windows-latest"
 
 
