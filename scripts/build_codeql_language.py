@@ -14,8 +14,7 @@ TEST_INFO_DIR: Dict[str, str] = {
     "swift": "swift",
 }
 
-EXTENSION_PATTERN = re.compile(r"""^\s+extension:\s*['"](^'"]+)['"]""")
-BUILD_PATTERN = re.compile(r"""^\s+build:\s*['"]([^'"]+)['"]""")
+BUILD_PATTERN = re.compile(r"""^\s+build:\s*['"]([^'"]+)""", re.M)
 SOURCE_NAME_PATTERN = re.compile(r"\{\{\s*source\.name\s*\}\}")
 SOURCE_EXTENSION_PATTERN = re.compile(r"\{\{\s*source\.extension\s*\}\}")
 
@@ -47,12 +46,11 @@ def get_test_info_struct(language: str) -> TestInfoStruct:
 
 
 def get_build_command(testinfo_struct: TestInfoStruct, path: Path) -> List[str]:
-    test_info_str = testinfo_struct.test_info_str
-    extension = EXTENSION_PATTERN.sub(test_info_str, r"\g<1>")
-    source_name = path.name[: -len(extension)]
-    build = BUILD_PATTERN.sub(test_info_str, r"\g<1>")
-    build = SOURCE_NAME_PATTERN.sub(build, source_name)
-    build = SOURCE_EXTENSION_PATTERN.sub(build, extension)
+    match_str = BUILD_PATTERN.search(testinfo_struct.test_info_str)
+    assert match_str
+
+    build = SOURCE_NAME_PATTERN.sub(path.stem, match_str.group(1))
+    build = SOURCE_EXTENSION_PATTERN.sub(path.suffix, build)
     return shlex.split(build)
 
 
