@@ -15,11 +15,8 @@ on:
   push:
     branches: [ main ]
     paths:
-      - '.github/workflows/codeql-analysis.yml'
-      - 'repo-config.yml'
+      - '.github/workflows/*.yml'
       - 'scripts/*.py'
-      - 'pyproject.toml'
-      - 'poetry.lock'
       - 'archive/c/c/*.c'
       - 'archive/c/c/testinfo.yml'
       - 'archive/c/c-plus-plus/*.cpp'
@@ -44,11 +41,8 @@ on:
     branches: 
       - 'main'
     paths:
-      - '.github/workflows/codeql-analysis.yml'
-      - 'repo-config.yml'
+      - '.github/workflows/*.yml'
       - 'scripts/*.py'
-      - 'pyproject.toml'
-      - 'poetry.lock'
       - 'archive/c/c/*.c'
       - 'archive/c/c/testinfo.yml'
       - 'archive/c/c-plus-plus/*.cpp'
@@ -129,25 +123,6 @@ jobs:
       with:
         fetch-depth: 2
 
-    - name: Read repo config
-      uses: pietrobolcato/action-read-yaml@1.1.0
-      id: repo-config
-      with:
-        config: repo-config.yml
-
-    - name: Set up Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: "${{ steps.repo-config.outputs['python-version'] }}"
-
-    - name: Run Poetry Image
-      uses: abatilo/actions-poetry@v3
-      with:
-        poetry-version: "${{ steps.repo-config.outputs['poetry-version'] }}"
-        
-    - name: Install Dependencies
-      run: poetry install
-        
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v3
@@ -170,7 +145,7 @@ jobs:
 
     - name: Manual build
       if: ${{ matrix.build-mode == 'manual' }}
-      run: poetry run python scripts/build_codeql_language.py ${{ matrix.language }} ${{ matrix.paths }}
+      run: python scripts/build_codeql_language.py ${{ matrix.language }} ${{ matrix.paths }}
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3

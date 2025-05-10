@@ -30,6 +30,8 @@ CODEQL_LANGUAGES: Dict[str, LanguageInfo] = {
     "archive/p/python/*.py": LanguageInfo(language="python"),
     "archive/r/ruby/*.rb": LanguageInfo(language="ruby"),
     "archive/t/typescript/*.ts": LanguageInfo(language="typescript"),
+    "archive/s/swift/*.swift": LanguageInfo(language="swift", build_mode="manual", os=MACOS),
+    ".github/workflows/*.yml": LanguageInfo(language="actions"),
 }
 ALL_CODEQL_LANGUAGES_FILES = {
     ".github/workflows/codeql-analysis.yml",
