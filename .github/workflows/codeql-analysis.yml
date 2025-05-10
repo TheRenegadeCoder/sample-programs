@@ -140,14 +140,6 @@ jobs:
       with:
         python-version: "${{ steps.repo-config.outputs['python-version'] }}"
 
-    - name: Run Poetry Image
-      uses: abatilo/actions-poetry@v3
-      with:
-        poetry-version: "${{ steps.repo-config.outputs['poetry-version'] }}"
-        
-    - name: Install Dependencies
-      run: poetry install
-        
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v3
