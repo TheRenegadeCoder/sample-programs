@@ -12,7 +12,7 @@ TEST_INFO_DIR: Dict[str, str] = {
     "cpp": "c-plus-plus",
     "java": "java",
     "kotlin": "kotlin",
-    "switft": "swift",
+    "swift": "swift",
 }
 
 
