@@ -1,18 +1,22 @@
 import argparse
+import re
 import shlex
 import subprocess
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List
 
-from glotter.source import Source
-
 TEST_INFO_DIR: Dict[str, str] = {
     "c": "c",
     "cpp": "c-plus-plus",
     "java": "java",
     "kotlin": "kotlin",
+    "swift": "swift",
 }
+
+BUILD_PATTERN = re.compile(r"""^\s+build:\s*['"]([^'"]+)""", re.M)
+SOURCE_NAME_PATTERN = re.compile(r"\{\{\s*source\.name\s*\}\}")
+SOURCE_EXTENSION_PATTERN = re.compile(r"\{\{\s*source\.extension\s*\}\}")
 
 
 @dataclass
@@ -42,13 +46,11 @@ def get_test_info_struct(language: str) -> TestInfoStruct:
 
 
 def get_build_command(testinfo_struct: TestInfoStruct, path: Path) -> List[str]:
-    source = Source(
-        name=path.name,
-        language=testinfo_struct.language,
-        path=str(path),
-        test_info_string=testinfo_struct.test_info_str,
-    )
-    build: str = source.test_info.container_info.build
+    match_str = BUILD_PATTERN.search(testinfo_struct.test_info_str)
+    assert match_str
+
+    build = SOURCE_NAME_PATTERN.sub(path.stem, match_str.group(1))
+    build = SOURCE_EXTENSION_PATTERN.sub(path.suffix, build)
     return shlex.split(build)
 
 
