@@ -129,17 +129,6 @@ jobs:
       with:
         fetch-depth: 2
 
-    - name: Read repo config
-      uses: pietrobolcato/action-read-yaml@1.1.0
-      id: repo-config
-      with:
-        config: repo-config.yml
-
-    - name: Set up Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: "${{ steps.repo-config.outputs['python-version'] }}"
-
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v3
@@ -162,7 +151,7 @@ jobs:
 
     - name: Manual build
       if: ${{ matrix.build-mode == 'manual' }}
-      run: poetry run python scripts/build_codeql_language.py ${{ matrix.language }} ${{ matrix.paths }}
+      run: python scripts/build_codeql_language.py ${{ matrix.language }} ${{ matrix.paths }}
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
