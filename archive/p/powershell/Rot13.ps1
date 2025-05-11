@@ -4,10 +4,11 @@ function Show-Usage() {
 }
 
 function Get-Rot13([string]$Str) {
+    # -regex is case-insensitve
     $Result = switch -regex ($Str.ToCharArray()) {
-        "[A-Ma-m]" { [char]([byte]$_ + 13) } # A-M, a-m -> N-Z, n-z
-        "[N-Zn-z]" { [char]([byte]$_ - 13) } # N-Z, n-z -> A-M, a-m
-        default { $_ } # Don't change
+        "[a-m]" { [char]([byte]$_ + 13) } # A-M, a-m -> N-Z, n-z
+        "[n-z]" { [char]([byte]$_ - 13) } # N-Z, n-z -> A-M, a-m
+        default { $_ } # Else, don't change
     }
     -join $Result
 }
