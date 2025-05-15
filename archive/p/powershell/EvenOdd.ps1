@@ -3,7 +3,7 @@ function Show-Usage() {
     Exit 1
 }
 
-function Invoke-IsEven([int]$Value) {
+function Test-IsEven([int]$Value) {
     $Value % 2 -eq 0
 }
 
@@ -17,4 +17,4 @@ try {
     Show-Usage
 }
 
-Write-Host ((Invoke-IsEven $Value) ? "Even" : "Odd")
+Write-Host ((Test-IsEven $Value) ? "Even" : "Odd")
