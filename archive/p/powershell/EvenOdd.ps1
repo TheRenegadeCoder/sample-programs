@@ -1,0 +1,20 @@
+function Show-Usage() {
+    Write-Host "Usage: please input a number"
+    Exit 1
+}
+
+function Invoke-IsEven([int]$Value) {
+    $Value % 2 -eq 0
+}
+
+if ($args.Length -lt 1 -or -not $args[0]) {
+    Show-Usage
+}
+
+try {
+    $Value = [int]::Parse($args[0])
+} catch {
+    Show-Usage
+}
+
+Write-Host ((Invoke-IsEven $Value) ? "Even" : "Odd")
