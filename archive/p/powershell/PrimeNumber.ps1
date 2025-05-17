@@ -18,7 +18,7 @@ function Test-IsPrime([int]$Value) {
     $true
 }
 
-if ($args.Length -lt 1 -or -not $args[0]) {
+if ($args.Length -lt 1) {
     Show-Usage
 }
 
