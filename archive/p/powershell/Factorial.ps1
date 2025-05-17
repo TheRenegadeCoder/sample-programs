@@ -12,7 +12,7 @@ function Get-Factorial([int]$Value) {
     $Product
 }
 
-if ($args.Length -lt 1 -or -not $args[0]) {
+if ($args.Length -lt 1) {
     Show-Usage
 }
 
