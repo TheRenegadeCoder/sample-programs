@@ -7,7 +7,7 @@ function Test-IsEven([int]$Value) {
     $Value % 2 -eq 0
 }
 
-if ($args.Length -lt 1 -or -not $args[0]) {
+if ($args.Length -lt 1) {
     Show-Usage
 }
 
