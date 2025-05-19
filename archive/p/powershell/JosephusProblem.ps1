@@ -15,7 +15,7 @@ Final answer is g(n, k) + 1 to get back to one-based index
 #>
 function Get-JosephusProblem([int]$N, [int]$K) {
     $G = 0
-    for ($M = 2; $M <= $N; $M++) {
+    for ($M = 2; $M -le $N; $M++) {
         $G = ($G + $K) % $M
     }
 
