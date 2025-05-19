@@ -7,7 +7,7 @@ function Show-Usage() {
 Reference: https://en.wikipedia.org/wiki/Josephus_problem#The_general_case
 
 Use zero-based index algorithm:
-//
+
     g(1, k) = 0
     g(m, k) = [g(m - 1, k) + k] MOD m, for m = 2, 3, ..., n
 
