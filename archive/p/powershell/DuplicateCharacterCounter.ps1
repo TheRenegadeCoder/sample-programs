@@ -3,13 +3,13 @@ function Show-Usage() {
     Exit 1
 }
 
-function Get-Duplicate-Character-Counter([string]$Str) {
+function Get-DuplicateCharacterCounter([string]$Str) {
     $Counts = @{}
     $Str.ToCharArray() | ForEach-Object { $Counts[$_] += 1 }
     $Counts
 }
 
-function Show-Duplicate-Character-Counter([string]$Str, [object]$Counts) {
+function Show-DuplicateCharacterCounter([string]$Str, [object]$Counts) {
     $Dupes = $false
     $Str.ToCharArray() | Select-Object -Unique | ForEach-Object {
         if ($Counts[$_] -gt 1) {
@@ -28,5 +28,5 @@ if ($args.Length -lt 1 -or -not $args[0]) {
 }
 
 $Str = $args[0]
-$Counts = Get-Duplicate-Character-Counter $Str
-Show-Duplicate-Character-Counter $Str $Counts
+$Counts = Get-DuplicateCharacterCounter $Str
+Show-DuplicateCharacterCounter $Str $Counts
