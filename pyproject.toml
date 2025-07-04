@@ -32,7 +32,5 @@ maintainers = [
 [tool.poetry]
 package-mode = false
 
-[tool.poetry.dependencies]
-glotter2 = {develop = true}
 [tool.pytest.ini_options]
 console_output_style = "count"
