@@ -18,22 +18,7 @@ function Test-IsSorted([int[]]$arr) {
 }
 
 function Invoke-BinarySearch([int[]]$arr, [int]$target) {
-    $lo = 0
-    $hi = $arr.Length
-    while ($lo -lt $hi) {
-        $mid = ($lo + $hi) -shr 1
-        if ($arr[$mid] -eq $target) {
-            return $mid
-        }
-
-        if ($arr[$mid] -lt $target) {
-            $lo = $mid + 1
-        } else {
-            $hi = $mid
-        }
-    }
-
-    return -1
+    return [Array]::BinarySearch($arr, $target)
 }
 
 if ($args.Length -lt 2 -or -not $args[0]) {
