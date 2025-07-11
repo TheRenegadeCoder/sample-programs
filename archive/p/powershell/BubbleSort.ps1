@@ -8,7 +8,7 @@ function Parse-IntList([string]$Str) {
 }
 
 # Source: https://en.wikipedia.org/wiki/Bubble_sort#Optimizing_bubble_sort
-function Invoke-BubbleSort([int[]]$Values) {
+function Invoke-BubbleSort([array]$Values) {
     $n = $Values.Length
     do {
         $newN = 0
@@ -21,8 +21,6 @@ function Invoke-BubbleSort([int[]]$Values) {
 
         $n = $newN
     } while ($n -gt 1)
-
-    $Values
 }
 
 if ($args.Length -lt 1 -or -not $args[0]) {
@@ -38,5 +36,5 @@ try {
     Show-Usage
 }
 
-$SortedValues = Invoke-BubbleSort $Values
-Write-Output ($SortedValues -join ', ')
+Invoke-BubbleSort $values
+Write-Output ($values -join ', ')
