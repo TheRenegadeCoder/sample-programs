@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Powershell! To find documentation related to the Powershell code in this repo, look [here.](https://sampleprograms.io/languages/powershell)
 
-## Sample Programs List - 23/38 :relaxed:
+## Sample Programs List - 24/38 :relaxed:
 
 In this section, we feature a list of completed and missing programs in Powershell. See above for the current amount of completed programs in Powershell. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -14,6 +14,7 @@ Below, you'll find a list of completed code snippets in Powershell. Code snippet
 - :warning: [Base64 Encode Decode in Powershell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+base64+encode+decode+powershell) [[Requirements](https://sampleprograms.io/projects/base64-encode-decode)]
 - :warning: [Binary Search in Powershell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+binary+search+powershell) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :warning: [Capitalize in Powershell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+powershell) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :warning: [Depth First Search in Powershell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+depth+first+search+powershell) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :warning: [Duplicate Character Counter in Powershell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+powershell) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :warning: [Even Odd in Powershell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+powershell) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :warning: [Factorial in Powershell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+powershell) [[Requirements](https://sampleprograms.io/projects/factorial)]
@@ -40,7 +41,6 @@ The following list contains all of the approved programs that are not currently 
 
 - :x: [Bubble Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,bubble+sort&template=code-snippet-request.md&title=Add+Bubble+Sort+in+Powershell) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,convex+hull&template=code-snippet-request.md&title=Add+Convex+Hull+in+Powershell) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
-- :x: [Depth First Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,depth+first+search&template=code-snippet-request.md&title=Add+Depth+First+Search+in+Powershell) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,dijkstra&template=code-snippet-request.md&title=Add+Dijkstra+in+Powershell) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :x: [Insertion Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,insertion+sort&template=code-snippet-request.md&title=Add+Insertion+Sort+in+Powershell) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,job+sequencing&template=code-snippet-request.md&title=Add+Job+Sequencing+in+Powershell) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
