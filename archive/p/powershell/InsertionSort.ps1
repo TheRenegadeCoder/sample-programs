@@ -8,7 +8,7 @@ function Parse-IntList([string]$Str) {
 }
 
 # https://en.wikipedia.org/wiki/Insertion_sort#Algorithm
-function Invoke-InsertionSort([int[]]$Values) {
+function Invoke-InsertionSort([array]$Values) {
     $n = $Values.Length
     $i = 1
     for ($i = 1; $i -lt $n; $i++) {
@@ -21,8 +21,6 @@ function Invoke-InsertionSort([int[]]$Values) {
 
         $Values[$j] = $x
     }
-
-    $Values
 }
 
 if ($args.Length -lt 1) {
@@ -38,5 +36,5 @@ try {
     Show-Usage
 }
 
-$sortedValues = Invoke-InsertionSort $values
-Write-Host ($sortedValues -join ', ')
+Invoke-InsertionSort $values
+Write-Host ($values -join ', ')
