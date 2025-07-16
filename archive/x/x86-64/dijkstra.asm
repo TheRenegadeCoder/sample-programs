@@ -1,3 +1,41 @@
+;Constants
+%DEFINE EMPTY_INPUT 0
+
+
+;SYSCALLS
+;I/O
+%DEFINE SYS_WRITE 1
+%DEFINE STDOUT 1
+;Memory
+%DEFINE SYS_MMAP 9
+;PROTS (RDX)
+%DEFINE PROT_READ 0x01
+%DEFINE PROT_WRITE 0x02
+;FLAGS (R10)
+%DEFINE MAP_SHARED
+%DEFINE MAP_ANONYMOUS
+
+%DEFINE SYS_MUNMAP 11
+
+;Stack displacements
+
+%DEFINE _start.STACK_INIT 32
+%DEFINE _start.argc 8
+%DEFINE _start.argv0 16
+%DEFINE _start.argv1 24
+%DEFINE _start.argv2 32
+%DEFINE _start.argv3 40
+; RBP+ ^
+; RBP- v    
+
+
+
+%DEFINE parse_SRC_DST.STACK_INIT 0 ;Placeholder
+
+
+%DEFINE atol.STACK_INIT 8
+%DEFINE atol.returnValue 8
+
 section .rodata
 
 invalid:
@@ -9,17 +47,40 @@ section .data
 
 src_dst:
     .src dq 0
-    .dst dq 0
-    
+    .dst dq 0  
 minheap:
     .ptr dq 0
     .size dd 0
-    .max_size dd 0 ;SYS_MMAP will be based on this value.
+    .max_size dd 0 ;SYS_MMAP will be based on this value; maximum array size.
 section .bss
 
 section .text
 
 global _start
+
+atol:
+; ----------------------------------------------------------------------------
+; Function: atol (ascii to long)
+; Description:
+;   Converts ascii string to long value (64 bits).
+; Parameters:
+;   RDI - (char*)         Pointer to string to convert to integer.
+;   RSI - ()              Unused.
+;   RDX - ()              Unused.
+;   R10 - ()              Unused.
+;   R8  - ()              Unused.
+;   R9  - ()              Unused.
+; Returns:
+;   RAX - long value of string.
+; ---------------------------------------------------------------------------
+
+    PUSH RBP
+    MOV RBP, RSP
+    SUB RSP, atol.STACK_INIT
+    
+    
+    
+    
 
 _start:
     
@@ -43,5 +104,11 @@ parse_SRC_DST:
 ;   R9  - ()              Unused.
 ; Returns:
 ;   RAX - -1 for invalid input.
-; ---------------------------------------------------------------------------    
+; ---------------------------------------------------------------------------
+
+    PUSH RBP,
+    MOV RBP, RSP
+    SUB RSP, parse_SRC_DST.STACK_INIT
+
+    
 
