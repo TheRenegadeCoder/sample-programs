@@ -5,6 +5,7 @@
 %DEFINE INVALID_SRC -3
 %DEFINE INVALID_NUM_NEG -4
 %DEFINE INVALID_CHAR -5
+%DEFINE INVALID_NUM_VERTS -6
 
 ;Constants
 %DEFINE EMPTY_INPUT 0
@@ -67,10 +68,48 @@ minheap:
     .size dd 0
     .max_size dd 0 ;SYS_MMAP will be based on this value; maximum array size.
 
+vertice_array:
+    .ptr dq 0
+    .size dq 0
+    .vertices dq 0
+
 commas dq 0
 section .bss
 
 section .text
+
+ezsqrt:
+; ----------------------------------------------------------------------------
+; Function: Easy Square Root
+; Description:
+;   Checks if number is perfect square, and also moves the sqrt to a specified pointer.
+; Parameters:
+;   RDI - (long)          Input value to sqrt.
+;   RSI - (long*)         Location to move sqrt to.
+;   RDX - ()              Unused.
+;   R10 - ()              Unused.
+;   R8  - ()              Unused.
+;   R9  - ()              Unused.
+; Returns:
+;   RAX - -1 (Input not square).
+; ---------------------------------------------------------------------------
+    PUSH RBP
+    MOV RBP, RSP
+    
+    MOV RDX, -1
+    MOV RCX, 1
+    .sqrt_loop:
+        MOV RAX, RCX
+        MUL RCX
+        CMP RAX, RDI
+        CMOVA RAX, RDX
+        INC RCX
+        JB .sqrt_loop
+    MOV [RSI], RCX
+    
+    MOV RSP, RBP
+    POP RBP
+    RET
 
 atol:
 ; ----------------------------------------------------------------------------
@@ -111,6 +150,9 @@ atol:
     MOV RSP, RBP
     POP RBP
     RET
+    
+    
+    
 global _start
 
 _start:
@@ -121,7 +163,7 @@ _start:
     MOV RAX, [RBP + _start.argc]
     CMP RAX, 4 ;Program name + vertices + SRC + DST
     MOV RDI, INVALID_ARGC
-    JNE .error
+    JNE error
     
     ;SRC Parse
     MOV RDI, QWORD [RBP + _start.argv2]
@@ -129,7 +171,7 @@ _start:
     CALL parse_SRC_DST
     CMP RAX, -1
     MOV RDI, INVALID_SRC
-    JBE .error
+    JBE error
     
     ;DST Parse
     MOV RDI, QWORD [RBP + _start.argv3]
@@ -137,14 +179,14 @@ _start:
     CALL parse_SRC_DST
     CMP RAX, -1
     MOV RDI, INVALID_DST
-    JBE .error
+    JBE error
     
     ;Count commas
     MOV RCX, 0
     MOV RSI, [RBP+_start.argv1]
     MOV RSI, [RSI]
     comma_loop:
-        MOV DL, [RSP+RCX]
+        MOV DL, [RSP+RCX*8]
         INC RCX
         .commaJMP:
         ; ---------------------------------------------------------------------------
@@ -168,24 +210,41 @@ _start:
         CMOVNE RDI, RBX
         JMP _start.error
         .zero:
-        
+            CMP RCX, 0
+            MOV RDI, INVALID_NUM_VERTS
+            JE error
+            INC [commas] ;To get the actual count, as there's one less comma than the amount of connections.
+            MOV RAX, [commas]
+            MOV [vertice_array.size], RAX
+    ;Continued from zero
+    ;Mapping memory for the array [vertex][distances].
+    MOV RAX, SYS_MMAP
+    MOV RDI, [vertice_array.size]
+    MOV RSI, PROT_READ | PROT_WRITE
+    MOV RDX, MAP_SHARED | MAP_ANONYMOUS
+    MOV R10, -1
+    MOV R8, 0
+    SYSCALL  
+    MOV [vertice_array.ptr], RAX
+    
+            
         
     MOV RAX, SYS_EXIT
     MOV RDI, EXIT_OK
     SYSCALL
     
-    .error:
-        MOV R15, RDI
+error:
+    MOV R15, RDI
     
-        MOV RAX, SYS_WRITE
-        MOV RDI, STDOUT
-        MOV RSI, invalid.msg
-        MOV RDX, invalid.len
-        SYSCALL
+    MOV RAX, SYS_WRITE
+    MOV RDI, STDOUT
+    MOV RSI, invalid.msg
+    MOV RDX, invalid.len
+    SYSCALL
         
-        MOV RAX, SYS_EXIT
-        MOV RDI, R15
-        SYSCALL
+    MOV RAX, SYS_EXIT
+    MOV RDI, R15
+    SYSCALL
     
 parse_vertices:
     
