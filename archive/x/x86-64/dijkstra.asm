@@ -1,3 +1,6 @@
+;Exit codes
+%DEFINE INVALID_ARGC -1
+
 ;Constants
 %DEFINE EMPTY_INPUT 0
 
@@ -16,6 +19,8 @@
 %DEFINE MAP_ANONYMOUS
 
 %DEFINE SYS_MUNMAP 11
+;Thread
+%DEFINE SYS_EXIT 60
 
 ;Stack displacements
 
@@ -30,12 +35,14 @@
 
 
 
-%DEFINE parse_SRC_DST.STACK_INIT 8
-%DEFINE parse_SRC_DST.atol 0
+%DEFINE parse_SRC_DST.STACK_INIT 16
+%DEFINE parse_SRC_DST.argv_loc 8
+%DEFINE parse_SRC_DST.strlen 16
+%DEFINE parse_SRC_DST.atol 24
 
 
 %DEFINE atol.STACK_INIT 8
-%DEFINE atol.returnValue 8
+%DEFINE atol.ret 8
 
 section .rodata
 
@@ -57,8 +64,6 @@ section .bss
 
 section .text
 
-global _start
-
 atol:
 ; ----------------------------------------------------------------------------
 ; Function: atol (ascii to long)
@@ -66,7 +71,7 @@ atol:
 ;   Converts ascii string to long value (64 bits).
 ; Parameters:
 ;   RDI - (char*)         Pointer to string to convert to integer.
-;   RSI - ()              Unused.
+;   RSI - (long)          Strlen.
 ;   RDX - ()              Unused.
 ;   R10 - ()              Unused.
 ;   R8  - ()              Unused.
@@ -78,13 +83,50 @@ atol:
     PUSH RBP
     MOV RBP, RSP
     SUB RSP, atol.STACK_INIT
+    MOV QWORD [RBP - atol.ret]
     
+    MOV RBX, 10 ;Multiplier
+    MOV RCX, 0
+    MOV R8B, BYTE [RDI+RCX]
+    .operation:
+    MOV RAX, QWORD [RBP - atol.ret]
+    MUL RBX
+    INC RCX
+    SUB R8B, '0'
+    ADD RAX, R8
+    MOV QWORD [RBP - atol.ret], RAX
+    CMP RCX, RSI ;Compare counter to Strlen
+    JNE .operation
     
-    
-    
+    MOV RAX, QWORD [RBP - atol.ret]
+    ADD RSP, atol.STACK_INIT
+    MOV RSP, RBP
+    POP RBP
+    RET
+global _start
 
 _start:
+    PUSH RBP
+    MOV RBP, RSP
+    SUB RSP, _start.STACK_INIT
     
+    MOV RAX, [RBP + _start.argc]
+    CMP RAX, 4 ;Program name + vertices + SRC + DST
+    JNE .error
+    
+    
+    
+    
+    .error:
+        MOV RAX, SYS_WRITE
+        MOV RDI, STDOUT
+        MOV RSI, invalid.msg
+        MOV RDX, invalid.len
+        SYSCALL
+        
+        MOV RAX, SYS_EXIT
+        MOV RDI, INVALID_ARGC
+        SYSCALL
     
     
     
@@ -110,6 +152,8 @@ parse_SRC_DST:
     PUSH RBP,
     MOV RBP, RSP
     SUB RSP, parse_SRC_DST.STACK_INIT
+    MOV QWORD [RBP - parse_SRC_DST.argv_loc], RDI
+    MOV QWORD [RBP - parse_SRC_DST.strlen], 0
     MOV QWORD [RBP - parse_SRC_DST.atol], 0
     ;Check if SRC/DST is empty or not.
     MOV RAX, [RDI]
@@ -129,10 +173,12 @@ parse_SRC_DST:
         times 48 dq .error
         times 10 dq .num
         times 69 dq .error
-        
-     
     .cont: 
-    
+    MOV RDI, QWORD [RBP - parse_SRC_DST.argv_loc]
+    MOV QWORD [RBP - parse_SRC_DST.strlen], RCX
+    MOV RSI, RCX
+    CALL atol
+    MOV QWORD [RBP - parse_SRC_DST.atol], RAX
             
     .zero:
         CMP RCX, 0
@@ -147,7 +193,6 @@ parse_SRC_DST:
         ADD RSP, parse_SRC_DST.STACK_INIT
         MOV RSP, RBP
         POP RBP
-        
         RET
 
     
