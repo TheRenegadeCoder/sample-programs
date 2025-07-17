@@ -289,7 +289,18 @@ _start:
     CALL ezsqrt
     CMP RAX, -1
     MOV RDI, INVALID_NOT_SQUARE
-    JE error       
+    JE error   
+    
+    MOV RAX, [src_dst.src]
+    MOV RBX, [vertice_array.vertices]
+    CMP RAX, RBX
+    MOV RDI, INVALID_SRC
+    JA error
+    MOV RAX, [src_dst.dst]
+    CMP RAX, RBX
+    MOV RDI, INVALID_DST
+    JA ERROR
+        
         
     MOV RAX, SYS_EXIT
     MOV RDI, EXIT_OK
