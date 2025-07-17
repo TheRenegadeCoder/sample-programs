@@ -6,6 +6,7 @@
 %DEFINE INVALID_NUM_NEG -4
 %DEFINE INVALID_CHAR -5
 %DEFINE INVALID_NUM_VERTS -6
+%DEFINE INVALID_NOT_SQUARE -7
 
 ;Constants
 %DEFINE EMPTY_INPUT 0
@@ -38,7 +39,7 @@
 %DEFINE _start.argv3 40
 ; RBP+ ^
 ; RBP- v    
-
+%DEFINE _start.minheap 8
 
 
 %DEFINE parse_SRC_DST.STACK_INIT 16
@@ -62,11 +63,20 @@ section .data
 src_dst:
     .src dq 0
     .dst dq 0  
-minheap:
+struc minheap:
     ;Minheap will be used to implement priority queue.
     .ptr dq 0
     .size dd 0
-    .max_size dd 0 ;SYS_MMAP will be based on this value; maximum array size.
+    .max_size dd 0
+    
+    .vft dq minheap_vft
+endstruc
+
+minheap_vft:
+    .right dq right
+    .left dq left
+    .parent dq parent
+    .min dq min
 
 vertice_array:
     .ptr dq 0
@@ -77,6 +87,50 @@ commas dq 0
 section .bss
 
 section .text
+; ----------------------------------------------------------------------------
+; Functions: Get right, get left, get parent node.
+; Description:
+;   Finds the requested nodes based on the index of the array.
+; Parameters:
+;   RDI - (long)          Index.
+;   RSI - ()              Unused.
+;   RDX - ()              Unused.
+;   R10 - ()              Unused.
+;   R8  - ()              Unused.
+;   R9  - ()              Unused.
+; Returns:
+;   RAX - right/left/parent index.
+; ---------------------------------------------------------------------------
+right:
+    SHL RDI, 1
+    ADD RDI, 2
+    RET
+left:
+    SHL RDI, 1
+    ADD RDI, 1
+    RET
+parent:
+    DEC RDI
+    SHR RDI, 1
+    RET
+
+
+min:
+; ----------------------------------------------------------------------------
+; Function: Minimum node of heap.
+; Description:
+;   Pulls minimum node from given minheap.
+; Parameters:
+;   RDI - (minheap*)      Ptr to minheap.
+;   RSI - (long*)         Location to move sqrt to.
+;   RDX - ()              Unused.
+;   R10 - ()              Unused.
+;   R8  - ()              Unused.
+;   R9  - ()              Unused.
+; Returns:
+;   RAX - Minimum of minheap.
+; ---------------------------------------------------------------------------
+    MOV RAX, [RDI
 
 ezsqrt:
 ; ----------------------------------------------------------------------------
@@ -102,14 +156,16 @@ ezsqrt:
         MOV RAX, RCX
         MUL RCX
         CMP RAX, RDI
-        CMOVA RAX, RDX
         INC RCX
+        CMOVA RAX, RDX
         JB .sqrt_loop
+    
     MOV [RSI], RCX
     
     MOV RSP, RBP
     POP RBP
     RET
+        
 
 atol:
 ; ----------------------------------------------------------------------------
@@ -159,6 +215,7 @@ _start:
     PUSH RBP
     MOV RBP, RSP
     SUB RSP, _start.STACK_INIT
+    MOV [RBP+_start.minheap], 0
     
     MOV RAX, [RBP + _start.argc]
     CMP RAX, 4 ;Program name + vertices + SRC + DST
@@ -227,13 +284,19 @@ _start:
     SYSCALL  
     MOV [vertice_array.ptr], RAX
     
-            
+    MOV RDI, [vertice_array.size]
+    LEA RSI, [vertive_array.vertices]
+    CALL ezsqrt
+    CMP RAX, -1
+    MOV RDI, INVALID_NOT_SQUARE
+    JE error       
         
     MOV RAX, SYS_EXIT
     MOV RDI, EXIT_OK
     SYSCALL
     
 error:
+    ;Bad inputs JMP here.
     MOV R15, RDI
     
     MOV RAX, SYS_WRITE
