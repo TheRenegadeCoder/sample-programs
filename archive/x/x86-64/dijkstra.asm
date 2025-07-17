@@ -30,7 +30,8 @@
 
 
 
-%DEFINE parse_SRC_DST.STACK_INIT 0 ;Placeholder
+%DEFINE parse_SRC_DST.STACK_INIT 8
+%DEFINE parse_SRC_DST.atol 0
 
 
 %DEFINE atol.STACK_INIT 8
@@ -109,6 +110,45 @@ parse_SRC_DST:
     PUSH RBP,
     MOV RBP, RSP
     SUB RSP, parse_SRC_DST.STACK_INIT
+    MOV QWORD [RBP - parse_SRC_DST.atol], 0
+    ;Check if SRC/DST is empty or not.
+    MOV RAX, [RDI]
+    MOV AL, BYTE [RAX] ;Pull first piece of data in string
+    CMP RAX, EMPTY_INPUT
+    JE .error
+    
+    MOV RCX, 0
+    .validate:
+    MOV DL, BYTE [RAX+RCX]
+    JMP [.jmpTable + RDX*8] 
+    .jmpTable:
+    ; ---------------------------------------------------------------------------
+    ; Valid bytes: ['0'-'9'], 0
+    ; ---------------------------------------------------------------------------
+        dq .zero
+        times 48 dq .error
+        times 10 dq .num
+        times 69 dq .error
+        
+     
+    .cont: 
+    
+            
+    .zero:
+        CMP RCX, 0
+        JE .error ;We really shouldn't have empty inputs or reach this state at RCX == 0 at all.
+        JNE .cont
+    .num:
+        INC RCX
+        JMP .validate
+    
+    .error:
+        MOV RAX, -1
+        ADD RSP, parse_SRC_DST.STACK_INIT
+        MOV RSP, RBP
+        POP RBP
+        
+        RET
 
     
 
