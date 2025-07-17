@@ -1,5 +1,10 @@
 ;Exit codes
+%DEFINE EXIT_OK 0
 %DEFINE INVALID_ARGC -1
+%DEFINE INVALID_SRC -2
+%DEFINE INVALID_SRC -3
+%DEFINE INVALID_NUM_NEG -4
+%DEFINE INVALID_CHAR -5
 
 ;Constants
 %DEFINE EMPTY_INPUT 0
@@ -57,9 +62,12 @@ src_dst:
     .src dq 0
     .dst dq 0  
 minheap:
+    ;Minheap will be used to implement priority queue.
     .ptr dq 0
     .size dd 0
     .max_size dd 0 ;SYS_MMAP will be based on this value; maximum array size.
+
+commas dq 0
 section .bss
 
 section .text
@@ -112,12 +120,63 @@ _start:
     
     MOV RAX, [RBP + _start.argc]
     CMP RAX, 4 ;Program name + vertices + SRC + DST
+    MOV RDI, INVALID_ARGC
     JNE .error
     
+    ;SRC Parse
+    MOV RDI, QWORD [RBP + _start.argv2]
+    LEA RSI, [src_dst.src]
+    CALL parse_SRC_DST
+    CMP RAX, -1
+    MOV RDI, INVALID_SRC
+    JBE .error
     
+    ;DST Parse
+    MOV RDI, QWORD [RBP + _start.argv3]
+    LEA RSI, [src_dst.dst]
+    CALL parse_SRC_DST
+    CMP RAX, -1
+    MOV RDI, INVALID_DST
+    JBE .error
     
+    ;Count commas
+    MOV RCX, 0
+    MOV RSI, [RBP+_start.argv1]
+    MOV RSI, [RSI]
+    comma_loop:
+        MOV DL, [RSP+RCX]
+        INC RCX
+        .commaJMP:
+        ; ---------------------------------------------------------------------------
+        ; Valid bytes: ['0'-'9'], 0, ','
+        ; ---------------------------------------------------------------------------
+        dq .zero
+        times 43 dq .error
+        dq .comma ; Handle comma
+        dq .neg ; Jump to error.
+        times 2 dq .error
+        times 10 dq .comma ; '0'-'9' 
+        times 69 dq .error
+        .comma:
+            INC [commas]
+            JMP comma_loop
+        .error:
+        MOV RAX, INVALID_NUM_NEG
+        MOV RBX, INVALID_CHAR
+        CMP DL, '-'
+        CMOVE RDI, RAX
+        CMOVNE RDI, RBX
+        JMP _start.error
+        .zero:
+        
+        
+    MOV RAX, SYS_EXIT
+    MOV RDI, EXIT_OK
+    SYSCALL
     
     .error:
+        MOV R15, RDI
+    
         MOV RAX, SYS_WRITE
         MOV RDI, STDOUT
         MOV RSI, invalid.msg
@@ -125,9 +184,10 @@ _start:
         SYSCALL
         
         MOV RAX, SYS_EXIT
-        MOV RDI, INVALID_ARGC
+        MOV RDI, R15
         SYSCALL
     
+parse_vertices:
     
     
 parse_SRC_DST:
