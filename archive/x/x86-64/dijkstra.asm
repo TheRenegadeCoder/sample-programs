@@ -47,9 +47,10 @@
 %DEFINE parse_SRC_DST.strlen 16
 %DEFINE parse_SRC_DST.atol 24
 
-%DEFINE minheap@insert.STACK_INIT 16
+%DEFINE minheap@insert.STACK_INIT 24
 %DEFINE minheap@insert.This 8
 %DEFINE minheap@insert.index 16
+%DEFINE minheap@insert.operatedIndex 24
 
 
 %DEFINE atol.STACK_INIT 8
@@ -226,18 +227,23 @@ minheap@insert:
 ;   R9  - ()              Unused.
 ; Returns:
 ;   RAX - ()              None.
+;   Clobbers - R11, 
 ; ---------------------------------------------------------------------------  
    PUSH RBP   
    MOV RBP, RSP
    SUB RSP, minheap@insert.STACK_INIT
    MOV [RBP - minheap@insert.This], RDI
    MOV [RBP - minheap@insert.index], 0
-   
+   MOV [RBP - minheap@insert.operatedIndex], 0
    
    MOV RAX, [RDI + minheap.ptr]
    MOV RDX, [RDI + minheap.size]
    MOV [RAX + RDX*8], RSI
    MOV [RBP - minheap@insert.index], RDX
+   MOV R10, RDX
+   DEC R10
+   SHR R10, 1
+   MOV [RBP - minheap@insert.operatedIndex], R10
    
    .loop:
        MOV R10, 1 ; Truth bit for while conditional
@@ -247,6 +253,8 @@ minheap@insert:
        CMP RDX, 0
        CMOVBE R8, R11
        AND R10, R8
+       MOV R8, 
+       
        
 
 
@@ -310,14 +318,14 @@ atol:
     MOV RCX, 0
     MOV R8B, BYTE [RDI+RCX]
     .operation:
-    MOV RAX, QWORD [RBP - atol.ret]
-    MUL RBX
-    INC RCX
-    SUB R8B, '0'
-    ADD RAX, R8
-    MOV QWORD [RBP - atol.ret], RAX
-    CMP RCX, RSI ;Compare counter to Strlen
-    JNE .operation
+        MOV RAX, QWORD [RBP - atol.ret]
+        MUL RBX
+        INC RCX
+        SUB R8B, '0'
+        ADD RAX, R8
+        MOV QWORD [RBP - atol.ret], RAX
+        CMP RCX, RSI ;Compare counter to Strlen
+        JNE .operation
     
     MOV RAX, QWORD [RBP - atol.ret]
     ADD RSP, atol.STACK_INIT
