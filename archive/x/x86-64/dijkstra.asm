@@ -10,7 +10,7 @@
 
 ;Constants
 %DEFINE EMPTY_INPUT 0
-
+%DEFINE SHIFT_X8
 
 ;SYSCALLS
 ;I/O
@@ -52,13 +52,13 @@
 %DEFINE atol.ret 8
 
 section .rodata
-minheap_vtable:
-    dq minheap::right
-    dq minheap::left
-    dq minheap::swap
-    dq minheap::parent
-    dq minheap::min
-    dq minheap::construct
+minheap_vTable:
+    dq minheap@right
+    dq minheap@left
+    dq minheap@swap ;I'm going to use a lock xchg for this.
+    dq minheap@parent
+    dq minheap@min
+    dq minheap@construct
 
 invalid:
     .msg db 'Usage: please provide three inputs: a serialized matrix, a source node and a destination node'
@@ -72,11 +72,10 @@ src_dst:
     .dst dq 0  
 struc minheap:
     ;Minheap will be used to implement priority queue.
-    .vptr resq 1
+    .vTable resq 1
     .ptr resq 1
     .size resd 1
     .max_size resd 1
-    .vft dq minheap_vft
 endstruc
 
 vertice_array:
@@ -88,7 +87,57 @@ commas dq 0
 section .bss
 
 section .text
-minheap::construct:
+;Minheap code area (This will be a nightmare).
+; ----------------------------------------------------------------------------
+; Function: Right, left, parent vertex.
+; Description:
+;   Grabs the index of the right, left, or parent index, based on the given index in RDI.
+; Parameters:
+;   RDI - (long)          Index.
+;   RSI - ()              Unused.
+;   RDX - ()              Unused.
+;   R10 - ()              Unused.
+;   R8  - ()              Unused.
+;   R9  - ()              Unused.
+; Returns:
+;   RAX - (long)          Right/left/parent index.
+; ---------------------------------------------------------------------------
+minheap@right:
+    MOV RAX, RDI
+    SHL RAX, 1
+    ADD RAX, 2
+minheap@left:
+    MOV RAX, RDI
+    SHL RAX, 1
+    ADD RAX, 1
+minheap@parent:
+    MOV RAX, RDI
+    SUB RAX, 1
+    SHR RAX, 1
+    RET
+minheap@swap:
+
+minheap@min:
+; ----------------------------------------------------------------------------
+; Function: Minheap minimum element (root).
+; Description:
+;   Constructs the minheap.
+; Parameters:
+;   RDI - (Minheap*)      Ptr to minheap to pull from [0] of the array pointer.
+;   RSI - ()              Unused.
+;   RDX - ()              Unused.
+;   R10 - ()              Unused.
+;   R8  - ()              Unused.
+;   R9  - ()              Unused.
+; Returns:
+;   RAX - (long)          Minimum element (root) of the minheap tree.
+; ---------------------------------------------------------------------------
+    MOV RAX, [RDI + minheap.ptr]
+    MOV RAX, [RAX] ;Load address in .ptr
+    MOV RAX, [RAX] ;Load [0] in ptr
+    RET
+
+minheap@constructor:
 ; ----------------------------------------------------------------------------
 ; Function: Minheap constructor
 ; Description:
@@ -105,6 +154,7 @@ minheap::construct:
 ; ---------------------------------------------------------------------------
     PUSH RBP
     MOV RBP, RSP
+    PUSH RDI
     
     MOV RAX, SYS_MMAP
     MOV RDI, minheap_size
@@ -113,6 +163,29 @@ minheap::construct:
     MOV R10, -1
     MOV R8, 0
     SYSCALL
+    
+    POP RDI
+    
+    PUSH RAX
+    LEA RSI, minheap_vTable
+    MOV [RAX + minheap.vTable], RSI
+    ;Allocate an array for the minheap elements.
+    MOV RAX, SYS_MMAP
+    SHL RDI, SHIFT_X8 ;RDI * 8 bytes
+    MOV RSI, PROT_READ | PROT_WRITE
+    MOV RDX, MAP_SHARED | MAP_ANONYMOUS
+    MOV R10, -1
+    MOV R8, 0
+    SYSCALL
+    
+    POP RDI
+    MOV [RDI + minheap.ptr], RAX
+    
+    MOV RAX, RDI ;MOV the minheap ptr back into RAX
+    MOV RSP, RBP
+    POP RBP
+    RET
+    
     
     
 
@@ -130,7 +203,7 @@ ezsqrt:
 ;   R8  - ()              Unused.
 ;   R9  - ()              Unused.
 ; Returns:
-;   RAX - -1 (Input not square).
+;   RAX - (long)          -1 (Input not square).
 ; ---------------------------------------------------------------------------
     PUSH RBP
     MOV RBP, RSP
@@ -165,7 +238,7 @@ atol:
 ;   R8  - ()              Unused.
 ;   R9  - ()              Unused.
 ; Returns:
-;   RAX - long value of string.
+;   RAX - (long)          Long value of string.
 ; ---------------------------------------------------------------------------
 
     PUSH RBP
@@ -262,20 +335,21 @@ _start:
     ;Mapping memory for the array [vertex][distances].
     MOV RAX, SYS_MMAP
     MOV RDI, [vertice_array.size]
+    SHL RDI, SHIFT_X8
     MOV RSI, PROT_READ | PROT_WRITE
     MOV RDX, MAP_SHARED | MAP_ANONYMOUS
     MOV R10, -1
     MOV R8, 0
     SYSCALL  
     MOV [vertice_array.ptr], RAX
-    
+    ;Check if input is square
     MOV RDI, [vertice_array.size]
     LEA RSI, [vertive_array.vertices]
     CALL ezsqrt
     CMP RAX, -1
     MOV RDI, INVALID_NOT_SQUARE
     JE error   
-    
+    ;Check if SRC/DST > vertices
     MOV RAX, [src_dst.src]
     MOV RBX, [vertice_array.vertices]
     CMP RAX, RBX
@@ -284,7 +358,12 @@ _start:
     MOV RAX, [src_dst.dst]
     CMP RAX, RBX
     MOV RDI, INVALID_DST
-    JA ERROR
+    JA error
+    
+    
+    MOV RDI, [vertice_array.vertices]
+    CALL minheap@constructor
+    MOV [RBP+_start.minheap], RAX
         
         
     MOV RAX, SYS_EXIT
@@ -324,7 +403,7 @@ parse_SRC_DST:
 ;   R8  - ()              Unused.
 ;   R9  - ()              Unused.
 ; Returns:
-;   RAX - -1 for invalid input.
+;   RAX - (long)          -1 for invalid input.
 ; ---------------------------------------------------------------------------
 
     PUSH RBP,
