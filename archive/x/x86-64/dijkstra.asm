@@ -52,6 +52,13 @@
 %DEFINE atol.ret 8
 
 section .rodata
+minheap_vtable:
+    dq minheap::right
+    dq minheap::left
+    dq minheap::swap
+    dq minheap::parent
+    dq minheap::min
+    dq minheap::construct
 
 invalid:
     .msg db 'Usage: please provide three inputs: a serialized matrix, a source node and a destination node'
@@ -65,18 +72,12 @@ src_dst:
     .dst dq 0  
 struc minheap:
     ;Minheap will be used to implement priority queue.
-    .ptr dq 0
-    .size dd 0
-    .max_size dd 0
-    
+    .vptr resq 1
+    .ptr resq 1
+    .size resd 1
+    .max_size resd 1
     .vft dq minheap_vft
 endstruc
-
-minheap_vft:
-    .right dq right
-    .left dq left
-    .parent dq parent
-    .min dq min
 
 vertice_array:
     .ptr dq 0
@@ -87,50 +88,34 @@ commas dq 0
 section .bss
 
 section .text
+minheap::construct:
 ; ----------------------------------------------------------------------------
-; Functions: Get right, get left, get parent node.
+; Function: Minheap constructor
 ; Description:
-;   Finds the requested nodes based on the index of the array.
+;   Constructs the minheap.
 ; Parameters:
-;   RDI - (long)          Index.
+;   RDI - (long)          Maximum capacity of the inner array of the Minheap (allocated as RDI*8).
 ;   RSI - ()              Unused.
 ;   RDX - ()              Unused.
 ;   R10 - ()              Unused.
 ;   R8  - ()              Unused.
 ;   R9  - ()              Unused.
 ; Returns:
-;   RAX - right/left/parent index.
+;   RAX - (Minheap*)      Ptr to new Minheap object.
 ; ---------------------------------------------------------------------------
-right:
-    SHL RDI, 1
-    ADD RDI, 2
-    RET
-left:
-    SHL RDI, 1
-    ADD RDI, 1
-    RET
-parent:
-    DEC RDI
-    SHR RDI, 1
-    RET
+    PUSH RBP
+    MOV RBP, RSP
+    
+    MOV RAX, SYS_MMAP
+    MOV RDI, minheap_size
+    MOV RSI, PROT_READ | PROT|WRITE
+    MOV RDX, MAP_SHARED | MAP_ANONYMOUS
+    MOV R10, -1
+    MOV R8, 0
+    SYSCALL
+    
+    
 
-
-min:
-; ----------------------------------------------------------------------------
-; Function: Minimum node of heap.
-; Description:
-;   Pulls minimum node from given minheap.
-; Parameters:
-;   RDI - (minheap*)      Ptr to minheap.
-;   RSI - (long*)         Location to move sqrt to.
-;   RDX - ()              Unused.
-;   R10 - ()              Unused.
-;   R8  - ()              Unused.
-;   R9  - ()              Unused.
-; Returns:
-;   RAX - Minimum of minheap.
-; ---------------------------------------------------------------------------
-    MOV RAX, [RDI
 
 ezsqrt:
 ; ----------------------------------------------------------------------------
