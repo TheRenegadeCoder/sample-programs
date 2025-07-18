@@ -55,7 +55,7 @@ section .rodata
 minheap_vTable:
     dq minheap@right
     dq minheap@left
-    dq minheap@swap ;I'm going to use a lock xchg for this.
+    dq minheap@swap
     dq minheap@parent
     dq minheap@min
     dq minheap@construct
@@ -116,6 +116,25 @@ minheap@parent:
     SHR RAX, 1
     RET
 minheap@swap:
+; ----------------------------------------------------------------------------
+; Function: Minheap minimum element (root).
+; Description:
+;   Constructs the minheap.
+; Parameters:
+;   RDI - (Minheap*)      This.
+;   RSI - (long)          Index one.
+;   RDX - (long)          Index two.
+;   R10 - ()              Unused.
+;   R8  - ()              Unused.
+;   R9  - ()              Unused.
+; Returns:
+;   RAX - ()              None; RAX clobbered.
+; ---------------------------------------------------------------------------
+    MOV RAX, [RDI + minheap.ptr + RSI*8]
+    MOV R10, [RDI + minheap.ptr + RDX*8]
+    MOV [RDI + minheap.ptr + RDX*8], RAX
+    MOV [RDI + minheap.ptr + RSI*8], R10
+    RET
 
 minheap@min:
 ; ----------------------------------------------------------------------------
@@ -123,7 +142,7 @@ minheap@min:
 ; Description:
 ;   Constructs the minheap.
 ; Parameters:
-;   RDI - (Minheap*)      Ptr to minheap to pull from [0] of the array pointer.
+;   RDI - (Minheap*)      Ptr to minheap to pull from [0] of the array pointer. This ptr.
 ;   RSI - ()              Unused.
 ;   RDX - ()              Unused.
 ;   R10 - ()              Unused.
