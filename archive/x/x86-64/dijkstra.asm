@@ -47,6 +47,10 @@
 %DEFINE parse_SRC_DST.strlen 16
 %DEFINE parse_SRC_DST.atol 24
 
+%DEFINE minheap@insert.STACK_INIT 16
+%DEFINE minheap@insert.This 8
+%DEFINE minheap@insert.index 16
+
 
 %DEFINE atol.STACK_INIT 8
 %DEFINE atol.ret 8
@@ -58,6 +62,9 @@ minheap_vTable:
     dq minheap@swap
     dq minheap@parent
     dq minheap@min
+    dq minheap@insert ; These three will be the most complex to implement.
+    dq minheap@delete ; These three will be the most complex to implement.
+    dq minheap@heapify ; These three will be the most complex to implement.
     dq minheap@construct
 
 invalid:
@@ -205,8 +212,42 @@ minheap@constructor:
     POP RBP
     RET
     
-    
-    
+minheap@insert:
+; ----------------------------------------------------------------------------
+; Function: Easy Square Root
+; Description:
+;   Checks if number is perfect square, and also moves the sqrt to a specified pointer.
+; Parameters:
+;   RDI - (Minheap*)      This.
+;   RSI - (long)         Value to insert.
+;   RDX - ()              Unused.
+;   R10 - ()              Unused.
+;   R8  - ()              Unused.
+;   R9  - ()              Unused.
+; Returns:
+;   RAX - ()              None.
+; ---------------------------------------------------------------------------  
+   PUSH RBP   
+   MOV RBP, RSP
+   SUB RSP, minheap@insert.STACK_INIT
+   MOV [RBP - minheap@insert.This], RDI
+   MOV [RBP - minheap@insert.index], 0
+   
+   
+   MOV RAX, [RDI + minheap.ptr]
+   MOV RDX, [RDI + minheap.size]
+   MOV [RAX + RDX*8], RSI
+   MOV [RBP - minheap@insert.index], RDX
+   
+   .loop:
+       MOV R10, 1 ; Truth bit for while conditional
+       MOV R8, 0 ; Temporary Register for atomic conditions within the while loop.
+       MOV R9, 1 ; Temporary true bit, since CMOV doesn't allow immediate operands.
+       MOV R11, 0 ; ^ but false bit
+       CMP RDX, 0
+       CMOVBE R8, R11
+       AND R10, R8
+       
 
 
 ezsqrt:
@@ -292,7 +333,7 @@ _start:
     PUSH RBP
     MOV RBP, RSP
     SUB RSP, _start.STACK_INIT
-    MOV [RBP+_start.minheap], 0
+    MOV [RBP - _start.minheap], 0
     
     MOV RAX, [RBP + _start.argc]
     CMP RAX, 4 ;Program name + vertices + SRC + DST
@@ -471,5 +512,6 @@ parse_SRC_DST:
         POP RBP
         RET
 
-    
+dijkstra:
+        
 
