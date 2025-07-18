@@ -24,7 +24,7 @@ function ConvertFrom-Matrix([int[][]]$matrix) {
     $values
 }
 
-if ($args.Length -lt 3 -or -not $args[1] -or -not $args[2]) {
+if ($args.Length -lt 3 -or -not $args[2]) {
     Show-Usage
 }
 
