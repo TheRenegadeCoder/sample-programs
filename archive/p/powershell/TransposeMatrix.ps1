@@ -19,9 +19,7 @@ function Invoke-TransposeMatrix($matrix) {
 }
 
 function ConvertFrom-Matrix([int[][]]$matrix) {
-    $values = @()
-    $matrix | ForEach-Object { $values += $_ }
-    $values
+    @($matrix | ForEach-Object { $_ })
 }
 
 if ($args.Length -lt 3 -or -not $args[2]) {
