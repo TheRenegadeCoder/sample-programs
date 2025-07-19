@@ -3,8 +3,10 @@ program BubbleSort;
 {$mode objfpc}{$H+}
 
 uses
-   Classes,
-   SysUtils;
+   Classes, Generics.Collections, SysUtils;
+
+type
+   TIntegerList = specialize TList<Integer>;
 
 procedure ShowUsage;
 begin
@@ -12,106 +14,103 @@ begin
    Halt(1);
 end;
 
-type
-   TIntArray = array of integer;
-
-procedure SplitAndTrim(const S: string; out Tokens: TStringList);
+function ParseIntegerList(const S: string): TIntegerList;
 var
-   p: integer;
-   token: string;
+   Tokens: TStringArray;
+   Token: string;
+   Value: Integer;
 begin
-   Tokens := TStringList.Create;
-   try
-      p := 1;
-      while p <= Length(S) do
-      begin
-         token := '';
-         while (p <= Length(S)) and (S[p] <> ',') do
-         begin
-            token := token + S[p];
-            Inc(p);
-         end;
-         Tokens.Add(Trim(token));
-         Inc(p);
-      end;
-      Exit;
-   except
-      Tokens.Free;
-      raise;
-   end;
-end;
-
-function ParseIntegerList(const S: string): TIntArray;
-var
-   parts: TStringList;
-   i: integer;
-   val: integer;
-begin
-   if S = '' then
+   if S.Trim.IsEmpty then
       ShowUsage;
 
-   SplitAndTrim(S, parts);
-   try
-      if parts.Count < 2 then
-         ShowUsage;
+   Tokens := S.Split([',']);
+   Result := TIntegerList.Create;
 
-      SetLength(Result, parts.Count);
-      for i := 0 to parts.Count - 1 do
+   for Token in Tokens do
+   begin
+      if not TryStrToInt(Trim(Token), Value) then
       begin
-         if not TryStrToInt(parts[i], val) then
-            ShowUsage;
-         Result[i] := val;
+         Result.Free;
+         ShowUsage;
       end;
-   finally
-      parts.Free;
+      Result.Add(Value);
+   end;
+
+   if Result.Count < 2 then
+   begin
+      Result.Free;
+      ShowUsage;
    end;
 end;
 
-procedure BubbleSort(var A: TIntArray);
+function IsSorted(const A: TIntegerList): Boolean;
 var
-   i, j, tmp: integer;
-   swapped: boolean;
+   i: Integer;
 begin
-   for i := High(A) downto 1 do
+   for i := 1 to A.Count - 1 do
+      if A[i] < A[i - 1] then
+         Exit(False);
+   Result := True;
+end;
+
+procedure BubbleSort(List: TIntegerList);
+var
+   i, j: Integer;
+   Swapped: Boolean;
+
+   procedure SwapElements(Index1, Index2: Integer);
+   var
+      Temp: Integer;
    begin
-      swapped := False;
+      Temp := List[Index1];
+      List[Index1] := List[Index2];
+      List[Index2] := Temp;
+   end;
+begin
+   for i := List.Count - 1 downto 1 do
+   begin
+      Swapped := False;
       for j := 0 to i - 1 do
-         if A[j] > A[j + 1] then
+         if List[j] > List[j + 1] then
          begin
-            tmp := A[j];
-            A[j] := A[j + 1];
-            A[j + 1] := tmp;
-            swapped := True;
+            SwapElements(j, j + 1);
+            Swapped := True;
          end;
 
-      if not swapped then
-         Exit;
+      if not Swapped then
+         Break;
    end;
 end;
 
-function FormatIntegerList(const a: TIntArray): string;
+function FormatIntegerList(List: TIntegerList): string;
 var
-   i: integer;
+   i: Integer;
 begin
    Result := '';
-   for i := 0 to High(a) do
+   for i := 0 to List.Count - 1 do
    begin
       if i > 0 then
          Result += ', ';
-      Result += IntToStr(a[i]);
+      Result += IntToStr(List[i]);
    end;
 end;
 
 var
-   rawArg: string;
-   nums: TIntArray;
+   RawInput: string;
+   Numbers: TIntegerList;
 begin
    if ParamCount <> 1 then
       ShowUsage;
 
-   rawArg := ParamStr(1);
-   nums := ParseIntegerList(rawArg);
+   RawInput := ParamStr(1);
+   Numbers := ParseIntegerList(RawInput);
+   try
+      if not IsSorted(Numbers) then
+         BubbleSort(Numbers);
 
-   BubbleSort(nums);
-   Writeln(FormatIntegerList(nums));
+      Writeln(FormatIntegerList(Numbers));
+   finally
+      Numbers.Free;
+   end;
 end.
+
