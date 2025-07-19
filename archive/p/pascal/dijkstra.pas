@@ -5,10 +5,12 @@ program Dijkstra;
 uses
    Classes,
    Generics.Collections,
+   Math,
    SysUtils;
 
 type
    TIntegerList = specialize TList<integer>;
+   TBooleanList = specialize TList<boolean>;
 
 procedure ShowUsage;
 begin
@@ -16,47 +18,37 @@ begin
    Halt(1);
 end;
 
-function ParseIntList(const S: string): TIntegerList;
+function ParseIntegerList(const S: string): TIntegerList;
 var
-   Parts: TStringArray;
-   Part, TrimmedPart: string;
+   Part: string;
    Value: integer;
 begin
+   if S.Trim.IsEmpty then ShowUsage;
    Result := TIntegerList.Create;
-   if S = '' then
-      Exit;
-
-   Parts := S.Split([',']);
-   for Part in Parts do
+   for Part in S.Split([',']) do
    begin
-      TrimmedPart := Trim(Part);
-      if TrimmedPart = '' then
-      begin
-         Result.Free;
-         ShowUsage;
-      end;
-      if not TryStrToInt(TrimmedPart, Value) then
-      begin
-         Result.Free;
-         ShowUsage;
-      end;
-      if Value < 0 then
+      if not TryStrToInt(Trim(Part), Value) or (Value < 0) then
       begin
          Result.Free;
          ShowUsage;
       end;
       Result.Add(Value);
    end;
+   if Result.Count = 0 then
+   begin
+      Result.Free;
+      ShowUsage;
+   end;
 end;
 
 // Checks if the matrix is square, returns dimension or -1 if invalid
-function MatrixDimension(const M: TIntegerList): integer;
+function MatrixDimension(const Matrix: TIntegerList): integer; inline;
 var
    Len: integer;
    D: integer;
 begin
-   Len := M.Count;
-   D := Trunc(Sqrt(Len));
+   Len := Matrix.Count;
+   D := Floor(Sqrt(Len));
    if (D * D = Len) and (D > 0) then
       Result := D
    else
@@ -64,107 +56,114 @@ begin
 end;
 
 // Returns distance from src to dst or -1 if unreachable
-function Dijkstra(const M: TIntegerList; Dim, Src, Dst: integer): integer;
+function Dijkstra(const Matrix: TIntegerList;
+   Dimension, Source, Destination: integer): integer;
 const
-   INF = MaxInt div 2;
+   INF = $3F3F3F3F;
 var
-   Dist: array of integer;
-   Visited: array of boolean;
-   I, J, MinDist, MinIndex, Weight: integer;
+   Dist: TIntegerList;
+   Visited: TBooleanList;
+   I, J, MinDist, MinIndex, Weight, CurrentDist: integer;
 begin
-   SetLength(Dist, Dim);
-   SetLength(Visited, Dim);
+   Dist := TIntegerList.Create;
+   Visited := TBooleanList.Create;
+   try
+      Dist.Capacity := Dimension;
+      Visited.Capacity := Dimension;
 
-   for I := 0 to Dim - 1 do
-   begin
-      Dist[I] := INF;
-      Visited[I] := False;
-   end;
+      for I := 0 to Dimension - 1 do
+      begin
+         Dist.Add(INF);
+         Visited.Add(False);
+      end;
 
-   Dist[Src] := 0;
+      Dist[Source] := 0;
 
-   for I := 0 to Dim - 1 do
-   begin
-      MinDist := INF;
-      MinIndex := -1;
+      for I := 0 to Dimension - 1 do
+      begin
+         MinDist := INF;
+         MinIndex := -1;
 
-      // Find unvisited vertex with smallest dist
-      for J := 0 to Dim - 1 do
-         if (not Visited[J]) and (Dist[J] < MinDist) then
+         // Find closest unvisited node
+         for J := 0 to Dimension - 1 do
+            if (not Visited[J]) and (Dist[J] < MinDist) then
+            begin
+               MinDist := Dist[J];
+               MinIndex := J;
+            end;
+
+         if MinIndex = -1 then
+            Break;
+
+         Visited[MinIndex] := True;
+         CurrentDist := Dist[MinIndex];
+
+         if MinIndex = Destination then
          begin
-            MinDist := Dist[J];
-            MinIndex := J;
+            Result := CurrentDist;
+            Exit;
          end;
 
-      if MinIndex = -1 then
-         Break; // No reachable vertex left
-
-      Visited[MinIndex] := True;
-
-      if MinIndex = Dst then
-      begin
-         // Early exit if destination reached
-         Result := Dist[Dst];
-         Exit;
+         for J := 0 to Dimension - 1 do
+         begin
+            Weight := Matrix[MinIndex * Dimension + J];
+            if (not Visited[J]) and (Weight > 0) and
+               (CurrentDist + Weight < Dist[J]) then
+               Dist[J] := CurrentDist + Weight;
+         end;
       end;
 
-      // Update neighbors
-      for J := 0 to Dim - 1 do
-      begin
-         Weight := M[MinIndex * Dim + J];
+      if Dist[Destination] = INF then
+         Result := -1
+      else
+         Result := Dist[Destination];
 
-         if (not Visited[J]) and (Weight > 0) and (Dist[MinIndex] +
-            Weight < Dist[J]) then
-            Dist[J] := Dist[MinIndex] + Weight;
-      end;
+   finally
+      Dist.Free;
+      Visited.Free;
    end;
-
-   if Dist[Dst] = INF then
-      Result := -1
-   else
-      Result := Dist[Dst];
 end;
 
+
 var
-   MatrixStr, SrcStr, DstStr: string;
-   MatrixList: TIntegerList;
-   Dim, Src, Dst, Distance: integer;
+   MatrixStr, SourceStr, DestinationStr: string;
+   Matrix: TIntegerList;
+   Dimension, Source, Destination, ShortestDistance: integer;
 begin
    if ParamCount <> 3 then
       ShowUsage;
 
    MatrixStr := Trim(ParamStr(1));
-   SrcStr := Trim(ParamStr(2));
-   DstStr := Trim(ParamStr(3));
+   SourceStr := Trim(ParamStr(2));
+   DestinationStr := Trim(ParamStr(3));
 
-   if (MatrixStr = '') or (SrcStr = '') or (DstStr = '') then
+   if (MatrixStr = '') or (SourceStr = '') or (DestinationStr = '') then
       ShowUsage;
 
-   MatrixList := nil;
+   Matrix := nil;
    try
-      MatrixList := ParseIntList(MatrixStr);
+      Matrix := ParseIntegerList(MatrixStr);
 
-      Dim := MatrixDimension(MatrixList);
-      if Dim = -1 then
+      Dimension := MatrixDimension(Matrix);
+
+      // Check if:
+      // - the matrix represents a valid square adjacency matrix (dimension <> 1)
+      // - the source and destination nodes are valid integers
+      // - the nodes are within valid index range [0, Dimension - 1]
+      if (Dimension = -1) or (not TryStrToInt(SourceStr, Source)) or
+         (not TryStrToInt(DestinationStr, Destination)) or (Source < 0) or
+         (Source >= Dimension) or (Destination < 0) or (Destination >= Dimension) then
+
          ShowUsage;
 
-      if (not TryStrToInt(SrcStr, Src)) or (not TryStrToInt(DstStr, Dst)) then
-         ShowUsage;
+      ShortestDistance := Dijkstra(Matrix, Dimension, Source, Destination);
 
-      if (Src < 0) or (Src >= Dim) then
-         ShowUsage;
-
-      if (Dst < 0) or (Dst >= Dim) then
-         ShowUsage;
-
-      Distance := Dijkstra(MatrixList, Dim, Src, Dst);
-
-      if Distance = -1 then
+      if ShortestDistance = -1 then
          ShowUsage
       else
-         Writeln(distance);
+         Writeln(ShortestDistance);
 
    finally
-      MatrixList.Free;
+      Matrix.Free;
    end;
 end.
