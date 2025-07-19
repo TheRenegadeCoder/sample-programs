@@ -4,15 +4,16 @@ program ConvexHull;
 
 uses
    Classes,
+   Generics.Collections,
    Sysutils;
 
 type
-   TIntPoint = record
+   TPoint = record
       X, Y: integer;
    end;
 
-   TIntPointArray = array of TIntPoint;
-   TIntArray = array of integer;
+   TPointList = specialize TList<TPoint>;
+   TIntegerList = specialize TList<integer>;
 
 procedure ShowUsage;
 begin
@@ -20,143 +21,172 @@ begin
    Halt(1);
 end;
 
-function ParseList(const S: string): TIntArray;
+function ParseIntegerList(const S: string): TIntegerList;
 var
-   parts: TStringList;
-   i, code: integer;
-   trimmed: string;
+   Tokens: TStringArray;
+   Token: string;
+   Value: integer;
 begin
-   parts := TStringList.Create;
-   try
-      parts.StrictDelimiter := True;
-      parts.Delimiter := ',';
-      parts.DelimitedText := S;
-      if parts.Count = 0 then
-         ShowUsage;
+   if S.Trim.IsEmpty then
+      ShowUsage;
 
-      SetLength(Result, parts.Count);
-      for i := 0 to parts.Count - 1 do
+   Tokens := S.Split([',']);
+   Result := TIntegerList.Create;
+   for Token in Tokens do
+   begin
+      if not TryStrToInt(Trim(Token), Value) then
       begin
-         trimmed := Trim(parts[i]);
-         Val(trimmed, Result[i], code);
-         if code <> 0 then
-            ShowUsage;
+         Result.Free;
+         ShowUsage;
       end;
-   finally
-      parts.Free;
+      Result.Add(Value);
+   end;
+
+   if Result.Count < 3 then
+   begin
+      Result.Free;
+      ShowUsage;
    end;
 end;
 
-procedure QuickSortPoints(var A: array of TIntPoint; iLo, iHi: integer);
+function CheckListLengths(const Xs, Ys: TIntegerList): boolean;
+begin
+   if Xs.Count <> Ys.Count then
+      Exit(False);
+
+   if Xs.Count < 3 then
+      Exit(false);
+
+   Result := True;
+end;
+
+procedure QuickSortPoints(List: TPointList; Lo, Hi: integer);
 var
    i, j: integer;
-   Pivot: TIntPoint;
-   tmp: TIntPoint;
-begin
-   while iLo < iHi do
+   Pivot, Temp: TPoint;
+
+   procedure SwapElements(Index1, Index2: integer);
+   var
+      Temp: TPoint;
    begin
-      Pivot := A[(iLo + iHi) shr 1];
-      i := iLo;
-      j := iHi;
+      Temp := List[Index1];
+      List[Index1] := List[Index2];
+      List[Index2] := Temp;
+   end;
+
+begin
+   while Lo < Hi do
+   begin
+      i := Lo;
+      j := Hi;
+      Pivot := List[Lo + (Hi - Lo) div 2];
 
       repeat
-         while (A[i].X < Pivot.X) or ((A[i].X = Pivot.X) and
-               (A[i].Y < Pivot.Y)) do
+         while (List[i].X < Pivot.X) or ((List[i].X = Pivot.X) and
+               (List[i].Y < Pivot.Y)) do
             Inc(i);
-         while (A[j].X > Pivot.X) or ((A[j].X = Pivot.X) and
-               (A[j].Y > Pivot.Y)) do
+         while (List[j].X > Pivot.X) or ((List[j].X = Pivot.X) and
+               (List[j].Y > Pivot.Y)) do
             Dec(j);
 
          if i <= j then
          begin
-            tmp := A[i];
-            A[i] := A[j];
-            A[j] := tmp;
+            SwapElements(i, j);
             Inc(i);
             Dec(j);
          end;
       until i > j;
 
-      if (j - iLo) < (iHi - i) then
+      if (j - Lo) < (Hi - i) then
       begin
-         if iLo < j then
-            QuickSortPoints(A, iLo, j);
-         iLo := i;
+         if Lo < j then QuickSortPoints(List, Lo, j);
+         Lo := i;
       end
       else
       begin
-         if i < iHi then
-            QuickSortPoints(A, i, iHi);
-         iHi := j;
+         if i < Hi then QuickSortPoints(List, i, Hi);
+         Hi := j;
       end;
    end;
 end;
 
-function Cross(const O, A, B: TIntPoint): int64;
+function Cross(const O, A, B: TPoint): int64;
 begin
    Result := int64(A.X - O.X) * (B.Y - O.Y) - int64(A.Y - O.Y) * (B.X - O.X);
 end;
 
-procedure BuildHull(const pts: TIntPointArray; out hull: TIntPointArray);
+procedure BuildHull(const Points: TPointList; Hull: TPointList);
 var
-   n, l, p, q, i, hSize: integer;
+   PointCount, i: integer;
+   CurrentIndex, NextIndex, LeftmostIndex: integer;
 begin
-   n := Length(pts);
-   if n < 3 then
+   PointCount := Points.Count;
+   if PointCount < 3 then
    begin
-      hull := Copy(pts, 0, n);
+      Hull.AddRange(Points);
       Exit;
    end;
 
-   l := 0;
-   for i := 1 to n - 1 do
-      if (pts[i].X < pts[l].X) or ((pts[i].X = pts[l].X) and
-         (pts[i].Y > pts[l].Y)) then
-         l := i;
+   // Find the leftmost point (with lowest X; if tie, highest Y)
+   LeftmostIndex := 0;
+   for i := 1 to PointCount - 1 do
+      if (Points[i].X < Points[LeftmostIndex].X) or
+         ((Points[i].X = Points[LeftmostIndex].X) and
+         (Points[i].Y > Points[LeftmostIndex].Y)) then
+         LeftmostIndex := i;
 
-   SetLength(hull, 0);
-   p := l;
+   CurrentIndex := LeftmostIndex;
    repeat
-      Inc(hSize);
-      SetLength(hull, hSize);
-      hull[hSize - 1] := pts[p];
+      Hull.Add(Points[CurrentIndex]);
 
-      q := (p + 1) mod n;
+      NextIndex := (CurrentIndex + 1) mod PointCount;
+      for i := 0 to PointCount - 1 do
+         if Cross(Points[CurrentIndex], Points[i], Points[NextIndex]) < 0 then
+            NextIndex := i;
 
-      for i := 0 to n - 1 do
-         if Cross(pts[p], pts[i], pts[q]) < 0 then
-            q := i;
-
-      p := q;
-   until p = l;
+      CurrentIndex := NextIndex;
+   until CurrentIndex = LeftmostIndex;
 end;
 
 var
-   xs, ys: TIntArray;
-   pts, hull: TIntPointArray;
-   n, i: integer;
+   Xs, Ys: TIntegerList;
+   Points, Hull: TPointList;
+   i: integer;
+   Pt: TPoint;
 begin
    if ParamCount <> 2 then
       ShowUsage;
 
-   xs := ParseList(ParamStr(1));
-   ys := ParseList(ParamStr(2));
+   Xs := ParseIntegerList(ParamStr(1));
+   Ys := ParseIntegerList(ParamStr(2));
 
-   n := Length(xs);
-   if (n < 3) or (Length(ys) <> n) then
-      ShowUsage;
-
-   SetLength(pts, n);
-   for i := 0 to n - 1 do
+   if not CheckListLengths(Xs, Ys) then
    begin
-      pts[i].X := xs[i];
-      pts[i].Y := ys[i];
+      Xs.Free;
+      Ys.Free;
+      ShowUsage;
    end;
 
-   QuickSortPoints(pts, 0, n - 1);
+   Points := TPointList.Create;
+   Hull := TPointList.Create;
+   try
+      for i := 0 to Xs.Count - 1 do
+      begin
+         Pt.X := Xs[i];
+         Pt.Y := Ys[i];
+         Points.Add(Pt);
+      end;
 
-   BuildHull(pts, hull);
+      QuickSortPoints(Points, 0, Points.Count - 1);
+      BuildHull(Points, Hull);
 
-   for i := 0 to High(hull) do
-      Writeln('(', hull[i].X, ', ', hull[i].Y, ')');
+      for i := 0 to Hull.Count - 1 do
+         Writeln('(', Hull[i].X, ', ', Hull[i].Y, ')');
+
+   finally
+      Xs.Free;
+      Ys.Free;
+      Points.Free;
+      Hull.Free;
+   end;
 end.
