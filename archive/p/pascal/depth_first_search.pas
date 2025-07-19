@@ -10,11 +10,14 @@ uses
 type
    TIntegerList = specialize TList<integer>;
    TIntegerSet = specialize THashSet<integer>;
+   TIntegerStack = specialize TStack<integer>;
 
    TNode = class
+   private
+      FChildSet: TIntegerSet;
+   public
       Id: integer;
       Children: TIntegerList;
-      ChildSet: TIntegerSet;
       constructor Create(AId: integer);
       destructor Destroy; override;
       procedure AddChild(ChildId: integer);
@@ -25,6 +28,9 @@ type
    { TTree }
 
    TTree = class
+   private
+      function ContainsNode(NodeId: integer): boolean;
+   public
       RootId: integer;
       Nodes: TNodeDictionary;
       constructor Create(ARootId: integer);
@@ -45,19 +51,19 @@ constructor TNode.Create(AId: integer);
 begin
    Id := AId;
    Children := TIntegerList.Create;
-   ChildSet := TIntegerSet.Create;
+   FChildSet := TIntegerSet.Create;
 end;
 
 destructor TNode.Destroy;
 begin
    Children.Free;
-   ChildSet.Free;
+   FChildSet.Free;
    inherited;
 end;
 
-procedure TNode.AddChild(ChildId: integer);
+procedure TNode.AddChild(ChildId: integer); inline;
 begin
-   if ChildSet.Add(ChildId) then
+   if FChildSet.Add(ChildId) then
       Children.Add(ChildId);
 end;
 
@@ -79,36 +85,52 @@ begin
    inherited;
 end;
 
-procedure TTree.AddNode(Node: TNode);
+procedure TTree.AddNode(Node: TNode); inline;
 begin
    Nodes.AddOrSetValue(Node.Id, Node);
 end;
 
 // Retrieves a node by ID, or returns nil if not found
-function TTree.GetNode(NodeId: integer): TNode;
+function TTree.GetNode(NodeId: integer): TNode; inline;
 begin
    if not Nodes.TryGetValue(NodeId, Result) then
       Result := nil;
 end;
 
-function ParseIntList(const S: string): TIntegerList;
+function TTree.ContainsNode(NodeId: integer): boolean; inline;
+begin
+   Result := Nodes.ContainsKey(NodeId);
+end;
+
+function ParseIntegerList(const S: string): TIntegerList;
 var
    Parts: TStringArray;
    Part: string;
    Value: integer;
 begin
-   Result := TIntegerList.Create;
-
-   if S = '' then
-      Exit;
+   if S.Trim.IsEmpty then
+      ShowUsage;
 
    Parts := S.Split([',']);
-   for Part in Parts do
+   Result := TIntegerList.Create;
    try
-      Value := StrToInt(Trim(Part));
-      Result.Add(Value);
+      for Part in Parts do
+      begin
+         if not TryStrToInt(Trim(Part), Value) then
+         begin
+            Result.Free;
+            ShowUsage;
+         end;
+         Result.Add(Value);
+      end;
+
+      if Result.Count = 0 then
+      begin
+         Result.Free;
+         ShowUsage;
+      end;
    except
-      on E: EConvertError do
+      on E: Exception do
       begin
          Result.Free;
          ShowUsage;
@@ -117,68 +139,81 @@ begin
 end;
 
 // Build tree from adjacency matrix and vertices
-function CreateTree(AdjMatrix, Vertices: TIntegerList): TTree;
+function CreateTree(const AdjMatrix, Vertices: TIntegerList): TTree;
 var
-   Tree: TTree;
-   Nodes: array of TNode;
-   N, I, J, Index: integer;
+   N, Row, Col, MatrixIndex: integer;
+   Node: TNode;
+   Vertex, AdjacentVertex: integer;
 begin
    N := Vertices.Count;
-   Tree := TTree.Create(Vertices[0]);
-   SetLength(Nodes, N);
+   if (N = 0) or (AdjMatrix.Count <> N * N) then
+      ShowUsage;
 
-   // Create all nodes
-   for I := 0 to N - 1 do
+   // Create all nodes and add to tree
+   Result := TTree.Create(Vertices.First);
+   for Row in Vertices do
+      Result.AddNode(TNode.Create(Row));
+
+   // Populate children based on adjacency matrix
+   MatrixIndex := 0;
+   for Row := 0 to N - 1 do
    begin
-      Nodes[I] := TNode.Create(Vertices[I]);
-      Tree.AddNode(Nodes[I]);
-   end;
-
-   // Populate children according to adjacency matrix
-   Index := 0;
-   for I := 0 to N - 1 do
-      for J := 0 to N - 1 do
+      Node := Result.GetNode(Vertices[Row]);
+      for Col := 0 to N - 1 do
       begin
-         if (Index < AdjMatrix.Count) and (AdjMatrix[Index] <> 0) then
-            Nodes[I].AddChild(Vertices[J]);
-         Inc(Index);
+         if AdjMatrix[MatrixIndex] <> 0 then
+         begin
+            AdjacentVertex := Vertices[Col];
+            if not Result.ContainsNode(AdjacentVertex) then
+            begin
+               Result.Free;
+               ShowUsage;
+            end;
+            Node.AddChild(AdjacentVertex);
+         end;
+         Inc(MatrixIndex);
       end;
-
-   Result := Tree;
+   end;
 end;
 
-// Performs depth-first search for the target value
-function DFS(Tree: TTree; Target: integer): boolean;
+// Performs depth-first search for the target value.
+// This uses the iterative version with a TStack for performance.
+function DepthFirstSearch(Tree: TTree; Target: integer): boolean;
 var
+   Stack: TIntegerStack;
    Visited: TIntegerSet;
-
-   function DFSRec(Node: TNode): boolean;
-   var
-      ChildId: integer;
-      ChildNode: TNode;
-   begin
-      if (Node = nil) or Visited.Contains(Node.Id) then
-         Exit(False);
-      if Node.Id = Target then
-         Exit(True);
-
-      Visited.Add(Node.Id);
-
-      for ChildId in Node.Children do
-      begin
-         ChildNode := Tree.GetNode(ChildId);
-         if DFSRec(ChildNode) then
-            Exit(True);
-      end;
-
-      Result := False;
-   end;
-
+   CurrentId: integer;
+   CurrentNode: TNode;
+   ChildId: integer;
 begin
+   Result := False;
+   if Tree = nil then Exit;
+
+   Stack := TIntegerStack.Create;
    Visited := TIntegerSet.Create;
    try
-      Result := DFSRec(Tree.GetNode(Tree.RootId));
+      Stack.Capacity := Tree.Nodes.Count;
+      Visited.Capacity := Tree.Nodes.Count;
+
+      Stack.Push(Tree.RootId);
+
+      while Stack.Count > 0 do
+      begin
+         CurrentId := Stack.Pop;
+
+         if not Visited.Add(CurrentId) then
+            Continue;
+
+         if CurrentId = Target then
+            Exit(True);
+
+         CurrentNode := Tree.GetNode(CurrentId);
+         if CurrentNode <> nil then
+            for ChildId in CurrentNode.Children do
+               Stack.Push(ChildId);
+      end;
    finally
+      Stack.Free;
       Visited.Free;
    end;
 end;
@@ -188,35 +223,20 @@ var
    Target: integer;
    Tree: TTree;
 begin
-   AdjMatrix := nil;
-   Vertices := nil;
-   Tree := nil;
-
-   // Validate argument count and that none of the parameters are empty
-   if (ParamCount <> 3) or Trim(ParamStr(1)).IsEmpty or
-      Trim(ParamStr(2)).IsEmpty or Trim(ParamStr(3)).IsEmpty then
+   if ParamCount <> 3 then
       ShowUsage;
 
+   AdjMatrix := ParseIntegerList(ParamStr(1));
+   Vertices := ParseIntegerList(ParamStr(2));
+   if not TryStrToInt(ParamStr(3), Target) then
+      ShowUsage;
+
+   Tree := CreateTree(AdjMatrix, Vertices);
    try
-      // Parse the adjacency matrix and vertices, or fail early
-      AdjMatrix := ParseIntList(ParamStr(1));
-      Vertices := ParseIntList(ParamStr(2));
-      if not TryStrToInt(ParamStr(3), Target) then
-         ShowUsage;
-
-      // Build the tree
-      Tree := CreateTree(AdjMatrix, Vertices);
-
-      // Perform DFS and output result
-      if DFS(Tree, Target) then
-         WriteLn('true')
-      else
-         WriteLn('false');
-
+      Writeln(BoolToStr(DepthFirstSearch(Tree, Target), 'true', 'false'));
    finally
       AdjMatrix.Free;
       Vertices.Free;
       Tree.Free;
    end;
 end.
-
