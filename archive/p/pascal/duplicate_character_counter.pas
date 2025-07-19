@@ -8,7 +8,6 @@ uses
    SysUtils;
 
 type
-   TSeenList = specialize TList<char>;
    TCountDictionary = specialize TDictionary<char, integer>;
 
 procedure ShowUsage;
@@ -19,65 +18,61 @@ end;
 
 function IsAlphanumeric(c: char): boolean;
 begin
-   Result := (c in ['0'..'9']) or (c in ['A'..'Z']) or (c in ['a'..'z']);
+  Result := CharInSet(c, ['0'..'9', 'A'..'Z', 'a'..'z']);
 end;
 
 procedure CountDuplicates(const Str: string);
 var
-   Counts: TCountDictionary;
-   SeenCharacters: TSeenList;
-   i: integer;
-   Character: char;
-   CurrentCount: integer;
-   OutputtedAny: boolean;
-
-   procedure OutputDuplicate(ch: char; cnt: integer);
-   begin
-      Writeln(ch, ': ', cnt);
-   end;
-
+  Counts: TCountDictionary;
+  Outputted: TCountDictionary;
+  Character: char;
+  CurrentCount: integer;
+  HasDuplicates: boolean;
 begin
-   Counts := TCountDictionary.Create;
-   SeenCharacters := TSeenList.Create;
-   try
-      // Iterate over each char in the input string
-      for Character in Str do
-         if IsAlphanumeric(Character) then
-            if not Counts.TryGetValue(Character, CurrentCount) then
-            begin
-               Counts.Add(Character, 1);
-               SeenCharacters.Add(Character);
-            end
-            else
-               Counts[Character] := CurrentCount + 1;
+  Counts := TCountDictionary.Create;
+  Outputted := TCountDictionary.Create;
+  try
+    // Count all alphanumeric characters
+    for Character in Str do
+      if IsAlphanumeric(Character) then
+      begin
+        if not Counts.TryGetValue(Character, CurrentCount) then
+          Counts.Add(Character, 1)
+        else
+          Counts[Character] := CurrentCount + 1;
+      end;
 
-      // Output all characters with counts greater than 1 in the order they appeared
-      OutputtedAny := False;
-      for Character in SeenCharacters do
-         if Counts[Character] > 1 then
-         begin
-            OutputDuplicate(Character, Counts[Character]);
-            OutputtedAny := True;
-         end;
+    HasDuplicates := False;
 
-      if not OutputtedAny then
-         Writeln('No duplicate characters');
-   finally
-      Counts.Free;
-      SeenCharacters.Free;
-   end;
+    // Output duplicates in order of first appearance
+    for Character in Str do
+      if Counts.TryGetValue(Character, CurrentCount) and (CurrentCount > 1) and
+         not Outputted.ContainsKey(Character) then
+      begin
+        Writeln(Character, ': ', CurrentCount);
+        Outputted.Add(Character, 1);
+        HasDuplicates := True;
+      end;
+
+    if not HasDuplicates then
+      Writeln('No duplicate characters');
+  finally
+    Counts.Free;
+    Outputted.Free;
+  end;
 end;
 
 var
-   InputStr: string;
+  InputStr: string;
 begin
-   // Check for exactly one command-line argument, otherwise show usage
-   if ParamCount <> 1 then
-      ShowUsage;
+  if ParamCount <> 1 then
+    ShowUsage;
 
-   InputStr := Trim(ParamStr(1));
-   if InputStr = '' then
-      ShowUsage;
+  InputStr := Trim(ParamStr(1));
+  if InputStr = '' then
+    ShowUsage;
 
-   CountDuplicates(InputStr);
+  CountDuplicates(InputStr);
 end.
+
+
