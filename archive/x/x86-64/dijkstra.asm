@@ -227,7 +227,7 @@ minheap@insert:
 ;   R9  - ()              Unused.
 ; Returns:
 ;   RAX - ()              None.
-;   Clobbers - R11, 
+;   Clobbers - R11, R12, R13, R15
 ; ---------------------------------------------------------------------------  
    PUSH RBP   
    MOV RBP, RSP
@@ -240,20 +240,42 @@ minheap@insert:
    MOV RDX, [RDI + minheap.size]
    MOV [RAX + RDX*8], RSI
    MOV [RBP - minheap@insert.index], RDX
-   MOV R10, RDX
-   DEC R10
-   SHR R10, 1
-   MOV [RBP - minheap@insert.operatedIndex], R10
-   
    .loop:
-       MOV R10, 1 ; Truth bit for while conditional
-       MOV R8, 0 ; Temporary Register for atomic conditions within the while loop.
-       MOV R9, 1 ; Temporary true bit, since CMOV doesn't allow immediate operands.
-       MOV R11, 0 ; ^ but false bit
-       CMP RDX, 0
-       CMOVBE R8, R11
-       AND R10, R8
-       MOV R8, 
+       ;This whole code here is pretty gross. This is just for while loop conditionals.
+       MOV R10, RDX
+       DEC R10
+       SHR R10, 1
+       MOV [RBP - minheap@insert.operatedIndex], R10
+       MOV R15, 1 ; Final condition
+       MOV R11, [RBP - minheap@insert.This]
+       MOV R12, [RBP - minheap@insert.operatedIndex] 
+       MOV R11, [RBP - minheap.ptr]
+       MOV R12, [R11 - R12*8]
+       MOV R13, [RBP - minheap@insert.index]
+       MOV R13, [R11 - R13*8]
+       MOV R11, 0
+       CMP R12, R13
+       SETA R11B
+       AND R15,R11
+       MOV R12, [RBP - minheap@insert.index]
+       MOV R11, 0
+       CMP R12, R11
+       SETA R11B
+       AND R15, R11
+       CMP R15, 0
+       JNA .loop_end
+       
+       ;Non-conditional code in the while loop:
+       MOV R11, [RBP - minheap@insert.index]
+       DEC R11
+       SHR R11, 1
+       MOV R11, [RBP - minheap@insert.index]
+       JMP .loop
+       
+   .loop_end:
+   
+       
+       
        
        
 
