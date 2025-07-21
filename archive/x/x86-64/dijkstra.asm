@@ -10,7 +10,8 @@
 
 ;Constants
 %DEFINE EMPTY_INPUT 0
-%DEFINE SHIFT_X8
+%DEFINE SHIFT_X8 3
+%DEFINE SHIFT_X2 1
 
 ;SYSCALLS
 ;I/O
@@ -51,6 +52,9 @@
 %DEFINE minheap@insert.This 8
 %DEFINE minheap@insert.index 16
 %DEFINE minheap@insert.operatedIndex 24
+
+%DEFINE minheap@delete.STACK_INIT 8
+%DEFINE  minheap@delete.This
 
 
 %DEFINE atol.STACK_INIT 8
@@ -114,10 +118,12 @@ minheap@right:
     MOV RAX, RDI
     SHL RAX, 1
     ADD RAX, 2
+    RET
 minheap@left:
     MOV RAX, RDI
     SHL RAX, 1
     ADD RAX, 1
+    RET
 minheap@parent:
     MOV RAX, RDI
     SUB RAX, 1
@@ -163,7 +169,6 @@ minheap@min:
     MOV RAX, [RAX] ;Load address in .ptr
     MOV RAX, [RAX] ;Load [0] in ptr
     RET
-
 minheap@constructor:
 ; ----------------------------------------------------------------------------
 ; Function: Minheap constructor
@@ -220,7 +225,7 @@ minheap@insert:
 ;   Checks if number is perfect square, and also moves the sqrt to a specified pointer.
 ; Parameters:
 ;   RDI - (Minheap*)      This.
-;   RSI - (long)         Value to insert.
+;   RSI - (long)          Value to delete.
 ;   RDX - ()              Unused.
 ;   R10 - ()              Unused.
 ;   R8  - ()              Unused.
@@ -273,9 +278,84 @@ minheap@insert:
        JMP .loop
        
    .loop_end:
-   
+   ADD RSP, minheap@insert.STACK_INIT
+   MOV RSP, RBP
+   POP RBP
+   RET
        
+minheap@delete:
+; ----------------------------------------------------------------------------
+; Function: Minheap delete
+; Description:
+;   Deletes a vertex from the minheap. Eek. RDI will hold the pointer for most of the function as I don't wish to juggle a pointer.
+; Parameters:
+;   RDI - (Minheap*)      This.
+;   RSI - (long)          Value to delete.
+;   RDX - ()              Unused.
+;   R10 - ()              Unused.
+;   R8  - ()              Unused.
+;   R9  - ()              Unused.
+; Returns:
+;   RAX - ()              None.
+;   Clobbers - R15, 
+; ----------------------------------------------------------------------------
+    PUSH RBP   
+    MOV RBP, RSP
+    SUB RSP, minheap@delete.STACK_INIT
+    MOV [RBP -  minheap@delete.This], RDI
+    
+    MOV RAX, -1 ;Index
+    MOV RDX, [RDI]
+    MOV RDX, [RDX + minheap.size]
+    MOV RCX, 0 ;Loop ctr
+    .for_loop:
+        MOV R10, [RDI + minheap.ptr]
+        MOV R10, [R10 + RCX*8]
+        INC RCX
+        JNE R10, RSI
+        JB .for_loop
+        CMP RCX, RDX
+        JB .for_loop
+    MOV RAX, RCX
+    CMP RAX, -1
+    JE .end
+    
+    MOV RAX, [RDI]
+    MOV RAX, [RDI + minheap.ptr]
+    MOV RDX, RSI ;MOV index from RSI into RDX
+    MOV R10, [RDI + minheap.size]
+    DEC R10
+    MOV R10, [RDI + R10*8] ; Get last element.
+    MOV QWORD [RAX + RDX], R10
+    MOV R15, [RDI + minheap.size]
+    MOV R14, RSI
+    ;Heapify
+    .heapify:
+        ; R11 = Smallest, R12 = Left Child, R13 = Right Child, R14 = Index.
+        MOV RDI, R14
+        CALL minheap@left
+        MOV R12, RAX
+        CALL minheap@right
+        MOV R13, RAX
+        SHL R12, SHIFT_X2
+        ADD R12, 1
+        SHL R13, SHIFT_X2
+        ADD R13, 2
+        MOV R11, R14
+        
+        
        
+    
+    .heapify_break:
+    
+    
+    
+    
+    .end
+        MOV RSP, RBP
+        POP RBP
+        RET
+        
        
        
 
@@ -294,6 +374,7 @@ ezsqrt:
 ;   R9  - ()              Unused.
 ; Returns:
 ;   RAX - (long)          -1 (Input not square).
+;   Clobbers - RCX
 ; ---------------------------------------------------------------------------
     PUSH RBP
     MOV RBP, RSP
