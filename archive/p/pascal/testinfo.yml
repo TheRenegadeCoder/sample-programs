@@ -3,7 +3,7 @@ folder:
   naming: "underscore"
 
 container:
-  image: "cyberdojofoundation/freepascal"
-  tag: "5550730"
+  image: "freepascal/fpc"
+  tag: "3.2.2-alpine-3.19-minimal⁠"
   build: "fpc {{ source.name }}{{ source.extension }}"
   cmd: "./{{ source.name }}"
