@@ -4,6 +4,6 @@ folder:
 
 container:
   image: "freepascal/fpc"
-  tag: "3.2.2-alpine-3.19-minimal⁠"
+  tag: "3.2.2-full⁠"
   build: "fpc {{ source.name }}{{ source.extension }}"
   cmd: "./{{ source.name }}"
