@@ -1,7 +1,7 @@
 ;MACROS
 %MACRO initilizeRBXRCXMinheap 0
-        MOV RBX, [RBP - minheap@delete.This] ; For left child of heap.
-        MOV RCX, [RBP - minheap@delete.This] ; For smallest child of heap.
+        MOV RBX, [RBP - VT_MINHEAP_DELETE.This] ; For left child of heap.
+        MOV RCX, [RBP - VT_MINHEAP_DELETE.This] ; For smallest child of heap.
         MOV RBX, [RBX + minheap.ptr]
         MOV RCX, [RCX + minheap.ptr]
 %ENDMACRO 
@@ -93,6 +93,11 @@ PUSH R9
 %DEFINE atol.STACK_INIT 8
 %DEFINE atol.ret 8
 
+%DEFINE dijkstra.STACK_INIT 24
+%DEFINE dijkstra.distance 8
+%DEFINE dijkstra.current 16
+%DEFINE dijkstra.heap 24
+
 section .rodata
 minheap_vTable:
     dq minheap@right
@@ -104,6 +109,17 @@ minheap_vTable:
     dq minheap@delete ; These three will be the most complex to implement.
     dq minheap@heapify ; These three will be the most complex to implement.
     dq minheap@construct
+    dq minheap@isEmpty
+%DEFINE VT_MINHEAP_RIGHT equ 0*8
+%DEFINE VT_MINHEAP_LEFT equ 1*8
+%DEFINE VT_MINHEAP_SWAP equ 2*8
+%DEFINE VT_MINHEAP_PARENT equ 3*8
+%DEFINE VT_MINHEAP_MIN equ 4*8
+%DEFINE VT_MINHEAP_INSERT equ 5*8
+%DEFINE VT_MINHEAP_DELETE equ 6*8
+%DEFINE VT_MINHEAP_HEAPIFY equ 7*8
+%DEFINE VT_MINHEAP_CONSTRUCT equ 8*8
+%DEFINE VT_MINHEAP_ISEMPTY equ 9*8
 
 invalid:
     .msg db 'Usage: please provide three inputs: a serialized matrix, a source node and a destination node'
@@ -129,6 +145,7 @@ vertice_array:
     .size dq 0
     .vertices dq 0
     .dists dq 0
+    .seen dq 0
 
 commas dq 0
 section .bss
@@ -211,10 +228,10 @@ minheap@min:
     MOV RAX, [RAX] ;Load [0] in ptr
     PUSH RAX
     MOV RSI, RAX
-    CALL minheap@delete
+    CALL VT_MINHEAP_DELETE
     POP RAX
     RET
-minheap@constructor:
+minheap@construct:
 ; ----------------------------------------------------------------------------
 ; Function: Minheap constructor
 ; Description:
@@ -331,8 +348,8 @@ minheap@insert:
        MOV RDI, [RBP - minheap@insert.This]
        MOV RSI, [RBP - minheap@insert.index]
        MOV RDX, [RBP - minheap@insert.operatedIndex]
-       MOV RBX, [RDI + minheap.vTable]
-       CALL [RBX + minheap@swap]
+       MOV RBX, [RDI + minheap@insert]
+       CALL [RBX + VT_MINHEAP_SWAP]
        MOV R11, [RBP - minheap@insert.index]
        DEC R11
        SHR R11, 1
@@ -341,7 +358,7 @@ minheap@insert:
        
    .loop_end:
    
-   ADD RSP, minheap@insert.STACK_INIT
+   ADD RSP, VT_MINHEAP_INSERT.STACK_INIT
    MOV RSP, RBP
    POP RBP
    RET
@@ -383,7 +400,7 @@ minheap@delete:
     MOV RAX, RCX
     CMP RAX, -1
     JE .end
-    MOV [RBP - minheap@delete.index], RAX ; Save Index
+    MOV [RBP - VT_MINHEAP_DELETE.index], RAX ; Save Index
     
     MOV RAX, [RDI + minheap.vertPtr]
     MOV RDX, RSI ;MOV index from RSI into RDX
@@ -398,13 +415,13 @@ minheap@delete:
     MOV R10, [RDI + R10*8] ; Get last element.
     MOV QWORD [RAX + RDX], R10
     MOV R15, [RDI + minheap.size]
-    MOV R14, [RBP - minheap@delete.index]
+    MOV R14, [RBP - VT_MINHEAP_DELETE.index]
     ;Heapify
     .heapify:
         ; R10 = Conditional, R11 = Smallest, R12 = Left Child, R13 = Right Child, R14 = Index, R15 = Minheap size.
-        CALL minheap@left
+        CALL VT_MINHEAP_LEFT
         MOV R12, RAX
-        CALL minheap@right
+        CALL VT_MINHEAP_RIGHT
         MOV R13, RAX
         SHL R12, SHIFT_X2
         ADD R12, 1
@@ -432,18 +449,40 @@ minheap@delete:
         JNE .end
         MOV RSI, R14
         MOV RDX, R11
-        MOV RDI, [RBP -  minheap@delete.This]
-        MOV R8, [RBP -  minheap@delete.This]
+        MOV RDI, [RBP -  VT_MINHEAP_DELETE.This]
+        MOV R8, [RBP -  VT_MINHEAP_DELETE.This]
         MOV R8, [R8 + minheap.vTable]
-        CALL [R8+minheap@swap]
+        CALL [R8+VT_MINHEAP_SWAP]
         MOV R14, R11
-        MOV [RBP - minheap@delete.index], R14
+        MOV [RBP - VT_MINHEAP_DELETE.index], R14
     .end
-        ADD RSP, minheap@delete.STACK_INIT
+        ADD RSP, VT_MINHEAP_DELETE.STACK_INIT
         MOV RSP, RBP
         POP RBP
         RET
-        
+
+minheap@isEmpty:
+; ----------------------------------------------------------------------------
+; Function: Minheap empty checker
+; Description:
+;   Checks if the minheap is empty.
+; Parameters:
+;   RDI - (Minheap*)      This.
+;   RSI - ()              Unused.
+;   RDX - ()              Unused.
+;   R10 - ()              Unused.
+;   R8  - ()              Unused.
+;   R9  - ()              Unused.
+; Returns:
+;   RAX - (bool)          True/false.
+;   Clobbers - None.
+; ----------------------------------------------------------------------------      
+   MOV RAX, [RDI + minheap.size]
+   CMP RAX, 0
+   SETA RAX
+   RET
+                        
+                                                                  
 minheap@heapify:
        
 
@@ -632,7 +671,7 @@ _start:
     
     
     MOV RDI, [vertice_array.vertices]
-    CALL minheap@constructor
+    CALL VT_MINHEAP_CONSTRUCTor
     MOV [RBP+_start.minheap], RAX
         
         
@@ -728,19 +767,22 @@ dijkstra:
 ; Description:
 ;   Utilizes Dijkstra's algorithm to find the shortest path to a vertex.
 ; Parameters:
-;   RDI - (char*)         Pointer to stack location of src/dst.
-;   RSI - (long*)         Pointer to src/dst storage in .data
-;   RDX - ()              Unused.
+;   RDI - (Minheap*)      Ptr to minheap.
+;   RSI - (long)          SRC.
+;   RDX - (long)          DST.
 ;   R10 - ()              Unused.
 ;   R8  - ()              Unused.
 ;   R9  - ()              Unused.
 ; Returns:
 ;   RAX - (long)          Distance.
+;   Clobbers - R11, R12
 ; ---------------------------------------------------------------------------
     PUSH RBP,
     MOV RBP, RSP
-    SUB [RBP - dijkstra.STACK_INIT]
-    MOV [RBP - dijkstra.distance]
+    SUB RBP, dijkstra.STACK_INIT
+    MOV [RBP - dijkstra.distance], -1 ; If -1, then return an error.
+    MOV [RBP - dijkstra.current], -1 ; Placeholder
+    MOV [RBP - dijkstra.heap], RDI
     ;Initialize distance array
     MOV RCX, 0
     MOV RBX, 0
@@ -757,8 +799,46 @@ dijkstra:
         ADD RCX, [vertice_array.vertices]
         CMP RCX, [vertice_array.size]
         JB .RCX_loop
-    MOV RAX, 
+    MOV RAX, [vertice_array.size]
+    PUSHREGS
+    MOV RAX, SYS_MMAP
+    MOV RDI, [vertice_array.size]
+    MOV RSI, PROT_READ | PROT_WRITE
+    MOV RDX, MAP_SHARED | MAP_ANONYMOUS
+    MOV R10, -1
+    MOV R8, 0
+    SYSCALL
+    MOV [vertice_array.seen], RAX
+    POPREGS
+    
+    MOV R10, [vertice_array.seen]
+    MOV [R10 + SRC*8], 1 ; SRC is SEEN.
+    MOV R11, [RDI]
+    MOV R11, [R11 + minheap.vTable]
+    MOV RDX, RSI
+    MOV RSI, 0
+    CALL [R11 + VT_MINHEAP_INSERT]
+    MOV RAX, [vertice_array.dists]
+    MOV [RAX + RSI*8], 0
+    MOV RCX, 0
+    .vertice_manipulate_loop:
+        MOV RAX, [vertice_array.vTable]
+        CALL [RAX + VT_MINHEAP_ISEMPTY]
+        CMP RAX, 0
+        JE .return
+        MOV RAX, [vertice_array.vTable]
+        MOV RDI,[RBP - dijkstra.heap]
         
+        
+        
+        
+    .return:
+        ADD RSP, dijkstra.STACK_INIT
+        MOV RSP, RBP
+        POP RBP
+        RET    
+    
+    
     
         
     
