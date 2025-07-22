@@ -228,7 +228,8 @@ minheap@min:
     MOV RAX, [RAX] ;Load [0] in ptr
     PUSH RAX
     MOV RSI, RAX
-    CALL VT_MINHEAP_DELETE
+    MOV RAX, [RDI + minheap.vTable]
+    CALL [RAX + VT_MINHEAP_DELETE]
     POP RAX
     RET
 minheap@construct:
@@ -358,7 +359,7 @@ minheap@insert:
        
    .loop_end:
    
-   ADD RSP, VT_MINHEAP_INSERT.STACK_INIT
+   ADD RSP, minheap@insert.STACK_INIT
    MOV RSP, RBP
    POP RBP
    RET
@@ -400,7 +401,7 @@ minheap@delete:
     MOV RAX, RCX
     CMP RAX, -1
     JE .end
-    MOV [RBP - VT_MINHEAP_DELETE.index], RAX ; Save Index
+    MOV [RBP - minheap@delete.index], RAX ; Save Index
     
     MOV RAX, [RDI + minheap.vertPtr]
     MOV RDX, RSI ;MOV index from RSI into RDX
@@ -415,7 +416,7 @@ minheap@delete:
     MOV R10, [RDI + R10*8] ; Get last element.
     MOV QWORD [RAX + RDX], R10
     MOV R15, [RDI + minheap.size]
-    MOV R14, [RBP - VT_MINHEAP_DELETE.index]
+    MOV R14, [RBP - minheap@delete.index]
     ;Heapify
     .heapify:
         ; R10 = Conditional, R11 = Smallest, R12 = Left Child, R13 = Right Child, R14 = Index, R15 = Minheap size.
@@ -449,14 +450,14 @@ minheap@delete:
         JNE .end
         MOV RSI, R14
         MOV RDX, R11
-        MOV RDI, [RBP -  VT_MINHEAP_DELETE.This]
-        MOV R8, [RBP -  VT_MINHEAP_DELETE.This]
+        MOV RDI, [RBP -  minheap@delete.This]
+        MOV R8, [RBP -  minheap@delete.This]
         MOV R8, [R8 + minheap.vTable]
         CALL [R8+VT_MINHEAP_SWAP]
         MOV R14, R11
-        MOV [RBP - VT_MINHEAP_DELETE.index], R14
-    .end
-        ADD RSP, VT_MINHEAP_DELETE.STACK_INIT
+        MOV [RBP - minheap@delete.index], R14
+    .end:
+        ADD RSP, minheap@delete.STACK_INIT
         MOV RSP, RBP
         POP RBP
         RET
@@ -822,13 +823,17 @@ dijkstra:
     MOV [RAX + RSI*8], 0
     MOV RCX, 0
     .vertice_manipulate_loop:
+        MOV RDI, [RBP - dijkstra.heap]
         MOV RAX, [vertice_array.vTable]
         CALL [RAX + VT_MINHEAP_ISEMPTY]
         CMP RAX, 0
         JE .return
         MOV RAX, [vertice_array.vTable]
         MOV RDI,[RBP - dijkstra.heap]
-        
+        CALL [RAX + VT_MINHEAP_MIN]
+        MOV [RBP - dijkstra.current], RAX
+        CMP [vertice_array.seen], 0
+        JNE .vertice_manipulate_loop
         
         
         
