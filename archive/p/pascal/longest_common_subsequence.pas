@@ -131,7 +131,7 @@ begin
          if LCSResult.Count = 0 then
             Writeln('No common subsequence.')
          else
-            Writeln('Longest Common Subsequence: ', FormatIntegerList(LCSResult));
+            Writeln(FormatIntegerList(LCSResult));
       except
          on E: Exception do
             ShowUsage;
