@@ -834,7 +834,9 @@ dijkstra:
         MOV [RBP - dijkstra.current], RAX
         CMP [vertice_array.seen], 0
         JNE .vertice_manipulate_loop
-        
+    MOV RAX, [RBP - dijkstra.current]   
+    MOV [vertice_array.seen + RAX*8], 1
+    
         
         
     .return:
