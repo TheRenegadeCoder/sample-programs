@@ -1,3 +1,11 @@
+;MACROS
+%MACRO initilizeRBXRCXMinheap 0
+        MOV RBX, [RBP - minheap@delete.This] ; For left child of heap.
+        MOV RCX, [RBP - minheap@delete.This] ; For smallest child of heap.
+        MOV RBX, [RBX + minheap.ptr]
+        MOV RCX, [RCX + minheap.ptr]
+%ENDMACRO 
+
 ;Exit codes
 %DEFINE EXIT_OK 0
 %DEFINE INVALID_ARGC -1
@@ -53,8 +61,9 @@
 %DEFINE minheap@insert.index 16
 %DEFINE minheap@insert.operatedIndex 24
 
-%DEFINE minheap@delete.STACK_INIT 8
-%DEFINE  minheap@delete.This
+%DEFINE minheap@delete.STACK_INIT 16
+%DEFINE minheap@delete.This 8
+%DEFINE minheap@delete.index 16
 
 
 %DEFINE atol.STACK_INIT 8
@@ -297,12 +306,13 @@ minheap@delete:
 ;   R9  - ()              Unused.
 ; Returns:
 ;   RAX - ()              None.
-;   Clobbers - R15, 
+;   Clobbers - RBX, RCX, R11, R12, R13, R14, R15.
 ; ----------------------------------------------------------------------------
     PUSH RBP   
     MOV RBP, RSP
     SUB RSP, minheap@delete.STACK_INIT
     MOV [RBP -  minheap@delete.This], RDI
+    MOV [RBP -  minheap@delete.index], 0
     
     MOV RAX, -1 ;Index
     MOV RDX, [RDI]
@@ -319,8 +329,8 @@ minheap@delete:
     MOV RAX, RCX
     CMP RAX, -1
     JE .end
+    MOV [RBP - minheap@delete.index], RAX ; Save Index
     
-    MOV RAX, [RDI]
     MOV RAX, [RDI + minheap.ptr]
     MOV RDX, RSI ;MOV index from RSI into RDX
     MOV R10, [RDI + minheap.size]
@@ -328,11 +338,10 @@ minheap@delete:
     MOV R10, [RDI + R10*8] ; Get last element.
     MOV QWORD [RAX + RDX], R10
     MOV R15, [RDI + minheap.size]
-    MOV R14, RSI
+    MOV R14, [RBP - minheap@delete.index]
     ;Heapify
     .heapify:
-        ; R11 = Smallest, R12 = Left Child, R13 = Right Child, R14 = Index.
-        MOV RDI, R14
+        ; R10 = Conditional, R11 = Smallest, R12 = Left Child, R13 = Right Child, R14 = Index, R15 = Minheap size.
         CALL minheap@left
         MOV R12, RAX
         CALL minheap@right
@@ -343,20 +352,41 @@ minheap@delete:
         ADD R13, 2
         MOV R11, R14
         
-        
-       
-    
-    .heapify_break:
-    
-    
-    
-    
+        initilizeRBXRCXMinheap
+        MOV RBX, [RBX + minheap.ptr]
+        MOV RCX, [RCX + minheap.ptr]
+        MOV RBX, [RBX + R12*8]
+        MOV RCX, [RCX + R11*8]
+        CMP R12, R15
+        JA .end
+        CMP RBX, RCX
+        JA .end
+        MOV R11, R12
+        initilizeRBXRCXMinheap
+        MOV RBX, [RBX + R13*8]
+        MOV RCX, [RCX + R11*8]
+        CMP R13, R15
+        JA .end
+        CMP RBX, RCX
+        JA .end
+        MOV R11, R13
+        CMP R11, R14
+        JNE .end
+        MOV RSI, R14
+        MOV RDX, R11
+        MOV RDI, [RBP -  minheap@delete.This]
+        MOV R8, [RBP -  minheap@delete.This]
+        MOV R8, [R8 + minheap.vTable]
+        CALL [R8+minheap@swap]
+        MOV R14, R11
+        MOV [RBP - minheap@delete.index], R14
     .end
+        ADD RSP, minheap@delete.STACK_INIT
         MOV RSP, RBP
         POP RBP
         RET
         
-       
+minheap@heapify:
        
 
 
