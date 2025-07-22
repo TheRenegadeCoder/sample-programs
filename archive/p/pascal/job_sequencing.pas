@@ -50,7 +50,7 @@ begin
    end;
 end;
 
-function CompareJobs(const Left, Right: TJobInfo): integer;
+function CompareJobs(constref Left, Right: TJobInfo): integer;
 begin
    // Compare profit descending
    if Left.Profit > Right.Profit then
