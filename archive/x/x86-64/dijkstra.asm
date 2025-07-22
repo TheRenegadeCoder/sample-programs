@@ -40,7 +40,7 @@
 
 ;Stack displacements
 
-%DEFINE _start.STACK_INIT 32
+%DEFINE _start.STACK_INIT 16
 %DEFINE _start.argc 8
 %DEFINE _start.argv0 16
 %DEFINE _start.argv1 24
@@ -49,6 +49,7 @@
 ; RBP+ ^
 ; RBP- v    
 %DEFINE _start.minheap 8
+%DEFINE _start.ret 16
 
 
 %DEFINE parse_SRC_DST.STACK_INIT 16
@@ -95,6 +96,7 @@ struc minheap:
     ;Minheap will be used to implement priority queue.
     .vTable resq 1
     .ptr resq 1
+    .vertPtr resq 1
     .size resd 1
     .max_size resd 1
 endstruc
@@ -103,6 +105,7 @@ vertice_array:
     .ptr dq 0
     .size dq 0
     .vertices dq 0
+    .dists dq 0
 
 commas dq 0
 section .bss
@@ -153,17 +156,23 @@ minheap@swap:
 ; Returns:
 ;   RAX - ()              None; RAX clobbered.
 ; ---------------------------------------------------------------------------
-    MOV RAX, [RDI + minheap.ptr + RSI*8]
+    ;Swap Distances
+    MOV RAX, [RDI + minheap.vertPtr + RSI*8]
+    MOV R10, [RDI + minheap.vertPtr + RDX*8]
+    MOV [RDI + minheap.vertPtr + RDX*8], RAX
+    MOV [RDI + minheap.vertPtr + RSI*8], R10
+    ;Swap vertices
+    MOV RAX, [RDI + minheap.vertPtr + RSI*8]
     MOV R10, [RDI + minheap.ptr + RDX*8]
-    MOV [RDI + minheap.ptr + RDX*8], RAX
-    MOV [RDI + minheap.ptr + RSI*8], R10
+    MOV [RDI + minheap.vertPtr + RDX*8], RAX
+    MOV [RDI + minheap.vertPtr + RSI*8], R10
     RET
 
 minheap@min:
 ; ----------------------------------------------------------------------------
-; Function: Minheap minimum element (root).
+; Function: Minheap minimum element (root). (poll).
 ; Description:
-;   Constructs the minheap.
+;   Gets minimum element of minheap and removes (poll), then returns minimum element.
 ; Parameters:
 ;   RDI - (Minheap*)      Ptr to minheap to pull from [0] of the array pointer. This ptr.
 ;   RSI - ()              Unused.
@@ -174,9 +183,13 @@ minheap@min:
 ; Returns:
 ;   RAX - (long)          Minimum element (root) of the minheap tree.
 ; ---------------------------------------------------------------------------
-    MOV RAX, [RDI + minheap.ptr]
-    MOV RAX, [RAX] ;Load address in .ptr
+    MOV RAX, [RDI + minheap.vertPtr]
+    MOV RAX, [RAX] ;Load address in .vertPtr
     MOV RAX, [RAX] ;Load [0] in ptr
+    PUSH RAX
+    MOV RSI, RAX
+    CALL minheap@delete
+    POP RAX
     RET
 minheap@constructor:
 ; ----------------------------------------------------------------------------
@@ -221,7 +234,20 @@ minheap@constructor:
     
     POP RDI
     MOV [RDI + minheap.ptr], RAX
+    PUSH RAX
+    LEA RSI, minheap_vTable
+    MOV [RAX + minheap.vTable], RSI
+    ;Allocate an array for the minheap elements.
+    MOV RAX, SYS_MMAP
+    SHL RDI, SHIFT_X8 ;RDI * 8 bytes
+    MOV RSI, PROT_READ | PROT_WRITE
+    MOV RDX, MAP_SHARED | MAP_ANONYMOUS
+    MOV R10, -1
+    MOV R8, 0
+    SYSCALL
     
+    POP RDI
+    MOV [RDI + minheap.vertPtr], RAX
     MOV RAX, RDI ;MOV the minheap ptr back into RAX
     MOV RSP, RBP
     POP RBP
@@ -476,6 +502,7 @@ _start:
     MOV RBP, RSP
     SUB RSP, _start.STACK_INIT
     MOV [RBP - _start.minheap], 0
+    MOV [RBP - _start.ret], 0
     
     MOV RAX, [RBP + _start.argc]
     CMP RAX, 4 ;Program name + vertices + SRC + DST
@@ -542,8 +569,18 @@ _start:
     MOV RDX, MAP_SHARED | MAP_ANONYMOUS
     MOV R10, -1
     MOV R8, 0
-    SYSCALL  
+    SYSCALL
     MOV [vertice_array.ptr], RAX
+    ;Mapping memory for distances
+    MOV RAX, SYS_MMAP
+    MOV RDI, [vertice_array.vertices]
+    SHL RDI, SHIFT_X8
+    MOV RSI, PROT_READ | PROT_WRITE
+    MOV RDX, MAP_SHARED | MAP_ANONYMOUS
+    MOV R10, -1
+    MOV R8, 0
+    SYSCALL
+    MOV [vertice_array.dists], RAX
     ;Check if input is square
     MOV RDI, [vertice_array.size]
     LEA RSI, [vertive_array.vertices]
@@ -655,5 +692,45 @@ parse_SRC_DST:
         RET
 
 dijkstra:
+; ----------------------------------------------------------------------------
+; Function: dijkstra
+; Description:
+;   Utilizes Dijkstra's algorithm to find the shortest path to a vertex.
+; Parameters:
+;   RDI - (char*)         Pointer to stack location of src/dst.
+;   RSI - (long*)         Pointer to src/dst storage in .data
+;   RDX - ()              Unused.
+;   R10 - ()              Unused.
+;   R8  - ()              Unused.
+;   R9  - ()              Unused.
+; Returns:
+;   RAX - (long)          Distance.
+; ---------------------------------------------------------------------------
+    PUSH RBP,
+    MOV RBP, RSP
+    SUB [RBP - dijkstra.STACK_INIT]
+    MOV [RBP - dijkstra.distance]
+    ;Initialize distance array
+    MOV RCX, 0
+    MOV RBX, 0
+    MOV RAX, [vertice_array.ptr]
+    MOV RDX, [vertice_array.ptr]
+    PREFETCH0 RDX ; Operating on memory a lot so I'd like to try and cache this.
+    .RCX_loop:
+    MOV RDX, [vertice_array.ptr + RCX*8]
+    .RBX_loop:
+        MOV [RDX+RBX*8], -1
+        INC RBX
+        CMP RBX, [vertice_array.vertices]
+        JB .RBX_loop
+        ADD RCX, [vertice_array.vertices]
+        CMP RCX, [vertice_array.size]
+        JB .RCX_loop
+    MOV RAX, 
+        
+    
+        
+    
+        
         
 
