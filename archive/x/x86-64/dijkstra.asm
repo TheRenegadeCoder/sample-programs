@@ -373,7 +373,7 @@ minheap@delete:
     MOV RDX, [RDX + minheap.size]
     MOV RCX, 0 ;Loop ctr
     .for_loop:
-        MOV R10, [RDI + minheap.ptr]
+        MOV R10, [RDI + minheap.vertPtr]
         MOV R10, [R10 + RCX*8]
         INC RCX
         JNE R10, RSI
@@ -385,6 +385,12 @@ minheap@delete:
     JE .end
     MOV [RBP - minheap@delete.index], RAX ; Save Index
     
+    MOV RAX, [RDI + minheap.vertPtr]
+    MOV RDX, RSI ;MOV index from RSI into RDX
+    MOV R10, [RDI + minheap.size]
+    DEC R10
+    MOV R10, [RDI + R10*8] ; Get last element.
+    MOV QWORD [RAX + RDX], R10
     MOV RAX, [RDI + minheap.ptr]
     MOV RDX, RSI ;MOV index from RSI into RDX
     MOV R10, [RDI + minheap.size]
@@ -407,8 +413,6 @@ minheap@delete:
         MOV R11, R14
         
         initilizeRBXRCXMinheap
-        MOV RBX, [RBX + minheap.ptr]
-        MOV RCX, [RCX + minheap.ptr]
         MOV RBX, [RBX + R12*8]
         MOV RCX, [RCX + R11*8]
         CMP R12, R15
