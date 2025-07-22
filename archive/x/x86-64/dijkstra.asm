@@ -229,12 +229,12 @@ minheap@constructor:
     
 minheap@insert:
 ; ----------------------------------------------------------------------------
-; Function: Easy Square Root
+; Function: Minheap insert.
 ; Description:
-;   Checks if number is perfect square, and also moves the sqrt to a specified pointer.
+;   Inserts value into min heap.
 ; Parameters:
 ;   RDI - (Minheap*)      This.
-;   RSI - (long)          Value to delete.
+;   RSI - (long)          Value to insert.
 ;   RDX - ()              Unused.
 ;   R10 - ()              Unused.
 ;   R8  - ()              Unused.
@@ -252,7 +252,7 @@ minheap@insert:
    
    MOV RAX, [RDI + minheap.ptr]
    MOV RDX, [RDI + minheap.size]
-   MOV [RAX + RDX*8], RSI
+   MOV [RAX + RDX*8], RSI ; Inserts value. I seriously cannot believe I forgot I wrote this; that's assembly...
    MOV [RBP - minheap@insert.index], RDX
    .loop:
        ;This whole code here is pretty gross. This is just for while loop conditionals.
@@ -287,6 +287,7 @@ minheap@insert:
        JMP .loop
        
    .loop_end:
+   
    ADD RSP, minheap@insert.STACK_INIT
    MOV RSP, RBP
    POP RBP
