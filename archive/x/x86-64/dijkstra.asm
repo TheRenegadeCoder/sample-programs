@@ -6,6 +6,29 @@
         MOV RCX, [RCX + minheap.ptr]
 %ENDMACRO 
 
+%MACRO POPREGS 0
+POP R9
+POP R8
+POP R10
+POP RSI
+POP RDI
+POP RDX
+POP RCX
+POP RBX
+POP RAX
+%ENDMACRO
+%MACRO PUSHREGS 0
+PUSH RAX
+PUSH RBX
+PUSH RCX
+PUSH RDX
+PUSH RDI
+PUSH RSI
+PUSH R10
+PUSH R8
+PUSH R9
+%ENDMACRO
+
 ;Exit codes
 %DEFINE EXIT_OK 0
 %DEFINE INVALID_ARGC -1
@@ -235,8 +258,6 @@ minheap@constructor:
     POP RDI
     MOV [RDI + minheap.ptr], RAX
     PUSH RAX
-    LEA RSI, minheap_vTable
-    MOV [RAX + minheap.vTable], RSI
     ;Allocate an array for the minheap elements.
     MOV RAX, SYS_MMAP
     SHL RDI, SHIFT_X8 ;RDI * 8 bytes
@@ -245,7 +266,6 @@ minheap@constructor:
     MOV R10, -1
     MOV R8, 0
     SYSCALL
-    
     POP RDI
     MOV [RDI + minheap.vertPtr], RAX
     MOV RAX, RDI ;MOV the minheap ptr back into RAX
@@ -261,13 +281,13 @@ minheap@insert:
 ; Parameters:
 ;   RDI - (Minheap*)      This.
 ;   RSI - (long)          Value to insert.
-;   RDX - ()              Unused.
+;   RDX - (long)          Corresponding vertex value.
 ;   R10 - ()              Unused.
 ;   R8  - ()              Unused.
 ;   R9  - ()              Unused.
 ; Returns:
 ;   RAX - ()              None.
-;   Clobbers - R11, R12, R13, R15
+;   Clobbers - RBX, R11, R12, R13, R14, R15
 ; ---------------------------------------------------------------------------  
    PUSH RBP   
    MOV RBP, RSP
@@ -275,11 +295,12 @@ minheap@insert:
    MOV [RBP - minheap@insert.This], RDI
    MOV [RBP - minheap@insert.index], 0
    MOV [RBP - minheap@insert.operatedIndex], 0
-   
+   MOV R8, [RDI + minheap.size]
    MOV RAX, [RDI + minheap.ptr]
-   MOV RDX, [RDI + minheap.size]
-   MOV [RAX + RDX*8], RSI ; Inserts value. I seriously cannot believe I forgot I wrote this; that's assembly...
-   MOV [RBP - minheap@insert.index], RDX
+   MOV [RAX + R8*8], RSI
+   MOV RAX, [RDI + minheap.vertPtr]
+   MOV [RAX + R8*8], RDX
+   MOV [RBP - minheap@insert.index], R8
    .loop:
        ;This whole code here is pretty gross. This is just for while loop conditionals.
        MOV R10, RDX
@@ -293,6 +314,7 @@ minheap@insert:
        MOV R12, [R11 - R12*8]
        MOV R13, [RBP - minheap@insert.index]
        MOV R13, [R11 - R13*8]
+       MOV R14, [R11 
        MOV R11, 0
        CMP R12, R13
        SETA R11B
@@ -306,6 +328,11 @@ minheap@insert:
        JNA .loop_end
        
        ;Non-conditional code in the while loop:
+       MOV RDI, [RBP - minheap@insert.This]
+       MOV RSI, [RBP - minheap@insert.index]
+       MOV RDX, [RBP - minheap@insert.operatedIndex]
+       MOV RBX, [RDI + minheap.vTable]
+       CALL [RBX + minheap@swap]
        MOV R11, [RBP - minheap@insert.index]
        DEC R11
        SHR R11, 1
