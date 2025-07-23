@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in Powershell! To find documentation related to the Powershell code in this repo, look [here.](https://sampleprograms.io/languages/powershell)
 
-## Sample Programs List - 35/38 :smile:
+## Sample Programs List - 36/38 :smile:
 
 In this section, we feature a list of completed and missing programs in Powershell. See above for the current amount of completed programs in Powershell. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -16,6 +16,7 @@ Below, you'll find a list of completed code snippets in Powershell. Code snippet
 - :warning: [Bubble Sort in Powershell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+powershell) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :warning: [Capitalize in Powershell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+powershell) [[Requirements](https://sampleprograms.io/projects/capitalize)]
 - :warning: [Depth First Search in Powershell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+depth+first+search+powershell) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
+- :warning: [Dijkstra in Powershell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+dijkstra+powershell) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :warning: [Duplicate Character Counter in Powershell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+powershell) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :warning: [Even Odd in Powershell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+powershell) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :warning: [Factorial in Powershell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+powershell) [[Requirements](https://sampleprograms.io/projects/factorial)]
@@ -51,7 +52,6 @@ Below, you'll find a list of completed code snippets in Powershell. Code snippet
 The following list contains all of the approved programs that are not currently implemented in Powershell. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
 - :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,convex+hull&template=code-snippet-request.md&title=Add+Convex+Hull+in+Powershell) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
-- :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,dijkstra&template=code-snippet-request.md&title=Add+Dijkstra+in+Powershell) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+Powershell) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
 
 ## Testing
