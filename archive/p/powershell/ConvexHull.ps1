@@ -35,7 +35,6 @@ function Invoke-ConvexHull([Point[]]$Points) {
 
     # Repeat until wrapped around to first hull point
     $p = $l
-    $z = 0
     do {
         # Output convex hull point
         $Points[$p]
@@ -49,8 +48,6 @@ function Invoke-ConvexHull([Point[]]$Points) {
         }
 
         $p = $q
-        $z++
-        if ($z -gt 10) { break }
     } while ($p -ne $l)
 }
 
