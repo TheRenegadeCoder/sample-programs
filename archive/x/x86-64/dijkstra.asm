@@ -845,7 +845,22 @@ dijkstra:
         POP RBP
         RET    
     
-    
+get_Neighbors
+; ----------------------------------------------------------------------------
+; Function: Get Neighbors
+; Description:
+;   Finds the neighbors of a given vertive and then adds them to the queue.
+; Parameters:
+;   RDI - (Minheap*)      Ptr to minheap.
+;   RSI - (long[]*)       Seen.
+;   RDX - (long)          DST.
+;   R10 - ()              Unused.
+;   R8  - ()              Unused.
+;   R9  - ()              Unused.
+; Returns:
+;   RAX - (long)          Distance.
+;   Clobbers - R11, R12
+; ---------------------------------------------------------------------------    
     
         
     
