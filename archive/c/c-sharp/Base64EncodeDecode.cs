@@ -8,13 +8,6 @@ public class Base64EncodeDecode
         Environment.Exit(1);
     }
 
-    public static bool IsBase64Char(char c)
-    {
-        return (c >= 'A' && c <= 'Z') ||
-               (c >= 'a' && c <= 'z') ||
-               (c >= '0' && c <= '9') ||
-               c == '+' || c == '/' || c == '=';
-    }
 
     private static bool IsValidBase64(string input)
     {
