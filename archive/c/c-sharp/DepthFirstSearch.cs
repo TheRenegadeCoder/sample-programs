@@ -143,15 +143,9 @@ public static class DepthFirstSearch
             Console.WriteLine(found.ToString().ToLowerInvariant());
             return 0;
         }
-        catch (ArgumentException ex)
+        catch
         {
-            Console.Error.WriteLine($"Error: {ex.Message}");
             ShowUsage();
-            return 1;
-        }
-        catch (Exception ex)
-        {
-            Console.Error.WriteLine($"Unexpected error: {ex.Message}");
             return 1;
         }
     }
