@@ -45,6 +45,12 @@ public class Base64EncodeDecode
         string mode = args[0].ToLowerInvariant();
         string value = args[1];
 
+        if (string.IsNullOrWhiteSpace(mode) || string.IsNullOrWhiteSpace(value))
+        {
+            Usage();
+            return 1;
+        }
+
         try
         {
             string result = mode switch
