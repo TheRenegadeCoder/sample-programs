@@ -23,7 +23,10 @@ public static class ConvexHull
     private static List<int> ParseIntegerList(string input)
     {
         if (string.IsNullOrWhiteSpace(input))
+        {
             ShowUsage();
+            Environment.Exit(1);
+        }
 
         var list = input
             .Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
@@ -33,7 +36,10 @@ public static class ConvexHull
             .ToList();
 
         if (list.Count < 3)
+        {
             ShowUsage();
+            Environment.Exit(1);
+        }
 
         return list;
     }
@@ -94,7 +100,7 @@ public static class ConvexHull
     {
         if (args.Length != 2)
         {
-            ShowUsage(); 
+            ShowUsage();
             return 1;
         }
 
@@ -104,13 +110,13 @@ public static class ConvexHull
             var yCoords = ParseIntegerList(args[1]);
             if (xCoords.Count != yCoords.Count)
             {
-                ShowUsage(); 
+                ShowUsage();
                 return 1;
             }
 
             if (xCoords.Count < 3)
             {
-                ShowUsage(); 
+                ShowUsage();
                 return 1;
             }
 
