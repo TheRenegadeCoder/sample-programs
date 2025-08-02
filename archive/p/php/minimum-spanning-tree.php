@@ -229,4 +229,4 @@ $mst = prim_mst($graph);
 
 // Calculate total weight of MST and display
 $total_weight = get_total_mst_weight($mst);
-echo "${total_weight}\n";
+echo "$total_weight\n";

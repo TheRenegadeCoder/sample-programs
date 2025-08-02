@@ -84,4 +84,4 @@ if ($values === FALSE)
 
 // Calculate maximum subarray and display
 $max_value = maximum_subarray($values);
-echo "${max_value}\n";
+echo "$max_value\n";

@@ -32,7 +32,7 @@ function show_duplicate_character_counts($counts)
     {
         if ($count > 1)
         {
-            echo "${char}: ${count}\n";
+            echo "$char: $count\n";
             $has_dupes = TRUE;
         }
     }

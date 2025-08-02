@@ -78,4 +78,4 @@ if (strlen($longest) < 2)
 }
 
 // Show longest palindromic substring
-echo "${longest}\n";
+echo "$longest\n";
