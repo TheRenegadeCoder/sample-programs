@@ -63,7 +63,7 @@ For example, the "Hello World" sample would be named this:
 The following list shares details about what we're using to test all Sample Programs in Rust:
 
 - Docker Image: rust
-- Docker Tag: 1.68.2-alpine3.17
+- Docker Tag: 1.88.0-alpine3.22
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 
