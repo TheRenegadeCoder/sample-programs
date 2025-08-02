@@ -71,4 +71,4 @@ if ($n === FALSE || $k === FALSE)
 
 // Run Josephus problem and store results
 $g = josephus($n, $k);
-echo "${g}\n";
+echo "$g\n";

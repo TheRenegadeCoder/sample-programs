@@ -39,7 +39,7 @@ function parse_int($str_value)
 function is_palindromic_number($value)
 {
     // Convert number to string
-    $str = "${value}";
+    $str = (string)$value;
 
     // Check if palindrome
     $len = strlen($str);

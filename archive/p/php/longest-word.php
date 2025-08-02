@@ -19,4 +19,4 @@ if (count($argv) < 2 || empty($argv[1]))
 // Get longest word length and display
 $str = $argv[1];
 $longest_len = longest_word_length($str);
-echo "${longest_len}\n";
+echo "$longest_len\n";

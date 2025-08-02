@@ -134,4 +134,4 @@ if ($values === FALSE)
 
 // Calculate maximum array rotation and display
 $max_value = maximum_array_rotation($values);
-echo "${max_value}\n";
+echo "$max_value\n";

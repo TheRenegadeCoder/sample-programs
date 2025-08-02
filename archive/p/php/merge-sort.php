@@ -5,7 +5,7 @@ function merge_sort($my_array)
         return $my_array;
     }
 
-    $mid = count($my_array) / 2;
+    $mid = intdiv(count($my_array), 2);
     $left = array_slice($my_array, 0, $mid);
     $right = array_slice($my_array, $mid);
     $left = merge_sort($left);
