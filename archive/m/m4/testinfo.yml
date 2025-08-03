@@ -1,0 +1,20 @@
+folder:
+  extension: ".m4"
+  naming: "hyphen"
+
+container:
+  image: "gcc"
+  tag: "15.1"
+  build: |
+    bash -c '(echo "#!/bin/bash"; \
+    echo "ARGS=(-DARGC=\$#)"; \
+    echo "i=1"; \
+    echo "while [ \$i -le \$# ]"; \
+    echo "do"; \
+    echo eval "ARGS+=(-DARGV\$i=\\\"\$1\\\")"; \
+    echo "shift"; \
+    echo "i=\$((\$i+1))"; \
+    echo "done"; \
+    echo "m4 \"\${ARGS[@]}\" {{ source.name }}{{ source.extension }}" \
+    ) >{{ source.name }}'
+  cmd: "bash ./{{ source.name }}"
