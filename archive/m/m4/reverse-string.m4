@@ -6,6 +6,6 @@ define(`unescape', `translit(``$1'', `«', `,')')
 
 dnl reverse(str)
 define(`reverse', `unescape(_reverse(escape(`$1')))')
-define(`_reverse', `ifelse(eval(len(`$1')), 0, , `_reverse(substr(`$1', 1))'substr(`$1', 0, 1))')
+define(`_reverse', `ifelse(len(`$1'), 0, , `_reverse(substr(`$1', 1))`'substr(`$1', 0, 1)')')
 divert(0)dnl
 ifelse(ARGC, 0, , `reverse(ARGV1)')
