@@ -4,5 +4,5 @@ folder:
 
 container:
   image: "rzuckerm/m4"
-  tag: "1.4.19-2"
+  tag: "1.4.19-3"
   cmd: "run-m4 {{ source.name }}{{ source.extension }}"
