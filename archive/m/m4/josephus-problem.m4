@@ -25,7 +25,7 @@ dnl Return g + 1
 define(`_josephus_problem',
 `ifelse(eval(`$4' <= `$1'), 1,
     `_josephus_problem(`$1', `$2', eval((`$3' + `$2') % `$4'), incr(`$4'))',
-    incr(`$3')dnl
+    `incr(`$3')'dnl
 )'dnl
 )
 divert(0)dnl
