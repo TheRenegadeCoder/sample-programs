@@ -36,12 +36,11 @@ dnl    prev_value = value
 dnl Return total
 define(`_roman_numeral',
 `ifelse(len(`$1'), 0, `$2',
-`pushdef(`value', roman_value(substr(`$1', 0, 1)))dnl
+`define(`value', roman_value(substr(`$1', 0, 1)))dnl
 ifelse(eval($3 > 0 && value > $3), 1,
     `_roman_numeral(substr(`$1', 1), eval($2 + value - 2 * $3), `-1')',
     `_roman_numeral(substr(`$1', 1), eval($2 + value), value)'dnl
-)dnl
-popdef(`value')'dnl
+)'dnl
 )'dnl
 )
 divert(0)dnl
