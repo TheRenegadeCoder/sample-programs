@@ -45,6 +45,5 @@ ifelse(eval($3 > 0 && value > $3), 1,
 )
 divert(0)dnl
 ifelse(eval(ARGC < 1), 1, `show_usage()')dnl
-ifelse(is_valid_roman(ARGV1), 0, `show_error()')dnl
 define(`result', roman_numeral(ARGV1))dnl
 ifelse(eval(result < 0), 1, `show_error()', `result')
