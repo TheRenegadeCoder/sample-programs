@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in M4! To find documentation related to the M4 code in this repo, look [here.](https://sampleprograms.io/languages/m4)
 
-## Sample Programs List - 11/38 :thinking:
+## Sample Programs List - 12/38 :thinking:
 
 In this section, we feature a list of completed and missing programs in M4. See above for the current amount of completed programs in M4. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -17,6 +17,7 @@ Below, you'll find a list of completed code snippets in M4. Code snippets preced
 - :warning: [Fibonacci in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+m4) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :warning: [Fizz Buzz in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+m4) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :warning: [Hello World in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+m4) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :warning: [Palindromic Number in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+m4) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :warning: [Quine in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+m4) [[Requirements](https://sampleprograms.io/projects/quine)]
 - :warning: [Remove All Whitespace in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+remove+all+whitespace+m4) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :warning: [Reverse String in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+m4) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
@@ -46,7 +47,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+subarray&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+M4) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :x: [Merge Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,merge+sort&template=code-snippet-request.md&title=Add+Merge+Sort+in+M4) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+M4) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
-- :x: [Palindromic Number](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,palindromic+number&template=code-snippet-request.md&title=Add+Palindromic+Number+in+M4) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :x: [Prime Number](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,prime+number&template=code-snippet-request.md&title=Add+Prime+Number+in+M4) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :x: [Quick Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,quick+sort&template=code-snippet-request.md&title=Add+Quick+Sort+in+M4) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
 - :x: [Roman Numeral](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,roman+numeral&template=code-snippet-request.md&title=Add+Roman+Numeral+in+M4) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
@@ -68,7 +68,7 @@ For example, the "Hello World" sample would be named this:
 The following list shares details about what we're using to test all Sample Programs in M4:
 
 - Docker Image: rzuckerm/m4
-- Docker Tag: 1.4.19-2
+- Docker Tag: 1.4.19-3
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 
