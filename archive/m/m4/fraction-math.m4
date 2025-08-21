@@ -30,7 +30,7 @@ dnl   var_name.error = "Divide by 0"
 dnl else:
 dnl   g = gcd(abs(n), abs(d))
 dnl   if d > 0:
-dnl     var_name.n, var_name.d = n / g,d / g
+dnl     var_name.n, var_name.d = n / g, d / g
 dnl   else:
 dnl     var_name.n, var_name.d =  -n / g, -d / g
 define(`fraction_reduce',
