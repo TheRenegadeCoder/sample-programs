@@ -31,7 +31,7 @@ _lps_outer(`$1', incr($2))'dnl
 
 dnl _lps_inner(str, k, l)
 dnl while k <= len(str) - l and l > max_len:
-dnl   if is_palindrome(str[k..k+l-1], 0, l, 1):
+dnl   if is_palindrome(str, k, k+l-1, 1):
 dnl     start = k
 dnl     max_len = l
 dnl   k = k + 1
