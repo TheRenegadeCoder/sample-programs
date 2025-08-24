@@ -29,16 +29,16 @@ _lps_outer(`$1', incr($2))'dnl
 )
 
 dnl _lps_inner(str, k, l)
-dnl while k <= len(str) - l:
-dnl   if is_palindrome(str[k..k+l-1], 0, l, 1) and l > max_len:
+dnl while k <= len(str) - l and l > max_len:
+dnl   if is_palindrome(str[k..k+l-1], 0, l, 1):
 dnl     start = k
 dnl     max_len = l
 dnl   k = k + 1
 define(`_lps_inner',
 `ifelse(
-eval($2 <= len(`$1') - $3), 1,
+eval($2 <= len(`$1') - $3 && $3 > max_len), 1,
 `ifelse(
-eval(is_palindrome(`$1', $2, eval($2 + $3 - 1), 1) && $3 > max_len), 1,
+eval(is_palindrome(`$1', $2, eval($2 + $3 - 1), 1)), 1,
 `define(`start', $2)dnl
 define(`max_len', $3)'dnl
 )dnl
