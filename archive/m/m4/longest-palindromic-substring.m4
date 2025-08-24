@@ -9,10 +9,13 @@ dnl max_len = 1
 dnl _lps_outer(str, 2)
 dnl Return str[start:start+max_len-1]
 define(`longest_palindromic_substring',
-`define(`start', 0)dnl
-define(`max_len', 1)dnl
+`pushdef(`start', 0)dnl
+pushdef(`max_len', 1)dnl
 _lps_outer(`$1', 2)dnl
-substr(`$1', start, max_len)'dnl
+substr(`$1', start, max_len)`'dnl
+popdef(`max_len')dnl
+popdef(`start')dnl
+'dnl
 )
 
 dnl _lps_outer(str, l)
