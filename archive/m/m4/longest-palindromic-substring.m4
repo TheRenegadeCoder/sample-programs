@@ -23,7 +23,8 @@ dnl while l <= len(str):
 dnl   _lps_inner(str, 0, l)
 dnl   l = l + 1
 define(`_lps_outer',
-`ifelse(eval($2 <= len(`$1')), 1, `_lps_inner(`$1', 0, $2)dnl
+`ifelse(eval($2 <= len(`$1')), 1,
+`_lps_inner(`$1', 0, $2)dnl
 _lps_outer(`$1', incr($2))'dnl
 )'dnl
 )
