@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in M4! To find documentation related to the M4 code in this repo, look [here.](https://sampleprograms.io/languages/m4)
 
-## Sample Programs List - 19/38 :relaxed:
+## Sample Programs List - 20/38 :relaxed:
 
 In this section, we feature a list of completed and missing programs in M4. See above for the current amount of completed programs in M4. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -20,6 +20,7 @@ Below, you'll find a list of completed code snippets in M4. Code snippets preced
 - :warning: [Fraction Math in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fraction+math+m4) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :warning: [Hello World in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+m4) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :warning: [Josephus Problem in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+josephus+problem+m4) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
+- :warning: [Linear Search in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+linear+search+m4) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :warning: [Longest Palindromic Substring in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+palindromic+substring+m4) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
 - :warning: [Longest Word in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+m4) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :warning: [Palindromic Number in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+m4) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
@@ -43,7 +44,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [File Input Output](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,file+input+output&template=code-snippet-request.md&title=Add+File+Input+Output+in+M4) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :x: [Insertion Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,insertion+sort&template=code-snippet-request.md&title=Add+Insertion+Sort+in+M4) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,job+sequencing&template=code-snippet-request.md&title=Add+Job+Sequencing+in+M4) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
-- :x: [Linear Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,linear+search&template=code-snippet-request.md&title=Add+Linear+Search+in+M4) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :x: [Longest Common Subsequence](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+common+subsequence&template=code-snippet-request.md&title=Add+Longest+Common+Subsequence+in+M4) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
 - :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+array+rotation&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+M4) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+subarray&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+M4) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
