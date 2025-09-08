@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in M4! To find documentation related to the M4 code in this repo, look [here.](https://sampleprograms.io/languages/m4)
 
-## Sample Programs List - 20/38 :relaxed:
+## Sample Programs List - 22/38 :relaxed:
 
 In this section, we feature a list of completed and missing programs in M4. See above for the current amount of completed programs in M4. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -11,6 +11,7 @@ In this section, we feature a list of completed and missing programs in M4. See 
 Below, you'll find a list of completed code snippets in M4. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
 - :warning: [Baklava in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+m4) [[Requirements](https://sampleprograms.io/projects/baklava)]
+- :warning: [Binary Search in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+binary+search+m4) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :warning: [Capitalize in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+m4) [[Requirements](https://sampleprograms.io/projects/capitalize)]
 - :warning: [Duplicate Character Counter in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+m4) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :warning: [Even Odd in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+m4) [[Requirements](https://sampleprograms.io/projects/even-odd)]
@@ -23,6 +24,7 @@ Below, you'll find a list of completed code snippets in M4. Code snippets preced
 - :warning: [Linear Search in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+linear+search+m4) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :warning: [Longest Palindromic Substring in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+palindromic+substring+m4) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
 - :warning: [Longest Word in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+m4) [[Requirements](https://sampleprograms.io/projects/longest-word)]
+- :warning: [Maximum Subarray in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+maximum+subarray+m4) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :warning: [Palindromic Number in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+m4) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :warning: [Prime Number in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+m4) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :warning: [Quine in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+m4) [[Requirements](https://sampleprograms.io/projects/quine)]
@@ -36,7 +38,6 @@ Below, you'll find a list of completed code snippets in M4. Code snippets preced
 The following list contains all of the approved programs that are not currently implemented in M4. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
 - :x: [Base64 Encode Decode](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,base64+encode+decode&template=code-snippet-request.md&title=Add+Base64+Encode+Decode+in+M4) [[Requirements](https://sampleprograms.io/projects/base64-encode-decode)]
-- :x: [Binary Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,binary+search&template=code-snippet-request.md&title=Add+Binary+Search+in+M4) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :x: [Bubble Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,bubble+sort&template=code-snippet-request.md&title=Add+Bubble+Sort+in+M4) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,convex+hull&template=code-snippet-request.md&title=Add+Convex+Hull+in+M4) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :x: [Depth First Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,depth+first+search&template=code-snippet-request.md&title=Add+Depth+First+Search+in+M4) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
@@ -46,7 +47,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,job+sequencing&template=code-snippet-request.md&title=Add+Job+Sequencing+in+M4) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :x: [Longest Common Subsequence](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+common+subsequence&template=code-snippet-request.md&title=Add+Longest+Common+Subsequence+in+M4) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
 - :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+array+rotation&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+M4) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
-- :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+subarray&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+M4) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :x: [Merge Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,merge+sort&template=code-snippet-request.md&title=Add+Merge+Sort+in+M4) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+M4) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
 - :x: [Quick Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,quick+sort&template=code-snippet-request.md&title=Add+Quick+Sort+in+M4) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
