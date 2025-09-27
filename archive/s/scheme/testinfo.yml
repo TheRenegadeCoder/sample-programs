@@ -4,5 +4,5 @@ folder:
 
 container:
   image: "schemers/gauche"
-  tag: "0"
+  tag: "0-bullseye-slim"
   cmd: "gosh {{ source.name }}{{ source.extension }}"
