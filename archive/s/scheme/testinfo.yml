@@ -3,6 +3,6 @@ folder:
   naming: "hyphen"
 
 container:
-  image: "schemers/gauche"
-  tag: "0-bullseye-slim"
+  image: "rzuckerm/scheme"
+  tag: "0.9.15-1"
   cmd: "gosh {{ source.name }}{{ source.extension }}"
