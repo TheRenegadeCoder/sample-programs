@@ -1,6 +1,6 @@
 [project]
 name = "sample-programs"
-version = "2025.03.10"
+version = "2025.09.27"
 description = "Sample Programs in Every Programming Language"
 readme = ".github/README.md"
 requires-python = ">=3.9,<4.0"
@@ -8,7 +8,7 @@ license = "MIT"
 
 dependencies = [
     "ronbun (>=0.9.0,<0.10.0)",
-    "glotter2 (>=0.11.0,<0.12.0)"
+    "glotter2 (>=0.12.0,<0.13.0)"
 ]
 
 # Initiator of the collection
