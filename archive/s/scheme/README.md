@@ -67,8 +67,8 @@ For example, the "Hello World" sample would be named this:
 
 The following list shares details about what we're using to test all Sample Programs in Scheme:
 
-- Docker Image: schemers/gauche
-- Docker Tag: 0-bullseye-slim
+- Docker Image: rzuckerm/scheme
+- Docker Tag: 0.9.15-1
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 
