@@ -75,7 +75,13 @@ PUSH R9
 %DEFINE _start.ret 16
 
 
-%DEFINE parse_SRC_DST.STACK_INIT 16
+%DEFINE parse_vertices.STACK_INIT 32
+%DEFINE parse_vertices.argv_loc 8
+%DEFINE parse_vertices.vert_loc 16
+%DEFINE parse_vertices.strlen 24
+%DEFINE parse_vertices.vert_ptr 32
+
+%DEFINE parse_SRC_DST.STACK_INIT 24
 %DEFINE parse_SRC_DST.argv_loc 8
 %DEFINE parse_SRC_DST.strlen 16
 %DEFINE parse_SRC_DST.atol 24
@@ -97,6 +103,10 @@ PUSH R9
 %DEFINE dijkstra.distance 8
 %DEFINE dijkstra.current 16
 %DEFINE dijkstra.heap 24
+
+%DEFINE parse_vertices.STACK_INIT 16
+%DEFINE parse_vertices.Argv1 8
+%DEFINE parse_vertices.strlen 16
 
 section .rodata
 minheap_vTable:
@@ -672,7 +682,7 @@ _start:
     
     
     MOV RDI, [vertice_array.vertices]
-    CALL VT_MINHEAP_CONSTRUCTor
+    CALL VT_MINHEAP_CONSTRUCTOR
     MOV [RBP+_start.minheap], RAX
         
         
@@ -695,6 +705,60 @@ error:
     SYSCALL
     
 parse_vertices:
+; ----------------------------------------------------------------------------
+; Function: parse_vertices
+; Description:
+;   Implemented through finite state machine.
+;   Parses through argv[1], numbers comma delimited.
+; Parameters:
+;   RDI - (char**)        Pointer to stack location of argv[1].
+;   RSI - (long*)         Pointer to vertice storage in .data
+;   RDX - ()              Unused.
+;   R10 - ()              Unused.
+;   R8  - ()              Unused.
+;   R9  - ()              Unused.
+; Returns:
+;   RAX - (long)          -1 for invalid input.
+; ---------------------------------------------------------------------------   
+    PUSH RBP
+    MOV RBP, RSP
+    SUB RSP, parse_vertices.STACK_INIT
+    MOV QWORD [RBP - parse_vertices.argv_loc], RDI
+    MOV QWORD [RBP - parse_vertices.argv_loc], RSI
+    MOV QWORD [RBP - parse_vertices.strlen], 0
+    MOV QWORD [RBP - parse_vertices.vert_ptr], 0
+    
+    
+    MOV RAX, [RDI]
+    MOV AL, BYTE [RAX] ;Pull first piece of data in string
+    CMP RAX, EMPTY_INPUT
+    JE .error
+    
+    MOV RCX, 0
+    .validate:
+        MOV DL, BYTE [RAX+RCX]
+        JMP [.jmpTable + RDX*8] 
+        .jmpTable:
+    ; ---------------------------------------------------------------------------
+    ; Valid bytes: ['0'-'9'], 0, ',', ' '
+    ; ---------------------------------------------------------------------------
+        dq .zero
+        times 31 dq .error
+        dq .space
+        times 11 .error
+        dq .comma
+        times 3 dq .error
+        times 10 dq .num
+        times 69 dq .error
+    
+    
+    .error:
+        MOV RAX, -1
+        ADD RSP, parse_SRC_DST.STACK_INIT
+        MOV RSP, RBP
+        POP RBP
+        RET
+    
     
     
 parse_SRC_DST:
@@ -706,7 +770,7 @@ parse_SRC_DST:
 ;   Addressing argv[1] will cause an error.
 ;   Parsed through a finite state machine.
 ; Parameters:
-;   RDI - (char*)         Pointer to stack location of src/dst.
+;   RDI - (char**)         Pointer to stack location of src/dst.
 ;   RSI - (long*)         Pointer to src/dst storage in .data
 ;   RDX - ()              Unused.
 ;   R10 - ()              Unused.
@@ -715,7 +779,6 @@ parse_SRC_DST:
 ; Returns:
 ;   RAX - (long)          -1 for invalid input.
 ; ---------------------------------------------------------------------------
-
     PUSH RBP,
     MOV RBP, RSP
     SUB RSP, parse_SRC_DST.STACK_INIT
@@ -845,11 +908,11 @@ dijkstra:
         POP RBP
         RET    
     
-get_Neighbors
+get_Neighbors:
 ; ----------------------------------------------------------------------------
 ; Function: Get Neighbors
 ; Description:
-;   Finds the neighbors of a given vertive and then adds them to the queue.
+;   Finds the neighbors of a given vertice and then adds them to the queue.
 ; Parameters:
 ;   RDI - (Minheap*)      Ptr to minheap.
 ;   RSI - (long[]*)       Seen.
