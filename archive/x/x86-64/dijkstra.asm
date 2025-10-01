@@ -44,6 +44,8 @@ PUSH R9
 %DEFINE SHIFT_X8 3
 %DEFINE SHIFT_X2 1
 
+%DEFINE EIGHT_BYTES 8
+
 ;SYSCALLS
 ;I/O
 %DEFINE SYS_WRITE 1
@@ -75,11 +77,13 @@ PUSH R9
 %DEFINE _start.ret 16
 
 
-%DEFINE parse_vertices.STACK_INIT 32
+%DEFINE parse_vertices.STACK_INIT 48
 %DEFINE parse_vertices.argv_loc 8
 %DEFINE parse_vertices.vert_loc 16
 %DEFINE parse_vertices.strlen 24
 %DEFINE parse_vertices.vert_ptr 32
+%DEFINE parse_vertices.num_ptr 40
+%DEFINE parse_vertices.prevstate 48
 
 %DEFINE parse_SRC_DST.STACK_INIT 24
 %DEFINE parse_SRC_DST.argv_loc 8
@@ -153,10 +157,11 @@ endstruc
 vertice_array:
     .ptr dq 0
     .size dq 0
-    .vertices dq 0
+    .edges dq 0
     .dists dq 0
     .seen dq 0
-
+    
+num_edges dq 0
 commas dq 0
 section .bss
 
@@ -654,7 +659,7 @@ _start:
     MOV [vertice_array.ptr], RAX
     ;Mapping memory for distances
     MOV RAX, SYS_MMAP
-    MOV RDI, [vertice_array.vertices]
+    MOV RDI, [vertice_array.edges]
     SHL RDI, SHIFT_X8
     MOV RSI, PROT_READ | PROT_WRITE
     MOV RDX, MAP_SHARED | MAP_ANONYMOUS
@@ -664,14 +669,14 @@ _start:
     MOV [vertice_array.dists], RAX
     ;Check if input is square
     MOV RDI, [vertice_array.size]
-    LEA RSI, [vertive_array.vertices]
+    LEA RSI, [vertice_array.edges]
     CALL ezsqrt
     CMP RAX, -1
     MOV RDI, INVALID_NOT_SQUARE
     JE error   
     ;Check if SRC/DST > vertices
     MOV RAX, [src_dst.src]
-    MOV RBX, [vertice_array.vertices]
+    MOV RBX, [vertice_array.edges]
     CMP RAX, RBX
     MOV RDI, INVALID_SRC
     JA error
@@ -681,7 +686,7 @@ _start:
     JA error
     
     
-    MOV RDI, [vertice_array.vertices]
+    MOV RDI, [vertice_array.edges]
     CALL VT_MINHEAP_CONSTRUCTOR
     MOV [RBP+_start.minheap], RAX
         
@@ -719,14 +724,21 @@ parse_vertices:
 ;   R9  - ()              Unused.
 ; Returns:
 ;   RAX - (long)          -1 for invalid input.
-; ---------------------------------------------------------------------------   
+; --------------------------------------------------------------------------- 
+    ;Previous States
+    %DEFINE Parse.STATE.NUM 001b
+    %DEFINE Parse.STATE.COMMA 010b
+    %DEFINE Parse.STATE.SPACE 100b
+    
     PUSH RBP
     MOV RBP, RSP
     SUB RSP, parse_vertices.STACK_INIT
     MOV QWORD [RBP - parse_vertices.argv_loc], RDI
-    MOV QWORD [RBP - parse_vertices.argv_loc], RSI
+    MOV QWORD [RBP - parse_vertices.vert_loc], RSI
     MOV QWORD [RBP - parse_vertices.strlen], 0
     MOV QWORD [RBP - parse_vertices.vert_ptr], 0
+    MOV QWORD [RBP - parse_vertices.num_ptr], RDI
+    MOV QWORD [RBP - parse_vertices.prevstate], RDI
     
     
     MOV RAX, [RDI]
@@ -751,6 +763,22 @@ parse_vertices:
         times 10 dq .num
         times 69 dq .error
     
+    .num:
+        CMP [RBP - parse_vertices.prevstate], Parse.STATE.COMMA
+        JE .error
+        INC [RBP - parse_vertices.strlen]
+        INC RCX
+        MOV [RBP - parse_vertices.prevstate], Parse.STATE.NUM
+        JMP .validate
+    .comma:
+        MOV RDI, [RBP - parse_vertices.num_ptr]
+        MOV RSI, [RBP - parse_vertices.strlen]
+        CALL atol
+        MOV RDI, [RBP - parse_vertices.vert_loc]
+        MOV RSI, [RBP - parse_vertices.vert_ptr]
+        MOV [RDI+RSI], RAX
+        ADD RSI, EIGHT_BYTES
+        MOV [RBP - parse_vertices.vert_ptr], RSI
     
     .error:
         MOV RAX, -1
@@ -858,9 +886,9 @@ dijkstra:
     .RBX_loop:
         MOV [RDX+RBX*8], -1
         INC RBX
-        CMP RBX, [vertice_array.vertices]
+        CMP RBX, [vertice_array.edges]
         JB .RBX_loop
-        ADD RCX, [vertice_array.vertices]
+        ADD RCX, [vertice_array.edges]
         CMP RCX, [vertice_array.size]
         JB .RCX_loop
     MOV RAX, [vertice_array.size]
