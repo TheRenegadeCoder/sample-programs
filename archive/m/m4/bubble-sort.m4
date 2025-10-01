@@ -21,9 +21,6 @@ array_set(`$1', `$3', t)dnl
 popdef(`t')'dnl
 )
 
-dnl array_set(var_name, idx, value)
-define(`array_set', `define(format(``%s[%s]'', `$1', `$2'), `$3')')
-
 dnl is_valid(n)
 define(`is_valid', `eval(regexp(`$1', `^\s*-?[0-9]+\s*$') >= 0)')
 
