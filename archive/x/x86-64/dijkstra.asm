@@ -38,6 +38,7 @@ PUSH R9
 %DEFINE INVALID_CHAR -5
 %DEFINE INVALID_NUM_VERTS -6
 %DEFINE INVALID_NOT_SQUARE -7
+%DEFINE INVALID_INVALID_STATE -8
 
 ;Constants
 %DEFINE EMPTY_INPUT 0
@@ -726,6 +727,7 @@ parse_vertices:
 ;   RAX - (long)          -1 for invalid input.
 ; --------------------------------------------------------------------------- 
     ;Previous States
+    %DEFINE Parse.STATE.START 000b
     %DEFINE Parse.STATE.NUM 001b
     %DEFINE Parse.STATE.COMMA 010b
     %DEFINE Parse.STATE.SPACE 100b
@@ -751,9 +753,9 @@ parse_vertices:
         MOV DL, BYTE [RAX+RCX]
         JMP [.jmpTable + RDX*8] 
         .jmpTable:
-    ; ---------------------------------------------------------------------------
-    ; Valid bytes: ['0'-'9'], 0, ',', ' '
-    ; ---------------------------------------------------------------------------
+        ; ---------------------------------------------------------------------------
+        ; Valid bytes: ['0'-'9'], 0, ',', ' '
+        ; ---------------------------------------------------------------------------
         dq .zero
         times 31 dq .error
         dq .space
@@ -766,11 +768,17 @@ parse_vertices:
     .num:
         CMP [RBP - parse_vertices.prevstate], Parse.STATE.COMMA
         JE .error
+        
         INC [RBP - parse_vertices.strlen]
         INC RCX
         MOV [RBP - parse_vertices.prevstate], Parse.STATE.NUM
         JMP .validate
     .comma:
+        CMP [RBP - parse_vertices.prevstate], Parse.STATE.NUM
+        JNE .error
+        CMP [RBP - parse_vertices.prevstate], Parse.STATE.SPACE
+        JNE .error
+        
         MOV RDI, [RBP - parse_vertices.num_ptr]
         MOV RSI, [RBP - parse_vertices.strlen]
         CALL atol
@@ -779,9 +787,37 @@ parse_vertices:
         MOV [RDI+RSI], RAX
         ADD RSI, EIGHT_BYTES
         MOV [RBP - parse_vertices.vert_ptr], RSI
+        MOV [RBP - parse_vertices.prevstate], Parse.STATE.COMMA
+        
+        MOV [RBP - parse_vertices.strlen], 0
+        INC RCX
+        JMP.validate
+    .space:
+        CMP [RBP - parse_vertices.prevstate], Parse.STATE.NUM
+        JE .error
+        
+        INC RCX
+        MOV RDI, [RBP - parse_vertices.argv_loc]
+        LEA R11, [RDI+RCX]
+        MOV [RBP - parse_vertices.num_ptr], R11
+        JMP .validate
+    .zero:
+        CMP [RBP - parse_vertices.prevstate], Parse.STATE.COMMA
+        JNE .error
+        CMP [RBP - parse_vertices.prevstate], Parse.STATE.SPACE
+        JNE .error
+        
+        CMP RCX, 0
+        JE .error
+        JMP .cont
     
     .error:
         MOV RAX, -1
+        ADD RSP, parse_SRC_DST.STACK_INIT
+        MOV RSP, RBP
+        POP RBP
+        RET
+    .cont:
         ADD RSP, parse_SRC_DST.STACK_INIT
         MOV RSP, RBP
         POP RBP
@@ -798,7 +834,7 @@ parse_SRC_DST:
 ;   Addressing argv[1] will cause an error.
 ;   Parsed through a finite state machine.
 ; Parameters:
-;   RDI - (char**)         Pointer to stack location of src/dst.
+;   RDI - (char**)        Pointer to stack location of src/dst.
 ;   RSI - (long*)         Pointer to src/dst storage in .data
 ;   RDX - ()              Unused.
 ;   R10 - ()              Unused.
@@ -812,7 +848,7 @@ parse_SRC_DST:
     SUB RSP, parse_SRC_DST.STACK_INIT
     MOV QWORD [RBP - parse_SRC_DST.argv_loc], RDI
     MOV QWORD [RBP - parse_SRC_DST.strlen], 0
-    MOV QWORD [RBP - parse_SRC_DST.atol], 0
+    MOV QWORD [RBP - parse_SRC_DST.atol], RSI ;src/dst ptr
     ;Check if SRC/DST is empty or not.
     MOV RAX, [RDI]
     MOV AL, BYTE [RAX] ;Pull first piece of data in string
@@ -836,7 +872,13 @@ parse_SRC_DST:
     MOV QWORD [RBP - parse_SRC_DST.strlen], RCX
     MOV RSI, RCX
     CALL atol
-    MOV QWORD [RBP - parse_SRC_DST.atol], RAX
+    MOV RSI, QWORD [RBP - parse_SRC_DST.atol]
+    MOV [RSI], RAX
+    
+    ADD RSP, parse_SRC_DST.STACK_INIT
+    MOV RSP, RBP
+    POP RBP
+    RET
             
     .zero:
         CMP RCX, 0
