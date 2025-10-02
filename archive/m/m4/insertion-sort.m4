@@ -10,17 +10,6 @@ define(`array_get', `defn(format(``%s[%s]'', `$1', `$2'))')
 dnl array_set(var_name, idx, value)
 define(`array_set', `define(format(``%s[%s]'', `$1', `$2'), `$3')')
 
-dnl array_swap(var_name, idx1, idx2):
-dnl   t = var_name[idx1]
-dnl   var_name[idx1] = var_name[idx2]
-dnl   var_name[idx] = t
-define(`array_swap',
-`pushdef(`t', array_get(`$1', `$2'))dnl
-array_set(`$1', `$2', array_get(`$1', `$3'))dnl
-array_set(`$1', `$3', t)dnl
-popdef(`t')'dnl
-)
-
 dnl is_valid(n)
 define(`is_valid', `eval(regexp(`$1', `^\s*-?[0-9]+\s*$') >= 0)')
 
