@@ -47,6 +47,8 @@ PUSH R9
 
 %DEFINE EIGHT_BYTES 8
 
+%DEFINE INT_MAX 4294967295
+
 ;SYSCALLS
 ;I/O
 %DEFINE SYS_WRITE 1
@@ -104,10 +106,12 @@ PUSH R9
 %DEFINE atol.STACK_INIT 8
 %DEFINE atol.ret 8
 
-%DEFINE dijkstra.STACK_INIT 24
+%DEFINE dijkstra.STACK_INIT 40
 %DEFINE dijkstra.distance 8
 %DEFINE dijkstra.current 16
 %DEFINE dijkstra.heap 24
+%DEFINE dijkstra.SRC 32
+%DEFINE dijkstra.DST 40
 
 %DEFINE parse_vertices.STACK_INIT 16
 %DEFINE parse_vertices.Argv1 8
@@ -268,11 +272,12 @@ minheap@construct:
     PUSH RDI
     
     MOV RAX, SYS_MMAP
-    MOV RDI, minheap_size
-    MOV RSI, PROT_READ | PROT|WRITE
-    MOV RDX, MAP_SHARED | MAP_ANONYMOUS
-    MOV R10, -1
-    MOV R8, 0
+    MOV RDI, 0
+    MOV RSI, minheap_size
+    MOV RDX, PROT_READ | PROT|WRITE
+    MOV R10, MAP_SHARED | MAP_ANONYMOUS
+    MOV R8, -1
+    MOV R9, 0
     SYSCALL
     
     POP RDI
@@ -282,11 +287,13 @@ minheap@construct:
     MOV [RAX + minheap.vTable], RSI
     ;Allocate an array for the minheap elements.
     MOV RAX, SYS_MMAP
-    SHL RDI, SHIFT_X8 ;RDI * 8 bytes
-    MOV RSI, PROT_READ | PROT_WRITE
-    MOV RDX, MAP_SHARED | MAP_ANONYMOUS
-    MOV R10, -1
-    MOV R8, 0
+    MOV RSI, RDI
+    MOV RDI, 0
+    SHL RSI, SHIFT_X8 ;RSI * 8 bytes
+    MOV RDX, PROT_READ | PROT_WRITE
+    MOV R10, MAP_SHARED | MAP_ANONYMOUS
+    MOV R8, -1
+    MOV R9, 0
     SYSCALL
     
     POP RDI
@@ -294,11 +301,12 @@ minheap@construct:
     PUSH RAX
     ;Allocate an array for the minheap elements.
     MOV RAX, SYS_MMAP
-    SHL RDI, SHIFT_X8 ;RDI * 8 bytes
-    MOV RSI, PROT_READ | PROT_WRITE
-    MOV RDX, MAP_SHARED | MAP_ANONYMOUS
-    MOV R10, -1
-    MOV R8, 0
+    MOV RSI, RDI
+    SHL RSI, SHIFT_X8 ;RDI * 8 bytes
+    MOV RDX, PROT_READ | PROT_WRITE
+    MOV R10, MAP_SHARED | MAP_ANONYMOUS
+    MOV R8, -1
+    MOV R9, 0
     SYSCALL
     POP RDI
     MOV [RDI + minheap.vertPtr], RAX
@@ -650,22 +658,23 @@ _start:
     ;Continued from zero
     ;Mapping memory for the array [vertex][distances].
     MOV RAX, SYS_MMAP
-    MOV RDI, [vertice_array.size]
-    SHL RDI, SHIFT_X8
-    MOV RSI, PROT_READ | PROT_WRITE
-    MOV RDX, MAP_SHARED | MAP_ANONYMOUS
-    MOV R10, -1
-    MOV R8, 0
+    MOV RDI, 0
+    MOV RSI, [vertice_array.size]
+    SHL RSI, SHIFT_X8
+    MOV RDX, PROT_READ | PROT_WRITE
+    MOV R10, MAP_SHARED | MAP_ANONYMOUS
+    MOV R8, -1
+    MOV R9, 0
     SYSCALL
     MOV [vertice_array.ptr], RAX
     ;Mapping memory for distances
     MOV RAX, SYS_MMAP
-    MOV RDI, [vertice_array.edges]
-    SHL RDI, SHIFT_X8
-    MOV RSI, PROT_READ | PROT_WRITE
-    MOV RDX, MAP_SHARED | MAP_ANONYMOUS
-    MOV R10, -1
-    MOV R8, 0
+    MOV RSI, [vertice_array.edges]
+    SHL RSI, SHIFT_X8
+    MOV RDX, PROT_READ | PROT_WRITE
+    MOV R10, MAP_SHARED | MAP_ANONYMOUS
+    MOV R8, -1
+    MOV R9, 0
     SYSCALL
     MOV [vertice_array.dists], RAX
     ;Check if input is square
@@ -915,63 +924,30 @@ dijkstra:
     MOV RBP, RSP
     SUB RBP, dijkstra.STACK_INIT
     MOV [RBP - dijkstra.distance], -1 ; If -1, then return an error.
-    MOV [RBP - dijkstra.current], -1 ; Placeholder
+    MOV [RBP - dijkstra.current], -1 ; Placeholder. Use current to access get neighbors.
     MOV [RBP - dijkstra.heap], RDI
-    ;Initialize distance array
-    MOV RCX, 0
-    MOV RBX, 0
-    MOV RAX, [vertice_array.ptr]
-    MOV RDX, [vertice_array.ptr]
-    PREFETCH0 RDX ; Operating on memory a lot so I'd like to try and cache this.
-    .RCX_loop:
-    MOV RDX, [vertice_array.ptr + RCX*8]
-    .RBX_loop:
-        MOV [RDX+RBX*8], -1
-        INC RBX
-        CMP RBX, [vertice_array.edges]
-        JB .RBX_loop
-        ADD RCX, [vertice_array.edges]
-        CMP RCX, [vertice_array.size]
-        JB .RCX_loop
-    MOV RAX, [vertice_array.size]
-    PUSHREGS
+    MOV [RBP - dijkstra.SRC], RSI
+    MOV [RBP - dijkstra.DST], RDX
+    ;Initialize distance array    
     MOV RAX, SYS_MMAP
-    MOV RDI, [vertice_array.size]
-    MOV RSI, PROT_READ | PROT_WRITE
-    MOV RDX, MAP_SHARED | MAP_ANONYMOUS
-    MOV R10, -1
-    MOV R8, 0
+    MOV RDI, 0
+    MOV RSI, [vertice_array.size]
+    MOV RDX PROT_READ | PROT_WRITE
+    MOV R10 MAP_ANONYMOUS | MAP_SHARED
+    MOV R8, -1
+    MOV R9, 0
     SYSCALL
     MOV [vertice_array.seen], RAX
-    POPREGS
-    
-    MOV R10, [vertice_array.seen]
-    MOV [R10 + SRC*8], 1 ; SRC is SEEN.
-    MOV R11, [RDI]
-    MOV R11, [R11 + minheap.vTable]
-    MOV RDX, RSI
-    MOV RSI, 0
-    CALL [R11 + VT_MINHEAP_INSERT]
-    MOV RAX, [vertice_array.dists]
-    MOV [RAX + RSI*8], 0
     MOV RCX, 0
-    .vertice_manipulate_loop:
-        MOV RDI, [RBP - dijkstra.heap]
-        MOV RAX, [vertice_array.vTable]
-        CALL [RAX + VT_MINHEAP_ISEMPTY]
-        CMP RAX, 0
-        JE .return
-        MOV RAX, [vertice_array.vTable]
-        MOV RDI,[RBP - dijkstra.heap]
-        CALL [RAX + VT_MINHEAP_MIN]
-        MOV [RBP - dijkstra.current], RAX
-        CMP [vertice_array.seen], 0
-        JNE .vertice_manipulate_loop
-    MOV RAX, [RBP - dijkstra.current]   
-    MOV [vertice_array.seen + RAX*8], 1
+    .dist_loop:
+        MOV RBX, [vertice_array.seen]
+        MOV [RBX+RCX*8], INT_MAX
+        CMP [vertice_array.size], RCX
+        JB .dist_loop
+        
+        
     
-        
-        
+    
     .return:
         ADD RSP, dijkstra.STACK_INIT
         MOV RSP, RBP
@@ -986,7 +962,7 @@ get_Neighbors:
 ; Parameters:
 ;   RDI - (Minheap*)      Ptr to minheap.
 ;   RSI - (long[]*)       Seen.
-;   RDX - (long)          DST.
+;   RDX - (long)          SRC edge.
 ;   R10 - ()              Unused.
 ;   R8  - ()              Unused.
 ;   R9  - ()              Unused.
