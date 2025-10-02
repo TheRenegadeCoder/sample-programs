@@ -75,7 +75,7 @@ define(`_selection_sort_outer',
 _selection_sort_outer(`$1', incr($2))'dnl
 )'dnl
 )
-dnl i=$2, j=$3, jmin=$4
+dnl varname=$1, i=$2, j=$3, jmin=$4
 define(`_selection_sort_inner',
 `ifelse(eval($3 >= array_get(`$1', `length')), 1,
 `ifelse(eval($4 != $2), 1, array_swap(`$1', `$2', `$4'))',
