@@ -669,7 +669,7 @@ _start:
     MOV [vertice_array.ptr], RAX
     ;Mapping memory for distances
     MOV RAX, SYS_MMAP
-    MOV RSI, [vertice_array.edges]
+    MOV RSI, [vertice_array.num_vertices]
     SHL RSI, SHIFT_X8
     MOV RDX, PROT_READ | PROT_WRITE
     MOV R10, MAP_SHARED | MAP_ANONYMOUS
@@ -679,14 +679,14 @@ _start:
     MOV [vertice_array.dists], RAX
     ;Check if input is square
     MOV RDI, [vertice_array.size]
-    LEA RSI, [vertice_array.edges]
+    LEA RSI, [vertice_array.num_vertices]
     CALL ezsqrt
     CMP RAX, -1
     MOV RDI, INVALID_NOT_SQUARE
     JE error   
     ;Check if SRC/DST > vertices
     MOV RAX, [src_dst.src]
-    MOV RBX, [vertice_array.edges]
+    MOV RBX, [vertice_array.num_vertices]
     CMP RAX, RBX
     MOV RDI, INVALID_SRC
     JA error
@@ -696,7 +696,7 @@ _start:
     JA error
     
     
-    MOV RDI, [vertice_array.edges]
+    MOV RDI, [vertice_array.num_vertices]
     CALL VT_MINHEAP_CONSTRUCTOR
     MOV [RBP+_start.minheap], RAX
         
@@ -944,8 +944,14 @@ dijkstra:
         MOV [RBX+RCX*8], INT_MAX
         CMP [vertice_array.size], RCX
         JB .dist_loop
-        
-        
+    MOV [RBX+RCX], 0
+    ;Get neighbors
+    
+    MOV RDI, [RBP - dijkstra.heap]
+    MOV RSI, [vertice_array.seen]    
+    MOV RDX, [RBP - dijkstra.SRC]
+    MOV R10, 
+    CALL get_Neighbors    
     
     
     .return:
@@ -958,18 +964,42 @@ get_Neighbors:
 ; ----------------------------------------------------------------------------
 ; Function: Get Neighbors
 ; Description:
-;   Finds the neighbors of a given vertice and then adds them to the queue.
+;   Finds the neighbors of a given vertice and then adds them to the queue. 
+;   I don't think a stack frame is needed here.
 ; Parameters:
 ;   RDI - (Minheap*)      Ptr to minheap.
 ;   RSI - (long[]*)       Seen.
-;   RDX - (long)          SRC edge.
-;   R10 - ()              Unused.
+;   RDX - (long)          SRC vertex.
+;   R10 - (long)          # of neighbors.
 ;   R8  - ()              Unused.
 ;   R9  - ()              Unused.
 ; Returns:
 ;   RAX - (long)          Distance.
-;   Clobbers - R11, R12
-; ---------------------------------------------------------------------------    
+;   Clobbers - RCX
+; ---------------------------------------------------------------------------
+MOV RAX, RDX
+MOV RBX, [vertice_array.size]
+MUL RBX
+MOV RDX, [vertice_array.seen]
+MOV R8, [vertice_array.ptr]
+ADD RDX, RAX
+MOV RCX, 0
+    .neighbor_loop:
+        CMP [vertice_array.seen+RCX*8], 0
+        JNE .skip_iteration
+        MOV [vertice_array.seen+RCX*8], 1
+        MOV R9, [vertice_array.seen+RCX*8]
+        MOV RSI, 
+        INC RCX
+        CMP RCX, [vertice_array.
+        
+    .skip_iteration:
+        INC RCX
+        CMP RCX, [vertice_array.num_vertices]
+        JB .neighbor_loop
+    .get_end:
+
+    
     
         
     
