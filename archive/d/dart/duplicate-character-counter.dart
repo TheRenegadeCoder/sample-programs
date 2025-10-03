@@ -1,7 +1,7 @@
 //Issue 4974
 import 'dart.io';
-
-void main(LIst<String> args){
+// fixed the typo LIst to List
+void main(List<String> args){
   const String error_message = "Usage: please provide a string";
   if (args.isEmpty || args[0].isEmpty){
     print(error_message);
