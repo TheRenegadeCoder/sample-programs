@@ -164,7 +164,6 @@ vertice_array:
     .size dq 0
     .edges dq 0
     .dists dq 0
-    .seen dq 0
     
 num_edges dq 0
 commas dq 0
@@ -937,10 +936,9 @@ dijkstra:
     MOV R8, -1
     MOV R9, 0
     SYSCALL
-    MOV [vertice_array.seen], RAX
     MOV RCX, 0
     .dist_loop:
-        MOV RBX, [vertice_array.seen]
+        MOV RBX, [vertice_array.dists]
         MOV [RBX+RCX*8], INT_MAX
         CMP [vertice_array.size], RCX
         JB .dist_loop
@@ -968,7 +966,7 @@ get_Neighbors:
 ;   I don't think a stack frame is needed here.
 ; Parameters:
 ;   RDI - (Minheap*)      Ptr to minheap.
-;   RSI - (long[]*)       Seen.
+;   RSI - (long[]*)       dists.
 ;   RDX - (long)          SRC vertex.
 ;   R10 - (long)          # of neighbors.
 ;   R8  - ()              Unused.
@@ -998,7 +996,7 @@ MOV RCX, 0
         CMP RCX, [vertice_array.num_vertices]
         JB .neighbor_loop
     .get_end:
-
+        
     
     
         
