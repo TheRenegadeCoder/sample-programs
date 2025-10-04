@@ -19,7 +19,7 @@ void main(List<String> args){
    String reverse_string = original_string.split('').reversed.join('') ;
    is_palindrome = (original_string == reverse_string);
 
-    print(is_palindrome);// ? "$num_needed is a palindromic number" : "$num_needed is not a palindromic number");
+    print(is_palindrome);
   }
   catch(e){
     print(error_message);
