@@ -104,7 +104,7 @@ dnl     if i < iMid and j >= iEnd:
 dnl       varnameB[k] = varnameA[i]
 dnl       i = i + 1
 dnl     else:
-dnl       // Cannot combine this with previous if due to how m4 expands macros
+dnl       // Cannot combine this with previous "if" due to how m4 expands macros
 dnl       if i < iMid and varnameA[i] <= varnameA[j]:
 dnl         varnameB[k] = varnameA[i]
 dnl         i = i + 1
