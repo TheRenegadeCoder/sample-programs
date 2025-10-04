@@ -1,15 +1,15 @@
 //Issue 4972
-import 'dart.io';
 
-void main(LIst<String> args){
+void main(List<String> argv){
   const String error_message = "Usage: please provide a string";
-  if (args.isEmpty || args[0].isEmpty){
+  if (argv.isEmpty || argv[0].isEmpty){
     print(error_message);
     return;
   }
 
   String sentence = argv[0];
-  List<String> words = sentence.split(RegExpr(r'\s+'));
+  String raw = sentence.replaceAll(r'\t', '\t').replaceAll(r'\r', '\r').replaceAll(r'\n', '\n');
+  List<String> words = raw.split(RegExp(r'\s+'));
   int max_length= 0;
 
   for (String each_word in words){
