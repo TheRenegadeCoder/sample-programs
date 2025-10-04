@@ -58,6 +58,11 @@ _show_int_list(`$1', incr($2))'`'dnl
 )'dnl
 )
 
+dnl Reference: https://en.wikipedia.org/wiki/Quicksort#Lomuto_partition_scheme
+dnl quick_sort(varname):
+dnl   quick_sort_rec(varname, 0, varname[length])
+define(`quick_sort', `quick_sort_rec(`$1', 0, decr(array_get(`$1', `length')))')
+
 dnl quick_sort_rec(varname, lo, hi):
 dnl   if lo >= 0 and lo < hi:
 dnl     p = partition(varname, lo, hi)
@@ -102,11 +107,6 @@ _partition(`$1', `$2', `$3', incr($4), incr($5))',
 )'dnl
 )'dnl
 )
-
-dnl Reference: https://en.wikipedia.org/wiki/Quicksort#Lomuto_partition_scheme
-dnl quick_sort(varname):
-dnl   quick_sort_rec(varname, 0, varname[length])
-define(`quick_sort', `quick_sort_rec(`$1', 0, decr(array_get(`$1', `length')))')
 
 divert(0)dnl
 ifelse(eval(ARGC < 1 || len(ARGV1) < 1 || !parse_int_list(`arr', ARGV1)), 1, `show_usage()')dnl
