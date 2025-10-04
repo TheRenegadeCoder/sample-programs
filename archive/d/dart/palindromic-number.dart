@@ -15,11 +15,11 @@ void main(List<String> args){
       return;
     }
  
-   String original_String = num_needed.toString();
-   String reverse_String = original_strig.split('').reversed.join('') ;
-   is_palindrome = (original_String == reverse_String);
+   String original_string = num_needed.toString();
+   String reverse_string = original_string.split('').reversed.join('') ;
+   is_palindrome = (original_string == reverse_string);
 
-    print(is_palindrome ? "$num_needed is a palindromic number" : "$num_needed is not a palindromic number");
+    print(is_palindrome);// ? "$num_needed is a palindromic number" : "$num_needed is not a palindromic number");
   }
   catch(e){
     print(error_message);
