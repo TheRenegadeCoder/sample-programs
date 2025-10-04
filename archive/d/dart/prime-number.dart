@@ -1,5 +1,5 @@
 // Issue 4970
-import 'dart.math';
+import 'dart:math';
 
 void main(List<String> args){
   const String error_message= "Usage: please input a non-negative integer";
@@ -17,20 +17,20 @@ void main(List<String> args){
       return;
     }
 
-    // If number is even other than 2; number is multiple of 5 other than 5; if it is 0; it is 1
-    if( (num_needed == 0)|| (num_needed == 1) || (num_needed %2 ==0 && num)needed != 2) || (num_needed %2 ==0 && num)needed != 2) ){
+    // If the number is even number other than 2 OR if the number is multiple of 5 other than 5 or if number is either 0 or 1, Print Composite
+    if( (num_needed == 0)|| (num_needed == 1) || (num_needed %2 ==0 && num_needed != 2) || (num_needed %5  ==0 && num_needed != 5) ){
       print("Composite");
       return;
     }
 
-    for (int i_index = 3; i_index <= sqrt(num_needed).toint(); i_index +=2){
+    for (int i_index = 3; i_index <= sqrt(num_needed).toInt(); i_index +=2){
       if(num_needed % i_index == 0){
         is_prime = false;
         break;
       }
     }
 
-    print(is_Prime ? "Prime" : "Composite");
+    print(is_prime ? "Prime" : "Composite");
   }
   catch(e){
     print(error_message);
