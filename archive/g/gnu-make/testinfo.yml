@@ -1,0 +1,27 @@
+folder:
+  extension: ".mk"
+  naming: "hyphen"
+
+container:
+  image: "alpine/make"
+  tag: "4.2.1"
+  # Create shell script that does the following:
+  # - Export ARGC environment variable that contains the number of command-line arguments
+  # - Export ARGV<n> environment variables that contain the <n>th command-line argument
+  # - Run the make file, which will be able to access these exported environment variables as
+  #   $(ARGC), $(ARGV1), $(ARGV2), ...
+  build: |
+    sh -c '(echo "#!/bin/sh"; \
+    echo "export ARGC"; \
+    echo "ARGC=\$#"; \
+    echo "i=1"; \
+    echo "while [ \$i -le \$ARGC ]"; \
+    echo "do"; \
+    echo eval "export ARGV\$i"; \
+    echo eval "ARGV\$i=\\\"\$1\\\""; \
+    echo "shift"; \
+    echo "i=\$((\$i+1))"; \
+    echo "done"; \
+    echo "make -sf {{ source.name }}{{ source.extension }}" \
+    ) >{{ source.name }}'
+  cmd: sh {{ source.name }}

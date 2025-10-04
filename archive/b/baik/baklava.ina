@@ -1,0 +1,47 @@
+# Since this language has Indonesian keywords, I figured it would be
+# fun to use Indonesian variable and function names:
+#
+# - menangkal = counter
+# - jumlah_spasi = number of spaces
+# - jumlah_bintang = number of stars
+# - senar = string
+# - beberapa_kali = number of times
+#
+# References:
+# - Google Translate
+# - https://www.slideshare.net/slideshow/147-3411pb-baik/20917498
+
+# Main function
+# -------------------------------------------------
+untuk (menangkal = 0; menangkal <= 20; menangkal++)
+ulang
+    # number of spaces = abs(counter - 10)
+    jumlah_spasi = menangkal - 10
+    jumlah_spasi = abs jumlah_spasi
+
+    # number of stars = 21 - 2 * number of spaces
+    jumlah_bintang = 21 - 2 * jumlah_spasi
+
+    # Output number of spaces " "
+    senar = " "
+    &tulis_senar_ulangi(senar, jumlah_spasi)
+
+    # Output number of stars "*"
+    senar = "*"
+    &tulis_senar_ulangi(senar, jumlah_bintang)
+
+    # Output newline
+    tulis "\n"
+lagi
+
+tamat
+# -------------------------------------------------
+
+# Output repeat string function
+fungsi tulis_senar_ulangi(senar, beberapa_kali)
+{
+    untuk (menangkal = 1; menangkal <= beberapa_kali; menangkal++)
+    ulang
+        tulis senar
+    lagi
+}

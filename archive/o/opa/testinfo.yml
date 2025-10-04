@@ -1,0 +1,9 @@
+folder:
+  extension: ".opa"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/opa"
+  tag: "1.1.1-3"
+  build: "opa {{ source.name }}{{ source.extension }}"
+  cmd: "run_opa {{ source.name }}.js"

@@ -1,0 +1,9 @@
+folder:
+  extension: ".arr"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/pyret"
+  tag: "0.0.27-2"
+  build: "pyret -qkc {{ source.name }}{{ source.extension }}"
+  cmd: "node {{ source.name }}.jarr"

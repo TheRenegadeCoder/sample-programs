@@ -1,0 +1,9 @@
+folder:
+  extension: ".chpl"
+  naming: "pascal"
+
+container:
+  image: "chapel/chapel"
+  tag: "2.3.0"
+  build: "chpl -o {{ source.name }} {{ source.name }}{{ source.extension }}"
+  cmd: "./{{ source.name }}"

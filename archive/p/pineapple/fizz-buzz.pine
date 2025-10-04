@@ -1,0 +1,13 @@
+def .main
+    let i mutable = 1
+    while i <= 100
+        if i % 15 == 0
+            "FizzBuzz".show
+        elif i % 3 == 0
+            "Fizz".show
+        elif i % 5 == 0
+            "Buzz".show
+        else
+            i.show
+
+        i = i + 1

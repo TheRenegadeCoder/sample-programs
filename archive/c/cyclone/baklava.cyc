@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char line[22];
+
+    // Tell compiler that pointer math is going to be done, and the result
+    // may not be null terminated
+    char *@fat @nozeroterm line_ptr = line;
+
+    for (int n = -10; n <= 10; n++) {
+        int num_spaces = (n >= 0) ? n : -n;
+        int num_stars = 21 - 2 * num_spaces;
+
+        // Write num_spaces " " to line
+        memset(line_ptr, ' ', num_spaces);
+
+        // Append num_stars "*" to line
+        memset(&line_ptr[num_spaces], '*', num_stars);
+
+        // Null terminate line
+        line_ptr[num_spaces + num_stars] = '\0';
+
+        printf("%s\n", line);
+    }
+
+    return 0;
+}

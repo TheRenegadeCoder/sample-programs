@@ -1,0 +1,12 @@
+folder:
+  extension: ".cs"
+  naming: "pascal"
+
+container:
+  image: "mcr.microsoft.com/dotnet/sdk"
+  tag: "9.0"
+  build: |
+    bash -c "dotnet new console --language 'C#' && \
+      mv {{ source.name }}{{ source.extension }} Program.cs && \
+      dotnet build --sc"
+  cmd: "dotnet run --sc --no-restore"

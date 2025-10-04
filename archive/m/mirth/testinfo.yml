@@ -1,0 +1,17 @@
+# Note: Module name must be sample-programs.<program-name>
+# Example: sample-programs.hello-world
+folder:
+  extension: ".mth"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/mirth"
+  tag: "2025.01.25-2"
+  build: |
+    sh -c 'mkdir -p sample-programs/bin sample-programs/src && \
+      ln -s /root/.mirth/lib sample-programs/lib && \
+      cp {{ source.name }}{{ source.extension }} sample-programs/src/ && \
+      cd sample-programs && \
+      mirth -o bin/{{ source.name }}.c src/{{ source.name }}{{ source.extension }} && \
+      gcc -o ../{{ source.name }} bin/{{ source.name }}.c'
+  cmd: "./{{ source.name }}"

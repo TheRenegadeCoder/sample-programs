@@ -1,0 +1,9 @@
+folder:
+  extension: ".hx"
+  naming: "pascal"
+
+container:
+  image: "haxe"
+  tag: "4.3-bookworm"
+  build: "haxe --main {{ source.name }} --python {{ source.name }}.py"
+  cmd: "python3 {{ source.name }}.py"

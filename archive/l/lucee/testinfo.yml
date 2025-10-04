@@ -1,0 +1,8 @@
+folder:
+  extension: ".cfm"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/lucee"
+  tag: "5.4.4.38-3"
+  cmd: "run_lucee {{ source.name }}{{ source.extension }}"

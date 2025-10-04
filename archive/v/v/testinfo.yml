@@ -1,0 +1,9 @@
+folder:
+  extension: ".v"
+  naming: "hyphen"
+
+container:
+  image: "thevlang/vlang"
+  tag: "alpine-dev"
+  build: "v -prod {{ source.name }}{{ source.extension }}"
+  cmd: "./{{ source.name }}"

@@ -1,0 +1,78 @@
+% Source: https://rosettacode.org/wiki/String_append#Plain_TeX
+\def\addtomacro#1#2{\expandafter\def\expandafter#1\expandafter{#1#2}}
+
+\obeyspaces
+\newwrite\out
+\immediate\openout\out=baklava.txt
+
+% TeX doesn't seem to support nested loops; therefore, this needs to be
+% flattened out to a single loop that runs from 0 to 330, where 331
+% is the total number of characters if you add the length of all the
+% lines together. This was determined by the following python code:
+%
+% >>> lines = [" " * abs(n) + "*" * (21 - 2 * abs(n)) for n in range(-10,11)]
+% >>> sum(len(line) for line in lines)
+% 331
+%
+% The general algorithm is as follows (prototyped in python):
+%
+%   linecounter = -10
+%   linelen = 0
+%   for charcounter = 0 to 330:
+%       # If start of line, reset all variables
+%       if linelen < 1:
+%           line = ""
+%           numspaces = abs(linecounter)
+%           numstars = 21 - 2 *numspaces
+%           linelen = numspaces + numstars
+%       # If not done with spaces, append space to line
+%       if linelen > numstars:
+%           line += " "
+%       # Else, append star to line
+%       else:
+%           line += "*"
+%       # If end of line, output line and increment line counter
+%       linelen -= 1
+%       if linelen < 1:
+%           print(line)
+%           linecounter += 1
+
+\newcount\charcounter
+\newcount\linecounter
+\newcount\numspaces
+\newcount\numstars
+\newcount\linelen
+
+\linecounter=-10
+\linelen=0
+\charcounter=0
+\loop
+    \ifnum\linelen<1
+        \def\line{}
+        % numspaces = abs(linecounter)
+        \numspaces=\linecounter
+        \ifnum\numspaces<0
+            \multiply\numspaces -1
+        \fi
+        % numstars = 21 - 2 *numspaces
+        \numstars=\numspaces
+        \multiply\numstars -2
+        \advance\numstars 21
+        % linelen = \numspaces + \numstars
+        \linelen=\numspaces
+        \advance\linelen \numstars
+    \fi
+    \ifnum\linelen>\numstars
+        \addtomacro\line{ }
+    \else
+        \addtomacro\line{*}
+    \fi
+    \advance\linelen -1
+    \ifnum\linelen<1
+        \immediate\write\out{\line}
+        \advance\linecounter 1
+    \fi
+    \advance\charcounter 1
+\ifnum \charcounter<331
+\repeat
+\end

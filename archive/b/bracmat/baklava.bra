@@ -1,0 +1,20 @@
+{
+Resources:
+- https://rosettacode.org/wiki/Loops/For#Bracmat
+}
+
+{for n = -10 to 10}
+  -11:?n
+&   whl
+  ' ( 1+!n:<11:?n
+    { numspaces = abs(n) }
+    & abs$(!n):?numspaces
+    { numstars = 21 - 2 * numspaces}
+    & 21+-2*!numspaces:?numstars
+    { Output numspaces " "}
+    & whl'(!numspaces+-1:~<0:?numspaces&put$" ")
+    { Output numstars "*"}
+    & whl'(!numstars+-1:~<0:?numstars&put$"*")
+    { Output newline }
+    & put$\n
+    )

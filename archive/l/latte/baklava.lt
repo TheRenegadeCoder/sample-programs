@@ -1,0 +1,13 @@
+def printRepeatString(s:String, n:int)
+    if n > 0
+        for i in 1.to(n)
+            print(s)
+
+for i in (-10).to(10)
+    numSpaces:int = i
+    if numSpaces < 0
+        numSpaces = -numSpaces
+
+    printRepeatString(" ", numSpaces)
+    printRepeatString("*" , 21 - 2*numSpaces)
+    println()

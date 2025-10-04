@@ -1,0 +1,9 @@
+folder:
+  extension: ".java"
+  naming: "pascal"
+
+container:
+  image: "openjdk"
+  tag: "23-slim"
+  build: "javac {{ source.name}}{{ source.extension }}"
+  cmd: "java {{ source.name }}"

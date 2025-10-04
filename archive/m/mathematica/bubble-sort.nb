@@ -1,0 +1,50 @@
+(* Code *)
+
+(* The actual bubble sort operating on Mathematica lists: *)
+
+(* keep making passes over the list until it stops changing *)
+bubbleSort = Function[{l},
+   FixedPoint[Function[{l},
+     (* pass over a pair of elements in the list *)
+     Fold[Function[{l, i},
+       (* element pair is out of order?*)
+       If[l[[i]] > l[[i + 1]],
+        (* swap the two elements *)
+        Permute[l, Cycles[{{i, i + 1}}]],
+        l]],
+      l, (* begin with the list in its original state *)
+      Range[Length[l] - 1]]],(* over each pair of elements *)
+    l]];
+
+(* The outer function provides the 'user interface': *)
+
+bubbleSortMain = l \[Function]
+   Module[{e = 
+      "Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\""},
+    Catch[
+     StringRiffle[
+      bubbleSort@
+         (* list must have more than one element *)
+         If[Length[#] > 1, #, Throw[e]] & @
+       Map[
+        (* convert string to integer, or throw *)
+        s \[Function] If[StringMatchQ[s, DigitCharacter ..],
+          FromDigits[s],
+          Throw[e]],
+        (* construct arguments to bubble sort: list of items *)
+        StringSplit[l, ", "],
+        {-1} (* at each leaf *)],
+      ", "]]];
+
+
+(* Valid Tests *)
+Print /@ bubbleSortMain /@ {
+    "4, 5, 3, 1, 2",
+    "4, 5, 3, 1, 4, 2",
+     "1, 2, 3, 4, 5",
+    "9, 8, 7, 6, 5, 4, 3, 2, 1" 
+    };
+
+
+(* Invalid Tests *)
+bubbleSortMain[""]

@@ -1,0 +1,33 @@
+(* Code *)
+
+(* The actual function operating on Mathematica strings is trivial: *)
+
+removeAllWhitespace = StringDelete[WhitespaceCharacter];
+
+(* The outer function provides the 'user interface': *)
+
+removeAllWhitespaceMain = s \[Function]
+   Catch[
+    removeAllWhitespace[
+     If[
+      StringQ[s] \[And] \[Not] StringMatchQ[s, ""],
+      s,
+      Throw["Usage: please provide a string"]]]];
+
+
+(* Valid Tests *)
+
+Print /@ removeAllWhitespaceMain /@ {
+    "RemoveAllWhitespace",
+    " RemoveAllWhitespace",
+    "RemoveAllWhitespace ",
+    "Remove All Whitespace",
+    "\tRemove\tAll\tWhitespace\t",
+    "\nRemove\nAll\nWhitespace\n",
+    "\rRemove\rAll\rWhitespace\r"
+    };
+
+
+(* Invalid Tests *)
+
+removeAllWhitespaceMain[""]

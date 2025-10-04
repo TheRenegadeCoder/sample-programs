@@ -1,0 +1,9 @@
+folder:
+  extension: ".vb"
+  naming: "hyphen"
+
+container:
+  image: "mono"
+  tag: "6.12.0.182"  # Cannot use slim because it does not contain vbnc for compilation
+  build: "vbnc {{ source.name }}{{ source.extension }}"
+  cmd: "mono {{ source.name }}.exe"

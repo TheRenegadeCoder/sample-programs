@@ -1,0 +1,6 @@
+(JoinD newline (Map x (Append (Seq 0 10) (Reverse (Seq 0 9)))
+	(Append
+		(Clone (- 10 x) " ")
+		(Clone (+ (* x 2) 1) (Force Char 42))
+    )
+))

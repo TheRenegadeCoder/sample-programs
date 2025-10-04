@@ -1,0 +1,9 @@
+folder:
+  extension: ".scm"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/owl-lisp"
+  tag: "0.2.1-1"
+  build: "sh -c 'ol -o {{ source.name }}.c {{ source.name }}{{ source.extension }} && gcc -o {{ source.name }} {{ source.name }}.c'"
+  cmd: "./{{ source.name }}"

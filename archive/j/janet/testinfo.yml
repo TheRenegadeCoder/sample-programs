@@ -1,0 +1,8 @@
+folder:
+  extension: ".janet"
+  naming: "hyphen"
+
+container:
+  image: "leafgarland/janet"
+  tag: "v1.30.0"
+  cmd: "janet {{ source.name }}{{ source.extension }}"

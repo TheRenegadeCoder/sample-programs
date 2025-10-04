@@ -1,0 +1,18 @@
+(* Code *)
+
+Module[{file = CreateFile["output.txt"]},
+ (* open the file, write by line, close *)
+ Module[{write = OpenWrite[file]},
+  WriteLine[write, #] & /@ { "A line of text", "Another line of text"};
+  Close[write]];
+ 
+ (* open the file, read all at once, print, close *)
+ Module[{read = OpenRead[file]},
+  Print[ReadString[read]];
+  Close[read]]] (* return path to file as result *)
+
+
+(* Valid Tests *)
+
+
+(* Invalid Tests *)

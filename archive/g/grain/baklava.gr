@@ -1,0 +1,15 @@
+module Main
+
+from "array" include Array
+from "number" include Number
+from "range" include Range
+from "string" include String
+
+let repeatString = (s, n) => Array.join("", Array.make(n, s))
+let baklavaLine = (n) => {
+  let numSpaces = Number.abs(n)
+  let numStars = 21 - 2 * numSpaces
+  return String.concat(repeatString(" ", numSpaces), repeatString("*", numStars))
+}
+
+Range.forEach(n => print(baklavaLine(n)), {rangeStart: -10, rangeEnd: 11})

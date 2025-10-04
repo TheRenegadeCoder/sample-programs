@@ -1,0 +1,8 @@
+folder:
+  extension: ".t"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/terra"
+  tag: "1.2.0-2"
+  cmd: "terra {{ source.name }}{{ source.extension }}"

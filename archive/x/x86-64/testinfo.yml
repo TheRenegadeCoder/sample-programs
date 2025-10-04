@@ -1,0 +1,13 @@
+folder:
+  extension: ".asm"
+  naming: "hyphen"
+
+container:
+  image: "cyberdojofoundation/nasm"
+  tag: "06f3b60"
+  # We need to both assemble and link the code.
+  # Using the sh command is necessary to run multiple commands,
+  # as Docker will not do any parsing and will pass the && as an actual argument
+  # if left to its own devices.
+  build: "sh -c 'nasm -f elf64 -g -o {{ source.name }}.o {{ source.name }}{{ source.extension }} && ld -g -o {{ source.name }} {{ source.name}}.o'"
+  cmd: "./{{ source.name }}"

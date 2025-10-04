@@ -1,0 +1,9 @@
+folder:
+  extension: ".ts"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/typescript"
+  tag: "5.3.3-20.11.9-1"
+  build: "tsc --types /usr/local/lib/node_modules/@types/node {{ source.name }}{{ source.extension }}"
+  cmd: "node {{ source.name }}.js"

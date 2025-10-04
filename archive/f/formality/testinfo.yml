@@ -1,0 +1,13 @@
+folder:
+  extension: ".fm"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/formality"
+  tag: "2021.02.19-1"
+  build: |
+    sh -c 'cp {{ source.name }}{{ source.extension }} /opt/formality/src/Main.fm && \
+      cd /opt/formality/src && \
+      fmjs Main.fm'
+  cmd: |
+    sh -c "cd /opt/formality/src && fmjs Main --run"

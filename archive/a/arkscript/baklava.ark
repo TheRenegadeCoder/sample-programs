@@ -1,0 +1,26 @@
+(import std.List)
+(import std.Math)
+(import std.Range)
+(import std.String)
+
+(let repeat_string
+    (fun (n s)
+        (string:join (list:fill n s) "")
+    )
+)
+
+(let baklava_line
+    (fun (n) {
+        (let num_spaces (math:abs n))
+        (let num_stars (- 21 (* 2 num_spaces)))
+        (string:join [(repeat_string num_spaces " ") (repeat_string num_stars "*")] "")
+    })
+)
+
+(let ctr (range:range -10 11))
+(range:forEach
+    ctr 
+    (fun (n) 
+        (print (baklava_line n))
+    )
+)

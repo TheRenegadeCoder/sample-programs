@@ -1,0 +1,16 @@
+(define (string-repeat n str)
+  (fold string-append "" (make-list n str))
+)
+
+(define (baklava-line i)
+  (define numSpaces (abs i))
+  (define numStars (- 21 (* 2 numSpaces)))
+  (when (<= i 10)
+    (display (string-repeat numSpaces " "))
+    (display (string-repeat numStars "*"))
+    (newline)
+    (baklava-line (+ i 1))
+  )
+)
+
+(baklava-line -10)

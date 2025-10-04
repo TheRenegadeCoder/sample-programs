@@ -1,0 +1,9 @@
+folder:
+  extension: ".ml"
+  naming: "hyphen"
+
+container:
+  image: "ocaml/ocaml"
+  tag: "centos-7"
+  build: "ocamlc -o {{ source.name }} {{ source.name }}{{ source.extension }}"
+  cmd: "./{{ source.name }}"

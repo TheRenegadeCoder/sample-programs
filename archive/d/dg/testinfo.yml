@@ -1,0 +1,8 @@
+folder:
+  extension: ".dg"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/dg"
+  tag: "1.1.0-1"
+  cmd: python -m dg {{ source.name }}{{ source.extension }}

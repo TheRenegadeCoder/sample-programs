@@ -1,0 +1,8 @@
+folder:
+  extension: ".gr"
+  naming: "hyphen"
+
+container:
+  image: "ghcr.io/grain-lang/grain"
+  tag: "0.6.6-slim"
+  cmd: "grain {{ source.name }}{{ source.extension }}"

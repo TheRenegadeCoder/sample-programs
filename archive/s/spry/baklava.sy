@@ -1,0 +1,13 @@
+abs = func [:x
+    ($x >= 0) then: [ $x ] else: [ 0 - $x ]
+]
+
+repeat_string:times: = func [:s :n
+    ($n > 0) then: [ $s, repeat_string: $s times: ($n - 1) ] else: [ "" ]
+]
+
+-10 to: 10 do: [
+    num_spaces = abs :i
+    num_stars = (21 - (num_spaces * 2))
+    echo (repeat_string: " " times: num_spaces, repeat_string: "*" times: num_stars)
+]

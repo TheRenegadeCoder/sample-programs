@@ -1,0 +1,9 @@
+folder:
+  extension: ".odin"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/odin"
+  tag: "2024-09-1"
+  build: "odin build {{ source.name }}{{ source.extension }} -file -out:{{ source.name }}"
+  cmd: "./{{ source.name }}"

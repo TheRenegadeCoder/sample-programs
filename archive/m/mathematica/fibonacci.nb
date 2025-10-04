@@ -1,0 +1,33 @@
+(* Code *)
+
+(* It would be easy to simply print these out in a 'for' loop; however, in the spirit
+of keeping the mathematical operation separate from the UI I opted to return
+the Fibonacci sequence as a list explicitly: *)
+
+fibonacciSequence[0] := {} (* special case *)
+fibonacciSequence[1] := {1} (* special case *)
+fibonacciSequence[n_] := Nest[Append[#, #[[-2]] + #[[-1]]] &, {1, 1}, n - 2]
+
+(* The outer function provides the 'user interface': *)
+
+fibonacciSequenceMain = Function[n,
+   Catch[
+    Module[{s},
+     s = fibonacciSequence[
+       (* convert string to integer, or throw *)
+       If[StringMatchQ[n, DigitCharacter ..],
+        FromDigits[n],
+        Throw[
+         "Usage: please input the count of fibonacci numbers to output"]]];
+     Do[Print[i, ": ", s[[i]]], {i, Length[s]}]]]];
+
+
+(* Valid Tests *)
+
+fibonacciSequenceMain /@ {"1", "2", "5", "10"};
+
+
+(* Invalid Tests *)
+
+fibonacciSequenceMain[""]
+fibonacciSequenceMain["word"]

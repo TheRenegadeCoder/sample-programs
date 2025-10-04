@@ -1,0 +1,12 @@
+folder:
+  extension: ".bf"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/brainf"
+  tag: "1.2.0-2build2-1"
+  build: |
+    sh -c '(echo "#!/bin/sh"; \
+    echo "printf \"%s\0\" \"\$@\" | beef {{ source.name }}{{ source.extension }}" \
+    ) >{{ source.name }}'
+  cmd: sh {{ source.name }}

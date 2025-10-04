@@ -1,0 +1,21 @@
+import '/os'
+
+write_file = filename s ->
+    except
+        err =>
+            open filename 'w' |>.write <| s
+        err :: OSError =>
+            print "Cannot open file" filename
+
+read_file = filename ->
+    except
+        err =>
+            with fd = open filename 'r' =>
+                print $ fd.read!
+        err :: OSError =>
+            print "Cannot open file" filename
+
+
+filename = "output.txt"
+write_file filename "Example text"
+read_file filename

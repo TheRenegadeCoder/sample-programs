@@ -1,0 +1,3 @@
+-- Prints "Hello, World!" to the standard output.
+def main args := do
+  write "Hello, World!\n"

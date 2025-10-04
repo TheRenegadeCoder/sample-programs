@@ -1,0 +1,18 @@
+import yoix.stdio.putchar;
+import yoix.math.abs;
+
+printRepeat(int c, int count) {
+    int i;
+    for (i = 0; i < count; i++) {
+        putchar(c);
+    }
+}
+
+int i;
+for (i = -10; i <= 10; i++) {
+    int numSpaces = abs(i);
+    int numStars = 21 - 2 * numSpaces;
+    printRepeat(' ', numSpaces);
+    printRepeat('*', numStars);
+    putchar('\n');
+}

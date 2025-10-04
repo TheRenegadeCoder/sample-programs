@@ -1,0 +1,8 @@
+folder:
+  extension: ".sce"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/scilab"
+  tag: "6.1.1-2"
+  cmd: "scilab-cli -args -nb -quit -f {{ source.name }}{{ source.extension }}"

@@ -1,0 +1,8 @@
+folder:
+  extension: ".exw"
+  naming: "underscore"
+
+container:
+  image: "rzuckerm/phix"
+  tag: "1.0.2-ubuntu22-1"
+  cmd: "p {{ source.name }}{{ source.extension }} -"

@@ -1,0 +1,12 @@
+folder:
+  extension: ".bf"
+  naming: "pascal"
+
+container:
+  image: "rzuckerm/beef"
+  tag: "0.43.5a7-9"
+  build: |
+    sh -c "BeefBuild -new -workspace={{ source.name }} && \
+      cp {{ source.name }}{{ source.extension }} {{ source.name }}/src/Program.bf && \
+      beef_build_workaround -- -workspace={{ source.name }} -config=Release"
+  cmd: "{{ source.name }}/build/Release_Linux64/{{ source.name }}/{{ source.name }}"

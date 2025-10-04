@@ -1,0 +1,9 @@
+folder:
+  extension: ".e"
+  naming: "underscore"
+
+container:
+  image: "rzuckerm/eiffel"
+  tag: "13.11-1"
+  build: "ec -stop {{ source.name }}{{ source.extension }}"
+  cmd: "./EIFGENs/{{ source.name }}/W_code/{{ source.name }}"

@@ -1,0 +1,8 @@
+folder:
+  extension: ".elv"
+  naming: "hyphen"
+
+container:
+  image: "ghcr.io/elves/elvish"
+  tag: "v0.21.0"
+  cmd: "elvish {{ source.name }}{{ source.extension }}"

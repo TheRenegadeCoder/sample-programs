@@ -1,0 +1,13 @@
+folder:
+  extension: ".golo"
+  naming: "hyphen"
+
+container:
+  image: "jponge/golo-lang"
+  tag: "release_3.3.0"
+  build: |
+    sh -c '(echo "#!/bin/sh"; \
+    echo "if [ \$# -gt 0 ]; then ARGS=--args; fi"; \
+    echo "golo golo --files {{ source.name }}{{ source.extension }} \${ARGS}" \
+    ) >{{ source.name }}'
+  cmd: sh {{ source.name }}

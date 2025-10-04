@@ -1,0 +1,38 @@
+(* Code *)
+
+(* The actual maximum array rotation operating on Mathematica lists: *)
+
+longestArrayRotation = a \[Function] Max @@
+    Table[
+     Dot[ (* inner product *)
+      RotateRight[a, i], (* rotated input list *)
+      Range[0, Length[a] - 1](* list of weights *)],
+     {i, Length[a]}];
+
+(* The outer function provides the 'user interface': *)
+
+longestArrayRotationMain = l \[Function]
+   Module[{e = "Usage: please provide a list of integers (e.g. \"8, 3, 1, 2\")"},
+    Catch[
+     longestArrayRotation @@ Map[
+       (* convert string to integer, or throw *)
+       s \[Function] If[StringMatchQ[s, DigitCharacter ..],
+         FromDigits[s],
+         Throw[e]],
+       (* construct argument to array rotation *)
+       {StringSplit[If[StringLength[l] > 0, l, Throw[e]], ", "]},
+       {-1} (* at each leaf *)]]];
+
+
+(* Valid Tests *)
+
+Print /@ longestArrayRotationMain /@ {
+    "3, 1, 2, 8",
+    "1, 2, 8, 3",
+    "8, 3, 1, 2"
+    };
+
+
+(* Invalid Tests *)
+
+longestArrayRotationMain[""]

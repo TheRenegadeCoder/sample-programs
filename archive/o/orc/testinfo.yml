@@ -1,0 +1,8 @@
+folder:
+  extension: ".orc"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/orc"
+  tag: "2.1.2-1"
+  cmd: "java -cp '/opt/orc/orc.jar:/opt/orc/lib/*' orc.Main {{ source.name }}{{ source.extension }}"

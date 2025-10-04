@@ -1,0 +1,12 @@
+folder:
+  extension: ".cat"
+  naming: "hyphen"
+
+container:
+  image: "esolang/unicat"
+  tag: "latest"
+  build: |
+    sh -c '(echo "#!/bin/sh"; \
+    echo "echo \"\$@\" | unicat {{ source.name }}{{ source.extension }}" \
+    ) >{{ source.name }}'
+  cmd: "sh {{ source.name }}"

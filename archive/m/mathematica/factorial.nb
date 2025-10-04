@@ -1,0 +1,27 @@
+(* Code *)
+
+(* The Mathematica built-in Factorial essentially provides the required behavior;
+so the only code needed is the 'user interface' to make it look a little more
+like a Unix command-line tool: *)
+
+factorialMain = Catch[
+    (* convert string to integer, or throw *)
+    If[
+     StringMatchQ[#, DigitCharacter ..],
+     FromDigits[#]!,
+     Throw["Usage: please input a non-negative integer"]]] &;
+
+
+(* Valid Tests *)
+
+Print /@ factorialMain /@ {"0", "1", "4", "8", "10"};
+
+(* Note that Mathematica (as far as I know) doesn't impose an upper limit on computations: *)
+factorialMain["10000"]
+
+
+(* Invalid Tests *)
+
+factorialMain[""]
+factorialMain["asdf"]
+factorialMain["-1"]

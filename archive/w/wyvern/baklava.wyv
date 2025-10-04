@@ -1,0 +1,18 @@
+require stdout
+
+def strRepeat(n:Int, s:String): String
+    if (n < 1) { "" } else { s + strRepeat(n - 1, s) }
+
+def abs(n:Int): Int
+    if (n < 0) { -n } else { n }
+
+def baklava(n:Int, end:Int): Unit
+    // This is definitely the weirdest formatting for an if-else statement that I've ever seen
+    if (n > end)
+            unit
+        else
+            val numSpaces:Int = abs(n)
+            stdout.print(strRepeat(numSpaces, " ") + strRepeat(21 - 2 * numSpaces, "*") + "\n")
+            baklava(n + 1, end)
+
+baklava(-10, 10)

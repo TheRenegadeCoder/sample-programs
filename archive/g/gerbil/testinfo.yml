@@ -1,0 +1,10 @@
+folder:
+  extension: ".ss"
+  naming: "underscore"
+
+container:
+  image: "gerbil/gerbil"
+  tag: "x86_64-v0.18"
+  build: |
+    sh -c 'echo "(package: {{ source.name }})" >gerbil.pkg && gxc -exe -o {{ source.name }} {{ source.name }}{{ source.extension }}'
+  cmd: "./{{ source.name }}"

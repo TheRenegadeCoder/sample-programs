@@ -1,0 +1,15 @@
+module Baklava where
+
+main :: IO ()
+main = putStr (baklava "" 20)
+
+baklava :: String -> Int -> String
+baklava s n
+    | n < 0 = ""
+    | otherwise = s ++ baklavaLine n ++ baklava s (n - 1)
+
+baklavaLine :: Int -> String
+baklavaLine n = do
+    let num_spaces = abs (n - 10)
+    let num_stars = 21 - 2 * num_spaces
+    packed (replicate num_spaces ' ') ++ packed (replicate num_stars '*') ++ "\n"

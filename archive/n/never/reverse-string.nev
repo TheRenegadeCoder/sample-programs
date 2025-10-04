@@ -1,0 +1,12 @@
+func reverse(s: string) -> string
+{
+    let n = length(s);
+    (n > 0) ? s[n - 1 .. 0] : ""
+}
+
+func main(argv[argc]: string) -> int
+{
+    let s = (argc > 0) ? argv[0] : "";
+    prints(reverse(s) + "\n");
+    0
+}

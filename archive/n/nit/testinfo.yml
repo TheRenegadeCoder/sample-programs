@@ -1,0 +1,8 @@
+folder:
+  extension: ".nit"
+  naming: "underscore"
+
+container:
+  image: "nitlang/nit"
+  tag: "latest"
+  cmd: "nit {{ source.name }}{{ source.extension }}"

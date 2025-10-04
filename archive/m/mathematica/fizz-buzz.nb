@@ -1,0 +1,23 @@
+(* Code *)
+
+(* It would be easy to simply print these out in a loop; however, in the spirit
+of keeping the mathematical operation separate from its presentation I opted
+to return the result as a list explicitly: *)
+
+fizzBuzz = Function[{n},
+   Table[
+    Which[
+     Divisible[i, 15], "FizzBuzz",
+     Divisible[i, 5], "Buzz",
+     Divisible[i, 3], "Fizz",
+     True, i], {i, n}]];
+
+(* This can be presented trivially: *)
+
+Column[fizzBuzz[100]]
+
+
+(* Valid Tests *)
+
+
+(* Invalid Tests *)

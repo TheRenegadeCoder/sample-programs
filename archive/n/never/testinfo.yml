@@ -1,0 +1,8 @@
+folder:
+  extension: ".nev"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/never"
+  tag: "2.3.9-4"
+  cmd: "never -f {{ source.name }}{{ source.extension }}"

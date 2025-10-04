@@ -1,0 +1,9 @@
+folder:
+  extension: ".kt"
+  naming: "pascal"
+
+container:
+  image: "zenika/kotlin"
+  tag: "1.4.20"
+  build: "kotlinc {{ source.name }}{{ source.extension }} -include-runtime -d {{ source.name }}.jar"
+  cmd: "java -jar {{ source.name }}.jar"

@@ -1,0 +1,8 @@
+folder:
+  extension: ".st"
+  naming: "hyphen"
+
+container:
+  image: "codesignal/smalltalk"
+  tag: "v9.4.0"
+  cmd: "gst --no-gc {{ source.name }}{{ source.extension }}"

@@ -1,0 +1,10 @@
+let repeat_string = |s, n| join(alloc(n, s), '')
+
+let n = -10
+while n < 11 {
+    let num_spaces = n
+    if num_spaces < 0: num_spaces = -num_spaces
+    let num_stars = 21 - 2 * num_spaces
+    n += 1
+    println(repeat_string(' ', num_spaces) + repeat_string('*', num_stars))
+}

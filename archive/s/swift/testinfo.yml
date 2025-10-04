@@ -1,0 +1,9 @@
+folder:
+  extension: ".swift"
+  naming: "hyphen"
+
+container:
+  image: "swift"
+  tag: "5.3"
+  build: "swiftc -o {{ source.name }} {{ source.name }}{{ source.extension }}"
+  cmd: "./{{ source.name }}"

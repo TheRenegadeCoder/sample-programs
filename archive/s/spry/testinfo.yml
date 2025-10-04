@@ -1,0 +1,8 @@
+folder:
+  extension: ".sy"
+  naming: "hyphen"
+
+container:
+  image: "thalesmg/spry"
+  tag: "20180326"
+  cmd: "spry {{ source.name }}{{ source.extension }}"

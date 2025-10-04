@@ -1,0 +1,8 @@
+folder:
+  extension: ".vim"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/vimscript"
+  tag: "8.2-2"
+  cmd: "run_vim {{ source.name }}{{ source.extension }}"

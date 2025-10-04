@@ -1,0 +1,8 @@
+folder:
+  extension: ".egi"
+  naming: "hyphen"
+
+container:
+  image: "esolang/egison"
+  tag: "latest"
+  cmd: egison {{ source.name }}{{ source.extension }}

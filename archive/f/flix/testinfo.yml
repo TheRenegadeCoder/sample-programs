@@ -1,0 +1,16 @@
+folder:
+  extension: ".flix"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/flix"
+  tag: "0.55.0-2"
+  build: |
+    sh -c 'rm -rf {{ source.name }} && \
+      mkdir {{ source.name }} && \
+      cd {{ source.name }} && \
+      java -jar /opt/flix/flix.jar init && \
+      cp ../{{ source.name }}{{ source.extension }} src/Main.flix && \
+      java -jar /opt/flix/flix.jar build && \
+      java -jar /opt/flix/flix.jar build-jar'
+  cmd: "java -jar {{ source.name }}/artifact/{{ source.name }}.jar"

@@ -1,0 +1,41 @@
+module sample-programs.baklava
+
+import std.prelude
+import std.world
+import std.list
+import std.str
+
+||| stack: n
+def abs [Int -- Nat] {
+    ||| if n < 0 then -n else n
+    dup 0 < if(-1 *, dup drop) Int.>Nat-clamp
+}
+
+||| stack: n (count), s (string)
+def repeat-string [Nat Str -- Str] {
+    ""                      ||| stack: n, s, result = ""
+    rotl                    ||| stack: s, result, n
+    repeat(                 ||| stack: s, result
+                            ||| repeat n times:
+        over                |||     stack: s, result, s
+        cat                 |||     stack: s, result = result + s
+    )
+    dip(drop)               ||| stack: result
+}
+
+||| stack: n
+def baklava-line [Int -- Str] {
+    abs                                 ||| stack: num-spaces = abs(n)
+    dup                                 ||| stack: num-spaces, num-spaces
+    " " repeat-string                   ||| stack: num-spaces, spaces = num-spaces " "
+    swap                                ||| stack: spaces, num-spaces
+    Nat.>Int -2 * 21 + Int.>Nat-clamp   ||| stack: spaces, num-stars = 21 - 2 * num-spaces
+    "*" repeat-string                   ||| stack: spaces, stars = num-stars "*"
+    cat                                 ||| stack: spaces + stars
+}
+
+def main {
+    ||| for n = -10 to 10:
+    |||    print baklava-line(n)
+    -10 10 range for(baklava-line print)
+}

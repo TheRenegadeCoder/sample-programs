@@ -1,0 +1,8 @@
+folder:
+  extension: ".be"
+  naming: "hyphen"
+
+container:
+  image: "esolang/befunge98"
+  tag: "latest"
+  cmd: "befunge98 {{ source.name }}{{ source.extension }}"

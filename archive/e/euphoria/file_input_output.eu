@@ -1,0 +1,48 @@
+include std/io.e
+include std/types.e
+
+function write_file(sequence filename)
+    integer fn = open(filename, "w")
+    if fn < 0
+    then
+        printf(STDERR, "Cannot open %s for write\n", {filename})
+        return FALSE
+    end if
+
+    puts(fn, "Hello from Euphoria!\n")
+    puts(fn, "This is a line\n")
+    puts(fn, "This is another line\n")
+    puts(fn, "Goodbye!\n")
+    close(fn)
+    return TRUE
+end function
+
+function read_file(sequence filename)
+    integer fn = open(filename, "r")
+    if fn < 0
+        then
+        printf(STDERR, "Cannot open %s for read\n", {filename})
+        return FALSE
+    end if
+
+    object line
+    while 1
+    do
+        line = gets(fn)
+        if atom(line)
+        then
+            exit
+        end if
+
+        puts(STDOUT, line)
+    end while
+
+    close(fn)
+    return TRUE
+end function
+
+constant filename = "output.txt"
+if write_file(filename)
+then
+    read_file(filename)
+end if

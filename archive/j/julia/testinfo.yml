@@ -1,0 +1,8 @@
+folder:
+  extension: ".jl"
+  naming: "hyphen"
+
+container:
+  image: "julia"
+  tag: "1.1"
+  cmd: "julia {{ source.name }}{{ source.extension }}"

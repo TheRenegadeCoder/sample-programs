@@ -1,0 +1,8 @@
+folder:
+  extension: ".pine"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/pineapple"
+  tag: "0.0.7-1"
+  cmd: "pine {{ source.name }}{{ source.extension }}"

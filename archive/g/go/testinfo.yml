@@ -1,0 +1,9 @@
+folder:
+  extension: ".go"
+  naming: "hyphen"
+
+container:
+  image: "golang"
+  tag: "1.12-alpine"
+  build: "go build -o {{ source.name }} {{ source.name}}{{ source.extension }}"
+  cmd: "./{{ source.name }}"

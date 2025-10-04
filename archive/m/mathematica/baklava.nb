@@ -1,0 +1,10 @@
+(* Code *)
+
+TableForm[
+   Table[
+    Table[
+     (* asterisk or space depending on Manhattan distance *)
+     If[Abs[i] + Abs[j] <= #, "*", " "],
+     {i, -#, +#}],
+    {j, -#, +#}],
+   TableSpacing -> {0, 0}] &[10]

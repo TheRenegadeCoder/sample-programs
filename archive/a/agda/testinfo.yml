@@ -1,0 +1,9 @@
+folder:
+  extension: ".agda"
+  naming: "pascal"
+
+container:
+  image: "zyasserd/agda"
+  tag: "2.6.4.3-compiled-haskell"
+  build: "agda --compile {{ source.name }}{{ source.extension }}"
+  cmd: "./{{ source.name }}"

@@ -1,0 +1,24 @@
+folder:
+  extension: ".tex"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/tex"
+  tag: "2025.01.25-1.17.0-2"
+  # sample program must write to a .txt file with same name -- e.g.,
+  # hello-world.tex writes to hello-world.txt
+  # args.txt contains the command line arguments
+  build: |
+    bash -c ' \
+      if [ "$#" = 0 ]; \
+      then \
+        touch args.txt; \
+      else \
+        printf "%s\n" "$@" >args.txt; \
+      fi; \
+      if ! luatex -halt-on-error -interactionmode=batch {{ source.name }}{{ source.extension }}; \
+      then \
+        cat {{ source.name }}.log; \
+        exit 1; \
+      fi'
+  cmd: "cat {{ source.name }}.txt"

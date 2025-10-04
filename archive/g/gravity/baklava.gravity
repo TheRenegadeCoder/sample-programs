@@ -1,0 +1,9 @@
+func main() {
+    for (var n in -10...10) {
+        var numSpaces = Math.abs(n)
+        var numStars = 21 - 2 * numSpaces
+        var spaces = (numSpaces > 0) ? " ".repeat(numSpaces) : ""
+        var stars = "*".repeat(numStars)
+        System.print(spaces + stars)
+    }
+}

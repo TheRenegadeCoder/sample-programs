@@ -1,0 +1,5 @@
+for i in -10..10 do
+    var num_spaces = abs(i);
+    var num_stars = 21 - 2 * num_spaces;
+    println$ " " * num_spaces + "*" * num_stars;
+done

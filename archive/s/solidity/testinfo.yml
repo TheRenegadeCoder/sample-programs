@@ -1,0 +1,9 @@
+folder:
+  extension: ".sol"
+  naming: "pascal"
+
+container:
+  image: "rzuckerm/solidity"
+  tag: "0.8.21-2"
+  build: "compile_solidity {{ source.name }}{{ source.extension }}"
+  cmd: "run_solidity {{ source.name }}"

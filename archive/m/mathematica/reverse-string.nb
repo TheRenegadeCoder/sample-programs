@@ -1,0 +1,23 @@
+(* Code *)
+
+(* The actual function operating on Mathematica strings is just the built-in StringReverse.  An outer function provides the 'user interface': *)
+
+stringReverseMain = Function[{s},
+   Catch[
+    StringReverse[
+     If[
+      StringQ[s] \[And] \[Not] StringMatchQ[s, ""],
+      s,
+      Throw["Usage: please provide a string"]]]]];
+
+
+(* Valid Tests *)
+
+Print /@ stringReverseMain /@ {
+    "Hello, World"
+    };
+
+
+(* Invalid Tests *)
+
+stringReverseMain[""]

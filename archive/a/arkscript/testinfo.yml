@@ -1,0 +1,8 @@
+folder:
+  extension: ".ark"
+  naming: "hyphen"
+
+container:
+  image: "arkscript/stable"
+  tag: "sha-962de17"
+  cmd: "arkscript {{ source.name }}{{ source.extension }}"

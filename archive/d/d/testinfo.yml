@@ -1,0 +1,8 @@
+folder:
+  extension: ".d"
+  naming: "underscore"
+
+container:
+  image: "dlanguage/dmd"
+  tag: "2.080.0"
+  cmd: "rdmd {{ source.name }}{{ source.extension }}"

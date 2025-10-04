@@ -1,0 +1,24 @@
+func abs(n: int) -> int {
+    (n < 0) ? -n : n
+}
+
+func repeat_string(s: string, n: int) -> string {
+    var result = "";
+    var i = 0;
+    for (i = 0; i < n; i = i + 1) {
+        result = result + s
+    };
+
+    result
+}
+
+func main() -> int {
+    var i = 0;
+    for (i = -10; i <= 10; i = i + 1) {
+        var num_spaces = abs(i);
+        var num_stars = 21 - 2 * num_spaces;
+        prints(repeat_string(" ", num_spaces) + repeat_string("*", num_stars) + "\n")
+    };
+
+    0
+}

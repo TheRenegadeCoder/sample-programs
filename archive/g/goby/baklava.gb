@@ -1,0 +1,5 @@
+(-10..10).each do |n|
+    num_spaces = if n >= 0 n else -n end
+    num_stars = 21 - 2 * num_spaces
+    puts(" " * num_spaces + "*" * num_stars)
+end

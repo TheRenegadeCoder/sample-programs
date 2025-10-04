@@ -1,0 +1,8 @@
+folder:
+  extension: ".chai"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/chaiscript"
+  tag: "6.1.0-1"
+  cmd: "chai {{ source.name }}{{ source.extension }}"

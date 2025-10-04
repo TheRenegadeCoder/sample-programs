@@ -1,0 +1,9 @@
+folder:
+  extension: ".clj"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/ferret"
+  tag: "0.4.0-1"
+  build: "sh -c 'ferret -i {{ source.name }}{{ source.extension }} && g++ -std=c++11 -pthread {{ source.name }}.cpp -o {{ source.name }}'"
+  cmd: "./{{ source.name }}"

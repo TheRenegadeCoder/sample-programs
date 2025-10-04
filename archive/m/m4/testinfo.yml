@@ -1,0 +1,8 @@
+folder:
+  extension: ".m4"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/m4"
+  tag: "1.4.19-3"
+  cmd: "run-m4 {{ source.name }}{{ source.extension }}"

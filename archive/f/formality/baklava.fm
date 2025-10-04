@@ -1,0 +1,15 @@
+baklavaLine(n: Nat): String
+  let numSpaces = if Nat.gte(n, 10) then Nat.sub(n, 10) else Nat.sub(10, n)
+  let numStars = Nat.sub(21, Nat.mul(2, numSpaces))
+  String.repeat(" ", numSpaces) | String.repeat("*", numStars) | "\n"
+
+baklava(lines: String, n:Nat): String
+  case n {
+    zero: lines | baklavaLine(0),
+    succ: lines | baklavaLine(n) | baklava(lines, n.pred)
+  }
+
+Main: IO(Unit)
+  do IO {
+    IO.put_string(baklava("", 20))
+  }

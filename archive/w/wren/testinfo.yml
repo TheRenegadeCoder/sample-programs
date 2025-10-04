@@ -1,0 +1,8 @@
+folder:
+  extension: ".wren"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/wren"
+  tag: "0.4.0-1"
+  cmd: "wren_cli {{ source.name }}{{ source.extension }}"

@@ -1,0 +1,8 @@
+folder:
+  extension: ".l"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/little"
+  tag: "1.0-1"
+  cmd: "L {{ source.name }}{{ source.extension }}"

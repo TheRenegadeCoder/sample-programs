@@ -1,0 +1,8 @@
+folder:
+  extension: ".dusk"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/dusk"
+  tag: "0.1-1"
+  cmd: "dusk {{ source.name }}{{ source.extension }}"

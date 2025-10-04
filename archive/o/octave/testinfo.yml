@@ -1,0 +1,17 @@
+folder:
+  extension: ".m"
+  naming: "underscore"
+
+container:
+  image: "gnuoctave/octave"
+  tag: "8.3.0"
+  build: |
+    sh -c '(echo "#!/bin/bash"; \
+    echo "if [ \"{{ source.name }}\" = \"factorial\" ];"; \
+    echo "then"; \
+    echo "    octave -qf {{ source.name }}{{ source.extension }} \"\$@\" 2>&1 | sed '1d';"; \
+    echo "else"; \
+    echo "    octave -qf {{ source.name }}{{ source.extension }} \"\$@\""; \
+    echo "fi" \
+    ) >{{ source.name }}'
+  cmd: "bash ./{{ source.name }}"

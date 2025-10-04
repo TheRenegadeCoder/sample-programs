@@ -1,0 +1,8 @@
+folder:
+  extension: ".png"
+  naming: "hyphen"
+
+container:
+  image: "esolang/piet"
+  tag: "latest"
+  cmd: "piet {{ source.name }}{{source.extension}}"

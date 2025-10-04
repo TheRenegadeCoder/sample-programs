@@ -1,0 +1,9 @@
+folder:
+  extension: ".pas"
+  naming: "underscore"
+
+container:
+  image: "freepascal/fpc"
+  tag: "3.2.2-slim"
+  build: "fpc {{ source.name }}{{ source.extension }}"
+  cmd: "./{{ source.name }}"

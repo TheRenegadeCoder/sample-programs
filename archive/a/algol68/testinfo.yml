@@ -1,0 +1,8 @@
+folder:
+  extension: ".alg"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/algol68"
+  tag: "2.8.4-1"
+  cmd: "a68g {{ source.name }}{{ source.extension }} -"

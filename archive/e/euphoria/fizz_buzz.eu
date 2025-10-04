@@ -1,0 +1,12 @@
+include std/io.e
+include std/math.e
+include std/utils.e
+
+for n = 1 to 100
+do
+    sequence s = ""
+    s &= iif(mod(n, 3) = 0, "Fizz", "")
+    s &= iif(mod(n, 5) = 0, "Buzz", "")
+    s &= iif(length(s) = 0, sprintf("%d", n), "")
+    printf(STDOUT, "%s\n", {s})
+end for

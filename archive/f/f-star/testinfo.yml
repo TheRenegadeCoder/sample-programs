@@ -1,0 +1,11 @@
+folder:
+  extension: ".fst"
+  naming: "pascal"
+
+container:
+  image: "rzuckerm/f-star"
+  tag: "2022.01.15-1"
+  build: |
+    sh -c "fstar --odir . --codegen OCaml --extract {{ source.name }} {{ source.name }}{{ source.extension }} && \
+      ocamlfind opt -package fstarlib -linkpkg -thread -o {{ source.name }} {{ source.name }}.ml"
+  cmd: "./{{ source.name }}"

@@ -1,0 +1,22 @@
+let io @ { ? } = import! std.io
+let int @ { ? } = import! std.int
+
+rec let repeat_string s n : String -> Int -> String =
+    if n > 0 then
+        s ++ (repeat_string s (n - 1))
+    else
+        ""
+
+let baklava_line n : Int -> String =
+    let num_spaces = int.abs n
+    let num_stars = 21 - 2 * num_spaces
+    (repeat_string " " num_spaces) ++ (repeat_string "*" num_stars)
+
+rec let baklava n ne : Int -> Int -> io.IO () =
+    if n <= ne then
+        io.println (baklava_line n)
+        baklava (n + 1) ne
+    else
+        io.print ""
+
+baklava -10 10

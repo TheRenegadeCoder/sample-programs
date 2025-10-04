@@ -1,0 +1,68 @@
+# This workflow generates READMEs for all languages
+
+name: Ronbun
+
+permissions:
+  contents: write
+  pull-requests: write
+
+on: 
+  push:
+    branches:
+      - 'main'
+    paths:
+      - 'archive/**'
+      - '.glotter.yml'
+      - 'repo-config.yml'
+      - '.github/workflows/readme.yml'
+      - 'pyproject.toml'
+      - 'poetry.lock'
+
+jobs:
+  readme:
+    name: "README Generation"
+
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Read repo config
+      uses: pietrobolcato/action-read-yaml@1.1.0
+      id: repo-config
+      with:
+        config: repo-config.yml
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "${{ steps.repo-config.outputs['python-version'] }}"
+
+    - name: Run Poetry Image
+      uses: abatilo/actions-poetry@v3
+      with:
+        poetry-version: "${{ steps.repo-config.outputs['poetry-version'] }}"
+        
+    - name: Install Dependencies
+      run: poetry install
+        
+    - name: Generate READMEs
+      run: poetry run ronbun . --log=DEBUG
+        
+    - name: Create Pull Request
+      id: cpr
+      uses: peter-evans/create-pull-request@v7
+      with:
+        commit-message: Regenerated READMEs
+        committer: GitHub Actions <action@github.com>
+        branch: readme-generation
+        delete-branch: true
+        title: '[Automated Workflow] Add/Modify READMEs'
+        labels: enhancement
+        token: ${{ secrets.PAT }}
+
+    - name: Enable Pull Request Automerge
+      if: steps.cpr.outputs.pull-request-operation == 'created'
+      uses: peter-evans/enable-pull-request-automerge@v3
+      with:
+        pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
+        merge-method: squash

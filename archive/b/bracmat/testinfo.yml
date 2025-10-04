@@ -1,0 +1,9 @@
+folder:
+  extension: ".bra"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/bracmat"
+  tag: "6.26.2-2"
+  cmd: |
+    bracmat 'get$"{{ source.name }}{{ source.extension }}"'

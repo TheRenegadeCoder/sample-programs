@@ -1,0 +1,3 @@
+include std/io.e
+
+puts(STDOUT, "Hello, World!\n")

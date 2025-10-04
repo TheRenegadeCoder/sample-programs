@@ -1,0 +1,36 @@
+(* Code *)
+
+(* This is provided by the Mathematica built-in Transpose; so the only code needed is the 'user interface'
+   to make it look a little more like a Unix command-line tool: *)
+
+transposeMain = Function[{columns, rows, values},
+   Module[{e = "Usage: please enter the dimension of the matrix and the serialized matrix"},
+    Catch[
+     StringRiffle[
+      Flatten @*
+        Transpose @*
+        (* convert list of values and dimensions into matrix *)
+        Function[{c, r, v},
+         If[c*r == Length[v], Partition[v, c], Throw[e]]] @@
+       Map[
+        (* convert string to integer, or throw *)
+        s \[Function] If[StringMatchQ[s, DigitCharacter ..],
+          FromDigits[s],
+          Throw[e]],
+        (* construct three arguments to transpose: number of columns, rows, and list of values *)
+        {columns, rows, StringSplit[If[StringLength[values] > 0, values, Throw[e]], ", "]},
+        {-1} (* at each leaf *)],
+      ", "]]]];
+
+
+(* Valid Tests *)
+
+Print /@ Apply[transposeMain] /@ {
+    {"3", "2", "1, 2, 3, 4, 5, 6"}
+    };
+
+
+(* Invalid Tests *)
+
+transposeMain["", "", "1, 2, 3, 4, 5, 6"]
+transposeMain["3", "3", ""]

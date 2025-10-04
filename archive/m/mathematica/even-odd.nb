@@ -1,0 +1,27 @@
+(* Code *)
+
+(* The Mathematica built-in EvenQ essentially provides the required behavior;
+so the only code needed is the 'user interface' to make it look a little more
+like a Unix command-line tool: *)
+
+evenOddMain = Catch[
+    Module[{fromNegativeDigits},
+     (* oddly, Mathematica doesn't appear to provide a function which can parse strings representing negative integers *)
+     fromNegativeDigits = Piecewise[{
+         {FromDigits[#], StringMatchQ[#, DigitCharacter ..]},
+         {-FromDigits[StringDrop[#, 1]], 
+          StringMatchQ[#, "-" ~~ DigitCharacter ..]}},
+        Throw["Usage: please input a number"]
+        ] &;
+     If[EvenQ[fromNegativeDigits[#]], "Even", "Odd"]]] &;
+
+
+(* Valid Tests *)
+
+Print /@ evenOddMain /@ {"2", "5", "-14", "-27"};
+
+
+(* Invalid Tests *)
+
+evenOddMain[""]
+evenOddMain["a"]

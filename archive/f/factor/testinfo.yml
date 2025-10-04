@@ -1,0 +1,8 @@
+folder:
+  extension: ".factor"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/factor"
+  tag: "0.100-2"
+  cmd: "factor {{ source.name }}{{ source.extension }}"

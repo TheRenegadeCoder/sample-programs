@@ -1,0 +1,8 @@
+folder:
+  extension: ".lobster"
+  naming: "hyphen"
+
+container:
+  image: "rzuckerm/lobster"
+  tag: "2023.11-1"
+  cmd: "lobster {{ source.name }}{{ source.extension }}"

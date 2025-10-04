@@ -1,0 +1,23 @@
+define repeat_string (List<Char>, Int32 -> List<Char>):
+    -> s, n;
+    if (n > 0) {
+        s s n 1 (-) repeat_string (+)
+    } else {
+        ""
+    }
+
+define baklava_line (Int32 -> List<Char>):
+    -> n;
+    n abs -> num_spaces;
+    21 2 num_spaces (*) (-) -> num_stars;
+    " " num_spaces repeat_string
+    "*" num_stars repeat_string (+)
+
+define baklava (Int32, Int32 -> +IO):
+    -> n, ne;
+    if (n <= ne) {
+        n baklava_line say
+        n 1 (+) ne baklava
+    }
+
+-10 10 baklava

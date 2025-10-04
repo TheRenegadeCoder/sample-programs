@@ -1,0 +1,1 @@
+constant s="constant s=%s%s%sprintf(1,s&10,{34,s,34})"printf(1,s&10,{34,s,34})

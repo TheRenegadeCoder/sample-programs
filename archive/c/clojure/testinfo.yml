@@ -1,0 +1,8 @@
+folder:
+  extension: ".clj"
+  naming: "hyphen"
+
+container:
+  image: "clojure"
+  tag: "tools-deps"
+  cmd: "clojure -M ./{{ source.name}}{{ source.extension }}"

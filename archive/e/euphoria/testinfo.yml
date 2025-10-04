@@ -1,0 +1,8 @@
+folder:
+  extension: ".eu"
+  naming: "underscore"
+
+container:
+  image: "openeuphoria/euphoria"
+  tag: "4.1.0"
+  cmd: "eui {{ source.name }}{{ source.extension }} -"

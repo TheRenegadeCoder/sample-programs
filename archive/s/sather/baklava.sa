@@ -1,0 +1,23 @@
+class BAKLAVA is
+  main is
+    i:INT := -10;
+    loop while!(i <= 10);
+      numSpaces:INT := i;
+      if (numSpaces < 0) then
+        numSpaces := -numSpaces;
+      end;
+
+      #OUT + strRepeat(numSpaces, " ") + strRepeat(21 - 2 * numSpaces, "*") +"\n";
+      i := i + 1;
+    end;
+  end;
+
+  strRepeat(n:INT, s:STR):STR is
+    r:STR := "";
+    loop n.times!;
+        r := r + s;
+    end;
+
+    return r;
+  end;
+end;

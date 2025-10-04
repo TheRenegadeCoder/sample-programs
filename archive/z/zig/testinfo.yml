@@ -1,0 +1,9 @@
+folder:
+  extension: ".zig"
+  naming: "hyphen"
+
+container:
+  image: "guilledk/zig"
+  tag: "0.13.0"
+  build: "zig build-exe {{ source.name }}{{ source.extension }}"
+  cmd: "./{{ source.name }}"

@@ -1,0 +1,8 @@
+folder:
+  extension: ".dart"
+  naming: "hyphen"
+
+container:
+  image: "google/dart"
+  tag: "2.5"
+  cmd: "dart {{ source.name }}{{ source.extension }}"
