@@ -1,5 +1,4 @@
 //Issue 4974
-// fixed the typo LIst to List, dart.io import is not needed in Web Apps
 void main(List<String> args){
   const String error_message = "Usage: please provide a string";
   if (args.isEmpty || args[0].isEmpty){
