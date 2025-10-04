@@ -37,7 +37,7 @@ IS_VALID_NUMBER = $(if $(strip $(1)),$(if $(filter-out $(NUMBERS),$(call SPLIT_N
 
 # Indicate if number is even
 # Arg 1: Number
-# Return: $(X1) if even, $(X0 otherwise
+# Return: $(X1) if even, $(X0) otherwise
 IS_EVEN = $(if $(filter $(EVEN_NUMBERS),$(lastword $(call SPLIT_NUMBER,$(1)))),$(X1),$(X0))
 
 # Remove leading minus sign from input value
