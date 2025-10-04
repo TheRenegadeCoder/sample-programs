@@ -40,7 +40,6 @@ IS_VALID_NUMBER = $(if $(strip $(1)),$(if $(filter-out $(NUMBERS),$(call SPLIT_N
 # Return: $(X1) if even, $(X0 otherwise
 IS_EVEN = $(if $(filter $(EVEN_NUMBERS),$(lastword $(call SPLIT_NUMBER,$(1)))),$(X1),$(X0))
 
-# If number ends with an even number, indicate is it even
 # Remove leading minus sign from input value
 ABS_VALUE := $(patsubst -%,%,$(ARGV1))
 
