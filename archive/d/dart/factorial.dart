@@ -5,14 +5,16 @@ void main(List<String> args){
 
     int factorial = 1;
     int num_needed = int.parse(args[0]);
-    if (num_neede.isNegative == true){
-      print();
+    if (num_needed.isNegative == true){
+      print(error_message);
     }
     else{
       for (int i_index = 1; i_index <= num_needed; i_index ++){
         factorial *= i_index;
       }
+      print(factorial.toString());
     }
+
   }
   catch(e){
     print(error_message);
