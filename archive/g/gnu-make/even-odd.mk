@@ -35,7 +35,7 @@ SPLIT_NUMBER = $(strip $(call REDUCE,_SUBST_SPACE,$(NUMBERS),$(1)))
 # Return: $(X1) if valid number, $(X0) otherwise
 IS_VALID_NUMBER = $(if $(strip $(1)),$(if $(filter-out $(NUMBERS),$(call SPLIT_NUMBER,$(1))),$(X0),$(X1)),$(X0))
 
-# Indicate if number is even
+# Indicate if number is even or odd
 # Arg 1: Number
 # Return: $(X1) if even, $(X0) otherwise
 IS_EVEN = $(if $(filter $(EVEN_NUMBERS),$(lastword $(call SPLIT_NUMBER,$(1)))),$(X1),$(X0))
