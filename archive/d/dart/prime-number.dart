@@ -7,10 +7,10 @@ void main(List<String> args){
     print(error_message);
     return;
   }
-
   try{
     bool is_prime = true;
     int num_needed = int.parse(args[0]);
+    int max_divisor = 0;
 
     if (num_needed.isNegative){
       print(error_message);
@@ -22,14 +22,13 @@ void main(List<String> args){
       print("Composite");
       return;
     }
-
-    for (int i_index = 3; i_index <= sqrt(num_needed).toInt(); i_index +=2){
+    max_divisor = sqrt(num_needed).toInt();
+    for (int i_index = 3; i_index <= max_divisor; i_index +=2){
       if(num_needed % i_index == 0){
         is_prime = false;
         break;
       }
     }
-
     print(is_prime ? "Prime" : "Composite");
   }
   catch(e){
