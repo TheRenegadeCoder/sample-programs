@@ -6,8 +6,8 @@ void main(List<String> argv){
     return;
   }
   //Convert  \r, ]n and \t explicitly into carriage return, newline and tab
-  String raw = argv[0].replaceAll(r'\t', '\t').replaceAll(r'\r', '\r').replaceAll(r'\n', '\n');
+
   // Replace carriage return, newline and tab with empty string
-  String sentence_no_spaces = raw.replaceAll(RegExp(r'[\t\r\n ]'), '');
+  String sentence_no_spaces = argv[0].replaceAll(RegExp(r'[\t\r\n ]'), '');
   print(sentence_no_spaces);
 }
