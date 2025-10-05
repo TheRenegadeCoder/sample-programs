@@ -13,8 +13,8 @@ void main(List<String> args){
       return;
     }
 
-    // If the number is even number other than 2 OR if the number is multiple of 5 other than 5 or if number is either 0 or 1, Print Composite
-    if( (num_needed == 0)|| (num_needed == 1) || (num_needed %2 ==0 && num_needed != 2) || (num_needed %5  == 0 && num_needed != 5) ){
+    // If the number is even number other than 2 OR if number is either 0 or 1, Print Composite
+    if( (num_needed == 0)|| (num_needed == 1) || (num_needed %2 ==0 && num_needed != 2) ){
       print("Composite");
       return;
     }
@@ -26,6 +26,7 @@ void main(List<String> args){
         break;
       }
     }
+    // If the number is 2, default value of is_prime will ensure, Prime will get printed
     print(is_prime ? "Prime" : "Composite");
   }
   catch(e){
