@@ -1,7 +1,7 @@
 // Issue 4973
 void main(List<String> argv){
   const String error_message = "Usage: please provide a string";
-  if (argv[0].isEmpty || argv[0].isEmpty){
+  if (argv.isEmpty || argv.isEmpty){
     print(error_message);
     return;
   }
