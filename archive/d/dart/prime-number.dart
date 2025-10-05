@@ -26,7 +26,7 @@ void main(List<String> args){
         break;
       }
     }
-    // If the number is 2, default value of is_prime will ensure, Prime will get printed
+
     print(is_prime ? "Prime" : "Composite");
   }
   catch(e){
