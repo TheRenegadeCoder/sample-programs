@@ -977,25 +977,12 @@ get_Neighbors:
 ; ---------------------------------------------------------------------------
 MOV RAX, RDX
 MOV RBX, [vertice_array.size]
-MUL RBX
-MOV RDX, [vertice_array.seen]
+MOV RDX, [vertice_array.dists]
 MOV R8, [vertice_array.ptr]
 ADD RDX, RAX
 MOV RCX, 0
     .neighbor_loop:
-        CMP [vertice_array.seen+RCX*8], 0
-        JNE .skip_iteration
-        MOV [vertice_array.seen+RCX*8], 1
-        MOV R9, [vertice_array.seen+RCX*8]
-        MOV RSI, 
-        INC RCX
-        CMP RCX, [vertice_array.
         
-    .skip_iteration:
-        INC RCX
-        CMP RCX, [vertice_array.num_vertices]
-        JB .neighbor_loop
-    .get_end:
         
     
     
