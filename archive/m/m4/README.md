@@ -2,7 +2,7 @@
 
 Welcome to Sample Programs in M4! To find documentation related to the M4 code in this repo, look [here.](https://sampleprograms.io/languages/m4)
 
-## Sample Programs List - 26/38 :relaxed:
+## Sample Programs List - 28/38 :relaxed:
 
 In this section, we feature a list of completed and missing programs in M4. See above for the current amount of completed programs in M4. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -28,8 +28,10 @@ Below, you'll find a list of completed code snippets in M4. Code snippets preced
 - :warning: [Longest Word in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+m4) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :warning: [Maximum Array Rotation in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+maximum+array+rotation+m4) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :warning: [Maximum Subarray in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+maximum+subarray+m4) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
+- :warning: [Merge Sort in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+m4) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
 - :warning: [Palindromic Number in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+m4) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :warning: [Prime Number in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+m4) [[Requirements](https://sampleprograms.io/projects/prime-number)]
+- :warning: [Quick Sort in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+m4) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
 - :warning: [Quine in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+m4) [[Requirements](https://sampleprograms.io/projects/quine)]
 - :warning: [Remove All Whitespace in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+remove+all+whitespace+m4) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :warning: [Reverse String in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+m4) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
@@ -48,9 +50,7 @@ The following list contains all of the approved programs that are not currently 
 - :x: [File Input Output](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,file+input+output&template=code-snippet-request.md&title=Add+File+Input+Output+in+M4) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,job+sequencing&template=code-snippet-request.md&title=Add+Job+Sequencing+in+M4) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :x: [Longest Common Subsequence](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+common+subsequence&template=code-snippet-request.md&title=Add+Longest+Common+Subsequence+in+M4) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
-- :x: [Merge Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,merge+sort&template=code-snippet-request.md&title=Add+Merge+Sort+in+M4) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+M4) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
-- :x: [Quick Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,quick+sort&template=code-snippet-request.md&title=Add+Quick+Sort+in+M4) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
 - :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+M4) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,transpose+matrix&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+M4) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
