@@ -24,7 +24,11 @@ fun duplicateCharacterCount(phrase: String): Map<Char, Int> {
 }
 
 fun outputMap(counts: Map<Char, Int>) {
-    for (pair in counts) {
-        println("${pair.key}: ${pair.value}")
+    if (counts.size > 0) {
+        for (pair in counts) {
+            println("${pair.key}: ${pair.value}")
+        }
+    } else {
+        println("No duplicate characters")
     }
 }
