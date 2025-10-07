@@ -3,7 +3,7 @@ proc usage {} {
 	exit 1
 }
 
-proc parse_integer_list {s} {
+proc parseIntegerList {s} {
 	set s [string trim $s]
 	if {$s eq ""} {
 		usage
@@ -29,7 +29,7 @@ proc parse_integer_list {s} {
 	return $result
 }
 
-proc is_sorted {lst} {
+proc isSorted {lst} {
 	set len [llength $lst]
 	if {$len <= 1} { return 1 }
 	for {set i 1} {$i < $len} {incr i} {
@@ -40,7 +40,7 @@ proc is_sorted {lst} {
 	return 1
 }
 
-proc bubble_sort {lstVar} {
+proc bubbleSort {lstVar} {
     upvar 1 $lstVar lst
     set n [llength $lst]
     for {set i [expr {$n - 1}]} {$i > 0} {incr i -1} {
@@ -61,7 +61,7 @@ proc bubble_sort {lstVar} {
     }
 }
 
-proc format_integer_list {lst} {
+proc formatList {lst} {
     set out ""
     set n [llength $lst]
     for {set i 0} {$i < $n} {incr i} {
@@ -76,10 +76,10 @@ if {$argc != 1} {
 }
 
 set raw [lindex $argv 0]
-set numbers [parse_integer_list $raw]
+set numbers [parseIntegerList $raw]
 
-if {![is_sorted $numbers]} {
-    bubble_sort numbers
+if {![isSorted $numbers]} {
+    bubbleSort numbers
 }
 
-puts [format_integer_list $numbers]
+puts [formatList $numbers]
