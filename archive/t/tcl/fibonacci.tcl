@@ -5,18 +5,17 @@ proc usage {} {
 
 if {$argc != 1} { usage }
 
-set arg [lindex $argv 0]
-if {![string is integer -strict $arg] || $arg < 0} { usage }
+set count [lindex $argv 0]
 
-set count $arg
+if {![string is integer -strict $count] || $count < 0} { usage }
 
-set first 0
-set second 1
+set a 1
+set b 1
 
 for {set i 1} {$i <= $count} {incr i} {
-    set result [expr {$first + $second}]
-    set first $second
-    set second $result
-    puts "$i: $first"
-}
+    puts "$i: $a"
 
+    set next [expr {$a + $b}]
+    set a $b
+    set b $next
+}
