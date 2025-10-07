@@ -3,7 +3,7 @@ proc usage {} {
 	exit 1
 }
 
-proc parse_integer_list {s} {
+proc parseIntegerList {s} {
 	set s [string trim $s]
 	if {$s eq ""} {
 		usage
@@ -29,7 +29,7 @@ proc parse_integer_list {s} {
 	return $result
 }
 
-proc is_sorted {lst} {
+proc isSorted {lst} {
 	set len [llength $lst]
 	if {$len <= 1} { return 1 }
 	for {set i 1} {$i < $len} {incr i} {
@@ -40,7 +40,7 @@ proc is_sorted {lst} {
 	return 1
 }
 
-proc binary_search {lst value} {
+proc binarySearch {lst value} {
 	set len [llength $lst]
 	if {$len == 0} { return 0 }
 	if {$len == 1} {
@@ -83,9 +83,9 @@ if {$listArg eq "" || $valueArg eq ""} {
 	usage
 }
 
-set numbers [parse_integer_list $listArg]
+set numbers [parseIntegerList $listArg]
 
-if {![is_sorted $numbers]} {
+if {![isSorted $numbers]} {
 	usage
 }
 
@@ -93,4 +93,4 @@ if {[catch {expr {int($valueArg)}} value]} {
 	usage
 }
 
-puts [expr {[binary_search $numbers $value] ? "true" : "false"}]
+puts [expr {[binarySearch $numbers $value] ? "true" : "false"}]
