@@ -4,8 +4,6 @@ proc usage {} {
 }
 
 proc countDuplicates {str} {
-	if {$str eq ""} { usage }
-
 	set counts [dict create]
 	set order {}
 
@@ -34,6 +32,7 @@ proc countDuplicates {str} {
 }
 
 if {$argc != 1} { usage }
+
 set input [string trim [lindex $argv 0]]
 if {$input eq ""} { usage }
 
