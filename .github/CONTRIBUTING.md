@@ -81,7 +81,12 @@ Within each language folder, you'll find the following:
 Now, each program file maps to an ongoing project that you can find on the
 [project list on the Sample Programs Website][project-list].
 As for the README, it contains a list of the project files that
-links to existing articles in the documentation. 
+links to existing articles in the documentation.
+
+> [!NOTE]
+> **Do not modify the `README.md` file. It is auto-generated, and it will be
+> updated when a Pull Request for that language is merged.**
+
 The `testinfo.yml` provides information about the projects in the folder
 to our testing library.
 
