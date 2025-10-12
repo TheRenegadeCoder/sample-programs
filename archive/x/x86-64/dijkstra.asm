@@ -936,19 +936,27 @@ dijkstra:
     MOV R8, -1
     MOV R9, 0
     SYSCALL
+    MOV [vertice_array.dists], RAX
     MOV RCX, 0
     .dist_loop:
         MOV RBX, [vertice_array.dists]
         MOV [RBX+RCX*8], INT_MAX
         CMP [vertice_array.size], RCX
         JB .dist_loop
-    MOV [RBX+RCX], 0
+    MOV RCX, [RBP - dijkstra.SRC]
+    MOV [RBX+RCX*8], 0
+    ;Moving virtual table addresss into R11
+    MOV R11, [RBP - dijkstra.heap]
+    MOV R11, [R11 + minheap.vTable]
+    MOV R11, [R11]
+    
+    
     ;Get neighbors
     
     MOV RDI, [RBP - dijkstra.heap]
-    MOV RSI, [vertice_array.seen]    
+    MOV RSI, [vertice_array.dists]    
     MOV RDX, [RBP - dijkstra.SRC]
-    MOV R10, 
+    MOV R10, [vertice_array.size] 
     CALL get_Neighbors    
     
     
@@ -981,7 +989,11 @@ MOV RDX, [vertice_array.dists]
 MOV R8, [vertice_array.ptr]
 ADD RDX, RAX
 MOV RCX, 0
+MOV R11, [minheap.vtable] ;I want to hold the vtable in a register I won't write to often as I'm not looking to juggle this pointer.
     .neighbor_loop:
+   
+    
+        
         
         
     
