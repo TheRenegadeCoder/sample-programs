@@ -106,12 +106,13 @@ PUSH R9
 %DEFINE atol.STACK_INIT 8
 %DEFINE atol.ret 8
 
-%DEFINE dijkstra.STACK_INIT 40
+%DEFINE dijkstra.STACK_INIT 48
 %DEFINE dijkstra.distance 8
 %DEFINE dijkstra.current 16
 %DEFINE dijkstra.heap 24
 %DEFINE dijkstra.SRC 32
 %DEFINE dijkstra.DST 40
+%DEFINE dijkstra.lazyArray 48
 
 %DEFINE parse_vertices.STACK_INIT 16
 %DEFINE parse_vertices.Argv1 8
@@ -908,6 +909,7 @@ dijkstra:
 ; Function: dijkstra
 ; Description:
 ;   Utilizes Dijkstra's algorithm to find the shortest path to a vertex.
+;   Uses a lazy array in the algorithm due to the absence of a decrease_priority method.
 ; Parameters:
 ;   RDI - (Minheap*)      Ptr to minheap.
 ;   RSI - (long)          SRC.
@@ -945,19 +947,22 @@ dijkstra:
         JB .dist_loop
     MOV RCX, [RBP - dijkstra.SRC]
     MOV [RBX+RCX*8], 0
-    ;Moving virtual table addresss into R11
+    ;Moving virtual table addresss into R11. I want to keep this in a dedicated register so I'm not re-pulling it in whenever I need it.
     MOV R11, [RBP - dijkstra.heap]
     MOV R11, [R11 + minheap.vTable]
     MOV R11, [R11]
     
+    MOV RDI, [RBP - dijkstra.heap]
+    MOV RSI, 0 ; Hardcoded, zero distance from source vertex.
+    MOV RDX, [RBP - dijkstra.SRC]
+    CALL [R11 + VT_MINHEAP_INSERT]
     
     ;Get neighbors
-    
-    MOV RDI, [RBP - dijkstra.heap]
-    MOV RSI, [vertice_array.dists]    
-    MOV RDX, [RBP - dijkstra.SRC]
-    MOV R10, [vertice_array.size] 
-    CALL get_Neighbors    
+    MOV RCX, 0
+     .main_loop:
+          CALL [R11 + VT_MINHEAP_MIN]
+          MOV [RBP - dijkstra.current], RAX
+          
     
     
     .return:
@@ -966,7 +971,7 @@ dijkstra:
         POP RBP
         RET    
     
-get_Neighbors:
+;get_Neighbors:  This MIGHT not be needed
 ; ----------------------------------------------------------------------------
 ; Function: Get Neighbors
 ; Description:
@@ -983,13 +988,13 @@ get_Neighbors:
 ;   RAX - (long)          Distance.
 ;   Clobbers - RCX
 ; ---------------------------------------------------------------------------
-MOV RAX, RDX
-MOV RBX, [vertice_array.size]
-MOV RDX, [vertice_array.dists]
-MOV R8, [vertice_array.ptr]
-ADD RDX, RAX
-MOV RCX, 0
-MOV R11, [minheap.vtable] ;I want to hold the vtable in a register I won't write to often as I'm not looking to juggle this pointer.
+;MOV RAX, RDX
+;MOV RBX, [vertice_array.size]
+;MOV RDX, [vertice_array.dists]
+;MOV R8, [vertice_array.ptr]
+;ADD RDX, RAX
+;MOV RCX, 0
+;MOV R11, [minheap.vtable] ;I want to hold the vtable in a register I won't write to often as I'm not looking to juggle this pointer.
     .neighbor_loop:
    
     
