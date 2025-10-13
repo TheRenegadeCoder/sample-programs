@@ -3,11 +3,11 @@ section .rodata
 section .data
 
 struc priority_queue:
-    .virtualTable
-    .nodes
-    .nodePriorities
-    .size
-    .maxSize
+    .virtualTable resq 1
+    .nodes resq 1
+    .nodePriorities resq 1
+    .size resq 1
+    .maxSize resq 1
 endstruc
 
 struc VT_priority_queue:
@@ -27,6 +27,10 @@ global _start
 _start:
 
 
+parseSRCDST:
+
+parseVertices:
+
 dijkstra:
 
 
@@ -39,6 +43,10 @@ priority_queue@isEmpty:
 priority_queue@pop:
 
 priority_queue@decreasePriority:
+
+ezsqrt:
+
+atoi:
 
     
 
