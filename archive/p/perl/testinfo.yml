@@ -4,5 +4,5 @@ folder:
 
 container:
   image: "perl"
-  tag: "5.28-slim"
+  tag: "5.42-slim"
   cmd: "perl {{ source.name }}{{ source.extension }}"
