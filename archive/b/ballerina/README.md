@@ -1,6 +1,9 @@
 # Sample Programs in Ballerina
 
-Welcome to Sample Programs in Ballerina! To find documentation related to the Ballerina code in this repo, look [here.](https://sampleprograms.io/languages/ballerina)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Ballerina! To find documentation related to the Ballerina code in this repo, look [here](https://sampleprograms.io/languages/ballerina).
 
 ## Sample Programs List - 3/38 :disappointed:
 

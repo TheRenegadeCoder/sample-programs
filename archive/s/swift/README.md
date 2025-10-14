@@ -1,6 +1,9 @@
 # Sample Programs in Swift
 
-Welcome to Sample Programs in Swift! To find documentation related to the Swift code in this repo, look [here.](https://sampleprograms.io/languages/swift)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Swift! To find documentation related to the Swift code in this repo, look [here](https://sampleprograms.io/languages/swift).
 
 ## Sample Programs List - 10/38 :thinking:
 

@@ -1,6 +1,9 @@
 # Sample Programs in Scala
 
-Welcome to Sample Programs in Scala! To find documentation related to the Scala code in this repo, look [here.](https://sampleprograms.io/languages/scala)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Scala! To find documentation related to the Scala code in this repo, look [here](https://sampleprograms.io/languages/scala).
 
 ## Sample Programs List - 12/38 :thinking:
 

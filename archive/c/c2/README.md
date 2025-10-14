@@ -1,6 +1,9 @@
 # Sample Programs in C2
 
-Welcome to Sample Programs in C2! To find documentation related to the C2 code in this repo, look [here.](https://sampleprograms.io/languages/c2)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in C2! To find documentation related to the C2 code in this repo, look [here](https://sampleprograms.io/languages/c2).
 
 ## Sample Programs List - 2/38 :disappointed:
 

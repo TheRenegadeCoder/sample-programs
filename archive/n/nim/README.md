@@ -1,6 +1,9 @@
 # Sample Programs in Nim
 
-Welcome to Sample Programs in Nim! To find documentation related to the Nim code in this repo, look [here.](https://sampleprograms.io/languages/nim)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Nim! To find documentation related to the Nim code in this repo, look [here](https://sampleprograms.io/languages/nim).
 
 ## Sample Programs List - 5/38 :disappointed:
 

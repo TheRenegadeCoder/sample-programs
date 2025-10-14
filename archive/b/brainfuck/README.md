@@ -1,6 +1,9 @@
 # Sample Programs in Brainfuck
 
-Welcome to Sample Programs in Brainfuck! To find documentation related to the Brainfuck code in this repo, look [here.](https://sampleprograms.io/languages/brainfuck)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Brainfuck! To find documentation related to the Brainfuck code in this repo, look [here](https://sampleprograms.io/languages/brainfuck).
 
 ## Sample Programs List - 8/38 :disappointed:
 

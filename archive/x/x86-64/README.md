@@ -1,6 +1,9 @@
 # Sample Programs in X86 64
 
-Welcome to Sample Programs in X86 64! To find documentation related to the X86 64 code in this repo, look [here.](https://sampleprograms.io/languages/x86-64)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in X86 64! To find documentation related to the X86 64 code in this repo, look [here](https://sampleprograms.io/languages/x86-64).
 
 ## Sample Programs List - 5/38 :disappointed:
 

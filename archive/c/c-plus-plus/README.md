@@ -1,6 +1,9 @@
 # Sample Programs in C++
 
-Welcome to Sample Programs in C++! To find documentation related to the C++ code in this repo, look [here.](https://sampleprograms.io/languages/c-plus-plus)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in C++! To find documentation related to the C++ code in this repo, look [here](https://sampleprograms.io/languages/c-plus-plus).
 
 ## Sample Programs List - 31/38 :smile:
 

@@ -1,6 +1,9 @@
 # Sample Programs in Pony
 
-Welcome to Sample Programs in Pony! To find documentation related to the Pony code in this repo, look [here.](https://sampleprograms.io/languages/pony)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Pony! To find documentation related to the Pony code in this repo, look [here](https://sampleprograms.io/languages/pony).
 
 ## Sample Programs List - 3/38 :disappointed:
 

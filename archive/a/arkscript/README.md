@@ -1,6 +1,9 @@
 # Sample Programs in Arkscript
 
-Welcome to Sample Programs in Arkscript! To find documentation related to the Arkscript code in this repo, look [here.](https://sampleprograms.io/languages/arkscript)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Arkscript! To find documentation related to the Arkscript code in this repo, look [here](https://sampleprograms.io/languages/arkscript).
 
 ## Sample Programs List - 3/38 :disappointed:
 

@@ -1,6 +1,9 @@
 # Sample Programs in Granule
 
-Welcome to Sample Programs in Granule! To find documentation related to the Granule code in this repo, look [here.](https://sampleprograms.io/languages/granule)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Granule! To find documentation related to the Granule code in this repo, look [here](https://sampleprograms.io/languages/granule).
 
 ## Sample Programs List - 2/38 :disappointed:
 

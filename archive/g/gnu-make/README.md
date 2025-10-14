@@ -1,6 +1,9 @@
 # Sample Programs in Gnu Make
 
-Welcome to Sample Programs in Gnu Make! To find documentation related to the Gnu Make code in this repo, look [here.](https://sampleprograms.io/languages/gnu-make)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Gnu Make! To find documentation related to the Gnu Make code in this repo, look [here](https://sampleprograms.io/languages/gnu-make).
 
 ## Sample Programs List - 9/38 :disappointed:
 

@@ -1,6 +1,9 @@
 # Sample Programs in V
 
-Welcome to Sample Programs in V! To find documentation related to the V code in this repo, look [here.](https://sampleprograms.io/languages/v)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in V! To find documentation related to the V code in this repo, look [here](https://sampleprograms.io/languages/v).
 
 ## Sample Programs List - 6/38 :disappointed:
 

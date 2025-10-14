@@ -1,6 +1,9 @@
 # Sample Programs in Kotlin
 
-Welcome to Sample Programs in Kotlin! To find documentation related to the Kotlin code in this repo, look [here.](https://sampleprograms.io/languages/kotlin)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Kotlin! To find documentation related to the Kotlin code in this repo, look [here](https://sampleprograms.io/languages/kotlin).
 
 ## Sample Programs List - 25/38 :relaxed:
 

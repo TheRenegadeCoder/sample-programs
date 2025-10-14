@@ -1,6 +1,9 @@
 # Sample Programs in Algol68
 
-Welcome to Sample Programs in Algol68! To find documentation related to the Algol68 code in this repo, look [here.](https://sampleprograms.io/languages/algol68)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Algol68! To find documentation related to the Algol68 code in this repo, look [here](https://sampleprograms.io/languages/algol68).
 
 ## Sample Programs List - 38/38 :partying_face:
 

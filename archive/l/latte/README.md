@@ -1,6 +1,9 @@
 # Sample Programs in Latte
 
-Welcome to Sample Programs in Latte! To find documentation related to the Latte code in this repo, look [here.](https://sampleprograms.io/languages/latte)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Latte! To find documentation related to the Latte code in this repo, look [here](https://sampleprograms.io/languages/latte).
 
 ## Sample Programs List - 2/38 :disappointed:
 

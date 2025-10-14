@@ -1,6 +1,9 @@
 # Sample Programs in Dart
 
-Welcome to Sample Programs in Dart! To find documentation related to the Dart code in this repo, look [here.](https://sampleprograms.io/languages/dart)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Dart! To find documentation related to the Dart code in this repo, look [here](https://sampleprograms.io/languages/dart).
 
 ## Sample Programs List - 18/38 :thinking:
 

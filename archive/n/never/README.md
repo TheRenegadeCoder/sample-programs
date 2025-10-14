@@ -1,6 +1,9 @@
 # Sample Programs in Never
 
-Welcome to Sample Programs in Never! To find documentation related to the Never code in this repo, look [here.](https://sampleprograms.io/languages/never)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Never! To find documentation related to the Never code in this repo, look [here](https://sampleprograms.io/languages/never).
 
 ## Sample Programs List - 3/38 :disappointed:
 

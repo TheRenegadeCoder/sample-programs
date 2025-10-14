@@ -1,6 +1,9 @@
 # Sample Programs in Awk
 
-Welcome to Sample Programs in Awk! To find documentation related to the Awk code in this repo, look [here.](https://sampleprograms.io/languages/awk)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Awk! To find documentation related to the Awk code in this repo, look [here](https://sampleprograms.io/languages/awk).
 
 ## Sample Programs List - 38/38 :partying_face:
 

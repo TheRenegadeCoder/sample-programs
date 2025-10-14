@@ -1,6 +1,9 @@
 # Sample Programs in Golo
 
-Welcome to Sample Programs in Golo! To find documentation related to the Golo code in this repo, look [here.](https://sampleprograms.io/languages/golo)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Golo! To find documentation related to the Golo code in this repo, look [here](https://sampleprograms.io/languages/golo).
 
 ## Sample Programs List - 2/38 :disappointed:
 

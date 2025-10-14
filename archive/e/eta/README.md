@@ -1,6 +1,9 @@
 # Sample Programs in Eta
 
-Welcome to Sample Programs in Eta! To find documentation related to the Eta code in this repo, look [here.](https://sampleprograms.io/languages/eta)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Eta! To find documentation related to the Eta code in this repo, look [here](https://sampleprograms.io/languages/eta).
 
 ## Sample Programs List - 2/38 :disappointed:
 

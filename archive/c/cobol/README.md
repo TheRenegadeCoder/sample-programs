@@ -1,6 +1,9 @@
 # Sample Programs in Cobol
 
-Welcome to Sample Programs in Cobol! To find documentation related to the Cobol code in this repo, look [here.](https://sampleprograms.io/languages/cobol)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Cobol! To find documentation related to the Cobol code in this repo, look [here](https://sampleprograms.io/languages/cobol).
 
 ## Sample Programs List - 6/38 :disappointed:
 

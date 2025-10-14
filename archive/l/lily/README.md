@@ -1,6 +1,9 @@
 # Sample Programs in Lily
 
-Welcome to Sample Programs in Lily! To find documentation related to the Lily code in this repo, look [here.](https://sampleprograms.io/languages/lily)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Lily! To find documentation related to the Lily code in this repo, look [here](https://sampleprograms.io/languages/lily).
 
 ## Sample Programs List - 2/38 :disappointed:
 

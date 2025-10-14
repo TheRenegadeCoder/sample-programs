@@ -1,6 +1,9 @@
 # Sample Programs in Wu
 
-Welcome to Sample Programs in Wu! To find documentation related to the Wu code in this repo, look [here.](https://sampleprograms.io/languages/wu)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Wu! To find documentation related to the Wu code in this repo, look [here](https://sampleprograms.io/languages/wu).
 
 ## Sample Programs List - 2/38 :disappointed:
 

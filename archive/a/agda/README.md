@@ -1,6 +1,9 @@
 # Sample Programs in Agda
 
-Welcome to Sample Programs in Agda! To find documentation related to the Agda code in this repo, look [here.](https://sampleprograms.io/languages/agda)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Agda! To find documentation related to the Agda code in this repo, look [here](https://sampleprograms.io/languages/agda).
 
 ## Sample Programs List - 2/38 :disappointed:
 

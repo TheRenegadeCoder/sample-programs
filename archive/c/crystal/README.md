@@ -1,6 +1,9 @@
 # Sample Programs in Crystal
 
-Welcome to Sample Programs in Crystal! To find documentation related to the Crystal code in this repo, look [here.](https://sampleprograms.io/languages/crystal)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Crystal! To find documentation related to the Crystal code in this repo, look [here](https://sampleprograms.io/languages/crystal).
 
 ## Sample Programs List - 4/38 :disappointed:
 

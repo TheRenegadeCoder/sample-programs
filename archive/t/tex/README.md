@@ -1,6 +1,9 @@
 # Sample Programs in Tex
 
-Welcome to Sample Programs in Tex! To find documentation related to the Tex code in this repo, look [here.](https://sampleprograms.io/languages/tex)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Tex! To find documentation related to the Tex code in this repo, look [here](https://sampleprograms.io/languages/tex).
 
 ## Sample Programs List - 3/38 :disappointed:
 

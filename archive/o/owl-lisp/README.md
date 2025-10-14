@@ -1,6 +1,9 @@
 # Sample Programs in Owl Lisp
 
-Welcome to Sample Programs in Owl Lisp! To find documentation related to the Owl Lisp code in this repo, look [here.](https://sampleprograms.io/languages/owl-lisp)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Owl Lisp! To find documentation related to the Owl Lisp code in this repo, look [here](https://sampleprograms.io/languages/owl-lisp).
 
 ## Sample Programs List - 2/38 :disappointed:
 

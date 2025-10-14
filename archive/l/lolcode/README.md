@@ -1,6 +1,9 @@
 # Sample Programs in Lolcode
 
-Welcome to Sample Programs in Lolcode! To find documentation related to the Lolcode code in this repo, look [here.](https://sampleprograms.io/languages/lolcode)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Lolcode! To find documentation related to the Lolcode code in this repo, look [here](https://sampleprograms.io/languages/lolcode).
 
 ## Sample Programs List - 3/38 :disappointed:
 

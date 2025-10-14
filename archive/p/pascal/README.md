@@ -1,6 +1,9 @@
 # Sample Programs in Pascal
 
-Welcome to Sample Programs in Pascal! To find documentation related to the Pascal code in this repo, look [here.](https://sampleprograms.io/languages/pascal)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Pascal! To find documentation related to the Pascal code in this repo, look [here](https://sampleprograms.io/languages/pascal).
 
 ## Sample Programs List - 38/38 :partying_face:
 

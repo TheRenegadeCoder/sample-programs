@@ -1,6 +1,9 @@
 # Sample Programs in Factor
 
-Welcome to Sample Programs in Factor! To find documentation related to the Factor code in this repo, look [here.](https://sampleprograms.io/languages/factor)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Factor! To find documentation related to the Factor code in this repo, look [here](https://sampleprograms.io/languages/factor).
 
 ## Sample Programs List - 2/38 :disappointed:
 

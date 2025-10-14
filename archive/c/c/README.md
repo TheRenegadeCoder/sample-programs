@@ -1,6 +1,9 @@
 # Sample Programs in C
 
-Welcome to Sample Programs in C! To find documentation related to the C code in this repo, look [here.](https://sampleprograms.io/languages/c)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in C! To find documentation related to the C code in this repo, look [here](https://sampleprograms.io/languages/c).
 
 ## Sample Programs List - 38/38 :partying_face:
 

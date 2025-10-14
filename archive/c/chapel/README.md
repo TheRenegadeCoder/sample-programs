@@ -1,6 +1,9 @@
 # Sample Programs in Chapel
 
-Welcome to Sample Programs in Chapel! To find documentation related to the Chapel code in this repo, look [here.](https://sampleprograms.io/languages/chapel)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Chapel! To find documentation related to the Chapel code in this repo, look [here](https://sampleprograms.io/languages/chapel).
 
 ## Sample Programs List - 3/38 :disappointed:
 

@@ -1,6 +1,9 @@
 # Sample Programs in Perl
 
-Welcome to Sample Programs in Perl! To find documentation related to the Perl code in this repo, look [here.](https://sampleprograms.io/languages/perl)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Perl! To find documentation related to the Perl code in this repo, look [here](https://sampleprograms.io/languages/perl).
 
 ## Sample Programs List - 21/38 :relaxed:
 

@@ -1,6 +1,9 @@
 # Sample Programs in Flix
 
-Welcome to Sample Programs in Flix! To find documentation related to the Flix code in this repo, look [here.](https://sampleprograms.io/languages/flix)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Flix! To find documentation related to the Flix code in this repo, look [here](https://sampleprograms.io/languages/flix).
 
 ## Sample Programs List - 2/38 :disappointed:
 

@@ -1,6 +1,9 @@
 # Sample Programs in Sather
 
-Welcome to Sample Programs in Sather! To find documentation related to the Sather code in this repo, look [here.](https://sampleprograms.io/languages/sather)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Sather! To find documentation related to the Sather code in this repo, look [here](https://sampleprograms.io/languages/sather).
 
 ## Sample Programs List - 2/38 :disappointed:
 

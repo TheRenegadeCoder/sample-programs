@@ -1,6 +1,9 @@
 # Sample Programs in Fetlang
 
-Welcome to Sample Programs in Fetlang! To find documentation related to the Fetlang code in this repo, look [here.](https://sampleprograms.io/languages/fetlang)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Fetlang! To find documentation related to the Fetlang code in this repo, look [here](https://sampleprograms.io/languages/fetlang).
 
 ## Sample Programs List - 3/38 :disappointed:
 

@@ -1,6 +1,9 @@
 # Sample Programs in Ocaml
 
-Welcome to Sample Programs in Ocaml! To find documentation related to the Ocaml code in this repo, look [here.](https://sampleprograms.io/languages/ocaml)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Ocaml! To find documentation related to the Ocaml code in this repo, look [here](https://sampleprograms.io/languages/ocaml).
 
 ## Sample Programs List - 3/38 :disappointed:
 

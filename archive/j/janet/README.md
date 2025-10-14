@@ -1,6 +1,9 @@
 # Sample Programs in Janet
 
-Welcome to Sample Programs in Janet! To find documentation related to the Janet code in this repo, look [here.](https://sampleprograms.io/languages/janet)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Janet! To find documentation related to the Janet code in this repo, look [here](https://sampleprograms.io/languages/janet).
 
 ## Sample Programs List - 3/38 :disappointed:
 

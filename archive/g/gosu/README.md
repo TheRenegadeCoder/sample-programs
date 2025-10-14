@@ -1,6 +1,9 @@
 # Sample Programs in Gosu
 
-Welcome to Sample Programs in Gosu! To find documentation related to the Gosu code in this repo, look [here.](https://sampleprograms.io/languages/gosu)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Gosu! To find documentation related to the Gosu code in this repo, look [here](https://sampleprograms.io/languages/gosu).
 
 ## Sample Programs List - 2/38 :disappointed:
 

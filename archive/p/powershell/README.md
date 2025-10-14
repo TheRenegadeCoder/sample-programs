@@ -1,6 +1,9 @@
 # Sample Programs in Powershell
 
-Welcome to Sample Programs in Powershell! To find documentation related to the Powershell code in this repo, look [here.](https://sampleprograms.io/languages/powershell)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Powershell! To find documentation related to the Powershell code in this repo, look [here](https://sampleprograms.io/languages/powershell).
 
 ## Sample Programs List - 38/38 :partying_face:
 

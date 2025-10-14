@@ -1,6 +1,9 @@
 # Sample Programs in Gravity
 
-Welcome to Sample Programs in Gravity! To find documentation related to the Gravity code in this repo, look [here.](https://sampleprograms.io/languages/gravity)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Gravity! To find documentation related to the Gravity code in this repo, look [here](https://sampleprograms.io/languages/gravity).
 
 ## Sample Programs List - 3/38 :disappointed:
 

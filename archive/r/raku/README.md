@@ -1,6 +1,9 @@
 # Sample Programs in Raku
 
-Welcome to Sample Programs in Raku! To find documentation related to the Raku code in this repo, look [here.](https://sampleprograms.io/languages/raku)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Raku! To find documentation related to the Raku code in this repo, look [here](https://sampleprograms.io/languages/raku).
 
 ## Sample Programs List - 3/38 :disappointed:
 

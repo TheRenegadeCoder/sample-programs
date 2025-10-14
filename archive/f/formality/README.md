@@ -1,6 +1,9 @@
 # Sample Programs in Formality
 
-Welcome to Sample Programs in Formality! To find documentation related to the Formality code in this repo, look [here.](https://sampleprograms.io/languages/formality)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Formality! To find documentation related to the Formality code in this repo, look [here](https://sampleprograms.io/languages/formality).
 
 ## Sample Programs List - 2/38 :disappointed:
 

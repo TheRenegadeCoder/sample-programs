@@ -1,6 +1,9 @@
 # Sample Programs in Hack
 
-Welcome to Sample Programs in Hack! To find documentation related to the Hack code in this repo, look [here.](https://sampleprograms.io/languages/hack)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Hack! To find documentation related to the Hack code in this repo, look [here](https://sampleprograms.io/languages/hack).
 
 ## Sample Programs List - 2/38 :disappointed:
 

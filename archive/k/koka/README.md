@@ -1,6 +1,9 @@
 # Sample Programs in Koka
 
-Welcome to Sample Programs in Koka! To find documentation related to the Koka code in this repo, look [here.](https://sampleprograms.io/languages/koka)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Koka! To find documentation related to the Koka code in this repo, look [here](https://sampleprograms.io/languages/koka).
 
 ## Sample Programs List - 2/38 :disappointed:
 

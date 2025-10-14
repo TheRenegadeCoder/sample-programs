@@ -1,6 +1,9 @@
 # Sample Programs in Solisp
 
-Welcome to Sample Programs in Solisp! To find documentation related to the Solisp code in this repo, look [here.](https://sampleprograms.io/languages/solisp)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Solisp! To find documentation related to the Solisp code in this repo, look [here](https://sampleprograms.io/languages/solisp).
 
 ## Sample Programs List - 3/38 :disappointed:
 

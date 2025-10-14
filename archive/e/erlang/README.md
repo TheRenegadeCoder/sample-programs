@@ -1,6 +1,9 @@
 # Sample Programs in Erlang
 
-Welcome to Sample Programs in Erlang! To find documentation related to the Erlang code in this repo, look [here.](https://sampleprograms.io/languages/erlang)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Erlang! To find documentation related to the Erlang code in this repo, look [here](https://sampleprograms.io/languages/erlang).
 
 ## Sample Programs List - 6/38 :disappointed:
 

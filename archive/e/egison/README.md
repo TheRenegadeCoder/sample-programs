@@ -1,6 +1,9 @@
 # Sample Programs in Egison
 
-Welcome to Sample Programs in Egison! To find documentation related to the Egison code in this repo, look [here.](https://sampleprograms.io/languages/egison)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Egison! To find documentation related to the Egison code in this repo, look [here](https://sampleprograms.io/languages/egison).
 
 ## Sample Programs List - 2/38 :disappointed:
 

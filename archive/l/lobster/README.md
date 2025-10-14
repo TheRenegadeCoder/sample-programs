@@ -1,6 +1,9 @@
 # Sample Programs in Lobster
 
-Welcome to Sample Programs in Lobster! To find documentation related to the Lobster code in this repo, look [here.](https://sampleprograms.io/languages/lobster)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Lobster! To find documentation related to the Lobster code in this repo, look [here](https://sampleprograms.io/languages/lobster).
 
 ## Sample Programs List - 2/38 :disappointed:
 

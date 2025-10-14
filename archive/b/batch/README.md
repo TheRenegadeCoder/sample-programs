@@ -1,6 +1,9 @@
 # Sample Programs in Batch
 
-Welcome to Sample Programs in Batch! To find documentation related to the Batch code in this repo, look [here.](https://sampleprograms.io/languages/batch)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Batch! To find documentation related to the Batch code in this repo, look [here](https://sampleprograms.io/languages/batch).
 
 ## Sample Programs List - 3/38 :disappointed:
 

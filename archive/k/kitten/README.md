@@ -1,6 +1,9 @@
 # Sample Programs in Kitten
 
-Welcome to Sample Programs in Kitten! To find documentation related to the Kitten code in this repo, look [here.](https://sampleprograms.io/languages/kitten)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Kitten! To find documentation related to the Kitten code in this repo, look [here](https://sampleprograms.io/languages/kitten).
 
 ## Sample Programs List - 2/38 :disappointed:
 

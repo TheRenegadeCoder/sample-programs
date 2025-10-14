@@ -1,6 +1,9 @@
 # Sample Programs in Hobbes
 
-Welcome to Sample Programs in Hobbes! To find documentation related to the Hobbes code in this repo, look [here.](https://sampleprograms.io/languages/hobbes)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Hobbes! To find documentation related to the Hobbes code in this repo, look [here](https://sampleprograms.io/languages/hobbes).
 
 ## Sample Programs List - 2/38 :disappointed:
 

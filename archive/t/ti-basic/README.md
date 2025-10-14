@@ -1,6 +1,9 @@
 # Sample Programs in Ti Basic
 
-Welcome to Sample Programs in Ti Basic! To find documentation related to the Ti Basic code in this repo, look [here.](https://sampleprograms.io/languages/ti-basic)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Ti Basic! To find documentation related to the Ti Basic code in this repo, look [here](https://sampleprograms.io/languages/ti-basic).
 
 ## Sample Programs List - 13/38 :thinking:
 

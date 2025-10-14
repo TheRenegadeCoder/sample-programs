@@ -1,6 +1,9 @@
 # Sample Programs in Racket
 
-Welcome to Sample Programs in Racket! To find documentation related to the Racket code in this repo, look [here.](https://sampleprograms.io/languages/racket)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Racket! To find documentation related to the Racket code in this repo, look [here](https://sampleprograms.io/languages/racket).
 
 ## Sample Programs List - 4/38 :disappointed:
 

@@ -1,6 +1,9 @@
 # Sample Programs in Dale
 
-Welcome to Sample Programs in Dale! To find documentation related to the Dale code in this repo, look [here.](https://sampleprograms.io/languages/dale)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Dale! To find documentation related to the Dale code in this repo, look [here](https://sampleprograms.io/languages/dale).
 
 ## Sample Programs List - 2/38 :disappointed:
 

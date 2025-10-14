@@ -1,6 +1,9 @@
 # Sample Programs in Scheme
 
-Welcome to Sample Programs in Scheme! To find documentation related to the Scheme code in this repo, look [here.](https://sampleprograms.io/languages/scheme)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Scheme! To find documentation related to the Scheme code in this repo, look [here](https://sampleprograms.io/languages/scheme).
 
 ## Sample Programs List - 3/38 :disappointed:
 

@@ -1,6 +1,9 @@
 # Sample Programs in Gluon
 
-Welcome to Sample Programs in Gluon! To find documentation related to the Gluon code in this repo, look [here.](https://sampleprograms.io/languages/gluon)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Gluon! To find documentation related to the Gluon code in this repo, look [here](https://sampleprograms.io/languages/gluon).
 
 ## Sample Programs List - 2/38 :disappointed:
 

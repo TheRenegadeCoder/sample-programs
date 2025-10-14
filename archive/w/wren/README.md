@@ -1,6 +1,9 @@
 # Sample Programs in Wren
 
-Welcome to Sample Programs in Wren! To find documentation related to the Wren code in this repo, look [here.](https://sampleprograms.io/languages/wren)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Wren! To find documentation related to the Wren code in this repo, look [here](https://sampleprograms.io/languages/wren).
 
 ## Sample Programs List - 11/38 :thinking:
 

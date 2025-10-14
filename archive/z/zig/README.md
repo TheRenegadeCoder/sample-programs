@@ -1,6 +1,9 @@
 # Sample Programs in Zig
 
-Welcome to Sample Programs in Zig! To find documentation related to the Zig code in this repo, look [here.](https://sampleprograms.io/languages/zig)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Zig! To find documentation related to the Zig code in this repo, look [here](https://sampleprograms.io/languages/zig).
 
 ## Sample Programs List - 4/38 :disappointed:
 

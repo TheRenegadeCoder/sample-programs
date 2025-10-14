@@ -1,6 +1,9 @@
 # Sample Programs in Dg
 
-Welcome to Sample Programs in Dg! To find documentation related to the Dg code in this repo, look [here.](https://sampleprograms.io/languages/dg)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Dg! To find documentation related to the Dg code in this repo, look [here](https://sampleprograms.io/languages/dg).
 
 ## Sample Programs List - 6/38 :disappointed:
 

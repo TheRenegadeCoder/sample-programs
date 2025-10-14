@@ -1,6 +1,9 @@
 # Sample Programs in Piet
 
-Welcome to Sample Programs in Piet! To find documentation related to the Piet code in this repo, look [here.](https://sampleprograms.io/languages/piet)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Piet! To find documentation related to the Piet code in this repo, look [here](https://sampleprograms.io/languages/piet).
 
 ## Sample Programs List - 2/38 :disappointed:
 

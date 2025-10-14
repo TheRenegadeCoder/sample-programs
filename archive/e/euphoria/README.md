@@ -1,6 +1,9 @@
 # Sample Programs in Euphoria
 
-Welcome to Sample Programs in Euphoria! To find documentation related to the Euphoria code in this repo, look [here.](https://sampleprograms.io/languages/euphoria)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Euphoria! To find documentation related to the Euphoria code in this repo, look [here](https://sampleprograms.io/languages/euphoria).
 
 ## Sample Programs List - 38/38 :partying_face:
 

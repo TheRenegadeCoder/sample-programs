@@ -1,6 +1,9 @@
 # Sample Programs in Pinecone
 
-Welcome to Sample Programs in Pinecone! To find documentation related to the Pinecone code in this repo, look [here.](https://sampleprograms.io/languages/pinecone)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Pinecone! To find documentation related to the Pinecone code in this repo, look [here](https://sampleprograms.io/languages/pinecone).
 
 ## Sample Programs List - 3/38 :disappointed:
 

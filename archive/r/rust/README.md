@@ -1,6 +1,9 @@
 # Sample Programs in Rust
 
-Welcome to Sample Programs in Rust! To find documentation related to the Rust code in this repo, look [here.](https://sampleprograms.io/languages/rust)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Rust! To find documentation related to the Rust code in this repo, look [here](https://sampleprograms.io/languages/rust).
 
 ## Sample Programs List - 38/38 :partying_face:
 

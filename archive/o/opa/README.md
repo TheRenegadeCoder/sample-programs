@@ -1,6 +1,9 @@
 # Sample Programs in Opa
 
-Welcome to Sample Programs in Opa! To find documentation related to the Opa code in this repo, look [here.](https://sampleprograms.io/languages/opa)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Opa! To find documentation related to the Opa code in this repo, look [here](https://sampleprograms.io/languages/opa).
 
 ## Sample Programs List - 2/38 :disappointed:
 

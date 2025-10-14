@@ -1,6 +1,9 @@
 # Sample Programs in Io
 
-Welcome to Sample Programs in Io! To find documentation related to the Io code in this repo, look [here.](https://sampleprograms.io/languages/io)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Io! To find documentation related to the Io code in this repo, look [here](https://sampleprograms.io/languages/io).
 
 ## Sample Programs List - 3/38 :disappointed:
 

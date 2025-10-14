@@ -1,6 +1,9 @@
 # Sample Programs in Visual Basic
 
-Welcome to Sample Programs in Visual Basic! To find documentation related to the Visual Basic code in this repo, look [here.](https://sampleprograms.io/languages/visual-basic)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Visual Basic! To find documentation related to the Visual Basic code in this repo, look [here](https://sampleprograms.io/languages/visual-basic).
 
 ## Sample Programs List - 6/38 :disappointed:
 

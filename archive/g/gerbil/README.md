@@ -1,6 +1,9 @@
 # Sample Programs in Gerbil
 
-Welcome to Sample Programs in Gerbil! To find documentation related to the Gerbil code in this repo, look [here.](https://sampleprograms.io/languages/gerbil)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Gerbil! To find documentation related to the Gerbil code in this repo, look [here](https://sampleprograms.io/languages/gerbil).
 
 ## Sample Programs List - 2/38 :disappointed:
 

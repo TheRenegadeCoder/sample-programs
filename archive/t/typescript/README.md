@@ -1,6 +1,9 @@
 # Sample Programs in Typescript
 
-Welcome to Sample Programs in Typescript! To find documentation related to the Typescript code in this repo, look [here.](https://sampleprograms.io/languages/typescript)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Typescript! To find documentation related to the Typescript code in this repo, look [here](https://sampleprograms.io/languages/typescript).
 
 ## Sample Programs List - 25/38 :relaxed:
 

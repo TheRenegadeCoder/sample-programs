@@ -1,6 +1,9 @@
 # Sample Programs in Lisp
 
-Welcome to Sample Programs in Lisp! To find documentation related to the Lisp code in this repo, look [here.](https://sampleprograms.io/languages/lisp)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Lisp! To find documentation related to the Lisp code in this repo, look [here](https://sampleprograms.io/languages/lisp).
 
 ## Sample Programs List - 10/38 :thinking:
 

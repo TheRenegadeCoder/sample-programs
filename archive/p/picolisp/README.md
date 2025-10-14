@@ -1,6 +1,9 @@
 # Sample Programs in Picolisp
 
-Welcome to Sample Programs in Picolisp! To find documentation related to the Picolisp code in this repo, look [here.](https://sampleprograms.io/languages/picolisp)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Picolisp! To find documentation related to the Picolisp code in this repo, look [here](https://sampleprograms.io/languages/picolisp).
 
 ## Sample Programs List - 3/38 :disappointed:
 

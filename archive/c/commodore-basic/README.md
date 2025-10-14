@@ -1,6 +1,9 @@
 # Sample Programs in Commodore Basic
 
-Welcome to Sample Programs in Commodore Basic! To find documentation related to the Commodore Basic code in this repo, look [here.](https://sampleprograms.io/languages/commodore-basic)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Commodore Basic! To find documentation related to the Commodore Basic code in this repo, look [here](https://sampleprograms.io/languages/commodore-basic).
 
 ## Sample Programs List - 38/38 :partying_face:
 

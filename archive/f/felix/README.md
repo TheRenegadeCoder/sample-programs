@@ -1,6 +1,9 @@
 # Sample Programs in Felix
 
-Welcome to Sample Programs in Felix! To find documentation related to the Felix code in this repo, look [here.](https://sampleprograms.io/languages/felix)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Felix! To find documentation related to the Felix code in this repo, look [here](https://sampleprograms.io/languages/felix).
 
 ## Sample Programs List - 2/38 :disappointed:
 

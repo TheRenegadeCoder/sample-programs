@@ -1,6 +1,9 @@
 # Sample Programs in Vimscript
 
-Welcome to Sample Programs in Vimscript! To find documentation related to the Vimscript code in this repo, look [here.](https://sampleprograms.io/languages/vimscript)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Vimscript! To find documentation related to the Vimscript code in this repo, look [here](https://sampleprograms.io/languages/vimscript).
 
 ## Sample Programs List - 4/38 :disappointed:
 

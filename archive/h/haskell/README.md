@@ -1,6 +1,9 @@
 # Sample Programs in Haskell
 
-Welcome to Sample Programs in Haskell! To find documentation related to the Haskell code in this repo, look [here.](https://sampleprograms.io/languages/haskell)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Haskell! To find documentation related to the Haskell code in this repo, look [here](https://sampleprograms.io/languages/haskell).
 
 ## Sample Programs List - 20/38 :relaxed:
 
