@@ -1,31 +1,41 @@
-! upcase and to_upper didn't work, 
-! had to resort to check ASCII value of first letter & then
-! subtract 32 from it, ... 
 program capitalize
-character(len=100) :: cmd
-character(len=1) :: firstletter
-character(len=:), allocatable :: printoutput
+   implicit none
+   character(len=100) :: cmd
+   integer :: argc
 
-! Anything not equal to single argument, Print Error
-IF(COMMAND_ARGUMENT_COUNT().NE.1)THEN
-  write(*,'(g0.8)')"Usage: please provide a string"
-  STOP
-ENDIF
+   argc = command_argument_count()
+   if (argc /= 1) call usage()
 
-CALL GET_COMMAND_ARGUMENT(1,cmd)
-if (cmd == "") then
-  write(*,'(g0.8)')"Usage: please provide a string"
-  STOP
-endif
-! Get first letter
-  firstletter = cmd(1:1)
-  ! Check if first letter is between ASCII Value of a and z
-  if (iachar(firstletter)>= iachar("a") .and. iachar(firstletter)<=iachar("z") ) then
-  ! Subtract 32 from ASCII Value, to convert it to respective capital letter
-    firstletter = achar(iachar(firstletter)-32)
-! Overwrite the first letter 
-    cmd(1:1) = firstletter
-  end if
-    printoutput = adjustl(trim(cmd))
-    write(*,'(g0.8)')printoutput
+   call get_command_argument(1, cmd)
+   cmd = adjustl(trim(cmd))
+   if (len_trim(cmd) == 0) call usage()
+
+   cmd(1:1) = upper(cmd(1:1))
+
+   write(*,*) cmd
+
+contains
+
+   subroutine usage()
+      write(*,*) "Usage: please provide a string"
+      stop
+   end subroutine
+
+   pure elemental function upper(str) result(string)
+      character(*), intent(in) :: str
+      character(len(str)) :: string
+      integer :: i, iend
+      integer, parameter :: toupper = iachar('A') - iachar('a')
+
+      iend = len_trim(str)
+      string = str(:iend)
+
+      do concurrent (i = 1:iend)
+         select case (str(i:i))
+          case ('a':'z')
+            string(i:i) = achar(iachar(str(i:i)) + toupper)
+         end select
+      end do
+   end function upper
+
 end program capitalize
