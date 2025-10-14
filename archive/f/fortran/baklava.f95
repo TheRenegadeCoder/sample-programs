@@ -1,8 +1,18 @@
-program Baklava
-    do i = 0, 10, 1
-        print '(10a)', repeat (" ", (10 - i)), repeat ("*", (i * 2 + 1))
-    end do
-    do i = 9, 0, -1
-        print '(10a)', repeat (" ", (10 - i)), repeat ("*", (i * 2 + 1))
-    end do
-end program Baklava
+program baklava
+   implicit none
+   integer :: i, size, spaces, stars
+
+   parameter (size = 10)
+
+   do i = 0, size
+      spaces = size - i
+      stars  = i * 2 + 1
+      print '(A)', repeat(' ', spaces)//repeat('*', stars)
+   end do
+
+   do i = size-1, 0, -1
+      spaces = size - i
+      stars  = i * 2 + 1
+      print '(A)', repeat(' ', spaces)//repeat('*', stars)
+   end do
+end program baklava
