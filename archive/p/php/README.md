@@ -1,6 +1,9 @@
 # Sample Programs in Php
 
-Welcome to Sample Programs in Php! To find documentation related to the Php code in this repo, look [here.](https://sampleprograms.io/languages/php)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Php! To find documentation related to the Php code in this repo, look [here](https://sampleprograms.io/languages/php).
 
 ## Sample Programs List - 38/38 :partying_face:
 

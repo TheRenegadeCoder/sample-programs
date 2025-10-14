@@ -1,6 +1,9 @@
 # Sample Programs in Frege
 
-Welcome to Sample Programs in Frege! To find documentation related to the Frege code in this repo, look [here.](https://sampleprograms.io/languages/frege)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Frege! To find documentation related to the Frege code in this repo, look [here](https://sampleprograms.io/languages/frege).
 
 ## Sample Programs List - 2/38 :disappointed:
 

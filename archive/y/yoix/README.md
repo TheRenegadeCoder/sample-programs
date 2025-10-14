@@ -1,6 +1,9 @@
 # Sample Programs in Yoix
 
-Welcome to Sample Programs in Yoix! To find documentation related to the Yoix code in this repo, look [here.](https://sampleprograms.io/languages/yoix)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Yoix! To find documentation related to the Yoix code in this repo, look [here](https://sampleprograms.io/languages/yoix).
 
 ## Sample Programs List - 2/38 :disappointed:
 

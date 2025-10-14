@@ -1,6 +1,9 @@
 # Sample Programs in Objective C
 
-Welcome to Sample Programs in Objective C! To find documentation related to the Objective C code in this repo, look [here.](https://sampleprograms.io/languages/objective-c)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Objective C! To find documentation related to the Objective C code in this repo, look [here](https://sampleprograms.io/languages/objective-c).
 
 ## Sample Programs List - 11/38 :thinking:
 

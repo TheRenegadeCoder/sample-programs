@@ -1,6 +1,9 @@
 # Sample Programs in Ferret
 
-Welcome to Sample Programs in Ferret! To find documentation related to the Ferret code in this repo, look [here.](https://sampleprograms.io/languages/ferret)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Ferret! To find documentation related to the Ferret code in this repo, look [here](https://sampleprograms.io/languages/ferret).
 
 ## Sample Programs List - 2/38 :disappointed:
 

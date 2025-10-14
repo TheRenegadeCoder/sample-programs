@@ -1,6 +1,9 @@
 # Sample Programs in Solidity
 
-Welcome to Sample Programs in Solidity! To find documentation related to the Solidity code in this repo, look [here.](https://sampleprograms.io/languages/solidity)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Solidity! To find documentation related to the Solidity code in this repo, look [here](https://sampleprograms.io/languages/solidity).
 
 ## Sample Programs List - 2/38 :disappointed:
 

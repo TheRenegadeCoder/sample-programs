@@ -1,6 +1,9 @@
 # Sample Programs in Carp
 
-Welcome to Sample Programs in Carp! To find documentation related to the Carp code in this repo, look [here.](https://sampleprograms.io/languages/carp)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Carp! To find documentation related to the Carp code in this repo, look [here](https://sampleprograms.io/languages/carp).
 
 ## Sample Programs List - 2/38 :disappointed:
 

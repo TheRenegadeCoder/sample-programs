@@ -1,6 +1,9 @@
 # Sample Programs in Lua
 
-Welcome to Sample Programs in Lua! To find documentation related to the Lua code in this repo, look [here.](https://sampleprograms.io/languages/lua)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Lua! To find documentation related to the Lua code in this repo, look [here](https://sampleprograms.io/languages/lua).
 
 ## Sample Programs List - 15/38 :thinking:
 

@@ -1,6 +1,9 @@
 # Sample Programs in Modula2
 
-Welcome to Sample Programs in Modula2! To find documentation related to the Modula2 code in this repo, look [here.](https://sampleprograms.io/languages/modula2)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Modula2! To find documentation related to the Modula2 code in this repo, look [here](https://sampleprograms.io/languages/modula2).
 
 ## Sample Programs List - 2/38 :disappointed:
 

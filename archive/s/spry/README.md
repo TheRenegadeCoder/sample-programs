@@ -1,6 +1,9 @@
 # Sample Programs in Spry
 
-Welcome to Sample Programs in Spry! To find documentation related to the Spry code in this repo, look [here.](https://sampleprograms.io/languages/spry)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Spry! To find documentation related to the Spry code in this repo, look [here](https://sampleprograms.io/languages/spry).
 
 ## Sample Programs List - 2/38 :disappointed:
 

@@ -1,6 +1,9 @@
 # Sample Programs in Elvish
 
-Welcome to Sample Programs in Elvish! To find documentation related to the Elvish code in this repo, look [here.](https://sampleprograms.io/languages/elvish)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Elvish! To find documentation related to the Elvish code in this repo, look [here](https://sampleprograms.io/languages/elvish).
 
 ## Sample Programs List - 14/38 :thinking:
 

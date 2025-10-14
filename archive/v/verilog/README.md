@@ -1,6 +1,9 @@
 # Sample Programs in Verilog
 
-Welcome to Sample Programs in Verilog! To find documentation related to the Verilog code in this repo, look [here.](https://sampleprograms.io/languages/verilog)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Verilog! To find documentation related to the Verilog code in this repo, look [here](https://sampleprograms.io/languages/verilog).
 
 ## Sample Programs List - 2/38 :disappointed:
 

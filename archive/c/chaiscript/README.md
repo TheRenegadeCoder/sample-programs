@@ -1,6 +1,9 @@
 # Sample Programs in Chaiscript
 
-Welcome to Sample Programs in Chaiscript! To find documentation related to the Chaiscript code in this repo, look [here.](https://sampleprograms.io/languages/chaiscript)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Chaiscript! To find documentation related to the Chaiscript code in this repo, look [here](https://sampleprograms.io/languages/chaiscript).
 
 ## Sample Programs List - 2/38 :disappointed:
 

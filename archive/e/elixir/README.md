@@ -1,6 +1,9 @@
 # Sample Programs in Elixir
 
-Welcome to Sample Programs in Elixir! To find documentation related to the Elixir code in this repo, look [here.](https://sampleprograms.io/languages/elixir)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Elixir! To find documentation related to the Elixir code in this repo, look [here](https://sampleprograms.io/languages/elixir).
 
 ## Sample Programs List - 8/38 :disappointed:
 

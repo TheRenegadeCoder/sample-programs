@@ -1,6 +1,9 @@
 # Sample Programs in Julia
 
-Welcome to Sample Programs in Julia! To find documentation related to the Julia code in this repo, look [here.](https://sampleprograms.io/languages/julia)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Julia! To find documentation related to the Julia code in this repo, look [here](https://sampleprograms.io/languages/julia).
 
 ## Sample Programs List - 15/38 :thinking:
 

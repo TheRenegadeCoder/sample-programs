@@ -1,6 +1,9 @@
 # Sample Programs in F\*
 
-Welcome to Sample Programs in F\*! To find documentation related to the F\* code in this repo, look [here.](https://sampleprograms.io/languages/f-star)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in F\*! To find documentation related to the F\* code in this repo, look [here](https://sampleprograms.io/languages/f-star).
 
 ## Sample Programs List - 2/38 :disappointed:
 

@@ -1,6 +1,9 @@
 # Sample Programs in Bash
 
-Welcome to Sample Programs in Bash! To find documentation related to the Bash code in this repo, look [here.](https://sampleprograms.io/languages/bash)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Bash! To find documentation related to the Bash code in this repo, look [here](https://sampleprograms.io/languages/bash).
 
 ## Sample Programs List - 15/38 :thinking:
 

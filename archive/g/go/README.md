@@ -1,6 +1,9 @@
 # Sample Programs in Go
 
-Welcome to Sample Programs in Go! To find documentation related to the Go code in this repo, look [here.](https://sampleprograms.io/languages/go)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Go! To find documentation related to the Go code in this repo, look [here](https://sampleprograms.io/languages/go).
 
 ## Sample Programs List - 33/38 :smile:
 

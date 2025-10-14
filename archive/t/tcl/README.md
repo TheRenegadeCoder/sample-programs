@@ -1,6 +1,9 @@
 # Sample Programs in Tcl
 
-Welcome to Sample Programs in Tcl! To find documentation related to the Tcl code in this repo, look [here.](https://sampleprograms.io/languages/tcl)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Tcl! To find documentation related to the Tcl code in this repo, look [here](https://sampleprograms.io/languages/tcl).
 
 ## Sample Programs List - 38/38 :partying_face:
 

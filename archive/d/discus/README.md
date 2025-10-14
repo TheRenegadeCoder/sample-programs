@@ -1,6 +1,9 @@
 # Sample Programs in Discus
 
-Welcome to Sample Programs in Discus! To find documentation related to the Discus code in this repo, look [here.](https://sampleprograms.io/languages/discus)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Discus! To find documentation related to the Discus code in this repo, look [here](https://sampleprograms.io/languages/discus).
 
 ## Sample Programs List - 2/38 :disappointed:
 

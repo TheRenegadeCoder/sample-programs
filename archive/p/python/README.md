@@ -1,6 +1,9 @@
 # Sample Programs in Python
 
-Welcome to Sample Programs in Python! To find documentation related to the Python code in this repo, look [here.](https://sampleprograms.io/languages/python)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Python! To find documentation related to the Python code in this repo, look [here](https://sampleprograms.io/languages/python).
 
 ## Sample Programs List - 38/38 :partying_face:
 

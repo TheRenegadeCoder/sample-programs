@@ -1,6 +1,9 @@
 # Sample Programs in Mojiscript
 
-Welcome to Sample Programs in Mojiscript! To find documentation related to the Mojiscript code in this repo, look [here.](https://sampleprograms.io/languages/mojiscript)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Mojiscript! To find documentation related to the Mojiscript code in this repo, look [here](https://sampleprograms.io/languages/mojiscript).
 
 ## Sample Programs List - 2/38 :disappointed:
 

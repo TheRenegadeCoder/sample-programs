@@ -1,6 +1,9 @@
 # Sample Programs in Scilab
 
-Welcome to Sample Programs in Scilab! To find documentation related to the Scilab code in this repo, look [here.](https://sampleprograms.io/languages/scilab)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Scilab! To find documentation related to the Scilab code in this repo, look [here](https://sampleprograms.io/languages/scilab).
 
 ## Sample Programs List - 2/38 :disappointed:
 

@@ -1,6 +1,9 @@
 # Sample Programs in Red
 
-Welcome to Sample Programs in Red! To find documentation related to the Red code in this repo, look [here.](https://sampleprograms.io/languages/red)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Red! To find documentation related to the Red code in this repo, look [here](https://sampleprograms.io/languages/red).
 
 ## Sample Programs List - 3/38 :disappointed:
 

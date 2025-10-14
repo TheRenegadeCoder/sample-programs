@@ -1,6 +1,9 @@
 # Sample Programs in Fennel
 
-Welcome to Sample Programs in Fennel! To find documentation related to the Fennel code in this repo, look [here.](https://sampleprograms.io/languages/fennel)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Fennel! To find documentation related to the Fennel code in this repo, look [here](https://sampleprograms.io/languages/fennel).
 
 ## Sample Programs List - 3/38 :disappointed:
 

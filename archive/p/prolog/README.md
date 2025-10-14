@@ -1,6 +1,9 @@
 # Sample Programs in Prolog
 
-Welcome to Sample Programs in Prolog! To find documentation related to the Prolog code in this repo, look [here.](https://sampleprograms.io/languages/prolog)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Prolog! To find documentation related to the Prolog code in this repo, look [here](https://sampleprograms.io/languages/prolog).
 
 ## Sample Programs List - 3/38 :disappointed:
 

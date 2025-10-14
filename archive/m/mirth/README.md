@@ -1,6 +1,9 @@
 # Sample Programs in Mirth
 
-Welcome to Sample Programs in Mirth! To find documentation related to the Mirth code in this repo, look [here.](https://sampleprograms.io/languages/mirth)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Mirth! To find documentation related to the Mirth code in this repo, look [here](https://sampleprograms.io/languages/mirth).
 
 ## Sample Programs List - 2/38 :disappointed:
 

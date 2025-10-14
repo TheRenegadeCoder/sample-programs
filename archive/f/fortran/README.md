@@ -1,6 +1,9 @@
 # Sample Programs in Fortran
 
-Welcome to Sample Programs in Fortran! To find documentation related to the Fortran code in this repo, look [here.](https://sampleprograms.io/languages/fortran)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Fortran! To find documentation related to the Fortran code in this repo, look [here](https://sampleprograms.io/languages/fortran).
 
 ## Sample Programs List - 9/38 :disappointed:
 

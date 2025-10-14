@@ -1,6 +1,9 @@
 # Sample Programs in Wyvern
 
-Welcome to Sample Programs in Wyvern! To find documentation related to the Wyvern code in this repo, look [here.](https://sampleprograms.io/languages/wyvern)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Wyvern! To find documentation related to the Wyvern code in this repo, look [here](https://sampleprograms.io/languages/wyvern).
 
 ## Sample Programs List - 2/38 :disappointed:
 

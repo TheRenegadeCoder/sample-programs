@@ -1,6 +1,9 @@
 # Sample Programs in Ring
 
-Welcome to Sample Programs in Ring! To find documentation related to the Ring code in this repo, look [here.](https://sampleprograms.io/languages/ring)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Ring! To find documentation related to the Ring code in this repo, look [here](https://sampleprograms.io/languages/ring).
 
 ## Sample Programs List - 2/38 :disappointed:
 

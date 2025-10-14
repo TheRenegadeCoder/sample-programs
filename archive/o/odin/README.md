@@ -1,6 +1,9 @@
 # Sample Programs in Odin
 
-Welcome to Sample Programs in Odin! To find documentation related to the Odin code in this repo, look [here.](https://sampleprograms.io/languages/odin)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Odin! To find documentation related to the Odin code in this repo, look [here](https://sampleprograms.io/languages/odin).
 
 ## Sample Programs List - 8/38 :disappointed:
 

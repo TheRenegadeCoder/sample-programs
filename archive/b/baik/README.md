@@ -1,6 +1,9 @@
 # Sample Programs in Baik
 
-Welcome to Sample Programs in Baik! To find documentation related to the Baik code in this repo, look [here.](https://sampleprograms.io/languages/baik)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Baik! To find documentation related to the Baik code in this repo, look [here](https://sampleprograms.io/languages/baik).
 
 ## Sample Programs List - 2/38 :disappointed:
 

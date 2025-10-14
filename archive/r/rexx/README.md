@@ -1,6 +1,9 @@
 # Sample Programs in Rexx
 
-Welcome to Sample Programs in Rexx! To find documentation related to the Rexx code in this repo, look [here.](https://sampleprograms.io/languages/rexx)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Rexx! To find documentation related to the Rexx code in this repo, look [here](https://sampleprograms.io/languages/rexx).
 
 ## Sample Programs List - 5/38 :disappointed:
 

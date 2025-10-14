@@ -1,6 +1,9 @@
 # Sample Programs in Quackery
 
-Welcome to Sample Programs in Quackery! To find documentation related to the Quackery code in this repo, look [here.](https://sampleprograms.io/languages/quackery)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Quackery! To find documentation related to the Quackery code in this repo, look [here](https://sampleprograms.io/languages/quackery).
 
 ## Sample Programs List - 2/38 :disappointed:
 

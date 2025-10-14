@@ -1,6 +1,9 @@
 # Sample Programs in Clojure
 
-Welcome to Sample Programs in Clojure! To find documentation related to the Clojure code in this repo, look [here.](https://sampleprograms.io/languages/clojure)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Clojure! To find documentation related to the Clojure code in this repo, look [here](https://sampleprograms.io/languages/clojure).
 
 ## Sample Programs List - 6/38 :disappointed:
 

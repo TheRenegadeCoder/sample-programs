@@ -1,6 +1,9 @@
 # Sample Programs in Little
 
-Welcome to Sample Programs in Little! To find documentation related to the Little code in this repo, look [here.](https://sampleprograms.io/languages/little)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Little! To find documentation related to the Little code in this repo, look [here](https://sampleprograms.io/languages/little).
 
 ## Sample Programs List - 2/38 :disappointed:
 

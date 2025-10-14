@@ -1,6 +1,9 @@
 # Sample Programs in Javascript
 
-Welcome to Sample Programs in Javascript! To find documentation related to the Javascript code in this repo, look [here.](https://sampleprograms.io/languages/javascript)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Javascript! To find documentation related to the Javascript code in this repo, look [here](https://sampleprograms.io/languages/javascript).
 
 ## Sample Programs List - 33/38 :smile:
 

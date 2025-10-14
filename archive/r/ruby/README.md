@@ -1,6 +1,9 @@
 # Sample Programs in Ruby
 
-Welcome to Sample Programs in Ruby! To find documentation related to the Ruby code in this repo, look [here.](https://sampleprograms.io/languages/ruby)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Ruby! To find documentation related to the Ruby code in this repo, look [here](https://sampleprograms.io/languages/ruby).
 
 ## Sample Programs List - 19/38 :relaxed:
 

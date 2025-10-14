@@ -1,6 +1,9 @@
 # Sample Programs in Grain
 
-Welcome to Sample Programs in Grain! To find documentation related to the Grain code in this repo, look [here.](https://sampleprograms.io/languages/grain)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Grain! To find documentation related to the Grain code in this repo, look [here](https://sampleprograms.io/languages/grain).
 
 ## Sample Programs List - 2/38 :disappointed:
 

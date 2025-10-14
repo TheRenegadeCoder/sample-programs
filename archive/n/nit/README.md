@@ -1,6 +1,9 @@
 # Sample Programs in Nit
 
-Welcome to Sample Programs in Nit! To find documentation related to the Nit code in this repo, look [here.](https://sampleprograms.io/languages/nit)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Nit! To find documentation related to the Nit code in this repo, look [here](https://sampleprograms.io/languages/nit).
 
 ## Sample Programs List - 2/38 :disappointed:
 

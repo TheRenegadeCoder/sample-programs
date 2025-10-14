@@ -1,6 +1,9 @@
 # Sample Programs in R
 
-Welcome to Sample Programs in R! To find documentation related to the R code in this repo, look [here.](https://sampleprograms.io/languages/r)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in R! To find documentation related to the R code in this repo, look [here](https://sampleprograms.io/languages/r).
 
 ## Sample Programs List - 10/38 :thinking:
 

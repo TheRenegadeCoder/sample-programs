@@ -1,6 +1,9 @@
 # Sample Programs in Moonscript
 
-Welcome to Sample Programs in Moonscript! To find documentation related to the Moonscript code in this repo, look [here.](https://sampleprograms.io/languages/moonscript)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Moonscript! To find documentation related to the Moonscript code in this repo, look [here](https://sampleprograms.io/languages/moonscript).
 
 ## Sample Programs List - 5/38 :disappointed:
 

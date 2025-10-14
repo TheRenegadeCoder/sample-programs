@@ -1,6 +1,9 @@
 # Sample Programs in Mathematica
 
-Welcome to Sample Programs in Mathematica! To find documentation related to the Mathematica code in this repo, look [here.](https://sampleprograms.io/languages/mathematica)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Mathematica! To find documentation related to the Mathematica code in this repo, look [here](https://sampleprograms.io/languages/mathematica).
 
 ## Sample Programs List - 36/38 :smile:
 

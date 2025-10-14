@@ -1,6 +1,9 @@
 # Sample Programs in Phix
 
-Welcome to Sample Programs in Phix! To find documentation related to the Phix code in this repo, look [here.](https://sampleprograms.io/languages/phix)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Phix! To find documentation related to the Phix code in this repo, look [here](https://sampleprograms.io/languages/phix).
 
 ## Sample Programs List - 2/38 :disappointed:
 

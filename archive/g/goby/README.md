@@ -1,6 +1,9 @@
 # Sample Programs in Goby
 
-Welcome to Sample Programs in Goby! To find documentation related to the Goby code in this repo, look [here.](https://sampleprograms.io/languages/goby)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Goby! To find documentation related to the Goby code in this repo, look [here](https://sampleprograms.io/languages/goby).
 
 ## Sample Programs List - 2/38 :disappointed:
 

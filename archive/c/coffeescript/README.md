@@ -1,6 +1,9 @@
 # Sample Programs in Coffeescript
 
-Welcome to Sample Programs in Coffeescript! To find documentation related to the Coffeescript code in this repo, look [here.](https://sampleprograms.io/languages/coffeescript)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Coffeescript! To find documentation related to the Coffeescript code in this repo, look [here](https://sampleprograms.io/languages/coffeescript).
 
 ## Sample Programs List - 7/38 :disappointed:
 

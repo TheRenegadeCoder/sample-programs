@@ -1,6 +1,9 @@
 # Sample Programs in Shen
 
-Welcome to Sample Programs in Shen! To find documentation related to the Shen code in this repo, look [here.](https://sampleprograms.io/languages/shen)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Shen! To find documentation related to the Shen code in this repo, look [here](https://sampleprograms.io/languages/shen).
 
 ## Sample Programs List - 2/38 :disappointed:
 

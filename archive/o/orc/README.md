@@ -1,6 +1,9 @@
 # Sample Programs in Orc
 
-Welcome to Sample Programs in Orc! To find documentation related to the Orc code in this repo, look [here.](https://sampleprograms.io/languages/orc)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Orc! To find documentation related to the Orc code in this repo, look [here](https://sampleprograms.io/languages/orc).
 
 ## Sample Programs List - 2/38 :disappointed:
 

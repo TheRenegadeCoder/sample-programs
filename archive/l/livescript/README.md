@@ -1,6 +1,9 @@
 # Sample Programs in Livescript
 
-Welcome to Sample Programs in Livescript! To find documentation related to the Livescript code in this repo, look [here.](https://sampleprograms.io/languages/livescript)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Livescript! To find documentation related to the Livescript code in this repo, look [here](https://sampleprograms.io/languages/livescript).
 
 ## Sample Programs List - 2/38 :disappointed:
 

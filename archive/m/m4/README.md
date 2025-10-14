@@ -1,6 +1,9 @@
 # Sample Programs in M4
 
-Welcome to Sample Programs in M4! To find documentation related to the M4 code in this repo, look [here.](https://sampleprograms.io/languages/m4)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in M4! To find documentation related to the M4 code in this repo, look [here](https://sampleprograms.io/languages/m4).
 
 ## Sample Programs List - 29/38 :smile:
 

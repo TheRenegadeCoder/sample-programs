@@ -1,6 +1,9 @@
 # Sample Programs in Bracmat
 
-Welcome to Sample Programs in Bracmat! To find documentation related to the Bracmat code in this repo, look [here.](https://sampleprograms.io/languages/bracmat)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Bracmat! To find documentation related to the Bracmat code in this repo, look [here](https://sampleprograms.io/languages/bracmat).
 
 ## Sample Programs List - 2/38 :disappointed:
 

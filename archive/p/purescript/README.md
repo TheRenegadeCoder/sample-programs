@@ -1,6 +1,9 @@
 # Sample Programs in Purescript
 
-Welcome to Sample Programs in Purescript! To find documentation related to the Purescript code in this repo, look [here.](https://sampleprograms.io/languages/purescript)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Purescript! To find documentation related to the Purescript code in this repo, look [here](https://sampleprograms.io/languages/purescript).
 
 ## Sample Programs List - 2/38 :disappointed:
 

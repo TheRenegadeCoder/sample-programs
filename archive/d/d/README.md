@@ -1,6 +1,9 @@
 # Sample Programs in D
 
-Welcome to Sample Programs in D! To find documentation related to the D code in this repo, look [here.](https://sampleprograms.io/languages/d)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in D! To find documentation related to the D code in this repo, look [here](https://sampleprograms.io/languages/d).
 
 ## Sample Programs List - 4/38 :disappointed:
 

@@ -1,6 +1,9 @@
 # Sample Programs in Eiffel
 
-Welcome to Sample Programs in Eiffel! To find documentation related to the Eiffel code in this repo, look [here.](https://sampleprograms.io/languages/eiffel)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Eiffel! To find documentation related to the Eiffel code in this repo, look [here](https://sampleprograms.io/languages/eiffel).
 
 ## Sample Programs List - 3/38 :disappointed:
 

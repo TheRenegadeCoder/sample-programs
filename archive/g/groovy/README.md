@@ -1,6 +1,9 @@
 # Sample Programs in Groovy
 
-Welcome to Sample Programs in Groovy! To find documentation related to the Groovy code in this repo, look [here.](https://sampleprograms.io/languages/groovy)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Groovy! To find documentation related to the Groovy code in this repo, look [here](https://sampleprograms.io/languages/groovy).
 
 ## Sample Programs List - 9/38 :disappointed:
 

@@ -1,6 +1,9 @@
 # Sample Programs in Smalltalk
 
-Welcome to Sample Programs in Smalltalk! To find documentation related to the Smalltalk code in this repo, look [here.](https://sampleprograms.io/languages/smalltalk)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Smalltalk! To find documentation related to the Smalltalk code in this repo, look [here](https://sampleprograms.io/languages/smalltalk).
 
 ## Sample Programs List - 3/38 :disappointed:
 

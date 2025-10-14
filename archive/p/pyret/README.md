@@ -1,6 +1,9 @@
 # Sample Programs in Pyret
 
-Welcome to Sample Programs in Pyret! To find documentation related to the Pyret code in this repo, look [here.](https://sampleprograms.io/languages/pyret)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Pyret! To find documentation related to the Pyret code in this repo, look [here](https://sampleprograms.io/languages/pyret).
 
 ## Sample Programs List - 4/38 :disappointed:
 

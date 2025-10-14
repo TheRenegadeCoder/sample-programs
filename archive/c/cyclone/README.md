@@ -1,6 +1,9 @@
 # Sample Programs in Cyclone
 
-Welcome to Sample Programs in Cyclone! To find documentation related to the Cyclone code in this repo, look [here.](https://sampleprograms.io/languages/cyclone)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Cyclone! To find documentation related to the Cyclone code in this repo, look [here](https://sampleprograms.io/languages/cyclone).
 
 ## Sample Programs List - 2/38 :disappointed:
 

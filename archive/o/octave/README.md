@@ -1,6 +1,9 @@
 # Sample Programs in Octave
 
-Welcome to Sample Programs in Octave! To find documentation related to the Octave code in this repo, look [here.](https://sampleprograms.io/languages/octave)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Octave! To find documentation related to the Octave code in this repo, look [here](https://sampleprograms.io/languages/octave).
 
 ## Sample Programs List - 14/38 :thinking:
 

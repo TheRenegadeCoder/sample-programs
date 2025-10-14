@@ -1,6 +1,9 @@
 # Sample Programs in Ada
 
-Welcome to Sample Programs in Ada! To find documentation related to the Ada code in this repo, look [here.](https://sampleprograms.io/languages/ada)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Ada! To find documentation related to the Ada code in this repo, look [here](https://sampleprograms.io/languages/ada).
 
 ## Sample Programs List - 3/38 :disappointed:
 

@@ -1,6 +1,9 @@
 # Sample Programs in Verve
 
-Welcome to Sample Programs in Verve! To find documentation related to the Verve code in this repo, look [here.](https://sampleprograms.io/languages/verve)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Verve! To find documentation related to the Verve code in this repo, look [here](https://sampleprograms.io/languages/verve).
 
 ## Sample Programs List - 3/38 :disappointed:
 

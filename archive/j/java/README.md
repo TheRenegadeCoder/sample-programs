@@ -1,6 +1,9 @@
 # Sample Programs in Java
 
-Welcome to Sample Programs in Java! To find documentation related to the Java code in this repo, look [here.](https://sampleprograms.io/languages/java)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Java! To find documentation related to the Java code in this repo, look [here](https://sampleprograms.io/languages/java).
 
 ## Sample Programs List - 26/38 :relaxed:
 

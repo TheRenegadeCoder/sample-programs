@@ -1,6 +1,9 @@
 # Sample Programs in Boo
 
-Welcome to Sample Programs in Boo! To find documentation related to the Boo code in this repo, look [here.](https://sampleprograms.io/languages/boo)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Boo! To find documentation related to the Boo code in this repo, look [here](https://sampleprograms.io/languages/boo).
 
 ## Sample Programs List - 4/38 :disappointed:
 

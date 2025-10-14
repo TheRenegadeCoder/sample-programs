@@ -1,6 +1,9 @@
 # Sample Programs in Befunge
 
-Welcome to Sample Programs in Befunge! To find documentation related to the Befunge code in this repo, look [here.](https://sampleprograms.io/languages/befunge)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Befunge! To find documentation related to the Befunge code in this repo, look [here](https://sampleprograms.io/languages/befunge).
 
 ## Sample Programs List - 4/38 :disappointed:
 

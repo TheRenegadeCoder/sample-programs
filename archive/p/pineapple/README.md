@@ -1,6 +1,9 @@
 # Sample Programs in Pineapple
 
-Welcome to Sample Programs in Pineapple! To find documentation related to the Pineapple code in this repo, look [here.](https://sampleprograms.io/languages/pineapple)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Pineapple! To find documentation related to the Pineapple code in this repo, look [here](https://sampleprograms.io/languages/pineapple).
 
 ## Sample Programs List - 3/38 :disappointed:
 

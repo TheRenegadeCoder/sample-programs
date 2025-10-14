@@ -1,6 +1,9 @@
 # Sample Programs in Beef
 
-Welcome to Sample Programs in Beef! To find documentation related to the Beef code in this repo, look [here.](https://sampleprograms.io/languages/beef)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Beef! To find documentation related to the Beef code in this repo, look [here](https://sampleprograms.io/languages/beef).
 
 ## Sample Programs List - 38/38 :partying_face:
 

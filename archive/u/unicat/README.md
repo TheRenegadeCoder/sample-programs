@@ -1,6 +1,9 @@
 # Sample Programs in Unicat
 
-Welcome to Sample Programs in Unicat! To find documentation related to the Unicat code in this repo, look [here.](https://sampleprograms.io/languages/unicat)
+> [!NOTE]
+> **This page is auto-generated. DO NOT EDIT!**
+
+Welcome to Sample Programs in Unicat! To find documentation related to the Unicat code in this repo, look [here](https://sampleprograms.io/languages/unicat).
 
 ## Sample Programs List - 4/38 :disappointed:
 
