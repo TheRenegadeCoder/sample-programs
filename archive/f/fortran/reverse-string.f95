@@ -1,13 +1,34 @@
-program reversestring
-character(len=100) :: argument
-character(len=:), allocatable :: buff, reversed
-integer :: i, n
-call GET_COMMAND_ARGUMENT(1,argument)
-allocate (buff, mold=argument)
-n = len(argument)
-do i = 0, n - 1
-    buff(n-i : n-i) = argument(i+1 : i+1)
-end do
-reversed = adjustl(trim(buff))
-write(*,'(g0.8)')reversed
-end program reversestring
+program reverse_string
+   implicit none
+   character(len=:), allocatable :: arg, rev
+   integer :: i, n, error
+
+   if (command_argument_count() < 1) then
+      print '("")'
+      stop
+   end if
+
+   ! Get length of argument
+   call get_command_argument(1, length=n, status=error)
+   if (error /= 0 .or. n == 0) then
+      print '("")'
+      stop
+   end if
+
+   ! Allocate and read argument
+   allocate(character(len=n) :: arg)
+   call get_command_argument(1, arg, status=error)
+   if (error /= 0) then
+      print '("")'
+      deallocate(arg)
+      stop 0
+   end if
+
+   ! Allocate and create reversed string
+   allocate(character(len=n) :: rev)
+   do i = 1, n
+      rev(i:i) = arg(n-i+1:n-i+1)
+   end do
+
+   print '(A)', rev
+end program reverse_string
