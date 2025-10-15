@@ -1,55 +1,43 @@
-! In program name, - is not allowed
-! works until 184 (Stop is not implemented)
 program fibonacci
+   implicit none
+   integer(kind=8) :: prev, curr, next, n, i
+   character(len=32) :: arg
+   integer :: ios
 
-! Create the variables
-character(26) :: low = 'abcdefghijklmnopqrstuvwxyz'                 ! Defines all lowercase letters. This is used to later scan for letters in the input as a test.
-character(26) :: cap = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'                 ! Defines all uppercase letters. This is used to later scan for letters in the input as a test.
-integer(kind = 16) :: previousnumber, currentnumber, addednumber, uppers, lowers, loop
-character(len=10) :: argument                                      ! Defines the object we will be recieving. It will arrive as a charcters as the expectation is keyboard input.
-                                                                   ! Fortran knows that 'argument' is user input, so we never need to set it to anything
+   if (command_argument_count() /= 1) then
+      call usage()
+      return
+   endif
 
-! Define variables.
-previousnumber = 0
-currentnumber = 1
-addednumber = 0
+   call get_command_argument(1, arg)
+   arg = adjustl(trim(arg))
+   if (len_trim(arg) == 0) then
+      call usage()
+      return
+   endif
 
-IF(COMMAND_ARGUMENT_COUNT().NE.1)THEN
-    write(*,'(g0.8)')"Usage: please input the count of fibonacci numbers to output"
-    STOP
-ENDIF
-  
-CALL GET_COMMAND_ARGUMENT(1,argument)
-    if (argument == "") then
-    write(*,'(g0.8)')"Usage: please input the count of fibonacci numbers to output"
-    STOP
-endif
+   read(arg, *, iostat=ios) n
+   if (ios /= 0 .or. n < 0) then
+      call usage()
+      return
+   endif
 
-! Tests to make sure we have recieved NUMBERS and not anything else. These act as flags that will later end the program.
-uppers = scan(argument, cap)    ! This will look for uppercase letters in the recieved string. If any letter is uppercase, uppers will be updated.
-lowers = scan(argument, low)    ! This will look for lowercase letters in the recieved string. If any letter is lowercase, lowers will be updated.
+   if (n == 0) return
 
-! Will see if there are any uppercase, if so, print an error.
-if (uppers > 0) then            
-  write(*,'(g0.8)')"Usage: please input the count of fibonacci numbers to output"
-  STOP
-endif
+   prev = 0
+   curr = 1
 
-! Will see if there are any lowercase, if so, print an error.
-if (lowers > 0) then            
-  write(*,'(g0.8)')"Usage: please input the count of fibonacci numbers to output"
-  STOP
-endif
+   do i = 1, n
+      write(*,'(I0,": ",I0)') i, curr
+      next = prev + curr
+      prev = curr
+      curr = next
+   end do
 
+contains
 
-! If all checks pass, we will enter this section.  If non pass, we will not reach this point
-! Enter a loop
-read (argument, '(I10)') loop
-do i = 1, loop
-    write(*,'(5g0)') i, ": ", currentnumber         ! Print current iteration, and current number
-    addednumber = previousnumber + currentnumber    ! Replace the value of 'added number' with both 'current number' and 'previous number'
-    previousnumber = currentnumber                  ! Replace the value of 'previous number' with 'current number'
-    currentnumber = addednumber                     ! Replace the value of 'current number' with 'added number'
-end do
+   subroutine usage()
+      write(*,'(A)') "Usage: please input the count of fibonacci numbers to output"
+   end subroutine usage
 
 end program fibonacci
