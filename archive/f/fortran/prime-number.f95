@@ -1,83 +1,68 @@
-! In program name, - is not allowed
-!works till 100938872634753805466563377840038871040
-! Commenting out of the reasonable bounds for calculation
 program prime_check
-  character(len=10) :: argument
-  Character(26) :: low = 'abcdefghijklmnopqrstuvwxyz'
-  Character(26) :: cap = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-  integer :: check_capital_letters, check_small_letters, i, decimal_check, even_check, remainder, flag_prime
-  integer(kind = 16):: number
-  ! Anything not equal to single argument, Print Error
-  IF(COMMAND_ARGUMENT_COUNT().NE.1)THEN
-    write(*,'(g0.8)')"Usage: please input a non-negative integer"
-    STOP
-  ENDIF
-  
-  CALL GET_COMMAND_ARGUMENT(1,argument)
-  if (argument == "") then
-    write(*,'(g0.8)')"Usage: please input a non-negative integer"
-    STOP
-  endif
-  ! Scan for letters
-  check_capital_letters = scan(argument, cap)
-  check_small_letters = scan(argument, low)
-  decimal_check = scan(argument, '.')
-  ! If capital letters exist, print error
-  if (check_capital_letters > 0) then
-    write(*,'(g0.8)')"Usage: please input a non-negative integer"
-    STOP
-  endif
-  ! If small letters exist, print error
-  if (check_small_letters > 0) then
-    write(*,'(g0.8)')"Usage: please input a non-negative integer"
-    STOP
-  endif
+   implicit none
+   integer :: argc, ios, i
+   character(len=256) :: arg
+   integer :: number
 
-  ! Decimal Check
-  if (decimal_check > 0) then
-    write(*,'(g0.8)')"Usage: please input a non-negative integer"
-    STOP
-  endif
-  ! read the cmd line arg into number
-  read (argument, '(I10)') number
+   argc = command_argument_count()
+   if (argc /= 1) call usage()
 
-  ! negative number
-  if (number < 0) then
-    write(*,'(g0.8)')"Usage: please input a non-negative integer"
-    STOP
-  endif
+   call get_command_argument(1, arg)
+   arg = adjustl(trim(arg))
+   if (len_trim(arg) == 0) call usage()
 
-  ! ! Maximum Limit
-  ! if (number > 100938872634753805466563377840038871040) then
-  !   write(*,'(g0.8)')"Input is out of the reasonable bounds for calculation"
-  !   STOP
-  ! endif
+   do i = 1, len_trim(arg)
+      if (arg(i:i) < '0' .or. arg(i:i) > '9') call usage()
+   end do
 
-  ! 2 is Prime
-  if (number == 2) then
-    write(*,'(g0.8)')"Prime"
-    STOP
-  endif
-  ! 0, 1 and even numbers are Even
-  even_check = modulo(number, 2)
-  if ((number == 0) .or. (number == 1) .or. ( even_check == 0 )) then
-    write(*,'(g0.8)')"Composite"
-    STOP
-  endif
-  ! Check Prime
-  max = number / 2
-  flag_prime = 1
-  do i = 3, max
-    remainder = modulo(number, i)
-    if (remainder == 0) then
-      flag_prime = 0
-      exit
-    end if
-  end do
+   read(arg, *, iostat=ios) number
+   if (ios /= 0 .or. number < 0) call usage()
 
-  if(flag_prime == 1) then
-    write(*,'(g0.8)') "Prime"
-  else 
-    write(*,'(g0.8)') "Composite"
-  end if
-end program
+   if (is_prime(number)) then
+      print *, "Prime"
+   else
+      print *, "Composite"
+   end if
+
+contains
+   subroutine usage()
+      print *, "Usage: please input a non-negative integer"
+      stop
+   end subroutine usage
+
+   pure function is_prime(n) result(prime)
+      integer, intent(in) :: n
+      logical :: prime
+      integer :: k, w, offsets(8)
+
+      ! Wheel offsets for 30k + {1,7,11,13,17,19,23,29}
+      offsets = [1, 7, 11, 13, 17, 19, 23, 29]
+
+      if (n < 2) then
+         prime = .false.
+         return
+      elseif (n <= 3) then
+         prime = .true.
+         return
+      elseif (mod(n,2) == 0 .or. mod(n,3) == 0 .or. mod(n,5) == 0) then
+         prime = .false.
+         return
+      end if
+
+      prime = .true.
+      w = 0
+      k = 7   ! start from the first wheel candidate after 5
+
+      do while (k*k <= n)
+         do w = 1, 8
+            if (mod(n, k + offsets(w) - 1) == 0) then
+               prime = .false.
+               return
+            end if
+         end do
+         k = k + 30
+      end do
+
+   end function is_prime
+
+end program prime_check
