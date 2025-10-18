@@ -102,6 +102,8 @@ dnl   found_node = -1
 dnl
 dnl   // Start depth first search at root (node 0)
 dnl   depth_first_search_rec(graph_varname, target, 0)
+dnl
+dnl  return found_node
 define(`depth_first_search',
 `pushdef(`visited', `')dnl
 pushdef(`found_node', `-1')dnl
