@@ -14,7 +14,7 @@ dnl 2D versions of "array_get" and "array_set"
 dnl array2_get(varname, idx1, idx2)
 define(`array2_get', `defn(format(``%s[%s][%s]'', `$1', `$2', `$3'))')
 
-dnl array_set(varname, idx, value)
+dnl array2_set(varname, idx1, idx2, value)
 define(`array2_set', `define(format(``%s[%s][%s]'', `$1', `$2', `$3'), `$4')')
 
 dnl is_valid(n)
