@@ -2,13 +2,13 @@
 args <- commandArgs(trailingOnly = TRUE)
 
 if (length(args) == 0 || args[1] == "" || is.null(args[1]) ){
-  cat("Error: Please provide a positive integer.")
+  cat("Usage: please input a non-negative integer")
 }
 
 n <- as.numeric(args[1])
 
 if(is.na(n) || n < 1){
-  cat("Error: Please provide a positive integer.")
+  cat("Usage: please input a non-negative integer")
   q(status=1)
 } else if (n == 0){
   q(status = 1)
