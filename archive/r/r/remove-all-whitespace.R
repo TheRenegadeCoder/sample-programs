@@ -1,7 +1,7 @@
 # Remove all white spaces
 args <- commandArgs(trailingOnly = TRUE)
 
-if (length(args) == 0 || args[1] = "" || is.null(args[1]) ){
+if (length(args) == 0 || args[1] == "" || is.null(args[1]) ){
   cat("Error: Please provide a positive integer.")
 }
 
