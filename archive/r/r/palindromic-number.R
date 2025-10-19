@@ -5,7 +5,7 @@ if (length(args) == 0 || args[1] == "" || is.null(args[1]) ){
   cat("Error: Please provide a positive integer.")
 }
 
-n <- as.numeric(args[1)
+n <- as.numeric(args[1))
 
 if(is.na(n) || n < 1){
   cat("Error: Please provide a positive integer.")
