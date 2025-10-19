@@ -1,4 +1,4 @@
-# Remove all white space
+# Remove all white spaces
 args <- commandArgs(trailingOnly = TRUE)
 
 if (length(args) == 0 || args[1] = "" || is.null(args[1]) ){
