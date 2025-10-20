@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in M4! To find documentation related to the M4 code in this repo, look [here](https://sampleprograms.io/languages/m4).
 
-## Sample Programs List - 29/38 :smile:
+## Sample Programs List - 30/38 :smile:
 
 In this section, we feature a list of completed and missing programs in M4. See above for the current amount of completed programs in M4. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -17,6 +17,7 @@ Below, you'll find a list of completed code snippets in M4. Code snippets preced
 - :warning: [Binary Search in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+binary+search+m4) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :warning: [Bubble Sort in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+m4) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :warning: [Capitalize in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+m4) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :warning: [Depth First Search in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+depth+first+search+m4) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :warning: [Duplicate Character Counter in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+m4) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :warning: [Even Odd in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+m4) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :warning: [Factorial in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+m4) [[Requirements](https://sampleprograms.io/projects/factorial)]
@@ -49,7 +50,6 @@ The following list contains all of the approved programs that are not currently 
 
 - :x: [Base64 Encode Decode](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,base64+encode+decode&template=code-snippet-request.md&title=Add+Base64+Encode+Decode+in+M4) [[Requirements](https://sampleprograms.io/projects/base64-encode-decode)]
 - :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,convex+hull&template=code-snippet-request.md&title=Add+Convex+Hull+in+M4) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
-- :x: [Depth First Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,depth+first+search&template=code-snippet-request.md&title=Add+Depth+First+Search+in+M4) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,dijkstra&template=code-snippet-request.md&title=Add+Dijkstra+in+M4) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :x: [File Input Output](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,file+input+output&template=code-snippet-request.md&title=Add+File+Input+Output+in+M4) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,job+sequencing&template=code-snippet-request.md&title=Add+Job+Sequencing+in+M4) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
