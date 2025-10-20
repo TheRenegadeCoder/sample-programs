@@ -1,9 +1,0 @@
-folder:
-  extension: ".fs"
-  naming: "pascal"
-
-container:
-  image: "fsharp"
-  tag: "10-netcore"
-  build: "fsharpc --standalone -o {{ source.name }} {{ source.name}}{{ source.extension }}"
-  cmd: "mono {{ source.name }}"

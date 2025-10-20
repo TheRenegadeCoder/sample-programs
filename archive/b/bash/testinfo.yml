@@ -1,8 +1,0 @@
-folder:
-  extension: ".sh"
-  naming: "hyphen"
-
-container:
-  image: "bash"
-  tag: "5"
-  cmd: "bash {{ source.name }}{{ source.extension }}"

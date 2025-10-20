@@ -1,2 +1,0 @@
-let io = import! std.io
-io.print "Hello, World!\n"

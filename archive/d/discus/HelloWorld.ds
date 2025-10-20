@@ -1,7 +1,0 @@
-module Main
-import System.IO.Console
-
-where
-
-main ()
- = do   writel "Hello, World!"

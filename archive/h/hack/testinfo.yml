@@ -1,8 +1,0 @@
-folder:
-  extension: ".hack"
-  naming: "hyphen"
-
-container:
-  image: "hhvm/hhvm"
-  tag: "2023.02.17"
-  cmd: "hhvm {{ source.name }}{{ source.extension }}"

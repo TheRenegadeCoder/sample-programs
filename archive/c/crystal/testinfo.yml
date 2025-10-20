@@ -1,8 +1,0 @@
-folder:
-  extension: ".cr"
-  naming: "hyphen"
-
-container:
-  image: "crystallang/crystal"
-  tag: "1.9.2-alpine"
-  cmd: "crystal {{ source.name }}{{ source.extension }}"

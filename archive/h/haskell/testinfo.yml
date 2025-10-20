@@ -1,9 +1,0 @@
-folder:
-  extension: ".hs"
-  naming: "hyphen"
-
-container:
-  image: "haskell"
-  tag: "8.6"
-  build: "ghc {{ source.name }}{{ source.extension }}"
-  cmd: "./{{ source.name }}"

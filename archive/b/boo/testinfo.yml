@@ -1,9 +1,0 @@
-folder:
-  extension: ".boo"
-  naming: "hyphen"
-
-container:
-  image: "rzuckerm/boo"
-  tag: "0.9.7.0-1"
-  cmd: |
-    booi "{{ source.name }}{{ source.extension }}"

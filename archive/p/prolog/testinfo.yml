@@ -1,8 +1,0 @@
-folder:
-  extension: ".pl"
-  naming: "hyphen"
-
-container:
-  image: "swipl"
-  tag: "stable"
-  cmd: "swipl -s {{ source.name }}{{ source.extension }}"

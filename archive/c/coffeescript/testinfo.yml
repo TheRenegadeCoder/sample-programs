@@ -1,8 +1,0 @@
-folder:
-  extension: ".coffee"
-  naming: "hyphen"
-
-container:
-  image: "codesignal/coffeescript"
-  tag: "v7.1"
-  cmd: "coffee {{ source.name }}{{ source.extension }}"

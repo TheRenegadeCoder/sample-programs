@@ -1,8 +1,0 @@
-folder:
-  extension: ".moon"
-  naming: "hyphen"
-
-container:
-  image: "adamfgreen/moonscript"
-  tag: "0.4"
-  cmd: "moon {{ source.name }}{{ source.extension }}"

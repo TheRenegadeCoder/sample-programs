@@ -1,1 +1,0 @@
-mprintf('%s', 'Hello, World!')

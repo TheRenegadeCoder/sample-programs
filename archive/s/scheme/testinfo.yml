@@ -1,8 +1,0 @@
-folder:
-  extension: ".scm"
-  naming: "hyphen"
-
-container:
-  image: "rzuckerm/scheme"
-  tag: "0.9.15-1"
-  cmd: "gosh {{ source.name }}{{ source.extension }}"

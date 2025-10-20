@@ -1,8 +1,0 @@
-folder:
-  extension: ".malbolge"
-  naming: "hyphen"
-
-container:
-  image: "esolang/malbolge"
-  tag: "latest"
-  cmd: "malbolge {{ source.name }}{{source.extension}}"

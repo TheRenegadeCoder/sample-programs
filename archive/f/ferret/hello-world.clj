@@ -1,2 +1,0 @@
-(do
-  (println "Hello, World!"))

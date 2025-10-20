@@ -1,1 +1,0 @@
-printf(($gl$, "Hello, World!"))

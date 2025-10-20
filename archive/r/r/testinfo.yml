@@ -1,8 +1,0 @@
-folder:
-  extension: ".R"
-  naming: "hyphen"
-
-container:
-  image: "r-base"
-  tag: "4.3.0"
-  cmd: "Rscript {{ source.name }}{{ source.extension }}"

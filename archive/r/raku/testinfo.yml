@@ -1,8 +1,0 @@
-folder:
-  extension: ".raku"
-  naming: "underscore"
-
-container:
-  image: "rakudo-star"
-  tag: "alpine"
-  cmd: "raku {{ source.name }}{{ source.extension }}"

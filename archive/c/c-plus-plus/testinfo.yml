@@ -1,9 +1,0 @@
-folder:
-  extension: ".cpp"
-  naming: "hyphen"
-
-container:
-  image: "gcc"
-  tag: "8.3" 
-  build: "g++ -o {{ source.name }} {{ source.name }}{{ source.extension }}"
-  cmd: "./{{ source.name }}"

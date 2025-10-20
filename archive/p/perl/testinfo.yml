@@ -1,8 +1,0 @@
-folder:
-  extension: ".pl"
-  naming: "hyphen"
-
-container:
-  image: "perl"
-  tag: "5.42-slim"
-  cmd: "perl {{ source.name }}{{ source.extension }}"

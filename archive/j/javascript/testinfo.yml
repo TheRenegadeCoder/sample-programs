@@ -1,8 +1,0 @@
-folder:
-  extension: ".js"
-  naming: "hyphen"
-
-container:
-  image: "node"
-  tag: "20-alpine"
-  cmd: "node {{ source.name }}{{ source.extension }}"

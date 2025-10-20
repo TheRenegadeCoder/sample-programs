@@ -1,8 +1,0 @@
-folder:
-  extension: ".l"
-  naming: "hyphen"
-
-container:
-  image: "progit/pil-alpine-minimal"
-  tag: "latest"
-  cmd: "/picoLisp/pil {{ source.name }}{{ source.extension }}"

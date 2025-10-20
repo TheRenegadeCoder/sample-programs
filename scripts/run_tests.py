@@ -2,7 +2,7 @@ import argparse
 import sys
 from collections import defaultdict
 from pathlib import Path
-from typing import Iterable, List, Set, NoReturn, Generator, Optional
+from typing import Iterable, List, Set, NoReturn, Generator, Optional, Dict, Any
 
 from glotter.batch import batch
 from glotter.download import download, remove_images
@@ -29,6 +29,13 @@ def should_run_everything(event: Optional[str], paths_changed: Set[Path]) -> boo
 
 
 def run_everything(parsed_args: argparse.Namespace) -> NoReturn:
+    if parsed_args.list_only:
+        print(
+            "=== Previewing full test suite ===\n"
+            f"Would run all batches (num_batches={parsed_args.num_batches}).\n",
+            flush=True,
+        )
+        sys.exit(0)
     print("=== Running all tests ===\n", flush=True)
     glotter_args = argparse.Namespace(
         num_batches=parsed_args.num_batches,
@@ -45,6 +52,22 @@ def should_run_languages(paths_changed: Set[Path]) -> bool:
 
 def run_languages(paths_changed: Set[Path], parsed_args: argparse.Namespace) -> NoReturn:
     languages = _get_languages(paths_changed)
+    if parsed_args.list_only:
+        if not languages:
+            print("No languages selected.", flush=True)
+            sys.exit(0)
+        print(
+            f"=== Previewing tests for {', '.join(languages)} ===\n",
+            flush=True,
+        )
+        for index, language_set in enumerate(
+            _do_batches(languages, parsed_args, list_only=True), start=1
+        ):
+            print(
+                f"Batch {index}: {', '.join(sorted(language_set))}",
+                flush=True,
+            )
+        sys.exit(0)
     print(f"=== Running tests for {', '.join(languages)} ===\n", flush=True)
     exit_code = 0
     for language_set in _do_batches(languages, parsed_args):
@@ -64,32 +87,41 @@ def should_run_sample_programs(paths_changed: Set[Path]) -> bool:
 
 
 def run_sample_programs(paths_changed: Set[Path], parsed_args: argparse.Namespace) -> NoReturn:
+    languages = _get_languages(paths_changed)
+    all_sources = get_sources(Settings().source_root)
+    abs_paths_changed = {path.absolute() for path in paths_changed}
+    sample_programs = _get_sample_programs(languages, all_sources, abs_paths_changed)
+    if parsed_args.list_only:
+        if not languages:
+            print("No sample programs selected.", flush=True)
+            sys.exit(0)
+        print(
+            f"=== Previewing tests for {', '.join(sorted(str(path) for path in paths_changed))} ===\n",
+            flush=True,
+        )
+        if not sample_programs:
+            print("No sample programs selected.", flush=True)
+        else:
+            for language, projects in sample_programs.items():
+                print(f"{language}: {', '.join(projects)}", flush=True)
+            print("", flush=True)
+            for index, language_set in enumerate(
+                _do_batches(languages, parsed_args, list_only=True), start=1
+            ):
+                print(
+                    f"Batch {index}: {', '.join(sorted(language_set))}",
+                    flush=True,
+                )
+        sys.exit(0)
     print(
         f"=== Running tests for {', '.join(sorted(str(path) for path in paths_changed))} ===\n",
         flush=True,
     )
-    languages = _get_languages(paths_changed)
-    all_sources = get_sources(Settings().source_root)
-    abs_paths_changed = {path.absolute() for path in paths_changed}
     exit_code = 0
     for language_set in _do_batches(languages, parsed_args):
-        # Get selected language/project combinations for this language set
-        languages_and_projects = sorted(
-            (source.language.lower(), project)
-            for project, sources in all_sources.items()
-            for source in sources
-            if source.language.lower() in language_set
-            and Path(source.full_path) in abs_paths_changed
-        )
-
-        # Get list of selected projects for each language
-        sample_programs = defaultdict(list)
-        for language, project in languages_and_projects:
-            sample_programs[language].append(project)
-
         # Test each selected project for each language
-        for language, projects in sample_programs.items():
-            for project in projects:
+        for language in sorted(language_set):
+            for project in sample_programs.get(language, []):
                 test_args = argparse.Namespace(
                     source=None, project=project, language=language, parallel=parsed_args.parallel
                 )
@@ -115,7 +147,7 @@ def _get_languages(paths_changed: Set[Path]) -> List[str]:
 
 
 def _do_batches(
-    languages: List[str], parsed_args: argparse.Namespace
+    languages: List[str], parsed_args: argparse.Namespace, *, list_only: bool = False
 ) -> Generator[Set[str], None, None]:
     num_languages = len(languages)
     num_batches = min(num_languages, parsed_args.num_batches)
@@ -132,17 +164,36 @@ def _do_batches(
             parallel=parsed_args.parallel,
         )
 
-        # Download images for this batch
-        _display_batch("Downloading images", n, num_batches)
-        containers = download(batch_args)
+        containers = None
+        if not list_only:
+            # Download images for this batch
+            _display_batch("Downloading images", n, num_batches)
+            containers = download(batch_args)
 
         # Tell caller languages for this batch
         yield batch_args.language
 
         # If removing images, remove images for this batch
-        if parsed_args.remove:
+        if parsed_args.remove and not list_only and containers is not None:
             _display_batch("Removing images", n, num_batches)
             remove_images(containers, parsed_args.parallel)
+
+
+def _get_sample_programs(
+    languages: List[str],
+    all_sources: Dict[str, List[Any]],
+    abs_paths_changed: Set[Path],
+) -> Dict[str, List[str]]:
+    selected = defaultdict(list)
+    for project, sources in all_sources.items():
+        for source in sources:
+            language = source.language.lower()
+            if language in languages and Path(source.full_path) in abs_paths_changed:
+                selected[language].append(project)
+    return {
+        language: sorted(projects)
+        for language, projects in sorted(selected.items())
+    }
 
 
 def _display_batch(prefix, n, num_batches) -> None:
@@ -156,6 +207,12 @@ def main() -> NoReturn:
     parser.add_argument("--parallel", action="store_true", help="run glotter in parallel")
     parser.add_argument(
         "--remove", action="store_true", help="remove docker images after each batch is finished"
+    )
+    parser.add_argument(
+        "--list-only",
+        action="store_true",
+        dest="list_only",
+        help="preview which tests would run without executing them",
     )
     parser.add_argument("files_changed", nargs="*", help="files that have changed")
     parsed_args = parser.parse_args()

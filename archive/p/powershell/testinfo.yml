@@ -1,8 +1,0 @@
-folder:
-  extension: ".ps1"
-  naming: "pascal"
-
-container:
-  image: "mcr.microsoft.com/powershell"
-  tag: "7.5-alpine-3.20"
-  cmd: "pwsh -file {{ source.name }}{{ source.extension }}"

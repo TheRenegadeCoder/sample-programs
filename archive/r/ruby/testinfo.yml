@@ -1,8 +1,0 @@
-folder:
-  extension: ".rb"
-  naming: "hyphen"
-
-container:
-  image: "ruby"
-  tag: "2-alpine"
-  cmd: "ruby {{ source.name }}{{ source.extension }}"

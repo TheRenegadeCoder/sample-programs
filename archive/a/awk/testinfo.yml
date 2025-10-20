@@ -1,8 +1,0 @@
-folder:
-  extension: ".awk"
-  naming: "hyphen"
-
-container:
-  image: "cicirello/gnu-on-alpine"
-  tag: "3.21.0"
-  cmd: "gawk -f {{ source.name }}{{ source.extension }} --"

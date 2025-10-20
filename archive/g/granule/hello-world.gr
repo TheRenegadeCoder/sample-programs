@@ -1,2 +1,0 @@
-main : () <{Stdout}>
-main = toStdout "Hello, World!\n"

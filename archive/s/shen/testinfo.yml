@@ -1,8 +1,0 @@
-folder:
-  extension: ".shen"
-  naming: "hyphen"
-
-container:
-  image: "rzuckerm/shen"
-  tag: "0.39-2"
-  cmd: "shen-scheme script {{ source.name }}{{ source.extension }}"

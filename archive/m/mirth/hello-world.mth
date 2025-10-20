@@ -1,8 +1,0 @@
-module sample-programs.hello-world
-
-import std.prelude
-import std.world
-
-def main {
-    "Hello, World!" print
-}

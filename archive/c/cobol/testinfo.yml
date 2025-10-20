@@ -1,9 +1,0 @@
-folder:
-  extension: ".cbl"
-  naming: "hyphen"
-
-container:
-  image: "esolang/cobol"
-  tag: "latest"
-  build: "cobc -x {{ source.name}}{{ source.extension }}"
-  cmd: "./{{ source.name}}"

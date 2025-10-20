@@ -1,8 +1,0 @@
-folder:
-  extension: ".ring"
-  naming: "pascal"
-
-container:
-  image: "esolang/ring"
-  tag: "latest"
-  cmd: "ring {{ source.name }}{{ source.extension }}"

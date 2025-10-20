@@ -1,8 +1,0 @@
-folder:
-  extension: ".gsp"
-  naming: "hyphen"
-
-container:
-  image: "rzuckerm/gosu"
-  tag: "1.17.4-1"
-  cmd: "gosu {{ source.name }}{{ source.extension }}"
