@@ -23,7 +23,15 @@ struc min_heap:
 endstruc
 
 struc VT_min_heap:
+    .construct resq 1
+    .destruct resq 1
     
+    .siftUp resq 1
+    .siftDown resq 1
+    .swap resq 1
+    .parent resq 1
+    .left resq 1
+    .right resq 1
 endstruc
 
 struc priority_queue:
