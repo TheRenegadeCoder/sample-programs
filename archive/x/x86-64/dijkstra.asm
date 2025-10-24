@@ -15,20 +15,36 @@ section .rodata
 
 section .data
 
-struc priority_queue:
-    .virtualTable resq 1
-    .nodes resq 1
-    .nodePriorities resq 1
+struc min_heap:
+    .VT
+    
     .size resq 1
-    .maxSize resq 1
+    .array resq 1
 endstruc
 
+struc VT_min_heap:
+    
+endstruc
+
+struc priority_queue:
+    .VT resq 1
+    
+    .size resq 1
+    .heap resq 1
+
+endstruc    
+
 struc VT_priority_queue:
-    .insert resq 1
-    .min resq 1
-    .isEmpty resq 1
+    .construct resq 1
+    .destruct resq 1
+    
+    .push resq 1
     .pop resq 1
-    .decreasePriority resq 1
+    .peek resq 1
+    .heapify resq 1
+    .isEmpty resq 1
+    .size resq 1
+    .decreaseKey resq 1   
 endstruc
 
 section .bss
@@ -47,15 +63,40 @@ parseVertices:
 dijkstra:
 
 
-priority_queue@insert:
-
-priority_queue@min:
-
-priority_queue@isEmpty:
+priority_queue@push:
 
 priority_queue@pop:
 
-priority_queue@decreasePriority:
+priority_queue@peek:
+
+priority_queue@heapify:
+
+priority_queue@isEmpty:
+
+priority_queue@size:
+
+priority_queue@decreaseKey:
+
+priority_queue@construct:
+
+priority_queue@destruct:
+
+
+minheap@siftUp:
+
+minheap@siftDown:
+
+minheap@swap:
+
+minheap@parent:
+
+minheap@left:
+
+minheap@right:
+
+minheap@construct:
+
+minheap@destruct:
 
 ezsqrt:
 ; ----------------------------------------------------------------------------
