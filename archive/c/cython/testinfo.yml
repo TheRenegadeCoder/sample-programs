@@ -6,6 +6,6 @@ container:
   image: "rzuckerm/cython"
   tag: "3.1.6-1"
   build: |
-    sh -c "cython -3 --embed {{ source.name }}{{ source.extension }} -o hello_world.c && \
+    sh -c "cython -3 --embed {{ source.name }}{{ source.extension }} -o {{ source.name }}.c && \
     gcc -o {{ source.name }} $(python3-config --cflags) {{ source.name }}.c $(python3-config --ldflags) -lpython3.12 -fPIC"
   cmd: "./{{ source.name }}"
