@@ -1,28 +1,37 @@
-# Define a function that takes in an array of numbers
-def selection_sort (numbers)
-    # Store the given array into a variable
-    unsorted_elements = numbers
+def selection_sort(numbers)
+  # Handle missing or invalid input
+  if numbers.nil? || numbers.strip.empty?
+    return 'Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"'
+  end
 
-    # Create a array to store our final sorted array
-    sorted_elements = []
+  # Remove surrounding quotes if present
+  numbers = numbers.strip
+  numbers = numbers[1..-2] if numbers.start_with?('"') && numbers.end_with?('"')
 
-    # Loop through all the numbers
-    while !unsorted_elements.empty?
-        # Find the minimum element in the array
-        min_element = unsorted_elements.min
+  # Split into an array and convert to integers
+  unsorted_elements = numbers.split(',').map(&:strip).map(&:to_i)
 
-        # Store the index of the minimum elment
-        index = unsorted_elements.index(unsorted_elements.min)
+  # Validate array has at least 2 elements
+  if unsorted_elements.length < 2
+    return 'Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"'
+  end
 
-        # Add the minimum element to the sorted array at the start
-        sorted_elements.push(min_element)
+  sorted_elements = []
 
-        # Delete the element from the unsorted array
-        unsorted_elements.delete_at(index)
-    end
+  # Iterate until the list of unsorted elements is emptu
+  until unsorted_elements.empty?
+    # Store the minimal value in a variable
+    min_element = unsorted_elements.min
 
-    # Return the sorted elements in an array
-    return sorted_elements
+    # Add the element at the end of the sorted elements array
+    sorted_elements.push(min_element)
+
+    # Delete the minimal value from the unsorted elements array
+    unsorted_elements.delete_at(unsorted_elements.index(min_element))
+  end
+
+  # Return as comma-separated string
+  sorted_elements.join(', ')
 end
 
-print(selection_sort(ARGV[0]))
+puts selection_sort(ARGV[0])
