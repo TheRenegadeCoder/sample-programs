@@ -1,0 +1,5 @@
+// This function generates the Fibonacci sequence up to 'n' terms
+func fibonacci(n) {
+  // Start the sequence with the firt two Fibonacci number: 1 and 1
+  var fib = [1, 1]
+}
