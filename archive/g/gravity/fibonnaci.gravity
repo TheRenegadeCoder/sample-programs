@@ -7,6 +7,7 @@ func fibonacci(n) {
   // For-loop to calculate the remaining numbers (starting from index 2)
   for (var i = 2; i < n; i = i + 1) {
     // Add the sum of the two previous numbers and append to the array
-    fub.push(fib[i - 1] + fib[i - 2])
+    // Example: if fib = [1, 1], then next will be 1 + 1 = 2, so fib = [1, 1, 2]
+    fib.push(fib[i - 1] + fib[i - 2])
   }
 }
