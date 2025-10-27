@@ -3,11 +3,7 @@ def selection_sort(numbers)
   if numbers.nil? || numbers.strip.empty?
     return 'Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"'
   end
-
-  # Remove surrounding quotes if present
-  numbers = numbers.strip
-  numbers = numbers[1..-2] if numbers.start_with?('"') && numbers.end_with?('"')
-
+  
   # Split into an array and convert to integers
   unsorted_elements = numbers.split(',').map(&:strip).map(&:to_i)
 
@@ -16,8 +12,9 @@ def selection_sort(numbers)
     return 'Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"'
   end
 
+  # Make an array to store the sorted elements
   sorted_elements = []
-
+  
   # Iterate until the list of unsorted elements is emptu
   until unsorted_elements.empty?
     # Store the minimal value in a variable
