@@ -1,5 +1,12 @@
 // This function generates the Fibonacci sequence up to 'n' terms
 func fibonacci(n) {
+
   // Start the sequence with the firt two Fibonacci number: 1 and 1
   var fib = [1, 1]
+
+  // For-loop to calculate the remaining numbers (starting from index 2)
+  for (var i = 2; i < n; i = i + 1) {
+    // Add the sum of the two previous numbers and append to the array
+    fub.push(fib[i - 1] + fib[i - 2])
+  }
 }
