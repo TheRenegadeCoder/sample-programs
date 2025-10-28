@@ -15,7 +15,7 @@ public class JosephusProblem {
             System.exit(1);
         }
 
-        int n, k;
+        int n=0, k=0;
         try {
             n = Integer.parseInt(args[0]);
             k = Integer.parseInt(args[1]);
