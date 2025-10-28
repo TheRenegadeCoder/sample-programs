@@ -1,13 +1,13 @@
 [project]
 name = "sample-programs"
-version = "2025.10.13"
+version = "2025.10.27"
 description = "Sample Programs in Every Programming Language"
 readme = ".github/README.md"
-requires-python = ">=3.9,<4.0"
+requires-python = ">=3.10,<4.0"
 license = "MIT"
 
 dependencies = [
-    "ronbun (>=0.9.1,<0.10.0)",
+    "ronbun (>=0.10.0,<0.11.0)",
     "glotter2 (>=0.12.1,<0.13.0)"
 ]
 
