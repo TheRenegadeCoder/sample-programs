@@ -24,6 +24,12 @@ main: func [args [block!]] [
         arg: trim/with arg {'}
     ]
 
+    digit: charset "0123456789"
+    if not parse arg [opt ["+" | "-"] some digit end] [
+        print "Usage: please input a non-negative integer"
+        exit
+    ]
+
     either attempt [arg: to-integer arg][
     ][
         print "Usage: please input a non-negative integer"
