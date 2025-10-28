@@ -2,31 +2,34 @@ import java.util.*;
 
 public class JosephusProblem {
 
-    public static int josephus(int n, int k) {
-        int res = 0;
-        for (int i = 1; i <= n; i++) {
-            res = (res + k) % i;
-        }
-        return res + 1;
+    private static int josephus(int n, int k) {
+        if (n == 1) return 1;
+        return (josephus(n - 1, k) + k - 1) % n + 1;
     }
 
     public static void main(String[] args) {
+        final String usage_msg = "Usage: please input the total number of people and number of people to skip.\n";
+
         if (args.length != 2) {
-            System.err.println("Usage: <n> <k>");
+            System.err.print(usage_msg);
             System.exit(1);
         }
 
+        int n, k;
         try {
-            int n = Integer.parseInt(args[0]);
-            int k = Integer.parseInt(args[1]);
-            if (n <= 0 || k <= 0) {
-                System.err.println("Invalid input");
-                System.exit(1);
-            }
-            System.out.println(josephus(n, k));
+            n = Integer.parseInt(args[0]);
+            k = Integer.parseInt(args[1]);
         } catch (NumberFormatException e) {
-            System.err.println("Invalid input");
+            System.err.print(usage_msg);
             System.exit(1);
         }
+
+        if (n <= 0 || k <= 0) {
+            System.err.print(usage_msg);
+            System.exit(1);
+        }
+
+        int result = josephus(n, k);
+        System.out.println(result);
     }
 }
