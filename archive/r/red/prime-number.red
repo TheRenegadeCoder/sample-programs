@@ -20,8 +20,7 @@ main: func [args [block!]] [
     arg: first args
 
     if string? arg [
-        arg: trim/with arg {"}
-        arg: trim/with arg {'}
+        arg: trim/with arg {'"}
     ]
 
     digit: charset "0123456789"
