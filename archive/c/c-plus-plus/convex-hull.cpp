@@ -13,12 +13,14 @@ class Point {
     }
 };
 
+// Expected input, array of arrays, which will be turned into points
 
 Point point1(1, 4);
 Point point2(0, 1);
 Point point3(5, 7);
 Point point4(2, 10);
 
+// Temporary data
 std::vector<Point> points = {point1, point2, point3, point4};
 
 void plannedTransformer() {
@@ -45,9 +47,21 @@ void plannedTransformer() {
   std::cout << std::endl;
 }
 
-int crossProductTwoPoints(Point point1, Point point2) {
-  cout << "Thing";
+// Step 1
+int startSolve(){
+
 }
+
+
+int crossProductLine(Point point1, Point point2, Point checkedPoint) {
+  int calc1 = point2.horizontal - point1.horizontal;
+  int calc2 = checkedPoint.vertical - point1.vertical;
+  int calc3 = point2.vertical - point1.vertical;
+  int calc4 = checkedPoint.horizontal - point1.horizontal;
+
+  int result = (calc1 * calc2) - (calc3 * calc4);
+  return result;
+};
 
 int main() {
   // Check if shape needs another point
