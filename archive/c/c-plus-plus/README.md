@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in C++! To find documentation related to the C++ code in this repo, look [here](https://sampleprograms.io/languages/c-plus-plus).
 
-## Sample Programs List - 33/38 :smile:
+## Sample Programs List - 34/38 :smile:
 
 In this section, we feature a list of completed and missing programs in C++. See above for the current amount of completed programs in C++. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -45,6 +45,7 @@ Below, you'll find a list of completed code snippets in C++. Code snippets prece
 - :warning: [Roman Numeral in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+c++) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :warning: [Rot13 in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+c++) [[Requirements](https://sampleprograms.io/projects/rot13)]
 - :warning: [Selection Sort in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+c++) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
+- :warning: [Sleep Sort in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sleep+sort+c++) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :warning: [Transpose Matrix in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+c++) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
 ### Missing Programs
@@ -55,7 +56,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,convex+hull&template=code-snippet-request.md&title=Add+Convex+Hull+in+C%2B%2B) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,job+sequencing&template=code-snippet-request.md&title=Add+Job+Sequencing+in+C%2B%2B) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :x: [Quine](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,quine&template=code-snippet-request.md&title=Add+Quine+in+C%2B%2B) [[Requirements](https://sampleprograms.io/projects/quine)]
-- :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+C%2B%2B) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 
 ## Testing
 
