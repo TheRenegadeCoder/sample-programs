@@ -11,3 +11,15 @@ func fibonacci(n) {
     fib.push(fib[i - 1] + fib[i - 2])
   }
 }
+
+// This is the main entry point of the program
+func main() {
+  // Check if the user provided exactly one input argument (after the filename)
+  if (System.arg.count != 2) {
+    System.print("Usage: fib <positive number>") // Give usage instruction
+    return // Exit program early
+  }
+
+  // Get the second command-line argument (the first is the filename itself)
+  var input = System.arg[1]
+}
