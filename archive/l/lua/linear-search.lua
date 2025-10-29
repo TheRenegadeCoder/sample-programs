@@ -42,14 +42,3 @@ for i = 1, #numbers do
 end
 
 print(found and "true" or "false")
-
-
-
-
-
-
-
-
-
-
-
