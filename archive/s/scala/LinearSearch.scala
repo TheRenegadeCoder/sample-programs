@@ -25,3 +25,9 @@ object LinearSearch {
             if (flag == 0) {
                 println("false")
             }
+        } catch {
+            case _: NumberFormatException =>
+            println("Usage: please provide a list of integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")")
+        }
+    }
+}
