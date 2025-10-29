@@ -1,4 +1,4 @@
-public class LongestPalindrome {
+public class LongestPalindromicSubstring {
 
     private static final String usage_msg = "Usage: please provide a string that contains at least one palindrome\n";
 
