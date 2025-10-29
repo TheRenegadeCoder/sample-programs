@@ -1,7 +1,7 @@
 // This function generates the Fibonacci sequence up to 'n' terms
 func fibonacci(n) {
 
-  // Start the sequence with the firt two Fibonacci number: 1 and 1
+  // Start the sequence with the firt two Fibonacci numbers: 1 and 1
   var fib = [1, 1]
 
   // For-loop to calculate the remaining numbers (starting from index 2)
@@ -22,4 +22,12 @@ func main() {
 
   // Get the second command-line argument (the first is the filename itself)
   var input = System.arg[1]
+
+  // Check if the input is NOT a number
+  if (!input.isnum) {
+    System.print("Error: Input must be a number.") 
+    return // Exit early
+  }
+
+  
 }
