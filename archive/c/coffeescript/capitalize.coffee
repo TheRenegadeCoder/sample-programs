@@ -4,7 +4,10 @@ capitalize = (arg) ->
     wordsList = []
     
     for word, i in arg
-        wordsList.push(word)
+        if i == 0
+            wordsList.push(word.toUpperCase())
+        else
+            wordsList.push(word)
 
     return wordsList.join("")
 
