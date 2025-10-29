@@ -1,11 +1,10 @@
 Usage = "Usage: please provide a string"
 
 main = () ->
-    args = process.argv
-    if args[2]?
-        args[2] 
+    args = process.argv[2..].join(" ")
+    if args
+        args
     else 
-        Usage
-   
+        return Usage
 
 console.log main()
