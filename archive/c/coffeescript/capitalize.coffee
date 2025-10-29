@@ -1,7 +1,12 @@
 Usage = "Usage: please provide a string"
 
 capitalize = (arg) ->
-    return arg
+    wordsList = []
+    
+    for word, i in arg
+        wordsList.push(word)
+
+    return wordsList.join("")
 
 main = () ->
     args = process.argv[2..].join(" ")
