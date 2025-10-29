@@ -12,7 +12,7 @@ capitalize = (arg) ->
     return wordsList.join("")
 
 main = () ->
-    args = process.argv[2..].join(" ")
+    args = process.argv[2]
     if args
         capitalize(args)
     else 
