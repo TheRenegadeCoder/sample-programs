@@ -34,7 +34,7 @@ func main() {
   }
 
   // Conver the string input to an integer
-  var n = input .toint
+  var n = input.toint
 
   // Check if the number is less than or equal to 0
   if (n <= 0) {
