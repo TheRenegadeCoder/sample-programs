@@ -20,7 +20,7 @@ func fibonacci(n) {
 func main() {
   // Check if the user provided exactly one input argument (after the filename)
   if (System.arg.count != 2) {
-    System.print("Usage: fib <positive number>") // Give usage instruction
+    System.print("Usage: please input the count of fibonacci numbers to output") // Give usage instruction
     return // Exit program early
   }
 
@@ -29,9 +29,20 @@ func main() {
 
   // Check if the input is NOT a number
   if (!input.isnum) {
-    System.print("Error: Input must be a number.") 
+    System.print("Usage: please input the count of fibonnaci numbers to output") 
     return // Exit early
   }
 
-  
+  // Conver the string input to an integer
+  var n = input .toint
+
+  // Check if the number is less than or equal to 0
+  if (n <= 0) {
+    System.print("Usage: please input the count of fibonnaci numbers to output")
+    return
+  }
+
+  // Call fibonnaci if all checks pass their tests
+  fibonnaci(n)
 }
+main()
