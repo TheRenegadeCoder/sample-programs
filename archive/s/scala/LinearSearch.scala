@@ -22,3 +22,6 @@ object LinearSearch {
                     return
                 }
             }
+            if (flag == 0) {
+                println("false")
+            }
