@@ -78,10 +78,10 @@ int startSolve(){
     if (i + 1 == 5) {
       secondPoint = tempShape[0];
     }
-    for (Point thirdPoint : points) {
+    for (Point thirdPoint : points){
       int side = crossProductLine(firstPoint, secondPoint, thirdPoint);
       if (side > 0) {
-        pointsThatAreOut.push_back(thirdPoint)
+        pointsThatAreOut.push_back(thirdPoint);
       }
     }
   }
@@ -108,10 +108,12 @@ int crossProductLine(Point point1, Point point2, Point checkedPoint) {
     return -1;
   }
   
+  return -2
+  
 };
 
 int main() {
   // Check if shape needs another point
-  plannedTransformer();
+  startSolve();
   return 0;
 }
