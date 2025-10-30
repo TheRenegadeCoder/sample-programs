@@ -69,10 +69,21 @@ int startSolve(){
     }
   }
   std::vector<Point> tempShape = {kingNumVert, kingNumHor, lowNumVert, lowNumHor};
+  std::vector<Point> pointsThatAreOut;
   // Step 2
-  for (auto &&i : tempShape) {
+  for (int i = 0; i < 4; i++) {
     // Iterating through each point
-    
+    Point firstPoint = tempShape[i];
+    Point secondPoint = tempShape[i + 1];
+    if (i + 1 == 5) {
+      secondPoint = tempShape[0];
+    }
+    for (Point thirdPoint : points) {
+      int side = crossProductLine(firstPoint, secondPoint, thirdPoint);
+      if (side > 0) {
+        pointsThatAreOut.push_back(thirdPoint)
+      }
+    }
   }
 }
 
