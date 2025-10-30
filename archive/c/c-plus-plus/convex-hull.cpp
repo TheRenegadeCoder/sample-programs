@@ -47,6 +47,8 @@ void plannedTransformer() {
   // Output: {2, 5}, {-1, 5}, {-8, 3}, {7, 4}, {-3, -4}, {4, -2}
 }
 
+int crossProductLine(Point point1, Point point2, Point checkedPoint);
+
 // Step 1
 int startSolve(){
   Point kingNumVert = points[0];
@@ -78,9 +80,8 @@ int startSolve(){
     if (i + 1 == 5) {
       secondPoint = tempShape[0];
     }
-    for (Point thirdPoint : points){
-      int side = crossProductLine(firstPoint, secondPoint, thirdPoint);
-      if (side > 0) {
+    for (Point thirdPoint : points) {
+      if (crossProductLine(firstPoint, secondPoint, thirdPoint) > 0) {
         pointsThatAreOut.push_back(thirdPoint);
       }
     }
@@ -100,7 +101,7 @@ int crossProductLine(Point point1, Point point2, Point checkedPoint) {
   if (result > 0) {
     // Left side
     return 1;
-  } else if (result = 0) {
+  } else if (result == 0) {
     // On the line
     return 0;
   } else {
@@ -108,12 +109,10 @@ int crossProductLine(Point point1, Point point2, Point checkedPoint) {
     return -1;
   }
   
-  return -2
-  
 };
 
 int main() {
   // Check if shape needs another point
-  startSolve();
+  plannedTransformer();
   return 0;
 }
