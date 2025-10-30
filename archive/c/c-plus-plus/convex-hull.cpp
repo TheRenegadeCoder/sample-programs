@@ -1,4 +1,3 @@
-// Starting out changes, base template courtesy of w3Schools
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -13,37 +12,22 @@ class Point {
     }
 };
 
+vector<Point> points;
 // Expected input, array of arrays, which will be turned into points
 
-Point point1(1, 4);
-Point point2(0, 1);
-Point point3(5, 7);
-Point point4(2, 10);
-Point point5(8, 3);
-Point point6(12, 15);
-Point point7(9, 6);
-Point point8(1, 1);
-Point point9(10, 20);
-Point point10(3, 5);
+// Point point1(1, 4);
+// Point point2(0, 1);
+// Point point3(5, 7);
+// Point point4(2, 10);
+// Point point5(8, 3);
+// Point point6(12, 15);
+// Point point7(9, 6);
+// Point point8(1, 1);
+// Point point9(10, 20);
+// Point point10(3, 5);
 
-// Temporary data
-std::vector<Point> points = {point1, point2, point3, point4, point5, point6, point7, point8, point9, point10};
-
-  // Checks if current shape needs another point 
-  // (If any points are outside the current leftmost boundary, then make a new point along the farthest outward one)
-  // (^ Above explanation just needs to swap x,y values to negatives, or trade places, to fit all directions)
-
-  // Requirement | If you have two matching values for farthese/lowest/highest take the first value you see 
-  // Step 1 - Note down seperate points that are: The farthest left, the farthest right, the lowest, the highest
-  // Step 2 - Draw the lines between current points in pencil that make a shape
-  // Step 3 - Erase lines where on its outer side, there is a point, write down the paired points of such lines
-  // For each noted line ->
-  // Step 4 - Re-pair the written down points with the new point in the middle
-  // (Below should be a method)
-  // Step 5 - For newly made lines, repeat step 3
-  // Step 6 - If there is another detection by step 5, do step 4 with them
-  // Input: {2, 5}, {-1, 5}, {0, 0}, {-8, 3}, {7, 4}, {-3, -4}, {4, -2}
-  // Output: {2, 5}, {-1, 5}, {-8, 3}, {7, 4}, {-3, -4}, {4, -2}
+// // Temporary data
+// std::vector<Point> points = {point1, point2, point3, point4, point5, point6, point7, point8, point9, point10};
 
 int crossProductLine(Point point1, Point point2, Point checkedPoint);
 
@@ -120,12 +104,39 @@ int crossProductLine(Point point1, Point point2, Point checkedPoint) {
   
 }
 
-int main() {
-  // Check if shape needs another point
+/* 
+  Input
+  Takes parameter of an array of arrays, dictated as coordinates
+  ex: { {2, 5}, {-1, 5}, {0, 0}, {-8, 3}, {7, 4}, {-3, -4}, {4, -2} }
+
+  Output
+  Returns coordinates of Convex Hull
+  expected result: { {2, 5}, {-1, 5}, {-8, 3}, {7, 4}, {-3, -4}, {4, -2} }
+*/
+
+// Below code hasn't been verified for compatability with testing tools, as I could not find them
+// If it does not work, verify integrity by uncommenting the sample data, lines 18-30
+vector<Point> parsePoints(int argc, char* argv[]) {
+    vector<Point> pts;
+    for (int i = 1; i < argc; ++i) { // skip argv[0], program name
+        string arg = argv[i];
+        size_t commaPos = arg.find(',');
+        if (commaPos == string::npos) continue; // invalid input
+        int x = stoi(arg.substr(0, commaPos));
+        int y = stoi(arg.substr(commaPos + 1));
+        pts.push_back(Point(x, y));
+    }
+    return pts;
+}
+
+int main(int argc, char* argv[]) {
+  // Check code integrity by also commenting out the two lines below this
+  points = parsePoints(argc, argv);
   startSolve();
   cout << "Convex Hull Points (counterclockwise order):" << endl;
   for (Point pt : points) {
     cout << "(" << pt.x << ", " << pt.y << ")" << endl;
   }
+  
   return 0;
 }
