@@ -1,7 +1,8 @@
 package;
+import Sys;
 class MergeSort {
     static function main() {
-        var args = sys.args();
+        var args = Sys.args();
 
         if(args.length != 1) {
             usage();
@@ -21,7 +22,7 @@ class MergeSort {
                 if (trimmed == "") throw "Invalid";
                 numbers.push(Std.parseInt(trimmed));
             }
-        } catch (e.Dynamic) {
+        } catch (e:Dynamic) {
             usage();
             return;
         }
