@@ -83,11 +83,12 @@ int startSolve(){
     for (Point thirdPoint : points) {
       if (crossProductLine(firstPoint, secondPoint, thirdPoint) > 0) {
         pointsThatAreOut.push_back(thirdPoint);
+        needToRestart = true;
       }
     }
   }
 }
-
+int needToRestart = true;
 // For each direction do cross product with an adjacent direction clockwise
 
 int crossProductLine(Point point1, Point point2, Point checkedPoint) {
