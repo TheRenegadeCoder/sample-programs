@@ -72,33 +72,34 @@ int startSolve(){
   }
   // Step 2
   std::vector<Point> tempShape = {kingNumVert, kingNumHor, lowNumVert, lowNumHor};
-  std::vector<Point> pointsThatAreOut;
   // Step 3 - looping variable to loop
   bool looping = true;
   while (looping == true) {
     looping = false;
-    vector<Point> newShape;   
+    vector<Point> newShape;
+    newShape = tempShape;
     for (int i = 0; i < tempShape.size(); i++) {
       // Iterating through each point
       Point firstPoint = tempShape[i];
-      Point secondPoint = tempShape[i + 1];
-      if (i + 1 == tempShape.size() + 1) {
-        secondPoint = tempShape[0];
-      }
+      Point secondPoint = tempShape[(i + 1) % tempShape.size()];
       newShape.push_back(firstPoint);
       
       for (Point thirdPoint : points) {
         if (crossProductLine(firstPoint, secondPoint, thirdPoint) > 0) {
           newShape.push_back(thirdPoint);
-          looping = true;
+          if (!(newShape.back().x == thirdPoint.x && newShape.back().y == thirdPoint.y)) {
+            newShape.push_back(thirdPoint);
+            looping = true;
+          }
         }
       }
     }
-    cout << "Temp made to newShape";
+    cout << "Temp made to newShape\n";
     tempShape = newShape;
   }
-  if (pointsThatAreOut.empty()) {
-    cout << "All points now inside the shape";
+  cout << "Convex hull points:\n";
+  for (Point p : tempShape) {
+    cout << "(" << p.x << "," << p.y << ")\n";
   }
   return 1;
 }
@@ -128,7 +129,7 @@ int crossProductLine(Point point1, Point point2, Point checkedPoint) {
 
 int main() {
   // Check if shape needs another point
-  plannedTransformer();
+  startSolve();
   
   return 0;
 }
