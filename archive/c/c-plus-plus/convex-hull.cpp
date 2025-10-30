@@ -5,11 +5,11 @@ using namespace std;
 
 class Point {
   public:
-    int horizontal;
-    int vertical;
-    Point(int x, int y) {
-      horizontal = x;
-      vertical = y;
+    int x;
+    int y;
+    Point(int horizontal, int vertical) {
+      x = horizontal;
+      y = vertical;
     }
 };
 
@@ -42,7 +42,7 @@ void plannedTransformer() {
   // Output: {2, 5}, {-1, 5}, {-8, 3}, {7, 4}, {-3, -4}, {4, -2}
   std::cout << "Printing vector contents:" << std::endl;
   for (Point value : points) {
-    std::cout << "(" << value.horizontal << "," << value.vertical << "), ";
+    std::cout << "(" << value.x << "," << value.y << "), ";
   }
   std::cout << std::endl;
 }
@@ -54,10 +54,10 @@ int startSolve(){
 
 
 int crossProductLine(Point point1, Point point2, Point checkedPoint) {
-  int calc1 = point2.horizontal - point1.horizontal;
-  int calc2 = checkedPoint.vertical - point1.vertical;
-  int calc3 = point2.vertical - point1.vertical;
-  int calc4 = checkedPoint.horizontal - point1.horizontal;
+  int calc1 = point2.x - point1.x;
+  int calc2 = checkedPoint.y - point1.y;
+  int calc3 = point2.y - point1.y;
+  int calc4 = checkedPoint.x - point1.x;
 
   int result = (calc1 * calc2) - (calc3 * calc4);
   return result;
