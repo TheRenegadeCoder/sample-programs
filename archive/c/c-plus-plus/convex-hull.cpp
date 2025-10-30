@@ -27,7 +27,7 @@ Point point9(10, 20);
 Point point10(3, 5);
 
 // Temporary data
-Point points[10] = {point1, point2, point3, point4, point5, point6, point7, point8, point9, point10};
+std::vector<Point> points = {point1, point2, point3, point4, point5, point6, point7, point8, point9, point10};
 
 void plannedTransformer() {
   // Checks if current shape needs another point 
@@ -55,13 +55,15 @@ int startSolve(){
   Point kingNumHor = points[0];
   Point lowNumVert = points[0];
   Point lowNumHor = points[0];
-
+  int increment = 0;
+  int permIncrement = 0;
   for (Point point : points) {
     if (kingNumHor.x < point.x) {
       kingNumHor = point;
     }
     else if (lowNumHor.x > point.x) {
       lowNumHor = point;
+      permIncrement = increment;
     }
     if (kingNumVert.y < point.y) {
       kingNumVert = point;
@@ -69,6 +71,7 @@ int startSolve(){
     else if (lowNumVert.y > point.y) {
       lowNumVert = point;
     }
+    increment += 1;
   }
   // Step 2
   std::vector<Point> tempShape = {kingNumVert, kingNumHor, lowNumVert, lowNumHor};
@@ -76,37 +79,35 @@ int startSolve(){
   // All to the right? Go to the next one and repeat
   // I've been approaching this wrong, starting at an outlier point I need to look at every line to see which one doesn't have any elements to the right of it rotationally
   bool looping = true;
+  int nextNumber = permIncrement;
   while (looping == true) {
     looping = false;
     vector<Point> newShape;
-    newShape = tempShape;
-    for (int i = 0; i < tempShape.size(); i++) {
-      // Iterating through each point
-      Point firstPoint = tempShape[i];
-      Point secondPoint = tempShape[(i + 1) % tempShape.size()];
-      newShape.push_back(firstPoint);
-      
-      for (Point thirdPoint : points) {
-        if (crossProductLine(firstPoint, secondPoint, thirdPoint) > 0) {
-          newShape.push_back(thirdPoint);
-          looping = true;
-          if (!(newShape.back().x == thirdPoint.x && newShape.back().y == thirdPoint.y)) {
-            newShape.push_back(thirdPoint);
-            looping = true;
-          }
+    // Sets first, should be an outermost value
+    newShape.push_back(lowNumHor);
+    // Look at every other second, if in that second no third is above 0 then it's clear on that side, then bring it into newShape and make it first next
+    for(int i = 0; i < points.size(); i++){
+      Point second = points[i];
+      bool applicable = true;
+      for(Point third : points) {
+        if (crossProductLine(points[nextNumber], second, third) <= 0) {
+          applicable = false;
         }
       }
+      if(applicable == true){
+        if(i == permIncrement) {
+          looping = false;
+          cout << "Finished process";
+        }
+        else {
+          newShape.push_back(second);
+        }
+      }
+      nextNumber = i;
     }
-    cout << "Temp made to newShape\n";
-    tempShape = newShape;
   }
-  cout << "Convex hull points:\n";
-  for (Point p : tempShape) {
-    cout << "(" << p.x << "," << p.y << ")\n";
-  }
-  return 1;
+  return 2;
 }
-int needToRestart = true;
 // For each direction do cross product with an adjacent direction clockwise
 
 int crossProductLine(Point point1, Point point2, Point checkedPoint) {
@@ -128,7 +129,7 @@ int crossProductLine(Point point1, Point point2, Point checkedPoint) {
     return -1;
   }
   
-};
+}
 
 int main() {
   // Check if shape needs another point
