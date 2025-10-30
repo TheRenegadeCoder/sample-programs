@@ -39,6 +39,14 @@ class Fraction
   def <=(other)
     Rational(@numerator, @denominator) <= Rational(other.numerator, other.denominator)
   end
+  def <(other)
+    Rational(@numerator, @denominator) < Rational(other.numerator, other.denominator)
+  end
+
+  def >(other)
+    Rational(@numerator, @denominator) > Rational(other.numerator, other.denominator)
+  end
+  
 end
 
 # Command-line input
@@ -67,8 +75,26 @@ fraction2 = Fraction.new(num2, den2)
 # end
 if operator == "+"
   puts fraction1.fraction_math(fraction2,"+")
-  
-
+elsif operator == "-" 
+ puts fraction1.fraction_math(fraction2,"-")
+elsif operator == "/" 
+ puts fraction1.fraction_math(fraction2,"/")
+elsif operator == "*" 
+ puts fraction1.fraction_math(fraction2,"*")
+elsif operator == "=="
+  puts fraction1 == fraction2 ? 1 : 0
+elsif operator == "!="
+  puts fraction1 != fraction2 ? 1 : 0
+elsif operator == ">"
+  puts fraction1 > fraction2 ? 1 : 0
+elsif operator == "<"
+  puts fraction1 < fraction2 ? 1 : 0
+elsif operator == ">="
+  puts fraction1 >= fraction2 ? 1 : 0
+elsif operator == "<="
+  puts fraction1 <= fraction2 ? 1 : 0
+else
+  puts "Invalid operator"
 end
 
 
