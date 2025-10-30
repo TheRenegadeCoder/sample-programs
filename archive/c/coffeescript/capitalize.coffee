@@ -1,15 +1,13 @@
 Usage = "Usage: please provide a string"
 
 capitalize = (arg) ->
-    wordsList = []
-    
-    for word, i in arg
+    charList = []
+    for char, i in arg
         if i == 0
-            wordsList.push(word.toUpperCase())
+            charList.push(char.toUpperCase())
         else
-            wordsList.push(word)
-
-    return wordsList.join("")
+            charList.push(char)
+    return charList.join("")
 
 main = () ->
     args = process.argv[2]
