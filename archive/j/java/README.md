@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in Java! To find documentation related to the Java code in this repo, look [here](https://sampleprograms.io/languages/java).
 
-## Sample Programs List - 28/38 :relaxed:
+## Sample Programs List - 29/38 :smile:
 
 In this section, we feature a list of completed and missing programs in Java. See above for the current amount of completed programs in Java. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -41,6 +41,7 @@ Below, you'll find a list of completed code snippets in Java. Code snippets prec
 - :white_check_mark: [Reverse String in Java](https://sampleprograms.io/projects/reverse-string/java) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :warning: [Rot13 in Java](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+java) [[Requirements](https://sampleprograms.io/projects/rot13)]
 - :warning: [Selection Sort in Java](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+java) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
+- :warning: [Transpose Matrix in Java](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+java) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
 ### Missing Programs
 
@@ -55,7 +56,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Remove All Whitespace](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,remove+all+whitespace&template=code-snippet-request.md&title=Add+Remove+All+Whitespace+in+Java) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :x: [Roman Numeral](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,roman+numeral&template=code-snippet-request.md&title=Add+Roman+Numeral+in+Java) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+Java) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
-- :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,transpose+matrix&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+Java) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
 ## Testing
 
