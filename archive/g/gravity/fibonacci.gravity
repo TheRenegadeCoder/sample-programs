@@ -1,0 +1,41 @@
+func fibonacci(n) {
+  var fib = [1, 1]
+
+    for (var i in 2...n) {
+      fib.push(fib[i - 1] + fib[i - 2])
+    }
+
+    for (var j in 0...n) {
+      System.print((j + 1) + ": " + fib[j])
+    }
+}
+
+func main() {
+    if (System.args.count != 2) {
+      System.print("Usage: please input the count of fibonacci numbers to output")
+      return
+    }
+
+    var input = System.args[1]
+
+    if (!input.isnum) {
+      System.print("Usage: please input the count of fibonacci numbers to output")
+      return
+    }
+
+    var n = input.toint
+
+    if (n <= 0) {
+      System.print("Usage: please input the count of fibonacci numbers to output")
+      return
+    }
+
+    if (n == 1) {
+      System.print("1 : 1")
+      return
+    }
+
+  fibonacci(n)
+}
+
+main()
