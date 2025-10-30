@@ -29,7 +29,6 @@ Point point10(3, 5);
 // Temporary data
 std::vector<Point> points = {point1, point2, point3, point4, point5, point6, point7, point8, point9, point10};
 
-void plannedTransformer() {
   // Checks if current shape needs another point 
   // (If any points are outside the current leftmost boundary, then make a new point along the farthest outward one)
   // (^ Above explanation just needs to swap x,y values to negatives, or trade places, to fit all directions)
@@ -45,7 +44,6 @@ void plannedTransformer() {
   // Step 6 - If there is another detection by step 5, do step 4 with them
   // Input: {2, 5}, {-1, 5}, {0, 0}, {-8, 3}, {7, 4}, {-3, -4}, {4, -2}
   // Output: {2, 5}, {-1, 5}, {-8, 3}, {7, 4}, {-3, -4}, {4, -2}
-}
 
 int crossProductLine(Point point1, Point point2, Point checkedPoint);
 
@@ -80,33 +78,24 @@ int startSolve(){
   // I've been approaching this wrong, starting at an outlier point I need to look at every line to see which one doesn't have any elements to the right of it rotationally
   bool looping = true;
   int nextNumber = permIncrement;
-  while (looping == true) {
-    looping = false;
-    vector<Point> newShape;
-    // Sets first, should be an outermost value
-    newShape.push_back(lowNumHor);
-    // Look at every other second, if in that second no third is above 0 then it's clear on that side, then bring it into newShape and make it first next
-    for(int i = 0; i < points.size(); i++){
-      Point second = points[i];
-      bool applicable = true;
-      for(Point third : points) {
-        if (crossProductLine(points[nextNumber], second, third) <= 0) {
-          applicable = false;
-        }
+  vector<Point> newShape;
+  do {
+    newShape.push_back(points[nextNumber]);
+    int nextPointCandidate = (nextNumber + 1) % points.size();
+
+    for (int i = 0; i < points.size(); i++) {
+      if (crossProductLine(points[nextNumber], points[i], points[nextPointCandidate]) == 1) {
+        nextPointCandidate = i; // point i is more counterclockwise
       }
-      if(applicable == true){
-        if(i == permIncrement) {
-          looping = false;
-          cout << "Finished process";
-        }
-        else {
-          newShape.push_back(second);
-        }
-      }
-      nextNumber = i;
     }
-  }
+
+    nextNumber = nextPointCandidate;
+  } while (nextNumber != permIncrement);
+  cout << "Finished process";
+  points = newShape;
   return 2;
+
+  
 }
 // For each direction do cross product with an adjacent direction clockwise
 
@@ -134,6 +123,9 @@ int crossProductLine(Point point1, Point point2, Point checkedPoint) {
 int main() {
   // Check if shape needs another point
   startSolve();
-  
+  cout << "Convex Hull Points (counterclockwise order):" << endl;
+  for (Point pt : points) {
+    cout << "(" << pt.x << ", " << pt.y << ")" << endl;
+  }
   return 0;
 }
