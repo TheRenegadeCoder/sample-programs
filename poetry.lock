@@ -788,14 +788,14 @@ use-chardet-on-py3 = ["chardet (>=3.0.2,<6)"]
 
 [[package]]
 name = "ronbun"
-version = "0.10.0"
+version = "0.10.1"
 description = "The Sample Programs README Automation Tool"
 optional = false
 python-versions = "<4,>=3.10"
 groups = ["main"]
 files = [
-    {file = "ronbun-0.10.0-py3-none-any.whl", hash = "sha256:a5df0136b290a317885612f132dd1160b67cab459ba734a8d4ba664eda2dbfe3"},
-    {file = "ronbun-0.10.0.tar.gz", hash = "sha256:6bd9a74d9b628760fcd3167553be800e4ba6fb55583d7510154cb94ecfc6e17d"},
+    {file = "ronbun-0.10.1-py3-none-any.whl", hash = "sha256:6788c0e66ddd0ad5a41421a446dbd5bbe697931dbb2694088237c89bf1b61a51"},
+    {file = "ronbun-0.10.1.tar.gz", hash = "sha256:254aaaf753cf0e539b27a5d09b8db74da75ef50946f97ce7553fabcb38626449"},
 ]
 
 [package.dependencies]
@@ -973,4 +973,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10,<4.0"
-content-hash = "c1b675a784d06d7bf2c0a93926b73c1a9f26886ef4cb146ac909591ebb57652f"
+content-hash = "7a24eaa23aeccb61d5f183100d283c62a54b9c06a63797c8c4bac9d3bd93a980"
