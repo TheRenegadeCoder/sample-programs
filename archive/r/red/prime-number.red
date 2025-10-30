@@ -5,7 +5,8 @@ prime-number: func [number [integer!]] [
         print "Composite"
     ][
         found?: false
-        repeat i number - 2 [
+        limit: to integer! square-root number
+        repeat i limit - 1 [
             if (number // (i + 1)) = 0 [
                 print "Composite"
                 found?: true
@@ -16,12 +17,9 @@ prime-number: func [number [integer!]] [
     ]
 ]
 
-main: func [args [block!]] [
-    arg: first args
+main: func [arg [string!]] [
 
-    if string? arg [
-        arg: trim/with arg {'"}
-    ]
+    arg: trim/with arg {'"}
 
     digit: charset "0123456789"
     if not parse arg [opt ["+" | "-"] some digit end] [
@@ -43,4 +41,4 @@ main: func [args [block!]] [
     prime-number arg
 ]
 
-main split system/script/args " "
+main system/script/args
