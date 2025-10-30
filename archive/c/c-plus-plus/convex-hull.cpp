@@ -73,6 +73,8 @@ int startSolve(){
   // Step 2
   std::vector<Point> tempShape = {kingNumVert, kingNumHor, lowNumVert, lowNumHor};
   // Step 3 - looping variable to loop
+  // All to the right? Go to the next one and repeat
+  // I've been approaching this wrong, starting at an outlier point I need to look at every line to see which one doesn't have any elements to the right of it rotationally
   bool looping = true;
   while (looping == true) {
     looping = false;
@@ -87,6 +89,7 @@ int startSolve(){
       for (Point thirdPoint : points) {
         if (crossProductLine(firstPoint, secondPoint, thirdPoint) > 0) {
           newShape.push_back(thirdPoint);
+          looping = true;
           if (!(newShape.back().x == thirdPoint.x && newShape.back().y == thirdPoint.y)) {
             newShape.push_back(thirdPoint);
             looping = true;
