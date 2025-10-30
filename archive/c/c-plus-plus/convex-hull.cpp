@@ -70,23 +70,37 @@ int startSolve(){
       lowNumVert = point;
     }
   }
+  // Step 2
   std::vector<Point> tempShape = {kingNumVert, kingNumHor, lowNumVert, lowNumHor};
   std::vector<Point> pointsThatAreOut;
-  // Step 2
-  for (int i = 0; i < 4; i++) {
-    // Iterating through each point
-    Point firstPoint = tempShape[i];
-    Point secondPoint = tempShape[i + 1];
-    if (i + 1 == 5) {
-      secondPoint = tempShape[0];
-    }
-    for (Point thirdPoint : points) {
-      if (crossProductLine(firstPoint, secondPoint, thirdPoint) > 0) {
-        pointsThatAreOut.push_back(thirdPoint);
-        needToRestart = true;
+  // Step 3 - looping variable to loop
+  bool looping = true;
+  while (looping == true) {
+    looping = false;
+    vector<Point> newShape;   
+    for (int i = 0; i < tempShape.size(); i++) {
+      // Iterating through each point
+      Point firstPoint = tempShape[i];
+      Point secondPoint = tempShape[i + 1];
+      if (i + 1 == tempShape.size() + 1) {
+        secondPoint = tempShape[0];
+      }
+      newShape.push_back(firstPoint);
+      
+      for (Point thirdPoint : points) {
+        if (crossProductLine(firstPoint, secondPoint, thirdPoint) > 0) {
+          newShape.push_back(thirdPoint);
+          looping = true;
+        }
       }
     }
+    cout << "Temp made to newShape";
+    tempShape = newShape;
   }
+  if (pointsThatAreOut.empty()) {
+    cout << "All points now inside the shape";
+  }
+  return 1;
 }
 int needToRestart = true;
 // For each direction do cross product with an adjacent direction clockwise
@@ -115,5 +129,6 @@ int crossProductLine(Point point1, Point point2, Point checkedPoint) {
 int main() {
   // Check if shape needs another point
   plannedTransformer();
+  
   return 0;
 }
