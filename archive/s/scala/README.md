@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in Scala! To find documentation related to the Scala code in this repo, look [here](https://sampleprograms.io/languages/scala).
 
-## Sample Programs List - 12/38 :thinking:
+## Sample Programs List - 13/38 :thinking:
 
 In this section, we feature a list of completed and missing programs in Scala. See above for the current amount of completed programs in Scala. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -22,6 +22,7 @@ Below, you'll find a list of completed code snippets in Scala. Code snippets pre
 - :white_check_mark: [File Input Output in Scala](https://sampleprograms.io/projects/file-input-output/scala) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :warning: [Fizz Buzz in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+scala) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :white_check_mark: [Hello World in Scala](https://sampleprograms.io/projects/hello-world/scala) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :warning: [Linear Search in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+linear+search+scala) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :warning: [Quick Sort in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+scala) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
 - :warning: [Reverse String in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+scala) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :warning: [Sleep Sort in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sleep+sort+scala) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
@@ -40,7 +41,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Insertion Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,insertion+sort&template=code-snippet-request.md&title=Add+Insertion+Sort+in+Scala) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,job+sequencing&template=code-snippet-request.md&title=Add+Job+Sequencing+in+Scala) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,josephus+problem&template=code-snippet-request.md&title=Add+Josephus+Problem+in+Scala) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
-- :x: [Linear Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,linear+search&template=code-snippet-request.md&title=Add+Linear+Search+in+Scala) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :x: [Longest Common Subsequence](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+common+subsequence&template=code-snippet-request.md&title=Add+Longest+Common+Subsequence+in+Scala) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
 - :x: [Longest Palindromic Substring](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+palindromic+substring&template=code-snippet-request.md&title=Add+Longest+Palindromic+Substring+in+Scala) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
 - :x: [Longest Word](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+word&template=code-snippet-request.md&title=Add+Longest+Word+in+Scala) [[Requirements](https://sampleprograms.io/projects/longest-word)]

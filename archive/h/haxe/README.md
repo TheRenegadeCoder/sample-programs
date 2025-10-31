@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in Haxe! To find documentation related to the Haxe code in this repo, look [here](https://sampleprograms.io/languages/haxe).
 
-## Sample Programs List - 3/38 :disappointed:
+## Sample Programs List - 4/38 :disappointed:
 
 In this section, we feature a list of completed and missing programs in Haxe. See above for the current amount of completed programs in Haxe. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -16,6 +16,7 @@ Below, you'll find a list of completed code snippets in Haxe. Code snippets prec
 - :warning: [Baklava in Haxe](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+haxe) [[Requirements](https://sampleprograms.io/projects/baklava)]
 - :warning: [Fizz Buzz in Haxe](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+haxe) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :warning: [Hello World in Haxe](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+haxe) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :warning: [Merge Sort in Haxe](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+haxe) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
 
 ### Missing Programs
 
@@ -43,7 +44,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Longest Word](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+word&template=code-snippet-request.md&title=Add+Longest+Word+in+Haxe) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+array+rotation&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+Haxe) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+subarray&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+Haxe) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
-- :x: [Merge Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,merge+sort&template=code-snippet-request.md&title=Add+Merge+Sort+in+Haxe) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+Haxe) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
 - :x: [Palindromic Number](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,palindromic+number&template=code-snippet-request.md&title=Add+Palindromic+Number+in+Haxe) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :x: [Prime Number](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,prime+number&template=code-snippet-request.md&title=Add+Prime+Number+in+Haxe) [[Requirements](https://sampleprograms.io/projects/prime-number)]
