@@ -1,0 +1,15 @@
+i: int = 1
+while i <= 100 {
+    o: str = ""
+    if i % 3 == 0 {
+        o ++= "Fizz"
+    } 
+    if i % 5 == 0 {
+        o ++= "Buzz"
+    }
+    if i % 3 != 0 and i % 5 != 0 {
+        o ++= i
+    }
+    print(o)
+    i += 1
+}
