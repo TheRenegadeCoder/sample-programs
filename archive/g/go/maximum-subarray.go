@@ -15,14 +15,16 @@ func max(a, b int) int {
 }
 
 func main() {
-	if len(os.Args) < 2 {
-		fmt.Println("Please enter a list of comma-separated numbers")
+	if len(os.Args) < 2 || strings.TrimSpace(os.Args[1]) == "" {
+		fmt.Println(`Usage: Please provide a list of integers in the format: "1, 2, 3, 4, 5"`)
+		return
 	}
-	input := os.Args[1]
+	input := strings.Join(os.Args[1:], "")
 	parts := strings.Split(input, ",")
 	nums := make([]int, len(parts))
 
 	for i, p := range parts {
+		p = strings.TrimSpace(p)
 		n, _ := strconv.Atoi(p)
 		nums[i] = n
 
@@ -31,13 +33,14 @@ func main() {
 	maxSum := nums[0]
 	blockSum := nums[0]
 
-	for i := 0; i < len(nums); i++ {
+	for i := 1; i < len(nums); i++ {
 		blockSum = max(nums[i], blockSum+nums[i])
 		if maxSum < blockSum {
 			maxSum = blockSum
 
 		}
-		fmt.Println(blockSum, maxSum)
+
 	}
+	fmt.Println(maxSum)
 
 }
