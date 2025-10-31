@@ -1,9 +1,8 @@
-# puts "Hello, Ruby!"
 class Fraction
     attr_reader :numerator, :denominator
     def initialize (numerator, denominator)
        @numerator = numerator
-        @denominator = denominator
+       @denominator = denominator
     end 
     
     
@@ -63,16 +62,6 @@ num2, den2 = input2.split('/').map(&:to_i)
 fraction1 = Fraction.new(num1, den1)
 fraction2 = Fraction.new(num2, den2)
 
-# # Comparison logic
-# if fraction1 == fraction2
-#   puts 0
-# elsif fraction1 != fraction2
-#   puts 1
-# elsif fraction1 >= fraction2
-#   puts 0
-# elsif fraction1 <= fraction2
-#   puts 1
-# end
 if operator == "+"
   puts fraction1.fraction_math(fraction2,"+")
 elsif operator == "-" 
