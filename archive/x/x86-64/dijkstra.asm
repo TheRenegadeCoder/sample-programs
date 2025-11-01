@@ -100,7 +100,6 @@ priority_queue@push:
 ;   RAX - ()              None.
 ;   Clobbers - RDI, RSI, RCX, RDX, R10, R8, R9.
 ; ---------------------------------------------------------------------------
-PUSH ESI
 MOV EDX, [ESI + NodeTuple.element]
 MOV ESI, [ESI + NodeTuple.value]
 MOV R10, [RDI + priority_queue.heap]
@@ -260,34 +259,36 @@ RET
 
 priority_queue@decreaseKey:
 ; ----------------------------------------------------------------------------
-; Function: priority queue size.
+; Function: priority queue decreaseKey.
 ; Description:
-;   Self explanatory.
+;   Decrease priority of given symbol.
 ; Parameters:
 ;   RDI - (PriorityQueue*)This* priority queue.
-;   RSI - (int)           Index.
-;   RDX - (NodeTuple*)    Replacement tuple.
+;   RSI - (int)           Symbol.
+;   RDX - (int)           Replacement priority.
 ;   R10 - ()              Unused.
 ;   R8  - ()              Unused.
 ;   R9  - ()              Unused.
 ; Returns:
 ;   RAX - ()              None.
-;   Clobbers - RAX, RDI, RSI, RDX, R10, R8, R9.
+;   Clobbers - RAX, RDI, RSI, RCX, RDX, R10, R8, R9.
 ; ---------------------------------------------------------------------------
+
 MOV R10, [RDI + priority_queue.heap]
-MOV R8, [R10 + minheap.elements]
-MOV R10, [R10 + minheap.array]
+MOV R8,  [R10 + min_heap.array]
+MOV R10, [R10 + min_heap.elements]
+MOV RCX, 0
+    .search: ; I really don't like having to implement a linear search, but a hashtable will take way too long to implement.
+        CMP RCX, [RDI + priority_queue.size]
+        JAE .short_circuit ;Not found
+        MOV RCX, [R10 + RCX*SIZE_INT]
+        CMP RCX, RSI
+        JNE .search
+MOV [R8 + RCX*SIZE_INT], RDX
 
-MOV R9D, [R10 + RSI*SIZE_INT]
-CMP R9D, [RDX + NodeTuple.value]
-JBE .short_circuit
-MOV R9D, [RDX + NodeTuple.value]
-MOV [R10 + RSI*SIZE_INT], R9D
-MOV R9D, [RDX + NodeTuple.element]
-MOV [R8 + RSI*SIZE_INT], R9D
 
-MOV RDI, R10
-MOV ESI, RSI
+MOV RDI, [RDI + priority_queue.heap]
+MOV ESI, RCX
 CALL minheap@siftUp
 .short_circuit:
 RET
