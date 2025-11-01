@@ -8,6 +8,17 @@
 %DEFINE atol.STACK_INIT 8
 %DEFINE atol.ret 8
 
+%DEFINE minheap@siftDown.STACK_INIT 40
+%DEFINE minheap@siftDown.minheap_len 8
+%DEFINE minheap@siftDown.index 16
+%DEFINE minheap@siftDown.left 24
+%DEFINE minheap@siftDown.right 32
+%DEFINE minheap@siftDown.conditional_BOOLs 40
+%DEFINE minheap@siftDown.conditional_BOOLs-1 36
+%DEFINE minheap@siftDown.conditional_BOOLs-2 40
+%DEFINE minheap@siftDown.conditional_BOOLs-ACCEPT (0x1 + 0x1<<32)
+
+
 
 
 
@@ -25,7 +36,7 @@ section .data
 struc min_heap:
     .VT resq 1
     
-    .size resq 1
+    .len resq 1
     .array resq 1
 endstruc
 
@@ -99,7 +110,81 @@ priority_queue@destruct:
 minheap@siftUp:
 
 minheap@siftDown:
+; ----------------------------------------------------------------------------
+; Function: minheap swap
+; Description:
+;   Swaps elements between given two indices.
+; Parameters:
+;   RDI - (Minheap*)      This* minheap. Will not juggle this; stays in callee-saved register.
+;   ESI - (int)           Index.
+;   RDX - ()              Unused.
+;   R10 - ()              Unused.
+;   R8  - ()              Unused.
+;   R9  - ()              Unused.
+; Returns:
+;   RAX - (long)          Parent index.
+;   Clobbers - RAX, RDI, RCX, RDX, R9.
+; ---------------------------------------------------------------------------
+PUSH RBP
+MOV RBP, RSP
+SUB RSP, minheap@siftDown.STACK_INIT
+PUSH RBX ; Minheap*
+PUSH R11
+PUSH R12
 
+MOV RBX, RDI
+MOV RDI, [RBX + min_heap.len]
+MOV [RBP - minheap@siftDown.minheap_len], RDI
+MOV [RBP - minheap@siftDown.index], RSI
+
+    .sift:
+        MOV RDI, [RBP - minheap@siftDown.index]
+        CALL minheap@left
+        CMP RAX, [RBP - minheap@siftDown.minheap_len]
+        JA .sift_exit
+        
+        CALL minheap@left
+        MOV RCX, RAX ; Left
+        MOV [RBP - minheap@siftDown.left], RAX
+        CALL minheap@right
+        MOV RDX, RAX ; Right
+        MOV [RBP - minheap@siftDown.right], RAX
+        MOV R9, RCX
+        CMP RDX, [RBP - minheap@siftDown.minheap_len]
+        SETB [RBP - minheap@siftDown.conditional_BOOLs-1]
+        MOV RAX, [RBX + minheap.array]
+        MOV RCX, [RAX + RCX*SIZE_INT]
+        MOV RDX, [RAX + RCX*SIZE_INT]
+        CMP RDX, RCX
+        SETB [RBP - minheap@siftDown.conditional_BOOLs-2]
+        CMP [RBP - minheap@siftDown.conditional_BOOLs-1], minheap@siftDown.conditional_BOOLs-ACCEPT
+        CMOVB R9, [RBP - minheap@siftDown.right]
+        
+        MOV RAX, [RBX + minheap.array]
+        MOV R11, R9
+        MOV R11, [RAX + R11*SIZE_INT]
+        MOV R12, [RBP - minheap@siftDown.index]
+        MOV R12, [RAX + R12*SIZE_INT]
+        CMP R11, R12
+        JAE .sift_exit
+        MOV RDI, RBX
+        MOV RSI, [RBP - minheap@siftDown.index]
+        MOV RDX, R9
+        CALL minheap@swap
+        MOV [RBX - minheap@siftDown.index], R9
+        
+        JMP .sift
+                             
+.sift_exit:
+POP R12
+POP R11
+POP RBX
+ADD RSP, minheap@siftDown.STACK_INIT  
+MOV RSP, RBP
+POP RBP
+RET 
+    
+    
 minheap@swap:
 ; ----------------------------------------------------------------------------
 ; Function: minheap swap
@@ -113,9 +198,10 @@ minheap@swap:
 ;   R8  - ()              Unused.
 ;   R9  - ()              Unused.
 ; Returns:
-;   RAX - (long)          Parent index.
-;   Clobbers - None.
+;   RAX - ()              None.
+;   Clobbers - R8, R10
 ; ---------------------------------------------------------------------------
+MOV RDI, [RDI + minheap.array]
 MOV R10, DWORD [RDI+ESI*SIZE_INT] ;TMP
 MOV R8, DWORD [RDI+EDX*SIZE_INT] ;TMP2
 MOV [RDI+ESI*SIZE_INT], R8D
@@ -137,7 +223,7 @@ minheap@parent:
 ;   R9  - ()              Unused.
 ; Returns:
 ;   RAX - (long)          Parent index.
-;   Clobbers - None.
+;   Clobbers - RAX
 ; ---------------------------------------------------------------------------
 MOV RAX, EDI
 DEC RAX
@@ -157,7 +243,7 @@ minheap@left:
 ;   R9  - ()              Unused.
 ; Returns:
 ;   RAX - (long)          Left element index.
-;   Clobbers - None.
+;   Clobbers - RAX
 ; ---------------------------------------------------------------------------
 MOV RAX, EDI
 SHL RAX, MUL_2
@@ -177,7 +263,7 @@ minheap@right:
 ;   R9  - ()              Unused.
 ; Returns:
 ;   RAX - (long)          Right element index.
-;   Clobbers - None.
+;   Clobbers - RAX
 ; ---------------------------------------------------------------------------
 MOV RAX, EDI
 SHL RAX, MUL_2
@@ -201,7 +287,7 @@ ezsqrt:
 ;   R9  - ()              Unused.
 ; Returns:
 ;   RAX - (long)          RAX == -1 (Input not square); RAX > 0 (Input IS perfect square).
-;   Clobbers - RCX
+;   Clobbers - RAX, RCX, RDX
 ; ---------------------------------------------------------------------------
     PUSH RBP
     MOV RBP, RSP
@@ -235,11 +321,13 @@ atoi:
 ;   R9  - ()              Unused.
 ; Returns:
 ;   EAX - (int)          Integer value of string.
+;   Clobbers - RCX, R8 
 ; ---------------------------------------------------------------------------
 
     PUSH RBP
     MOV RBP, RSP
     SUB RSP, atoi.STACK_INIT
+    PUSH RBX
     MOV QWORD [RBP - atoi.ret]
     
     MOV RBX, 10 ;Multiplier
@@ -256,6 +344,7 @@ atoi:
         JNE .operation
     
     MOV RAX, QWORD [RBP - atoi.ret]
+    POP RBX
     ADD RSP, atoi.STACK_INIT
     MOV RSP, RBP
     POP RBP
