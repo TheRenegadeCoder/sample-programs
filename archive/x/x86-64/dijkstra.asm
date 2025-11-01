@@ -18,6 +18,10 @@
 %DEFINE minheap@siftDown.conditional_BOOLs-2 40
 %DEFINE minheap@siftDown.conditional_BOOLs-ACCEPT (0x1 + 0x1<<32)
 
+%DEFINE minheap@siftUp.STACK_INIT 16
+%DEFINE minheap@siftUp.index 8
+%DEFINE minheap@siftUp.parent 16
+
 
 
 
@@ -108,12 +112,10 @@ priority_queue@destruct:
 
 
 minheap@siftUp:
-
-minheap@siftDown:
 ; ----------------------------------------------------------------------------
 ; Function: minheap swap
 ; Description:
-;   Swaps elements between given two indices.
+;   Restores min-heap by moving new element upward.
 ; Parameters:
 ;   RDI - (Minheap*)      This* minheap. Will not juggle this; stays in callee-saved register.
 ;   ESI - (int)           Index.
@@ -122,8 +124,55 @@ minheap@siftDown:
 ;   R8  - ()              Unused.
 ;   R9  - ()              Unused.
 ; Returns:
-;   RAX - (long)          Parent index.
-;   Clobbers - RAX, RDI, RCX, RDX, R9.
+;   RAX - ()              None.
+;   Clobbers - RDI, RSI, RDX, R10, R8.
+; ---------------------------------------------------------------------------
+PUSH RBP
+MOV RBP, RSP
+SUB RSP, minheap@siftUp.STACK_INIT
+PUSH RBX
+MOV RBX, RDI
+MOV [RBP - minheap@siftUp.index], RSI
+    .sift:
+        CMP [RBP - minheap@siftUp.index], 0
+        JBE .sift_end
+        MOV RDI, [RBP - minheap@siftUp.index]
+        CALL minheap@parent
+        MOV RDX, [RBP - minheap@siftUp.index]
+        MOV R10, RAX
+        MOV R8, RBX
+        MOV R8, [R8 + minheap.array]
+        MOV RDX, [R8 + RDX*SIZE_INT]
+        MOV R10, [R8 + RDX*SIZE_INT]
+        CMP RDX, R10
+        JAE .sift_end
+        MOV RDI, RBX
+        MOV RSI, [RBP - minheap@siftUp.index]
+        MOV RDX, RAX
+        CALL minheap@swap
+        MOV [RBP - minheap@siftUp.index], RAX
+        JMP .sift
+.sift_end:
+POP RBX
+ADD RSP, minheap@siftUp.STACK_INIT
+MOV RSP, RBP
+POP RBP
+RET
+minheap@siftDown:
+; ----------------------------------------------------------------------------
+; Function: minheap swap
+; Description:
+;   Restores min-heap by moving root downward.
+; Parameters:
+;   RDI - (Minheap*)      This* minheap. Will not juggle this; stays in callee-saved register.
+;   ESI - (int)           Index.
+;   RDX - ()              Unused.
+;   R10 - ()              Unused.
+;   R8  - ()              Unused.
+;   R9  - ()              Unused.
+; Returns:
+;   RAX - ()          None.
+;   Clobbers - RAX, RDI, RSI, RCX, RDX, R9.
 ; ---------------------------------------------------------------------------
 PUSH RBP
 MOV RBP, RSP
@@ -140,10 +189,11 @@ MOV [RBP - minheap@siftDown.index], RSI
     .sift:
         MOV RDI, [RBP - minheap@siftDown.index]
         CALL minheap@left
+        PUSH RAX
         CMP RAX, [RBP - minheap@siftDown.minheap_len]
         JA .sift_exit
         
-        CALL minheap@left
+        POP RAX
         MOV RCX, RAX ; Left
         MOV [RBP - minheap@siftDown.left], RAX
         CALL minheap@right
@@ -199,7 +249,7 @@ minheap@swap:
 ;   R9  - ()              Unused.
 ; Returns:
 ;   RAX - ()              None.
-;   Clobbers - R8, R10
+;   Clobbers - RDI, R8, R10
 ; ---------------------------------------------------------------------------
 MOV RDI, [RDI + minheap.array]
 MOV R10, DWORD [RDI+ESI*SIZE_INT] ;TMP
@@ -287,7 +337,7 @@ ezsqrt:
 ;   R9  - ()              Unused.
 ; Returns:
 ;   RAX - (long)          RAX == -1 (Input not square); RAX > 0 (Input IS perfect square).
-;   Clobbers - RAX, RCX, RDX
+;   Clobbers - RAX, RDI, RCX, RDX
 ; ---------------------------------------------------------------------------
     PUSH RBP
     MOV RBP, RSP
@@ -321,7 +371,7 @@ atoi:
 ;   R9  - ()              Unused.
 ; Returns:
 ;   EAX - (int)          Integer value of string.
-;   Clobbers - RCX, R8 
+;   Clobbers - RAX, RDI, RSI, RCX, R8. 
 ; ---------------------------------------------------------------------------
 
     PUSH RBP
