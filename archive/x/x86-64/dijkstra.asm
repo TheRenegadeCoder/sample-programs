@@ -38,43 +38,18 @@ section .rodata
 section .data
 
 struc min_heap:
-    .VT resq 1
-    
     .len resq 1
     .array resq 1
+    .elements resq 1
 endstruc
 
-struc VT_min_heap:
-    .construct resq 1
-    .destruct resq 1
-    
-    .siftUp resq 1
-    .siftDown resq 1
-    .swap resq 1
-    .parent resq 1
-    .left resq 1
-    .right resq 1
-endstruc
 
+; I want this priority queue as it acts as a great container for the minheap
+; and allows for easy abstraction of minheap methods.
 struc priority_queue:
-    .VT resq 1
-    
     .size resq 1
     .heap resq 1
 endstruc    
-
-struc VT_priority_queue:
-    .construct resq 1
-    .destruct resq 1
-    
-    .push resq 1
-    .pop resq 1
-    .peek resq 1
-    .heapify resq 1
-    .isEmpty resq 1
-    .size resq 1
-    .decreaseKey resq 1   
-endstruc
 
 section .bss
 
@@ -93,6 +68,32 @@ dijkstra:
 
 
 priority_queue@push:
+; ----------------------------------------------------------------------------
+; Function: priority queue push.
+; Description:
+;   Pushes new value into minheap.
+; Parameters:
+;   RDI - (PriorityQueue*)This* priority queue.
+;   ESI - (value)         Value to insert.
+;   RDX - ()              Unused.
+;   R10 - ()              Unused.
+;   R8  - ()              Unused.
+;   R9  - ()              Unused.
+; Returns:
+;   RAX - ()              None.
+;   Clobbers - RDI, RSI, RDX, R10, R8.
+; ---------------------------------------------------------------------------
+MOV RDX, [RDI + priority_queue.heap]
+MOV R10, [RDX + minheap.array]
+MOV R8, [RDX + minheap.len]
+
+MOV [R10 + R8*SIZE_INT], ESI
+INC [RDX + minheap.len]
+DEC R8
+MOV RDI, RDX
+MOV ESI, R8
+CALL minheap@siftUp
+RET
 
 priority_queue@pop:
 
@@ -141,14 +142,19 @@ MOV [RBP - minheap@siftUp.index], RSI
         MOV RDX, [RBP - minheap@siftUp.index]
         MOV R10, RAX
         MOV R8, RBX
+        MOV R9, RBX
         MOV R8, [R8 + minheap.array]
         MOV RDX, [R8 + RDX*SIZE_INT]
         MOV R10, [R8 + RDX*SIZE_INT]
         CMP RDX, R10
         JAE .sift_end
         MOV RDI, RBX
+        MOV RDI, [RBX + minheap.array]
         MOV RSI, [RBP - minheap@siftUp.index]
         MOV RDX, RAX
+        CALL minheap@swap
+        MOV RDI, RBX
+        MOV RDI, [RDI + minheap.array]
         CALL minheap@swap
         MOV [RBP - minheap@siftUp.index], RAX
         JMP .sift
@@ -218,8 +224,12 @@ MOV [RBP - minheap@siftDown.index], RSI
         CMP R11, R12
         JAE .sift_exit
         MOV RDI, RBX
+        MOV RDI, [RDI + minheap.array]
         MOV RSI, [RBP - minheap@siftDown.index]
         MOV RDX, R9
+        CALL minheap@swap
+        MOV RDI, RBX
+        MOV RDI, [RDI + minheap.elements]
         CALL minheap@swap
         MOV [RBX - minheap@siftDown.index], R9
         
@@ -241,7 +251,7 @@ minheap@swap:
 ; Description:
 ;   Swaps elements between given two indices.
 ; Parameters:
-;   RDI - (Minheap*)      This* minheap.
+;   RDI - (int[]*)        Minheap array to operate on.
 ;   ESI - (int)           Index one.
 ;   EDX - (int)           Index two.
 ;   R10 - ()              Unused.
@@ -251,7 +261,6 @@ minheap@swap:
 ;   RAX - ()              None.
 ;   Clobbers - RDI, R8, R10
 ; ---------------------------------------------------------------------------
-MOV RDI, [RDI + minheap.array]
 MOV R10, DWORD [RDI+ESI*SIZE_INT] ;TMP
 MOV R8, DWORD [RDI+EDX*SIZE_INT] ;TMP2
 MOV [RDI+ESI*SIZE_INT], R8D
