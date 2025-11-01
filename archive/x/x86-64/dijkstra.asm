@@ -167,8 +167,8 @@ SYSCALL
 
 POP RSI
 POP RDX
-MOV [RAX + NodeTuple.value], RDX
-MOV [RAX + NodeTuple.element], RSI
+MOV [RAX + NodeTuple.value], EDX
+MOV [RAX + NodeTuple.element], ESI
 
 .short_circuit:
 RET
@@ -213,8 +213,8 @@ SYSCALL
 
 POP RSI
 POP RDX
-MOV [RAX + NodeTuple.value], RDX
-MOV [RAX + NodeTuple.element], RSI
+MOV [RAX + NodeTuple.value], EDX
+MOV [RAX + NodeTuple.element], ESI
 .short_circuit:
 RET
 
@@ -259,6 +259,38 @@ MOV RAX, [RDI + priority_queue.size]
 RET
 
 priority_queue@decreaseKey:
+; ----------------------------------------------------------------------------
+; Function: priority queue size.
+; Description:
+;   Self explanatory.
+; Parameters:
+;   RDI - (PriorityQueue*)This* priority queue.
+;   RSI - (int)           Index.
+;   RDX - (NodeTuple*)    Replacement tuple.
+;   R10 - ()              Unused.
+;   R8  - ()              Unused.
+;   R9  - ()              Unused.
+; Returns:
+;   RAX - ()              None.
+;   Clobbers - RAX, RDI, RSI, RDX, R10, R8, R9.
+; ---------------------------------------------------------------------------
+MOV R10, [RDI + priority_queue.heap]
+MOV R8, [R10 + minheap.elements]
+MOV R10, [R10 + minheap.array]
+
+MOV R9D, [R10 + RSI*SIZE_INT]
+CMP R9D, [RDX + NodeTuple.value]
+JBE .short_circuit
+MOV R9D, [RDX + NodeTuple.value]
+MOV [R10 + RSI*SIZE_INT], R9D
+MOV R9D, [RDX + NodeTuple.element]
+MOV [R8 + RSI*SIZE_INT], R9D
+
+MOV RDI, R10
+MOV ESI, RSI
+CALL minheap@siftUp
+.short_circuit:
+RET
 
 priority_queue@construct:
 
