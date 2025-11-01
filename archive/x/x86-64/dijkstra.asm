@@ -330,7 +330,7 @@ MOV [RBP - minheap@siftUp.index], RSI
         MOV R9, RBX
         MOV R8, [R8 + minheap.array]
         MOV RDX, [R8 + RDX*SIZE_INT]
-        MOV R10, [R8 + RDX*SIZE_INT]
+        MOV R10, [R8 + R10*SIZE_INT]
         CMP RDX, R10
         JAE .sift_end
         MOV RDI, RBX
@@ -339,7 +339,7 @@ MOV [RBP - minheap@siftUp.index], RSI
         MOV RDX, RAX
         CALL minheap@swap
         MOV RDI, RBX
-        MOV RDI, [RDI + minheap.array]
+        MOV RDI, [RDI + minheap.elements]
         CALL minheap@swap
         MOV [RBP - minheap@siftUp.index], RAX
         JMP .sift
@@ -395,13 +395,13 @@ MOV [RBP - minheap@siftDown.index], RSI
         SETB [RBP - minheap@siftDown.conditional_BOOLs-1]
         MOV RAX, [RBX + minheap.array]
         MOV RCX, [RAX + RCX*SIZE_INT]
-        MOV RDX, [RAX + RCX*SIZE_INT]
+        MOV RDX, [RAX + RDX*SIZE_INT]
         CMP RDX, RCX
         SETB [RBP - minheap@siftDown.conditional_BOOLs-2]
         CMP [RBP - minheap@siftDown.conditional_BOOLs-1], minheap@siftDown.conditional_BOOLs-ACCEPT
         CMOVB R9, [RBP - minheap@siftDown.right]
         
-        MOV RAX, [RBX + minheap.array]
+        MOV RAX, [RBX + min_heap.array]
         MOV R11, R9
         MOV R11, [RAX + R11*SIZE_INT]
         MOV R12, [RBP - minheap@siftDown.index]
@@ -409,7 +409,7 @@ MOV [RBP - minheap@siftDown.index], RSI
         CMP R11, R12
         JAE .sift_exit
         MOV RDI, RBX
-        MOV RDI, [RDI + minheap.array]
+        MOV RDI, [RDI + min_heap.array]
         MOV RSI, [RBP - minheap@siftDown.index]
         MOV RDX, R9
         CALL minheap@swap
