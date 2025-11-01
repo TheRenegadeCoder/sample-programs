@@ -24,6 +24,19 @@
 
 
 
+;SYSCALLS
+
+;Memory
+%DEFINE SYS_MMAP 9
+%DEFINE NO_ADDR 0
+%DEFINE NO_FD -1
+%DEFINE NO_OFFSET 0
+;PROTS (RDX)
+%DEFINE PROT_READ 0x01
+%DEFINE PROT_WRITE 0x02
+;FLAGS (R10)
+%DEFINE MAP_SHARED 0x01
+%DEFINE MAP_ANONYMOUS 0x20
 
 
 
@@ -43,6 +56,10 @@ struc min_heap:
     .elements resq 1
 endstruc
 
+struc NodeTuple:
+    .value resd 1
+    .element resd 1
+endstruc
 
 ; I want this priority queue as it acts as a great container for the minheap
 ; and allows for easy abstraction of minheap methods.
@@ -74,36 +91,172 @@ priority_queue@push:
 ;   Pushes new value into minheap.
 ; Parameters:
 ;   RDI - (PriorityQueue*)This* priority queue.
-;   ESI - (value)         Value to insert.
+;   RSI - (NodeTuple*)    Tuple that contains distance and element.
 ;   RDX - ()              Unused.
 ;   R10 - ()              Unused.
 ;   R8  - ()              Unused.
 ;   R9  - ()              Unused.
 ; Returns:
 ;   RAX - ()              None.
-;   Clobbers - RDI, RSI, RDX, R10, R8.
+;   Clobbers - RDI, RSI, RCX, RDX, R10, R8, R9.
 ; ---------------------------------------------------------------------------
-MOV RDX, [RDI + priority_queue.heap]
-MOV R10, [RDX + minheap.array]
-MOV R8, [RDX + minheap.len]
+PUSH ESI
+MOV EDX, [ESI + NodeTuple.element]
+MOV ESI, [ESI + NodeTuple.value]
+MOV R10, [RDI + priority_queue.heap]
+MOV R8, [R10 + minheap.array]
+MOV RCX, [R10 + minheap.elements]
+MOV R9, [R10 + minheap.len]
 
-MOV [R10 + R8*SIZE_INT], ESI
-INC [RDX + minheap.len]
-DEC R8
-MOV RDI, RDX
-MOV ESI, R8
+MOV [R8 + R9*SIZE_INT], ESI
+MOV [RCX + R9*SIZE_INT], EDX
+INC [R10 + minheap.len]
+INC [RDI + priority_queue.size]
+DEC R9
+MOV RDI, R10
+MOV ESI, R9
 CALL minheap@siftUp
 RET
 
 priority_queue@pop:
+; ----------------------------------------------------------------------------
+; Function: priority queue pop.
+; Description:
+;   Pops the first element in both the value and element array of the minheap and returns NodeTuple containing both.
+; Parameters:
+;   RDI - (PriorityQueue*)This* priority queue.
+;   RSI - ()              Unused.
+;   RDX - ()              Unused.
+;   R10 - ()              Unused.
+;   R8  - ()              Unused.
+;   R9  - ()              Unused.
+; Returns:
+;   RAX - (NodeTuple*)    NodeTuple containing value, elem, or null (-1).
+;   Clobbers - RDI, RSI, RCX, RDX, R10, R8, R9.
+; ---------------------------------------------------------------------------
+CMP [RDI + priority_queue.size], 0
+CMOVE RAX, -1
+JE .short_circuit
+
+MOV RSI, [RDI + priority_queue.heap]
+MOV R10, [RSI + minheap.array]
+MOV R8, [RSI + minheap.elements]
+
+MOV RDX, [R10]
+PUSH RDX
+MOV RDX, [R8]
+PUSH RDX
+
+MOV RCX, [RDI + priority_queue.size]
+DEC RCX
+MOV R9, RCX
+MOV [RDI + priority_queue.size], RCX
+MOV ECX, [R10 + RCX*SIZE_INT]
+MOV [R10], ECX
+MOV R9D, [R8 + R9*SIZE_INT]
+MOV [R8], R9D
+
+MOV RAX, SYS_MMAP
+MOV RDI, NO_ADDR
+MOV RSI, NodeTuple_size
+MOV RDX, PROT_READ | PROT_WRITE
+MOV R10, MAP_SHARED | MAP_ANONYMOUS
+MOV R8, NO_FD
+MOV R9, NO_OFFSET
+SYSCALL
+
+POP RSI
+POP RDX
+MOV [RAX + NodeTuple.value], RDX
+MOV [RAX + NodeTuple.element], RSI
+
+.short_circuit:
+RET
 
 priority_queue@peek:
+; ----------------------------------------------------------------------------
+; Function: priority queue peek.
+; Description:
+;   Peeks at the first element in both the value and element array of the minheap and returns NodeTuple containing both.
+; Parameters:
+;   RDI - (PriorityQueue*)This* priority queue.
+;   RSI - ()              Unused.
+;   RDX - ()              Unused.
+;   R10 - ()              Unused.
+;   R8  - ()              Unused.
+;   R9  - ()              Unused.
+; Returns:
+;   RAX - (NodeTuple*)    NodeTuple containing value, elem, or null (-1).
+;   Clobbers - RDI, RSI, RCX, RDX, R10, R8, R9.
+; ---------------------------------------------------------------------------
+CMP [RDI + priority_queue.size], 0
+CMOVE RAX, -1
+JE .short_circuit
 
-priority_queue@heapify:
+MOV RSI, [RDI + priority_queue.heap]
+MOV R10, [RSI + minheap.array]
+MOV R8, [RSI + minheap.elements]
+
+MOV R10, [R10]
+MOV R8, [R8]
+PUSH R10
+PUSH R8
+
+MOV RAX, SYS_MMAP
+MOV RDI, NO_ADDR
+MOV RSI, NodeTuple_size
+MOV RDX, PROT_READ | PROT_WRITE
+MOV R10, MAP_SHARED | MAP_ANONYMOUS
+MOV R8, NO_FD
+MOV R9, NO_OFFSET
+SYSCALL
+
+POP RSI
+POP RDX
+MOV [RAX + NodeTuple.value], RDX
+MOV [RAX + NodeTuple.element], RSI
+.short_circuit:
+RET
 
 priority_queue@isEmpty:
+; ----------------------------------------------------------------------------
+; Function: priority queue isEmpty.
+; Description:
+;   Self explanatory.
+; Parameters:
+;   RDI - (PriorityQueue*)This* priority queue.
+;   RSI - ()              Unused.
+;   RDX - ()              Unused.
+;   R10 - ()              Unused.
+;   R8  - ()              Unused.
+;   R9  - ()              Unused.
+; Returns:
+;   RAX - (bool)          Boolean denoting whether PQ is empty (true) or not (false).
+;   Clobbers - RAX, RDI.
+; ---------------------------------------------------------------------------
+MOV RAX, 1
+CMP [RDI + priority_queue.size], 0
+CMOVA RAX, 0
+RET
 
 priority_queue@size:
+; ----------------------------------------------------------------------------
+; Function: priority queue size.
+; Description:
+;   Self explanatory.
+; Parameters:
+;   RDI - (PriorityQueue*)This* priority queue.
+;   RSI - ()              Unused.
+;   RDX - ()              Unused.
+;   R10 - ()              Unused.
+;   R8  - ()              Unused.
+;   R9  - ()              Unused.
+; Returns:
+;   EAX - (int)           Size of PQ/Minheap.
+;   Clobbers - RAX, RDI.
+; ---------------------------------------------------------------------------
+MOV RAX, [RDI + priority_queue.size]
+RET
 
 priority_queue@decreaseKey:
 
