@@ -1,3 +1,10 @@
+; CONSTANTS
+%DEFINE MUL_2 1
+%DEFINE DIV_2 1
+%DEFINE SIZE_INT 4
+
+
+
 %DEFINE atol.STACK_INIT 8
 %DEFINE atol.ret 8
 
@@ -16,7 +23,7 @@ section .rodata
 section .data
 
 struc min_heap:
-    .VT
+    .VT resq 1
     
     .size resq 1
     .array resq 1
@@ -39,7 +46,6 @@ struc priority_queue:
     
     .size resq 1
     .heap resq 1
-
 endstruc    
 
 struc VT_priority_queue:
@@ -95,13 +101,88 @@ minheap@siftUp:
 minheap@siftDown:
 
 minheap@swap:
+; ----------------------------------------------------------------------------
+; Function: minheap swap
+; Description:
+;   Swaps elements between given two indices.
+; Parameters:
+;   RDI - (Minheap*)      This* minheap.
+;   ESI - (int)           Index one.
+;   EDX - (int)           Index two.
+;   R10 - ()              Unused.
+;   R8  - ()              Unused.
+;   R9  - ()              Unused.
+; Returns:
+;   RAX - (long)          Parent index.
+;   Clobbers - None.
+; ---------------------------------------------------------------------------
+MOV R10, DWORD [RDI+ESI*SIZE_INT] ;TMP
+MOV R8, DWORD [RDI+EDX*SIZE_INT] ;TMP2
+MOV [RDI+ESI*SIZE_INT], R8D
+MOV [RDI+EDX*SIZE_INT], R10D
+RET
+
 
 minheap@parent:
-
+; ----------------------------------------------------------------------------
+; Function: minheap parent
+; Description:
+;   Grabs parent element index relative to given index.
+; Parameters:
+;   EDI - (int)           Index.
+;   RSI - ()              Unused.
+;   RDX - ()              Unused.
+;   R10 - ()              Unused.
+;   R8  - ()              Unused.
+;   R9  - ()              Unused.
+; Returns:
+;   RAX - (long)          Parent index.
+;   Clobbers - None.
+; ---------------------------------------------------------------------------
+MOV RAX, EDI
+DEC RAX
+SHR RAX, DIV_2
+RET
 minheap@left:
-
+; ----------------------------------------------------------------------------
+; Function: minheap left
+; Description:
+;   Grabs left element index relative to given index.
+; Parameters:
+;   EDI - (int)           Index.
+;   RSI - ()              Unused.
+;   RDX - ()              Unused.
+;   R10 - ()              Unused.
+;   R8  - ()              Unused.
+;   R9  - ()              Unused.
+; Returns:
+;   RAX - (long)          Left element index.
+;   Clobbers - None.
+; ---------------------------------------------------------------------------
+MOV RAX, EDI
+SHL RAX, MUL_2
+INC RAX
+RET
 minheap@right:
-
+; ----------------------------------------------------------------------------
+; Function: minheap left
+; Description:
+;   Grabs right element index relative to given index.
+; Parameters:
+;   EDI - (minheap)           Index.
+;   RSI - ()              Unused.
+;   RDX - ()              Unused.
+;   R10 - ()              Unused.
+;   R8  - ()              Unused.
+;   R9  - ()              Unused.
+; Returns:
+;   RAX - (long)          Right element index.
+;   Clobbers - None.
+; ---------------------------------------------------------------------------
+MOV RAX, EDI
+SHL RAX, MUL_2
+ADD RAX, 2
+RET
 minheap@construct:
 
 minheap@destruct:
