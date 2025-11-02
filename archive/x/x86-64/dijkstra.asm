@@ -186,11 +186,9 @@ CMP RAX, -1
 CMOVE RDI, [Err_Table + INVALID_NOT_SQUARE]
 JE .error
 MOV [RSP - _start.NumVerts], RAX
-
 MOV RDI, [RBP + _start.argv2]
 CALL parseSRCDST
 MOV [RBP + _start.SRC], RAX
-
 MOV RDI, [RBP + _start.argv3]
 CALL parseSRCDST
 MOV [RBP + _start.DST], RAX
@@ -333,13 +331,13 @@ parseSRCDST:
 ;   EAX - (int)           SRC/DST
 ;   Clobbers - RAX, RDI, RSI, RCX, RDX
 ; ---------------------------------------------------------------------------
-MOV RBP, RSP
 PUSH RBP
+MOV RBP, RSP
 SUB RSP, parseSRCDST.STACK_INIT
 
 MOV RCX, 0
     .validate:
-    MOV DL, BYTE [RDI]
+    MOV DL, BYTE [RDI+RCX]
     JMP [.jmpTable + RDX*SIZE_LONG]
     .jmpTable:
         dq .zero
@@ -397,8 +395,8 @@ parseVertices:
     %DEFINE Parse.STATE.COMMA 0010b
     %DEFINE Parse.STATE.SPACE 0100b
     %DEFINE Parse.STATE.ZERO 1000b
-MOV RBP, RSP
 PUSH RBP
+MOV RBP, RSP
 SUB RSP, parseVertices.STACK_INIT
 
 MOV [RBP - parseVertices.SRC], RDI
@@ -536,8 +534,8 @@ dijkstra:
 ;   RAX - (int[]*)        Array of distances.
 ;   Clobbers - RAX, RSI, RDX, R10, R8, R9.
 ; ---------------------------------------------------------------------------
-MOV RBP, RSP
 PUSH RBP
+MOV RBP, RSP
 SUB RSP, dijkstra.STACK_INIT
 PUSH RBX
 PUSH R11
@@ -1388,7 +1386,7 @@ atoi:
         ADD RAX, R8
         MOV QWORD [RBP - atoi.ret], RAX
         CMP RCX, RSI ;Compare counter to Strlen
-        JNE .operation
+        JBE .operation
     
     MOV RAX, QWORD [RBP - atoi.ret]
     POP RBX
