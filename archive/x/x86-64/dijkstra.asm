@@ -1,15 +1,15 @@
 ;Exit codes
 %DEFINE EXIT_OK 0
 
-%DEFINE INVALID_ARGC -1
-%DEFINE INVALID_SRC/DST -2
-%DEFINE INVALID_NUM_NEG -3
-%DEFINE INVALID_CHAR -4
-%DEFINE INVALID_NUM_VERTS -5
-%DEFINE INVALID_NOT_SQUARE -6
-%DEFINE INVALID_STATE -7
-%DEFINE INVALID_EMPTY -8
-%DEFINE INVALID_BAD_STR -9
+%DEFINE INVALID_ARGC 1
+%DEFINE INVALID_SRC/DST 2
+%DEFINE INVALID_NUM_NEG 3
+%DEFINE INVALID_CHAR 4
+%DEFINE INVALID_NUM_VERTS 5
+%DEFINE INVALID_NOT_SQUARE 6
+%DEFINE INVALID_STATE 7
+%DEFINE INVALID_EMPTY 8
+%DEFINE INVALID_BAD_STR 9
 
 ; CONSTANTS
 %DEFINE MUL_2 1
@@ -22,6 +22,7 @@
 %DEFINE NULL 0
 %DEFINE FALSE 0
 %DEFINE TRUE 1
+%DEFINE MAX_STR_INT 11 ; 10 (Max Int) + 1 (Null)
 
 %DEFINE COMMA_SPACE 2
 
@@ -222,6 +223,30 @@ MOV RCX, [RBP - _start.DST]
 MOV RBX, [RAX + RCX*SIZE_INT]
 MOV [RBP - _start.RET], RBX
 
+MOV RAX, SYS_MMAP
+MOV RDI, NO_ADDR
+MOV RSI, MAX_STR_INT
+MOV RDX, PROT_READ | PROT_WRITE
+MOV R10, MAP_SHARED | MAP_ANONYMOUS
+MOV R8, NO_FD
+MOV R9, NO_OFFSET
+SYSCALL
+
+PUSH RAX
+MOV RDI, RBX
+MOV RSI, RAX
+CALL iota
+MOV RAX, R10
+
+MOV RAX, SYS_WRITE
+MOV RDI, STDOUT
+POP RSI
+MOV RDX, R10
+SYSCALL
+
+MOV RAX, SYS_EXIT
+MOV RDI, [Err_Table+EXIT_OK]
+SYSCALL
 
 
 .error:
@@ -235,6 +260,61 @@ MOV [RBP - _start.RET], RBX
     MOV RAX, SYS_EXIT
     POP RDI
     SYSCALL
+
+itoa:
+; ----------------------------------------------------------------------------
+; Function: Int to ASCII
+; Description:
+;   Converts integer to ASCII, returned through char[] ptr.
+; Parameters:
+;   RDI - (int)           Int to convert.
+;   RSI - (char[]*)       String ptr.
+;   RDX - ()              Unused.
+;   R10 - ()              Unused.
+;   R8  - ()              Unused.
+;   R9  - ()              Unused.
+; Returns:
+;   RAX - (int)           Strlen.    
+;   Clobbers - RAX, RDI, RSI, RCX, RDX
+; ---------------------------------------------------------------------------
+PUSH RBX
+PUSH RDX
+PUSH R10
+PUSH R8
+MOV RCX, 0
+MOV RAX, RDI
+MOV RBX, 10
+    .loop:
+        CMP RDI, 0
+        JE .ext
+        DIV RBX
+        ADD RDX, '0'
+        MOV BYTE [RSI + RCX], DL
+        INC RCX
+        JMP .loop
+.ext:
+MOV BYTE [RSI + RCX], 0
+PUSH RCX
+DEC RCX
+MOV RDX, 0
+    .reverse:
+        CMP RDX, RCX
+        JAE .ext2
+        MOV R10B, [RSI+RDX]
+        MOV R8B, [RSI+RCX]
+        MOV [RSI+RDX], R8B
+        MOV [RSI+RDX], R10B
+        INC RDX
+        DEC RCX
+        JMP .reverse
+.ext2:
+POP RCX
+MOV RAX, RCX
+POP R8
+POP R10
+POP RDX
+POP RBX
+RET
 
 parseSRCDST:
 ; ----------------------------------------------------------------------------
