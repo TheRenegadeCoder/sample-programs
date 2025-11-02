@@ -379,14 +379,16 @@ dijkstra:
 ;   R8  - ()              Unused.
 ;   R9  - ()              Unused.
 ; Returns:
-;   RAX - ()              None.
+;   RAX - (int[]*)        Array of distances.
 ;   Clobbers - 
 ; ---------------------------------------------------------------------------
 MOV RBP, RSP
 PUSH RBP
 SUB RSP, dijkstra.STACK_INIT
+PUSH RBX
 PUSH R11
 PUSH R12
+PUSH R13
 
 MOV [RBP - dijkstra.SRC], RDI
 MOV [RBP - dijkstra.DST], RSI
@@ -470,24 +472,65 @@ MOV RDX, [RBP - dijkstra.PriorityQueue]
         
         
 .v_loop_exit: 
-MOV RDI, [RBP - dijkstra.PriorityQueue]
-CALL priority_queue@isEmpty
-MOV R11, RAX
-
+MOV R13, [RBP- dijkstra.PriorityQueue]
+MOV RBX, [RBP - dijkstra.dist]
     .dijkstra_loop:
+        MOV RDI, R13
+        CALL priority_queue@isEmpty
+        MOV R11, RAX
         CMP R11, TRUE
         JE .dijkstra_exit
         
-        MOV RDI, [RBP - dijkstra.PriorityQueue]
+        MOV RDI, R13
         CALL priority_queue@pop
         MOV R12, RAX
         MOVZX EDI, DWORD [R12 + NodeTuple.value]
         MOV [RBP - dijkstra.CurrTex], RDI
+        MOV RCX, 0
         .dijkstra_get_neighbors:
+            MOV R8, [RBP - dijkstra.CurrTex]
+            MOV RAX, R8
+            MOV R9, [RBP - dijkstra.NumVerts]
+            MUL R9
             
-            
+            MOV R10, [RBP - dijkstra.graph]
+            ADD R10, RAX
+            .neighbors_loop:
+                CMP [R10 + RCX*SIZE_INT], NULL
+                JNE .neighbor_cont
+                INC RCX
+                JMP .neighbors_loop
+            .neighbor_cont:
+                MOV RSI, RBX
+                MOV RSI, [RSI + R8*SIZE_INT]
+                ADD RSI, [R10 + RCX*SIZE_INT]
+                CMP RSI, [RBX + RCX*SIZE_INT]
+                JAE .neighbors_loop
+                PUSH RSI
+                MOV [RBX + RCX*SIZE_INT], RSI
+                MOVZX EDI, [R12 + NodeTuple.element]
+                PUSH RDI
+                MOV RSI, [RBP - dijkstra.prev]
+                MOV [RSI + RCX*SIZE_INT], EDI
+                MOV RDI, R13
+                POP RSI
+                POP RDX
+                PUSH R10
+                PUSH RCX
+                
+                CALL priority_queue@decreaseKey
+                POP RCX
+                POP R10
+                INC RCX
+                CMP RCX, [RBP - dijkstra.NumVerts]
+                JAE .dijkstra_loop
+                JB .neighbors_loop
         
-        
+MOV RAX, [RBP - dijkstra.dist]
+ADD RSP, dijkstra.STACK_INIT
+MOV RSP, RBP
+POP RBP
+RET
         
 .dijkstra_exit:           
 
