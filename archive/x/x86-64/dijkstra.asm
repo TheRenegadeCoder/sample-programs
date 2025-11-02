@@ -18,6 +18,7 @@
 %DEFINE SIZE_INT 4
 %DEFINE SIZE_LONG 8
 %DEFINE EMPTY_INPUT 0
+%DEFINE INF 0xFFFFFFFF
 
 %DEFINE COMMA_SPACE 2
 
@@ -371,6 +372,10 @@ MOV [RBP - dijkstra.NumVerts], R10
 
 MOV [RBP - dijkstra.CurrTex], RDI
 
+MOV RDI, R10
+CALL priority_queue@construct
+MOV [RBP - dijkstra.priority_queue], RAX
+
 PUSH R10
 PUSH R10
 
@@ -399,10 +404,51 @@ MOV RDI, [RBP - dijkstra.dist]
 MOV RSI, [RBP - dijkstra.CurrTex]
 MOV DWORD [RDI + RSI], 0
 
+MOV RDI, RSI
+MOV RSI, 0
+CALL dijkstra~GenerateTuple
 
+MOV RDI, [RBP - dijkstra.PriorityQueue]
+MOV RSI, RAX
+CALL priority_queue@push
 
+MOV RCX, 0
+MOV RDI, [RBP - dijkstra.dist]
+MOV RSI, [RBP - dijkstra.prev]
+MOV RDX, [RBP - dijkstra.PriorityQueue]
+    .add_vertex_loop:
+        CMP RCX, [RBP - dijkstra.NumVerts]
+        JAE .v_loop_exit
+        CMP RCX, [RBP - dijkstra.SRC]
+        JE .vtx_loop_cont
+        
+        MOV [RDI+RCX*SIZE_INT], INF
+        MOV [RSI+RCX*SIZE_INT], -1
+        
+        PUSH RDI
+        PUSH RSI
+        PUSH RCX
+        PUSH RDX
+        
+        MOV RDI, -1
+        MOV RSI, INF
+        CALL dijkstra~GenerateTuple
+        MOV RDI, [RBP - dijkstra.PriorityQueue]
+        MOV RSI, RAX
+        CALL priority_queue@push
+        
+        POP RDX
+        POP RCX
+        POP RSI
+        POP RDI
+        .vtx_loop_cont: ; Fall through ^
+        INC RCX
+        JMP .add_vertex_loop
+        
+        
+.v_loop_exit:        
 
-dijkstra&GenerateTuple:
+dijkstra~GenerateTuple:
 ; ----------------------------------------------------------------------------
 ; Function: Dijkstra Generate Tuple
 ; Description:
