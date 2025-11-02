@@ -8,11 +8,17 @@
 %DEFINE INVALID_NUM_VERTS -5
 %DEFINE INVALID_NOT_SQUARE -6
 %DEFINE INVALID_STATE -7
+%DEFINE INVALID_EMPTY -8
+%DEFINE INVALID_BAD_STR -9
 
 ; CONSTANTS
 %DEFINE MUL_2 1
 %DEFINE DIV_2 1
 %DEFINE SIZE_INT 4
+%DEFINE SIZE_LONG 8
+%DEFINE EMPTY_INPUT 0
+
+%DEFINE COMMA_SPACE 2
 
 
 
@@ -41,17 +47,19 @@
 %DEFINE parseSRCDST.STACK_INIT 8
 %DEFINE parseSRCDST.strlen 8
 
-%DEFINE parseVertices.STACK_INIT 40
+%DEFINE parseVertices.STACK_INIT 48
 %DEFINE parseVertices.strlen 8
 %DEFINE parseVertices.SRC 16
 %DEFINE parseVertices.DST 24
 %DEFINE parseVertices.NumPtr 32
-%DEFINE parseVertices.prevState 40
-
+%DEFINE parseVertices.PrevState 40
+%DEFINE parseVertices.NumElems 48
 
 
 ;SYSCALLS
-
+;STDIN/OUT
+%DEFINE SYS_WRITE 1
+%DEFINE STDOUT 1
 ;Memory
 %DEFINE SYS_MMAP 9
 %DEFINE NO_ADDR 0
@@ -65,6 +73,9 @@
 %DEFINE MAP_ANONYMOUS 0x20
 
 %DEFINE SYS_MUNMAP 11
+
+;Thread
+%DEFINE SYS_EXIT 60
 
 
 
@@ -89,6 +100,10 @@
 
 
 section .rodata
+
+Error:
+    .msg db 'Usage: please provide three inputs: a serialized matrix, a source node and a destination node'
+    .len equ $- .msg
 
 section .data
 
@@ -147,12 +162,12 @@ SUB RSP, parseSRCDST.STACK_INIT
 MOV RCX, 0
     .validate:
     MOV DL, BYTE [RDI]
-    JMP [.jmpTable + RDX*8]
+    JMP [.jmpTable + RDX*SIZE_LONG]
     .jmpTable:
         dq .zero
         times 48 dq .error
         times 10 dq .num
-        times 69 dq .error
+        times 197 dq .error
     .cont:
         PUSH RSI
         MOV RSI, RCX
@@ -192,21 +207,130 @@ parseVertices:
 ;   R8  - ()              Unused.
 ;   R9  - ()              Unused.
 ; Returns:
-;   RAX - (int)           
+;   RAX - (int)           Error code. (0 = success)
 ;   Clobbers - 
 ; ---------------------------------------------------------------------------
 ;Previous States
-    %DEFINE Parse.STATE.START 000b
-    %DEFINE Parse.STATE.NUM 001b
-    %DEFINE Parse.STATE.COMMA 010b
-    %DEFINE Parse.STATE.SPACE 100b
+    %DEFINE Parse.STATE.START 0000b
+    %DEFINE Parse.STATE.NUM 0001b
+    %DEFINE Parse.STATE.COMMA 0010b
+    %DEFINE Parse.STATE.SPACE 0100b
+    %DEFINE Parse.STATE.ZERO 1000b
 MOV RBP, RSP
 PUSH RBP
 SUB RSP, parseVertices.STACK_INIT
 
 MOV [RBP - parseVertices.SRC], RDI
 MOV [RBP - parseVertices.DST], RSI
+MOV [RBP - parseVertices.NumElems], 0
 
+MOV AL, BYTE [RDI]
+CMP AL, EMPTY_INPUT
+CMOVE RAX, INVALID_EMPTY
+JE .error
+
+MOV RCX, 0
+MOV [RBP - parseVertices.NumPtr], RDI
+    .validate:
+    MOV DL, BYTE [RDI+RCX]
+    JMP [.jmpTable + RDX*SIZE_LONG]
+    .jmpTable:
+        dq .zero
+        times 31 dq .error
+        dq .space
+        times 11 .error
+        dq .comma
+        times 3 dq .error
+        times 10 dq .num
+        times 197 dq .error
+    
+    .num:
+        CMP [RBP - parseVertices.PrevState], Parse.STATE.START
+        JE .errSkip
+        CMP [RBP - parseVertices.PrevState], Parse.STATE.SPACE
+        PUSH RDI
+        ADD RDI, RCX
+        CMOVE [RBP - parseVertices.NumPtr], RDI
+        POP RDI
+        JE .errSkip
+        CMOVNE RDI, INVALID_BAD_STR
+        JMP .error
+        .errSkip: 
+        INC [RBP - parseVertices.strlen]
+        INC RCX
+        MOV [RBP - parseVertices.PrevState], Parse.STATE.NUM
+        JMP .validate
+        
+    .comma:
+        CMP [RBP - parseVertices.PrevState], Parse.STATE.NUM
+        CMOVNE RDI, INVALID_BAD_STR
+        JNE .error
+        
+        .zero_jmp:
+        PUSH RAX
+        PUSH RDI
+        PUSH RSI
+        PUSH RCX
+        PUSH RDX
+        MOV RDI, [RBP - parseVertices.NumPtr]
+        MOV RSI, [RBP - parseVertices.strlen]
+        CALL atoi
+        MOV RDI, [RBP - parseVertices.DST]
+        MOV RCX, [RBP - parseVertices.NumElems]
+        MOV [RDI + RCX*SIZE_INT], EAX
+        POP RDX
+        POP RCX
+        POP RSI
+        POP RDI
+        POP RAX
+        CMP [RBP - parseVertices.PrevState], PARSE.STATE.ZERO
+        JE .zero_cont
+        
+        MOV [RBP - parseVertices.PrevState], PARSE.STATE.COMMA
+        MOV [RBP - parseVertices.strlen], 0
+        INC RCX
+        INC [RBP - parseVertices.NumElems]
+        JMP .validate     
+    .space:
+        CMP [RBP - parseVertices.PrevState], Parse.STATE.COMMA
+        CMOVNE RDI, INVALID_BAD_STR
+        JNE .error
+        
+        JMP .validate
+    .zero:
+        CMP [RBP - parseVertices.PrevState], Parse.STATE.NUM
+        CMOVNE RDI, INVALID_BAD_STR
+        JNE .error       
+        CMP RCX, 0
+        CMOVE RDI, INVALID_BAD_STR
+        JE .error
+        MOV [RBP - parseVertices.PrevState], Parse.STATE.ZERO
+        JMP .zero_jmp ; I don't like this backwards GOTO.
+        .zero_cont:
+        JMP .cont
+        
+    .cont:
+        ADD RSP, parseVertices.STACK_INIT
+        MOV RSP, RBP
+        POP RBP
+        RET
+    .error:
+        PUSH RDI
+        MOV RAX, SYS_WRITE
+        MOV RDI, STDIN
+        MOV RSI, Error.msg
+        MOV RDX, Error.len
+        SYSCALL
+        
+        ;For debugging, I can also add pointers, or other info into other registers before SYSCALLing.
+        MOV RAX, SYS_EXIT
+        POP RDI
+        SYSCALL
+        
+        
+        
+        
+        
 
 dijkstra:
 
