@@ -93,11 +93,12 @@
 %DEFINE _start.argv3 40
 ; RBP+ ^
 ; RBP- v
-%DEFINE _start.STACK_INIT 32
+%DEFINE _start.STACK_INIT 40
 %DEFINE _start.SRC 8
 %DEFINE _start.DST 16
 %DEFINE _start.NumVerts 24
 %DEFINE _start.graph 32
+%DEFINE _start.RET 40
 
 %DEFINE dijkstra.STACK_INIT 64
 %DEFINE dijkstra.PriorityQueue 8
@@ -163,7 +164,77 @@ section .text
 global _start
 
 _start:
+MOV RBP, RSP
+PUSH RBP
+SUB RSP, _start.STACK_INIT
 
+MOV RAX, [RBP + _start.argv1]
+MOV RCX, 0
+.count_commas:
+    CMP BYTE [RAX + RCX], 0
+    JE .count_end
+    CMP BYTE [RAX + RCX], ','
+    SETE BL
+    MOVZX RBX, BL
+    ADD RCX, RBX
+    MOV RBX, 0
+.count_end:    
+MOV RDI, RCX
+CALL ezsqrt
+CMP RAX, -1
+CMOVE RDI, [Err_Table + INVALID_NOT_SQUARE]
+JE .error
+MOV [RSP - _start.NumVerts], RAX
+
+MOV RDI, [RBP + _start.argv2]
+CALL parseSRCDST
+MOV [RBP + _start.SRC], RAX
+
+MOV RDI, [RBP + _start.argv3]
+CALL parseSRCDST
+MOV [RBP + _start.DST], RAX
+
+MOV RAX, [RBP - _start.NumVerts]
+MUL RAX
+
+PUSH RAX
+MOV RAX, SYS_MMAP
+MOV RDI, NO_ADDR
+POP RSI
+MOV RDX, PROT_READ | PROT_WRITE
+MOV R10, MAP_SHARED | MAP_ANONYMOUS
+MOV R8, NO_FD
+MOV R9, NO_OFFSET
+SYSCALL
+MOV [RBP - _start.graph], RAX
+
+MOV RDI, [RBP + _start.argv1]
+MOV RSI, [RBP - _start.graph]
+CALL parseVertices
+
+MOV RDI, [RBP - _start.SRC]
+MOV RSI, [RBP - _start.DST]
+MOV RDX, [RBP - _start.graph]
+MOV R10, [RBP - _start.NumVerts]
+CALL dijkstra
+
+MOV RCX, [RBP - _start.DST]
+MOV RBX, [RAX + RCX*SIZE_INT]
+MOV [RBP - _start.RET], RBX
+
+
+
+.error:
+    PUSH RDI
+    MOV RAX, SYS_WRITE
+    MOV RDI, STDOUT
+    MOV RSI, Error.msg
+    MOV RDX, Error.len
+    SYSCALL
+    
+    MOV RAX, SYS_EXIT
+    POP RDI
+    SYSCALL
 
 parseSRCDST:
 ; ----------------------------------------------------------------------------
@@ -173,13 +244,13 @@ parseSRCDST:
 ;   Parsed through Finite State Machine.
 ; Parameters:
 ;   RDI - (char[]*)       Ptr to SRC/DST char array.
-;   RSI - (int*)          Ptr to SRC/DST char for storage.
+;   RSI - ()              Unused.
 ;   RDX - ()              Unused.
 ;   R10 - ()              Unused.
 ;   R8  - ()              Unused.
 ;   R9  - ()              Unused.
 ; Returns:
-;   RAX - (int)           0 = success, -2 for INVALID_SRC/DST.
+;   EAX - (int)           SRC/DST
 ;   Clobbers - RAX, RDI, RSI, RCX, RDX
 ; ---------------------------------------------------------------------------
 MOV RBP, RSP
@@ -196,12 +267,9 @@ MOV RCX, 0
         times 10 dq .num
         times 197 dq .error
     .cont:
-        PUSH RSI
         MOV RSI, RCX
         CALL atoi
-        POP RSI
-        MOV [RSI], RAX 
-        
+        MOVZX RAX, EAX
         ADD RSP, parseSRCDST.STACK_INIT
         MOV RSP, RBP
         POP RBP
@@ -215,10 +283,16 @@ MOV RCX, 0
         INC RCX
         JMP .validate
     .error:
-        ADD RSP, parseSRCDST.STACK_INIT
-        MOV RSP, RBP
-        POP RBP
-        RET
+        PUSH RAX
+        MOV RAX, SYS_WRITE
+        MOV RDI, STDIN
+        MOV RSI, Error.msg
+        MOV RDX, Error.len
+        SYSCALL
+        
+        MOV RAX, SYS_EXIT
+        POP RDI
+        SYSCALL
 
 parseVertices:
 ; ----------------------------------------------------------------------------
@@ -380,7 +454,7 @@ dijkstra:
 ;   R9  - ()              Unused.
 ; Returns:
 ;   RAX - (int[]*)        Array of distances.
-;   Clobbers - 
+;   Clobbers - RAX, RSI, RDX, R10, R8, R9.
 ; ---------------------------------------------------------------------------
 MOV RBP, RSP
 PUSH RBP
@@ -531,8 +605,7 @@ ADD RSP, dijkstra.STACK_INIT
 MOV RSP, RBP
 POP RBP
 RET
-        
-.dijkstra_exit:           
+
 
 dijkstra~GenerateTuple:
 ; ----------------------------------------------------------------------------
