@@ -46,7 +46,7 @@ jobs:
       run: poetry install
         
     - name: Generate READMEs
-      run: poetry run ronbun . --log=DEBUG
+      run: poetry run ronbun . --log=INFO
         
     - name: Create Pull Request
       id: cpr
