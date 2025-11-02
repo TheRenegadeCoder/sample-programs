@@ -87,11 +87,11 @@
 
 ;Start
 
-%DEFINE _start.argc 8
-%DEFINE _start.argv0 16
-%DEFINE _start.argv1 24
-%DEFINE _start.argv2 32
-%DEFINE _start.argv3 40
+%DEFINE _start.argc 0
+%DEFINE _start.argv0 8
+%DEFINE _start.argv1 16
+%DEFINE _start.argv2 24
+%DEFINE _start.argv3 32
 ; RBP+ ^
 ; RBP- v
 %DEFINE _start.STACK_INIT 40
@@ -188,7 +188,7 @@ JE .error
 MOV [RSP - _start.NumVerts], RAX
 MOV RDI, [RBP + _start.argv2]
 CALL parseSRCDST
-MOV [RBP + _start.SRC], RAX
+MOV [RBP - _start.SRC], RAX
 MOV RDI, [RBP + _start.argv3]
 CALL parseSRCDST
 MOV [RBP + _start.DST], RAX
