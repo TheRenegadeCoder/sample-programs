@@ -1,3 +1,14 @@
+;Exit codes
+%DEFINE EXIT_OK 0
+
+%DEFINE INVALID_ARGC -1
+%DEFINE INVALID_SRC/DST -2
+%DEFINE INVALID_NUM_NEG -3
+%DEFINE INVALID_CHAR -4
+%DEFINE INVALID_NUM_VERTS -5
+%DEFINE INVALID_NOT_SQUARE -6
+%DEFINE INVALID_STATE -7
+
 ; CONSTANTS
 %DEFINE MUL_2 1
 %DEFINE DIV_2 1
@@ -5,8 +16,10 @@
 
 
 
-%DEFINE atol.STACK_INIT 8
-%DEFINE atol.ret 8
+; Functions/Methods
+
+%DEFINE atoi.STACK_INIT 8
+%DEFINE atoi.ret 8
 
 %DEFINE minheap@siftDown.STACK_INIT 40
 %DEFINE minheap@siftDown.minheap_len 8
@@ -24,6 +37,16 @@
 
 %DEFINE priority_queue@construct.STACK_INIT 8
 %DEFINE priority_queue@construct.PQPtr 8
+
+%DEFINE parseSRCDST.STACK_INIT 8
+%DEFINE parseSRCDST.strlen 8
+
+%DEFINE parseVertices.STACK_INIT 40
+%DEFINE parseVertices.strlen 8
+%DEFINE parseVertices.SRC 16
+%DEFINE parseVertices.DST 24
+%DEFINE parseVertices.NumPtr 32
+%DEFINE parseVertices.prevState 40
 
 
 
@@ -45,8 +68,22 @@
 
 
 
+;Start
 
-
+%DEFINE _start.argc 8
+%DEFINE _start.argv0 16
+%DEFINE _start.argv1 24
+%DEFINE _start.argv2 32
+%DEFINE _start.argv3 40
+; RBP+ ^
+; RBP- v
+%DEFINE _start.STACK_INIT 48
+%DEFINE _start.PriorityQueue 8
+%DEFINE _start.SRC 16
+%DEFINE _start.DST 24
+%DEFINE _start.dist 32
+%DEFINE _start.prev 40
+%DEFINE _start.graph 48
 
 
 
@@ -54,6 +91,9 @@
 section .rodata
 
 section .data
+
+Error_state:
+    .CODE db 0
 
 struc min_heap:
     .arr_size resq 1
@@ -84,8 +124,89 @@ _start:
 
 
 parseSRCDST:
+; ----------------------------------------------------------------------------
+; Function: Parse SRC & DST.
+; Description:
+;   Parses given SRC OR DST. Separated from vertice parser for modularity and organization.
+;   Parsed through Finite State Machine.
+; Parameters:
+;   RDI - (char[]*)       Ptr to SRC/DST char array.
+;   RSI - (int*)          Ptr to SRC/DST char for storage.
+;   RDX - ()              Unused.
+;   R10 - ()              Unused.
+;   R8  - ()              Unused.
+;   R9  - ()              Unused.
+; Returns:
+;   RAX - (int)           0 = success, -2 for INVALID_SRC/DST.
+;   Clobbers - RAX, RDI, RSI, RCX, RDX
+; ---------------------------------------------------------------------------
+MOV RBP, RSP
+PUSH RBP
+SUB RSP, parseSRCDST.STACK_INIT
+
+MOV RCX, 0
+    .validate:
+    MOV DL, BYTE [RDI]
+    JMP [.jmpTable + RDX*8]
+    .jmpTable:
+        dq .zero
+        times 48 dq .error
+        times 10 dq .num
+        times 69 dq .error
+    .cont:
+        PUSH RSI
+        MOV RSI, RCX
+        CALL atoi
+        POP RSI
+        MOV [RSI], RAX 
+        
+        ADD RSP, parseSRCDST.STACK_INIT
+        MOV RSP, RBP
+        POP RBP
+        RET
+    .zero:
+        CMP RCX, 0
+        CMOVE RAX, INVALID_SRC/DST
+        JE .error
+        JNE .cont
+    .num:
+        INC RCX
+        JMP .validate
+    .error:
+        ADD RSP, parseSRCDST.STACK_INIT
+        MOV RSP, RBP
+        POP RBP
+        RET
 
 parseVertices:
+; ----------------------------------------------------------------------------
+; Function: Parse Vertices.
+; Description:
+;   Parses given vertices from array and checks for errors.
+;   Parsed through Finite State Machine.
+; Parameters:
+;   RDI - (char[]*)       Ptr to vertice char array.
+;   RSI - (int[][]*)      Ptr to distances 2d array.
+;   RDX - ()              Unused.
+;   R10 - ()              Unused.
+;   R8  - ()              Unused.
+;   R9  - ()              Unused.
+; Returns:
+;   RAX - (int)           
+;   Clobbers - 
+; ---------------------------------------------------------------------------
+;Previous States
+    %DEFINE Parse.STATE.START 000b
+    %DEFINE Parse.STATE.NUM 001b
+    %DEFINE Parse.STATE.COMMA 010b
+    %DEFINE Parse.STATE.SPACE 100b
+MOV RBP, RSP
+PUSH RBP
+SUB RSP, parseVertices.STACK_INIT
+
+MOV [RBP - parseVertices.SRC], RDI
+MOV [RBP - parseVertices.DST], RSI
+
 
 dijkstra:
 
@@ -721,7 +842,7 @@ atoi:
 ; Description:
 ;   Converts ascii string to integer.
 ; Parameters:
-;   RDI - (char*)         Pointer to string to convert to integer.
+;   RDI - (char[]*)       Pointer to string to convert to integer.
 ;   RSI - (long)          Strlen.
 ;   RDX - ()              Unused.
 ;   R10 - ()              Unused.
