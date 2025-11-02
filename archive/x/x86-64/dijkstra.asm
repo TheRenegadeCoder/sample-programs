@@ -19,6 +19,7 @@
 %DEFINE SIZE_LONG 8
 %DEFINE EMPTY_INPUT 0
 %DEFINE INF 0xFFFFFFFF
+%DEFINE NULL 0
 
 %DEFINE COMMA_SPACE 2
 
@@ -115,6 +116,19 @@ section .rodata
 Error:
     .msg db 'Usage: please provide three inputs: a serialized matrix, a source node and a destination node'
     .len equ $- .msg
+    
+Err_Table: ; This is absurd but this because of CMOV not allowing immediates.
+    db 0
+    db -1
+    db -2
+    db -3
+    db -4
+    db -5
+    db -6
+    db -7
+    db -8
+    db -9
+    
 
 section .data
 
@@ -192,7 +206,7 @@ MOV RCX, 0
         RET
     .zero:
         CMP RCX, 0
-        CMOVE RAX, INVALID_SRC/DST
+        CMOVE RAX, [Err_Table+INVALID_SRC/DST]
         JE .error
         JNE .cont
     .num:
@@ -237,7 +251,7 @@ MOV [RBP - parseVertices.NumElems], 0
 
 MOV AL, BYTE [RDI]
 CMP AL, EMPTY_INPUT
-CMOVE RAX, INVALID_EMPTY
+CMOVE RAX, [Err_Table+INVALID_EMPTY]
 JE .error
 
 MOV RCX, 0
@@ -258,13 +272,18 @@ MOV [RBP - parseVertices.NumPtr], RDI
     .num:
         CMP [RBP - parseVertices.PrevState], Parse.STATE.START
         JE .errSkip
-        CMP [RBP - parseVertices.PrevState], Parse.STATE.SPACE
         PUSH RDI
+        PUSH RAX
+        MOV RAX, [RBP - parseVertices.NumPtr]
+        MOV RAX, [RAX]
         ADD RDI, RCX
-        CMOVE [RBP - parseVertices.NumPtr], RDI
+        CMP [RBP - parseVertices.PrevState], Parse.STATE.SPACE
+        CMOVE RAX, RDI
+        MOV [RBP - parseVertices.NumPtr], RAX
+        POP RAX
         POP RDI
         JE .errSkip
-        CMOVNE RDI, INVALID_BAD_STR
+        CMOVNE RDI, [Err_Table+INVALID_BAD_STR]
         JMP .error
         .errSkip: 
         INC [RBP - parseVertices.strlen]
@@ -274,7 +293,7 @@ MOV [RBP - parseVertices.NumPtr], RDI
         
     .comma:
         CMP [RBP - parseVertices.PrevState], Parse.STATE.NUM
-        CMOVNE RDI, INVALID_BAD_STR
+        CMOVNE RDI, [Err_Table+INVALID_BAD_STR]
         JNE .error
         
         .zero_jmp:
@@ -304,16 +323,16 @@ MOV [RBP - parseVertices.NumPtr], RDI
         JMP .validate     
     .space:
         CMP [RBP - parseVertices.PrevState], Parse.STATE.COMMA
-        CMOVNE RDI, INVALID_BAD_STR
+        CMOVNE RDI, [Err_Table+INVALID_BAD_STR]
         JNE .error
         
         JMP .validate
     .zero:
         CMP [RBP - parseVertices.PrevState], Parse.STATE.NUM
-        CMOVNE RDI, INVALID_BAD_STR
+        CMOVNE RDI, [Err_Table+INVALID_BAD_STR]
         JNE .error       
         CMP RCX, 0
-        CMOVE RDI, INVALID_BAD_STR
+        CMOVE RDI, [Err_Table+INVALID_BAD_STR]
         JE .error
         MOV [RBP - parseVertices.PrevState], Parse.STATE.ZERO
         JMP .zero_jmp ; I don't like this backwards GOTO.
@@ -533,11 +552,12 @@ priority_queue@pop:
 ;   R8  - ()              Unused.
 ;   R9  - ()              Unused.
 ; Returns:
-;   RAX - (NodeTuple*)    NodeTuple containing value, elem, or null (-1).
+;   RAX - (NodeTuple*)    NodeTuple containing value, elem, or null (0).
 ;   Clobbers - RDI, RSI, RCX, RDX, R10, R8, R9.
 ; ---------------------------------------------------------------------------
 CMP [RDI + priority_queue.size], 0
-CMOVE RAX, -1
+SETNE AL
+MOVZX RAX, AL
 JE .short_circuit
 
 MOV RSI, [RDI + priority_queue.heap]
@@ -588,11 +608,12 @@ priority_queue@peek:
 ;   R8  - ()              Unused.
 ;   R9  - ()              Unused.
 ; Returns:
-;   RAX - (NodeTuple*)    NodeTuple containing value, elem, or null (-1).
+;   RAX - (NodeTuple*)    NodeTuple containing value, elem, or null (0).
 ;   Clobbers - RDI, RSI, RCX, RDX, R10, R8, R9.
 ; ---------------------------------------------------------------------------
 CMP [RDI + priority_queue.size], 0
-CMOVE RAX, -1
+SETNE AL
+MOVZX RAX, AL
 JE .short_circuit
 
 MOV RSI, [RDI + priority_queue.heap]
@@ -638,7 +659,8 @@ priority_queue@isEmpty:
 ; ---------------------------------------------------------------------------
 MOV RAX, 1
 CMP [RDI + priority_queue.size], 0
-CMOVA RAX, 0
+SETE AL
+MOVZX RAX, AL
 RET
 
 priority_queue@size:
