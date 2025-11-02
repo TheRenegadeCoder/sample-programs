@@ -2,7 +2,7 @@
 %DEFINE EXIT_OK 0
 
 %DEFINE INVALID_ARGC 1
-%DEFINE INVALID_SRC/DST 2
+%DEFINE INVALID_SRCDST 2
 %DEFINE INVALID_NUM_NEG 3
 %DEFINE INVALID_CHAR 4
 %DEFINE INVALID_NUM_VERTS 5
@@ -39,9 +39,9 @@
 %DEFINE minheap@siftDown.left 24
 %DEFINE minheap@siftDown.right 32
 %DEFINE minheap@siftDown.conditional_BOOLs 40
-%DEFINE minheap@siftDown.conditional_BOOLs-1 36
-%DEFINE minheap@siftDown.conditional_BOOLs-2 40
-%DEFINE minheap@siftDown.conditional_BOOLs-ACCEPT (0x1 + 0x1<<32)
+%DEFINE minheap@siftDown.conditional_BOOLs~1 36
+%DEFINE minheap@siftDown.conditional_BOOLs~2 40
+%DEFINE minheap@siftDown.conditional_BOOLs~ACCEPT 0xFFFFFFFFFFFFFFFF
 
 %DEFINE minheap@siftUp.STACK_INIT 16
 %DEFINE minheap@siftUp.index 8
@@ -63,7 +63,7 @@
 
 
 ;SYSCALLS
-;STDIN/OUT
+;STDOUT/OUT
 %DEFINE SYS_WRITE 1
 %DEFINE STDOUT 1
 ;Memory
@@ -139,21 +139,21 @@ section .data
 Error_state:
     .CODE db 0
 
-struc min_heap:
+struc min_heap
     .arr_size resq 1
     .len resq 1
     .array resq 1
     .elements resq 1
 endstruc
 
-struc NodeTuple:
+struc NodeTuple
     .value resd 1
     .element resd 1
 endstruc
 
 ; I want this priority queue as it acts as a great container for the minheap
 ; and allows for easy abstraction of minheap methods.
-struc priority_queue:
+struc priority_queue
     .size resq 1
     .heap resq 1
 endstruc    
@@ -235,7 +235,7 @@ SYSCALL
 PUSH RAX
 MOV RDI, RBX
 MOV RSI, RAX
-CALL iota
+CALL itoa
 MOV RAX, R10
 
 MOV RAX, SYS_WRITE
@@ -349,14 +349,14 @@ MOV RCX, 0
     .cont:
         MOV RSI, RCX
         CALL atoi
-        MOVZX RAX, EAX
+        MOV EAX, EAX
         ADD RSP, parseSRCDST.STACK_INIT
         MOV RSP, RBP
         POP RBP
         RET
     .zero:
         CMP RCX, 0
-        CMOVE RAX, [Err_Table+INVALID_SRC/DST]
+        CMOVE RAX, [Err_Table+INVALID_SRCDST]
         JE .error
         JNE .cont
     .num:
@@ -365,7 +365,7 @@ MOV RCX, 0
     .error:
         PUSH RAX
         MOV RAX, SYS_WRITE
-        MOV RDI, STDIN
+        MOV RDI, STDOUT
         MOV RSI, Error.msg
         MOV RDX, Error.len
         SYSCALL
@@ -403,7 +403,7 @@ SUB RSP, parseVertices.STACK_INIT
 
 MOV [RBP - parseVertices.SRC], RDI
 MOV [RBP - parseVertices.DST], RSI
-MOV [RBP - parseVertices.NumElems], 0
+MOV QWORD [RBP - parseVertices.NumElems], 0
 
 MOV AL, BYTE [RDI]
 CMP AL, EMPTY_INPUT
@@ -419,21 +419,21 @@ MOV [RBP - parseVertices.NumPtr], RDI
         dq .zero
         times 31 dq .error
         dq .space
-        times 11 .error
+        times 11 dq .error
         dq .comma
         times 3 dq .error
         times 10 dq .num
         times 197 dq .error
     
     .num:
-        CMP [RBP - parseVertices.PrevState], Parse.STATE.START
+        CMP QWORD [RBP - parseVertices.PrevState], Parse.STATE.START
         JE .errSkip
         PUSH RDI
         PUSH RAX
         MOV RAX, [RBP - parseVertices.NumPtr]
         MOV RAX, [RAX]
         ADD RDI, RCX
-        CMP [RBP - parseVertices.PrevState], Parse.STATE.SPACE
+        CMP QWORD [RBP - parseVertices.PrevState], Parse.STATE.SPACE
         CMOVE RAX, RDI
         MOV [RBP - parseVertices.NumPtr], RAX
         POP RAX
@@ -442,13 +442,13 @@ MOV [RBP - parseVertices.NumPtr], RDI
         CMOVNE RDI, [Err_Table+INVALID_BAD_STR]
         JMP .error
         .errSkip: 
-        INC [RBP - parseVertices.strlen]
+        INC QWORD [RBP - parseVertices.strlen]
         INC RCX
-        MOV [RBP - parseVertices.PrevState], Parse.STATE.NUM
+        MOV QWORD [RBP - parseVertices.PrevState], Parse.STATE.NUM
         JMP .validate
         
     .comma:
-        CMP [RBP - parseVertices.PrevState], Parse.STATE.NUM
+        CMP QWORD [RBP - parseVertices.PrevState], Parse.STATE.NUM
         CMOVNE RDI, [Err_Table+INVALID_BAD_STR]
         JNE .error
         
@@ -469,34 +469,34 @@ MOV [RBP - parseVertices.NumPtr], RDI
         POP RSI
         POP RDI
         POP RAX
-        CMP [RBP - parseVertices.PrevState], PARSE.STATE.ZERO
+        CMP QWORD [RBP - parseVertices.PrevState], Parse.STATE.ZERO
         JE .zero_cont
         
-        MOV [RBP - parseVertices.PrevState], PARSE.STATE.COMMA
-        MOV [RBP - parseVertices.strlen], 0
+        MOV QWORD [RBP - parseVertices.PrevState], Parse.STATE.COMMA
+        MOV QWORD [RBP - parseVertices.strlen], 0
         INC RCX
-        INC [RBP - parseVertices.NumElems]
+        INC QWORD [RBP - parseVertices.NumElems]
         JMP .validate     
     .space:
-        CMP [RBP - parseVertices.PrevState], Parse.STATE.COMMA
+        CMP QWORD [RBP - parseVertices.PrevState], Parse.STATE.COMMA
         CMOVNE RDI, [Err_Table+INVALID_BAD_STR]
         JNE .error
         
         JMP .validate
     .zero:
-        CMP [RBP - parseVertices.PrevState], Parse.STATE.NUM
+        CMP QWORD [RBP - parseVertices.PrevState], Parse.STATE.NUM
         CMOVNE RDI, [Err_Table+INVALID_BAD_STR]
         JNE .error       
         CMP RCX, 0
         CMOVE RDI, [Err_Table+INVALID_BAD_STR]
         JE .error
-        MOV [RBP - parseVertices.PrevState], Parse.STATE.ZERO
+        MOV QWORD [RBP - parseVertices.PrevState], Parse.STATE.ZERO
         JMP .zero_jmp ; I don't like this backwards GOTO.
         .zero_cont:
         JMP .cont
         
     .cont:
-        MOV RAX, [RBP - parseVertices.NumElemes]
+        MOV RAX, [RBP - parseVertices.NumElems]
     
         ADD RSP, parseVertices.STACK_INIT
         MOV RSP, RBP
@@ -505,7 +505,7 @@ MOV [RBP - parseVertices.NumPtr], RDI
     .error:
         PUSH RDI
         MOV RAX, SYS_WRITE
-        MOV RDI, STDIN
+        MOV RDI, STDOUT
         MOV RSI, Error.msg
         MOV RDX, Error.len
         SYSCALL
@@ -553,7 +553,7 @@ MOV [RBP - dijkstra.CurrTex], RDI
 
 MOV RDI, R10
 CALL priority_queue@construct
-MOV [RBP - dijkstra.priority_queue], RAX
+MOV [RBP - dijkstra.PriorityQueue], RAX
 
 PUSH R10
 PUSH R10
@@ -601,8 +601,8 @@ MOV RDX, [RBP - dijkstra.PriorityQueue]
         CMP RCX, [RBP - dijkstra.SRC]
         JE .vtx_loop_cont
         
-        MOV [RDI+RCX*SIZE_INT], INF
-        MOV [RSI+RCX*SIZE_INT], -1
+        MOV DWORD [RDI+RCX*SIZE_INT], INF
+        MOV DWORD [RSI+RCX*SIZE_INT], -1
         
         PUSH RDI
         PUSH RSI
@@ -638,7 +638,7 @@ MOV RBX, [RBP - dijkstra.dist]
         MOV RDI, R13
         CALL priority_queue@pop
         MOV R12, RAX
-        MOVZX EDI, DWORD [R12 + NodeTuple.value]
+        MOV EDI, DWORD [R12 + NodeTuple.value]
         MOV [RBP - dijkstra.CurrTex], RDI
         MOV RCX, 0
         .dijkstra_get_neighbors:
@@ -650,7 +650,7 @@ MOV RBX, [RBP - dijkstra.dist]
             MOV R10, [RBP - dijkstra.graph]
             ADD R10, RAX
             .neighbors_loop:
-                CMP [R10 + RCX*SIZE_INT], NULL
+                CMP DWORD [R10 + RCX*SIZE_INT], NULL
                 JNE .neighbor_cont
                 INC RCX
                 JMP .neighbors_loop
@@ -662,7 +662,7 @@ MOV RBX, [RBP - dijkstra.dist]
                 JAE .neighbors_loop
                 PUSH RSI
                 MOV [RBX + RCX*SIZE_INT], RSI
-                MOVZX EDI, [R12 + NodeTuple.element]
+                MOV EDI, DWORD [R12 + NodeTuple.element]
                 PUSH RDI
                 MOV RSI, [RBP - dijkstra.prev]
                 MOV [RSI + RCX*SIZE_INT], EDI
@@ -679,7 +679,7 @@ MOV RBX, [RBP - dijkstra.dist]
                 CMP RCX, [RBP - dijkstra.NumVerts]
                 JAE .dijkstra_loop
                 JB .neighbors_loop
-        
+.dijkstra_exit:        
 MOV RAX, [RBP - dijkstra.dist]
 ADD RSP, dijkstra.STACK_INIT
 MOV RSP, RBP
@@ -745,17 +745,17 @@ priority_queue@push:
 MOV EDX, [ESI + NodeTuple.element]
 MOV ESI, [ESI + NodeTuple.value]
 MOV R10, [RDI + priority_queue.heap]
-MOV R8, [R10 + minheap.array]
-MOV RCX, [R10 + minheap.elements]
-MOV R9, [R10 + minheap.len]
+MOV R8, [R10 + min_heap.array]
+MOV RCX, [R10 + min_heap.elements]
+MOV R9, [R10 + min_heap.len]
 
 MOV [R8 + R9*SIZE_INT], ESI
 MOV [RCX + R9*SIZE_INT], EDX
-INC [R10 + minheap.len]
-INC [RDI + priority_queue.size]
+INC QWORD [R10 + min_heap.len]
+INC QWORD [RDI + priority_queue.size]
 DEC R9
 MOV RDI, R10
-MOV ESI, R9
+MOV ESI, R9D
 CALL minheap@siftUp
 RET
 
@@ -775,14 +775,14 @@ priority_queue@pop:
 ;   RAX - (NodeTuple*)    NodeTuple containing value, elem, or null (0).
 ;   Clobbers - RDI, RSI, RCX, RDX, R10, R8, R9.
 ; ---------------------------------------------------------------------------
-CMP [RDI + priority_queue.size], 0
+CMP QWORD [RDI + priority_queue.size], 0
 SETNE AL
 MOVZX RAX, AL
 JE .short_circuit
 
 MOV RSI, [RDI + priority_queue.heap]
-MOV R10, [RSI + minheap.array]
-MOV R8, [RSI + minheap.elements]
+MOV R10, [RSI + min_heap.array]
+MOV R8, [RSI + min_heap.elements]
 
 MOV RDX, [R10]
 PUSH RDX
@@ -831,14 +831,14 @@ priority_queue@peek:
 ;   RAX - (NodeTuple*)    NodeTuple containing value, elem, or null (0).
 ;   Clobbers - RDI, RSI, RCX, RDX, R10, R8, R9.
 ; ---------------------------------------------------------------------------
-CMP [RDI + priority_queue.size], 0
+CMP QWORD [RDI + priority_queue.size], 0
 SETNE AL
 MOVZX RAX, AL
 JE .short_circuit
 
 MOV RSI, [RDI + priority_queue.heap]
-MOV R10, [RSI + minheap.array]
-MOV R8, [RSI + minheap.elements]
+MOV R10, [RSI + min_heap.array]
+MOV R8, [RSI + min_heap.elements]
 
 MOV R10, [R10]
 MOV R8, [R8]
@@ -878,7 +878,7 @@ priority_queue@isEmpty:
 ;   Clobbers - RAX, RDI.
 ; ---------------------------------------------------------------------------
 MOV RAX, 1
-CMP [RDI + priority_queue.size], 0
+CMP QWORD [RDI + priority_queue.size], 0
 SETE AL
 MOVZX RAX, AL
 RET
@@ -933,7 +933,7 @@ MOV [R8 + RCX*SIZE_INT], RDX
 
 
 MOV RDI, [RDI + priority_queue.heap]
-MOV ESI, RCX
+MOV ESI, ECX
 CALL minheap@siftUp
 .short_circuit:
 RET
@@ -970,7 +970,7 @@ MOV R8, NO_FD
 MOV R9, NO_OFFSET
 SYSCALL
 MOV [RBP - priority_queue@construct.PQPtr], RAX
-MOV [RAX + priority_queue.size], 0
+MOV QWORD [RAX + priority_queue.size], 0
 
 MOV RAX, SYS_MMAP
 MOV RDI, NO_ADDR
@@ -1053,7 +1053,7 @@ PUSH RBX
 MOV RBX, RDI
 MOV [RBP - minheap@siftUp.index], RSI
     .sift:
-        CMP [RBP - minheap@siftUp.index], 0
+        CMP QWORD [RBP - minheap@siftUp.index], 0
         JBE .sift_end
         MOV RDI, [RBP - minheap@siftUp.index]
         CALL minheap@parent
@@ -1061,18 +1061,18 @@ MOV [RBP - minheap@siftUp.index], RSI
         MOV R10, RAX
         MOV R8, RBX
         MOV R9, RBX
-        MOV R8, [R8 + minheap.array]
+        MOV R8, [R8 + min_heap.array]
         MOV RDX, [R8 + RDX*SIZE_INT]
         MOV R10, [R8 + R10*SIZE_INT]
         CMP RDX, R10
         JAE .sift_end
         MOV RDI, RBX
-        MOV RDI, [RBX + minheap.array]
+        MOV RDI, [RBX + min_heap.array]
         MOV RSI, [RBP - minheap@siftUp.index]
         MOV RDX, RAX
         CALL minheap@swap
         MOV RDI, RBX
-        MOV RDI, [RDI + minheap.elements]
+        MOV RDI, [RDI + min_heap.elements]
         CALL minheap@swap
         MOV [RBP - minheap@siftUp.index], RAX
         JMP .sift
@@ -1125,13 +1125,13 @@ MOV [RBP - minheap@siftDown.index], RSI
         MOV [RBP - minheap@siftDown.right], RAX
         MOV R9, RCX
         CMP RDX, [RBP - minheap@siftDown.minheap_len]
-        SETB [RBP - minheap@siftDown.conditional_BOOLs-1]
-        MOV RAX, [RBX + minheap.array]
+        SETB [RBP - minheap@siftDown.conditional_BOOLs~1]
+        MOV RAX, [RBX + min_heap.array]
         MOV RCX, [RAX + RCX*SIZE_INT]
         MOV RDX, [RAX + RDX*SIZE_INT]
         CMP RDX, RCX
-        SETB [RBP - minheap@siftDown.conditional_BOOLs-2]
-        CMP [RBP - minheap@siftDown.conditional_BOOLs-1], minheap@siftDown.conditional_BOOLs-ACCEPT
+        SETB [RBP - minheap@siftDown.conditional_BOOLs~2]
+        CMP QWORD [RBP - minheap@siftDown.conditional_BOOLs~1], minheap@siftDown.conditional_BOOLs~ACCEPT
         CMOVB R9, [RBP - minheap@siftDown.right]
         
         MOV RAX, [RBX + min_heap.array]
@@ -1147,7 +1147,7 @@ MOV [RBP - minheap@siftDown.index], RSI
         MOV RDX, R9
         CALL minheap@swap
         MOV RDI, RBX
-        MOV RDI, [RDI + minheap.elements]
+        MOV RDI, [RDI + min_heap.elements]
         CALL minheap@swap
         MOV [RBX - minheap@siftDown.index], R9
         
@@ -1179,10 +1179,10 @@ minheap@swap:
 ;   RAX - ()              None.
 ;   Clobbers - RDI, R8, R10
 ; ---------------------------------------------------------------------------
-MOV R10, DWORD [RDI+ESI*SIZE_INT] ;TMP
-MOV R8, DWORD [RDI+EDX*SIZE_INT] ;TMP2
-MOV [RDI+ESI*SIZE_INT], R8D
-MOV [RDI+EDX*SIZE_INT], R10D
+MOV R10D, DWORD [RDI+RSI*SIZE_INT] ;TMP
+MOV R8D, DWORD [RDI+RDX*SIZE_INT] ;TMP2
+MOV [RDI+RSI*SIZE_INT], R8D
+MOV [RDI+RDX*SIZE_INT], R10D
 RET
 
 
@@ -1202,7 +1202,7 @@ minheap@parent:
 ;   RAX - (long)          Parent index.
 ;   Clobbers - RAX
 ; ---------------------------------------------------------------------------
-MOV RAX, EDI
+MOV EAX, EDI
 DEC RAX
 SHR RAX, DIV_2
 RET
@@ -1222,7 +1222,7 @@ minheap@left:
 ;   RAX - (long)          Left element index.
 ;   Clobbers - RAX
 ; ---------------------------------------------------------------------------
-MOV RAX, EDI
+MOV EAX, EDI
 SHL RAX, MUL_2
 INC RAX
 RET
@@ -1242,7 +1242,7 @@ minheap@right:
 ;   RAX - (long)          Right element index.
 ;   Clobbers - RAX
 ; ---------------------------------------------------------------------------
-MOV RAX, EDI
+MOV EAX, EDI
 SHL RAX, MUL_2
 ADD RAX, 2
 RET
@@ -1281,8 +1281,8 @@ POP RDI
 
 MOV [RAX + min_heap.array], RDI
 MOV [RAX + min_heap.elements], RSI
-MOV [RAX + min_heap.array_size], RDX
-MOV [RAX + min_heap.len], 0
+MOV [RAX + min_heap.arr_size], RDX
+MOV QWORD [RAX + min_heap.len], 0
 RET
 
 minheap@destruct:
@@ -1375,7 +1375,7 @@ atoi:
     MOV RBP, RSP
     SUB RSP, atoi.STACK_INIT
     PUSH RBX
-    MOV QWORD [RBP - atoi.ret]
+    MOV QWORD [RBP - atoi.ret], 0
     
     MOV RBX, 10 ;Multiplier
     MOV RCX, 0
