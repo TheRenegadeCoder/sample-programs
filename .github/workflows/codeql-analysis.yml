@@ -131,6 +131,13 @@ jobs:
       with:
         fetch-depth: 2
 
+    # Set up Rust for scanning.
+    - name: Set up Rust
+      if: ${{ matrix.language == 'rust' }}
+      run: |
+        curl https://sh.rustup.rs -sSf | sh
+        python3 scripts/generate_cargo_toml.py
+
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v4

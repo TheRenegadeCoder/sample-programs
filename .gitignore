@@ -29,6 +29,10 @@ package-lock.json
 # F#
 Program.fs
 
-# scala
+# Scala
 .metals
 .scala-build
+
+# Rust
+Cargo.toml
+Cargo.lock
