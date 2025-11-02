@@ -1,4 +1,8 @@
+reverseString = (arg) ->
+    return arg
+    
 main = () ->
-    arg = process.argv[2]
+    args = process.argv[2]
+    return reverseString(args)
 
 console.log(main())
