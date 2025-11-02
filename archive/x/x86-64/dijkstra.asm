@@ -13,6 +13,7 @@
 
 ; CONSTANTS
 %DEFINE MUL_2 1
+%DEFINE MUL_4 2
 %DEFINE DIV_2 1
 %DEFINE SIZE_INT 4
 %DEFINE SIZE_LONG 8
@@ -88,13 +89,22 @@
 %DEFINE _start.argv3 40
 ; RBP+ ^
 ; RBP- v
-%DEFINE _start.STACK_INIT 48
-%DEFINE _start.PriorityQueue 8
-%DEFINE _start.SRC 16
-%DEFINE _start.DST 24
-%DEFINE _start.dist 32
-%DEFINE _start.prev 40
-%DEFINE _start.graph 48
+%DEFINE _start.STACK_INIT 32
+%DEFINE _start.SRC 8
+%DEFINE _start.DST 16
+%DEFINE _start.NumVerts 24
+%DEFINE _start.graph 32
+
+%DEFINE dijkstra.STACK_INIT 64
+%DEFINE dijkstra.PriorityQueue 8
+%DEFINE dijkstra.NumVerts 16
+%DEFINE dijkstra.prev 24
+%DEFINE dijkstra.dist 32
+%DEFINE dijkstra.SRC 40
+%DEFINE dijkstra.DST 48
+%DEFINE dijkstra.graph 56
+%DEFINE dijkstra.CurrTex 64
+
 
 
 
@@ -207,8 +217,8 @@ parseVertices:
 ;   R8  - ()              Unused.
 ;   R9  - ()              Unused.
 ; Returns:
-;   RAX - (int)           Error code. (0 = success)
-;   Clobbers - 
+;   RAX - (int)           Num elements (RAX > 0)
+;   Clobbers - RAX, RDI, RSI, RCX, RDX.
 ; ---------------------------------------------------------------------------
 ;Previous States
     %DEFINE Parse.STATE.START 0000b
@@ -310,6 +320,8 @@ MOV [RBP - parseVertices.NumPtr], RDI
         JMP .cont
         
     .cont:
+        MOV RAX, [RBP - parseVertices.NumElemes]
+    
         ADD RSP, parseVertices.STACK_INIT
         MOV RSP, RBP
         POP RBP
@@ -333,6 +345,100 @@ MOV [RBP - parseVertices.NumPtr], RDI
         
 
 dijkstra:
+; ----------------------------------------------------------------------------
+; Function: priority queue push.
+; Description:
+;   The algorithm of study itself, Dijkstra.
+; Parameters:
+;   RDI - (int)           SRC.
+;   RSI - (int)           DST.
+;   RDX - (int[][]*)      Graph to vertice&edges.
+;   R10 - (int)           # Vertices.
+;   R8  - ()              Unused.
+;   R9  - ()              Unused.
+; Returns:
+;   RAX - ()              None.
+;   Clobbers - 
+; ---------------------------------------------------------------------------
+MOV RBP, RSP
+PUSH RBP
+SUB RSP, dijkstra.STACK_INIT
+
+MOV [RBP - dijkstra.SRC], RDI
+MOV [RBP - dijkstra.DST], RSI
+MOV [RBP - dijkstra.graph], RDX
+MOV [RBP - dijkstra.NumVerts], R10
+
+MOV [RBP - dijkstra.CurrTex], RDI
+
+PUSH R10
+PUSH R10
+
+MOV RAX, SYS_MMAP
+MOV RDI, NO_ADDR
+POP RSI
+SHL RSI, MUL_4
+MOV RDX, PROT_READ | PROT_WRITE
+MOV R10, MAP_SHARED | MAP_ANONYMOUS
+MOV R8, NO_FD
+MOV R9, NO_OFFSET
+SYSCALL
+MOV [RBP - dijkstra.dist], RAX
+MOV RAX, SYS_MMAP
+MOV RDI, NO_ADDR
+POP RSI
+SHL RSI, MUL_4
+MOV RDX, PROT_READ | PROT_WRITE
+MOV R10, MAP_SHARED | MAP_ANONYMOUS
+MOV R8, NO_FD
+MOV R9, NO_OFFSET
+SYSCALL
+MOV [RBP - dijkstra.prev], RAX
+
+MOV RDI, [RBP - dijkstra.dist]
+MOV RSI, [RBP - dijkstra.CurrTex]
+MOV DWORD [RDI + RSI], 0
+
+
+
+
+dijkstra&GenerateTuple:
+; ----------------------------------------------------------------------------
+; Function: Dijkstra Generate Tuple
+; Description:
+;   Helper method for dijkstra to generate tuples.
+;   Preserving RDX, R10, R8, R9 as I know it will be annoying restoring those for every call if clobbered.
+;   Can replace ad hoc instances of tuple generation.
+; Parameters:
+;   RDI - (int)           Element.
+;   RSI - (int)           Value.
+;   RDX - ()              Unused.
+;   R10 - ()              Unused.
+;   R8  - ()              Unused.
+;   R9  - ()              Unused.
+; Returns:
+;   RAX - (NodeTuple*)    Generated Tuple.
+;   Clobbers - RAX, RDI, RSI.
+; ---------------------------------------------------------------------------
+PUSH RDX
+PUSH R10
+PUSH R8
+PUSH R9
+MOV RAX, SYS_MMAP
+MOV RDI, NO_ADDR
+MOV RSI, NodeTuple_size
+MOV RDX, PROT_READ | PROT_WRITE
+MOV R10, MAP_SHARED | MAP_ANONYMOUS
+MOV R8, NO_FD
+MOV R9, NO_OFFSET
+SYSCALL
+MOV [RAX + NodeTuple.value], EDX
+MOV [RAX + NodeTuple.element], ESI
+POP R9
+POP R8
+POP R10
+POP RDX
+RET
 
 
 priority_queue@push:
