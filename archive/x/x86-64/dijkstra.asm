@@ -20,6 +20,8 @@
 %DEFINE EMPTY_INPUT 0
 %DEFINE INF 0xFFFFFFFF
 %DEFINE NULL 0
+%DEFINE FALSE 0
+%DEFINE TRUE 1
 
 %DEFINE COMMA_SPACE 2
 
@@ -383,6 +385,8 @@ dijkstra:
 MOV RBP, RSP
 PUSH RBP
 SUB RSP, dijkstra.STACK_INIT
+PUSH R11
+PUSH R12
 
 MOV [RBP - dijkstra.SRC], RDI
 MOV [RBP - dijkstra.DST], RSI
@@ -465,7 +469,27 @@ MOV RDX, [RBP - dijkstra.PriorityQueue]
         JMP .add_vertex_loop
         
         
-.v_loop_exit:        
+.v_loop_exit: 
+MOV RDI, [RBP - dijkstra.PriorityQueue]
+CALL priority_queue@isEmpty
+MOV R11, RAX
+
+    .dijkstra_loop:
+        CMP R11, TRUE
+        JE .dijkstra_exit
+        
+        MOV RDI, [RBP - dijkstra.PriorityQueue]
+        CALL priority_queue@pop
+        MOV R12, RAX
+        MOVZX EDI, DWORD [R12 + NodeTuple.value]
+        MOV [RBP - dijkstra.CurrTex], RDI
+        .dijkstra_get_neighbors:
+            
+            
+        
+        
+        
+.dijkstra_exit:           
 
 dijkstra~GenerateTuple:
 ; ----------------------------------------------------------------------------
