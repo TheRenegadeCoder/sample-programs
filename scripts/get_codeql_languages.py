@@ -29,7 +29,7 @@ CODEQL_LANGUAGES: Dict[str, LanguageInfo] = {
     "archive/k/kotlin/*.kt": LanguageInfo(language="kotlin", build_mode="manual"),
     "archive/p/python/*.py": LanguageInfo(language="python"),
     "archive/r/ruby/*.rb": LanguageInfo(language="ruby"),
-    "archive/r/rust/*.rs": LanguageInfo(language="rust", build_mode="manual"),
+    "archive/r/rust/*.rs": LanguageInfo(language="rust"),
     "archive/t/typescript/*.ts": LanguageInfo(language="typescript"),
     "archive/s/swift/*.swift": LanguageInfo(language="swift", build_mode="manual", os=MACOS),
     ".github/workflows/*.yml": LanguageInfo(language="actions"),
