@@ -39,6 +39,8 @@ on:
       - 'archive/p/python/testinfo.yml'
       - 'archive/r/ruby/*.rb'
       - 'archive/r/ruby/testinfo.yml'
+      - 'archive/r/rust/*.rs'
+      - 'archive/r/rust/testinfo.yml'
       - 'archive/t/typescript/*.ts'
       - 'archive/t/typescript/testinfo.yml'
   pull_request:
@@ -65,6 +67,8 @@ on:
       - 'archive/p/python/testinfo.yml'
       - 'archive/r/ruby/*.rb'
       - 'archive/r/ruby/testinfo.yml'
+      - 'archive/r/rust/*.rb'
+      - 'archive/r/rust/testinfo.yml'
       - 'archive/t/typescript/*.ts'
       - 'archive/t/typescript/testinfo.yml'
   schedule:
@@ -126,6 +130,13 @@ jobs:
       uses: actions/checkout@v4
       with:
         fetch-depth: 2
+
+    # Set up Rust for scanning.
+    - name: Set up Rust
+      if: ${{ matrix.language == 'rust' }}
+      run: |
+        curl https://sh.rustup.rs -sSf | sh -s -- -y
+        python3 scripts/generate_cargo_toml.py
 
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
