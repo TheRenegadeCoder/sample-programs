@@ -341,9 +341,9 @@ MOV RCX, 0
     JMP [.jmpTable + RDX*SIZE_LONG]
     .jmpTable:
         dq .zero
-        times 48 dq .error
+        times 47 dq .error
         times 10 dq .num
-        times 197 dq .error
+        times 198 dq .error
     .cont:
         MOV RSI, RCX
         CALL atoi
