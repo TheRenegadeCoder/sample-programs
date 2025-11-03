@@ -678,7 +678,11 @@ MOV RBX, [RBP - dijkstra.dist]
                 CMP RCX, [RBP - dijkstra.NumVerts]
                 JAE .dijkstra_loop
                 JB .neighbors_loop
-.dijkstra_exit:        
+.dijkstra_exit: 
+POP R13
+POP R12
+POP R11
+POP RBX      
 MOV RAX, [RBP - dijkstra.dist]
 ADD RSP, dijkstra.STACK_INIT
 MOV RSP, RBP
@@ -741,8 +745,8 @@ priority_queue@push:
 ;   RAX - ()              None.
 ;   Clobbers - RDI, RSI, RCX, RDX, R10, R8, R9.
 ; ---------------------------------------------------------------------------
-MOV EDX, [ESI + NodeTuple.element]
-MOV ESI, [ESI + NodeTuple.value]
+MOV EDX, DWORD [RSI + NodeTuple.element]
+MOV ESI, DWORD [RSI + NodeTuple.value]
 MOV R10, [RDI + priority_queue.heap]
 MOV R8, [R10 + min_heap.array]
 MOV RCX, [R10 + min_heap.elements]
@@ -754,7 +758,8 @@ INC QWORD [R10 + min_heap.len]
 INC QWORD [RDI + priority_queue.size]
 DEC R9
 MOV RDI, R10
-MOV ESI, R9D
+MOV RSI, [R10 + min_heap.len]
+INT3
 CALL minheap@siftUp
 RET
 
@@ -956,6 +961,7 @@ priority_queue@construct:
 PUSH RBP
 MOV RBP, RSP
 SUB RSP, priority_queue@construct.STACK_INIT
+PUSH R13
 
 PUSH RDI
 PUSH RDI
@@ -979,9 +985,8 @@ MOV R10, MAP_SHARED | MAP_ANONYMOUS
 MOV R8, NO_FD
 MOV R9, NO_OFFSET
 SYSCALL
-MOV RDI, RAX
+MOV R13, RAX
 
-MOV [RBP - priority_queue@construct.PQPtr], RAX
 MOV RAX, SYS_MMAP
 MOV RDI, NO_ADDR
 POP RSI ; size pushed to stack earlier.
@@ -990,13 +995,16 @@ MOV R10, MAP_SHARED | MAP_ANONYMOUS
 MOV R8, NO_FD
 MOV R9, NO_OFFSET
 SYSCALL
-MOV RSI, RAX
 
+MOV RDI, R13
+MOV RSI, RAX
 POP RDX ; Size, again
 CALL minheap@construct
 MOV RDI, [RBP - priority_queue@construct.PQPtr]
 MOV [RDI + priority_queue.heap], RAX
 
+POP R13
+MOV RAX, [RBP - priority_queue@construct.PQPtr]
 ADD RSP, priority_queue@construct.STACK_INIT
 MOV RSP, RBP
 POP RBP
@@ -1031,7 +1039,7 @@ RET
 
 minheap@siftUp:
 ; ----------------------------------------------------------------------------
-; Function: minheap swap
+; Function: minheap sift up
 ; Description:
 ;   Restores min-heap by moving new element upward.
 ; Parameters:
@@ -1061,6 +1069,7 @@ MOV [RBP - minheap@siftUp.index], RSI
         MOV R8, RBX
         MOV R9, RBX
         MOV R8, [R8 + min_heap.array]
+        INT3
         MOV RDX, [R8 + RDX*SIZE_INT]
         MOV R10, [R8 + R10*SIZE_INT]
         CMP RDX, R10
