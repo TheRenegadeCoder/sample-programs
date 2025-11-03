@@ -168,7 +168,6 @@ _start:
 MOV RBP, RSP
 PUSH RBP
 SUB RSP, _start.STACK_INIT
-
 MOV RAX, [RBP + _start.argv1]
 MOV RCX, 0
 MOV RDX, 0
@@ -180,20 +179,20 @@ MOV RDX, 0
     ADD RDX, RBX
     INC RCX
     JMP .count_commas
-.count_end:    
+.count_end:  
 MOV RDI, RDX
 INC RDI ; + 1 because there's one less comma than numbers.
 CALL ezsqrt
+MOV [RBP - _start.NumVerts], RAX
 CMP RAX, -1
 CMOVE RDI, [Err_Table + INVALID_NOT_SQUARE]
 JE .error
-MOV [RSP - _start.NumVerts], RAX
 MOV RDI, [RBP + _start.argv2]
 CALL parseSRCDST
 MOV [RBP - _start.SRC], RAX
 MOV RDI, [RBP + _start.argv3]
 CALL parseSRCDST
-MOV [RBP + _start.DST], RAX
+MOV [RBP - _start.DST], RAX
 
 MOV RAX, [RBP - _start.NumVerts]
 MUL RAX
@@ -201,6 +200,7 @@ PUSH RAX
 MOV RAX, SYS_MMAP
 MOV RDI, NO_ADDR
 POP RSI
+SHL RSI, MUL_4
 MOV RDX, PROT_READ | PROT_WRITE
 MOV R10, MAP_SHARED | MAP_ANONYMOUS
 MOV R8, NO_FD
@@ -347,6 +347,7 @@ MOV RCX, 0
     .cont:
         MOV RSI, RCX
         CALL atoi
+        
         MOV EAX, EAX
         ADD RSP, parseSRCDST.STACK_INIT
         MOV RSP, RBP
@@ -1376,7 +1377,6 @@ atoi:
     SUB RSP, atoi.STACK_INIT
     PUSH RBX
     MOV QWORD [RBP - atoi.ret], 0
-    
     MOV RBX, 10 ;Multiplier
     MOV RCX, 0
     MOV R8B, BYTE [RDI+RCX]
