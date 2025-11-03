@@ -759,7 +759,7 @@ INC QWORD [RDI + priority_queue.size]
 DEC R9
 MOV RDI, R10
 MOV RSI, [R10 + min_heap.len]
-INT3
+
 CALL minheap@siftUp
 RET
 
@@ -1069,7 +1069,7 @@ MOV [RBP - minheap@siftUp.index], RSI
         MOV R8, RBX
         MOV R9, RBX
         MOV R8, [R8 + min_heap.array]
-        INT3
+        
         MOV RDX, [R8 + RDX*SIZE_INT]
         MOV R10, [R8 + R10*SIZE_INT]
         CMP RDX, R10
