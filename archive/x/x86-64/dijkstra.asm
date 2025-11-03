@@ -450,7 +450,7 @@ MOV [RBP - parseVertices.NumPtr], RDI
         CMOVNE RDI, [Err_Table+INVALID_BAD_STR]
         JNE .error
         
-        .zero_jmp:
+    .zero_jmp:
         PUSH RAX
         PUSH RDI
         PUSH RSI
@@ -479,7 +479,8 @@ MOV [RBP - parseVertices.NumPtr], RDI
         CMP QWORD [RBP - parseVertices.PrevState], Parse.STATE.COMMA
         CMOVNE RDI, [Err_Table+INVALID_BAD_STR]
         JNE .error
-        
+        INC RCX
+        MOV QWORD [RBP - parseVertices.PrevState], Parse.STATE.SPACE
         JMP .validate
     .zero:
         CMP QWORD [RBP - parseVertices.PrevState], Parse.STATE.NUM
