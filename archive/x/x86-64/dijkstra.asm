@@ -171,16 +171,18 @@ SUB RSP, _start.STACK_INIT
 
 MOV RAX, [RBP + _start.argv1]
 MOV RCX, 0
+MOV RDX, 0
 .count_commas:
     CMP BYTE [RAX + RCX], 0
     JE .count_end
     CMP BYTE [RAX + RCX], ','
     SETE BL
-    MOVZX RBX, BL
-    ADD RCX, RBX
-    MOV RBX, 0
+    ADD RDX, RBX
+    INC RCX
+    JMP .count_commas
 .count_end:    
-MOV RDI, RCX
+MOV RDI, RDX
+INC RDI ; + 1 because there's one less comma than numbers.
 CALL ezsqrt
 CMP RAX, -1
 CMOVE RDI, [Err_Table + INVALID_NOT_SQUARE]
@@ -195,7 +197,6 @@ MOV [RBP + _start.DST], RAX
 
 MOV RAX, [RBP - _start.NumVerts]
 MUL RAX
-
 PUSH RAX
 MOV RAX, SYS_MMAP
 MOV RDI, NO_ADDR
@@ -206,7 +207,6 @@ MOV R8, NO_FD
 MOV R9, NO_OFFSET
 SYSCALL
 MOV [RBP - _start.graph], RAX
-
 MOV RDI, [RBP + _start.argv1]
 MOV RSI, [RBP - _start.graph]
 CALL parseVertices
@@ -398,12 +398,11 @@ parseVertices:
 PUSH RBP
 MOV RBP, RSP
 SUB RSP, parseVertices.STACK_INIT
-
 MOV [RBP - parseVertices.SRC], RDI
 MOV [RBP - parseVertices.DST], RSI
 MOV QWORD [RBP - parseVertices.NumElems], 0
 
-MOV AL, BYTE [RDI]
+MOV RAX, RDI
 CMP AL, EMPTY_INPUT
 CMOVE RAX, [Err_Table+INVALID_EMPTY]
 JE .error
@@ -1343,11 +1342,14 @@ ezsqrt:
         MOV RAX, RCX
         MUL RCX
         CMP RAX, RDI
+        JE .ext
         INC RCX
         CMOVA RAX, RDX
+        JA .short_circuit
         JB .sqrt_loop
+    .ext:
     MOV RAX, RCX
-    
+    .short_circuit:
     MOV RSP, RBP
     POP RBP
     RET
