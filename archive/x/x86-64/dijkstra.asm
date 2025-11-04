@@ -132,7 +132,10 @@ Err_Table: ; This is absurd but this because of CMOV not allowing immediates.
     db -7
     db -8
     db -9
-    
+
+BOOLs:
+    .TRUE dq 1
+    .FALSE dq 0   
 
 section .data
 
@@ -542,6 +545,7 @@ PUSH RBX
 PUSH R11
 PUSH R12
 PUSH R13
+PUSH R14
 
 MOV [RBP - dijkstra.SRC], RDI
 MOV [RBP - dijkstra.DST], RSI
@@ -625,63 +629,67 @@ MOV RDX, [RBP - dijkstra.PriorityQueue]
         
         
 .v_loop_exit: 
-MOV R13, [RBP- dijkstra.PriorityQueue]
-MOV RBX, [RBP - dijkstra.dist]
-    .dijkstra_loop:
+MOV R13, [RBP - dijkstra.PriorityQueue]
+    .queue_loop:
         MOV RDI, R13
         CALL priority_queue@isEmpty
-        MOV R11, RAX
-        CMP R11, TRUE
-        JE .dijkstra_exit
+        CMP RAX, TRUE
+        JE .finish
         
         MOV RDI, R13
         CALL priority_queue@pop
-        MOV R12, RAX
-        MOV EDI, DWORD [R12 + NodeTuple.value]
-        MOV [RBP - dijkstra.CurrTex], RDI
+        
+        MOV R11, [RAX + NodeTuple.value]
+        MOV R12, [RAX + NodeTuple.element]
+        
+        PUSH RAX
+        MOV RAX, R12
+        MUL RAX
+        MOV RBX, SIZE_INT
+        MUL RBX
+        MOV R14, [RBP - dijkstra.graph]
+        LEA R14, [R14 + RAX]
+        
         MOV RCX, 0
-        .dijkstra_get_neighbors:
-            MOV R8, [RBP - dijkstra.CurrTex]
-            
-            MOV RAX, R8
-            MOV R9, [RBP - dijkstra.NumVerts]
-            MUL R9
-            
-            MOV R10, [RBP - dijkstra.graph]
-            ADD R10, RAX
-            .neighbors_loop:
-                CMP DWORD [R10 + RCX*SIZE_INT], NULL
-                JNE .neighbor_cont
-                INC RCX
-                JMP .neighbors_loop
-            .neighbor_cont:
-                MOV RSI, RBX
-                MOV R8, [RBP - dijkstra.CurrTex]
-                MOV RSI, [RSI + R8*SIZE_INT]
-                INT3
-                ADD RSI, [R10 + RCX*SIZE_INT]
-                CMP RSI, [RBX + RCX*SIZE_INT]
-                JAE .neighbors_loop
-                PUSH RSI
-                MOV [RBX + RCX*SIZE_INT], RSI
-                MOV EDI, DWORD [R12 + NodeTuple.element]
-                PUSH RDI
-                MOV RSI, [RBP - dijkstra.prev]
-                MOV [RSI + RCX*SIZE_INT], EDI
-                MOV RDI, R13
-                POP RSI
-                POP RDX
-                PUSH R10
-                PUSH RCX
-                
-                CALL priority_queue@decreaseKey
-                POP RCX
-                POP R10
-                INC RCX
-                CMP RCX, [RBP - dijkstra.NumVerts]
-                JAE .dijkstra_loop
-                JB .neighbors_loop
+        MOV RAX, R12
+        MUL RAX
+        MOV RDX, SIZE_INT
+        MUL RDX
+        MOV RDX, R12
+        MOV R8, [RBP - dijkstra.dist]
+        MOV R9, [RBP - dijkstra.prev]
+        
+        MOV R10, 0
+        .neighbors:
+              ADD R10, [R8+R12*SIZE_INT]
+              ADD R10, [R14+RCX*SIZE_INT]
+              
+              CMP R10, [R8+RCX*SIZE_INT]
+              CMOVB R11, R10
+              CMOVAE R11, [R8+RCX*SIZE_INT]
+              MOV [R8+RCX*SIZE_INT], R11D
+              CMOVB R11, R12
+              CMOVAE R11, [R9+RCX*SIZE_INT]
+              MOV R11, [R9+RCX*SIZE_INT]
+              
+              MOV RDI, R13
+              MOV RSI, RCX
+              MOV RDX, R10
+              PUSH R10
+              CALL priority_queue@decreaseKey
+              CMP RAX, TRUE
+              JE .queue_loop
+              MOV RDI, R13
+              POP RDX
+              CALL dijkstra~GenerateTuple
+              MOV RDI, R13
+              MOV RSI, RAX
+              CALL priority_queue@push
+              JMP .queue_loop       
+.finish:
+        
 .dijkstra_exit: 
+POP R14
 POP R13
 POP R12
 POP R11
@@ -922,8 +930,8 @@ priority_queue@decreaseKey:
 ;   R8  - ()              Unused.
 ;   R9  - ()              Unused.
 ; Returns:
-;   RAX - ()              None.
-;   Clobbers - RDI, RSI, RCX, RDX, R10, R8.
+;   EAX - (int)           EAX == 0 : NOT IN QUEUE; EAX == 1 : IN QUEUE.
+;   Clobbers - RAX, RDI, RSI, RCX, RDX, R10, R8.
 ; ---------------------------------------------------------------------------
 PUSH R12
 MOV R10, [RDI + priority_queue.heap]
@@ -932,6 +940,8 @@ MOV R10, [R10 + min_heap.elements]
 MOV RCX, 0
     .search: ; I really don't like having to implement a linear search, but a hashtable will take way too long to implement.
         CMP RCX, [RDI + priority_queue.size]
+        CMOVAE EAX, [BOOLs.FALSE]
+        CMOVB EAX, [BOOLs.TRUE]
         JAE .short_circuit ;Not found
         MOV R12, [R10 + RCX*SIZE_INT]
         CMP R12, RSI
