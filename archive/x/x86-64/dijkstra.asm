@@ -642,6 +642,7 @@ MOV RBX, [RBP - dijkstra.dist]
         MOV RCX, 0
         .dijkstra_get_neighbors:
             MOV R8, [RBP - dijkstra.CurrTex]
+            
             MOV RAX, R8
             MOV R9, [RBP - dijkstra.NumVerts]
             MUL R9
@@ -655,7 +656,9 @@ MOV RBX, [RBP - dijkstra.dist]
                 JMP .neighbors_loop
             .neighbor_cont:
                 MOV RSI, RBX
+                MOV R8, [RBP - dijkstra.CurrTex]
                 MOV RSI, [RSI + R8*SIZE_INT]
+                INT3
                 ADD RSI, [R10 + RCX*SIZE_INT]
                 CMP RSI, [RBX + RCX*SIZE_INT]
                 JAE .neighbors_loop
@@ -922,7 +925,7 @@ priority_queue@decreaseKey:
 ;   RAX - ()              None.
 ;   Clobbers - RDI, RSI, RCX, RDX, R10, R8.
 ; ---------------------------------------------------------------------------
-
+PUSH R12
 MOV R10, [RDI + priority_queue.heap]
 MOV R8,  [R10 + min_heap.array]
 MOV R10, [R10 + min_heap.elements]
@@ -930,16 +933,20 @@ MOV RCX, 0
     .search: ; I really don't like having to implement a linear search, but a hashtable will take way too long to implement.
         CMP RCX, [RDI + priority_queue.size]
         JAE .short_circuit ;Not found
-        MOV RCX, [R10 + RCX*SIZE_INT]
-        CMP RCX, RSI
+        MOV R12, [R10 + RCX*SIZE_INT]
+        CMP R12, RSI
+        JE .break_search
+        INC RCX
         JNE .search
+.break_search:
+CMP RDX, [R8 + RCX*SIZE_INT]
+JAE .short_circuit
 MOV [R8 + RCX*SIZE_INT], RDX
-
-
 MOV RDI, [RDI + priority_queue.heap]
 MOV ESI, ECX
 CALL minheap@siftUp
 .short_circuit:
+POP R12
 RET
 
 priority_queue@construct:
