@@ -70,8 +70,8 @@ For example, the "Hello World" sample would be named this:
 
 The following list shares details about what we're using to test all Sample Programs in Java:
 
-- Docker Image: openjdk
-- Docker Tag: 23-slim
+- Docker Image: eclipse-temurin
+- Docker Tag: 23-alpine-3.21
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 
