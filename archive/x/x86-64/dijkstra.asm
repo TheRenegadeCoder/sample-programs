@@ -18,7 +18,7 @@
 %DEFINE SIZE_INT 4
 %DEFINE SIZE_LONG 8
 %DEFINE EMPTY_INPUT 0
-%DEFINE INF 0xFFFFFFFF
+%DEFINE INT_MAX 0xFFFFFFFF
 %DEFINE NULL 0
 %DEFINE FALSE 0
 %DEFINE TRUE 1
@@ -107,9 +107,8 @@
 %DEFINE dijkstra.prev 24
 %DEFINE dijkstra.dist 32
 %DEFINE dijkstra.SRC 40
-%DEFINE dijkstra.DST 48
-%DEFINE dijkstra.graph 56
-%DEFINE dijkstra.CurrTex 64
+%DEFINE dijkstra.graph 48
+%DEFINE dijkstra.CurrTex 56
 
 
 
@@ -213,13 +212,16 @@ MOV [RBP - _start.graph], RAX
 MOV RDI, [RBP + _start.argv1]
 MOV RSI, [RBP - _start.graph]
 CALL parseVertices
-
 MOV RDI, [RBP - _start.SRC]
-MOV RSI, [RBP - _start.DST]
-MOV RDX, [RBP - _start.graph]
-MOV R10, [RBP - _start.NumVerts]
+MOV RSI, [RBP - _start.graph]
+.chkGrph:
+MOV RDX, [RBP - _start.NumVerts]
 CALL dijkstra
-
+.dijkstra_complete:
+;$1 = {-2657552, -1, -1, -1, -1, 0, 0, 0, 0, 0}
+;This means there's likely an issue with the pointers I was using
+;to pull data from.
+;The -1s look good, but the position of the non -1 number is odd.
 MOV RCX, [RBP - _start.DST]
 MOV RBX, [RAX + RCX*SIZE_INT]
 MOV [RBP - _start.RET], RBX
@@ -296,6 +298,7 @@ MOV RBX, 10
 .ext:
 MOV BYTE [RSI + RCX], 0
 PUSH RCX
+
 DEC RCX
 MOV RDX, 0
     .reverse:
@@ -415,6 +418,7 @@ MOV RCX, 0
 MOV [RBP - parseVertices.NumPtr], RDI
     .validate:
     MOV DL, BYTE [RDI+RCX]
+    
     JMP [.jmpTable + RDX*SIZE_LONG]
     .jmpTable:
         dq .zero
@@ -459,11 +463,12 @@ MOV [RBP - parseVertices.NumPtr], RDI
         PUSH RSI
         PUSH RCX
         PUSH RDX
+        PUSH RCX
         MOV RDI, [RBP - parseVertices.NumPtr]
         MOV RSI, [RBP - parseVertices.strlen]
         CALL atoi
         MOV RDI, [RBP - parseVertices.DST]
-        MOV RCX, [RBP - parseVertices.NumElems]
+        POP RCX
         MOV [RDI + RCX*SIZE_INT], EAX
         POP RDX
         POP RCX
@@ -499,7 +504,6 @@ MOV [RBP - parseVertices.NumPtr], RDI
         
     .cont:
         MOV RAX, [RBP - parseVertices.NumElems]
-    
         ADD RSP, parseVertices.STACK_INIT
         MOV RSP, RBP
         POP RBP
@@ -529,172 +533,119 @@ dijkstra:
 ;   The algorithm of study itself, Dijkstra.
 ; Parameters:
 ;   RDI - (int)           SRC.
-;   RSI - (int)           DST.
-;   RDX - (int[][]*)      Graph to vertice&edges.
-;   R10 - (int)           # Vertices.
+;   RSI - (int[][]*)      Graph to vertice&edges.
+;   RDX - (int)           # Vertices.
+;   R10 - ()              Unused.
 ;   R8  - ()              Unused.
 ;   R9  - ()              Unused.
 ; Returns:
 ;   RAX - (int[]*)        Array of distances.
-;   Clobbers - RAX, RSI, RDX, R10, R8, R9.
+;   Clobbers - RAX, RDI, RSI, RDX, R10, R11.
 ; ---------------------------------------------------------------------------
 PUSH RBP
 MOV RBP, RSP
 SUB RSP, dijkstra.STACK_INIT
-PUSH RBX
-PUSH R11
 PUSH R12
 PUSH R13
 PUSH R14
-
 MOV [RBP - dijkstra.SRC], RDI
-MOV [RBP - dijkstra.DST], RSI
-MOV [RBP - dijkstra.graph], RDX
-MOV [RBP - dijkstra.NumVerts], R10
+MOV [RBP - dijkstra.graph], RSI
+MOV [RBP - dijkstra.NumVerts], RDX
 
-MOV [RBP - dijkstra.CurrTex], RDI
+PUSH R10
+PUSH R8
+PUSH R9
+MOV RAX, SYS_MMAP
+MOV RDI, NO_ADDR
+MOV RSI, [RBP - dijkstra.NumVerts]
+SHL RSI, MUL_4
+MOV RDX, PROT_READ | PROT_WRITE
+MOV R10, MAP_ANONYMOUS | MAP_SHARED
+MOV R8, NO_FD
+MOV R9, NO_OFFSET
+SYSCALL
+POP R9
+POP R8
+POP R10
 
-MOV RDI, R10
+  
+MOV [RBP - dijkstra.dist], RAX      
+MOV RCX, 0
+    .fill_dist:
+        CMP RCX, R12
+        JA .fill_ext
+        MOV DWORD [RAX+RCX*4], INT_MAX
+        INC RCX
+        JMP .fill_dist
+.fill_ext:
+MOV RDI, [RBP - dijkstra.NumVerts]
 CALL priority_queue@construct
 MOV [RBP - dijkstra.PriorityQueue], RAX
 
-PUSH R10
-PUSH R10
+MOV RDI, [RBP - dijkstra.SRC]
+MOV RAX, [RBP - dijkstra.dist]
+MOV DWORD [RAX + RDI*SIZE_INT], 0
+.checkDst1:
 
-MOV RAX, SYS_MMAP
-MOV RDI, NO_ADDR
-POP RSI
-SHL RSI, MUL_4
-MOV RDX, PROT_READ | PROT_WRITE
-MOV R10, MAP_SHARED | MAP_ANONYMOUS
-MOV R8, NO_FD
-MOV R9, NO_OFFSET
-SYSCALL
-MOV [RBP - dijkstra.dist], RAX
-MOV RAX, SYS_MMAP
-MOV RDI, NO_ADDR
-POP RSI
-SHL RSI, MUL_4
-MOV RDX, PROT_READ | PROT_WRITE
-MOV R10, MAP_SHARED | MAP_ANONYMOUS
-MOV R8, NO_FD
-MOV R9, NO_OFFSET
-SYSCALL
-MOV [RBP - dijkstra.prev], RAX
-
-MOV RDI, [RBP - dijkstra.dist]
-MOV RSI, [RBP - dijkstra.CurrTex]
-MOV DWORD [RDI + RSI], 0
-
-MOV RDI, RSI
 MOV RSI, 0
 CALL dijkstra~GenerateTuple
-
-MOV RDI, [RBP - dijkstra.PriorityQueue]
 MOV RSI, RAX
+MOV RDI, [RBP - dijkstra.PriorityQueue]
 CALL priority_queue@push
-
-MOV RCX, 0
-MOV RDI, [RBP - dijkstra.dist]
-MOV RSI, [RBP - dijkstra.prev]
-MOV RDX, [RBP - dijkstra.PriorityQueue]
-    .add_vertex_loop:
-        CMP RCX, [RBP - dijkstra.NumVerts]
-        JAE .v_loop_exit
-        CMP RCX, [RBP - dijkstra.SRC]
-        JE .vtx_loop_cont
-        
-        MOV DWORD [RDI+RCX*SIZE_INT], INF
-        MOV DWORD [RSI+RCX*SIZE_INT], -1
-        
-        PUSH RDI
-        PUSH RSI
-        PUSH RCX
-        PUSH RDX
-        
-        MOV RDI, -1
-        MOV RSI, INF
-        CALL dijkstra~GenerateTuple
-        MOV RDI, [RBP - dijkstra.PriorityQueue]
-        MOV RSI, RAX
-        CALL priority_queue@push
-        
-        POP RDX
-        POP RCX
-        POP RSI
-        POP RDI
-        .vtx_loop_cont: ; Fall through ^
-        INC RCX
-        JMP .add_vertex_loop
-        
-        
-.v_loop_exit: 
-MOV R13, [RBP - dijkstra.PriorityQueue]
-    .queue_loop:
-        MOV RDI, R13
+MOV R12, [RBP - dijkstra.PriorityQueue]
+MOV R13, [RBP - dijkstra.dist]
+    .dijkstra_loop:
+        MOV RDI, R12
         CALL priority_queue@isEmpty
         CMP RAX, TRUE
-        JE .finish
+        JE .dijkstra_ext
         
-        MOV RDI, R13
+        MOV RDI, R12
         CALL priority_queue@pop
         
-        MOV R11, [RAX + NodeTuple.value]
-        MOV R12, [RAX + NodeTuple.element]
+        MOV EDI, [RAX + NodeTuple.value]
+        MOV ESI, [RAX + NodeTuple.element]
+        MOV [RBP - dijkstra.CurrTex], RSI
         
-        PUSH RAX
-        MOV RAX, R12
-        MUL RAX
-        MOV RBX, SIZE_INT
-        MUL RBX
-        MOV R14, [RBP - dijkstra.graph]
-        LEA R14, [R14 + RAX]
+        CMP RDI, [R13 + RSI*SIZE_INT]
+        JE .dijkstra_loop
         
+        MOV RDI, [RBP - dijkstra.graph]
+        MOV RDX, [RBP - dijkstra.NumVerts]
+        CALL dijkstra~GetRow
+        MOV R14, RAX
         MOV RCX, 0
-        MOV RAX, R12
-        MUL RAX
-        MOV RDX, SIZE_INT
-        MUL RDX
-        MOV RDX, R12
-        MOV R8, [RBP - dijkstra.dist]
-        MOV R9, [RBP - dijkstra.prev]
-        
-        MOV R10, 0
-        .neighbors:
-              ADD R10, [R8+R12*SIZE_INT]
-              ADD R10, [R14+RCX*SIZE_INT]
-              
-              CMP R10, [R8+RCX*SIZE_INT]
-              CMOVB R11, R10
-              CMOVAE R11, [R8+RCX*SIZE_INT]
-              MOV [R8+RCX*SIZE_INT], R11D
-              CMOVB R11, R12
-              CMOVAE R11, [R9+RCX*SIZE_INT]
-              MOV R11, [R9+RCX*SIZE_INT]
-              
-              MOV RDI, R13
-              MOV RSI, RCX
-              MOV RDX, R10
-              PUSH R10
-              CALL priority_queue@decreaseKey
-              CMP RAX, TRUE
-              JE .queue_loop
-              MOV RDI, R13
-              POP RDX
-              CALL dijkstra~GenerateTuple
-              MOV RDI, R13
-              MOV RSI, RAX
-              CALL priority_queue@push
-              JMP .queue_loop       
-.finish:
-        
-.dijkstra_exit: 
+        .neighbor_loop:
+            CMP RCX, [RBP - dijkstra.NumVerts]
+            JAE .dijkstra_loop
+            
+            MOV EDI, [R14 + RCX*SIZE_INT]
+            CMP RDI, 0
+            JNE .neighbor_cont ; Branch predictor is not gonna like this.
+            INC RCX
+            JMP .neighbor_loop
+            .neighbor_cont:
+            MOV RBX, [RBP - dijkstra.CurrTex]
+            MOV R10D, [R13 + RBX*SIZE_INT]
+            ADD R10, RDX
+            CMP R10D, [R13 + RCX*SIZE_INT]     
+            JB .neighbor_operate
+            INC RCX
+            JMP .neighbor_loop
+            .neighbor_operate:  
+            MOV [R13 + RCX*SIZE_INT], R10D
+            .checkDst2:
+            MOV RDI, RCX
+            MOV ESI, [R13 + RCX*SIZE_INT]
+            CALL dijkstra~GenerateTuple
+            MOV RDI, R12
+            MOV RSI, RAX
+            CALL priority_queue@push   
+MOV RAX, [RBP - dijkstra.graph]      
+.dijkstra_ext:
 POP R14
 POP R13
 POP R12
-POP R11
-POP RBX      
-MOV RAX, [RBP - dijkstra.dist]
 ADD RSP, dijkstra.STACK_INIT
 MOV RSP, RBP
 POP RBP
@@ -737,6 +688,29 @@ POP R9
 POP R8
 POP R10
 POP RDX
+RET
+
+dijkstra~GetRow:
+; ----------------------------------------------------------------------------
+; Function: Dijkstra Get Row
+; Description:
+;   Helper method for dijkstra to grab the address of the needed row given a graph.
+; Parameters:
+;   RDI - (int[][]*)      Graph.
+;   RSI - (int)           Element.
+;   RDX - (int)           # Vertices.
+;   R10 - ()              Unused.
+;   R8  - ()              Unused.
+;   R9  - ()              Unused.
+; Returns:
+;   RAX - (int[]*)        Row.
+;   Clobbers - RAX.
+; ---------------------------------------------------------------------------  
+PUSH RDX 
+MOV RAX, RSI
+MUL RDX
+POP RDX
+LEA RAX, [RDI + RAX*SIZE_INT]
 RET
 
 
@@ -979,10 +953,9 @@ PUSH RBP
 MOV RBP, RSP
 SUB RSP, priority_queue@construct.STACK_INIT
 PUSH R13
+PUSH R12
+MOV R12, RDI
 
-PUSH RDI
-PUSH RDI
-PUSH RDI
 MOV RAX, SYS_MMAP
 MOV RDI, NO_ADDR
 MOV RSI, priority_queue_size
@@ -996,17 +969,18 @@ MOV QWORD [RAX + priority_queue.size], 0
 
 MOV RAX, SYS_MMAP
 MOV RDI, NO_ADDR
-POP RSI ; size pushed to stack earlier.
+MOV RSI, R12
 MOV RDX, PROT_READ | PROT_WRITE
 MOV R10, MAP_SHARED | MAP_ANONYMOUS
 MOV R8, NO_FD
 MOV R9, NO_OFFSET
 SYSCALL
+.tstdbg: 
 MOV R13, RAX
 
 MOV RAX, SYS_MMAP
 MOV RDI, NO_ADDR
-POP RSI ; size pushed to stack earlier.
+MOV RSI, R12
 MOV RDX, PROT_READ | PROT_WRITE
 MOV R10, MAP_SHARED | MAP_ANONYMOUS
 MOV R8, NO_FD
@@ -1015,11 +989,12 @@ SYSCALL
 
 MOV RDI, R13
 MOV RSI, RAX
-POP RDX ; Size, again
+MOV RDX, R12
 CALL minheap@construct
 MOV RDI, [RBP - priority_queue@construct.PQPtr]
 MOV [RDI + priority_queue.heap], RAX
 
+POP R12
 POP R13
 MOV RAX, [RBP - priority_queue@construct.PQPtr]
 ADD RSP, priority_queue@construct.STACK_INIT
@@ -1396,28 +1371,26 @@ atoi:
 ;   R9  - ()              Unused.
 ; Returns:
 ;   EAX - (int)          Integer value of string.
-;   Clobbers - RAX, RDI, RSI, RCX, R8. 
+;   Clobbers - RAX, RCX, R10. 
 ; ---------------------------------------------------------------------------
 
     PUSH RBP
     MOV RBP, RSP
     SUB RSP, atoi.STACK_INIT
     PUSH RBX
-    MOV QWORD [RBP - atoi.ret], 0
-    MOV RBX, 10 ;Multiplier
-    MOV RCX, 0
-    MOV R8B, BYTE [RDI+RCX]
-    .operation:
-        MOV RAX, QWORD [RBP - atoi.ret]
-        MUL RBX
-        INC RCX
-        SUB R8B, '0'
-        ADD RAX, R8
-        MOV QWORD [RBP - atoi.ret], RAX
-        CMP RCX, RSI ;Compare counter to Strlen
-        JBE .operation
     
-    MOV RAX, QWORD [RBP - atoi.ret]
+    MOV RCX, 0
+    MOV RBX, 10
+    MOV RAX, 0
+    .loop:
+        MOV R10B, [RDI + RCX] 
+        SUB R10B, '0'
+        MUL RBX
+        ADD RAX, R10
+        INC RCX
+        CMP RCX, RSI
+        JB .loop  
+    .ext:
     POP RBX
     ADD RSP, atoi.STACK_INIT
     MOV RSP, RBP
