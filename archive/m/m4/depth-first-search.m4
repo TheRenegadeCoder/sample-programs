@@ -57,7 +57,7 @@ dnl       if conn_mtx_varname[idx] > 0:
 dnl         graph_varname[i][graph_varname[i]["length"]] = j
 dnl         graph_varname[i]["length"] = graph_varname[i]["length"] + 1
 dnl
-dnl     idx = idx + 1
+dnl       idx = idx + 1
 define(`create_graph',
 `array_set(`$3', `length', array_get(`$2', `length'))dnl
 _create_nodes(`$2', `$3', 0)dnl
