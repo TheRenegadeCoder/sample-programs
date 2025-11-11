@@ -83,7 +83,7 @@ ifelse(eval(x1 == $3), 1, x1,
 )
 
 dnl min(a, b)
-define(`min', `ifelse(eval($1 < $2), $1, $2)')
+define(`min', `ifelse(eval($1 < $2), 1, $1, $2)')
 
 dnl validate_inputs(weights_varname, num_vertices, src, dest):
 dnl   // Verify number of weights is a square, source and destination are valid
