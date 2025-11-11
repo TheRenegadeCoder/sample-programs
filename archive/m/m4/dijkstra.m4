@@ -74,7 +74,7 @@ popdef(`x1')dnl
 )'dnl
 )
 
-dnl $1=n, $2=prev2, $3=prev1
+dnl n=$1, prev2=$2, prev1=$3
 define(`_isqrt',
 `define(`x1', eval(($3 + $1 / $3) >> 1))dnl
 ifelse(eval(x1 == $3), 1, x1,
