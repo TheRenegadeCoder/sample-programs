@@ -168,7 +168,7 @@ _connect_children_inner(`$1', `$2', `$3', `$4', incr($5), incr($6))'dnl
 )'dnl
 )
 
-dnl M4 does not have infinity so choose smallest integer value as minus infinity
+dnl M4 does not have infinity so choose largest integer value as infinity
 define(`INF', 2147483647)
 
 dnl Source: https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm#Pseudocode
