@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in Fortran! To find documentation related to the Fortran code in this repo, look [here](https://sampleprograms.io/languages/fortran).
 
-## Sample Programs List - 12/38 :thinking:
+## Sample Programs List - 13/38 :thinking:
 
 In this section, we feature a list of completed and missing programs in Fortran. See above for the current amount of completed programs in Fortran. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -22,6 +22,7 @@ Below, you'll find a list of completed code snippets in Fortran. Code snippets p
 - :warning: [Fibonacci in Fortran](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+fortran) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :warning: [Fizz Buzz in Fortran](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+fortran) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :warning: [Hello World in Fortran](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+fortran) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :warning: [Insertion Sort in Fortran](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+fortran) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :warning: [Linear Search in Fortran](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+linear+search+fortran) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :warning: [Prime Number in Fortran](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+fortran) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :warning: [Reverse String in Fortran](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+fortran) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
@@ -37,7 +38,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Duplicate Character Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,duplicate+character+counter&template=code-snippet-request.md&title=Add+Duplicate+Character+Counter+in+Fortran) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :x: [File Input Output](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,file+input+output&template=code-snippet-request.md&title=Add+File+Input+Output+in+Fortran) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fraction+math&template=code-snippet-request.md&title=Add+Fraction+Math+in+Fortran) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
-- :x: [Insertion Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,insertion+sort&template=code-snippet-request.md&title=Add+Insertion+Sort+in+Fortran) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,job+sequencing&template=code-snippet-request.md&title=Add+Job+Sequencing+in+Fortran) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,josephus+problem&template=code-snippet-request.md&title=Add+Josephus+Problem+in+Fortran) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :x: [Longest Common Subsequence](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+common+subsequence&template=code-snippet-request.md&title=Add+Longest+Common+Subsequence+in+Fortran) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
