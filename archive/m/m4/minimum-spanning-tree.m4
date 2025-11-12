@@ -177,12 +177,13 @@ define(`prim_mst',
 `pushdef(`u', `')dnl
 pushdef(`v', `')dnl
 pushdef(`w', `')dnl
-define(`mst_set', `')dnl
+pushdef(`mst_set', `')dnl
 array_set(`$2', `length', array_get(`$1', `length'))dnl
 _init_mst(`$2', 0)dnl
 array2_set(`$2', 0, `key', 0)dnl
 array2_set(`$2', 0, `parent', -1)dnl
 _prim_mst_outer(`$1', `$2', 1)dnl
+popdef(`mst_set')dnl
 popdef(`w')dnl
 popdef(`v')dnl
 popdef(`u')dnl
