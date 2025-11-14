@@ -107,6 +107,7 @@ pushdef(`q', `')dnl
 _convex_hull_outer(`$1', `$2', 0)dnl
 popdef(`q')dnl
 popdef(`p')dnl
+popdef(`l')dnl
 'dnl
 )
 
