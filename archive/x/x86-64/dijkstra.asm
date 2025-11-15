@@ -157,6 +157,7 @@ endstruc
 ; and allows for easy abstraction of minheap methods.
 struc priority_queue
     .size resq 1
+    .max_len resq 1
     .heap resq 1
 endstruc    
 
@@ -726,22 +727,8 @@ priority_queue@push:
 ;   RAX - ()              None.
 ;   Clobbers - RDI, RSI, RCX, RDX, R10, R8, R9.
 ; ---------------------------------------------------------------------------
-.checkRSI:
-MOV EDX, DWORD [RSI + NodeTuple.element]
-MOV ESI, DWORD [RSI + NodeTuple.value]
-MOV R10, [RDI + priority_queue.heap]
-MOV R8, [R10 + min_heap.array]
-MOV RCX, [R10 + min_heap.elements]
-MOV R9, [R10 + min_heap.len]
-DEC R9
-MOV [R8 + R9*SIZE_INT], ESI
-MOV [RCX + R9*SIZE_INT], EDX
-.checkHeap:
-INC QWORD [R10 + min_heap.len]
-INC QWORD [RDI + priority_queue.size]
-MOV RDI, R10
-MOV RSI, [R10 + min_heap.len]
-CALL minheap@siftUp
+
+
 RET
 
 priority_queue@pop:
@@ -758,15 +745,70 @@ priority_queue@pop:
 ;   R9  - ()              Unused.
 ; Returns:
 ;   RAX - (NodeTuple*)    NodeTuple containing value, elem, or null (0).
-;   Clobbers - RDI, RSI, RCX, RDX, R10, R8, R9.
+;   Clobbers - RDI, RSI, RDX, R10, R8, R9.
 ; ---------------------------------------------------------------------------
 PUSH RBP
 MOV RBP, RSP
+PUSH R12
+PUSH R13
 
-MOV R12, -1
+MOV R12, 0
+CMP [RDI + priority_queue.size], 0
+CMOVE RAX, R12
+JE .ext
 
+MOV RSI, [RDI + priority_queue.heap]
+MOV R10, [RSI + min_heap.array]
+MOV R8, [RSI + min_heap.elements]
 
+MOV R10, [R10]
+MOV R8, [R8]
+PUSH R10
+PUSH R8
 
+PUSH RDI
+MOV RAX, SYS_MMAP
+MOV RDI, NO_ADDR
+MOV RSI, NodeTuple_size
+MOV RDX, PROT_READ | PROT_WRITE
+MOV R10, MAP_SHARED | MAP_ANONYMOUS
+MOV R8, NO_FD
+MOV R9, NO_OFFSET
+SYSCALL
+POP RDI
+
+POP RSI
+POP RDX
+MOV [RAX + NodeTuple.value], EDX
+MOV [RAX + NodeTuple.element], ESI
+MOV RCX, RAX
+
+MOV RSI, [RDI + priority_queue.heap]
+MOV RDX, [RSI + min_heap.array]
+MOV R10, [RDI + priority_queue.size]
+DEC R10
+MOV R8D, [RDX+R10*SIZE_INT]
+MOV [RDX], R8D
+MOV RDX, [RSI + min_heap.elements]
+MOV R8D, [RDX+R10*SIZE_INT]
+MOV [RDX], R8D
+
+DEC [RDI + priority_queue.size]
+DEC [RSI + min_heap.len]
+
+MOV R12, RDI
+MOV R12, [RDI + priority_queue.heap]
+MOV RSI, 0
+MOV RDX, [RDI + priority_queue.size]
+MOV RDI, R12
+PUSH RCX
+CALL minheap@siftDown
+POP RCX
+
+MOV RAX, RCX
+.ext:
+POP R13 ;Ret
+POP R12
 MOV RSP, RBP
 POP RBP
 RET
@@ -787,10 +829,12 @@ priority_queue@peek:
 ;   RAX - (NodeTuple*)    NodeTuple containing value, elem, or null (0).
 ;   Clobbers - RDI, RSI, RCX, RDX, R10, R8, R9.
 ; ---------------------------------------------------------------------------
-CMP QWORD [RDI + priority_queue.size], 0
-SETNE AL
-MOVZX RAX, AL
-JE .short_circuit
+PUSH R12
+
+MOV R12, -1
+CMP [RDI + priority_queue.size], 0
+CMOVE RAX, R12
+JMP .ext
 
 MOV RSI, [RDI + priority_queue.heap]
 MOV R10, [RSI + min_heap.array]
@@ -814,7 +858,8 @@ POP RSI
 POP RDX
 MOV [RAX + NodeTuple.value], EDX
 MOV [RAX + NodeTuple.element], ESI
-.short_circuit:
+.ext:
+POP R12
 RET
 
 priority_queue@isEmpty:
@@ -933,6 +978,7 @@ MOV R9, NO_OFFSET
 SYSCALL
 MOV [RBP - priority_queue@construct.PQPtr], RAX
 MOV QWORD [RAX + priority_queue.size], 0
+MOV QWORD [RAX + priority_queue.max_len], R12
 
 MOV RAX, SYS_MMAP
 MOV RDI, NO_ADDR
@@ -1015,6 +1061,7 @@ minheap@siftUp:
 PUSH RBP
 MOV RBP, RSP
 SUB RSP, minheap@siftUp.STACK_INIT
+MOV RDI, [RDI + minheap.array]
 
     .sift:
         MOV R11, RSI
@@ -1049,7 +1096,7 @@ minheap@siftDown:
 ; Parameters:
 ;   RDI - (Minheap*)      This* minheap.
 ;   ESI - (int)           Index.
-;   RDX - (int)           Heap size.
+;   EDX - (int)           Heap size.
 ;   R10 - ()              Unused.
 ;   R8  - ()              Unused.
 ;   R9  - ()              Unused.
