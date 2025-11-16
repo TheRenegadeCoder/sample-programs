@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in M4! To find documentation related to the M4 code in this repo, look [here](https://sampleprograms.io/languages/m4).
 
-## Sample Programs List - 33/38 :smile:
+## Sample Programs List - 34/38 :smile:
 
 In this section, we feature a list of completed and missing programs in M4. See above for the current amount of completed programs in M4. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -30,6 +30,7 @@ Below, you'll find a list of completed code snippets in M4. Code snippets preced
 - :warning: [Insertion Sort in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+m4) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :warning: [Josephus Problem in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+josephus+problem+m4) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :warning: [Linear Search in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+linear+search+m4) [[Requirements](https://sampleprograms.io/projects/linear-search)]
+- :warning: [Longest Common Subsequence in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+common+subsequence+m4) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
 - :warning: [Longest Palindromic Substring in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+palindromic+substring+m4) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
 - :warning: [Longest Word in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+m4) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :warning: [Maximum Array Rotation in M4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+maximum+array+rotation+m4) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
@@ -54,7 +55,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Base64 Encode Decode](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,base64+encode+decode&template=code-snippet-request.md&title=Add+Base64+Encode+Decode+in+M4) [[Requirements](https://sampleprograms.io/projects/base64-encode-decode)]
 - :x: [File Input Output](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,file+input+output&template=code-snippet-request.md&title=Add+File+Input+Output+in+M4) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,job+sequencing&template=code-snippet-request.md&title=Add+Job+Sequencing+in+M4) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
-- :x: [Longest Common Subsequence](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+common+subsequence&template=code-snippet-request.md&title=Add+Longest+Common+Subsequence+in+M4) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
 - :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+M4) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 
 ## Testing
