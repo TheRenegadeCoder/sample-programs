@@ -33,7 +33,6 @@ a part of my website, [The Renegade Coder][10]. If you're looking to support The
 - [Support via PayPal][12]
 - [Turn off AdBlock When Using The Renegade Coder][13]
 - [Comment & Share Articles][sample-programs-on-the-renegade-coder]
-- [Follow Me on Twitter][14]
 - [Join the Community on Discord][15]
 
 Thanks for your support! :relaxed:
@@ -58,7 +57,6 @@ for sharing their work with our repo:
 [11]: https://therenegadecoder.com/blog/ways-you-can-help-grow-the-renegade-coder/
 [12]: https://www.paypal.me/therenegadecoder
 [13]: https://help.getadblock.com/support/solutions/articles/6000163989-how-do-i-pause-or-disable-adblock-
-[14]: https://twitter.com/RenegadeCoder94
 [15]: https://discord.gg/Jhmtj7Z
 [20]: https://sampleprograms.io/projects/
 
