@@ -67,7 +67,7 @@ on:
       - 'archive/p/python/testinfo.yml'
       - 'archive/r/ruby/*.rb'
       - 'archive/r/ruby/testinfo.yml'
-      - 'archive/r/rust/*.rb'
+      - 'archive/r/rust/*.rs'
       - 'archive/r/rust/testinfo.yml'
       - 'archive/t/typescript/*.ts'
       - 'archive/t/typescript/testinfo.yml'
