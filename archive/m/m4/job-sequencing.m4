@@ -94,6 +94,17 @@ _set_jobs_inner(`$1', `$2', `$3', 0)dnl
 'dnl
 )
 
+dnl profits_varname=$1, deadlines_varname=$2, jobs_varname=$3, i=$4
+define(`_set_jobs_inner',
+`ifelse(eval($4 < array_get(`$1', `length')), 1,
+`array2_set(`$3', `$4', `profit', array_get(`$1', `$4'))dnl
+array2_set(`$3', `$4', `deadline', array_get(`$2', `$4'))dnl
+ifelse(eval(array_get(`$2', `$4') > longest_deadline), 1,
+`define(`longest_deadline', array_get(`$2', `$4'))')dnl
+_set_jobs_inner(`$1', `$2', `$3', incr($4))'dnl
+)'dnl
+)
+
 dnl slots_varname=$1
 define(`_init_slots',
 `array_set(`$1', `length', incr(longest_deadline))dnl
@@ -109,25 +120,12 @@ _init_slots_inner(`$1', incr($2))'dnl
 )'dnl
 )
 
-dnl profits_varname=$1, deadlines_varname=$2, jobs_varname=$3, i=$4
-define(`_set_jobs_inner',
-`ifelse(eval($4 < array_get(`$1', `length')), 1,
-`array2_set(`$3', `$4', `profit', array_get(`$1', `$4'))dnl
-array2_set(`$3', `$4', `deadline', array_get(`$2', `$4'))dnl
-ifelse(eval(array_get(`$2', `$4') > longest_deadline), 1,
-`define(`longest_deadline', array_get(`$2', `$4'))')dnl
-_set_jobs_inner(`$1', `$2', `$3', incr($4))dnl
-')dnl
-'dnl
-)
-
 dnl jobs_varname=$1, slots_varname=$2, i=$3
 define(`_set_slots',
 `ifelse(eval($3 < array_get(`$1', `length')), 1,
 `_set_slots_inner(`$2', `$3', array2_get(`$1', `$3', `deadline'))dnl
-_set_slots(`$1', `$2', incr($3))dnl
-')dnl
-'dnl
+_set_slots(`$1', `$2', incr($3))'dnl
+)'dnl
 )
 
 dnl slots_varname=$1, i=$2, j=$3
