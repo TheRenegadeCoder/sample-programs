@@ -8,7 +8,8 @@ license = "MIT"
 
 dependencies = [
     "ronbun (>=0.10.1,<0.11.0)",
-    "glotter2 (>=0.13.0,<0.14.0)"
+    "glotter2 (>=0.13.0,<0.14.0)",
+    "pyyaml (>=6.0.3,<7.0.0)"
 ]
 
 # Initiator of the collection
