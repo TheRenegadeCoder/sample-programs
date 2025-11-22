@@ -304,4 +304,3 @@ transpose matrix:
     - archive/*/*/transposeMatrix.*
     - archive/*/*/transpose_matrix.*
 - base-branch: main
-
