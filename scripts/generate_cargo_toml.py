@@ -13,6 +13,7 @@ name = "{name}"
 path = "{path}"
 """
 
+
 def main():
     cargo_toml = CARGO_TOML
     for path in Path("archive/r/rust").glob("*.rs"):
