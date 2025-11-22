@@ -38,7 +38,9 @@ jobs:
       run: poetry install
 
     - name: Create labels
-      run: poetry run python scripts/set_up_labeler.py
+      run: |
+        poetry run python scripts/set_up_labeler.py
+        cat .github/labeler.yml
 
     - uses: actions/labeler@v6
       with:

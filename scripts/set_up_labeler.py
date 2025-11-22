@@ -19,7 +19,6 @@ def main():
     projects = read_projects()
     config = get_labeler_config(projects)
     LABELER_CONFIG_PATH.write_text(yaml.safe_dump(config, sort_keys=False), encoding="utf-8")
-    print(LABELER_CONFIG_PATH.read_text(encoding="utf-8"))
 
 
 def read_projects() -> list[str]:
