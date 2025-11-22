@@ -39,5 +39,5 @@ jobs:
 
     - uses: actions/labeler@v6
       with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        repo-token: ${{ secrets.PAT }}
         sync-labels: true
