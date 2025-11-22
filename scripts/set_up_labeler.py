@@ -33,7 +33,7 @@ def get_labeler_config(projects: list[str]) -> dict[str, Any]:
     config: dict[str, Any] = {
         # Not just language READMEs
         "enhancement": [
-            {"changed-files": [{"all-globs-to-all-files": ["!archive/*/*/README.md"]}]},
+            {"changed-files": [{"all-globs-to-all-files": ["**"]}]},
             {"base-branch": "main"},
         ],
         # README.md and any Markdown file in .github directory
