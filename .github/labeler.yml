@@ -1,6 +1,6 @@
 enhancement:
 - changed-files:
-  - all-glob-to-all-files:
+  - all-globs-to-all-files:
     - '!archive/*/*/README.md'
 - base-branch: main
 needs docs:
