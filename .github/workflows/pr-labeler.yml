@@ -40,6 +40,9 @@ jobs:
     - name: Create labels
       run: poetry run python scripts/set_up_labeler.py
 
+    - name: Show labeler config
+      run: cat .github/labeler.yml
+
     - uses: actions/labeler@v6
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
