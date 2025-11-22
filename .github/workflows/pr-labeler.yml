@@ -1,12 +1,6 @@
 name: "Pull Request Labeler"
 on:
-  pull_request:
-    types:
-    - opened
-    - edited
-    - synchronize
-    branches:
-    - main
+  pull_request_target:
     paths:
     - '!archive/*/*/*.md'
 
