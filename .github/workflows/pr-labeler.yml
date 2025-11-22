@@ -10,6 +10,7 @@ jobs:
   labeler:
     permissions:
       contents: read
+      issues: write
       pull-requests: write
     runs-on: ubuntu-latest
     steps:
@@ -39,5 +40,5 @@ jobs:
 
     - uses: actions/labeler@v6
       with:
-        repo-token: ${{ secrets.PAT }}
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
         sync-labels: true
