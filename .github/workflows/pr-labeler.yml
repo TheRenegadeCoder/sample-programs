@@ -15,6 +15,28 @@ jobs:
     steps:
     - uses: actions/checkout@v6
 
+    - name: Read repo config
+      uses: pietrobolcato/action-read-yaml@1.1.0
+      id: repo-config
+      with:
+        config: repo-config.yml
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "${{ steps.repo-config.outputs['python-version'] }}"
+
+    - name: Run Poetry Image
+      uses: abatilo/actions-poetry@v3
+      with:
+        poetry-version: "${{ steps.repo-config.outputs['poetry-version'] }}"
+
+    - name: Install Dependencies
+      run: poetry install
+
+    - name: Create labels
+      run: poetry run python scripts/set_up_labeler.py
+
     - uses: actions/labeler@v6
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
