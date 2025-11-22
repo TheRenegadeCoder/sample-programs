@@ -33,18 +33,30 @@ def get_labeler_config(projects: list[str]) -> dict[str, Any]:
     config: dict[str, Any] = {
         # Not just language READMEs
         "enhancement": [
-            {"changed-files": [{"all-globs-to-all-files": ["**"]}]},
-            {"base-branch": "main"},
+            {
+                "all": [
+                    {"changed-files": [{"all-globs-to-all-files": ["**"]}]},
+                    {"base-branch": "main"},
+                ]
+            },
         ],
         # README.md and any Markdown file in .github directory
         "needs docs": [
-            {"changed-files": [{"any-glob-to-any-file": ["README.md", ".github/*.md"]}]},
-            {"base-branch": "main"},
+            {
+                "all": [
+                    {"changed-files": [{"any-glob-to-any-file": ["README.md", ".github/*.md"]}]},
+                    {"base-branch": "main"},
+                ]
+            }
         ],
         # Any language testinfo.yml files
         "tests": [
-            {"changed-files": [{"any-glob-to-any-file": ["archive/*/*/testinfo.yml"]}]},
-            {"base-branch": "main"},
+            {
+                "all": [
+                    {"changed-files": [{"any-glob-to-any-file": ["archive/*/*/testinfo.yml"]}]},
+                    {"base-branch": "main"},
+                ]
+            },
         ],
     }
 
@@ -56,17 +68,21 @@ def get_labeler_config(projects: list[str]) -> dict[str, Any]:
         )
         config[project] = [
             {
-                "changed-files": [
+                "all": [
                     {
-                        "any-glob-to-any-file": [
-                            f"archive/*/*/{filename}.*" for filename in filenames
+                        "changed-files": [
+                            {
+                                "any-glob-to-any-file": [
+                                    f"archive/*/*/{filename}.*" for filename in filenames
+                                ]
+                            }
                         ]
-                    }
+                    },
+                    {
+                        "base-branch": "main",
+                    },
                 ]
-            },
-            {
-                "base-branch": "main",
-            },
+            }
         ]
 
     return config
