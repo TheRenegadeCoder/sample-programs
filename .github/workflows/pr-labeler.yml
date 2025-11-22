@@ -2,6 +2,7 @@ name: "Pull Request Labeler"
 
 permissions:
   contents: read
+  issues: write
   pull-requests: write
 
 on:
