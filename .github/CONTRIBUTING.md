@@ -86,6 +86,8 @@ archive
     └── python
         ├── README.md
         ├── baklava.py
+        ├── ...
+        ├── testinfo.yml
         └── ...
 ```
 
