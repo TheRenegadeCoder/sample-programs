@@ -69,7 +69,7 @@ much to the average user. The only item that matters is the archives folder.
 
 ### Archives
 
-Within the archives folder, you'll find a set of one-character folders. Each of these folders contains
+Within the `archive` folder, you'll find a set of one-character folders. Each of these folders contains
 a list of language folders that share the same first character as the parent folder.
 
 Within each language folder, you'll find the following:
@@ -77,6 +77,17 @@ Within each language folder, you'll find the following:
 -   A README
 -   A list of project files.
 -   A testinfo.yml
+
+For example python:
+
+```
+archive
+└── p
+    └── python
+        ├── README.md
+        ├── baklava.py
+        └── ...
+```
 
 Now, each program file maps to an ongoing project that you can find on the
 [project list on the Sample Programs Website][project-list].
