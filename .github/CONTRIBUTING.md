@@ -74,9 +74,9 @@ a list of language folders that share the same first character as the parent fol
 
 Within each language folder, you'll find the following:
 
--   A README
+-   A `README.md`
 -   A list of project files.
--   A testinfo.yml
+-   A `testinfo.yml`
 
 For example python:
 
