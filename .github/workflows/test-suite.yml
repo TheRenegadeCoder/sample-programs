@@ -35,6 +35,15 @@ jobs:
       status: ${{ steps.changed-files.outputs.exists }}
       changed_files: ${{ steps.changed-files.outputs.files }}
     steps:
+    - name: Maximize build space
+      uses: AdityaGarg8/remove-unwanted-software@v5
+      with:
+        verbose: true
+        remove-dotnet: true
+        remove-android: true
+        remove-haskell: true
+        remove-large-packages: true
+
     - uses: actions/checkout@v6
       with:
         fetch-depth: 2
