@@ -76,7 +76,8 @@ jobs:
         remove-dotnet: true
         remove-android: true
         remove-haskell: true
-        remove-large-packages: true
+        remove-codeql: true
+        remove-cached-tools: true
 
     - uses: actions/checkout@v6
       with:
