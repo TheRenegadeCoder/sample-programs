@@ -4,5 +4,5 @@ folder:
 
 container:
   image: "swipl"
-  tag: "stable"
+  tag: "9.3.11"
   cmd: "swipl -s {{ source.name }}{{ source.extension }}"
