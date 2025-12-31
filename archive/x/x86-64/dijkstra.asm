@@ -135,18 +135,16 @@ POP RDI
 %DEFINE _start.graph 32
 %DEFINE _start.RET 40
 
-%DEFINE dijkstra.STACK_INIT 40
+%DEFINE dijkstra.STACK_INIT 72
 %DEFINE dijkstra.PriorityQueue 8
-%DEFINE dijkstra.seen 16
+%DEFINE dijkstra.prev 16
 %DEFINE dijkstra.dist 24
 %DEFINE dijkstra.SRC 32
 %DEFINE dijkstra.graph 40
-
-%DEFINE dijkstra.PQ_LOOP.STACK_INIT 32
-%DEFINE dijkstra.PQ_LOOP.current 8
-%DEFINE dijkstra.PQ_LOOP.currentDistance 16
-%DEFINE dijkstra.PQ_LOOP.seen 24
-%DEFINE dijkstra.PQ_LOOP.dist 32
+%DEFINE dijkstra.x 48
+%DEFINE dijkstra.y 56
+%DEFINE dijkstra.numVerts 64
+%DEFINE dijkstra.currentROw 72
 
 
 
@@ -301,7 +299,7 @@ MOV RDX, [RBP - _start.NumVerts]
 CALL dijkstra
 .dijkstra_complete:
 MOV RCX, [RBP - _start.DST]
-MOV RBX, [RAX + RCX*SIZE_INT]
+MOV EBX, [RAX + RCX*SIZE_INT]
 MOV [RBP - _start.RET], RBX
 
 MOV RAX, SYS_MMAP
@@ -634,9 +632,9 @@ dijkstra:
 ; Description:
 ;   The algorithm of study itself, Dijkstra.
 ; Parameters:
-;   RDI - (int)           SRC.
+;   EDI - (int)           SRC.
 ;   RSI - (int[][]*)      Graph to vertice&edges.
-;   RDX - (int)           # Vertices.
+;   EDX - (int)           # Vertices.
 ;   R10 - ()              Unused.
 ;   R8  - ()              Unused.
 ;   R9  - ()              Unused.
@@ -651,152 +649,128 @@ PUSH RBX
 PUSH R12
 PUSH R13
 PUSH R14
-PUSH R15
 MOV [RBP - dijkstra.SRC], RDI
 MOV [RBP - dijkstra.graph], RSI
+MOV [RBP - dijkstra.numVerts], RDX
+MOV [RBP - dijkstra.x], 0
+MOV [RBP - dijkstra.y], 0
 
-MOV R12, RDI
-MOV R13, RSI
-MOV R14, RDX
+MOV RDX, [RBP - dijkstra.SRC]
+MOV RSI, [RBP - dijkstra.graph]
+CALL dijkstra~GetRow
+MOV [RBP - dijkstra.currentRow], RAX
+MOV RSI, [RBP - dijkstra.SRC] 
+MOV RDI, [RBP - dijkstra.graph]
 
+MMAP_PUSH
 MOV RAX, SYS_MMAP
 MOV RDI, NO_ADDR
-MOV RSI, R14
-SHL RSI, MUL_4
+MOV RSI, [RBP - dijkstra.numVerts]
+SHL RSI, SIZE_INT
 MOV RDX, PROT_READ | PROT_WRITE
 MOV R10, MAP_SHARED | MAP_ANONYMOUS
 MOV R8, NO_FD
 MOV R9, NO_OFFSET
 SYSCALL
-MOV [RBP - dijkstra.dist], RAX
+MOV [RBP _ dijkstra.prev], RAX
+
 MOV RAX, SYS_MMAP
 MOV RDI, NO_ADDR
-MOV RSI, R14
-SHL RSI, MUL_4
+MOV RSI, [RBP - dijkstra.numVerts]
+SHL RSI, SIZE_INT
 MOV RDX, PROT_READ | PROT_WRITE
 MOV R10, MAP_SHARED | MAP_ANONYMOUS
 MOV R8, NO_FD
 MOV R9, NO_OFFSET
 SYSCALL
-MOV [RBP - dijkstra.seen], RAX
+MOV [RBP _ dijkstra.dist], RAX
+MMAP_POP
+MOV RCX, 0
+MOV R8, [RBP - dijkstra.prev]
+MOV R9, [RBP - dijkstra.dist]
+    .dists_loop:
+        CMP RCX, [RBP - dijkstra.numVerts]
+        JE .dists_ext
+        MOV [R8 + RCX*SIZE_INT], 0
+        MOV [R9 + RCX*SIZE_INT], INT_MAX
+        INC RCX
+        JMP .dists_loop
+.dists_ext:
+MOV RCX, [RBP - dijkstra.numVerts]     
+MOV [R9 + RCX*SIZE_INT], 0
 
-    .INF_Loop:
-        MOV RDI, [RBP - dijkstra.dist]
-        MOV R10, [RBP - dijkstra.seen]
-        PUSH RBP
-        MOV RBP, RSP
-        SUB RSP, SIZE_LONG*1
-        MOV QWORD [RBP - SIZE_LONG*1], 0
-        .INF_Inner:
-            MOV RCX, [RBP - SIZE_LONG*1]
-            CMP RCX, R14
-            JAE .INF_Exit
-            MOV DWORD [RDI + RCX*SIZE_INT], INT_MAX
-            MOV DWORD [R10 + RCX*SIZE_INT], UNSEEN
-            INC RCX
-            MOV [RBP - SIZE_LONG*1], RCX
-            JMP .INF_Inner
-    .INF_Exit:
-        XOR RCX, RCX
-        ADD RSP, SIZE_LONG*1
-        MOV RSP, RBP
-        POP RBP
-MOV RCX, [RBP - dijkstra.SRC]
-MOV RDI, [RBP- dijkstra.dist]
-MOV DWORD [RDI + RCX*SIZE_INT], 0
-
-MOV RDI, R14
+MOV RDI, RCX
 CALL priority_queue@construct
-MOV [RBP - dijkstra.PriorityQueue], RAX
+MOV [RBP - dijkstra.PriorityQueue], RAX         
 
-MOV RDI, [RBP - dijkstra.SRC]
-MOV RSI, 0
-CALL dijkstra~GenerateTuple
-
+MOV RCX, [RBP - dijkstra.numVerts]
+MOV RDX, [RBP - dijkstra.currentRow]
+    .PQ_INIT:
+        CMP RCX, [RBP - dijkstra.numVerts]
+        JE .PQ_INIT_EXIT
+        
+        MOV EDI, ECX
+        MOV ESI, [RDX + RCX*SIZE_INT]
+        CALL dijkstra~GenerateTuple
+        
+        MOV RDI, [RBP - dijkstra.PriorityQueue]
+        MOV RSI, RAX
+        CALL priority_queue@add
+        
+        INC RCX
+        JMP .PQ_INIT                                                      
+.PQ_INIT_EXIT: 
 MOV RDI, [RBP - dijkstra.PriorityQueue]
-MOV RSI, RAX
-CALL priority_queue@add
-
-MOV R15, [RBP - dijkstra.PriorityQueue]
-MOV R10, [RBP - dijkstra.seen]
-MOV R8, [RBP - dijkstra.dist]
-MOV R9, [RBP - dijkstra.graph]
-
-
     .PQ_LOOP:
-        PUSH RBP
-        MOV RBP, RSP
-        SUB RSP, dijkstra.PQ_LOOP.STACK_INIT
-        MOV [RBP - dijkstra.PQ_LOOP.seen], R10
-        MOV [RBP - dijkstra.PQ_LOOP.dist], R8
-        MOV QWORD [RBP - dijkstra.PQ_LOOP.current], 0
-        MOV QWORD [RBP - dijkstra.PQ_LOOP.currentDistance], 0
-        .PQ_Inner:
-            MOV RDI, R15
-            CALL priority_queue@isEmpty
-            CMP RAX, TRUE
-            JE .PQ_Exit
+        CALL priority_queue@isEmpty
+        CMP RAX, [BOOLs.TRUE]
+        JE .PQ_EXIT
+        
+        CALL priority_queue@remove
+        MOV EBX, [RAX + Node_Tuple.element]
+        MOV [RBP - dijkstra.x], EBX
+        MOV RCX, [RBP - dijkstra.dist]
+        MOV ECX, [RCX + RBX*SIZE_INT]
+        MOV RBX, RAX
+        CMP [RBX + Node_Tuple.value], ECX
+        JA .PQ_LOOP
+        
+        
+        
+        MOV RDI, [RBP - dijkstra.graph]
+        MOV ESI, [RBX + Node_Tuple.value]
+        CALL dijkstra~GetRow
+        MOV [RBP - dijkstra.currentRow], RAX
+        MOV R11, [RBP - dijkstra.dist]
+        MOV RCX. 0
+        .neighbor_loop:
+            CMP DWORD [R11 + RCX*SIZE_INT], 0
+            JE .neighbor_iterate
             
-            MOV RDI, R15
-            PUSH R8
-            CALL priority_queue@remove
-            POP R8
-            MOV EDI, [RAX + NodeTuple.value]
-            MOV [RBP - dijkstra.PQ_LOOP.currentDistance], EDI
-            MOV EDI, [RAX + NodeTuple.element]
-            MOV [RBP - dijkstra.PQ_LOOP.current], EDI
-            MOV EDI, [RBP - dijkstra.PQ_LOOP.currentDistance]
-            MOV RBX, [RBP - dijkstra.PQ_LOOP.seen]
-            CMP DWORD [RBX + RDI*SIZE_INT], SEEN
-            JE .PQ_Inner
+            MOV EDX, [R11 + RCX*SIZE_INT]
+            MOV R12D, [RBX + Node_Tuple.element]
+            MOV R12D, [R11 + R12*SIZE_INT]
+            ADD R12D, EDX
+            MOV R13D, [R11 + RCX*SIZE_INT]
+            CMP R12D, R13D
+            JB .neighbor_iterate
+            MOV [R11 + RCX*SIZE_INT], R12D
             
-            MOV DWORD [RBX + RDI*SIZE_INT], SEEN
+            MOV RDI, RCX
+            MOV ESI, [R11 + RCX*SIZE_INT]
+            CALL dijkstra~GenerateTuple
             
-            MOV RBX, [RBP - dijkstra.PQ_LOOP.dist]
-            .chkDist: INT3
-            MOV RSI, [RBP - dijkstra.PQ_LOOP.currentDistance]
-            CMP RSI, [RBX + RDI*SIZE_INT]
-            JA .PQ_Inner
-            XOR RCX, RCX
-                .NEIGHBORS_LOOP:
-                INT3
-                    CMP RCX, R14
-                    JAE .PQ_Inner
-                    MOV R10, R13
-                    .print_graph:
-                    MOV R9, R13
-                    MOV R8, [RBP - dijkstra.PQ_LOOP.current]
-                    MOV R10, [R9 + R8*SIZE_LONG]
-                    MOV R8, [RBP - dijkstra.PQ_LOOP.currentDistance]
-                    CMP DWORD [R10 + RCX*SIZE_INT], NO_CONNECTION
-                    JE .NEIGHBORS_SKIP
-                    MOV R9, R8
-                    ADD R9D, [R10 + RCX*SIZE_INT]
-                    
-                    CMP R9D, [RBX + RCX*SIZE_INT]
-                    JAE .NEIGHBORS_SKIP
-                    
-                    MOV [RBX + RCX*SIZE_INT], R9D
-                    
-                    MOV RDI, RCX
-                    MOV RSI, R9
-                    CALL dijkstra~GenerateTuple
-                    MOV RSI, RAX
-                    MOV RDI, R15
-                    CALL priority_queue@add
-                    
-                    .NEIGHBORS_SKIP:
-                    INC RCX
-                    JMP .NEIGHBORS_LOOP
-    .PQ_Exit:
-        ADD RSP, dijkstra.PQ_LOOP.STACK_INIT
-        MOV RSP, RBP
-        POP RBP
-
-POP R15
+            MOV RDI, [RBP - dijkstra.PriorityQueue]
+            MOV RSI, RAX
+            CALL priority_queue@add
+            .neighbor_iterate:
+            INC RCX
+            JMP .neighbor_loop
+        
+.PQ_EXIT:
 POP R14
 POP R13
-POP R12
+POP R12                            
 POP RBX
 MOV RAX, [RBP - dijkstra.dist]
 ADD RSP, dijkstra.STACK_INIT
@@ -813,20 +787,18 @@ dijkstra~GenerateTuple:
 ;   Preserving RDX, R10, R8, R9 as I know it will be annoying restoring those for every call if clobbered.
 ;   Can replace ad hoc instances of tuple generation.
 ; Parameters:
-;   RDI - (int)           Element.
-;   RSI - (int)           Value.
+;   EDI - (int)           Element.
+;   ESI - (int)           Value.
 ;   RDX - ()              Unused.
 ;   R10 - ()              Unused.
 ;   R8  - ()              Unused.
 ;   R9  - ()              Unused.
 ; Returns:
 ;   RAX - (NodeTuple*)    Generated Tuple.
-;   Clobbers - RAX, RDI, RSI.
+;   Clobbers - 
 ; ---------------------------------------------------------------------------
-PUSH RDX
-PUSH R10
-PUSH R8
-PUSH R9
+MMAP_PUSH
+
 MOV RAX, SYS_MMAP
 MOV RDI, NO_ADDR
 MOV RSI, NodeTuple_size
@@ -837,10 +809,8 @@ MOV R9, NO_OFFSET
 SYSCALL
 MOV DWORD [RAX + NodeTuple.value], ESI
 MOV DWORD [RAX + NodeTuple.element], EDI
-POP R9
-POP R8
-POP R10
-POP RDX
+
+MMAP_POP
 RET
 
 dijkstra~GetRow:
@@ -850,8 +820,8 @@ dijkstra~GetRow:
 ;   Helper method for dijkstra to grab the address of the needed row given a graph.
 ; Parameters:
 ;   RDI - (int[][]*)      Graph.
-;   RSI - (int)           Element.
-;   RDX - (int)           # Vertices.
+;   RSI - (int)           Row #
+;   RDX - ()              Unused
 ;   R10 - ()              Unused.
 ;   R8  - ()              Unused.
 ;   R9  - ()              Unused.
@@ -859,11 +829,7 @@ dijkstra~GetRow:
 ;   RAX - (int[]*)        Row.
 ;   Clobbers - RAX.
 ; ---------------------------------------------------------------------------  
-PUSH RDX 
-MOV RAX, RSI
-MUL RDX
-POP RDX
-LEA RAX, [RDI + RAX*SIZE_INT]
+MOV RAX, [RDI + RSI*SIZE_LONG]
 RET
 
 
@@ -880,26 +846,24 @@ priority_queue@add:
 ;   R8  - ()              Unused.
 ;   R9  - ()              Unused.
 ; Returns:
-;   RAX - ()              None.
-;   Clobbers - RDI, RSI, RCX, RDX, R10, R8, R9.
+;   RAX - ()              RAX == 0 (Full), RAX == 1 (Success).
+;   Clobbers - 
 ; ---------------------------------------------------------------------------
-MOV RDX, [RDI + priority_queue.max_len]
-CMP RDX, 0
-JE .skip
-DEC RDX
-INT3
-.skip:
-INC QWORD [RDI + priority_queue.size]
+MMAP_PUSH ;Having abstracted the min heap allows me to do this.
 MOV EDX, [RDI + priority_queue.size]
+CMP EDX, [RDI + priority_queue.max_len]
+CMOVE RAX, [BOOLs.FALSE]
+JE .ext
 MOV R8, [RDI + priority_queue.heap]
-MOV R9, [R10 + min_heap.elems]
-MOV [R9 + RDI*SIZE_LONG], RSI
-
-
-
-MOV ESI, EDI
+MOV [R8 + RDX*SIZE_LONG], RSI
+INC EDX
+INC [RDI + priority_queue.size]
 MOV RDI, R8
+MOV ESI, EDX
 CALL minheap@siftUp
+MOV RAX, [BOOLs.TRUE]
+.ext:
+MMAP_POP
 RET
 
 priority_queue@remove:
@@ -907,6 +871,7 @@ priority_queue@remove:
 ; Function: priority queue remove.
 ; Description:
 ;   Removes the first element in both the value and element array of the minheap and returns NodeTuple containing both.
+;   Preserves RDI
 ; Parameters:
 ;   RDI - (PriorityQueue*)This* priority queue.
 ;   RSI - ()              Unused.
@@ -915,72 +880,30 @@ priority_queue@remove:
 ;   R8  - ()              Unused.
 ;   R9  - ()              Unused.
 ; Returns:
-;   RAX - (NodeTuple*)    NodeTuple containing value, elem, or null (0).
+;   RAX - (NodeTuple*)    NodeTuple containing value, elem, or nil (0).
 ;   Clobbers - RDI, RSI, RDX, R10, R8, R9.
 ; ---------------------------------------------------------------------------
-PUSH RBP
-MOV RBP, RSP
-PUSH R12
-PUSH R13
-
-MOV R12, 0
-CMP QWORD [RDI + priority_queue.size], 0
-CMOVE RAX, R12
-JE .ext
-
-MOV RSI, [RDI + priority_queue.heap]
-MOV R10, [RSI + min_heap.array]
-MOV R8, [RSI + min_heap.elements]
-
-MOV R10, [R10]
-MOV R8, [R8]
-PUSH R10
-PUSH R8
-
 PUSH RDI
-MOV RAX, SYS_MMAP
-MOV RDI, NO_ADDR
-MOV RSI, NodeTuple_size
-MOV RDX, PROT_READ | PROT_WRITE
-MOV R10, MAP_SHARED | MAP_ANONYMOUS
-MOV R8, NO_FD
-MOV R9, NO_OFFSET
-SYSCALL
-POP RDI
-
-POP RSI
-POP RDX
-MOV [RAX + NodeTuple.value], EDX
-MOV [RAX + NodeTuple.element], ESI
-MOV RCX, RAX
+CMP DWORD [RDI + priority_queue.size], 0
+CMOVA RAX, [BOOLs.FALSE]
+JE .ext:
 
 MOV RSI, [RDI + priority_queue.heap]
-MOV RDX, [RSI + min_heap.array]
-MOV R10, [RDI + priority_queue.size]
-DEC R10
-MOV R8D, [RDX+R10*SIZE_INT]
-MOV [RDX], R8D
-MOV RDX, [RSI + min_heap.elements]
-MOV R8D, [RDX+R10*SIZE_INT]
-MOV [RDX], R8D
+MOV RCX, [RDI + min_heap.elems]
+MOV RAX, [RCX]
+PUSH RAX
 
-DEC QWORD [RDI + priority_queue.size]
-DEC QWORD [RSI + min_heap.len]
+MOV EDX, [RDI + priority_queue.size]
+DEC EDX
+MOV R8, [RCX + RDX*SIZE_LONG]
+MOV [RCX], R8
 
-MOV R12, RDI
-MOV R12, [RDI + priority_queue.heap]
-MOV RSI, 0
-MOV RDI, R12
-PUSH RCX
+MOV RDI, RSI
+MOV ESI, 0
 CALL minheap@siftDown
-POP RCX
-
-MOV RAX, RCX
+POP RAX
 .ext:
-POP R13 ;Ret
-POP R12
-MOV RSP, RBP
-POP RBP
+POP RDI
 RET
 
 priority_queue@peek:
@@ -996,44 +919,16 @@ priority_queue@peek:
 ;   R8  - ()              Unused.
 ;   R9  - ()              Unused.
 ; Returns:
-;   RAX - (NodeTuple*)    NodeTuple containing value, elem, or null (0).
+;   RAX - (NodeTuple*)    NodeTuple containing value, elem, or nil (0).
 ;   Clobbers - RDI, RSI, RCX, RDX, R10, R8, R9.
 ; ---------------------------------------------------------------------------
-PUSH RBP
-MOV RBP, RSP
-PUSH R12
-PUSH R13
-
-MOV R12, 0
-CMP QWORD [RDI + priority_queue.size], 0
-CMOVE RAX, R12
-JE .ext
-
+CMP DWORD [RDI + priority_queue.size], 0
+CMOVA RAX, [BOOLs.FALSE]
+JE .ext:
 MOV RSI, [RDI + priority_queue.heap]
-MOV R10, [RSI + min_heap.array]
-MOV R8, [RSI + min_heap.elements]
-
-MOV R10D, [R10]
-MOV R8D, [R8]
-PUSH R10
-PUSH R8
-
-MOV RAX, SYS_MMAP
-MOV RDI, NO_ADDR
-MOV RSI, NodeTuple_size
-MOV RDX, PROT_READ | PROT_WRITE
-MOV R10, MAP_SHARED | MAP_ANONYMOUS
-MOV R8, NO_FD
-MOV R9, NO_OFFSET
-SYSCALL
-
-MOV [RAX + NodeTuple.value], R10D
-MOV [RAX + NodeTuple.element], R8D
+MOV RCX, [RSI + min_heap.elems]
+MOV RAX, [RCX]
 .ext:
-POP R13
-POP R12
-MOV RSP, RBP
-POP RBP
 RET
 
 
@@ -1056,8 +951,8 @@ priority_queue@isEmpty:
 ; ---------------------------------------------------------------------------
 MOV RAX, 0
 CMP QWORD [RDI + priority_queue.size], 0
-SETE AL
-MOVZX RAX, AL
+CMOVA RAX, [BOOLs.FALSE]
+CMOVE RAX, [BOOLs.TRUE]
 RET
 
 priority_queue@size:
@@ -1083,11 +978,11 @@ priority_queue@decreaseKey:
 ; ----------------------------------------------------------------------------
 ; Function: priority queue decreaseKey.
 ; Description:
-;   Decrease priority of given symbol.
+;   Decrease priority of given symbol. Implemented through linear search because implementing a hashmap would take too long for now; possibility for improvement.
 ; Parameters:
 ;   RDI - (PriorityQueue*)This* priority queue.
-;   RSI - (int)           Symbol.
-;   RDX - (int)           Replacement priority.
+;   ESI - (int)           Symbol.
+;   EDX - (int)           Replacement priority.
 ;   R10 - ()              Unused.
 ;   R8  - ()              Unused.
 ;   R9  - ()              Unused.
@@ -1095,30 +990,24 @@ priority_queue@decreaseKey:
 ;   EAX - (int)           EAX == 0 : NOT IN QUEUE; EAX == 1 : IN QUEUE.
 ;   Clobbers - RAX, RDI, RSI, RCX, RDX, R10, R8.
 ; ---------------------------------------------------------------------------
-PUSH R12
-MOV R10, [RDI + priority_queue.heap]
-MOV R8,  [R10 + min_heap.array]
-MOV R10, [R10 + min_heap.elements]
+MOV RDX, [RDI + priority_queue.heap]
 MOV RCX, 0
-    .search: ; I really don't like having to implement a linear search, but a hashtable will take way too long to implement.
-        CMP RCX, [RDI + priority_queue.size]
-        CMOVAE EAX, [BOOLs.FALSE]
-        CMOVB EAX, [BOOLs.TRUE]
-        JAE .short_circuit ;Not found
-        MOV R12, [R10 + RCX*SIZE_INT]
-        CMP R12, RSI
-        JE .break_search
-        INC RCX
+    .search:
+        CMP ECX, [RDI + priority_queue.size]
+        CMOVE RAX, [BOOLs.FALSE]
+        JE .ext
+        MOV R10, [RDX + RCX*SIZE_LONG]
+        CMP ESI, [R10 + Node_Tuple.element]
+        JE .success
+        INC ECX
         JNE .search
-.break_search:
-CMP RDX, [R8 + RCX*SIZE_INT]
-JAE .short_circuit
-MOV [R8 + RCX*SIZE_INT], RDX
-MOV RDI, [RDI + priority_queue.heap]
+.success:
+MOV R10, [RDX + RCX*SIZE_LONG]
+MOV [R10 + Node_Tuple.value], EDX 
 MOV ESI, ECX
-CALL minheap@siftUp
-.short_circuit:
-POP R12
+CALL minheap@siftUp        
+MOV RAX, [BOOLs.TRUE]        
+.ext:      
 RET
 
 priority_queue@construct:
@@ -1378,7 +1267,7 @@ minheap@right:
 ; Description:
 ;   Grabs right element index relative to given index.
 ; Parameters:
-;   EDI - (minheap)           Index.
+;   EDI - (minheap)       Index.
 ;   RSI - ()              Unused.
 ;   RDX - ()              Unused.
 ;   R10 - ()              Unused.
