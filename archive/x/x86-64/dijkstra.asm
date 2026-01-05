@@ -33,7 +33,7 @@ POP RDI
 %DEFINE INVALID_STATE 7
 %DEFINE INVALID_EMPTY 8
 %DEFINE INVALID_BAD_STR 9
-
+%DEFINE INVALID_NO_WAY 10
 %DEFINE VALID_ARGC 4
 
 ; CONSTANTS
@@ -173,6 +173,7 @@ Err_Table: ; This is absurd but this because of CMOV not allowing immediates.
     dq -7
     dq -8
     dq -9
+    dq -10
 
 BOOLs:
     .TRUE dq 1
@@ -248,6 +249,18 @@ _start:
 PUSH RBP
 MOV RBP, RSP
 SUB RSP, _start.STACK_INIT
+
+MOV RDI, [Err_Table + INVALID_EMPTY]
+MOV RAX, [RBP + _start.argv1]
+CMP BYTE [RAX], 0
+JE .error
+MOV RAX, [RBP + _start.argv2]
+CMP BYTE [RAX], 0
+JE .error
+MOV RAX, [RBP + _start.argv3]
+CMP BYTE [RAX], 0
+JE .error
+
 MOV RSI, [RBP + _start.argv1]
 CMP QWORD [RBP + _start.argc], VALID_ARGC
 CMOVNE RDI, [Err_Table + INVALID_ARGC*SIZE_LONG]
@@ -346,6 +359,9 @@ CALL dijkstra
 MOV RCX, [RBP - _start.DST]
 MOV EBX, [RAX + RCX*SIZE_INT]
 MOV [RBP - _start.RET], RBX
+CMP EBX, -1
+CMOVE RDI, [Err_Table + INVALID_NO_WAY]
+JE .error
 
 MOV RAX, SYS_MMAP
 MOV RDI, NO_ADDR
@@ -510,6 +526,12 @@ MOV RCX, 0
         MOV RDX, Error.len
         SYSCALL
         
+        MOV RAX, SYS_WRITE
+        MOV RDI, STDOUT
+        MOV RSI, newline.msg
+        MOV RDX, newline.len
+        SYSCALL
+        
         MOV RAX, SYS_EXIT
         POP RDI
         
@@ -672,7 +694,6 @@ MOV [RBP - parseVertices.NumPtr], RDI
         ;For debugging, I can also add pointers, or other info into other registers before SYSCALLing.
         MOV RAX, SYS_EXIT
         MOV RDI, [RBP - parseVertices.PrevState]
-        
         SYSCALL
         
         
@@ -1493,8 +1514,9 @@ ezsqrt:
 ; ---------------------------------------------------------------------------
     PUSH RBP
     MOV RBP, RSP
+    PUSH RBX
 
-    MOV RDX, -1
+    MOV RBX, -1
     MOV RCX, 1
     .sqrt_loop:
         MOV RAX, RCX
@@ -1502,12 +1524,14 @@ ezsqrt:
         CMP EAX, EDI
         JE .ext
         INC RCX
-        CMOVA RAX, RDX
+        CMP EAX, EDI
+        CMOVA RAX, RBX
         JA .short_circuit
         JB .sqrt_loop
     .ext:
     MOV RAX, RCX
     .short_circuit:
+    POP RBX
     MOV RSP, RBP
     POP RBP
     RET
