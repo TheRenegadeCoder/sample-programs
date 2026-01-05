@@ -239,7 +239,7 @@ MOV RBP, RSP
 SUB RSP, _start.STACK_INIT
 
 MOV RDI, [Err_Table + INVALID_EMPTY]
-CMP [RBP + _start.argc], 0
+CMP QWORD [RBP + _start.argc], 0
 JE .error
 
 MOV RAX, [RBP + _start.argv1]
