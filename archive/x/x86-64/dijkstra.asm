@@ -239,6 +239,9 @@ MOV RBP, RSP
 SUB RSP, _start.STACK_INIT
 
 MOV RDI, [Err_Table + INVALID_EMPTY]
+CMP [RBP + _start.argc], 0
+JE .error
+
 MOV RAX, [RBP + _start.argv1]
 CMP BYTE [RAX], 0
 JE .error
@@ -672,8 +675,21 @@ MOV [RBP - parseVertices.NumPtr], RDI
         RET
     .error:
         ;For debugging, I can also add pointers, or other info into other registers before SYSCALLing.
+        PUSH RDX
+        MOV RAX, SYS_WRITE
+        MOV RDI, STDOUT
+        MOV RSI, Error.msg
+        MOV RDX, Error.len
+        SYSCALL
+    
+        MOV RAX, SYS_WRITE
+        MOV RDI, STDOUT
+        MOV RSI, newline.msg
+        MOV RDX, newline.len
+        SYSCALL
+    
         MOV RAX, SYS_EXIT
-        MOV RDI, [RBP - parseVertices.PrevState]
+        POP RDX
         SYSCALL
         
         
