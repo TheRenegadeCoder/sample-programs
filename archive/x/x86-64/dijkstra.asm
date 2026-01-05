@@ -238,10 +238,11 @@ PUSH RBP
 MOV RBP, RSP
 SUB RSP, _start.STACK_INIT
 
-MOV RDI, [Err_Table + INVALID_EMPTY]
-CMP QWORD [RBP + _start.argc], 0
-JE .error
+CMP QWORD [RBP + _start.argc], VALID_ARGC
+CMOVB RDI, [Err_Table + INVALID_ARGC*SIZE_LONG]
+JB .error
 
+MOV RDI, [Err_Table + INVALID_EMPTY*SIZE_LONG]
 MOV RAX, [RBP + _start.argv1]
 CMP BYTE [RAX], 0
 JE .error
@@ -289,7 +290,7 @@ MOV [RBP - _start.DST], RAX
 MOV RAX, [RBP - _start.SRC]
 MOV RBX, [RBP - _start.DST]
 CMP RAX, RBX
-CMOVE RDI, [Err_Table+INVALID_SRCDST]
+CMOVE RDI, [Err_Table+INVALID_SRCDST*SIZE_LONG]
 JE .error
 
 MOV RAX, SYS_MMAP
@@ -349,7 +350,7 @@ MOV RCX, [RBP - _start.DST]
 MOV EBX, [RAX + RCX*SIZE_INT]
 MOV [RBP - _start.RET], RBX
 CMP EBX, -1
-CMOVE RDI, [Err_Table + INVALID_NO_WAY]
+CMOVE RDI, [Err_Table + INVALID_NO_WAY*SIZE_LONG]
 JE .error
 
 MOV RAX, SYS_MMAP
