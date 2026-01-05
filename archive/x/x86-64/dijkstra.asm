@@ -112,6 +112,8 @@ POP RDI
 %DEFINE MAP_SHARED 0x01
 %DEFINE MAP_ANONYMOUS 0x20
 
+%DEFINE SYS_MPROTECT 10
+
 %DEFINE SYS_MUNMAP 11
 
 ;Thread
@@ -201,6 +203,7 @@ section .bss
 section .text
 
 global _start
+  
 
 _start:
 
@@ -291,7 +294,6 @@ MOV R13, [RBP - _start.graph]
 MOV RDI, [RBP + _start.argv1]
 MOV RSI, [RBP - _start.graph]
 MOV RDX, [RBP - _start.NumVerts]
-.print_graph: 
 CALL parseVertices
 MOV RDI, [RBP - _start.SRC]
 MOV RSI, [RBP - _start.graph]
@@ -653,7 +655,6 @@ PUSH R15
 MOV [RBP - dijkstra.SRC], RDI
 MOV [RBP - dijkstra.graph], RSI
 MOV [RBP - dijkstra.numVerts], RDX
-.chkInps: INT3
 MOV DWORD [RBP - dijkstra.x], 0
 MOV DWORD [RBP - dijkstra.y], 0
 
@@ -693,7 +694,6 @@ MOV R9, [RBP - dijkstra.dist]
     .dists_loop:
         CMP RCX, [RBP - dijkstra.numVerts]
         JE .dists_ext
-        INT3
         MOV DWORD [R8 + RCX*SIZE_INT], 0
         MOV DWORD [R9 + RCX*SIZE_INT], INT_MAX
         INC RCX
@@ -712,19 +712,24 @@ MOV RDI, [RBP - dijkstra.SRC]
 MOV ESI, 0
 CALL dijkstra~GenerateTuple                
 MOV RSI, RAX
-MOV RDI, [RBP - dijkstra.PriorityQueue] 
-CALL priority_queue@add                                                                                                               
-.PQ_INIT_EXIT: 
 MOV RDI, [RBP - dijkstra.PriorityQueue]
+CALL priority_queue@add                                                                                                 
+.PQ_INIT_EXIT: 
     .PQ_LOOP:
+        MOV RDI, [RBP - dijkstra.PriorityQueue]
         CALL priority_queue@isEmpty
         .raxchk: INT3
         CMP RAX, [BOOLs.TRUE]
         JE .PQ_EXIT
         .chkRDI: INT3
         MOV RDI, [RBP - dijkstra.PriorityQueue]
+        PUSH R15
+        MOV R15, [RDI + priority_queue.heap]
+        .dijkCHKHP: INT3 
         CALL priority_queue@remove
-        INT3
+        MOV R15, [RDI + priority_queue.heap]
+        .dijkCHKHP2: INT3 
+        POP R15
         MOV EBX, [RAX + NodeTuple.element]
         MOV [RBP - dijkstra.x], EBX
         MOV RCX, [RBP - dijkstra.dist]
@@ -762,6 +767,12 @@ MOV RDI, [RBP - dijkstra.PriorityQueue]
             JAE .neighbor_iterate
             .update:
             MOV [R11 + RCX*SIZE_INT], R12D
+            MOV RDI, [RBP - dijkstra.PriorityQueue]
+            MOV ESI, ECX
+            MOV EDX, R12D
+            CALL priority_queue@decreaseKey
+            CMP RAX, 1
+            JE .neighbor_iterate
             MOV RDI, RCX
             MOV ESI, R12D
             .chkDst: INT3
@@ -866,10 +877,10 @@ priority_queue@add:
 MMAP_PUSH ;Having abstracted the min heap allows me to do this.
 PUSH R12
 MOV R12, RSI
-MOV EDX, [RDI + priority_queue.size]
+MOV RDX, [RDI + priority_queue.size]
 .sze: INT3
-MOV ESI, [RDI + priority_queue.size]
-CMP EDX, [RDI + priority_queue.max_len]
+MOV RSI, [RDI + priority_queue.size]
+CMP RDX, [RDI + priority_queue.max_len]
 CMOVE RAX, [BOOLs.FALSE]
 JE .ext
 MOV R8, [RDI + priority_queue.heap]
@@ -912,6 +923,7 @@ PUSH RBX
 PUSH R12
 PUSH R13
 MOV RBX, [RDI + priority_queue.heap]
+.chkHeeP: INT3
 MOV R12, [RBX + min_heap.elems]
 .R12CHK: INT3
 CMP DWORD [RDI + priority_queue.size], 0
@@ -934,6 +946,7 @@ MOV RDI, RBX
 MOV RSI, 0
 CALL minheap@swap
 POP RDI
+MOV RDI, [RDI + priority_queue.heap]
 MOV ESI, 0
 CALL minheap@siftDown
 .chkModHP: INT3
@@ -991,13 +1004,14 @@ priority_queue@isEmpty:
 ;   R8  - ()              Unused.
 ;   R9  - ()              Unused.
 ; Returns:
-;   RAX - (bool)          Boolean denoting whether PQ is empty (true) or not (false).
+;   RAX - (bool)          RAX == 0 FALSE; RAX == 1 TRUE
 ;   Clobbers - RAX, RDI.
 ; ---------------------------------------------------------------------------
 MOV RAX, 0
 CMP QWORD [RDI + priority_queue.size], 0
 CMOVA RAX, [BOOLs.FALSE]
 CMOVE RAX, [BOOLs.TRUE]
+.rx:INT3
 RET
 
 priority_queue@size:
@@ -1035,7 +1049,10 @@ priority_queue@decreaseKey:
 ;   EAX - (int)           EAX == 0 : NOT IN QUEUE; EAX == 1 : IN QUEUE.
 ;   Clobbers - RAX, RDI, RSI, RCX, RDX, R10, R8.
 ; ---------------------------------------------------------------------------
+MMAP_PUSH
 MOV RDX, [RDI + priority_queue.heap]
+.chkMH: INT3
+MOV RDX, [RDX + min_heap.elems]
 MOV RCX, 0
     .search:
         CMP ECX, [RDI + priority_queue.size]
@@ -1053,6 +1070,7 @@ MOV ESI, ECX
 CALL minheap@siftUp        
 MOV RAX, [BOOLs.TRUE]        
 .ext:      
+MMAP_POP
 RET
 
 priority_queue@construct:
@@ -1089,7 +1107,14 @@ MOV R9, NO_OFFSET
 SYSCALL
 MOV [RBP - priority_queue@construct.PQPtr], RAX
 MOV QWORD [RAX + priority_queue.size], 0
-MOV [RAX + priority_queue.max_len], R12D
+MOV [RAX + priority_queue.max_len], R12
+
+MOV RDI, [RAX + priority_queue.max_len]
+MOV RAX, SYS_MPROTECT
+MOV RSI, SIZE_LONG
+MOV RDX, PROT_READ
+MOV R8, 0
+SYSCALL
 
 MOV RAX, SYS_MMAP
 MOV RDI, NO_ADDR
@@ -1167,6 +1192,7 @@ SUB RSP, minheap@siftUp.STACK_INIT
         PUSH RDI
         MOV RDI, RSI
         CALL minheap@parent
+        INT3
         MOV R11, RDI
         POP RDI
         MOV RDX, [RDI + min_heap.elems]
@@ -1205,6 +1231,8 @@ minheap@siftDown:
 PUSH RBP
 MOV RBP, RSP
 SUB RSP, minheap@siftDown.STACK_INIT
+PUSH RDI
+.sftSTRT: INT3
 
     .sift:
         MOV RCX, RDI
@@ -1234,9 +1262,10 @@ SUB RSP, minheap@siftDown.STACK_INIT
         CALL minheap@swap
         POP RSI
         POP RDI
-        JMP .sift
-        
+        JMP .sift       
 .siftEXT:
+POP RDI
+.sftCMPL: INT3
 ADD RSP, minheap@siftDown.STACK_INIT  
 MOV RSP, RBP
 POP RBP
@@ -1259,11 +1288,13 @@ minheap@swap:
 ;   RAX - ()              None.
 ;   Clobbers - R8, R9, R10.
 ; ---------------------------------------------------------------------------
+.chkMH: INT3
 MOV R10, [RDI + min_heap.elems]
 MOV R8, [R10 + RSI*SIZE_LONG]
 MOV R9, [R10 + RDX*SIZE_LONG]
 MOV [R10 + RSI*SIZE_LONG], R9
 MOV [R10 + RDX*SIZE_LONG], R8
+.chkMH2: INT3
 RET
 
 
@@ -1357,7 +1388,7 @@ SYSCALL
 MMAP_POP
 
 MOV [RAX + min_heap.elems], RDI
-MOV [RAX + min_heap.max_len], ESI
+MOV [RAX + min_heap.max_len], RSI
 MOV QWORD [RAX + min_heap.size], 0
 
 RET
