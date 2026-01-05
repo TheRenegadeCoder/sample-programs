@@ -206,9 +206,43 @@ section .bss
 
 section .text
 
-global _start
-  
+reverseString:
+; ----------------------------------------------------------------------------
+; Function: Int to ASCII
+; Description:
+;   Converts integer to ASCII, returned through char[] ptr. 
+; Parameters:
+;   RDI - (char[]*)       String ptr.
+;   RSI - (int)           Strlen
+;   RDX - ()              Unused.
+;   R10 - ()              Unused.
+;   R8  - ()              Unused.
+;   R9  - ()              Unused.
+; Returns:
+;   RAX - ()              None.    
+;   Clobbers - RCX, RDX, R9, R9
+; ---------------------------------------------------------------------------  
+CMP RSI, 1
+JBE .ext
+    
+MOV RCX, 0
+MOV RDX, RSI
+DEC RDX
 
+.loop:
+    CMP RCX, RDX
+    JAE .ext
+    MOV R8B, [RDI+RCX]
+    MOV R9B, [RDI+RDX]
+    MOV [RDI+RCX], R9B
+    MOV [RDI+RDX], R8B
+    INC RCX
+    DEC RDX
+    JMP .loop
+.ext:
+RET    
+
+global _start
 _start:
 
 PUSH RBP
@@ -237,8 +271,8 @@ MOV RBX, 0
 .count_end:  
 INC RBX
 MOV RDI, RBX
+.grphchk: 
 CALL ezsqrt
-
 MOV [RBP - _start.NumVerts], RAX
 CMP RAX, -1
 CMOVE RDI, [Err_Table + INVALID_NOT_SQUARE*SIZE_LONG]
@@ -249,6 +283,11 @@ MOV [RBP - _start.SRC], RAX
 MOV RDI, [RBP + _start.argv3]
 CALL parseSRCDST
 MOV [RBP - _start.DST], RAX
+MOV RAX, [RBP - _start.SRC]
+MOV RBX, [RBP - _start.DST]
+CMP RAX, RBX
+CMOVE RDI, [Err_Table+INVALID_SRCDST]
+JE .error
 
 MOV RAX, SYS_MMAP
 MOV RDI, NO_ADDR
@@ -321,14 +360,22 @@ MOV R15, RAX
 MOV RDI, [RBP - _start.RET]
 MOV RSI, RAX
 CALL itoa
-MOV R10, RAX
+
+MOV R12, RAX
 MOV RSI, R15
+PUSH RAX
+MOV RDI, R15
+MOV RSI, R12
+CALL reverseString
+POP RAX
 INC RAX
+MOV RSI, R15
 MOV BYTE [RSI + RAX], NULL
+
 MOV RAX, SYS_WRITE
 MOV RDI, STDOUT
 MOV RSI, R15
-MOV RDX, R10
+MOV RDX, R12
 SYSCALL
 
 MOV RAX, SYS_WRITE
@@ -349,6 +396,12 @@ SYSCALL
     MOV RDI, STDOUT
     MOV RSI, Error.msg
     MOV RDX, Error.len
+    SYSCALL
+    
+    MOV RAX, SYS_WRITE
+    MOV RDI, STDOUT
+    MOV RSI, newline.msg
+    MOV RDX, newline.len
     SYSCALL
     
     MOV RAX, SYS_EXIT
@@ -373,14 +426,18 @@ itoa:
 ;   RAX - (int)           Strlen.    
 ;   Clobbers - RAX, RDI, RSI, RCX, RDX
 ; ---------------------------------------------------------------------------
-.chkINP: INT3
+.chkINP: 
 CMP RDI, 0
 JE .zero
 MOV R8, 10
 MOV RCX, 0
 MOV RAX, RDI
 MOV RDX, 0
-INT3
+JMP .loop
+.zero:
+MOV BYTE [RSI], '0'
+MOV RAX, 1
+JMP .ext
 .loop:
     CMP RAX, 0
     JE .ext
@@ -389,17 +446,13 @@ INT3
     DIV R8
     ADD RDX, '0'
     MOV [RSI + RCX], DL
-    INT3
+    
     MOV RDX, 0
     INC RCX
-    JMP .loop
-.zero:
-INT3
-MOV BYTE [RSI], '0'
-MOV RAX, 1
+    JMP .loop  
 .ext:
 MOV RAX, RCX
-.ITOACHK: INT3
+.ITOACHK: 
 RET
 
 parseSRCDST:
