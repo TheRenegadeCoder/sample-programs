@@ -197,9 +197,9 @@ section .text
 
 reverseString:
 ; ----------------------------------------------------------------------------
-; Function: Int to ASCII
+; Function: Reverse string
 ; Description:
-;   Converts integer to ASCII, returned through char[] ptr. 
+;   Reverses string simply.
 ; Parameters:
 ;   RDI - (char[]*)       String ptr.
 ;   RSI - (int)           Strlen
@@ -430,7 +430,7 @@ itoa:
 ;   R9  - ()              Unused.
 ; Returns:
 ;   RAX - (int)           Strlen.    
-;   Clobbers - RAX, RDI, RSI, RCX, RDX
+;   Clobbers - RAX, RSI, RCX, RDX, R8
 ; ---------------------------------------------------------------------------
 CMP RDI, 0
 JE .zero
@@ -712,7 +712,7 @@ dijkstra:
 ;   R9  - ()              Unused.
 ; Returns:
 ;   RAX - (int[]*)        Array of distances.
-;   Clobbers - RAX, RDI, RSI, RDX, R10, R11.
+;   Clobbers - RAX, RDI, RSI, RCX, RDX, R8, R9, R10, R11.
 ; ---------------------------------------------------------------------------
 PUSH RBP
 MOV RBP, RSP
@@ -1022,7 +1022,7 @@ priority_queue@peek:
 ;   R9  - ()              Unused.
 ; Returns:
 ;   RAX - (NodeTuple*)    NodeTuple containing value, elem, or nil (0).
-;   Clobbers - RDI, RSI, RCX, RDX, R10, R8, R9.
+;   Clobbers - RAX, RSI, RCX.
 ; ---------------------------------------------------------------------------
 PUSH RBX
 PUSH R12
@@ -1045,7 +1045,7 @@ priority_queue@isEmpty:
 ; ----------------------------------------------------------------------------
 ; Function: priority queue isEmpty.
 ; Description:
-;   Self explanatory.
+;   Gets status of PQ emptiness in boolean form; CMOVcc to avoid branching.
 ; Parameters:
 ;   RDI - (PriorityQueue*)This* priority queue.
 ;   RSI - ()              Unused.
@@ -1096,7 +1096,7 @@ priority_queue@decreaseKey:
 ;   R9  - ()              Unused.
 ; Returns:
 ;   EAX - (int)           EAX == 0 : NOT IN QUEUE; EAX == 1 : IN QUEUE.
-;   Clobbers - RAX, RDI, RSI, RCX, RDX, R10, R8.
+;   Clobbers - RAX.
 ; ---------------------------------------------------------------------------
 MMAP_PUSH
 MOV RDX, [RDI + priority_queue.heap]
@@ -1135,7 +1135,7 @@ priority_queue@construct:
 ;   R9  - ()              Unused.
 ; Returns:
 ;   RAX - (PriorityQueue*)Ptr to new PQ.
-;   Clobbers - RAX, RDI, RSI, RDX, R10, R8, R9
+;   Clobbers - RAX, RDI, RSI, RCX, RDX, R8, R9, R10.
 ; ---------------------------------------------------------------------------
 .constrct:
 PUSH RBP
@@ -1156,13 +1156,6 @@ SYSCALL
 MOV [RBP - priority_queue@construct.PQPtr], RAX
 MOV QWORD [RAX + priority_queue.size], 0
 MOV [RAX + priority_queue.max_len], R12
-
-MOV RDI, [RAX + priority_queue.max_len]
-MOV RAX, SYS_MPROTECT
-MOV RSI, SIZE_LONG
-MOV RDX, PROT_READ
-MOV R8, 0
-SYSCALL
 
 MOV RAX, SYS_MMAP
 MOV RDI, NO_ADDR
@@ -1372,7 +1365,7 @@ INC RAX
 RET
 minheap@right:
 ; ----------------------------------------------------------------------------
-; Function: minheap left
+; Function: minheap right
 ; Description:
 ;   Grabs right element index relative to given index.
 ; Parameters:
