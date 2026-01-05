@@ -65,19 +65,7 @@ POP RDI
 %DEFINE atoi.STACK_INIT 8
 %DEFINE atoi.ret 8
 
-%DEFINE minheap@siftDown.STACK_INIT 40
-%DEFINE minheap@siftDown.minheap_len 8
-%DEFINE minheap@siftDown.index 16
-%DEFINE minheap@siftDown.left 24
-%DEFINE minheap@siftDown.right 32
-%DEFINE minheap@siftDown.conditional_BOOLs 40
-%DEFINE minheap@siftDown.conditional_BOOLs~1 36
-%DEFINE minheap@siftDown.conditional_BOOLs~2 40
-%DEFINE minheap@siftDown.conditional_BOOLs~ACCEPT 0xFFFFFFFFFFFFFFFF
 
-%DEFINE minheap@siftUp.STACK_INIT 16
-%DEFINE minheap@siftUp.index 8
-%DEFINE minheap@siftUp.parent 16
 
 %DEFINE priority_queue@construct.STACK_INIT 8
 %DEFINE priority_queue@construct.PQPtr 8
@@ -1226,9 +1214,6 @@ minheap@siftUp:
 ;   RAX - ()              None.
 ;   Clobbers - RDI, RSI, RCX, RDX, R10, R8, R9, R11.
 ; ---------------------------------------------------------------------------
-PUSH RBP
-MOV RBP, RSP
-SUB RSP, minheap@siftUp.STACK_INIT
     .sift_loop:
         CMP ESI, 0
         JE .sift_ext
@@ -1251,9 +1236,6 @@ SUB RSP, minheap@siftUp.STACK_INIT
         MOV RSI, RAX
         JMP .sift_loop
 .sift_ext:
-ADD RSP, minheap@siftUp.STACK_INIT
-MOV RSP, RBP
-POP RBP
 RET
 minheap@siftDown:
 ; ----------------------------------------------------------------------------
@@ -1271,9 +1253,6 @@ minheap@siftDown:
 ;   RAX - ()          None.
 ;   Clobbers - RAX, RDI, RSI, RCX, RDX, R10, R8, R9, R11.
 ; ---------------------------------------------------------------------------
-PUSH RBP
-MOV RBP, RSP
-SUB RSP, minheap@siftDown.STACK_INIT
 PUSH RDI
 
     .sift:
@@ -1307,9 +1286,6 @@ PUSH RDI
         JMP .sift       
 .siftEXT:
 POP RDI
-ADD RSP, minheap@siftDown.STACK_INIT  
-MOV RSP, RBP
-POP RBP
 RET 
     
     
