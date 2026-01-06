@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in X86 64! To find documentation related to the X86 64 code in this repo, look [here](https://sampleprograms.io/languages/x86-64).
 
-## Sample Programs List - 6/38 :disappointed:
+## Sample Programs List - 7/38 :disappointed:
 
 In this section, we feature a list of completed and missing programs in X86 64. See above for the current amount of completed programs in X86 64. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -18,6 +18,7 @@ Below, you'll find a list of completed code snippets in X86 64. Code snippets pr
 - :warning: [Even Odd in X86 64](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+x86+64) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :warning: [Fizz Buzz in X86 64](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+x86+64) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :warning: [Hello World in X86 64](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+x86+64) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :warning: [Quine in X86 64](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+x86+64) [[Requirements](https://sampleprograms.io/projects/quine)]
 - :warning: [Reverse String in X86 64](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+x86+64) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 
 ### Missing Programs
@@ -49,7 +50,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Palindromic Number](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,palindromic+number&template=code-snippet-request.md&title=Add+Palindromic+Number+in+X86%2064) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :x: [Prime Number](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,prime+number&template=code-snippet-request.md&title=Add+Prime+Number+in+X86%2064) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :x: [Quick Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,quick+sort&template=code-snippet-request.md&title=Add+Quick+Sort+in+X86%2064) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
-- :x: [Quine](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,quine&template=code-snippet-request.md&title=Add+Quine+in+X86%2064) [[Requirements](https://sampleprograms.io/projects/quine)]
 - :x: [Remove All Whitespace](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,remove+all+whitespace&template=code-snippet-request.md&title=Add+Remove+All+Whitespace+in+X86%2064) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :x: [Roman Numeral](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,roman+numeral&template=code-snippet-request.md&title=Add+Roman+Numeral+in+X86%2064) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :x: [Rot13](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,rot13&template=code-snippet-request.md&title=Add+Rot13+in+X86%2064) [[Requirements](https://sampleprograms.io/projects/rot13)]
