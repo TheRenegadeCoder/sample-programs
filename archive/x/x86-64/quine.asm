@@ -1,138 +1,87 @@
 ; SYSCALLS
 %DEFINE SYS_READ 0
-
 %DEFINE SYS_WRITE 1
 %DEFINE STDOUT 1
-
-
-%DEFINE SYS_OPEN 2
-%DEFINE RDONLY 0x0
-%DEFINE NO_MODE 0
-%DEFINE SYS_CLOSE 3
-
-%DEFINE SYS_FSTAT 5
-
-%DEFINE SYS_MMAP 9
-%DEFINE NO_ADDR 0
-%DEFINE NO_FD -1
-%DEFINE NO_OFFSET 0
-;PROTS (RDX)
-%DEFINE PROT_READ 0x01
-%DEFINE PROT_WRITE 0x02
-;FLAGS (R10)
-%DEFINE MAP_SHARED 0x01
-%DEFINE MAP_ANONYMOUS 0x20
-
-%DEFINE SYS_MUNMAP 11
-
 %DEFINE SYS_EXIT 60
-
-; CONSTS
-%DEFINE TERM_STRING 0
-%DEFINE EXIT_OK 0
-
-; STACKS
-
-%DEFINE _start.STACK_INIT 32
-%DEFINE _start.QUINE_FD 8
-%DEFINE _start.FSTAT_PTR 16
-%DEFINE _start.QUINE_BUF 24
-
-section .rodata
-struc stat
-    .st_dev resq 1
-    .st_ino resq 1
-    .st_nlink resq 1
-    .st_mode resd 1
-    .st_uid resd 1
-    .st_gid resd 1
-    .padding0 resd 1
-    .st_rdev resq 1
-    .st_size resq 1
-    .st_blksize resq 1
-    .st_blocks resq 1
-    .st_atime resq 1
-    .st_atime_nsec resq 1
-    .st_mtim resq 1
-    .st_mtim_nsec resq 1
-    .st_ctim resq 1
-    .st_ctim_nsec resq 1
-    .unused resq 1
-endstruc
-
-filename db 'quine.asm', TERM_STRING
 section .data
-
-section .bss
-
+string:
+.msg db "; SYSCALLS%DEFINE SYS_READ 0%DEFINE SYS_WRITE 1%DEFINE STDOUT 1%DEFINE SYS_EXIT 60section .datastring:.msg db .len equ $- .msgquote db 0x22newline db 0xAlinestarts dw 0, 10, 18, 19, 16, 19, 13, 7, 8linestarts2 dw 16, 13, 14, 45, 312, 17, 13, 13, 7, 19, 10, 11, 12, 6, 12, 18, 15, 12, 31, 24, 7, 12, 12, 8, 18, 15, 16, 10, 7, 12, 10, 12, 9, 6, 18, 15, 14, 10, 7, 18, 15, 19, 19, 7, 18, 15, 14, 10, 7, 18, 15, 16, 10, 7, 10, 6, 12, 18, 15, 12, 32, 25, 7, 12, 12, 8, 18, 15, 16, 10, 7, 12, 10, 12, 9, 6, 11, 10, 7%DEFINE PRINT1 90section .textglobal _start_start:MOV R12, string.msgMOV R13, 2MOV R14, 16MOV R15, 158loop0:MOV RCX, R13MOV RAX, SYS_WRITEMOV RDI, STDOUTMOV RSI, R12ADD R12W, WORD [linestarts+RCX]MOV DX, [linestarts+RCX]SYSCALLMOV RCX, R13CMP RCX, R14JE exit1MOV RAX, SYS_WRITEMOV RDI, STDOUTMOV RSI, newlineMOV RDX, 1SYSCALLMOV RCX, R13ADD RCX, 2MOV R13, RCXJMP loop0exit1:MOV RAX, SYS_WRITEMOV RDI, STDOUTMOV RSI, quoteMOV RDX, 1SYSCALLMOV RAX, SYS_WRITEMOV RDI, STDOUTMOV RSI, string.msgMOV RDX, string.lenSYSCALLMOV RAX, SYS_WRITEMOV RDI, STDOUTMOV RSI, quoteMOV RDX, 1SYSCALLMOV RAX, SYS_WRITEMOV RDI, STDOUTMOV RSI, newlineMOV RDX, 1SYSCALLMOV R13, 0loop1:MOV RCX, R13MOV RAX, SYS_WRITEMOV RDI, STDOUTMOV RSI, R12ADD R12W, WORD [linestarts2+RCX]MOV DX, [linestarts2+RCX]SYSCALLMOV RCX, R13CMP RCX, R15JE exit2MOV RAX, SYS_WRITEMOV RDI, STDOUTMOV RSI, newlineMOV RDX, 1SYSCALLMOV RCX, R13ADD RCX, 2MOV R13, RCXJMP loop1exit2:MOV RAX, 60MOV RDI, 0SYSCALL"
+.len equ $- .msg
+quote db 0x22
+newline db 0xA
+linestarts dw 0, 10, 18, 19, 16, 19, 13, 7, 8
+linestarts2 dw 16, 13, 14, 45, 312, 17, 13, 13, 7, 19, 10, 11, 12, 6, 12, 18, 15, 12, 31, 24, 7, 12, 12, 8, 18, 15, 16, 10, 7, 12, 10, 12, 9, 6, 18, 15, 14, 10, 7, 18, 15, 19, 19, 7, 18, 15, 14, 10, 7, 18, 15, 16, 10, 7, 10, 6, 12, 18, 15, 12, 32, 25, 7, 12, 12, 8, 18, 15, 16, 10, 7, 12, 10, 12, 9, 6, 11, 10, 7
+%DEFINE PRINT1 90
 section .text
-
 global _start
-
 _start:
-PUSH RBP
-MOV RBP, RSP
-SUB RSP, _start.STACK_INIT
-
-MOV RAX, SYS_OPEN
-MOV RDI, filename
-MOV RSI, RDONLY
-MOV RDX, NO_MODE
-SYSCALL
-MOV [RBP - _start.QUINE_FD], RAX
-
-MOV RAX, SYS_MMAP
-MOV RDI, NO_ADDR
-MOV RSI, stat_size
-MOV RDX, PROT_READ | PROT_WRITE
-MOV R10, MAP_SHARED | MAP_ANONYMOUS
-MOV R8, NO_FD
-MOV R9, NO_OFFSET
-SYSCALL
-MOV [RBP - _start.FSTAT_PTR], RAX
-
-MOV RAX, SYS_FSTAT
-MOV RDI, [RBP - _start.QUINE_FD]
-MOV RSI, [RBP - _start.FSTAT_PTR]
-SYSCALL
-MOV R12, [RBP - _start.FSTAT_PTR]
-
-MOV RAX, SYS_MMAP
-MOV RDI, NO_ADDR
-MOV RSI, [R12 + stat.st_size]
-MOV RDX, PROT_READ | PROT_WRITE
-MOV R10, MAP_SHARED | MAP_ANONYMOUS
-MOV R8, NO_FD
-MOV R9, NO_OFFSET
-SYSCALL
-MOV [RBP - _start.QUINE_BUF], RAX
-
-MOV RAX, SYS_READ
-MOV RDI, [RBP - _start.QUINE_FD]
-MOV RSI, [RBP - _start.QUINE_BUF]
-MOV RDX, [R12 + stat.st_size]
-SYSCALL
-
+MOV R12, string.msg
+MOV R13, 2
+MOV R14, 16
+MOV R15, 158
+loop0:
+MOV RCX, R13
 MOV RAX, SYS_WRITE
 MOV RDI, STDOUT
-MOV RSI, [RBP - _start.QUINE_BUF]
-MOV RDX, [R12 + stat.st_size]
+MOV RSI, R12
+ADD R12W, WORD [linestarts+RCX]
+MOV DX, [linestarts+RCX]
 SYSCALL
-
-MOV RAX, SYS_CLOSE
-MOV RDI, [RBP - _start.QUINE_FD]
+MOV RCX, R13
+CMP RCX, R14
+JE exit1
+MOV RAX, SYS_WRITE
+MOV RDI, STDOUT
+MOV RSI, newline
+MOV RDX, 1
 SYSCALL
-
-MOV RAX, SYS_MUNMAP
-MOV RDI, [RBP - _start.QUINE_BUF]
-MOV RSI, [R12 + stat.st_size]
+MOV RCX, R13
+ADD RCX, 2
+MOV R13, RCX
+JMP loop0
+exit1:
+MOV RAX, SYS_WRITE
+MOV RDI, STDOUT
+MOV RSI, quote
+MOV RDX, 1
 SYSCALL
-
-MOV RAX, SYS_MUNMAP
-MOV RDI, [RBP - _start.FSTAT_PTR]
-MOV RSI, stat_size
+MOV RAX, SYS_WRITE
+MOV RDI, STDOUT
+MOV RSI, string.msg
+MOV RDX, string.len
 SYSCALL
-
-MOV RAX, SYS_EXIT
-MOV RDI, EXIT_OK
+MOV RAX, SYS_WRITE
+MOV RDI, STDOUT
+MOV RSI, quote
+MOV RDX, 1
+SYSCALL
+MOV RAX, SYS_WRITE
+MOV RDI, STDOUT
+MOV RSI, newline
+MOV RDX, 1
+SYSCALL
+MOV R13, 0
+loop1:
+MOV RCX, R13
+MOV RAX, SYS_WRITE
+MOV RDI, STDOUT
+MOV RSI, R12
+ADD R12W, WORD [linestarts2+RCX]
+MOV DX, [linestarts2+RCX]
+SYSCALL
+MOV RCX, R13
+CMP RCX, R15
+JE exit2
+MOV RAX, SYS_WRITE
+MOV RDI, STDOUT
+MOV RSI, newline
+MOV RDX, 1
+SYSCALL
+MOV RCX, R13
+ADD RCX, 2
+MOV R13, RCX
+JMP loop1
+exit2:
+MOV RAX, 60
+MOV RDI, 0
 SYSCALL
