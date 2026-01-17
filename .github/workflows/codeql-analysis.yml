@@ -150,6 +150,11 @@ jobs:
     - name: Install Dependencies
       run: poetry install
 
+    # Workaround for Kotlin scanning.
+    - name: Set up Kotlin
+      if: ${{ matrix.language == 'kotlin' }}
+      run: sudo snap install kotlin --classic --channel=2.2/stable
+
     # Set up Rust for scanning.
     - name: Set up Rust
       if: ${{ matrix.language == 'rust' }}
