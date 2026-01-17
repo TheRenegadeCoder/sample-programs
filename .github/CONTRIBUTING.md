@@ -222,8 +222,8 @@ should be created, proceed on to the next steps.
 
 #### Add a new project label (maintainers only)
 
-Once a new project is accepted, the maintainers of this repo will need to [add a new label][sample-programs-new-label]
-filled out as follows:
+Once a new project is accepted, the maintainers of this repo need to [add a new label][sample-programs-new-label]
+filled out like this:
 
 - **Name** - the name of the project in lowercase -- e.g., `binary search`.
 - **Description** - `See: https://sampleprograms.io/projects/<project>/", where `<project>` is the project name
