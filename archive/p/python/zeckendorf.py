@@ -1,6 +1,7 @@
 import sys
 from typing import NoReturn
 
+
 def usage() -> NoReturn:
     print("Usage: please input a non-negative integer")
     sys.exit(1)
