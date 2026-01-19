@@ -39,6 +39,8 @@ projects:
             - "encode"
             - "decode"
         requires_parameters: true
+        strings:
+            usage: "Usage: please provide a mode and a string to encode/decode"
         tests:
             base64_encode_valid:
                 params:
@@ -82,42 +84,52 @@ projects:
                 params:
                     -   name: "no input"
                         input: null
-                        expected: "Usage: please provide a mode and a string to encode/decode"
+                        expected:
+                            string: "usage"
                     -   name: "invalid mode"
                         input: '"blue" "Oh look a Pascal triangle"'
-                        expected: "Usage: please provide a mode and a string to encode/decode"
+                        expected:
+                            string: "usage"
                 transformations:
                     - "strip"
             base64_invalid_encode:
                 params:
                     -   name: "missing string"
                         input: '"encode"'
-                        expected: "Usage: please provide a mode and a string to encode/decode"
+                        expected:
+                            string: "usage"
                     -   name: "empty string"
                         input: '"encode" ""'
-                        expected: "Usage: please provide a mode and a string to encode/decode"
+                        expected:
+                            string: "usage"
                 transformations:
                     - "strip"
             base64_invalid_decode:
                 params:
                     -   name: "missing string"
                         input: '"decode"'
-                        expected: "Usage: please provide a mode and a string to encode/decode"
+                        expected:
+                            string: "usage"
                     -   name: "empty string"
                         input: '"decode" ""'
-                        expected: "Usage: please provide a mode and a string to encode/decode"
+                        expected:
+                            string: "usage"
                     -   name: "length number not multiple of 4"
                         input: '"decode" "hello+world"'
-                        expected: "Usage: please provide a mode and a string to encode/decode"
+                        expected:
+                            string: "usage"
                     -   name: "invalid characters"
                         input: '"decode" "hello world="'
-                        expected: "Usage: please provide a mode and a string to encode/decode"
+                        expected:
+                            string: "usage"
                     -   name: "too many pad characters at end"
                         input: '"decode" "MTIzNDU2Nzg5M==="'
-                        expected: "Usage: please provide a mode and a string to encode/decode"
+                        expected:
+                            string: "usage"
                     -   name: "pad characters in middle"
                         input: '"decode" "MTIzNDU2=Nzg5M=="'
-                        expected: "Usage: please provide a mode and a string to encode/decode"
+                        expected:
+                            string: "usage"
                 transformations:
                     - "strip"
     binarysearch:
@@ -125,6 +137,8 @@ projects:
             - "binary"
             - "search"
         requires_parameters: true
+        strings:
+            usage: 'Usage: please provide a list of sorted integers ("1, 4, 5, 11, 12") and the integer to find ("11")'
         tests:
             binary_search_valid:
                 inputs:
@@ -162,16 +176,20 @@ projects:
                 params:
                     -   name: "no input"
                         input: null
-                        expected: 'Usage: please provide a list of sorted integers ("1, 4, 5, 11, 12") and the integer to find ("11")'
+                        expected:
+                            string: "usage"
                     -   name: "missing input: target"
                         input: '"1, 2, 3, 4"'
-                        expected: 'Usage: please provide a list of sorted integers ("1, 4, 5, 11, 12") and the integer to find ("11")'
+                        expected:
+                            string: "usage"
                     -   name: "missing input: list"
                         input: '"" "5"'
-                        expected: 'Usage: please provide a list of sorted integers ("1, 4, 5, 11, 12") and the integer to find ("11")'
+                        expected:
+                            string: "usage"
                     -   name: "out of order input"
                         input: '"3, 5, 1, 2" "3"'
-                        expected: 'Usage: please provide a list of sorted integers ("1, 4, 5, 11, 12") and the integer to find ("11")'
+                        expected:
+                            string: "usage"
                 transformations:
                     - "strip"
     bubblesort:
@@ -179,6 +197,8 @@ projects:
             - "bubble"
             - "sort"
         requires_parameters: true
+        strings:
+            usage: 'Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"'
         tests:
             bubble_sort_valid:
                 params:
@@ -203,22 +223,28 @@ projects:
                 params:
                     -   name: "no input"
                         input: null
-                        expected: 'Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"'
+                        expected:
+                            string: "usage"
                     -   name: "empty input"
                         input: '""'
-                        expected: 'Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"'
+                        expected:
+                            string: "usage"
                     -   name: "invalid input: not a list"
                         input: "1"
-                        expected: 'Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"'
+                        expected:
+                            string: "usage"
                     -   name: "invalid input: wrong format"
                         input: '"4 5 3"'
-                        expected: 'Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"'
+                        expected:
+                            string: "usage"
                 transformations:
                     -   "strip"
     capitalize:
         words:
             - "capitalize"
         requires_parameters: true
+        strings:
+            usage: "Usage: please provide a string"
         tests:
             capitalize_valid:
                 params:
@@ -243,10 +269,12 @@ projects:
                 params:
                     -   name: "no input"
                         input: null
-                        expected: "Usage: please provide a string"
+                        expected:
+                            string: "usage"
                     -   name: "empty input"
                         input: '""'
-                        expected: "Usage: please provide a string"
+                        expected:
+                            string: "usage"
                 transformations:
                     - "strip"
     convexhull:
@@ -254,6 +282,8 @@ projects:
             - "convex"
             - "hull"
         requires_parameters: true
+        strings:
+            usage: 'Usage: please provide at least 3 x and y coordinates as separate lists (e.g. "100, 440, 210")'
         tests:
             convex_hull_valid:
                 inputs:
@@ -292,19 +322,24 @@ projects:
                 params:
                     -   name: "no input"
                         input: null
-                        expected: 'Usage: please provide at least 3 x and y coordinates as separate lists (e.g. "100, 440, 210")'
+                        expected:
+                            string: "usage"
                     -   name: "missing y"
                         input: '"100, 180, 240"'
-                        expected: 'Usage: please provide at least 3 x and y coordinates as separate lists (e.g. "100, 440, 210")'
+                        expected:
+                            string: "usage"
                     -   name: "invalid shape"
                         input: '"100, 180" "240, 300"'
-                        expected: 'Usage: please provide at least 3 x and y coordinates as separate lists (e.g. "100, 440, 210")'
+                        expected:
+                            string: "usage"
                     -   name: "different cardinality"
                         input: '"100, 180, 240" "240, 60, 40, 200, 300"'
-                        expected: 'Usage: please provide at least 3 x and y coordinates as separate lists (e.g. "100, 440, 210")'
+                        expected:
+                            string: "usage"
                     -   name: "invalid integers"
                         input: '"100, 1A0, 240" "220, 120, 20"'
-                        expected: 'Usage: please provide at least 3 x and y coordinates as separate lists (e.g. "100, 440, 210")'
+                        expected:
+                            string: "usage"
                 transformations:
                     -   "strip"
     depthfirstsearch:
@@ -313,6 +348,8 @@ projects:
             - "first"
             - "search"
         requires_parameters: true
+        strings:
+            usage: 'Usage: please provide a tree in an adjacency matrix form ("0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0") together with a list of vertex values ("1, 3, 5, 2, 4") and the integer to find ("4")'
         tests:
             depth_first_search_valid:
                 inputs:
@@ -348,22 +385,28 @@ projects:
                 params:
                     -   name: "no input"
                         input: null
-                        expected: 'Usage: please provide a tree in an adjacency matrix form ("0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0") together with a list of vertex values ("1, 3, 5, 2, 4") and the integer to find ("4")'
+                        expected:
+                            string: "usage"
                     -   name: "missing input: tree"
                         input: '"" "1, 3, 5, 2, 4" "4"'
-                        expected: 'Usage: please provide a tree in an adjacency matrix form ("0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0") together with a list of vertex values ("1, 3, 5, 2, 4") and the integer to find ("4")'
+                        expected:
+                            string: "usage"
                     -   name: "missing input: vertex values"
                         input: '"0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0" "" "1"'
-                        expected: 'Usage: please provide a tree in an adjacency matrix form ("0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0") together with a list of vertex values ("1, 3, 5, 2, 4") and the integer to find ("4")'
+                        expected:
+                            string: "usage"
                     -   name: "missing input: target"
                         input: '"0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0" "1, 3, 5, 2, 4" ""'
-                        expected: 'Usage: please provide a tree in an adjacency matrix form ("0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0") together with a list of vertex values ("1, 3, 5, 2, 4") and the integer to find ("4")'
+                        expected:
+                            string: "usage"
                 transformations:
                     - "strip"
     dijkstra:
         words:
             - "dijkstra"
         requires_parameters: true
+        strings:
+            usage: "Usage: please provide three inputs: a serialized matrix, a source node and a destination node"
         tests:
             dijkstra_valid:
                 inputs:
@@ -387,31 +430,40 @@ projects:
                 params:
                     -   name: "no input"
                         input: null
-                        expected: "Usage: please provide three inputs: a serialized matrix, a source node and a destination node"
+                        expected:
+                            string: "usage"
                     -   name: "empty input"
                         input: '"" "" ""'
-                        expected: "Usage: please provide three inputs: a serialized matrix, a source node and a destination node"
+                        expected:
+                            string: "usage"
                     -   name: "non-square input"
                         input: '"1, 0, 3, 0, 5, 1" "1" "2"'
-                        expected: "Usage: please provide three inputs: a serialized matrix, a source node and a destination node"
+                        expected:
+                            string: "usage"
                     -   name: "no destination"
                         input: '"0, 2, 0, 6, 0, 2, 0, 3, 8, 5, 0, 3, 0, 0, 7, 6, 8, 0, 0, 9, 0, 5, 7, 9, 0" "0" ""'
-                        expected: "Usage: please provide three inputs: a serialized matrix, a source node and a destination node"
+                        expected:
+                            string: "usage"
                     -   name: "no source or destination"
                         input: '"0, 2, 0, 6, 0, 2, 0, 3, 8, 5, 0, 3, 0, 0, 7, 6, 8, 0, 0, 9, 0, 5, 7, 9, 0" "" ""'
-                        expected: "Usage: please provide three inputs: a serialized matrix, a source node and a destination node"
+                        expected:
+                            string: "usage"
                     -   name: "source or destination < 0"
                         input: '"0, 2, 0, 6, 0, 2, 0, 3, 8, 5, 0, 3, 0, 0, 7, 6, 8, 0, 0, 9, 0, 5, 7, 9, 0" "-1" "2"'
-                        expected: "Usage: please provide three inputs: a serialized matrix, a source node and a destination node"
+                        expected:
+                            string: "usage"
                     -   name: "weight < 0"
                         input: '"0, 2, 0, -6, 0, 2, 0, 3, 8, 5, 0, 3, 0, 0, 7, -6, 8, 0, 0, 9, 0, 5, 7, 9, 0" "1" "2"'
-                        expected: "Usage: please provide three inputs: a serialized matrix, a source node and a destination node"
+                        expected:
+                            string: "usage"
                     -   name: "source or destination > number of vertices"
                         input: '"0, 2, 0, -6, 0, 2, 0, 3, 8, 5, 0, 3, 0, 0, 7, -6, 8, 0, 0, 9, 0, 5, 7, 9, 0" "1" "10"'
-                        expected: "Usage: please provide three inputs: a serialized matrix, a source node and a destination node"
+                        expected:
+                            string: "usage"
                     -   name: "no way"
                         input: '"0, 0, 0, 0" "0" "1"'
-                        expected: "Usage: please provide three inputs: a serialized matrix, a source node and a destination node"
+                        expected:
+                            string: "usage"
                 transformations:
                     - "strip"
     duplicatecharactercounter:
@@ -420,6 +472,8 @@ projects:
             - "character"
             - "counter"
         requires_parameters: true
+        strings:
+            usage: "Usage: please provide a string"
         tests:
             duplicate_character_counter_valid:
                 params:
@@ -440,10 +494,12 @@ projects:
                 params:
                     -   name: "no input"
                         input: null
-                        expected: "Usage: please provide a string"
+                        expected:
+                            string: "usage"
                     -   name: "empty input"
                         input: '""'
-                        expected: "Usage: please provide a string"
+                        expected:
+                            string: "usage"
                 transformations:
                     - "strip"
     evenodd:
@@ -451,6 +507,8 @@ projects:
             - "even"
             - "odd"
         requires_parameters: true
+        strings:
+            usage: "Usage: please input a number"
         tests:
             even_odd_valid:
                 params:
@@ -472,19 +530,24 @@ projects:
                 params:
                     -   name: "no input"
                         input: null
-                        expected: "Usage: please input a number"
+                        expected:
+                            string: "usage"
                     -   name: "empty input"
                         input: '""'
-                        expected: "Usage: please input a number"
+                        expected:
+                            string: "usage"
                     -   name: "invalid input: not a number"
                         input: '"a"'
-                        expected: "Usage: please input a number"
+                        expected:
+                            string: "usage"
                 transformations:
                     - "strip"
     factorial:
         words:
             - "factorial"
         requires_parameters: true
+        strings:
+            usage: "Usage: please input a non-negative integer"
         tests:
             factorial_valid:
                 params:
@@ -509,22 +572,28 @@ projects:
                 params:
                     -   name: "no input"
                         input: null
-                        expected: "Usage: please input a non-negative integer"
+                        expected:
+                            string: "usage"
                     -   name: "empty input"
                         input: '""'
-                        expected: "Usage: please input a non-negative integer"
+                        expected:
+                            string: "usage"
                     -   name: "invalid input: not a number"
                         input: '"asdf"'
-                        expected: "Usage: please input a non-negative integer"
+                        expected:
+                            string: "usage"
                     -   name: "invalid input: negative"
                         input: '"-1"'
-                        expected: "Usage: please input a non-negative integer"
+                        expected:
+                            string: "usage"
                 transformations:
                     - "strip"
     fibonacci:
         words:
             - "fibonacci"
         requires_parameters: true
+        strings:
+            usage: "Usage: please input the count of fibonacci numbers to output"
         tests:
             fibonacci_valid:
                 params:
@@ -568,13 +637,16 @@ projects:
                 params:
                     -   name: "no input"
                         input: null
-                        expected: "Usage: please input the count of fibonacci numbers to output"
+                        expected:
+                            string: "usage"
                     -   name: "empty input"
                         input: '""'
-                        expected: "Usage: please input the count of fibonacci numbers to output"
+                        expected:
+                            string: "usage"
                     -   name: "invalid input: not a number"
                         input: '"a"'
-                        expected: "Usage: please input the count of fibonacci numbers to output"
+                        expected:
+                            string: "usage"
                 transformations:
                     - "strip"
     fileinputoutput:
@@ -711,6 +783,8 @@ projects:
             - "fraction"
             - "math"
         requires_parameters: true
+        strings:
+            usage: "Usage: ./fraction-math operand1 operator operand2"
         tests:
             fractions_valid:
                 inputs:
@@ -754,10 +828,12 @@ projects:
                 params:
                     -   name: "no input"
                         input: null
-                        expected: "Usage: ./fraction-math operand1 operator operand2"
+                        expected:
+                            string: "usage"
                     -   name: "empty input"
                         input: '""'
-                        expected: "Usage: ./fraction-math operand1 operator operand2"
+                        expected:
+                            string: "usage"
                 transformations:
                     - "strip"
     helloworld:
@@ -786,6 +862,8 @@ projects:
             - "job"
             - "sequencing"
         requires_parameters: true
+        strings:
+            usage: "Usage: please provide a list of profits and a list of deadlines"
         tests:
             sequencing_valid:
                 inputs:
@@ -807,16 +885,20 @@ projects:
                 params:
                     -   name: "no input"
                         input: null
-                        expected: "Usage: please provide a list of profits and a list of deadlines"
+                        expected:
+                            string: "usage"
                     -   name: "empty input"
                         input: '""'
-                        expected: "Usage: please provide a list of profits and a list of deadlines"
+                        expected:
+                            string: "usage"
                     -   name: "missing input"
                         input: '"25, 15, 10, 5"'
-                        expected: "Usage: please provide a list of profits and a list of deadlines"
+                        expected:
+                            string: "usage"
                     -   name: "lists different lengths"
                         input: '"1, 2, 3, 4" "1, 2, 3, 4, 5"'
-                        expected: "Usage: please provide a list of profits and a list of deadlines"
+                        expected:
+                            string: "usage"
                 transformations:
                     - "strip"
     josephusproblem:
@@ -824,6 +906,8 @@ projects:
             - "josephus"
             - "problem"
         requires_parameters: true
+        strings:
+            usage: "Usage: please input the total number of people and number of people to skip."
         tests:
             josephus_problem_valid:
                 inputs:
@@ -845,16 +929,20 @@ projects:
                 params:
                     -   name: "no input"
                         input: null
-                        expected: "Usage: please input the total number of people and number of people to skip."
+                        expected:
+                            string: "usage"
                     -   name: "empty input"
                         input: '""'
-                        expected: "Usage: please input the total number of people and number of people to skip."
+                        expected:
+                            string: "usage"
                     -   name: "invalid input: not a number"
                         input: '"a"'
-                        expected: "Usage: please input the total number of people and number of people to skip."
+                        expected:
+                            string: "usage"
                     -   name: "invalid input: no k"
                         input: '"1"'
-                        expected: "Usage: please input the total number of people and number of people to skip."
+                        expected:
+                            string: "usage"
                 transformations:
                     - "strip"
     longestcommonsubsequence:
@@ -863,6 +951,8 @@ projects:
             - "common"
             - "subsequence"
         requires_parameters: true
+        strings:
+            usage: 'Usage: please provide two lists in the format "1, 2, 3, 4, 5"'
         tests:
             lcs_valid:
                 inputs:
@@ -884,13 +974,16 @@ projects:
                 params:
                     -   name: "no input"
                         input: null
-                        expected: 'Usage: please provide two lists in the format "1, 2, 3, 4, 5"'
+                        expected:
+                            string: "usage"
                     -   name: "empty input"
                         input: '""'
-                        expected: 'Usage: please provide two lists in the format "1, 2, 3, 4, 5"'
+                        expected:
+                            string: "usage"
                     -   name: "missing input"
                         input: '"25 15 10 5"'
-                        expected: 'Usage: please provide two lists in the format "1, 2, 3, 4, 5"'
+                        expected:
+                            string: "usage"
                 transformations:
                     -   "strip"
     longestpalindromicsubstring:
@@ -899,6 +992,8 @@ projects:
             - "palindromic"
             - "substring"
         requires_parameters: true
+        strings:
+            usage: "Usage: please provide a string that contains at least one palindrome"
         tests:
             lps_valid:
                 params:
@@ -918,13 +1013,16 @@ projects:
                 params:
                     -   name: "no input"
                         input: null
-                        expected: "Usage: please provide a string that contains at least one palindrome"
+                        expected:
+                            string: "usage"
                     -   name: "empty input"
                         input: '""'
-                        expected: "Usage: please provide a string that contains at least one palindrome"
+                        expected:
+                            string: "usage"
                     -   name: "invalid input: no palindromes"
                         input: "polip"
-                        expected: "Usage: please provide a string that contains at least one palindrome"
+                        expected:
+                            string: "usage"
                 transformations:
                     - "strip"
     longestword:
@@ -932,6 +1030,8 @@ projects:
             - "longest"
             - "word"
         requires_parameters: true
+        strings:
+            usage: "Usage: please provide a string"
         tests:
             longest_word_valid:
                 params:
@@ -950,10 +1050,12 @@ projects:
                 params:
                     -   name: "no input"
                         input: null
-                        expected: "Usage: please provide a string"
+                        expected:
+                            string: "usage"
                     -   name: "empty input"
                         input: '""'
-                        expected: "Usage: please provide a string"
+                        expected:
+                            string: "usage"
                 transformations:
                 - "strip"
     linearsearch:
@@ -961,6 +1063,8 @@ projects:
             - "linear"
             - "search"
         requires_parameters: true
+        strings:
+            usage: 'Usage: please provide a list of integers ("1, 4, 5, 11, 12") and the integer to find ("11")'
         tests:
             linear_search_valid:
                 inputs:
@@ -995,13 +1099,16 @@ projects:
                 params:
                     -   name: "no input"
                         input: null
-                        expected: 'Usage: please provide a list of integers ("1, 4, 5, 11, 12") and the integer to find ("11")'
+                        expected:
+                            string: "usage"
                     -   name: "missing input: target"
                         input: '"1, 2, 3, 4"'
-                        expected: 'Usage: please provide a list of integers ("1, 4, 5, 11, 12") and the integer to find ("11")'
+                        expected:
+                            string: "usage"
                     -   name: "missing input: list"
                         input: '"" "5"'
-                        expected: 'Usage: please provide a list of integers ("1, 4, 5, 11, 12") and the integer to find ("11")'
+                        expected:
+                            string: "usage"
                 transformations:
                     - "strip"
     maximumarrayrotation:
@@ -1010,6 +1117,8 @@ projects:
             - "array"
             - "rotation"
         requires_parameters: true
+        strings:
+            usage: 'Usage: please provide a list of integers (e.g. "8, 3, 1, 2")'
         tests:
             maximimum_array_rotation_valid:
                 params:
@@ -1028,10 +1137,12 @@ projects:
                 params:
                     -   name: "no input"
                         input: null
-                        expected: 'Usage: please provide a list of integers (e.g. "8, 3, 1, 2")'
+                        expected:
+                            string: "usage"
                     -   name: "empty input"
                         input: '""'
-                        expected: 'Usage: please provide a list of integers (e.g. "8, 3, 1, 2")'
+                        expected:
+                            string: "usage"
                 transformations:
                     - "strip"
     maximumsubarray:
@@ -1039,6 +1150,8 @@ projects:
             - "maximum"
             - "subarray"
         requires_parameters: true
+        strings:
+            usage: 'Usage: Please provide a list of integers in the format: "1, 2, 3, 4, 5"'
         tests:
             maximum_subarray_valid:
                 params:
@@ -1063,10 +1176,12 @@ projects:
                 params:
                     -   name: "no input"
                         input: null
-                        expected: 'Usage: Please provide a list of integers in the format: "1, 2, 3, 4, 5"'
+                        expected:
+                            string: "usage"
                     -   name: "empty input"
                         input: '""'
-                        expected: 'Usage: Please provide a list of integers in the format: "1, 2, 3, 4, 5"'
+                        expected:
+                            string: "usage"
                 transformations:
                     - "strip"
     mergesort:
@@ -1083,6 +1198,8 @@ projects:
             - "spanning"
             - "tree"
         requires_parameters: true
+        strings:
+            usage: "Usage: please provide a comma-separated list of integers"
         tests:
             minimum_spanning_tree_valid:
                 params:
@@ -1095,13 +1212,16 @@ projects:
                 params:
                     -   name: "no input"
                         input: null
-                        expected: "Usage: please provide a comma-separated list of integers"
+                        expected:
+                            string: "usage"
                     -   name: "empty input"
                         input: '""'
-                        expected: "Usage: please provide a comma-separated list of integers"
+                        expected:
+                            string: "usage"
                     -   name: "non-square input"
                         input: '"1, 0, 3, 0, 5, 1"'
-                        expected: "Usage: please provide a comma-separated list of integers"
+                        expected:
+                            string: "usage"
                 transformations:
                     - "strip"
     palindromicnumber:
@@ -1109,6 +1229,8 @@ projects:
             - "palindromic"
             - "number"
         requires_parameters: true
+        strings:
+            usage: "Usage: please input a non-negative integer"
         tests:
             palindromic_number_valid:
                 params:
@@ -1133,19 +1255,24 @@ projects:
                 params:
                     -   name: "no input"
                         input: null
-                        expected: "Usage: please input a non-negative integer"
+                        expected:
+                            string: "usage"
                     -   name: "empty input"
                         input: '""'
-                        expected: "Usage: please input a non-negative integer"
+                        expected:
+                            string: "usage"
                     -   name: "invalid input: not a number"
                         input: "a"
-                        expected: "Usage: please input a non-negative integer"
+                        expected:
+                            string: "usage"
                     -   name: "invalid input: negative integer"
                         input: "-7"
-                        expected: "Usage: please input a non-negative integer"
+                        expected:
+                            string: "usage"
                     -   name: "invalid input: float"
                         input: "5.41"
-                        expected: "Usage: please input a non-negative integer"
+                        expected:
+                            string: "usage"
                 transformations:
                     - "strip"
     primenumber:
@@ -1153,6 +1280,8 @@ projects:
             - "prime"
             - "number"
         requires_parameters: true
+        strings:
+            usage: "Usage: please input a non-negative integer"
         tests:
             prime_valid:
                 params:
@@ -1184,19 +1313,24 @@ projects:
                 params:
                     -   name: "no input"
                         input: null
-                        expected: "Usage: please input a non-negative integer"
+                        expected:
+                            string: "usage"
                     -   name: "empty input"
                         input: '""'
-                        expected: "Usage: please input a non-negative integer"
+                        expected:
+                            string: "usage"
                     -   name: "invalid input: not a number"
                         input: '"a"'
-                        expected: "Usage: please input a non-negative integer"
+                        expected:
+                            string: "usage"
                     -   name: "invalid input: not an integer"
                         input: '"6.7"'
-                        expected: "Usage: please input a non-negative integer"
+                        expected:
+                            string: "usage"
                     -   name: "invalid input: negative"
                         input: '"-7"'
-                        expected: "Usage: please input a non-negative integer"
+                        expected:
+                            string: "usage"
                 transformations:
                     - "strip"
     quicksort:
@@ -1220,6 +1354,8 @@ projects:
         words:
             - "rot13"
         requires_parameters: true
+        strings:
+            usage: "Usage: please provide a string to encrypt"
         tests:
             rot13_valid:
                 params:
@@ -1238,10 +1374,12 @@ projects:
                 params:
                     -   name: "no input"
                         input: null
-                        expected: "Usage: please provide a string to encrypt"
+                        expected:
+                            string: "usage"
                     -   name: "empty input"
                         input: '""'
-                        expected: "Usage: please provide a string to encrypt"
+                        expected:
+                            string: "usage"
                 transformations:
                     - "strip"
     removeallwhitespace:
@@ -1250,6 +1388,8 @@ projects:
             - "all"
             - "whitespace"
         requires_parameters: true
+        strings:
+            usage: "Usage: please provide a string"
         tests:
             remove_all_whitespace_valid:
                 params:
@@ -1280,10 +1420,12 @@ projects:
                 params:
                     -   name: "no input"
                         input: null
-                        expected: "Usage: please provide a string"
+                        expected:
+                            string: "usage"
                     -   name: "empty input"
                         input: '""'
-                        expected: "Usage: please provide a string"
+                        expected:
+                            string: "usage"
                 transformations:
                     - "strip"
     reversestring:
@@ -1376,6 +1518,8 @@ projects:
             - "transpose"
             - "matrix"
         requires_parameters: true
+        strings:
+            usage: "Usage: please enter the dimension of the matrix and the serialized matrix"
         tests:
             transpose_matrix_valid:
                 inputs:
@@ -1399,19 +1543,24 @@ projects:
                 params:
                     -   name: "no input"
                         input: null
-                        expected: "Usage: please enter the dimension of the matrix and the serialized matrix"
+                        expected:
+                            string: "usage"
                     -   name: "missing input: no columns or rows"
                         input: '"" "" "1, 2, 3, 4, 5, 6"'
-                        expected: "Usage: please enter the dimension of the matrix and the serialized matrix"
+                        expected:
+                            string: "usage"
                     -   name: "missing input: no matrix"
                         input: '"3" "3" ""'
-                        expected: "Usage: please enter the dimension of the matrix and the serialized matrix"
+                        expected:
+                            string: "usage"
                 transformations:
                     - "strip"
     zeckendorf:
         words:
             - "zeckendorf"
         requires_parameters: true
+        strings:
+            usage: "Usage: please input a non-negative integer"
         tests:
             zeckendorf_valid:
                 params:
@@ -1439,18 +1588,23 @@ projects:
                 params:
                     -   name: "no input"
                         input: null
-                        expected: "Usage: please input a non-negative integer"
+                        expected:
+                            string: "usage"
                     -   name: "empty input"
                         input: '""'
-                        expected: "Usage: please input a non-negative integer"
+                        expected:
+                            string: "usage"
                     -   name: "negative input"
                         input: '"-2"'
-                        expected: "Usage: please input a non-negative integer"
+                        expected:
+                            string: "usage"
                     -   name: "floating point input"
                         input: '"2.6"'
-                        expected: "Usage: please input a non-negative integer"
+                        expected:
+                            string: "usage"
                     -   name: "non-numeric input"
                         input: '"bad"'
-                        expected: "Usage: please input a non-negative integer"
+                        expected:
+                            string: "usage"
                 transformations:
                     - "strip"
