@@ -4,6 +4,26 @@ For simplicity, please make sure that your pull request includes one and only on
 Please fill _one_ of the sections below as applicable.
 Please also add any other relevant information to the Notes section at the bottom.
 You may delete or just ignore any other sections.
+
+Please fill in the checkbox like this:
+
+```
+[x]
+```
+
+Not like these:
+
+```
+[x ]
+[ x]
+[ x ]
+```
+
+Please put in the relevant issue number in the `I fixed #your-issue-number-here` item. For example, if your PR is
+for an issue called `Add Convex Hull in C++`, and that issue number is `5164`, change `your-issue-number-here`
+to `5164`. Do not put any space between `#` and the issue number. This is important because when the PR is merged,
+the corresponding issue will be closed.
+
 For more information please refer to our [contributing documentation][contributing]
 
 ## I Am Adding a New Code Snippet in an Existing Language

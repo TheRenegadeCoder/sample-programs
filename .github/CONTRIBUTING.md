@@ -12,6 +12,7 @@ for as many languages as possible.
     - [Issues](#issues)
       - [Code Snippets](#code-snippets)
       - [Tests](#tests)
+      - [Projects](#projects)
   - [Repository Structure](#repository-structure)
     - [Archives](#archives)
     - [Test](#test)
@@ -23,8 +24,10 @@ for as many languages as possible.
     - [Add One and Only One Snippet at a Time](#add-one-and-only-one-snippet-at-a-time)
     - [All Tests Must Pass](#all-tests-must-pass)
     - [Requirements for a New Project](#requirements-for-a-new-project)
+      - [Discuss the new project on Discord](#discuss-the-new-project-on-discord)
+      - [Add a new project label (maintainers only)](#add-a-new-project-label-maintainers-only)
       - [Add project to Sample Programs Website](#add-project-to-sample-programs-website)
-      - [Add test for project](#add-test-for-project)
+      - [Add tests for project](#add-tests-for-project)
     - [Requirements for a New Language](#requirements-for-a-new-language)
       - [Add `testinfo.yml`](#add-testinfoyml)
   - [Issues in Detail](#issues-in-detail)
@@ -33,7 +36,7 @@ for as many languages as possible.
   - [Tests in Detail](#tests-in-detail)
     - [Writing Testable Code](#writing-testable-code)
     - [Running Tests Locally](#running-tests-locally)
-    - [Adding a testsinfo.yml](#adding-a-testsinfoyml)
+    - [Adding a testinfo.yml](#adding-a-testinfoyml)
   - [Plagiarism](#plagiarism)
 
 ## Overview
@@ -53,6 +56,7 @@ You will find more detail about each guideline throughout the rest of this docum
 ### Issues
 
 #### Code Snippets
+
 - Issues for code snippets _must_ link to the relevant project.  [More info...][issues-in-detail]
 - Issues to fix existing code snippets _must_ explain why an enhancement is _necessary_. [More info...][modifying-existing-code-snippets]
 
@@ -61,6 +65,9 @@ You will find more detail about each guideline throughout the rest of this docum
 - Issues for tests _must_ link to the relevant project. [More info...][issues-in-detail]
 - Issues to modify tests _must_ explain why modification is _necessary_. [More info...][modifying-existing-tests]
 
+#### Projects
+
+- Issues for projects _must_ link to the relevant project. [More info...][issues-in-detail]
 
 ## Repository Structure
 
@@ -206,19 +213,35 @@ create a [draft pull request][draft-pull-request] to verify your work before sub
 
 ### Requirements for a New Project
 
+#### Discuss the new project on Discord
+
+We do not often add new projects, so it is important to get agreement from the maintainers before proceeding.
+If you have not done so already, request to join [The Renegade Coder Discord Server][discord-server]. Once you are
+accepted, discuss the new project in the `sample-programs` channel. If the maintainers agree that the new project
+should be created, proceed on to the next steps.
+
+#### Add a new project label (maintainers only)
+
+Once a new project is accepted, the maintainers of this repo need to [add a new label][sample-programs-new-label]
+filled out like this:
+
+- **Name** - the name of the project in lowercase -- e.g., `binary search`.
+- **Description** - `See: https://sampleprograms.io/projects/<project>/", where `<project>` is the project name
+  in lowercase with spaces converted to dashes -- e.g., `binary-search`.
+- **Color** - `#d4c5f9`. This is the same shade of light purple as the rest of project issues.
+
 #### Add project to Sample Programs Website
 
-This repository contains code snippets that match the [project list on the Sample Programs Website][project-list].
-Thus we will only accept code snippets that have a matching project there.
+Create a [Sample Programs Website Issue][sample-programs-website-issues] titled
+`Add {PROJECT} in Every Language Article`. Write an article describing the project, its requirements, and an
+optional image to represents the project. See the
+[Sample Programs Website Contributing Guide][sample-programs-website-contributing] for further details.
+Once you are done with that article, create a [Sample Programs Website Pull Request][sample-programs-website-pr].
 
-If you believe you have a project that [fits the scope of this project][sample-programs-website],
-first make a pull request to [that repository][sample-programs-website].
-Once that pull request has been accepted, return here and implement code and tests.
+#### Add tests for project
 
-#### Add test for project
-
-If you are the first to implement a solution for a new project or if you come across a project that does not have tests,
-you must add tests for your pull request to be accepted.
+Once your Sample Programs Website Pull Request is merged, you must add tests. Create an issue called
+`Add {PROJECT} Tests`. Add your new tests to [.glotter.yml][project-glotter-yml].
 
 See [Tests in Detail][tests-in-detail] below for more information. Also, refer to the following
 sections of the [Glotter2 documentation][glotter2-doc]:
@@ -232,6 +255,9 @@ new project. However, if that does not meet your needs, you can always create on
 Alternatively, if your test can be automated, feel free to contribute to the
 [Glotter2][glotter2] repository. Please read the [Glotter2 Contributing Guide][glotter2-contrib]
 before logging an issue and making a pull request.
+
+To make sure that your tests work as expected, it is also recommended that you write a sample program
+that implements this project in some simple language like Python.
 
 ### Requirements for a New Language
 
@@ -258,7 +284,7 @@ For simplicity, we ask that you **only make one issue for one language and one p
 This and the project link helps us tag and maintain issues and pull requests.
 (See [the pull request section above][add-one-and-only-one-snippet-at-a-time] for the pull request side of this flow)
 
-As such please name the issue in the format "{Add/modify} {project name} in {language}."
+As such please name the issue in the format "{Add/modify} {PROJECT} in {LANGUAGE}."
 For example if I were to add a new snippet for the fibonacci project in python,
 I would name my issue "Add Fibonacci in Python".
 If I were to modify an existing snippet for the fibonacci project in python,
@@ -360,7 +386,7 @@ the Eiffel one to be used, you would do one of the following options:
 - `-l eiffel -p helloworld`
 - `-l eiffel -s hello_world.e`
 
-### Adding a testsinfo.yml
+### Adding a testinfo.yml
 
 Each project directory should contain a file called `testinfo.yml`.
 This file contains information that tell the testing framework how to identify, build, and execute source files in this language.
@@ -399,7 +425,7 @@ These rules help grow and cultivate the community in a positive manner.
 [all-tests-must-pass]: #all-tests-must-pass
 [requirements-for-a-new-project]: #requirements-for-a-new-project
 [add-project-to-sample-programs-website]: #add-project-to-sample-programs-website
-[add-test-for-project]: #add-test-for-project
+[add-tests-for-project]: #add-tests-for-project
 [requirements-for-a-new-language]: #requirements-for-a-new-language
 [add-testinfoyml]: #add-testinfoyml
 [issues-in-detail]: #issues-in-detail
@@ -423,10 +449,12 @@ These rules help grow and cultivate the community in a positive manner.
 
 [sample-program-issues]: https://github.com/TheRenegadeCoder/sample-programs/issues
 [sample-programs-glotter-github-actions]: https://github.com/TheRenegadeCoder/sample-programs/actions/workflows/test-suite.yml
+[sample-programs-new-label]: https://github.com/TheRenegadeCoder/sample-programs/labels
 
 [sample-programs-website]: https://github.com/TheRenegadeCoder/sample-programs-website
-[sample-programs-website-contributing]: https://github.com/TheRenegadeCoder/sample-programs-website
+[sample-programs-website-contributing]: https://github.com/TheRenegadeCoder/sample-programs-website/blob/main/.github/CONTRIBUTING.md
 [sample-programs-website-issues]: https://github.com/TheRenegadeCoder/sample-programs-website/issues
+[sample-programs-website-pr]: https://github.com/TheRenegadeCoder/sample-programs-website/pulls
 
 [project-glotter-yml]: ../.glotter.yml
 [test-folder]: ../test
@@ -435,3 +463,5 @@ These rules help grow and cultivate the community in a positive manner.
 [fork-a-repo]: https://help.github.com/articles/fork-a-repo
 [draft-pull-request]: https://github.blog/2019-02-14-introducing-draft-pull-requests/
 [docker-official-images]: https://docs.docker.com/docker-hub/official_images/
+
+[discord-server]: https://discord.gg/Jhmtj7Z
