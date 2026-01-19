@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in Python! To find documentation related to the Python code in this repo, look [here](https://sampleprograms.io/languages/python).
 
-## Sample Programs List - 38/38 :partying_face:
+## Sample Programs List - 39/39 :partying_face:
 
 In this section, we feature a list of completed and missing programs in Python. See above for the current amount of completed programs in Python. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -51,6 +51,7 @@ Below, you'll find a list of completed code snippets in Python. Code snippets pr
 - :white_check_mark: [Selection Sort in Python](https://sampleprograms.io/projects/selection-sort/python) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 - :warning: [Sleep Sort in Python](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sleep+sort+python) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :warning: [Transpose Matrix in Python](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+python) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
+- :warning: [Zeckendorf in Python](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+zeckendorf+python) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 
 ## Testing
 
