@@ -1408,3 +1408,49 @@ projects:
                         expected: "Usage: please enter the dimension of the matrix and the serialized matrix"
                 transformations:
                     - "strip"
+    zeckendorf:
+        words:
+            - "zeckendorf"
+        requires_parameters: true
+        tests:
+            zeckendorf_valid:
+                params:
+                    -   name: "zero"
+                        input: '"0"'
+                        expected: ""
+                    -   name: "small fibonacci value"
+                        input: '"55"'
+                        expected: "55"
+                    -   name: "small non-fibonacci value"
+                        input: '"67"'
+                        expected: "55, 8, 3, 1"
+                    -   name: "large fibonacci value"
+                        input: '"10946"'
+                        expected: "10946"
+                    -   name: "large non-fibonacci value"
+                        input: '"16383"'
+                        expected: "10946, 4181, 987, 233, 34, 2"
+                transformations:
+                    -   remove:
+                        - "["
+                        - "]"
+                    - "strip"
+            zeckendorf_invalid:
+                params:
+                    -   name: "no input"
+                        input: null
+                        expected: "Usage: please input a non-negative integer"
+                    -   name: "empty input"
+                        input: '""'
+                        expected: "Usage: please input a non-negative integer"
+                    -   name: "negative input"
+                        input: '"-2"'
+                        expected: "Usage: please input a non-negative integer"
+                    -   name: "floating point input"
+                        input: '"2.6"'
+                        expected: "Usage: please input a non-negative integer"
+                    -   name: "non-numeric input"
+                        input: '"bad"'
+                        expected: "Usage: please input a non-negative integer"
+                transformations:
+                    - "strip"
