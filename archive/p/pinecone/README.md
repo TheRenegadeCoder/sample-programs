@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in Pinecone! To find documentation related to the Pinecone code in this repo, look [here](https://sampleprograms.io/languages/pinecone).
 
-## Sample Programs List - 3/38 :disappointed:
+## Sample Programs List - 3/39 :disappointed:
 
 In this section, we feature a list of completed and missing programs in Pinecone. See above for the current amount of completed programs in Pinecone. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -56,6 +56,7 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Selection Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,selection+sort&template=code-snippet-request.md&title=Add+Selection+Sort+in+Pinecone) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 - :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+Pinecone) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,transpose+matrix&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+Pinecone) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
+- :x: [Zeckendorf](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,zeckendorf&template=code-snippet-request.md&title=Add+Zeckendorf+in+Pinecone) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 
 ## Testing
 

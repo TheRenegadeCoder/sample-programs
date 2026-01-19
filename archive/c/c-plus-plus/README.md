@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in C++! To find documentation related to the C++ code in this repo, look [here](https://sampleprograms.io/languages/c-plus-plus).
 
-## Sample Programs List - 35/38 :smile:
+## Sample Programs List - 35/39 :smile:
 
 In this section, we feature a list of completed and missing programs in C++. See above for the current amount of completed programs in C++. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -56,6 +56,7 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Base64 Encode Decode](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,base64+encode+decode&template=code-snippet-request.md&title=Add+Base64+Encode+Decode+in+C%2B%2B) [[Requirements](https://sampleprograms.io/projects/base64-encode-decode)]
 - :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,convex+hull&template=code-snippet-request.md&title=Add+Convex+Hull+in+C%2B%2B) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :x: [Quine](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,quine&template=code-snippet-request.md&title=Add+Quine+in+C%2B%2B) [[Requirements](https://sampleprograms.io/projects/quine)]
+- :x: [Zeckendorf](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,zeckendorf&template=code-snippet-request.md&title=Add+Zeckendorf+in+C%2B%2B) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 
 ## Testing
 

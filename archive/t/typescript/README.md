@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in Typescript! To find documentation related to the Typescript code in this repo, look [here](https://sampleprograms.io/languages/typescript).
 
-## Sample Programs List - 25/38 :relaxed:
+## Sample Programs List - 25/39 :relaxed:
 
 In this section, we feature a list of completed and missing programs in Typescript. See above for the current amount of completed programs in Typescript. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -56,6 +56,7 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Quine](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,quine&template=code-snippet-request.md&title=Add+Quine+in+Typescript) [[Requirements](https://sampleprograms.io/projects/quine)]
 - :x: [Remove All Whitespace](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,remove+all+whitespace&template=code-snippet-request.md&title=Add+Remove+All+Whitespace+in+Typescript) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+Typescript) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
+- :x: [Zeckendorf](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,zeckendorf&template=code-snippet-request.md&title=Add+Zeckendorf+in+Typescript) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 
 ## Testing
 

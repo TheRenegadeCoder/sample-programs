@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in Haskell! To find documentation related to the Haskell code in this repo, look [here](https://sampleprograms.io/languages/haskell).
 
-## Sample Programs List - 20/38 :relaxed:
+## Sample Programs List - 20/39 :relaxed:
 
 In this section, we feature a list of completed and missing programs in Haskell. See above for the current amount of completed programs in Haskell. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -56,6 +56,7 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Remove All Whitespace](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,remove+all+whitespace&template=code-snippet-request.md&title=Add+Remove+All+Whitespace+in+Haskell) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+Haskell) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,transpose+matrix&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+Haskell) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
+- :x: [Zeckendorf](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,zeckendorf&template=code-snippet-request.md&title=Add+Zeckendorf+in+Haskell) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 
 ## Testing
 

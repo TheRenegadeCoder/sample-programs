@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in Javascript! To find documentation related to the Javascript code in this repo, look [here](https://sampleprograms.io/languages/javascript).
 
-## Sample Programs List - 33/38 :smile:
+## Sample Programs List - 33/39 :smile:
 
 In this section, we feature a list of completed and missing programs in Javascript. See above for the current amount of completed programs in Javascript. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -56,6 +56,7 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fraction+math&template=code-snippet-request.md&title=Add+Fraction+Math+in+Javascript) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+array+rotation&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+Javascript) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+Javascript) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
+- :x: [Zeckendorf](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,zeckendorf&template=code-snippet-request.md&title=Add+Zeckendorf+in+Javascript) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 
 ## Testing
 

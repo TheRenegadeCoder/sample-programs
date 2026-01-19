@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in Java! To find documentation related to the Java code in this repo, look [here](https://sampleprograms.io/languages/java).
 
-## Sample Programs List - 29/38 :smile:
+## Sample Programs List - 29/39 :relaxed:
 
 In this section, we feature a list of completed and missing programs in Java. See above for the current amount of completed programs in Java. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -56,6 +56,7 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Remove All Whitespace](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,remove+all+whitespace&template=code-snippet-request.md&title=Add+Remove+All+Whitespace+in+Java) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :x: [Roman Numeral](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,roman+numeral&template=code-snippet-request.md&title=Add+Roman+Numeral+in+Java) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+Java) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
+- :x: [Zeckendorf](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,zeckendorf&template=code-snippet-request.md&title=Add+Zeckendorf+in+Java) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 
 ## Testing
 
