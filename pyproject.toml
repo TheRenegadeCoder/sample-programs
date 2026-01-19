@@ -1,6 +1,6 @@
 [project]
 name = "sample-programs"
-version = "2025.11.08"
+version = "2026.1.19"
 description = "Sample Programs in Every Programming Language"
 readme = ".github/README.md"
 requires-python = ">=3.10,<4.0"
@@ -8,7 +8,7 @@ license = "MIT"
 
 dependencies = [
     "ronbun (>=0.10.1,<0.11.0)",
-    "glotter2 (>=0.13.0,<0.14.0)",
+    "glotter2 @ file:///home/rzuckerm/git/rzuckerm/glotter2",
     "pyyaml (>=6.0.3,<7.0.0)"
 ]
 
