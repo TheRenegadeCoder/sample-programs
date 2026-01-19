@@ -1518,7 +1518,7 @@ projects:
             - "transpose"
             - "matrix"
         requires_parameters: true
-        string:
+        strings:
             usage: "Usage: please enter the dimension of the matrix and the serialized matrix"
         tests:
             transpose_matrix_valid:

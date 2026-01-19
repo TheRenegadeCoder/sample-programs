@@ -256,10 +256,12 @@ name = "glotter2"
 version = "0.14.0"
 description = "An execution library for scripts written in any language. This is a fork of https://github.com/auroq/glotter"
 optional = false
-python-versions = ">=3.9,<4.0"
+python-versions = "<4.0,>=3.9"
 groups = ["main"]
-files = []
-develop = false
+files = [
+    {file = "glotter2-0.14.0-py3-none-any.whl", hash = "sha256:746046a8c9610584134b6547597f2ddc01ccdc80e3d13f271f8bff6b8974642a"},
+    {file = "glotter2-0.14.0.tar.gz", hash = "sha256:87f608ac842552dcc52c8cff955518b3c72041fd36a55e3426eaa47e9491e75f"},
+]
 
 [package.dependencies]
 docker = ">=7.1.0,<8.0"
@@ -270,10 +272,6 @@ pytest = ">=8.3.5,<9.0"
 pytest-xdist = ">=3.6.1,<4.0"
 pyyaml = ">6.0,<7.0"
 ruff = ">=0.14.0,<0.15.0"
-
-[package.source]
-type = "directory"
-url = "../../rzuckerm/glotter2"
 
 [[package]]
 name = "idna"
@@ -982,4 +980,4 @@ zstd = ["backports-zstd (>=1.0.0) ; python_version < \"3.14\""]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10,<4.0"
-content-hash = "d41dc7b85003aea426b6c28b8fcaea237194529612e7309723c3d9bd9eaf699a"
+content-hash = "56c8c8be74304a49f85ba0eb0ffb15cd50b96bc786f2b8ca8547ccfc6877d67d"
