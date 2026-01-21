@@ -88,7 +88,7 @@ PROC zeckendorf = (INT n) REF [] INT:
 
     # Allocate temporary space for Zeckendorf values #
     INT num fibs := UPB fibs;
-    REF [] INT temp results := HEAP [1:num fibs] INT;
+    REF [] INT temp results := HEAP [1:ENTIER((num fibs + 1) / 2)] INT;
 
     # Going from largest to smallest, repeat until no more Fibonacci numbers #
     # left or sum of Fibonacci numbers is equal to n #
