@@ -66,7 +66,7 @@ jobs:
   testing:
     name: "Test Suite"
     needs: changed-files
-    if: needs.changed-files.outputs.status == 'true' || ${{ github.event_name == 'schedule' }}
+    if: ${{needs.changed-files.outputs.status == 'true' || github.event_name == 'schedule' }}
 
     runs-on: ubuntu-latest
     steps:
