@@ -1,3 +1,5 @@
+language_display_name: "JavaScript"
+
 folder:
   extension: ".js"
   naming: "hyphen"

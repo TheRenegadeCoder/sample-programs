@@ -1,3 +1,5 @@
+language_display_name: "TeX"
+
 folder:
   extension: ".tex"
   naming: "hyphen"
@@ -22,3 +24,7 @@ container:
         exit 1; \
       fi'
   cmd: "cat {{ source.name }}.txt"
+
+notes:
+  - "Sample program must write to a .txt file with same name -- e.g., hello-world.tex writes to hello-world.txt"
+  - "args.txt contains the command line arguments"

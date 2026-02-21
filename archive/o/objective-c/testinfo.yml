@@ -1,3 +1,5 @@
+language_display_name: "Objective-C"
+
 folder:
   extension: ".m"
   naming: "hyphen"

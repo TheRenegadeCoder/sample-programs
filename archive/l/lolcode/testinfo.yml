@@ -1,3 +1,5 @@
+language_display_name: "LOLCODE"
+
 folder:
   extension: ".lol"
   naming: "hyphen"

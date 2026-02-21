@@ -1,3 +1,5 @@
+language_display_name: "PureScript"
+
 folder:
   extension: ".purs"
   naming: "hyphen"

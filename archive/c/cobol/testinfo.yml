@@ -1,3 +1,5 @@
+language_display_name: "COBOL"
+
 folder:
   extension: ".cbl"
   naming: "hyphen"

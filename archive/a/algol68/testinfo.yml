@@ -1,3 +1,5 @@
+language: "ALGOL 68"
+
 folder:
   extension: ".alg"
   naming: "hyphen"

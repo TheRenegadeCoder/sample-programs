@@ -1,3 +1,5 @@
+language_display_name: "PowerShell"
+
 folder:
   extension: ".ps1"
   naming: "pascal"

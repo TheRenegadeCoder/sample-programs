@@ -1,3 +1,5 @@
+language_display_name: "PHP"
+
 folder:
   extension: ".php"
   naming: "hyphen"
