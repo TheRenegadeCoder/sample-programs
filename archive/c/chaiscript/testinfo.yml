@@ -1,3 +1,5 @@
+language_display_name: "ChaiScript"
+
 folder:
   extension: ".chai"
   naming: "hyphen"

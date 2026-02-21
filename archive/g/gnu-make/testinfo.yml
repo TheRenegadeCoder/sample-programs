@@ -1,3 +1,5 @@
+language_display_name: "GNU Make"
+
 folder:
   extension: ".mk"
   naming: "hyphen"
@@ -25,3 +27,7 @@ container:
     echo "make -sf {{ source.name }}{{ source.extension }}" \
     ) >{{ source.name }}'
   cmd: sh {{ source.name }}
+
+notes:
+  - "ARGC is the number of command-line arguments"
+  - "ARGV1, ARGV2, ... are the command-line arguments themselves"

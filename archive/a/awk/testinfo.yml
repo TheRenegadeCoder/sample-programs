@@ -1,3 +1,5 @@
+language_display_name: "AWK"
+
 folder:
   extension: ".awk"
   naming: "hyphen"

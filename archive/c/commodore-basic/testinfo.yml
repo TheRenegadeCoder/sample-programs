@@ -1,3 +1,5 @@
+language_display_name: "Commodore BASIC"
+
 folder:
   extension: ".bas"
   naming: "hyphen"
@@ -15,3 +17,7 @@ container:
     echo "fi" \
     ) >{{ source.name }}'
   cmd: "sh ./{{ source.name }}"
+
+notes:
+  - "Each command-line argument will end with ASCII 13 when read with GET command"
+  - "When there are no more command-line arguments, the GET command returns ASCII 255"

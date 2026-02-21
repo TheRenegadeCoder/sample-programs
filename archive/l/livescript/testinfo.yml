@@ -1,3 +1,5 @@
+language_display_name: "LiveScript"
+
 folder:
   extension: ".ls"
   naming: "hyphen"

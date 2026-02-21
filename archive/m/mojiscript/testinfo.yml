@@ -1,3 +1,5 @@
+language_display_name: "MojiScript"
+
 folder:
   extension: ".mjs"
   naming: "hyphen"

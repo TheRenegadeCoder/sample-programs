@@ -10,3 +10,6 @@ container:
     echo "printf \"%s\0\" \"\$@\" | beef {{ source.name }}{{ source.extension }}" \
     ) >{{ source.name }}'
   cmd: sh {{ source.name }}
+
+notes:
+  - Each command-line argument ends with a null byte (ASCII 0)

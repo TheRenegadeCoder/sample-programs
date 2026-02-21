@@ -1,3 +1,5 @@
+language_display_name: "x86-64"
+
 folder:
   extension: ".asm"
   naming: "hyphen"
