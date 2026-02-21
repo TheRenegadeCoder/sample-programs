@@ -1,5 +1,3 @@
-language_display_name: "Vimscript"
-
 folder:
   extension: ".vim"
   naming: "hyphen"
