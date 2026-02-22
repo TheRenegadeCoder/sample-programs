@@ -1,4 +1,4 @@
-language: "ALGOL 68"
+language_display_name: "ALGOL 68"
 
 folder:
   extension: ".alg"
