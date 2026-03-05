@@ -138,12 +138,12 @@ jobs:
         config: repo-config.yml
 
     - name: Set up Python
-      uses: actions/setup-python@v5
+      uses: actions/setup-python@v6
       with:
         python-version: "${{ steps.repo-config.outputs['python-version'] }}"
 
     - name: Run Poetry Image
-      uses: abatilo/actions-poetry@v3
+      uses: abatilo/actions-poetry@v4
       with:
         poetry-version: "${{ steps.repo-config.outputs['poetry-version'] }}"
 
