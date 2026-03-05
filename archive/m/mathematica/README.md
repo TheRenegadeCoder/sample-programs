@@ -60,7 +60,18 @@ The following list contains all of the approved programs that are not currently 
 
 ## Testing
 
-Mathematica cannot be tested for the following reason:
+The following list shares details about how we name all Sample Programs in Mathematica:
+
+- Extension: .nb
+- Naming Convention: hyphen
+
+For example, the "Hello World" sample would be named this:
+
+- hello-world.nb
+
+Mathematica cannot be tested.
+
+Notes:
 
 - Mathematica requires a commercial license, so it cannot be tested
 

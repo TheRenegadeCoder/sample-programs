@@ -1,66 +1,66 @@
-# Sample Programs in Php
+# Sample Programs in PHP
 
 > [!NOTE]
 > **This page is auto-generated. DO NOT EDIT!**
 
-Welcome to Sample Programs in Php! To find documentation related to the Php code in this repo, look [here](https://sampleprograms.io/languages/php).
+Welcome to Sample Programs in PHP! To find documentation related to the PHP code in this repo, look [here](https://sampleprograms.io/languages/php).
 
 ## Sample Programs List - 38/39 :smile:
 
-In this section, we feature a list of completed and missing programs in Php. See above for the current amount of completed programs in Php. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
+In this section, we feature a list of completed and missing programs in PHP. See above for the current amount of completed programs in PHP. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
 ### Completed Programs
 
-Below, you'll find a list of completed code snippets in Php. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
+Below, you'll find a list of completed code snippets in PHP. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
-- :warning: [Baklava in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+php) [[Requirements](https://sampleprograms.io/projects/baklava)]
-- :warning: [Base64 Encode Decode in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+base64+encode+decode+php) [[Requirements](https://sampleprograms.io/projects/base64-encode-decode)]
-- :warning: [Binary Search in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+binary+search+php) [[Requirements](https://sampleprograms.io/projects/binary-search)]
-- :warning: [Bubble Sort in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+php) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
-- :warning: [Capitalize in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+php) [[Requirements](https://sampleprograms.io/projects/capitalize)]
-- :warning: [Convex Hull in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+convex+hull+php) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
-- :warning: [Depth First Search in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+depth+first+search+php) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
-- :warning: [Dijkstra in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+dijkstra+php) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
-- :warning: [Duplicate Character Counter in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+php) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
-- :warning: [Even Odd in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+php) [[Requirements](https://sampleprograms.io/projects/even-odd)]
-- :warning: [Factorial in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+php) [[Requirements](https://sampleprograms.io/projects/factorial)]
-- :warning: [Fibonacci in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+php) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
-- :warning: [File Input Output in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+php) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
-- :warning: [Fizz Buzz in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+php) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
-- :warning: [Fraction Math in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fraction+math+php) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
-- :warning: [Hello World in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+php) [[Requirements](https://sampleprograms.io/projects/hello-world)]
-- :warning: [Insertion Sort in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+php) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
-- :warning: [Job Sequencing in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+job+sequencing+php) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
-- :warning: [Josephus Problem in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+josephus+problem+php) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
-- :warning: [Linear Search in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+linear+search+php) [[Requirements](https://sampleprograms.io/projects/linear-search)]
-- :warning: [Longest Common Subsequence in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+common+subsequence+php) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
-- :warning: [Longest Palindromic Substring in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+palindromic+substring+php) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
-- :warning: [Longest Word in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+php) [[Requirements](https://sampleprograms.io/projects/longest-word)]
-- :warning: [Maximum Array Rotation in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+maximum+array+rotation+php) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
-- :warning: [Maximum Subarray in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+maximum+subarray+php) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
-- :warning: [Merge Sort in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+php) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
-- :warning: [Minimum Spanning Tree in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+minimum+spanning+tree+php) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
-- :warning: [Palindromic Number in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+php) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
-- :warning: [Prime Number in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+php) [[Requirements](https://sampleprograms.io/projects/prime-number)]
-- :warning: [Quick Sort in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+php) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
-- :warning: [Quine in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+php) [[Requirements](https://sampleprograms.io/projects/quine)]
-- :warning: [Remove All Whitespace in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+remove+all+whitespace+php) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
-- :warning: [Reverse String in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+php) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
-- :warning: [Roman Numeral in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+php) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
-- :warning: [Rot13 in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+php) [[Requirements](https://sampleprograms.io/projects/rot13)]
-- :warning: [Selection Sort in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+php) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
-- :warning: [Sleep Sort in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sleep+sort+php) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
-- :warning: [Transpose Matrix in Php](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+php) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
+- :warning: [Baklava in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+php) [[Requirements](https://sampleprograms.io/projects/baklava)]
+- :warning: [Base64 Encode Decode in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+base64+encode+decode+php) [[Requirements](https://sampleprograms.io/projects/base64-encode-decode)]
+- :warning: [Binary Search in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+binary+search+php) [[Requirements](https://sampleprograms.io/projects/binary-search)]
+- :warning: [Bubble Sort in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+php) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
+- :warning: [Capitalize in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+php) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :warning: [Convex Hull in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+convex+hull+php) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
+- :warning: [Depth First Search in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+depth+first+search+php) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
+- :warning: [Dijkstra in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+dijkstra+php) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
+- :warning: [Duplicate Character Counter in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+php) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
+- :warning: [Even Odd in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+php) [[Requirements](https://sampleprograms.io/projects/even-odd)]
+- :warning: [Factorial in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+php) [[Requirements](https://sampleprograms.io/projects/factorial)]
+- :warning: [Fibonacci in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+php) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
+- :warning: [File Input Output in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+php) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
+- :warning: [Fizz Buzz in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+php) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
+- :warning: [Fraction Math in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fraction+math+php) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
+- :warning: [Hello World in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+php) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :warning: [Insertion Sort in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+php) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
+- :warning: [Job Sequencing in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+job+sequencing+php) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
+- :warning: [Josephus Problem in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+josephus+problem+php) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
+- :warning: [Linear Search in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+linear+search+php) [[Requirements](https://sampleprograms.io/projects/linear-search)]
+- :warning: [Longest Common Subsequence in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+common+subsequence+php) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
+- :warning: [Longest Palindromic Substring in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+palindromic+substring+php) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
+- :warning: [Longest Word in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+php) [[Requirements](https://sampleprograms.io/projects/longest-word)]
+- :warning: [Maximum Array Rotation in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+maximum+array+rotation+php) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
+- :warning: [Maximum Subarray in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+maximum+subarray+php) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
+- :warning: [Merge Sort in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+php) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
+- :warning: [Minimum Spanning Tree in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+minimum+spanning+tree+php) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
+- :warning: [Palindromic Number in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+php) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
+- :warning: [Prime Number in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+php) [[Requirements](https://sampleprograms.io/projects/prime-number)]
+- :warning: [Quick Sort in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+php) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
+- :warning: [Quine in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+php) [[Requirements](https://sampleprograms.io/projects/quine)]
+- :warning: [Remove All Whitespace in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+remove+all+whitespace+php) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
+- :warning: [Reverse String in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+php) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
+- :warning: [Roman Numeral in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+php) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
+- :warning: [Rot13 in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+php) [[Requirements](https://sampleprograms.io/projects/rot13)]
+- :warning: [Selection Sort in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+php) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
+- :warning: [Sleep Sort in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sleep+sort+php) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
+- :warning: [Transpose Matrix in PHP](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+php) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
 ### Missing Programs
 
-The following list contains all of the approved programs that are not currently implemented in Php. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
+The following list contains all of the approved programs that are not currently implemented in PHP. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
-- :x: [Zeckendorf](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,zeckendorf&template=code-snippet-request.md&title=Add+Zeckendorf+in+Php) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
+- :x: [Zeckendorf](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,zeckendorf&template=code-snippet-request.md&title=Add+Zeckendorf+in+PHP) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 
 ## Testing
 
-The following list shares details about how we name all Sample Programs in Php:
+The following list shares details about how we name all Sample Programs in PHP:
 
 - Extension: .php
 - Naming Convention: hyphen
@@ -69,7 +69,7 @@ For example, the "Hello World" sample would be named this:
 
 - hello-world.php
 
-The following list shares details about what we're using to test all Sample Programs in Php:
+The following list shares details about what we're using to test all Sample Programs in PHP:
 
 - Docker Image: php
 - Docker Tag: 8.4-zts-alpine

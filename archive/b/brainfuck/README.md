@@ -74,6 +74,10 @@ The following list shares details about what we're using to test all Sample Prog
 - Docker Image: rzuckerm/brainf
 - Docker Tag: 1.2.0-2build2-1
 
+Notes:
+
+- Each command-line argument ends with a null byte (ASCII 0)
+
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 
 ***
