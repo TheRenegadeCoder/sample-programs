@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in PowerShell! To find documentation related to the PowerShell code in this repo, look [here](https://sampleprograms.io/languages/powershell).
 
-## Sample Programs List - 38/39 :smile:
+## Sample Programs List - 39/39 :partying_face:
 
 In this section, we feature a list of completed and missing programs in PowerShell. See above for the current amount of completed programs in PowerShell. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -51,12 +51,7 @@ Below, you'll find a list of completed code snippets in PowerShell. Code snippet
 - :warning: [Selection Sort in PowerShell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+powershell) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 - :warning: [Sleep Sort in PowerShell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sleep+sort+powershell) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :warning: [Transpose Matrix in PowerShell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+powershell) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
-
-### Missing Programs
-
-The following list contains all of the approved programs that are not currently implemented in PowerShell. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
-
-- :x: [Zeckendorf](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,zeckendorf&template=code-snippet-request.md&title=Add+Zeckendorf+in+PowerShell) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
+- :warning: [Zeckendorf in PowerShell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+zeckendorf+powershell) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 
 ## Testing
 
