@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in m4! To find documentation related to the m4 code in this repo, look [here](https://sampleprograms.io/languages/m4).
 
-## Sample Programs List - 35/39 :smile:
+## Sample Programs List - 36/39 :smile:
 
 In this section, we feature a list of completed and missing programs in m4. See above for the current amount of completed programs in m4. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -48,6 +48,7 @@ Below, you'll find a list of completed code snippets in m4. Code snippets preced
 - :warning: [Rot13 in m4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+m4) [[Requirements](https://sampleprograms.io/projects/rot13)]
 - :warning: [Selection Sort in m4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+m4) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 - :warning: [Transpose Matrix in m4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+m4) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
+- :warning: [Zeckendorf in m4](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+zeckendorf+m4) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 
 ### Missing Programs
 
@@ -56,7 +57,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Base64 Encode Decode](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,base64+encode+decode&template=code-snippet-request.md&title=Add+Base64+Encode+Decode+in+m4) [[Requirements](https://sampleprograms.io/projects/base64-encode-decode)]
 - :x: [File Input Output](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,file+input+output&template=code-snippet-request.md&title=Add+File+Input+Output+in+m4) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+m4) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
-- :x: [Zeckendorf](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,zeckendorf&template=code-snippet-request.md&title=Add+Zeckendorf+in+m4) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 
 ## Testing
 

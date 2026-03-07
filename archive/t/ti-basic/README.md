@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in TI-BASIC! To find documentation related to the TI-BASIC code in this repo, look [here](https://sampleprograms.io/languages/ti-basic).
 
-## Sample Programs List - 13/39 :thinking:
+## Sample Programs List - 14/39 :thinking:
 
 In this section, we feature a list of completed and missing programs in TI-BASIC. See above for the current amount of completed programs in TI-BASIC. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -26,6 +26,7 @@ Below, you'll find a list of completed code snippets in TI-BASIC. Code snippets 
 - :warning: [Prime Number in TI-BASIC](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+ti-basic) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :warning: [Reverse String in TI-BASIC](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+ti-basic) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :warning: [Rot13 in TI-BASIC](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+ti-basic) [[Requirements](https://sampleprograms.io/projects/rot13)]
+- :warning: [Zeckendorf in TI-BASIC](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+zeckendorf+ti-basic) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 
 ### Missing Programs
 
@@ -56,7 +57,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Selection Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,selection+sort&template=code-snippet-request.md&title=Add+Selection+Sort+in+TI-BASIC) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 - :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+TI-BASIC) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,transpose+matrix&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+TI-BASIC) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
-- :x: [Zeckendorf](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,zeckendorf&template=code-snippet-request.md&title=Add+Zeckendorf+in+TI-BASIC) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 
 ## Testing
 
