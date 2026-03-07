@@ -48,8 +48,8 @@ end procedure
 
 function get_fibonacci_values(integer value)
     -- Initialize Fibonacci state:
-    -- fib(1) = 1
-    -- fib(2) = 2
+    -- fib(2) = 1
+    -- fib(3) = 2
     sequence fibs = {}
     integer a = 1
     integer b = 2
