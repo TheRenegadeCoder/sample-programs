@@ -37,8 +37,8 @@ function parse_int($str_value)
 }
 
 function get_fibonacci_values($value) {
-    // fib(1) = 1
-    // fib(2) = 2
+    // fib(2) = 1
+    // fib(3) = 2
     $a = 1;
     $b = 2;
     $fibs = array();
