@@ -43,7 +43,7 @@ function get_fibonacci_values($value) {
     $b = 2;
     $fibs = array();
 
-    // Get Fibonacci values up to an including specified value
+    // Get Fibonacci values up to and including specified value
     while ($a <= $value) {
         // fib(n) = fib(n - 1) + fib(n - 2)
         array_push($fibs, $a);
