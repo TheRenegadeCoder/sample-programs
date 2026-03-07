@@ -77,12 +77,11 @@ function get_zeckendorf_values(integer value)
     integer n = length(fibs)
     while n > 0 and value > 0
     do
-        -- If candidate Fibonacci number is greater than or equal to remaining
-        -- value,
+        -- If candidate Fibonacci number is greater than or equal to remaining value,
         integer f = fibs[n]
         if value >= f
         then
-            -- Add Fibonacci to result
+            -- Append Fibonacci number to result
             zecks &= f
 
             -- Reduce remaining value
