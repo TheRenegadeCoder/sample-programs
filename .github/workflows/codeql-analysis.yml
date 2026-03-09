@@ -41,6 +41,8 @@ on:
       - 'archive/r/ruby/testinfo.yml'
       - 'archive/r/rust/*.rs'
       - 'archive/r/rust/testinfo.yml'
+      - 'archive/s/swift/*.swift'
+      - 'archive/s/swift/testinfo.yml'
       - 'archive/t/typescript/*.ts'
       - 'archive/t/typescript/testinfo.yml'
   pull_request:
@@ -69,6 +71,8 @@ on:
       - 'archive/r/ruby/testinfo.yml'
       - 'archive/r/rust/*.rs'
       - 'archive/r/rust/testinfo.yml'
+      - 'archive/s/swift/*.swift'
+      - 'archive/s/swift/testinfo.yml'
       - 'archive/t/typescript/*.ts'
       - 'archive/t/typescript/testinfo.yml'
   schedule:
