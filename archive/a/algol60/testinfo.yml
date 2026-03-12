@@ -6,7 +6,7 @@ folder:
 
 container:
   image: "rzuckerm/algol60"
-  tag: "2.1.1-dev"
+  tag: "2.1.1-1"
   build: |
     sh -c 'jff-algol -r {{ source.name }}{{ source.extension }} && \
       (echo "#!/bin/sh"; \
