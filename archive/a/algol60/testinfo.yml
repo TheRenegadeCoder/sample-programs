@@ -6,15 +6,15 @@ folder:
 
 container:
   image: "rzuckerm/algol60"
-  tag: "2.1.1-1"
+  tag: "2.1.1-2"
   build: |
     sh -c 'jff-algol -r {{ source.name }}{{ source.extension }} && \
       (echo "#!/bin/sh"; \
-      echo "(printf \"%d\0\" \"\$#\"; printf \"%s\0\" \"\$@\") | ./{{ source.name }} | tr -d \"\\0\"" \
+      echo "(printf \"%d\0\" \"\$#\"; printf \"%s\0\" \"\$@\") | ./{{ source.name }}" \
       ) >{{ source.name }}.sh'
   cmd: "sh {{ source.name }}.sh"
 
 notes:
-  - Since ALGOL 60 does not support command-line arguments directly, the command line arguments are delivered like this:
-  - - Number of arguments followed by null byte (ASCII 0)
-  - - Each argument is separated by a null byte (ASCII 0)
+  - "Since ALGOL 60 does not support command-line arguments directly, the command line arguments are delivered like this:"
+  - "- Number of arguments followed by null byte (ASCII 0)"
+  - "- Each argument is separated by a null byte (ASCII 0)"
