@@ -6,11 +6,12 @@ folder:
 
 container:
   image: "rzuckerm/algol60"
-  tag: "2.1.1-2"
+  tag: "marst-2.8-3"
   build: |
-    sh -c 'jff-algol -r {{ source.name }}{{ source.extension }} && \
+    sh -c 'marst -l 255 -o {{ source.name }}.c {{ source.name }}{{ source.extension }} && \
+      gcc -o {{ source.name }} {{ source.name }}.c -lm -lalgol && \
       (echo "#!/bin/sh"; \
-      echo "(printf \"%d\0\" \"\$#\"; printf \"%s\0\" \"\$@\") | ./{{ source.name }}" \
+      echo "(printf \"%d\n\" \"\$#\"; printf \"%s\0\" \"\$@\") | ./{{ source.name }}" \
       ) >{{ source.name }}.sh'
   cmd: "sh {{ source.name }}.sh"
 
