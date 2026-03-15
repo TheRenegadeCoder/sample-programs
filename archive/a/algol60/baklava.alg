@@ -1,5 +1,6 @@
 begin
     procedure outRepeatString(n, s);
+    value n;
     integer n;
     string s;
     begin
