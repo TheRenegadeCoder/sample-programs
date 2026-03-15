@@ -6,15 +6,16 @@ folder:
 
 container:
   image: "rzuckerm/algol60"
-  tag: "2.1.1-1"
+  tag: "marst-2.8-3"
   build: |
-    sh -c 'jff-algol -r {{ source.name }}{{ source.extension }} && \
+    sh -c 'marst -l 255 -o {{ source.name }}.c {{ source.name }}{{ source.extension }} && \
+      gcc -o {{ source.name }} {{ source.name }}.c -lm -lalgol && \
       (echo "#!/bin/sh"; \
-      echo "(printf \"%d\0\" \"\$#\"; printf \"%s\0\" \"\$@\") | ./{{ source.name }} | tr -d \"\\0\"" \
+      echo "(printf \"%d\n\" \"\$#\"; printf \"%s\0\" \"\$@\") | ./{{ source.name }}" \
       ) >{{ source.name }}.sh'
   cmd: "sh {{ source.name }}.sh"
 
 notes:
-  - Since ALGOL 60 does not support command-line arguments directly, the command line arguments are delivered like this:
-  - - Number of arguments followed by null byte (ASCII 0)
-  - - Each argument is separated by a null byte (ASCII 0)
+  - "Since ALGOL 60 does not support command-line arguments directly, the command line arguments are delivered like this:"
+  - "- Number of arguments followed by newline (ASCII 10). Use 'ininteger' to read this"
+  - "- Each argument is separated by a null byte (ASCII 0)"
