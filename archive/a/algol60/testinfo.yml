@@ -17,5 +17,5 @@ container:
 
 notes:
   - "Since ALGOL 60 does not support command-line arguments directly, the command line arguments are delivered like this:"
-  - "- Number of arguments followed by null byte (ASCII 0)"
+  - "- Number of arguments followed by newline (ASCII 10). Use 'ininteger' to read this"
   - "- Each argument is separated by a null byte (ASCII 0)"
