@@ -82,14 +82,14 @@ begin
         inValidInteger := valid
     end inValidInteger;
 
-    integer argc, result, ch;
-
     boolean procedure iseven(x);
     value x;
     integer x;
     begin
         iseven := (x - 2 * (x % 2)) = 0
     end iseven;
+
+    integer argc, result, ch;
 
     comment Get number of parameters. Exit if too few;
     ininteger(0, argc);
