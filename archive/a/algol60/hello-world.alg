@@ -1,3 +1,3 @@
 begin
-    outstring(1, "Hello, World!\n");
+    outstring(1, "Hello, World!\n")
 end
