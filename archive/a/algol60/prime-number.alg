@@ -97,11 +97,14 @@ begin
         integer i, q;
 
         result := x = 2 | (x > 2 & mod(x, 2) != 0);
-        q := entier(sqrt(x));
-        for i := 3 step 2 until q do
+        if result then
         begin
-            result := mod(x, i) != 0;
-            if !result then goto done
+            q := entier(sqrt(x));
+            for i := 3 step 2 until q do
+            begin
+                result := mod(x, i) != 0;
+                if !result then goto done
+            end
         end;
 
     done:
