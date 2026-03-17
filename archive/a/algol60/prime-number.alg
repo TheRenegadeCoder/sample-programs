@@ -100,14 +100,12 @@ begin
         if result then
         begin
             q := entier(sqrt(x));
-            for i := 3 step 2 until q do
+            for i := 3, i + 2 while result & i <= q do
             begin
                 result := mod(x, i) != 0;
-                if !result then goto done
             end
         end;
 
-    done:
         isprime := result
     end isprime;
 
