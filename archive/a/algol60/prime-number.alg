@@ -97,17 +97,14 @@ begin
         integer i, q;
 
         result := x = 2 | (x > 2 & mod(x, 2) != 0);
-        i := 3;
         q := entier(sqrt(x));
-
-    primeloop:
-        if result & i <= q then
+        for i := 3 step 2 until q do
         begin
             result := mod(x, i) != 0;
-            i := i + 2;
-            goto primeloop
+            if !result then goto done
         end;
 
+    done:
         isprime := result
     end isprime;
 
