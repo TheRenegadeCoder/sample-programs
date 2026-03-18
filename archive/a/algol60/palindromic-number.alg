@@ -93,7 +93,6 @@ begin
     value x;
     integer x;
     begin
-        boolean result;
         integer xrev, temp;
 
         comment Reverse the passed in value;
