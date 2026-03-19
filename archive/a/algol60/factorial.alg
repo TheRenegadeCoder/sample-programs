@@ -49,7 +49,7 @@ begin
         s := 1;
 
         comment Ignore whitespace;
-        for ch := indigit while ch = 12 do indigit;
+        for ch := indigit while ch = 12 do;
 
         comment Process signs: ignore "+" and invert sign if "-";
     signloop:
