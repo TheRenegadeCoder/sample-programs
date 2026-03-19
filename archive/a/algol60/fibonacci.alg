@@ -82,40 +82,26 @@ begin
         inValidInteger := valid
     end inValidInteger;
 
-    integer procedure mod(x, n);
-    value x, n;
-    integer x, n;
-    begin
-        mod := x - n * (x % n)
-    end mod;
-
     comment Output integer without space. This is needed since ALGOL60
-        'outinteger' automatically adds a space after the integer;
+        'outinteger' automatically adds a space after the integer.
+        Source: 'outinteger' function source code in Appendix 2 of
+        https://www.algol60.org/reports/algol60_mr.pdf;
     procedure outIntegerNoSpace(x);
     value x;
     integer x;
     begin
-        integer d;
+        procedure digits(x);
+        value x;
+        integer x;
+        begin
+            integer d;
+            d := x % 10;
+            x := x - 10 * d;
+            if d != 0 then digits(d);
+            outchar(1, "0123456789", x + 1);
+        end digits;
         if x < 0 then outstring(1, "-");
-
-        comment Find highest power of 10 for input value;
-        d := 1;
-    powerloop:
-        if abs(x % d) > 9 then
-        begin
-            d := d * 10;
-            goto powerloop
-        end;
-
-        comment Output each digit of value starting with the leftmost digit;
-    outputloop:
-        if d > 0 then
-        begin
-            outchar(1, "0123456789", abs(x % d) + 1);
-            x := abs(mod(x, d));
-            d := d % 10;
-            goto outputloop
-        end
+        digits(abs(x));
     end outIntegerNoSpace;
 
     procedure fibonacci(n);
