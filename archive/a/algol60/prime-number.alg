@@ -49,7 +49,8 @@ begin
         s := 1;
 
         comment Ignore whitespace;
-        for ch := indigit while ch = 12 do;
+        ch := indigit;
+        for ch := ch while ch = 12 do ch := indigit;
 
         comment Process signs: ignore "+" and invert sign if "-";
     signloop:
@@ -102,7 +103,7 @@ begin
             q := entier(sqrt(x));
             for i := 3, i + 2 while result & i <= q do
             begin
-                result := mod(x, i) != 0;
+                result := mod(x, i) != 0
             end
         end;
 
