@@ -57,15 +57,6 @@ begin
         )
     end outAsciiChar;
 
-    procedure outCharArray(s, len);
-    value len;
-    integer array s;
-    integer len;
-    begin
-        integer i;
-        for i := 1 step 1 until len do outAsciiChar(s[i])
-    end outCharArray;
-
     integer procedure duplicateCharacterCounter(s, len, charCounts, foundChars);
     value len;
     integer array s, charCounts, foundChars;
