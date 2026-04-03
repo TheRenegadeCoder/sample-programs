@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in ALGOL 60! To find documentation related to the ALGOL 60 code in this repo, look [here](https://sampleprograms.io/languages/algol60).
 
-## Sample Programs List - 14/39 :thinking:
+## Sample Programs List - 18/39 :thinking:
 
 In this section, we feature a list of completed and missing programs in ALGOL 60. See above for the current amount of completed programs in ALGOL 60. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -22,10 +22,14 @@ Below, you'll find a list of completed code snippets in ALGOL 60. Code snippets 
 - :warning: [Fizz Buzz in ALGOL 60](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+algol+60) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :warning: [Hello World in ALGOL 60](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+algol+60) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :warning: [Josephus Problem in ALGOL 60](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+josephus+problem+algol+60) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
+- :warning: [Longest Word in ALGOL 60](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+algol+60) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :warning: [Palindromic Number in ALGOL 60](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+algol+60) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :warning: [Prime Number in ALGOL 60](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+algol+60) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :warning: [Quine in ALGOL 60](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+algol+60) [[Requirements](https://sampleprograms.io/projects/quine)]
+- :warning: [Remove All Whitespace in ALGOL 60](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+remove+all+whitespace+algol+60) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :warning: [Reverse String in ALGOL 60](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+algol+60) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
+- :warning: [Roman Numeral in ALGOL 60](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+algol+60) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
+- :warning: [Rot13 in ALGOL 60](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+algol+60) [[Requirements](https://sampleprograms.io/projects/rot13)]
 - :warning: [Zeckendorf in ALGOL 60](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+zeckendorf+algol+60) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 
 ### Missing Programs
@@ -45,15 +49,11 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Linear Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,linear+search&template=code-snippet-request.md&title=Add+Linear+Search+in+ALGOL%2060) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :x: [Longest Common Subsequence](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+common+subsequence&template=code-snippet-request.md&title=Add+Longest+Common+Subsequence+in+ALGOL%2060) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
 - :x: [Longest Palindromic Substring](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+palindromic+substring&template=code-snippet-request.md&title=Add+Longest+Palindromic+Substring+in+ALGOL%2060) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
-- :x: [Longest Word](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+word&template=code-snippet-request.md&title=Add+Longest+Word+in+ALGOL%2060) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+array+rotation&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+ALGOL%2060) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+subarray&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+ALGOL%2060) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :x: [Merge Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,merge+sort&template=code-snippet-request.md&title=Add+Merge+Sort+in+ALGOL%2060) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+ALGOL%2060) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
 - :x: [Quick Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,quick+sort&template=code-snippet-request.md&title=Add+Quick+Sort+in+ALGOL%2060) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
-- :x: [Remove All Whitespace](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,remove+all+whitespace&template=code-snippet-request.md&title=Add+Remove+All+Whitespace+in+ALGOL%2060) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
-- :x: [Roman Numeral](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,roman+numeral&template=code-snippet-request.md&title=Add+Roman+Numeral+in+ALGOL%2060) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
-- :x: [Rot13](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,rot13&template=code-snippet-request.md&title=Add+Rot13+in+ALGOL%2060) [[Requirements](https://sampleprograms.io/projects/rot13)]
 - :x: [Selection Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,selection+sort&template=code-snippet-request.md&title=Add+Selection+Sort+in+ALGOL%2060) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 - :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+ALGOL%2060) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,transpose+matrix&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+ALGOL%2060) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
