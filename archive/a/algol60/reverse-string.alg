@@ -4,7 +4,7 @@ begin
         integer ch;
 
         comment
-            The fix syntax highlighting on GitHub, use '\x22' for '"'.
+            The fix syntax highlighting on GitHub, use '\x22' for double quote.
             For some reason '%' needs to be represented as '\x25';
         inchar(
             0,
@@ -43,7 +43,7 @@ begin
     integer ch;
     begin
         comment
-            The fix syntax highlighting on GitHub, use '\x22' for '"'.
+            The fix syntax highlighting on GitHub, use '\x22' for double quote.
             For some reason '%' needs to be represented as '\x25';
         outchar(
             1,
