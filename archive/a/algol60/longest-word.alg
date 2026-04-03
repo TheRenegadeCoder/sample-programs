@@ -57,7 +57,8 @@ begin
                 and update maximum if necessary;
             ch := s[i];
             if ch = 9 | ch = 10 | ch = 13 | ch = 32 then wordLen := 0
-            else begin
+            else
+            begin
                 wordLen := wordLen + 1;
                 if wordLen > maxWordLen then maxWordLen := wordLen
             end
