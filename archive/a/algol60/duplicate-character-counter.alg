@@ -10,11 +10,12 @@ begin
         integer ch;
 
         comment
-            To fix syntax highlighting on GitHub, use:
-            - '\x22' for double quote
-            - '\x27' for single quote
-            - '\x3b' for semicolon
-            For some reason percent sign needs to be represented as '\x25';
+            To fix syntax highlighting on GitHub, use backslash x and:
+            - 22 for double quote
+            - 27 for single quote
+            - 3b for semicolon
+            For some reason percent sign needs to be represented as
+            backslash x and 25;
         inchar(
             0,
             "\x01\x02\x03\x04\x05\x06\x07\x08\t\n\x0b\x0c\r\x0e\x0f"
@@ -52,11 +53,12 @@ begin
     integer ch;
     begin
         comment
-            To fix syntax highlighting on GitHub, use:
-            - '\x22' for double quote
-            - '\x27' for single quote
-            - '\x3b' for semicolon
-            For some reason percent sign needs to be represented as '\x25';
+            To fix syntax highlighting on GitHub, use backslash x and:
+            - 22 for double quote
+            - 27 for single quote
+            - 3b for semicolon
+            For some reason percent sign needs to be represented as
+            backslash x and 25;
         outchar(
             1,
             "\x01\x02\x03\x04\x05\x06\x07\x08\t\n\x0b\x0c\r\x0e\x0f"
