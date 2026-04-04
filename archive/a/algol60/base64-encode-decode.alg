@@ -289,7 +289,7 @@ begin
     if mode = 1 then outLen := base64Encode(inStr, inLen, outStr)
     else
     begin
-        comment Exit if invalid Base64 string;
+        comment Base64 decode string. Exit if invalid Base64 string;
         outLen := base64Decode(inStr, inLen, outStr);
         if outLen < 0 then usage
     end;
