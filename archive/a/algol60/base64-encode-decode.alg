@@ -115,10 +115,10 @@ begin
 
             comment Convert 24-bit word to 4 character code and append to output
                 string, using pad if past end of string;
-            outStr[outLen + 1] := codeToBase64Char(inLen, u, 262144, i); comment u >> 18;
-            outStr[outLen + 2] := codeToBase64Char(inLen, u, 4096, i); comment u >> 12;
-            outStr[outLen + 3] := codeToBase64Char(inLen, u, 64, i + 1); comment u >> 6;
-            outStr[outLen + 4] := codeToBase64Char(inLen, u, 1, i + 2);
+            outStr[outLen + 1] := codeToBase64Char(inLen, i, u % 262144); comment u >> 18;
+            outStr[outLen + 2] := codeToBase64Char(inLen, i, u % 4096); comment u >> 12;
+            outStr[outLen + 3] := codeToBase64Char(inLen, i + 1, u % 64); comment u >> 6;
+            outStr[outLen + 4] := codeToBase64Char(inLen, i + 2, u);
             outLen := outLen + 4
         end;
 
@@ -132,14 +132,14 @@ begin
         mod := x - n * (x % n)
     end mod;
 
-    integer procedure codeToBase64Char(len, u, d, sIdx);
-    value len, u, d, sIdx;
-    integer len, u, d, sIdx;
+    integer procedure codeToBase64Char(inLen, inIdx, u);
+    value inLen, inIdx, u;
+    integer inLen, inIdx, u;
     begin
         integer idx, ch;
 
         comment Get 6-bit index from code;
-        idx := mod(u % d, 64);
+        idx := mod(u, 64);
 
         comment
             If past end of string, use pad character, = (61)
@@ -149,7 +149,7 @@ begin
                 - 52 ... 61 -> 0 (48) ... 9 (57)
                 - 62        -> + (43)
                 - 63        -> / (47);
-        if sIdx > len then ch := 61
+        if inIdx > inLen then ch := 61
         else if idx >= 0 & idx <= 25 then ch := 65 + idx
         else if idx >= 26 & idx <= 51 then ch := 97 - 26 + idx
         else if idx >= 52 & idx <= 61 then ch := 48 - 52 + idx
@@ -195,9 +195,9 @@ begin
 
                     comment Convert 24-bit code to characters and append to output
                         string;
-                    codeToOutStr(outStr, outLen, u, 65536, i, inLen); comment u >> 16;
-                    codeToOutStr(outStr, outLen, u, 256, i + 2, inLen); comment u >> 8;
-                    codeToOutStr(outStr, outLen, u, 1, i + 3, inLen)
+                    codeToOutStr(outStr, outLen, inLen, i, u % 65536); comment u >> 16;
+                    codeToOutStr(outStr, outLen, inLen, i + 2, u % 256); comment u >> 8;
+                    codeToOutStr(outStr, outLen, inLen, i + 3, u)
                 end;
 
                 i := i + 4;
@@ -253,15 +253,15 @@ begin
         countTrailingPads := padLen
     end countTrailingPads;
 
-    procedure codeToOutStr(outStr, outLen, u, d, idx, inLen);
-    value u, d, idx, inLen;
+    procedure codeToOutStr(outStr, outLen, inLen, idx, u);
+    value u;
     integer array outStr;
-    integer outLen, u, d, idx, inLen;
+    integer outLen, inLen, idx, u;
     begin
         if idx <= inLen then
         begin
             outLen := outLen + 1;
-            outStr[outLen] := mod(u % d, 256)
+            outStr[outLen] := mod(u, 256)
         end
     end codeToOutStr;
 
