@@ -81,8 +81,8 @@ begin
         integer procedure expandAroundCenter(l, r);
         integer l, r;
         begin
-            comment Update left and right until out-of-bounds or no palindromic
-                substring found;
+            comment Update left and right until out-of-bounds or non-matching
+                characters;
         expandloop:
             if l >= 1 & r <= len then
             begin
