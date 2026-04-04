@@ -226,7 +226,7 @@ begin
         else if ch >= 97 & ch <= 122 then idx := ch - 97 + 26
         else if ch >= 48 & ch <= 57 then idx := ch - 48 + 52
         else if ch = 43 then idx := 62
-        else if ch =47 then idx := 63
+        else if ch = 47 then idx := 63
         else idx := -1;
 
         base64CharToIndex := idx
