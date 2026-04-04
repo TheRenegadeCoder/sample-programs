@@ -222,7 +222,7 @@ begin
             - + (43)             -> 62
             - / (47)             -> 63
             - else               -> -1;
-        if ch >= 65 & ch <=90 then idx := ch - 65
+        if ch >= 65 & ch <= 90 then idx := ch - 65
         else if ch >= 97 & ch <= 122 then idx := ch - 97 + 26
         else if ch >= 48 & ch <= 57 then idx := ch - 48 + 52
         else if ch = 43 then idx := 62
