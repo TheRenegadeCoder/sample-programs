@@ -1,17 +1,15 @@
-let line space asterisk =
-    String.replicate space " "  + String.replicate asterisk "*" + "\n"
+open System
 
-let rec baklavaShrink =
-    List.fold (fun accum n -> accum + (line n (21 - n * 2))) "" [ 1 .. 10 ]
+let inline repeat count (char: char) = String(char, count)
 
-let rec baklavaGrow =
-    List.fold (fun accum n -> accum + (line n (21 - n * 2))) "" [ 10 .. -1 .. 0 ]
-
-let baklava =
-    baklavaGrow + baklavaShrink
+let baklava size =
+    { -size .. size }
+    |> Seq.map (fun y ->
+        let padding = abs y
+        repeat padding ' ' + repeat (2 * (size - padding) + 1) '*')
+    |> String.concat Environment.NewLine
 
 [<EntryPoint>]
 let main argv =
-    printfn "%s" <| baklava.TrimEnd()
+    baklava 10 |> printfn "%s"
     0
-
