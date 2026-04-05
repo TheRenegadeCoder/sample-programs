@@ -9,8 +9,8 @@ begin
         - "0" to "9" maps to 0 to 9
         - "+" maps to 10
         - "-" maps to 11
-        - whitespace maps to 12
-        - comma maps to 13
+        - slash maps to 12
+        - whitespace maps to 13
         - null byte maps to -1
         - invalid bytes map to -2;
     integer procedure indigit;
@@ -19,7 +19,7 @@ begin
             - "0" to "9" maps to 1 to 10
             - "+" maps to 11
             - "-" maps to 12
-            - "," mapps to 13
+            - "/" maps to 13
             - "\t" maps to 14
             - "\r" maps to 15
             - "\n" maps to 16
@@ -27,13 +27,24 @@ begin
             - null byte maps to 18
             - invalid byte maps 0;
         integer ch;
-        inchar(0, "0123456789+-,\t\r\n ", ch);
+        inchar(0, "0123456789+-/\t\r\n ", ch);
         if ch < 1 then ch := -2
         else if ch < 14 then ch := ch - 1
-        else if ch < 18 then ch := 12
+        else if ch < 18 then ch := 13
         else ch := -1;
         indigit := ch
     end indigit;
+
+    procedure ignoreWhitespace(ch);
+    integer ch;
+    begin
+    whiteloop:
+        if ch = 13 then
+        begin
+            ch := indigit;
+            goto whiteloop
+        end
+    end ignoreWhitespace;
 
     comment Input an integer from stdin into 'result' and parse it.
         The last character is read into 'ch'.
@@ -50,7 +61,7 @@ begin
 
         comment Ignore whitespace;
         ch := indigit;
-        for ch := ch while ch = 12 do ch := indigit;
+        ignoreWhitespace(ch);
 
         comment Process signs: ignore "+" and invert sign if "-";
     signloop:
@@ -66,20 +77,18 @@ begin
         if ch >= 0 & ch <= 9 then
         begin
             comment Invalid if overflow or underflow;
-            valid := false;
-            if (s > 0 & (maxint - ch) % 10 < result) |
-                (s < 0 & (-1 - maxint + ch) % 10 > result) then goto done;
-
-            result := result * 10 + s * ch;
-            ch := indigit;
             valid := true;
+            if (s > 0 & (maxint - ch) % 10 < result) |
+                (s < 0 & (-1 - maxint + ch) % 10 > result) then valid := false
+            else result := result * 10 + s * ch;
+
+            ch := indigit;
             goto valueloop
         end;
 
         comment Ignore whitespace;
-        for ch := ch while ch = 12 do ch := indigit;
+        ignoreWhitespace(ch);
 
-    done:
         inValidInteger := valid
     end inValidInteger;
 
