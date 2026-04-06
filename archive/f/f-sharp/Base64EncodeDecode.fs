@@ -1,7 +1,7 @@
 open System
 open System.Text
 
-let usage = "Usage: please provide a mode (encode|decode) and a string"
+let usage = "Usage: please provide a mode and a string to encode/decode"
 
 module Base64 =
     let private (|Encode|Decode|InvalidMode|) (s: string) =
