@@ -11,7 +11,7 @@ begin
     integer i, numspaces, numstars;
     for i := -10 step 1 until 10 do
     begin
-        numspaces := abs(i);
+        numspaces := iabs(i);
         numstars := 21 - 2 * numspaces;
         outRepeatString(numspaces, " ");
         outRepeatString(numstars, "*");

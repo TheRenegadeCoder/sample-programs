@@ -1,24 +1,13 @@
 open System
 
-let removeAllWhitespace (input: string) : string =
-    input |> Seq.filter (fun c -> not (Char.IsWhiteSpace(c))) |> String.Concat
+let removeAllWhitespace = String.filter (Char.IsWhiteSpace >> not)
 
 [<EntryPoint>]
-let main argv : int = 
-    let ret = ref 0  
-
-    if argv.Length = 0 then
-
+let main argv =
+    match argv with
+    | [| input |] when not (String.IsNullOrEmpty input) ->
+        input |> removeAllWhitespace |> printfn "%s"
+        0
+    | _ ->
         printfn "Usage: please provide a string"
-        ret := 1
-    else
-        let input = argv.[0]
-        if input = "" then
-           
-            printfn "Usage: please provide a string"
-            ret := 1
-        else
-            let result = removeAllWhitespace input
-            printfn "%s" result  
-
-    !ret  
+        1
