@@ -72,16 +72,18 @@ begin
             goto signloop
         end;
 
+        comment Indicate valid if "0" to "9";
+        if ch >= 0 & ch <= 9 then valid := true;
+
         comment Process digits: update value;
     valueloop:
         if ch >= 0 & ch <= 9 then
         begin
             comment Invalid if overflow or underflow;
-            valid := true;
             if (s > 0 & (maxint - ch) % 10 < result) |
-                (s < 0 & (-1 - maxint + ch) % 10 > result) then valid := false
-            else result := result * 10 + s * ch;
+                (s < 0 & (-1 - maxint + ch) % 10 > result) then valid := false;
 
+            result := result * 10 + s * ch;
             ch := indigit;
             goto valueloop
         end;
