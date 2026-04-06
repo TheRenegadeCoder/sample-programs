@@ -80,16 +80,18 @@ begin
             goto signloop
         end;
 
+        comment Indicate valid if "0" to "9";
+        if ch >= 0 & ch <= 9 then valid := true;
+
         comment Process digits: update value;
     valueloop:
         if ch >= 0 & ch <= 9 then
         begin
             comment Invalid if overflow or underflow;
-            valid := true;
             if (s > 0 & (maxint - ch) % 10 < result) |
-                (s < 0 & (-1 - maxint + ch) % 10 > result) then valid := false
-            else result := result * 10 + s * ch;
-
+                (s < 0 & (-1 - maxint + ch) % 10 > result) then valid := false;
+            
+            result := result * 10 + s * ch;
             ch := indigit;
             goto valueloop
         end;
@@ -116,10 +118,10 @@ begin
             d := x % 10;
             x := x - 10 * d;
             if d != 0 then digits(d);
-            outchar(1, "0123456789", x + 1)
+            outchar(1, "0123456789", iabs(x) + 1)
         end digits;
         if x < 0 then outstring(1, "-");
-        digits(iabs(x))
+        digits(x)
     end outIntegerNoSpace;
 
     comment Greatest common denominator using Euclidean algorithm
