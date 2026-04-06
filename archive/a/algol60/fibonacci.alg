@@ -110,10 +110,10 @@ begin
             d := x % 10;
             x := x - 10 * d;
             if d != 0 then digits(d);
-            outchar(1, "0123456789", x + 1)
+            outchar(1, "0123456789", iabs(x) + 1)
         end digits;
         if x < 0 then outstring(1, "-");
-        digits(abs(x))
+        digits(x)
     end outIntegerNoSpace;
 
     procedure fibonacci(n);
