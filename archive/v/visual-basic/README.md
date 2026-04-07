@@ -71,8 +71,8 @@ For example, the "Hello World" sample would be named this:
 
 The following list shares details about what we're using to test all Sample Programs in Visual Basic:
 
-- Docker Image: mono
-- Docker Tag: 6.12.0.182
+- Docker Image: mcr.microsoft.com/dotnet/sdk
+- Docker Tag: 10.0
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 
