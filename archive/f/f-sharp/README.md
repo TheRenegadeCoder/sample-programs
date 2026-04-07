@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in F#! To find documentation related to the F# code in this repo, look [here](https://sampleprograms.io/languages/f-sharp).
 
-## Sample Programs List - 8/39 :disappointed:
+## Sample Programs List - 18/39 :thinking:
 
 In this section, we feature a list of completed and missing programs in F#. See above for the current amount of completed programs in F#. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -18,24 +18,24 @@ Below, you'll find a list of completed code snippets in F#. Code snippets preced
 - :warning: [Binary Search in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+binary+search+f#) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :warning: [Bubble Sort in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+f#) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :warning: [Capitalize in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+f#) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :warning: [Convex Hull in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+convex+hull+f#) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :warning: [Depth First Search in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+depth+first+search+f#) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
+- :warning: [Dijkstra in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+dijkstra+f#) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
+- :warning: [Duplicate Character Counter in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+f#) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
+- :warning: [Even Odd in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+f#) [[Requirements](https://sampleprograms.io/projects/even-odd)]
+- :warning: [Factorial in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+f#) [[Requirements](https://sampleprograms.io/projects/factorial)]
+- :warning: [Fibonacci in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+f#) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
+- :warning: [File Input Output in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+f#) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
+- :warning: [Fizz Buzz in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+f#) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
+- :warning: [Fraction Math in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fraction+math+f#) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :warning: [Hello World in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+f#) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :warning: [Insertion Sort in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+f#) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :warning: [Remove All Whitespace in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+remove+all+whitespace+f#) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 
 ### Missing Programs
 
 The following list contains all of the approved programs that are not currently implemented in F#. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
-- :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,convex+hull&template=code-snippet-request.md&title=Add+Convex+Hull+in+F%23) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
-- :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,dijkstra&template=code-snippet-request.md&title=Add+Dijkstra+in+F%23) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
-- :x: [Duplicate Character Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,duplicate+character+counter&template=code-snippet-request.md&title=Add+Duplicate+Character+Counter+in+F%23) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
-- :x: [Even Odd](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,even+odd&template=code-snippet-request.md&title=Add+Even+Odd+in+F%23) [[Requirements](https://sampleprograms.io/projects/even-odd)]
-- :x: [Factorial](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,factorial&template=code-snippet-request.md&title=Add+Factorial+in+F%23) [[Requirements](https://sampleprograms.io/projects/factorial)]
-- :x: [Fibonacci](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fibonacci&template=code-snippet-request.md&title=Add+Fibonacci+in+F%23) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
-- :x: [File Input Output](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,file+input+output&template=code-snippet-request.md&title=Add+File+Input+Output+in+F%23) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
-- :x: [Fizz Buzz](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fizz+buzz&template=code-snippet-request.md&title=Add+Fizz+Buzz+in+F%23) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
-- :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fraction+math&template=code-snippet-request.md&title=Add+Fraction+Math+in+F%23) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
-- :x: [Insertion Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,insertion+sort&template=code-snippet-request.md&title=Add+Insertion+Sort+in+F%23) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,job+sequencing&template=code-snippet-request.md&title=Add+Job+Sequencing+in+F%23) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,josephus+problem&template=code-snippet-request.md&title=Add+Josephus+Problem+in+F%23) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :x: [Linear Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,linear+search&template=code-snippet-request.md&title=Add+Linear+Search+in+F%23) [[Requirements](https://sampleprograms.io/projects/linear-search)]
@@ -71,8 +71,8 @@ For example, the "Hello World" sample would be named this:
 
 The following list shares details about what we're using to test all Sample Programs in F#:
 
-- Docker Image: fsharp
-- Docker Tag: 10-netcore
+- Docker Image: mcr.microsoft.com/dotnet/sdk
+- Docker Tag: 10.0
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 
