@@ -3,7 +3,10 @@ folder:
   naming: "hyphen"
 
 container:
-  image: "mono"
-  tag: "6.12.0.182"  # Cannot use slim because it does not contain vbnc for compilation
-  build: "vbnc {{ source.name }}{{ source.extension }}"
-  cmd: "mono {{ source.name }}.exe"
+  image: "mcr.microsoft.com/dotnet/sdk"
+  tag: "10.0"
+  build: |
+    bash -c "dotnet new console --language 'VB' && \
+      mv {{ source.name }}{{ source.extension }} Program.vb && \
+      dotnet build --sc"
+  cmd: "dotnet run --sc --no-restore"
