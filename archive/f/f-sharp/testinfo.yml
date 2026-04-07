@@ -3,7 +3,10 @@ folder:
   naming: "pascal"
 
 container:
-  image: "fsharp"
-  tag: "10-netcore"
-  build: "fsharpc --standalone -o {{ source.name }} {{ source.name}}{{ source.extension }}"
-  cmd: "mono {{ source.name }}"
+  image: "mcr.microsoft.com/dotnet/sdk"
+  tag: "10.0"
+  build: |
+    bash -c "dotnet new console --language 'F#' && \
+      mv {{ source.name }}{{ source.extension }} Program.fs && \
+      dotnet build --sc"
+  cmd: "dotnet run --sc --no-restore"
