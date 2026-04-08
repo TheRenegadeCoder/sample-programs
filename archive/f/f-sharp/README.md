@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in F#! To find documentation related to the F# code in this repo, look [here](https://sampleprograms.io/languages/f-sharp).
 
-## Sample Programs List - 18/39 :thinking:
+## Sample Programs List - 21/39 :relaxed:
 
 In this section, we feature a list of completed and missing programs in F#. See above for the current amount of completed programs in F#. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -30,15 +30,15 @@ Below, you'll find a list of completed code snippets in F#. Code snippets preced
 - :warning: [Fraction Math in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fraction+math+f#) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :warning: [Hello World in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+f#) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :warning: [Insertion Sort in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+f#) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
+- :warning: [Job Sequencing in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+job+sequencing+f#) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
+- :warning: [Josephus Problem in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+josephus+problem+f#) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
+- :warning: [Linear Search in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+linear+search+f#) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :warning: [Remove All Whitespace in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+remove+all+whitespace+f#) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 
 ### Missing Programs
 
 The following list contains all of the approved programs that are not currently implemented in F#. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
-- :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,job+sequencing&template=code-snippet-request.md&title=Add+Job+Sequencing+in+F%23) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
-- :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,josephus+problem&template=code-snippet-request.md&title=Add+Josephus+Problem+in+F%23) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
-- :x: [Linear Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,linear+search&template=code-snippet-request.md&title=Add+Linear+Search+in+F%23) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :x: [Longest Common Subsequence](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+common+subsequence&template=code-snippet-request.md&title=Add+Longest+Common+Subsequence+in+F%23) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
 - :x: [Longest Palindromic Substring](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+palindromic+substring&template=code-snippet-request.md&title=Add+Longest+Palindromic+Substring+in+F%23) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
 - :x: [Longest Word](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+word&template=code-snippet-request.md&title=Add+Longest+Word+in+F%23) [[Requirements](https://sampleprograms.io/projects/longest-word)]
