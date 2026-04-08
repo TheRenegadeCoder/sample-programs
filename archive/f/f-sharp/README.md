@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in F#! To find documentation related to the F# code in this repo, look [here](https://sampleprograms.io/languages/f-sharp).
 
-## Sample Programs List - 21/39 :relaxed:
+## Sample Programs List - 27/39 :relaxed:
 
 In this section, we feature a list of completed and missing programs in F#. See above for the current amount of completed programs in F#. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -33,18 +33,18 @@ Below, you'll find a list of completed code snippets in F#. Code snippets preced
 - :warning: [Job Sequencing in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+job+sequencing+f#) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :warning: [Josephus Problem in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+josephus+problem+f#) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :warning: [Linear Search in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+linear+search+f#) [[Requirements](https://sampleprograms.io/projects/linear-search)]
+- :warning: [Longest Common Subsequence in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+common+subsequence+f#) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
+- :warning: [Longest Palindromic Substring in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+palindromic+substring+f#) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
+- :warning: [Longest Word in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+f#) [[Requirements](https://sampleprograms.io/projects/longest-word)]
+- :warning: [Maximum Array Rotation in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+maximum+array+rotation+f#) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
+- :warning: [Maximum Subarray in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+maximum+subarray+f#) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
+- :warning: [Merge Sort in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+f#) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
 - :warning: [Remove All Whitespace in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+remove+all+whitespace+f#) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 
 ### Missing Programs
 
 The following list contains all of the approved programs that are not currently implemented in F#. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
-- :x: [Longest Common Subsequence](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+common+subsequence&template=code-snippet-request.md&title=Add+Longest+Common+Subsequence+in+F%23) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
-- :x: [Longest Palindromic Substring](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+palindromic+substring&template=code-snippet-request.md&title=Add+Longest+Palindromic+Substring+in+F%23) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
-- :x: [Longest Word](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+word&template=code-snippet-request.md&title=Add+Longest+Word+in+F%23) [[Requirements](https://sampleprograms.io/projects/longest-word)]
-- :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+array+rotation&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+F%23) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
-- :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+subarray&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+F%23) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
-- :x: [Merge Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,merge+sort&template=code-snippet-request.md&title=Add+Merge+Sort+in+F%23) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+F%23) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
 - :x: [Palindromic Number](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,palindromic+number&template=code-snippet-request.md&title=Add+Palindromic+Number+in+F%23) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :x: [Prime Number](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,prime+number&template=code-snippet-request.md&title=Add+Prime+Number+in+F%23) [[Requirements](https://sampleprograms.io/projects/prime-number)]
