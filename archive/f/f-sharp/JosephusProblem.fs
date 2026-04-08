@@ -1,32 +1,27 @@
 open System
 
 module Josephus =
-    let private largestPowerOf2 n =
-        // 1 <<< (31 - BitOperations.LeadingZeroCount(uint32 n))
-        let mutable p = 1
-
-        while p <= n do
-            p <- p <<< 1
-
-        p >>> 1
-
-    let rec private josephusGeneral n k =
-        let cnt = n / k
-        let res = josephusGeneral (n - cnt) k
-        let res = res - (n % k)
-        if res < 0 then res + n else res + (res / (k - 1))
-
     let run (n, k) =
-        let survivor =
-            if   n = 1 then 1              // only one person
-            elif k = 1 then n              // remove 1 by 1, last survives
-            elif k = 2 then                // fast formula for k = 2
-                let p = largestPowerOf2 n
-                2 * (n - p) + 1
-            else
-                1 + josephusGeneral n k    // general k > 2
+        if n = 1 then
+            Ok 1
+        elif k = 1 then
+            Ok n
+        elif k = 2 then
+            // fast formula for k = 2
+            let mutable p = 1
 
-        Ok survivor 
+            while p <= n do
+                p <- p <<< 1
+
+            Ok(2 * (n - (p >>> 1)) + 1)
+        else
+            // general k > 2 using iterative approach
+            let mutable survivor = 0
+
+            for i in 2..n do
+                survivor <- (survivor + k) % i
+
+            Ok(survivor + 1)
 
 module Helpers =
     let usage =
