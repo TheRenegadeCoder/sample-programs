@@ -17,8 +17,8 @@ begin
         - "0" to "9" maps to 0 to 9
         - "+" maps to 10
         - "-" maps to 11
-        - slash maps to 12
-        - whitespace maps to 13
+        - whitespace maps to 12
+        - slash maps to 13
         - null byte maps to -1
         - invalid bytes map to -2;
     integer procedure indigit;
@@ -27,49 +27,43 @@ begin
             - "0" to "9" maps to 1 to 10
             - "+" maps to 11
             - "-" maps to 12
-            - "/" maps to 13
-            - "\t" maps to 14
-            - "\r" maps to 15
-            - "\n" maps to 16
-            - " " maps to 17
+            - "\t" maps to 13
+            - "\r" maps to 14
+            - "\n" maps to 15
+            - " " maps to 16
+            - "/" maps to 17
             - null byte maps to 18
             - invalid byte maps 0;
         integer ch;
-        inchar(0, "0123456789+-/\t\r\n ", ch);
+        inchar(0, "0123456789+-\t\r\n /", ch);
         if ch < 1 then ch := -2
-        else if ch < 14 then ch := ch - 1
-        else if ch < 18 then ch := 13
+        else if ch < 13 then ch := ch - 1
+        else if ch < 17 then ch := 12
+        else if ch = 17 then ch := 13
         else ch := -1;
         indigit := ch
     end indigit;
 
-    procedure ignoreWhitespace(ch);
-    integer ch;
-    begin
-    whiteloop:
-        if ch = 13 then
-        begin
-            ch := indigit;
-            goto whiteloop
-        end
-    end ignoreWhitespace;
-
     comment Input an integer from stdin into 'result' and parse it.
         The last character is read into 'ch'.
         return true if integer is valid, false otherwise;
-    boolean procedure inValidInteger(result, ch);
+    boolean procedure inValidInteger(result, ch, allowSlash);
+    value allowSlash;
     integer result, ch;
+    boolean allowSlash;
     begin
-        boolean valid;
+        boolean valid, slashFound;
         integer s;
 
         result := 0;
         valid := false;
+        slashFound := false;
         s := 1;
 
         comment Ignore whitespace;
+    whiteloop:
         ch := indigit;
-        ignoreWhitespace(ch);
+        if ch = 12 then goto whiteloop;
 
         comment Process signs: ignore "+" and invert sign if "-";
     signloop:
@@ -96,8 +90,25 @@ begin
             goto valueloop
         end;
 
-        comment Ignore whitespace;
-        ignoreWhitespace(ch);
+        comment If slash not allowed, ignore characters until end
+            input. If slash allowed, ignore characters until slash
+            or end of input. Indicate if slash found;
+    ignoreloop:
+        if !(ch = -1 | (allowSlash & ch = 13)) then
+        begin
+            if ch != 12 & ch != 13 then valid := false;
+            if ch = 13 then
+            begin
+                slashFound := true;
+                if !allowSlash then valid := false
+            end;
+
+            ch := indigit;
+            goto ignoreloop
+        end;
+
+        comment If slash found, indicate last character is slash;
+        if slashFound then ch := 13;
 
         inValidInteger := valid
     end inValidInteger;
@@ -174,17 +185,19 @@ begin
         boolean valid;
 
         comment Input numerator;
-        valid := inValidInteger(n, ch);
+        valid := inValidInteger(n, ch, true);
 
-        comment If valid and last character is slash (12), input denominator;
+        comment If valid and last character is slash (13), input denominator;
         d := 1;
-        if valid & ch = 12 then valid := inValidInteger(d, ch);
+        if valid & ch = 13 then valid := inValidInteger(d, ch, false);
 
         comment Indicate invalid if last character is not null byte;
         if valid & ch != -1 then valid := false;
 
         comment If valid, reduce fraction;
-        if valid then fractionReduce(n, d)
+        if valid then fractionReduce(n, d);
+
+        inFraction := valid
     end inFraction;
 
     comment Fraction addition and subtraction
