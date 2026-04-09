@@ -14,7 +14,7 @@ module Rot13 =
 module Helpers =
     let parseArgs =
         function
-        | [| s |] -> Ok s
+        | [| s |] when s <> "" -> Ok s
         | _ -> Error "Usage: please provide a string to encrypt"
 
     let handleResult =
