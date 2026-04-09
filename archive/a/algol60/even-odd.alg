@@ -9,8 +9,7 @@ begin
         - "0" to "9" maps to 0 to 9
         - "+" maps to 10
         - "-" maps to 11
-        - comma maps to 12
-        - whitespace maps to 13
+        - whitespace maps to 12
         - null byte maps to -1
         - invalid bytes map to -2;
     integer procedure indigit;
@@ -19,32 +18,20 @@ begin
             - "0" to "9" maps to 1 to 10
             - "+" maps to 11
             - "-" maps to 12
-            - "," maps to 13
-            - "\t" maps to 14
-            - "\r" maps to 15
-            - "\n" maps to 16
-            - " " maps to 17
-            - null byte maps to 18
+            - "\t" maps to 13
+            - "\r" maps to 14
+            - "\n" maps to 15
+            - " " maps to 16
+            - null byte maps to 17
             - invalid byte maps 0;
         integer ch;
-        inchar(0, "0123456789+-,\t\r\n ", ch);
+        inchar(0, "0123456789+-\t\r\n ", ch);
         if ch < 1 then ch := -2
-        else if ch < 14 then ch := ch - 1
-        else if ch < 18 then ch := 13
+        else if ch < 13 then ch := ch - 1
+        else if ch < 17 then ch := 12
         else ch := -1;
         indigit := ch
     end indigit;
-
-    procedure ignoreWhitespace(ch);
-    integer ch;
-    begin
-    whiteloop:
-        if ch = 13 then
-        begin
-            ch := indigit;
-            goto whiteloop
-        end
-    end ignoreWhitespace;
 
     comment Input an integer from stdin into 'result' and parse it.
         The last character is read into 'ch'.
@@ -60,8 +47,9 @@ begin
         s := 1;
 
         comment Ignore whitespace;
+    whiteloop:
         ch := indigit;
-        ignoreWhitespace(ch);
+        if ch = 12 then goto whiteloop;
 
         comment Process signs: ignore "+" and invert sign if "-";
     signloop:
@@ -88,8 +76,15 @@ begin
             goto valueloop
         end;
 
-        comment Ignore whitespace;
-        ignoreWhitespace(ch);
+        comment Ignore characters until end of argument. Indicate invalid
+            if not whitespace;
+    ignoreloop:
+        if ch != -1 then
+        begin
+            if ch != 12 then valid := false;
+            ch := indigit;
+            goto ignoreloop
+        end;
 
         inValidInteger := valid
     end inValidInteger;
@@ -107,9 +102,8 @@ begin
     ininteger(0, argc);
     if argc < 1 then usage;
 
-    comment Get integer value from 1st argument. Exit if invalid or not
-        end of argument;
-    if !inValidInteger(result, ch) | ch != -1 then usage;
+    comment Get integer value from 1st argument. Exit if invalid;
+    if !inValidInteger(result, ch) then usage;
 
     comment Output "Even" if number is even, "Odd" otherwise;
     if iseven(result) then outstring(1, "Even")
