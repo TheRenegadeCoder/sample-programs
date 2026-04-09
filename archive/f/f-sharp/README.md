@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in F#! To find documentation related to the F# code in this repo, look [here](https://sampleprograms.io/languages/f-sharp).
 
-## Sample Programs List - 8/39 :disappointed:
+## Sample Programs List - 35/39 :smile:
 
 In this section, we feature a list of completed and missing programs in F#. See above for the current amount of completed programs in F#. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -18,42 +18,42 @@ Below, you'll find a list of completed code snippets in F#. Code snippets preced
 - :warning: [Binary Search in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+binary+search+f#) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :warning: [Bubble Sort in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+f#) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :warning: [Capitalize in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+f#) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :warning: [Convex Hull in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+convex+hull+f#) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :warning: [Depth First Search in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+depth+first+search+f#) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
+- :warning: [Dijkstra in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+dijkstra+f#) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
+- :warning: [Duplicate Character Counter in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+f#) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
+- :warning: [Even Odd in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+f#) [[Requirements](https://sampleprograms.io/projects/even-odd)]
+- :warning: [Factorial in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+f#) [[Requirements](https://sampleprograms.io/projects/factorial)]
+- :warning: [Fibonacci in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+f#) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
+- :warning: [File Input Output in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+f#) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
+- :warning: [Fizz Buzz in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+f#) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
+- :warning: [Fraction Math in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fraction+math+f#) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :warning: [Hello World in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+f#) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :warning: [Insertion Sort in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+f#) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
+- :warning: [Job Sequencing in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+job+sequencing+f#) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
+- :warning: [Josephus Problem in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+josephus+problem+f#) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
+- :warning: [Linear Search in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+linear+search+f#) [[Requirements](https://sampleprograms.io/projects/linear-search)]
+- :warning: [Longest Common Subsequence in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+common+subsequence+f#) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
+- :warning: [Longest Palindromic Substring in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+palindromic+substring+f#) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
+- :warning: [Longest Word in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+f#) [[Requirements](https://sampleprograms.io/projects/longest-word)]
+- :warning: [Maximum Array Rotation in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+maximum+array+rotation+f#) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
+- :warning: [Maximum Subarray in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+maximum+subarray+f#) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
+- :warning: [Merge Sort in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+f#) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
+- :warning: [Palindromic Number in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+f#) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
+- :warning: [Prime Number in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+f#) [[Requirements](https://sampleprograms.io/projects/prime-number)]
+- :warning: [Quick Sort in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+f#) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
+- :warning: [Quine in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+f#) [[Requirements](https://sampleprograms.io/projects/quine)]
 - :warning: [Remove All Whitespace in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+remove+all+whitespace+f#) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
+- :warning: [Reverse String in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+f#) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
+- :warning: [Roman Numeral in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+f#) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
+- :warning: [Rot13 in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+f#) [[Requirements](https://sampleprograms.io/projects/rot13)]
+- :warning: [Selection Sort in F#](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+f#) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 
 ### Missing Programs
 
 The following list contains all of the approved programs that are not currently implemented in F#. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
-- :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,convex+hull&template=code-snippet-request.md&title=Add+Convex+Hull+in+F%23) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
-- :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,dijkstra&template=code-snippet-request.md&title=Add+Dijkstra+in+F%23) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
-- :x: [Duplicate Character Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,duplicate+character+counter&template=code-snippet-request.md&title=Add+Duplicate+Character+Counter+in+F%23) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
-- :x: [Even Odd](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,even+odd&template=code-snippet-request.md&title=Add+Even+Odd+in+F%23) [[Requirements](https://sampleprograms.io/projects/even-odd)]
-- :x: [Factorial](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,factorial&template=code-snippet-request.md&title=Add+Factorial+in+F%23) [[Requirements](https://sampleprograms.io/projects/factorial)]
-- :x: [Fibonacci](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fibonacci&template=code-snippet-request.md&title=Add+Fibonacci+in+F%23) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
-- :x: [File Input Output](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,file+input+output&template=code-snippet-request.md&title=Add+File+Input+Output+in+F%23) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
-- :x: [Fizz Buzz](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fizz+buzz&template=code-snippet-request.md&title=Add+Fizz+Buzz+in+F%23) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
-- :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fraction+math&template=code-snippet-request.md&title=Add+Fraction+Math+in+F%23) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
-- :x: [Insertion Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,insertion+sort&template=code-snippet-request.md&title=Add+Insertion+Sort+in+F%23) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
-- :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,job+sequencing&template=code-snippet-request.md&title=Add+Job+Sequencing+in+F%23) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
-- :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,josephus+problem&template=code-snippet-request.md&title=Add+Josephus+Problem+in+F%23) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
-- :x: [Linear Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,linear+search&template=code-snippet-request.md&title=Add+Linear+Search+in+F%23) [[Requirements](https://sampleprograms.io/projects/linear-search)]
-- :x: [Longest Common Subsequence](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+common+subsequence&template=code-snippet-request.md&title=Add+Longest+Common+Subsequence+in+F%23) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
-- :x: [Longest Palindromic Substring](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+palindromic+substring&template=code-snippet-request.md&title=Add+Longest+Palindromic+Substring+in+F%23) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
-- :x: [Longest Word](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+word&template=code-snippet-request.md&title=Add+Longest+Word+in+F%23) [[Requirements](https://sampleprograms.io/projects/longest-word)]
-- :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+array+rotation&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+F%23) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
-- :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+subarray&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+F%23) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
-- :x: [Merge Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,merge+sort&template=code-snippet-request.md&title=Add+Merge+Sort+in+F%23) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+F%23) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
-- :x: [Palindromic Number](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,palindromic+number&template=code-snippet-request.md&title=Add+Palindromic+Number+in+F%23) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
-- :x: [Prime Number](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,prime+number&template=code-snippet-request.md&title=Add+Prime+Number+in+F%23) [[Requirements](https://sampleprograms.io/projects/prime-number)]
-- :x: [Quick Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,quick+sort&template=code-snippet-request.md&title=Add+Quick+Sort+in+F%23) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
-- :x: [Quine](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,quine&template=code-snippet-request.md&title=Add+Quine+in+F%23) [[Requirements](https://sampleprograms.io/projects/quine)]
-- :x: [Reverse String](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,reverse+string&template=code-snippet-request.md&title=Add+Reverse+String+in+F%23) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
-- :x: [Roman Numeral](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,roman+numeral&template=code-snippet-request.md&title=Add+Roman+Numeral+in+F%23) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
-- :x: [Rot13](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,rot13&template=code-snippet-request.md&title=Add+Rot13+in+F%23) [[Requirements](https://sampleprograms.io/projects/rot13)]
-- :x: [Selection Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,selection+sort&template=code-snippet-request.md&title=Add+Selection+Sort+in+F%23) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 - :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+F%23) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,transpose+matrix&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+F%23) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 - :x: [Zeckendorf](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,zeckendorf&template=code-snippet-request.md&title=Add+Zeckendorf+in+F%23) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
@@ -71,8 +71,8 @@ For example, the "Hello World" sample would be named this:
 
 The following list shares details about what we're using to test all Sample Programs in F#:
 
-- Docker Image: fsharp
-- Docker Tag: 10-netcore
+- Docker Image: mcr.microsoft.com/dotnet/sdk
+- Docker Tag: 10.0
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 
