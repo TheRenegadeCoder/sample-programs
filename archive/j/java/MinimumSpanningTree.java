@@ -22,10 +22,6 @@ public class MinimumSpanningTree {
         }
 
         String[] tokens = args[0].split(",");
-        if (tokens.length < 4) {
-            usage();
-        }
-
         int[] values = new int[tokens.length];
 
         for (int i = 0; i < tokens.length; i++) {
