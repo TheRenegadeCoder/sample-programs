@@ -29,7 +29,7 @@ public class Dijkstra {
             int result = findShortestPath(weights, size, sourceNode, targetNode);
             System.out.println(result);
 
-        } catch (Exception _) {
+        } catch (Exception e) {
             System.err.println(
                     "Usage: please provide three inputs: a serialized matrix, a source node and a destination node"
             );
