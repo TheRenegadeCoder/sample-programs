@@ -2,30 +2,32 @@ open System
 
 module Zeckendorf =
 
-    let fibsDownTo n =
+    let getDescendingFibs n =
         let rec loop a b acc =
             if a > n then acc
             else loop b (a + b) (a :: acc)
-
+        
         loop 1 2 []
 
-    let run n =
-        if n = 0 then ""
+    let compute n =
+        if n = 0 then []
         else
-            let rec greedy remaining fibs acc =
-                match fibs with
-                | [] -> acc
-                | f :: fs ->
-                    if f <= remaining then
-                        greedy (remaining - f) fs (f :: acc)
+            let rec go remaining fibs acc =
+                match remaining, fibs with
+                | 0, _ -> List.rev acc
+                | _, [] -> List.rev acc
+                | r, f :: tail ->
+                    if f <= r then
+                        go (r - f) tail (f :: acc)
                     else
-                        greedy remaining fs acc
+                        go r tail acc
 
-            fibsDownTo n
-            |> greedy n []
-            |> List.rev
-            |> List.map string
-            |> String.concat ", "
+            go n (getDescendingFibs n) []
+
+    let run n =
+        match compute n with
+        | [] -> ""
+        | fibs -> String.concat ", " (List.map string fibs)
 
 module Helpers =
 
