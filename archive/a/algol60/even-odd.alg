@@ -106,6 +106,6 @@ begin
     if !inValidInteger(result, ch) then usage;
 
     comment Output "Even" if number is even, "Odd" otherwise;
-    if iseven(result) then outstring(1, "Even")
-    else outstring(1, "Odd")
+    if iseven(result) then outstring(1, "Even\n")
+    else outstring(1, "Odd\n")
 end

@@ -112,5 +112,6 @@ begin
     if !inValidInteger(result, ch) | result < 0 then usage;
 
     comment Output factorial;
-    outinteger(1, factorial(result))
+    outinteger(1, factorial(result));
+    outstring(1, "\n")
 end
