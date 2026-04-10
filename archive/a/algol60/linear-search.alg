@@ -182,9 +182,8 @@ begin
     comment Get target value from 2nd argument. Exit if invalid;
     if !inValidInteger(target, ch, false) then usage;
 
-    comment Search for target value in list. Indicate if found;
+    comment Linear search for target value in list. Indicate if found;
     idx := linearSearch(arr, arrLen, target);
-    if idx > 0 then outstring(1, "true")
-    else outstring(1, "false");
-    outstring(1, "\n")
+    if idx > 0 then outstring(1, "true\n")
+    else outstring(1, "false\n")
 end
