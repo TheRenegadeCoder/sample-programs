@@ -121,6 +121,6 @@ begin
     if !inValidInteger(result, ch) | result < 0 then usage;
 
     comment Output "true" if number is palindromic number, "false" otherwise;
-    if isPalindromicNumber(result) then outstring(1, "true")
-    else outstring(1, "false")
+    if isPalindromicNumber(result) then outstring(1, "true\n")
+    else outstring(1, "false\n")
 end
