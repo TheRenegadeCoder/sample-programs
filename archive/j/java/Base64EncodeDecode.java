@@ -10,7 +10,7 @@ public class Base64EncodeDecode {
         String mode = args[0];
         String input = args[1];
 
-        if (mode == null || input == null) {
+        if (mode == null || input == null || mode.isEmpty() || input.isEmpty()) {
             usage();
         }
 
