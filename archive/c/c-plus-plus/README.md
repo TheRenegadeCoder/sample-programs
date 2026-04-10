@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in C++! To find documentation related to the C++ code in this repo, look [here](https://sampleprograms.io/languages/c-plus-plus).
 
-## Sample Programs List - 35/39 :smile:
+## Sample Programs List - 36/39 :smile:
 
 In this section, we feature a list of completed and missing programs in C++. See above for the current amount of completed programs in C++. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -41,6 +41,7 @@ Below, you'll find a list of completed code snippets in C++. Code snippets prece
 - :warning: [Palindromic Number in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+c++) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :warning: [Prime Number in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+c++) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :warning: [Quick Sort in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+c++) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
+- :warning: [Quine in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+c++) [[Requirements](https://sampleprograms.io/projects/quine)]
 - :warning: [Remove All Whitespace in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+remove+all+whitespace+c++) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :warning: [Reverse String in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+c++) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :warning: [Roman Numeral in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+c++) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
@@ -55,7 +56,6 @@ The following list contains all of the approved programs that are not currently 
 
 - :x: [Base64 Encode Decode](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,base64+encode+decode&template=code-snippet-request.md&title=Add+Base64+Encode+Decode+in+C%2B%2B) [[Requirements](https://sampleprograms.io/projects/base64-encode-decode)]
 - :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,convex+hull&template=code-snippet-request.md&title=Add+Convex+Hull+in+C%2B%2B) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
-- :x: [Quine](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,quine&template=code-snippet-request.md&title=Add+Quine+in+C%2B%2B) [[Requirements](https://sampleprograms.io/projects/quine)]
 - :x: [Zeckendorf](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,zeckendorf&template=code-snippet-request.md&title=Add+Zeckendorf+in+C%2B%2B) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 
 ## Testing
