@@ -19,7 +19,7 @@ object SleepSort {
     }
 
   private def usage(): Nothing = {
-    println("""Usage: please provide a list of at least two integers in the format "1, 2, 3, 4, 5"""")
+    println("""Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"""")
     sys.exit(1)
   }
 
