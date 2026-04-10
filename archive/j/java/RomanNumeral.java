@@ -12,7 +12,7 @@ public class RomanNumeral {
     }
 
     public static void main(String[] args) {
-        if (args.length == 0 || args[0] == null || args[0].isEmpty()) {
+        if (args.length == 0 || args[0] == null) {
             System.out.println("Usage: please provide a string of roman numerals");
             System.exit(1);
         }
@@ -29,6 +29,10 @@ public class RomanNumeral {
     }
 
     private static int romanToInt(String input) {
+        if (input.isEmpty()) {
+            return 0;
+        }
+        
         int total = 0;
         int prev = 0;
 
