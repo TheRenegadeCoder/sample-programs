@@ -38,7 +38,7 @@ public class SleepSort {
     private static void sleepUninterruptibly(int value) {
         try {
             Thread.sleep(Duration.ofMillis(value * 100L));
-        } catch (InterruptedException _) {
+        } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         }
     }
