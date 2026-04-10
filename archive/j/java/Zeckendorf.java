@@ -18,7 +18,7 @@ public class Zeckendorf {
 
             System.out.println(formatResult(getZeckendorf(n)));
 
-        } catch (Exception _) {
+        } catch (Exception e) {
             System.out.println("Usage: please input a non-negative integer");
         }
     }
