@@ -21,24 +21,27 @@ public class SleepSort {
     }
 
     private static List<Integer> sleepSort(List<Integer> input) {
-        List<Integer> result = Collections.synchronizedList(new ArrayList<>());
+        var sortedList = Collections.synchronizedList(new ArrayList<Integer>());
 
-        try (var scope = Executors.newVirtualThreadPerTaskExecutor()) {
-            for (int number : input) {
-                scope.execute(() -> {
-                    try {
-                        Thread.sleep(Duration.ofMillis(number * 10L));
-                        result.add(number);
-                    } catch (InterruptedException _) {
-                        Thread.currentThread().interrupt();
-                    }
+        try (var executor = Executors.newVirtualThreadPerTaskExecutor()) {
+            for (int n : input) {
+                executor.submit(() -> {
+                    sleepUninterruptibly(n);
+                    sortedList.add(n);
                 });
             }
         }
 
-        return result;
+        return sortedList;
     }
 
+    private static void sleepUninterruptibly(int value) {
+        try {
+            Thread.sleep(Duration.ofMillis(value * 10L));
+        } catch (InterruptedException _) {
+            Thread.currentThread().interrupt();
+        }
+    }
 
     private static List<Integer> parse(String input) {
         try {
