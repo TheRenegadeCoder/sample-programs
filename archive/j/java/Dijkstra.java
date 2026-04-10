@@ -5,7 +5,7 @@ import java.util.stream.*;
 public class Dijkstra {
     final int INF = Integer.MAX_VALUE;
 
-    void main(String[] args) {
+    public static void main(String[] args) {
         try {
             if (args.length != 3 || Stream.of(args).anyMatch(String::isBlank)) {
                 throw new IllegalArgumentException();
