@@ -1,6 +1,7 @@
 import java.util.concurrent.{CountDownLatch, Executors}
 import java.util.{ArrayList, Collections}
 import scala.util.Try
+import scala.jdk.CollectionConverters._
 
 object SleepSort {
   def main(args: Array[String]): Unit =
@@ -62,7 +63,6 @@ object SleepSort {
     latch.await()
     executor.shutdown()
 
-    import scala.jdk.CollectionConverters.*
     sortedList.asScala.toList
   }
 }
