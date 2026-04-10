@@ -1,35 +1,38 @@
 open System
 
 module Zeckendorf =
-    let fibsUpTo n =
-        let rec build acc a b =
-            if a > n then acc else build (a :: acc) b (a + b)
 
-        build [] 1 2 |> List.toArray
+    let fibsDownTo n =
+        let rec loop a b acc =
+            if a > n then acc
+            else loop b (a + b) (a :: acc)
+
+        loop 1 2 []
 
     let run n =
-        if n = 0 then
-            ""
+        if n = 0 then ""
         else
-            let fibs = fibsUpTo n
-
-            Array.foldBack
-                (fun f (remaining, acc) ->
+            let rec greedy remaining fibs acc =
+                match fibs with
+                | [] -> acc
+                | f :: fs ->
                     if f <= remaining then
-                        (remaining - f, f :: acc)
+                        greedy (remaining - f) fs (f :: acc)
                     else
-                        (remaining, acc))
-                fibs
-                (n, [])
-            |> snd
+                        greedy remaining fs acc
+
+            fibsDownTo n
+            |> greedy n []
+            |> List.rev
             |> List.map string
             |> String.concat ", "
 
 module Helpers =
+
     let usage = "Usage: please input a non-negative integer"
 
     let (|NonNegativeInt|_|) (s: string) =
-        match s.Trim() |> Int32.TryParse with
+        match Int32.TryParse(s.Trim()) with
         | true, n when n >= 0 -> Some n
         | _ -> None
 
@@ -49,4 +52,7 @@ module Helpers =
 
 [<EntryPoint>]
 let main argv =
-    argv |> Helpers.parseArgs |> Result.map Zeckendorf.run |> Helpers.handleResult
+    argv
+    |> Helpers.parseArgs
+    |> Result.map Zeckendorf.run
+    |> Helpers.handleResult
