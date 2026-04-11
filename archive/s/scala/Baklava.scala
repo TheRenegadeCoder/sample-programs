@@ -1,10 +1,9 @@
-import scala.math.abs
+object Baklava:
+  private def generate(size: Int): Seq[String] =
+    for i <- -size to size yield
+      val spaces = i.abs
+      val stars = (size * 2 + 1) - 2 * spaces
+      " " * spaces + "*" * stars
 
-object Baklava {
-  def main(args: Array[String]): Unit = {
-    for (i <- -10.until(11)) {
-        var numSpaces = abs(i)
-        println(" " * numSpaces + "*" * (21 - 2 * numSpaces))
-    }
-  }
-}
+  @main def run(size: Int = 10): Unit =
+    generate(size).foreach(println)
