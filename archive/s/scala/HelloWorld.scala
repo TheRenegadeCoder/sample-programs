@@ -1,3 +1,3 @@
-object HelloWorld extends App {
-  println("Hello, World!")
-}
+object HelloWorld:
+  @main def run(): Unit =
+    println("Hello, World!")
