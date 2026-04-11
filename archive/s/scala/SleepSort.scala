@@ -1,68 +1,41 @@
-import java.util.concurrent.{CountDownLatch, Executors}
-import java.util.{ArrayList, Collections}
+import java.util.concurrent.ConcurrentLinkedQueue
+import scala.concurrent.ExecutionContext.Implicits.global
+import scala.concurrent.duration.*
+import scala.concurrent.{Await, Future}
+import scala.jdk.CollectionConverters.*
 import scala.util.Try
-import scala.jdk.CollectionConverters._
 
-object SleepSort {
-  def main(args: Array[String]): Unit =
-    args.toList match {
-      case raw :: Nil =>
-        val numbers = parse(raw)
+object SleepSort:
+  private val TimeUnit = 100.milliseconds
+  private val Buffer = 500.milliseconds
 
-        if (numbers.length < 2)
-          usage()
+  private val usage =
+    """Usage: please provide a list of at least two integers in the format "1, 2, 3, 4, 5""""
 
-        println(format(sleepSort(numbers)))
+  @main def run(input: String): Unit =
+    val result = for
+      nums <- parse(input) if nums.length >= 2
+      sorted = sort(nums)
+    yield sorted.mkString(", ")
 
-      case _ =>
-        usage()
+    println(result.getOrElse(usage))
+
+  private def parse(input: String): Option[List[Int]] =
+    Try(input.split(',').map(_.trim.toInt.max(0)).toList).toOption
+
+  private def sort(xs: List[Int]): List[Int] =
+    val collector = new ConcurrentLinkedQueue[Int]()
+
+    val tasks = xs.map { n =>
+      Future {
+        Thread.sleep((n * TimeUnit).toMillis)
+        collector.add(n)
+      }
     }
 
-  private def usage(): Nothing = {
-    println("""Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"""")
-    sys.exit(1)
-  }
+    // The buffer is there to ensure that all tasks have finished
+    val maxWait = (xs.maxOption.getOrElse(0) * TimeUnit) + Buffer
+    val allDone = Future.sequence(tasks)
+    Await.result(allDone, maxWait)
 
-  private def parse(input: String): List[Int] =
-    input
-      .split(",")
-      .iterator
-      .map(_.trim)
-      .filter(_.nonEmpty)
-      .flatMap(s => Try(s.toInt).toOption)
-      .toList
-    match {
-      case Nil => usage()
-      case xs => xs
-    }
-
-  private def format(xs: List[Int]): String =
-    xs.mkString(", ")
-
-  private def sleepSort(input: List[Int]): List[Int] = {
-    val sortedList = Collections.synchronizedList(new ArrayList[Int]())
-    val executor = Executors.newCachedThreadPool()
-    val latch = new CountDownLatch(input.size)
-
-    input.foreach { n =>
-      executor.submit(new Runnable {
-        override def run(): Unit = {
-          try {
-            Thread.sleep(n.toLong * 100L)
-            sortedList.add(n)
-          } catch {
-            case _: InterruptedException =>
-              Thread.currentThread().interrupt()
-          } finally {
-            latch.countDown()
-          }
-        }
-      })
-    }
-
-    latch.await()
-    executor.shutdown()
-
-    sortedList.asScala.toList
-  }
-}
+    collector.asScala.toList
