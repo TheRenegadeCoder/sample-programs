@@ -182,6 +182,48 @@ begin
     integer array graph;
     integer vertLen, target;
     begin
+        integer procedure depthFirstSearchRec(visited, nodeIdx);
+        value nodeIdx;
+        boolean array visited;
+        integer nodeIdx;
+        begin
+            integer foundIdx, childIdx, i;
+
+            comment Indicate target value not found;
+            foundIdx := 0;
+
+            comment If node index is valid and value matches target, return
+                this node index;
+            if nodeIdx > 0 then
+            begin
+                if graph[nodeIdx, 1] = target then foundIdx := nodeIdx
+                else
+                begin
+                    comment Otherwise, indicate node is visited;
+                    visited[nodeIdx] := true;
+
+                    comment Perform Depth First Search on each unvisited child of
+                        this node (if any). Stop when target value is found;
+                    i := 0;
+                searchloop:
+                    i := i + 1;
+                    if i <= graph[nodeIdx, 2] & foundIdx = 0 then
+                    begin
+                        childIdx := graph[nodeIdx, i + 2];
+                        if !visited[childIdx] then
+                        begin
+                            foundIdx := depthFirstSearchRec(visited, childIdx);
+                            visited[childIdx] := true
+                        end;
+
+                        goto searchloop
+                    end
+                end
+            end;
+
+            depthFirstSearchRec := foundIdx
+        end depthFirstSearchRec;
+
         integer i;
         boolean array visited[1:vertLen];
 
@@ -190,58 +232,8 @@ begin
 
         comment Do Depth First Search for target value starting at
             root node (1);
-        depthFirstSearch := depthFirstSearchRec(
-            graph, vertLen, target, visited, 1
-        )
+        depthFirstSearch := depthFirstSearchRec(visited, 1)
     end depthFirstSearch;
-
-    comment Recursive Depth First Search for target value;
-    integer procedure depthFirstSearchRec(
-        graph, vertLen, target, visited, nodeIdx
-    );
-    value vertLen, target, nodeIdx;
-    integer array graph;
-    integer vertLen, target, nodeIdx;
-    boolean array visited;
-    begin
-        integer foundIdx, childIdx, i;
-
-        comment Indicate target value not found;
-        foundIdx := 0;
-
-        comment If node index is valid and value matches target, return
-            this node index;
-        if nodeIdx > 0 then
-        begin
-            if graph[nodeIdx, 1] = target then foundIdx := nodeIdx
-            else
-            begin
-                comment Otherwise, indicate node is visited;
-                visited[nodeIdx] := true;
-
-                comment Perform Depth First Search on each unvisited child of
-                    this node (if any). Stop when target value is found;
-                i := 0;
-            searchloop:
-                i := i + 1;
-                if i <= graph[nodeIdx, 2] & foundIdx = 0 then
-                begin
-                    childIdx := graph[nodeIdx, i + 2];
-                    if !visited[childIdx] then
-                    begin
-                        foundIdx := depthFirstSearchRec(
-                            graph, vertLen, target, visited, childIdx
-                        );
-                        visited[childIdx] := true
-                    end;
-
-                    goto searchloop
-                end;
-            end
-        end;
-    
-        depthFirstSearchRec := foundIdx
-    end depthFirstSearchRec;
 
     integer argc, connMtxLen, vertLen, ch, target, idx;
     integer array connMtx[1:256], vert[1:16];
