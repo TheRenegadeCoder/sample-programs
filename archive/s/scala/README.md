@@ -72,7 +72,7 @@ For example, the "Hello World" sample would be named this:
 The following list shares details about what we're using to test all Sample Programs in Scala:
 
 - Docker Image: sbtscala/scala-sbt
-- Docker Tag: eclipse-temurin-jammy-8u352-b08_1.8.3_2.13.10
+- Docker Tag: eclipse-temurin-alpine-25.0.1_8_1.12.9_3.8.3
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 
