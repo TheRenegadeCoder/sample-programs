@@ -6,4 +6,4 @@ container:
   image: "sbtscala/scala-sbt"
   tag: "eclipse-temurin-alpine-25.0.1_8_1.12.9_3.8.3"
   build: "scalac {{ source.name }}{{ source.extension }}" 
-  cmd: "scala {{ source.name }}"
+  cmd: "scala -classpath . {{ source.name }}"
