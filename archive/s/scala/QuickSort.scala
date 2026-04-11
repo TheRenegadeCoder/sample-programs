@@ -1,45 +1,22 @@
-import scala.reflect.ClassTag
+import scala.util.Try
 
-object QuickSort {
-  def main(args: Array[String]) {
-    // verify inputs are being provided
-    parseInput(args) match {
-      case None => println("Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"")
-      case Some(inputArr) => {
-        if (inputArr.length < 2) {
-          println("Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"")
-        }
-        else {
-          val output = quicksort(inputArr).mkString(", ")
-          println(output)
-        }
-      }
-    }
-  }
+object QuickSort:
+  private def usage =
+    """Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5""""
 
-  def parseInput(args: Array[String]): Option[Array[Int]] = args.length match {
-    case 0 => None
-    case _ => try {
-      Some(args(0).split(",").map(_.trim).map(_.toInt))
-    } catch {
-      case e: Throwable => None
-    }
-  }
+  @main def run(input: String): Unit =
+    val result = for
+      nums <- parse(input) if nums.length >= 2
+    yield
+      sort(nums).mkString(", ")
 
-  // quick sort increasing elements
-  // note on signature:
-  // ClassTag elements help construct Array quen using ++ (instead of falling back to ArraySeq)
-  // Elements of array implement Ordered, so we can compare 2 instances of T using ==, <, >, etc.
-  def quicksort[T <% Ordered[T]: ClassTag](arr: Array[T]): Array[T] = arr.length match {
-    case 0 => arr
-    case 1 => arr
-    case _ => {
-      val pivot: T = arr(0)
-      val lhs = arr.filter(_ < pivot)
-      val mid = arr.filter(_ == pivot)
-      val rhs = arr.filter(_ > pivot)
+    println(result.getOrElse(usage))
 
-      quicksort(lhs) ++ mid ++ quicksort(rhs)
-    }
-  }
-}
+  private def sort(xs: List[Int]): List[Int] = xs match
+    case Nil => Nil
+    case pivot :: tail =>
+      val (less, more) = tail.partition(_ < pivot)
+      sort(less) ++ (pivot :: sort(more))
+
+  private def parse(input: String): Option[List[Int]] =
+    Try(input.split(',').iterator.map(_.trim.toInt).toList).toOption
