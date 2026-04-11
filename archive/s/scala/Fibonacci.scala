@@ -1,23 +1,23 @@
-import scala.util.{Try, Success, Failure}
+object Fibonacci:
 
-object Fibonacci {
+  private val fibs: LazyList[BigInt] =
+    BigInt(1) #:: BigInt(1) #:: fibs.zip(fibs.tail).map(_ + _)
+    
+  private val usage =
+    "Usage: please input the count of fibonacci numbers to output"
 
-  def fibonacci(n: Int) = {
-    var a = 0
-    var b = 1
-    for (i <- 1 to n) {
-      println(s"$i: $b")
-      val c = a + b
-      a = b
-      b = c
-    }
-  }
+  def main(args: Array[String]): Unit =
+    val output =
+      for
+        arg <- args.headOption
+        n <- arg.toIntOption if n >= 0
+      yield
+        if n == 0 then ""
+        else
+          fibs
+            .take(n)
+            .zipWithIndex
+            .map((f, i) => s"${i + 1}: $f")
+            .mkString("\n")
 
-
-  def main(args: Array[String]) = {
-    Try(args(0).toInt) match {
-      case Failure(_) => println("Usage: please input the count of fibonacci numbers to output")
-      case Success(n) => fibonacci(n)
-    }
-  }
-}
+    println(output.getOrElse(usage))

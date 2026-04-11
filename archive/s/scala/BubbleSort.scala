@@ -1,50 +1,41 @@
-import scala.reflect.ClassTag
+import scala.annotation.tailrec
+import scala.math.Ordering.Implicits.infixOrderingOps
 
-object BubbleSort {
-  def main(args: Array[String]) {
-    // verify inputs are being provided
-    parseInput(args) match {
-      case None => println("Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"")
-      case Some(inputArr) => {
-        if (inputArr.length < 2) {
-          println("Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"")
-        }
-        else {
-          val output = bubbleSort(inputArr).mkString(", ")
-          println(output)
-        }
-      }
-    }
-  }
+object BubbleSort:
 
-  def parseInput(args: Array[String]): Option[Array[Int]] = args.length match {
-    case 0 => None
-    case _ => try {
-      Some(args(0).split(",").map(_.trim).map(_.toInt))
-    } catch {
-      case e: Throwable => None
-    }
-  }
+  private val usage =
+    """Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5""""
 
-  // bubble the current element
+  def main(args: Array[String]): Unit =
+    val result =
+      args.headOption
+        .flatMap(parse)
+        .map(bubbleSort)
+        .map(_.mkString(", "))
+        .getOrElse(usage)
 
-  // bubble sort increasing elements
-  // note on signature:
-  // ClassTag elements help construct Array quen using ++ (instead of falling back to ArraySeq)
-  // Elements of array implement Ordered, so we can compare 2 instances of T using ==, <, >, etc.
-  def bubbleSort[T <% Ordered[T]: ClassTag](arr: Array[T]): Array[T] = {
-    def bubble(a: Array[T]): Array[T] = a.length match {
-      case 0 => a
-      case 1 => a
-      case _ => {
-        if (a(0) > a(1)) {
-          a.slice(1, 2) ++ bubble(a.slice(0, 1) ++ a.slice(2, a.length))
-        }
-        else {
-          a.slice(0, 1) ++ bubble(a.slice(1, a.length))
-        }
-      }
-    }
-    arr.foldLeft(arr)((xs: Array[T], cur: T) => bubble(xs))
-  }
-}
+    println(result)
+
+  private def parse(input: String): Option[List[Int]] =
+    val parts = input.split(',').map(_.trim).toList
+    val nums = parts.flatMap(_.toIntOption)
+    Option.when(nums.size >= 2 && nums.size == parts.size)(nums)
+
+  private def bubbleSort[T: Ordering](xs: List[T]): List[T] =
+    @tailrec
+    def pass(list: List[T], acc: List[T] = Nil, swapped: Boolean = false): (List[T], Boolean) =
+      list match
+        case a :: b :: tail if a > b =>
+          pass(a :: tail, b :: acc, true)
+        case a :: tail =>
+          pass(tail, a :: acc, swapped)
+        case Nil =>
+          (acc.reverse, swapped)
+
+    @tailrec
+    def loop(current: List[T]): List[T] =
+      val (next, swapped) = pass(current)
+      if swapped then loop(next)
+      else next
+
+    loop(xs)

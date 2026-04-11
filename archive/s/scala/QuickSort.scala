@@ -1,45 +1,25 @@
-import scala.reflect.ClassTag
+import scala.util.Try
 
-object QuickSort {
-  def main(args: Array[String]) {
-    // verify inputs are being provided
-    parseInput(args) match {
-      case None => println("Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"")
-      case Some(inputArr) => {
-        if (inputArr.length < 2) {
-          println("Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"")
-        }
-        else {
-          val output = quicksort(inputArr).mkString(", ")
-          println(output)
-        }
-      }
-    }
-  }
+object QuickSort:
 
-  def parseInput(args: Array[String]): Option[Array[Int]] = args.length match {
-    case 0 => None
-    case _ => try {
-      Some(args(0).split(",").map(_.trim).map(_.toInt))
-    } catch {
-      case e: Throwable => None
-    }
-  }
+  def main(args: Array[String]): Unit =
+    val input = args.headOption.getOrElse("")
 
-  // quick sort increasing elements
-  // note on signature:
-  // ClassTag elements help construct Array quen using ++ (instead of falling back to ArraySeq)
-  // Elements of array implement Ordered, so we can compare 2 instances of T using ==, <, >, etc.
-  def quicksort[T <% Ordered[T]: ClassTag](arr: Array[T]): Array[T] = arr.length match {
-    case 0 => arr
-    case 1 => arr
-    case _ => {
-      val pivot: T = arr(0)
-      val lhs = arr.filter(_ < pivot)
-      val mid = arr.filter(_ == pivot)
-      val rhs = arr.filter(_ > pivot)
+    parse(input) match
+      case Some(nums) if nums.length >= 2 =>
+        println(sort(nums).mkString(", "))
+      case _ =>
+        println(usage)
 
-      quicksort(lhs) ++ mid ++ quicksort(rhs)
-    }
-  }
-}
+  def usage: String =
+    """Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5""""
+
+  def sort(xs: List[Int]): List[Int] =
+    xs match
+      case Nil => Nil
+      case pivot :: tail =>
+        val (less, more) = tail.partition(_ < pivot)
+        sort(less) ++ (pivot :: sort(more))
+
+  def parse(input: String): Option[List[Int]] =
+    Try(input.split(',').toList.map(_.trim.toInt)).toOption

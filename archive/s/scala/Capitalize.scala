@@ -1,14 +1,5 @@
-object Capitalize {
-  def main(args: Array[String]) {
-    val inputStr: Option[String] = args.length match {
-      case 0 => Some("")
-      case _ => Some(args(0))
-    }
-    if (inputStr.get.length < 1) {
-      println("Usage: please provide a string")
-    }
-    else {
-      inputStr.map(_.capitalize).map(println)
-    }
-  }
-}
+object Capitalize:
+  def main(args: Array[String]): Unit =
+    args.headOption.filter(_.nonEmpty) match
+      case Some(str) => println(str.capitalize)
+      case None      => println("Usage: please provide a string")
