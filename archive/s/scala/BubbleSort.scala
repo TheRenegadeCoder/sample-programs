@@ -6,7 +6,7 @@ object BubbleSort:
   private val usage =
     """Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5""""
 
-  @main def run(args: String*): Unit =
+  def main(args: Array[String]): Unit =
     val result =
       args.headOption
         .flatMap(parse)

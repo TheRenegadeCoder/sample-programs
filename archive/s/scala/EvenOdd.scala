@@ -1,10 +1,9 @@
 import scala.util.Try
 
 object EvenOdd:
-
   private val usage = "Usage: please input a number"
 
-  @main def run(args: String*): Unit =
+  def main(args: Array[String]): Unit =
     val result =
       args.headOption
         .flatMap(a => Try(a.toInt).toOption)

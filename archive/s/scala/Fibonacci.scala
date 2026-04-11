@@ -6,7 +6,7 @@ object Fibonacci:
   private val usage =
     "Usage: please input the count of fibonacci numbers to output"
 
-  @main def run(args: String*): Unit =
+  def main(args: Array[String]): Unit =
     val output =
       for
         arg <- args.headOption

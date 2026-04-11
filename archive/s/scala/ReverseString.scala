@@ -1,3 +1,5 @@
 object ReverseString:
-  @main def run(args: String*): Unit =
-    args.headOption.map(_.reverse).foreach(println)
+  def main(args: Array[String]): Unit =
+    args.headOption match
+      case Some(str) => println(str.reverse)
+      case None      => println("")

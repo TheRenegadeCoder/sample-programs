@@ -17,7 +17,7 @@ object FileInputOutput:
       |I am also a string.
       |Scala is fun!""".stripMargin
 
-  @main def run(): Unit =
+  def main(args: Array[String]): Unit =
     val program =
       for
         _ <- path.writeString(content)

@@ -3,7 +3,7 @@ import scala.util.Try
 object Factorial:
   private val usage = "Usage: please input a non-negative integer"
 
-  @main def run(args: String*): Unit =
+  def main(args: Array[String]): Unit =
     val result =
       args.headOption
         .flatMap(a => Try(a.toInt).toOption)

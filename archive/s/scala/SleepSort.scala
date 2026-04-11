@@ -12,13 +12,16 @@ object SleepSort:
   private val usage =
     """Usage: please provide a list of at least two integers in the format "1, 2, 3, 4, 5""""
 
-  @main def run(input: String): Unit =
-    val result = for
-      nums <- parse(input) if nums.length >= 2
-      sorted = sort(nums)
-    yield sorted.mkString(", ")
+  def main(args: Array[String]): Unit =
+    val result =
+      args.headOption
+        .flatMap(parse)
+        .filter(_.length >= 2)
+        .map(sort)
+        .map(_.mkString(", "))
+        .getOrElse(usage)
 
-    println(result.getOrElse(usage))
+    println(result)
 
   private def parse(input: String): Option[List[Int]] =
     Try(input.split(',').map(_.trim.toInt.max(0)).toList).toOption

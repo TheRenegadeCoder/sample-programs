@@ -1,5 +1,5 @@
 object FizzBuzz:
-  @main def run(): Unit =
+  def main(args: Array[String]): Unit =
     (1 to 100).map { i =>
       (i % 3, i % 5) match
         case (0, 0) => "FizzBuzz"
