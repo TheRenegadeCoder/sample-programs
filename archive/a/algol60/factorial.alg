@@ -23,7 +23,7 @@ begin
             - "\n" maps to 15
             - " " maps to 16
             - null byte maps to 17
-            - invalid byte maps 0;
+            - invalid byte maps to 0;
         integer ch;
         inchar(0, "0123456789+-\t\r\n ", ch);
         if ch < 1 then ch := -2
