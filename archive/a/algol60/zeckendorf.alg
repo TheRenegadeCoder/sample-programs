@@ -176,19 +176,19 @@ begin
     end outIntegerNoSpace;
 
     comment Output integer array;
-    procedure outIntegerArray(n, arr);
-    value n, arr;
-    integer n;
+    procedure outIntegerArray(arr, arrLen);
+    value arrLen;
     integer array arr;
+    integer arrLen;
     begin
         integer i;
-        for i := 1 step 1 until n do
+        for i := 1 step 1 until arrLen do
         begin
             if i > 1 then outstring(1, ", ");
             outIntegerNoSpace(arr[i])
         end;
 
-        if n > 0 then outstring(1, "\n")
+        if arrLen > 0 then outstring(1, "\n")
     end outIntegerArray;
 
     integer argc, result, ch, numZecks;
@@ -205,6 +205,6 @@ begin
         comment Output Zeckendorf values;
         integer array zecks[1:(maxfibs + 1) % 2];
         numZecks := zeckendorf(result, zecks);
-        outIntegerArray(numZecks, zecks)
+        outIntegerArray(zecks, numZecks)
     end
 end
