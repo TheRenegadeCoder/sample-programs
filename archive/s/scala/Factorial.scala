@@ -1,32 +1,18 @@
-// Scala Program to calculate 
-// Factorial of a number 
-
 import scala.util.Try
 
-// Creating object 
-object Factorial 
-{ 
-  // Iterative way to calculate
-  // factorial
-  def factorial(n: Int): Int = { 
-    var f = 1
-    for(i <- 1 to n) 
-    { 
-        f = f * i; 
-    } 
+object Factorial:
+  private val usage = "Usage: please input a non-negative integer"
 
-    return f 
-  } 
+  @main def run(args: String*): Unit =
+    val result =
+      args.headOption
+        .flatMap(a => Try(a.toInt).toOption)
+        .filter(_ >= 0)
+        .map(factorial)
 
-  // Driver Code 
-  def main(args: Array[String]) 
-  {
-    val m = Try(args(0).toInt).getOrElse(-1)
-    if (m < 0) {
-      println("Usage: please input a non-negative integer")
-    }
-    else {
-      println(factorial(m))
-    }
-  } 
-} 
+    result match
+      case Some(value) => println(value)
+      case None => println(usage)
+
+  private def factorial(n: Int): Int =
+    (1 to n).product
