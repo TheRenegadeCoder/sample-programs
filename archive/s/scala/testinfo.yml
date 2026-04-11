@@ -4,6 +4,6 @@ folder:
 
 container:
   image: "sbtscala/scala-sbt"
-  tag: "eclipse-temurin-jammy-8u352-b08_1.8.3_2.13.10"
+  tag: "eclipse-temurin-alpine-25.0.1_8_1.12.9_3.8.3"
   build: "scalac {{ source.name }}{{ source.extension }}" 
   cmd: "scala {{ source.name }}"
