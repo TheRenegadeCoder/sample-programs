@@ -10,7 +10,7 @@ object Fibonacci:
     val output =
       for
         arg <- args.headOption
-        n <- arg.toIntOption if n > 0
+        n <- arg.toIntOption if n >= 0
       yield
         if n == 0 then ""
         else
