@@ -196,7 +196,8 @@ begin
         comment Indicate no nodes visited;
         for i := 1 step 1 until vertLen do visited[i] := false;
 
-        comment Do Depth First Search for target value starting at root node (1);
+        comment Do Depth First Search for target value starting at
+            root node (1);
         depthFirstSearch := depthFirstSearchRec(
             graph, vertLen, target, visited, 1
         )
