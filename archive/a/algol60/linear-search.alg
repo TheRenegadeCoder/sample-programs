@@ -9,14 +9,6 @@ begin
         stop
     end usage;
 
-    procedure error(errMsg);
-    string errMsg;
-    begin
-        outstring(1, errMsg);
-        outstring(1, "\n");
-        stop
-    end error;
-
     comment Input a digit character from stdin and return the following:
         - "0" to "9" maps to 0 to 9
         - "+" maps to 10
