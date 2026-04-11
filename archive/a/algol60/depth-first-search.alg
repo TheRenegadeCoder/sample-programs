@@ -39,7 +39,7 @@ begin
             - " " maps to 16
             - "," maps to 17
             - null byte maps to 18
-            - invalid byte maps 0;
+            - invalid byte maps to 0;
         integer ch;
         inchar(0, "0123456789+-\t\r\n ,", ch);
         if ch < 1 then ch := -2
@@ -216,8 +216,8 @@ begin
         comment Indicate target value not found;
         foundIdx := 0;
 
-        comment If node index is valid and value matches target, indicate
-            return this node index;
+        comment If node index is valid and value matches target, return
+            this node index;
         if nodeIdx > 0 then
         begin
             if graph[nodeIdx, 1] = target then foundIdx := nodeIdx
