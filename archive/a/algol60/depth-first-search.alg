@@ -252,7 +252,7 @@ begin
     end depthFirstSearchRec;
 
     integer argc, connMtxLen, vertLen, ch, target, idx;
-    integer array connMtx[1:256], vert[1:16], graph[1:16, 1:18];
+    integer array connMtx[1:256], vert[1:16];
     
     comment Get number of parameters. Exit if too few;
     ininteger(0, argc);
