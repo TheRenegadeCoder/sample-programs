@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in C++! To find documentation related to the C++ code in this repo, look [here](https://sampleprograms.io/languages/c-plus-plus).
 
-## Sample Programs List - 36/39 :smile:
+## Sample Programs List - 38/39 :smile:
 
 In this section, we feature a list of completed and missing programs in C++. See above for the current amount of completed programs in C++. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -17,6 +17,7 @@ Below, you'll find a list of completed code snippets in C++. Code snippets prece
 - :warning: [Binary Search in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+binary+search+c++) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :warning: [Bubble Sort in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+c++) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :warning: [Capitalize in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+c++) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :warning: [Convex Hull in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+convex+hull+c++) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :warning: [Depth First Search in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+depth+first+search+c++) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :warning: [Dijkstra in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+dijkstra+c++) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :warning: [Duplicate Character Counter in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+c++) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
@@ -49,14 +50,13 @@ Below, you'll find a list of completed code snippets in C++. Code snippets prece
 - :warning: [Selection Sort in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+c++) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 - :warning: [Sleep Sort in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sleep+sort+c++) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :warning: [Transpose Matrix in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+c++) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
+- :warning: [Zeckendorf in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+zeckendorf+c++) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 
 ### Missing Programs
 
 The following list contains all of the approved programs that are not currently implemented in C++. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
 - :x: [Base64 Encode Decode](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,base64+encode+decode&template=code-snippet-request.md&title=Add+Base64+Encode+Decode+in+C%2B%2B) [[Requirements](https://sampleprograms.io/projects/base64-encode-decode)]
-- :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,convex+hull&template=code-snippet-request.md&title=Add+Convex+Hull+in+C%2B%2B) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
-- :x: [Zeckendorf](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,zeckendorf&template=code-snippet-request.md&title=Add+Zeckendorf+in+C%2B%2B) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 
 ## Testing
 
