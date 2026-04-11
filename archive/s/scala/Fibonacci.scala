@@ -12,10 +12,12 @@ object Fibonacci:
         arg <- args.headOption
         n <- arg.toIntOption if n > 0
       yield
-        fibs
-          .take(n)
-          .zipWithIndex
-          .map((f, i) => s"${i + 1}: $f")
-          .mkString("\n")
+        if n == 0 then ""
+        else
+          fibs
+            .take(n)
+            .zipWithIndex
+            .map((f, i) => s"${i + 1}: $f")
+            .mkString("\n")
 
     println(output.getOrElse(usage))

@@ -10,7 +10,7 @@ object SleepSort:
   private val Buffer = 500.milliseconds
 
   private val usage =
-    """Usage: please provide a list of at least two integers in the format "1, 2, 3, 4, 5""""
+    """Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5""""
 
   def main(args: Array[String]): Unit =
     val result =

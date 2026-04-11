@@ -12,7 +12,7 @@ object QuickSort:
         println(usage)
 
   def usage: String =
-    """Usage: provide at least two integers like: 1, 2, 3"""
+    """Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5""""
 
   def sort(xs: List[Int]): List[Int] =
     xs match
