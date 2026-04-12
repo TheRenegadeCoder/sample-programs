@@ -5,5 +5,5 @@ folder:
 container:
   image: "gcc"
   tag: "15.2" 
-  build: "gcc -std=c23 -o {{ source.name }} {{ source.name }}{{ source.extension }} -pthread -lm"
+  build: "gcc -std=c2x -pthread -lm -o {{ source.name }} {{ source.name }}{{ source.extension }}"
   cmd: "./{{ source.name }}"
