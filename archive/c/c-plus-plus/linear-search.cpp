@@ -1,12 +1,13 @@
-#include <iostream>
-#include <vector>
-#include <string>
 #include <cstring>
+#include <iostream>
+#include <string>
+#include <vector>
 using namespace std;
 
 int main(int argc, char *argv[])
 {
-    string error = "Usage: please provide a list of integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")";
+    string error = "Usage: please provide a list of integers (\"1, 4, 5, 11, "
+                   "12\") and the integer to find (\"11\")";
 
     if (argc != 3)
     {
@@ -39,18 +40,10 @@ int main(int argc, char *argv[])
     int key = stoi(argv[2]);
     bool found = false;
     for (int i = 0; i < arr.size(); i++)
-    {
         if (arr[i] == key)
-        {
             found = true;
-        }
-    }
     if (found)
-    {
         cout << "true";
-    }
     else
-    {
         cout << "false";
-    }
 }

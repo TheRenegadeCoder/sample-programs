@@ -1,11 +1,14 @@
-#include <iostream>
 #include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 
 void handle_error()
 {
-    cout << "Usage: please provide a list of sorted integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")" << endl;
+    cout
+        << "Usage: please provide a list of sorted integers (\"1, 4, 5, 11, "
+           "12\") and the integer to find (\"11\")"
+        << endl;
     exit(0);
 }
 
@@ -32,12 +35,8 @@ int check(string s)
     }
 
     for (int i = x1; i <= x2; i++)
-    {
         if (s[i] == ' ')
-        {
             handle_error();
-        }
-    }
 
     return stoi(s);
 }
@@ -45,9 +44,7 @@ int check(string s)
 vector<int> convert(string s)
 {
     if (s.size() == 0)
-    {
         handle_error();
-    }
     vector<int> v;
     string num = "";
     for (int i = 0; i < s.size(); i++)
@@ -68,9 +65,7 @@ vector<int> convert(string s)
     }
 
     if (num.size() > 0)
-    {
         v.push_back(check(num));
-    }
 
     return v;
 }
@@ -78,20 +73,14 @@ vector<int> convert(string s)
 int main(int argc, char *argv[])
 {
     if (argc < 3)
-    {
         handle_error();
-    }
 
     vector<int> v = convert(argv[1]);
     int num = check(argv[2]);
 
     for (int i = 0; i < v.size() - 1; i++)
-    {
         if (v[i] > v[i + 1])
-        {
             handle_error();
-        }
-    }
 
     int start = 0, end = v.size();
     string ans = "false";
@@ -115,9 +104,7 @@ int main(int argc, char *argv[])
     }
 
     if (start > end)
-    {
         ans = "false";
-    }
 
     cout << ans << endl;
 }

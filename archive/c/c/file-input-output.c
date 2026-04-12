@@ -1,3 +1,4 @@
+#define _POSIX_C_SOURCE 200809L
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -8,7 +9,8 @@ int write_file()
     FILE *handle;
 
     handle = fopen(FILENAME, "w");
-    if (!handle) {
+    if (!handle)
+    {
         perror("open file for writing");
         return 1;
     }
@@ -28,14 +30,14 @@ int read_file()
     FILE *handle;
 
     handle = fopen(FILENAME, "r");
-    if (!handle) {
+    if (!handle)
+    {
         perror("open file for reading");
         return 1;
     }
 
-    while ((read = getline(&line, &len, handle)) != -1) {
+    while ((read = getline(&line, &len, handle)) != -1)
         printf("%s", line);
-    }
 
     fclose(handle);
     free(line);
@@ -48,14 +50,12 @@ int main(int argc, char **argv)
     int rc;
 
     rc = write_file();
-    if (rc != 0) {
+    if (rc != 0)
         return EXIT_FAILURE;
-    }
 
     rc = read_file();
-    if (rc != 0) {
+    if (rc != 0)
         return EXIT_FAILURE;
-    }
 
     return EXIT_SUCCESS;
 }

@@ -1,5 +1,5 @@
-#include <iostream>
 #include <cstring>
+#include <iostream>
 
 int main(int argc, const char *argv[])
 {
@@ -10,10 +10,8 @@ int main(int argc, const char *argv[])
     }
 
     for (int j = 0; j < (int)std::strlen(argv[1]); j++)
-    {
         if (j == 0)
             std::cout << (char)toupper(argv[1][j]);
         else
             std::cout << *(argv[1] + sizeof(char) * j);
-    }
 }

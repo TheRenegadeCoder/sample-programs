@@ -28,9 +28,7 @@ void bubbleSort(std::vector<int> &v, int n)
         }
 
         if (swapped == false)
-        {
             break;
-        }
     }
 }
 
@@ -38,13 +36,9 @@ void print(std::vector<int> v, int size)
 {
     for (int i = 0; i < size; i++)
         if (i == size - 1)
-        {
             std::cout << v[i] << std::endl;
-        }
         else
-        {
             std::cout << v[i] << ", ";
-        }
 }
 
 int main(int argc, char *argv[])
@@ -75,22 +69,19 @@ int main(int argc, char *argv[])
         if (commaSeparated == true)
         {
             for (int i = 0; i < strlen(characters); i++)
-            {
 
                 if (characters[i] != ',' && characters[i] != ' ')
-                {
                     numbers.push_back(atoi(&characters[i]));
-                }
-            }
         }
     }
 
     int size = numbers.size();
     if (size < 2)
     {
-        std::cout << "Usage: please provide a list of at least two integers to "
-                     "sort in the format \"1, 2, 3, 4, 5\""
-                  << std::endl;
+        std::cout
+            << "Usage: please provide a list of at least two integers to "
+               "sort in the format \"1, 2, 3, 4, 5\""
+            << std::endl;
     }
     else
     {

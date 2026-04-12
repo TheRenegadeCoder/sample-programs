@@ -1,6 +1,6 @@
-#include <stdio.h>
 #include <errno.h>
 #include <inttypes.h>
+#include <stdio.h>
 #include <string.h>
 
 /*
@@ -15,7 +15,8 @@ void fibonacci(int n)
     unsigned long long second = 1;
     unsigned long long result = 0;
 
-    for (int i = 1; i <= n; i++) {
+    for (int i = 1; i <= n; i++)
+    {
         result = first + second;
         first = second;
         second = result;
@@ -27,19 +28,27 @@ int main(int argc, char **argv)
 {
     uintmax_t n;
 
-    if (argc < 2 || strcmp(argv[1], "") == 0) {
-        fprintf(stderr, "Usage: please input the count of fibonacci numbers to output\n");
+    if (argc < 2 || strcmp(argv[1], "") == 0)
+    {
+        fprintf(
+            stderr,
+            "Usage: please input the count of fibonacci numbers to output\n");
         return 1;
     }
 
     errno = 0;
     n = strtoumax(argv[1], NULL, 10);
-    if (n == 0 && strcmp(argv[1], "0") != 0 || (n == UINTMAX_MAX && errno == ERANGE)) {
-        fprintf(stderr, "Usage: please input the count of fibonacci numbers to output\n");
+    if (n == 0 && strcmp(argv[1], "0") != 0
+        || (n == UINTMAX_MAX && errno == ERANGE))
+    {
+        fprintf(
+            stderr,
+            "Usage: please input the count of fibonacci numbers to output\n");
         return 1;
     }
 
-    if (n > LIMIT) {
+    if (n > LIMIT)
+    {
         fprintf(stderr, "n cannot be larger than %d\n", LIMIT);
         return 1;
     }

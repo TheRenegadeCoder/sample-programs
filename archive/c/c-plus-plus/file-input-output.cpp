@@ -1,5 +1,5 @@
-#include <iostream>
 #include <fstream>
+#include <iostream>
 #include <string>
 
 void write_file()
@@ -34,9 +34,7 @@ void read_file()
 
     std::string line;
     while (std::getline(in, line))
-    {
         std::cout << line << "\n";
-    }
 
     in.close();
 }

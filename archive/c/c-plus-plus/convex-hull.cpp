@@ -17,9 +17,7 @@ struct Point
     bool operator<(const Point &other) const
     {
         if (x != other.x)
-        {
             return x < other.x;
-        }
         return y < other.y;
     }
 };
@@ -41,9 +39,7 @@ std::vector<int> parseList(const std::string &input)
     {
         auto start = token.find_first_not_of(" \t");
         if (start == std::string::npos)
-        {
             usage();
-        }
 
         const auto end = token.find_last_not_of(" \t");
         token = token.substr(start, end - start + 1);
@@ -57,9 +53,7 @@ std::vector<int> parseList(const std::string &input)
             const int value = std::stoi(token, &pos);
 
             if (pos != token.size())
-            {
                 usage();
-            }
 
             out.push_back(value);
         }
@@ -79,9 +73,7 @@ std::vector<Point> parseCoordinates(const std::string &xs,
     auto y = parseList(ys);
 
     if (x.size() != y.size() || x.size() < 3)
-    {
         usage();
-    }
 
     std::vector<Point> pts;
     pts.reserve(x.size());
@@ -100,9 +92,7 @@ long long cross(const Point &a, const Point &b, const Point &c)
 std::vector<Point> convexHull(std::vector<Point> pts)
 {
     if (pts.size() < 3)
-    {
         usage();
-    }
 
     std::sort(pts.begin(), pts.end());
 
@@ -115,8 +105,8 @@ std::vector<Point> convexHull(std::vector<Point> pts)
         {
             const auto &p = *it;
 
-            while (hull.size() >= 2 &&
-                   cross(hull[hull.size() - 2], hull.back(), p) <= 0)
+            while (hull.size() >= 2
+                   && cross(hull[hull.size() - 2], hull.back(), p) <= 0)
             {
                 hull.pop_back();
             }
@@ -140,14 +130,10 @@ std::vector<Point> convexHull(std::vector<Point> pts)
 int main(int argc, char *argv[])
 {
     if (argc != 3)
-    {
         usage();
-    }
 
     const auto hull = convexHull(parseCoordinates(argv[1], argv[2]));
 
     for (const auto &[x, y] : hull)
-    {
         std::cout << '(' << x << ", " << y << ")\n";
-    }
 }

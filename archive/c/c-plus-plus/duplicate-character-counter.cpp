@@ -12,29 +12,19 @@ int main(int argc, char *argv[])
 {
 
     if (argc != 2)
-    {
         handle_error();
-    }
     string inputStr(argv[1]);
 
     if (inputStr.size() == 0)
-    {
         handle_error();
-    }
 
     unordered_map<char, int> m1;
 
     for (auto x : inputStr)
-    {
         if (m1.find(x) == m1.end())
-        {
             m1.insert({x, 1});
-        }
         else
-        {
             m1[x]++;
-        }
-    }
     int flag = 1;
     for (int i = 0; i < inputStr.length(); i++)
     {

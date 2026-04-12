@@ -1,5 +1,5 @@
-#include <iostream>
 #include <cstdlib>
+#include <iostream>
 using namespace std;
 
 int main(int argc, char *argv[])
@@ -23,9 +23,7 @@ int main(int argc, char *argv[])
     }
     int i, fact = 1;
     for (i = 1; i <= n; i++)
-    {
         fact = fact * i;
-    }
     cout << fact << endl;
     return 0;
 }
