@@ -1,4 +1,5 @@
 #include <errno.h>
+#include <inttypes.h>
 #include <limits.h>
 #include <stdint.h>
 #include <stdio.h>
@@ -52,7 +53,7 @@ int main(int argc, char *argv[])
     }
 
     /* Print result */
-    printf("%llu\n", result);
+    printf("%" PRIu64 "\n", result);
 
     return 0;
 }
