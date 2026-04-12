@@ -7,18 +7,18 @@ void insertSort(std::vector<int> &v)
 {
     int n = v.size();
     int i = 0, j = 0, temp = 0;
-    for (i = 1; i < n; i++)
+    for (int i = 1; i < n; i++)
     {
         int store = v[i];
-        j = i - 1;
-        while (store < v[j] && j >= 0)
+        int j = i - 1;
+        
+        while (j >= 0 && v[j] > store)
         {
             v[j + 1] = v[j];
             j--;
         }
         v[j + 1] = store;
     }
-    return;
 }
 
 int main(int argc, char *argv[])
