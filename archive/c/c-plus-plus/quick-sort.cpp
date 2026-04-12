@@ -65,28 +65,30 @@ vector<int> convert(string s)
 
 int partition1(vector<int> &a, int l, int u)
 {
-    int v, i, j, temp;
-    v = a[l];
-    i = l;
-    j = u + 1;
-    do
+    int pivot = a[l];
+    int i = l;
+    int j = u + 1;
+
+    while (true)
     {
         do
-            i++;
-        while (a[i] < v && i <= u);
-        do
-            j--;
-        while (v < a[j]);
-        if (i < j)
         {
-            temp = a[i];
-            a[i] = a[j];
-            a[j] = temp;
-        }
-    } while (i < j);
-    a[l] = a[j];
-    a[j] = v;
-    return (j);
+            ++i;
+        } while (i <= u && a[i] < pivot);
+
+        do
+        {
+            --j;
+        } while (a[j] > pivot);
+
+        if (i >= j)
+            break;
+
+        swap(a[i], a[j]);
+    }
+
+    swap(a[l], a[j]);
+    return j;
 }
 
 void quick_sort(vector<int> &a, int l, int u)
