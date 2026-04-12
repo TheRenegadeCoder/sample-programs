@@ -1,11 +1,14 @@
-#include <iostream>
 #include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 
-void handle_error()
+void usage()
 {
-    cout << "Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"" << endl;
+    cout
+        << "Usage: please provide a list of at least two integers to sort in "
+           "the format \"1, 2, 3, 4, 5\""
+        << endl;
     exit(0);
 }
 
@@ -32,12 +35,8 @@ int check(string s)
     }
 
     for (int i = x1; i <= x2; i++)
-    {
         if (s[i] == ' ')
-        {
-            handle_error();
-        }
-    }
+            usage();
 
     return stoi(s);
 }
@@ -60,14 +59,12 @@ vector<int> convert(string s)
         }
         else
         {
-            handle_error();
+            usage();
         }
     }
 
     if (num.size() > 0)
-    {
         v.push_back(check(num));
-    }
 
     return v;
 }
@@ -80,14 +77,10 @@ void merge(int low, int mid, int high, vector<int> &v)
     vector<int> v1(n1), v2(n2);
 
     for (int i = 0; i < n1; i++)
-    {
         v1[i] = v[i + low];
-    }
 
     for (int i = 0; i < n2; i++)
-    {
         v2[i] = v[i + mid + 1];
-    }
 
     int j = 0, k = 0;
     int l = low;
@@ -138,15 +131,16 @@ int main(int argc, char *argv[])
 {
 
     if (argc < 2)
-    {
-        handle_error();
-    }
+        usage();
 
     vector<int> v = convert(argv[1]);
 
     if (v.size() < 2)
     {
-        cout << "Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"" << endl;
+        cout
+            << "Usage: please provide a list of at least two integers to sort "
+               "in the format \"1, 2, 3, 4, 5\""
+            << endl;
         exit(0);
     }
 
@@ -156,8 +150,6 @@ int main(int argc, char *argv[])
     mergesort(0, n - 1, v);
 
     for (int i = 0; i < n - 1; i++)
-    {
         cout << v[i] << ", ";
-    }
     cout << v[n - 1];
 }

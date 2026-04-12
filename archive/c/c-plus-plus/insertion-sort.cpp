@@ -1,7 +1,7 @@
 #include <iostream>
-#include <vector>
-#include <string>
 #include <sstream>
+#include <string>
+#include <vector>
 
 void insertSort(std::vector<int> &v)
 {
@@ -27,9 +27,10 @@ int main(int argc, char *argv[])
 
     if (argc != 2)
     {
-        std::cout << "Usage: please provide a list of at least two "
-                     "integers to sort in the format \"1, 2, 3, 4, 5\""
-                  << std::endl;
+        std::cout
+            << "Usage: please provide a list of at least two "
+               "integers to sort in the format \"1, 2, 3, 4, 5\""
+            << std::endl;
         return 1;
     }
 
@@ -37,9 +38,10 @@ int main(int argc, char *argv[])
     int i = 0, num = 0;
     if (str.size() < 2)
     {
-        std::cout << "Usage: please provide a list of at least two "
-                     "integers to sort in the format \"1, 2, 3, 4, 5\""
-                  << std::endl;
+        std::cout
+            << "Usage: please provide a list of at least two "
+               "integers to sort in the format \"1, 2, 3, 4, 5\""
+            << std::endl;
         return 1;
     }
 
@@ -56,9 +58,10 @@ int main(int argc, char *argv[])
 
         else if (ss.tellg() != -1)
         {
-            std::cout << "Usage: please provide a list of at least two "
-                         "integers to sort in the format \"1, 2, 3, 4, 5\""
-                      << std::endl;
+            std::cout
+                << "Usage: please provide a list of at least two "
+                   "integers to sort in the format \"1, 2, 3, 4, 5\""
+                << std::endl;
             return 1;
         }
     }
@@ -66,9 +69,7 @@ int main(int argc, char *argv[])
     insertSort(numbers);
 
     for (i = 0; i < numbers.size() - 1; i++)
-    {
         std::cout << numbers[i] << ", ";
-    }
     std::cout << numbers[i] << std::endl;
     return 0;
 }

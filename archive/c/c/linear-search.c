@@ -1,49 +1,42 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include <stdbool.h>
 
-bool linear_search(int* arr, int size, int target) {
-    for (int i = 0; i < size; i++) {
-        if (arr[i] == target) {
-            return true;
-        }
-    }
-    return false;
+int josephus(int n, int k)
+{
+    if (n == 1)
+        return 1;
+    else
+        return (josephus(n - 1, k) + k - 1) % n + 1;
 }
 
-int* parse_array(char* input, int* size) {
-    int* arr = NULL;
-    *size = 0;
-    char* token = strtok(input, ", ");
-    while (token != NULL) {
-        arr = realloc(arr, (*size + 1) * sizeof(int));
-        arr[*size] = atoi(token);
-        (*size)++;
-        token = strtok(NULL, ", ");
-    }
-    return arr;
-}
-
-int main(int argc, char* argv[]) {
-    if (argc != 3) {
-        printf("Usage: please provide a list of integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")\n");
+int main(int argc, char *argv[])
+{
+    if (argc != 3)
+    {
+        printf("Usage: please input the total number of people and number of "
+               "people to skip.\n");
         return 1;
     }
 
-    int size;
-    int* arr = parse_array(argv[1], &size);
-    int target = atoi(argv[2]);
-
-    if (size == 0) {
-        printf("Usage: please provide a list of integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")\n");
-        free(arr);
+    char *endptr;
+    int n = strtol(argv[1], &endptr, 10);
+    if (*endptr != '\0' || n <= 0)
+    {
+        printf("Usage: please input the total number of people and number of "
+               "people to skip.\n");
         return 1;
     }
 
-    bool result = linear_search(arr, size, target);
-    printf("%s\n", result ? "true" : "false");
+    int k = strtol(argv[2], &endptr, 10);
+    if (*endptr != '\0' || k <= 0)
+    {
+        printf("Usage: please input the total number of people and number of "
+               "people to skip.\n");
+        return 1;
+    }
 
-    free(arr);
+    int result = josephus(n, k);
+    printf("%d\n", result);
+
     return 0;
 }

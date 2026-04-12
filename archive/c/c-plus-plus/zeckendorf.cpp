@@ -14,9 +14,7 @@ constexpr auto generate_fibs() noexcept
     arr[0] = 1;
     arr[1] = 2;
     for (size_t i = 2; i < arr.size(); ++i)
-    {
         arr[i] = arr[i - 1] + arr[i - 2];
-    }
     return arr;
 }
 
@@ -51,18 +49,14 @@ void print_representation(uint64_t n)
 [[nodiscard]] std::optional<uint64_t> try_parse_arg(std::string_view s) noexcept
 {
     if (s.empty() || s.front() == '-' || s.front() == '+')
-    {
         return std::nullopt;
-    }
 
     uint64_t value{};
     const auto [ptr, ec] =
         std::from_chars(s.data(), s.data() + s.size(), value);
 
     if (ec != std::errc{} || ptr != s.data() + s.size())
-    {
         return std::nullopt;
-    }
 
     return value;
 }

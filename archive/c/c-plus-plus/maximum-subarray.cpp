@@ -1,12 +1,13 @@
 #include <iostream>
-#include <sstream>
-#include <vector>
 #include <limits>
+#include <sstream>
 #include <string>
+#include <vector>
 
 void print_usage()
 {
-    std::cout << "Usage: Please provide a list of integers in the format: \"1, 2, 3, 4, 5\"\n";
+    std::cout << "Usage: Please provide a list of integers in the format: \"1, "
+                 "2, 3, 4, 5\"\n";
 }
 
 int max_subarray_sum(const std::vector<int> &arr)
@@ -19,14 +20,10 @@ int max_subarray_sum(const std::vector<int> &arr)
         max_ending_here += num;
 
         if (max_so_far < max_ending_here)
-        {
             max_so_far = max_ending_here;
-        }
 
         if (max_ending_here < 0)
-        {
             max_ending_here = 0;
-        }
     }
 
     return max_so_far;
@@ -47,9 +44,7 @@ int main(int argc, char *argv[])
     std::string token;
 
     while (std::getline(ss, token, ','))
-    {
         arr.push_back(std::stoi(token));
-    }
 
     // If less than two integers were provided
     if (arr.size() == 1)

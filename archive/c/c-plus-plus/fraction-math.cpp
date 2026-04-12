@@ -5,9 +5,7 @@ using namespace std;
 int gcd(int a, int b)
 {
     if (a < 0)
-    {
         a = -a;
-    }
     while (a % b != 0)
     {
         int i = a;
@@ -20,21 +18,17 @@ int gcd(int a, int b)
 
 class Fraction
 {
-private:
+  private:
     int numerator;
     int denomenator;
 
-public:
+  public:
     Fraction(int top = 0, int bottom = 1)
     {
         if (bottom < 0)
-        {
             top = -top;
-        }
         else if (bottom == 0)
-        {
             throw "Error: Denomenator can't be zero.";
-        }
         int hcf = gcd(top, bottom);
         numerator = top / hcf;
         denomenator = bottom / hcf;
@@ -196,39 +190,27 @@ bool operator==(const Fraction f1, const Fraction f2)
 {
     int result = f1.numerator * f2.denomenator - f2.numerator * f1.denomenator;
     if (result == 0)
-    {
         return true;
-    }
     else
-    {
         return false;
-    }
 }
 
 bool operator>(const Fraction f1, const Fraction f2)
 {
     int result = f1.numerator * f2.denomenator - f2.numerator * f1.denomenator;
     if (result > 0)
-    {
         return true;
-    }
     else
-    {
         return false;
-    }
 }
 
 bool operator<(const Fraction f1, const Fraction f2)
 {
     int result = f1.numerator * f2.denomenator - f2.numerator * f1.denomenator;
     if (result < 0)
-    {
         return true;
-    }
     else
-    {
         return false;
-    }
 }
 
 bool operator>=(const Fraction f1, const Fraction f2)

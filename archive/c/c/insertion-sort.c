@@ -1,11 +1,12 @@
-#include <stdio.h>
 #include <errno.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
 void insertion_sort(long *, int); // insertion sort function
 
-size_t parse_list(const char *orig_list, long **arr)          // used for parsing the input in array arr
+size_t parse_list(const char *orig_list,
+                  long **arr) // used for parsing the input in array arr
 {
     char *list;
     char *token;
@@ -15,14 +16,13 @@ size_t parse_list(const char *orig_list, long **arr)          // used for parsin
     long temp_num;
 
     /* find the length of the array */
-    for (i = 0; orig_list[i]; i++) {
-        if (orig_list[i] == ',') {
+    for (i = 0; orig_list[i]; i++)
+        if (orig_list[i] == ',')
             num_elements++;
-        }
-    }
 
     /* if there are no commas, invalid input */
-    if (num_elements == 0) {
+    if (num_elements == 0)
+    {
         *arr = NULL;
         return 0;
     }
@@ -36,10 +36,12 @@ size_t parse_list(const char *orig_list, long **arr)          // used for parsin
     /* store numbers in the array */
     list = strdup(orig_list);
     token = strtok(list, ",");
-    while (token != NULL) {
+    while (token != NULL)
+    {
         errno = 0;
         temp_num = strtol(token, NULL, 10);
-        if (errno != 0) {
+        if (errno != 0)
+        {
             *arr = NULL;
             return 0;
         }
@@ -55,13 +57,12 @@ size_t parse_list(const char *orig_list, long **arr)          // used for parsin
 }
 
 /* print the elements of array */
-void print_array(long *arr, size_t num_elems)               
+void print_array(long *arr, size_t num_elems)
 {
     int i;
 
-    for (i = 0; i < num_elems - 1; i++) {
+    for (i = 0; i < num_elems - 1; i++)
         printf("%ld, ", arr[i]);
-    }
 
     printf("%ld\n", arr[num_elems - 1]);
 }
@@ -69,7 +70,9 @@ void print_array(long *arr, size_t num_elems)
 /* error message if input is not in desired format */
 void error_message()
 {
-    fputs("Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"\n", stderr);
+    fputs("Usage: please provide a list of at least two integers to sort in "
+          "the format \"1, 2, 3, 4, 5\"\n",
+          stderr);
 }
 
 int main(int argc, char **argv)
@@ -77,13 +80,15 @@ int main(int argc, char **argv)
     long *arr;
     long num_elements;
 
-    if (argc < 2) {
+    if (argc < 2)
+    {
         error_message();
         return 1;
     }
 
     num_elements = parse_list(argv[1], &arr);
-    if (num_elements == 0) {
+    if (num_elements == 0)
+    {
         error_message();
         return 1;
     }
@@ -94,17 +99,17 @@ int main(int argc, char **argv)
     free(arr);
 }
 
-void insertion_sort(long * arr_sort, int n)
+void insertion_sort(long *arr_sort, int n)
 {
     int i, j;
     int tmp;
 
     /* insertion sort logic */
-    for(i = 1; i < n; i++)
+    for (i = 1; i < n; i++)
     {
         tmp = arr_sort[i];
-        for(j = i; j > 0 && arr_sort[j-1] > tmp; j--)
-            arr_sort[j] = arr_sort[j-1];
+        for (j = i; j > 0 && arr_sort[j - 1] > tmp; j--)
+            arr_sort[j] = arr_sort[j - 1];
         arr_sort[j] = tmp;
     }
 }

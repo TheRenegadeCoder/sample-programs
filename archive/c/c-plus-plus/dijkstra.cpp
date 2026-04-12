@@ -9,7 +9,8 @@ vector<int> dis(N, INT_MAX);
 
 void handle_error()
 {
-    cout << "Usage: please provide three inputs: a serialized matrix, a source node and a destination node";
+    cout << "Usage: please provide three inputs: a serialized matrix, a source "
+            "node and a destination node";
     exit(0);
 }
 
@@ -36,12 +37,8 @@ int check(string s)
     }
 
     for (int i = x1; i <= x2; i++)
-    {
         if (s[i] == ' ')
-        {
             handle_error();
-        }
-    }
 
     return stoi(s);
 }
@@ -50,9 +47,7 @@ vector<int> convert(string s)
 {
 
     if (s.size() == 0)
-    {
         handle_error();
-    }
     vector<int> v;
     string num = "";
     for (int i = 0; i < s.size(); i++)
@@ -113,7 +108,8 @@ int main(int argc, char *argv[])
 
     if (argc <= 1)
         handle_error();
-    vector<int> bin = convert(argv[1]), nodes = convert(argv[2]), t = convert(argv[3]);
+    vector<int> bin = convert(argv[1]), nodes = convert(argv[2]),
+                t = convert(argv[3]);
     if (bin.size() == 0 || nodes.size() == 0 || t.size() == 0)
         handle_error();
     int des = t[0];

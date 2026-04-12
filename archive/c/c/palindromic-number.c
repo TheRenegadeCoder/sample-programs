@@ -1,7 +1,7 @@
+#include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <ctype.h>
 
 void palindromic_number(int number)
 {
@@ -21,13 +21,9 @@ void palindromic_number(int number)
     else
     {
         if (reversed_number == number)
-        {
             printf("true");
-        }
         else
-        {
             printf("false");
-        }
     }
 }
 
@@ -38,13 +34,9 @@ int is_int(char **argv)
         ++j;
 
     if (strlen(argv[1]) != j || j == 0)
-    {
         return 1;
-    }
     else
-    {
         return 0;
-    }
 }
 
 int main(int argc, char **argv)

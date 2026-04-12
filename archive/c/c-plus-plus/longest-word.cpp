@@ -1,7 +1,7 @@
-#include <iostream>
-#include <string>
 #include <cstring>
+#include <iostream>
 #include <sstream>
+#include <string>
 
 using namespace std;
 
@@ -14,15 +14,11 @@ int handle_error()
 int main(int argc, char *argv[])
 {
     if (argc < 2)
-    {
         handle_error();
-    }
     string inputStr(argv[1]);
 
     if (inputStr.size() == 0)
-    {
         handle_error();
-    }
     int max = -1;
 
     stringstream ss(inputStr);
@@ -32,9 +28,7 @@ int main(int argc, char *argv[])
 
         int size = word.size();
         if (size > max)
-        {
             max = size;
-        }
     }
     cout << max;
 

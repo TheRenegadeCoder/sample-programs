@@ -1,11 +1,17 @@
-#include <iostream>
 #include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 
 bool is_roman(char x)
 {
-    return !(x == 'I' || x == 'V' || x == 'X' || x == 'L' || x == 'C' || x == 'D' || x == 'M');
+    return !(x == 'I'
+             || x == 'V'
+             || x == 'X'
+             || x == 'L'
+             || x == 'C'
+             || x == 'D'
+             || x == 'M');
 }
 
 int main(int argc, char *argv[])
