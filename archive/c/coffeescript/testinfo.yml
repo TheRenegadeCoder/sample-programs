@@ -5,6 +5,6 @@ folder:
   naming: "hyphen"
 
 container:
-  image: "codesignal/coffeescript"
-  tag: "v7.1"
+  image: "cyberdojofoundation/coffeescript"
+  tag: "595c28c"
   cmd: "coffee {{ source.name }}{{ source.extension }}"
