@@ -8,7 +8,7 @@ license = "MIT"
 
 dependencies = [
     "ronbun (>=0.11.0,<0.12.0)",
-    "glotter2 (>=0.15.0,<0.16.0)",
+    "glotter2 (>=0.16.0,<0.17.0)",
     "pyyaml (>=6.0.3,<7.0.0)",
 ]
 
