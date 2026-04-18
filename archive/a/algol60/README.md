@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in ALGOL 60! To find documentation related to the ALGOL 60 code in this repo, look [here](https://sampleprograms.io/languages/algol60).
 
-## Sample Programs List - 32/39 :smile:
+## Sample Programs List - 33/39 :smile:
 
 In this section, we feature a list of completed and missing programs in ALGOL 60. See above for the current amount of completed programs in ALGOL 60. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -44,6 +44,7 @@ Below, you'll find a list of completed code snippets in ALGOL 60. Code snippets 
 - :warning: [Roman Numeral in ALGOL 60](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+algol+60) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :warning: [Rot13 in ALGOL 60](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+algol+60) [[Requirements](https://sampleprograms.io/projects/rot13)]
 - :warning: [Selection Sort in ALGOL 60](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+algol+60) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
+- :warning: [Transpose Matrix in ALGOL 60](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+algol+60) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 - :warning: [Zeckendorf in ALGOL 60](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+zeckendorf+algol+60) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 
 ### Missing Programs
@@ -56,7 +57,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Longest Common Subsequence](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+common+subsequence&template=code-snippet-request.md&title=Add+Longest+Common+Subsequence+in+ALGOL%2060) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+ALGOL%2060) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
 - :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+ALGOL%2060) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
-- :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,transpose+matrix&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+ALGOL%2060) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
 ## Testing
 
