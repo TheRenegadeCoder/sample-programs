@@ -211,7 +211,7 @@ begin
     comment Dijkstra's algorithm
         Source: https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm#Pseudocode.
 
-        Returns distances from source node to this node;
+        Returns distances from source node to each node;
     procedure dijkstra(graph, numVertices, dists);
     value numVertices;
     integer array graph, dists;
