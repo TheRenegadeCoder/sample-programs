@@ -251,8 +251,8 @@ begin
             mstSet[i] := false
         end;
 
-        comment Include first vertex in MST and root has no parent;
-        keys[1] := 1;
+        comment Include first vertex in MST, and root has no parent;
+        keys[1] := 0;
         parents[1] := 0;
 
         for i := 1 step 1 until numVertices - 1 do
