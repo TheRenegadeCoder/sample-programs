@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in Ruby! To find documentation related to the Ruby code in this repo, look [here](https://sampleprograms.io/languages/ruby).
 
-## Sample Programs List - 22/39 :relaxed:
+## Sample Programs List - 23/39 :relaxed:
 
 In this section, we feature a list of completed and missing programs in Ruby. See above for the current amount of completed programs in Ruby. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -27,6 +27,7 @@ Below, you'll find a list of completed code snippets in Ruby. Code snippets prec
 - :warning: [Hello World in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+ruby) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :warning: [Josephus Problem in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+josephus+problem+ruby) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :warning: [Linear Search in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+linear+search+ruby) [[Requirements](https://sampleprograms.io/projects/linear-search)]
+- :warning: [Longest Palindromic Substring in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+palindromic+substring+ruby) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
 - :warning: [Longest Word in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+ruby) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :warning: [Palindromic Number in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+ruby) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :warning: [Prime Number in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+ruby) [[Requirements](https://sampleprograms.io/projects/prime-number)]
@@ -47,7 +48,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Insertion Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,insertion+sort&template=code-snippet-request.md&title=Add+Insertion+Sort+in+Ruby) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,job+sequencing&template=code-snippet-request.md&title=Add+Job+Sequencing+in+Ruby) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :x: [Longest Common Subsequence](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+common+subsequence&template=code-snippet-request.md&title=Add+Longest+Common+Subsequence+in+Ruby) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
-- :x: [Longest Palindromic Substring](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+palindromic+substring&template=code-snippet-request.md&title=Add+Longest+Palindromic+Substring+in+Ruby) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
 - :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+array+rotation&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+Ruby) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+subarray&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+Ruby) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :x: [Merge Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,merge+sort&template=code-snippet-request.md&title=Add+Merge+Sort+in+Ruby) [[Requirements](https://sampleprograms.io/projects/merge-sort)]

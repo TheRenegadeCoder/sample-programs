@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in TypeScript! To find documentation related to the TypeScript code in this repo, look [here](https://sampleprograms.io/languages/typescript).
 
-## Sample Programs List - 26/39 :relaxed:
+## Sample Programs List - 27/39 :relaxed:
 
 In this section, we feature a list of completed and missing programs in TypeScript. See above for the current amount of completed programs in TypeScript. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -33,6 +33,7 @@ Below, you'll find a list of completed code snippets in TypeScript. Code snippet
 - :warning: [Palindromic Number in TypeScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+typescript) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :warning: [Prime Number in TypeScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+typescript) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :warning: [Quick Sort in TypeScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+typescript) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
+- :warning: [Quine in TypeScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+typescript) [[Requirements](https://sampleprograms.io/projects/quine)]
 - :warning: [Reverse String in TypeScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+typescript) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :warning: [Roman Numeral in TypeScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+typescript) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :warning: [Rot13 in TypeScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+typescript) [[Requirements](https://sampleprograms.io/projects/rot13)]
@@ -54,7 +55,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Longest Palindromic Substring](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+palindromic+substring&template=code-snippet-request.md&title=Add+Longest+Palindromic+Substring+in+TypeScript) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
 - :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+array+rotation&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+TypeScript) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+TypeScript) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
-- :x: [Quine](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,quine&template=code-snippet-request.md&title=Add+Quine+in+TypeScript) [[Requirements](https://sampleprograms.io/projects/quine)]
 - :x: [Remove All Whitespace](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,remove+all+whitespace&template=code-snippet-request.md&title=Add+Remove+All+Whitespace+in+TypeScript) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+TypeScript) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 
