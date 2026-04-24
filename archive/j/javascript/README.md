@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in JavaScript! To find documentation related to the JavaScript code in this repo, look [here](https://sampleprograms.io/languages/javascript).
 
-## Sample Programs List - 33/39 :smile:
+## Sample Programs List - 34/39 :smile:
 
 In this section, we feature a list of completed and missing programs in JavaScript. See above for the current amount of completed programs in JavaScript. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -46,6 +46,7 @@ Below, you'll find a list of completed code snippets in JavaScript. Code snippet
 - :warning: [Selection Sort in JavaScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+javascript) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 - :warning: [Sleep Sort in JavaScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sleep+sort+javascript) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :warning: [Transpose Matrix in JavaScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+javascript) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
+- :warning: [Zeckendorf in JavaScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+zeckendorf+javascript) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 
 ### Missing Programs
 
@@ -56,7 +57,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fraction+math&template=code-snippet-request.md&title=Add+Fraction+Math+in+JavaScript) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+array+rotation&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+JavaScript) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+JavaScript) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
-- :x: [Zeckendorf](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,zeckendorf&template=code-snippet-request.md&title=Add+Zeckendorf+in+JavaScript) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 
 ## Testing
 

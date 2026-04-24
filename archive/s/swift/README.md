@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in Swift! To find documentation related to the Swift code in this repo, look [here](https://sampleprograms.io/languages/swift).
 
-## Sample Programs List - 11/39 :thinking:
+## Sample Programs List - 12/39 :thinking:
 
 In this section, we feature a list of completed and missing programs in Swift. See above for the current amount of completed programs in Swift. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -24,6 +24,7 @@ Below, you'll find a list of completed code snippets in Swift. Code snippets pre
 - :warning: [Palindromic Number in Swift](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+swift) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :warning: [Prime Number in Swift](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+swift) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :white_check_mark: [Reverse String in Swift](https://sampleprograms.io/projects/reverse-string/swift) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
+- :warning: [Zeckendorf in Swift](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+zeckendorf+swift) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 
 ### Missing Programs
 
@@ -56,7 +57,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Selection Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,selection+sort&template=code-snippet-request.md&title=Add+Selection+Sort+in+Swift) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 - :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+Swift) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,transpose+matrix&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+Swift) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
-- :x: [Zeckendorf](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,zeckendorf&template=code-snippet-request.md&title=Add+Zeckendorf+in+Swift) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 
 ## Testing
 

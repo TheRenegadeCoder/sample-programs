@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in COBOL! To find documentation related to the COBOL code in this repo, look [here](https://sampleprograms.io/languages/cobol).
 
-## Sample Programs List - 14/39 :thinking:
+## Sample Programs List - 23/39 :relaxed:
 
 In this section, we feature a list of completed and missing programs in COBOL. See above for the current amount of completed programs in COBOL. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -23,10 +23,19 @@ Below, you'll find a list of completed code snippets in COBOL. Code snippets pre
 - :warning: [Insertion Sort in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+cobol) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :warning: [Linear Search in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+linear+search+cobol) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :warning: [Merge Sort in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+cobol) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
+- :warning: [Minimum Spanning Tree in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+minimum+spanning+tree+cobol) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
+- :warning: [Palindromic Number in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+cobol) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :warning: [Prime Number in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+cobol) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :warning: [Quick Sort in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+cobol) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
+- :warning: [Quine in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+cobol) [[Requirements](https://sampleprograms.io/projects/quine)]
+- :warning: [Remove All Whitespace in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+remove+all+whitespace+cobol) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
+- :warning: [Reverse String in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+cobol) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
+- :warning: [Roman Numeral in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+cobol) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
+- :warning: [Rot13 in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+cobol) [[Requirements](https://sampleprograms.io/projects/rot13)]
 - :warning: [Selection Sort in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+cobol) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 - :warning: [Sleep Sort in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sleep+sort+cobol) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
+- :warning: [Transpose Matrix in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+cobol) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
+- :warning: [Zeckendorf in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+zeckendorf+cobol) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 
 ### Missing Programs
 
@@ -48,15 +57,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Longest Word](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+word&template=code-snippet-request.md&title=Add+Longest+Word+in+COBOL) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+array+rotation&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+COBOL) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+subarray&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+COBOL) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
-- :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+COBOL) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
-- :x: [Palindromic Number](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,palindromic+number&template=code-snippet-request.md&title=Add+Palindromic+Number+in+COBOL) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
-- :x: [Quine](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,quine&template=code-snippet-request.md&title=Add+Quine+in+COBOL) [[Requirements](https://sampleprograms.io/projects/quine)]
-- :x: [Remove All Whitespace](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,remove+all+whitespace&template=code-snippet-request.md&title=Add+Remove+All+Whitespace+in+COBOL) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
-- :x: [Reverse String](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,reverse+string&template=code-snippet-request.md&title=Add+Reverse+String+in+COBOL) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
-- :x: [Roman Numeral](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,roman+numeral&template=code-snippet-request.md&title=Add+Roman+Numeral+in+COBOL) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
-- :x: [Rot13](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,rot13&template=code-snippet-request.md&title=Add+Rot13+in+COBOL) [[Requirements](https://sampleprograms.io/projects/rot13)]
-- :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,transpose+matrix&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+COBOL) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
-- :x: [Zeckendorf](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,zeckendorf&template=code-snippet-request.md&title=Add+Zeckendorf+in+COBOL) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 
 ## Testing
 
