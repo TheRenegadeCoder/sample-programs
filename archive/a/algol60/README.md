@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in ALGOL 60! To find documentation related to the ALGOL 60 code in this repo, look [here](https://sampleprograms.io/languages/algol60).
 
-## Sample Programs List - 36/39 :smile:
+## Sample Programs List - 37/39 :smile:
 
 In this section, we feature a list of completed and missing programs in ALGOL 60. See above for the current amount of completed programs in ALGOL 60. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -18,6 +18,7 @@ Below, you'll find a list of completed code snippets in ALGOL 60. Code snippets 
 - :warning: [Binary Search in ALGOL 60](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+binary+search+algol+60) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :warning: [Bubble Sort in ALGOL 60](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+algol+60) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :warning: [Capitalize in ALGOL 60](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+algol+60) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :warning: [Convex Hull in ALGOL 60](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+convex+hull+algol+60) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :warning: [Depth First Search in ALGOL 60](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+depth+first+search+algol+60) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :warning: [Dijkstra in ALGOL 60](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+dijkstra+algol+60) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :warning: [Duplicate Character Counter in ALGOL 60](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+algol+60) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
@@ -54,7 +55,6 @@ Below, you'll find a list of completed code snippets in ALGOL 60. Code snippets 
 
 The following list contains all of the approved programs that are not currently implemented in ALGOL 60. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
-- :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,convex+hull&template=code-snippet-request.md&title=Add+Convex+Hull+in+ALGOL%2060) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :x: [File Input Output](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,file+input+output&template=code-snippet-request.md&title=Add+File+Input+Output+in+ALGOL%2060) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+ALGOL%2060) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 
