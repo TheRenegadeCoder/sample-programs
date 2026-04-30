@@ -5,7 +5,7 @@ folder:
   naming: "hyphen"
 
 container:
-  image: "rzuckerm/objective-c"
-  tag: "11.4.0-2"
-  build: "gcc -o {{ source.name }} {{ source.name }}{{ source.extension }} -I /usr/include/GNUstep -lgnustep-base -lobjc -fconstant-string-class=NSConstantString -fobjc-exceptions"
+  image: "pascalecu/clang-objc2-gnustep"
+  tag: "clang22-ubuntu26.04"
+  build: "objc -o {{ source.name }} {{ source.name }}{{ source.extension }}"
   cmd: "./{{ source.name }}"
