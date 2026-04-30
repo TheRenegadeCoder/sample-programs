@@ -71,8 +71,8 @@ For example, the "Hello World" sample would be named this:
 
 The following list shares details about what we're using to test all Sample Programs in Objective-C:
 
-- Docker Image: rzuckerm/objective-c
-- Docker Tag: 11.4.0-2
+- Docker Image: pascalecu/clang-objc2-gnustep
+- Docker Tag: clang22-ubuntu26.04
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 
