@@ -1,112 +1,127 @@
 #import <Foundation/Foundation.h>
 
-// Function to convert and validate the input string
-// Source: ChatGPT
-NSInteger convertAndValidateInput(NSString *inputString) {
-    NSScanner *scanner = [NSScanner scannerWithString:inputString];
-    NSInteger integerValue = 0;
+@interface NSString (Parsing)
+- (nullable NSArray<NSNumber*>*)strictIntegerList;
+@end
 
-    // Check if the scanner successfully scanned an integer
-    if ([scanner scanInteger:&integerValue] && [scanner isAtEnd]) {
-        return integerValue;
-    } else {
-        // Raise an exception for invalid input
-        @throw [NSException exceptionWithName:@"InvalidInputException"
-            reason:@"Input is not a valid integer"
-            userInfo:nil];
+@implementation NSString (Parsing)
+
+- (NSArray<NSNumber*>*)strictIntegerList {
+    NSArray<NSString*>* parts = [self componentsSeparatedByString:@","];
+    NSMutableArray<NSNumber*>* results =
+        [NSMutableArray arrayWithCapacity:parts.count];
+    NSCharacterSet* invertedDigits =
+        NSCharacterSet.decimalDigitCharacterSet.invertedSet;
+
+    for (NSString* raw in parts) {
+        NSString* s = [raw stringByTrimmingCharactersInSet:
+                               NSCharacterSet.whitespaceAndNewlineCharacterSet];
+        if (s.length == 0) return nil;
+
+        NSString* core = ([s hasPrefix:@"-"] || [s hasPrefix:@"+"])
+                             ? [s substringFromIndex:1]
+                             : s;
+        if (core.length == 0 ||
+            [core rangeOfCharacterFromSet:invertedDigits].location !=
+                NSNotFound)
+            return nil;
+
+        [results addObject:@(s.longLongValue)];
     }
+    return (results.count >= 2) ? results : nil;
 }
 
-// Function to convert a comma-separated string to an array of integers
-// Source: ChatGPT
-NSArray *convertStringToListOfIntegers(NSString *inputString) {
-    NSMutableArray *resultArray = [NSMutableArray array];
+@end
 
-    // Separate the input string into components using the comma as a delimiter
-    NSArray *components = [inputString componentsSeparatedByString:@","];
+@interface NSArray (Sorting)
+- (NSArray<NSNumber*>*)sortedArrayUsingMergeSort;
+@end
 
-    // Convert each component to an integer using the previous function
-    for (NSString *component in components) {
-        NSNumber *numberValue = [NSNumber numberWithInteger:convertAndValidateInput(component)];
-        [resultArray addObject:numberValue];
-    }
+@interface NSArray (SortingInternal)
+- (NSArray<NSNumber*>*)recursivelySortedArray;
+- (NSArray<NSNumber*>*)mergedWithArray:(NSArray<NSNumber*>*)other;
+@end
 
-    return [resultArray copy];
+@implementation NSArray (Sorting)
+
+- (NSArray<NSNumber*>*)sortedArrayUsingMergeSort {
+    if (self.count < 2) return self;
+    return [self recursivelySortedArray];
 }
 
-// Display array of integers
-void displayListOfIntegers(NSArray *integerArray) {
-    NSString *displayString = [integerArray componentsJoinedByString:@", "];
-    printf("%s\n", [displayString UTF8String]);
+@end
+
+@implementation NSArray (SortingInternal)
+
+- (NSArray<NSNumber*>*)recursivelySortedArray {
+    if (self.count < 2) return self;
+
+    NSUInteger mid = self.count / 2;
+
+    NSArray* left =
+        [[self subarrayWithRange:NSMakeRange(0, mid)] recursivelySortedArray];
+
+    NSArray* right =
+        [[self subarrayWithRange:NSMakeRange(mid, self.count - mid)]
+            recursivelySortedArray];
+
+    return [left mergedWithArray:right];
 }
 
-////////////////MERGE-SORT////////////////
-NSArray* mergeArrays(NSArray* A, NSArray* B) 
-{
-    NSMutableArray *orderedArray = [NSMutableArray new];
-    long indexLeft = 0;
-    long indexRight = 0;
-    
-    while (indexLeft < [A count] && indexRight < [B count]) {
-        int leftValue = [[A objectAtIndex:indexLeft] intValue];
-        int rightValue = [[B objectAtIndex:indexRight] intValue];
-        if (leftValue < rightValue) {
-            [orderedArray addObject:[A objectAtIndex:indexLeft++]];
-        }else if (leftValue > rightValue){
-            [orderedArray addObject:[B objectAtIndex:indexRight++]];
-        }else { //equal values
-            [orderedArray addObject:[A objectAtIndex:indexLeft++]];
-            [orderedArray addObject:[B objectAtIndex:indexRight++]];
-        }
-    }
-    
-    //If one array has more positions than the other (odd lenght of the inital array)
-    NSRange rangeRestLeft = NSMakeRange(indexLeft, A.count - indexLeft);
-    NSRange rangeRestRight = NSMakeRange(indexRight, B.count - indexRight);
-    NSArray *arrayTotalRight = [B subarrayWithRange:rangeRestRight];
-    NSArray *arrayTotalLeft = [A subarrayWithRange:rangeRestLeft];
-    arrayTotalLeft = [orderedArray arrayByAddingObjectsFromArray:arrayTotalLeft];
-    NSArray *orderedArrayCompleted = [arrayTotalLeft arrayByAddingObjectsFromArray:arrayTotalRight];
-    return orderedArrayCompleted;
-}
+- (NSArray<NSNumber*>*)mergedWithArray:(NSArray<NSNumber*>*)other {
+    NSMutableArray* result =
+        [NSMutableArray arrayWithCapacity:self.count + other.count];
 
-NSArray* mergeSort(NSArray* randomArray){
-    
-    if ([randomArray count] < 2)
-    {
-        return randomArray;
-    }
-    int middlePivot = (int)[randomArray count]/2;
-    NSRange rangeLeft = NSMakeRange(0, middlePivot);
-    NSRange rangeRight = NSMakeRange(middlePivot, randomArray.count-middlePivot);
-    NSArray *leftArray = [randomArray subarrayWithRange:rangeLeft];
-    NSArray *rightArray = [randomArray subarrayWithRange:rangeRight];
-    return mergeArrays(mergeSort(leftArray),mergeSort(rightArray));
-}
+    NSUInteger i = 0, j = 0;
 
-int main(int argc, char *argv[]) {
-    NSAutoreleasePool *pool =[[NSAutoreleasePool alloc] init];
-    NSString *usage = @"Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"";
-    if (argc < 2) {
-        printf("%s\n", [usage UTF8String]);
-    }
-    else {
-        NSString* inputStr = [NSString stringWithUTF8String:argv[1]];
-        @try {
-            NSArray *inputArray = convertStringToListOfIntegers(inputStr);
-            if ([inputArray count] < 2) {
-                printf("%s\n", [usage UTF8String]);
-            }
-            else {
-                NSArray *sortedArray = mergeSort(inputArray);
-                displayListOfIntegers(sortedArray);
-            }
-        }
-        @catch (NSException *) {
-            printf("%s\n", [usage UTF8String]);
+    while (i < self.count && j < other.count) {
+        if ([self[i] compare:other[j]] != NSOrderedDescending) {
+            [result addObject:self[i++]];
+        } else {
+            [result addObject:other[j++]];
         }
     }
 
-    [pool drain];
+    if (i < self.count) {
+        [result addObjectsFromArray:[self subarrayWithRange:NSMakeRange(
+                                                                i, self.count -
+                                                                       i)]];
+    }
+
+    if (j < other.count) {
+        [result
+            addObjectsFromArray:[other
+                                    subarrayWithRange:NSMakeRange(
+                                                          j, other.count - j)]];
+    }
+
+    return result;
+}
+
+@end
+
+int main(int argc, const char* argv[]) {
+    @autoreleasepool {
+        const char* usage =
+            "Usage: please provide a list of at least two integers to sort in "
+            "the format \"1, 2, 3, 4, 5\"";
+
+        if (argc < 2) {
+            puts(usage);
+            return 1;
+        }
+
+        NSArray<NSNumber*>* numbers = @(argv[1]).strictIntegerList;
+
+        if (!numbers) {
+            puts(usage);
+            return 1;
+        }
+
+        NSString* output = [[numbers sortedArrayUsingMergeSort]
+            componentsJoinedByString:@", "];
+
+        puts(output.UTF8String);
+    }
     return 0;
 }

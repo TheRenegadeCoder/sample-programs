@@ -1,32 +1,37 @@
 #import <Foundation/Foundation.h>
 
-@interface StringHelper:NSObject
-- (NSString *) reverseString:(NSString *)stringToReverse;
+@interface NSString (Reversal)
+@property(nonatomic, readonly) NSString* reversed;
 @end
 
-@implementation StringHelper 
-- (NSString *) reverseString:(NSString *)stringToReverse {
-    NSMutableString* result = [NSMutableString string];
-    NSInteger index = [stringToReverse length];
-    while (index > 0) {
-        index--;
-        NSRange range = NSMakeRange(index, 1);
-        [result appendString:[stringToReverse substringWithRange:range]];
+@implementation NSString (Reversal)
+
+- (NSString*)reversed {
+    NSUInteger len = self.length;
+    if (len < 2) return self;
+
+    unichar buffer[len];
+    [self getCharacters:buffer range:NSMakeRange(0, len)];
+
+    NSUInteger i = 0;
+    NSUInteger j = len - 1;
+
+    while (i < j) {
+        unichar tmp = buffer[i];
+        buffer[i++] = buffer[j];
+        buffer[j--] = tmp;
     }
-    return result;
+
+    return [NSString stringWithCharacters:buffer length:len];
 }
 
 @end
 
-int main (int argc, const char *argv[]){
-    NSAutoreleasePool *pool =[[NSAutoreleasePool alloc] init];
-    if (argc >= 2){
-        NSString *userInput =[NSString stringWithUTF8String:argv[1]];
-        if([userInput length] > 0){
-            StringHelper* helper = [[StringHelper alloc] init];
-            printf("%s\n", [[helper reverseString: userInput] UTF8String]);
-        }
+int main(int argc, const char* argv[]) {
+    @autoreleasepool {
+        NSString* input = argc > 1 ? @(argv[1]) : nil;
+        NSString* output = input.reversed;
+        puts(output.UTF8String);
     }
-    [pool drain];
     return 0;
 }

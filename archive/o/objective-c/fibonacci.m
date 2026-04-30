@@ -1,53 +1,69 @@
 #import <Foundation/Foundation.h>
 
-// Function to convert and validate the input string
-// Source: ChatGPT
-NSInteger convertAndValidateInput(NSString *inputString) {
-    NSScanner *scanner = [NSScanner scannerWithString:inputString];
-    NSInteger integerValue = 0;
+@interface NSString (Parsing)
+@property(nonatomic, readonly, nullable) NSNumber* strictIntegerNumber;
+@end
 
-    // Check if the scanner successfully scanned an integer
-    if ([scanner scanInteger:&integerValue] && [scanner isAtEnd]) {
-        return integerValue;
-    } else {
-        // Raise an exception for invalid input
-        @throw [NSException exceptionWithName:@"InvalidInputException"
-            reason:@"Input is not a valid integer"
-            userInfo:nil];
+@implementation NSString (Parsing)
+
+- (NSNumber*)strictIntegerNumber {
+    NSString* trimmed = [self
+        stringByTrimmingCharactersInSet:NSCharacterSet
+                                            .whitespaceAndNewlineCharacterSet];
+    if (trimmed.length == 0) return nil;
+
+    NSInteger offset = 0;
+    if ([trimmed hasPrefix:@"-"] || [trimmed hasPrefix:@"+"]) {
+        offset = 1;
+    }
+
+    if (trimmed.length <= offset) return nil;
+
+    NSString* core = [trimmed substringFromIndex:offset];
+    NSRange invalidRange =
+        [core rangeOfCharacterFromSet:NSCharacterSet.decimalDigitCharacterSet
+                                          .invertedSet];
+
+    if (invalidRange.location != NSNotFound) {
+        return nil;
+    }
+
+    return @(trimmed.longLongValue);
+}
+
+@end
+
+static void PrintFibonacciSequence(NSUInteger count) {
+    unsigned long long previous = 0;
+    unsigned long long current = 1;
+
+    for (NSUInteger i = 1; i <= count; i++) {
+        printf("%ld: %llu\n", i, current);
+
+        unsigned long long next = previous + current;
+        previous = current;
+        current = next;
     }
 }
 
-void fibonacci(int n)
-{
-    int a = 0;
-    int b = 1;
-    int c;
-    int i = 1;
-    while (i <= n) {
-        c = a + b;
-        a = b;
-        b = c;
-        printf("%d: %d\n", i, a);
-        i++;
-    }
-}
+int main(int argc, const char* argv[]) {
+    @autoreleasepool {
+        const char* usage =
+            "Usage: please input the count of fibonacci numbers to output";
 
-int main(int argc, const char * argv[]) {
-    NSAutoreleasePool *pool =[[NSAutoreleasePool alloc] init];
-    NSString *usage = @"Usage: please input the count of fibonacci numbers to output";
-    if (argc < 2) {
-        printf("%s\n", [usage UTF8String]);
-    }
-    else {
-        NSString* inputStr = [NSString stringWithUTF8String:argv[1]];
-        @try {
-            int input = (int)convertAndValidateInput(inputStr);
-            fibonacci(input);
+        if (argc < 2) {
+            puts(usage);
+            return 1;
         }
-        @catch (NSException *) {
-            printf("%s\n", [usage UTF8String]);
+
+        NSNumber* number = @(argv[1]).strictIntegerNumber;
+
+        if (!number || number.integerValue < 0) {
+            puts(usage);
+            return 1;
         }
+
+        PrintFibonacciSequence(number.unsignedIntegerValue);
     }
-    [pool drain];
     return 0;
 }

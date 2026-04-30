@@ -1,26 +1,37 @@
 #import <Foundation/Foundation.h>
 
-int main(int argc, const char * argv[]) {
-  NSAutoreleasePool *pool =[[NSAutoreleasePool alloc] init];
-  NSString *usage = @"Usage: please provide a string";
-  if (argc < 2) {
-    printf("%s\n", [usage UTF8String]);
-  }
-  else {
-    NSString* textFromArg = [NSString stringWithUTF8String:argv[1]];
-    NSString* normalizedText = [textFromArg stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]];
+@interface NSString (CapitalizeFirst)
+- (nullable NSString*)stringByCapitalizingFirstCharacter;
+@end
 
-    if([normalizedText length] < 1){
-      printf("%s\n", [usage UTF8String]);
-    }
-    else {
-      NSString *firstChar = [[normalizedText substringToIndex:1] uppercaseString];
-      NSString *remainingText = [normalizedText substringFromIndex:1];
-      NSString *capitalizedText = [firstChar stringByAppendingString:remainingText];
-      printf("%s\n", [capitalizedText UTF8String]);
-    }
-  }
+@implementation NSString (CapitalizeFirst)
 
-  [pool drain];
-  return 0;
+- (NSString*)stringByCapitalizingFirstCharacter {
+    if (self.length == 0) return nil;
+
+    NSRange firstCharRange = [self rangeOfComposedCharacterSequenceAtIndex:0];
+    NSString* firstLetter =
+        [[self substringWithRange:firstCharRange] uppercaseString];
+
+    return [self stringByReplacingCharactersInRange:firstCharRange
+                                         withString:firstLetter];
+}
+
+@end
+
+int main(int argc, const char* argv[]) {
+    @autoreleasepool {
+        NSString* usage = @"Usage: please provide a string";
+        NSString* input = argc > 1 ? @(argv[1]) : @"";
+
+        NSString* trimmed =
+            [input stringByTrimmingCharactersInSet:
+                       NSCharacterSet.whitespaceAndNewlineCharacterSet];
+
+        NSString* result = [trimmed stringByCapitalizingFirstCharacter];
+
+        puts((result ?: usage).UTF8String);
+    }
+
+    return 0;
 }

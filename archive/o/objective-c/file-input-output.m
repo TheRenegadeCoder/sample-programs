@@ -1,62 +1,51 @@
 #import <Foundation/Foundation.h>
+#include <stdlib.h>
 
-NSString* readFileWith(NSString* path) {
-  NSFileHandle* fileHandle = [NSFileHandle fileHandleForReadingAtPath:path];
-  if (fileHandle) {
-    @try {
-      NSData* fileData  = [fileHandle availableData];
-      return [[NSString alloc] initWithBytes:[fileData bytes] length:[fileData length] encoding:NSUTF8StringEncoding];
-    } @catch (NSException *e) {
-      printf("Error reading file %s\n", [e UTF8String]);
-      return nil;
-    }
-    @finally{
-      [fileHandle closeFile];
-    }
-  }else{
-    printf("File to read not found %s\n", [path UTF8String]);
-  }
-  
-};
+@interface NSString (FileIO)
+- (BOOL)writeToDefaultPath:(NSString*)path error:(NSError**)error;
++ (nullable instancetype)stringWithDefaultPath:(NSString*)path
+                                         error:(NSError**)error;
+@end
 
-BOOL writeFileWith(NSString* path, NSString* content) {
-  NSFileHandle* fileHandle = [NSFileHandle fileHandleForWritingAtPath:path];
-  if(fileHandle){
-    @try {
-      NSData* fileData  = [content dataUsingEncoding:NSUTF8StringEncoding];
-      [fileHandle writeData:fileData];
-      return YES;
-    } @catch (NSException *e) {
-      printf("Error writing file %s\n", [e UTF8String]);
-      return NO;
-    }
-    @finally{
-      [fileHandle closeFile];
-    }
-  }else{
-    printf("File to write not found %s\n", [path UTF8String]);
-  }
-  
-};
+@implementation NSString (FileIO)
 
-BOOL createFileIfNotExistsAt(NSString* path) {
-  return [[NSFileManager defaultManager] createFileAtPath:path contents:nil attributes:nil];
-};
+- (BOOL)writeToDefaultPath:(NSString*)path error:(NSError**)error {
+    NSURL* url = [NSURL fileURLWithPath:path];
+    return [self writeToURL:url
+                 atomically:YES
+                   encoding:NSUTF8StringEncoding
+                      error:error];
+}
 
-int main(int argc, const char * argv[]) {
-  NSAutoreleasePool *pool =[[NSAutoreleasePool alloc] init];
-  NSString* path = @"output.txt";
-  if(createFileIfNotExistsAt(path)){
-    BOOL result = writeFileWith(path, @"Hello!\nGoodbye!\n");
-    if (result) {
-      NSString* contents = readFileWith(path);
-      if (contents) {
-        printf("%s", [contents UTF8String]);
-      }
++ (instancetype)stringWithDefaultPath:(NSString*)path error:(NSError**)error {
+    NSURL* url = [NSURL fileURLWithPath:path];
+    return [self stringWithContentsOfURL:url
+                                encoding:NSUTF8StringEncoding
+                                   error:error];
+}
+
+@end
+
+int main(int argc, const char* argv[]) {
+    @autoreleasepool {
+        NSString* path = @"output.txt";
+        NSString* content = @"Hello!\nGoodbye!\n";
+        NSError* error = nil;
+
+        if (![content writeToDefaultPath:path error:&error]) {
+            fprintf(stderr, "Write Error: %s\n",
+                    error.localizedDescription.UTF8String);
+            return EXIT_FAILURE;
+        }
+
+        NSString* result = [NSString stringWithDefaultPath:path error:&error];
+        if (!result) {
+            fprintf(stderr, "Read Error: %s\n",
+                    error.localizedDescription.UTF8String);
+            return EXIT_FAILURE;
+        }
+
+        printf("%s", result.UTF8String);
     }
-  }else{
-    printf("Unable to create file at %s\n", [path UTF8String]);
-  }
-  [pool drain];
-  return 0;
+    return EXIT_SUCCESS;
 }
