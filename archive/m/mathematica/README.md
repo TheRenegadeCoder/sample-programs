@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in Mathematica! To find documentation related to the Mathematica code in this repo, look [here](https://sampleprograms.io/languages/mathematica).
 
-## Sample Programs List - 36/39 :smile:
+## Sample Programs List - 39/39 :partying_face:
 
 In this section, we feature a list of completed and missing programs in Mathematica. See above for the current amount of completed programs in Mathematica. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -14,6 +14,7 @@ In this section, we feature a list of completed and missing programs in Mathemat
 Below, you'll find a list of completed code snippets in Mathematica. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
 - :warning: [Baklava in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+mathematica) [[Requirements](https://sampleprograms.io/projects/baklava)]
+- :warning: [Base64 Encode Decode in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+base64+encode+decode+mathematica) [[Requirements](https://sampleprograms.io/projects/base64-encode-decode)]
 - :warning: [Binary Search in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+binary+search+mathematica) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :warning: [Bubble Sort in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+mathematica) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :warning: [Capitalize in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+mathematica) [[Requirements](https://sampleprograms.io/projects/capitalize)]
@@ -48,15 +49,9 @@ Below, you'll find a list of completed code snippets in Mathematica. Code snippe
 - :warning: [Roman Numeral in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+mathematica) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :warning: [Rot13 in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+mathematica) [[Requirements](https://sampleprograms.io/projects/rot13)]
 - :warning: [Selection Sort in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+mathematica) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
+- :warning: [Sleep Sort in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sleep+sort+mathematica) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :warning: [Transpose Matrix in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+mathematica) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
-
-### Missing Programs
-
-The following list contains all of the approved programs that are not currently implemented in Mathematica. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
-
-- :x: [Base64 Encode Decode](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,base64+encode+decode&template=code-snippet-request.md&title=Add+Base64+Encode+Decode+in+Mathematica) [[Requirements](https://sampleprograms.io/projects/base64-encode-decode)]
-- :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+Mathematica) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
-- :x: [Zeckendorf](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,zeckendorf&template=code-snippet-request.md&title=Add+Zeckendorf+in+Mathematica) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
+- :warning: [Zeckendorf in Mathematica](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+zeckendorf+mathematica) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 
 ## Testing
 
