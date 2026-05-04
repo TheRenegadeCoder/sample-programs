@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in C++! To find documentation related to the C++ code in this repo, look [here](https://sampleprograms.io/languages/c-plus-plus).
 
-## Sample Programs List - 38/39 :smile:
+## Sample Programs List - 39/39 :partying_face:
 
 In this section, we feature a list of completed and missing programs in C++. See above for the current amount of completed programs in C++. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -14,6 +14,7 @@ In this section, we feature a list of completed and missing programs in C++. See
 Below, you'll find a list of completed code snippets in C++. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
 - :warning: [Baklava in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+c++) [[Requirements](https://sampleprograms.io/projects/baklava)]
+- :warning: [Base64 Encode Decode in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+base64+encode+decode+c++) [[Requirements](https://sampleprograms.io/projects/base64-encode-decode)]
 - :warning: [Binary Search in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+binary+search+c++) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :warning: [Bubble Sort in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+c++) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :warning: [Capitalize in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+c++) [[Requirements](https://sampleprograms.io/projects/capitalize)]
@@ -51,12 +52,6 @@ Below, you'll find a list of completed code snippets in C++. Code snippets prece
 - :warning: [Sleep Sort in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sleep+sort+c++) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :warning: [Transpose Matrix in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+c++) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 - :warning: [Zeckendorf in C++](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+zeckendorf+c++) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
-
-### Missing Programs
-
-The following list contains all of the approved programs that are not currently implemented in C++. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
-
-- :x: [Base64 Encode Decode](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,base64+encode+decode&template=code-snippet-request.md&title=Add+Base64+Encode+Decode+in+C%2B%2B) [[Requirements](https://sampleprograms.io/projects/base64-encode-decode)]
 
 ## Testing
 
