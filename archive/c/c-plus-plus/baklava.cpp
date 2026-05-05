@@ -1,30 +1,17 @@
+#include <cmath>
 #include <iostream>
+#include <ranges>
+#include <string>
 
-using namespace std;
+int main() {
+    constexpr int n = 21;
+    constexpr int mid = n / 2;
 
-int main(int argc, char *argv[])
-{
-    int i, j, k, n;
-    n = 21;
-    for (i = 1; i <= (n + 1) / 2;)
-    {
-        for (k = 1; (n + 1) / 2 - i >= k; k++)
-            cout << " ";
-        for (j = 1; j < 2 * i; j++)
-            cout << "*";
-        cout << "\n";
-        i++;
+    for (int i : std::views::iota(-mid, mid + 1)) {
+        int stars = n - 2 * std::abs(i);
+        int spaces = std::abs(i);
+
+        std::cout << std::string(spaces, ' ') << std::string(stars, '*')
+                  << '\n';
     }
-    if (2 * i - 1 >= n)
-    {
-        for (i = (n + 1) / 2 - 1; i >= 1; i--)
-        {
-            for (k = 1; (n + 1) / 2 - i >= k; k++)
-                cout << " ";
-            for (j = 1; j < 2 * i; j++)
-                cout << "*";
-            cout << "\n";
-        }
-    }
-    return (0);
 }
