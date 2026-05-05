@@ -1,16 +1,16 @@
 #include <algorithm>
 #include <array>
 #include <cstdint>
-#include <string_view>
-#include <string>
-#include <vector>
 #include <iostream>
+#include <string>
+#include <string_view>
+#include <vector>
 
 enum class Mode { encode, decode };
 
 namespace base64 {
 
-constexpr std::string_view chars =
+constexpr std::string_view alphabet =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     "abcdefghijklmnopqrstuvwxyz"
     "0123456789+/";
@@ -19,104 +19,91 @@ constexpr auto make_table() {
     std::array<std::int8_t, 256> t{};
     t.fill(-1);
 
-    std::size_t i = 0;
-    for (unsigned char c : chars)
-        t[c] = static_cast<std::int8_t>(i++);
+    for (std::size_t i = 0; i < alphabet.size(); ++i)
+        t[static_cast<unsigned char>(alphabet[i])] =
+            static_cast<std::int8_t>(i);
 
     return t;
 }
 
 constexpr auto table = make_table();
 
-constexpr bool is_b64(unsigned char c) {
-    return table[c] != -1;
-}
-
-constexpr bool is_pad(char c) {
-    return c == '=';
-}
+constexpr bool is_b64(unsigned char c) { return table[c] != -1; }
+constexpr bool is_pad(char c) { return c == '='; }
 
 bool valid(std::string_view s) {
     using std::all_of;
 
-    if (s.empty() || s.size() % 4 != 0)
-        return false;
+    if (s.empty() || s.size() % 4 != 0) return false;
 
-    const auto pad_start = s.find('=');
+    const auto first_pad = s.find('=');
 
-    if (pad_start == std::string_view::npos) {
+    if (first_pad == std::string_view::npos) {
         return all_of(s.begin(), s.end(), is_b64);
     }
 
-    const auto pad_len = s.size() - pad_start;
-    if (pad_len > 2)
-        return false;
+    // padding must be in last 2 chars only
+    if (s.size() - first_pad > 2) return false;
 
-    const auto prefix = s.substr(0, pad_start);
-    const auto suffix = s.substr(pad_start);
-
-    return all_of(prefix.begin(), prefix.end(), is_b64) &&
-           all_of(suffix.begin(), suffix.end(), is_pad);
+    return all_of(s.begin(), s.begin() + first_pad, is_b64) &&
+           all_of(s.begin() + first_pad, s.end(), is_pad);
 }
 
-} // namespace base64
+}  // namespace base64
 
 std::string encode(std::string_view input) {
     std::string out;
     out.reserve(((input.size() + 2) / 3) * 4);
 
-    std::uint32_t buf = 0;
+    std::uint32_t buffer = 0;
     int bits = 0;
 
     for (unsigned char c : input) {
-        buf = (buf << 8) | c;
+        buffer = (buffer << 8) | c;
         bits += 8;
 
         while (bits >= 6) {
             bits -= 6;
-            out.push_back(base64::chars[(buf >> bits) & 0x3F]);
+            out.push_back(base64::alphabet[(buffer >> bits) & 0x3F]);
         }
     }
 
-    if (bits > 0)
-        out.push_back(base64::chars[(buf << (6 - bits)) & 0x3F]);
+    if (bits > 0) {
+        out.push_back(base64::alphabet[(buffer << (6 - bits)) & 0x3F]);
+    }
 
-    while (out.size() % 4)
-        out.push_back('=');
+    while (out.size() % 4 != 0) out.push_back('=');
 
     return out;
 }
 
 struct DecodeResult {
-    bool ok;
+    bool ok{};
     std::string value;
     std::string_view error;
 };
 
 DecodeResult decode(std::string_view input) {
-    if (!base64::valid(input))
-        return {false, {}, "invalid base64"};
+    if (!base64::valid(input)) return {false, {}, "invalid base64"};
 
     std::string out;
     out.reserve((input.size() / 4) * 3);
 
-    std::uint32_t buf = 0;
+    std::uint32_t buffer = 0;
     int bits = 0;
 
-    for (char c : input) {
-        if (c == '=')
-            break;
+    for (unsigned char c : input) {
+        if (c == '=') break;
 
-        const int v = base64::table[static_cast<unsigned char>(c)];
-        if (v < 0)
-            return {false, {}, "invalid character"};
+        int v = base64::table[c];
+        if (v < 0) return {false, {}, "invalid character"};
 
-        buf = (buf << 6) | static_cast<std::uint32_t>(v);
+        buffer = (buffer << 6) | static_cast<std::uint32_t>(v);
         bits += 6;
 
         while (bits >= 8) {
             bits -= 8;
-            out.push_back(static_cast<char>((buf >> bits) & 0xFF));
+            out.push_back(static_cast<char>((buffer >> bits) & 0xFF));
         }
     }
 
@@ -129,25 +116,20 @@ void usage() {
 }
 
 int main(int argc, char** argv) {
-    if (argc != 3)
-        usage();
+    if (argc != 3) usage();
 
     std::string_view mode = argv[1];
     std::string_view text = argv[2];
 
-    if (text.empty())
-        usage();
+    if (text.empty()) usage();
 
     if (mode == "encode") {
         std::cout << encode(text) << '\n';
-    }
-    else if (mode == "decode") {
+    } else if (mode == "decode") {
         auto res = decode(text);
-        if (!res.ok)
-            usage();
+        if (!res.ok) usage();
         std::cout << res.value << '\n';
-    }
-    else {
+    } else {
         usage();
     }
 }
