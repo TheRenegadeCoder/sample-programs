@@ -1,111 +1,81 @@
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <charconv>
+#include <cstdlib>
 #include <iostream>
+#include <iterator>
+#include <optional>
+#include <ranges>
+#include <string_view>
+#include <utility>
+#include <vector>
 
-using namespace std;
+namespace ranges = std::ranges;
+namespace views = std::views;
 
-void swap(int *x, int *y)
-{
-    int t = *x;
-    *x = *y;
-    *y = t;
+[[noreturn]] void usage() {
+    std::cerr
+        << R"(Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5")"
+        << '\n';
+    std::exit(1);
 }
 
-void usage()
-{
-    cout
-        << "Usage: please provide a list of at least two integers to sort in "
-           "the format \"1, 2, 3, 4, 5\""
-        << endl;
-    exit(0);
+static constexpr std::string_view ws = " \t\n\r\f\v";
+constexpr std::string_view trim(std::string_view s) {
+    const auto start = s.find_first_not_of(ws);
+    if (start == std::string_view::npos) return "";
+    s.remove_prefix(start);
+
+    const auto end = s.find_last_not_of(ws);
+    s.remove_suffix(s.size() - 1 - end);
+    return s;
 }
 
-int check(string s)
-{
-    int x1 = 0, x2 = s.size() - 1;
-
-    for (int i = 0; i < s.size(); i++)
-    {
-        if (s[i] != ' ')
-        {
-            x1 = i;
-            break;
-        }
-    }
-
-    for (int i = s.size() - 1; i >= x1; i--)
-    {
-        if (s[i] != ' ')
-        {
-            x2 = i;
-            break;
-        }
-    }
-
-    for (int i = x1; i <= x2; i++)
-        if (s[i] == ' ')
-            usage();
-
-    return stoi(s);
+std::optional<int> to_int(std::string_view s) {
+    int value{};
+    auto [ptr, ec] = std::from_chars(s.data(), s.data() + s.size(), value);
+    return (ec == std::errc{} && ptr == s.data() + s.size())
+               ? std::make_optional(value)
+               : std::nullopt;
 }
 
-vector<int> convert(string s)
-{
+std::optional<std::vector<int>> parse_vec(std::string_view s) {
+    auto pipe = s | views::split(',') | views::transform([](auto&& r) {
+                    return std::string_view{
+                        std::addressof(*ranges::begin(r)),
+                        static_cast<std::size_t>(ranges::distance(r))};
+                }) |
+                views::transform(trim) | views::transform(to_int);
 
-    vector<int> v;
-    string num = "";
-    for (int i = 0; i < s.size(); i++)
-    {
-        if ((int)s[i] >= 48 && (int)s[i] <= 57 || s[i] == ' ')
-        {
-            num += s[i];
-        }
-        else if (s[i] == ',')
-        {
-            v.push_back(check(num));
-            num = "";
-        }
-        else
-        {
-            usage();
-        }
+    std::vector<int> out;
+    for (auto&& opt : pipe) {
+        if (!opt) return std::nullopt;
+        out.push_back(*opt);
     }
-
-    if (num.size() > 0)
-        v.push_back(check(num));
-
-    return v;
+    return out.size() < 2 ? std::nullopt : std::make_optional(out);
 }
 
-int main(int argc, char *argv[])
-{
+template <ranges::forward_range R>
+    requires std::sortable<ranges::iterator_t<R>>
+void selection_sort(R&& r) {
+    auto first = ranges::begin(r);
+    auto last = ranges::end(r);
 
-    if (argc < 2)
-        usage();
-
-    vector<int> v = convert(argv[1]);
-
-    if (v.size() < 2)
-    {
-        cout
-            << "Usage: please provide a list of at least two integers to sort "
-               "in the format \"1, 2, 3, 4, 5\""
-            << endl;
-        exit(0);
+    for (auto it = first; it != last; ++it) {
+        auto min_it = ranges::min_element(it, last);
+        ranges::iter_swap(it, min_it);
     }
+}
 
-    int n = v.size();
-    int min_idx;
+int main(int argc, char* argv[]) {
+    if (argc != 2) usage();
 
-    for (int i = 0; i < n - 1; i++)
-    {
-        min_idx = i;
-        for (int j = i + 1; j < n; j++)
-            if (v[j] < v[min_idx])
-                min_idx = j;
-        swap(v[min_idx], v[i]);
+    auto vec = parse_vec(argv[1]);
+    if (!vec) usage();
+
+    selection_sort(*vec);
+
+    for (const char* sep = ""; int val : *vec) {
+        std::cout << std::exchange(sep, ", ") << val;
     }
-
-    for (int i = 0; i < n - 1; i++)
-        cout << v[i] << ", ";
-    cout << v[n - 1];
+    std::cout << "\n";
 }
