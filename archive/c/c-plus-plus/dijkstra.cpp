@@ -1,144 +1,131 @@
-#include <bits/stdc++.h>
-#define pii pair<int, int>
-using namespace std;
+#include <algorithm>
+#include <charconv>
+#include <cmath>
+#include <cstdint>
+#include <cstdlib>
+#include <iostream>
+#include <limits>
+#include <queue>
+#include <ranges>
+#include <string_view>
+#include <vector>
 
-const int N = 7;
-bool vis[N];
-vector<pii> g[N];
-vector<int> dis(N, INT_MAX);
+namespace ranges = std::ranges;
+namespace views = std::views;
 
-void handle_error()
-{
-    cout << "Usage: please provide three inputs: a serialized matrix, a source "
-            "node and a destination node";
-    exit(0);
+using Node = std::uint32_t;
+using Weight = std::int64_t;
+using Matrix = std::vector<Weight>;
+
+constexpr Weight INF = std::numeric_limits<Weight>::max() / 2;
+
+struct State {
+    Weight dist;
+    Node u;
+
+    auto operator<=>(const State& other) const noexcept {
+        return dist <=> other.dist;
+    }
+};
+
+[[noreturn]] void usage() {
+    std::cerr
+        << R"(Usage: please provide three inputs: a serialized matrix, a source node and a destination node)"
+        << '\n';
+    std::exit(1);
 }
 
-int check(string s)
-{
-    int x1 = 0, x2 = (int)s.size() - 1;
+static constexpr std::string_view ws = " \t\n\r\f\v";
+constexpr std::string_view trim(std::string_view s) {
+    const auto start = s.find_first_not_of(ws);
+    if (start == std::string_view::npos) return "";
+    s.remove_prefix(start);
 
-    for (int i = 0; i < s.size(); i++)
-    {
-        if (s[i] != ' ')
-        {
-            x1 = i;
-            break;
-        }
-    }
-
-    for (int i = (int)s.size() - 1; i >= x1; i--)
-    {
-        if (s[i] != ' ')
-        {
-            x2 = i;
-            break;
-        }
-    }
-
-    for (int i = x1; i <= x2; i++)
-        if (s[i] == ' ')
-            handle_error();
-
-    return stoi(s);
+    const auto end = s.find_last_not_of(ws);
+    s.remove_suffix(s.size() - 1 - end);
+    return s;
 }
 
-vector<int> convert(string s)
-{
-
-    if (s.size() == 0)
-        handle_error();
-    vector<int> v;
-    string num = "";
-    for (int i = 0; i < s.size(); i++)
-    {
-        if (((int)s[i] >= 48 && (int)s[i] <= 57) || s[i] == ' ' || s[i] == '-')
-        {
-            num += s[i];
-        }
-        else if (s[i] == ',')
-        {
-            int x = check(num);
-            if (x < 0)
-                handle_error();
-            v.push_back(x);
-            num = "";
-        }
-    }
-
-    if (num.size() > 0)
-    {
-        int x = check(num);
-        if (x < 0)
-            handle_error();
-        v.push_back(x);
-    }
-
-    return v;
+template <std::integral T>
+std::optional<T> to_num(std::string_view s) {
+    T value{};
+    auto [ptr, ec] = std::from_chars(s.data(), s.data() + s.size(), value);
+    return (ec == std::errc{} && ptr == s.data() + s.size())
+               ? std::make_optional(value)
+               : std::nullopt;
 }
 
-vector<int> dijkstra(int src)
-{
-    set<pii> s;
-    s.insert({dis[src], src});
-    while (!s.empty())
-    {
-        pii tp = *s.begin();
-        int tpn = tp.second, tpd = tp.first;
-        s.erase({tpd, tpn});
-        for (auto it : g[tpn])
-        {
-            int chd = it.second;
-            int chn = it.first;
-            if (tpd + chd < dis[chn])
-            {
-                auto it = s.find({dis[chn], chn});
-                if (it != s.end())
-                    s.erase(it);
-                dis[chn] = tpd + chd;
-                s.insert({dis[chn], chn});
+std::optional<Matrix> parse_weights(std::string_view s) {
+    if (s.empty()) return std::nullopt;
+
+    Matrix m;
+    m.reserve(ranges::count(s, ',') + 1);
+
+    auto weight_view = s | views::split(',') | views::transform([](auto&& r) {
+                           return std::string_view{
+                               std::addressof(*ranges::begin(r)),
+                               static_cast<std::size_t>(ranges::distance(r))};
+                       }) |
+                       views::transform(trim) |
+                       views::transform(to_num<Weight>);
+
+    for (auto&& opt : weight_view) {
+        if (!opt) return std::nullopt;
+        m.push_back(*opt);
+    }
+    return m;
+}
+
+Weight dijkstra(const Matrix& matrix, std::size_t n, Node src, Node dest) {
+    std::vector<Weight> dist(n, INF);
+    dist[src] = 0;
+
+    std::priority_queue<State, std::vector<State>, std::greater<>> pq;
+    pq.push({0, src});
+
+    while (!pq.empty()) {
+        auto [d, u] = pq.top();
+        pq.pop();
+
+        if (u == dest) return d;
+        if (d > dist[u]) continue;
+
+        auto row = matrix | views::drop(u * n) | views::take(n);
+
+        for (std::size_t v = 0; v < n; ++v) {
+            const Weight w = row[v];
+            if (w <= 0) continue;
+
+            if (Weight new_dist = d + w; new_dist < dist[v]) {
+                dist[v] = new_dist;
+                pq.push({new_dist, static_cast<Node>(v)});
             }
         }
     }
-    return dis;
+
+    return dist[dest];
 }
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char* argv[]) {
+    if (argc < 4) usage();
 
-    if (argc <= 1)
-        handle_error();
-    vector<int> bin = convert(argv[1]), nodes = convert(argv[2]),
-                t = convert(argv[3]);
-    if (bin.size() == 0 || nodes.size() == 0 || t.size() == 0)
-        handle_error();
-    int des = t[0];
-    int src = nodes[0];
-    if (src < 0 || des < 0)
-        handle_error();
+    auto matrix_opt = parse_weights(argv[1]);
+    if (!matrix_opt) usage();
 
-    int sz = sqrt((int)bin.size());
-    if ((size_t)sz * sz != bin.size())
-        handle_error();
-    int k = 0;
-    for (int i = 0; i < bin.size(); i += sz)
-    {
-        for (int j = i; j < i + sz; j++)
-        {
-            if (bin[j] < 0)
-                handle_error();
-            if (bin[j] != 0)
-            {
-                g[j - sz * k].push_back({k, bin[j]});
-                g[k].push_back({j - sz * k, bin[j]});
-            }
-        }
-        k++;
-    }
+    const auto matrix = std::move(*matrix_opt);
+    const std::size_t n = std::sqrt(matrix.size());
 
-    dis[src] = 0;
-    vector<int> ans = dijkstra(src);
-    if (dis[des] == INT_MAX)
-        handle_error();
-    cout << ans[des] << "\n";
+    if (n == 0 || n * n != matrix.size()) usage();
+    if (ranges::any_of(matrix, [](Weight w) { return w < 0; })) usage();
+
+    const auto source = to_num<Node>(argv[2]);
+    const auto destination = to_num<Node>(argv[3]);
+
+    if (!source || *source >= n) usage();
+    if (!destination || *destination >= n) usage();
+
+    const Weight result = dijkstra(matrix, n, *source, *destination);
+
+    if (result >= INF) usage();
+    std::cout << result << '\n';
 }
