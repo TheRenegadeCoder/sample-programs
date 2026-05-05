@@ -1,36 +1,26 @@
-#include <cctype> // for std::isspace
+#include <algorithm>
+#include <cctype>
 #include <iostream>
+#include <ranges>
 #include <string>
+#include <string_view>
 
-int main(int argc, char *argv[])
-{
+[[noreturn]] void usage() {
+    std::cerr << "Usage: please provide a string\n";
+    std::exit(1);
+}
 
-    // Check if given string passed
-    if (argc < 2)
-    {
-        std::cout << "Usage: please provide a string" << std::endl;
-        return 1; // Return error code if no string is given
-    }
+int main(int argc, char* argv[]) {
+    if (argc < 2) usage();
 
-    // Get the string passed
-    std::string input = argv[1];
+    std::string_view input = argv[1];
+    if (input.empty()) usage();
+
+    auto is_not_space = [](unsigned char c) { return !std::isspace(c); };
+    auto filtered = input | std::views::filter(is_not_space);
+
     std::string result;
+    std::ranges::copy(filtered, std::back_inserter(result));
 
-    // Check if input string is empty
-    if (input.empty())
-    {
-        std::cout << "Usage: please provide a string" << std::endl;
-        return 1; // Exit error code if the string is empty
-    }
-
-    for (char c : input)
-    {
-        // If the character is not a whitespace character, add it to result
-        if (!std::isspace(static_cast<unsigned char>(c)))
-            result += c;
-    }
-    // print out the result (string should have no spaces)
-    std::cout << result << std::endl;
-
-    return 0;
+    std::cout << result << '\n';
 }
