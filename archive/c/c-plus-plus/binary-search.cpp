@@ -1,110 +1,66 @@
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <charconv>
+#include <cstdlib>
+#include <format>
 #include <iostream>
+#include <memory>
+#include <optional>
+#include <ranges>
+#include <string_view>
+#include <vector>
 
-using namespace std;
+namespace ranges = std::ranges;
+namespace views = std::views;
 
-void handle_error()
-{
-    cout
-        << "Usage: please provide a list of sorted integers (\"1, 4, 5, 11, "
-           "12\") and the integer to find (\"11\")"
-        << endl;
-    exit(0);
+[[noreturn]] void usage() {
+    std::cerr
+        << R"(Usage: please provide a list of sorted integers ("1, 4, 5, 11, 12") and the integer to find ("11"))"
+        << '\n';
+    std::exit(1);
 }
 
-int check(string s)
-{
-    int x1 = 0, x2 = s.size() - 1;
+static constexpr std::string_view ws = " \t\n\r\f\v";
+constexpr std::string_view trim(std::string_view s) {
+    const auto start = s.find_first_not_of(ws);
+    if (start == std::string_view::npos) return "";
+    s.remove_prefix(start);
 
-    for (int i = 0; i < s.size(); i++)
-    {
-        if (s[i] != ' ')
-        {
-            x1 = i;
-            break;
-        }
-    }
-
-    for (int i = s.size() - 1; i >= x1; i--)
-    {
-        if (s[i] != ' ')
-        {
-            x2 = i;
-            break;
-        }
-    }
-
-    for (int i = x1; i <= x2; i++)
-        if (s[i] == ' ')
-            handle_error();
-
-    return stoi(s);
+    const auto end = s.find_last_not_of(ws);
+    s.remove_suffix(s.size() - 1 - end);
+    return s;
 }
 
-vector<int> convert(string s)
-{
-    if (s.size() == 0)
-        handle_error();
-    vector<int> v;
-    string num = "";
-    for (int i = 0; i < s.size(); i++)
-    {
-        if ((int)s[i] >= 48 && (int)s[i] <= 57 || s[i] == ' ')
-        {
-            num += s[i];
-        }
-        else if (s[i] == ',')
-        {
-            v.push_back(check(num));
-            num = "";
-        }
-        else
-        {
-            handle_error();
-        }
-    }
-
-    if (num.size() > 0)
-        v.push_back(check(num));
-
-    return v;
+std::optional<int> to_int(std::string_view s) {
+    s = trim(s);
+    int value{};
+    auto [ptr, ec] = std::from_chars(s.data(), s.data() + s.size(), value);
+    return (ec == std::errc{} && ptr == s.data() + s.size())
+               ? std::make_optional(value)
+               : std::nullopt;
 }
 
-int main(int argc, char *argv[])
-{
-    if (argc < 3)
-        handle_error();
+int main(int argc, char* argv[]) {
+    if (argc != 3) usage();
 
-    vector<int> v = convert(argv[1]);
-    int num = check(argv[2]);
+    const auto target = to_int(argv[2]);
+    if (!target) usage();
 
-    for (int i = 0; i < v.size() - 1; i++)
-        if (v[i] > v[i + 1])
-            handle_error();
+    const std::string_view input{argv[1]};
+    auto ints_view = input | views::split(',') |
+                     views::transform([](auto&& rng) {
+                         return std::string_view(rng.begin(), rng.end());
+                     }) |
+                     views::transform(to_int) |
+                     views::filter([](auto&& opt) { return opt.has_value(); }) |
+                     views::transform([](auto&& opt) { return *opt; });
 
-    int start = 0, end = v.size();
-    string ans = "false";
-    while (start < end)
-    {
-        int mid = (start + end) / 2;
+    std::vector<int> haystack;
+    ranges::copy(ints_view, std::back_inserter(haystack));
 
-        if (num < v[mid])
-        {
-            end = mid;
-        }
-        else if (v[mid] < num)
-        {
-            start = mid + 1;
-        }
-        else if (v[mid] == num)
-        {
-            ans = "true";
-            break;
-        }
-    }
+    if (haystack.empty() || !ranges::is_sorted(haystack)) usage();
 
-    if (start > end)
-        ans = "false";
+    const bool found = ranges::binary_search(haystack, *target);
+    std::cout << std::format("{}\n", found);
 
-    cout << ans << endl;
+    return 0;
 }
