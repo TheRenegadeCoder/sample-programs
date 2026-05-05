@@ -1,36 +1,32 @@
-#include <cstring>
+#include <algorithm>
+#include <cctype>
 #include <iostream>
-#include <sstream>
-#include <string>
+#include <string_view>
 
-using namespace std;
-
-int handle_error()
-{
-    printf("Usage: please provide a string");
-    exit(0);
+[[noreturn]] void usage() {
+    std::cerr << "Usage: please provide a string\n";
+    std::exit(1);
 }
 
-int main(int argc, char *argv[])
-{
-    if (argc < 2)
-        handle_error();
-    string inputStr(argv[1]);
+int main(int argc, char* argv[]) {
+    if (argc != 2) usage();
 
-    if (inputStr.size() == 0)
-        handle_error();
-    int max = -1;
+    std::string_view input = argv[1];
+    if (input.empty()) usage();
 
-    stringstream ss(inputStr);
-    string word;
-    while (ss >> word)
-    {
+    auto is_space = [](unsigned char c) { return std::isspace(c) != 0; };
 
-        int size = word.size();
-        if (size > max)
-            max = size;
+    size_t best = 0;
+    size_t cur = 0;
+
+    for (unsigned char c : input) {
+        if (is_space(c)) {
+            best = std::max(best, cur);
+            cur = 0;
+        } else {
+            ++cur;
+        }
     }
-    cout << max;
 
-    return 0;
+    std::cout << std::max(best, cur) << '\n';
 }
