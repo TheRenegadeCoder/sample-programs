@@ -1,92 +1,88 @@
-#include <cstring>
+#include <algorithm>
+#include <charconv>
 #include <iostream>
+#include <optional>
+#include <ranges>
+#include <string_view>
+#include <utility>
 #include <vector>
 
-void swap(int *xp, int *yp)
-{
-    int temp = *xp;
-    *xp = *yp;
-    *yp = temp;
+namespace ranges = std::ranges;
+namespace views = std::views;
+
+[[noreturn]] void usage() {
+    std::cerr
+        << R"(Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5")"
+        << '\n';
+    std::exit(1);
 }
 
-void bubbleSort(std::vector<int> &v, int n)
-{
-    int i, j;
-    bool swapped;
+static constexpr std::string_view ws = " \t\n\r\f\v";
+constexpr std::string_view trim(std::string_view s) {
+    const auto start = s.find_first_not_of(ws);
+    if (start == std::string_view::npos) return "";
+    s.remove_prefix(start);
 
-    for (i = 0; i < n - 1; i++)
-    {
-        swapped = false;
+    const auto end = s.find_last_not_of(ws);
+    s.remove_suffix(s.size() - 1 - end);
+    return s;
+}
 
-        for (j = 0; j < n - i - 1; j++)
-        {
-            if (v[j] > v[j + 1])
-            {
-                swap(&v[j], &v[j + 1]);
-                swapped = true;
+std::optional<int> to_int(std::string_view s) {
+    s = trim(s);
+    int value{};
+    auto [ptr, ec] = std::from_chars(s.data(), s.data() + s.size(), value);
+    return (ec == std::errc{} && ptr == s.data() + s.size())
+               ? std::make_optional(value)
+               : std::nullopt;
+}
+
+template <ranges::forward_range R>
+    requires std::sortable<ranges::iterator_t<R>>
+void bubble_sort(R&& r) {
+    auto end_it = ranges::end(r);
+    if (ranges::begin(r) == end_it) return;
+
+    while (ranges::begin(r) != end_it) {
+        auto last_swapped = ranges::begin(r);
+        auto current = ranges::begin(r);
+        auto next = std::next(current);
+
+        while (next != end_it) {
+            if (*next < *current) {
+                ranges::iter_swap(current, next);
+                last_swapped = next;
             }
+            current = next++;
         }
-
-        if (swapped == false)
-            break;
+        if (last_swapped == ranges::begin(r)) break;
+        end_it = last_swapped;
     }
 }
 
-void print(std::vector<int> v, int size)
-{
-    for (int i = 0; i < size; i++)
-        if (i == size - 1)
-            std::cout << v[i] << std::endl;
-        else
-            std::cout << v[i] << ", ";
-}
+int main(int argc, char* argv[]) {
+    if (argc != 2) usage();
 
-int main(int argc, char *argv[])
-{
+    const std::string_view input{argv[1]};
+    auto ints_view = input | views::split(',') |
+                     views::transform([](auto&& rng) {
+                         return std::string_view(rng.begin(), rng.end());
+                     }) |
+                     views::transform(to_int) |
+                     views::filter([](auto&& opt) { return opt.has_value(); }) |
+                     views::transform([](auto&& opt) { return *opt; });
 
-    char *characters = argv[1];
-    bool commaSeparated = false;
-    int index = 1;
     std::vector<int> numbers;
+    ranges::copy(ints_view, std::back_inserter(numbers));
 
-    if (argc == 2)
-    {
+    if (numbers.size() < 2) usage();
 
-        while (index < strlen(characters))
-        {
-            if (characters[index] == ',' && characters[index + 1] == ' ')
-            {
-                commaSeparated = true;
-            }
-            else
-            {
-                commaSeparated = false;
-                break;
-            }
-            index += 3;
-        }
+    bubble_sort(numbers);
 
-        if (commaSeparated == true)
-        {
-            for (int i = 0; i < strlen(characters); i++)
-
-                if (characters[i] != ',' && characters[i] != ' ')
-                    numbers.push_back(atoi(&characters[i]));
-        }
+    for (const char* sep = ""; int val : numbers) {
+        std::cout << std::exchange(sep, ", ") << val;
     }
+    std::cout << "\n";
 
-    int size = numbers.size();
-    if (size < 2)
-    {
-        std::cout
-            << "Usage: please provide a list of at least two integers to "
-               "sort in the format \"1, 2, 3, 4, 5\""
-            << std::endl;
-    }
-    else
-    {
-        bubbleSort(numbers, size);
-        print(numbers, size);
-    }
     return 0;
 }

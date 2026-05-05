@@ -1,139 +1,113 @@
 #include <algorithm>
+#include <charconv>
+#include <format>
 #include <iostream>
-#include <sstream>
-#include <string>
+#include <ranges>
+#include <string_view>
 #include <vector>
 
-struct Point
-{
-    int x{};
-    int y{};
+namespace views = std::views;
+namespace ranges = std::ranges;
 
-    Point() = default;
-    Point(int x_, int y_) : x(x_), y(y_)
-    {
-    }
-
-    bool operator<(const Point &other) const
-    {
-        if (x != other.x)
-            return x < other.x;
-        return y < other.y;
-    }
+struct Point {
+    int x{}, y{};
+    auto operator<=>(const Point&) const = default;
 };
 
-[[noreturn]] void usage()
-{
+[[noreturn]] void usage() {
     std::cerr
         << R"(Usage: please provide at least 3 x and y coordinates as separate lists (e.g. "100, 440, 210"))"
         << '\n';
     std::exit(1);
 }
 
-std::vector<int> parseList(const std::string &input)
-{
-    std::vector<int> out;
-    std::stringstream ss(input);
+static constexpr std::string_view ws = " \t\n\r\f\v";
+constexpr std::string_view trim(std::string_view s) {
+    const auto start = s.find_first_not_of(ws);
+    if (start == std::string_view::npos) return "";
+    s.remove_prefix(start);
 
-    for (std::string token; std::getline(ss, token, ',');)
-    {
-        auto start = token.find_first_not_of(" \t");
-        if (start == std::string::npos)
-            usage();
-
-        const auto end = token.find_last_not_of(" \t");
-        token = token.substr(start, end - start + 1);
-
-        size_t pos = 0;
-        int value = 0;
-
-        try
-        {
-            size_t pos = 0;
-            const int value = std::stoi(token, &pos);
-
-            if (pos != token.size())
-                usage();
-
-            out.push_back(value);
-        }
-        catch (...)
-        {
-            usage();
-        }
-    }
-
-    return out;
+    const auto end = s.find_last_not_of(ws);
+    s.remove_suffix(s.size() - 1 - end);
+    return s;
 }
 
-std::vector<Point> parseCoordinates(const std::string &xs,
-                                    const std::string &ys)
-{
-    auto x = parseList(xs);
-    auto y = parseList(ys);
+std::optional<int> to_int(std::string_view s) {
+    int value{};
+    auto [ptr, ec] = std::from_chars(s.data(), s.data() + s.size(), value);
+    return (ec == std::errc{} && ptr == s.data() + s.size())
+               ? std::make_optional(value)
+               : std::nullopt;
+}
 
-    if (x.size() != y.size() || x.size() < 3)
-        usage();
+auto to_sv = [](auto&& r) {
+    return std::string_view{std::addressof(*ranges::begin(r)),
+                            static_cast<std::size_t>(ranges::distance(r))};
+};
+
+auto parse_ints(std::string_view s) {
+    return s | views::split(',') | views::transform(to_sv) |
+           views::transform(trim) | views::transform(to_int);
+}
+
+std::vector<Point> parse_coordinates(std::string_view xs, std::string_view ys) {
+    auto xv = parse_ints(xs);
+    auto yv = parse_ints(ys);
 
     std::vector<Point> pts;
-    pts.reserve(x.size());
 
-    std::transform(x.begin(), x.end(), y.begin(), std::back_inserter(pts),
-                   [](int a, int b) { return Point{a, b}; });
+    auto xi = xv.begin();
+    auto yi = yv.begin();
+
+    for (; xi != xv.end() && yi != yv.end(); ++xi, ++yi) {
+        if (!*xi || !*yi) usage();
+        pts.emplace_back(**xi, **yi);
+    }
+
+    if (xi != xv.end() || yi != yv.end() || pts.size() < 3) usage();
 
     return pts;
 }
 
-long long cross(const Point &a, const Point &b, const Point &c)
-{
+constexpr long long orientation(Point a, Point b, Point c) noexcept {
     return 1LL * (b.x - a.x) * (c.y - a.y) - 1LL * (b.y - a.y) * (c.x - a.x);
 }
 
-std::vector<Point> convexHull(std::vector<Point> pts)
-{
-    if (pts.size() < 3)
-        usage();
-
-    std::sort(pts.begin(), pts.end());
-
-    std::vector<Point> lower, upper;
-    lower.reserve(pts.size());
-    upper.reserve(pts.size());
-
-    auto build_half = [&](auto begin, auto end, auto &hull) {
-        for (auto it = begin; it != end; ++it)
-        {
-            const auto &p = *it;
-
-            while (hull.size() >= 2
-                   && cross(hull[hull.size() - 2], hull.back(), p) <= 0)
-            {
-                hull.pop_back();
-            }
-
-            hull.push_back(p);
+template <ranges::input_range R>
+std::vector<Point> build_half(R&& range) {
+    std::vector<Point> hull;
+    for (const auto& p : range) {
+        while (hull.size() >= 2 &&
+               orientation(hull[hull.size() - 2], hull.back(), p) <= 0) {
+            hull.pop_back();
         }
-    };
+        hull.push_back(p);
+    }
+    hull.pop_back();
+    return hull;
+}
 
-    build_half(pts.begin(), pts.end(), lower);
-    build_half(pts.rbegin(), pts.rend(), upper);
+std::vector<Point> convex_hull(std::vector<Point> pts) {
+    ranges::sort(pts);
+    auto [first, last] = ranges::unique(pts);
+    pts.erase(first, last);
 
-    lower.pop_back();
-    upper.pop_back();
+    if (pts.size() < 3) return pts;
 
-    lower.insert(lower.end(), std::make_move_iterator(upper.begin()),
-                 std::make_move_iterator(upper.end()));
+    auto lower = build_half(pts);
+    auto upper = build_half(pts | views::reverse);
 
+    lower.insert(lower.end(), upper.begin(), upper.end());
     return lower;
 }
 
-int main(int argc, char *argv[])
-{
-    if (argc != 3)
-        usage();
+int main(int argc, char* argv[]) {
+    if (argc != 3) usage();
 
-    const auto hull = convexHull(parseCoordinates(argv[1], argv[2]));
+    auto points = parse_coordinates(argv[1], argv[2]);
+    auto result = convex_hull(std::move(points));
 
-    for (const auto &[x, y] : hull)
-        std::cout << '(' << x << ", " << y << ")\n";
+    for (const auto& p : result) {
+        std::cout << std::format("({}, {})\n", p.x, p.y);
+    }
 }

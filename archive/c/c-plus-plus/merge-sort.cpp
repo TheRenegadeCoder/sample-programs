@@ -1,155 +1,85 @@
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <charconv>
+#include <cstdlib>
 #include <iostream>
+#include <iterator>
+#include <optional>
+#include <ranges>
+#include <string_view>
+#include <utility>
+#include <vector>
 
-using namespace std;
+namespace ranges = std::ranges;
+namespace views = std::views;
 
-void usage()
-{
-    cout
-        << "Usage: please provide a list of at least two integers to sort in "
-           "the format \"1, 2, 3, 4, 5\""
-        << endl;
-    exit(0);
+[[noreturn]] void usage() {
+    std::cerr
+        << R"(Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5")"
+        << '\n';
+    std::exit(1);
 }
 
-int check(string s)
-{
-    int x1 = 0, x2 = s.size() - 1;
+static constexpr std::string_view ws = " \t\n\r\f\v";
+constexpr std::string_view trim(std::string_view s) {
+    const auto start = s.find_first_not_of(ws);
+    if (start == std::string_view::npos) return "";
+    s.remove_prefix(start);
 
-    for (int i = 0; i < s.size(); i++)
-    {
-        if (s[i] != ' ')
-        {
-            x1 = i;
-            break;
-        }
-    }
-
-    for (int i = s.size() - 1; i >= x1; i--)
-    {
-        if (s[i] != ' ')
-        {
-            x2 = i;
-            break;
-        }
-    }
-
-    for (int i = x1; i <= x2; i++)
-        if (s[i] == ' ')
-            usage();
-
-    return stoi(s);
+    const auto end = s.find_last_not_of(ws);
+    s.remove_suffix(s.size() - 1 - end);
+    return s;
 }
 
-vector<int> convert(string s)
-{
-
-    vector<int> v;
-    string num = "";
-    for (int i = 0; i < s.size(); i++)
-    {
-        if ((int)s[i] >= 48 && (int)s[i] <= 57 || s[i] == ' ')
-        {
-            num += s[i];
-        }
-        else if (s[i] == ',')
-        {
-            v.push_back(check(num));
-            num = "";
-        }
-        else
-        {
-            usage();
-        }
-    }
-
-    if (num.size() > 0)
-        v.push_back(check(num));
-
-    return v;
+std::optional<int> to_int(std::string_view s) {
+    int value{};
+    auto [ptr, ec] = std::from_chars(s.data(), s.data() + s.size(), value);
+    return (ec == std::errc{} && ptr == s.data() + s.size())
+               ? std::make_optional(value)
+               : std::nullopt;
 }
 
-void merge(int low, int mid, int high, vector<int> &v)
-{
-    int n1 = mid - low + 1;
-    int n2 = high - mid;
+std::optional<std::vector<int>> parse_vec(std::string_view s) {
+    auto pipe = s | views::split(',') | views::transform([](auto&& r) {
+                    return std::string_view{
+                        std::addressof(*ranges::begin(r)),
+                        static_cast<std::size_t>(ranges::distance(r))};
+                }) |
+                views::transform(trim) | views::transform(to_int);
 
-    vector<int> v1(n1), v2(n2);
-
-    for (int i = 0; i < n1; i++)
-        v1[i] = v[i + low];
-
-    for (int i = 0; i < n2; i++)
-        v2[i] = v[i + mid + 1];
-
-    int j = 0, k = 0;
-    int l = low;
-
-    while (j < n1 && k < n2)
-    {
-        if (v1[j] < v2[k])
-        {
-            v[l] = v1[j];
-            j++;
-        }
-        else
-        {
-            v[l] = v2[k];
-            k++;
-        }
-        l++;
+    std::vector<int> out;
+    for (auto&& opt : pipe) {
+        if (!opt) return std::nullopt;
+        out.push_back(*opt);
     }
-
-    while (j < n1)
-    {
-        v[l] = v1[j];
-        j++;
-        l++;
-    }
-
-    while (k < n2)
-    {
-        v[l] = v2[k];
-        k++;
-        l++;
-    }
+    return out.size() < 2 ? std::nullopt : std::make_optional(out);
 }
 
-void mergesort(int low, int high, vector<int> &v)
-{
+template <ranges::random_access_range R>
+void merge_sort(R&& r) {
+    auto first = ranges::begin(r);
+    auto last = ranges::end(r);
 
-    if (low < high)
-    {
-        int mid = (low + high) / 2;
-        mergesort(low, mid, v);
-        mergesort(mid + 1, high, v);
-        merge(low, mid, high, v);
-    }
+    const auto n = std::distance(first, last);
+    if (n <= 1) return;
+
+    const auto mid = std::next(first, n / 2);
+
+    merge_sort(ranges::subrange(first, mid));
+    merge_sort(ranges::subrange(mid, last));
+
+    std::inplace_merge(first, mid, last);
 }
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char* argv[]) {
+    if (argc != 2) usage();
 
-    if (argc < 2)
-        usage();
+    auto vec = parse_vec(argv[1]);
+    if (!vec) usage();
 
-    vector<int> v = convert(argv[1]);
+    merge_sort(*vec);
 
-    if (v.size() < 2)
-    {
-        cout
-            << "Usage: please provide a list of at least two integers to sort "
-               "in the format \"1, 2, 3, 4, 5\""
-            << endl;
-        exit(0);
+    for (const char* sep = ""; int val : *vec) {
+        std::cout << std::exchange(sep, ", ") << val;
     }
-
-    int n = v.size();
-    int min_idx;
-
-    mergesort(0, n - 1, v);
-
-    for (int i = 0; i < n - 1; i++)
-        cout << v[i] << ", ";
-    cout << v[n - 1];
+    std::cout << "\n";
 }

@@ -1,41 +1,36 @@
+#include <array>
+#include <format>
 #include <iostream>
-#include <string>
-#include <unordered_map>
-using namespace std;
+#include <string_view>
 
-int handle_error()
-{
-    cout << "Usage: please provide a string\n";
-    exit(0);
+[[noreturn]] void usage() {
+    std::cout << "Usage: please provide a string\n";
+    std::exit(1);
 }
-int main(int argc, char *argv[])
-{
 
-    if (argc != 2)
-        handle_error();
-    string inputStr(argv[1]);
+int main(int argc, char* argv[]) {
+    if (argc != 2) usage();
 
-    if (inputStr.size() == 0)
-        handle_error();
+    std::string_view input{argv[1]};
+    if (input.empty()) usage();
 
-    unordered_map<char, int> m1;
+    std::array<std::size_t, 256> counts{};
 
-    for (auto x : inputStr)
-        if (m1.find(x) == m1.end())
-            m1.insert({x, 1});
-        else
-            m1[x]++;
-    int flag = 1;
-    for (int i = 0; i < inputStr.length(); i++)
-    {
-        if (m1[inputStr[i]] > 1)
-        {
-            flag = 0;
-            cout << inputStr[i] << ": " << m1[inputStr[i]] << "\n";
-            m1[inputStr[i]] = 0;
+    for (const auto c : input) {
+        counts[c]++;
+    }
+
+    bool any_duplicates = false;
+
+    for (const auto c : input) {
+        if (counts[c] > 1) {
+            std::cout << std::format("{}: {}\n", c, counts[c]);
+            counts[c] = 0;
+            any_duplicates = true;
         }
     }
-    if (flag == 1)
-        cout << "No duplicate characters\n";
-    return 0;
+
+    if (!any_duplicates) {
+        std::cout << "No duplicate characters\n";
+    }
 }

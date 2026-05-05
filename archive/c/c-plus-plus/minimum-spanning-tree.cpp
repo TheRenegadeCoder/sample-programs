@@ -1,131 +1,132 @@
 #include <algorithm>
+#include <charconv>
 #include <cmath>
 #include <iostream>
-#include <sstream>
-#include <string>
+#include <numeric>
+#include <optional>
+#include <ranges>
+#include <string_view>
 #include <vector>
 
-using namespace std;
+namespace ranges = std::ranges;
+namespace views = std::views;
 
-struct Edge
-{
-    int src, dest, weight;
+struct Edge {
+    int src;
+    int dest;
+    int weight;
 };
 
-int find(vector<int> &parent, int i)
-{
-    if (parent[i] != i)
-        parent[i] = find(parent, parent[i]);
-    return parent[i];
+[[noreturn]] void usage() {
+    std::cerr << "Usage: please provide a comma-separated list of integers\n";
+    std::exit(1);
 }
 
-void unionp(vector<int> &parent, vector<int> &rank, int x, int y)
-{
-    int xroot = find(parent, x);
-    int yroot = find(parent, y);
+static constexpr std::string_view ws = " \t\n\r\f\v";
+constexpr std::string_view trim(std::string_view s) {
+    const auto start = s.find_first_not_of(ws);
+    if (start == std::string_view::npos) return "";
+    s.remove_prefix(start);
 
-    if (rank[xroot] < rank[yroot])
-        parent[xroot] = yroot;
-    else if (rank[xroot] > rank[yroot])
-        parent[yroot] = xroot;
-    else
-    {
-        parent[yroot] = xroot;
-        rank[xroot]++;
-    }
+    const auto end = s.find_last_not_of(ws);
+    s.remove_suffix(s.size() - 1 - end);
+    return s;
 }
 
-int main(int argc, char *argv[])
-{
-    if (argc < 2)
-    {
-        cout << "Usage: please provide a comma-separated list of integers";
-        return 0;
+std::optional<int> to_int(std::string_view s) {
+    int value{};
+    auto [ptr, ec] = std::from_chars(s.data(), s.data() + s.size(), value);
+    return (ec == std::errc{} && ptr == s.data() + s.size())
+               ? std::make_optional(value)
+               : std::nullopt;
+}
+
+std::optional<std::vector<int>> parse_vec(std::string_view s) {
+    auto pipe = s | views::split(',') | views::transform([](auto&& r) {
+                    return std::string_view{
+                        std::addressof(*ranges::begin(r)),
+                        static_cast<std::size_t>(ranges::distance(r))};
+                }) |
+                views::transform(trim) | views::transform(to_int);
+
+    std::vector<int> out;
+    for (auto&& opt : pipe) {
+        if (!opt) return std::nullopt;
+        out.push_back(*opt);
     }
 
-    string input = argv[1];
-    if (input.empty())
-    {
-        cout << "Usage: please provide a comma-separated list of integers";
-        return 0;
+    return out.empty() ? std::nullopt : std::make_optional(out);
+}
+
+struct DSU {
+    std::vector<int> parent;
+    std::vector<int> rank;
+
+    explicit DSU(int n) : parent(n), rank(n, 0) {
+        std::iota(parent.begin(), parent.end(), 0);
     }
 
-    vector<int> values;
-    istringstream iss(input);
-    string token;
-    while (getline(iss, token, ','))
-    {
-        // Trim spaces from token.
-        size_t start = token.find_first_not_of(" \t");
-        size_t end = token.find_last_not_of(" \t");
-        if (start == string::npos)
-            token = "";
-        else
-            token = token.substr(start, end - start + 1);
-
-        try
-        {
-            int num = stoi(token);
-            values.push_back(num);
-        }
-        catch (...)
-        {
-            cout << "Usage: please provide a comma-separated list of integers";
-            return 0;
-        }
+    int find(int x) {
+        if (parent[x] != x) parent[x] = find(parent[x]);
+        return parent[x];
     }
 
-    int n = values.size();
-    int side = static_cast<int>(sqrt(n));
-    if (side * side != n)
-    {
-        cout << "Usage: please provide a comma-separated list of integers";
-        return 0;
-    }
+    void unite(int a, int b) {
+        a = find(a);
+        b = find(b);
 
-    vector<vector<int>> matrix(side, vector<int>(side, 0));
-    int index = 0;
-    for (int i = 0; i < side; i++)
-        for (int j = 0; j < side; j++)
-            matrix[i][j] = values[index++];
+        if (a == b) return;
 
-    vector<Edge> edges;
-    int V = side;
-    for (int i = 0; i < V; i++)
-    {
-        for (int j = i + 1; j < V; j++)
-        {
-            int weight = matrix[i][j];
-            if (weight != 0)
-                edges.push_back({i, j, weight});
+        if (rank[a] < rank[b])
+            parent[a] = b;
+        else if (rank[a] > rank[b])
+            parent[b] = a;
+        else {
+            parent[b] = a;
+            rank[a]++;
         }
     }
+};
 
-    vector<int> parent(V), rank(V, 0);
-    for (int i = 0; i < V; i++)
-        parent[i] = i;
+int kruskal_mst(std::vector<Edge>& edges, int V) {
+    ranges::sort(edges, {}, &Edge::weight);
 
-    sort(edges.begin(), edges.end(),
-         [](const Edge &a, const Edge &b) { return a.weight < b.weight; });
+    DSU dsu(V);
 
-    int totalCost = 0;
-    int countEdges = 0;
+    int cost = 0;
+    int used = 0;
 
-    for (auto &e : edges)
-    {
-        int setU = find(parent, e.src);
-        int setV = find(parent, e.dest);
+    for (const auto& e : edges) {
+        if (dsu.find(e.src) != dsu.find(e.dest)) {
+            dsu.unite(e.src, e.dest);
+            cost += e.weight;
 
-        if (setU != setV)
-        {
-            totalCost += e.weight;
-            unionp(parent, rank, setU, setV);
-            countEdges++;
+            if (++used == V - 1) break;
         }
-        if (countEdges == V - 1)
-            break;
     }
 
-    cout << totalCost;
-    return 0;
+    return cost;
+}
+
+int main(int argc, char* argv[]) {
+    if (argc < 2 || std::string_view(argv[1]).empty()) usage();
+
+    auto values = parse_vec(argv[1]);
+    if (!values) usage();
+
+    const int n = static_cast<int>(values->size());
+    const int V = static_cast<int>(std::sqrt(n));
+
+    if (V * V != n) usage();
+
+    std::vector<Edge> edges;
+
+    for (int i = 0; i < V; ++i) {
+        for (int j = i + 1; j < V; ++j) {
+            int w = values->at(i * V + j);
+            if (w != 0) edges.push_back({i, j, w});
+        }
+    }
+
+    std::cout << kruskal_mst(edges, V) << '\n';
 }
