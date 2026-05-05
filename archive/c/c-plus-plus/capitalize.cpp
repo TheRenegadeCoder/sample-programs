@@ -1,17 +1,24 @@
-#include <cstring>
+#include <cctype>
+#include <format>
 #include <iostream>
+#include <string_view>
 
-int main(int argc, const char *argv[])
-{
-    if (argc < 2 || argv[1][0] == '\0')
-    {
-        std::cout << "Usage: please provide a string";
-        return 1;
-    }
+[[noreturn]] void usage() {
+    std::cerr << "Usage: please provide a string\n";
+    std::exit(1);
+}
 
-    for (int j = 0; j < (int)std::strlen(argv[1]); j++)
-        if (j == 0)
-            std::cout << (char)toupper(argv[1][j]);
-        else
-            std::cout << *(argv[1] + sizeof(char) * j);
+int main(int argc, char* argv[]) {
+    if (argc < 2) usage();
+
+    std::string_view input{argv[1]};
+    if (input.empty()) usage();
+
+    char head = static_cast<char>(
+        std::toupper(static_cast<unsigned char>(input.front())));
+
+    std::string_view tail = input.substr(1);
+
+    std::cout << std::format("{}{}\n", head, tail);
+    return 0;
 }
