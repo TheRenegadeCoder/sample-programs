@@ -1,43 +1,50 @@
+#include <charconv>
 #include <iostream>
-#include <stdlib.h>
-#include <string.h>
+#include <optional>
+#include <string_view>
 
-using namespace std;
+[[noreturn]] void usage() {
+    std::cerr << "Usage: please input a non-negative integer\n";
+    std::exit(1);
+}
 
-int main(int argc, char **argv)
-{
-    if (argc == 1)
-    {
-        cout << "Usage: please input a non-negative integer\n";
-        return 1;
-    }
-    string tmp = argv[1];
-    if (argc == 1
-        || argv[1][0] == '\0'
-        || (atoi(argv[1]) == 0 && strcmp(argv[1], "0") != 0)
-        || atoi(argv[1]) < 0
-        || tmp.find(".") != string::npos)
-    {
-        cout << "Usage: please input a non-negative integer\n";
-    }
-    else
-    {
-        int input = atoi(argv[1]);
-        if (input == 0 || input == 1)
-        {
-            cout << "composite\n";
-            return 0;
-        }
-        for (int i = 2; i < input; ++i)
-        {
-            if (input % i == 0)
-            {
-                cout << "composite\n";
-                return 0;
-            }
-        }
-        cout << "Prime\n";
+static constexpr std::string_view ws = " \t\n\r\f\v";
+constexpr std::string_view trim(std::string_view s) {
+    const auto start = s.find_first_not_of(ws);
+    if (start == std::string_view::npos) return "";
+    s.remove_prefix(start);
+
+    const auto end = s.find_last_not_of(ws);
+    s.remove_suffix(s.size() - 1 - end);
+    return s;
+}
+
+std::optional<int> to_nonnegative_int(std::string_view s) {
+    s = trim(s);
+    int value{};
+    auto [ptr, ec] = std::from_chars(s.data(), s.data() + s.size(), value);
+    return (ec == std::errc{} && ptr == s.data() + s.size() && value >= 0)
+               ? std::make_optional(value)
+               : std::nullopt;
+}
+
+bool is_prime(int n) {
+    if (n < 2) return false;
+    if (n <= 3) return true;
+    if (n % 2 == 0 || n % 3 == 0) return false;
+
+    for (int i = 5; i <= n / i; i += 6) {
+        if (n % i == 0 || n % (i + 2) == 0) return false;
     }
 
-    return 0;
+    return true;
+}
+
+int main(int argc, char* argv[]) {
+    if (argc != 2) usage();
+
+    const auto n = to_nonnegative_int(argv[1]);
+    if (!n) usage();
+
+    std::cout << (is_prime(*n) ? "Prime" : "Composite") << '\n';
 }
