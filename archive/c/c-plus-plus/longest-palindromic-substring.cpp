@@ -1,78 +1,69 @@
-#include <cstring>
+#include <algorithm>
 #include <iostream>
 #include <string>
+#include <string_view>
+#include <vector>
 
-#define MAX_LENGTH 1000
+std::string_view find_longest_palindrome(std::string_view s) {
+    if (s.empty()) return {};
 
-int expandAroundCenter(const std::string &s, int left, int right)
-{
-    while (left >= 0 && right < s.length() && s[left] == s[right])
-    {
-        left--;
-        right++;
+    std::string t;
+    t.reserve(s.size() * 2 + 3);
+    t += '^';
+    for (const char c : s) {
+        t += '#';
+        t += c;
     }
-    return right - left - 1;
-}
+    t += "#$";
 
-bool longestPalindromicSubstring(const std::string &s, std::string &result)
-{
-    if (s.empty())
-    {
-        result = "";
-        return false;
-    }
+    const int n = static_cast<int>(t.size());
+    std::vector<int> radii(n, 0);
+    int center = 0;
+    int right_boundary = 0;
 
-    int start = 0, maxLength = 0;
-    int len = s.length();
+    for (int i = 1; i < n - 1; ++i) {
+        const int mirror = 2 * center - i;
 
-    for (int i = 0; i < len; i++)
-    {
-        int len1 = expandAroundCenter(s, i, i);
-        int len2 = expandAroundCenter(s, i, i + 1);
-        int len = (len1 > len2) ? len1 : len2;
+        if (i < right_boundary) {
+            radii[i] = std::min(right_boundary - i, radii[mirror]);
+        }
 
-        if (len > maxLength)
-        {
-            start = i - (len - 1) / 2;
-            maxLength = len;
+        while (t[i + (1 + radii[i])] == t[i - (1 + radii[i])]) {
+            ++radii[i];
+        }
+
+        if (i + radii[i] > right_boundary) {
+            center = i;
+            right_boundary = i + radii[i];
         }
     }
 
-    if (maxLength > 1)
-    {
-        result = s.substr(start, maxLength);
-        return true;
-    }
+    const auto max_it = std::ranges::max_element(radii);
+    const int max_radius = *max_it;
+    const int center_idx =
+        static_cast<int>(std::distance(radii.begin(), max_it));
 
-    result = "";
-    return false;
+    return s.substr((center_idx - max_radius - 1) / 2, max_radius);
 }
 
-int main(int argc, char *argv[])
-{
-    if (argc != 2)
-    {
-        std::cout
-            << "Usage: please provide a string that contains at least one "
-               "palindrome"
-            << std::endl;
-        return 1;
+[[noreturn]] void usage() {
+    std::cerr << "Usage: please provide a string that contains at least one "
+                 "palindrome\n";
+    std::exit(1);
+}
+
+int main(int argc, char* argv[]) {
+    if (argc != 2) usage();
+
+    std::string_view input{argv[1]};
+    if (input.empty()) usage();
+
+    auto result = find_longest_palindrome(input);
+
+    if (result.length() <= 1 && input.length() > 1) {
+        usage();
     }
 
-    std::string input = argv[1];
-    std::string result;
-
-    if (longestPalindromicSubstring(input, result) && !result.empty())
-    {
-        std::cout << result << std::endl;
-    }
-    else
-    {
-        std::cout
-            << "Usage: please provide a string that contains at least one "
-               "palindrome"
-            << std::endl;
-    }
-
+    std::cout << result << "\n";
     return 0;
 }
