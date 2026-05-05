@@ -1,94 +1,108 @@
 #include <algorithm>
+#include <charconv>
+#include <concepts>
 #include <iostream>
-#include <string>
+#include <optional>
+#include <ranges>
+#include <string_view>
+#include <utility>
 #include <vector>
-using namespace std;
 
-vector<string> splitStrings(string str)
-{
-    string word = "";
-    char dl = ',';
-    int num = 0;
+namespace views = std::views;
+namespace ranges = std::ranges;
 
-    str = str + dl;
-    int l = str.size();
-
-    vector<string> substr_list;
-
-    for (int i = 0; i < l; i++)
-    {
-        if (str[i] != dl)
-            word = word + str[i];
-        else
-        {
-            if ((int)word.size() != 0)
-                substr_list.push_back(word);
-
-            word = "";
-        }
-    }
-    return substr_list;
+[[noreturn]] void usage() {
+    std::cerr
+        << R"(Usage: please provide two lists in the format "1, 2, 3, 4, 5")"
+        << '\n';
+    std::exit(1);
 }
 
-void longest_common_subsequence(vector<string> arr1, vector<string> arr2)
-{
-    int m = arr1.size();
-    int n = arr2.size();
-    int table[m + 1][n + 1];
+static constexpr std::string_view ws = " \t\n\r\f\v";
+constexpr std::string_view trim(std::string_view s) {
+    const auto start = s.find_first_not_of(ws);
+    if (start == std::string_view::npos) return "";
+    s.remove_prefix(start);
 
-    for (int row = 0; row <= m; row++)
-    {
-        for (int col = 0; col <= n; col++)
-
-            if (row == 0 || col == 0)
-                table[row][col] = 0;
-            else if (arr1[row - 1] == arr2[col - 1])
-                table[row][col] = 1 + table[row - 1][col - 1];
-            else
-                table[row][col] = max(table[row][col - 1], table[row - 1][col]);
-    }
-
-    vector<string> array_of_lcs;
-
-    int i = m, j = n;
-    while (i > 0 && j > 0)
-    {
-        if (arr1.at(i - 1) == arr2.at(j - 1))
-        {
-            array_of_lcs.insert(array_of_lcs.begin(), arr2[j - 1]);
-            i--;
-            j--;
-        }
-        else
-        {
-            if (table[i - 1][j] > table[i][j - 1])
-                i--;
-            else
-                j--;
-        }
-    }
-
-    for (int i = 0; i < array_of_lcs.size() - 1; i++)
-        cout << array_of_lcs[i] << ",";
-    cout << array_of_lcs[array_of_lcs.size() - 1] << endl;
+    const auto end = s.find_last_not_of(ws);
+    s.remove_suffix(s.size() - 1 - end);
+    return s;
 }
 
-int main(int argc, char *argv[])
-{
-    if (!(argc > 2 && std::string(argv[1]) != "" && std::string(argv[2]) != ""))
-    {
-        cout
-            << "Usage: please provide two lists in the format \"1, 2, 3, 4, 5\""
-            << endl;
-        return 1;
+std::optional<int> to_int(std::string_view s) {
+    int value{};
+    auto [ptr, ec] = std::from_chars(s.data(), s.data() + s.size(), value);
+    return (ec == std::errc{} && ptr == s.data() + s.size())
+               ? std::make_optional(value)
+               : std::nullopt;
+}
+
+std::optional<std::vector<int>> parse_vec(std::string_view s) {
+    auto pipe = s | views::split(',') | views::transform([](auto&& r) {
+                    return std::string_view{
+                        std::addressof(*ranges::begin(r)),
+                        static_cast<std::size_t>(ranges::distance(r))};
+                }) |
+                views::transform(trim) | views::transform(to_int);
+
+    std::vector<int> out;
+    for (auto&& opt : pipe) {
+        if (!opt) return std::nullopt;
+        out.push_back(*opt);
+    }
+    return out.empty() ? std::nullopt : std::make_optional(out);
+}
+
+template <typename T>
+std::vector<T> find_lcs(const std::vector<T>& a, const std::vector<T>& b) {
+    const std::size_t m = a.size();
+    const std::size_t n = b.size();
+
+    auto idx = [n](std::size_t i, std::size_t j) { return i * (n + 1) + j; };
+
+    std::vector<int> dp((m + 1) * (n + 1), 0);
+
+    for (std::size_t i = 1; i <= m; ++i) {
+        for (std::size_t j = 1; j <= n; ++j) {
+            if (a[i - 1] == b[j - 1])
+                dp[idx(i, j)] = dp[idx(i - 1, j - 1)] + 1;
+            else
+                dp[idx(i, j)] = std::max(dp[idx(i - 1, j)], dp[idx(i, j - 1)]);
+        }
     }
 
-    string input1 = argv[1];
-    vector<string> arr1 = splitStrings(input1);
+    std::vector<T> result;
+    result.reserve(dp.back());
 
-    string input2 = argv[2];
-    vector<string> arr2 = splitStrings(input2);
+    std::size_t i = m, j = n;
 
-    longest_common_subsequence(arr1, arr2);
-    return 0;
+    while (i > 0 && j > 0) {
+        if (a[i - 1] == b[j - 1]) {
+            result.push_back(a[i - 1]);
+            --i;
+            --j;
+        } else if (dp[idx(i - 1, j)] > dp[idx(i, j - 1)]) {
+            --i;
+        } else {
+            --j;
+        }
+    }
+
+    ranges::reverse(result);
+    return result;
+}
+
+int main(int argc, char* argv[]) {
+    if (argc != 3) usage();
+
+    const auto a = parse_vec(argv[1]);
+    const auto b = parse_vec(argv[2]);
+    if (!a || !b) usage();
+
+    const auto result = find_lcs(*a, *b);
+
+    for (const char* sep = ""; int val : result) {
+        std::cout << std::exchange(sep, ", ") << val;
+    }
+    std::cout << "\n";
 }
