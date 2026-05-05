@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in COBOL! To find documentation related to the COBOL code in this repo, look [here](https://sampleprograms.io/languages/cobol).
 
-## Sample Programs List - 29/39 :relaxed:
+## Sample Programs List - 39/39 :partying_face:
 
 In this section, we feature a list of completed and missing programs in COBOL. See above for the current amount of completed programs in COBOL. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -24,10 +24,20 @@ Below, you'll find a list of completed code snippets in COBOL. Code snippets pre
 - :warning: [Duplicate Character Counter in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+cobol) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :white_check_mark: [Even Odd in COBOL](https://sampleprograms.io/projects/even-odd/cobol) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :warning: [Factorial in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+cobol) [[Requirements](https://sampleprograms.io/projects/factorial)]
+- :warning: [Fibonacci in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+cobol) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
+- :warning: [File Input Output in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+cobol) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :warning: [Fizz Buzz in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+cobol) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
+- :warning: [Fraction Math in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fraction+math+cobol) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :white_check_mark: [Hello World in COBOL](https://sampleprograms.io/projects/hello-world/cobol) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :warning: [Insertion Sort in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+cobol) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
+- :warning: [Job Sequencing in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+job+sequencing+cobol) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
+- :warning: [Josephus Problem in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+josephus+problem+cobol) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :warning: [Linear Search in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+linear+search+cobol) [[Requirements](https://sampleprograms.io/projects/linear-search)]
+- :warning: [Longest Common Subsequence in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+common+subsequence+cobol) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
+- :warning: [Longest Palindromic Substring in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+palindromic+substring+cobol) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
+- :warning: [Longest Word in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+cobol) [[Requirements](https://sampleprograms.io/projects/longest-word)]
+- :warning: [Maximum Array Rotation in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+maximum+array+rotation+cobol) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
+- :warning: [Maximum Subarray in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+maximum+subarray+cobol) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :warning: [Merge Sort in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+cobol) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
 - :warning: [Minimum Spanning Tree in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+minimum+spanning+tree+cobol) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
 - :warning: [Palindromic Number in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+cobol) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
@@ -42,21 +52,6 @@ Below, you'll find a list of completed code snippets in COBOL. Code snippets pre
 - :warning: [Sleep Sort in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sleep+sort+cobol) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :warning: [Transpose Matrix in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+cobol) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 - :warning: [Zeckendorf in COBOL](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+zeckendorf+cobol) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
-
-### Missing Programs
-
-The following list contains all of the approved programs that are not currently implemented in COBOL. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
-
-- :x: [Fibonacci](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fibonacci&template=code-snippet-request.md&title=Add+Fibonacci+in+COBOL) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
-- :x: [File Input Output](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,file+input+output&template=code-snippet-request.md&title=Add+File+Input+Output+in+COBOL) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
-- :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fraction+math&template=code-snippet-request.md&title=Add+Fraction+Math+in+COBOL) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
-- :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,job+sequencing&template=code-snippet-request.md&title=Add+Job+Sequencing+in+COBOL) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
-- :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,josephus+problem&template=code-snippet-request.md&title=Add+Josephus+Problem+in+COBOL) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
-- :x: [Longest Common Subsequence](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+common+subsequence&template=code-snippet-request.md&title=Add+Longest+Common+Subsequence+in+COBOL) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
-- :x: [Longest Palindromic Substring](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+palindromic+substring&template=code-snippet-request.md&title=Add+Longest+Palindromic+Substring+in+COBOL) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
-- :x: [Longest Word](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+word&template=code-snippet-request.md&title=Add+Longest+Word+in+COBOL) [[Requirements](https://sampleprograms.io/projects/longest-word)]
-- :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+array+rotation&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+COBOL) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
-- :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+subarray&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+COBOL) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 
 ## Testing
 
