@@ -59,27 +59,25 @@ int main(int argc, char* argv[]) {
     if (input.empty()) usage();
 
     const auto vec_opt = parse_vec(input);
-    if (const auto vec = *vec_opt; !vec_opt)
-        usage();
-    else {
-        const int n = static_cast<int>(vec.size());
-        long long sum = 0;
-        long long cur = 0;
+    if (!vec_opt) usage();
 
-        for (int i = 0; i < n; ++i) {
-            sum += vec[i];
-            cur += static_cast<long long>(i) * vec[i];
-        }
+    auto& vec = *vec_opt;
 
-        long long best = cur;
+    const int n = static_cast<int>(vec.size());
+    long long sum = 0, cur = 0;
 
-        for (int k = 1; k < n; ++k) {
-            const long long moved = vec[n - k];
-
-            cur += sum - static_cast<long long>(n) * moved;
-            best = std::max(best, cur);
-        }
-
-        std::cout << best << '\n';
+    for (int i = 0; i < n; ++i) {
+        sum += vec[i];
+        cur += static_cast<long long>(i) * vec[i];
     }
+
+    long long best = cur;
+
+    for (int k = 1; k < n; ++k) {
+        long long moved = vec[n - k];
+        cur += sum - static_cast<long long>(n) * moved;
+        best = std::max(best, cur);
+    }
+
+    std::cout << best << '\n';
 }
