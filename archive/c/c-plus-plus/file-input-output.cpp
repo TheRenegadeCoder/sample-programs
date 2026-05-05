@@ -1,46 +1,43 @@
+#include <cstdlib>
+#include <filesystem>
+#include <format>
 #include <fstream>
 #include <iostream>
 #include <string>
 
-void write_file()
-{
-    std::fstream out("output.txt", std::ios::out);
+namespace fs = std::filesystem;
 
-    if (!out.is_open())
-    {
-        std::cout << "Could not open file!\n";
-        return;
+bool write_file(const fs::path& path, std::string_view content) {
+    std::ofstream out(path, std::ios::binary | std::ios::trunc);
+
+    if (!out) {
+        std::cerr << "Error: Could not open '" << path << "' for writing!\n";
+        return false;
     }
 
-    out << "A line of text\n";
-    out << "Another line of text\n";
-
-    out.flush();
-
-    out.close();
+    out.write(content.data(), static_cast<std::streamsize>(content.size()));
+    return static_cast<bool>(out);
 }
 
-void read_file()
-{
-    std::fstream in;
+bool read_file(const fs::path& path) {
+    std::ifstream in(path, std::ios::binary);
 
-    in.open("output.txt", std::ios::in);
-
-    if (!in.is_open())
-    {
-        std::cout << "Could not open file!\n";
-        return;
+    if (!in) {
+        std::cerr << "Error: Could not open '" << path << "' for reading!\n";
+        return false;
     }
 
-    std::string line;
-    while (std::getline(in, line))
-        std::cout << line << "\n";
-
-    in.close();
+    std::cout << in.rdbuf();
+    return true;
 }
 
-int main()
-{
-    write_file();
-    read_file();
+int main() {
+    const fs::path target = "output.txt";
+
+    constexpr std::string_view data =
+        "A line of text\n"
+        "Another line of text\n";
+
+    if (!write_file(target, data)) return 1;
+    if (!read_file(target)) return 1;
 }
