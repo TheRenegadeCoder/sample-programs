@@ -1,45 +1,48 @@
+#include <charconv>
 #include <iostream>
-#include <stdexcept>
-#include <string>
-using namespace std;
+#include <optional>
+#include <string_view>
 
-int josephus(int n, int k)
-{
-    if (n == 1)
-        return 1;
-    else
-        return (josephus(n - 1, k) + k - 1) % n + 1;
+[[noreturn]] void usage() {
+    std::cerr << "Usage: please input the total number of people and number of "
+                 "people to skip.\n";
+    std::exit(1);
 }
 
-int main(int argc, char *argv[])
-{
-    const string usage_msg = "Usage: please input the total number of people "
-                             "and number of people to skip.\n";
+static constexpr std::string_view ws = " \t\n\r\f\v";
+constexpr std::string_view trim(std::string_view s) {
+    const auto start = s.find_first_not_of(ws);
+    if (start == std::string_view::npos) return "";
+    s.remove_prefix(start);
 
-    if (argc != 3)
-    {
-        cerr << usage_msg;
-        return 1;
+    const auto end = s.find_last_not_of(ws);
+    s.remove_suffix(s.size() - 1 - end);
+    return s;
+}
+
+std::optional<int> to_nonnegative_int(std::string_view s) {
+    int value{};
+    auto [ptr, ec] = std::from_chars(s.data(), s.data() + s.size(), value);
+    return (ec == std::errc{} && ptr == s.data() + s.size() && value > 0)
+               ? std::make_optional(value)
+               : std::nullopt;
+}
+
+int josephus(int n, int k) {
+    int survivor = 0;
+    for (int i = 1; i <= n; ++i) {
+        survivor = (survivor + k) % i;
     }
+    return survivor + 1;
+}
 
-    try
-    {
-        int n = stoi(argv[1]);
-        int k = stoi(argv[2]);
+int main(int argc, char* argv[]) {
+    if (argc != 3) usage();
 
-        if (n <= 0 || k <= 0)
-        {
-            cerr << usage_msg;
-            return 1;
-        }
+    const auto n = to_nonnegative_int(argv[1]);
+    const auto k = to_nonnegative_int(argv[2]);
 
-        int result = josephus(n, k);
-        cout << result << endl;
-        return 0;
-    }
-    catch (...)
-    {
-        cerr << usage_msg;
-        return 1;
-    }
+    if (!n || !k) usage();
+
+    std::cout << josephus(*n, *k) << '\n';
 }
