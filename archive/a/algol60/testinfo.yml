@@ -11,9 +11,9 @@ container:
     sh -c 'marst -l 255 -o {{ source.name }}.c {{ source.name }}{{ source.extension }} && \
       gcc -o {{ source.name }} {{ source.name }}.c -lm -lalgol && \
       (echo "#!/bin/sh"; \
-      echo "(printf \"%d\n\" \"\$#\"; printf \"%s\0\" \"\$@\") | ./{{ source.name }}" \
+      echo "(printf \"%d\n\" \"\$#\"; printf \"%s\0\" \"\$@\") | FILE_2=output.txt ./{{ source.name }}" \
       ) >{{ source.name }}.sh'
-  cmd: "sh -c 'FILE_2=output.txt sh {{ source.name }}.sh'"
+  cmd: "sh {{ source.name }}.sh"
 
 notes:
   - "Since ALGOL 60 does not support command-line arguments directly, the command line arguments are delivered like this:"
