@@ -13,9 +13,10 @@ container:
       (echo "#!/bin/sh"; \
       echo "(printf \"%d\n\" \"\$#\"; printf \"%s\0\" \"\$@\") | ./{{ source.name }}" \
       ) >{{ source.name }}.sh'
-  cmd: "sh {{ source.name }}.sh"
+  cmd: "sh -c 'FILE_2=output.txt sh {{ source.name }}.sh'"
 
 notes:
   - "Since ALGOL 60 does not support command-line arguments directly, the command line arguments are delivered like this:"
   - "- Number of arguments followed by newline (ASCII 10). Use 'ininteger' to read this"
   - "- Each argument is separated by a null byte (ASCII 0)"
+  - "Channel 2 is mapped to the file 'output.txt'"
