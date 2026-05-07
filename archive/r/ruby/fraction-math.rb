@@ -1,89 +1,61 @@
 class Fraction
-    attr_reader :numerator, :denominator
-    def initialize (numerator, denominator)
-       @numerator = numerator
-       @denominator = denominator
-    end 
-    
-    
-  def fraction_math(other_fraction, operator)
-    num_one = Rational(@numerator, @denominator)
-    num_two = Rational(other_fraction.numerator, other_fraction.denominator)
+  attr_reader :numerator, :denominator
 
-        final_result = case operator
-        when '/' then num_one / num_two
-        when '*' then num_one * num_two
-        when '+' then num_one + num_two
-        when '-' then num_one - num_two 
-        else 
-            "Invalid operator"
-        end
-      final_result.to_s
-    end      
-
-
-  # Comparison operators
-  def ==(other)
-    Rational(@numerator, @denominator) == Rational(other.numerator, other.denominator)
+  def initialize(numerator, denominator)
+    @numerator = numerator
+    @denominator = denominator
   end
 
-  def !=(other)
-    Rational(@numerator, @denominator) != Rational(other.numerator, other.denominator)
+  def to_r
+    Rational(numerator, denominator)
   end
 
-  def >=(other)
-    Rational(@numerator, @denominator) >= Rational(other.numerator, other.denominator)
+  def operate(other, op)
+    a = to_r
+    b = other.to_r
+
+    case op
+    when "+" then (a + b).to_s
+    when "-" then (a - b).to_s
+    when "*" then (a * b).to_s
+    when "/" then (a / b).to_s
+    end
   end
 
-  def <=(other)
-    Rational(@numerator, @denominator) <= Rational(other.numerator, other.denominator)
-  end
-  def <(other)
-    Rational(@numerator, @denominator) < Rational(other.numerator, other.denominator)
-  end
+  def compare(other, op)
+    a = to_r
+    b = other.to_r
 
-  def >(other)
-    Rational(@numerator, @denominator) > Rational(other.numerator, other.denominator)
+    case op
+    when "==" then a == b
+    when "!=" then a != b
+    when ">" then a > b
+    when "<" then a < b
+    when ">=" then a >= b
+    when "<=" then a <= b
+    end
   end
-  
 end
 
-# Command-line input
-if ARGV.length != 3
-  puts "Usage: ./fraction-math operand1 operator operand2"
-  exit
-end
+a, op, b = ARGV
+abort("Usage: ./fraction-math operand1 operator operand2") unless a && op && b
 
-input1, operator, input2 = ARGV
+num1, den1 = a.split("/").map(&:to_i)
+num2, den2 = b.split("/").map(&:to_i)
 
-num1, den1 = input1.split('/').map(&:to_i)
-num2, den2 = input2.split('/').map(&:to_i)
+lhs = Fraction.new(num1, den1)
+rhs = Fraction.new(num2, den2)
 
-fraction1 = Fraction.new(num1, den1)
-fraction2 = Fraction.new(num2, den2)
+result = lhs.operate(rhs, op)
 
-if operator == "+"
-  puts fraction1.fraction_math(fraction2,"+")
-elsif operator == "-" 
- puts fraction1.fraction_math(fraction2,"-")
-elsif operator == "/" 
- puts fraction1.fraction_math(fraction2,"/")
-elsif operator == "*" 
- puts fraction1.fraction_math(fraction2,"*")
-elsif operator == "=="
-  puts fraction1 == fraction2 ? 1 : 0
-elsif operator == "!="
-  puts fraction1 != fraction2 ? 1 : 0
-elsif operator == ">"
-  puts fraction1 > fraction2 ? 1 : 0
-elsif operator == "<"
-  puts fraction1 < fraction2 ? 1 : 0
-elsif operator == ">="
-  puts fraction1 >= fraction2 ? 1 : 0
-elsif operator == "<="
-  puts fraction1 <= fraction2 ? 1 : 0
+if !result.nil?
+  puts result
 else
-  puts "Invalid operator"
+  cmp = lhs.compare(rhs, op)
+
+  if !cmp.nil?
+    puts cmp ? 1 : 0
+  else
+    puts "Invalid operator"
+  end
 end
-
-
