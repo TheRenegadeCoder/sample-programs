@@ -72,7 +72,7 @@ For example, the "Hello World" sample would be named this:
 The following list shares details about what we're using to test all Sample Programs in Ruby:
 
 - Docker Image: ruby
-- Docker Tag: 2-alpine
+- Docker Tag: 4-alpine
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 
