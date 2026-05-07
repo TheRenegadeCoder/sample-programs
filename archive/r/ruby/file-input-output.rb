@@ -1,23 +1,10 @@
-def write_file
-  out = File.new("output.txt", "w")
+content = <<~TEXT
+  This is a line written by a Ruby program
+  This line also
+TEXT
 
-  out << "This is a line written by a Ruby program\n"
-  out << "This line also"
+File.write("output.txt", content)
 
-  out.flush()
-  out.close()
+File.foreach("output.txt") do |line|
+  puts line
 end
-
-
-def read_file
-  in_file = File.open("output.txt", "r")
-
-  in_file.each_line do |line|
-    puts line
-  end
-
-  in_file.close()
-end
-
-write_file()
-read_file()
