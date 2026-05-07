@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in JavaScript! To find documentation related to the JavaScript code in this repo, look [here](https://sampleprograms.io/languages/javascript).
 
-## Sample Programs List - 34/39 :smile:
+## Sample Programs List - 39/39 :partying_face:
 
 In this section, we feature a list of completed and missing programs in JavaScript. See above for the current amount of completed programs in JavaScript. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -19,12 +19,15 @@ Below, you'll find a list of completed code snippets in JavaScript. Code snippet
 - :warning: [Bubble Sort in JavaScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+javascript) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :warning: [Capitalize in JavaScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+javascript) [[Requirements](https://sampleprograms.io/projects/capitalize)]
 - :warning: [Convex Hull in JavaScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+convex+hull+javascript) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
+- :warning: [Depth First Search in JavaScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+depth+first+search+javascript) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :warning: [Dijkstra in JavaScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+dijkstra+javascript) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
+- :warning: [Duplicate Character Counter in JavaScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+javascript) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :warning: [Even Odd in JavaScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+javascript) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :warning: [Factorial in JavaScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+javascript) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :white_check_mark: [Fibonacci in JavaScript](https://sampleprograms.io/projects/fibonacci/javascript) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
 - :warning: [File Input Output in JavaScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+javascript) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :white_check_mark: [Fizz Buzz in JavaScript](https://sampleprograms.io/projects/fizz-buzz/javascript) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
+- :warning: [Fraction Math in JavaScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fraction+math+javascript) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :warning: [Hello World in JavaScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+javascript) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :warning: [Insertion Sort in JavaScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+javascript) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :warning: [Job Sequencing in JavaScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+job+sequencing+javascript) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
@@ -33,8 +36,10 @@ Below, you'll find a list of completed code snippets in JavaScript. Code snippet
 - :warning: [Longest Common Subsequence in JavaScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+common+subsequence+javascript) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
 - :warning: [Longest Palindromic Substring in JavaScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+palindromic+substring+javascript) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
 - :warning: [Longest Word in JavaScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+javascript) [[Requirements](https://sampleprograms.io/projects/longest-word)]
+- :warning: [Maximum Array Rotation in JavaScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+maximum+array+rotation+javascript) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :warning: [Maximum Subarray in JavaScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+maximum+subarray+javascript) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :warning: [Merge Sort in JavaScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+javascript) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
+- :warning: [Minimum Spanning Tree in JavaScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+minimum+spanning+tree+javascript) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
 - :warning: [Palindromic Number in JavaScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+javascript) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :warning: [Prime Number in JavaScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+javascript) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :warning: [Quick Sort in JavaScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+javascript) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
@@ -47,16 +52,6 @@ Below, you'll find a list of completed code snippets in JavaScript. Code snippet
 - :warning: [Sleep Sort in JavaScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sleep+sort+javascript) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :warning: [Transpose Matrix in JavaScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+javascript) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 - :warning: [Zeckendorf in JavaScript](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+zeckendorf+javascript) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
-
-### Missing Programs
-
-The following list contains all of the approved programs that are not currently implemented in JavaScript. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
-
-- :x: [Depth First Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,depth+first+search&template=code-snippet-request.md&title=Add+Depth+First+Search+in+JavaScript) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
-- :x: [Duplicate Character Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,duplicate+character+counter&template=code-snippet-request.md&title=Add+Duplicate+Character+Counter+in+JavaScript) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
-- :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fraction+math&template=code-snippet-request.md&title=Add+Fraction+Math+in+JavaScript) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
-- :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+array+rotation&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+JavaScript) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
-- :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+JavaScript) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
 
 ## Testing
 
