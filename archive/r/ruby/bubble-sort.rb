@@ -1,27 +1,35 @@
 def bubble_sort(numbers)
-  n = numbers.length
-  for i in 0...n-1
-    for j in 0...n-i-1
-      if numbers[j] > numbers[j + 1]
-        numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
-      end
+  arr = numbers.dup
+  n = arr.length
+
+  (n - 1).times do |i|
+    (n - i - 1).times do |j|
+      next unless arr[j] > arr[j + 1]
+
+      arr[j], arr[j + 1] = arr[j + 1], arr[j]
     end
   end
-  return numbers
+
+  arr
 end
 
-def err()
-  puts('Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"')
+def parse_input
+  raw = ARGV.first
+  raise ArgumentError unless raw
+
+  numbers = raw.split(",").map { Integer(it.strip, exception: false) }
+  raise ArgumentError if numbers.any?(nil) || numbers.length < 2
+
+  numbers
+end
+
+def usage
+  warn %(Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5")
 end
 
 begin
-  unsorted = ARGV[0].split(", ").map{|i| Integer(i)}
-  if unsorted.length > 1
-    sorted = bubble_sort(unsorted)
-    print(sorted)
-  else
-    err()
-  end
-rescue
-  err()
+  numbers = parse_input
+  puts bubble_sort(numbers).join(", ")
+rescue ArgumentError
+  usage
 end
