@@ -1,16 +1,18 @@
-def bubble_sort(numbers)
-  arr = numbers.dup
-  n = arr.length
+class Array
+  def bubble_sort
+    arr = dup
+    n = arr.length
 
-  (n - 1).times do |i|
-    (n - i - 1).times do |j|
-      next unless arr[j] > arr[j + 1]
+    (n - 1).times do |i|
+      (n - i - 1).times do |j|
+        next unless arr[j] > arr[j + 1]
 
-      arr[j], arr[j + 1] = arr[j + 1], arr[j]
+        arr[j], arr[j + 1] = arr[j + 1], arr[j]
+      end
     end
-  end
 
-  arr
+    arr
+  end
 end
 
 def parse_input
@@ -23,13 +25,13 @@ def parse_input
   numbers
 end
 
-def usage
-  warn %(Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5")
+def usage!
+  abort %(Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5")
 end
 
 begin
   numbers = parse_input
-  puts bubble_sort(numbers).join(", ")
+  puts numbers.bubble_sort.join(", ")
 rescue ArgumentError
-  usage
+  usage!
 end
