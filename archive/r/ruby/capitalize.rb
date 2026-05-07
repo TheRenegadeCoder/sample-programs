@@ -1,11 +1,13 @@
 def capitalize_str(str)
-    s = str.split(' ')
-    s[0][0] = s[0][0].upcase
-    s.join(' ')
+  return str if str.empty?
+
+  str[0].upcase + str[1..]
 end
 
-if ARGV.length == 0 || ARGV[0] == ''
-    puts 'Usage: please provide a string'
+input = ARGV.first.to_s
+
+if input.strip.empty?
+  warn "Usage: please provide a string"
 else
-    puts capitalize_str(ARGV[0])
+  puts capitalize_str(input)
 end
