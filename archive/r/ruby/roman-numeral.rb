@@ -1,46 +1,37 @@
-ROMAN_VALUES = {
-  "I": 1,
-  "V": 5,
-  "X": 10,
-  "L": 50,
-  "C": 100,
-  "D": 500,
-  "M": 1000
-}
+ROMAN = {
+  "I" => 1, "V" => 5, "X" => 10, "L" => 50,
+  "C" => 100, "D" => 500, "M" => 1000
+}.freeze
 
-def roman_valid?(roman_numbers)
-  return false if roman_numbers.any? { |roman_number| !ROMAN_VALUES.keys.include?(roman_number.to_sym) }  
-  return false if roman_numbers.join.include?('MMMM')
-  
-  counter_numbers = roman_numbers.tally # Only on ruby 2.7+
-  unless counter_numbers['M'].nil?
-    return false if counter_numbers['M'] > 4
-  end
-  
-  counter_numbers.reject { |k| k == 'M' }.all? { |(_, counter)| counter <= 3 }
+USAGE = "Usage: please provide a string of roman numerals"
+ERROR = "Error: invalid string of roman numerals"
+
+def valid_roman?(s)
+  return false unless s.match?(/\A[IVXLCDM]+\z/)
+
+  # no more than 3 repeats
+  return false if s.match?(/(.)\1{3,}/)
+
+  # invalid repeatables
+  %w[V L D].each { |ch| return false if s.include?(ch * 2) }
+
+  true
 end
 
-def roman_to_decimal(full_roman_number)
-  return 'Usage: please provide a string of roman numerals' if full_roman_number.nil?
-  return 0 if full_roman_number.empty?
+def roman_to_int(s)
+  return USAGE if s.nil?
 
-  roman_numbers = full_roman_number.upcase.split('')
-  return 'Error: invalid string of roman numerals' unless roman_valid?(roman_numbers)
+  s = s.upcase
+  return 0 if s.empty?
+  return ERROR unless valid_roman?(s)
 
   total = 0
 
-  roman_numbers.each_with_index do |roman_number, index|
-    current_value = ROMAN_VALUES[roman_number.to_sym]
-    next_value = ROMAN_VALUES[roman_numbers[index+1]&.to_sym] || 0
-    
-    if (current_value >= next_value)
-      total += current_value
-    else
-      total -= current_value
-    end
+  s.chars.each_cons(2) do |a, b|
+    total += (ROMAN[a] < ROMAN[b]) ? -ROMAN[a] : ROMAN[a]
   end
 
-  total
+  total + ROMAN[s[-1]]
 end
 
-print(roman_to_decimal(ARGV[0]))
+puts roman_to_int(ARGV.first)

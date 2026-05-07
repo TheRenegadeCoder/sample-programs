@@ -1,17 +1,5 @@
-input_str = ARGV.join(" ").strip 
+input = ARGV.join(" ").strip
 
-if input_str.empty?
-   puts "Usage: please provide a string"
-    exit
-  end
+abort("Usage: please provide a string") if input.empty?
 
-  words = input_str.split
-        max_length = 0
-
-        words.each do |word|
-            if word.length > max_length
-              max_length = word.length
-            end
-          end
-          
-          puts max_length
+puts input.split.map(&:length).max

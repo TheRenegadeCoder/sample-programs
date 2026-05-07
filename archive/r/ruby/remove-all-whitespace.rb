@@ -1,6 +1,5 @@
-if ARGV.length == 0 || ARGV[0] == ''
-  puts 'Usage: please provide a string'
-else
-  a = ARGV[0].gsub(/ /, '').gsub(/\t/, '').gsub(/\r/, '').gsub(/\n/, '')
-  puts a
-end
+input = ARGV.first.to_s
+
+abort("Usage: please provide a string") if input.empty?
+
+puts input.delete(" \t\r\n")

@@ -1,25 +1,10 @@
-# Requirement https://sample-programs.therenegadecoder.com/projects/even-odd/
-# Issue 1839
+input = ARGV.first
 
-if ARGV.empty?
-# if ARGV.length < 1
-    puts "Usage: please input a number"
-    exit
-else
-    # if ARGV.empty?
-    #     puts "Usage: please input a number"
-    # end
-    begin
-    string1 = ARGV[0]
-    num = Integer(string1)
-    rescue ArgumentError
-    puts "Usage: please input a number"
-    exit
-    end
+abort("Usage: please input a number") if input.nil? || input.strip.empty?
 
-    if num % 2 == 0
-    	puts "Even"
-    else
-    	puts "Odd"
-    end
+begin
+  num = Integer(input)
+  puts num.even? ? "Even" : "Odd"
+rescue ArgumentError
+  warn "Usage: please input a number"
 end
