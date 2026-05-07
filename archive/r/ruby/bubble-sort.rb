@@ -4,11 +4,16 @@ class Array
     n = arr.length
 
     (n - 1).times do |i|
+      swapped = false
+
       (n - i - 1).times do |j|
         next unless arr[j] > arr[j + 1]
 
         arr[j], arr[j + 1] = arr[j + 1], arr[j]
+        swapped = true
       end
+
+      break unless swapped
     end
 
     arr
