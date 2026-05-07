@@ -1,8 +1,9 @@
-10.times {|n|
-    print " " * (10 - n)
-    puts "*" * (2 * n + 1)
-}
+HEIGHT = 10
 
-for i in 10.downto(0) do
-  puts ((" " * (10 - i)) + ("*" * (i * 2 + 1)))
+(0..HEIGHT).each do |i|
+  puts "#{" " * (HEIGHT - i)}#{"*" * (2 * i + 1)}"
+end
+
+(HEIGHT - 1).downto(0) do |i|
+  puts "#{" " * (HEIGHT - i)}#{"*" * (2 * i + 1)}"
 end
