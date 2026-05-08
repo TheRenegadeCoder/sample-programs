@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in Visual Basic! To find documentation related to the Visual Basic code in this repo, look [here](https://sampleprograms.io/languages/visual-basic).
 
-## Sample Programs List - 38/39 :smile:
+## Sample Programs List - 39/39 :partying_face:
 
 In this section, we feature a list of completed and missing programs in Visual Basic. See above for the current amount of completed programs in Visual Basic. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -20,6 +20,7 @@ Below, you'll find a list of completed code snippets in Visual Basic. Code snipp
 - :warning: [Capitalize in Visual Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+visual+basic) [[Requirements](https://sampleprograms.io/projects/capitalize)]
 - :warning: [Convex Hull in Visual Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+convex+hull+visual+basic) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :warning: [Depth First Search in Visual Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+depth+first+search+visual+basic) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
+- :warning: [Dijkstra in Visual Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+dijkstra+visual+basic) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :warning: [Duplicate Character Counter in Visual Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+visual+basic) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :warning: [Even Odd in Visual Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+visual+basic) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :warning: [Factorial in Visual Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+visual+basic) [[Requirements](https://sampleprograms.io/projects/factorial)]
@@ -51,12 +52,6 @@ Below, you'll find a list of completed code snippets in Visual Basic. Code snipp
 - :warning: [Sleep Sort in Visual Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sleep+sort+visual+basic) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :warning: [Transpose Matrix in Visual Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+visual+basic) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 - :warning: [Zeckendorf in Visual Basic](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+zeckendorf+visual+basic) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
-
-### Missing Programs
-
-The following list contains all of the approved programs that are not currently implemented in Visual Basic. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
-
-- :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,dijkstra&template=code-snippet-request.md&title=Add+Dijkstra+in+Visual%20Basic) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 
 ## Testing
 
