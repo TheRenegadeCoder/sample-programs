@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in Ada! To find documentation related to the Ada code in this repo, look [here](https://sampleprograms.io/languages/ada).
 
-## Sample Programs List - 5/39 :disappointed:
+## Sample Programs List - 10/39 :thinking:
 
 In this section, we feature a list of completed and missing programs in Ada. See above for the current amount of completed programs in Ada. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -16,6 +16,11 @@ Below, you'll find a list of completed code snippets in Ada. Code snippets prece
 - :warning: [Baklava in Ada](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+ada) [[Requirements](https://sampleprograms.io/projects/baklava)]
 - :warning: [Base64 Encode Decode in Ada](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+base64+encode+decode+ada) [[Requirements](https://sampleprograms.io/projects/base64-encode-decode)]
 - :warning: [Binary Search in Ada](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+binary+search+ada) [[Requirements](https://sampleprograms.io/projects/binary-search)]
+- :warning: [Bubble Sort in Ada](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+ada) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
+- :warning: [Capitalize in Ada](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+ada) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :warning: [Convex Hull in Ada](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+convex+hull+ada) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
+- :warning: [Depth First Search in Ada](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+depth+first+search+ada) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
+- :warning: [Dijkstra in Ada](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+dijkstra+ada) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :warning: [Fizz Buzz in Ada](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+ada) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :warning: [Hello World in Ada](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+ada) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 
@@ -23,11 +28,6 @@ Below, you'll find a list of completed code snippets in Ada. Code snippets prece
 
 The following list contains all of the approved programs that are not currently implemented in Ada. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
-- :x: [Bubble Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,bubble+sort&template=code-snippet-request.md&title=Add+Bubble+Sort+in+Ada) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
-- :x: [Capitalize](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,capitalize&template=code-snippet-request.md&title=Add+Capitalize+in+Ada) [[Requirements](https://sampleprograms.io/projects/capitalize)]
-- :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,convex+hull&template=code-snippet-request.md&title=Add+Convex+Hull+in+Ada) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
-- :x: [Depth First Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,depth+first+search&template=code-snippet-request.md&title=Add+Depth+First+Search+in+Ada) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
-- :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,dijkstra&template=code-snippet-request.md&title=Add+Dijkstra+in+Ada) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :x: [Duplicate Character Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,duplicate+character+counter&template=code-snippet-request.md&title=Add+Duplicate+Character+Counter+in+Ada) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :x: [Even Odd](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,even+odd&template=code-snippet-request.md&title=Add+Even+Odd+in+Ada) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :x: [Factorial](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,factorial&template=code-snippet-request.md&title=Add+Factorial+in+Ada) [[Requirements](https://sampleprograms.io/projects/factorial)]
