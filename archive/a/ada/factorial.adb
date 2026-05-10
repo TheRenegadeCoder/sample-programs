@@ -33,6 +33,7 @@ begin
       exception
          when Constraint_Error =>
             Print_Usage;
+            return;
       end;
 
       if N > Max_Allowed then
@@ -40,7 +41,7 @@ begin
          return;
       end if;
 
-      Put_Line (Natural'Image (Fact (Natural (N))));
+      Put_Line (Natural'Image (Fact (N)));
 
    end;
 
