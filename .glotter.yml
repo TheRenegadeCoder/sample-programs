@@ -1513,6 +1513,8 @@ projects:
             name: "bubblesort"
             search: "bubble_sort"
             replace: "sleep_sort"
+        repeat:
+            sleep_sort_valid: 10
     transposematrix:
         words:
             - "transpose"
