@@ -28,7 +28,12 @@ begin
    declare
       N : Natural;
    begin
-      N := Natural'Value (Argument (1));
+      begin
+         N := Natural'Value (Argument (1));
+      exception
+         when Constraint_Error =>
+            Print_Usage;
+      end;
 
       if N > Max_Allowed then
          Print_Usage;
@@ -37,9 +42,6 @@ begin
 
       Put_Line (Natural'Image (Fact (Natural (N))));
 
-   exception
-      when Constraint_Error =>
-         Print_Usage;
    end;
 
 end Factorial;
