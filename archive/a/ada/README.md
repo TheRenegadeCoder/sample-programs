@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in Ada! To find documentation related to the Ada code in this repo, look [here](https://sampleprograms.io/languages/ada).
 
-## Sample Programs List - 10/39 :thinking:
+## Sample Programs List - 17/39 :thinking:
 
 In this section, we feature a list of completed and missing programs in Ada. See above for the current amount of completed programs in Ada. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -21,20 +21,20 @@ Below, you'll find a list of completed code snippets in Ada. Code snippets prece
 - :warning: [Convex Hull in Ada](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+convex+hull+ada) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :warning: [Depth First Search in Ada](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+depth+first+search+ada) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :warning: [Dijkstra in Ada](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+dijkstra+ada) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
+- :warning: [Duplicate Character Counter in Ada](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+ada) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
+- :warning: [Even Odd in Ada](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+ada) [[Requirements](https://sampleprograms.io/projects/even-odd)]
+- :warning: [Factorial in Ada](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+ada) [[Requirements](https://sampleprograms.io/projects/factorial)]
+- :warning: [Fibonacci in Ada](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+ada) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
+- :warning: [File Input Output in Ada](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+ada) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :warning: [Fizz Buzz in Ada](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+ada) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
+- :warning: [Fraction Math in Ada](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fraction+math+ada) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :warning: [Hello World in Ada](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+ada) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :warning: [Insertion Sort in Ada](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+ada) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 
 ### Missing Programs
 
 The following list contains all of the approved programs that are not currently implemented in Ada. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
-- :x: [Duplicate Character Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,duplicate+character+counter&template=code-snippet-request.md&title=Add+Duplicate+Character+Counter+in+Ada) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
-- :x: [Even Odd](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,even+odd&template=code-snippet-request.md&title=Add+Even+Odd+in+Ada) [[Requirements](https://sampleprograms.io/projects/even-odd)]
-- :x: [Factorial](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,factorial&template=code-snippet-request.md&title=Add+Factorial+in+Ada) [[Requirements](https://sampleprograms.io/projects/factorial)]
-- :x: [Fibonacci](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fibonacci&template=code-snippet-request.md&title=Add+Fibonacci+in+Ada) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
-- :x: [File Input Output](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,file+input+output&template=code-snippet-request.md&title=Add+File+Input+Output+in+Ada) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
-- :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fraction+math&template=code-snippet-request.md&title=Add+Fraction+Math+in+Ada) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
-- :x: [Insertion Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,insertion+sort&template=code-snippet-request.md&title=Add+Insertion+Sort+in+Ada) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,job+sequencing&template=code-snippet-request.md&title=Add+Job+Sequencing+in+Ada) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,josephus+problem&template=code-snippet-request.md&title=Add+Josephus+Problem+in+Ada) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :x: [Linear Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,linear+search&template=code-snippet-request.md&title=Add+Linear+Search+in+Ada) [[Requirements](https://sampleprograms.io/projects/linear-search)]
