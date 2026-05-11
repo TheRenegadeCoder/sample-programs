@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in Haskell! To find documentation related to the Haskell code in this repo, look [here](https://sampleprograms.io/languages/haskell).
 
-## Sample Programs List - 25/39 :relaxed:
+## Sample Programs List - 30/39 :smile:
 
 In this section, we feature a list of completed and missing programs in Haskell. See above for the current amount of completed programs in Haskell. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -14,6 +14,7 @@ In this section, we feature a list of completed and missing programs in Haskell.
 Below, you'll find a list of completed code snippets in Haskell. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
 - :warning: [Baklava in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+haskell) [[Requirements](https://sampleprograms.io/projects/baklava)]
+- :warning: [Binary Search in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+binary+search+haskell) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :warning: [Bubble Sort in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+haskell) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :warning: [Capitalize in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+haskell) [[Requirements](https://sampleprograms.io/projects/capitalize)]
 - :warning: [Even Odd in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+haskell) [[Requirements](https://sampleprograms.io/projects/even-odd)]
@@ -24,12 +25,15 @@ Below, you'll find a list of completed code snippets in Haskell. Code snippets p
 - :white_check_mark: [Hello World in Haskell](https://sampleprograms.io/projects/hello-world/haskell) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :warning: [Insertion Sort in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+haskell) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :warning: [Job Sequencing in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+job+sequencing+haskell) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
+- :warning: [Josephus Problem in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+josephus+problem+haskell) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :warning: [Linear Search in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+linear+search+haskell) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :warning: [Longest Common Subsequence in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+common+subsequence+haskell) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
+- :warning: [Longest Palindromic Substring in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+palindromic+substring+haskell) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
 - :warning: [Longest Word in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+haskell) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :warning: [Maximum Array Rotation in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+maximum+array+rotation+haskell) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :warning: [Maximum Subarray in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+maximum+subarray+haskell) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :warning: [Merge Sort in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+haskell) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
+- :warning: [Palindromic Number in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+haskell) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :warning: [Prime Number in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+haskell) [[Requirements](https://sampleprograms.io/projects/prime-number)]
 - :warning: [Quick Sort in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+haskell) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
 - :warning: [Quine in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+haskell) [[Requirements](https://sampleprograms.io/projects/quine)]
@@ -38,24 +42,20 @@ Below, you'll find a list of completed code snippets in Haskell. Code snippets p
 - :warning: [Roman Numeral in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+haskell) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :warning: [Rot13 in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+haskell) [[Requirements](https://sampleprograms.io/projects/rot13)]
 - :warning: [Selection Sort in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+haskell) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
+- :warning: [Transpose Matrix in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+haskell) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
 ### Missing Programs
 
 The following list contains all of the approved programs that are not currently implemented in Haskell. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
 
 - :x: [Base64 Encode Decode](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,base64+encode+decode&template=code-snippet-request.md&title=Add+Base64+Encode+Decode+in+Haskell) [[Requirements](https://sampleprograms.io/projects/base64-encode-decode)]
-- :x: [Binary Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,binary+search&template=code-snippet-request.md&title=Add+Binary+Search+in+Haskell) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,convex+hull&template=code-snippet-request.md&title=Add+Convex+Hull+in+Haskell) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :x: [Depth First Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,depth+first+search&template=code-snippet-request.md&title=Add+Depth+First+Search+in+Haskell) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,dijkstra&template=code-snippet-request.md&title=Add+Dijkstra+in+Haskell) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :x: [Duplicate Character Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,duplicate+character+counter&template=code-snippet-request.md&title=Add+Duplicate+Character+Counter+in+Haskell) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fraction+math&template=code-snippet-request.md&title=Add+Fraction+Math+in+Haskell) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
-- :x: [Josephus Problem](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,josephus+problem&template=code-snippet-request.md&title=Add+Josephus+Problem+in+Haskell) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
-- :x: [Longest Palindromic Substring](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+palindromic+substring&template=code-snippet-request.md&title=Add+Longest+Palindromic+Substring+in+Haskell) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+Haskell) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
-- :x: [Palindromic Number](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,palindromic+number&template=code-snippet-request.md&title=Add+Palindromic+Number+in+Haskell) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+Haskell) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
-- :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,transpose+matrix&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+Haskell) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 - :x: [Zeckendorf](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,zeckendorf&template=code-snippet-request.md&title=Add+Zeckendorf+in+Haskell) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 
 ## Testing

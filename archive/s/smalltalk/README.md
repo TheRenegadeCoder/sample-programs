@@ -71,8 +71,8 @@ For example, the "Hello World" sample would be named this:
 
 The following list shares details about what we're using to test all Sample Programs in Smalltalk:
 
-- Docker Image: codesignal/smalltalk
-- Docker Tag: v9.4.0
+- Docker Image: coderunner/smalltalk
+- Docker Tag: 2022-10-27_06-08
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 
