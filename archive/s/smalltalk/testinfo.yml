@@ -3,6 +3,6 @@ folder:
   naming: "hyphen"
 
 container:
-  image: "codesignal/smalltalk"
-  tag: "v9.4.0"
+  image: "abuajamieh/gnu-smalltalk"
+  tag: "latest"
   cmd: "gst --no-gc {{ source.name }}{{ source.extension }}"
