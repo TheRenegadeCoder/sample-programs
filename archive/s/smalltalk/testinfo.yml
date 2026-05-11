@@ -3,6 +3,6 @@ folder:
   naming: "hyphen"
 
 container:
-  image: "abuajamieh/gnu-smalltalk"
-  tag: "latest"
+  image: "coderunner/smalltalk"
+  tag: "2022-10-27_06-08"
   cmd: "gst --no-gc {{ source.name }}{{ source.extension }} -a"
