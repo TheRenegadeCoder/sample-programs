@@ -5,4 +5,4 @@ folder:
 container:
   image: "abuajamieh/gnu-smalltalk"
   tag: "latest"
-  cmd: "gst --no-gc {{ source.name }}{{ source.extension }}"
+  cmd: "gst --no-gc {{ source.name }}{{ source.extension }} -a"
