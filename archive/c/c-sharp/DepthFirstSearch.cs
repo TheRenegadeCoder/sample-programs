@@ -1,63 +1,37 @@
-﻿using System.Collections.Generic;
-
-if (
-    args is not [var matrixRaw, var verticesRaw, var targetRaw] ||
+﻿if (args is not [var matrixRaw, var verticesRaw, var targetRaw] ||
     !int.TryParse(targetRaw, out int target) ||
     !TryParseList(verticesRaw.AsSpan(), out var vertices) ||
-    !TryParseList(matrixRaw.AsSpan(), out var matrix)
-)
-    return ExitWithUsage();
+    !TryParseList(matrixRaw.AsSpan(), out var matrix))
+{
+    return Usage();
+}
 
 int n = vertices.Count;
 if (matrix.Count != n * n)
-    return ExitWithUsage();
+    return Usage();
 
-// Compressed sparse row (CSR) format
-// See: https://en.wikipedia.org/wiki/Sparse_matrix#Compressed_sparse_row_(CSR,_CRS_or_Yale_format)
-int[] offsets = new int[n + 1];
-
-// Count how many outgoing edges each node has
-for (int i = 0; i < matrix.Count; i++)
-{
-    if (matrix[i] != 0)
-        offsets[i / n + 1]++;
-}
-
-// Convert counts to starting indices
+List<int>[] graph = new List<int>[n];
 for (int i = 0; i < n; i++)
-    offsets[i + 1] += offsets[i];
+    graph[i] = [];
 
-// Total number of edges is stored in offsets[n], and cursor tracks the next
-// write position for each node's edges
-int[] edges = new int[offsets[n]];
-int[] cursor = (int[])offsets.Clone();
-
-for (int row = 0; row < n; row++)
+for (int r = 0; r < n; r++)
 {
-    int baseIndex = row * n;
+    int baseIdx = r * n;
 
-    for (int col = 0; col < n; col++)
-    {
-        if (matrix[baseIndex + col] == 0)
-            continue;
-
-        // cursor[row] points to the next free slot for this row
-        edges[cursor[row]++] = col;
-    }
+    for (int c = 0; c < n; c++)
+        if (matrix[baseIdx + c] != 0)
+            graph[r].Add(c);
 }
 
 Console.WriteLine(
-    DFS(edges, offsets, vertices, target).ToString().ToLowerInvariant()
+    DFS(graph, vertices, target).ToString().ToLowerInvariant()
 );
 
 return 0;
 
-static bool DFS(int[] edges, int[] offsets, List<int> vertices, int target)
+static bool DFS(List<int>[] graph, List<int> values, int target)
 {
-    int n = vertices.Count;
-    if (n == 0)
-        return false;
-
+    int n = values.Count;
     var visited = new bool[n];
     var stack = new int[n];
     int sp = 0;
@@ -66,71 +40,41 @@ static bool DFS(int[] edges, int[] offsets, List<int> vertices, int target)
 
     while (sp > 0)
     {
-        int current = stack[--sp];
+        int v = stack[--sp];
+        if (visited[v]) continue;
 
-        if (visited[current])
-            continue;
+        visited[v] = true;
+        if (values[v] == target) return true;
 
-        visited[current] = true;
-
-        if (vertices[current] == target)
-            return true;
-
-        int start = offsets[current];
-        int end = offsets[current + 1];
-
-        for (int i = start; i < end; i++)
-        {
-            int next = edges[i];
+        foreach (int next in graph[v])
             if (!visited[next])
                 stack[sp++] = next;
-        }
     }
 
     return false;
 }
 
-static bool TryParseList(ReadOnlySpan<char> view, out List<int> numbers)
+static bool TryParseList(ReadOnlySpan<char> span, out List<int> numbers)
 {
-    numbers = null!;
-    if (view.IsWhiteSpace())
-        return false;
+    numbers = new(span.Count(',') + 1);
 
-    int expectedCount = view.Count(',') + 1;
-    var list = new List<int>(expectedCount);
-
-    while (!view.IsEmpty)
-    {
-        if (!TryParseNext(ref view, out int val))
-            return false;
-
-        list.Add(val);
-    }
-
-    numbers = list;
-    return true;
-
-    static bool TryParseNext(ref ReadOnlySpan<char> span, out int value)
+    while (!span.IsEmpty)
     {
         int comma = span.IndexOf(',');
+        var token = comma >= 0 ? span[..comma] : span;
 
-        ReadOnlySpan<char> token;
-        if (comma >= 0)
-        {
-            token = span[..comma];
-            span = span[(comma + 1)..];
-        }
-        else
-        {
-            token = span;
-            span = default;
-        }
+        span = comma >= 0 ? span[(comma + 1)..] : [];
 
-        return int.TryParse(token, out value);
+        if (!int.TryParse(token, out int n))
+            return false;
+
+        numbers.Add(n);
     }
+
+    return true;
 }
 
-static int ExitWithUsage()
+static int Usage()
 {
     Console.Error.WriteLine(
         """Usage: please provide a tree in an adjacency matrix form ("0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0") together with a list of vertex values ("1, 3, 5, 2, 4") and the integer to find ("4")"""
