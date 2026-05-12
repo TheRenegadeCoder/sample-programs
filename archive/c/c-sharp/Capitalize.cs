@@ -1,20 +1,23 @@
-using System;
-using System.Linq;
-
-namespace SamplePrograms
+if (args is not [string input, ..] || string.IsNullOrWhiteSpace(input))
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            if (!args.Any() || args[0] == "")
-            {
-                Console.WriteLine("Usage: please provide a string");
-                return;
-            }
-            string input = args[0];
-            string output = input.First().ToString().ToUpper() + input.Substring(1);
-            Console.WriteLine(output);
-        }
-    }
+    Console.WriteLine("Usage: please provide a string");
+    return;
 }
+
+if (char.IsUpper(input[0]))
+{
+    Console.WriteLine(input);
+    return;
+}
+
+string output = string.Create(
+    input.Length,
+    input,
+    static (span, str) =>
+    {
+        str.CopyTo(span);
+        span[0] = char.ToUpperInvariant(span[0]);
+    }
+);
+
+Console.WriteLine(output);
