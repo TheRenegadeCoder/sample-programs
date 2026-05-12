@@ -1,60 +1,43 @@
-using System;
 using System.Collections.Generic;
 
-if (args is not [var input, var targetRaw] || !int.TryParse(targetRaw, out int target))
-    return ExitWithUsage();
-
-if (!TryParseSortedList(input.AsSpan(), out var numbers))
-    return ExitWithUsage();
+if (args is not [var input, var targetRaw]
+    || !int.TryParse(targetRaw, out int target)
+    || !TryParseSorted(input.AsSpan(), out var numbers))
+{
+    return Usage();
+}
 
 Console.WriteLine(numbers.BinarySearch(target) >= 0);
 return 0;
 
-static bool TryParseSortedList(ReadOnlySpan<char> view, out List<int> numbers)
+static bool TryParseSorted(ReadOnlySpan<char> span, out List<int> numbers)
 {
-    numbers = null!;
-    if (view.IsWhiteSpace()) return false;
+    numbers = new(span.Count(',') + 1);
 
-    int expectedCount = view.Count(',') + 1;
-    var list = new List<int>(expectedCount);
     int last = int.MinValue;
 
-    while (!view.IsEmpty)
-    {
-        if (!TryParseNext(ref view, out int val) || val < last)
-            return false;
-
-        list.Add(val);
-        last = val;
-    }
-
-    numbers = list;
-    return numbers.Count > 0;
-
-    static bool TryParseNext(ref ReadOnlySpan<char> span, out int value)
+    while (!span.IsEmpty)
     {
         int comma = span.IndexOf(',');
+        var token = comma >= 0 ? span[..comma] : span;
 
-        ReadOnlySpan<char> token;
-        if (comma >= 0)
-        {
-            token = span[..comma];
-            span = span[(comma + 1)..];
-        }
-        else
-        {
-            token = span;
-            span = default;
-        }
-        
-        return int.TryParse(token, out value);
+        span = comma >= 0 ? span[(comma + 1)..] : [];
+
+        if (!int.TryParse(token, out int n) || n < last)
+            return false;
+
+        numbers.Add(n);
+        last = n;
     }
+
+    return numbers.Count > 0;
 }
 
-static int ExitWithUsage()
+static int Usage()
 {
-    Console.WriteLine(
+    Console.Error.WriteLine(
         """Usage: please provide a list of sorted integers ("1, 4, 5, 11, 12") and the integer to find ("11")"""
     );
+
     return 1;
 }
