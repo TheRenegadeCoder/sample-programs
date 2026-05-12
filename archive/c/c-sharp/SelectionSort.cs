@@ -1,40 +1,85 @@
-using System;
-using System.Linq;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 
-public class SelectionSort
+if (args is not [var input] || !TryParseList(input.AsSpan(), out var numbers))
+    return ExitWithUsage();
+
+SelectionSort(numbers);
+
+Console.WriteLine(string.Join(", ", numbers));
+return 0;
+
+static bool TryParseList(ReadOnlySpan<char> view, out List<int> numbers)
 {
-    public static IEnumerable<int> Selection(List<int> xs)
+    numbers = null!;
+    if (view.IsWhiteSpace())
+        return false;
+
+    int expectedCount = view.Count(',') + 1;
+    var list = new List<int>(expectedCount);
+
+    while (!view.IsEmpty)
     {
-        while (xs.Any())
-        {
-            var x = xs.Min();
-            xs.Remove(x);
-            yield return x;
-        }
+        if (!TryParseNext(ref view, out int val))
+            return false;
+
+        list.Add(val);
     }
 
-    public static void ErrorAndExit()
-    {
-        Console.WriteLine("Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"");
-        Environment.Exit(1);
-    }
+    if (list.Count < 2)
+        return false;
 
-    public static void Main(string[] args)
+    numbers = list;
+    return true;
+
+    static bool TryParseNext(ref ReadOnlySpan<char> span, out int value)
     {
-        if (args.Length != 1)
-            ErrorAndExit();
-        try
+        int comma = span.IndexOf(',');
+
+        ReadOnlySpan<char> token;
+        if (comma >= 0)
         {
-            var xs = args[0].Split(',').Select(i => Int32.Parse(i.Trim())).ToList();
-            if (xs.Count() <= 1)
-                ErrorAndExit();
-            var sortedXs = Selection(xs);
-            Console.WriteLine(string.Join(", ", sortedXs));
+            token = span[..comma];
+            span = span[(comma + 1)..];
         }
-        catch
+        else
         {
-            ErrorAndExit();
+            token = span;
+            span = default;
         }
+
+        return int.TryParse(token, out value);
     }
+}
+
+static void SelectionSort(List<int> list)
+{
+    if (list.Count < 2)
+        return;
+
+    Span<int> span = CollectionsMarshal.AsSpan(list);
+
+    int n = span.Length;
+
+    for (int i = 0; i < n - 1; i++)
+    {
+        int minIndex = i;
+
+        for (int j = i + 1; j < n; j++)
+        {
+            if (span[j] < span[minIndex])
+                minIndex = j;
+        }
+
+        if (minIndex != i)
+            (span[i], span[minIndex]) = (span[minIndex], span[i]);
+    }
+}
+
+static int ExitWithUsage()
+{
+    Console.WriteLine(
+        "Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\""
+    );
+    return 1;
 }
