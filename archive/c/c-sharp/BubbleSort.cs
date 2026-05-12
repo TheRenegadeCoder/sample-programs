@@ -13,28 +13,30 @@ return 0;
 
 static bool TryParseList(ReadOnlySpan<char> view, out List<int> numbers)
 {
-    numbers = new List<int>();
+    numbers = [];
 
     while (!view.IsEmpty)
     {
-        int comma = view.IndexOf(',');
-
-        ReadOnlySpan<char> segment = comma < 0 ? view : view[..comma];
-
-        segment = segment.Trim();
-
-        if (segment.IsEmpty || !int.TryParse(segment, out int val))
+        if (!TryParseNextToken(ref view, out int val))
             return false;
 
         numbers.Add(val);
-
-        if (comma < 0)
-            break;
-
-        view = view[(comma + 1)..];
     }
 
     return numbers.Count >= 2;
+
+    static bool TryParseNextToken(ref ReadOnlySpan<char> span, out int value)
+    {
+        int comma = span.IndexOf(',');
+        ReadOnlySpan<char> segment = comma == -1 ? span : span[..comma];
+
+        bool success = int.TryParse(segment.Trim(), out value);
+
+        // Advance the span: if no more commas, we're done (set to Empty)
+        span = comma == -1 ? default : span[(comma + 1)..];
+
+        return success;
+    }
 }
 
 static void BubbleSort(List<int> xs)
