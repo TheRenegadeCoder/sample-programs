@@ -1,22 +1,13 @@
-using System;
+if (args is [var input] && !string.IsNullOrEmpty(input))
+    Console.WriteLine(Reverse(input.AsSpan()));
 
-namespace SamplePrograms
+static string Reverse(ReadOnlySpan<char> s)
 {
-    public class ReverseString
-    {
-        public static string Reverse(string input)
-        {
-            var charArray = input.ToCharArray();
-            Array.Reverse(charArray);
-            return new string(charArray);
-        }
+    int n = s.Length;
+    char[] result = new char[n];
 
-        public static void Main(string[] args)
-        {
-            if (args.Length > 0)
-            {
-                System.Console.WriteLine(Reverse(args[0]));
-            }
-        }
-    }
+    for (int i = 0; i < n; i++)
+        result[i] = s[n - 1 - i];
+
+    return new string(result);
 }
