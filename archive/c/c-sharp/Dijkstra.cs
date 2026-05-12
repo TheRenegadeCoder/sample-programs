@@ -2,24 +2,36 @@
 
 if (
     args is not [var matrixRaw, var sourceRaw, var destRaw]
-    || !uint.TryParse(sourceRaw, out uint source)
-    || !uint.TryParse(destRaw, out uint dest)
+    || !int.TryParse(sourceRaw, out int source)
+    || !int.TryParse(destRaw, out int dest)
+    || !TryParseList(matrixRaw.AsSpan(), out var matrix)
 )
-{
     return ExitWithUsage();
+
+int n = (int)Math.Sqrt(matrix.Count);
+if (n * n != matrix.Count)
+    return ExitWithUsage();
+
+if (source < 0 || dest < 0 || source >= n || dest >= n)
+    return ExitWithUsage();
+
+var graph = new List<(int to, uint w)>[n];
+for (int i = 0; i < n; i++)
+    graph[i] = new();
+
+for (int u = 0; u < n; u++)
+{
+    int baseIndex = u * n;
+
+    for (int v = 0; v < n; v++)
+    {
+        uint w = (uint)matrix[baseIndex + v];
+        if (w != 0)
+            graph[u].Add((v, w));
+    }
 }
 
-if (!TryParseList(matrixRaw.AsSpan(), out var matrix))
-    return ExitWithUsage();
-
-uint n = (uint)Math.Sqrt(matrix.Count);
-if (n * n != (uint)matrix.Count)
-    return ExitWithUsage();
-
-if (source >= n || dest >= n)
-    return ExitWithUsage();
-
-uint result = Dijkstra(matrix, n, source, dest);
+uint result = Dijkstra(graph, source, dest);
 
 if (result == uint.MaxValue)
     return ExitWithUsage();
@@ -27,63 +39,78 @@ if (result == uint.MaxValue)
 Console.WriteLine(result);
 return 0;
 
-static uint Dijkstra(List<uint> matrix, uint n, uint source, uint target)
+static uint Dijkstra(List<(int to, uint w)>[] graph, int source, int target)
 {
+    int n = graph.Length;
+
     uint[] dist = new uint[n];
     Array.Fill(dist, uint.MaxValue);
 
-    PriorityQueue<uint, uint> pq = new();
+    var pq = new PriorityQueue<int, uint>();
 
     dist[source] = 0;
     pq.Enqueue(source, 0);
 
-    while (pq.TryDequeue(out uint u, out uint d))
+    while (pq.TryDequeue(out int u, out uint d))
     {
-        if (d > dist[u])
+        if (d != dist[u])
             continue;
 
         if (u == target)
             return d;
 
-        uint baseIndex = u * n;
-
-        for (uint v = 0; v < n; v++)
+        foreach (var (v, w) in graph[u])
         {
-            uint weight = matrix[(int)(baseIndex + v)];
-            if (weight == 0)
-                continue;
+            uint nd = d + w;
 
-            uint newDist = d + weight;
-            if (newDist < dist[v])
+            if (nd < dist[v])
             {
-                dist[v] = newDist;
-                pq.Enqueue(v, newDist);
+                dist[v] = nd;
+                pq.Enqueue(v, nd);
             }
         }
     }
 
-    return dist[target];
+    return uint.MaxValue;
 }
 
-static bool TryParseList(ReadOnlySpan<char> view, out List<uint> numbers)
+static bool TryParseList(ReadOnlySpan<char> view, out List<int> numbers)
 {
-    numbers = [];
+    numbers = null!;
+    if (view.IsWhiteSpace())
+        return false;
+
+    int expectedCount = view.Count(',') + 1;
+    var list = new List<int>(expectedCount);
+
     while (!view.IsEmpty)
     {
-        if (!TryParseNextToken(ref view, out uint val))
+        if (!TryParseNext(ref view, out int val) || val < 0)
             return false;
 
-        numbers.Add(val);
+        list.Add(val);
     }
-    return numbers.Count > 0;
 
-    static bool TryParseNextToken(ref ReadOnlySpan<char> span, out uint value)
+    numbers = list;
+    return true;
+
+    static bool TryParseNext(ref ReadOnlySpan<char> span, out int value)
     {
         int comma = span.IndexOf(',');
-        ReadOnlySpan<char> segment = comma == -1 ? span : span[..comma];
-        bool success = uint.TryParse(segment.Trim(), out value);
-        span = comma == -1 ? default : span[(comma + 1)..];
-        return success;
+
+        ReadOnlySpan<char> token;
+        if (comma >= 0)
+        {
+            token = span[..comma];
+            span = span[(comma + 1)..];
+        }
+        else
+        {
+            token = span;
+            span = default;
+        }
+
+        return int.TryParse(token, out value);
     }
 }
 
