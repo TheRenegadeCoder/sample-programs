@@ -1,38 +1,59 @@
-using System;
-using System.Linq;
 using System.Collections.Generic;
 
-public class LinearSearch
+if (
+    args is not [var input, var targetRaw]
+    || !int.TryParse(targetRaw, out int target)
+    || !TryParseList(input.AsSpan(), out var numbers)
+)
+    return ExitWithUsage();
+
+Console.WriteLine(numbers.Contains(target));
+return 0;
+
+static bool TryParseList(ReadOnlySpan<char> view, out List<int> numbers)
 {
-    public static bool Search(List<int> list, int toFind)
-    {
-        foreach (int value in list) 
-        {
-            if (value == toFind) 
-            {
-                return true;
-            }
-        }
+    numbers = null!;
+    if (view.IsWhiteSpace())
         return false;
+
+    int expectedCount = view.Count(',') + 1;
+    var list = new List<int>(expectedCount);
+
+    while (!view.IsEmpty)
+    {
+        if (!TryParseNext(ref view, out int val))
+            return false;
+
+        list.Add(val);
     }
 
-    public static void ErrorAndExit()
-    {
-        Console.WriteLine("Usage: please provide a list of integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")");
-        Environment.Exit(1);
-    }
+    numbers = list;
+    return true;
 
-    public static void Main(string[] args)
+    static bool TryParseNext(ref ReadOnlySpan<char> span, out int value)
     {
-        try
+        int comma = span.IndexOf(',');
+
+        ReadOnlySpan<char> token;
+        if (comma >= 0)
         {
-            var list = args[0].Split(',').Select(i => Int32.Parse(i.Trim())).ToList();
-            var toFind = Int32.Parse(args[1]);
-            Console.WriteLine(Search(list, toFind));
+            token = span[..comma];
+            span = span[(comma + 1)..];
         }
-        catch
+        else
         {
-            ErrorAndExit();
+            token = span;
+            span = default;
         }
+
+        return int.TryParse(token, out value);
     }
+}
+
+static int ExitWithUsage()
+{
+    Console.WriteLine(
+        """Usage: please provide a list of integers ("1, 4, 5, 11, 12") and the integer to find ("11")"""
+    );
+    return 1;
 }
