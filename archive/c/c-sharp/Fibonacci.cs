@@ -1,30 +1,22 @@
-using System;
-
-namespace SamplePrograms
+if (args is not [var input] || !int.TryParse(input, out int n) || n < 0)
 {
-    public class Fibonacci
+    Console.WriteLine("Usage: please input the count of fibonacci numbers to output");
+    return;
+}
+
+int index = 1;
+foreach (var value in Fibonacci(n))
+{
+    Console.WriteLine($"{index++}: {value}");
+}
+
+static IEnumerable<int> Fibonacci(int n)
+{
+    int a = 1, b = 1;
+
+    for (int i = 0; i < n; i++)
     {
-        public static void Main(string[] args)
-        {
-            try
-            {
-                int n = int.Parse(args[0]);
-                int first = 0;
-                int second = 1;
-                int result = 0;
-                for(int i = 1; i <= n; i++)
-                {
-                    result = first + second;
-                    first = second;
-                    second = result;
-                    Console.WriteLine(i + ": " + first);
-                }
-            }
-            catch(Exception)
-            {
-                Console.WriteLine("Usage: please input the count of fibonacci numbers to output");
-                Environment.Exit(0);
-            }
-        }
+        yield return a;
+        (a, b) = (b, a + b);
     }
 }
