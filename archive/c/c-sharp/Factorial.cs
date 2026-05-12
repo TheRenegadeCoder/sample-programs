@@ -1,39 +1,41 @@
-using System;
 using System.Numerics;
 
-namespace SamplePrograms
+if (args is not [var input] || !BigInteger.TryParse(input, out var n) || n < 0)
 {
-    public class Factorial
+    Console.WriteLine("Usage: please input a non-negative integer");
+    return;
+}
+
+Console.WriteLine(n.Factorial());
+
+public static class BigIntegerExtensions
+{
+    extension(BigInteger n)
     {
-        public static BigInteger Fact(BigInteger n)
+        public BigInteger Factorial()
         {
-            if (n <= 0)
-                return 1;
-            return n * Fact(n - 1);
+            if (n < BigInteger.Zero)
+                throw new ArgumentOutOfRangeException(nameof(n), "Non-negative integer required.");
+
+            if (n < 2)
+                return BigInteger.One;
+
+            return MultiplyRange(1, n);
         }
 
-        public static void Main(string[] args)
+        private static BigInteger MultiplyRange(BigInteger low, BigInteger high)
         {
-            try
-            {
-                var n = BigInteger.Parse(args[0]);
-                if (n > 4550)
-                {
-                    Console.WriteLine(string.Format("{0}! is out of the reasonable bounds for calculation.", n));
-                    Environment.Exit(1);
-                }
-                else if (n < 0) {
-                    Console.WriteLine("Usage: please input a non-negative integer");
-                    Environment.Exit(1);
-                }
-                var result = Fact(n);
-                Console.WriteLine(result);
-            }
-            catch
-            {
-                Console.WriteLine("Usage: please input a non-negative integer");
-                Environment.Exit(1);
-            }
+            var diff = high - low;
+
+            // Base cases to stop recursion
+            if (diff == 0)
+                return low;
+            if (diff == 1)
+                return low * high;
+
+            // Binary split logic
+            BigInteger mid = low + (diff >> 1);
+            return MultiplyRange(low, mid) * MultiplyRange(mid + 1, high);
         }
     }
 }
