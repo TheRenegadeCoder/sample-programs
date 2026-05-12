@@ -1,68 +1,92 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
+using System.Runtime.InteropServices;
 
-public static class Program
+if (
+    args is not [var colsRaw, var rowsRaw, var matrixRaw]
+    || !int.TryParse(colsRaw, out int cols)
+    || !int.TryParse(rowsRaw, out int rows)
+    || cols <= 0
+    || rows <= 0
+    || !TryParseMatrix(matrixRaw.AsSpan(), out var matrix)
+    || matrix.Count != cols * rows
+)
 {
-    private static void ShowUsage()
+    return ExitWithUsage();
+}
+
+var result = Transpose(matrix, cols, rows);
+Console.WriteLine(string.Join(", ", result));
+return 0;
+
+static List<int> Transpose(List<int> matrix, int cols, int rows)
+{
+    var output = new List<int>(matrix.Count);
+    for (int i = 0; i < matrix.Count; i++)
+        output.Add(0);
+
+    Span<int> src = CollectionsMarshal.AsSpan(matrix);
+    Span<int> dst = CollectionsMarshal.AsSpan(output);
+
+    for (int r = 0; r < rows; r++)
     {
-        Console.Error.WriteLine("Usage: please enter the dimension of the matrix and the serialized matrix");
-        Environment.Exit(1);
+        int rowBase = r * cols;
+
+        for (int c = 0; c < cols; c++)
+        {
+            int oldIndex = rowBase + c;
+            int newIndex = c * rows + r;
+
+            dst[newIndex] = src[oldIndex];
+        }
     }
 
-    private static List<int> ParseIntegerList(string input)
+    return output;
+}
+
+static bool TryParseMatrix(ReadOnlySpan<char> view, out List<int> numbers)
+{
+    numbers = null!;
+    if (view.IsEmpty)
+        return false;
+
+    int expected = view.Count(',') + 1;
+    var list = new List<int>(expected);
+
+    while (!view.IsEmpty)
     {
-        if (string.IsNullOrWhiteSpace(input))
-            ShowUsage();
+        if (!TryParseNext(ref view, out int value))
+            return false;
 
-        var tokens = input
-            .Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+        list.Add(value);
+    }
 
-        var numbers = new List<int>();
-        foreach (var token in tokens)
+    return list.Count > 0 && (numbers = list) != null;
+
+    static bool TryParseNext(ref ReadOnlySpan<char> span, out int value)
+    {
+        int comma = span.IndexOf(',');
+
+        ReadOnlySpan<char> token;
+
+        if (comma >= 0)
         {
-            if (!int.TryParse(token, out int value))
-                ShowUsage();
-
-            numbers.Add(value);
+            token = span[..comma];
+            span = span[(comma + 1)..];
+        }
+        else
+        {
+            token = span;
+            span = default;
         }
 
-        return numbers;
+        return int.TryParse(token, out value);
     }
+}
 
-    static List<int> TransposeMatrix(int cols, int rows, List<int> input)
-    {
-        var result = new List<int>(new int[rows * cols]);
-
-        for (int i = 0; i < rows; ++i)
-        {
-            for (int j = 0; j < cols; ++j)
-            {
-                int index = j * rows + i;
-                result[index] = input[i * cols + j];
-            }
-        }
-
-        return result;
-    }
-
-    static int Main(string[] args)
-    {
-        if (args.Length != 3)
-            ShowUsage();
-
-        if (!int.TryParse(args[0], out var cols))
-            ShowUsage();
-
-        if (!int.TryParse(args[1], out var rows))
-            ShowUsage();
-
-        var numbers = ParseIntegerList(args[2]);
-        if (numbers.Count != cols * rows)
-            ShowUsage();
-
-        var transposed = TransposeMatrix(cols, rows, numbers);
-        Console.WriteLine(string.Join(", ", transposed));
-        return 0;
-    }
+static int ExitWithUsage()
+{
+    Console.Error.WriteLine(
+        """Usage: please enter the dimension of the matrix and the serialized matrix"""
+    );
+    return 1;
 }
