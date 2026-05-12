@@ -1,58 +1,57 @@
 using System;
-using System.Linq;
 using System.Collections.Generic;
 
-public class BinarySearch
+if (args is not [var input, var targetRaw] || !int.TryParse(targetRaw, out int target))
+    return ExitWithUsage();
+
+List<int> numbers = [];
+int start = 0;
+
+while (start < input.Length)
 {
-    public static bool Search(List<int> list, int toFind)
-    {   
-        int lowerBound = 0;
-        int upperBound = list.Count - 1;
-        while (lowerBound <= upperBound) 
-        {
-            int midpoint = (lowerBound + upperBound) / 2;
-            if (list[midpoint] == toFind)
-            {
-                return true;
-            }
-            else if (list[midpoint] < toFind)
-            {
-                lowerBound = midpoint + 1;
-            }
-            else
-            {
-                upperBound = midpoint - 1;
-            }
-        }
-        return false;
-    }
+    int comma = input.indexOf(',', start);
+    int end = (comma == -1) ? input.Length : comma;
 
-    public static void ErrorAndExit()
+    if (!int.TryParse(input[start..end].Trim(), out int val))
+        return ExitWithUsage();
+
+    if (numbers is [.., var last] && val < last)
+        return ExitWithUsage();
+
+    numbers.Add(val);
+    start = end + 1;
+}
+
+if (numbers.Count == 0)
+    return ExitWithUsage();
+
+Console.WriteLine(BinarySearch(numbers, target).ToString().ToLower());
+return 0;
+
+static bool BinarySearch(List<int> list, int target)
+{
+    int lo = 0;
+    int hi = list.Count - 1;
+
+    while (lo <= hi)
     {
-        Console.WriteLine("Usage: please provide a list of sorted integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")");
-        Environment.Exit(1);
-    }
+        int mid = lo + ((hi - lo) / 2);
+        int midValue = list[mid];
 
-    public static void Main(string[] args)
-    {
-        try
-        {
-            var list = args[0].Split(',').Select(i => Int32.Parse(i.Trim())).ToList();
-            var toFind = Int32.Parse(args[1]);
-
-            for (int i = 0; i < list.Count - 1; i++)
-            {
-                if (list[i] > list[i + 1])
-                {
-                    ErrorAndExit();
-                }
-            }
-            
-            Console.WriteLine(Search(list, toFind));
-        }
-        catch
-        {
-            ErrorAndExit();
-        }
+        if (midValue == target)
+            return true;
+        if (midValue < target)
+            lo = mid + 1;
+        else
+            hi = mid - 1;
     }
+    return false;
+}
+
+static int ExitWithUsage()
+{
+    Console.WriteLine(
+        "Usage: please provide a list of sorted integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")"
+    );
+    return 1;
 }
