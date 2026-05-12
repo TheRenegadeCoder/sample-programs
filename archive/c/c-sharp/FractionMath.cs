@@ -1,196 +1,166 @@
-using System;
+using System.Numerics;
 
-namespace SamplePrograms
+if (
+    args is not [var leftRaw, var op, var rightRaw]
+    || !Fraction.TryParse(leftRaw, out var a)
+    || !Fraction.TryParse(rightRaw, out var b)
+)
 {
-    public class FractionMath
+    Console.WriteLine("Usage: ./fraction-math operand1 operator operand2");
+    return;
+}
+
+string result = op switch
+{
+    "+" => (a + b).ToString(),
+    "-" => (a - b).ToString(),
+    "*" => (a * b).ToString(),
+    "/" => (a / b).ToString(),
+    "==" => a == b ? "1" : "0",
+    "!=" => a != b ? "1" : "0",
+    ">" => a > b ? "1" : "0",
+    "<" => a < b ? "1" : "0",
+    ">=" => a >= b ? "1" : "0",
+    "<=" => a <= b ? "1" : "0",
+    _ => "Error: Invalid operator",
+};
+
+Console.WriteLine(result);
+
+public readonly struct Fraction : IEquatable<Fraction>, IComparable<Fraction>
+{
+    public long Numerator { get; }
+    public long Denominator { get; }
+
+    private Fraction(long n, long d)
     {
-        private int numerator;
-        private int denominator;
-
-        public FractionMath(int numerator = 0, int denominator = 1)
-        {
-            if (denominator == 0)
-            {
-                throw new ArgumentException("Denominator cannot be zero.");
-            }
-
-            this.numerator = numerator;
-            this.denominator = denominator;
-        }
-        
-        // GCD method using the Euclidean algorithm in an iterative approach
-        // Orginal algorithm was found on GeeksforGeeks, modified for clarity:
-        // https://www.geeksforgeeks.org/program-to-find-gcd-or-hcf-of-two-numbers/#
-        private int GCD(int x, int y)
-        {
-            while (y != 0)
-            {
-                int z = x;
-                x = y;
-                y = z % y;
-            }
-            return x;
-        }
-
-        private void Simplify()
-        {
-            int gcd = GCD(numerator, denominator);
-            numerator /= gcd;
-            denominator /= gcd;
-
-            if (denominator < 0)
-            {
-                numerator = -numerator;
-                denominator = -denominator;
-            }
-        }
-
-        public override string ToString()
-        {
-            Simplify();
-            return $"{numerator}/{denominator}";
-        }
-
-        public static FractionMath Parse(string fractionString)
-        {
-            string[] numbers = fractionString.Split('/');
-            if (numbers.Length != 2)
-            {
-                throw new FormatException("Invalid fraction. A format of 'numerator/denominator' is expected.");
-            }
-
-            int numerator = int.Parse(numbers[0]);
-            int denominator = int.Parse(numbers[1]);
-
-            return new FractionMath(numerator, denominator);
-        }
-
-        public static FractionMath operator +(FractionMath f1, FractionMath f2)
-        {
-            int newNumerator = f1.numerator * f2.denominator + f2.numerator * f1.denominator;
-            int newDenominator = f1.denominator * f2.denominator;
-            return new FractionMath(newNumerator, newDenominator);
-        }
-
-        public static FractionMath operator -(FractionMath f1, FractionMath f2)
-        {
-            int newNumerator = f1.numerator * f2.denominator - f2.numerator * f1.denominator;
-            int newDenominator = f1.denominator * f2.denominator;
-            return new FractionMath(newNumerator, newDenominator);
-        }
-
-        public static FractionMath operator *(FractionMath f1, FractionMath f2)
-        {
-            int newNumerator = f1.numerator * f2.numerator;
-            int newDenominator = f1.denominator * f2.denominator;
-            return new FractionMath(newNumerator, newDenominator);
-        }
-
-        public static FractionMath operator /(FractionMath f1, FractionMath f2)
-        {
-            int newNumerator = f1.numerator * f2.denominator;
-            int newDenominator = f1.denominator * f2.numerator;
-            return new FractionMath(newNumerator, newDenominator);
-        }
-
-        public static bool operator ==(FractionMath f1, FractionMath f2)
-        {
-            return f1.numerator * f2.denominator == f1.denominator * f2.numerator;
-        }
-
-        public static bool operator !=(FractionMath f1, FractionMath f2)
-        {
-            return !(f1 == f2);
-        }
-
-        public static bool operator >(FractionMath f1, FractionMath f2)
-        {
-            return f1.numerator * f2.denominator > f1.denominator * f2.numerator;
-        }
-
-        public static bool operator <(FractionMath f1, FractionMath f2)
-        {
-            return f1.numerator * f2.denominator < f1.denominator * f2.numerator;
-        }
-
-        public static bool operator >=(FractionMath f1, FractionMath f2)
-        {
-            return f1 > f2 || f1 == f2;
-        }
-
-        public static bool operator <=(FractionMath f1, FractionMath f2)
-        {
-            return f1 < f2 || f1 == f2;
-        }
-
-        public static void Main(string[] args)
-        {
-            if (args.Length != 3)
-            {
-                Console.WriteLine("Usage: ./fraction-math operand1 operator operand2");
-                return;
-            }
-
-            try
-            {
-                FractionMath operand1 = Parse(args[0]);
-                string operation = args[1];
-                FractionMath operand2 = Parse(args[2]);
-
-                FractionMath result;
-                bool comparisonResult;
-
-                switch (operation)
-                {
-                    case "+":
-                        result = operand1 + operand2;
-                        Console.WriteLine(result);
-                        break;
-                    case "-":
-                        result = operand1 - operand2;
-                        Console.WriteLine(result);
-                        break;
-                    case "*":
-                        result = operand1 * operand2;
-                        Console.WriteLine(result);
-                        break;
-                    case "/":
-                        result = operand1 / operand2;
-                        Console.WriteLine(result);
-                        break;
-                    case "==":
-                        comparisonResult = operand1 == operand2;
-                        Console.WriteLine(comparisonResult ? "1" : "0");
-                        break;
-                    case "!=":
-                        comparisonResult = operand1 != operand2;
-                        Console.WriteLine(comparisonResult ? "1" : "0");
-                        break;
-                    case ">":
-                        comparisonResult = operand1 > operand2;
-                        Console.WriteLine(comparisonResult ? "1" : "0");
-                        break;
-                    case "<":
-                        comparisonResult = operand1 < operand2;
-                        Console.WriteLine(comparisonResult ? "1" : "0");
-                        break;
-                    case ">=":
-                        comparisonResult = operand1 >= operand2;
-                        Console.WriteLine(comparisonResult ? "1" : "0");
-                        break;
-                    case "<=":
-                        comparisonResult = operand1 <= operand2;
-                        Console.WriteLine(comparisonResult ? "1" : "0");
-                        break;
-                    default:
-                        Console.WriteLine($"Error: Invalid operator '{operation}'");
-                        break;
-                }
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine($"Error: {e.Message}");
-            }
-        }
+        Numerator = n;
+        Denominator = d;
     }
+
+    public static Fraction Create(long n, long d)
+    {
+        if (d == 0)
+            throw new DivideByZeroException();
+
+        long g = Gcd(n, d);
+        n /= g;
+        d /= g;
+
+        int sign = Math.Sign(d);
+
+        return new(n * sign, Math.Abs(d));
+    }
+
+    public override string ToString() => $"{Numerator}/{Denominator}";
+
+    private static long Gcd(long a, long b)
+    {
+        a = Math.Abs(a);
+        b = Math.Abs(b);
+
+        while (b != 0)
+            (a, b) = (b, a % b);
+
+        return a == 0 ? 1 : a;
+    }
+
+    public static bool TryParse(ReadOnlySpan<char> s, out Fraction value)
+    {
+        value = default;
+
+        int slash = s.IndexOf('/');
+        if (slash < 0)
+            return false;
+
+        if (!long.TryParse(s[..slash], out long n) || !long.TryParse(s[(slash + 1)..], out long d))
+            return false;
+
+        if (d == 0)
+            return false;
+
+        value = Create(n, d);
+        return true;
+    }
+
+    public static Fraction operator +(Fraction a, Fraction b) =>
+        Create(
+            a.Numerator * b.Denominator + b.Numerator * a.Denominator,
+            a.Denominator * b.Denominator
+        );
+
+    public static Fraction operator -(Fraction a, Fraction b) =>
+        Create(
+            a.Numerator * b.Denominator - b.Numerator * a.Denominator,
+            a.Denominator * b.Denominator
+        );
+
+    public static Fraction operator *(Fraction a, Fraction b)
+    {
+        long aNum = a.Numerator;
+        long aDen = a.Denominator;
+        long bNum = b.Numerator;
+        long bDen = b.Denominator;
+
+        // Cancel cross factors before multiplying to prevent overflow
+        long g1 = Gcd(aNum, bDen);
+        aNum /= g1;
+        bDen /= g1;
+
+        long g2 = Gcd(bNum, aDen);
+        bNum /= g2;
+        aDen /= g2;
+
+        return Create(aNum * bNum, aDen * bDen);
+    }
+
+    public static Fraction operator /(Fraction a, Fraction b)
+    {
+        if (b.Numerator == 0)
+            throw new DivideByZeroException();
+
+        long aNum = a.Numerator;
+        long aDen = a.Denominator;
+        long bNum = b.Numerator;
+        long bDen = b.Denominator;
+
+        // Cancel cross factors before multiplying to prevent overflow
+        long g1 = Gcd(aNum, bNum);
+        aNum /= g1;
+        bNum /= g1;
+
+        long g2 = Gcd(bDen, aDen);
+        bDen /= g2;
+        aDen /= g2;
+
+        return Create(aNum * bDen, aDen * bNum);
+    }
+
+    public static bool operator ==(Fraction a, Fraction b) =>
+        a.Numerator == b.Numerator && a.Denominator == b.Denominator;
+
+    public static bool operator !=(Fraction a, Fraction b) => !(a == b);
+
+    public static bool operator <(Fraction a, Fraction b) =>
+        a.Numerator * b.Denominator < b.Numerator * a.Denominator;
+
+    public static bool operator >(Fraction a, Fraction b) =>
+        a.Numerator * b.Denominator > b.Numerator * a.Denominator;
+
+    public static bool operator <=(Fraction a, Fraction b) => !(a > b);
+
+    public static bool operator >=(Fraction a, Fraction b) => !(a < b);
+
+    public bool Equals(Fraction other) => this == other;
+
+    public int CompareTo(Fraction other)
+    {
+        long left = Numerator * other.Denominator;
+        long right = other.Numerator * Denominator;
+        return left.CompareTo(right);
+    }
+
+    public override bool Equals(object? obj) => obj is Fraction f && Equals(f);
+
+    public override int GetHashCode() => HashCode.Combine(Numerator, Denominator);
 }
