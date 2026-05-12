@@ -1,86 +1,110 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.Runtime.InteropServices;
 
-// shows a job with profit and deadline properties
-class Job 
+if (
+    args is not [var profitsRaw, var deadlinesRaw]
+    || !TryParseJobs(profitsRaw, deadlinesRaw, out var jobs, out int maxDeadline)
+)
+    return ExitWithUsage();
+
+long result = MaxJobProfit(jobs, maxDeadline);
+
+Console.WriteLine(result);
+return 0;
+
+static bool TryParseJobs(string pRaw, string dRaw, out List<Job> jobs, out int maxDeadline)
 {
-    public int Profit { get; set; }
-    public int Deadline { get; set; }
+    jobs = [];
+    maxDeadline = 0;
 
-    // constructor to initialize the job with profits and deadline
-    public Job(int profit, int deadline)
+    ReadOnlySpan<char> pSpan = pRaw;
+    ReadOnlySpan<char> dSpan = dRaw;
+
+    int expected = pSpan.Count(',') + 1;
+    if (expected != dSpan.Count(',') + 1)
+        return false;
+
+    jobs = new List<Job>(expected);
+
+    while (!pSpan.IsEmpty && !dSpan.IsEmpty)
     {
-        Profit = profit;
-        Deadline = deadline;
+        if (!TryParseNext(ref pSpan, out int p) || !TryParseNext(ref dSpan, out int d))
+            return false;
+
+        jobs.Add(new Job(p, d));
+
+        if (d > maxDeadline)
+            maxDeadline = d;
+    }
+
+    // ensure both consumed equally
+    if (!pSpan.IsEmpty || !dSpan.IsEmpty)
+        return false;
+
+    return jobs.Count > 0;
+
+    static bool TryParseNext(ref ReadOnlySpan<char> span, out int value)
+    {
+        int comma = span.IndexOf(',');
+
+        ReadOnlySpan<char> token;
+        if (comma >= 0)
+        {
+            token = span[..comma];
+            span = span[(comma + 1)..];
+        }
+        else
+        {
+            token = span;
+            span = default;
+        }
+
+        return int.TryParse(token, out value);
     }
 }
 
-class JobSequencing
+static long MaxJobProfit(List<Job> jobs, int maxDeadline)
 {
-    static void Main(string[] args)
+    jobs.Sort(static (a, b) => b.Profit.CompareTo(a.Profit));
+
+    int size = Math.Min(maxDeadline, jobs.Count);
+
+    Span<int> parent = size <= 1024
+        ? stackalloc int[size + 1]
+        : new int[size + 1];
+
+    for (int i = 0; i <= size; i++)
+        parent[i] = i;
+
+    long totalProfit = 0;
+
+    foreach (ref readonly var job in CollectionsMarshal.AsSpan(jobs))
     {
-        // check if 2 arugments are provided (lists of profits and deadlines)
-        if (args.Length < 2)
+        int slot = Find(parent, Math.Min(job.Deadline, size));
+
+        if (slot > 0)
         {
-            Console.WriteLine("Usage: please provide a list of profits and a list of deadlines");
-            return;
+            totalProfit += job.Profit;
+            parent[slot] = Find(parent, slot - 1);
         }
-
-        // parse the list of profits from the first arugment
-        var profitList = args[0].Split(',').Select(p => int.TryParse(p.Trim(), out int x) ? x : (int?)null).ToList();
-
-        // parse the list of profits from the second arugment
-        var deadlineList = args[1].Split(',').Select(d => int.TryParse(d.Trim(), out int x) ? x : (int?)null).ToList();
-
-        // Validate inputs
-        if (profitList.Contains(null) || deadlineList.Contains(null) || profitList.Count != deadlineList.Count)
-        {
-            Console.WriteLine("Usage: please provide a list of profits and a list of deadlines");
-            return;
-        }
-
-        // combine both profits and deadline sinto job objects
-        var jobs = profitList.Zip(deadlineList, (p, d) => new Job(p.Value, d.Value)).ToList();
-
-        // calculate the max profit
-        var result = GetMaxProfitJobSequence(jobs);
-
-        // output of total profit
-        Console.WriteLine(result.Sum(job => job.Profit));
     }
 
-    // method to calculate the max profits
-    public static List<Job> GetMaxProfitJobSequence(List<Job> jobs)
-    {
-
-        // sort jobs in descending order
-        jobs.Sort((a, b) => b.Profit.CompareTo(a.Profit));
-
-        // find the max deadline of the time slots
-        int maxDeadline = jobs.Max(job => job.Deadline);
-
-        // create voolean array to mark time taken of time slots
-        var timeSlots = new bool[maxDeadline];
-
-        // store the selected job sequence
-        var jobSequence = new List<Job>();
-
-        foreach (var job in jobs)
-        {
-            for (int i = job.Deadline - 1; i >= 0; i--)
-            {
-                // time slot is availble the scedule the job
-                if (!timeSlots[i])
-                {
-                    timeSlots[i] = true;
-                    jobSequence.Add(job);
-                    break;
-                }
-            }
-        }
-
-        // return the selected jobs
-        return jobSequence;
-    }
+    return totalProfit;
 }
+
+static int Find(Span<int> parent, int i)
+{
+    while (i != parent[i])
+    {
+        parent[i] = parent[parent[i]];
+        i = parent[i];
+    }
+    return i;
+}
+
+static int ExitWithUsage()
+{
+    Console.Error.WriteLine("Usage: please provide a list of profits and a list of deadlines");
+    return 1;
+}
+
+readonly record struct Job(int Profit, int Deadline);
