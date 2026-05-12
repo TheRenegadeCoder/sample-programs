@@ -1,127 +1,91 @@
-﻿using System.Collections.Generic;
-using System.Runtime.InteropServices;
+﻿using System.Runtime.InteropServices;
 
 if (
     args is not [var xInput, var yInput]
     || !TryParsePoints(xInput.AsSpan(), yInput.AsSpan(), out var points)
 )
 {
-    return ExitWithUsage();
+    return Usage();
 }
 
 points.Sort();
-var hull = BuildHull(CollectionsMarshal.AsSpan(points));
 
-foreach (var p in hull)
-    Console.WriteLine(p);
+var hull = BuildHull(CollectionsMarshal.AsSpan(points), out int size);
+for (int i = 0; i < size; i++)
+    Console.WriteLine(hull[i]);
 
 return 0;
 
-static bool TryParsePoints(
-    ReadOnlySpan<char> xView,
-    ReadOnlySpan<char> yView,
-    out List<Point> points
-)
+static bool TryParsePoints(ReadOnlySpan<char> x, ReadOnlySpan<char> y, out List<Point> points)
 {
-    if (xView.IsWhiteSpace() || yView.IsWhiteSpace())
-    {
-        points = null!;
+    points = [];
+
+    if (x.IsWhiteSpace() || y.IsWhiteSpace())
         return false;
-    }
 
     var list = new List<Point>();
 
-    while (!xView.IsEmpty && !yView.IsEmpty)
+    while (true)
     {
-        if (!TryParseNext(ref xView, out int x) || !TryParseNext(ref yView, out int y))
-        {
-            points = null!;
-            return false;
-        }
+        if (!TryNext(ref x, out int xVal) || !TryNext(ref y, out int yVal))
+            break;
 
-        list.Add(new Point(x, y));
+        points.Add(new(xVal, yVal));
     }
 
-    // fail if mismatch or too few points
-    if (!xView.IsEmpty || !yView.IsEmpty || list.Count < 3)
+    return x.IsEmpty && y.IsEmpty && points.Count >= 3;
+
+    static bool TryNext(ref ReadOnlySpan<char> span, out int value)
     {
-        points = null!;
-        return false;
-    }
-
-    points = list;
-    return true;
-
-    static bool TryParseNext(ref ReadOnlySpan<char> view, out int value)
-    {
-        int comma = view.IndexOf(',');
-
-        ReadOnlySpan<char> token;
-        if (comma >= 0)
-        {
-            token = view[..comma];
-            view = view[(comma + 1)..];
-        }
-        else
-        {
-            token = view;
-            view = default;
-        }
-
+        int comma = span.IndexOf(',');
+        var token = comma >= 0 ? span[..comma] : span;
+        span = comma >= 0 ? span[(comma + 1)..] : [];
         return int.TryParse(token, out value);
     }
 }
 
-static List<Point> BuildHull(Span<Point> points)
+static Point[] BuildHull(Span<Point> points, out int size)
 {
-    int n = points.Length;
-    if (n < 3)
-        return [.. points];
+    int numPoints = points.Length;
+    if (numPoints < 3)
+    {
+        size = numPoints;
+        return points.ToArray();
+    }
 
-    var hull = new List<Point>(n * 2);
+    var hull = new Point[numPoints * 2];
+    int h = 0;
 
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < numPoints; i++)
     {
         var p = points[i];
 
-        while (hull.Count >= 2)
-        {
-            int k = hull.Count - 1;
-            if (Cross(hull[k - 1], hull[k], p) > 0)
-                break;
+        while (h > 1 && Cross(hull[h - 2], hull[h - 1], p) <= 0)
+            h--;
 
-            hull.RemoveAt(k);
-        }
-
-        hull.Add(p);
+        hull[h++] = p;
     }
 
-    int lowerSize = hull.Count;
+    int lower = h;
 
-    for (int i = n - 2; i >= 0; i--)
+    for (int i = numPoints - 2; i >= 0; i--)
     {
         var p = points[i];
 
-        while (hull.Count > lowerSize)
-        {
-            int k = hull.Count - 1;
-            if (Cross(hull[k - 1], hull[k], p) > 0)
-                break;
+        while (h > lower && Cross(hull[h - 2], hull[h - 1], p) <= 0)
+            h--;
 
-            hull.RemoveAt(k);
-        }
-
-        hull.Add(p);
+        hull[h++] = p;
     }
 
-    hull.RemoveAt(hull.Count - 1);
+    size = h - 1;
     return hull;
 
     static long Cross(Point o, Point a, Point b) =>
         (long)(a.X - o.X) * (b.Y - o.Y) - (long)(a.Y - o.Y) * (b.X - o.X);
 }
 
-static int ExitWithUsage()
+static int Usage()
 {
     Console.Error.WriteLine(
         """Usage: please provide at least 3 x and y coordinates as separate lists (e.g. "100, 440, 210")"""
