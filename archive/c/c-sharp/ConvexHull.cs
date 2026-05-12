@@ -1,135 +1,102 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
+using System.Runtime.InteropServices;
 
-public record Point(int X, int Y) : IComparable<Point>
+if (args is not [var xInput, var yInput])
+    return ExitWithUsage();
+
+if (!TryParsePoints(xInput.AsSpan(), yInput.AsSpan(), out var points))
+    return ExitWithUsage();
+
+var hull = BuildHull(CollectionsMarshal.AsSpan(points));
+
+foreach (var p in hull)
+    Console.WriteLine(p);
+
+return 0;
+
+static bool TryParsePoints(
+    ReadOnlySpan<char> xView,
+    ReadOnlySpan<char> yView,
+    out List<Point> destination
+)
 {
-    public int CompareTo(Point? other)
-         => other is null ? 1 : X != other.X ? X.CompareTo(other.X) : Y.CompareTo(other.Y);
+    destination = [];
 
-    public override string ToString() => $"({X}, {Y})";
+    while (!xView.IsEmpty || !yView.IsEmpty)
+    {
+        if (!TryParseNextToken(ref xView, out int x) || !TryParseNextToken(ref yView, out int y))
+            return false;
 
-    public static bool operator <(Point left, Point right) => left.CompareTo(right) < 0;
-    public static bool operator >(Point left, Point right) => left.CompareTo(right) > 0;
+        destination.Add(new Point(x, y));
+
+        // If one string ended before the other, the lists are mismatched
+        if (xView.IsEmpty != yView.IsEmpty)
+            return false;
+    }
+    return destination.Count >= 3;
+
+    static bool TryParseNextToken(ref ReadOnlySpan<char> view, out int value)
+    {
+        int comma = view.IndexOf(',');
+        ReadOnlySpan<char> segment = comma == -1 ? view : view[..comma];
+
+        if (!int.TryParse(segment.Trim(), out value))
+            return false;
+
+        // Advance the span: if no more commas, we're done (set to Empty)
+        view = comma == -1 ? default : view[(comma + 1)..];
+        return true;
+    }
 }
 
-public static class ConvexHull
+static long Cross(Point o, Point a, Point b) =>
+    (long)(a.X - o.X) * (b.Y - o.Y) - (long)(a.Y - o.Y) * (b.X - o.X);
+
+static List<Point> BuildHull(Span<Point> points)
 {
-    private static void ShowUsage()
+    int n = points.Length;
+    if (n < 3)
+        return [.. points];
+
+    points.Sort();
+
+    List<Point> hull = new(n);
+
+    foreach (var p in points)
     {
-        Console.Error.WriteLine("Usage: please provide at least 3 x and y coordinates as separate lists (e.g. \"100, 440, 210\")");
+        while (hull is [.., var p2, var p1] && Cross(p2, p1, p) <= 0)
+            hull.RemoveAt(hull.Count - 1);
+
+        hull.Add(p);
     }
 
-    private static List<int> ParseIntegerList(string input)
+    int lowerHullLimit = hull.Count;
+    for (int i = n - 2; i >= 0; i--)
     {
-        if (string.IsNullOrWhiteSpace(input))
-        {
-            ShowUsage();
-            Environment.Exit(1);
-        }
+        var p = points[i];
+        while (hull.Count > lowerHullLimit && hull is [.., var p2, var p1] && Cross(p2, p1, p) <= 0)
+            hull.RemoveAt(hull.Count - 1);
 
-        var list = input
-            .Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
-            .Select(part => int.TryParse(part, out var val)
-                ? val
-                : throw new ArgumentException($"Invalid integer value: '{part}'"))
-            .ToList();
-
-        if (list.Count < 3)
-        {
-            ShowUsage();
-            Environment.Exit(1);
-        }
-
-        return list;
+        hull.Add(p);
     }
 
+    if (hull.Count > 1)
+        hull.RemoveAt(hull.Count - 1);
 
-    /// <summary>
-    /// Calculates the cross product of vectors OA and OB.
-    /// Positive result means counter-clockwise turn.
-    /// Negative result means clockwise turn.
-    /// Zero means points are colinear.
-    /// </summary>
-    private static long Cross(Point o, Point a, Point b)
-    {
-        var (ox, oy) = (o.X, o.Y);
-        var (ax, ay) = (a.X, a.Y);
-        var (bx, by) = (b.X, b.Y);
-        return (long)(ax - ox) * (by - oy) - (long)(ay - oy) * (bx - ox);
-    }
+    return hull;
+}
 
+static int ExitWithUsage()
+{
+    Console.Error.WriteLine(
+        "Usage: please provide at least 3 x and y coordinates as separate lists (e.g. \"100, 440, 210\")"
+    );
+    return 1;
+}
 
-    /// <summary>
-    /// Constructs the convex hull using the Jarvis March algorithm.
-    /// </summary>
-    private static List<Point> BuildHull(List<Point> points)
-    {
-        int n = points.Count;
-        if (n < 3) return [.. points];
+public readonly record struct Point(int X, int Y) : IComparable<Point>
+{
+    public int CompareTo(Point other) => X != other.X ? X.CompareTo(other.X) : Y.CompareTo(other.Y);
 
-        int startIndex = 0;
-        for (int i = 1; i < n; i++)
-        {
-            if (points[i] < points[startIndex])
-                startIndex = i;
-        }
-
-        var hull = new List<Point>();
-        int currentIndex = startIndex;
-
-        do
-        {
-            hull.Add(points[currentIndex]);
-            int candidateIndex = (currentIndex + 1) % n;
-
-            for (int i = 0; i < n; i++)
-            {
-                if (Cross(points[currentIndex], points[i], points[candidateIndex]) > 0)
-                    candidateIndex = i;
-            }
-
-            currentIndex = candidateIndex;
-
-        } while (currentIndex != startIndex);
-
-        return hull;
-    }
-
-    public static int Main(string[] args)
-    {
-        if (args.Length != 2)
-        {
-            ShowUsage();
-            return 1;
-        }
-
-        try
-        {
-            var xCoords = ParseIntegerList(args[0]);
-            var yCoords = ParseIntegerList(args[1]);
-            if (xCoords.Count != yCoords.Count)
-            {
-                ShowUsage();
-                return 1;
-            }
-
-            if (xCoords.Count < 3)
-            {
-                ShowUsage();
-                return 1;
-            }
-
-            var points = xCoords.Zip(yCoords, (x, y) => new Point(x, y)).ToList();
-
-            BuildHull(points).ForEach(Console.WriteLine);
-
-            return 0;
-        }
-        catch
-        {
-            ShowUsage();
-            return 1;
-        }
-    }
+    public override string ToString() => $"({X}, {Y})";
 }
