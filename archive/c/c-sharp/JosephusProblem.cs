@@ -1,40 +1,24 @@
-using System;
+const string Usage = "Usage: please input the total number of people and number of people to skip.";
 
-namespace JosephusProblem
+if (args is not [var nText, var kText] ||
+    !int.TryParse(nText, out var n) ||
+    !int.TryParse(kText, out var k) ||
+    n <= 0 || k <= 0)
 {
-    class Program
+    Console.WriteLine(Usage);
+    return;
+}
+
+Console.WriteLine(Josephus(n, k));
+
+static int Josephus(int n, int k)
+{
+    int result = 0;
+
+    for (int m = 2; m <= n; m++)
     {
-        const string Usage = "Usage: please input the total number of people and number of people to skip.";
-
-        static void Main(string[] args)
-        {
-            if (args.Length < 2)
-            {
-                Console.WriteLine(Usage);
-                return;
-            }
-
-            if (!int.TryParse(args[0], out int n) || !int.TryParse(args[1], out int k) || n <= 0 || k <= 0)
-            {
-                Console.WriteLine(Usage);
-                return;
-            }
-
-            int survivor = FindJosephusPosition(n, k);
-
-            Console.WriteLine(survivor);
-        }
-
-        static int FindJosephusPosition(int n, int k)
-        {
-            int result = 0;
-
-            for (int m = 2; m <= n; m++)
-            {
-                result = (result + k) % m;
-            }
-
-            return result + 1;
-        }
+        result = (result + k) % m;
     }
+
+    return result + 1;
 }
