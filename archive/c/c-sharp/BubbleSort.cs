@@ -1,9 +1,7 @@
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 
-if (args is not [var input])
-    return ExitWithUsage();
-
-if (!TryParseList(input.AsSpan(), out var numbers))
+if (args is not [var input] || !TryParseList(input.AsSpan(), out var numbers))
     return ExitWithUsage();
 
 BubbleSort(numbers);
@@ -13,35 +11,54 @@ return 0;
 
 static bool TryParseList(ReadOnlySpan<char> view, out List<int> numbers)
 {
-    numbers = [];
+    numbers = null!;
+    if (view.IsWhiteSpace())
+        return false;
+
+    int expectedCount = view.Count(',') + 1;
+    var list = new List<int>(expectedCount);
 
     while (!view.IsEmpty)
     {
-        if (!TryParseNextToken(ref view, out int val))
+        if (!TryParseNext(ref view, out int val))
             return false;
 
-        numbers.Add(val);
+        list.Add(val);
     }
 
-    return numbers.Count >= 2;
+    if (list.Count < 2)
+        return false;
 
-    static bool TryParseNextToken(ref ReadOnlySpan<char> span, out int value)
+    numbers = list;
+    return true;
+
+    static bool TryParseNext(ref ReadOnlySpan<char> span, out int value)
     {
         int comma = span.IndexOf(',');
-        ReadOnlySpan<char> segment = comma == -1 ? span : span[..comma];
 
-        bool success = int.TryParse(segment.Trim(), out value);
+        ReadOnlySpan<char> token;
+        if (comma >= 0)
+        {
+            token = span[..comma];
+            span = span[(comma + 1)..];
+        }
+        else
+        {
+            token = span;
+            span = default;
+        }
 
-        // Advance the span: if no more commas, we're done (set to Empty)
-        span = comma == -1 ? default : span[(comma + 1)..];
-
-        return success;
+        return int.TryParse(token, out value);
     }
 }
 
-static void BubbleSort(List<int> xs)
+static void BubbleSort(List<int> list)
 {
-    int n = xs.Count;
+    if (list.Count < 2) 
+        return;
+
+    Span<int> span = CollectionsMarshal.AsSpan(list);
+    int n = span.Length;
 
     for (int i = 0; i < n - 1; i++)
     {
@@ -49,9 +66,9 @@ static void BubbleSort(List<int> xs)
 
         for (int j = 0; j < n - i - 1; j++)
         {
-            if (xs[j] > xs[j + 1])
+            if (span[j] > span[j + 1])
             {
-                (xs[j], xs[j + 1]) = (xs[j + 1], xs[j]);
+                (span[j], span[j + 1]) = (span[j + 1], span[j]);
                 swapped = true;
             }
         }
