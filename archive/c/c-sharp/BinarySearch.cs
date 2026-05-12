@@ -4,29 +4,38 @@ using System.Collections.Generic;
 if (args is not [var input, var targetRaw] || !int.TryParse(targetRaw, out int target))
     return ExitWithUsage();
 
-List<int> numbers = [];
-int start = 0;
+var numbers = TryParseSortedList(input.AsSpan());
 
-while (start < input.Length)
-{
-    int comma = input.indexOf(',', start);
-    int end = (comma == -1) ? input.Length : comma;
-
-    if (!int.TryParse(input[start..end].Trim(), out int val))
-        return ExitWithUsage();
-
-    if (numbers is [.., var last] && val < last)
-        return ExitWithUsage();
-
-    numbers.Add(val);
-    start = end + 1;
-}
-
-if (numbers.Count == 0)
+if (numbers is null)
     return ExitWithUsage();
 
 Console.WriteLine(BinarySearch(numbers, target).ToString().ToLower());
 return 0;
+
+static List<int>? TryParseSortedList(ReadOnlySpan<char> view)
+{
+    List<int> numbers = [];
+
+    while (!view.IsEmpty)
+    {
+        int comma = view.IndexOf(',');
+        ReadOnlySpan<char> segment = comma == -1 ? view : view[..comma];
+
+        if (!int.TryParse(segment.Trim(), out int val))
+            return null;
+
+        if (numbers is [.., var last] && val < last)
+            return null;
+
+        numbers.Add(val);
+
+        if (comma == -1)
+            break;
+        view = view[(comma + 1)..];
+    }
+
+    return numbers.Count == 0 ? null : numbers;
+}
 
 static bool BinarySearch(List<int> list, int target)
 {
