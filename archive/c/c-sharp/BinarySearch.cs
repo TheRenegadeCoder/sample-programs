@@ -7,65 +7,54 @@ if (args is not [var input, var targetRaw] || !int.TryParse(targetRaw, out int t
 if (!TryParseSortedList(input.AsSpan(), out var numbers))
     return ExitWithUsage();
 
-Console.WriteLine(BinarySearch(numbers, target));
+Console.WriteLine(numbers.BinarySearch(target) >= 0);
 return 0;
 
 static bool TryParseSortedList(ReadOnlySpan<char> view, out List<int> numbers)
 {
-    numbers = new List<int>();
+    numbers = null!;
+    if (view.IsWhiteSpace()) return false;
+
+    int expectedCount = view.Count(',') + 1;
+    var list = new List<int>(expectedCount);
+    int last = int.MinValue;
 
     while (!view.IsEmpty)
     {
-        if (!TryParseNextToken(ref view, out int val))
+        if (!TryParseNext(ref view, out int val) || val < last)
             return false;
 
-        // Check if array is sorted increasing
-        if (numbers is [.., var last] && val < last)
-            return false;
-
-        numbers.Add(val);
+        list.Add(val);
+        last = val;
     }
 
+    numbers = list;
     return numbers.Count > 0;
 
-    static bool TryParseNextToken(ref ReadOnlySpan<char> span, out int value)
+    static bool TryParseNext(ref ReadOnlySpan<char> span, out int value)
     {
         int comma = span.IndexOf(',');
-        ReadOnlySpan<char> segment = comma == -1 ? span : span[..comma];
 
-        bool success = int.TryParse(segment.Trim(), out value);
-
-        // Advance the span: if no more commas, we're done (set to Empty)
-        span = comma == -1 ? default : span[(comma + 1)..];
-
-        return success;
-    }
-}
-
-static bool BinarySearch(List<int> list, int target)
-{
-    int lo = 0;
-    int hi = list.Count - 1;
-
-    while (lo <= hi)
-    {
-        int mid = lo + ((hi - lo) / 2);
-        int midValue = list[mid];
-
-        if (midValue == target)
-            return true;
-        if (midValue < target)
-            lo = mid + 1;
+        ReadOnlySpan<char> token;
+        if (comma >= 0)
+        {
+            token = span[..comma];
+            span = span[(comma + 1)..];
+        }
         else
-            hi = mid - 1;
+        {
+            token = span;
+            span = default;
+        }
+        
+        return int.TryParse(token, out value);
     }
-    return false;
 }
 
 static int ExitWithUsage()
 {
     Console.WriteLine(
-        "Usage: please provide a list of sorted integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")"
+        """Usage: please provide a list of sorted integers ("1, 4, 5, 11, 12") and the integer to find ("11")"""
     );
     return 1;
 }
