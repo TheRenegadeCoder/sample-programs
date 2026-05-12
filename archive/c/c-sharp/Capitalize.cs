@@ -1,23 +1,12 @@
 if (args is not [string input, ..] || string.IsNullOrWhiteSpace(input))
 {
-    Console.WriteLine("Usage: please provide a string");
+    Console.Error.WriteLine("Usage: please provide a string");
     return;
 }
 
-if (char.IsUpper(input[0]))
-{
-    Console.WriteLine(input);
-    return;
-}
+char c = input[0];
 
-string output = string.Create(
-    input.Length,
-    input,
-    static (span, str) =>
-    {
-        str.CopyTo(span);
-        span[0] = char.ToUpperInvariant(span[0]);
-    }
-);
+if (char.IsLower(c))
+    input = char.ToUpperInvariant(c) + input[1..];
 
-Console.WriteLine(output);
+Console.WriteLine(input);
