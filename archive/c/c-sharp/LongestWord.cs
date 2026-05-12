@@ -1,27 +1,30 @@
-using System;
-using System.Linq;
+if (args is not [var sentence] || string.IsNullOrWhiteSpace(sentence))
+    return ExitWithUsage();
 
-public class LongestWord
+ReadOnlySpan<char> span = sentence.AsSpan();
+
+int maxLength = 0;
+int currentLength = 0;
+
+foreach (char c in span)
 {
-    public static void Main(string[] args)
+    if (char.IsWhiteSpace(c))
     {
-        // check for empty string or empty input
-        if (args.Length == 0 || args[0] == "") {
-            Console.WriteLine("Usage: please provide a string");
-        } else {
-            // stores string from args
-            string sentence = args[0];
-
-            // split string by whitespace (these four special characters), removes empty entries
-            string[] words = sentence.Split(new[] {' ', '\t', '\n', '\r'}, StringSplitOptions.RemoveEmptyEntries);
-
-            // sort array by length in descending order so longest string is first and returns is to array
-            words = words.OrderByDescending(word => word.Length).ToArray();
-
-            // log the length of longest word
-            Console.WriteLine(words[0].Length);
-        }
+        maxLength = Math.Max(currentLength, maxLength);
+        currentLength = 0;
+        continue;
     }
 
+    currentLength++;
+}
 
+maxLength = Math.Max(currentLength, maxLength);
+
+Console.WriteLine(maxLength);
+return 0;
+
+static int ExitWithUsage()
+{
+    Console.WriteLine("Usage: please provide a string");
+    return 1;
 }
