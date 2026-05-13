@@ -1,39 +1,24 @@
-using System;
 using System.Numerics;
 
-namespace SamplePrograms
+if (args is not [var input] || !BigInteger.TryParse(input, out var n) || n < 0)
 {
-    public class Factorial
-    {
-        public static BigInteger Fact(BigInteger n)
-        {
-            if (n <= 0)
-                return 1;
-            return n * Fact(n - 1);
-        }
+    Console.Error.WriteLine("Usage: please input a non-negative integer");
+    return;
+}
 
-        public static void Main(string[] args)
-        {
-            try
-            {
-                var n = BigInteger.Parse(args[0]);
-                if (n > 4550)
-                {
-                    Console.WriteLine(string.Format("{0}! is out of the reasonable bounds for calculation.", n));
-                    Environment.Exit(1);
-                }
-                else if (n < 0) {
-                    Console.WriteLine("Usage: please input a non-negative integer");
-                    Environment.Exit(1);
-                }
-                var result = Fact(n);
-                Console.WriteLine(result);
-            }
-            catch
-            {
-                Console.WriteLine("Usage: please input a non-negative integer");
-                Environment.Exit(1);
-            }
-        }
-    }
+Console.WriteLine(Factorial(n));
+
+static BigInteger Factorial(BigInteger n) => n < 2 ? BigInteger.One : MultiplyRange(2, n);
+
+static BigInteger MultiplyRange(BigInteger lo, BigInteger hi)
+{
+    if (lo > hi)
+        return BigInteger.One;
+    if (lo == hi)
+        return lo;
+    if (hi - lo == 1)
+        return lo * hi;
+
+    BigInteger mid = (lo + hi) / 2;
+    return MultiplyRange(lo, mid) * MultiplyRange(mid + 1, hi);
 }

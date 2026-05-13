@@ -1,53 +1,55 @@
-using System;
-using System.Collections.Generic;
+if (args is not [var input])
+    return ExitWith("Usage: please provide a string of roman numerals");
 
-namespace SamplePrograms
+if (!TryRomanToInt(input.AsSpan().Trim(), out int value))
+    return ExitWith("Error: invalid string of roman numerals");
+
+Console.WriteLine(value);
+return 0;
+
+static bool TryRomanToInt(ReadOnlySpan<char> roman, out int result)
 {
-    public class RomanNumeral
+    result = 0;
+    if (roman.Length == 0)
+        return true;
+
+    int prev = 0;
+
+    for (int i = roman.Length - 1; i >= 0; i--)
     {
-        private static readonly Dictionary<char, int> RomanDecMapping = new Dictionary<char, int>()
-        {
-            ['M'] = 1000,
-            ['D'] = 500,
-            ['C'] = 100,
-            ['L'] = 50,
-            ['X'] = 10,
-            ['V'] = 5,
-            ['I'] = 1,
-        };
+        if (!TryGetValue(roman[i], out int current))
+            return false;
 
-        private static int RomanToDecimal(string roman, int total=0)
-        {
-            if (roman.Length < 1)
-                return total;
-            var romanArray = roman.ToCharArray();
-            if (romanArray.Length == 1)
-                return total + RomanDecMapping[romanArray[0]];
+        if (current < prev)
+            result -= current;
+        else
+            result += current;
 
-            var romanVal = RomanDecMapping[romanArray[0]];
-            var nextRomanVal = RomanDecMapping[romanArray[1]];
-            if (romanVal < nextRomanVal)
-                return RomanToDecimal(roman.Substring(1), total - romanVal);
-
-            return RomanToDecimal(roman.Substring(1), total + romanVal);
-        }
-
-        public static void Main(string[] args)
-        {
-            if (args.Length < 1)
-            {
-                Console.WriteLine("Usage: please provide a string of roman numerals");
-                Environment.Exit(1);
-            }
-            try
-            {
-                Console.WriteLine(RomanToDecimal(args[0].ToUpper()));
-            }
-            catch (KeyNotFoundException)
-            {
-                Console.WriteLine("Error: invalid string of roman numerals");
-                Environment.Exit(1);
-            }
-        }
+        prev = current;
     }
+
+    return true;
+}
+
+static bool TryGetValue(char c, out int value)
+{
+    value = char.ToUpper(c) switch
+    {
+        'I' => 1,
+        'V' => 5,
+        'X' => 10,
+        'L' => 50,
+        'C' => 100,
+        'D' => 500,
+        'M' => 1000,
+        _ => 0
+    };
+
+    return value != 0;
+}
+
+static int ExitWith(string message)
+{
+    Console.WriteLine(message);
+    return 1;
 }

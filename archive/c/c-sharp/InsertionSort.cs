@@ -1,47 +1,65 @@
-using System;
-using System.Linq;
-using System.Collections.Generic;
+using System.Runtime.InteropServices;
 
-public class InsertionSort
+if (args is not [var input] || !TryParseList(input.AsSpan(), out var numbers))
+    return Usage();
+
+InsertionSort(CollectionsMarshal.AsSpan(numbers));
+
+Console.WriteLine(string.Join(", ", numbers));
+return 0;
+
+static bool TryParseList(ReadOnlySpan<char> span, out List<int> numbers)
 {
-    public static List<int> Insertion(List<int> xs)
+    numbers = new(span.Count(',') + 1);
+
+    while (!span.IsEmpty)
     {
-        var sorted = new List<int>();
-        foreach (var x in xs)
-            sorted = Insert(sorted, x);
-        return sorted;
+        int comma = span.IndexOf(',');
+        var token = comma >= 0 ? span[..comma] : span;
+
+        span = comma >= 0 ? span[(comma + 1)..] : [];
+
+        if (!int.TryParse(token, out int n))
+            return false;
+
+        numbers.Add(n);
     }
 
-    public static List<int> Insert(List<int> xs, int x)
-    {
-        var index = 0;
-        while (index < xs.Count() && x > xs[index])
-            index++;
-        xs.Insert(index > 0 ? index : 0, x);
-        return xs;
-    }
+    return numbers.Count > 1;
+}
 
-    public static void ErrorAndExit()
+static void InsertionSort(Span<int> xs)
+{
+    for (int i = 1; i < xs.Length; i++)
     {
-        Console.WriteLine("Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"");
-        Environment.Exit(1);   
-    }
-    
-    public static void Main(string[] args)
-    {
-        if (args.Length != 1)
-            ErrorAndExit();
-        try
+        int x = xs[i];
+        if (x >= xs[i - 1])
+            continue;
+
+        int lo = 0,
+            hi = i;
+
+        while (lo < hi)
         {
-            var xs = args[0].Split(',').Select(i => Int32.Parse(i.Trim())).ToList();
-            if (xs.Count() <= 1)
-                ErrorAndExit();
-            var sortedXs = Insertion(xs);
-            Console.WriteLine(string.Join(", ", sortedXs));
+            int mid = (lo + hi) >> 1;
+
+            if (x >= xs[mid])
+                lo = mid + 1;
+            else
+                hi = mid;
         }
-        catch
-        {
-            ErrorAndExit();
-        }
+
+        xs[lo..i].CopyTo(xs[(lo + 1)..]);
+        xs[lo] = x;
     }
+}
+
+static int Usage()
+{
+    Console.Error.WriteLine(
+        """
+Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"
+"""
+    );
+    return 1;
 }

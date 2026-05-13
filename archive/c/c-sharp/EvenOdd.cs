@@ -1,22 +1,7 @@
-using System;
-
-namespace SamplePrograms
+if (args is not [var input] || !int.TryParse(input, out int n))
 {
-    public class EvenOdd
-    {
-        public static void Main(string[] args)
-        {
-            try
-            {
-                int n = int.Parse(args[0]);
-                var result = n % 2 == 0 ? "Even" : "Odd";
-                Console.WriteLine(result);
-            }
-            catch
-            {
-                Console.WriteLine("Usage: please input a number");
-                Environment.Exit(1);
-            }
-        }
-    }
+    Console.Error.WriteLine("Usage: please input a number");
+    return;
 }
+
+Console.WriteLine(n % 2 == 0 ? "Even" : "Odd");

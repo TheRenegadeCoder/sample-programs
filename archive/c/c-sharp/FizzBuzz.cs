@@ -1,32 +1,9 @@
-namespace FizzBuzz
+for (int i = 1; i <= 100; i++)
 {
-    public class Program
-    {
-        public static string FizzBuzz(int number)
-        {
-            string temp = "";
-            if (number % 3 == 0)
-            {
-                temp += "Fizz";
-            }
-            if (number % 5 == 0)
-            {
-                temp += "Buzz";
-            }
-            if (string.IsNullOrEmpty(temp))
-            {
-                temp += number;
-            }
-            return temp;
-        }
+    string s = "";
 
-        private static void Main(string[] args)
-        {
-            for (int i = 1; i <= 100; i++)
-            {
-                string line = FizzBuzz(i);
-                System.Console.WriteLine(line);
-            }
-        }
-    }
+    if (i % 3 == 0) s += "Fizz";
+    if (i % 5 == 0) s += "Buzz";
+
+    Console.WriteLine(s.Length > 0 ? s : i);
 }

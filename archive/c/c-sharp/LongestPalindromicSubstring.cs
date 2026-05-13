@@ -1,71 +1,74 @@
-using System;
-using System.Text.RegularExpressions;
+if (args is not { Length: > 0 })
+    return Usage();
 
-namespace SamplePrograms
+string result = LongestPalindrome(string.Join(' ', args));
+
+if (result.Length < 2)
+    return Usage();
+
+Console.WriteLine(result);
+return 0;
+
+static string LongestPalindrome(string input)
 {
-    public class LongestPalindromicSubstring
+    int length = input.Length;
+    if (length < 2)
+        return "";
+
+    char[] transformed = new char[2 * length + 3];
+    int[] radius = new int[transformed.Length];
+
+    int index = 0;
+    transformed[index++] = '^';
+
+    ReadOnlySpan<char> source = input;
+
+    foreach (char c in source)
     {
-        public static void Main(string[] args)
-        {
-            string input = string.Join(" ", args);
-            Console.WriteLine(LongestPalindrome(input));
-        }
-
-        public static string LongestPalindrome(string input)
-        {
-            if (string.IsNullOrEmpty(input) || !ContainsPalindrome(input))
-            {
-                return "Usage: please provide a string that contains at least one palindrome";
-            }
-
-            int start = 0;
-            int end = 0;
-
-            for (int i = 0; i < input.Length; i++)
-            {
-                int lengthOne = ExpandAroundCenter(input, i, i);
-                int lengthTwo = ExpandAroundCenter(input, i, i + 1);
-                int length = Math.Max(lengthOne, lengthTwo);
-
-                if (length > end - start)
-                {
-                    start = i - (length - 1) / 2;
-                    end = i + length / 2;
-                }
-            }
-            return input.Substring(start, end - start + 1);
-        }
-
-        private static int ExpandAroundCenter(string input, int left, int right)
-        {
-            while (left >= 0 && right < input.Length && input[left] == input[right])
-            {
-                left--;
-                right++;
-            }
-            return right - left - 1;
-        }
-
-        private static bool ContainsPalindrome(string input)
-        {
-            string[] words = input.Split(' ');
-            foreach (string word in words)
-            {
-                if (word.Length > 1 && word == Reverse(word))
-                {
-                    return true;
-                }
-            }
-            
-            string cleanedInput = input.Replace(" ", "");
-            return cleanedInput.Length > 1 && cleanedInput == Reverse(cleanedInput);
-        }
-
-        private static string Reverse(string input)
-        {
-            char[] charArray = input.ToCharArray();
-            Array.Reverse(charArray);
-            return new string(charArray);
-        }
+        transformed[index++] = '#';
+        transformed[index++] = c;
     }
+
+    transformed[index++] = '#';
+    transformed[index++] = '$';
+
+    int center = 0;
+    int rightBoundary = 0;
+
+    int bestCenter = 0;
+    int bestRadius = 0;
+
+    for (int i = 1; i < index - 1; i++)
+    {
+        int mirror = 2 * center - i;
+        int R = radius[i];
+
+        if (i < rightBoundary)
+            R = Math.Min(rightBoundary - i, radius[mirror]);
+
+        while (transformed[i + R + 1] == transformed[i - R - 1])
+            R++;
+
+        radius[i] = R;
+        int expandedRight = i + R;
+
+        center = expandedRight > rightBoundary ? i : center;
+        rightBoundary = Math.Max(expandedRight, rightBoundary);
+
+        bool isBest = R > bestRadius;
+        bestRadius = isBest ? R : bestRadius;
+        bestCenter = isBest ? i : bestCenter;
+    }
+
+    if (bestRadius < 2)
+        return "";
+
+    int startIndex = (bestCenter - bestRadius) / 2;
+    return input.AsSpan(startIndex, bestRadius).ToString();
+}
+
+static int Usage()
+{
+    Console.Error.WriteLine("Usage: please provide a string that contains at least one palindrome");
+    return 1;
 }

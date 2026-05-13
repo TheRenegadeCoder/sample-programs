@@ -1,152 +1,83 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-public record Node(int Id)
+﻿if (args is not [var matrixRaw, var verticesRaw, var targetRaw] ||
+    !int.TryParse(targetRaw, out int target) ||
+    !TryParseList(verticesRaw.AsSpan(), out var vertices) ||
+    !TryParseList(matrixRaw.AsSpan(), out var matrix))
 {
-    private readonly HashSet<int> _childrenSet = new();
-    private readonly List<int> _children = new();
-
-    public IReadOnlyList<int> Children => _children;
-
-    public void AddChild(int childId)
-    {
-        if (_childrenSet.Add(childId))
-            _children.Add(childId);
-    }
+    return Usage();
 }
 
-public class Tree
+int n = vertices.Count;
+if (matrix.Count != n * n)
+    return Usage();
+
+List<int>[] graph = new List<int>[n];
+for (int i = 0; i < n; i++)
+    graph[i] = [];
+
+for (int r = 0; r < n; r++)
 {
-    private readonly Dictionary<int, Node> _nodes = new();
+    int baseIdx = r * n;
 
-    public int RootId { get; }
-
-    public Tree(int rootId) => RootId = rootId;
-
-    public void AddNode(Node node) => _nodes[node.Id] = node;
-
-    public Node? GetNode(int id) => _nodes.TryGetValue(id, out var node) ? node : null;
-
-    public bool ContainsNode(int id) => _nodes.ContainsKey(id);
-
-    public IReadOnlyCollection<Node> Nodes => _nodes.Values;
+    for (int c = 0; c < n; c++)
+        if (matrix[baseIdx + c] != 0)
+            graph[r].Add(c);
 }
 
-public static class DepthFirstSearch
+Console.WriteLine(
+    DFS(graph, vertices, target).ToString().ToLowerInvariant()
+);
+
+return 0;
+
+static bool DFS(List<int>[] graph, List<int> values, int target)
 {
-    private static void ShowUsage()
+    int n = values.Count;
+    var visited = new bool[n];
+    var stack = new int[n];
+    int sp = 0;
+
+    stack[sp++] = 0;
+
+    while (sp > 0)
     {
-        Console.Error.WriteLine("Usage: please provide a tree in an adjacency matrix form (\"0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0\") together with a list of vertex values (\"1, 3, 5, 2, 4\") and the integer to find (\"4\")");
+        int v = stack[--sp];
+        if (visited[v]) continue;
+
+        visited[v] = true;
+        if (values[v] == target) return true;
+
+        foreach (int next in graph[v])
+            if (!visited[next])
+                stack[sp++] = next;
     }
 
-    public static List<int> ParseIntegerList(string input)
+    return false;
+}
+
+static bool TryParseList(ReadOnlySpan<char> span, out List<int> numbers)
+{
+    numbers = new(span.Count(',') + 1);
+
+    while (!span.IsEmpty)
     {
-        if (string.IsNullOrWhiteSpace(input))
-            throw new ArgumentException("Input string is null or whitespace");
+        int comma = span.IndexOf(',');
+        var token = comma >= 0 ? span[..comma] : span;
 
-        var parts = input.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
-        var list = new List<int>(parts.Length);
+        span = comma >= 0 ? span[(comma + 1)..] : [];
 
-        foreach (var part in parts)
-        {
-            if (!int.TryParse(part, out var val))
-                throw new ArgumentException($"Invalid integer value: '{part}'");
-            list.Add(val);
-        }
+        if (!int.TryParse(token, out int n))
+            return false;
 
-        if (list.Count < 1)
-            throw new ArgumentException("List must contain at least one integer");
-
-        return list;
+        numbers.Add(n);
     }
 
-    public static Tree CreateTree(List<int> adjacencyMatrix, List<int> vertices)
-    {
-        int n = vertices.Count;
+    return true;
+}
 
-        if (adjacencyMatrix.Count != n * n)
-            throw new ArgumentException("Adjacency matrix size does not match vertex count squared");
-
-        var tree = new Tree(vertices[0]);
-
-        foreach (var v in vertices)
-            tree.AddNode(new Node(v));
-
-        for (int row = 0; row < n; row++)
-        {
-            var currentNode = tree.GetNode(vertices[row])!;
-            for (int col = 0; col < n; col++)
-            {
-                int matrixValue = adjacencyMatrix[row * n + col];
-                if (matrixValue != 0)
-                {
-                    int childId = vertices[col];
-                    if (!tree.ContainsNode(childId))
-                        throw new ArgumentException("Adjacency matrix references unknown vertex");
-                    currentNode.AddChild(childId);
-                }
-            }
-        }
-
-        return tree;
-    }
-
-    public static bool DFS(Tree tree, int target)
-    {
-        var visited = new HashSet<int>();
-        var stack = new Stack<int>();
-        stack.Push(tree.RootId);
-
-        while (stack.Count > 0)
-        {
-            var current = stack.Pop();
-            if (!visited.Add(current))
-                continue;
-
-            if (current == target)
-                return true;
-
-            var node = tree.GetNode(current);
-            if (node is not null)
-            {
-                foreach (var child in node.Children)
-                    stack.Push(child);
-            }
-        }
-
-        return false;
-    }
-
-    public static int Main(string[] args)
-    {
-        if (args.Length != 3)
-        {
-            ShowUsage();
-            return 1;
-        }
-
-        try
-        {
-            var adjacencyMatrix = ParseIntegerList(args[0]);
-            var vertices = ParseIntegerList(args[1]);
-
-            if (!int.TryParse(args[2], out var target))
-            {
-                ShowUsage();
-                return 1;
-            }
-
-            var tree = CreateTree(adjacencyMatrix, vertices);
-            bool found = DFS(tree, target);
-
-            Console.WriteLine(found.ToString().ToLowerInvariant());
-            return 0;
-        }
-        catch
-        {
-            ShowUsage();
-            return 1;
-        }
-    }
+static int Usage()
+{
+    Console.Error.WriteLine(
+        """Usage: please provide a tree in an adjacency matrix form ("0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0") together with a list of vertex values ("1, 3, 5, 2, 4") and the integer to find ("4")"""
+    );
+    return 1;
 }
