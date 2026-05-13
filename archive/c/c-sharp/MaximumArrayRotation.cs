@@ -21,7 +21,7 @@ static bool TryParseList(ReadOnlySpan<char> span, out List<int> numbers)
         numbers.Add(n);
     }
 
-    return true;
+    return numbers.Count > 0;
 }
 
 static int MaximumRotationSum(List<int> numbers)
