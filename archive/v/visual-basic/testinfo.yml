@@ -6,7 +6,18 @@ container:
   image: "mcr.microsoft.com/dotnet/sdk"
   tag: "10.0"
   build: |
-    bash -c "dotnet new console --language 'VB' && \
-      mv {{ source.name }}{{ source.extension }} Program.vb && \
-      dotnet build --sc"
-  cmd: "dotnet run --sc --no-restore"
+    bash -c "
+      export DOTNET_CLI_TELEMETRY_OPTOUT=1
+      export DOTNET_NOLOGO=true
+      
+      dotnet new console --language 'VB' --no-restore --force -o . > /dev/null
+      rm Program.vb
+      
+      dotnet build -c Release \
+        --no-self-contained \
+        -p:UseSharedCompilation=false \
+        -p:Deterministic=true \
+        -p:Optimize=true \
+        -o ./publish
+    "
+  cmd: "dotnet ./publish/src.dll"
