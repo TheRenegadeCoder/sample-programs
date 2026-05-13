@@ -6,7 +6,17 @@ container:
   image: "mcr.microsoft.com/dotnet/sdk"
   tag: "10.0"
   build: |
-    bash -c "dotnet new console --language 'F#' && \
-      mv {{ source.name }}{{ source.extension }} Program.fs && \
-      dotnet build --sc"
-  cmd: "dotnet run --sc --no-restore"
+    bash -c "
+      export DOTNET_CLI_TELEMETRY_OPTOUT=1
+      export DOTNET_NOLOGO=true
+      
+      dotnet new console --language 'F#' --no-restore --force -o . > /dev/null
+      mv {{ source.name }}{{ source.extension }} Program.fs
+      
+      dotnet build -c Release \
+        -p:UseSharedCompilation=false \
+        -p:Deterministic=true \
+        -p:Optimize=true \
+        -o ./publish
+    "
+  cmd: "dotnet ./publish/src.dll"
