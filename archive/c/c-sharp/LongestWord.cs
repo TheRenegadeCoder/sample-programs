@@ -1,30 +1,26 @@
 if (args is not [var sentence] || string.IsNullOrWhiteSpace(sentence))
-    return ExitWithUsage();
+    return Usage();
 
-ReadOnlySpan<char> span = sentence.AsSpan();
+int max = 0,
+    cur = 0;
 
-int maxLength = 0;
-int currentLength = 0;
-
-foreach (char c in span)
+foreach (char c in sentence)
 {
     if (char.IsWhiteSpace(c))
     {
-        maxLength = Math.Max(currentLength, maxLength);
-        currentLength = 0;
+        cur = 0;
         continue;
     }
 
-    currentLength++;
+    cur++;
+    max = Math.Max(cur, max);
 }
 
-maxLength = Math.Max(currentLength, maxLength);
-
-Console.WriteLine(maxLength);
+Console.WriteLine(max);
 return 0;
 
-static int ExitWithUsage()
+static int Usage()
 {
-    Console.WriteLine("Usage: please provide a string");
+    Console.Error.WriteLine("Usage: please provide a string");
     return 1;
 }
