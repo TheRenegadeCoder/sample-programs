@@ -2,93 +2,70 @@ using System.Runtime.InteropServices;
 
 if (
     args is not [var profitsRaw, var deadlinesRaw]
-    || !TryParseJobs(profitsRaw, deadlinesRaw, out var jobs, out int maxDeadline)
+    || !TryParseJobs(profitsRaw.AsSpan(), deadlinesRaw.AsSpan(), out var jobs, out int maxDeadline)
 )
-    return ExitWithUsage();
+{
+    return Usage();
+}
 
-long result = MaxJobProfit(jobs, maxDeadline);
-
-Console.WriteLine(result);
+Console.WriteLine(MaxProfit(jobs, maxDeadline));
 return 0;
 
-static bool TryParseJobs(string pRaw, string dRaw, out List<Job> jobs, out int maxDeadline)
+static bool TryParseJobs(
+    ReadOnlySpan<char> profits,
+    ReadOnlySpan<char> deadlines,
+    out List<Job> jobs,
+    out int maxDeadline
+)
 {
-    jobs = [];
+    jobs = new(Math.Max(profits.Count(',') + 1, 0));
     maxDeadline = 0;
 
-    ReadOnlySpan<char> pSpan = pRaw;
-    ReadOnlySpan<char> dSpan = dRaw;
-
-    int expected = pSpan.Count(',') + 1;
-    if (expected != dSpan.Count(',') + 1)
-        return false;
-
-    jobs = new List<Job>(expected);
-
-    while (!pSpan.IsEmpty && !dSpan.IsEmpty)
+    while (!profits.IsEmpty && !deadlines.IsEmpty)
     {
-        if (!TryParseNext(ref pSpan, out int p) || !TryParseNext(ref dSpan, out int d))
+        if (!TryNext(ref profits, out int profit) || !TryNext(ref deadlines, out int deadline))
             return false;
 
-        jobs.Add(new Job(p, d));
-
-        if (d > maxDeadline)
-            maxDeadline = d;
+        jobs.Add(new(profit, deadline));
+        maxDeadline = Math.Max(maxDeadline, deadline);
     }
 
-    // ensure both consumed equally
-    if (!pSpan.IsEmpty || !dSpan.IsEmpty)
-        return false;
+    return profits.IsEmpty && deadlines.IsEmpty && jobs.Count > 0;
 
-    return jobs.Count > 0;
-
-    static bool TryParseNext(ref ReadOnlySpan<char> span, out int value)
+    static bool TryNext(ref ReadOnlySpan<char> span, out int n)
     {
         int comma = span.IndexOf(',');
-
-        ReadOnlySpan<char> token;
-        if (comma >= 0)
-        {
-            token = span[..comma];
-            span = span[(comma + 1)..];
-        }
-        else
-        {
-            token = span;
-            span = default;
-        }
-
-        return int.TryParse(token, out value);
+        var token = comma >= 0 ? span[..comma] : span;
+        span = comma >= 0 ? span[(comma + 1)..] : [];
+        return int.TryParse(token, out n);
     }
 }
 
-static long MaxJobProfit(List<Job> jobs, int maxDeadline)
+static long MaxProfit(List<Job> jobs, int maxDeadline)
 {
-    jobs.Sort(static (a, b) => b.Profit.CompareTo(a.Profit));
+    jobs.Sort((a, b) => b.Profit.CompareTo(a.Profit));
 
-    int size = Math.Min(maxDeadline, jobs.Count);
+    int n = Math.Min(jobs.Count, maxDeadline);
 
-    Span<int> parent = size <= 1024
-        ? stackalloc int[size + 1]
-        : new int[size + 1];
+    Span<int> parent = n <= 1024 ? stackalloc int[n + 1] : new int[n + 1];
 
-    for (int i = 0; i <= size; i++)
+    for (int i = 0; i <= n; i++)
         parent[i] = i;
 
-    long totalProfit = 0;
+    long total = 0;
 
-    foreach (ref readonly var job in CollectionsMarshal.AsSpan(jobs))
+    foreach (ref readonly var j in CollectionsMarshal.AsSpan(jobs))
     {
-        int slot = Find(parent, Math.Min(job.Deadline, size));
+        int slot = Find(parent, Math.Min(j.Deadline, n));
 
-        if (slot > 0)
-        {
-            totalProfit += job.Profit;
-            parent[slot] = Find(parent, slot - 1);
-        }
+        if (slot == 0)
+            continue;
+
+        total += j.Profit;
+        parent[slot] = Find(parent, slot - 1);
     }
 
-    return totalProfit;
+    return total;
 }
 
 static int Find(Span<int> parent, int i)
@@ -101,7 +78,7 @@ static int Find(Span<int> parent, int i)
     return i;
 }
 
-static int ExitWithUsage()
+static int Usage()
 {
     Console.Error.WriteLine("Usage: please provide a list of profits and a list of deadlines");
     return 1;
