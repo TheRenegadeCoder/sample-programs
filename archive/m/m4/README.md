@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in m4! To find documentation related to the m4 code in this repo, look [here](https://sampleprograms.io/languages/m4).
 
-## Sample Programs List - 36/39 :smile:
+## Sample Programs List - 36/38 :smile:
 
 In this section, we feature a list of completed and missing programs in m4. See above for the current amount of completed programs in m4. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -56,7 +56,6 @@ The following list contains all of the approved programs that are not currently 
 
 - :x: [Base64 Encode Decode](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,base64+encode+decode&template=code-snippet-request.md&title=Add+Base64+Encode+Decode+in+m4) [[Requirements](https://sampleprograms.io/projects/base64-encode-decode)]
 - :x: [File Input Output](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,file+input+output&template=code-snippet-request.md&title=Add+File+Input+Output+in+m4) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
-- :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+m4) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 
 ## Testing
 

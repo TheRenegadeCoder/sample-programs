@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in Euphoria! To find documentation related to the Euphoria code in this repo, look [here](https://sampleprograms.io/languages/euphoria).
 
-## Sample Programs List - 39/39 :partying_face:
+## Sample Programs List - 38/38 :partying_face:
 
 In this section, we feature a list of completed and missing programs in Euphoria. See above for the current amount of completed programs in Euphoria. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -49,7 +49,6 @@ Below, you'll find a list of completed code snippets in Euphoria. Code snippets 
 - :warning: [Roman Numeral in Euphoria](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+euphoria) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :warning: [Rot13 in Euphoria](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+euphoria) [[Requirements](https://sampleprograms.io/projects/rot13)]
 - :warning: [Selection Sort in Euphoria](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+euphoria) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
-- :warning: [Sleep Sort in Euphoria](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sleep+sort+euphoria) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :warning: [Transpose Matrix in Euphoria](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+euphoria) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 - :warning: [Zeckendorf in Euphoria](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+zeckendorf+euphoria) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 

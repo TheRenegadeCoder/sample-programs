@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in Commodore BASIC! To find documentation related to the Commodore BASIC code in this repo, look [here](https://sampleprograms.io/languages/commodore-basic).
 
-## Sample Programs List - 39/39 :partying_face:
+## Sample Programs List - 38/38 :partying_face:
 
 In this section, we feature a list of completed and missing programs in Commodore BASIC. See above for the current amount of completed programs in Commodore BASIC. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -49,7 +49,6 @@ Below, you'll find a list of completed code snippets in Commodore BASIC. Code sn
 - :warning: [Roman Numeral in Commodore BASIC](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+commodore+basic) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :warning: [Rot13 in Commodore BASIC](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+commodore+basic) [[Requirements](https://sampleprograms.io/projects/rot13)]
 - :warning: [Selection Sort in Commodore BASIC](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+commodore+basic) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
-- :warning: [Sleep Sort in Commodore BASIC](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sleep+sort+commodore+basic) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :warning: [Transpose Matrix in Commodore BASIC](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+commodore+basic) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 - :warning: [Zeckendorf in Commodore BASIC](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+zeckendorf+commodore+basic) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 

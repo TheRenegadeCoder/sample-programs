@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in ALGOL 68! To find documentation related to the ALGOL 68 code in this repo, look [here](https://sampleprograms.io/languages/algol68).
 
-## Sample Programs List - 39/39 :partying_face:
+## Sample Programs List - 38/38 :partying_face:
 
 In this section, we feature a list of completed and missing programs in ALGOL 68. See above for the current amount of completed programs in ALGOL 68. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -49,7 +49,6 @@ Below, you'll find a list of completed code snippets in ALGOL 68. Code snippets 
 - :warning: [Roman Numeral in ALGOL 68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+algol+68) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :warning: [Rot13 in ALGOL 68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+algol+68) [[Requirements](https://sampleprograms.io/projects/rot13)]
 - :warning: [Selection Sort in ALGOL 68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+algol+68) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
-- :warning: [Sleep Sort in ALGOL 68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sleep+sort+algol+68) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :warning: [Transpose Matrix in ALGOL 68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+algol+68) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 - :warning: [Zeckendorf in ALGOL 68](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+zeckendorf+algol+68) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 

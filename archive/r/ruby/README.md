@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in Ruby! To find documentation related to the Ruby code in this repo, look [here](https://sampleprograms.io/languages/ruby).
 
-## Sample Programs List - 23/39 :relaxed:
+## Sample Programs List - 23/38 :relaxed:
 
 In this section, we feature a list of completed and missing programs in Ruby. See above for the current amount of completed programs in Ruby. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -54,7 +54,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+Ruby) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
 - :x: [Quick Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,quick+sort&template=code-snippet-request.md&title=Add+Quick+Sort+in+Ruby) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
 - :x: [Rot13](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,rot13&template=code-snippet-request.md&title=Add+Rot13+in+Ruby) [[Requirements](https://sampleprograms.io/projects/rot13)]
-- :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+Ruby) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,transpose+matrix&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+Ruby) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 - :x: [Zeckendorf](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,zeckendorf&template=code-snippet-request.md&title=Add+Zeckendorf+in+Ruby) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 

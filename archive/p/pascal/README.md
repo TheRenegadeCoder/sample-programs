@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in Pascal! To find documentation related to the Pascal code in this repo, look [here](https://sampleprograms.io/languages/pascal).
 
-## Sample Programs List - 39/39 :partying_face:
+## Sample Programs List - 38/38 :partying_face:
 
 In this section, we feature a list of completed and missing programs in Pascal. See above for the current amount of completed programs in Pascal. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -49,7 +49,6 @@ Below, you'll find a list of completed code snippets in Pascal. Code snippets pr
 - :warning: [Roman Numeral in Pascal](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+pascal) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :warning: [Rot13 in Pascal](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+pascal) [[Requirements](https://sampleprograms.io/projects/rot13)]
 - :warning: [Selection Sort in Pascal](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+pascal) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
-- :warning: [Sleep Sort in Pascal](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sleep+sort+pascal) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :warning: [Transpose Matrix in Pascal](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+pascal) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 - :warning: [Zeckendorf in Pascal](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+zeckendorf+pascal) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 
