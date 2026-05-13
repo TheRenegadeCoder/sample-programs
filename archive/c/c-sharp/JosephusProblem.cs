@@ -1,24 +1,19 @@
-const string Usage = "Usage: please input the total number of people and number of people to skip.";
-
-if (args is not [var nText, var kText] ||
-    !int.TryParse(nText, out var n) ||
-    !int.TryParse(kText, out var k) ||
-    n <= 0 || k <= 0)
+if (
+    args is not [var nText, var kText]
+    || !int.TryParse(nText, out int n)
+    || !int.TryParse(kText, out int k)
+    || n <= 0
+    || k <= 0
+)
 {
-    Console.WriteLine(Usage);
+    Console.Error.WriteLine(
+        "Usage: please input the total number of people and number of people to skip."
+    );
     return;
 }
 
-Console.WriteLine(Josephus(n, k));
+int survivor = 0;
+for (int i = 2; i <= n; i++)
+    survivor = (survivor + k) % i;
 
-static int Josephus(int n, int k)
-{
-    int result = 0;
-
-    for (int m = 2; m <= n; m++)
-    {
-        result = (result + k) % m;
-    }
-
-    return result + 1;
-}
+Console.WriteLine(survivor + 1);
