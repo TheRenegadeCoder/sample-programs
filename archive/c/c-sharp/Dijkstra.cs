@@ -63,7 +63,7 @@ static bool TryParseList(ReadOnlySpan<char> span, out List<int> numbers)
 
         span = comma >= 0 ? span[(comma + 1)..] : [];
 
-        if (!int.TryParse(token, out int n))
+        if (!int.TryParse(token, out int n) || n < 0)
             return false;
 
         numbers.Add(n);
