@@ -1,18 +1,9 @@
 for (int i = 1; i <= 100; i++)
 {
-    Console.WriteLine(FizzBuzz(i));
-}
+    string s = "";
 
-static string FizzBuzz(int n)
-{
-    bool fizz = n % 3 == 0;
-    bool buzz = n % 5 == 0;
+    if (i % 3 == 0) s += "Fizz";
+    if (i % 5 == 0) s += "Buzz";
 
-    return (fizz, buzz) switch
-    {
-        (true, true) => "FizzBuzz",
-        (true, false) => "Fizz",
-        (false, true) => "Buzz",
-        _ => n.ToString()
-    };
+    Console.WriteLine(s.Length > 0 ? s : i);
 }
