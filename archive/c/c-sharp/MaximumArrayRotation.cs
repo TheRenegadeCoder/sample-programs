@@ -4,44 +4,24 @@
 Console.WriteLine(MaximumRotationSum(numbers));
 return 0;
 
-static bool TryParseList(ReadOnlySpan<char> view, out List<int> numbers)
+static bool TryParseList(ReadOnlySpan<char> span, out List<int> numbers)
 {
-    numbers = null!;
-    if (view.IsWhiteSpace())
-        return false;
+    numbers = new(span.Count(',') + 1);
 
-    int expectedCount = view.Count(',') + 1;
-    var list = new List<int>(expectedCount);
-
-    while (!view.IsEmpty)
-    {
-        if (!TryParseNext(ref view, out int val))
-            return false;
-
-        list.Add(val);
-    }
-    
-    numbers = list;
-    return true;
-
-    static bool TryParseNext(ref ReadOnlySpan<char> span, out int value)
+    while (!span.IsEmpty)
     {
         int comma = span.IndexOf(',');
+        var token = comma >= 0 ? span[..comma] : span;
 
-        ReadOnlySpan<char> token;
-        if (comma >= 0)
-        {
-            token = span[..comma];
-            span = span[(comma + 1)..];
-        }
-        else
-        {
-            token = span;
-            span = default;
-        }
+        span = comma >= 0 ? span[(comma + 1)..] : [];
 
-        return int.TryParse(token, out value);
+        if (!int.TryParse(token, out int n))
+            return false;
+
+        numbers.Add(n);
     }
+
+    return true;
 }
 
 static int MaximumRotationSum(List<int> numbers)
