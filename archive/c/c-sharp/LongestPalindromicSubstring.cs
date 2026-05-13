@@ -1,14 +1,10 @@
-using System;
-
 if (args is not { Length: > 0 })
-    return ExitWithUsage();
+    return Usage();
 
-string input = string.Join(' ', args);
-
-string result = LongestPalindrome(input);
+string result = LongestPalindrome(string.Join(' ', args));
 
 if (result.Length < 2)
-    return ExitWithUsage();
+    return Usage();
 
 Console.WriteLine(result);
 return 0;
@@ -27,10 +23,10 @@ static string LongestPalindrome(string input)
 
     ReadOnlySpan<char> source = input;
 
-    for (int i = 0; i < length; i++)
+    foreach (char c in source)
     {
         transformed[index++] = '#';
-        transformed[index++] = source[i];
+        transformed[index++] = c;
     }
 
     transformed[index++] = '#';
@@ -39,42 +35,40 @@ static string LongestPalindrome(string input)
     int center = 0;
     int rightBoundary = 0;
 
-    int bestRadius = 0;
     int bestCenter = 0;
+    int bestRadius = 0;
 
     for (int i = 1; i < index - 1; i++)
     {
         int mirror = 2 * center - i;
+        int R = radius[i];
 
         if (i < rightBoundary)
-            radius[i] = Math.Min(rightBoundary - i, radius[mirror]);
+            R = Math.Min(rightBoundary - i, radius[mirror]);
 
-        while (transformed[i + radius[i] + 1] == transformed[i - radius[i] - 1])
-            radius[i]++;
+        while (transformed[i + R + 1] == transformed[i - R - 1])
+            R++;
 
-        if (i + radius[i] > rightBoundary)
-        {
-            center = i;
-            rightBoundary = i + radius[i];
-        }
+        radius[i] = R;
+        int expandedRight = i + R;
 
-        if (radius[i] > bestRadius)
-        {
-            bestRadius = radius[i];
-            bestCenter = i;
-        }
+        center = expandedRight > rightBoundary ? i : center;
+        rightBoundary = Math.Max(expandedRight, rightBoundary);
+
+        bool isBest = R > bestRadius;
+        bestRadius = isBest ? R : bestRadius;
+        bestCenter = isBest ? i : bestCenter;
     }
 
     if (bestRadius < 2)
         return "";
 
     int startIndex = (bestCenter - bestRadius) / 2;
-
     return input.AsSpan(startIndex, bestRadius).ToString();
 }
 
-static int ExitWithUsage()
+static int Usage()
 {
-    Console.WriteLine("Usage: please provide a string that contains at least one palindrome");
+    Console.Error.WriteLine("Usage: please provide a string that contains at least one palindrome");
     return 1;
 }
