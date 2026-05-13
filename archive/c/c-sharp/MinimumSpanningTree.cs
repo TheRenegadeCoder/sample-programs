@@ -62,47 +62,30 @@ static bool TryParseMatrix(ReadOnlySpan<char> view, out List<int> numbers, out i
         return false;
 
     int expected = view.Count(',') + 1;
-
-    if (expected < 4)
-        return false;
+    if (expected < 4) return false;
 
     var list = new List<int>(expected);
 
     while (!view.IsEmpty)
     {
-        if (!TryParseNext(ref view, out int value))
+        int i = view.IndexOf(',');
+        var token = i >= 0 ? view[..i] : view;
+
+        view = i >= 0 ? view[(i + 1)..] : [];
+
+        if (!int.TryParse(token, out int v))
             return false;
 
-        list.Add(value);
+        list.Add(v);
     }
 
-    dimension = (int)Math.Sqrt(list.Count);
-
-    if (dimension * dimension != list.Count)
+    int d = (int)Math.Sqrt(list.Count);
+    if (d * d != list.Count)
         return false;
 
     numbers = list;
+    dimension = d;
     return true;
-
-    static bool TryParseNext(ref ReadOnlySpan<char> span, out int value)
-    {
-        int comma = span.IndexOf(',');
-
-        ReadOnlySpan<char> token;
-
-        if (comma >= 0)
-        {
-            token = span[..comma];
-            span = span[(comma + 1)..];
-        }
-        else
-        {
-            token = span;
-            span = default;
-        }
-
-        return int.TryParse(token, out value);
-    }
 }
 
 static int ExitWithUsage()

@@ -1,86 +1,66 @@
-﻿using System.Collections.Generic;
-using System.Runtime.InteropServices;
+﻿using System.Runtime.InteropServices;
 
-if (
-    args is not [var colsRaw, var rowsRaw, var matrixRaw]
+if (args is not [var colsRaw, var rowsRaw, var matrixRaw]
     || !int.TryParse(colsRaw, out int cols)
     || !int.TryParse(rowsRaw, out int rows)
-    || cols <= 0
-    || rows <= 0
+    || cols <= 0 || rows <= 0
     || !TryParseMatrix(matrixRaw.AsSpan(), out var matrix)
-    || matrix.Count != cols * rows
-)
+    || matrix.Count != cols * rows)
 {
     return ExitWithUsage();
 }
 
-var result = Transpose(matrix, cols, rows);
-Console.WriteLine(string.Join(", ", result));
+Console.WriteLine(string.Join(", ", Transpose(matrix, cols, rows)));
 return 0;
 
-static List<int> Transpose(List<int> matrix, int cols, int rows)
+static List<int> Transpose(List<int> m, int cols, int rows)
 {
-    var output = new List<int>(matrix.Count);
-    for (int i = 0; i < matrix.Count; i++)
-        output.Add(0);
+    var o = new List<int>(m.Count);
+    for (int i = 0; i < m.Count; i++) o.Add(0);
 
-    Span<int> src = CollectionsMarshal.AsSpan(matrix);
-    Span<int> dst = CollectionsMarshal.AsSpan(output);
+    var src = CollectionsMarshal.AsSpan(m);
+    var dst = CollectionsMarshal.AsSpan(o);
 
     for (int r = 0; r < rows; r++)
-    {
-        int rowBase = r * cols;
+    for (int c = 0; c < cols; c++)
+        dst[c * rows + r] = src[r * cols + c];
 
-        for (int c = 0; c < cols; c++)
-        {
-            int oldIndex = rowBase + c;
-            int newIndex = c * rows + r;
-
-            dst[newIndex] = src[oldIndex];
-        }
-    }
-
-    return output;
+    return o;
 }
 
-static bool TryParseMatrix(ReadOnlySpan<char> view, out List<int> numbers)
+static bool TryParseMatrix(ReadOnlySpan<char> view, out List<int> numbers, out int dimension)
 {
     numbers = null!;
-    if (view.IsEmpty)
+    dimension = 0;
+
+    if (view.IsWhiteSpace())
         return false;
 
     int expected = view.Count(',') + 1;
+    if (expected < 4) return false;
+
     var list = new List<int>(expected);
 
     while (!view.IsEmpty)
     {
-        if (!TryParseNext(ref view, out int value))
+        int i = view.IndexOf(',');
+        var token = i >= 0 ? view[..i] : view;
+
+        view = i >= 0 ? view[(i + 1)..] : [];
+
+        if (!int.TryParse(token, out int v))
             return false;
 
-        list.Add(value);
+        list.Add(v);
     }
 
-    return list.Count > 0 && (numbers = list) != null;
+    int d = (int)Math.Sqrt(list.Count);
+    if (d * d != list.Count)
+        return false;
 
-    static bool TryParseNext(ref ReadOnlySpan<char> span, out int value)
-    {
-        int comma = span.IndexOf(',');
-
-        ReadOnlySpan<char> token;
-
-        if (comma >= 0)
-        {
-            token = span[..comma];
-            span = span[(comma + 1)..];
-        }
-        else
-        {
-            token = span;
-            span = default;
-        }
-
-        return int.TryParse(token, out value);
-    }
+    numbers = list;
+    dimension = d;
+    return true;
 }
 
 static int ExitWithUsage()
