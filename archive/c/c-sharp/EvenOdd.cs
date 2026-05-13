@@ -1,6 +1,6 @@
 if (args is not [var input] || !int.TryParse(input, out int n))
 {
-    Console.WriteLine("Usage: please input a number");
+    Console.Error.WriteLine("Usage: please input a number");
     return;
 }
 
