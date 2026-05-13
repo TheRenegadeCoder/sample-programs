@@ -2,40 +2,23 @@ using System.Numerics;
 
 if (args is not [var input] || !BigInteger.TryParse(input, out var n) || n < 0)
 {
-    Console.WriteLine("Usage: please input a non-negative integer");
+    Console.Error.WriteLine("Usage: please input a non-negative integer");
     return;
 }
 
-Console.WriteLine(n.Factorial());
+Console.WriteLine(Factorial(n));
 
-public static class BigIntegerExtensions
+static BigInteger Factorial(BigInteger n) => n < 2 ? BigInteger.One : MultiplyRange(2, n);
+
+static BigInteger MultiplyRange(BigInteger lo, BigInteger hi)
 {
-    extension(BigInteger n)
-    {
-        public BigInteger Factorial()
-        {
-            if (n < BigInteger.Zero)
-                throw new ArgumentOutOfRangeException(nameof(n), "Non-negative integer required.");
+    if (lo > hi)
+        return BigInteger.One;
+    if (lo == hi)
+        return lo;
+    if (hi - lo == 1)
+        return lo * hi;
 
-            if (n < 2)
-                return BigInteger.One;
-
-            return MultiplyRange(1, n);
-        }
-
-        private static BigInteger MultiplyRange(BigInteger low, BigInteger high)
-        {
-            var diff = high - low;
-
-            // Base cases to stop recursion
-            if (diff == 0)
-                return low;
-            if (diff == 1)
-                return low * high;
-
-            // Binary split logic
-            BigInteger mid = low + (diff >> 1);
-            return MultiplyRange(low, mid) * MultiplyRange(mid + 1, high);
-        }
-    }
+    BigInteger mid = (lo + hi) / 2;
+    return MultiplyRange(lo, mid) * MultiplyRange(mid + 1, hi);
 }
