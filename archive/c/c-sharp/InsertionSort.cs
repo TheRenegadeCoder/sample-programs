@@ -1,96 +1,65 @@
-using System.Collections.Generic;
 using System.Runtime.InteropServices;
 
-if (args is not [var input])
-    return ExitWithUsage();
+if (args is not [var input] || !TryParseList(input.AsSpan(), out var numbers))
+    return Usage();
 
-if (!TryParseList(input.AsSpan(), out var numbers))
-    return ExitWithUsage();
-
-InsertionSort(numbers);
+InsertionSort(CollectionsMarshal.AsSpan(numbers));
 
 Console.WriteLine(string.Join(", ", numbers));
 return 0;
 
-static bool TryParseList(ReadOnlySpan<char> view, out List<int> numbers)
+static bool TryParseList(ReadOnlySpan<char> span, out List<int> numbers)
 {
-    numbers = null!;
-    if (view.IsWhiteSpace())
-        return false;
+    numbers = new(span.Count(',') + 1);
 
-    int expectedCount = view.Count(',') + 1;
-    var list = new List<int>(expectedCount);
-
-    while (!view.IsEmpty)
-    {
-        if (!TryParseNext(ref view, out int val))
-            return false;
-
-        list.Add(val);
-    }
-
-    if (list.Count < 2)
-        return false;
-
-    numbers = list;
-    return true;
-
-    static bool TryParseNext(ref ReadOnlySpan<char> span, out int value)
+    while (!span.IsEmpty)
     {
         int comma = span.IndexOf(',');
+        var token = comma >= 0 ? span[..comma] : span;
 
-        ReadOnlySpan<char> token;
-        if (comma >= 0)
-        {
-            token = span[..comma];
-            span = span[(comma + 1)..];
-        }
-        else
-        {
-            token = span;
-            span = default;
-        }
+        span = comma >= 0 ? span[(comma + 1)..] : [];
 
-        return int.TryParse(token, out value);
+        if (!int.TryParse(token, out int n))
+            return false;
+
+        numbers.Add(n);
     }
+
+    return numbers.Count > 1;
 }
 
-static void InsertionSort(List<int> xs)
+static void InsertionSort(Span<int> xs)
 {
-    int n = xs.Count;
-    if (n < 2)
-        return;
-
-    Span<int> span = CollectionsMarshal.AsSpan(xs);
-
-    for (int i = 1; i < n; i++)
+    for (int i = 1; i < xs.Length; i++)
     {
-        int key = span[i];
-
-        if (key >= span[i - 1])
+        int x = xs[i];
+        if (x >= xs[i - 1])
             continue;
 
-        int low = 0;
-        int high = i;
-        while (low < high)
+        int lo = 0,
+            hi = i;
+
+        while (lo < hi)
         {
-            int mid = low + ((high - low) >> 1);
-            if (key >= span[mid])
-                low = mid + 1;
+            int mid = (lo + hi) >> 1;
+
+            if (x >= xs[mid])
+                lo = mid + 1;
             else
-                high = mid;
+                hi = mid;
         }
 
-        // SIMD-optimized block shift
-        span.Slice(low, i - low).CopyTo(span.Slice(low + 1));
-        span[low] = key;
+        xs[lo..i].CopyTo(xs[(lo + 1)..]);
+        xs[lo] = x;
     }
 }
 
-static int ExitWithUsage()
+static int Usage()
 {
-    Console.WriteLine(
-        "Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\""
+    Console.Error.WriteLine(
+        """
+Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"
+"""
     );
     return 1;
 }
