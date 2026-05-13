@@ -4,8 +4,8 @@ if (args is not [var colsRaw, var rowsRaw, var matrixRaw]
     || !int.TryParse(colsRaw, out int cols)
     || !int.TryParse(rowsRaw, out int rows)
     || cols <= 0 || rows <= 0
-    || !TryParseMatrix(matrixRaw.AsSpan(), out var matrix)
-    || matrix.Count != cols * rows)
+    || !TryParseMatrix(matrixRaw.AsSpan(), cols, rows, out var matrix)
+)
 {
     return ExitWithUsage();
 }
@@ -28,18 +28,15 @@ static List<int> Transpose(List<int> m, int cols, int rows)
     return o;
 }
 
-static bool TryParseMatrix(ReadOnlySpan<char> view, out List<int> numbers, out int dimension)
+static bool TryParseMatrix(ReadOnlySpan<char> view, int cols, int rows, out List<int> numbers)
 {
-    numbers = null!;
-    dimension = 0;
+    numbers = new(cols * rows);
 
     if (view.IsWhiteSpace())
         return false;
 
-    int expected = view.Count(',') + 1;
-    if (expected < 4) return false;
-
-    var list = new List<int>(expected);
+    int expected = cols * rows;
+    int count = 0;
 
     while (!view.IsEmpty)
     {
@@ -51,16 +48,13 @@ static bool TryParseMatrix(ReadOnlySpan<char> view, out List<int> numbers, out i
         if (!int.TryParse(token, out int v))
             return false;
 
-        list.Add(v);
+        numbers.Add(v);
+
+        if (++count > expected)
+            return false;
     }
 
-    int d = (int)Math.Sqrt(list.Count);
-    if (d * d != list.Count)
-        return false;
-
-    numbers = list;
-    dimension = d;
-    return true;
+    return count == expected;
 }
 
 static int ExitWithUsage()
