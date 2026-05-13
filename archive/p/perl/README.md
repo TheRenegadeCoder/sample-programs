@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in Perl! To find documentation related to the Perl code in this repo, look [here](https://sampleprograms.io/languages/perl).
 
-## Sample Programs List - 21/39 :relaxed:
+## Sample Programs List - 21/38 :relaxed:
 
 In this section, we feature a list of completed and missing programs in Perl. See above for the current amount of completed programs in Perl. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -54,7 +54,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+Perl) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
 - :x: [Remove All Whitespace](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,remove+all+whitespace&template=code-snippet-request.md&title=Add+Remove+All+Whitespace+in+Perl) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :x: [Roman Numeral](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,roman+numeral&template=code-snippet-request.md&title=Add+Roman+Numeral+in+Perl) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
-- :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+Perl) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,transpose+matrix&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+Perl) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 - :x: [Zeckendorf](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,zeckendorf&template=code-snippet-request.md&title=Add+Zeckendorf+in+Perl) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 

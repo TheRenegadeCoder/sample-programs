@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in x86-64! To find documentation related to the x86-64 code in this repo, look [here](https://sampleprograms.io/languages/x86-64).
 
-## Sample Programs List - 7/39 :disappointed:
+## Sample Programs List - 7/38 :disappointed:
 
 In this section, we feature a list of completed and missing programs in x86-64. See above for the current amount of completed programs in x86-64. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -54,7 +54,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Roman Numeral](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,roman+numeral&template=code-snippet-request.md&title=Add+Roman+Numeral+in+x86-64) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :x: [Rot13](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,rot13&template=code-snippet-request.md&title=Add+Rot13+in+x86-64) [[Requirements](https://sampleprograms.io/projects/rot13)]
 - :x: [Selection Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,selection+sort&template=code-snippet-request.md&title=Add+Selection+Sort+in+x86-64) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
-- :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+x86-64) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,transpose+matrix&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+x86-64) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 - :x: [Zeckendorf](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,zeckendorf&template=code-snippet-request.md&title=Add+Zeckendorf+in+x86-64) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 

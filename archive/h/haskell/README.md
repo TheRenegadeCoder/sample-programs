@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in Haskell! To find documentation related to the Haskell code in this repo, look [here](https://sampleprograms.io/languages/haskell).
 
-## Sample Programs List - 30/39 :smile:
+## Sample Programs List - 30/38 :smile:
 
 In this section, we feature a list of completed and missing programs in Haskell. See above for the current amount of completed programs in Haskell. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -55,7 +55,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Duplicate Character Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,duplicate+character+counter&template=code-snippet-request.md&title=Add+Duplicate+Character+Counter+in+Haskell) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fraction+math&template=code-snippet-request.md&title=Add+Fraction+Math+in+Haskell) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+Haskell) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
-- :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+Haskell) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :x: [Zeckendorf](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,zeckendorf&template=code-snippet-request.md&title=Add+Zeckendorf+in+Haskell) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 
 ## Testing
