@@ -19,7 +19,6 @@ sub parse_list ($s) {
 
     @vals = map 0 + $_, @vals;
 
-    return undef if any { $vals[$_] > $vals[ $_ + 1 ] } 0 .. $#vals - 1;
     return \@vals;
 }
 
