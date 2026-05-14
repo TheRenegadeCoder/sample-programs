@@ -1,15 +1,13 @@
-#!/usr/bin/perl
-#
-# FizzBuzz in Perl
+#!/usr/bin/env perl
+use v5.42;
 
-use strict;
-use warnings;
-use diagnostics;
-use 5.10.0;
+sub fizzbuzz ($n) {
+    my $s = '';
 
-for my $n (1..100) {
-    !($n % 15) ?    say "FizzBuzz"    :
-    !($n % 3)  ?    say "Fizz"        :
-    !($n % 5)  ?    say "Buzz"        :
-                    say "$n";
+    $s .= "Fizz" if $n % 3 == 0;
+    $s .= "Buzz" if $n % 5 == 0;
+
+    return $s || $n;
 }
+
+say fizzbuzz($_) for 1 .. 100;
