@@ -1,17 +1,13 @@
 #!/usr/bin/env perl
-use strict;
-use warnings;
+use v5.42;
 
-# accept input as argument
+sub usage {
+    say "Usage: please input a number";
+    exit;
+}
+
 my ($number) = @ARGV;
 
-if (!defined $number || $number !~ /^\-?\d+$/) {
-	print "Usage: please input a number\n";
-	exit;
-}
+usage() unless defined $number && $number =~ /\A-?\d+\z/;
 
-if ($number % 2 == 0) {
-	print "Even\n";
-} else {
-	print "Odd\n";
-}
+say $number % 2 == 0 ? "Even" : "Odd";
