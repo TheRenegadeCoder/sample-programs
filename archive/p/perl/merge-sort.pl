@@ -1,49 +1,58 @@
-#!/usr/bin/perl
-#Merge Sort using recursion
-$num_args = $#ARGV + 1;
-# If no input was provided
-if ($num_args == 0) {
-    print "Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"";
-} 
-# If invalid input was provided
-else {
-    $input_string = $ARGV[0];
-    my @arr = split(',',$input_string);
-    $n = $#arr + 1;
-    if ($n <= 1) {
-	print "Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"";
-    } 
-#Input is fine    
-    else {
-# Convert input sting to Integers
-        for ($i = 0;$i < $n;$i++) {
-                $arr[$i] = int($arr[$i])
-            } #end for
+#!/usr/bin/env perl
+use v5.42;
 
-@merge_sorted_list = merge_sort (@arr);
+use feature qw/keyword_any/;
+no warnings 'experimental::keyword_any';
 
-# Print sorted numbers
-        for ($i = 0;$i < $n;$i = $i + 1) {
-            if ($i == 0) {
-                print "$merge_sorted_list[$i]";
-            } else {
-                print ", $merge_sorted_list[$i]";
-            }
-        }
-    }
+sub usage {
+    say 'Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"';
+    exit;
 }
 
-sub merge_sort {
-    my @temp_array = @_;
-    return @temp_array if @temp_array < 2;
-    my $m = int @temp_array / 2;
-    my @a = merge_sort(@temp_array[0 .. $m - 1]);
-    my @b = merge_sort(@temp_array[$m .. $#temp_array]);
-    for (@temp_array) {
-        $_ = !@a            ? shift @b
-           : !@b            ? shift @a
-           : $a[0] <= $b[0] ? shift @a
-           :                  shift @b;
-    }
-    @temp_array;
+sub parse_list ($s) {
+    return undef unless defined $s;
+
+    my @vals = split /\s*,\s*/, $s;
+
+    return undef if @vals < 2;
+    return undef if any { $_ !~ /\A-?\d+\z/ } @vals;
+
+    return [ map 0 + $_, @vals ];
 }
+
+# Note: Perl's `sort` is implemented via merge sort as of v5.42, so one could use that instead.
+
+sub merge_sort ($a) {
+    return $a if @$a <= 1;
+
+    my $mid = @$a >> 1;
+
+    my $left  = [ @{$a}[ 0 .. $mid - 1 ] ];
+    my $right = [ @{$a}[ $mid .. $#$a ] ];
+
+    merge_sort($left);
+    merge_sort($right);
+
+    @$a = _merge( $left, $right );
+    return $a;
+}
+
+sub _merge ( $left, $right ) {
+    my @out;
+
+    while ( @$left && @$right ) {
+        push @out, $left->[0] <= $right->[0]
+          ? shift @$left
+          : shift @$right;
+    }
+
+    push @out, @$left, @$right;
+
+    return @out;
+}
+
+my ($input) = @ARGV;
+my $a = parse_list($input) or usage();
+
+merge_sort($a);
+say join ', ', @$a;
