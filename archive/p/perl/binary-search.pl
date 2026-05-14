@@ -1,82 +1,49 @@
 #!/usr/bin/env perl
-use strict;
-use warnings;
+use v5.42;
 
-sub handle_error {
-    print "Usage: please provide a list of sorted integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")\n";
-    exit(0);
+use feature qw/keyword_any/;
+no warnings 'experimental::keyword_any';
+
+sub usage {
+    say 'Usage: please provide a list of sorted integers ("1, 4, 5, 11, 12") and the integer to find ("11")';
+    exit;
 }
 
-sub check {
-    my ($s) = @_;
-    
-    # Trim leading and trailing spaces
-    $s =~ s/^\s+//;
-    $s =~ s/\s+$//;
-    
-    # Check if there are spaces in the middle
-    if ($s =~ /\s/) {
-        handle_error();
-    }
-    
-    # Check if it's a valid integer
-    if ($s !~ /^-?\d+$/) {
-        handle_error();
-    }
-    
-    return int($s);
+sub parse_list ($s) {
+    return undef unless defined $s;
+
+    my @vals = split /\s*,\s*/, $s;
+
+    return undef unless @vals;
+    return undef if any { $_ !~ /\A\d+\z/ } @vals;
+
+    @vals = map 0 + $_, @vals;
+
+    return undef if any { $vals[$_] > $vals[ $_ + 1 ] } 0 .. $#vals - 1;
+    return \@vals;
 }
 
-sub convert {
-    my ($s) = @_;
-    
-    if (length($s) == 0) {
-        handle_error();
+sub binary_search ( $a, $x ) {
+    my ( $lo, $hi ) = ( 0, $#$a );
+
+    while ( $lo <= $hi ) {
+        my $mid = ( $lo + $hi ) >> 1;
+
+        return "true" if $a->[$mid] == $x;
+        $hi = $mid - 1 if $a->[$mid] > $x;
+        $lo = $mid + 1 if $a->[$mid] < $x;
     }
-    
-    my @v;
-    my @parts = split(',', $s);
-    
-    foreach my $part (@parts) {
-        push @v, check($part);
-    }
-    
-    return @v;
+
+    return "false";
 }
 
-# Main program
-if (@ARGV < 2) {
-    handle_error();
-}
+my ( $list_s, $num_s ) = @ARGV;
 
-my @v = convert($ARGV[0]);
-my $num = check($ARGV[1]);
+defined $num_s or usage();
 
-# Check if array is sorted
-for (my $i = 0; $i < @v - 1; $i++) {
-    if ($v[$i] > $v[$i + 1]) {
-        handle_error();
-    }
-}
+my $list = parse_list($list_s) or usage();
 
-# Binary search
-my $start = 0;
-my $end = scalar(@v);
-my $ans = "false";
+usage() unless $num_s =~ /\A\d+\z/;
+my $num = 0 + $num_s;
 
-while ($start < $end) {
-    my $mid = int(($start + $end) / 2);
-    
-    if ($num < $v[$mid]) {
-        $end = $mid;
-    }
-    elsif ($v[$mid] < $num) {
-        $start = $mid + 1;
-    }
-    elsif ($v[$mid] == $num) {
-        $ans = "true";
-        last;
-    }
-}
-
-print "$ans\n";
+say binary_search( $list, $num );

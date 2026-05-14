@@ -1,58 +1,39 @@
-#!/usr/bin/perl
-#Quick Sort using recursion on last element as pivot key
-$num_args = $#ARGV + 1;
-# If no input was provided
-if ($num_args == 0) {
-    print "Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"";
-} 
-# If invalid input was provided
-else {
-    $input_string = $ARGV[0];
-    my @arr = split(',',$input_string);
-    $n = $#arr + 1;
-    if ($n <= 1) {
-	print "Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"";
-    } 
-#Input is fine    
-    else {
-# Convert input sting to Integers
-        for ($i = 0;$i < $n;$i++) {
-                $arr[$i] = int($arr[$i])
-            } #end for
+#!/usr/bin/env perl
+use v5.42;
 
-@quicksortedlist = quicksort(@arr);
-# Print sorted numbers
-        for ($i = 0;$i < $n;$i = $i + 1) {
-            if ($i == 0) {
-                print "$quicksortedlist[$i]";
-            } else {
-                print ", $quicksortedlist[$i]";
-            }
-        }
-    }
+use feature qw/keyword_any/;
+no warnings 'experimental::keyword_any';
+
+sub usage {
+    say 'Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"';
+    exit;
 }
 
+sub parse_list ($s) {
+    return undef unless defined $s;
 
-sub quicksort 
-{
-  my @list = @_;
-  if($#list < 1)
-  {
-    return @list;
-  }
-  my $pivot_key = pop(@list);
-  my @elements_smaller_than_pivot_key; 
-  my @elements_greather_than_pivot_key;
-  foreach my $element (@list) 
-  {
-    if ($element < $pivot_key)
-    {
-      push(@elements_smaller_than_pivot_key, $element);
-    } 
-    else 
-    {
-      push(@elements_greather_than_pivot_key, $element);
-    }
-  }
-  return quicksort(@elements_smaller_than_pivot_key), $pivot_key, quicksort(@elements_greather_than_pivot_key);
+    my @vals = split /\s*,\s*/, $s;
+
+    return undef if @vals < 2;
+    return undef if any { $_ !~ /\A-?\d+\z/ } @vals;
+
+    return [ map 0 + $_, @vals ];
 }
+
+sub quick_sort ($a) {
+    return $a if @$a <= 1;
+
+    my $pivot = $a->[ @$a >> 1 ];
+
+    my @left  = grep { $_ < $pivot } @$a;
+    my @mid   = grep { $_ == $pivot } @$a;
+    my @right = grep { $_ > $pivot } @$a;
+
+    return [ @{ quick_sort( \@left ) }, @mid, @{ quick_sort( \@right ) } ];
+}
+
+my ($input) = @ARGV;
+my $a = parse_list($input) or usage();
+
+$a = quick_sort($a);
+say join ', ', @$a;

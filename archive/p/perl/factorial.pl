@@ -1,32 +1,15 @@
 #!/usr/bin/env perl
-use strict;
-use warnings;
-
-# no input
-usage() unless @ARGV == 1;
-
-# accept input as argument
-my ($number) = @ARGV;
-
-# if not provided, read from standard input
-if (!defined $number) {
-	$number = <STDIN>;
-	chomp $number;
-}
-
-if (!defined $number || $number !~ /^\d+$/ || $number < 0) {
-	usage();
-}
-
-my $factorial = 1;
-
-for (my $i = 1; $i <= $number; $i++) {
-	$factorial = $factorial * $i;
-}
-
-print "$factorial\n";
+use v5.42;
 
 sub usage {
-	print "Usage: please input a non-negative integer\n";
-	exit;
+    say "Usage: please input a non-negative integer";
+    exit;
 }
+
+my ($number) = @ARGV;
+usage() unless defined $number && $number =~ /\A\d+\z/;
+
+my $factorial = 1;
+$factorial *= $_ for 2 .. $number;
+
+say $factorial;

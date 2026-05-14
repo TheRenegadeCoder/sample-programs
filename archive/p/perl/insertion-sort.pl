@@ -1,32 +1,39 @@
-#!/usr/bin/perl
-$num_args = $#ARGV + 1;
-if ($num_args == 0) {
-    print "Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"";
-} else {
-    $input_string = $ARGV[0];
-    my @arr = split(',',$input_string);
-    $n = $#arr + 1;
-    if ($n <= 1) {
-	print "Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"";
-    } else {
-	for ($i = 0;$i < $n;$i++) {
-	    $arr[$i] = int($arr[$i])
-	}
-        for ($i = 1;$i < $n;$i = $i + 1) {
-            $p = $arr[$i];
-	    $j = $i - 1;
-	    while($j >= 0 && $arr[$j] > $p) {
-		$arr[$j + 1] = $arr[$j];
-		$j = $j - 1;
-	    }
-	    $arr[$j + 1] = $p;
-        }
-        for ($i = 0;$i < $n;$i = $i + 1) {
-            if ($i == 0) {
-                print "$arr[$i]";
-            } else {
-                print ", $arr[$i]";
-            }
-        }
-    }
+#!/usr/bin/env perl
+use v5.42;
+
+use feature qw/keyword_any/;
+no warnings 'experimental::keyword_any';
+
+sub usage {
+    say 'Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"';
+    exit;
 }
+
+sub parse_list ($s) {
+    return undef unless defined $s;
+
+    my @vals = split /\s*,\s*/, $s;
+
+    return undef if @vals < 2;
+    return undef if any { $_ !~ /\A-?\d+\z/ } @vals;
+
+    return [ map 0 + $_, @vals ];
+}
+
+sub insertion_sort ($a) {
+    for my $i ( 1 .. $#$a ) {
+        my $key = $a->[$i];
+        my $j   = $i - 1;
+
+        $a->[ $j + 1 ] = $a->[$j], $j-- while $j >= 0 && $a->[$j] > $key;
+        $a->[ $j + 1 ] = $key;
+    }
+
+    return $a;
+}
+
+my ($input) = @ARGV;
+my $a = parse_list($input) or usage();
+
+insertion_sort($a);
+say join ', ', @$a;
