@@ -1,9 +1,13 @@
-my ($str) = @ARGV;
+#!/usr/bin/env perl
+use v5.42;
 
-
-if (not defined $str or not length $str) {
-    die "Usage: please provide a string to encrypt\n";
+sub usage {
+    say "Usage: please provide a string to encrypt";
+    exit;
 }
 
-$str =~ tr/ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz/NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm/;
-print $str . "\n";
+my ($str) = @ARGV;
+usage() unless defined $str && length $str;
+
+$str =~ tr/A-Za-z/N-ZA-Mn-za-m/;
+say $str;
