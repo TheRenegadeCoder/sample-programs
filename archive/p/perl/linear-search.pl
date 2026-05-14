@@ -1,22 +1,36 @@
-#!/usr/bin/perl
-my $arguments_used = scalar @ARGV;
-if($arguments_used < 2)
-{
-    die "Usage: please provide a list of integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")\n";
+#!/usr/bin/env perl
+use v5.42;
+
+use feature qw/keyword_any/;
+no warnings 'experimental::keyword_any';
+
+sub usage {
+    say 'Usage: please provide a list of integers ("1, 4, 5, 11, 12") and the integer to find ("11")';
+    exit;
 }
-my @input_array = @ARGV;
-my $input_string = pop @ARGV;
-my @trimmed_string = split(',', @input_array[0]);
-my $found_it = 0;
-if(scalar@trimmed_string < 1)
-{
-    die "Usage: please provide a list of integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")\n";
+
+sub parse_list ($s) {
+    return undef unless defined $s;
+
+    my @vals = split /\s*,\s*/, $s;
+
+    return undef unless @vals;
+    return undef if any { $_ !~ /\A\d+\z/ } @vals;
+
+    @vals = map 0 + $_, @vals;
+
+    return undef if any { $vals[$_] > $vals[ $_ + 1 ] } 0 .. $#vals - 1;
+    return \@vals;
 }
-for(my $i = 0; $i < scalar(@trimmed_string); $i++)
-{
-    if($trimmed_string[$i] == $input_string)
-    {
-        $found_it = 1;
-    }
-}
-print $found_it ? "true" : "false";
+
+my ( $list_s, $num_s ) = @ARGV;
+
+defined $num_s or usage();
+
+my $list = parse_list($list_s) or usage();
+
+usage() unless $num_s =~ /\A\d+\z/;
+my $num = 0 + $num_s;
+
+my $found = any { $_ == $num } @$list;
+say $found ? "true" : "false";
