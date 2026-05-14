@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in Ruby! To find documentation related to the Ruby code in this repo, look [here](https://sampleprograms.io/languages/ruby).
 
-## Sample Programs List - 23/38 :relaxed:
+## Sample Programs List - 38/38 :partying_face:
 
 In this section, we feature a list of completed and missing programs in Ruby. See above for the current amount of completed programs in Ruby. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -14,9 +14,13 @@ In this section, we feature a list of completed and missing programs in Ruby. Se
 Below, you'll find a list of completed code snippets in Ruby. Code snippets preceded by :warning: link to a GitHub issue query featuring a possible article request issue. If an article request issue doesn't exist, we encourage you to create one. Meanwhile, code snippets preceded by :white_check_mark: link to an existing article which provides further documentation. To see the list of approved projects, check out the official Sample Programs projects list.
 
 - :warning: [Baklava in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+ruby) [[Requirements](https://sampleprograms.io/projects/baklava)]
+- :warning: [Base64 Encode Decode in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+base64+encode+decode+ruby) [[Requirements](https://sampleprograms.io/projects/base64-encode-decode)]
 - :warning: [Binary Search in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+binary+search+ruby) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :warning: [Bubble Sort in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+ruby) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :warning: [Capitalize in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+ruby) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :warning: [Convex Hull in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+convex+hull+ruby) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
+- :warning: [Depth First Search in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+depth+first+search+ruby) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
+- :warning: [Dijkstra in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+dijkstra+ruby) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :warning: [Duplicate Character Counter in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+ruby) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :warning: [Even Odd in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+ruby) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :warning: [Factorial in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+ruby) [[Requirements](https://sampleprograms.io/projects/factorial)]
@@ -25,37 +29,28 @@ Below, you'll find a list of completed code snippets in Ruby. Code snippets prec
 - :warning: [Fizz Buzz in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+ruby) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :warning: [Fraction Math in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fraction+math+ruby) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :warning: [Hello World in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+ruby) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :warning: [Insertion Sort in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+insertion+sort+ruby) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
+- :warning: [Job Sequencing in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+job+sequencing+ruby) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :warning: [Josephus Problem in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+josephus+problem+ruby) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :warning: [Linear Search in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+linear+search+ruby) [[Requirements](https://sampleprograms.io/projects/linear-search)]
+- :warning: [Longest Common Subsequence in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+common+subsequence+ruby) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
 - :warning: [Longest Palindromic Substring in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+palindromic+substring+ruby) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
 - :warning: [Longest Word in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+ruby) [[Requirements](https://sampleprograms.io/projects/longest-word)]
+- :warning: [Maximum Array Rotation in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+maximum+array+rotation+ruby) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
+- :warning: [Maximum Subarray in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+maximum+subarray+ruby) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
+- :warning: [Merge Sort in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+ruby) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
+- :warning: [Minimum Spanning Tree in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+minimum+spanning+tree+ruby) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
 - :warning: [Palindromic Number in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+ruby) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :warning: [Prime Number in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+ruby) [[Requirements](https://sampleprograms.io/projects/prime-number)]
+- :warning: [Quick Sort in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+ruby) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
 - :warning: [Quine in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quine+ruby) [[Requirements](https://sampleprograms.io/projects/quine)]
 - :warning: [Remove All Whitespace in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+remove+all+whitespace+ruby) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :white_check_mark: [Reverse String in Ruby](https://sampleprograms.io/projects/reverse-string/ruby) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :warning: [Roman Numeral in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+ruby) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
+- :warning: [Rot13 in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+ruby) [[Requirements](https://sampleprograms.io/projects/rot13)]
 - :warning: [Selection Sort in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+ruby) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
-
-### Missing Programs
-
-The following list contains all of the approved programs that are not currently implemented in Ruby. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
-
-- :x: [Base64 Encode Decode](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,base64+encode+decode&template=code-snippet-request.md&title=Add+Base64+Encode+Decode+in+Ruby) [[Requirements](https://sampleprograms.io/projects/base64-encode-decode)]
-- :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,convex+hull&template=code-snippet-request.md&title=Add+Convex+Hull+in+Ruby) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
-- :x: [Depth First Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,depth+first+search&template=code-snippet-request.md&title=Add+Depth+First+Search+in+Ruby) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
-- :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,dijkstra&template=code-snippet-request.md&title=Add+Dijkstra+in+Ruby) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
-- :x: [Insertion Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,insertion+sort&template=code-snippet-request.md&title=Add+Insertion+Sort+in+Ruby) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
-- :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,job+sequencing&template=code-snippet-request.md&title=Add+Job+Sequencing+in+Ruby) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
-- :x: [Longest Common Subsequence](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+common+subsequence&template=code-snippet-request.md&title=Add+Longest+Common+Subsequence+in+Ruby) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
-- :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+array+rotation&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+Ruby) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
-- :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+subarray&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+Ruby) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
-- :x: [Merge Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,merge+sort&template=code-snippet-request.md&title=Add+Merge+Sort+in+Ruby) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
-- :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+Ruby) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
-- :x: [Quick Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,quick+sort&template=code-snippet-request.md&title=Add+Quick+Sort+in+Ruby) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
-- :x: [Rot13](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,rot13&template=code-snippet-request.md&title=Add+Rot13+in+Ruby) [[Requirements](https://sampleprograms.io/projects/rot13)]
-- :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,transpose+matrix&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+Ruby) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
-- :x: [Zeckendorf](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,zeckendorf&template=code-snippet-request.md&title=Add+Zeckendorf+in+Ruby) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
+- :warning: [Transpose Matrix in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+ruby) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
+- :warning: [Zeckendorf in Ruby](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+zeckendorf+ruby) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 
 ## Testing
 
