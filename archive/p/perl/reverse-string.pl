@@ -1,6 +1,5 @@
+#!/usr/bin/env perl
+use v5.42;
 
 my ($str) = @ARGV;
-
-if (defined $str) {
-    print scalar reverse $str;
-}
+say scalar reverse $str if defined $str;
