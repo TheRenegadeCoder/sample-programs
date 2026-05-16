@@ -5,7 +5,6 @@ folder:
   naming: "hyphen"
 
 container:
-  image: "ocaml/ocaml"
-  tag: "centos-7"
-  build: "ocamlc -o {{ source.name }} {{ source.name }}{{ source.extension }}"
-  cmd: "./{{ source.name }}"
+  image: "ocaml/opam"
+  tag: "ubuntu-lts-ocaml-5.6"
+  cmd: "/home/opam/.opam/5.6/bin/ocaml {{ source.name }}{{ source.extension }}"
