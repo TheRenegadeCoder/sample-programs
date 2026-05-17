@@ -1,52 +1,61 @@
+using System;
+using System.Collections.Generic;
 using System.Globalization;
 
-public static class Zeckendorf
+if (args is not [var raw] ||
+    !long.TryParse(raw, out long n) ||
+    n < 0)
 {
-    private static readonly long[] Fibs = GenerateFibs();
+    return ExitWithUsage();
+}
 
-    private static long[] GenerateFibs()
+if (n == 0)
+    return 0;
+
+ReadOnlySpan<long> fibs = GenerateFibs();
+Span<long> buffer = stackalloc long[fibs.Length];
+
+int count = Decompose(n, fibs, buffer);
+Console.WriteLine(string.Join(", ", buffer[..count].ToArray()));
+
+return 0;
+
+static int Decompose(long n, ReadOnlySpan<long> fibs, Span<long> result)
+{
+    int count = 0;
+
+    for (int i = fibs.Length - 1; i >= 0 && n > 0; i--)
     {
-        var fs = new List<long> { 1, 2 };
-        while (long.MaxValue - fs[^1] >= fs[^2])
+        long f = fibs[i];
+
+        if (f <= n)
         {
-            fs.Add(fs[^1] + fs[^2]);
+            result[count++] = f;
+            n -= f;
         }
-        return [.. fs];
     }
 
-    public static void Main(string[] args)
+    return count;
+}
+
+static int ExitWithUsage()
+{
+    Console.WriteLine("Usage: please input a non-negative integer");
+    return 1;
+}
+
+static long[] GenerateFibs()
+{
+    var list = new List<long> { 1, 2 };
+
+    while (true)
     {
-        if (args.Length == 0 || !long.TryParse(args[0], NumberStyles.None, CultureInfo.InvariantCulture, out var n) || n < 0)
-        {
-            Console.WriteLine("Usage: please input a non-negative integer");
-            return;
-        }
+        long next = list[^1] + list[^2];
+        if (next < 0 || next > long.MaxValue - list[^1])
+            break;
 
-        if (n == 0) return;
-
-        Span<long> terms = stackalloc long[Fibs.Length];
-        int count = Decompose(n, terms);
-
-        PrintResults(terms[..count]);
+        list.Add(next);
     }
 
-    private static int Decompose(long n, Span<long> terms)
-    {
-        int count = 0;
-        int i = Array.BinarySearch(Fibs, n);
-        if (i < 0) i = ~i - 1;
-
-        for (; i >= 0 && n > 0; i--)
-        {
-            if (Fibs[i] <= n)
-            {
-                terms[count++] = Fibs[i];
-                n -= Fibs[i];
-            }
-        }
-        return count;
-    }
-
-    private static void PrintResults(ReadOnlySpan<long> terms) =>
-        Console.WriteLine(string.Join(", ", terms.ToArray()));
+    return list.ToArray();
 }

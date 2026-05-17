@@ -1,20 +1,18 @@
-using System;
 using System.IO;
 
-namespace SamplePrograms
+const string Path = "output.txt";
+const string Content = """
+line 1
+line 2
+line 3
+""";
+
+try
 {
-    public class FileIO
-    {
-        public static void Write() =>
-            File.WriteAllText("output.txt", "file contents");
-
-        public static string Read() =>
-            File.ReadAllText("output.txt");
-
-        public static void Main(string[] args)
-        {
-            Write();
-            Console.WriteLine(Read());
-        }
-    }
+    File.WriteAllText(Path, Content);
+    Console.WriteLine(File.ReadAllText(Path));
+}
+catch (IOException ex)
+{
+    Console.WriteLine($"IO error: {ex.Message}");
 }

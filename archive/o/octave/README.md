@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in Octave! To find documentation related to the Octave code in this repo, look [here](https://sampleprograms.io/languages/octave).
 
-## Sample Programs List - 14/39 :thinking:
+## Sample Programs List - 14/38 :thinking:
 
 In this section, we feature a list of completed and missing programs in Octave. See above for the current amount of completed programs in Octave. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -54,7 +54,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Remove All Whitespace](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,remove+all+whitespace&template=code-snippet-request.md&title=Add+Remove+All+Whitespace+in+Octave) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :x: [Roman Numeral](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,roman+numeral&template=code-snippet-request.md&title=Add+Roman+Numeral+in+Octave) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :x: [Rot13](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,rot13&template=code-snippet-request.md&title=Add+Rot13+in+Octave) [[Requirements](https://sampleprograms.io/projects/rot13)]
-- :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+Octave) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,transpose+matrix&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+Octave) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 - :x: [Zeckendorf](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,zeckendorf&template=code-snippet-request.md&title=Add+Zeckendorf+in+Octave) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 

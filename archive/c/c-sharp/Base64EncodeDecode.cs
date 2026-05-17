@@ -1,67 +1,34 @@
 ﻿using System.Text;
 
-public class Base64EncodeDecode
+return args switch
 {
-    public static void Usage()
-    {
-        Console.WriteLine("Usage: please provide a mode and a string to encode/decode");
-        Environment.Exit(1);
-    }
+    ["encode", var value] when !string.IsNullOrWhiteSpace(value)
+        => Encode(value),
 
+    ["decode", var value] when !string.IsNullOrWhiteSpace(value)
+        => Decode(value),
 
-    private static bool IsValidBase64(string input)
-    {
-        if (string.IsNullOrWhiteSpace(input) || input.Length % 4 != 0)
-            return false;
+    _ => Usage()
+};
 
-        foreach (char c in input)
-        {
-            if (!"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=".Contains(c))
-                return false;
-        }
+static int Encode(string value)
+{
+    Console.WriteLine(Convert.ToBase64String(Encoding.ASCII.GetBytes(value)));
+    return 0;
+}
 
-        int padCount = input.EndsWith("==") ? 2 :
-                       input.EndsWith('=') ? 1 : 0;
+static int Decode(string value)
+{
+    byte[] buffer = new byte[value.Length];
+    if (!Convert.TryFromBase64String(value, buffer, out int written))
+        return Usage();
 
-        int firstPadIndex = input.IndexOf('=');
-        return firstPadIndex == -1 || firstPadIndex >= input.Length - padCount;
-    }
+    Console.WriteLine(Encoding.ASCII.GetString(buffer, 0, written));
+    return 0;
+}
 
-    public static int Main(string[] args)
-    {
-        if (args.Length != 2)
-        {
-            Usage();
-            return 1;
-        }
-
-        string mode = args[0].ToLowerInvariant();
-        string value = args[1];
-
-        if (string.IsNullOrWhiteSpace(mode) || string.IsNullOrWhiteSpace(value))
-        {
-            Usage();
-            return 1;
-        }
-
-        try
-        {
-            string result = mode switch
-            {
-                "encode" => Convert.ToBase64String(Encoding.UTF8.GetBytes(value)),
-                "decode" => IsValidBase64(value)
-                            ? Encoding.UTF8.GetString(Convert.FromBase64String(value))
-                            : throw new ArgumentException("Input is not valid Base64."),
-                _ => throw new ArgumentException("Unknown mode. Use 'encode' or 'decode'.")
-            };
-
-            Console.WriteLine(result);
-            return 0;
-        }
-        catch
-        {
-            Usage();
-            return 1;
-        }
-    }
+static int Usage()
+{
+    Console.Error.WriteLine("Usage: please provide a mode and a string to encode/decode");
+    return 1;
 }

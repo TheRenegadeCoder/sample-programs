@@ -1,108 +1,95 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿if (args is not [var input] || !TryParseMatrix(input.AsSpan(), out var matrix, out int n))
+    return ExitWithUsage();
 
-public static class Program
+int weight = MinimumSpanningTreeWeight(matrix, n);
+if (weight < 0)
+    return ExitWithUsage();
+
+Console.WriteLine(weight);
+return 0;
+
+static int MinimumSpanningTreeWeight(List<int> matrix, int n)
 {
-    private static void ShowUsage()
+    var inMst = new bool[n];
+    var minEdge = new int[n];
+
+    Array.Fill(minEdge, int.MaxValue);
+
+    minEdge[0] = 0;
+
+    int total = 0;
+
+    for (int added = 0; added < n; added++)
     {
-        Console.Error.WriteLine("Usage: please provide a comma-separated list of integers");
-        Environment.Exit(1);
-    }
+        int bestWeight = int.MaxValue;
+        int u = -1;
 
-    private static List<int> ParseIntegerList(string input)
-    {
-        if (string.IsNullOrWhiteSpace(input))
-            ShowUsage();
-
-        var tokens = input
-            .Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
-
-        if (tokens.Length < 4) // Minimum size for a 2x2 matrix
-            ShowUsage();
-
-        var numbers = new List<int>();
-        foreach (var token in tokens)
+        for (int i = 0; i < n; i++)
         {
-            if (!int.TryParse(token, out int value))
-                ShowUsage();
-
-            numbers.Add(value);
-        }
-
-        int dim = (int)Math.Sqrt(numbers.Count);
-        if (dim * dim != numbers.Count)
-            ShowUsage();
-
-        return numbers;
-    }
-
-    private static int MinimumSpanningTreeWeight(List<int> adjacencyMatrix, int dimension)
-    {
-        var includedInMST = new bool[dimension];
-        var minEdgeWeight = new int[dimension];
-
-        for (int i = 0; i < dimension; i++)
-        {
-            minEdgeWeight[i] = int.MaxValue;
-            includedInMST[i] = false;
-        }
-
-        minEdgeWeight[0] = 0;
-        int totalWeight = 0;
-
-        for (int count = 0; count < dimension; count++)
-        {
-            int currentMinWeight = int.MaxValue;
-            int currentNode = -1;
-
-            for (int i = 0; i < dimension; i++)
+            if (!inMst[i] && minEdge[i] < bestWeight)
             {
-                if (!includedInMST[i] && minEdgeWeight[i] < currentMinWeight)
-                {
-                    currentMinWeight = minEdgeWeight[i];
-                    currentNode = i;
-                }
-            }
-
-            if (currentNode == -1)
-            {
-                ShowUsage();
-            }
-
-            includedInMST[currentNode] = true;
-            totalWeight += currentMinWeight;
-
-            for (int adjacent = 0; adjacent < dimension; adjacent++)
-            {
-                int edgeWeight = adjacencyMatrix[currentNode * dimension + adjacent];
-                if (!includedInMST[adjacent] && edgeWeight != 0 && edgeWeight < minEdgeWeight[adjacent])
-                {
-                    minEdgeWeight[adjacent] = edgeWeight;
-                }
+                bestWeight = minEdge[i];
+                u = i;
             }
         }
 
-        return totalWeight;
+        if (u < 0)
+            return -1;
+
+        inMst[u] = true;
+        total += bestWeight;
+
+        int row = u * n;
+
+        for (int v = 0; v < n; v++)
+        {
+            int w = matrix[row + v];
+
+            if (w != 0 && !inMst[v] && w < minEdge[v])
+                minEdge[v] = w;
+        }
     }
 
-    public static int Main(string[] args)
+    return total;
+}
+
+static bool TryParseMatrix(ReadOnlySpan<char> view, out List<int> numbers, out int dimension)
+{
+    numbers = null!;
+    dimension = 0;
+
+    if (view.IsWhiteSpace())
+        return false;
+
+    int expected = view.Count(',') + 1;
+    if (expected < 4) return false;
+
+    var list = new List<int>(expected);
+
+    while (!view.IsEmpty)
     {
-        if (args.Length != 1)
-            ShowUsage();
+        int i = view.IndexOf(',');
+        var token = i >= 0 ? view[..i] : view;
 
-        var inputList = ParseIntegerList(args[0]);
+        view = i >= 0 ? view[(i + 1)..] : [];
 
-        var numbers = ParseIntegerList(args[0]);
-        int dimension = (int)Math.Sqrt(numbers.Count);
+        if (!int.TryParse(token, out int v))
+            return false;
 
-        int mstWeight = MinimumSpanningTreeWeight(numbers, dimension);
-
-        if (mstWeight == -1)
-            ShowUsage();
-
-        Console.WriteLine(mstWeight);
-
-        return 0;
+        list.Add(v);
     }
+
+    int d = (int)Math.Sqrt(list.Count);
+    if (d * d != list.Count)
+        return false;
+
+    numbers = list;
+    dimension = d;
+    return true;
+}
+
+static int ExitWithUsage()
+{
+    Console.Error.WriteLine("""Usage: please provide a comma-separated list of integers""");
+    return 1;
 }

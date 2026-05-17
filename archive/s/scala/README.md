@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in Scala! To find documentation related to the Scala code in this repo, look [here](https://sampleprograms.io/languages/scala).
 
-## Sample Programs List - 13/39 :thinking:
+## Sample Programs List - 12/38 :thinking:
 
 In this section, we feature a list of completed and missing programs in Scala. See above for the current amount of completed programs in Scala. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -25,7 +25,6 @@ Below, you'll find a list of completed code snippets in Scala. Code snippets pre
 - :warning: [Linear Search in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+linear+search+scala) [[Requirements](https://sampleprograms.io/projects/linear-search)]
 - :warning: [Quick Sort in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+scala) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
 - :warning: [Reverse String in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+scala) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
-- :warning: [Sleep Sort in Scala](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sleep+sort+scala) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 
 ### Missing Programs
 

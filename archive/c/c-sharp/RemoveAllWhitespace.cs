@@ -1,31 +1,25 @@
-using System;
-using System.Linq;
+if (args is not [var input] || string.IsNullOrEmpty(input))
+    return ExitWithError();
 
-class CSharp
+RemoveWhitespace(input.AsSpan());
+return 0;
+
+static void RemoveWhitespace(ReadOnlySpan<char> input)
 {
+    char[] buffer = new char[input.Length];
+    int j = 0;
 
-    public static void ExitWithError()
+    foreach (char c in input)
     {
-        Console.WriteLine("Usage: please provide a string");
-        Environment.Exit(1);
+        if (!char.IsWhiteSpace(c))
+            buffer[j++] = c;
     }
 
-    public static void RemoveAllWhitespace(string str) {
-        Console.WriteLine(
-            new string(
-                str
-                .Where(c => !Char.IsWhiteSpace(c))
-                .ToArray()
-            )
-        );
-    }
+    Console.WriteLine(new string(buffer, 0, j));
+}
 
-    static void Main (string[] args)
-    {
-        if (!args.Any() || args[0] == "") {
-            ExitWithError();
-        }
-        RemoveAllWhitespace(args[0]);
-    }
-
+static int ExitWithError()
+{
+    Console.WriteLine("Usage: please provide a string");
+    return 1;
 }

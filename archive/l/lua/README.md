@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in Lua! To find documentation related to the Lua code in this repo, look [here](https://sampleprograms.io/languages/lua).
 
-## Sample Programs List - 16/39 :thinking:
+## Sample Programs List - 16/38 :thinking:
 
 In this section, we feature a list of completed and missing programs in Lua. See above for the current amount of completed programs in Lua. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -54,7 +54,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Quine](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,quine&template=code-snippet-request.md&title=Add+Quine+in+Lua) [[Requirements](https://sampleprograms.io/projects/quine)]
 - :x: [Remove All Whitespace](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,remove+all+whitespace&template=code-snippet-request.md&title=Add+Remove+All+Whitespace+in+Lua) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :x: [Selection Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,selection+sort&template=code-snippet-request.md&title=Add+Selection+Sort+in+Lua) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
-- :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+Lua) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,transpose+matrix&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+Lua) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 - :x: [Zeckendorf](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,zeckendorf&template=code-snippet-request.md&title=Add+Zeckendorf+in+Lua) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 

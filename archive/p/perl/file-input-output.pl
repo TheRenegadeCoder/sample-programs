@@ -1,27 +1,21 @@
 #!/usr/bin/env perl
+use v5.42;
+use IO::File;
 
-sub Main {
-	Write("Some arbitrary data.");
-	Read();
-	exit(0);
-}
+my $file    = "output.txt";
+my $content = <<'EOF';
+Perl is cool!
+There's more than one way to do it.
+EOF
 
-sub Write {
-	open(my $writing, ">output.txt") || die "File could not be written.\nError: $!";
+# Write to file
 
-	print $writing "@_"."\n";
+my $w = IO::File->new(">$file") or die "Cannot open $file for writing: $!";
+$w->print($content)             or die "Write failed: $!";
+$w->close                       or die "Cannot close after write: $!";
 
-	close($writing) || die "The file could not be closed on write.\nError: $!";
-}
+# Read from file
 
-sub Read {
-	open(my $reading, "<output.txt") || die "File could not be readed.\nError: $!";
-
-	while (!eof($reading)) {
-		print <$reading>;
-	}
-
-	close($reading) || die "The file could not be closed on reading.\nError: $!";
-}
-
-Main();
+my $r = IO::File->new("<$file") or die "Cannot open $file for reading: $!";
+print while <$r>;
+$r->close or die "Cannot close after read: $!";

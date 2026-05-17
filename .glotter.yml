@@ -1505,14 +1505,6 @@ projects:
             name: "bubblesort"
             search: "bubble_sort"
             replace: "selection_sort"
-    sleepsort:
-        words:
-            - "sleep"
-            - "sort"
-        use_tests:
-            name: "bubblesort"
-            search: "bubble_sort"
-            replace: "sleep_sort"
     transposematrix:
         words:
             - "transpose"

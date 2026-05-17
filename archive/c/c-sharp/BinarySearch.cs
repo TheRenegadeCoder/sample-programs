@@ -1,58 +1,43 @@
-using System;
-using System.Linq;
 using System.Collections.Generic;
 
-public class BinarySearch
+if (args is not [var input, var targetRaw]
+    || !int.TryParse(targetRaw, out int target)
+    || !TryParseSorted(input.AsSpan(), out var numbers))
 {
-    public static bool Search(List<int> list, int toFind)
-    {   
-        int lowerBound = 0;
-        int upperBound = list.Count - 1;
-        while (lowerBound <= upperBound) 
-        {
-            int midpoint = (lowerBound + upperBound) / 2;
-            if (list[midpoint] == toFind)
-            {
-                return true;
-            }
-            else if (list[midpoint] < toFind)
-            {
-                lowerBound = midpoint + 1;
-            }
-            else
-            {
-                upperBound = midpoint - 1;
-            }
-        }
-        return false;
-    }
+    return Usage();
+}
 
-    public static void ErrorAndExit()
+Console.WriteLine(numbers.BinarySearch(target) >= 0);
+return 0;
+
+static bool TryParseSorted(ReadOnlySpan<char> span, out List<int> numbers)
+{
+    numbers = new(span.Count(',') + 1);
+
+    int last = int.MinValue;
+
+    while (!span.IsEmpty)
     {
-        Console.WriteLine("Usage: please provide a list of sorted integers (\"1, 4, 5, 11, 12\") and the integer to find (\"11\")");
-        Environment.Exit(1);
+        int comma = span.IndexOf(',');
+        var token = comma >= 0 ? span[..comma] : span;
+
+        span = comma >= 0 ? span[(comma + 1)..] : [];
+
+        if (!int.TryParse(token, out int n) || n < last)
+            return false;
+
+        numbers.Add(n);
+        last = n;
     }
 
-    public static void Main(string[] args)
-    {
-        try
-        {
-            var list = args[0].Split(',').Select(i => Int32.Parse(i.Trim())).ToList();
-            var toFind = Int32.Parse(args[1]);
+    return numbers.Count > 0;
+}
 
-            for (int i = 0; i < list.Count - 1; i++)
-            {
-                if (list[i] > list[i + 1])
-                {
-                    ErrorAndExit();
-                }
-            }
-            
-            Console.WriteLine(Search(list, toFind));
-        }
-        catch
-        {
-            ErrorAndExit();
-        }
-    }
+static int Usage()
+{
+    Console.Error.WriteLine(
+        """Usage: please provide a list of sorted integers ("1, 4, 5, 11, 12") and the integer to find ("11")"""
+    );
+
+    return 1;
 }

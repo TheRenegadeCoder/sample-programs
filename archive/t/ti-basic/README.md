@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in TI-BASIC! To find documentation related to the TI-BASIC code in this repo, look [here](https://sampleprograms.io/languages/ti-basic).
 
-## Sample Programs List - 14/39 :thinking:
+## Sample Programs List - 14/38 :thinking:
 
 In this section, we feature a list of completed and missing programs in TI-BASIC. See above for the current amount of completed programs in TI-BASIC. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -55,7 +55,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Remove All Whitespace](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,remove+all+whitespace&template=code-snippet-request.md&title=Add+Remove+All+Whitespace+in+TI-BASIC) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :x: [Roman Numeral](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,roman+numeral&template=code-snippet-request.md&title=Add+Roman+Numeral+in+TI-BASIC) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :x: [Selection Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,selection+sort&template=code-snippet-request.md&title=Add+Selection+Sort+in+TI-BASIC) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
-- :x: [Sleep Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,sleep+sort&template=code-snippet-request.md&title=Add+Sleep+Sort+in+TI-BASIC) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 - :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,transpose+matrix&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+TI-BASIC) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
 ## Testing

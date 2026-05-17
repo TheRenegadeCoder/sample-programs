@@ -3,6 +3,6 @@ folder:
   naming: "hyphen"
 
 container:
-  image: "codesignal/smalltalk"
-  tag: "v9.4.0"
-  cmd: "gst --no-gc {{ source.name }}{{ source.extension }}"
+  image: "coderunner/smalltalk"
+  tag: "2022-10-27_06-08"
+  cmd: "gst --no-gc {{ source.name }}{{ source.extension }} -a"

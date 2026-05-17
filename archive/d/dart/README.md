@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in Dart! To find documentation related to the Dart code in this repo, look [here](https://sampleprograms.io/languages/dart).
 
-## Sample Programs List - 18/39 :thinking:
+## Sample Programs List - 17/38 :thinking:
 
 In this section, we feature a list of completed and missing programs in Dart. See above for the current amount of completed programs in Dart. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -30,7 +30,6 @@ Below, you'll find a list of completed code snippets in Dart. Code snippets prec
 - :white_check_mark: [Reverse String in Dart](https://sampleprograms.io/projects/reverse-string/dart) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :warning: [Roman Numeral in Dart](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+roman+numeral+dart) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :warning: [Rot13 in Dart](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+dart) [[Requirements](https://sampleprograms.io/projects/rot13)]
-- :warning: [Sleep Sort in Dart](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sleep+sort+dart) [[Requirements](https://sampleprograms.io/projects/sleep-sort)]
 
 ### Missing Programs
 

@@ -1,16 +1,11 @@
-#!/usr/bin/perl
-my $args = join(" ", @ARGV);
-if($args eq "" || $args eq " ")
-{
-    die "Usage: please provide a string\n"
-}
-my $total = 0;
-my @storage = split(" ", $args);
-foreach my $loop (@storage)
-{
-    if(length($loop) >= $total)
-    {
-        $total = length($loop);
-    }
-}
-print $total;
+#!/usr/bin/env perl
+use v5.42;
+use List::Util qw/max/;
+
+sub usage { say "Usage: please provide a string"; exit }
+
+my $input = "@ARGV";
+$input =~ s/^\s+|\s+$//g;
+
+usage unless length $input;
+say max map length, split /\s+/, $input;

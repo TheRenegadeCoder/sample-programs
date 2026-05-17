@@ -269,14 +269,14 @@ test = ["coverage[toml]", "ddt (>=1.1.1,!=1.4.3)", "mock ; python_version < \"3.
 
 [[package]]
 name = "glotter2"
-version = "0.16.0"
+version = "0.17.0"
 description = "An execution library for scripts written in any language. This is a fork of https://github.com/auroq/glotter"
 optional = false
 python-versions = "<4.0,>=3.10"
 groups = ["main"]
 files = [
-    {file = "glotter2-0.16.0-py3-none-any.whl", hash = "sha256:0b4891bb61b7311632d5823779dc5542ec43cd69fd2b693b9d1a466ce1a9e0cc"},
-    {file = "glotter2-0.16.0.tar.gz", hash = "sha256:e0ffa6cc532786aba495ef0e0a62e7ffa3b6c999a757a196ff3104d0d748fcfd"},
+    {file = "glotter2-0.17.0-py3-none-any.whl", hash = "sha256:bce41f2169a3deef30b2ff1adfd61836edacbd4ab2ebc90c0e64f53bc50f9f98"},
+    {file = "glotter2-0.17.0.tar.gz", hash = "sha256:93c6114fa287adbe00918f77f315c4d9e645994d64ff7cfbc0032c6609a11387"},
 ]
 
 [package.dependencies]
@@ -1005,14 +1005,14 @@ typing-extensions = ">=4.12.0"
 
 [[package]]
 name = "urllib3"
-version = "2.6.3"
+version = "2.7.0"
 description = "HTTP library with thread-safe connection pooling, file post, and more."
 optional = false
-python-versions = ">=3.9"
+python-versions = ">=3.10"
 groups = ["main"]
 files = [
-    {file = "urllib3-2.6.3-py3-none-any.whl", hash = "sha256:bf272323e553dfb2e87d9bfd225ca7b0f467b919d7bbd355436d3fd37cb0acd4"},
-    {file = "urllib3-2.6.3.tar.gz", hash = "sha256:1b62b6884944a57dbe321509ab94fd4d3b307075e0c2eae991ac71ee15ad38ed"},
+    {file = "urllib3-2.7.0-py3-none-any.whl", hash = "sha256:9fb4c81ebbb1ce9531cce37674bbc6f1360472bc18ca9a553ede278ef7276897"},
+    {file = "urllib3-2.7.0.tar.gz", hash = "sha256:231e0ec3b63ceb14667c67be60f2f2c40a518cb38b03af60abc813da26505f4c"},
 ]
 
 [package.extras]
@@ -1024,4 +1024,4 @@ zstd = ["backports-zstd (>=1.0.0) ; python_version < \"3.14\""]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10,<4.0"
-content-hash = "9f4979ec4720a672b08bd59cf9c26d134742211e277843469ecea4edaa6a9f97"
+content-hash = "8414e2edb7dc290170b1c33f89f3029a4255ea64ac4bf573e12f14b9db48de93"

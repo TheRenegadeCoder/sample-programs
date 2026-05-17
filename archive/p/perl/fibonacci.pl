@@ -1,20 +1,17 @@
-#!/usr/bin/perl
-$num_args = $#ARGV + 1;
-if ($num_args == 0) {
-    print "Usage: please input the count of fibonacci numbers to output\n";
-} elsif ($num_args == 1) {
-    if ($ARGV[0] =~ /[0-9]+/) {
-    	$n = $ARGV[0];
-	$result = 0,$first = 0,$second = 1;
-	for ($i = 1;$i <= $n;$i = $i + 1) {
-	    $result = $first + $second;
-	    $first = $second;
-	    $second = $result;
-	    print "$i: $first\n";
-    	}
-    } else {
-        print "Usage: please input the count of fibonacci numbers to output\n";    
-    }
-} else {
-    print "Usage: please input the count of fibonacci numbers to output\n";	
+#!/usr/bin/env perl
+use v5.42;
+
+sub usage {
+    say "Usage: please input the count of fibonacci numbers to output";
+    exit;
+}
+
+my ($n) = @ARGV;
+usage() unless defined $n && $n =~ /\A\d+\z/;
+
+my ( $a, $b ) = ( 0, 1 );
+
+for my $i ( 1 .. $n ) {
+    ( $a, $b ) = ( $b, $a + $b );
+    say "$i: $a";
 }

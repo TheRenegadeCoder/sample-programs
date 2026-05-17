@@ -1,40 +1,62 @@
-using System;
-using System.Linq;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 
-public class SelectionSort
+if (args is not [var input] || !TryParseList(input.AsSpan(), out var numbers))
+    return ExitWithUsage();
+
+SelectionSort(numbers);
+
+Console.WriteLine(string.Join(", ", numbers));
+return 0;
+
+static bool TryParseList(ReadOnlySpan<char> span, out List<int> numbers)
 {
-    public static IEnumerable<int> Selection(List<int> xs)
+    numbers = new(span.Count(',') + 1);
+
+    while (!span.IsEmpty)
     {
-        while (xs.Any())
-        {
-            var x = xs.Min();
-            xs.Remove(x);
-            yield return x;
-        }
+        int comma = span.IndexOf(',');
+        var token = comma >= 0 ? span[..comma] : span;
+
+        span = comma >= 0 ? span[(comma + 1)..] : [];
+
+        if (!int.TryParse(token, out int n))
+            return false;
+
+        numbers.Add(n);
     }
 
-    public static void ErrorAndExit()
-    {
-        Console.WriteLine("Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"");
-        Environment.Exit(1);
-    }
+    return numbers.Count > 1;
+}
 
-    public static void Main(string[] args)
+static void SelectionSort(List<int> list)
+{
+    if (list.Count < 2)
+        return;
+
+    Span<int> span = CollectionsMarshal.AsSpan(list);
+
+    int n = span.Length;
+
+    for (int i = 0; i < n - 1; i++)
     {
-        if (args.Length != 1)
-            ErrorAndExit();
-        try
+        int minIndex = i;
+
+        for (int j = i + 1; j < n; j++)
         {
-            var xs = args[0].Split(',').Select(i => Int32.Parse(i.Trim())).ToList();
-            if (xs.Count() <= 1)
-                ErrorAndExit();
-            var sortedXs = Selection(xs);
-            Console.WriteLine(string.Join(", ", sortedXs));
+            if (span[j] < span[minIndex])
+                minIndex = j;
         }
-        catch
-        {
-            ErrorAndExit();
-        }
+
+        if (minIndex != i)
+            (span[i], span[minIndex]) = (span[minIndex], span[i]);
     }
+}
+
+static int ExitWithUsage()
+{
+    Console.WriteLine(
+        "Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\""
+    );
+    return 1;
 }

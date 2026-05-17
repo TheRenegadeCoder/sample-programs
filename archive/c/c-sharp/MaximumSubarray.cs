@@ -1,63 +1,52 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿if (
+    args is not [var input]
+    || string.IsNullOrWhiteSpace(input)
+    || !TryParseList(input.AsSpan(), out var numbers)
+)
+    return ExitWithUsage();
 
-public static class Program
+Console.WriteLine(MaximumSubarraySum(numbers));
+return 0;
+
+static int MaximumSubarraySum(List<int> numbers)
 {
-    private static void ShowUsage()
+    int current = numbers[0];
+    int best = numbers[0];
+
+    for (int i = 1; i < numbers.Count; i++)
     {
-        Console.Error.WriteLine("Usage: Please provide a list of integers in the format: \"1, 2, 3, 4, 5\"");
-        Environment.Exit(1);
+        int v = numbers[i];
+        current = Math.Max(v, current + v);
+        best = Math.Max(current, best);
     }
 
-    private static List<int> ParseIntegerList(string input)
+    return best;
+}
+
+static bool TryParseList(ReadOnlySpan<char> span, out List<int> numbers)
+{
+    numbers = new(span.Count(',') + 1);
+
+    while (!span.IsEmpty)
     {
-        if (string.IsNullOrWhiteSpace(input))
-            ShowUsage();
+        int comma = span.IndexOf(',');
+        var token = comma >= 0 ? span[..comma] : span;
 
-        var list = input
-            .Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
-            .Select(s =>
-            {
-                if (!int.TryParse(s, out var val))
-                    ShowUsage();
-                return val;
-            })
-            .ToList();
+        span = comma >= 0 ? span[(comma + 1)..] : [];
 
-        if (list.Count == 0)
-            ShowUsage();
+        if (!int.TryParse(token, out int n))
+            return false;
 
-        return list;
+        numbers.Add(n);
     }
 
-    private static int MaximumSubarraySum(IReadOnlyList<int> numbers)
-    {
-        if (numbers.Count == 0)
-            return 0;
+    return true;
+}
 
-        int currentSum = numbers[0];
-        int maxSum = numbers[0];
-
-        for (int i = 1; i < numbers.Count; i++)
-        {
-            int number = numbers[i];
-            currentSum = Math.Max(number, currentSum + number);
-            maxSum = Math.Max(maxSum, currentSum);
-        }
-
-        return maxSum;
-    }
-
-    public static int Main(string[] args)
-    {
-        if (args.Length != 1)
-            ShowUsage();
-
-        var inputList = ParseIntegerList(args[0]);
-
-        Console.WriteLine(MaximumSubarraySum(inputList));
-
-        return 0;
-    }
+static int ExitWithUsage()
+{
+    Console.Error.WriteLine(
+        "Usage: Please provide a list of integers in the format: \"1, 2, 3, 4, 5\""
+    );
+    return 1;
 }

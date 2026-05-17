@@ -1,121 +1,81 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿if (
+    args is not [var matrixRaw, var sourceRaw, var destRaw]
+    || !int.TryParse(sourceRaw, out int source)
+    || !int.TryParse(destRaw, out int dest)
+    || !TryParseList(matrixRaw.AsSpan(), out var matrix)
+)
+    return Usage();
 
-public static class Program
+int n = (int)Math.Sqrt(matrix.Count);
+if (n * n != matrix.Count || (uint)source >= n || (uint)dest >= n)
+    return Usage();
+
+var graph = new List<(int, uint)>[n];
+for (int i = 0; i < n; i++)
+    graph[i] = [];
+
+for (int u = 0, k = 0; u < n; u++)
+    for (int v = 0; v < n; v++, k++)
+        if (matrix[k] != 0)
+            graph[u].Add((v, (uint)matrix[k]));
+
+uint result = Dijkstra(graph, source, dest);
+if (result == uint.MaxValue)
+    return Usage();
+
+Console.WriteLine(result);
+return 0;
+
+static uint Dijkstra(List<(int to, uint w)>[] graph, int source, int destination)
 {
-    private const int INF = 0x3F3F3F3F;
+    var dist = new uint[graph.Length];
+    Array.Fill(dist, uint.MaxValue);
 
-    private static void ShowUsage()
+    var pq = new PriorityQueue<int, uint>();
+    pq.Enqueue(source, dist[source] = 0);
+
+    while (pq.TryDequeue(out int u, out uint d))
     {
-        Console.Error.WriteLine("Usage: please provide three inputs: a serialized matrix, a source node and a destination node");
-        Environment.Exit(1);
-    }
+        if (d != dist[u])
+            continue;
+        if (u == destination)
+            return d;
 
-    private static List<int> ParseIntegerList(string input)
-    {
-        if (string.IsNullOrWhiteSpace(input))
-            ShowUsage();
-
-        var list = input
-            .Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
-            .Select(s =>
-            {
-                if (!int.TryParse(s, out var val) || val < 0)
-                    ShowUsage();
-                return val;
-            })
-            .ToList();
-
-        if (list.Count == 0)
-            ShowUsage();
-
-        return list;
-    }
-
-    private static int GetMatrixDimension(List<int> matrix)
-    {
-        var length = matrix.Count;
-        var dimension = (int)Math.Sqrt(length);
-        return (dimension * dimension == length && dimension > 0) ? dimension : -1;
-    }
-
-    private static int Dijkstra(List<int> matrix, int dimension, int source, int destination)
-    {
-        var dist = Enumerable.Repeat(INF, dimension).ToArray();
-        var visited = new bool[dimension];
-
-        dist[source] = 0;
-
-        for (int _ = 0; _ < dimension; _++)
+        foreach (var (v, w) in graph[u])
         {
-            int minDist = INF;
-            int minIndex = -1;
-
-            for (int j = 0; j < dimension; j++)
-            {
-                if (!visited[j] && dist[j] < minDist)
-                {
-                    minDist = dist[j];
-                    minIndex = j;
-                }
-            }
-
-            if (minIndex == -1)
-                break;
-
-            if (minIndex == destination)
-                return dist[minIndex];
-
-            visited[minIndex] = true;
-
-            for (int j = 0; j < dimension; j++)
-            {
-                int weight = matrix[minIndex * dimension + j];
-                if (!visited[j] && weight > 0 && dist[minIndex] + weight < dist[j])
-                {
-                    dist[j] = dist[minIndex] + weight;
-                }
-            }
+            uint newDist = d + w;
+            if (newDist < dist[v])
+                pq.Enqueue(v, dist[v] = newDist);
         }
-
-        return dist[destination] == INF ? -1 : dist[destination];
     }
 
-    public static int Main(string[] args)
+    return uint.MaxValue;
+}
+
+static bool TryParseList(ReadOnlySpan<char> span, out List<int> numbers)
+{
+    numbers = new(span.Count(',') + 1);
+
+    while (!span.IsEmpty)
     {
-        if (args.Length != 3)
-        {
-            ShowUsage();
-        }
+        int comma = span.IndexOf(',');
+        var token = comma >= 0 ? span[..comma] : span;
 
-        var matrixStr = args[0].Trim();
-        var sourceStr = args[1].Trim();
-        var destinationStr = args[2].Trim();
+        span = comma >= 0 ? span[(comma + 1)..] : [];
 
-        if (string.IsNullOrEmpty(matrixStr) || string.IsNullOrEmpty(sourceStr) || string.IsNullOrEmpty(destinationStr))
-            ShowUsage();
+        if (!int.TryParse(token, out int n) || n < 0)
+            return false;
 
-        var matrix = ParseIntegerList(matrixStr);
-        int dimension = GetMatrixDimension(matrix);
-
-
-        bool sourceParsed = int.TryParse(sourceStr, out int source);
-        bool destinationParsed = int.TryParse(destinationStr, out int destination);
-
-        if (dimension == -1 || !sourceParsed || !destinationParsed ||
-            source < 0 || source >= dimension ||
-            destination < 0 || destination >= dimension)
-        {
-            ShowUsage();
-        }
-
-        int shortestDistance = Dijkstra(matrix, dimension, source, destination);
-
-        if (shortestDistance == -1)
-            ShowUsage();
-
-        Console.WriteLine(shortestDistance);
-        return 0;
+        numbers.Add(n);
     }
+
+    return true;
+}
+
+static int Usage()
+{
+    Console.Error.WriteLine(
+        "Usage: please provide three inputs: a serialized matrix, a source node and a destination node"
+    );
+    return 1;
 }

@@ -15,6 +15,9 @@ generated/
 # Generate labels
 .github/labeler.yml
 
+# repeat-test-sample.sh
+/iterations.txt
+
 # Object directory
 obj/
 

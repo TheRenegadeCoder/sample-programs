@@ -1,135 +1,101 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Runtime.InteropServices;
 
-public record Point(int X, int Y) : IComparable<Point>
+if (
+    args is not [var xInput, var yInput]
+    || !TryParsePoints(xInput.AsSpan(), yInput.AsSpan(), out var points)
+)
 {
-    public int CompareTo(Point? other)
-         => other is null ? 1 : X != other.X ? X.CompareTo(other.X) : Y.CompareTo(other.Y);
-
-    public override string ToString() => $"({X}, {Y})";
-
-    public static bool operator <(Point left, Point right) => left.CompareTo(right) < 0;
-    public static bool operator >(Point left, Point right) => left.CompareTo(right) > 0;
+    return Usage();
 }
 
-public static class ConvexHull
+points.Sort();
+
+var hull = BuildHull(CollectionsMarshal.AsSpan(points), out int size);
+for (int i = 0; i < size; i++)
+    Console.WriteLine(hull[i]);
+
+return 0;
+
+static bool TryParsePoints(ReadOnlySpan<char> x, ReadOnlySpan<char> y, out List<Point> points)
 {
-    private static void ShowUsage()
+    points = [];
+
+    if (x.IsWhiteSpace() || y.IsWhiteSpace())
+        return false;
+
+    var list = new List<Point>();
+
+    while (true)
     {
-        Console.Error.WriteLine("Usage: please provide at least 3 x and y coordinates as separate lists (e.g. \"100, 440, 210\")");
+        if (!TryNext(ref x, out int xVal) || !TryNext(ref y, out int yVal))
+            break;
+
+        points.Add(new(xVal, yVal));
     }
 
-    private static List<int> ParseIntegerList(string input)
+    return x.IsEmpty && y.IsEmpty && points.Count >= 3;
+
+    static bool TryNext(ref ReadOnlySpan<char> span, out int value)
     {
-        if (string.IsNullOrWhiteSpace(input))
-        {
-            ShowUsage();
-            Environment.Exit(1);
-        }
+        int comma = span.IndexOf(',');
+        var token = comma >= 0 ? span[..comma] : span;
+        span = comma >= 0 ? span[(comma + 1)..] : [];
+        return int.TryParse(token, out value);
+    }
+}
 
-        var list = input
-            .Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
-            .Select(part => int.TryParse(part, out var val)
-                ? val
-                : throw new ArgumentException($"Invalid integer value: '{part}'"))
-            .ToList();
-
-        if (list.Count < 3)
-        {
-            ShowUsage();
-            Environment.Exit(1);
-        }
-
-        return list;
+static Point[] BuildHull(Span<Point> points, out int size)
+{
+    int numPoints = points.Length;
+    if (numPoints < 3)
+    {
+        size = numPoints;
+        return points.ToArray();
     }
 
+    var hull = new Point[numPoints * 2];
+    int h = 0;
 
-    /// <summary>
-    /// Calculates the cross product of vectors OA and OB.
-    /// Positive result means counter-clockwise turn.
-    /// Negative result means clockwise turn.
-    /// Zero means points are colinear.
-    /// </summary>
-    private static long Cross(Point o, Point a, Point b)
+    for (int i = 0; i < numPoints; i++)
     {
-        var (ox, oy) = (o.X, o.Y);
-        var (ax, ay) = (a.X, a.Y);
-        var (bx, by) = (b.X, b.Y);
-        return (long)(ax - ox) * (by - oy) - (long)(ay - oy) * (bx - ox);
+        var p = points[i];
+
+        while (h > 1 && Cross(hull[h - 2], hull[h - 1], p) <= 0)
+            h--;
+
+        hull[h++] = p;
     }
 
+    int lower = h;
 
-    /// <summary>
-    /// Constructs the convex hull using the Jarvis March algorithm.
-    /// </summary>
-    private static List<Point> BuildHull(List<Point> points)
+    for (int i = numPoints - 2; i >= 0; i--)
     {
-        int n = points.Count;
-        if (n < 3) return [.. points];
+        var p = points[i];
 
-        int startIndex = 0;
-        for (int i = 1; i < n; i++)
-        {
-            if (points[i] < points[startIndex])
-                startIndex = i;
-        }
+        while (h > lower && Cross(hull[h - 2], hull[h - 1], p) <= 0)
+            h--;
 
-        var hull = new List<Point>();
-        int currentIndex = startIndex;
-
-        do
-        {
-            hull.Add(points[currentIndex]);
-            int candidateIndex = (currentIndex + 1) % n;
-
-            for (int i = 0; i < n; i++)
-            {
-                if (Cross(points[currentIndex], points[i], points[candidateIndex]) > 0)
-                    candidateIndex = i;
-            }
-
-            currentIndex = candidateIndex;
-
-        } while (currentIndex != startIndex);
-
-        return hull;
+        hull[h++] = p;
     }
 
-    public static int Main(string[] args)
-    {
-        if (args.Length != 2)
-        {
-            ShowUsage();
-            return 1;
-        }
+    size = h - 1;
+    return hull;
 
-        try
-        {
-            var xCoords = ParseIntegerList(args[0]);
-            var yCoords = ParseIntegerList(args[1]);
-            if (xCoords.Count != yCoords.Count)
-            {
-                ShowUsage();
-                return 1;
-            }
+    static long Cross(Point o, Point a, Point b) =>
+        (long)(a.X - o.X) * (b.Y - o.Y) - (long)(a.Y - o.Y) * (b.X - o.X);
+}
 
-            if (xCoords.Count < 3)
-            {
-                ShowUsage();
-                return 1;
-            }
+static int Usage()
+{
+    Console.Error.WriteLine(
+        """Usage: please provide at least 3 x and y coordinates as separate lists (e.g. "100, 440, 210")"""
+    );
+    return 1;
+}
 
-            var points = xCoords.Zip(yCoords, (x, y) => new Point(x, y)).ToList();
+public readonly record struct Point(int X, int Y) : IComparable<Point>
+{
+    public int CompareTo(Point other) => X != other.X ? X.CompareTo(other.X) : Y.CompareTo(other.Y);
 
-            BuildHull(points).ForEach(Console.WriteLine);
-
-            return 0;
-        }
-        catch
-        {
-            ShowUsage();
-            return 1;
-        }
-    }
+    public override string ToString() => $"({X}, {Y})";
 }

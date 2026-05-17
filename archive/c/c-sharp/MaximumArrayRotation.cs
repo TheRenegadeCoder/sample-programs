@@ -1,72 +1,58 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿if (args is not [var input] || !TryParseList(input.AsSpan(), out var numbers))
+    return ExitWithUsage();
 
-public static class Program
+Console.WriteLine(MaximumRotationSum(numbers));
+return 0;
+
+static bool TryParseList(ReadOnlySpan<char> span, out List<int> numbers)
 {
-    private static void ShowUsage()
+    numbers = new(span.Count(',') + 1);
+
+    while (!span.IsEmpty)
     {
-        Console.Error.WriteLine("Usage: please provide a list of integers (e.g. \"8, 3, 1, 2\")");
-        Environment.Exit(1);
+        int comma = span.IndexOf(',');
+        var token = comma >= 0 ? span[..comma] : span;
+
+        span = comma >= 0 ? span[(comma + 1)..] : [];
+
+        if (!int.TryParse(token, out int n))
+            return false;
+
+        numbers.Add(n);
     }
 
-    private static List<int> ParseIntegerList(string input)
+    return numbers.Count > 0;
+}
+
+static int MaximumRotationSum(List<int> numbers)
+{
+    int n = numbers.Count;
+
+    int totalSum = numbers[0];
+    int rotationSum = 0;
+
+    for (int i = 1; i < n; i++)
     {
-        if (string.IsNullOrWhiteSpace(input))
-            ShowUsage();
-
-        var list = input
-            .Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
-            .Select(s =>
-            {
-                if (!int.TryParse(s, out var val) || val < 0)
-                    ShowUsage();
-                return val;
-            })
-            .ToList();
-
-        if (list.Count == 0)
-            ShowUsage();
-
-        return list;
+        int v = numbers[i];
+        totalSum += v;
+        rotationSum += v * i;
     }
 
-    private static int MaximumRotationSum(IList<int> numbers)
+    int best = rotationSum;
+
+    for (int i = 1, last = n - 1; i < n; i++, last--)
     {
-        int n = numbers.Count;
-        if (n == 0)
-            ShowUsage();
-
-        int totalSum = 0;
-        int currentWeightedSum = 0;
-
-        for (int i = 0; i < n; i++)
-        {
-            totalSum += numbers[i];
-            currentWeightedSum += numbers[i] * i;
-        }
-
-        int maxWeightedSum = currentWeightedSum;
-
-        for (int i = 1; i < n; i++)
-        {
-            currentWeightedSum = currentWeightedSum + totalSum - n * numbers[n - i];
-            if (currentWeightedSum > maxWeightedSum)
-                maxWeightedSum = currentWeightedSum;
-        }
-
-        return maxWeightedSum;
+        rotationSum += totalSum - n * numbers[last];
+        best = Math.Max(best, rotationSum);
     }
 
-    public static int Main(string[] args)
-    {
-        if (args.Length != 1)
-            ShowUsage();
+    return best;
+}
 
-        var inputList = ParseIntegerList(args[0]);
-
-        Console.WriteLine(MaximumRotationSum(inputList));
-
-        return 0;
-    }
+static int ExitWithUsage()
+{
+    Console.WriteLine(
+        "Usage: please provide a list of integers (e.g. \"8, 3, 1, 2\")"
+    );
+    return 1;
 }

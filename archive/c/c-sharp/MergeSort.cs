@@ -1,62 +1,96 @@
-using System;
-using System.Linq;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
+using System.Buffers;
 
-public class MergeSort
+if (args is not [var input] || !TryParseList(input.AsSpan(), out var numbers))
+    return ExitWithUsage();
+
+Span<int> span = CollectionsMarshal.AsSpan(numbers);
+MergeSort(span);
+
+Console.WriteLine(string.Join(", ", numbers));
+return 0;
+
+static bool TryParseList(ReadOnlySpan<char> span, out List<int> numbers)
 {
-    public static List<int> Sort(List<int> xs) => Sort(xs.Select(x => new List<int>() {x}).ToList()).First();
-    public static List<List<int>> Sort(List<List<int>> xs)
+    numbers = new(span.Count(',') + 1);
+
+    while (!span.IsEmpty)
     {
-        if (xs.Count <= 1)
-            return xs;
-        var x0 = xs[0];
-        var x1 = xs[1];
-        xs.RemoveAt(0);
-        xs.RemoveAt(0);
-        return Sort(new List<List<int>>()
-        {
-            Merge(x0, x1)
-        }.Concat(Sort(xs).ToList()).ToList());
+        int comma = span.IndexOf(',');
+        var token = comma >= 0 ? span[..comma] : span;
+
+        span = comma >= 0 ? span[(comma + 1)..] : [];
+
+        if (!int.TryParse(token, out int n))
+            return false;
+
+        numbers.Add(n);
     }
 
-    public static List<int> Merge(List<int> xs, List<int> ys)
+    return numbers.Count > 1;
+}
+
+// Bottom-up merge sort
+static void MergeSort(Span<int> span)
+{
+    int n = span.Length;
+    if (n <= 1)
+        return;
+
+    int[] buffer = new int[n];
+
+    Span<int> src = span;
+    Span<int> dst = buffer;
+
+    for (int width = 1; width < n; width *= 2)
     {
-        if (!xs.Any())
-            return ys;
-        if (!ys.Any())
-            return xs;
-        if (xs[0] < ys[0])
+        for (int left = 0; left < n; left += width * 2)
         {
-            var x0 = xs[0];
-            xs.RemoveAt(0);
-            return new List<int>() {x0}.Concat(Merge(xs, ys)).ToList();
+            int mid = Math.Min(left + width, n);
+            int right = Math.Min(left + width * 2, n);
+
+            Merge(
+                src[left..mid],
+                src[mid..right],
+                dst[left..right]
+            );
         }
-        var y0 = ys[0];
-        ys.RemoveAt(0);
-        return new List<int>() {y0}.Concat(Merge(xs, ys)).ToList();
+
+        Span<int> temp = src;
+        src = dst;
+        dst = temp;
     }
 
-    public static void ErrorAndExit()
+    // if final data ended up in buffer, copy back
+    if (!src.Overlaps(span))
+        src.CopyTo(span);
+}
+
+static void Merge(
+    ReadOnlySpan<int> left,
+    ReadOnlySpan<int> right,
+    Span<int> target)
+{
+    int li = 0;
+    int ri = 0;
+    int ti = 0;
+
+    while (li < left.Length && ri < right.Length)
     {
-        Console.WriteLine("Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\"");
-        Environment.Exit(1);
+        target[ti++] = left[li] <= right[ri]
+            ? left[li++]
+            : right[ri++];
     }
 
-    public static void Main(string[] args)
-    {
-        if (args.Length != 1)
-            ErrorAndExit();
-        try
-        {
-            var xs = args[0].Split(',').Select(i => Int32.Parse(i.Trim())).ToList();
-            if (xs.Count() <= 1)
-                ErrorAndExit();
-            var sortedXs = Sort(xs);
-            Console.WriteLine(string.Join(", ", sortedXs));
-        }
-        catch
-        {
-            ErrorAndExit();
-        }
-    }
+    left[li..].CopyTo(target[ti..]);
+    right[ri..].CopyTo(target[ti..]);
+}
+
+static int ExitWithUsage()
+{
+    Console.WriteLine(
+        "Usage: please provide a list of at least two integers to sort in the format \"1, 2, 3, 4, 5\""
+    );
+    return 1;
 }
