@@ -12,9 +12,11 @@ let fib n =
 let fib_table n =
   List.iteri (fun i e -> Printf.printf "%d: %d\n" (i + 1) e) (fib n)
 
+let parse_args argv =
+  match argv with [| _; n |] -> int_of_string_opt n | _ -> None
+
 let () =
-  let nth_arg = List.nth_opt (Array.to_list Sys.argv) 1 in
-  match Option.bind nth_arg int_of_string_opt with
+  match parse_args Sys.argv with
   | Some num when num >= 0 -> fib_table num
   | _ ->
       print_endline
