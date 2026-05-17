@@ -2,7 +2,7 @@ let ( let* ) = Option.bind
 
 let palindrome str =
   let rec aux lo hi =
-    lo >= hi || (str.[lo] = str.[hi] && aux (lo + 1) (hi - 1))
+    lo >= hi || (str.[lo] = str.[hi] && (aux [@tailcall]) (lo + 1) (hi - 1))
   in
   aux 0 (String.length str - 1)
 
