@@ -6,8 +6,7 @@ let palindrome str =
   in
   aux 0 (String.length str - 1)
 
-let validate_arg argv =
-  match argv with
+let validate_arg = function
   | [| _; n |] ->
       let* num = int_of_string_opt n in
       if num >= 0 then
