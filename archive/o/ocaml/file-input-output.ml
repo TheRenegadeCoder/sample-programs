@@ -25,9 +25,8 @@ let () =
      Printf.eprintf "Failed to write to '%s': %s\n" filename msg;
      exit 1);
 
-  try
-    In_channel.with_open_text filename (fun ic -> In_channel.input_lines ic)
-    |> List.iter print_endline
-  with Sys_error msg ->
-    Printf.eprintf "Failed to read from '%s': %s\n" filename msg;
-    exit 1
+  (try In_channel.with_open_text filename (fun ic -> In_channel.input_lines ic)
+   with Sys_error msg ->
+     Printf.eprintf "Failed to read from '%s': %s\n" filename msg;
+     exit 1)
+  |> List.iter print_endline
