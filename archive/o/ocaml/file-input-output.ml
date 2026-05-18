@@ -1,20 +1,9 @@
 let filename = "output.txt"
 
-(* Some arbitrary interesting text for demo file reading and writing.
-   These are the 10 thunderwords from Joyce's Finnegans Wake.
-   See here for a great literary explanation if you're interested:
-   https://hatterscabinet.com/pages-fw/fwtheme-thunderwords.html *)
 let sample_text =
-  {|bababadalgharaghtakamminarronnkonnbronntonnerronntuonnthunntrovarrhounawnskawntoohoohoordenenthurnuk
-Perkodhuskurunbarggruauyagokgorlayorgromgremmitghundhurthrumathunaradidillifaititillibumullunukkunun
-klikkaklakkaklaskaklopatzklatschabattacreppycrottygraddaghsemmihsammihnouithappluddyappladdypkonpkot
-Bladyughfoulmoecklenburgwhurawhorascortastrumpapornanennykocksapastippatappatupperstrippuckputtanach
-Thingcrooklyexineverypasturesixdixlikencehimaroundhersthemaggerbykinkinkankanwithdownmindlookingated
-Lukkedoerendunandurraskewdylooshoofermoyportertooryzooysphalnabortansporthaokansakroidverjkapakkapuk
-Bothallchoractorschumminaroundgansumuminarumdrumstrumtruminahumptadumpwaultopoofoolooderamaunsturnup
-Pappappapparrassannuaragheallachnatullaghmonganmacmacmacwhackfalltherdebblenonthedubblandaddydoodled
-husstenhasstencaffincoffintussemtossemdamandamnacosaghcusaghhobixhatouxpeswchbechoscashlcarcarcaract
-Ullhodturdenweirmudgaardgringnirurdrmolnirfenrirlukkilokkibaugimandodrrerinsurtkrinmgernrackinarockar
+  {|Some mundane sample text
+Some sample text that is mundane
+Another line of mundane sample text
 |}
 
 let () =
