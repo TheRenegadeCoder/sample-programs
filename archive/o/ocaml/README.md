@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in OCaml! To find documentation related to the OCaml code in this repo, look [here](https://sampleprograms.io/languages/ocaml).
 
-## Sample Programs List - 9/38 :disappointed:
+## Sample Programs List - 10/38 :thinking:
 
 In this section, we feature a list of completed and missing programs in OCaml. See above for the current amount of completed programs in OCaml. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -18,6 +18,7 @@ Below, you'll find a list of completed code snippets in OCaml. Code snippets pre
 - :warning: [Duplicate Character Counter in OCaml](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+ocaml) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :warning: [Factorial in OCaml](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+ocaml) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :warning: [Fibonacci in OCaml](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+ocaml) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
+- :warning: [File Input Output in OCaml](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+ocaml) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :warning: [Fizz Buzz in OCaml](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+ocaml) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :warning: [Hello World in OCaml](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+ocaml) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :warning: [Linear Search in OCaml](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+linear+search+ocaml) [[Requirements](https://sampleprograms.io/projects/linear-search)]
@@ -34,7 +35,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Depth First Search](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,depth+first+search&template=code-snippet-request.md&title=Add+Depth+First+Search+in+OCaml) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
 - :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,dijkstra&template=code-snippet-request.md&title=Add+Dijkstra+in+OCaml) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
 - :x: [Even Odd](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,even+odd&template=code-snippet-request.md&title=Add+Even+Odd+in+OCaml) [[Requirements](https://sampleprograms.io/projects/even-odd)]
-- :x: [File Input Output](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,file+input+output&template=code-snippet-request.md&title=Add+File+Input+Output+in+OCaml) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :x: [Fraction Math](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,fraction+math&template=code-snippet-request.md&title=Add+Fraction+Math+in+OCaml) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :x: [Insertion Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,insertion+sort&template=code-snippet-request.md&title=Add+Insertion+Sort+in+OCaml) [[Requirements](https://sampleprograms.io/projects/insertion-sort)]
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,job+sequencing&template=code-snippet-request.md&title=Add+Job+Sequencing+in+OCaml) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
