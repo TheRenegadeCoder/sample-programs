@@ -1,30 +1,32 @@
 let ( let* ) = Option.bind
 
-let split list =
-  let rec aux acc slow fast =
-    match (slow, fast) with
-    | s :: s_rest, _ :: _ :: f_rest -> aux (s :: acc) s_rest f_rest
-    | _, f_rest -> (List.rev acc, slow)
-  in
-  aux [] list list
-
 let merge a b =
   let rec aux acc a b =
     match (a, b) with
     | _, [] -> List.rev_append acc a
     | [], _ -> List.rev_append acc b
     | a_head :: a_rest, b_head :: b_rest ->
-        if a_head < b_head then aux (a_head :: acc) a_rest b
+        if a_head <= b_head then aux (a_head :: acc) a_rest b
         else aux (b_head :: acc) a b_rest
   in
   aux [] a b
 
-let rec merge_sort list =
+let pair_map f list =
+  let rec aux acc list =
+    match list with
+    | first :: second :: rest -> aux (f first second :: acc) rest
+    | [ first ] -> aux (first :: acc) []
+    | [] -> List.rev acc
+  in
+  aux [] list
+
+let rec pair_collapse f list =
   match list with
-  | [] | [ _ ]-> list
-  | _ :: _ ->
-      let a, b = split list in
-      merge (merge_sort a) (merge_sort b)
+  | [] -> []
+  | [ single ] -> single
+  | list -> pair_collapse f (pair_map f list)
+
+let merge_sort list = pair_collapse merge (List.map List.singleton list)
 
 let parse_list list_str =
   let rec aux acc l =
@@ -48,6 +50,6 @@ let print_list l =
 let () =
   match validate_args Sys.argv with
   | Some nums -> print_list (merge_sort nums)
-  | _ ->
+  | None ->
       print_endline
         {|Usage: please provide a list of at least two integers to sort in the format "1, 2, 3, 4, 5"|}
