@@ -15,9 +15,9 @@ main :: proc() {
         return
     }
 
-    use1 := 0
-    use2 := 1
-    use3 := 0
+    use1 :u64= 0
+    use2 :u64= 1
+    use3 :u64= 0
     for i:=1 ; i <= input; i += 1 {
         use3 = use1 + use2
         use1 = use2
