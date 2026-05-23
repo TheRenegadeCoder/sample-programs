@@ -34,7 +34,7 @@ let pair_map f list =
 (* Recursively merge pairs until everything has been merged into a single list
    For example, repeated merges could go as follows:
    [[5]; [1]; [8]; [3]; [4]; [11]; [15]; [12]]
-      [[1, 5]; [3, 8]; [4, 11]; [12; 15]] 
+      [[1; 5]; [3, 8]; [4, 11]; [12; 15]] 
         [[1; 3; 5; 8]; [4; 11; 12; 15]]
          [[1; 3; 4; 5; 8; 11; 12; 15]]
           [1; 3; 4; 5; 8; 11; 12; 15]
