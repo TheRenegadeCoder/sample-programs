@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in Haskell! To find documentation related to the Haskell code in this repo, look [here](https://sampleprograms.io/languages/haskell).
 
-## Sample Programs List - 34/38 :smile:
+## Sample Programs List - 38/38 :partying_face:
 
 In this section, we feature a list of completed and missing programs in Haskell. See above for the current amount of completed programs in Haskell. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -18,7 +18,10 @@ Below, you'll find a list of completed code snippets in Haskell. Code snippets p
 - :warning: [Binary Search in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+binary+search+haskell) [[Requirements](https://sampleprograms.io/projects/binary-search)]
 - :warning: [Bubble Sort in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+bubble+sort+haskell) [[Requirements](https://sampleprograms.io/projects/bubble-sort)]
 - :warning: [Capitalize in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+capitalize+haskell) [[Requirements](https://sampleprograms.io/projects/capitalize)]
+- :warning: [Convex Hull in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+convex+hull+haskell) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
 - :warning: [Depth First Search in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+depth+first+search+haskell) [[Requirements](https://sampleprograms.io/projects/depth-first-search)]
+- :warning: [Dijkstra in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+dijkstra+haskell) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
+- :warning: [Duplicate Character Counter in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+duplicate+character+counter+haskell) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
 - :warning: [Even Odd in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+haskell) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :warning: [Factorial in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+haskell) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :warning: [Fibonacci in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+haskell) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
@@ -47,15 +50,7 @@ Below, you'll find a list of completed code snippets in Haskell. Code snippets p
 - :warning: [Rot13 in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+haskell) [[Requirements](https://sampleprograms.io/projects/rot13)]
 - :warning: [Selection Sort in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+haskell) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 - :warning: [Transpose Matrix in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+haskell) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
-
-### Missing Programs
-
-The following list contains all of the approved programs that are not currently implemented in Haskell. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
-
-- :x: [Convex Hull](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,convex+hull&template=code-snippet-request.md&title=Add+Convex+Hull+in+Haskell) [[Requirements](https://sampleprograms.io/projects/convex-hull)]
-- :x: [Dijkstra](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,dijkstra&template=code-snippet-request.md&title=Add+Dijkstra+in+Haskell) [[Requirements](https://sampleprograms.io/projects/dijkstra)]
-- :x: [Duplicate Character Counter](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,duplicate+character+counter&template=code-snippet-request.md&title=Add+Duplicate+Character+Counter+in+Haskell) [[Requirements](https://sampleprograms.io/projects/duplicate-character-counter)]
-- :x: [Zeckendorf](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,zeckendorf&template=code-snippet-request.md&title=Add+Zeckendorf+in+Haskell) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
+- :warning: [Zeckendorf in Haskell](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+zeckendorf+haskell) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 
 ## Testing
 
