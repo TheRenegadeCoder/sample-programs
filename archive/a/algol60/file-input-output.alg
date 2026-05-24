@@ -1,7 +1,7 @@
 begin
     comment ALGOL 60 really doesn't support file I/O, per se. It supports
         I/O via a channel number. With GNU MARST, an environment variable
-        called FILE_<n> can be used to specify the file name for  channel
+        called FILE_<n> can be used to specify the file name for channel
         number n. Channel 3 is mapped to "output.txt".
 
         ALGOL 60 doesn't handle EOF (End-Of-File) gracefully. Instead it
