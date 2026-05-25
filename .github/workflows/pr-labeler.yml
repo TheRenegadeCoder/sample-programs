@@ -19,7 +19,7 @@ jobs:
         fetch-depth: 2
 
     - name: Read repo config
-      uses: pietrobolcato/action-read-yaml@1.1.0
+      uses: Elisity/action-read-yaml@v0.2
       id: repo-config
       with:
         config: repo-config.yml
