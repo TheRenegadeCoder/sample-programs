@@ -84,7 +84,7 @@ jobs:
         fetch-depth: 2
 
     - name: Read repo config
-      uses: pietrobolcato/action-read-yaml@1.1.0
+      uses: rzuckerm/action-simple-yaml-reader@main
       id: repo-config
       with:
         config: repo-config.yml
@@ -92,12 +92,12 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v6
       with:
-        python-version: "${{ steps.repo-config.outputs['python-version'] }}"
+        python-version: "${{ steps.repo-config.outputs.python-version }}"
 
     - name: Run Poetry Image
       uses: abatilo/actions-poetry@v4
       with:
-        poetry-version: "${{ steps.repo-config.outputs['poetry-version'] }}"
+        poetry-version: "${{ steps.repo-config.outputs.poetry-version }}"
 
     - name: Install Dependencies
       run: poetry install
@@ -108,7 +108,7 @@ jobs:
     - name: Download Docker images, Test Appropriate Sample Programs, Remove Docker Images
       run: poetry run python scripts/run_tests.py
         --event ${{ github.event_name }}
-        --num-batches ${{ steps.repo-config.outputs['num-batches'] }}
+        --num-batches ${{ steps.repo-config.outputs.num-batches }}
         --parallel
         --remove
         ${{ needs.changed-files.outputs.changed_files }}
