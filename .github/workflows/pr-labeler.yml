@@ -19,7 +19,7 @@ jobs:
         fetch-depth: 2
 
     - name: Read repo config
-      uses: rzuckerm/action-simple-yaml-reader@main
+      uses: Elisity/action-read-yaml@v0.2
       id: repo-config
       with:
         config: repo-config.yml
@@ -27,12 +27,12 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v6
       with:
-        python_version: "${{ steps.repo-config.outputs.python_version }}"
+        python-version: "${{ steps.repo-config.outputs['python-version'] }}"
 
     - name: Run Poetry Image
       uses: abatilo/actions-poetry@v4
       with:
-        poetry_version: "${{ steps.repo-config.outputs.poetry_version }}"
+        poetry-version: "${{ steps.repo-config.outputs['poetry-version'] }}"
 
     - name: Install Dependencies
       run: poetry install

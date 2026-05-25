@@ -32,8 +32,8 @@ jobs:
     runs-on: ubuntu-latest
 
     outputs:
-      status: ${{ steps.changed-files.outputs.any_changed }}
-      changed_files: ${{ steps.changed-files.outputs.all_changed_files }}
+      status: ${{ steps.changed-files.outputs.exists }}
+      changed_files: ${{ steps.changed-files.outputs.files }}
     steps:
     - uses: actions/checkout@v6
       with:
@@ -41,9 +41,9 @@ jobs:
 
     - name: Get changed code files
       id: changed-files
-      uses: tj-actions/changed-files@934b2d2c7e653bb8c968afed5a0428617f09aa24
+      uses: yumemi-inc/changed-files@v3
       with:
-        files: |
+        patterns: |
           archive/**
           .glotter.yml
           repo-config.yml
@@ -54,9 +54,9 @@ jobs:
           !**/*.md
 
     - name: List all relevant changed files
-      if: steps.changed-files.outputs.any_changed == 'true'
+      if: steps.changed-files.outputs.exists == 'true'
       env:
-        ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+        ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.files }}
       run: |
         for file in ${ALL_CHANGED_FILES}; do
           echo "$file was changed"
@@ -84,7 +84,7 @@ jobs:
         fetch-depth: 2
 
     - name: Read repo config
-      uses: rzuckerm/action-simple-yaml-reader@main
+      uses: Elisity/action-read-yaml@v0.2
       id: repo-config
       with:
         config: repo-config.yml
@@ -92,12 +92,12 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v6
       with:
-        python_version: "${{ steps.repo-config.outputs.python_version }}"
+        python-version: "${{ steps.repo-config.outputs['python-version'] }}"
 
     - name: Run Poetry Image
       uses: abatilo/actions-poetry@v4
       with:
-        poetry_version: "${{ steps.repo-config.outputs.poetry_version }}"
+        poetry-version: "${{ steps.repo-config.outputs['poetry-version'] }}"
 
     - name: Install Dependencies
       run: poetry install
@@ -108,7 +108,7 @@ jobs:
     - name: Download Docker images, Test Appropriate Sample Programs, Remove Docker Images
       run: poetry run python scripts/run_tests.py
         --event ${{ github.event_name }}
-        --num_batches ${{ steps.repo-config.outputs.num_batches }}
+        --num-batches ${{ steps.repo-config.outputs['num-batches'] }}
         --parallel
         --remove
         ${{ needs.changed-files.outputs.changed_files }}
