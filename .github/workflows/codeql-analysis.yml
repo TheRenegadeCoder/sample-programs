@@ -157,7 +157,7 @@ jobs:
     # Set up C# for scanning.
     - name: Set up C#
       if: ${{ matrix.language == 'c#' }}
-      run: python scripts/generate_c_sharp_project_file.py
+      run: poetry run python scripts/generate_c_sharp_project_file.py
 
     # Workaround for Kotlin scanning.
     - name: Set up Kotlin
