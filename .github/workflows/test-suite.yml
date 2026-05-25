@@ -32,7 +32,7 @@ jobs:
     runs-on: ubuntu-latest
 
     outputs:
-      status: ${{ steps.changed-files.outputs.exists }}
+      status: ${{ steps.changed-files.outputs.any_changed }}
       changed_files: ${{ steps.changed-files.outputs.all_changed_files }}
     steps:
     - uses: actions/checkout@v6
@@ -111,7 +111,7 @@ jobs:
         --num-batches ${{ steps.repo-config.outputs['num-batches'] }}
         --parallel
         --remove
-        ${{ needs.changed-files.outputs.all_changed_files }}
+        ${{ needs.changed-files.outputs.changed_files }}
 
   # Because testing uses a matrix, we need this job for branch protections
   test-results:
