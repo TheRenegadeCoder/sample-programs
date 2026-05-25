@@ -41,9 +41,9 @@ jobs:
 
     - name: Get changed code files
       id: changed-files
-      uses: yumemi-inc/changed-files@v3
+      uses: tj-actions/changed-files@9426d40962ed5378910ee2e21d5f8c6fcbf2dd96 # v47.0.6
       with:
-        patterns: |
+        files: |
           archive/**
           .glotter.yml
           repo-config.yml
@@ -54,9 +54,9 @@ jobs:
           !**/*.md
 
     - name: List all relevant changed files
-      if: steps.changed-files.outputs.exists == 'true'
+      if: steps.changed-files.outputs.any_changed == 'true'
       env:
-        ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.files }}
+        ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
       run: |
         for file in ${ALL_CHANGED_FILES}; do
           echo "$file was changed"
