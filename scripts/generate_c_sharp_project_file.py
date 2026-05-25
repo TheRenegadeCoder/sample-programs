@@ -12,6 +12,11 @@ C_SHARP_PROJECT_CONTENTS = """\
       <Nullable>enable</Nullable>
       <Deterministic>true</Deterministic>
   </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Exclude all .cs files; the build process handles compilation individually -->
+    <Compile Remove="**/*.cs" />
+  </ItemGroup>
 </Project>
 """
 
