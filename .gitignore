@@ -42,3 +42,6 @@ Program.fs
 # Rust
 Cargo.toml
 Cargo.lock
+
+# C#
+*.csproj
