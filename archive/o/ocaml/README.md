@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in OCaml! To find documentation related to the OCaml code in this repo, look [here](https://sampleprograms.io/languages/ocaml).
 
-## Sample Programs List - 14/38 :thinking:
+## Sample Programs List - 16/38 :thinking:
 
 In this section, we feature a list of completed and missing programs in OCaml. See above for the current amount of completed programs in OCaml. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -26,7 +26,9 @@ Below, you'll find a list of completed code snippets in OCaml. Code snippets pre
 - :warning: [Merge Sort in OCaml](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+ocaml) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
 - :warning: [Palindromic Number in OCaml](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+ocaml) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :warning: [Prime Number in OCaml](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+ocaml) [[Requirements](https://sampleprograms.io/projects/prime-number)]
+- :warning: [Remove All Whitespace in OCaml](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+remove+all+whitespace+ocaml) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :warning: [Reverse String in OCaml](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+ocaml) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
+- :warning: [Rot13 in OCaml](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+ocaml) [[Requirements](https://sampleprograms.io/projects/rot13)]
 
 ### Missing Programs
 
@@ -50,9 +52,7 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+OCaml) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
 - :x: [Quick Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,quick+sort&template=code-snippet-request.md&title=Add+Quick+Sort+in+OCaml) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
 - :x: [Quine](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,quine&template=code-snippet-request.md&title=Add+Quine+in+OCaml) [[Requirements](https://sampleprograms.io/projects/quine)]
-- :x: [Remove All Whitespace](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,remove+all+whitespace&template=code-snippet-request.md&title=Add+Remove+All+Whitespace+in+OCaml) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :x: [Roman Numeral](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,roman+numeral&template=code-snippet-request.md&title=Add+Roman+Numeral+in+OCaml) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
-- :x: [Rot13](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,rot13&template=code-snippet-request.md&title=Add+Rot13+in+OCaml) [[Requirements](https://sampleprograms.io/projects/rot13)]
 - :x: [Selection Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,selection+sort&template=code-snippet-request.md&title=Add+Selection+Sort+in+OCaml) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
 - :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,transpose+matrix&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+OCaml) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 - :x: [Zeckendorf](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,zeckendorf&template=code-snippet-request.md&title=Add+Zeckendorf+in+OCaml) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
