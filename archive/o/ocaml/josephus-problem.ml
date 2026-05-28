@@ -1,17 +1,8 @@
 let ( let* ) = Option.bind
 
 let josephus n k =
-  let rec aux curr people =
-    match people with
-    | [ survivor ] -> survivor
-    | _ ->
-        let len = List.length people in
-        let killed = (curr + k - 1) mod len in
-        aux
-          (killed mod (len - 1))
-          (List.filteri (fun i _ -> i <> killed) people)
-  in
-  aux 0 (List.init n (fun i -> i + 1))
+  let rec aux n = if n <= 1 then 0 else (k + aux (n - 1)) mod n in
+  aux n + 1
 
 let parse_args argv =
   match argv with
