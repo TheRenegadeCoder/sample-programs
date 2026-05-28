@@ -1,8 +1,8 @@
 let ( let* ) = Option.bind
 
 let josephus n k =
-  let rec aux n = if n <= 1 then 0 else (k + aux (n - 1)) mod n in
-  aux n + 1
+  let rec aux i acc = if i > n then acc else aux (i + 1) ((k + acc) mod i) in
+  aux 2 0 + 1
 
 let parse_args argv =
   match argv with
