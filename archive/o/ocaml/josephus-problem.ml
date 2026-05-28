@@ -1,20 +1,17 @@
 let ( let* ) = Option.bind
 
-let num_list n =
-  let rec aux acc i = if i = 0 then acc else aux (i :: acc) (i - 1) in
-  aux [] n
-
-let jo n k =
-  let rec aux p l =
-    match l with
-    | [ s ] -> s
+let josephus n k =
+  let rec aux curr people =
+    match people with
+    | [ survivor ] -> survivor
     | _ ->
-        let killed = (p + k - 1) mod List.length l in
+        let len = List.length people in
+        let killed = (curr + k - 1) mod len in
         aux
-          (killed mod (List.length l - 1))
-          (List.filteri (fun i _ -> i != killed) l)
+          (killed mod (len - 1))
+          (List.filteri (fun i _ -> i <> killed) people)
   in
-  aux 0 (num_list n)
+  aux 0 (List.init n (fun i -> i + 1))
 
 let parse_args argv =
   match argv with
@@ -26,7 +23,8 @@ let parse_args argv =
 
 let () =
   match parse_args Sys.argv with
-  | Some (n, k) when n > 0 && k >= 0 -> print_endline (string_of_int (jo n k))
+  | Some (n, k) when n > 0 && k >= 0 ->
+      print_endline (string_of_int (josephus n k))
   | _ ->
       print_endline
         "Usage: please input the total number of people and number of people \
