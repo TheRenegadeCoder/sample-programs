@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in ALGOL 60! To find documentation related to the ALGOL 60 code in this repo, look [here](https://sampleprograms.io/languages/algol60).
 
-## Sample Programs List - 37/38 :smile:
+## Sample Programs List - 38/38 :partying_face:
 
 In this section, we feature a list of completed and missing programs in ALGOL 60. See above for the current amount of completed programs in ALGOL 60. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -25,6 +25,7 @@ Below, you'll find a list of completed code snippets in ALGOL 60. Code snippets 
 - :warning: [Even Odd in ALGOL 60](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+even+odd+algol+60) [[Requirements](https://sampleprograms.io/projects/even-odd)]
 - :warning: [Factorial in ALGOL 60](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+factorial+algol+60) [[Requirements](https://sampleprograms.io/projects/factorial)]
 - :warning: [Fibonacci in ALGOL 60](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fibonacci+algol+60) [[Requirements](https://sampleprograms.io/projects/fibonacci)]
+- :warning: [File Input Output in ALGOL 60](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+file+input+output+algol+60) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
 - :warning: [Fizz Buzz in ALGOL 60](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+algol+60) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
 - :warning: [Fraction Math in ALGOL 60](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fraction+math+algol+60) [[Requirements](https://sampleprograms.io/projects/fraction-math)]
 - :warning: [Hello World in ALGOL 60](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+algol+60) [[Requirements](https://sampleprograms.io/projects/hello-world)]
@@ -51,12 +52,6 @@ Below, you'll find a list of completed code snippets in ALGOL 60. Code snippets 
 - :warning: [Transpose Matrix in ALGOL 60](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+algol+60) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 - :warning: [Zeckendorf in ALGOL 60](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+zeckendorf+algol+60) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 
-### Missing Programs
-
-The following list contains all of the approved programs that are not currently implemented in ALGOL 60. Click on the name of the project to easily open an issue in GitHub. Alternatively, click requirements to check out the description of the project.
-
-- :x: [File Input Output](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,file+input+output&template=code-snippet-request.md&title=Add+File+Input+Output+in+ALGOL%2060) [[Requirements](https://sampleprograms.io/projects/file-input-output)]
-
 ## Testing
 
 The following list shares details about how we name all Sample Programs in ALGOL 60:
@@ -78,6 +73,7 @@ Notes:
 - Since ALGOL 60 does not support command-line arguments directly, the command line arguments are delivered like this:
 - - Number of arguments followed by newline (ASCII 10). Use 'ininteger' to read this
 - - Each argument is separated by a null byte (ASCII 0)
+- Channel 3 is used for a file called 'output.txt' for the File Input Output sample program since ALGOL 60 does not support file I/O. This is a special feature of GNU MARST.
 
 See the [Glotter2 project](https://github.com/rzuckerm/glotter2) for more information on how to create a testinfo file.
 
