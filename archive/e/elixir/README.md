@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in Elixir! To find documentation related to the Elixir code in this repo, look [here](https://sampleprograms.io/languages/elixir).
 
-## Sample Programs List - 19/38 :relaxed:
+## Sample Programs List - 20/38 :relaxed:
 
 In this section, we feature a list of completed and missing programs in Elixir. See above for the current amount of completed programs in Elixir. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -32,6 +32,7 @@ Below, you'll find a list of completed code snippets in Elixir. Code snippets pr
 - :warning: [Remove All Whitespace in Elixir](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+remove+all+whitespace+elixir) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :warning: [Reverse String in Elixir](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+elixir) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :warning: [Selection Sort in Elixir](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+selection+sort+elixir) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
+- :warning: [Transpose Matrix in Elixir](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+elixir) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
 ### Missing Programs
 
@@ -54,7 +55,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Quine](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,quine&template=code-snippet-request.md&title=Add+Quine+in+Elixir) [[Requirements](https://sampleprograms.io/projects/quine)]
 - :x: [Roman Numeral](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,roman+numeral&template=code-snippet-request.md&title=Add+Roman+Numeral+in+Elixir) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :x: [Rot13](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,rot13&template=code-snippet-request.md&title=Add+Rot13+in+Elixir) [[Requirements](https://sampleprograms.io/projects/rot13)]
-- :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,transpose+matrix&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+Elixir) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 - :x: [Zeckendorf](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,zeckendorf&template=code-snippet-request.md&title=Add+Zeckendorf+in+Elixir) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 
 ## Testing
