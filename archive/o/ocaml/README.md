@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in OCaml! To find documentation related to the OCaml code in this repo, look [here](https://sampleprograms.io/languages/ocaml).
 
-## Sample Programs List - 19/38 :relaxed:
+## Sample Programs List - 20/38 :relaxed:
 
 In this section, we feature a list of completed and missing programs in OCaml. See above for the current amount of completed programs in OCaml. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -25,6 +25,7 @@ Below, you'll find a list of completed code snippets in OCaml. Code snippets pre
 - :warning: [Hello World in OCaml](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+ocaml) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 - :warning: [Josephus Problem in OCaml](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+josephus+problem+ocaml) [[Requirements](https://sampleprograms.io/projects/josephus-problem)]
 - :warning: [Linear Search in OCaml](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+linear+search+ocaml) [[Requirements](https://sampleprograms.io/projects/linear-search)]
+- :warning: [Longest Word in OCaml](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+longest+word+ocaml) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :warning: [Merge Sort in OCaml](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+ocaml) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
 - :warning: [Palindromic Number in OCaml](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+ocaml) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
 - :warning: [Prime Number in OCaml](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+ocaml) [[Requirements](https://sampleprograms.io/projects/prime-number)]
@@ -47,7 +48,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,job+sequencing&template=code-snippet-request.md&title=Add+Job+Sequencing+in+OCaml) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :x: [Longest Common Subsequence](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+common+subsequence&template=code-snippet-request.md&title=Add+Longest+Common+Subsequence+in+OCaml) [[Requirements](https://sampleprograms.io/projects/longest-common-subsequence)]
 - :x: [Longest Palindromic Substring](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+palindromic+substring&template=code-snippet-request.md&title=Add+Longest+Palindromic+Substring+in+OCaml) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
-- :x: [Longest Word](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+word&template=code-snippet-request.md&title=Add+Longest+Word+in+OCaml) [[Requirements](https://sampleprograms.io/projects/longest-word)]
 - :x: [Maximum Array Rotation](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+array+rotation&template=code-snippet-request.md&title=Add+Maximum+Array+Rotation+in+OCaml) [[Requirements](https://sampleprograms.io/projects/maximum-array-rotation)]
 - :x: [Maximum Subarray](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,maximum+subarray&template=code-snippet-request.md&title=Add+Maximum+Subarray+in+OCaml) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+OCaml) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
