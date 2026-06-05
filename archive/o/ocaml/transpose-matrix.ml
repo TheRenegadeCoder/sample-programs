@@ -1,18 +1,15 @@
 let ( let* ) = Option.bind
 let ( let+ ) f g = Option.map g f
 
-let rem_col mat =
-  let* first_col, remaining =
-    List.fold_left
-      (fun acc x ->
-        let* col, rest_mat = acc in
-        match x with
-        | [] -> None
-        | head :: rest -> Some (head :: col, rest :: rest_mat))
-      (Some ([], []))
-      mat
+let separate_first_col mat =
+  let rec aux col_acc rest_mat_acc mat =
+    match mat with
+    | [] -> Some (List.rev col_acc, List.rev rest_mat_acc)
+    | (head :: rest) :: rest_rows ->
+        aux (head :: col_acc) (rest :: rest_mat_acc) rest_rows
+    | _ -> None
   in
-  Some (List.rev first_col, List.rev remaining)
+  aux [] [] mat
 
 let transpose mat =
   let rec aux acc mat =
@@ -20,19 +17,28 @@ let transpose mat =
     | [] :: _ ->
         if List.for_all List.is_empty mat then Some (List.rev acc) else None
     | _ ->
-        let* col, rem = rem_col mat in
+        let* col, rem = separate_first_col mat in
         aux (col :: acc) rem
   in
   aux [] mat
 
-let to_matrix cols nums =
-  let rec aux acc nums =
-    match nums with
-    | [] -> Some (List.rev acc)
-    | _ when List.length nums < cols -> None
-    | _ -> aux (List.take cols nums :: acc) (List.drop cols nums)
+let split_at n list =
+  let rec aux acc n list =
+    match (n, list) with
+    | 0, _ | _, [] -> (List.rev acc, list)
+    | _, head :: rest -> aux (head :: acc) (n - 1) rest
   in
-  aux [] nums
+  aux [] n list
+
+let to_matrix ~rows ~cols nums =
+  if rows <= 0 || cols <= 0 || rows * cols <> List.length nums then None
+  else
+    let rec aux acc nums =
+      match split_at cols nums with
+      | row, [] -> Some (List.rev (row :: acc))
+      | row, rest -> aux (row :: acc) rest
+    in
+    aux [] nums
 
 let parse_list list_str =
   let rec aux acc l =
@@ -56,9 +62,9 @@ let parse_args argv =
 let flat_mat_str mat =
   mat |> List.flatten |> List.map string_of_int |> String.concat ", "
 
-let print_flat_mat_trans_str cols nums =
+let print_flat_mat_trans_str ~rows ~cols nums =
   let output_list_str =
-    let* mat = to_matrix cols nums in
+    let* mat = to_matrix ~rows ~cols nums in
     let+ trans = transpose mat in
     flat_mat_str trans
   in
@@ -68,7 +74,8 @@ let print_flat_mat_trans_str cols nums =
 
 let () =
   match parse_args Sys.argv with
-  | Some (cols, _, nums) -> print_flat_mat_trans_str cols nums
+  | Some (cols, rows, nums) when cols > 0 && rows > 0 ->
+      print_flat_mat_trans_str ~rows ~cols nums
   | _ ->
       print_endline
         "Usage: please enter the dimension of the matrix and the serialized \
