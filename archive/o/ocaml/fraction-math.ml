@@ -2,13 +2,19 @@ let ( let* ) = Option.bind
 
 type rat = { num : int; denom : int }
 
-let rec gcd a b =
-  let r = a mod b in
-  if r = 0 then b else gcd b r
+let gcd a b =
+  let a = abs a in
+  let b = abs b in
+  let rec aux a b =
+    let r = a mod b in
+    if r = 0 then b else aux b r
+  in
+  aux a b
 
 let simplify { num; denom } =
   let div = gcd num denom in
-  { num = num / div; denom = denom / div }
+  let sign_flip = if denom < 0 then -1 else 1 in
+  { num = num / div * sign_flip; denom = denom / div * sign_flip }
 
 let to_string { num; denom } = string_of_int num ^ "/" ^ string_of_int denom
 let recip { num; denom } = { num = denom; denom = num }
@@ -29,7 +35,9 @@ let eq a b = simplify a = simplify b
 let neq a b = not (eq a b)
 
 let gt a b =
-  let { num = a_num; _ }, { num = b_num; _ } = common_denom a b in
+  let { num = a_num; _ }, { num = b_num; _ } =
+    common_denom (simplify a) (simplify b)
+  in
   a_num > b_num
 
 let gte a b = gt a b || eq a b
@@ -41,17 +49,10 @@ let parse_frac s =
   | [ num; denom ] ->
       let* num_int = int_of_string_opt num in
       let* denom_int = int_of_string_opt denom in
-      Some { num = num_int; denom = denom_int }
+      if denom_int <> 0 then Some { num = num_int; denom = denom_int } else None
   | _ -> None
 
 module StringMap = Map.Make (String)
-
-let arith_ops =
-  StringMap.of_list [ ("*", mult); ("/", div); ("+", add); ("-", sub) ]
-
-let bool_ops =
-  StringMap.of_list
-    [ ("==", eq); ("!=", neq); (">", gt); ("<", lt); (">=", gte); ("<=", lte) ]
 
 type frac_op = Arith of (rat -> rat -> rat) | Bool of (rat -> rat -> bool)
 
@@ -69,8 +70,6 @@ let ops =
       (">=", Bool gte);
       ("<=", Bool lte);
     ]
-(* 
-let parse_op s = List.find_map (StringMap.find_opt s) [arith_ops; bool_ops] *)
 
 let exec_exp a op b =
   match op with
