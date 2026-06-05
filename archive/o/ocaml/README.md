@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in OCaml! To find documentation related to the OCaml code in this repo, look [here](https://sampleprograms.io/languages/ocaml).
 
-## Sample Programs List - 20/38 :relaxed:
+## Sample Programs List - 21/38 :relaxed:
 
 In this section, we feature a list of completed and missing programs in OCaml. See above for the current amount of completed programs in OCaml. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -32,6 +32,7 @@ Below, you'll find a list of completed code snippets in OCaml. Code snippets pre
 - :warning: [Remove All Whitespace in OCaml](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+remove+all+whitespace+ocaml) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :warning: [Reverse String in OCaml](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+ocaml) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :warning: [Rot13 in OCaml](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+ocaml) [[Requirements](https://sampleprograms.io/projects/rot13)]
+- :warning: [Transpose Matrix in OCaml](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+transpose+matrix+ocaml) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 - :warning: [Zeckendorf in OCaml](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+zeckendorf+ocaml) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
 
 ### Missing Programs
@@ -55,7 +56,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Quine](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,quine&template=code-snippet-request.md&title=Add+Quine+in+OCaml) [[Requirements](https://sampleprograms.io/projects/quine)]
 - :x: [Roman Numeral](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,roman+numeral&template=code-snippet-request.md&title=Add+Roman+Numeral+in+OCaml) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :x: [Selection Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,selection+sort&template=code-snippet-request.md&title=Add+Selection+Sort+in+OCaml) [[Requirements](https://sampleprograms.io/projects/selection-sort)]
-- :x: [Transpose Matrix](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,transpose+matrix&template=code-snippet-request.md&title=Add+Transpose+Matrix+in+OCaml) [[Requirements](https://sampleprograms.io/projects/transpose-matrix)]
 
 ## Testing
 
