@@ -5,11 +5,13 @@ type rat = { num : int; denom : int }
 let gcd a b =
   let a = abs a in
   let b = abs b in
-  let rec aux a b =
-    let r = a mod b in
-    if r = 0 then b else aux b r
-  in
-  aux a b
+  if b = 0 then a
+  else
+    let rec aux a b =
+      let r = a mod b in
+      if r = 0 then b else aux b r
+    in
+    aux a b
 
 let simplify { num; denom } =
   let div = gcd num denom in
