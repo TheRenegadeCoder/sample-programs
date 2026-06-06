@@ -4,8 +4,8 @@ module Rational : sig
   type rat
 
   val make : int -> int -> rat
-  val string_of_rat : rat -> string
   val rat_of_string_opt : string -> rat option
+  val string_of_rat : rat -> string
   val recip : rat -> rat
   val mult : rat -> rat -> rat
   val div : rat -> rat -> rat
@@ -38,6 +38,14 @@ end = struct
       let sign_flip = if denom < 0 then -1 else 1 in
       { num = num / divisor * sign_flip; denom = denom / divisor * sign_flip }
 
+  let rat_of_string_opt s =
+    match String.split_on_char '/' s with
+    | [ num; denom ] ->
+        let* num_int = int_of_string_opt num in
+        let* denom_int = int_of_string_opt denom in
+        if denom_int <> 0 then Some (make num_int denom_int) else None
+    | _ -> None
+
   let string_of_rat { num; denom } =
     string_of_int num ^ "/" ^ string_of_int denom
 
@@ -52,14 +60,6 @@ end = struct
   let gte a b = gt a b || eq a b
   let lt a b = not (gte a b)
   let lte a b = lt a b || eq a b
-
-  let rat_of_string_opt s =
-    match String.split_on_char '/' s with
-    | [ num; denom ] ->
-        let* num_int = int_of_string_opt num in
-        let* denom_int = int_of_string_opt denom in
-        if denom_int <> 0 then Some (make num_int denom_int) else None
-    | _ -> None
 end
 
 module StringMap = Map.Make (String)
