@@ -1,25 +1,22 @@
 let ( let* ) = Option.bind
 
-let init_sum nums =
+let weighted_sum nums =
   let _, sum =
     Array.fold_left (fun (i, sum) x -> (i + 1, (i * x) + sum)) (0, 0) nums
   in
   sum
 
-let best_sum nums =
+  let best_sum nums =
   let len = Array.length nums in
-  let rec aux best i prev_u prev =
-    if i = len then best
+  let total = Array.fold_left ( + ) 0 nums in
+  let rec aux best i prev =
+    if i > len then best
     else
-      let f = nums.((len - i + 1) mod len) in
-      let e = nums.(len - i) in
-      let cand = prev + prev_u - (len * e) + f in
-      let unweighted = prev_u - e + f in
-      aux (max best cand) (i + 1) unweighted cand
+      let cand = prev - total + len * nums.(i-1) in
+      aux (max best cand) (i + 1) cand
   in
-  let start = init_sum nums in
-  let init_sum_unweighted = Array.fold_left ( + ) 0 nums - nums.(0) in
-  aux start 1 init_sum_unweighted start
+  let start = weighted_sum nums in
+  aux start 1 start
 
 let parse_list list_str =
   let rec aux acc l =
