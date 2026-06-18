@@ -5,7 +5,7 @@
 
 Welcome to Sample Programs in Elixir! To find documentation related to the Elixir code in this repo, look [here](https://sampleprograms.io/languages/elixir).
 
-## Sample Programs List - 25/38 :relaxed:
+## Sample Programs List - 27/38 :relaxed:
 
 In this section, we feature a list of completed and missing programs in Elixir. See above for the current amount of completed programs in Elixir. If you see a program that is missing and would like to add it, please submit an issue, so we can assign it to you.
 
@@ -33,6 +33,8 @@ Below, you'll find a list of completed code snippets in Elixir. Code snippets pr
 - :warning: [Maximum Subarray in Elixir](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+maximum+subarray+elixir) [[Requirements](https://sampleprograms.io/projects/maximum-subarray)]
 - :warning: [Merge Sort in Elixir](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+merge+sort+elixir) [[Requirements](https://sampleprograms.io/projects/merge-sort)]
 - :warning: [Palindromic Number in Elixir](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+palindromic+number+elixir) [[Requirements](https://sampleprograms.io/projects/palindromic-number)]
+- :warning: [Prime Number in Elixir](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+prime+number+elixir) [[Requirements](https://sampleprograms.io/projects/prime-number)]
+- :warning: [Quick Sort in Elixir](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+quick+sort+elixir) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
 - :warning: [Remove All Whitespace in Elixir](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+remove+all+whitespace+elixir) [[Requirements](https://sampleprograms.io/projects/remove-all-whitespace)]
 - :warning: [Reverse String in Elixir](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+reverse+string+elixir) [[Requirements](https://sampleprograms.io/projects/reverse-string)]
 - :warning: [Rot13 in Elixir](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+rot13+elixir) [[Requirements](https://sampleprograms.io/projects/rot13)]
@@ -51,8 +53,6 @@ The following list contains all of the approved programs that are not currently 
 - :x: [Job Sequencing](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,job+sequencing&template=code-snippet-request.md&title=Add+Job+Sequencing+in+Elixir) [[Requirements](https://sampleprograms.io/projects/job-sequencing)]
 - :x: [Longest Palindromic Substring](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,longest+palindromic+substring&template=code-snippet-request.md&title=Add+Longest+Palindromic+Substring+in+Elixir) [[Requirements](https://sampleprograms.io/projects/longest-palindromic-substring)]
 - :x: [Minimum Spanning Tree](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,minimum+spanning+tree&template=code-snippet-request.md&title=Add+Minimum+Spanning+Tree+in+Elixir) [[Requirements](https://sampleprograms.io/projects/minimum-spanning-tree)]
-- :x: [Prime Number](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,prime+number&template=code-snippet-request.md&title=Add+Prime+Number+in+Elixir) [[Requirements](https://sampleprograms.io/projects/prime-number)]
-- :x: [Quick Sort](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,quick+sort&template=code-snippet-request.md&title=Add+Quick+Sort+in+Elixir) [[Requirements](https://sampleprograms.io/projects/quick-sort)]
 - :x: [Quine](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,quine&template=code-snippet-request.md&title=Add+Quine+in+Elixir) [[Requirements](https://sampleprograms.io/projects/quine)]
 - :x: [Roman Numeral](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,roman+numeral&template=code-snippet-request.md&title=Add+Roman+Numeral+in+Elixir) [[Requirements](https://sampleprograms.io/projects/roman-numeral)]
 - :x: [Zeckendorf](https://github.com/TheRenegadeCoder/sample-programs/issues/new?assignees=&labels=enhancement,zeckendorf&template=code-snippet-request.md&title=Add+Zeckendorf+in+Elixir) [[Requirements](https://sampleprograms.io/projects/zeckendorf)]
