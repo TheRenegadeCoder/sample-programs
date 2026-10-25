@@ -5,4 +5,8 @@ folder:
 container:
   image: "rzuckerm/batch"
   tag: "11.0-20261025-3"
-  cmd: "wine {{ source.name }}{{ source.extension }}"
+  build: |
+    sh -c '(echo "#!/bin/sh"; \
+    echo "wine {{ source.name }}{{ source.extension }} \"\$@\"" \
+    ) >{{ source.name }}'
+  cmd: "sh {{ source.name }}"
