@@ -68,7 +68,9 @@ jobs:
     needs: changed-files
     if: ${{needs.changed-files.outputs.status == 'true' || github.event_name == 'schedule' }}
 
-    runs-on: ubuntu-latest
+    # FIXME: Need to run on ubuntu-latest, but this causes the batch tests to fail
+    # with "wine: socket : Function not implemented"
+    runs-on: ubuntu-24.04
     steps:
     - name: Maximize build space
       uses: AdityaGarg8/remove-unwanted-software@v5
