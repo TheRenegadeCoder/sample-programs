@@ -70,7 +70,7 @@ jobs:
 
     # FIXME: Need to run on ubuntu-latest, but this causes the batch tests to fail
     # with "wine: socket : Function not implemented"
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     steps:
     - name: Maximize build space
       uses: AdityaGarg8/remove-unwanted-software@v5
