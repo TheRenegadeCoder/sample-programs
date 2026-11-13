@@ -29,6 +29,8 @@ jobs:
       with:
         app-id: ${{ secrets.README_BOT_APP_ID }}
         private-key: ${{ secrets.README_BOT_PRIVATE_KEY }}
+        permission-contents: write
+        permission-pull-requests: write
 
     - uses: actions/checkout@v6
 
@@ -67,7 +69,7 @@ jobs:
         token: ${{ steps.generate-token.outputs.token }}
 
     - name: Enable Pull Request Automerge
-      if: steps.cpr.outputs.pull-request-operation == 'created'
+      if: steps.cpr.outputs.pull-request-number != ''
       uses: peter-evans/enable-pull-request-automerge@v3
       with:
         pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
