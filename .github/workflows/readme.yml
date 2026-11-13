@@ -68,6 +68,14 @@ jobs:
         labels: enhancement
         token: ${{ steps.generate-token.outputs.token }}
 
+    - name: Log PR creation result
+      env:
+        PR_OPERATION: ${{ steps.cpr.outputs.pull-request-operation }}
+        PR_NUMBER: ${{ steps.cpr.outputs.pull-request-number }}
+      run: |
+        echo "operation=$PR_OPERATION"
+        echo "number=$PR_NUMBER"
+
     - name: Enable Pull Request Automerge
       if: steps.cpr.outputs.pull-request-number != ''
       uses: peter-evans/enable-pull-request-automerge@v3
