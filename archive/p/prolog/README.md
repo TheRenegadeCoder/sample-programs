@@ -15,7 +15,7 @@ Below, you'll find a list of completed code snippets in Prolog. Code snippets pr
 
 - :warning: [Baklava in Prolog](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+baklava+prolog) [[Requirements](https://sampleprograms.io/projects/baklava)]
 - :warning: [Fizz Buzz in Prolog](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+fizz+buzz+prolog) [[Requirements](https://sampleprograms.io/projects/fizz-buzz)]
-- :warning: [Hello World in Prolog](https://github.com//TheRenegadeCoder/sample-programs-website/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+hello+world+prolog) [[Requirements](https://sampleprograms.io/projects/hello-world)]
+- :white_check_mark: [Hello World in Prolog](https://sampleprograms.io/projects/hello-world/prolog) [[Requirements](https://sampleprograms.io/projects/hello-world)]
 
 ### Missing Programs
 
